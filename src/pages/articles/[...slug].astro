@@ -1,10 +1,11 @@
 ---
-import { getCollection, render } from "astro:content";
+import { render } from "astro:content";
 import TagList from "../../components/TagList.astro";
+import { getPublishedArticles } from "../../lib/public-content";
 import PostLayout from "../../layouts/PostLayout.astro";
 
 export async function getStaticPaths() {
-  const entries = await getCollection("articles");
+  const entries = await getPublishedArticles();
   return entries.map((entry) => ({
     params: { slug: entry.slug },
     props: { entry }

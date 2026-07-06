@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { extractBody, extractMeta } from "./lib/legacy-import.mjs";
 
 const legacyPosts = [
   {
@@ -31,74 +32,38 @@ const legacyPosts = [
 
 const outDir = new URL("../src/content/articles/", import.meta.url);
 
-const extractMeta = (html) => {
-  const title =
-    html.match(/<h1 class="post-title">([\s\S]*?)<\/h1>/)?.[1].trim() ?? "";
-  const isoDate =
-    html.match(/<time class="post-meta-date-created" datetime="([^"]+)"/)?.[1] ?? "";
-  const tags = [
-    ...html.matchAll(/<a class="post-meta__tags" href="[^"]+">([\s\S]*?)<\/a>/g)
-  ].map((match) => match[1].trim());
-
-  return { title, isoDate, tags };
-};
-
-const extractBody = (html) => {
-  const match = html.match(
-    /<article class="post-content" id="article-container">([\s\S]*?)<\/article>/
+for (const post of legacyPosts) {
+  const shouldForce = process.argv.includes("--force");
+  const slugFilters = new Set(
+    process.argv
+      .filter((arg) => arg.startsWith("--slug="))
+      .map((arg) => arg.slice("--slug=".length))
   );
 
-  if (!match) {
-    throw new Error("Could not find article body");
+  if (slugFilters.size > 0 && !slugFilters.has(post.slug)) {
+    continue;
   }
 
-  return match[1]
-    .replace(
-      /<h([1-6]) id="([^"]*)">([\s\S]*?)<\/h\1>/g,
-      (_m, level, _id, content) =>
-        `\n${"#".repeat(Number(level))} ${content.replace(/<[^>]+>/g, "").trim()}\n`
-    )
-    .replace(/<p>/g, "\n")
-    .replace(/<\/p>/g, "\n")
-    .replace(/<blockquote>/g, "\n> ")
-    .replace(/<\/blockquote>/g, "\n")
-    .replace(/<li>/g, "- ")
-    .replace(/<\/li>/g, "\n")
-    .replace(/<ol[^>]*>|<ul[^>]*>|<\/ol>|<\/ul>/g, "\n")
-    .replace(/<strong>/g, "**")
-    .replace(/<\/strong>/g, "**")
-    .replace(/<em>/g, "*")
-    .replace(/<\/em>/g, "*")
-    .replace(/<br\s*\/?>/g, "\n")
-    .replace(/<[^>]+>/g, "")
-    .replace(/&nbsp;/g, " ")
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
-    .replace(/&amp;/g, "&")
-    .replace(/\n{3,}/g, "\n\n")
-    .trim();
-};
-
-for (const post of legacyPosts) {
   const html = fs.readFileSync(post.source, "utf8");
   const { title, isoDate, tags } = extractMeta(html);
   const body = extractBody(html);
   const outPath = new URL(`${post.slug}.md`, outDir);
 
-  if (fs.existsSync(outPath)) {
+  if (fs.existsSync(outPath) && !shouldForce) {
     continue;
   }
 
-  const markdown = `---
+  const existing = fs.existsSync(outPath) ? fs.readFileSync(outPath, "utf8") : null;
+  const existingFrontmatter = existing?.match(/^---\r?\n[\s\S]*?\r?\n---/)?.[0];
+
+  const markdown = `${existingFrontmatter ?? `---
 title: "${title}"
 date: ${isoDate.slice(0, 10)}
 summary: "${post.summary}"
 tags: [${tags.map((tag) => `"${tag}"`).join(", ")}]
 topics: []
 draft: false
----
+---`}
 
 ${body}
 `;

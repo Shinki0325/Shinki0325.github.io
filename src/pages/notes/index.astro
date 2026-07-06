@@ -1,11 +1,9 @@
 ---
-import { getCollection } from "astro:content";
 import NoteCard from "../../components/NoteCard.astro";
+import { getPublishedNotes } from "../../lib/public-content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
-const notes = (await getCollection("notes")).sort(
-  (a, b) => b.data.date.getTime() - a.data.date.getTime()
-);
+const notes = await getPublishedNotes();
 ---
 
 <BaseLayout title="Notes">

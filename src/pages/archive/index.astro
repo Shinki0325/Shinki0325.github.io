@@ -1,15 +1,15 @@
 ---
-import { getCollection } from "astro:content";
+import { getPublishedArticles, getPublishedNotes } from "../../lib/public-content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
-const articleItems = (await getCollection("articles")).map((entry) => ({
+const articleItems = (await getPublishedArticles()).map((entry) => ({
   type: "Article",
   title: entry.data.title,
   slug: `/articles/${entry.slug}/`,
   date: entry.data.date
 }));
 
-const noteItems = (await getCollection("notes")).map((entry) => ({
+const noteItems = (await getPublishedNotes()).map((entry) => ({
   type: "Note",
   title: entry.data.title ?? "Untitled note",
   slug: `/notes/${entry.slug}/`,

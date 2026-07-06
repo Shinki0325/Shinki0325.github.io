@@ -1,15 +1,13 @@
 ---
-import { getCollection } from "astro:content";
 import ArticleCard from "../components/ArticleCard.astro";
 import NoteCard from "../components/NoteCard.astro";
 import TopicCard from "../components/TopicCard.astro";
+import { getPublishedArticles, getPublishedNotes } from "../lib/public-content";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
 
-const byDateDesc = <T extends { data: { date: Date } }>(a: T, b: T) =>
-  b.data.date.getTime() - a.data.date.getTime();
-
-const articles = (await getCollection("articles")).sort(byDateDesc);
-const notes = (await getCollection("notes")).sort(byDateDesc);
+const articles = await getPublishedArticles();
+const notes = await getPublishedNotes();
 const topics = await getCollection("topics");
 ---
 

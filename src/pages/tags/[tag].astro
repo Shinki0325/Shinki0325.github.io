@@ -1,24 +1,19 @@
 ---
-import { getCollection } from "astro:content";
 import ArticleCard from "../../components/ArticleCard.astro";
 import NoteCard from "../../components/NoteCard.astro";
+import {
+  getPublishedArticles,
+  getPublishedNotes,
+  getPublishedTags
+} from "../../lib/public-content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
-const articles = await getCollection("articles");
-const notes = await getCollection("notes");
-const tags = [...new Set([...articles.flatMap((entry) => entry.data.tags), ...notes.flatMap((entry) => entry.data.tags)])];
+const articles = await getPublishedArticles();
+const notes = await getPublishedNotes();
+const tags = await getPublishedTags();
 
 export async function getStaticPaths() {
-  const articles = await getCollection("articles");
-  const notes = await getCollection("notes");
-  const tags = [
-    ...new Set([
-      ...articles.flatMap((entry) => entry.data.tags),
-      ...notes.flatMap((entry) => entry.data.tags)
-    ])
-  ];
-
-  return tags.map((tag) => ({
+  return (await getPublishedTags()).map((tag) => ({
     params: { tag }
   }));
 }
