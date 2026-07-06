@@ -8,7 +8,8 @@
     "preview": "astro preview",
     "test": "vitest run",
     "test:e2e": "playwright test",
-    "check": "astro check"
+    "check": "astro check",
+    "docs:check": "node -e \"import('node:fs').then(fs => fs.accessSync('docs/authoring.md'))\""
   },
   "dependencies": {
     "astro": "^5.0.0",
