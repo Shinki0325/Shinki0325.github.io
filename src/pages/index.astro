@@ -1,0 +1,37 @@
+---
+import { getCollection } from "astro:content";
+import ArticleCard from "../components/ArticleCard.astro";
+import NoteCard from "../components/NoteCard.astro";
+import TopicCard from "../components/TopicCard.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const byDateDesc = <T extends { data: { date: Date } }>(a: T, b: T) =>
+  b.data.date.getTime() - a.data.date.getTime();
+
+const articles = (await getCollection("articles")).sort(byDateDesc);
+const notes = (await getCollection("notes")).sort(byDateDesc);
+const topics = await getCollection("topics");
+---
+
+<BaseLayout>
+  <section class="panel stack">
+    <h2>Latest Articles</h2>
+    <div class="grid cards">
+      {articles.slice(0, 5).map((entry) => <ArticleCard entry={entry} />)}
+    </div>
+  </section>
+
+  <section class="panel stack">
+    <h2>Recent Notes</h2>
+    <div class="grid cards">
+      {notes.slice(0, 8).map((entry) => <NoteCard entry={entry} />)}
+    </div>
+  </section>
+
+  <section class="panel stack">
+    <h2>Topics</h2>
+    <div class="grid cards">
+      {topics.slice(0, 6).map((entry) => <TopicCard entry={entry} />)}
+    </div>
+  </section>
+</BaseLayout>

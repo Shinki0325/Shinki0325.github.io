@@ -1,0 +1,40 @@
+---
+import "../styles/global.css";
+import { siteDescription, siteTitle } from "../data/site";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = siteTitle, description = siteDescription } = Astro.props;
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+  </head>
+  <body>
+    <main class="shell stack">
+      <header class="hero">
+        <div class="eyebrow">Shinki Archive</div>
+        <h1>{siteTitle}</h1>
+        <p>{siteDescription}</p>
+        <nav class="nav">
+          <a href="/">Home</a>
+          <a href="/articles/">Articles</a>
+          <a href="/notes/">Notes</a>
+          <a href="/topics/">Topics</a>
+          <a href="/archive/">Archive</a>
+          <a href="/about/">About</a>
+          <a href="/links/">Links</a>
+        </nav>
+      </header>
+      <slot />
+    </main>
+  </body>
+</html>

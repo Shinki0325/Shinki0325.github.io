@@ -1,0 +1,22 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+
+interface Props {
+  title: string;
+  summary?: string;
+  date?: Date;
+}
+
+const { title, summary, date } = Astro.props;
+---
+
+<BaseLayout title={title} description={summary}>
+  <article class="prose">
+    <header>
+      <h1>{title}</h1>
+      {date && <p class="muted">{date.toISOString().slice(0, 10)}</p>}
+      {summary && <p>{summary}</p>}
+    </header>
+    <slot />
+  </article>
+</BaseLayout>

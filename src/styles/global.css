@@ -15,3 +15,86 @@ body {
   color: var(--ink);
   font-family: "Source Han Serif SC", "Noto Serif SC", serif;
 }
+
+a {
+  color: inherit;
+  text-decoration-color: var(--accent);
+}
+
+main.shell {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+
+.hero,
+.panel,
+.prose,
+.card {
+  background: color-mix(in srgb, var(--paper) 90%, white 10%);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  box-shadow: 0 16px 40px rgba(70, 46, 28, 0.08);
+}
+
+.hero,
+.panel,
+.prose {
+  padding: 24px;
+}
+
+.stack {
+  display: grid;
+  gap: 24px;
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+}
+
+.grid.cards {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.card {
+  padding: 18px;
+}
+
+.eyebrow {
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.inline-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+}
+
+.inline-list a {
+  display: inline-block;
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.nav a {
+  text-decoration: none;
+}

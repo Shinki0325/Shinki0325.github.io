@@ -1,0 +1,25 @@
+---
+import { getCollection, render } from "astro:content";
+import TagList from "../../components/TagList.astro";
+import PostLayout from "../../layouts/PostLayout.astro";
+
+export async function getStaticPaths() {
+  const entries = await getCollection("notes");
+  return entries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry }
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<PostLayout
+  title={entry.data.title ?? "Untitled note"}
+  summary={entry.data.source}
+  date={entry.data.date}
+>
+  <TagList tags={entry.data.tags} />
+  <Content />
+</PostLayout>

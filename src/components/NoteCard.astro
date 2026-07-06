@@ -1,0 +1,9 @@
+---
+const { entry } = Astro.props;
+---
+
+<article class="card">
+  <div class="eyebrow">{entry.data.date.toISOString().slice(0, 10)}</div>
+  <h3><a href={`/notes/${entry.slug}/`}>{entry.data.title ?? "Untitled note"}</a></h3>
+  <p>{entry.body.slice(0, 120)}</p>
+</article>

@@ -1,0 +1,11 @@
+---
+const { tags = [] } = Astro.props;
+---
+
+{tags.length > 0 && (
+  <ul class="inline-list">
+    {tags.map((tag: string) => (
+      <li><a href={`/tags/${tag}/`}>{tag}</a></li>
+    ))}
+  </ul>
+)}

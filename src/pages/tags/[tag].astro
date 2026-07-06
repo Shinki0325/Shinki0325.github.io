@@ -1,0 +1,40 @@
+---
+import { getCollection } from "astro:content";
+import ArticleCard from "../../components/ArticleCard.astro";
+import NoteCard from "../../components/NoteCard.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const articles = await getCollection("articles");
+const notes = await getCollection("notes");
+const tags = [...new Set([...articles.flatMap((entry) => entry.data.tags), ...notes.flatMap((entry) => entry.data.tags)])];
+
+export async function getStaticPaths() {
+  const articles = await getCollection("articles");
+  const notes = await getCollection("notes");
+  const tags = [
+    ...new Set([
+      ...articles.flatMap((entry) => entry.data.tags),
+      ...notes.flatMap((entry) => entry.data.tags)
+    ])
+  ];
+
+  return tags.map((tag) => ({
+    params: { tag }
+  }));
+}
+
+const { tag } = Astro.params;
+const taggedArticles = articles.filter((entry) => entry.data.tags.includes(tag ?? ""));
+const taggedNotes = notes.filter((entry) => entry.data.tags.includes(tag ?? ""));
+---
+
+<BaseLayout title={`Tag: ${tag}`}>
+  <section class="panel stack">
+    <h2>Tag: {tag}</h2>
+    {tags.length > 0 && <p class="muted">Browse items grouped under this label.</p>}
+    <div class="grid cards">
+      {taggedArticles.map((entry) => <ArticleCard entry={entry} />)}
+      {taggedNotes.map((entry) => <NoteCard entry={entry} />)}
+    </div>
+  </section>
+</BaseLayout>

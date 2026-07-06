@@ -1,0 +1,18 @@
+---
+import { getCollection } from "astro:content";
+import NoteCard from "../../components/NoteCard.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const notes = (await getCollection("notes")).sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime()
+);
+---
+
+<BaseLayout title="Notes">
+  <section class="panel stack">
+    <h2>Notes</h2>
+    <div class="grid cards">
+      {notes.map((entry) => <NoteCard entry={entry} />)}
+    </div>
+  </section>
+</BaseLayout>

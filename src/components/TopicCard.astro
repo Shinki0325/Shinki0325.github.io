@@ -1,0 +1,9 @@
+---
+const { entry } = Astro.props;
+---
+
+<article class="card">
+  <div class="eyebrow">Topic</div>
+  <h3><a href={`/topics/${entry.slug}/`}>{entry.data.title}</a></h3>
+  <p>{entry.data.description}</p>
+</article>

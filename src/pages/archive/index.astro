@@ -1,0 +1,37 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const articleItems = (await getCollection("articles")).map((entry) => ({
+  type: "Article",
+  title: entry.data.title,
+  slug: `/articles/${entry.slug}/`,
+  date: entry.data.date
+}));
+
+const noteItems = (await getCollection("notes")).map((entry) => ({
+  type: "Note",
+  title: entry.data.title ?? "Untitled note",
+  slug: `/notes/${entry.slug}/`,
+  date: entry.data.date
+}));
+
+const items = [...articleItems, ...noteItems].sort(
+  (a, b) => b.date.getTime() - a.date.getTime()
+);
+---
+
+<BaseLayout title="Archive">
+  <section class="panel stack">
+    <h2>Archive</h2>
+    <ul>
+      {items.map((item) => (
+        <li>
+          <span class="muted">{item.date.toISOString().slice(0, 10)} · {item.type}</span>
+          {" "}
+          <a href={item.slug}>{item.title}</a>
+        </li>
+      ))}
+    </ul>
+  </section>
+</BaseLayout>
