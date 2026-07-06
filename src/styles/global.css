@@ -1,0 +1,17 @@
+:root {
+  --bg: #f5f0e8;
+  --paper: #fffaf2;
+  --ink: #1f1a17;
+  --muted: #6f655d;
+  --accent: #b15c2e;
+  --line: #dccfbe;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at top, #fff5de 0%, var(--bg) 55%, #efe6d8 100%);
+  color: var(--ink);
+  font-family: "Source Han Serif SC", "Noto Serif SC", serif;
+}
