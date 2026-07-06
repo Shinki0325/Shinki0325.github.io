@@ -1,0 +1,31 @@
+name: Deploy public site
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11
+
+      - run: pnpm install --frozen-lockfile
+      - run: node scripts/assert-public-content.mjs
+      - run: node ./node_modules/astro/astro.js build
+
+      - name: Publish to Shinki0325.github.io
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          personal_token: ${{ secrets.PAGES_DEPLOY_TOKEN }}
+          external_repository: Shinki0325/Shinki0325.github.io
+          publish_dir: ./dist
+          publish_branch: master
