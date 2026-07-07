@@ -67,7 +67,7 @@ const noteSummary =
 
   <HomeSearchBar client:load items={searchItems} placeholder={siteShell.search?.placeholder ?? "搜索站内内容..."} />
 
-  <section class="home-hero-shell glass-panel" data-home-hero>
+  <section class="home-hero-shell" data-home-hero>
     <div class="home-hero-grid">
       <article class="home-profile-card glass-card" data-home-profile-card>
         <div class="home-profile-card__top">
@@ -88,24 +88,19 @@ const noteSummary =
               <p class="home-profile-bio">{siteShell.profile?.bio ?? siteShell.hero.description}</p>
             ) : null}
             {siteShell.hero.title ? <p class="home-profile-note">{siteShell.hero.title}</p> : null}
-            <div class="home-identity-brand">
-              <span>{siteShell.brand.title}</span>
-              <span class="brand-separator">{siteShell.brand.suffix}</span>
-              <span>{siteShell.brand.after}</span>
-            </div>
           </div>
         </div>
 
         <div class="home-profile-footer">
-          <div class="home-hero-actions">
-            {latestScript && (
-              <a class="primary-button" href={`/articles/${latestScript.slug}/`}>
-                进入当前文稿
-              </a>
-            )}
-            <a class="ghost-button" href="/references/">
-              打开资料库
-            </a>
+          <div class="home-stat-grid">
+            <article class="home-stat-card">
+              <strong>{articles.length}</strong>
+              <span>文稿</span>
+            </article>
+            <article class="home-stat-card">
+              <strong>{references.length}</strong>
+              <span>条目</span>
+            </article>
           </div>
 
           <div class="home-social-row">

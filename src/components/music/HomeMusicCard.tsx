@@ -1,4 +1,5 @@
 import { useStore } from "@nanostores/react";
+import { siteShell } from "../../config/site-shell";
 import { musicState, setCurrentTrack, setPlayback } from "./store";
 
 const formatTime = (value: number) => {
@@ -37,7 +38,7 @@ export default function HomeMusicCard() {
           <img
             alt={track ? `${track.title} 封面` : "默认封面"}
             referrerPolicy="no-referrer"
-            src={track?.coverUrl ?? "/uploads/ui/music-cover-fallback.jpg"}
+            src={track?.coverUrl ?? siteShell.music.fallbackCover}
           />
           <span className="home-player-cover__core" />
         </div>

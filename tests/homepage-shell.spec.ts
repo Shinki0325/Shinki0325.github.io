@@ -47,20 +47,29 @@ test("homepage resolves remote lyric urls into visible lyric text", async ({ pag
   await expect(page.locator("[data-home-lyric-bar]")).toContainText("第一句");
 });
 
-test("homepage hero keeps the simplified balanced card layout", async ({ page }) => {
+test("homepage hero matches the requested asymmetric profile layout", async ({ page }) => {
   await page.goto("/");
 
-  await expect(page.locator(".home-stat-grid")).toHaveCount(0);
+  await expect(page.locator("[data-home-hero].glass-panel")).toHaveCount(0);
+  await expect(page.locator(".home-identity-brand")).toHaveCount(0);
+  await expect(page.locator(".home-hero-actions")).toHaveCount(0);
+  await expect(page.locator(".home-stat-grid")).toHaveCount(1);
+  await expect(page.locator(".home-stat-grid .home-stat-card")).toHaveCount(2);
+  await expect(page.locator(".home-stat-grid")).toContainText("文稿");
+  await expect(page.locator(".home-stat-grid")).toContainText("条目");
   await expect(page.locator(".home-social-row .home-social-button")).toHaveCount(3);
   await expect(page.locator('.home-social-row a[title="邮箱"]')).toHaveAttribute("href", /^mailto:/);
 
-  const socialButtonSize = await page.locator(".home-social-row .home-social-button").first().evaluate((node) => {
+  const socialButtonMetrics = await page.locator(".home-social-row .home-social-button").first().evaluate((node) => {
     const styles = window.getComputedStyle(node);
     return {
       width: Number.parseFloat(styles.width),
       height: Number.parseFloat(styles.height),
     };
   });
+  const profileRadius = await page.locator("[data-home-profile-card]").evaluate((node) =>
+    Number.parseFloat(window.getComputedStyle(node).borderTopLeftRadius),
+  );
   const [profileBox, musicBox] = await Promise.all([
     page.locator("[data-home-profile-card]").boundingBox(),
     page.locator("[data-home-music-card]").boundingBox(),
@@ -78,9 +87,11 @@ test("homepage hero keeps the simplified balanced card layout", async ({ page })
 
   expect(profileBox).not.toBeNull();
   expect(musicBox).not.toBeNull();
+  expect((profileBox?.width ?? 0)).toBeGreaterThan((musicBox?.width ?? 0));
   expect(Math.abs((profileBox?.height ?? 0) - (musicBox?.height ?? 0))).toBeLessThanOrEqual(2);
-  expect(socialButtonSize.width).toBeGreaterThanOrEqual(52);
-  expect(socialButtonSize.height).toBeGreaterThanOrEqual(52);
+  expect(profileRadius).toBeGreaterThanOrEqual(24);
+  expect(socialButtonMetrics.width).toBeGreaterThanOrEqual(50);
+  expect(socialButtonMetrics.height).toBeGreaterThanOrEqual(50);
   expect(musicTitleMetrics.height).toBeGreaterThan(0);
   expect(musicTitleMetrics.lineHeight).toBeGreaterThan(0);
   expect(musicTitleMetrics.height / musicTitleMetrics.lineHeight).toBeLessThanOrEqual(2.2);

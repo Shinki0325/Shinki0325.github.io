@@ -26,11 +26,7 @@
     "资料持续整理中",
     "部分页面含双语对照阅读"
   ],
-  "backgroundImages": [
-    "/uploads/ui/bg-1.jpg",
-    "/uploads/ui/bg-2.jpg",
-    "/uploads/ui/bg-3.jpg"
-  ],
+  "backgroundImages": [],
   "music": {
     "apiBaseUrl": "https://api.injahow.cn/meting/",
     "server": "netease",
@@ -42,7 +38,7 @@
       "30482309"
     ],
     "idleLyric": "Ciallo～(∠・ω )⌒☆",
-    "fallbackCover": "/uploads/ui/music-cover-fallback.jpg"
+    "fallbackCover": "https://s1.ax1x.com/2023/07/28/pCx6j3R.jpg"
   },
   "blocks": [
     {
