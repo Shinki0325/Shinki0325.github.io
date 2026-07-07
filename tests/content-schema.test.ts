@@ -56,4 +56,29 @@ describe("content collections", () => {
     expect(parsed.readingBlocks[0]?.translation).toBe("中文译文");
     expect(parsed.readingBlocks[0]?.focus).toBe(true);
   });
+
+  it("applies default reading values for references", () => {
+    const minimalParsed = referenceSchema.parse({
+      title: "Minimal Reference",
+      kind: "source",
+      date: "2026-07-07",
+      summary: "Defaults should be applied."
+    });
+
+    const blockParsed = referenceSchema.parse({
+      title: "Reading Block Default",
+      kind: "source",
+      date: "2026-07-07",
+      summary: "Reading block focus should default to false.",
+      readingBlocks: [
+        {
+          original: "Only original text"
+        }
+      ]
+    });
+
+    expect(minimalParsed.readingMode).toBe("extract");
+    expect(minimalParsed.readingBlocks).toEqual([]);
+    expect(blockParsed.readingBlocks[0]?.focus).toBe(false);
+  });
 });
