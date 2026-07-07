@@ -24,7 +24,18 @@ const latestNote = notes[0] ?? null;
 const searchItems = buildHomeSearchIndex({ articles, notes, references });
 const githubHref = siteShell.social?.github ?? "";
 const bilibiliHref = siteShell.social?.bilibili ?? "";
-const emailHref = siteShell.social?.email ?? "";
+const normalizeSocialHref = (value: string | undefined, kind: "email" | "url") => {
+  if (!value) {
+    return "";
+  }
+
+  if (kind === "email" && !value.startsWith("mailto:")) {
+    return `mailto:${value}`;
+  }
+
+  return value;
+};
+const emailHref = normalizeSocialHref(siteShell.social?.email, "email");
 
 const formatDate = (value: Date | string | undefined) => {
   if (!value) {
@@ -73,29 +84,16 @@ const noteSummary =
           <div class="home-profile-copy">
             <p class="eyebrow">{siteShell.hero.eyebrow}</p>
             <h1>{siteShell.profile?.displayName ?? siteShell.brand.title}</h1>
-            <p class="home-profile-bio">{siteShell.profile?.bio ?? siteShell.hero.description}</p>
-            <p class="home-profile-note">{siteShell.hero.title}</p>
+            {(siteShell.profile?.bio ?? siteShell.hero.description) ? (
+              <p class="home-profile-bio">{siteShell.profile?.bio ?? siteShell.hero.description}</p>
+            ) : null}
+            {siteShell.hero.title ? <p class="home-profile-note">{siteShell.hero.title}</p> : null}
             <div class="home-identity-brand">
               <span>{siteShell.brand.title}</span>
               <span class="brand-separator">{siteShell.brand.suffix}</span>
               <span>{siteShell.brand.after}</span>
             </div>
           </div>
-        </div>
-
-        <div class="home-stat-grid">
-          <article class="home-stat-card">
-            <span>公开文稿</span>
-            <strong>{articles.length}</strong>
-          </article>
-          <article class="home-stat-card">
-            <span>公开资料</span>
-            <strong>{references.length}</strong>
-          </article>
-          <article class="home-stat-card">
-            <span>公开笔记</span>
-            <strong>{notes.length}</strong>
-          </article>
         </div>
 
         <div class="home-profile-footer">

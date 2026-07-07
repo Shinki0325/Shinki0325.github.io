@@ -6,7 +6,7 @@
     "dev": "astro dev",
     "dev:manager": "pnpm --filter @maki/manager dev",
     "dev:manager:server": "pnpm --filter @maki/manager server",
-    "build": "rm -rf .astro && astro build",
+    "build": "rm -rf .astro dist && astro build",
     "build:manager": "pnpm --filter @maki/manager build",
     "preview": "astro preview",
     "test": "vitest run",
