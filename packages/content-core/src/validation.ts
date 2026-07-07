@@ -5,9 +5,15 @@ export type LinkValidationResult = {
 };
 
 export const validatePublicLinks = (graph: ReferenceGraph): LinkValidationResult => {
-  const errors: string[] = [];
+  const errors = [...graph.ambiguousKeys.entries()].map(
+    ([key, slugs]) => `Ambiguous reference key "${key}" matches ${slugs.join(", ")}`
+  );
 
   for (const item of graph.links) {
+    if (graph.ambiguousKeys.has(item.normalizedTarget)) {
+      continue;
+    }
+
     if (!item.targetSlug) {
       errors.push(`Broken internal link in ${item.entry.slug}: ${item.link.target}`);
       continue;

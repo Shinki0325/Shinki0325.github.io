@@ -71,6 +71,60 @@ describe("reference graph", () => {
     );
   });
 
+  it("surfaces ambiguous normalized reference keys as validation errors", () => {
+    const graph = buildReferenceGraph(
+      [
+        {
+          slug: "ref-a",
+          title: "Same Name",
+          aliases: [],
+          visibility: "public",
+          body: ""
+        },
+        {
+          slug: "ref-b",
+          title: "Other Name",
+          aliases: ["same name"],
+          visibility: "public",
+          body: ""
+        }
+      ],
+      [
+        {
+          slug: "video-script",
+          title: "Video Script",
+          visibility: "public",
+          body: "[[Same Name]]"
+        }
+      ]
+    );
+
+    expect(validatePublicLinks(graph).errors).toContain(
+      'Ambiguous reference key "same name" matches ref-a, ref-b'
+    );
+  });
+
+  it("parses aliases, quoted comma values, and private visibility with the validation parser", async () => {
+    const { parseContentFile } = await import("../scripts/assert-public-content.mjs");
+
+    const parsed = parseContentFile(
+      `---
+title: "Complex Reference"
+aliases:
+  - Alpha
+  - "Beta, Gamma"
+visibility: private
+draft: false
+---
+[[Alpha]]`
+    );
+
+    expect(parsed.metadata.aliases).toEqual(["Alpha", "Beta, Gamma"]);
+    expect(parsed.metadata.visibility).toBe("private");
+    expect(parsed.metadata.draft).toBe(false);
+    expect(parsed.body).toBe("[[Alpha]]");
+  });
+
   it("wires public validation through a TypeScript-capable runtime", () => {
     const packageJson = JSON.parse(
       fs.readFileSync(new URL("../package.json", import.meta.url), "utf8")

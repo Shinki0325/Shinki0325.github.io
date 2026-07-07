@@ -25,6 +25,7 @@ export type GraphLink = {
 export type ReferenceGraph = {
   titleLookup: Map<string, string>;
   referencesBySlug: Map<string, ReferenceNode>;
+  ambiguousKeys: Map<string, string[]>;
   backlinks: Record<string, string[]>;
   links: GraphLink[];
 };
@@ -32,10 +33,32 @@ export type ReferenceGraph = {
 const normalizeReferenceKey = (value: string) =>
   value.trim().toLocaleLowerCase();
 
-const addLookup = (lookup: Map<string, string>, key: string, slug: string) => {
+const addLookup = (
+  lookup: Map<string, string>,
+  ambiguousKeys: Map<string, string[]>,
+  key: string,
+  slug: string
+) => {
   const normalized = normalizeReferenceKey(key);
 
-  if (!normalized || lookup.has(normalized)) {
+  if (!normalized) {
+    return;
+  }
+
+  const existingAmbiguous = ambiguousKeys.get(normalized);
+
+  if (existingAmbiguous) {
+    if (!existingAmbiguous.includes(slug)) {
+      existingAmbiguous.push(slug);
+    }
+    return;
+  }
+
+  const existingSlug = lookup.get(normalized);
+
+  if (existingSlug && existingSlug !== slug) {
+    lookup.delete(normalized);
+    ambiguousKeys.set(normalized, [existingSlug, slug]);
     return;
   }
 
@@ -54,14 +77,15 @@ export const buildReferenceGraph = (
 ): ReferenceGraph => {
   const titleLookup = new Map<string, string>();
   const referencesBySlug = new Map<string, ReferenceNode>();
+  const ambiguousKeys = new Map<string, string[]>();
   const backlinks = Object.fromEntries(references.map((reference) => [reference.slug, [] as string[]]));
 
   for (const reference of references) {
     referencesBySlug.set(reference.slug, reference);
-    addLookup(titleLookup, reference.title, reference.slug);
+    addLookup(titleLookup, ambiguousKeys, reference.title, reference.slug);
 
     for (const alias of reference.aliases) {
-      addLookup(titleLookup, alias, reference.slug);
+      addLookup(titleLookup, ambiguousKeys, alias, reference.slug);
     }
   }
 
@@ -88,6 +112,7 @@ export const buildReferenceGraph = (
   return {
     titleLookup,
     referencesBySlug,
+    ambiguousKeys,
     backlinks,
     links
   };
