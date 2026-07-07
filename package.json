@@ -17,6 +17,7 @@
     "validate:public": "tsx scripts/assert-public-content.mjs"
   },
   "dependencies": {
+    "@maki/content-core": "workspace:*",
     "astro": "^5.0.0",
     "gray-matter": "^4.0.3",
     "zod": "^3.23.8"

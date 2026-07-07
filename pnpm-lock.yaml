@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@maki/content-core':
+        specifier: workspace:*
+        version: link:packages/content-core
       astro:
         specifier: ^5.0.0
         version: 5.18.2(@types/node@22.20.0)(rollup@4.62.2)(tsx@4.23.0)(typescript@5.9.3)(yaml@2.9.0)

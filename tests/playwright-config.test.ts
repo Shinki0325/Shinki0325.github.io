@@ -61,4 +61,12 @@ describe("playwright config", () => {
     expect(existsSync("manager/src/main.ts")).toBe(true);
     expect(existsSync("manager/server/index.ts")).toBe(true);
   });
+
+  it("declares the shared content-core package for the root site", () => {
+    const rootPackage = JSON.parse(readFileSync("package.json", "utf8")) as {
+      dependencies?: Record<string, string>;
+    };
+
+    expect(rootPackage.dependencies?.["@maki/content-core"]).toBe("workspace:*");
+  });
 });
