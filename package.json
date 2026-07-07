@@ -4,12 +4,16 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
+    "dev:manager": "pnpm --filter @maki/manager dev",
     "build": "astro build",
+    "build:manager": "pnpm --filter @maki/manager build",
     "preview": "astro preview",
     "test": "vitest run",
     "test:e2e": "playwright test",
     "check": "astro check",
-    "docs:check": "node -e \"import('node:fs').then(fs => fs.accessSync('docs/authoring.md'))\""
+    "docs:check": "node -e \"import('node:fs').then(fs => fs.accessSync('docs/authoring.md'))\"",
+    "check:links": "playwright test",
+    "validate:public": "pnpm build"
   },
   "dependencies": {
     "astro": "^5.0.0",
