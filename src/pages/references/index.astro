@@ -1,16 +1,22 @@
 ---
 import ReferenceCard from "../../components/ReferenceCard.astro";
+import { loadReferencesConfig } from "../../lib/home-config";
 import { getPublishedReferences } from "../../lib/public-content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
+const config = await loadReferencesConfig();
 const references = await getPublishedReferences();
 ---
 
-<BaseLayout title="Reference Library" description="Public references and topic pages.">
-  <section class="panel stack">
-    <h2>Reference Library</h2>
-    <div class="grid cards">
-      {references.map((entry) => <ReferenceCard entry={entry} />)}
-    </div>
-  </section>
+<BaseLayout title={config.title} description={config.description}>
+  {
+    config.blocks.map((block) => (
+      <section class="panel stack">
+        <h2>{block.title}</h2>
+        <div class="grid cards">
+          {references.slice(0, block.limit).map((entry) => <ReferenceCard entry={entry} />)}
+        </div>
+      </section>
+    ))
+  }
 </BaseLayout>

@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    {
+      "type": "article-list",
+      "title": "Latest Scripts",
+      "limit": 5
+    },
+    {
+      "type": "reference-list",
+      "title": "Reference Library",
+      "limit": 8
+    }
+  ]
+}

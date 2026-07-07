@@ -1,10 +1,15 @@
 import { expect, test } from "@playwright/test";
 
-test("homepage exposes the three core sections", async ({ page }) => {
+test("homepage shows configured article and reference cards", async ({ page }) => {
   await page.goto("/");
-  await expect(page.getByRole("heading", { name: "Latest Articles" })).toBeVisible();
-  await expect(page.getByRole("heading", { name: "Recent Notes" })).toBeVisible();
-  await expect(page.getByRole("heading", { name: "Topics" })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Welcome Back" })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Example Public Reference" })).toBeVisible();
+});
+
+test("homepage exposes config blocks", async ({ page }) => {
+  await page.goto("/");
+  await expect(page.getByRole("heading", { name: "Latest Scripts" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Reference Library" })).toBeVisible();
 });
 
 test("articles index shows migrated legacy content", async ({ page }) => {

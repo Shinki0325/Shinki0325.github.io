@@ -1,35 +1,41 @@
 ---
 import ArticleCard from "../components/ArticleCard.astro";
-import NoteCard from "../components/NoteCard.astro";
-import TopicCard from "../components/TopicCard.astro";
-import { getPublishedArticles, getPublishedNotes } from "../lib/public-content";
+import ReferenceCard from "../components/ReferenceCard.astro";
+import { loadHomeConfig } from "../lib/home-config";
+import { getPublishedArticles, getPublishedReferences } from "../lib/public-content";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { getCollection } from "astro:content";
 
+const config = await loadHomeConfig();
 const articles = await getPublishedArticles();
-const notes = await getPublishedNotes();
-const topics = await getCollection("topics");
+const references = await getPublishedReferences();
 ---
 
 <BaseLayout>
-  <section class="panel stack">
-    <h2>Latest Articles</h2>
-    <div class="grid cards">
-      {articles.slice(0, 5).map((entry) => <ArticleCard entry={entry} />)}
-    </div>
-  </section>
+  {
+    config.blocks.map((block) => {
+      if (block.type === "article-list") {
+        const entries = articles
+          .filter((entry) => !block.articleType || entry.data.type === block.articleType)
+          .slice(0, block.limit);
 
-  <section class="panel stack">
-    <h2>Recent Notes</h2>
-    <div class="grid cards">
-      {notes.slice(0, 8).map((entry) => <NoteCard entry={entry} />)}
-    </div>
-  </section>
+        return (
+          <section class="panel stack">
+            <h2>{block.title}</h2>
+            <div class="grid cards">
+              {entries.map((entry) => <ArticleCard entry={entry} />)}
+            </div>
+          </section>
+        );
+      }
 
-  <section class="panel stack">
-    <h2>Topics</h2>
-    <div class="grid cards">
-      {topics.slice(0, 6).map((entry) => <TopicCard entry={entry} />)}
-    </div>
-  </section>
+      return (
+        <section class="panel stack">
+          <h2>{block.title}</h2>
+          <div class="grid cards">
+            {references.slice(0, block.limit).map((entry) => <ReferenceCard entry={entry} />)}
+          </div>
+        </section>
+      );
+    })
+  }
 </BaseLayout>

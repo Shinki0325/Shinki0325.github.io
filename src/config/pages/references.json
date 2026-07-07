@@ -1,0 +1,11 @@
+{
+  "title": "Reference Library",
+  "description": "Public references and topic pages.",
+  "blocks": [
+    {
+      "type": "reference-list",
+      "title": "Reference Library",
+      "limit": 100
+    }
+  ]
+}
