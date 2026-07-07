@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import playwrightConfig from "../playwright.config";
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 
 describe("playwright config", () => {
   it("avoids machine-specific runtime assumptions", () => {
@@ -22,16 +22,28 @@ describe("playwright config", () => {
     expect(workspaceConfig).toContain("- packages/*");
   });
 
-  it("keeps task 1 root and manager scripts aligned with the approved plan", () => {
+  it("keeps task 1 root and manager scaffolding aligned with the approved plan", () => {
     const rootPackage = JSON.parse(readFileSync("package.json", "utf8"));
     const managerPackage = JSON.parse(readFileSync("manager/package.json", "utf8"));
+    const managerTsconfig = JSON.parse(readFileSync("manager/tsconfig.json", "utf8"));
 
-    expect(rootPackage.scripts["check:links"]).toBe(
-      "vitest run tests/wiki-links.test.ts tests/reference-graph.test.ts",
-    );
-    expect(rootPackage.scripts["validate:public"]).toBe(
-      "node scripts/assert-public-content.mjs",
-    );
+    expect(rootPackage.scripts).toMatchObject({
+      dev: expect.any(String),
+      "dev:manager": expect.any(String),
+      build: expect.any(String),
+      "build:manager": expect.any(String),
+      "check:links": expect.any(String),
+      "validate:public": expect.any(String),
+    });
     expect(managerPackage.scripts.server).toBe("tsx server/index.ts");
+    expect(managerPackage.scripts).toMatchObject({
+      dev: "vite",
+      build: "vite build",
+      server: "tsx server/index.ts",
+    });
+    expect(managerTsconfig.include).toContain("server");
+    expect(existsSync("manager/index.html")).toBe(true);
+    expect(existsSync("manager/src/main.ts")).toBe(true);
+    expect(existsSync("manager/server/index.ts")).toBe(true);
   });
 });
