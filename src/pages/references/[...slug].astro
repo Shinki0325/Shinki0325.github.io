@@ -7,17 +7,35 @@ import { getPublishedArticles, getPublishedNotes, getPublishedReferences } from 
 import { createReferenceIndex } from "../../lib/reference-index";
 
 export async function getStaticPaths() {
+  const makeEntryId = (collection: "references" | "articles" | "notes", slug: string) =>
+    `${collection}:${slug}`;
+
   const [references, articles, notes] = await Promise.all([
     getPublishedReferences(),
     getPublishedArticles(),
     getPublishedNotes()
   ]);
 
-  const graph = createReferenceIndex(references, [...articles, ...notes]);
+  const graph = createReferenceIndex(
+    references.map((entry) => ({
+      ...entry,
+      slug: makeEntryId("references", entry.slug)
+    })),
+    [
+      ...articles.map((entry) => ({
+        ...entry,
+        slug: makeEntryId("articles", entry.slug)
+      })),
+      ...notes.map((entry) => ({
+        ...entry,
+        slug: makeEntryId("notes", entry.slug)
+      }))
+    ]
+  );
   const sourceLookup = new Map<string, { href: string; kind: string; title: string }>();
 
   for (const reference of references) {
-    sourceLookup.set(reference.slug, {
+    sourceLookup.set(makeEntryId("references", reference.slug), {
       href: `/references/${reference.slug}/`,
       kind: reference.data.kind === "source" ? "Reference source" : "Reference topic",
       title: reference.data.title
@@ -25,7 +43,7 @@ export async function getStaticPaths() {
   }
 
   for (const article of articles) {
-    sourceLookup.set(article.slug, {
+    sourceLookup.set(makeEntryId("articles", article.slug), {
       href: `/articles/${article.slug}/`,
       kind: "Article",
       title: article.data.title
@@ -33,7 +51,7 @@ export async function getStaticPaths() {
   }
 
   for (const note of notes) {
-    sourceLookup.set(note.slug, {
+    sourceLookup.set(makeEntryId("notes", note.slug), {
       href: `/notes/${note.slug}/`,
       kind: "Note",
       title: note.data.title ?? "Untitled note"
@@ -44,14 +62,14 @@ export async function getStaticPaths() {
     params: { slug: entry.slug },
     props: {
       entry,
-      backlinks: (graph.backlinks[entry.slug] ?? []).map((slug) => {
-        const match = sourceLookup.get(slug);
+      backlinks: (graph.backlinks[makeEntryId("references", entry.slug)] ?? []).map((entryId) => {
+        const match = sourceLookup.get(entryId);
 
         return (
           match ?? {
             href: "#",
             kind: "Entry",
-            title: slug
+            title: entryId
           }
         );
       })

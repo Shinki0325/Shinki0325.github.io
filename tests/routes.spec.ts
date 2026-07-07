@@ -35,5 +35,15 @@ test("reference index shows the public reference library", async ({ page }) => {
 
 test("reference detail page shows backlinks", async ({ page }) => {
   await page.goto("/references/example-public-reference/");
+  await expect(page.getByRole("heading", { name: "Reference Details" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Referenced By" })).toBeVisible();
+  await expect(page.getByText("Example Public Source")).toBeVisible();
+
+  const topicBacklink = page.getByRole("link", { name: "Example Topic Reference" });
+  await expect(topicBacklink).toBeVisible();
+  await expect(topicBacklink).toHaveAttribute("href", "/references/example-topic-reference/");
+
+  const collisionBacklink = page.getByRole("link", { name: "Welcome Reference" });
+  await expect(collisionBacklink).toBeVisible();
+  await expect(collisionBacklink).toHaveAttribute("href", "/references/welcome/");
 });
