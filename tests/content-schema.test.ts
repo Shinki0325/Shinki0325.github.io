@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
-import { referenceSchema } from "../packages/content-core/src/schemas";
+import { referenceSchema } from "../packages/content-core/src/index";
 
 vi.mock("@maki/content-core", async () => import("../packages/content-core/src/index.ts"));
 vi.mock("astro:content", async () => {

@@ -1,14 +1,18 @@
-const PUBLIC_COLLECTIONS = new Set(["articles", "notes", "topics", "references"]);
+export const PUBLIC_CONTENT_COLLECTIONS = [
+  "articles",
+  "notes",
+  "topics",
+  "references"
+] as const;
+
+const PUBLIC_COLLECTIONS = new Set<string>(PUBLIC_CONTENT_COLLECTIONS);
 
 export const isPublicCollection = (collection: string) =>
   PUBLIC_COLLECTIONS.has(collection);
 
-export const publicContentGlob = [
-  "src/content/articles/**/*",
-  "src/content/notes/**/*",
-  "src/content/topics/**/*",
-  "src/content/references/**/*"
-];
+export const publicContentGlob = PUBLIC_CONTENT_COLLECTIONS.map(
+  (collection) => `src/content/${collection}/**/*`
+);
 
 type EntryWithDraft = {
   data: {
