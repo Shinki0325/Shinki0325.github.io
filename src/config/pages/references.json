@@ -1,10 +1,10 @@
 {
-  "title": "Reference Library",
-  "description": "Public references and topic pages.",
+  "title": "资料库",
+  "description": "公开参考资料与专题页面。",
   "blocks": [
     {
       "type": "reference-list",
-      "title": "Reference Library",
+      "title": "资料库",
       "limit": 100
     }
   ]

@@ -1,3 +1,5 @@
-export const siteTitle = "Shinki";
-export const siteDescription =
-  "A personal archive for long-form writing, notes, and image-backed ideas.";
+import { siteShell } from "../config/site-shell";
+
+export const siteTitle = `${siteShell.brand.title} ${siteShell.brand.suffix} ${siteShell.brand.after}`;
+
+export const siteDescription = siteShell.hero.description;

@@ -1,0 +1,721 @@
+﻿网站上传资料包_20260707
+- 00_说明
+  [FILE] 00_说明\README_资料包说明.md
+- 01_正文与成稿
+  [FILE] 01_正文与成稿\黄金年代.md
+  [FILE] 01_正文与成稿\视频稿结构版 开头至地域格差.md
+  [FILE] 01_正文与成稿\杂谈 为什么90年代是galgame真正意义上的黄金年代.md
+- 02_研究笔记与对照
+  [FILE] 02_研究笔记与对照\X原推讨论整理 hide_yuki7777 2026131732542689338.md
+  [FILE] 02_研究笔记与对照\短稿断言清单.md
+  [FILE] 02_研究笔记与对照\核心参考对照表.md
+  [FILE] 02_研究笔记与对照\视频稿穿插表 推特主串版.md
+  [FILE] 02_研究笔记与对照\新增补搜 当时玩家怎么买怎么玩黄油.md
+  [FILE] 02_研究笔记与对照\新增补搜 世嘉土星销量与地方追番细节.md
+- 03_原始转录
+  [FILE] 03_原始转录\eroge.lrc
+- 04_网页归档
+  [DIR] 04_网页归档\web_archive
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\ActorSafetyLists
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\AmountExtractionHeuristicRegexes
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\CaptchaProviders
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\CertificateRevocation
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\component_crx_cache
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\component_crx_cache\metadata.json
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Crashpad
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Crashpad\attachments
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Crashpad\metadata
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Crashpad\reports
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Crashpad\settings.dat
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\CrashpadMetrics-active.pma
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Crowd Deny
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Account Web Data
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Account Web Data-journal
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Affiliation Database
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Affiliation Database-journal
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\AutofillAiModelCache
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\AutofillAiModelCache\LOCK
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\AutofillAiModelCache\LOG
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\AutofillStrikeDatabase
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\AutofillStrikeDatabase\LOCK
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\AutofillStrikeDatabase\LOG
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\blob_storage
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\blob_storage\85353e3b-667a-4b6e-9569-fcb8c1382d65
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\BookmarkMergedSurfaceOrdering
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\BrowsingTopicsSiteData
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\BrowsingTopicsSiteData-journal
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\BrowsingTopicsState
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\BudgetDatabase
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\BudgetDatabase\LOCK
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\BudgetDatabase\LOG
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Cache
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Cache\Cache_Data
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Cache\Cache_Data\data_0
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Cache\Cache_Data\data_1
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Cache\Cache_Data\data_2
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Cache\Cache_Data\data_3
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Cache\Cache_Data\index
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Cache\No_Vary_Search
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Cache\No_Vary_Search\journal.baj
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Cache\No_Vary_Search\snapshot.baf
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\chrome_cart_db
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\chrome_cart_db\LOCK
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\chrome_cart_db\LOG
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\ClientCertificates
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\ClientCertificates\LOCK
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\ClientCertificates\LOG
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Code Cache
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Code Cache\js
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Code Cache\js\ba678a2fbd8c358c_0
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Code Cache\js\index
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Code Cache\js\index-dir
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Code Cache\js\index-dir\the-real-index
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Code Cache\wasm
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Code Cache\wasm\index
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Code Cache\wasm\index-dir
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Code Cache\wasm\index-dir\the-real-index
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\commerce_subscription_db
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\commerce_subscription_db\LOCK
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\commerce_subscription_db\LOG
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\DawnGraphiteCache
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\DawnGraphiteCache\data_0
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\DawnGraphiteCache\data_1
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\DawnGraphiteCache\data_2
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\DawnGraphiteCache\data_3
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\DawnGraphiteCache\index
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\DawnWebGPUCache
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\DawnWebGPUCache\data_0
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\DawnWebGPUCache\data_1
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\DawnWebGPUCache\data_2
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\DawnWebGPUCache\data_3
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\DawnWebGPUCache\index
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\DIPS
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\DIPS-wal
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\discount_infos_db
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\discount_infos_db\LOCK
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\discount_infos_db\LOG
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\discounts_db
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\discounts_db\LOCK
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\discounts_db\LOG
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Download Service
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Download Service\EntryDB
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Download Service\EntryDB\LOCK
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Download Service\EntryDB\LOG
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Download Service\Files
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Download Service\Files\未确认 346567.crdownload
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\engine_allowlist.bf
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extension Rules
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extension Rules\000003.log
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extension Rules\CURRENT
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extension Rules\LOCK
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extension Rules\LOG
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extension Rules\MANIFEST-000001
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extension Scripts
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extension Scripts\000003.log
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extension Scripts\CURRENT
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extension Scripts\LOCK
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extension Scripts\LOG
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extension Scripts\MANIFEST-000001
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extension State
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extension State\000003.log
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extension State\CURRENT
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extension State\LOCK
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extension State\LOG
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extension State\MANIFEST-000001
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\_locales
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\_locales\zh_CN
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\_locales\zh_CN\messages.json
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\_locales\zh_TW
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\_locales\zh_TW\messages.json
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\_metadata
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\_metadata\verified_contents.json
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\assets
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\assets\background.js-96c9fe96.js
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\assets\chrome-runtime-promise-71a4e0c4.css
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\assets\chrome-runtime-promise-fcd5d99a.js
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\assets\close@2x.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\assets\content.css
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\assets\content.js-c1c147bd.js
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\assets\content.js-loader-58705284.js
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\assets\content-292a538b.css
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\assets\extension_logo.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\assets\footer_logo.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\assets\icon19_disabled.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\assets\icon19_normal.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\assets\icon19_pageDisable.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\assets\index-7b1b919b.js
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\assets\install_logo.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\assets\logo@2x.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\assets\menu_logo copy.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\assets\menu_logo.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\assets\modulepreload-polyfill-2ad73d06.js
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\assets\options.html-00931483.js
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\assets\options-5397978f.css
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\assets\popup.html-c5ecd74b.js
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\assets\popup-261c28b8.css
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\assets\runtime-dom.esm-bundler-65457635.js
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\assets\stat-b988e0dc.js
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\assets\tick.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\assets\tool-aa30449a.js
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\assets\util-2d803e2a.js
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\assets\xl-images-611f39f0.js
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\assets\xl-images-998ea1e9.css
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\manifest.json
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\options.html
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\popup.html
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\service-worker-loader.js
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\ncennffkjdiamlpmcbajkmaiiiddgioo\3.52.5_0\xl-images.html
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Extensions\Temp
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Favicons
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Favicons-journal
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\GCM Store
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\GCM Store\000003.log
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\GCM Store\CURRENT
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\GCM Store\Encryption
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\GCM Store\Encryption\000003.log
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\GCM Store\Encryption\CURRENT
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\GCM Store\Encryption\LOCK
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\GCM Store\Encryption\LOG
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\GCM Store\Encryption\MANIFEST-000001
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\GCM Store\LOCK
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\GCM Store\LOG
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\GCM Store\MANIFEST-000001
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\GPUCache
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\GPUCache\data_0
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\GPUCache\data_1
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\GPUCache\data_2
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\GPUCache\data_3
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\GPUCache\index
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\heavy_ad_intervention_opt_out.db
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\heavy_ad_intervention_opt_out.db-journal
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\History
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\History-journal
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Local Storage
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Local Storage\leveldb
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Local Storage\leveldb\000003.log
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Local Storage\leveldb\CURRENT
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Local Storage\leveldb\LOCK
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Local Storage\leveldb\LOG
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Local Storage\leveldb\MANIFEST-000001
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\LOCK
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\LOG
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Login Data
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Login Data For Account
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Login Data For Account-journal
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Login Data-journal
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Network
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Network Action Predictor
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Network Action Predictor-journal
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Network\Cookies
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Network\Cookies-journal
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Network\Device Bound Sessions
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Network\Device Bound Sessions-journal
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Network\Network Persistent State
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Network\NetworkDataMigrated
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Network\Reporting and NEL
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Network\Reporting and NEL-journal
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Network\Trust Tokens
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Network\Trust Tokens-journal
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\optimization_guide_hint_cache_store
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\optimization_guide_hint_cache_store\LOCK
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\optimization_guide_hint_cache_store\LOG
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\parcel_tracking_db
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\parcel_tracking_db\LOCK
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\parcel_tracking_db\LOG
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\PersistentOriginTrials
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\PersistentOriginTrials\LOCK
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\PersistentOriginTrials\LOG
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Preferences
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\PreferredApps
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\README
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Safe Browsing Network
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Safe Browsing Network\NetworkDataMigrated
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Safe Browsing Network\Safe Browsing Cookies
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Safe Browsing Network\Safe Browsing Cookies-journal
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Secure Preferences
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Segmentation Platform
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Segmentation Platform\SegmentInfoDB
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Segmentation Platform\SegmentInfoDB\LOCK
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Segmentation Platform\SegmentInfoDB\LOG
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Segmentation Platform\SignalDB
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Segmentation Platform\SignalDB\LOCK
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Segmentation Platform\SignalDB\LOG
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Segmentation Platform\SignalStorageConfigDB
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Segmentation Platform\SignalStorageConfigDB\LOCK
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Segmentation Platform\SignalStorageConfigDB\LOG
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\ServerCertificate
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\ServerCertificate-journal
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Service Worker
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Service Worker\Database
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Service Worker\Database\000003.log
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Service Worker\Database\CURRENT
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Service Worker\Database\LOCK
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Service Worker\Database\LOG
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Service Worker\Database\MANIFEST-000001
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Service Worker\ScriptCache
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Service Worker\ScriptCache\2cc80dabc69f58b6_0
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Service Worker\ScriptCache\4cb013792b196a35_0
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Service Worker\ScriptCache\4cb013792b196a35_1
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Service Worker\ScriptCache\index
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Service Worker\ScriptCache\index-dir
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Service Worker\ScriptCache\index-dir\the-real-index
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Session Storage
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Session Storage\000003.log
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Session Storage\CURRENT
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Session Storage\LOCK
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Session Storage\LOG
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Session Storage\MANIFEST-000001
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Sessions
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Sessions\Session_13427276876974181
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Shared Dictionary
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Shared Dictionary\cache
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Shared Dictionary\cache\index
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Shared Dictionary\cache\index-dir
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Shared Dictionary\cache\index-dir\the-real-index
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Shared Dictionary\db
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Shared Dictionary\db-journal
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\shared_proto_db
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\shared_proto_db\000003.log
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\shared_proto_db\CURRENT
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\shared_proto_db\LOCK
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\shared_proto_db\LOG
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\shared_proto_db\MANIFEST-000001
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\shared_proto_db\metadata
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\shared_proto_db\metadata\000003.log
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\shared_proto_db\metadata\CURRENT
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\shared_proto_db\metadata\LOCK
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\shared_proto_db\metadata\LOG
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\shared_proto_db\metadata\MANIFEST-000001
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Shortcuts
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Shortcuts-journal
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Site Characteristics Database
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Site Characteristics Database\000003.log
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Site Characteristics Database\CURRENT
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Site Characteristics Database\LOCK
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Site Characteristics Database\LOG
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Site Characteristics Database\MANIFEST-000001
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Sync Data
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Sync Data\LevelDB
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Sync Data\LevelDB\000003.log
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Sync Data\LevelDB\CURRENT
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Sync Data\LevelDB\LOCK
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Sync Data\LevelDB\LOG
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Sync Data\LevelDB\MANIFEST-000001
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Top Sites
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Top Sites-journal
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\trusted_vault.pb
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\aghbiahbpaijignceidepookljebhfak
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\aghbiahbpaijignceidepookljebhfak\Icons
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\aghbiahbpaijignceidepookljebhfak\Icons Maskable
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\aghbiahbpaijignceidepookljebhfak\Icons Monochrome
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\aghbiahbpaijignceidepookljebhfak\Icons\128.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\aghbiahbpaijignceidepookljebhfak\Icons\192.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\aghbiahbpaijignceidepookljebhfak\Icons\256.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\aghbiahbpaijignceidepookljebhfak\Icons\32.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\aghbiahbpaijignceidepookljebhfak\Icons\48.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\aghbiahbpaijignceidepookljebhfak\Icons\64.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\aghbiahbpaijignceidepookljebhfak\Icons\96.png
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\aghbiahbpaijignceidepookljebhfak\Trusted Icons
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\aghbiahbpaijignceidepookljebhfak\Trusted Icons\Icons
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\aghbiahbpaijignceidepookljebhfak\Trusted Icons\Icons Maskable
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\aghbiahbpaijignceidepookljebhfak\Trusted Icons\Icons Monochrome
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\aghbiahbpaijignceidepookljebhfak\Trusted Icons\Icons\192.png
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\agimnkijcaahngcdmfeangaknmldooml
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\agimnkijcaahngcdmfeangaknmldooml\Icons
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\agimnkijcaahngcdmfeangaknmldooml\Icons Maskable
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\agimnkijcaahngcdmfeangaknmldooml\Icons Monochrome
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\agimnkijcaahngcdmfeangaknmldooml\Icons\128.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\agimnkijcaahngcdmfeangaknmldooml\Icons\192.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\agimnkijcaahngcdmfeangaknmldooml\Icons\256.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\agimnkijcaahngcdmfeangaknmldooml\Icons\32.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\agimnkijcaahngcdmfeangaknmldooml\Icons\48.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\agimnkijcaahngcdmfeangaknmldooml\Icons\64.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\agimnkijcaahngcdmfeangaknmldooml\Icons\96.png
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\agimnkijcaahngcdmfeangaknmldooml\Trusted Icons
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\agimnkijcaahngcdmfeangaknmldooml\Trusted Icons\Icons
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\agimnkijcaahngcdmfeangaknmldooml\Trusted Icons\Icons Maskable
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\agimnkijcaahngcdmfeangaknmldooml\Trusted Icons\Icons Monochrome
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\agimnkijcaahngcdmfeangaknmldooml\Trusted Icons\Icons\192.png
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\fhihpiojkbmbpdjeoajapmgkhlnakfjf
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\fhihpiojkbmbpdjeoajapmgkhlnakfjf\Icons
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\fhihpiojkbmbpdjeoajapmgkhlnakfjf\Icons Maskable
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\fhihpiojkbmbpdjeoajapmgkhlnakfjf\Icons Monochrome
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\fhihpiojkbmbpdjeoajapmgkhlnakfjf\Icons\128.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\fhihpiojkbmbpdjeoajapmgkhlnakfjf\Icons\192.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\fhihpiojkbmbpdjeoajapmgkhlnakfjf\Icons\256.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\fhihpiojkbmbpdjeoajapmgkhlnakfjf\Icons\32.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\fhihpiojkbmbpdjeoajapmgkhlnakfjf\Icons\48.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\fhihpiojkbmbpdjeoajapmgkhlnakfjf\Icons\64.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\fhihpiojkbmbpdjeoajapmgkhlnakfjf\Icons\96.png
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\fhihpiojkbmbpdjeoajapmgkhlnakfjf\Trusted Icons
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\fhihpiojkbmbpdjeoajapmgkhlnakfjf\Trusted Icons\Icons
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\fhihpiojkbmbpdjeoajapmgkhlnakfjf\Trusted Icons\Icons Maskable
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\fhihpiojkbmbpdjeoajapmgkhlnakfjf\Trusted Icons\Icons Monochrome
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\fhihpiojkbmbpdjeoajapmgkhlnakfjf\Trusted Icons\Icons\192.png
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\fmgjjmmmlfnkbppncabfkddbjimcfncm
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\fmgjjmmmlfnkbppncabfkddbjimcfncm\Icons
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\fmgjjmmmlfnkbppncabfkddbjimcfncm\Icons Maskable
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\fmgjjmmmlfnkbppncabfkddbjimcfncm\Icons Monochrome
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\fmgjjmmmlfnkbppncabfkddbjimcfncm\Icons\128.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\fmgjjmmmlfnkbppncabfkddbjimcfncm\Icons\192.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\fmgjjmmmlfnkbppncabfkddbjimcfncm\Icons\256.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\fmgjjmmmlfnkbppncabfkddbjimcfncm\Icons\32.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\fmgjjmmmlfnkbppncabfkddbjimcfncm\Icons\48.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\fmgjjmmmlfnkbppncabfkddbjimcfncm\Icons\64.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\fmgjjmmmlfnkbppncabfkddbjimcfncm\Icons\96.png
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\fmgjjmmmlfnkbppncabfkddbjimcfncm\Trusted Icons
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\fmgjjmmmlfnkbppncabfkddbjimcfncm\Trusted Icons\Icons
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\fmgjjmmmlfnkbppncabfkddbjimcfncm\Trusted Icons\Icons Maskable
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\fmgjjmmmlfnkbppncabfkddbjimcfncm\Trusted Icons\Icons Monochrome
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\fmgjjmmmlfnkbppncabfkddbjimcfncm\Trusted Icons\Icons\192.png
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\kefjledonklijopmnomlcbpllchaibag
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\kefjledonklijopmnomlcbpllchaibag\Icons
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\kefjledonklijopmnomlcbpllchaibag\Icons Maskable
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\kefjledonklijopmnomlcbpllchaibag\Icons Monochrome
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\kefjledonklijopmnomlcbpllchaibag\Icons\128.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\kefjledonklijopmnomlcbpllchaibag\Icons\192.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\kefjledonklijopmnomlcbpllchaibag\Icons\256.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\kefjledonklijopmnomlcbpllchaibag\Icons\32.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\kefjledonklijopmnomlcbpllchaibag\Icons\48.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\kefjledonklijopmnomlcbpllchaibag\Icons\64.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\kefjledonklijopmnomlcbpllchaibag\Icons\96.png
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\kefjledonklijopmnomlcbpllchaibag\Trusted Icons
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\kefjledonklijopmnomlcbpllchaibag\Trusted Icons\Icons
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\kefjledonklijopmnomlcbpllchaibag\Trusted Icons\Icons Maskable
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\kefjledonklijopmnomlcbpllchaibag\Trusted Icons\Icons Monochrome
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\kefjledonklijopmnomlcbpllchaibag\Trusted Icons\Icons\192.png
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\mpnpojknpmmopombnjdcgaaiekajbnjb
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\mpnpojknpmmopombnjdcgaaiekajbnjb\Icons
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\mpnpojknpmmopombnjdcgaaiekajbnjb\Icons Maskable
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\mpnpojknpmmopombnjdcgaaiekajbnjb\Icons Monochrome
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\mpnpojknpmmopombnjdcgaaiekajbnjb\Icons\128.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\mpnpojknpmmopombnjdcgaaiekajbnjb\Icons\192.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\mpnpojknpmmopombnjdcgaaiekajbnjb\Icons\256.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\mpnpojknpmmopombnjdcgaaiekajbnjb\Icons\32.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\mpnpojknpmmopombnjdcgaaiekajbnjb\Icons\48.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\mpnpojknpmmopombnjdcgaaiekajbnjb\Icons\64.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\mpnpojknpmmopombnjdcgaaiekajbnjb\Icons\96.png
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\mpnpojknpmmopombnjdcgaaiekajbnjb\Trusted Icons
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\mpnpojknpmmopombnjdcgaaiekajbnjb\Trusted Icons\Icons
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\mpnpojknpmmopombnjdcgaaiekajbnjb\Trusted Icons\Icons Maskable
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\mpnpojknpmmopombnjdcgaaiekajbnjb\Trusted Icons\Icons Monochrome
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\mpnpojknpmmopombnjdcgaaiekajbnjb\Trusted Icons\Icons\192.png
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\pommaclcbfghclhalboakcipcmmndhcj
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\pommaclcbfghclhalboakcipcmmndhcj\Icons
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\pommaclcbfghclhalboakcipcmmndhcj\Icons Maskable
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\pommaclcbfghclhalboakcipcmmndhcj\Icons Monochrome
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\pommaclcbfghclhalboakcipcmmndhcj\Icons\128.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\pommaclcbfghclhalboakcipcmmndhcj\Icons\192.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\pommaclcbfghclhalboakcipcmmndhcj\Icons\256.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\pommaclcbfghclhalboakcipcmmndhcj\Icons\32.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\pommaclcbfghclhalboakcipcmmndhcj\Icons\48.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\pommaclcbfghclhalboakcipcmmndhcj\Icons\64.png
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\pommaclcbfghclhalboakcipcmmndhcj\Icons\96.png
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\pommaclcbfghclhalboakcipcmmndhcj\Trusted Icons
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\pommaclcbfghclhalboakcipcmmndhcj\Trusted Icons\Icons
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\pommaclcbfghclhalboakcipcmmndhcj\Trusted Icons\Icons Maskable
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\pommaclcbfghclhalboakcipcmmndhcj\Trusted Icons\Icons Monochrome
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Manifest Resources\pommaclcbfghclhalboakcipcmmndhcj\Trusted Icons\Icons\192.png
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Applications\Temp
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Data
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\Web Data-journal
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\WebStorage
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\WebStorage\QuotaManager
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Default\WebStorage\QuotaManager-journal
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\extensions_crx_cache
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\extensions_crx_cache\metadata.json
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\FileTypePolicies
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\first_party_sets.db
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\first_party_sets.db-journal
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\FirstPartySetsPreloaded
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\GPUPersistentCache
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\GPUPersistentCache\DawnGraphiteCache
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\GPUPersistentCache\DawnGraphiteCache\4NKVHR4EC6BINKNWJV25JYUXV4UNF3DT
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\GPUPersistentCache\DawnGraphiteCache\4NKVHR4EC6BINKNWJV25JYUXV4UNF3DT\cache.db
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\GPUPersistentCache\DawnGraphiteCache\4NKVHR4EC6BINKNWJV25JYUXV4UNF3DT\cache.db-wal
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\GPUPersistentCache\DawnGraphiteCache\4NKVHR4EC6BINKNWJV25JYUXV4UNF3DT\cache.journal
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\GrShaderCache
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\GrShaderCache\data_0
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\GrShaderCache\data_1
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\GrShaderCache\data_2
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\GrShaderCache\data_3
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\GrShaderCache\index
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\hyphen-data
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Last Browser
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Last Version
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Local State
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\MEIPreload
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\OnDeviceHeadSuggestModel
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\15
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\15\63922A0C010C80A5
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\15\63922A0C010C80A5\F59DABD883D2E7F9
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\15\63922A0C010C80A5\F59DABD883D2E7F9\model.tflite
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\15\63922A0C010C80A5\F59DABD883D2E7F9\model-info.pb
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\15\63922A0C010C80A5\F59DABD883D2E7F9\override_list.pb.gz
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\15\63922A0C010C80A5\F59DABD883D2E7F9\VERSION.txt
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\2
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\2\63922A0C010C80A5
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\2\63922A0C010C80A5\C3BCB6638B156144
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\2\63922A0C010C80A5\C3BCB6638B156144\model.tflite
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\2\63922A0C010C80A5\C3BCB6638B156144\model-info.pb
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\20
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\20\63922A0C010C80A5
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\20\63922A0C010C80A5\A94E2CA037417070
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\20\63922A0C010C80A5\A94E2CA037417070\model.tflite
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\20\63922A0C010C80A5\A94E2CA037417070\model-info.pb
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\25
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\25\63922A0C010C80A5
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\25\63922A0C010C80A5\5B1D09F4B52EDEF4
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\25\63922A0C010C80A5\5B1D09F4B52EDEF4\model.tflite
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\25\63922A0C010C80A5\5B1D09F4B52EDEF4\model-info.pb
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\25\63922A0C010C80A5\5B1D09F4B52EDEF4\visual_model_desktop.tflite
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\26
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\26\63922A0C010C80A5
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\26\63922A0C010C80A5\9F387C382AA8B834
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\26\63922A0C010C80A5\9F387C382AA8B834\model.tflite
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\26\63922A0C010C80A5\9F387C382AA8B834\model-info.pb
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\45
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\45\63922A0C010C80A5
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\45\63922A0C010C80A5\EF4E5C0D081FFD0F
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\45\63922A0C010C80A5\EF4E5C0D081FFD0F\model.tflite
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\45\63922A0C010C80A5\EF4E5C0D081FFD0F\model-info.pb
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\9
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\9\63922A0C010C80A5
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\9\63922A0C010C80A5\D78C22ADECA3C757
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\9\63922A0C010C80A5\D78C22ADECA3C757\model.tflite
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\optimization_guide_model_store\9\63922A0C010C80A5\D78C22ADECA3C757\model-info.pb
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\OptimizationHints
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\OriginTrials
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\PKIMetadata
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\PrivacySandboxAttestationsPreloaded
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\RecoveryImproved
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Safe Browsing
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\SafetyTips
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\segmentation_platform
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\segmentation_platform\ukm_db
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\segmentation_platform\ukm_db-wal
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\ShaderCache
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\ShaderCache\data_0
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\ShaderCache\data_1
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\ShaderCache\data_2
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\ShaderCache\data_3
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\ShaderCache\index
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\SSLErrorAssistant
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Subresource Filter
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Subresource Filter\Unindexed Rules
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\TrustTokenKeyCommitments
+  [FILE] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\Variations
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\WasmTtsEngine
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\WidevineCdm
+  [DIR] 04_网页归档\web_archive\.shot-profile-67508b00-0c60-4056-ac41-079d83dd5318\ZxcvbnData
+  [FILE] 04_网页归档\web_archive\archive_page.ps1
+  [DIR] 04_网页归档\web_archive\pages
+  [FILE] 04_网页归档\web_archive\pages\ameblo.jp_notchi-official_entry-12652608940.html__manual20260630.html
+  [FILE] 04_网页归档\web_archive\pages\ameblo.jp_notchi-official_entry-12652608940.html__manual20260630.json
+  [FILE] 04_网页归档\web_archive\pages\blog.toppy.net_1077821__wsl20260630.html
+  [FILE] 04_网页归档\web_archive\pages\blog.toppy.net_1077821__wsl20260630.json
+  [FILE] 04_网页归档\web_archive\pages\eizo22.blog.fc2.com_blog-entry-270.html__wsl20260630.html
+  [FILE] 04_网页归档\web_archive\pages\eizo22.blog.fc2.com_blog-entry-270.html__wsl20260630.json
+  [FILE] 04_网页归档\web_archive\pages\gamesdata.info_soft-ps.html__wsl20260630.html
+  [FILE] 04_网页归档\web_archive\pages\gamesdata.info_soft-ps.html__wsl20260630.json
+  [FILE] 04_网页归档\web_archive\pages\gamesdata.info_soft-ss.html__wsl20260630.html
+  [FILE] 04_网页归档\web_archive\pages\gamesdata.info_soft-ss.html__wsl20260630.json
+  [FILE] 04_网页归档\web_archive\pages\ja.wikipedia.org_wiki_E-LOGIN__wsl20260630.html
+  [FILE] 04_网页归档\web_archive\pages\ja.wikipedia.org_wiki_E-LOGIN__wsl20260630.json
+  [FILE] 04_网页归档\web_archive\pages\ja.wikipedia.org_wiki_TECH_GIAN__wsl20260630.html
+  [FILE] 04_网页归档\web_archive\pages\ja.wikipedia.org_wiki_TECH_GIAN__wsl20260630.json
+  [FILE] 04_网页归档\web_archive\pages\ja.wikipedia.org_wiki_To_Heart__manual20260630.html
+  [FILE] 04_网页归档\web_archive\pages\ja.wikipedia.org_wiki_To_Heart__manual20260630.json
+  [FILE] 04_网页归档\web_archive\pages\ja.wikipedia.org_wiki_この世の果てで恋を唄う少女YU-NO__manual_localcache20260630.html
+  [FILE] 04_网页归档\web_archive\pages\ja.wikipedia.org_wiki_この世の果てで恋を唄う少女YU-NO__manual_localcache20260630.json
+  [FILE] 04_网页归档\web_archive\pages\ja.wikipedia.org_wiki_この世の果てで恋を唄う少女YU-NO__manual20260630.html
+  [FILE] 04_网页归档\web_archive\pages\ja.wikipedia.org_wiki_この世の果てで恋を唄う少女YU-NO__manual20260630.json
+  [FILE] 04_网页归档\web_archive\pages\ja.wikipedia.org_wiki_ニフティサーブ__wsl20260630.html
+  [FILE] 04_网页归档\web_archive\pages\ja.wikipedia.org_wiki_ニフティサーブ__wsl20260630.json
+  [FILE] 04_网页归档\web_archive\pages\ja.wikipedia.org_wiki_パソコン通信__wsl20260630.html
+  [FILE] 04_网页归档\web_archive\pages\ja.wikipedia.org_wiki_パソコン通信__wsl20260630.json
+  [FILE] 04_网页归档\web_archive\pages\ja.wikipedia.org_wiki_同級生_ゲーム__wsl20260630.html
+  [FILE] 04_网页归档\web_archive\pages\ja.wikipedia.org_wiki_同級生_ゲーム__wsl20260630.json
+  [FILE] 04_网页归档\web_archive\pages\ja.wikipedia.org_wiki_同級生2__wsl20260630.html
+  [FILE] 04_网页归档\web_archive\pages\ja.wikipedia.org_wiki_同級生2__wsl20260630.json
+  [FILE] 04_网页归档\web_archive\pages\minkara.carview.co.jp_userid_1329862_blog_24981676__wsl20260630.html
+  [FILE] 04_网页归档\web_archive\pages\minkara.carview.co.jp_userid_1329862_blog_24981676__wsl20260630.json
+  [FILE] 04_网页归档\web_archive\pages\museum.ipsj.or.jp_computer_personal_0011.html__939b9c4b.html
+  [FILE] 04_网页归档\web_archive\pages\museum.ipsj.or.jp_computer_personal_0011.html__939b9c4b.json
+  [FILE] 04_网页归档\web_archive\pages\mypage.otsuka-shokai.co.jp_contents_business-oyakudachi_it-history_chapter008_pc9800series.html__65803837.html
+  [FILE] 04_网页归档\web_archive\pages\mypage.otsuka-shokai.co.jp_contents_business-oyakudachi_it-history_chapter008_pc9800series.html__65803837.json
+  [FILE] 04_网页归档\web_archive\pages\news.denfaminicogamer.jp_interview_250325e__9c9db57f.html
+  [FILE] 04_网页归档\web_archive\pages\news.denfaminicogamer.jp_interview_250325e__9c9db57f.json
+  [FILE] 04_网页归档\web_archive\pages\news.denfaminicogamer.jp_interview_250325e_2__a1ac9de9.html
+  [FILE] 04_网页归档\web_archive\pages\news.denfaminicogamer.jp_interview_250325e_2__a1ac9de9.json
+  [FILE] 04_网页归档\web_archive\pages\nlab.itmedia.co.jp_cont_articles_3266363__wsl20260630.html
+  [FILE] 04_网页归档\web_archive\pages\nlab.itmedia.co.jp_cont_articles_3266363__wsl20260630.json
+  [FILE] 04_网页归档\web_archive\pages\note.com_chiyo_bb_n_n1384603c4f59__wsl20260630.html
+  [FILE] 04_网页归档\web_archive\pages\note.com_chiyo_bb_n_n1384603c4f59__wsl20260630.json
+  [FILE] 04_网页归档\web_archive\pages\note.com_kenbo_0518_n_n18c794665137__wsl20260630.html
+  [FILE] 04_网页归档\web_archive\pages\note.com_kenbo_0518_n_n18c794665137__wsl20260630.json
+  [FILE] 04_网页归档\web_archive\pages\note.com_komichi_akari_n_n40e32a2fbe64__wsl20260630.html
+  [FILE] 04_网页归档\web_archive\pages\note.com_komichi_akari_n_n40e32a2fbe64__wsl20260630.json
+  [FILE] 04_网页归档\web_archive\pages\note.com_komichi_akari_n_n85c99881960d__08bb85b7.html
+  [FILE] 04_网页归档\web_archive\pages\note.com_komichi_akari_n_n85c99881960d__08bb85b7.json
+  [FILE] 04_网页归档\web_archive\pages\pc.watch.impress.co.jp_docs_article_961205_nec.htm__manual20260630.html
+  [FILE] 04_网页归档\web_archive\pages\pc.watch.impress.co.jp_docs_article_961205_nec.htm__manual20260630.json
+  [FILE] 04_网页归档\web_archive\pages\p-shirokuma.hatenadiary.com_entry_20060830_p1__manual20260630.html
+  [FILE] 04_网页归档\web_archive\pages\p-shirokuma.hatenadiary.com_entry_20060830_p1__manual20260630.json
+  [FILE] 04_网页归档\web_archive\pages\setoalpha.hatenablog.com_entry_2019_08_12_024509__manual20260630.html
+  [FILE] 04_网页归档\web_archive\pages\setoalpha.hatenablog.com_entry_2019_08_12_024509__manual20260630.json
+  [FILE] 04_网页归档\web_archive\pages\togetter.com_li_2668171__4a86ea4a.html
+  [FILE] 04_网页归档\web_archive\pages\togetter.com_li_2668171__4a86ea4a.json
+  [FILE] 04_网页归档\web_archive\pages\togetter.com_li_2668171_page_2__24a35198.html
+  [FILE] 04_网页归档\web_archive\pages\togetter.com_li_2668171_page_2__24a35198.json
+  [FILE] 04_网页归档\web_archive\pages\urbanlife.tokyo_post_33057__wsl20260630.html
+  [FILE] 04_网页归档\web_archive\pages\urbanlife.tokyo_post_33057__wsl20260630.json
+  [FILE] 04_网页归档\web_archive\pages\www.bilibili.com_opus_426753993553749222_spm_id_from_333.1387.0.0__18967494.html
+  [FILE] 04_网页归档\web_archive\pages\www.bilibili.com_opus_426753993553749222_spm_id_from_333.1387.0.0__18967494.json
+  [FILE] 04_网页归档\web_archive\pages\www.bilibili.com_opus_429253436890299534_spm_id_from_333.1387.0.0__01daf7fa.html
+  [FILE] 04_网页归档\web_archive\pages\www.bilibili.com_opus_429253436890299534_spm_id_from_333.1387.0.0__01daf7fa.json
+  [FILE] 04_网页归档\web_archive\pages\www.bilibili.com_opus_456816952148364853_spm_id_from_333.1387.0.0__4d8e29e0.html
+  [FILE] 04_网页归档\web_archive\pages\www.bilibili.com_opus_456816952148364853_spm_id_from_333.1387.0.0__4d8e29e0.json
+  [FILE] 04_网页归档\web_archive\pages\www.bilibili.com_opus_587090409816858132_spm_id_from_333.1387.0.0__bb56e9b3.html
+  [FILE] 04_网页归档\web_archive\pages\www.bilibili.com_opus_587090409816858132_spm_id_from_333.1387.0.0__bb56e9b3.json
+  [FILE] 04_网页归档\web_archive\pages\www.bilibili.com_opus_810264516919034071_from_search_spm_id_from_333.337.0.0__51bf94f1.html
+  [FILE] 04_网页归档\web_archive\pages\www.bilibili.com_opus_810264516919034071_from_search_spm_id_from_333.337.0.0__51bf94f1.json
+  [FILE] 04_网页归档\web_archive\pages\www.famitsu.com_news_202012_26211397.html__57865262.html
+  [FILE] 04_网页归档\web_archive\pages\www.famitsu.com_news_202012_26211397.html__57865262.json
+  [FILE] 04_网页归档\web_archive\pages\www.famitsu.com_news_202310_29322123.html__6a9fab1a.html
+  [FILE] 04_网页归档\web_archive\pages\www.famitsu.com_news_202310_29322123.html__6a9fab1a.json
+  [FILE] 04_网页归档\web_archive\pages\www.sofmap.co.jp_about_history__manual20260630.html
+  [FILE] 04_网页归档\web_archive\pages\www.sofmap.co.jp_about_history__manual20260630.json
+  [FILE] 04_网页归档\web_archive\pages\www.soumu.go.jp_soutsu_tohoku_digital_decision.html__cc439b14.html
+  [FILE] 04_网页归档\web_archive\pages\www.soumu.go.jp_soutsu_tohoku_digital_decision.html__cc439b14.json
+  [FILE] 04_网页归档\web_archive\pages\www.sunrise-inc.co.jp_work_detail.php_cid_240__b879b2fb.html
+  [FILE] 04_网页归档\web_archive\pages\www.sunrise-inc.co.jp_work_detail.php_cid_240__b879b2fb.json
+  [FILE] 04_网页归档\web_archive\pages\www.tv-tokyo.co.jp_kaisha_company_network.html__6aa8ac40.html
+  [FILE] 04_网页归档\web_archive\pages\www.tv-tokyo.co.jp_kaisha_company_network.html__6aa8ac40.json
+  [FILE] 04_网页归档\web_archive\pages\x.com_hide_yuki7777_status_2026131732542689338__7a775d8c.html
+  [FILE] 04_网页归档\web_archive\pages\x.com_hide_yuki7777_status_2026131732542689338__7a775d8c.json
+  [FILE] 04_网页归档\web_archive\README.md
+  [DIR] 04_网页归档\web_archive\screenshots
+  [FILE] 04_网页归档\web_archive\screenshots\__debug_test.png
+  [FILE] 04_网页归档\web_archive\screenshots\ameblo.jp_notchi-official_entry-12652608940.html__manual20260630.png
+  [FILE] 04_网页归档\web_archive\screenshots\blog.toppy.net_1077821__wsl20260630.png
+  [FILE] 04_网页归档\web_archive\screenshots\blog.toppy.net_1077821__wsl20260630_live.png
+  [FILE] 04_网页归档\web_archive\screenshots\eizo22.blog.fc2.com_blog-entry-270.html__wsl20260630.png
+  [FILE] 04_网页归档\web_archive\screenshots\gamesdata.info_soft-ps.html__wsl20260630.png
+  [FILE] 04_网页归档\web_archive\screenshots\gamesdata.info_soft-ss.html__wsl20260630.png
+  [FILE] 04_网页归档\web_archive\screenshots\ja.wikipedia.org_wiki_E-LOGIN__wsl20260630.png
+  [FILE] 04_网页归档\web_archive\screenshots\ja.wikipedia.org_wiki_TECH_GIAN__wsl20260630.png
+  [FILE] 04_网页归档\web_archive\screenshots\ja.wikipedia.org_wiki_To_Heart__manual20260630.png
+  [FILE] 04_网页归档\web_archive\screenshots\ja.wikipedia.org_wiki_この世の果てで恋を唄う少女YU-NO__manual20260630.png
+  [FILE] 04_网页归档\web_archive\screenshots\ja.wikipedia.org_wiki_ニフティサーブ__wsl20260630.png
+  [FILE] 04_网页归档\web_archive\screenshots\ja.wikipedia.org_wiki_パソコン通信__wsl20260630.png
+  [FILE] 04_网页归档\web_archive\screenshots\ja.wikipedia.org_wiki_同級生_ゲーム__wsl20260630.png
+  [FILE] 04_网页归档\web_archive\screenshots\ja.wikipedia.org_wiki_同級生2__wsl20260630.png
+  [FILE] 04_网页归档\web_archive\screenshots\minkara.carview.co.jp_userid_1329862_blog_24981676__wsl20260630.png
+  [FILE] 04_网页归档\web_archive\screenshots\museum.ipsj.or.jp_computer_personal_0011.html__939b9c4b.png
+  [FILE] 04_网页归档\web_archive\screenshots\mypage.otsuka-shokai.co.jp_contents_business-oyakudachi_it-history_chapter008_pc9800series.html__65803837.png
+  [FILE] 04_网页归档\web_archive\screenshots\news.denfaminicogamer.jp_interview_250325e__9c9db57f.png
+  [FILE] 04_网页归档\web_archive\screenshots\news.denfaminicogamer.jp_interview_250325e_2__a1ac9de9.png
+  [FILE] 04_网页归档\web_archive\screenshots\nlab.itmedia.co.jp_cont_articles_3266363__wsl20260630.png
+  [FILE] 04_网页归档\web_archive\screenshots\note.com_chiyo_bb_n_n1384603c4f59__wsl20260630.png
+  [FILE] 04_网页归档\web_archive\screenshots\note.com_kenbo_0518_n_n18c794665137__wsl20260630.png
+  [FILE] 04_网页归档\web_archive\screenshots\note.com_komichi_akari_n_n40e32a2fbe64__wsl20260630.png
+  [FILE] 04_网页归档\web_archive\screenshots\note.com_komichi_akari_n_n85c99881960d__08bb85b7.png
+  [FILE] 04_网页归档\web_archive\screenshots\pc.watch.impress.co.jp_docs_article_961205_nec.htm__manual20260630.png
+  [FILE] 04_网页归档\web_archive\screenshots\p-shirokuma.hatenadiary.com_entry_20060830_p1__manual20260630.png
+  [FILE] 04_网页归档\web_archive\screenshots\setoalpha.hatenablog.com_entry_2019_08_12_024509__manual20260630.png
+  [FILE] 04_网页归档\web_archive\screenshots\togetter.com_li_2668171__4a86ea4a.png
+  [FILE] 04_网页归档\web_archive\screenshots\togetter.com_li_2668171_page_2__24a35198.png
+  [FILE] 04_网页归档\web_archive\screenshots\urbanlife.tokyo_post_33057__wsl20260630.png
+  [FILE] 04_网页归档\web_archive\screenshots\www.bilibili.com_opus_426753993553749222_spm_id_from_333.1387.0.0__18967494.png
+  [FILE] 04_网页归档\web_archive\screenshots\www.bilibili.com_opus_429253436890299534_spm_id_from_333.1387.0.0__01daf7fa.png
+  [FILE] 04_网页归档\web_archive\screenshots\www.bilibili.com_opus_456816952148364853_spm_id_from_333.1387.0.0__4d8e29e0.png
+  [FILE] 04_网页归档\web_archive\screenshots\www.bilibili.com_opus_587090409816858132_spm_id_from_333.1387.0.0__bb56e9b3.png
+  [FILE] 04_网页归档\web_archive\screenshots\www.bilibili.com_opus_810264516919034071_from_search_spm_id_from_333.337.0.0__51bf94f1.png
+  [FILE] 04_网页归档\web_archive\screenshots\www.famitsu.com_news_202012_26211397.html__57865262.png
+  [FILE] 04_网页归档\web_archive\screenshots\www.famitsu.com_news_202310_29322123.html__6a9fab1a.png
+  [FILE] 04_网页归档\web_archive\screenshots\www.sofmap.co.jp_about_history__manual20260630.png
+  [FILE] 04_网页归档\web_archive\screenshots\www.soumu.go.jp_soutsu_tohoku_digital_decision.html__cc439b14.png
+  [FILE] 04_网页归档\web_archive\screenshots\www.sunrise-inc.co.jp_work_detail.php_cid_240__b879b2fb.png
+  [FILE] 04_网页归档\web_archive\screenshots\www.tv-tokyo.co.jp_kaisha_company_network.html__6aa8ac40.png
+  [FILE] 04_网页归档\web_archive\screenshots\x.com_hide_yuki7777_status_2026131732542689338__7a775d8c.png
+  [FILE] 04_网页归档\web_archive\sources.csv
+  [DIR] 04_网页归档\web_archive\text
+  [FILE] 04_网页归档\web_archive\text\ameblo.jp_notchi-official_entry-12652608940.html__manual20260630.txt
+  [FILE] 04_网页归档\web_archive\text\blog.toppy.net_1077821__wsl20260630.txt
+  [FILE] 04_网页归档\web_archive\text\eizo22.blog.fc2.com_blog-entry-270.html__wsl20260630.txt
+  [FILE] 04_网页归档\web_archive\text\gamesdata.info_soft-ps.html__wsl20260630.txt
+  [FILE] 04_网页归档\web_archive\text\gamesdata.info_soft-ss.html__wsl20260630.txt
+  [FILE] 04_网页归档\web_archive\text\ja.wikipedia.org_wiki_E-LOGIN__wsl20260630.txt
+  [FILE] 04_网页归档\web_archive\text\ja.wikipedia.org_wiki_TECH_GIAN__wsl20260630.txt
+  [FILE] 04_网页归档\web_archive\text\ja.wikipedia.org_wiki_To_Heart__manual20260630.txt
+  [FILE] 04_网页归档\web_archive\text\ja.wikipedia.org_wiki_この世の果てで恋を唄う少女YU-NO__manual_localcache20260630.txt
+  [FILE] 04_网页归档\web_archive\text\ja.wikipedia.org_wiki_この世の果てで恋を唄う少女YU-NO__manual20260630.txt
+  [FILE] 04_网页归档\web_archive\text\ja.wikipedia.org_wiki_ニフティサーブ__wsl20260630.txt
+  [FILE] 04_网页归档\web_archive\text\ja.wikipedia.org_wiki_パソコン通信__wsl20260630.txt
+  [FILE] 04_网页归档\web_archive\text\ja.wikipedia.org_wiki_同級生_ゲーム__wsl20260630.txt
+  [FILE] 04_网页归档\web_archive\text\ja.wikipedia.org_wiki_同級生2__wsl20260630.txt
+  [FILE] 04_网页归档\web_archive\text\minkara.carview.co.jp_userid_1329862_blog_24981676__wsl20260630.txt
+  [FILE] 04_网页归档\web_archive\text\museum.ipsj.or.jp_computer_personal_0011.html__939b9c4b.txt
+  [FILE] 04_网页归档\web_archive\text\mypage.otsuka-shokai.co.jp_contents_business-oyakudachi_it-history_chapter008_pc9800series.html__65803837.txt
+  [FILE] 04_网页归档\web_archive\text\news.denfaminicogamer.jp_interview_250325e__9c9db57f.txt
+  [FILE] 04_网页归档\web_archive\text\news.denfaminicogamer.jp_interview_250325e_2__a1ac9de9.txt
+  [FILE] 04_网页归档\web_archive\text\nlab.itmedia.co.jp_cont_articles_3266363__wsl20260630.txt
+  [FILE] 04_网页归档\web_archive\text\note.com_chiyo_bb_n_n1384603c4f59__wsl20260630.txt
+  [FILE] 04_网页归档\web_archive\text\note.com_kenbo_0518_n_n18c794665137__wsl20260630.txt
+  [FILE] 04_网页归档\web_archive\text\note.com_komichi_akari_n_n40e32a2fbe64__wsl20260630.txt
+  [FILE] 04_网页归档\web_archive\text\note.com_komichi_akari_n_n85c99881960d__08bb85b7.txt
+  [FILE] 04_网页归档\web_archive\text\pc.watch.impress.co.jp_docs_article_961205_nec.htm__manual20260630.txt
+  [FILE] 04_网页归档\web_archive\text\p-shirokuma.hatenadiary.com_entry_20060830_p1__manual20260630.txt
+  [FILE] 04_网页归档\web_archive\text\setoalpha.hatenablog.com_entry_2019_08_12_024509__manual20260630.txt
+  [FILE] 04_网页归档\web_archive\text\togetter.com_li_2668171__4a86ea4a.txt
+  [FILE] 04_网页归档\web_archive\text\togetter.com_li_2668171_page_2__24a35198.txt
+  [FILE] 04_网页归档\web_archive\text\urbanlife.tokyo_post_33057__wsl20260630.txt
+  [FILE] 04_网页归档\web_archive\text\www.bilibili.com_opus_426753993553749222_spm_id_from_333.1387.0.0__18967494.txt
+  [FILE] 04_网页归档\web_archive\text\www.bilibili.com_opus_429253436890299534_spm_id_from_333.1387.0.0__01daf7fa.txt
+  [FILE] 04_网页归档\web_archive\text\www.bilibili.com_opus_456816952148364853_spm_id_from_333.1387.0.0__4d8e29e0.txt
+  [FILE] 04_网页归档\web_archive\text\www.bilibili.com_opus_587090409816858132_spm_id_from_333.1387.0.0__bb56e9b3.txt
+  [FILE] 04_网页归档\web_archive\text\www.bilibili.com_opus_810264516919034071_from_search_spm_id_from_333.337.0.0__51bf94f1.txt
+  [FILE] 04_网页归档\web_archive\text\www.famitsu.com_news_202012_26211397.html__57865262.txt
+  [FILE] 04_网页归档\web_archive\text\www.famitsu.com_news_202310_29322123.html__6a9fab1a.txt
+  [FILE] 04_网页归档\web_archive\text\www.sofmap.co.jp_about_history__manual20260630.txt
+  [FILE] 04_网页归档\web_archive\text\www.soumu.go.jp_soutsu_tohoku_digital_decision.html__cc439b14.txt
+  [FILE] 04_网页归档\web_archive\text\www.sunrise-inc.co.jp_work_detail.php_cid_240__b879b2fb.txt
+  [FILE] 04_网页归档\web_archive\text\www.tv-tokyo.co.jp_kaisha_company_network.html__6aa8ac40.txt
+  [FILE] 04_网页归档\web_archive\text\x.com_hide_yuki7777_status_2026131732542689338__7a775d8c.txt
+  [FILE] 04_网页归档\web_archive\wsl_archive_page.py
+  [FILE] 04_网页归档\web_archive\wsl_fetch_diag.sh
+  [FILE] 04_网页归档\web_archive\wsl_fetch_urls.py
+  [FILE] 04_网页归档\web_archive\wsl_net_diag.sh
+  [FILE] 04_网页归档\web_archive\wsl_ok.txt
+  [FILE] 04_网页归档\web_archive\wsl_urls_batch1.txt
+  [FILE] 04_网页归档\web_archive\wsl_urls_batch1_results.json
+  [FILE] 04_网页归档\web_archive\wsl_urls_batch2.txt
+  [FILE] 04_网页归档\web_archive\wsl_urls_batch2_results.json
+  [FILE] 04_网页归档\web_archive\wsl_urls_batch3.txt
+  [FILE] 04_网页归档\web_archive\wsl_urls_batch3_results.json
+- 99_临时缓存_可忽略
+  [FILE] 99_临时缓存_可忽略\__ddg_furoku_eroge.html
+  [FILE] 99_临时缓存_可忽略\__ddg_local_eroge.html
+  [FILE] 99_临时缓存_可忽略\__ddg_toheart_demo.html
+  [FILE] 99_临时缓存_可忽略\__ps_decoded.html
+  [FILE] 99_临时缓存_可忽略\__ps_u8.html
+  [FILE] 99_临时缓存_可忽略\__ps_utf8.html
+  [FILE] 99_临时缓存_可忽略\__ss_decoded.html
+  [FILE] 99_临时缓存_可忽略\__ss_u8.html
+  [FILE] 99_临时缓存_可忽略\__ss_utf8.html
+  [FILE] 99_临时缓存_可忽略\__tmp_ps.html
+  [FILE] 99_临时缓存_可忽略\__tmp_setoalpha.html
+  [FILE] 99_临时缓存_可忽略\__tmp_shirokuma.html
+  [FILE] 99_临时缓存_可忽略\__tmp_sofmap_history.html
+  [FILE] 99_临时缓存_可忽略\__tmp_ss.html
+  [FILE] 99_临时缓存_可忽略\__toheart_wiki.html
+  [FILE] 99_临时缓存_可忽略\__yuno_wiki.html

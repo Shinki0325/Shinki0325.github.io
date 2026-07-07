@@ -33,8 +33,8 @@ describe("buildReferenceReadingState", () => {
     expect(state.mode).toBe("curated");
     expect(state.blocks).toHaveLength(1);
     expect(state.blocks[0]?.original).toBe("PC-9801 launched in 1982.");
-    expect(state.extract).toBeNull();
-    expect(getTextExtractFromAttachments).not.toHaveBeenCalled();
+    expect(state.extract).toBe("mock extract body");
+    expect(getTextExtractFromAttachments).toHaveBeenCalledWith(["/uploads/example.txt"]);
   });
 
   it("returns extract mode when readingMode is missing even if usable blocks exist", () => {

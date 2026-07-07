@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Style Direction</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #eef1f7;
+        --panel: rgba(255, 255, 255, 0.72);
+        --panel-strong: rgba(255, 255, 255, 0.88);
+        --ink: #1e2238;
+        --muted: #5f6988;
+        --line: rgba(128, 143, 192, 0.22);
+        --accent: #6b7cff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Segoe UI", "PingFang SC", "Noto Sans SC", sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 10% 15%, rgba(255, 180, 210, 0.35), transparent 22%),
+          radial-gradient(circle at 90% 10%, rgba(122, 158, 255, 0.28), transparent 20%),
+          linear-gradient(180deg, #f8f9ff 0%, #eef1f7 45%, #e8ebf4 100%);
+      }
+
+      .shell {
+        max-width: 1320px;
+        margin: 0 auto;
+        padding: 32px 20px 48px;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      p {
+        margin: 0;
+      }
+
+      .hero {
+        padding: 28px;
+        border-radius: 28px;
+        background: var(--panel);
+        backdrop-filter: blur(18px);
+        border: 1px solid rgba(255, 255, 255, 0.65);
+        box-shadow: 0 24px 70px rgba(68, 79, 126, 0.12);
+      }
+
+      .eyebrow {
+        font-size: 12px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #7983a3;
+      }
+
+      .title {
+        font-size: clamp(2rem, 4vw, 3.4rem);
+        font-weight: 900;
+        margin-top: 10px;
+      }
+
+      .subtitle {
+        margin-top: 12px;
+        font-size: 1rem;
+        line-height: 1.8;
+        color: var(--muted);
+        max-width: 780px;
+      }
+
+      .hint {
+        margin-top: 16px;
+        display: inline-block;
+        padding: 8px 14px;
+        border-radius: 999px;
+        background: rgba(107, 124, 255, 0.1);
+        color: #4c5ad7;
+        font-size: 14px;
+      }
+
+      .compare {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+        margin-top: 24px;
+      }
+
+      .panel {
+        padding: 20px;
+        border-radius: 26px;
+        background: var(--panel);
+        backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.68);
+        box-shadow: 0 22px 58px rgba(72, 82, 128, 0.12);
+      }
+
+      .panel h2 {
+        font-size: 1.35rem;
+      }
+
+      .panel p.desc {
+        margin-top: 8px;
+        line-height: 1.7;
+        color: var(--muted);
+      }
+
+      .mock {
+        margin-top: 18px;
+        min-height: 520px;
+        border-radius: 22px;
+        overflow: hidden;
+        border: 1px solid var(--line);
+      }
+
+      .mock.current {
+        padding: 18px;
+        background: linear-gradient(180deg, #fff7eb 0%, #f1e8da 100%);
+      }
+
+      .mock.future {
+        padding: 18px;
+        background:
+          radial-gradient(circle at 15% 20%, rgba(255, 170, 205, 0.42), transparent 28%),
+          radial-gradient(circle at 82% 18%, rgba(125, 158, 255, 0.36), transparent 22%),
+          linear-gradient(180deg, #f6f7ff 0%, #e9edff 45%, #eef1f8 100%);
+      }
+
+      .paper-box,
+      .glass-box {
+        border-radius: 20px;
+        padding: 18px;
+      }
+
+      .paper-box {
+        background: rgba(255, 250, 242, 0.94);
+        border: 1px solid #dccfbe;
+        box-shadow: 0 16px 40px rgba(70, 46, 28, 0.08);
+      }
+
+      .glass-box {
+        background: rgba(255, 255, 255, 0.34);
+        border: 1px solid rgba(255, 255, 255, 0.62);
+        backdrop-filter: blur(18px);
+        box-shadow: 0 18px 60px rgba(79, 97, 168, 0.18);
+      }
+
+      .mini-grid {
+        display: grid;
+        gap: 14px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin-top: 14px;
+      }
+
+      .mini-card {
+        border-radius: 16px;
+        padding: 14px;
+        line-height: 1.7;
+        font-size: 14px;
+      }
+
+      .mini-card.paper {
+        background: #fffaf2;
+        border: 1px solid #dccfbe;
+        color: #6f655d;
+      }
+
+      .mini-card.glass {
+        background: rgba(255, 255, 255, 0.46);
+        border: 1px solid rgba(255, 255, 255, 0.62);
+        color: #5d6889;
+      }
+
+      .kicker {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: #7f8bb1;
+      }
+
+      .card-title {
+        margin-top: 8px;
+        font-size: 1.1rem;
+        font-weight: 800;
+        color: var(--ink);
+      }
+
+      .notes {
+        margin-top: 24px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+      }
+
+      .notes ul {
+        margin: 12px 0 0;
+        padding-left: 18px;
+        color: var(--muted);
+        line-height: 1.75;
+      }
+
+      @media (max-width: 900px) {
+        .compare,
+        .notes,
+        .mini-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .mock {
+          min-height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <div class="eyebrow">Style Direction</div>
+        <h1 class="title">这次我真正想让它更像你点名的那套博客</h1>
+        <p class="subtitle">
+          你前面提的那套参考博客，核心不是“有后台”或者“卡片多”，而是首页的舞台感、毛玻璃层次、像个人宇宙入口一样的视觉气质。下面我把当前方向和参考气质方向直接并排放出来。
+        </p>
+        <div class="hint">看完后直接回我：选左边 / 选右边 / 右边再更梦幻一点</div>
+      </section>
+
+      <section class="compare">
+        <article class="panel">
+          <h2>当前方向：整理型纸面风</h2>
+          <p class="desc">内容清楚、阅读安静，但更像归档站，还没有真正长成你之前点名参考站的气质。</p>
+
+          <div class="mock current">
+            <div class="paper-box">
+              <div class="kicker">Shinki Archive</div>
+              <div class="title" style="font-size: 2rem; margin-top: 8px;">温和纸张感首页</div>
+              <p class="desc" style="max-width: 560px;">
+                标题、导航、正文块都很清楚，但视觉重心较平均，没有明显的首页舞台中心。
+              </p>
+              <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:16px;">
+                <span class="hint" style="margin-top:0; background:#fff4e8; color:#8a5c38;">Articles</span>
+                <span class="hint" style="margin-top:0; background:#fff4e8; color:#8a5c38;">References</span>
+                <span class="hint" style="margin-top:0; background:#fff4e8; color:#8a5c38;">Notes</span>
+              </div>
+            </div>
+
+            <div class="mini-grid">
+              <div class="mini-card paper">
+                <div class="kicker" style="color:#9f623c;">2026-07-06</div>
+                <div class="card-title">Welcome Back</div>
+                <div style="margin-top:8px;">文章卡片是清楚的，但更偏静态目录。</div>
+              </div>
+              <div class="mini-card paper">
+                <div class="kicker" style="color:#9f623c;">Source</div>
+                <div class="card-title">Example Public Reference</div>
+                <div style="margin-top:8px;">资料卡能看懂，但还没有“浮起来”的展示感。</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel">
+          <h2>参考方向：玻璃卡片 + 首页舞台感</h2>
+          <p class="desc">更贴近你之前指定的参考博客，也更适合“视频稿 + 资料卡 + 专题线索”这种混合信息结构。</p>
+
+          <div class="mock future">
+            <div class="glass-box">
+              <div style="display:flex; justify-content:space-between; gap:18px; align-items:center; flex-wrap:wrap;">
+                <div style="max-width:530px;">
+                  <div class="kicker">Video Script Archive</div>
+                  <div class="title" style="font-size: 2rem; margin-top: 8px; color:#1f2340;">像数字橱窗一样的首页舞台</div>
+                  <p class="desc" style="color:#445071;">
+                    主视觉先抓住人，再把脚本、资料库、专题卡片以漂浮分区铺开，这个气质才更像你要我参考的那套博客。
+                  </p>
+                </div>
+                <div style="width:120px; height:120px; border-radius:24px; background:linear-gradient(135deg, rgba(255,255,255,.65), rgba(164,192,255,.32)); border:1px solid rgba(255,255,255,.7);"></div>
+              </div>
+            </div>
+
+            <div style="display:grid; grid-template-columns:1.35fr .95fr; gap:16px; margin-top:16px;">
+              <div class="glass-box">
+                <div class="kicker">Latest Scripts</div>
+                <div class="mini-grid" style="grid-template-columns:1fr; margin-top:14px;">
+                  <div class="mini-card glass">
+                    <div class="card-title">Welcome Back</div>
+                    <div style="margin-top:6px;">像展签一样展示主稿入口、标签和一句导语。</div>
+                  </div>
+                  <div class="mini-card glass">
+                    <div class="card-title">VTB Fans Culture</div>
+                    <div style="margin-top:6px;">脚本区更像“策展中的作品列表”。</div>
+                  </div>
+                </div>
+              </div>
+
+              <div style="display:grid; gap:16px;">
+                <div class="glass-box">
+                  <div class="kicker">Reference Library</div>
+                  <div class="card-title">资料卡浮在首页上</div>
+                  <div class="desc" style="margin-top:8px;">每张资料卡既像索引入口，也像视觉拼贴的一部分。</div>
+                </div>
+                <div class="glass-box" style="background:linear-gradient(135deg, rgba(255,255,255,.45), rgba(230,232,255,.7));">
+                  <div class="kicker">Archive Mode</div>
+                  <div class="card-title">更像个人宇宙入口</div>
+                  <div class="desc" style="margin-top:8px;">这条路更适合你“视频稿 + 杂资料 + wiki 引用”的站点定位。</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="notes">
+        <article class="panel">
+          <h3>我推荐右边的原因</h3>
+          <ul>
+            <li>更接近你一开始明确点名的参考博客气质。</li>
+            <li>更适合主稿、资料卡、专题页共存的首页结构。</li>
+            <li>不需要换掉 Astro，就能先把前台观感提上去。</li>
+          </ul>
+        </article>
+
+        <article class="panel">
+          <h3>代价</h3>
+          <ul>
+            <li>我要重做首页、文章页、资料页和全局样式层次。</li>
+            <li>会从“朴素归档站”变成更明显的“个人空间入口”。</li>
+            <li>后面还需要继续打磨移动端和卡片密度。</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

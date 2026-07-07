@@ -42,7 +42,7 @@ jobs:
         run: |
           pnpm test
           pnpm run build
-          node scripts/assert-public-content.mjs
+          pnpm run validate:public
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3

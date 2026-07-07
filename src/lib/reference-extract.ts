@@ -1,9 +1,10 @@
 import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
+import { stripUtf8Bom } from "./text-encoding";
 
-const projectRoot = path.resolve(fileURLToPath(new URL("../..", import.meta.url)));
-const publicRoot = path.join(projectRoot, "public");
+// Static builds bundle server modules into a different directory, so resolve
+// attachments from the project working directory instead of import.meta.url.
+const publicRoot = path.resolve(process.cwd(), "public");
 
 const toAttachmentPath = (href: string) => {
   if (!href.startsWith("/")) {
@@ -20,24 +21,35 @@ const normalizeExtract = (value: string) =>
     .replace(/\n{3,}/g, "\n\n")
     .trim();
 
-export const getTextExtractFromAttachments = (attachments: string[] = [], limit = 1200) => {
-  const textAttachment = attachments.find((attachment) => /\.txt$/i.test(attachment));
+export const getTextExtractFromAttachments = (attachments: string[] = [], limit?: number) => {
+  const textAttachments = attachments.filter((attachment) => /\.txt$/i.test(attachment));
 
-  if (!textAttachment) {
+  if (textAttachments.length === 0) {
     return null;
   }
 
-  const filePath = toAttachmentPath(textAttachment);
+  const text = normalizeExtract(
+    textAttachments
+      .map((attachment) => {
+        const filePath = toAttachmentPath(attachment);
 
-  if (!filePath || !existsSync(filePath)) {
-    return null;
-  }
+        if (!filePath || !existsSync(filePath)) {
+          return "";
+        }
 
-  const text = normalizeExtract(readFileSync(filePath, "utf-8"));
+        return normalizeExtract(stripUtf8Bom(readFileSync(filePath, "utf-8")));
+      })
+      .filter(Boolean)
+      .join("\n\n")
+  );
 
   if (!text) {
     return null;
   }
 
-  return text.length > limit ? `${text.slice(0, limit).trimEnd()}…` : text;
+  if (typeof limit === "number" && limit > 0 && text.length > limit) {
+    return `${text.slice(0, limit).trimEnd()}...`;
+  }
+
+  return text;
 };

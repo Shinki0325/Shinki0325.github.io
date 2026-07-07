@@ -1,22 +1,84 @@
 ---
 import { render } from "astro:content";
-import TagList from "../../components/TagList.astro";
 import { getPublishedArticles } from "../../lib/public-content";
+import { getPublishedReferences } from "../../lib/public-content";
 import PostLayout from "../../layouts/PostLayout.astro";
 
 export async function getStaticPaths() {
-  const entries = await getPublishedArticles();
+  const [entries, references] = await Promise.all([getPublishedArticles(), getPublishedReferences()]);
   return entries.map((entry) => ({
     params: { slug: entry.slug },
-    props: { entry }
+    props: {
+      entry,
+      relatedReferences: references.filter((reference) => {
+        const sharesTopic = (entry.data.topics ?? []).some((topic) =>
+          reference.data.topics?.includes(topic)
+        );
+        const isDirectlyRelated = reference.data.relatedScripts?.includes(entry.slug) ?? false;
+
+        return sharesTopic || isDirectlyRelated;
+      })
+    }
   }));
 }
 
 const { entry } = Astro.props;
+const { relatedReferences } = Astro.props;
 const { Content } = await render(entry);
+const lensMeta = [
+  { label: "条目类型", value: entry.data.type === "script" ? "视频稿" : "文章" },
+  { label: "发布日期", value: entry.data.date.toISOString().slice(0, 10) },
+  { label: "主题线", value: entry.data.topics?.join("、") },
+  { label: "模板", value: entry.data.template }
+].filter((item) => item.value);
 ---
 
 <PostLayout title={entry.data.title} summary={entry.data.summary} date={entry.data.date}>
-  <TagList tags={entry.data.tags} />
+  <Fragment slot="lead">
+    <section class="glass-panel side-panel stack">
+      <h2>条目视角</h2>
+      <p class="muted">
+        这里给主稿保留一层轻量阅读框架，让视频稿、笔记和参考资料继续互相连着，同时不打乱正文阅读。
+      </p>
+      <dl class="detail-list">
+        {lensMeta.map((item) => (
+          <div class="detail-list__row">
+            <dt>{item.label}</dt>
+            <dd>{item.value}</dd>
+          </div>
+        ))}
+      </dl>
+      {entry.data.tags?.length > 0 && (
+        <div class="stack">
+          <strong class="panel-label">标签</strong>
+          <ul class="inline-list">
+            {entry.data.tags.map((tag) => (
+              <li><a href={`/tags/${tag}/`}>{tag}</a></li>
+            ))}
+          </ul>
+        </div>
+      )}
+      {entry.data.topics?.length > 0 && (
+        <div class="stack">
+          <strong class="panel-label">主题</strong>
+          <ul class="inline-list">
+            {entry.data.topics.map((topic) => (
+              <li><a href={`/topics/${topic}/`}>{topic}</a></li>
+            ))}
+          </ul>
+        </div>
+      )}
+      {relatedReferences.length > 0 && (
+        <div class="stack">
+          <h2>相关资料</h2>
+          <ul class="network-list">
+            {relatedReferences.map((reference) => (
+              <li><a href={`/references/${reference.slug}/`}>{reference.data.title}</a></li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </section>
+  </Fragment>
   <Content />
 </PostLayout>

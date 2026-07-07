@@ -10,6 +10,7 @@ const note = defineCollection({
     title: z.string().optional(),
     date: z.coerce.date(),
     tags: z.array(z.string()).default([]),
+    topics: z.array(z.string()).default([]),
     images: z.array(z.string()).default([]),
     source: z.string().optional(),
     draft: z.boolean().default(false)

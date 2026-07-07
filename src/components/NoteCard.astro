@@ -2,8 +2,14 @@
 const { entry } = Astro.props;
 ---
 
-<article class="card">
-  <div class="eyebrow">{entry.data.date.toISOString().slice(0, 10)}</div>
-  <h3><a href={`/notes/${entry.slug}/`}>{entry.data.title ?? "Untitled note"}</a></h3>
-  <p>{entry.body.slice(0, 120)}</p>
+<article class="card archive-card archive-card--note">
+  <div class="archive-card__meta">
+    <span class="eyebrow">笔记</span>
+    <span class="muted">{entry.data.date.toISOString().slice(0, 10)}</span>
+  </div>
+  <h3><a href={`/notes/${entry.slug}/`}>{entry.data.title ?? "未命名笔记"}</a></h3>
+  <p>{entry.data.source ?? "研究笔记"}</p>
+  <div class="archive-card__footer">
+    <span>打开笔记</span>
+  </div>
 </article>

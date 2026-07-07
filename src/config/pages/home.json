@@ -1,13 +1,44 @@
 {
+  "brand": {
+    "title": "maki",
+    "suffix": "の",
+    "after": "archive"
+  },
+  "hero": {
+    "eyebrow": "文稿与资料归档",
+    "title": "把文稿、参考资料、笔记和图文线索收进同一座资料岛",
+    "description": "这里不是普通时间线博客，而是为文稿、资料页、笔记和专题互链准备的长期归档站。"
+  },
+  "announcements": [
+    "资料持续整理中",
+    "部分页面含双语对照阅读"
+  ],
+  "backgroundImages": [
+    "/uploads/ui/bg-1.jpg",
+    "/uploads/ui/bg-2.jpg",
+    "/uploads/ui/bg-3.jpg"
+  ],
+  "music": {
+    "apiBaseUrl": "https://api.injahow.cn/meting/",
+    "server": "netease",
+    "type": "song",
+    "cloudMusicIds": [
+      "4931896",
+      "683914",
+      "454924750"
+    ],
+    "idleLyric": "欢迎来到资料归档页",
+    "fallbackCover": "/uploads/ui/music-cover-fallback.jpg"
+  },
   "blocks": [
     {
       "type": "article-list",
-      "title": "Latest Scripts",
+      "title": "最新文稿",
       "limit": 5
     },
     {
       "type": "reference-list",
-      "title": "Reference Library",
+      "title": "资料库",
       "limit": 8
     }
   ]

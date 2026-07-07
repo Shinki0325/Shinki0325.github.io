@@ -1,10 +1,23 @@
-import { createServer, type IncomingMessage, type ServerResponse } from "node:http";
+import cors from "cors";
+import express from "express";
+import { registerContentRoutes } from "./routes/content";
+import { registerAssetRoutes } from "./routes/assets";
+import { registerSystemRoutes } from "./routes/system";
 
-const port = Number(process.env.PORT ?? 4321);
+const app = express();
+const port = Number(process.env.PORT ?? 4318);
 
-createServer((_request: IncomingMessage, response: ServerResponse) => {
-  response.writeHead(200, { "content-type": "text/plain; charset=utf-8" });
-  response.end("Manager placeholder server\n");
-}).listen(port, () => {
-  console.log(`Manager placeholder server listening on ${port}`);
+app.use(
+  cors({
+    origin: [/^http:\/\/127\.0\.0\.1:\d+$/, /^http:\/\/localhost:\d+$/]
+  })
+);
+app.use(express.json({ limit: "10mb" }));
+
+registerContentRoutes(app);
+registerAssetRoutes(app);
+registerSystemRoutes(app);
+
+app.listen(port, "127.0.0.1", () => {
+  console.log(`Manager server listening on http://127.0.0.1:${port}`);
 });

@@ -1,10 +1,19 @@
 ---
 const { entry } = Astro.props;
-const kindLabel = entry.data.kind === "source" ? "Source" : "Topic";
+const kindLabel = entry.data.kind === "source" ? "来源资料" : "专题资料";
+const visibilityLabel = entry.data.visibility === "public" ? "公开" : "私有";
+const eyebrowLabel =
+  entry.data.kind === "source" ? entry.data.librarySection ?? kindLabel : kindLabel;
 ---
 
-<article class="card">
-  <div class="eyebrow">{kindLabel}</div>
+<article class="card archive-card archive-card--reference">
+  <div class="archive-card__meta">
+    <span class="eyebrow">{eyebrowLabel}</span>
+    <span class="muted">{visibilityLabel}</span>
+  </div>
   <h3><a href={`/references/${entry.slug}/`}>{entry.data.title}</a></h3>
   <p>{entry.data.summary}</p>
+  <div class="archive-card__footer">
+    <span>查看资料</span>
+  </div>
 </article>

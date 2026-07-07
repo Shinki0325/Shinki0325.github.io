@@ -11,14 +11,35 @@ const { title, summary, date } = Astro.props;
 ---
 
 <BaseLayout title={title} description={summary}>
-  <article class="prose">
-    <header>
-      <h1>{title}</h1>
-      {date && <p class="muted">{date.toISOString().slice(0, 10)}</p>}
-      {summary && <p>{summary}</p>}
-      <slot name="lead" />
-    </header>
-    <slot />
-    <slot name="after" />
+  <article class="entry-shell">
+    <section class="entry-hero glass-panel">
+      <div class="entry-hero__meta">
+        <p class="eyebrow">归档条目</p>
+        {date && <p class="muted entry-date">{date.toISOString().slice(0, 10)}</p>}
+      </div>
+
+      <div class="entry-hero__body">
+        <div class="entry-hero__text">
+          <h1>{title}</h1>
+          {summary && <p class="entry-summary">{summary}</p>}
+        </div>
+
+        <div class="entry-hero__actions">
+          <a class="ghost-button" href="/references/">浏览资料库</a>
+          <a class="ghost-button" href="/articles/">查看视频稿</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="entry-grid">
+      <div class="entry-main glass-panel prose">
+        <slot />
+      </div>
+
+      <aside class="entry-side">
+        <slot name="lead" />
+        <slot name="after" />
+      </aside>
+    </section>
   </article>
 </BaseLayout>

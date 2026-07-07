@@ -2,8 +2,14 @@
 const { entry } = Astro.props;
 ---
 
-<article class="card">
-  <div class="eyebrow">{entry.data.date.toISOString().slice(0, 10)}</div>
+<article class="card archive-card archive-card--article">
+  <div class="archive-card__meta">
+    <span class="eyebrow">{entry.data.type === "script" ? "视频稿" : "文章"}</span>
+    <span class="muted">{entry.data.date.toISOString().slice(0, 10)}</span>
+  </div>
   <h3><a href={`/articles/${entry.slug}/`}>{entry.data.title}</a></h3>
   <p>{entry.data.summary}</p>
+  <div class="archive-card__footer">
+    <span>进入条目</span>
+  </div>
 </article>

@@ -25,6 +25,9 @@ export const referenceSchema = z.object({
   title: z.string(),
   kind: z.enum(["source", "topic"]),
   visibility: z.enum(["public", "private"]).default("public"),
+  librarySection: z
+    .enum(["回忆、讨论与后见视角", "作品与人物", "社会背景"])
+    .optional(),
   date: z.coerce.date(),
   summary: z.string(),
   tags: z.array(z.string()).default([]),

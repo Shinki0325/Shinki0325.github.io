@@ -8,6 +8,7 @@ import {
   publicContentGlob,
   sortByDateDesc
 } from "../src/lib/content";
+import { dedupeReferencesBySourceUrl } from "../src/lib/reference-dedupe";
 
 const createEntry = (slug: string, date: string, draft = false, tags: string[] = []) => ({
   slug,
@@ -86,5 +87,69 @@ describe("public content helpers", () => {
     ]);
 
     expect(tags).toEqual(["astro", "notes", "writing"]);
+  });
+
+  it("deduplicates public references by source URL and keeps curated entries", () => {
+    const references = [
+      {
+        slug: "raw-famitsu",
+        data: {
+          date: new Date("2026-06-28"),
+          title: "Famitsu 原始归档",
+          sourceUrl: "https://www.famitsu.com/news/202310/29322123.html",
+          readingMode: "extract"
+        }
+      },
+      {
+        slug: "visual-novel-origins-famitsu",
+        data: {
+          date: new Date("2026-07-07"),
+          title: "视觉小说的诞生与繁盛",
+          sourceUrl: "https://www.famitsu.com/news/202310/29322123.html",
+          readingMode: "curated"
+        }
+      },
+      {
+        slug: "other-reference",
+        data: {
+          date: new Date("2026-07-06"),
+          title: "别的资料",
+          sourceUrl: "https://example.com/reference",
+          readingMode: "extract"
+        }
+      }
+    ];
+
+    expect(dedupeReferencesBySourceUrl(references).map((entry) => entry.slug)).toEqual([
+      "visual-novel-origins-famitsu",
+      "other-reference"
+    ]);
+  });
+
+  it("prefers non-archive titles when multiple curated references share one source URL", () => {
+    const references = [
+      {
+        slug: "leaf-key-archive",
+        data: {
+          date: new Date("2026-06-28"),
+          title: "Leaf、Key 对谈原始归档",
+          sourceUrl: "https://news.denfaminicogamer.jp/interview/250325e",
+          readingMode: "curated"
+        }
+      },
+      {
+        slug: "leaf-key-interview",
+        data: {
+          date: new Date("2026-07-07"),
+          title: "Leaf、Key 对谈",
+          sourceUrl: "https://news.denfaminicogamer.jp/interview/250325e",
+          readingMode: "curated"
+        }
+      }
+    ];
+
+    expect(dedupeReferencesBySourceUrl(references).map((entry) => entry.slug)).toEqual([
+      "leaf-key-interview"
+    ]);
   });
 });

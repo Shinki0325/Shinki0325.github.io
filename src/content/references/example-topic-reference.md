@@ -7,7 +7,7 @@ summary: "A topic-style reference page that links back to the public source fixt
 tags: ["archive", "topic"]
 topics: ["archive"]
 relatedRefs: ["example-public-reference"]
-draft: false
+draft: true
 ---
 
 This topic entry exists to exercise backlinks in the public reference library.

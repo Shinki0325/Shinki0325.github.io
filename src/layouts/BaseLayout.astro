@@ -1,40 +1,38 @@
 ---
 import "../styles/global.css";
+import SiteBackground from "../components/chrome/SiteBackground.astro";
+import TopNav from "../components/chrome/TopNav";
 import { siteDescription, siteTitle } from "../data/site";
 
 interface Props {
   title?: string;
   description?: string;
+  currentPath?: string;
 }
 
-const { title = siteTitle, description = siteDescription } = Astro.props;
+const {
+  title = siteTitle,
+  description = siteDescription,
+  currentPath = Astro.url.pathname,
+} = Astro.props;
 ---
 
 <!doctype html>
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>{title}</title>
-    <meta name="description" content={description} />
+    <meta content={description} name="description" />
   </head>
   <body>
-    <main class="shell stack">
-      <header class="hero">
-        <div class="eyebrow">Shinki Archive</div>
-        <h1>{siteTitle}</h1>
-        <p>{siteDescription}</p>
-        <nav class="nav">
-          <a href="/">Home</a>
-          <a href="/articles/">Articles</a>
-          <a href="/notes/">Notes</a>
-          <a href="/topics/">Topics</a>
-          <a href="/archive/">Archive</a>
-          <a href="/about/">About</a>
-          <a href="/links/">Links</a>
-        </nav>
-      </header>
-      <slot />
+    <SiteBackground />
+    <TopNav client:load currentPath={currentPath} />
+
+    <main class="shell">
+      <div class="page-stack">
+        <slot />
+      </div>
     </main>
   </body>
 </html>

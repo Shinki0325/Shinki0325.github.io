@@ -17,7 +17,7 @@ type ReadingInput = {
 type CuratedReadingState = {
   mode: "curated";
   blocks: ReadingBlock[];
-  extract: null;
+  extract: string | null;
 };
 
 type ExtractReadingState = {
@@ -30,18 +30,19 @@ export const buildReferenceReadingState = (
   entry: ReadingInput
 ): CuratedReadingState | ExtractReadingState => {
   const blocks = (entry.readingBlocks ?? []).filter((block) => block.original.trim().length > 0);
+  const extract = getTextExtractFromAttachments(entry.attachments ?? []);
 
   if (blocks.length > 0 && entry.readingMode === "curated") {
     return {
       mode: "curated",
       blocks,
-      extract: null
+      extract
     };
   }
 
   return {
     mode: "extract",
     blocks: [],
-    extract: getTextExtractFromAttachments(entry.attachments ?? [])
+    extract
   };
 };

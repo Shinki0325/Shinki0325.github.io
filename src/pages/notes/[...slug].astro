@@ -1,26 +1,70 @@
 ---
 import { render } from "astro:content";
 import TagList from "../../components/TagList.astro";
-import { getPublishedNotes } from "../../lib/public-content";
+import { getPublishedNotes, getPublishedReferences } from "../../lib/public-content";
 import PostLayout from "../../layouts/PostLayout.astro";
 
 export async function getStaticPaths() {
-  const entries = await getPublishedNotes();
+  const [entries, references] = await Promise.all([getPublishedNotes(), getPublishedReferences()]);
   return entries.map((entry) => ({
     params: { slug: entry.slug },
-    props: { entry }
+    props: {
+      entry,
+      relatedReferences: references.filter((reference) =>
+        (entry.data.topics ?? []).some((topic) => reference.data.topics?.includes(topic))
+      )
+    }
   }));
 }
 
 const { entry } = Astro.props;
+const { relatedReferences } = Astro.props;
 const { Content } = await render(entry);
+const noteMeta = [
+  { label: "发布日期", value: entry.data.date.toISOString().slice(0, 10) },
+  { label: "来源", value: entry.data.source },
+  { label: "主题", value: entry.data.topics?.join("、") }
+].filter((item) => item.value);
 ---
 
 <PostLayout
-  title={entry.data.title ?? "Untitled note"}
+  title={entry.data.title ?? "未命名笔记"}
   summary={entry.data.source}
   date={entry.data.date}
 >
+  <Fragment slot="lead">
+    <section class="glass-panel side-panel stack">
+      <h2>笔记上下文</h2>
+      <dl class="detail-list">
+        {noteMeta.map((item) => (
+          <div class="detail-list__row">
+            <dt>{item.label}</dt>
+            <dd>{item.value}</dd>
+          </div>
+        ))}
+      </dl>
+      {entry.data.topics?.length > 0 && (
+        <div class="stack">
+          <strong class="panel-label">主题</strong>
+          <ul class="inline-list">
+            {entry.data.topics.map((topic) => (
+              <li><a href={`/topics/${topic}/`}>{topic}</a></li>
+            ))}
+          </ul>
+        </div>
+      )}
+      {relatedReferences.length > 0 && (
+        <div class="stack">
+          <h2>相关资料</h2>
+          <ul class="network-list">
+            {relatedReferences.map((reference) => (
+              <li><a href={`/references/${reference.slug}/`}>{reference.data.title}</a></li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </section>
+  </Fragment>
   <TagList tags={entry.data.tags} />
   <Content />
 </PostLayout>

@@ -15,7 +15,7 @@ publisher: "Example Press"
 publishedAt: "2024-04-12"
 quote: "A compact example source that keeps the reference UI grounded in real metadata."
 note: "Used as a fixture for public reference routes and backlink rendering."
-draft: false
+draft: true
 ---
 
 This public reference page demonstrates the metadata block for source-style entries.

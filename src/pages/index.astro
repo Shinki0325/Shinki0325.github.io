@@ -1,41 +1,187 @@
 ---
-import ArticleCard from "../components/ArticleCard.astro";
-import ReferenceCard from "../components/ReferenceCard.astro";
-import { loadHomeConfig } from "../lib/home-config";
-import { getPublishedArticles, getPublishedReferences } from "../lib/public-content";
+import HomeLyricBar from "../components/music/HomeLyricBar";
+import HomeMusicCard from "../components/music/HomeMusicCard";
+import MusicRuntime from "../components/music/MusicRuntime";
+import { siteShell } from "../config/site-shell";
+import {
+  getPublishedArticles,
+  getPublishedNotes,
+  getPublishedReferences,
+} from "../lib/public-content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
-const config = await loadHomeConfig();
-const articles = await getPublishedArticles();
-const references = await getPublishedReferences();
+const [articles, notes, references] = await Promise.all([
+  getPublishedArticles(),
+  getPublishedNotes(),
+  getPublishedReferences(),
+]);
+
+const latestScript = articles.find((entry) => entry.data.type === "script") ?? articles[0] ?? null;
+const featuredReference = references[0] ?? null;
+const latestNote = notes[0] ?? null;
+
+const formatDate = (value: Date | string | undefined) => {
+  if (!value) {
+    return "持续整理中";
+  }
+
+  return new Intl.DateTimeFormat("zh-CN", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  }).format(new Date(value));
+};
+
+const latestUpdate = formatDate(
+  [...articles, ...notes, ...references]
+    .map((entry) => new Date(entry.data.date).getTime())
+    .filter((value) => Number.isFinite(value))
+    .sort((left, right) => right - left)[0]
+);
+
+const noteSummary =
+  latestNote?.data.tags?.length
+    ? `围绕 ${latestNote.data.tags.slice(0, 2).join(" / ")} 的整理笔记`
+    : "把零散线索先整理成可继续扩写的工作台。";
 ---
 
 <BaseLayout>
-  {
-    config.blocks.map((block) => {
-      if (block.type === "article-list") {
-        const entries = articles
-          .filter((entry) => !block.articleType || entry.data.type === block.articleType)
-          .slice(0, block.limit);
+  <MusicRuntime client:load />
 
-        return (
-          <section class="panel stack">
-            <h2>{block.title}</h2>
-            <div class="grid cards">
-              {entries.map((entry) => <ArticleCard entry={entry} />)}
-            </div>
-          </section>
-        );
-      }
+  <section class="home-hero-shell glass-panel" data-home-hero>
+    <div class="home-hero-grid">
+      <article class="home-identity-card">
+        <p class="eyebrow">{siteShell.hero.eyebrow}</p>
+        <h1>{siteShell.hero.title}</h1>
+        <p class="home-hero-summary">{siteShell.hero.description}</p>
 
-      return (
-        <section class="panel stack">
-          <h2>{block.title}</h2>
-          <div class="grid cards">
-            {references.slice(0, block.limit).map((entry) => <ReferenceCard entry={entry} />)}
-          </div>
-        </section>
-      );
-    })
-  }
+        <div class="home-identity-brand">
+          <span>{siteShell.brand.title}</span>
+          <span class="brand-separator">{siteShell.brand.suffix}</span>
+          <span>{siteShell.brand.after}</span>
+        </div>
+
+        <div class="home-hero-actions">
+          {latestScript && (
+            <a class="primary-button" href={`/articles/${latestScript.slug}/`}>
+              进入当前文稿
+            </a>
+          )}
+          <a class="ghost-button" href="/references/">
+            进入资料库
+          </a>
+        </div>
+
+        <div class="home-stat-grid">
+          <article class="home-stat-card">
+            <span>公开文稿</span>
+            <strong>{articles.length}</strong>
+          </article>
+          <article class="home-stat-card">
+            <span>公开资料</span>
+            <strong>{references.length}</strong>
+          </article>
+          <article class="home-stat-card">
+            <span>公开笔记</span>
+            <strong>{notes.length}</strong>
+          </article>
+        </div>
+      </article>
+
+      <div class="home-sidebar-stack">
+        <HomeMusicCard client:load />
+      </div>
+    </div>
+  </section>
+
+  <HomeLyricBar client:load />
+
+  <section class="home-feature-grid" data-home-feature-grid>
+    <article class="home-feature-card home-feature-card--primary glass-card">
+      <div class="home-card-head">
+        <div>
+          <p class="eyebrow">当前主稿</p>
+          <h2>{latestScript?.data.title ?? "文稿整理中"}</h2>
+        </div>
+        <span class="spotlight-label">{latestScript?.data.type === "script" ? "文稿" : "文章"}</span>
+      </div>
+      <p class="muted">
+        {latestScript?.data.summary ??
+          "主文稿会把资料库、笔记和时间线线索收拢成一条更适合公开阅读的叙述。"}
+      </p>
+      {latestScript && (
+        <a class="section-link" href={`/articles/${latestScript.slug}/`}>
+          打开文稿
+        </a>
+      )}
+    </article>
+
+    <article class="home-feature-card home-feature-card--wide glass-card">
+      <div class="home-card-head">
+        <div>
+          <p class="eyebrow">重点资料</p>
+          <h2>{featuredReference?.data.title ?? "资料节点整理中"}</h2>
+        </div>
+        <span class="spotlight-label">资料库</span>
+      </div>
+      <p class="muted">
+        {featuredReference?.data.summary ??
+          "优先把可互链、可引用、可继续扩展的资料页放在这里，逐步长成更像 wiki 的站内网络。"}
+      </p>
+      <div class="home-feature-meta">
+        <span>{featuredReference?.data.sourceTitle ?? "公开资料节点"}</span>
+        <a class="section-link" href={featuredReference ? `/references/${featuredReference.slug}/` : "/references/"}>
+          打开资料页
+        </a>
+      </div>
+    </article>
+
+    <article class="home-feature-card glass-card">
+      <div class="home-card-head">
+        <div>
+          <p class="eyebrow">最新笔记</p>
+          <h2>{latestNote?.data.title ?? "笔记整理中"}</h2>
+        </div>
+        <span class="spotlight-label">笔记</span>
+      </div>
+      <p class="muted">{noteSummary}</p>
+      <a class="section-link" href={latestNote ? `/notes/${latestNote.slug}/` : "/notes/"}>
+        打开笔记
+      </a>
+    </article>
+
+    <article class="home-feature-card glass-card">
+      <div class="home-card-head">
+        <div>
+          <p class="eyebrow">归档状态</p>
+          <h2>资料岛持续扩建中</h2>
+        </div>
+        <span class="spotlight-label">Archive</span>
+      </div>
+      <ul class="home-status-list">
+        <li>最近更新：{latestUpdate}</li>
+        <li>发布方式：Astro + GitHub Pages</li>
+        <li>内容结构：文稿 / 资料库 / 笔记 / 专题</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="home-status-strip glass-panel">
+    <article>
+      <span>站点定位</span>
+      <strong>归档、互链、再写作</strong>
+    </article>
+    <article>
+      <span>公开内容</span>
+      <strong>{articles.length + references.length + notes.length} 项</strong>
+    </article>
+    <article>
+      <span>资料方法</span>
+      <strong>站内正文优先引用</strong>
+    </article>
+    <article>
+      <span>最新更新</span>
+      <strong>{latestUpdate}</strong>
+    </article>
+  </section>
 </BaseLayout>

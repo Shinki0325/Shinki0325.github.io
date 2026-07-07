@@ -23,10 +23,15 @@ const taggedArticles = articles.filter((entry) => entry.data.tags.includes(tag ?
 const taggedNotes = notes.filter((entry) => entry.data.tags.includes(tag ?? ""));
 ---
 
-<BaseLayout title={`Tag: ${tag}`}>
-  <section class="panel stack">
-    <h2>Tag: {tag}</h2>
-    {tags.length > 0 && <p class="muted">Browse items grouped under this label.</p>}
+<BaseLayout title={`标签：${tag}`} description="浏览当前标签下的公开条目。">
+  <section class="feature-section glass-panel stack">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">标签索引</p>
+        <h2>标签：{tag}</h2>
+      </div>
+    </div>
+    {tags.length > 0 && <p class="muted">这里收纳所有带有这个标签的公开条目。</p>}
     <div class="grid cards">
       {taggedArticles.map((entry) => <ArticleCard entry={entry} />)}
       {taggedNotes.map((entry) => <NoteCard entry={entry} />)}

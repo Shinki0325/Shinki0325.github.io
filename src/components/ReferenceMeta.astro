@@ -1,4 +1,6 @@
 ---
+import { buildReferenceAttachments } from "../lib/reference-attachments";
+
 interface Props {
   entry: {
     data: {
@@ -13,6 +15,7 @@ interface Props {
       sourceType?: string;
       sourceUrl?: string;
       note?: string;
+      librarySection?: string;
       tags?: string[];
       topics?: string[];
     };
@@ -20,43 +23,10 @@ interface Props {
 }
 
 const { entry } = Astro.props;
-
-const isImageAttachment = (path: string) => /\.(png|jpe?g|webp|gif|avif)$/i.test(path);
-const attachmentLabelBase = (path: string) => {
-  if (/\.html?$/i.test(path)) {
-    return "归档网页";
-  }
-
-  if (/\.txt$/i.test(path)) {
-    return "文字摘录";
-  }
-
-  if (isImageAttachment(path)) {
-    return "页面截图";
-  }
-
-  if (/\.json$/i.test(path)) {
-    return "归档信息";
-  }
-
-  return "资料附件";
-};
-
-const attachmentCounters = new Map<string, number>();
-const attachments = (entry.data.attachments ?? []).map((path) => {
-  const baseLabel = attachmentLabelBase(path);
-  const count = (attachmentCounters.get(baseLabel) ?? 0) + 1;
-  attachmentCounters.set(baseLabel, count);
-
-  return {
-    href: path,
-    isImage: isImageAttachment(path),
-    label: count === 1 ? baseLabel : `${baseLabel} ${count}`,
-    alt: baseLabel === "页面截图" && count === 1 ? `${entry.data.title} 页面截图` : `${entry.data.title} 页面截图 ${count}`
-  };
-});
+const attachments = buildReferenceAttachments(entry.data.title, entry.data.attachments ?? []);
 
 const rows = [
+  { label: "资料分组", value: entry.data.librarySection },
   { label: "类型", value: entry.data.kind === "source" ? "来源资料" : "专题资料" },
   { label: "来源类型", value: entry.data.sourceType },
   { label: "来源标题", value: entry.data.sourceTitle },
@@ -94,10 +64,15 @@ const rows = [
   {attachments.length > 0 && (
     <div class="stack attachments-block">
       <h3>归档文件</h3>
+      {attachments.some((attachment) => attachment.isText) && (
+        <p class="muted attachment-note">文字摘录默认下载，避免浏览器把 UTF-8 文本误判成乱码。</p>
+      )}
       <ul class="attachment-list">
         {attachments.map((attachment) => (
           <li>
-            <a href={attachment.href}>{attachment.label}</a>
+            <a href={attachment.href} download={attachment.download || undefined}>
+              {attachment.label}
+            </a>
           </li>
         ))}
       </ul>
@@ -156,6 +131,10 @@ const rows = [
     padding-left: 1.25rem;
     display: grid;
     gap: 0.5rem;
+  }
+
+  .attachment-note {
+    margin: 0;
   }
 
   .attachment-previews {

@@ -2,8 +2,8 @@
 const { entry } = Astro.props;
 ---
 
-<article class="card">
-  <div class="eyebrow">Topic</div>
+<article class="card archive-card">
+  <div class="eyebrow">专题</div>
   <h3><a href={`/topics/${entry.slug}/`}>{entry.data.title}</a></h3>
   <p>{entry.data.description}</p>
 </article>

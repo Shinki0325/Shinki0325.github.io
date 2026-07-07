@@ -1,10 +1,10 @@
 ---
-import { render } from "astro:content";
 import BacklinkList from "../../components/BacklinkList.astro";
 import ReferenceMeta from "../../components/ReferenceMeta.astro";
 import ReferenceReading from "../../components/ReferenceReading.astro";
 import PostLayout from "../../layouts/PostLayout.astro";
 import { getPublishedArticles, getPublishedNotes, getPublishedReferences } from "../../lib/public-content";
+import { buildReferenceIntro, buildRelatedReferenceSlugs } from "../../lib/reference-library";
 import { createReferenceIndex } from "../../lib/reference-index";
 import { buildReferenceReadingState } from "../../lib/reference-reading";
 
@@ -77,48 +77,57 @@ export async function getStaticPaths() {
     sourceLookup.set(makeEntryId("notes", note.slug), {
       href: `/notes/${note.slug}/`,
       kind: "笔记",
-      title: note.data.title ?? "Untitled note"
+      title: note.data.title ?? "未命名笔记"
     });
   }
 
-  return references.map((entry) => ({
-    params: { slug: entry.slug },
-    props: {
-      entry,
-      networkLinks: {
-        relatedReferences: (entry.data.relatedRefs ?? [])
-          .map((slug) => publicReferenceLookup.get(slug))
-          .filter(isLinkItem),
-        relatedScripts: (entry.data.relatedScripts ?? [])
-          .map((slug) => publicArticleLookup.get(slug))
-          .filter(isLinkItem)
-      },
-      backlinks: (graph.backlinks[makeEntryId("references", entry.slug)] ?? []).map((entryId) => {
-        const match = sourceLookup.get(entryId);
+  return references.map((entry) => {
+    const relatedReferenceSlugs = buildRelatedReferenceSlugs(entry, references);
 
-        return (
-          match ?? {
-            href: "#",
-            kind: "内容",
-            title: entryId
-          }
-        );
-      })
-    }
-  }));
+    return {
+      params: { slug: entry.slug },
+      props: {
+        entry,
+        networkLinks: {
+          relatedReferences: relatedReferenceSlugs
+            .map((slug) => publicReferenceLookup.get(slug))
+            .filter(isLinkItem),
+          relatedScripts: (entry.data.relatedScripts ?? [])
+            .map((slug) => publicArticleLookup.get(slug))
+            .filter(isLinkItem)
+        },
+        backlinks: (graph.backlinks[makeEntryId("references", entry.slug)] ?? []).map((entryId) => {
+          const match = sourceLookup.get(entryId);
+
+          return (
+            match ?? {
+              href: "#",
+              kind: "内容",
+              title: entryId
+            }
+          );
+        })
+      }
+    };
+  });
 }
 
 const { entry, backlinks, networkLinks } = Astro.props;
-const { Content } = await render(entry);
 const readingState = buildReferenceReadingState(entry.data);
+const referenceIntro = buildReferenceIntro(entry.data);
 ---
 
 <PostLayout title={entry.data.title} summary={entry.data.summary} date={entry.data.date}>
+  <section class="reading-section stack">
+    <div class="reading-section__header">
+      <h2>这份资料在讲什么</h2>
+    </div>
+    <div class="reading-block">
+      <p>{referenceIntro}</p>
+    </div>
+  </section>
+
   <Fragment slot="lead">
-    <section class="glass-panel side-panel stack">
-      <p class="eyebrow">参考资料</p>
-      <p class="muted">公开资料页会持续回链到主稿、笔记和其他参考节点，逐步长成可检索、可引用的站内资料网络。</p>
-    </section>
     <ReferenceMeta entry={entry} />
     <section class="glass-panel side-panel stack">
       <h2>关联内容</h2>
@@ -176,10 +185,6 @@ const readingState = buildReferenceReadingState(entry.data);
         )}
     </section>
   </Fragment>
-  <ReferenceReading blocks={readingState.blocks} extract={readingState.extract}>
-    <Fragment slot="editorial">
-      <Content />
-    </Fragment>
-  </ReferenceReading>
+  <ReferenceReading blocks={readingState.blocks} extract={readingState.extract} />
   <BacklinkList slot="after" items={backlinks} />
 </PostLayout>

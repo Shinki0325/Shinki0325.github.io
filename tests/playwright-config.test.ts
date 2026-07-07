@@ -58,7 +58,7 @@ describe("playwright config", () => {
     });
     expect(managerTsconfig.include).toContain("server");
     expect(existsSync("manager/index.html")).toBe(true);
-    expect(existsSync("manager/src/main.ts")).toBe(true);
+    expect(existsSync("manager/src/main.tsx")).toBe(true);
     expect(existsSync("manager/server/index.ts")).toBe(true);
   });
 

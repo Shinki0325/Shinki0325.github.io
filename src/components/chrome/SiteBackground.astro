@@ -1,0 +1,18 @@
+---
+import { siteShell } from "../../config/site-shell";
+---
+
+<div class="site-backdrop" aria-hidden="true">
+  <div class="site-backdrop__veil"></div>
+  <div class="site-backdrop__gradient"></div>
+
+  <div class="site-backdrop__glow glow-one"></div>
+  <div class="site-backdrop__glow glow-two"></div>
+  <div class="site-backdrop__glow glow-three"></div>
+
+  <div class="site-backdrop__slider">
+    {siteShell.backgroundImages.map((src) => (
+      <div class="site-backdrop__image" style={`--bg-url: url('${src}');`}></div>
+    ))}
+  </div>
+</div>

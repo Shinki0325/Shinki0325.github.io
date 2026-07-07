@@ -23,10 +23,12 @@ describe("content collections", () => {
     const parsed = referenceSchema.parse({
       title: "Example Reference",
       kind: "topic",
+      librarySection: "社会背景",
       date: "2026-07-07",
       summary: "Optional metadata should be omittable."
     });
 
+    expect(parsed.librarySection).toBe("社会背景");
     expect(parsed.relatedRefs).toBeUndefined();
     expect(parsed.relatedScripts).toBeUndefined();
   });

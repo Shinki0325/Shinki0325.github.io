@@ -1,22 +1,53 @@
 ---
 import ReferenceCard from "../../components/ReferenceCard.astro";
 import { loadReferencesConfig } from "../../lib/home-config";
+import { partitionReferenceLibrary } from "../../lib/reference-library";
 import { getPublishedReferences } from "../../lib/public-content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
 const config = await loadReferencesConfig();
 const references = await getPublishedReferences();
+const { topicEntries, sourceGroups } = partitionReferenceLibrary(references);
 ---
 
 <BaseLayout title={config.title} description={config.description}>
-  {
-    config.blocks.map((block) => (
-      <section class="panel stack">
-        <h2>{block.title}</h2>
-        <div class="grid cards">
-          {references.slice(0, block.limit).map((entry) => <ReferenceCard entry={entry} />)}
+  <section class="library-hero glass-panel">
+    <div>
+      <p class="eyebrow">公开资料库</p>
+      <h2>{config.title}</h2>
+      <p>{config.description}</p>
+    </div>
+    <div class="library-hero__badge">
+      <span>{references.length}</span>
+      <small>公开卡片</small>
+    </div>
+  </section>
+
+  {topicEntries.length > 0 && (
+    <section class="feature-section glass-panel stack">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">入口索引</p>
+          <h2>资料包与专题入口</h2>
         </div>
-      </section>
-    ))
-  }
+      </div>
+      <div class="grid cards">
+        {topicEntries.map((entry) => <ReferenceCard entry={entry} />)}
+      </div>
+    </section>
+  )}
+
+  {sourceGroups.map((group) => (
+    <section class="feature-section glass-panel stack">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">开放知识书架</p>
+          <h2>{group.section}</h2>
+        </div>
+      </div>
+      <div class="grid cards">
+        {group.entries.map((entry) => <ReferenceCard entry={entry} />)}
+      </div>
+    </section>
+  ))}
 </BaseLayout>

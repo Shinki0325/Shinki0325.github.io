@@ -6,9 +6,14 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 const notes = await getPublishedNotes();
 ---
 
-<BaseLayout title="Notes">
-  <section class="panel stack">
-    <h2>Notes</h2>
+<BaseLayout title="笔记" description="与视频稿和资料页互相连接的研究笔记。">
+  <section class="feature-section glass-panel stack">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">研究笔记</p>
+        <h2>笔记</h2>
+      </div>
+    </div>
     <div class="grid cards">
       {notes.map((entry) => <NoteCard entry={entry} />)}
     </div>
