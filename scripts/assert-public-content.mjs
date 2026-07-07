@@ -1,6 +1,12 @@
 import { access, readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import {
+  buildReferenceGraph
+} from "../packages/content-core/src/reference-graph.ts";
+import {
+  validatePublicLinks
+} from "../packages/content-core/src/validation.ts";
 
 const contentRoot = fileURLToPath(new URL("../src/content/", import.meta.url));
 const distRoot = fileURLToPath(new URL("../dist/", import.meta.url));
@@ -42,6 +48,129 @@ const readDraftStatus = async (filePath) => {
   return draftMatch?.[1] === "true";
 };
 
+const splitFrontmatter = (source) => {
+  const match = source.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/);
+
+  if (!match) {
+    return {
+      frontmatter: "",
+      body: source
+    };
+  }
+
+  return {
+    frontmatter: match[1],
+    body: match[2]
+  };
+};
+
+const readFrontmatterField = (frontmatter, fieldName) => {
+  const match = frontmatter.match(new RegExp(`^${fieldName}:\\s*(.+)$`, "m"));
+  return match?.[1]?.trim();
+};
+
+const readStringField = (frontmatter, fieldName) => {
+  const rawValue = readFrontmatterField(frontmatter, fieldName);
+
+  if (!rawValue) {
+    return undefined;
+  }
+
+  return rawValue.replace(/^['"]|['"]$/g, "");
+};
+
+const readBooleanField = (frontmatter, fieldName, fallback = false) => {
+  const rawValue = readFrontmatterField(frontmatter, fieldName);
+
+  if (!rawValue) {
+    return fallback;
+  }
+
+  return rawValue === "true";
+};
+
+const readStringArrayField = (frontmatter, fieldName) => {
+  const rawValue = readFrontmatterField(frontmatter, fieldName);
+
+  if (!rawValue) {
+    return [];
+  }
+
+  const trimmed = rawValue.trim();
+
+  if (!trimmed.startsWith("[") || !trimmed.endsWith("]")) {
+    return [];
+  }
+
+  return trimmed
+    .slice(1, -1)
+    .split(",")
+    .map((part) => part.trim().replace(/^['"]|['"]$/g, ""))
+    .filter(Boolean);
+};
+
+const toSlug = (collectionRoot, filePath) =>
+  path.relative(collectionRoot, filePath).replace(/\\/g, "/").replace(/\.(md|mdx)$/i, "");
+
+const readReferenceEntries = async () => {
+  const collectionRoot = path.join(contentRoot, "references");
+
+  if (!(await exists(collectionRoot))) {
+    return [];
+  }
+
+  const files = await collectMarkdownFiles(collectionRoot);
+  const references = [];
+
+  for (const filePath of files) {
+    const source = await readFile(filePath, "utf8");
+    const { frontmatter, body } = splitFrontmatter(source);
+
+    if (readBooleanField(frontmatter, "draft")) {
+      continue;
+    }
+
+    references.push({
+      slug: toSlug(collectionRoot, filePath),
+      title: readStringField(frontmatter, "title") ?? toSlug(collectionRoot, filePath),
+      aliases: readStringArrayField(frontmatter, "aliases"),
+      visibility: readStringField(frontmatter, "visibility") === "private" ? "private" : "public",
+      body
+    });
+  }
+
+  return references;
+};
+
+const readPublicEntries = async (collection) => {
+  const collectionRoot = path.join(contentRoot, collection);
+
+  if (!(await exists(collectionRoot))) {
+    return [];
+  }
+
+  const files = await collectMarkdownFiles(collectionRoot);
+  const entries = [];
+
+  for (const filePath of files) {
+    const source = await readFile(filePath, "utf8");
+    const { frontmatter, body } = splitFrontmatter(source);
+
+    if (readBooleanField(frontmatter, "draft")) {
+      continue;
+    }
+
+    entries.push({
+      slug: toSlug(collectionRoot, filePath),
+      title: readStringField(frontmatter, "title"),
+      visibility: "public",
+      body
+    });
+  }
+
+  return entries;
+};
+
 for (const collection of privateCollections) {
   console.log(`Private collection preserved locally: ${collection}`);
 }
@@ -64,9 +193,20 @@ for (const collection of publicCollections) {
   }
 }
 
+const references = await readReferenceEntries();
+const linkSources = [
+  ...(await readPublicEntries("articles")),
+  ...(await readPublicEntries("notes"))
+];
+const validation = validatePublicLinks(buildReferenceGraph(references, linkSources));
+
+if (validation.errors.length > 0) {
+  throw new Error(validation.errors.join("\n"));
+}
+
 if (!(await exists(distRoot))) {
   console.log(
-    `Build output not found yet. Found ${draftEntries.length} draft entries waiting for post-build verification.`
+    `Build output not found yet. Verified links and found ${draftEntries.length} draft entries waiting for post-build verification.`
   );
   process.exit(0);
 }
