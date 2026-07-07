@@ -1,8 +1,17 @@
-import { describe, expect, it } from "vitest";
+import { beforeEach, describe, expect, it, vi } from "vitest";
+import { getTextExtractFromAttachments } from "../src/lib/reference-extract";
 import { buildReferenceReadingState } from "../src/lib/reference-reading";
 
+vi.mock("../src/lib/reference-extract", () => ({
+  getTextExtractFromAttachments: vi.fn(() => "mock extract body")
+}));
+
 describe("buildReferenceReadingState", () => {
-  it("returns curated mode when usable reading blocks exist", () => {
+  beforeEach(() => {
+    vi.clearAllMocks();
+  });
+
+  it("returns curated mode when usable reading blocks exist and mode is curated", () => {
     const state = buildReferenceReadingState({
       readingMode: "curated",
       readingBlocks: [
@@ -13,8 +22,8 @@ describe("buildReferenceReadingState", () => {
         },
         {
           label: "platform",
-          original: "PC-9801は1982年10月に登場した。",
-          translation: "PC-9801 于 1982 年 10 月登场。",
+          original: "PC-9801 launched in 1982.",
+          translation: "PC-9801 于 1982 年推出。",
           focus: true
         }
       ],
@@ -23,8 +32,44 @@ describe("buildReferenceReadingState", () => {
 
     expect(state.mode).toBe("curated");
     expect(state.blocks).toHaveLength(1);
-    expect(state.blocks[0]?.original).toBe("PC-9801は1982年10月に登場した。");
+    expect(state.blocks[0]?.original).toBe("PC-9801 launched in 1982.");
     expect(state.extract).toBeNull();
+    expect(getTextExtractFromAttachments).not.toHaveBeenCalled();
+  });
+
+  it("returns extract mode when readingMode is missing even if usable blocks exist", () => {
+    const state = buildReferenceReadingState({
+      readingBlocks: [
+        {
+          original: "A usable paragraph.",
+          translation: "一段可用正文。"
+        }
+      ],
+      attachments: ["/uploads/fallback.txt"]
+    });
+
+    expect(state.mode).toBe("extract");
+    expect(state.blocks).toHaveLength(0);
+    expect(state.extract).toBe("mock extract body");
+    expect(getTextExtractFromAttachments).toHaveBeenCalledWith(["/uploads/fallback.txt"]);
+  });
+
+  it("returns extract mode when readingMode is extract even if usable blocks exist", () => {
+    const state = buildReferenceReadingState({
+      readingMode: "extract",
+      readingBlocks: [
+        {
+          original: "A usable paragraph.",
+          translation: "一段可用正文。"
+        }
+      ],
+      attachments: ["/uploads/from-extract.txt"]
+    });
+
+    expect(state.mode).toBe("extract");
+    expect(state.blocks).toHaveLength(0);
+    expect(state.extract).toBe("mock extract body");
+    expect(getTextExtractFromAttachments).toHaveBeenCalledWith(["/uploads/from-extract.txt"]);
   });
 
   it("falls back to extract mode when no usable curated blocks are available", () => {
@@ -41,6 +86,7 @@ describe("buildReferenceReadingState", () => {
 
     expect(state.mode).toBe("extract");
     expect(state.blocks).toHaveLength(0);
-    expect(state.extract).toBeNull();
+    expect(state.extract).toBe("mock extract body");
+    expect(getTextExtractFromAttachments).toHaveBeenCalledWith([]);
   });
 });

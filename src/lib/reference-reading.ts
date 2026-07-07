@@ -31,7 +31,7 @@ export const buildReferenceReadingState = (
 ): CuratedReadingState | ExtractReadingState => {
   const blocks = (entry.readingBlocks ?? []).filter((block) => block.original.trim().length > 0);
 
-  if (blocks.length > 0 && entry.readingMode !== "extract") {
+  if (blocks.length > 0 && entry.readingMode === "curated") {
     return {
       mode: "curated",
       blocks,
