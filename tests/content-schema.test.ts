@@ -30,4 +30,30 @@ describe("content collections", () => {
     expect(parsed.relatedRefs).toBeUndefined();
     expect(parsed.relatedScripts).toBeUndefined();
   });
+
+  it("parses curated reading blocks with translation and focus markers", () => {
+    const parsed = referenceSchema.parse({
+      title: "Example Reference",
+      kind: "source",
+      visibility: "public",
+      date: "2026-07-07",
+      summary: "Structured reading data should parse.",
+      readingMode: "curated",
+      sourceLanguage: "ja",
+      translationLanguage: "zh-CN",
+      readingBlocks: [
+        {
+          label: "作品简介",
+          original: "原文段落",
+          translation: "中文译文",
+          note: "编者备注",
+          focus: true
+        }
+      ]
+    });
+
+    expect(parsed.readingMode).toBe("curated");
+    expect(parsed.readingBlocks[0]?.translation).toBe("中文译文");
+    expect(parsed.readingBlocks[0]?.focus).toBe(true);
+  });
 });

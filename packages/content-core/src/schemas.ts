@@ -13,6 +13,14 @@ export const articleSchema = z.object({
   template: z.string().optional()
 });
 
+const readingBlockSchema = z.object({
+  label: z.string().optional(),
+  original: z.string(),
+  translation: z.string().optional(),
+  note: z.string().optional(),
+  focus: z.boolean().default(false)
+});
+
 export const referenceSchema = z.object({
   title: z.string(),
   kind: z.enum(["source", "topic"]),
@@ -35,5 +43,9 @@ export const referenceSchema = z.object({
   note: z.string().optional(),
   intro: z.string().optional(),
   relatedRefs: z.array(z.string()).optional(),
-  relatedScripts: z.array(z.string()).optional()
+  relatedScripts: z.array(z.string()).optional(),
+  readingMode: z.enum(["curated", "extract"]).default("extract"),
+  sourceLanguage: z.string().optional(),
+  translationLanguage: z.string().optional(),
+  readingBlocks: z.array(readingBlockSchema).default([])
 });
