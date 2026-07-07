@@ -10,7 +10,8 @@
     "preview": "astro preview",
     "test": "vitest run",
     "test:e2e": "playwright test",
-    "check": "astro check",
+    "check": "astro check && pnpm check:manager",
+    "check:manager": "pnpm --filter @maki/manager build",
     "docs:check": "node -e \"import('node:fs').then(fs => fs.accessSync('docs/authoring.md'))\"",
     "check:links": "vitest run tests/wiki-links.test.ts tests/reference-graph.test.ts",
     "validate:public": "node scripts/assert-public-content.mjs"
@@ -20,6 +21,8 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@types/node": "^22.15.30",
     "@playwright/test": "^1.54.0",
     "typescript": "^5.5.4",
     "vitest": "^2.0.5"

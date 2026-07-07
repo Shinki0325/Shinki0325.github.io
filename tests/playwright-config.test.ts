@@ -2,6 +2,19 @@ import { describe, expect, it } from "vitest";
 import playwrightConfig from "../playwright.config";
 import { existsSync, readFileSync } from "node:fs";
 
+function readWorkspacePackages() {
+  const workspaceConfig = readFileSync("pnpm-workspace.yaml", "utf8");
+  const packagesBlock = workspaceConfig.match(
+    /^packages:\s*([\s\S]*?)(?:^\w[\w-]*:|\Z)/m,
+  )?.[1];
+
+  return (packagesBlock ?? "")
+    .split(/\r?\n/)
+    .map((line: string) => line.trim())
+    .filter((line: string) => line.startsWith("- "))
+    .map((line: string) => line.slice(2).trim());
+}
+
 describe("playwright config", () => {
   it("avoids machine-specific runtime assumptions", () => {
     const webServer = Array.isArray(playwrightConfig.webServer)
@@ -14,12 +27,11 @@ describe("playwright config", () => {
   });
 
   it("declares manager and shared packages in pnpm workspace", () => {
-    const workspaceConfig = readFileSync("pnpm-workspace.yaml", "utf8");
+    const workspacePackages = readWorkspacePackages();
 
-    expect(workspaceConfig).toContain("packages:");
-    expect(workspaceConfig).toContain("- .");
-    expect(workspaceConfig).toContain("- manager");
-    expect(workspaceConfig).toContain("- packages/*");
+    expect(workspacePackages).toEqual(
+      expect.arrayContaining([".", "manager", "packages/*"]),
+    );
   });
 
   it("keeps task 1 root and manager scaffolding aligned with the approved plan", () => {
@@ -32,9 +44,12 @@ describe("playwright config", () => {
       "dev:manager": expect.any(String),
       build: expect.any(String),
       "build:manager": expect.any(String),
+      check: expect.any(String),
+      "check:manager": expect.any(String),
       "check:links": expect.any(String),
       "validate:public": expect.any(String),
     });
+    expect(rootPackage.scripts.check).toContain("check:manager");
     expect(managerPackage.scripts.server).toBe("tsx server/index.ts");
     expect(managerPackage.scripts).toMatchObject({
       dev: "vite",
