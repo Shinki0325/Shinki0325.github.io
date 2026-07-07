@@ -85,3 +85,16 @@ test("homepage hero keeps the simplified balanced card layout", async ({ page })
   expect(musicTitleMetrics.lineHeight).toBeGreaterThan(0);
   expect(musicTitleMetrics.height / musicTitleMetrics.lineHeight).toBeLessThanOrEqual(2.2);
 });
+
+test("homepage head uses the current avatar as site icon", async ({ page }) => {
+  await page.goto("/");
+
+  await expect(page.locator('head link[rel="icon"]')).toHaveAttribute(
+    "href",
+    "https://s1.ax1x.com/2023/07/28/pCx6j3R.jpg",
+  );
+  await expect(page.locator('head link[rel="apple-touch-icon"]')).toHaveAttribute(
+    "href",
+    "https://s1.ax1x.com/2023/07/28/pCx6j3R.jpg",
+  );
+});

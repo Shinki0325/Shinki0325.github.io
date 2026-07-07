@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import SiteBackground from "../components/chrome/SiteBackground.astro";
 import TopNav from "../components/chrome/TopNav";
+import { siteShell } from "../config/site-shell";
 import { siteDescription, siteTitle } from "../data/site";
 
 interface Props {
@@ -15,6 +16,7 @@ const {
   description = siteDescription,
   currentPath = Astro.url.pathname,
 } = Astro.props;
+const siteIcon = siteShell.profile?.avatarUrl ?? "https://s1.ax1x.com/2023/07/28/pCx6j3R.jpg";
 ---
 
 <!doctype html>
@@ -24,6 +26,9 @@ const {
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>{title}</title>
     <meta content={description} name="description" />
+    <link href={siteIcon} rel="icon" />
+    <link href={siteIcon} rel="shortcut icon" />
+    <link href={siteIcon} rel="apple-touch-icon" />
   </head>
   <body>
     <SiteBackground />
