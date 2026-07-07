@@ -26,3 +26,14 @@ test("draft entries stay off public article and note routes", async ({ page, req
   const noteResponse = await request.get("/notes/internal-draft-note-sentinel/");
   expect(noteResponse.status()).toBe(404);
 });
+
+test("reference index shows the public reference library", async ({ page }) => {
+  await page.goto("/references/");
+  await expect(page.getByRole("heading", { name: "Reference Library" })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Example Public Reference" })).toBeVisible();
+});
+
+test("reference detail page shows backlinks", async ({ page }) => {
+  await page.goto("/references/example-public-reference/");
+  await expect(page.getByRole("heading", { name: "Referenced By" })).toBeVisible();
+});

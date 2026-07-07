@@ -1,0 +1,80 @@
+---
+interface Props {
+  entry: {
+    data: {
+      kind: "source" | "topic";
+      author?: string;
+      publishedAt?: string;
+      publisher?: string;
+      quote?: string;
+      sourceTitle?: string;
+      sourceType?: string;
+      sourceUrl?: string;
+      note?: string;
+      tags?: string[];
+      topics?: string[];
+    };
+  };
+}
+
+const { entry } = Astro.props;
+
+const rows = [
+  { label: "Kind", value: entry.data.kind === "source" ? "Source" : "Topic" },
+  { label: "Source Type", value: entry.data.sourceType },
+  { label: "Source Title", value: entry.data.sourceTitle },
+  { label: "Author", value: entry.data.author },
+  { label: "Publisher", value: entry.data.publisher },
+  { label: "Published", value: entry.data.publishedAt },
+  { label: "Tags", value: entry.data.tags?.join(", ") },
+  { label: "Topics", value: entry.data.topics?.join(", ") }
+].filter((row) => row.value);
+---
+
+<section class="panel stack">
+  <h2>Reference Details</h2>
+  {rows.length > 0 && (
+    <dl class="meta-grid">
+      {rows.map((row) => (
+        <>
+          <dt>{row.label}</dt>
+          <dd>{row.value}</dd>
+        </>
+      ))}
+      {
+        entry.data.sourceUrl && (
+          <>
+            <dt>Source URL</dt>
+            <dd><a href={entry.data.sourceUrl}>{entry.data.sourceUrl}</a></dd>
+          </>
+        )
+      }
+    </dl>
+  )}
+  {entry.data.quote && <blockquote>{entry.data.quote}</blockquote>}
+  {entry.data.note && <p class="muted">{entry.data.note}</p>}
+</section>
+
+<style>
+  .meta-grid {
+    display: grid;
+    gap: 0.5rem 1rem;
+    grid-template-columns: max-content 1fr;
+    margin: 0;
+  }
+
+  dt {
+    font-weight: 700;
+  }
+
+  dd {
+    margin: 0;
+  }
+
+  blockquote {
+    margin: 0;
+    padding-left: 1rem;
+    border-left: 3px solid var(--line);
+    color: var(--muted);
+  }
+</style>

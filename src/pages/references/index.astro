@@ -1,0 +1,16 @@
+---
+import ReferenceCard from "../../components/ReferenceCard.astro";
+import { getPublishedReferences } from "../../lib/public-content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const references = await getPublishedReferences();
+---
+
+<BaseLayout title="Reference Library" description="Public references and topic pages.">
+  <section class="panel stack">
+    <h2>Reference Library</h2>
+    <div class="grid cards">
+      {references.map((entry) => <ReferenceCard entry={entry} />)}
+    </div>
+  </section>
+</BaseLayout>

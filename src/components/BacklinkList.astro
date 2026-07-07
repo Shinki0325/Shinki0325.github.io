@@ -1,0 +1,40 @@
+---
+type BacklinkItem = {
+  href: string;
+  title: string;
+  kind: string;
+};
+
+interface Props {
+  items: BacklinkItem[];
+}
+
+const { items } = Astro.props;
+---
+
+<section class="panel stack">
+  <h2>Referenced By</h2>
+  {
+    items.length > 0 ? (
+      <ul class="backlinks">
+        {items.map((item) => (
+          <li>
+            <a href={item.href}>{item.title}</a>
+            <span class="muted"> {item.kind}</span>
+          </li>
+        ))}
+      </ul>
+    ) : (
+      <p class="muted">No public backlinks yet.</p>
+    )
+  }
+</section>
+
+<style>
+  .backlinks {
+    display: grid;
+    gap: 0.75rem;
+    margin: 0;
+    padding-left: 1.25rem;
+  }
+</style>

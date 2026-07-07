@@ -16,7 +16,9 @@ const { title, summary, date } = Astro.props;
       <h1>{title}</h1>
       {date && <p class="muted">{date.toISOString().slice(0, 10)}</p>}
       {summary && <p>{summary}</p>}
+      <slot name="lead" />
     </header>
     <slot />
+    <slot name="after" />
   </article>
 </BaseLayout>

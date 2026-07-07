@@ -1,0 +1,10 @@
+---
+const { entry } = Astro.props;
+const kindLabel = entry.data.kind === "source" ? "Source" : "Topic";
+---
+
+<article class="card">
+  <div class="eyebrow">{kindLabel}</div>
+  <h3><a href={`/references/${entry.slug}/`}>{entry.data.title}</a></h3>
+  <p>{entry.data.summary}</p>
+</article>
