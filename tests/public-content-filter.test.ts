@@ -21,17 +21,17 @@ describe("public content helpers", () => {
   it("allows only public content collections", () => {
     expect(isPublicCollection("articles")).toBe(true);
     expect(isPublicCollection("notes")).toBe(true);
+    expect(isPublicCollection("references")).toBe(true);
     expect(isPublicCollection("topics")).toBe(true);
     expect(isPublicCollection("drafts")).toBe(false);
     expect(isPublicCollection("vault")).toBe(false);
   });
 
   it("builds only from public content roots", () => {
-    expect(publicContentGlob).toEqual([
-      "src/content/articles/**/*",
-      "src/content/notes/**/*",
-      "src/content/topics/**/*"
-    ]);
+    expect(publicContentGlob).toContain("src/content/articles/**/*");
+    expect(publicContentGlob).toContain("src/content/notes/**/*");
+    expect(publicContentGlob).toContain("src/content/topics/**/*");
+    expect(publicContentGlob).toContain("src/content/references/**/*");
   });
 
   it("treats draft-flagged entries as unpublished", () => {

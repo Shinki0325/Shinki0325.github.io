@@ -1,4 +1,4 @@
-const PUBLIC_COLLECTIONS = new Set(["articles", "notes", "topics"]);
+const PUBLIC_COLLECTIONS = new Set(["articles", "notes", "topics", "references"]);
 
 export const isPublicCollection = (collection: string) =>
   PUBLIC_COLLECTIONS.has(collection);
@@ -6,7 +6,8 @@ export const isPublicCollection = (collection: string) =>
 export const publicContentGlob = [
   "src/content/articles/**/*",
   "src/content/notes/**/*",
-  "src/content/topics/**/*"
+  "src/content/topics/**/*",
+  "src/content/references/**/*"
 ];
 
 type EntryWithDraft = {

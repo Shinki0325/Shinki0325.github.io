@@ -1,9 +1,20 @@
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 
-describe("project baseline", () => {
-  it("loads the site config module", async () => {
-    await expect(import("../src/data/site")).resolves.toMatchObject({
-      siteTitle: "Shinki"
-    });
+vi.mock("@maki/content-core", async () => import("../packages/content-core/src/index.ts"));
+vi.mock("astro:content", async () => {
+  const { z } = await import("zod");
+
+  return {
+    defineCollection: (config: unknown) => config,
+    z
+  };
+});
+
+describe("content collections", () => {
+  it("exposes article and reference collections", async () => {
+    const { collections } = await import("../src/content/config");
+
+    expect(collections).toHaveProperty("articles");
+    expect(collections).toHaveProperty("references");
   });
 });
