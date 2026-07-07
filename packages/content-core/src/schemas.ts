@@ -34,6 +34,6 @@ export const referenceSchema = z.object({
   quote: z.string().optional(),
   note: z.string().optional(),
   intro: z.string().optional(),
-  relatedRefs: z.array(z.string()).default([]),
-  relatedScripts: z.array(z.string()).default([])
+  relatedRefs: z.array(z.string()).optional(),
+  relatedScripts: z.array(z.string()).optional()
 });
