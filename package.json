@@ -12,8 +12,8 @@
     "test:e2e": "playwright test",
     "check": "astro check",
     "docs:check": "node -e \"import('node:fs').then(fs => fs.accessSync('docs/authoring.md'))\"",
-    "check:links": "playwright test",
-    "validate:public": "pnpm build"
+    "check:links": "vitest run tests/wiki-links.test.ts tests/reference-graph.test.ts",
+    "validate:public": "node scripts/assert-public-content.mjs"
   },
   "dependencies": {
     "astro": "^5.0.0",
