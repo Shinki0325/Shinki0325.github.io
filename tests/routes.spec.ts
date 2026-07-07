@@ -6,6 +6,8 @@ test("reference detail page shows localized side panels", async ({ page }) => {
   await expect(page.getByRole("heading", { name: "资料详情" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "关联内容" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "引用此页" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "站内摘录" })).toBeVisible();
+  await expect(page.getByText("当前没有可展示的站内摘录")).toBeVisible();
   await expect(page.getByText("Example Public Source")).toBeVisible();
 
   const topicBacklink = page.getByRole("link", { name: "Example Topic Reference" });
@@ -17,7 +19,7 @@ test("reference detail page shows localized side panels", async ({ page }) => {
   await expect(collisionBacklink).toHaveAttribute("href", "/references/welcome/");
 });
 
-test("foreign reference detail shows reading shell and extract fallback", async ({ page }) => {
+test("foreign reference detail shows reading shell guidance and extract fallback", async ({ page }) => {
   await page.goto("/references/to-heart-wikipedia/");
   await expect(page.getByRole("heading", { name: "正文阅读" })).toBeVisible();
   await expect(page.getByText("视频重点")).toBeVisible();
