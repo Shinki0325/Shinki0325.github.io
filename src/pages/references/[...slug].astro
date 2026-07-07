@@ -2,13 +2,18 @@
 import { render } from "astro:content";
 import BacklinkList from "../../components/BacklinkList.astro";
 import ReferenceMeta from "../../components/ReferenceMeta.astro";
+import ReferenceReading from "../../components/ReferenceReading.astro";
 import PostLayout from "../../layouts/PostLayout.astro";
 import { getPublishedArticles, getPublishedNotes, getPublishedReferences } from "../../lib/public-content";
 import { createReferenceIndex } from "../../lib/reference-index";
+import { buildReferenceReadingState } from "../../lib/reference-reading";
 
 export async function getStaticPaths() {
   const makeEntryId = (collection: "references" | "articles" | "notes", slug: string) =>
     `${collection}:${slug}`;
+  const isLinkItem = (
+    item: { href: string; title: string } | undefined
+  ): item is { href: string; title: string } => Boolean(item);
 
   const [references, articles, notes] = await Promise.all([
     getPublishedReferences(),
@@ -33,11 +38,29 @@ export async function getStaticPaths() {
     ]
   );
   const sourceLookup = new Map<string, { href: string; kind: string; title: string }>();
+  const publicReferenceLookup = new Map(
+    references.map((reference) => [
+      reference.slug,
+      {
+        href: `/references/${reference.slug}/`,
+        title: reference.data.title
+      }
+    ])
+  );
+  const publicArticleLookup = new Map(
+    articles.map((article) => [
+      article.slug,
+      {
+        href: `/articles/${article.slug}/`,
+        title: article.data.title
+      }
+    ])
+  );
 
   for (const reference of references) {
     sourceLookup.set(makeEntryId("references", reference.slug), {
       href: `/references/${reference.slug}/`,
-      kind: reference.data.kind === "source" ? "Reference source" : "Reference topic",
+      kind: reference.data.kind === "source" ? "参考资料" : "专题资料",
       title: reference.data.title
     });
   }
@@ -45,7 +68,7 @@ export async function getStaticPaths() {
   for (const article of articles) {
     sourceLookup.set(makeEntryId("articles", article.slug), {
       href: `/articles/${article.slug}/`,
-      kind: "Article",
+      kind: "文章",
       title: article.data.title
     });
   }
@@ -53,7 +76,7 @@ export async function getStaticPaths() {
   for (const note of notes) {
     sourceLookup.set(makeEntryId("notes", note.slug), {
       href: `/notes/${note.slug}/`,
-      kind: "Note",
+      kind: "笔记",
       title: note.data.title ?? "Untitled note"
     });
   }
@@ -62,13 +85,21 @@ export async function getStaticPaths() {
     params: { slug: entry.slug },
     props: {
       entry,
+      networkLinks: {
+        relatedReferences: (entry.data.relatedRefs ?? [])
+          .map((slug) => publicReferenceLookup.get(slug))
+          .filter(isLinkItem),
+        relatedScripts: (entry.data.relatedScripts ?? [])
+          .map((slug) => publicArticleLookup.get(slug))
+          .filter(isLinkItem)
+      },
       backlinks: (graph.backlinks[makeEntryId("references", entry.slug)] ?? []).map((entryId) => {
         const match = sourceLookup.get(entryId);
 
         return (
           match ?? {
             href: "#",
-            kind: "Entry",
+            kind: "内容",
             title: entryId
           }
         );
@@ -77,12 +108,78 @@ export async function getStaticPaths() {
   }));
 }
 
-const { entry, backlinks } = Astro.props;
+const { entry, backlinks, networkLinks } = Astro.props;
 const { Content } = await render(entry);
+const readingState = buildReferenceReadingState(entry.data);
 ---
 
 <PostLayout title={entry.data.title} summary={entry.data.summary} date={entry.data.date}>
-  <ReferenceMeta slot="lead" entry={entry} />
-  <Content />
+  <Fragment slot="lead">
+    <section class="glass-panel side-panel stack">
+      <p class="eyebrow">参考资料</p>
+      <p class="muted">公开资料页会持续回链到主稿、笔记和其他参考节点，逐步长成可检索、可引用的站内资料网络。</p>
+    </section>
+    <ReferenceMeta entry={entry} />
+    <section class="glass-panel side-panel stack">
+      <h2>关联内容</h2>
+      <p class="muted">
+        这里收纳这份资料在站内的别名、主题归属、直接关联条目，以及之后会继续扩展的互链关系。
+      </p>
+
+      {(entry.data.aliases?.length ?? 0) > 0 && (
+        <div class="stack">
+          <strong class="panel-label">别名</strong>
+          <ul class="inline-list">
+            {entry.data.aliases?.map((alias) => <li><span>{alias}</span></li>)}
+          </ul>
+        </div>
+      )}
+
+      {(entry.data.topics?.length ?? 0) > 0 && (
+        <div class="stack">
+          <strong class="panel-label">主题</strong>
+          <ul class="inline-list">
+            {entry.data.topics?.map((topic) => (
+              <li><a href={`/topics/${topic}/`}>{topic}</a></li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {networkLinks.relatedReferences.length > 0 && (
+        <div class="stack">
+          <strong class="panel-label">关联参考资料</strong>
+          <ul class="network-list">
+            {networkLinks.relatedReferences.map((item) => (
+              <li><a href={item.href}>{item.title}</a></li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {networkLinks.relatedScripts.length > 0 && (
+        <div class="stack">
+          <strong class="panel-label">关联视频稿</strong>
+          <ul class="network-list">
+            {networkLinks.relatedScripts.map((item) => (
+              <li><a href={item.href}>{item.title}</a></li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {networkLinks.relatedReferences.length === 0 &&
+        networkLinks.relatedScripts.length === 0 &&
+        (entry.data.aliases?.length ?? 0) === 0 &&
+        (entry.data.topics?.length ?? 0) === 0 && (
+          <p class="muted">这份资料已经准备好继续接入更多站内链接，后续补充主稿、笔记和相关节点时会逐步长出关系网。</p>
+        )}
+    </section>
+  </Fragment>
+  <ReferenceReading blocks={readingState.blocks} extract={readingState.extract}>
+    <Fragment slot="editorial">
+      <Content />
+    </Fragment>
+  </ReferenceReading>
   <BacklinkList slot="after" items={backlinks} />
 </PostLayout>

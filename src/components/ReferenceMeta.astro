@@ -3,6 +3,8 @@ interface Props {
   entry: {
     data: {
       kind: "source" | "topic";
+      title: string;
+      attachments?: string[];
       author?: string;
       publishedAt?: string;
       publisher?: string;
@@ -19,20 +21,55 @@ interface Props {
 
 const { entry } = Astro.props;
 
+const isImageAttachment = (path: string) => /\.(png|jpe?g|webp|gif|avif)$/i.test(path);
+const attachmentLabelBase = (path: string) => {
+  if (/\.html?$/i.test(path)) {
+    return "归档网页";
+  }
+
+  if (/\.txt$/i.test(path)) {
+    return "文字摘录";
+  }
+
+  if (isImageAttachment(path)) {
+    return "页面截图";
+  }
+
+  if (/\.json$/i.test(path)) {
+    return "归档信息";
+  }
+
+  return "资料附件";
+};
+
+const attachmentCounters = new Map<string, number>();
+const attachments = (entry.data.attachments ?? []).map((path) => {
+  const baseLabel = attachmentLabelBase(path);
+  const count = (attachmentCounters.get(baseLabel) ?? 0) + 1;
+  attachmentCounters.set(baseLabel, count);
+
+  return {
+    href: path,
+    isImage: isImageAttachment(path),
+    label: count === 1 ? baseLabel : `${baseLabel} ${count}`,
+    alt: baseLabel === "页面截图" && count === 1 ? `${entry.data.title} 页面截图` : `${entry.data.title} 页面截图 ${count}`
+  };
+});
+
 const rows = [
-  { label: "Kind", value: entry.data.kind === "source" ? "Source" : "Topic" },
-  { label: "Source Type", value: entry.data.sourceType },
-  { label: "Source Title", value: entry.data.sourceTitle },
-  { label: "Author", value: entry.data.author },
-  { label: "Publisher", value: entry.data.publisher },
-  { label: "Published", value: entry.data.publishedAt },
-  { label: "Tags", value: entry.data.tags?.join(", ") },
-  { label: "Topics", value: entry.data.topics?.join(", ") }
+  { label: "类型", value: entry.data.kind === "source" ? "来源资料" : "专题资料" },
+  { label: "来源类型", value: entry.data.sourceType },
+  { label: "来源标题", value: entry.data.sourceTitle },
+  { label: "作者", value: entry.data.author },
+  { label: "发布方", value: entry.data.publisher },
+  { label: "发布时间", value: entry.data.publishedAt },
+  { label: "标签", value: entry.data.tags?.join("、") },
+  { label: "主题", value: entry.data.topics?.join("、") }
 ].filter((row) => row.value);
 ---
 
-<section class="panel stack">
-  <h2>Reference Details</h2>
+<section class="glass-panel side-panel stack">
+  <h2>资料详情</h2>
   {rows.length > 0 && (
     <dl class="meta-grid">
       {rows.map((row) => (
@@ -44,7 +81,7 @@ const rows = [
       {
         entry.data.sourceUrl && (
           <>
-            <dt>Source URL</dt>
+            <dt>来源网址</dt>
             <dd><a href={entry.data.sourceUrl}>{entry.data.sourceUrl}</a></dd>
           </>
         )
@@ -53,6 +90,31 @@ const rows = [
   )}
   {entry.data.quote && <blockquote>{entry.data.quote}</blockquote>}
   {entry.data.note && <p class="muted">{entry.data.note}</p>}
+
+  {attachments.length > 0 && (
+    <div class="stack attachments-block">
+      <h3>归档文件</h3>
+      <ul class="attachment-list">
+        {attachments.map((attachment) => (
+          <li>
+            <a href={attachment.href}>{attachment.label}</a>
+          </li>
+        ))}
+      </ul>
+
+      {attachments.some((attachment) => attachment.isImage) && (
+        <div class="attachment-previews">
+          {attachments
+            .filter((attachment) => attachment.isImage)
+            .map((attachment) => (
+              <a href={attachment.href} class="attachment-preview">
+                <img src={attachment.href} alt={attachment.alt} loading="lazy" />
+              </a>
+            ))}
+        </div>
+      )}
+    </div>
+  )}
 </section>
 
 <style>
@@ -73,8 +135,45 @@ const rows = [
 
   blockquote {
     margin: 0;
-    padding-left: 1rem;
-    border-left: 3px solid var(--line);
+    padding: 1rem 1.1rem;
+    border-left: 3px solid var(--accent);
+    border-radius: 0 18px 18px 0;
+    background: rgba(255, 255, 255, 0.36);
     color: var(--muted);
+  }
+
+  .attachments-block {
+    gap: 0.9rem;
+  }
+
+  .attachments-block h3 {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .attachment-list {
+    margin: 0;
+    padding-left: 1.25rem;
+    display: grid;
+    gap: 0.5rem;
+  }
+
+  .attachment-previews {
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  .attachment-preview {
+    display: block;
+    overflow: hidden;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.36);
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .attachment-preview img {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 </style>

@@ -1,0 +1,86 @@
+---
+type ReadingBlock = {
+  label?: string;
+  original: string;
+  translation?: string;
+  note?: string;
+  focus?: boolean;
+};
+
+interface Props {
+  blocks: ReadingBlock[];
+  extract: string | null;
+}
+
+const { blocks, extract } = Astro.props;
+const hasCuratedBlocks = blocks.length > 0;
+---
+
+<section class="reading-section stack">
+  <div class="reading-section__header">
+    <h2>编者说明</h2>
+    <p class="muted">这部分保留站内整理说明，帮助你判断这份资料该如何进入主稿、笔记和后续归档链路。</p>
+  </div>
+  <div class="reading-editorial">
+    <slot name="editorial" />
+  </div>
+</section>
+
+<section class="reading-section stack">
+  <div class="reading-section__header">
+    <h2>正文阅读</h2>
+    <p class="muted">
+      参考资料整理完成后，会在这里按段展示原文、对照翻译和编者备注。
+      <span class="reading-focus">视频重点</span>
+      会标出和视频主稿直接相关的段落。
+    </p>
+  </div>
+
+  {
+    hasCuratedBlocks ? (
+      <div class="reading-stack">
+        {blocks.map((block) => (
+          <article class="reading-block">
+            <div class="reading-block__head">
+              <h3>{block.label ?? "正文段落"}</h3>
+              {block.focus && <span class="reading-focus">视频重点</span>}
+            </div>
+
+            <div class="reading-original">
+              <strong>原文</strong>
+              <p>{block.original}</p>
+            </div>
+
+            {block.translation && (
+              <div class="reading-translation">
+                <strong>对照翻译</strong>
+                <p>{block.translation}</p>
+              </div>
+            )}
+
+            {block.note && <p class="reading-note">编者备注：{block.note}</p>}
+          </article>
+        ))}
+      </div>
+    ) : (
+      <div class="reading-empty">
+        <p>
+          当前这份资料还没有整理成可逐段引用的正文阅读块。为了先保证站内可读和可引用，下面会先展示归档文本摘录；
+          等后续补齐全文整理后，这里会自动切换成原文与对照翻译的阅读视图。
+        </p>
+      </div>
+    )
+  }
+</section>
+
+{
+  extract && (
+    <section class="reading-section text-extract stack">
+      <div class="reading-section__header">
+        <h2>站内摘录</h2>
+        <p class="muted">这是从站内归档文件提取出的文字内容，适合先浏览、先定位，再逐步补成完整正文。</p>
+      </div>
+      <pre>{extract}</pre>
+    </section>
+  )
+}

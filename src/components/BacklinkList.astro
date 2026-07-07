@@ -12,8 +12,8 @@ interface Props {
 const { items } = Astro.props;
 ---
 
-<section class="panel stack">
-  <h2>Referenced By</h2>
+<section class="glass-panel side-panel stack">
+  <h2>引用此页</h2>
   {
     items.length > 0 ? (
       <ul class="backlinks">
@@ -25,7 +25,7 @@ const { items } = Astro.props;
         ))}
       </ul>
     ) : (
-      <p class="muted">No public backlinks yet.</p>
+      <p class="muted">暂时还没有公开页面引用这里，等主稿和笔记继续补链后会出现在这里。</p>
     )
   }
 </section>
