@@ -73,19 +73,23 @@ const hasCuratedBlocks = blocks.length > 0;
   }
 </section>
 
-<section class="reading-section text-extract stack">
-  <div class="reading-section__header">
-    <h2>站内摘录</h2>
-    <p class="muted">这是从站内归档文件提取出的文字内容，适合先浏览、先定位，再逐步补成完整正文。</p>
-  </div>
-
-  {
-    extract ? (
-      <pre>{extract}</pre>
-    ) : (
-      <div class="reading-empty">
-        <p>当前没有可展示的站内摘录，可继续查看归档文件，或等待后续整理补入站内正文。</p>
+{
+  (!hasCuratedBlocks || extract) && (
+    <section class="reading-section text-extract stack">
+      <div class="reading-section__header">
+        <h2>站内摘录</h2>
+        <p class="muted">这是从站内归档文件提取出的文字内容，适合先浏览、先定位，再逐步补成完整正文。</p>
       </div>
-    )
-  }
-</section>
+
+      {
+        extract ? (
+          <pre>{extract}</pre>
+        ) : (
+          <div class="reading-empty">
+            <p>当前没有可展示的站内摘录，可继续查看归档文件，或等待后续整理补入站内正文。</p>
+          </div>
+        )
+      }
+    </section>
+  )
+}
