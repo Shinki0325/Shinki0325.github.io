@@ -5,6 +5,13 @@ export type HomePageConfigForm = {
   heroEyebrow: string;
   heroTitle: string;
   heroDescription: string;
+  profileDisplayName: string;
+  profileBio: string;
+  profileAvatarUrl: string;
+  socialGithub: string;
+  socialBilibili: string;
+  socialEmail: string;
+  searchPlaceholder: string;
   announcementText: string;
   backgroundImageText: string;
   cloudMusicIdsText: string;
@@ -40,6 +47,9 @@ export const parseHomePageConfig = (json: string): ParsedHomePageConfig => {
   const source = asRecord(JSON.parse(json));
   const brand = asRecord(source.brand);
   const hero = asRecord(source.hero);
+  const profile = asRecord(source.profile);
+  const social = asRecord(source.social);
+  const search = asRecord(source.search);
   const music = asRecord(source.music);
 
   return {
@@ -51,6 +61,13 @@ export const parseHomePageConfig = (json: string): ParsedHomePageConfig => {
       heroEyebrow: asString(hero.eyebrow),
       heroTitle: asString(hero.title),
       heroDescription: asString(hero.description),
+      profileDisplayName: asString(profile.displayName),
+      profileBio: asString(profile.bio),
+      profileAvatarUrl: asString(profile.avatarUrl),
+      socialGithub: asString(social.github),
+      socialBilibili: asString(social.bilibili),
+      socialEmail: asString(social.email),
+      searchPlaceholder: asString(search.placeholder),
       announcementText: linesToText(source.announcements),
       backgroundImageText: linesToText(source.backgroundImages),
       cloudMusicIdsText: linesToText(music.cloudMusicIds),
@@ -76,6 +93,22 @@ export const serializeHomePageConfig = (source: HomePageConfigRecord, form: Home
         eyebrow: form.heroEyebrow,
         title: form.heroTitle,
         description: form.heroDescription
+      },
+      profile: {
+        ...asRecord(source.profile),
+        displayName: form.profileDisplayName,
+        bio: form.profileBio,
+        avatarUrl: form.profileAvatarUrl
+      },
+      social: {
+        ...asRecord(source.social),
+        github: form.socialGithub,
+        bilibili: form.socialBilibili,
+        email: form.socialEmail
+      },
+      search: {
+        ...asRecord(source.search),
+        placeholder: form.searchPlaceholder
       },
       announcements: textToLines(form.announcementText),
       backgroundImages: textToLines(form.backgroundImageText),

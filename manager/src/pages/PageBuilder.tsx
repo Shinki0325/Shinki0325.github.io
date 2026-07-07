@@ -3,7 +3,7 @@ import { getPageConfig, savePageConfig } from "../api";
 import {
   parseHomePageConfig,
   serializeHomePageConfig,
-  type HomePageConfigForm
+  type HomePageConfigForm,
 } from "../lib/homePageConfig";
 import type { PageConfigName } from "../types";
 
@@ -16,12 +16,19 @@ const EMPTY_HOME_FORM: HomePageConfigForm = {
   heroEyebrow: "",
   heroTitle: "",
   heroDescription: "",
+  profileDisplayName: "",
+  profileBio: "",
+  profileAvatarUrl: "",
+  socialGithub: "",
+  socialBilibili: "",
+  socialEmail: "",
+  searchPlaceholder: "",
   announcementText: "",
   backgroundImageText: "",
   cloudMusicIdsText: "",
   apiBaseUrl: "",
   fallbackCover: "",
-  idleLyric: ""
+  idleLyric: "",
 };
 
 export default function PageBuilder() {
@@ -124,7 +131,7 @@ export default function PageBuilder() {
           <div className="actions">
             {isHomePage ? (
               <button className="secondary-button" onClick={() => setIsRawMode((current) => !current)} type="button">
-                {isRawMode ? "切换到结构化表单" : "切换到原始 JSON"}
+                {isRawMode ? "切回结构化表单" : "切换到原始 JSON"}
               </button>
             ) : null}
             <button className="primary-button" onClick={handleSave} type="button">
@@ -155,15 +162,15 @@ export default function PageBuilder() {
               </div>
               <div className="grid-form">
                 <label className="field">
-                  <span>标题 title</span>
+                  <span>标题</span>
                   <input value={homeForm.brandTitle} onChange={(event) => updateHomeForm("brandTitle", event.target.value)} />
                 </label>
                 <label className="field">
-                  <span>连接词 suffix</span>
+                  <span>连接词</span>
                   <input value={homeForm.brandSuffix} onChange={(event) => updateHomeForm("brandSuffix", event.target.value)} />
                 </label>
                 <label className="field">
-                  <span>尾部文案 after</span>
+                  <span>尾部文案</span>
                   <input value={homeForm.brandAfter} onChange={(event) => updateHomeForm("brandAfter", event.target.value)} />
                 </label>
               </div>
@@ -176,15 +183,15 @@ export default function PageBuilder() {
               </div>
               <div className="grid-form">
                 <label className="field">
-                  <span>眉标 eyebrow</span>
+                  <span>眉标</span>
                   <input value={homeForm.heroEyebrow} onChange={(event) => updateHomeForm("heroEyebrow", event.target.value)} />
                 </label>
                 <label className="field field-span">
-                  <span>主标题 title</span>
+                  <span>主标题</span>
                   <input value={homeForm.heroTitle} onChange={(event) => updateHomeForm("heroTitle", event.target.value)} />
                 </label>
                 <label className="field field-span">
-                  <span>说明 description</span>
+                  <span>说明</span>
                   <textarea
                     className="meta-area"
                     value={homeForm.heroDescription}
@@ -196,12 +203,62 @@ export default function PageBuilder() {
 
             <section className="panel stack">
               <div>
+                <p className="eyebrow">Profile</p>
+                <h2>个人卡片</h2>
+              </div>
+              <div className="grid-form">
+                <label className="field">
+                  <span>显示名称</span>
+                  <input value={homeForm.profileDisplayName} onChange={(event) => updateHomeForm("profileDisplayName", event.target.value)} />
+                </label>
+                <label className="field">
+                  <span>头像链接</span>
+                  <input value={homeForm.profileAvatarUrl} onChange={(event) => updateHomeForm("profileAvatarUrl", event.target.value)} />
+                </label>
+                <label className="field field-span">
+                  <span>简介</span>
+                  <textarea
+                    className="meta-area"
+                    value={homeForm.profileBio}
+                    onChange={(event) => updateHomeForm("profileBio", event.target.value)}
+                  />
+                </label>
+              </div>
+            </section>
+
+            <section className="panel stack">
+              <div>
+                <p className="eyebrow">Links</p>
+                <h2>搜索栏与社交按钮</h2>
+              </div>
+              <div className="grid-form">
+                <label className="field field-span">
+                  <span>搜索框占位文案</span>
+                  <input value={homeForm.searchPlaceholder} onChange={(event) => updateHomeForm("searchPlaceholder", event.target.value)} />
+                </label>
+                <label className="field">
+                  <span>GitHub</span>
+                  <input value={homeForm.socialGithub} onChange={(event) => updateHomeForm("socialGithub", event.target.value)} />
+                </label>
+                <label className="field">
+                  <span>Bilibili</span>
+                  <input value={homeForm.socialBilibili} onChange={(event) => updateHomeForm("socialBilibili", event.target.value)} />
+                </label>
+                <label className="field field-span">
+                  <span>邮箱</span>
+                  <input value={homeForm.socialEmail} onChange={(event) => updateHomeForm("socialEmail", event.target.value)} />
+                </label>
+              </div>
+            </section>
+
+            <section className="panel stack">
+              <div>
                 <p className="eyebrow">Content</p>
                 <h2>公告与背景图</h2>
               </div>
               <div className="grid-form">
                 <label className="field field-span">
-                  <span>公告列表 announcements</span>
+                  <span>公告列表</span>
                   <textarea
                     className="meta-area"
                     value={homeForm.announcementText}
@@ -210,7 +267,7 @@ export default function PageBuilder() {
                   <small>每行一条公告，保存时会自动整理成数组。</small>
                 </label>
                 <label className="field field-span">
-                  <span>背景图片 URL 列表 backgroundImages</span>
+                  <span>背景图片 URL 列表</span>
                   <textarea
                     className="meta-area"
                     value={homeForm.backgroundImageText}
@@ -228,7 +285,7 @@ export default function PageBuilder() {
               </div>
               <div className="grid-form">
                 <label className="field field-span">
-                  <span>歌曲 ID 列表 cloudMusicIds</span>
+                  <span>歌曲 ID 列表</span>
                   <textarea
                     className="meta-area"
                     value={homeForm.cloudMusicIdsText}
@@ -237,15 +294,15 @@ export default function PageBuilder() {
                   <small>每行一个歌曲 ID，空行会自动忽略。</small>
                 </label>
                 <label className="field field-span">
-                  <span>API 基础地址 apiBaseUrl</span>
+                  <span>API 基础地址</span>
                   <input value={homeForm.apiBaseUrl} onChange={(event) => updateHomeForm("apiBaseUrl", event.target.value)} />
                 </label>
                 <label className="field">
-                  <span>兜底封面 fallbackCover</span>
+                  <span>兜底封面</span>
                   <input value={homeForm.fallbackCover} onChange={(event) => updateHomeForm("fallbackCover", event.target.value)} />
                 </label>
                 <label className="field">
-                  <span>待机歌词 idleLyric</span>
+                  <span>待机歌词</span>
                   <input value={homeForm.idleLyric} onChange={(event) => updateHomeForm("idleLyric", event.target.value)} />
                 </label>
               </div>

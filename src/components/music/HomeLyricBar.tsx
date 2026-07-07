@@ -1,45 +1,32 @@
 import { useStore } from "@nanostores/react";
-import type { CSSProperties } from "react";
 import { musicState } from "./store";
 
-const barStyle: CSSProperties = {
-  display: "flex",
-  alignItems: "center",
-  gap: "0.85rem",
-  padding: "0.9rem 1rem",
-  borderRadius: "999px",
-  border: "1px solid rgba(148, 163, 184, 0.22)",
-  background: "rgba(248, 250, 252, 0.8)",
-  color: "#0f172a",
-  backdropFilter: "blur(14px)",
-};
+const WAVE_DELAYS = ["0ms", "160ms", "320ms", "120ms", "240ms"];
 
 export default function HomeLyricBar() {
   const state = useStore(musicState);
 
   return (
-    <section style={barStyle} data-home-lyric-bar>
-      <span
-        aria-hidden="true"
-        style={{
-          width: "0.7rem",
-          height: "0.7rem",
-          borderRadius: "999px",
-          background: state.isPlaying ? "#f97316" : "#94a3b8",
-          flexShrink: 0,
-        }}
-      />
-      <span
-        style={{
-          overflow: "hidden",
-          textOverflow: "ellipsis",
-          whiteSpace: "nowrap",
-          fontSize: "0.98rem",
-          fontWeight: 600,
-        }}
-      >
-        {state.currentLyric || state.idleLyric}
-      </span>
+    <section className="home-lyric-bar" data-home-lyric-bar>
+      <div className="home-lyric-bar__waves" aria-hidden="true">
+        {WAVE_DELAYS.map((delay) => (
+          <span
+            className={state.isPlaying ? "is-active" : undefined}
+            key={delay}
+            style={{ animationDelay: delay }}
+          />
+        ))}
+      </div>
+
+      <p className="home-lyric-bar__text">{state.currentLyric || state.idleLyric}</p>
+
+      <div className="home-lyric-bar__icon" aria-hidden="true">
+        <svg fill="none" viewBox="0 0 24 24">
+          <path d="M9 18V6l11-2v12" />
+          <circle cx="6" cy="18" r="2.5" />
+          <circle cx="17" cy="16" r="2.5" />
+        </svg>
+      </div>
     </section>
   );
 }

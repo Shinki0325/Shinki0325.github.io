@@ -1,8 +1,10 @@
 ---
+import HomeSearchBar from "../components/chrome/HomeSearchBar";
 import HomeLyricBar from "../components/music/HomeLyricBar";
 import HomeMusicCard from "../components/music/HomeMusicCard";
 import MusicRuntime from "../components/music/MusicRuntime";
 import { siteShell } from "../config/site-shell";
+import { buildHomeSearchIndex } from "../lib/home-shell";
 import {
   getPublishedArticles,
   getPublishedNotes,
@@ -19,6 +21,10 @@ const [articles, notes, references] = await Promise.all([
 const latestScript = articles.find((entry) => entry.data.type === "script") ?? articles[0] ?? null;
 const featuredReference = references[0] ?? null;
 const latestNote = notes[0] ?? null;
+const searchItems = buildHomeSearchIndex({ articles, notes, references });
+const githubHref = siteShell.social?.github ?? "";
+const bilibiliHref = siteShell.social?.bilibili ?? "";
+const emailHref = siteShell.social?.email ?? "";
 
 const formatDate = (value: Date | string | undefined) => {
   if (!value) {
@@ -48,28 +54,33 @@ const noteSummary =
 <BaseLayout>
   <MusicRuntime client:load />
 
+  <HomeSearchBar client:load items={searchItems} placeholder={siteShell.search?.placeholder ?? "搜索站内内容..."} />
+
   <section class="home-hero-shell glass-panel" data-home-hero>
     <div class="home-hero-grid">
-      <article class="home-identity-card">
-        <p class="eyebrow">{siteShell.hero.eyebrow}</p>
-        <h1>{siteShell.hero.title}</h1>
-        <p class="home-hero-summary">{siteShell.hero.description}</p>
+      <article class="home-profile-card glass-card" data-home-profile-card>
+        <div class="home-profile-card__top">
+          <div class="home-profile-avatar-shell">
+            <div class="home-profile-avatar-frame">
+              <img
+                alt={`${siteShell.profile?.displayName ?? siteShell.brand.title} 头像`}
+                class="home-profile-avatar"
+                src={siteShell.profile?.avatarUrl ?? "https://s1.ax1x.com/2023/07/28/pCx6j3R.jpg"}
+              />
+            </div>
+          </div>
 
-        <div class="home-identity-brand">
-          <span>{siteShell.brand.title}</span>
-          <span class="brand-separator">{siteShell.brand.suffix}</span>
-          <span>{siteShell.brand.after}</span>
-        </div>
-
-        <div class="home-hero-actions">
-          {latestScript && (
-            <a class="primary-button" href={`/articles/${latestScript.slug}/`}>
-              进入当前文稿
-            </a>
-          )}
-          <a class="ghost-button" href="/references/">
-            进入资料库
-          </a>
+          <div class="home-profile-copy">
+            <p class="eyebrow">{siteShell.hero.eyebrow}</p>
+            <h1>{siteShell.profile?.displayName ?? siteShell.brand.title}</h1>
+            <p class="home-profile-bio">{siteShell.profile?.bio ?? siteShell.hero.description}</p>
+            <p class="home-profile-note">{siteShell.hero.title}</p>
+            <div class="home-identity-brand">
+              <span>{siteShell.brand.title}</span>
+              <span class="brand-separator">{siteShell.brand.suffix}</span>
+              <span>{siteShell.brand.after}</span>
+            </div>
+          </div>
         </div>
 
         <div class="home-stat-grid">
@@ -85,6 +96,54 @@ const noteSummary =
             <span>公开笔记</span>
             <strong>{notes.length}</strong>
           </article>
+        </div>
+
+        <div class="home-profile-footer">
+          <div class="home-hero-actions">
+            {latestScript && (
+              <a class="primary-button" href={`/articles/${latestScript.slug}/`}>
+                进入当前文稿
+              </a>
+            )}
+            <a class="ghost-button" href="/references/">
+              打开资料库
+            </a>
+          </div>
+
+          <div class="home-social-row">
+            {githubHref ? (
+              <a class="home-social-button" href={githubHref} rel="noreferrer" target="_blank" title="GitHub">
+                <svg fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03A9.6 9.6 0 0 1 12 6.84c.85 0 1.7.12 2.5.34 1.91-1.3 2.75-1.03 2.75-1.03.54 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.93.36.31.68.92.68 1.85 0 1.34-.01 2.42-.01 2.75 0 .26.18.58.69.48A10 10 0 0 0 22 12c0-5.52-4.48-10-10-10Z" />
+                </svg>
+              </a>
+            ) : null}
+            {bilibiliHref ? (
+              <a class="home-social-button" href={bilibiliHref} rel="noreferrer" target="_blank" title="Bilibili">
+                <svg fill="none" viewBox="0 0 24 24">
+                  <path d="M7 5.5 9.2 8M17 5.5 14.8 8" />
+                  <path d="M6.5 8.5h11a2.5 2.5 0 0 1 2.5 2.5v5A2.5 2.5 0 0 1 17.5 18.5h-11A2.5 2.5 0 0 1 4 16v-5a2.5 2.5 0 0 1 2.5-2.5Z" />
+                  <path d="M9.5 12v.2M14.5 12v.2M9 15.2c1.8.7 4.2.7 6 0" />
+                </svg>
+              </a>
+            ) : (
+              <button class="home-social-button is-disabled" disabled title="Bilibili">
+                <svg fill="none" viewBox="0 0 24 24">
+                  <path d="M7 5.5 9.2 8M17 5.5 14.8 8" />
+                  <path d="M6.5 8.5h11a2.5 2.5 0 0 1 2.5 2.5v5A2.5 2.5 0 0 1 17.5 18.5h-11A2.5 2.5 0 0 1 4 16v-5a2.5 2.5 0 0 1 2.5-2.5Z" />
+                  <path d="M9.5 12v.2M14.5 12v.2M9 15.2c1.8.7 4.2.7 6 0" />
+                </svg>
+              </button>
+            )}
+            {emailHref ? (
+              <a class="home-social-button" href={emailHref} title="邮箱">
+                <svg fill="none" viewBox="0 0 24 24">
+                  <path d="M4 7.5h16v9H4z" />
+                  <path d="m4.5 8 7.5 6 7.5-6" />
+                </svg>
+              </a>
+            ) : null}
+          </div>
         </div>
       </article>
 

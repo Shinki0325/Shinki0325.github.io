@@ -3,7 +3,9 @@ import { expect, test } from "@playwright/test";
 test("homepage shows the welcome shell and music modules", async ({ page }) => {
   await page.goto("/");
 
+  await expect(page.locator("[data-home-search]")).toBeVisible();
   await expect(page.locator("[data-home-hero]")).toBeVisible();
+  await expect(page.locator("[data-home-profile-card]")).toBeVisible();
   await expect(page.locator("[data-home-music-card]")).toBeVisible();
   await expect(page.locator("[data-home-lyric-bar]")).toBeVisible();
   await expect(page.locator("[data-home-feature-grid]")).toBeVisible();

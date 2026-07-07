@@ -1,36 +1,19 @@
 import { useStore } from "@nanostores/react";
-import type { CSSProperties } from "react";
 import { musicState, setCurrentTrack, setPlayback } from "./store";
 
-const cardStyle: CSSProperties = {
-  display: "grid",
-  gap: "1rem",
-  gridTemplateColumns: "112px 1fr",
-  padding: "1rem",
-  borderRadius: "24px",
-  border: "1px solid rgba(148, 163, 184, 0.28)",
-  background:
-    "linear-gradient(135deg, rgba(15, 23, 42, 0.88), rgba(30, 41, 59, 0.68))",
-  color: "#f8fafc",
-  boxShadow: "0 20px 45px rgba(15, 23, 42, 0.18)",
-};
+const formatTime = (value: number) => {
+  if (!Number.isFinite(value) || value <= 0) {
+    return "00:00";
+  }
 
-const coverStyle: CSSProperties = {
-  width: "112px",
-  height: "112px",
-  borderRadius: "18px",
-  objectFit: "cover",
-  background: "rgba(148, 163, 184, 0.2)",
-};
+  const minutes = Math.floor(value / 60)
+    .toString()
+    .padStart(2, "0");
+  const seconds = Math.floor(value % 60)
+    .toString()
+    .padStart(2, "0");
 
-const buttonStyle: CSSProperties = {
-  border: "none",
-  borderRadius: "999px",
-  padding: "0.65rem 1rem",
-  background: "#f97316",
-  color: "#fff7ed",
-  cursor: "pointer",
-  fontSize: "0.95rem",
+  return `${minutes}:${seconds}`;
 };
 
 export default function HomeMusicCard() {
@@ -42,46 +25,82 @@ export default function HomeMusicCard() {
       ? "云音乐暂时不可用"
       : "曲目暂未载入";
   const detailText = track?.artist ?? state.error ?? "";
+  const progress =
+    state.duration > 0 ? Math.min(100, Math.max(0, (state.currentTime / state.duration) * 100)) : 0;
 
   return (
-    <section style={cardStyle} data-home-music-card>
-      <img
-        src={track?.coverUrl ?? "/uploads/ui/music-cover-fallback.jpg"}
-        alt={track ? `${track.title} 封面` : "默认封面"}
-        style={coverStyle}
-      />
-      <div style={{ display: "grid", gap: "0.75rem" }}>
-        <div style={{ display: "grid", gap: "0.35rem" }}>
-          <span style={{ fontSize: "0.75rem", letterSpacing: "0.12em", opacity: 0.72 }}>
-            云音乐
-          </span>
-          <h3 style={{ margin: 0, fontSize: "1.35rem" }}>
-            {track?.title ?? statusText}
-          </h3>
-          {detailText && (
-            <p style={{ margin: 0, color: "rgba(226, 232, 240, 0.86)" }}>
-              {detailText}
-            </p>
+    <section className="home-player-card glass-card" data-home-music-card>
+      <div className="home-player-orb" />
+
+      <div className="home-player-top">
+        <div className={`home-player-cover${state.isPlaying ? " is-spinning" : ""}`}>
+          <img
+            alt={track ? `${track.title} 封面` : "默认封面"}
+            referrerPolicy="no-referrer"
+            src={track?.coverUrl ?? "/uploads/ui/music-cover-fallback.jpg"}
+          />
+          <span className="home-player-cover__core" />
+        </div>
+
+        <div className="home-player-copy">
+          <span className="home-player-chip">Cloud Music</span>
+          <h2>{track?.title ?? statusText}</h2>
+          {detailText ? <p>{detailText}</p> : null}
+        </div>
+      </div>
+
+      <p className="home-player-inline-lyric">{state.currentLyric || state.idleLyric}</p>
+
+      <div className="home-player-progress">
+        <span>{formatTime(state.currentTime)}</span>
+        <div className="home-player-progress__track" aria-hidden="true">
+          <span style={{ width: `${progress}%` }} />
+        </div>
+        <span>{formatTime(state.duration)}</span>
+      </div>
+
+      <div className="home-player-controls">
+        <button
+          aria-label="上一首"
+          className="home-player-control"
+          disabled={state.tracks.length < 2}
+          onClick={() => setCurrentTrack(state.currentIndex - 1)}
+          type="button"
+        >
+          <svg fill="currentColor" viewBox="0 0 24 24">
+            <path d="M8 6h2v12H8zM11 12l9 6V6z" />
+          </svg>
+        </button>
+
+        <button
+          aria-label={state.isPlaying ? "暂停" : "播放"}
+          className="home-player-control home-player-control--primary"
+          disabled={!state.ready}
+          onClick={() => setPlayback({ isPlaying: !state.isPlaying })}
+          type="button"
+        >
+          {state.isPlaying ? (
+            <svg fill="currentColor" viewBox="0 0 24 24">
+              <path d="M7 5h4v14H7zM13 5h4v14h-4z" />
+            </svg>
+          ) : (
+            <svg fill="currentColor" viewBox="0 0 24 24">
+              <path d="m8 5 11 7-11 7z" />
+            </svg>
           )}
-        </div>
-        <div style={{ display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
-          <button
-            type="button"
-            style={buttonStyle}
-            onClick={() => setPlayback({ isPlaying: !state.isPlaying })}
-            disabled={!state.ready}
-          >
-            {state.isPlaying ? "暂停" : "播放"}
-          </button>
-          <button
-            type="button"
-            style={{ ...buttonStyle, background: "rgba(148, 163, 184, 0.24)", color: "#e2e8f0" }}
-            onClick={() => setCurrentTrack(state.currentIndex + 1)}
-            disabled={state.tracks.length < 2}
-          >
-            下一首
-          </button>
-        </div>
+        </button>
+
+        <button
+          aria-label="下一首"
+          className="home-player-control"
+          disabled={state.tracks.length < 2}
+          onClick={() => setCurrentTrack(state.currentIndex + 1)}
+          type="button"
+        >
+          <svg fill="currentColor" viewBox="0 0 24 24">
+            <path d="M14 6h2v12h-2zM4 18l9-6-9-6z" />
+          </svg>
+        </button>
       </div>
     </section>
   );

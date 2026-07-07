@@ -9,6 +9,19 @@
     "title": "把文稿、参考资料、笔记和图文线索收进同一座资料岛",
     "description": "这里不是普通时间线博客，而是为文稿、资料页、笔记和专题互链准备的长期归档站。"
   },
+  "profile": {
+    "displayName": "Shinki",
+    "bio": "游戏爱好者，经济学在读，对各种各样的知识感兴趣。",
+    "avatarUrl": "https://s1.ax1x.com/2023/07/28/pCx6j3R.jpg"
+  },
+  "social": {
+    "github": "https://github.com/Shinki0325",
+    "bilibili": "",
+    "email": "mailto:shinki0325@qq.com"
+  },
+  "search": {
+    "placeholder": "搜索文稿、资料、笔记..."
+  },
   "announcements": [
     "资料持续整理中",
     "部分页面含双语对照阅读"

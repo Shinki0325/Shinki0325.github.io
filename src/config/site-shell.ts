@@ -3,6 +3,9 @@ import homePageConfigSource from "./pages/home.json";
 export const siteShell = {
   brand: homePageConfigSource.brand,
   hero: homePageConfigSource.hero,
+  profile: homePageConfigSource.profile,
+  social: homePageConfigSource.social,
+  search: homePageConfigSource.search,
   announcements: homePageConfigSource.announcements,
   navItems: [
     { href: "/", label: "首页" },
