@@ -1,11 +1,15 @@
 ---
-title: "黄金年代"
-date: "2026-07-06"
-summary: "围绕90年代 galgame 黄金年代论点的分段结构稿与论述展开。"
-type: "script"
-tags: ["galgame", "90年代", "结构稿"]
-topics: ["galgame-90s"]
-draft: false
+type: script
+topics:
+  - galgame-90s
+title: 黄金年代
+draft: true
+summary: 围绕90年代 galgame 黄金年代论点的分段结构稿与论述展开。
+date: '2026-07-06'
+tags:
+  - galgame
+  - 90年代
+  - 结构稿
 ---
 ### 第一部分：引言——一个违背现代常识的御宅族现象
 

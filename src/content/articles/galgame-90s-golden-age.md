@@ -1,14 +1,18 @@
 ---
-title: "杂谈 为什么90年代是galgame真正意义上的黄金年代"
-date: "2026-07-07"
-summary: "围绕90年代 galgame 为何能形成黄金年代感的一篇长文主稿。"
-type: "script"
-tags: ["galgame", "90年代", "视频稿"]
-topics: ["galgame-90s"]
-draft: false
+type: script
+topics:
+  - galgame-90s
 pinned: true
+title: 为什么90年代是galgame真正意义上的黄金年代
+draft: false
+summary: 围绕90年代 galgame 为何能形成黄金年代感的一篇长文主稿。
+date: '2026-07-07'
+tags:
+  - galgame
+  - 90年代
+  - 视频稿
 ---
-## 杂谈 为什么90年代是galgame真正意义上的黄金年代
+## 为什么90年代是galgame真正意义上的黄金年代
 
 ### **引言**
 

@@ -1,0 +1,121 @@
+<h2>前台风格方向对比</h2>
+<p class="subtitle">左边是我们现在的基础 Astro 版，右边是更贴近你指定参考博客的玻璃感、卡片编排和首页舞台感方向。</p>
+
+<div class="options">
+  <div class="option" data-choice="keep-current" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>保守整理型</h3>
+      <p>米白纸张、安静阅读、信息明确，但视觉情绪偏弱，更像内容归档站。</p>
+    </div>
+  </div>
+  <div class="option" data-choice="xh-inspired" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>参考站气质型</h3>
+      <p>毛玻璃、漂浮卡片、首页舞台感更强，也更像你之前指定的那套博客风格。</p>
+    </div>
+  </div>
+</div>
+
+<div class="split section">
+  <div class="mockup">
+    <div class="mockup-header">A. 当前方向</div>
+    <div class="mockup-body">
+      <div style="padding: 18px; background: linear-gradient(180deg, #fff7eb 0%, #f1e8da 100%); min-height: 440px; border-radius: 18px;">
+        <div style="background: rgba(255,250,242,.92); border: 1px solid #dccfbe; border-radius: 18px; padding: 18px; margin-bottom: 18px; box-shadow: 0 16px 40px rgba(70,46,28,.08);">
+          <div style="font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: #7e7267;">Shinki Archive</div>
+          <div style="font-size: 34px; font-weight: 800; margin-top: 8px;">温和纸面感首页</div>
+          <div style="margin-top: 10px; color: #665b53; line-height: 1.7;">标题、导航、正文块都很清楚，但视觉重心较平均，没有明显“舞台中心”。</div>
+          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:16px;">
+            <span style="padding:6px 12px; border-radius:999px; border:1px solid #dccfbe;">Articles</span>
+            <span style="padding:6px 12px; border-radius:999px; border:1px solid #dccfbe;">References</span>
+            <span style="padding:6px 12px; border-radius:999px; border:1px solid #dccfbe;">Notes</span>
+          </div>
+        </div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
+          <div style="background:#fffaf2; border:1px solid #dccfbe; border-radius:16px; padding:16px;">
+            <div style="font-size:12px; color:#9f623c; text-transform:uppercase;">2026-07-06</div>
+            <div style="font-weight:700; margin-top:8px;">Welcome Back</div>
+            <div style="font-size:14px; line-height:1.7; color:#6f655d; margin-top:8px;">一篇重建后的文章卡片示意。</div>
+          </div>
+          <div style="background:#fffaf2; border:1px solid #dccfbe; border-radius:16px; padding:16px;">
+            <div style="font-size:12px; color:#9f623c; text-transform:uppercase;">Source</div>
+            <div style="font-weight:700; margin-top:8px;">Example Public Reference</div>
+            <div style="font-size:14px; line-height:1.7; color:#6f655d; margin-top:8px;">资料卡很清楚，但整体层次还是偏“静态目录”。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mockup">
+    <div class="mockup-header">B. 参考博客气质方向</div>
+    <div class="mockup-body">
+      <div style="padding: 18px; background:
+        radial-gradient(circle at 15% 20%, rgba(255, 170, 205, .42), transparent 28%),
+        radial-gradient(circle at 82% 18%, rgba(125, 158, 255, .36), transparent 22%),
+        linear-gradient(180deg, #f6f7ff 0%, #e9edff 45%, #eef1f8 100%);
+        min-height: 440px; border-radius: 18px; position: relative; overflow:hidden;">
+        <div style="position:absolute; inset:18px 18px auto 18px; background: rgba(255,255,255,.34); border:1px solid rgba(255,255,255,.55); backdrop-filter: blur(18px); border-radius: 26px; padding: 18px 20px; box-shadow: 0 18px 60px rgba(79,97,168,.18);">
+          <div style="display:flex; justify-content:space-between; gap:16px; align-items:center;">
+            <div>
+              <div style="font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:#7380a8;">Video Script Archive</div>
+              <div style="font-size:34px; font-weight:900; margin-top:8px; color:#1f2340;">像数字橱窗的首页舞台</div>
+              <div style="margin-top:10px; color:#445071; line-height:1.75; max-width:420px;">主视觉先抓住人，再把脚本、资料库、专题卡片以漂浮分区铺开，明显更接近你提的那套感觉。</div>
+            </div>
+            <div style="width:120px; height:120px; border-radius:24px; background: linear-gradient(135deg, rgba(255,255,255,.65), rgba(164,192,255,.32)); border:1px solid rgba(255,255,255,.7);"></div>
+          </div>
+        </div>
+
+        <div style="display:grid; grid-template-columns:1.35fr .95fr; gap:16px; margin-top:190px;">
+          <div style="background: rgba(255,255,255,.42); border:1px solid rgba(255,255,255,.6); backdrop-filter: blur(16px); border-radius:22px; padding:18px; box-shadow:0 18px 50px rgba(79,97,168,.12);">
+            <div style="font-size:12px; color:#7a86ad; text-transform:uppercase;">Latest Scripts</div>
+            <div style="display:grid; gap:12px; margin-top:14px;">
+              <div style="background:rgba(255,255,255,.52); border-radius:16px; padding:14px;">
+                <div style="font-weight:800; color:#242842;">Welcome Back</div>
+                <div style="font-size:13px; color:#5d6889; margin-top:6px;">像展签一样展示主稿入口、标签和一句引导摘要。</div>
+              </div>
+              <div style="background:rgba(255,255,255,.52); border-radius:16px; padding:14px;">
+                <div style="font-weight:800; color:#242842;">VTB Fans Culture</div>
+                <div style="font-size:13px; color:#5d6889; margin-top:6px;">脚本区会更像“策展中的作品列表”。</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:grid; gap:16px;">
+            <div style="background: rgba(255,255,255,.42); border:1px solid rgba(255,255,255,.6); backdrop-filter: blur(16px); border-radius:22px; padding:18px;">
+              <div style="font-size:12px; color:#7a86ad; text-transform:uppercase;">Reference Library</div>
+              <div style="font-weight:800; color:#242842; margin-top:8px;">资料卡浮在首页上</div>
+              <div style="font-size:13px; color:#5d6889; margin-top:8px;">每张资料卡既像索引入口，也像视觉拼贴的一部分。</div>
+            </div>
+            <div style="background: linear-gradient(135deg, rgba(255,255,255,.45), rgba(230,232,255,.7)); border:1px solid rgba(255,255,255,.62); backdrop-filter: blur(16px); border-radius:22px; padding:18px;">
+              <div style="font-size:12px; color:#7a86ad; text-transform:uppercase;">Archive Mode</div>
+              <div style="font-weight:800; color:#242842; margin-top:8px;">更像个人宇宙入口</div>
+              <div style="font-size:13px; color:#5d6889; margin-top:8px;">这条路更适合你“视频稿 + 杂资料 + wiki 链接”的站点定位。</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="pros-cons">
+  <div class="pros">
+    <h4>我推荐 B 的原因</h4>
+    <ul>
+      <li>更接近你明确点名的参考站气质</li>
+      <li>更适合“主稿 + 资料卡 + 专题”混合信息结构</li>
+      <li>能在不换 Astro 架构的前提下，先把前台观感拉上去</li>
+    </ul>
+  </div>
+  <div class="cons">
+    <h4>代价</h4>
+    <ul>
+      <li>需要重做首页和文章/资料页的版式与全局样式</li>
+      <li>会比现在更强调视觉层次，而不是纯朴素文档站</li>
+      <li>需要我继续细调移动端和卡片密度</li>
+    </ul>
+  </div>
+</div>
