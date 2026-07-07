@@ -65,10 +65,9 @@ export const buildReferenceGraph = (
     }
   }
 
-  const sources: LinkSource[] = [...references, ...entries];
   const links: GraphLink[] = [];
 
-  for (const entry of sources) {
+  for (const entry of entries) {
     for (const link of parseWikiLinks(entry.body)) {
       const normalizedTarget = normalizeReferenceKey(link.target);
       const targetSlug = titleLookup.get(normalizedTarget);

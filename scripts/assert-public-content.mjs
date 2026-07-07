@@ -11,7 +11,7 @@ import {
 const contentRoot = fileURLToPath(new URL("../src/content/", import.meta.url));
 const distRoot = fileURLToPath(new URL("../dist/", import.meta.url));
 const privateCollections = ["drafts", "vault"];
-const publicCollections = ["articles", "notes"];
+const publicCollections = ["articles", "notes", "references"];
 
 const exists = async (targetPath) => {
   try {
@@ -179,6 +179,11 @@ const draftEntries = [];
 
 for (const collection of publicCollections) {
   const collectionRoot = path.join(contentRoot, collection);
+
+  if (!(await exists(collectionRoot))) {
+    continue;
+  }
+
   const files = await collectMarkdownFiles(collectionRoot);
 
   for (const filePath of files) {
@@ -196,7 +201,15 @@ for (const collection of publicCollections) {
 const references = await readReferenceEntries();
 const linkSources = [
   ...(await readPublicEntries("articles")),
-  ...(await readPublicEntries("notes"))
+  ...(await readPublicEntries("notes")),
+  ...references
+    .filter((entry) => entry.visibility === "public")
+    .map((entry) => ({
+      slug: entry.slug,
+      title: entry.title,
+      visibility: entry.visibility,
+      body: entry.body
+    }))
 ];
 const validation = validatePublicLinks(buildReferenceGraph(references, linkSources));
 

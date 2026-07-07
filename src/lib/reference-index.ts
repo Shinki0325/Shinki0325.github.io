@@ -23,10 +23,18 @@ export const createReferenceIndex = (references: EntryLike[], entries: EntryLike
       visibility: entry.data.visibility ?? "public",
       body: entry.body
     })),
-    entries.map<LinkSource>((entry) => ({
-      slug: entry.slug,
-      title: entry.data.title,
-      visibility: entry.data.visibility ?? "public",
-      body: entry.body
-    }))
+    [
+      ...references.map<LinkSource>((entry) => ({
+        slug: entry.slug,
+        title: entry.data.title,
+        visibility: entry.data.visibility ?? "public",
+        body: entry.body
+      })),
+      ...entries.map<LinkSource>((entry) => ({
+        slug: entry.slug,
+        title: entry.data.title,
+        visibility: entry.data.visibility ?? "public",
+        body: entry.body
+      }))
+    ]
   );
