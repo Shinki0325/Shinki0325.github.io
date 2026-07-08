@@ -1,8 +1,10 @@
 ---
 import HomeSearchBar from "../components/chrome/HomeSearchBar";
+import CharacterBirthdayCalendar from "../components/birthdays/CharacterBirthdayCalendar";
 import HomeLyricBar from "../components/music/HomeLyricBar";
 import HomeMusicCard from "../components/music/HomeMusicCard";
 import { siteShell } from "../config/site-shell";
+import { birthdayWorks, characterBirthdays } from "../data/character-birthdays";
 import { buildHomeSearchIndex } from "../lib/home-shell";
 import {
   getPublishedAlbums,
@@ -60,6 +62,8 @@ const latestUpdate = formatDate(
 const noteSummary = latestNote?.data.tags?.length
   ? `围绕 ${latestNote.data.tags.slice(0, 2).join(" / ")} 的整理笔记`
   : "把零散线索先整理成可继续扩写的工作台。";
+const birthdayWorkCount = new Set(characterBirthdays.map((character) => character.workId)).size;
+const birthdayCharacterCount = characterBirthdays.length;
 ---
 
 <BaseLayout>
@@ -147,6 +151,31 @@ const noteSummary = latestNote?.data.tags?.length
   <HomeLyricBar client:load />
 
   <section class="home-feature-grid" data-home-feature-grid>
+    <article class="home-birthday-stat-card glass-card" data-home-birthday-stats>
+      <div class="home-birthday-stat-card__head">
+        <p class="eyebrow">Birthday Archive</p>
+        <h2>角色生日索引</h2>
+      </div>
+      <div class="home-birthday-stat-card__grid">
+        <div class="home-birthday-stat-card__item">
+          <strong>{birthdayWorkCount}</strong>
+          <span>作品</span>
+        </div>
+        <div class="home-birthday-stat-card__item">
+          <strong>{birthdayCharacterCount}</strong>
+          <span>角色</span>
+        </div>
+      </div>
+    </article>
+
+    <div class="home-feature-card--calendar" data-home-birthday-calendar>
+      <CharacterBirthdayCalendar
+        characters={characterBirthdays}
+        client:only="react"
+        works={birthdayWorks}
+      />
+    </div>
+
     <article class="home-feature-card home-feature-card--primary glass-card">
       <div class="home-card-head">
         <div>

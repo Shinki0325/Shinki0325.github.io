@@ -1,0 +1,394 @@
+.birthday-calendar {
+  position: relative;
+  overflow: visible;
+  padding: clamp(18px, 3vw, 28px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  background:
+    radial-gradient(circle at 12% 0%, rgba(255, 255, 255, 0.18), transparent 32%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.09));
+  box-shadow: 0 24px 72px rgba(2, 6, 23, 0.34);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+}
+
+.birthday-calendar__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.birthday-calendar__eyebrow {
+  margin: 0 0 4px;
+  color: rgba(226, 232, 240, 0.72);
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 0.76rem;
+  font-style: italic;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.birthday-calendar h1 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(1.85rem, 5vw, 3.25rem);
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+.birthday-calendar__controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.birthday-calendar__controls button {
+  min-height: 36px;
+  padding: 0 14px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  color: rgba(248, 251, 255, 0.9);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 24px rgba(2, 6, 23, 0.16);
+  transition:
+    transform 160ms ease,
+    background 160ms ease,
+    border-color 160ms ease;
+}
+
+.birthday-calendar__controls button:hover {
+  transform: translateY(-1px);
+  border-color: rgba(255, 255, 255, 0.34);
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.birthday-calendar__controls .is-today {
+  color: #14213a;
+  background: rgba(255, 255, 255, 0.84);
+}
+
+.birthday-calendar__weekdays,
+.birthday-calendar__grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.birthday-calendar__weekdays {
+  gap: 8px;
+  margin-bottom: 8px;
+  color: rgba(226, 232, 240, 0.66);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.birthday-calendar__grid {
+  gap: 8px;
+}
+
+.birthday-calendar__day {
+  position: relative;
+  min-height: clamp(78px, 8vw, 112px);
+  overflow: visible;
+  padding: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 20px;
+  background: rgba(8, 15, 34, 0.34);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.birthday-calendar__day time {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 999px;
+  color: rgba(248, 251, 255, 0.86);
+  font-size: 0.82rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.birthday-calendar__day.is-muted {
+  opacity: 0.46;
+}
+
+.birthday-calendar__day.has-birthday {
+  background:
+    radial-gradient(circle at 80% 12%, rgba(255, 255, 255, 0.16), transparent 42%),
+    rgba(8, 15, 34, 0.38);
+}
+
+.birthday-calendar__day.has-open-overflow {
+  z-index: 30;
+}
+
+.birthday-calendar__day.is-today {
+  border-color: rgba(255, 232, 164, 0.72);
+  box-shadow:
+    0 0 0 1px rgba(255, 232, 164, 0.28),
+    0 14px 34px rgba(250, 204, 21, 0.12);
+}
+
+.birthday-calendar__day.is-today time {
+  color: #1d2538;
+  background: linear-gradient(135deg, #fef3c7, #f9a8d4);
+}
+
+.birthday-calendar__avatars {
+  position: absolute;
+  z-index: 3;
+  inset: 7px 7px 7px 34px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 5px;
+  align-content: start;
+  justify-items: end;
+}
+
+.birthday-calendar__day.has-open-overflow .birthday-calendar__avatars {
+  z-index: 31;
+}
+
+.birthday-calendar__avatar,
+.birthday-calendar__more,
+.birthday-calendar__overflow {
+  position: relative;
+  width: min(100%, 40px);
+  aspect-ratio: 1;
+}
+
+.birthday-calendar__avatar,
+.birthday-calendar__more {
+  border: 2px solid rgba(255, 255, 255, 0.76);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 10px 20px rgba(2, 6, 23, 0.2);
+}
+
+.birthday-calendar__avatar {
+  display: block;
+  transition:
+    transform 160ms ease,
+    z-index 160ms ease;
+}
+
+.birthday-calendar__avatar:hover {
+  z-index: 5;
+  transform: translateY(-2px) scale(1.06);
+}
+
+.birthday-calendar__avatar img,
+.birthday-calendar__avatar > span:first-child {
+  width: 100%;
+  height: 100%;
+  border-radius: 11px;
+}
+
+.birthday-calendar__avatar img {
+  object-fit: cover;
+}
+
+.birthday-calendar__avatar > span:first-child {
+  display: grid;
+  place-items: center;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 900;
+}
+
+.birthday-calendar__tooltip {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 8px);
+  z-index: 10;
+  min-width: 130px;
+  max-width: 220px;
+  padding: 8px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 14px;
+  color: #f8fbff;
+  background: rgba(5, 9, 22, 0.9);
+  box-shadow: 0 18px 40px rgba(2, 6, 23, 0.36);
+  opacity: 0;
+  pointer-events: none;
+  text-align: left;
+  transform: translate(-50%, 6px);
+  transition:
+    opacity 140ms ease,
+    transform 140ms ease;
+}
+
+.birthday-calendar__tooltip strong,
+.birthday-calendar__tooltip small {
+  display: block;
+}
+
+.birthday-calendar__tooltip strong {
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.birthday-calendar__tooltip small {
+  margin-top: 2px;
+  color: rgba(226, 232, 240, 0.68);
+  font-size: 0.7rem;
+  line-height: 1.35;
+}
+
+.birthday-calendar__avatar:hover .birthday-calendar__tooltip,
+.birthday-calendar__avatar:focus-visible .birthday-calendar__tooltip {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.birthday-calendar__more {
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.birthday-calendar__more {
+  padding: 0;
+  cursor: pointer;
+  transition:
+    transform 160ms ease,
+    background 160ms ease,
+    border-color 160ms ease;
+}
+
+.birthday-calendar__more:hover,
+.birthday-calendar__more[aria-expanded="true"] {
+  transform: translateY(-2px) scale(1.04);
+  border-color: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.birthday-calendar__overflow-strip {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+}
+
+.birthday-calendar__expanded-avatar {
+  flex: 0 0 40px;
+  width: 40px;
+  border-color: rgba(255, 255, 255, 0.76);
+  background: transparent;
+  box-shadow: none;
+}
+
+.birthday-calendar__expanded-avatar:hover,
+.birthday-calendar__expanded-avatar:focus-visible {
+  z-index: 25;
+  transform: translateY(-1px);
+}
+
+.birthday-calendar__expanded-avatar .birthday-calendar__tooltip {
+  left: 0;
+  bottom: calc(100% + 7px);
+  transform: translate(0, 6px);
+}
+
+.birthday-calendar__expanded-avatar:hover .birthday-calendar__tooltip,
+.birthday-calendar__expanded-avatar:focus-visible .birthday-calendar__tooltip {
+  transform: translate(0, 0);
+}
+
+@media (max-width: 760px) {
+  .birthday-calendar__header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .birthday-calendar__controls {
+    justify-content: flex-start;
+  }
+
+  .birthday-calendar__grid {
+    gap: 5px;
+  }
+
+  .birthday-calendar__weekdays {
+    gap: 5px;
+  }
+
+  .birthday-calendar__day {
+    min-height: 70px;
+    padding: 6px;
+    border-radius: 15px;
+  }
+
+  .birthday-calendar__day time {
+    width: 21px;
+    height: 21px;
+    font-size: 0.72rem;
+  }
+
+  .birthday-calendar__avatars {
+    inset: 6px 5px 5px 27px;
+    gap: 3px;
+  }
+
+  .birthday-calendar__avatar,
+  .birthday-calendar__more,
+  .birthday-calendar__overflow {
+    width: min(100%, 30px);
+    border-radius: 11px;
+  }
+
+  .birthday-calendar__avatar img,
+  .birthday-calendar__avatar > span:first-child {
+    border-radius: 8px;
+  }
+
+  .birthday-calendar__expanded-avatar {
+    flex-basis: 30px;
+    width: 30px;
+  }
+
+  .birthday-calendar__overflow-strip {
+    gap: 4px;
+    padding: 2px;
+    border-radius: 13px;
+  }
+}
+
+@media (max-width: 520px) {
+  .birthday-calendar {
+    padding: 14px;
+    border-radius: 24px;
+  }
+
+  .birthday-calendar__day {
+    min-height: 58px;
+  }
+
+  .birthday-calendar__avatars {
+    grid-template-columns: 1fr;
+  }
+
+  .birthday-calendar__avatar,
+  .birthday-calendar__more,
+  .birthday-calendar__overflow {
+    width: min(100%, 28px);
+  }
+
+  .birthday-calendar__expanded-avatar {
+    flex-basis: 28px;
+    width: 28px;
+  }
+}
