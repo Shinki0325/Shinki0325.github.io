@@ -13,9 +13,9 @@
 }
 
 .birthday-calendar__header {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, auto) minmax(220px, 1fr) auto;
   align-items: flex-end;
-  justify-content: space-between;
   gap: 18px;
   margin-bottom: 18px;
 }
@@ -36,6 +36,38 @@
   font-size: clamp(1.85rem, 5vw, 3.25rem);
   letter-spacing: -0.05em;
   line-height: 1;
+}
+
+.birthday-calendar__stats {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 16px;
+  padding-bottom: 5px;
+  color: rgba(226, 232, 240, 0.72);
+}
+
+.birthday-calendar__stats span {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  white-space: nowrap;
+}
+
+.birthday-calendar__stats span + span {
+  padding-left: 16px;
+  border-left: 1px solid rgba(226, 232, 240, 0.22);
+}
+
+.birthday-calendar__stats strong {
+  color: #fff;
+  font-size: clamp(1.25rem, 2.4vw, 1.78rem);
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.12);
 }
 
 .birthday-calendar__controls {
@@ -310,12 +342,16 @@
 
 @media (max-width: 760px) {
   .birthday-calendar__header {
+    grid-template-columns: 1fr;
     align-items: stretch;
-    flex-direction: column;
   }
 
   .birthday-calendar__controls {
     justify-content: flex-start;
+  }
+
+  .birthday-calendar__stats {
+    padding-bottom: 0;
   }
 
   .birthday-calendar__grid {

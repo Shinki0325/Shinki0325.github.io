@@ -52,6 +52,13 @@ export default function CharacterBirthdayCalendar({ characters, works }: Props) 
     month: today.month,
   }));
   const [openOverflowDate, setOpenOverflowDate] = useState<string | null>(null);
+  const birthdayStats = useMemo(
+    () => ({
+      workCount: new Set(characters.map((character) => character.workId)).size,
+      characterCount: characters.length,
+    }),
+    [characters],
+  );
 
   const workById = useMemo(() => {
     return new Map(works.map((work) => [work.id, work]));
@@ -100,6 +107,17 @@ export default function CharacterBirthdayCalendar({ characters, works }: Props) 
         <div>
           <p className="birthday-calendar__eyebrow">Character Birthday Calendar</p>
           <h1>{formatMonth(calendar.year, calendar.month)}</h1>
+        </div>
+
+        <div className="birthday-calendar__stats" aria-label="生日历收录统计">
+          <span>
+            <strong>{birthdayStats.workCount}</strong>
+            作品
+          </span>
+          <span>
+            <strong>{birthdayStats.characterCount}</strong>
+            角色
+          </span>
         </div>
 
         <div className="birthday-calendar__controls" aria-label="月份切换">
