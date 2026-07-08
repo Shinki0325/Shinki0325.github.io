@@ -46,13 +46,13 @@ export default function App() {
   }, []);
 
   const navItems: { view: View; label: string }[] = [
-    { view: "dashboard", label: "Dashboard" },
-    { view: "content", label: "Content" },
-    { view: "editor", label: "Editor" },
-    { view: "album-editor", label: "Album Editor" },
-    { view: "reference-editor", label: "Reference Editor" },
-    { view: "pages", label: "Pages" },
-    { view: "assets", label: "Assets" }
+    { view: "dashboard", label: "概览" },
+    { view: "content", label: "内容" },
+    { view: "editor", label: "稿件编辑" },
+    { view: "album-editor", label: "相册编辑" },
+    { view: "reference-editor", label: "资料编辑" },
+    { view: "pages", label: "页面配置" },
+    { view: "assets", label: "资源" }
   ];
 
   const openEntry = (item: ContentListItem) => {

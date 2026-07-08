@@ -8,18 +8,18 @@ type ContentListProps = {
 };
 
 const KINDS: { value: ContentKind; label: string }[] = [
-  { value: "articles", label: "Articles" },
-  { value: "albums", label: "Albums" },
-  { value: "references", label: "References" },
-  { value: "drafts", label: "Drafts" },
-  { value: "notes", label: "Notes" },
-  { value: "topics", label: "Topics" },
-  { value: "vault", label: "Vault" }
+  { value: "articles", label: "稿件" },
+  { value: "albums", label: "相册" },
+  { value: "references", label: "资料库" },
+  { value: "drafts", label: "草稿" },
+  { value: "notes", label: "笔记" },
+  { value: "topics", label: "专题" },
+  { value: "vault", label: "私有库" }
 ];
 
 const formatDate = (value?: string) => {
   if (!value) {
-    return "No date";
+    return "未填写";
   }
 
   const date = new Date(value);
@@ -76,11 +76,11 @@ export default function ContentList({ defaultKind = "articles", onOpenEntry }: C
         <div className="toolbar">
           <div>
             <p className="eyebrow">Content Browser</p>
-            <h1>Content List</h1>
+            <h1>内容列表</h1>
           </div>
 
           <label className="field">
-            <span>Collection</span>
+            <span>集合</span>
             <select value={kind} onChange={(event) => setKind(event.target.value as ContentKind)}>
               {KINDS.map((option) => (
                 <option key={option.value} value={option.value}>
@@ -91,7 +91,7 @@ export default function ContentList({ defaultKind = "articles", onOpenEntry }: C
           </label>
         </div>
 
-        {loading ? <p>Loading content...</p> : null}
+        {loading ? <p>正在读取内容…</p> : null}
         {error ? <p className="error">{error}</p> : null}
 
         {!loading && !error ? (
@@ -110,7 +110,7 @@ export default function ContentList({ defaultKind = "articles", onOpenEntry }: C
                 {onOpenEntry ? (
                   <div className="actions">
                     <button className="secondary-button" onClick={() => onOpenEntry(item)} type="button">
-                      Open Editor
+                      打开编辑
                     </button>
                   </div>
                 ) : null}

@@ -7,6 +7,7 @@ describe("manager editor modules", () => {
     const editorSource = await fs.readFile("manager/src/pages/Editor.tsx", "utf8");
 
     expect(appSource).toContain('import AlbumEditor from "./pages/AlbumEditor"');
+    expect(appSource).toContain('{ view: "album-editor", label: "相册编辑" }');
     expect(appSource).toContain('item?.kind === "albums"');
     expect(appSource).toContain('return "album-editor"');
     expect(appSource).toContain('<AlbumEditor selectedEntry={selectedEntry} />');
