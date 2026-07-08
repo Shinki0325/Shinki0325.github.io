@@ -32,6 +32,17 @@ export type LoadCloudTracksOptions = {
   signal?: AbortSignal;
 };
 
+export type StaticCloudTrackInput = {
+  id: string;
+  title: string;
+  artist: string;
+  coverUrl?: string;
+  audioUrl?: string;
+  lrc?: string;
+  duration?: number | null;
+  album?: string | null;
+};
+
 type CloudRecord = Record<string, unknown>;
 
 const UNKNOWN_TITLE = "未命名曲目";
@@ -133,6 +144,25 @@ export function buildFallbackCloudTrack(id: string, fallbackCover: string): Clou
     duration: null,
     album: null,
   };
+}
+
+export function buildStaticCloudTracks(
+  tracks: readonly StaticCloudTrackInput[],
+  fallbackCover: string
+): CloudTrack[] {
+  return tracks.map((track) => ({
+    id: track.id,
+    title: track.title || `网易云歌曲 ${track.id}`,
+    artist: track.artist || "网易云音乐",
+    audioUrl:
+      track.audioUrl ||
+      `https://music.163.com/song/media/outer/url?id=${encodeURIComponent(track.id)}.mp3`,
+    coverUrl: track.coverUrl || fallbackCover,
+    lyrics: parseLrc(track.lrc ?? ""),
+    lyricsUrl: null,
+    duration: track.duration ?? null,
+    album: track.album ?? null,
+  }));
 }
 
 export function parseLrc(text: string): LyricLine[] {

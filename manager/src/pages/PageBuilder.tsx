@@ -25,8 +25,7 @@ const EMPTY_HOME_FORM: HomePageConfigForm = {
   searchPlaceholder: "",
   announcementText: "",
   backgroundImageText: "",
-  cloudMusicIdsText: "",
-  apiBaseUrl: "",
+  musicTracksJson: "[]",
   fallbackCover: "",
   idleLyric: "",
 };
@@ -280,22 +279,18 @@ export default function PageBuilder() {
 
             <section className="panel stack">
               <div>
-                <p className="eyebrow">Cloud Music</p>
-                <h2>云音乐配置</h2>
+                <p className="eyebrow">Music Library</p>
+                <h2>静态音乐曲库</h2>
               </div>
               <div className="grid-form">
                 <label className="field field-span">
-                  <span>歌曲 ID 列表</span>
+                  <span>曲库 JSON</span>
                   <textarea
                     className="meta-area"
-                    value={homeForm.cloudMusicIdsText}
-                    onChange={(event) => updateHomeForm("cloudMusicIdsText", event.target.value)}
+                    value={homeForm.musicTracksJson}
+                    onChange={(event) => updateHomeForm("musicTracksJson", event.target.value)}
                   />
-                  <small>每行一个歌曲 ID，空行会自动忽略。</small>
-                </label>
-                <label className="field field-span">
-                  <span>API 基础地址</span>
-                  <input value={homeForm.apiBaseUrl} onChange={(event) => updateHomeForm("apiBaseUrl", event.target.value)} />
+                  <small>数组内每首歌支持 id、title、artist、coverUrl、audioUrl、lrc；首页运行时不会请求云音乐 API。</small>
                 </label>
                 <label className="field">
                   <span>兜底封面</span>

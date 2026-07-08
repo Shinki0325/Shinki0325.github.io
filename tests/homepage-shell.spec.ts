@@ -38,41 +38,22 @@ test("homepage uses the local looping video background without loading it on inn
   await expect(page.locator("[data-home-background-video]")).toHaveCount(0);
 });
 
-test("homepage resolves remote lyric urls into visible lyric text", async ({ page }) => {
+test("homepage uses static music metadata without calling the cloud music api", async ({ page }) => {
+  let cloudMusicRequests = 0;
   await page.route("https://api.injahow.cn/meting/**", async (route) => {
-    const requestUrl = new URL(route.request().url());
-    const type = requestUrl.searchParams.get("type");
-
-    if (type === "lrc") {
-      await route.fulfill({
-        status: 200,
-        contentType: "text/plain; charset=utf-8",
-        body: "[00:01.50]第一句\n[00:05.00]第二句",
-      });
-      return;
-    }
-
+    cloudMusicRequests += 1;
     await route.fulfill({
-      status: 200,
+      status: 500,
       contentType: "application/json; charset=utf-8",
-      body: JSON.stringify([
-        {
-          id: requestUrl.searchParams.get("id") ?? "1809646618",
-          name: "云月谣",
-          artist: "兰音Reine",
-          url: "https://cdn.example.com/song.mp3",
-          pic: "https://cdn.example.com/cover.jpg",
-          lrc: "https://api.injahow.cn/meting/?server=netease&type=lrc&id=1809646618",
-        },
-      ]),
+      body: JSON.stringify({ message: "cloud api should not be called" }),
     });
   });
 
   await page.goto("/");
   await dismissSplashIfVisible(page);
 
-  await expect(page.locator("[data-home-music-card]")).toContainText("云月谣");
-  await expect(page.locator("[data-home-lyric-bar]")).toContainText("第一句");
+  await expect(page.locator("[data-home-music-card]")).toContainText("网易云歌曲 4931896");
+  expect(cloudMusicRequests).toBe(0);
 });
 
 test("homepage hero matches the requested asymmetric profile layout", async ({ page }) => {

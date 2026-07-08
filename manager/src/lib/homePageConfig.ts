@@ -14,8 +14,7 @@ export type HomePageConfigForm = {
   searchPlaceholder: string;
   announcementText: string;
   backgroundImageText: string;
-  cloudMusicIdsText: string;
-  apiBaseUrl: string;
+  musicTracksJson: string;
   fallbackCover: string;
   idleLyric: string;
 };
@@ -42,6 +41,35 @@ const textToLines = (value: string) =>
     .split(/\r?\n/)
     .map((line) => line.trim())
     .filter(Boolean);
+
+const musicTracksToJson = (music: HomePageConfigRecord) => {
+  if (Array.isArray(music.tracks)) {
+    return JSON.stringify(music.tracks, null, 2);
+  }
+
+  return JSON.stringify(
+    asStringList(music.cloudMusicIds).map((id) => ({
+      id,
+      title: `网易云歌曲 ${id}`,
+      artist: "网易云音乐",
+      coverUrl: asString(music.fallbackCover),
+      audioUrl: `https://music.163.com/song/media/outer/url?id=${encodeURIComponent(id)}.mp3`,
+      lrc: ""
+    })),
+    null,
+    2
+  );
+};
+
+const parseMusicTracks = (value: string) => {
+  const parsed = JSON.parse(value);
+
+  if (!Array.isArray(parsed)) {
+    throw new Error("音乐曲库必须是数组 JSON。");
+  }
+
+  return parsed;
+};
 
 export const parseHomePageConfig = (json: string): ParsedHomePageConfig => {
   const source = asRecord(JSON.parse(json));
@@ -70,16 +98,23 @@ export const parseHomePageConfig = (json: string): ParsedHomePageConfig => {
       searchPlaceholder: asString(search.placeholder),
       announcementText: linesToText(source.announcements),
       backgroundImageText: linesToText(source.backgroundImages),
-      cloudMusicIdsText: linesToText(music.cloudMusicIds),
-      apiBaseUrl: asString(music.apiBaseUrl),
+      musicTracksJson: musicTracksToJson(music),
       fallbackCover: asString(music.fallbackCover),
       idleLyric: asString(music.idleLyric)
     }
   };
 };
 
-export const serializeHomePageConfig = (source: HomePageConfigRecord, form: HomePageConfigForm) =>
-  JSON.stringify(
+export const serializeHomePageConfig = (source: HomePageConfigRecord, form: HomePageConfigForm) => {
+  const {
+    cloudMusicIds: _cloudMusicIds,
+    apiBaseUrl: _apiBaseUrl,
+    server: _server,
+    type: _type,
+    ...musicSource
+  } = asRecord(source.music);
+
+  return JSON.stringify(
     {
       ...source,
       brand: {
@@ -113,9 +148,8 @@ export const serializeHomePageConfig = (source: HomePageConfigRecord, form: Home
       announcements: textToLines(form.announcementText),
       backgroundImages: textToLines(form.backgroundImageText),
       music: {
-        ...asRecord(source.music),
-        cloudMusicIds: textToLines(form.cloudMusicIdsText),
-        apiBaseUrl: form.apiBaseUrl,
+        ...musicSource,
+        tracks: parseMusicTracks(form.musicTracksJson),
         fallbackCover: form.fallbackCover,
         idleLyric: form.idleLyric
       }
@@ -123,3 +157,4 @@ export const serializeHomePageConfig = (source: HomePageConfigRecord, form: Home
     null,
     2
   );
+};

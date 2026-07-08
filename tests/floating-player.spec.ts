@@ -1,34 +1,18 @@
 import { expect, test } from "@playwright/test";
 
-async function stubCloudMusic(page: Parameters<typeof test>[0]["page"]) {
+async function trackCloudMusicRequests(page: Parameters<typeof test>[0]["page"]) {
+  let requestCount = 0;
+
   await page.route("https://api.injahow.cn/meting/**", async (route) => {
-    const requestUrl = new URL(route.request().url());
-    const type = requestUrl.searchParams.get("type");
-
-    if (type === "lrc") {
-      await route.fulfill({
-        status: 200,
-        contentType: "text/plain; charset=utf-8",
-        body: "[00:00.00]暁の祈り\n[00:00.00]晓愿\n[00:05.00]second line",
-      });
-      return;
-    }
-
+    requestCount += 1;
     await route.fulfill({
-      status: 200,
+      status: 500,
       contentType: "application/json; charset=utf-8",
-      body: JSON.stringify([
-        {
-          id: requestUrl.searchParams.get("id") ?? "1809646618",
-          name: "Test Track",
-          artist: "Test Artist",
-          url: `https://cdn.example.com/song-${requestUrl.searchParams.get("id") ?? "1809646618"}.mp3`,
-          pic: "https://cdn.example.com/cover.jpg",
-          lrc: "https://api.injahow.cn/meting/?server=netease&type=lrc&id=1809646618",
-        },
-      ]),
+      body: JSON.stringify({ message: "cloud api should not be called" }),
     });
   });
+
+  return () => requestCount;
 }
 
 async function stubMediaPlayback(page: Parameters<typeof test>[0]["page"]) {
@@ -81,15 +65,16 @@ async function dismissSplash(page: Parameters<typeof test>[0]["page"]) {
 
 test("global player keeps playback across navigation and appears on inner pages", async ({ page }) => {
   await stubMediaPlayback(page);
-  await stubCloudMusic(page);
+  const getCloudMusicRequestCount = await trackCloudMusicRequests(page);
 
   await page.goto("/");
   await dismissSplash(page);
 
   await expect(page.locator("[data-floating-player]")).toBeHidden();
-  await expect(page.locator("[data-home-music-card]")).toContainText("Test Track");
+  await expect(page.locator("[data-home-music-card]")).toContainText("网易云歌曲 4931896");
   await expect(page.locator("[data-next-music-audio]")).toHaveAttribute("preload", "auto");
-  await expect(page.locator("[data-next-music-audio]")).toHaveAttribute("src", /song-683914\.mp3$/);
+  await expect(page.locator("[data-next-music-audio]")).toHaveAttribute("src", /id=683914\.mp3$/);
+  expect(getCloudMusicRequestCount()).toBe(0);
 
   await page.locator("[data-home-music-card]").getByRole("button", { name: /play|播放/i }).click();
   await expect(page.locator("[data-global-music-audio]")).toHaveAttribute("data-playing", "true");
@@ -100,9 +85,8 @@ test("global player keeps playback across navigation and appears on inner pages"
   const floatingPlayer = page.locator("[data-floating-player]");
   await expect(floatingPlayer).toBeVisible();
   await expect(floatingPlayer).toHaveClass(/is-playing/);
-  await expect(floatingPlayer).toContainText("Test Track");
-  await expect(floatingPlayer).toContainText("暁の祈り");
-  await expect(floatingPlayer).not.toContainText("晓愿");
+  await expect(floatingPlayer).toContainText("网易云歌曲 4931896");
+  await expect(floatingPlayer).toContainText("Ciallo");
   await expect(page.locator("[data-global-music-audio]")).toHaveAttribute("data-playing", "true");
 
   await floatingPlayer.getByRole("button", { name: "下一首" }).click();

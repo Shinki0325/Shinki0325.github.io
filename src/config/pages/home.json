@@ -28,17 +28,63 @@
   ],
   "backgroundImages": [],
   "music": {
-    "apiBaseUrl": "https://api.injahow.cn/meting/",
-    "server": "netease",
-    "type": "song",
-    "cloudMusicIds": [
-      "4931896",
-      "683914",
-      "454924750",
-      "30482309",
-      "2050292874",
-      "1459692412",
-      "4930312"
+    "tracks": [
+      {
+        "id": "4931896",
+        "title": "网易云歌曲 4931896",
+        "artist": "网易云音乐",
+        "coverUrl": "https://s1.ax1x.com/2023/07/28/pCx6j3R.jpg",
+        "audioUrl": "https://music.163.com/song/media/outer/url?id=4931896.mp3",
+        "lrc": ""
+      },
+      {
+        "id": "683914",
+        "title": "网易云歌曲 683914",
+        "artist": "网易云音乐",
+        "coverUrl": "https://s1.ax1x.com/2023/07/28/pCx6j3R.jpg",
+        "audioUrl": "https://music.163.com/song/media/outer/url?id=683914.mp3",
+        "lrc": ""
+      },
+      {
+        "id": "454924750",
+        "title": "网易云歌曲 454924750",
+        "artist": "网易云音乐",
+        "coverUrl": "https://s1.ax1x.com/2023/07/28/pCx6j3R.jpg",
+        "audioUrl": "https://music.163.com/song/media/outer/url?id=454924750.mp3",
+        "lrc": ""
+      },
+      {
+        "id": "30482309",
+        "title": "网易云歌曲 30482309",
+        "artist": "网易云音乐",
+        "coverUrl": "https://s1.ax1x.com/2023/07/28/pCx6j3R.jpg",
+        "audioUrl": "https://music.163.com/song/media/outer/url?id=30482309.mp3",
+        "lrc": ""
+      },
+      {
+        "id": "2050292874",
+        "title": "网易云歌曲 2050292874",
+        "artist": "网易云音乐",
+        "coverUrl": "https://s1.ax1x.com/2023/07/28/pCx6j3R.jpg",
+        "audioUrl": "https://music.163.com/song/media/outer/url?id=2050292874.mp3",
+        "lrc": ""
+      },
+      {
+        "id": "1459692412",
+        "title": "网易云歌曲 1459692412",
+        "artist": "网易云音乐",
+        "coverUrl": "https://s1.ax1x.com/2023/07/28/pCx6j3R.jpg",
+        "audioUrl": "https://music.163.com/song/media/outer/url?id=1459692412.mp3",
+        "lrc": ""
+      },
+      {
+        "id": "4930312",
+        "title": "网易云歌曲 4930312",
+        "artist": "网易云音乐",
+        "coverUrl": "https://s1.ax1x.com/2023/07/28/pCx6j3R.jpg",
+        "audioUrl": "https://music.163.com/song/media/outer/url?id=4930312.mp3",
+        "lrc": ""
+      }
     ],
     "idleLyric": "Ciallo～(∠・ω )⌒☆",
     "fallbackCover": "https://s1.ax1x.com/2023/07/28/pCx6j3R.jpg"

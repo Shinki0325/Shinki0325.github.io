@@ -32,10 +32,16 @@ const HOME_JSON = JSON.stringify(
     announcements: ["资料持续整理中", "部分页面含双语对照阅读"],
     backgroundImages: ["/uploads/ui/bg-1.jpg", "/uploads/ui/bg-2.jpg"],
     music: {
-      apiBaseUrl: "https://api.injahow.cn/meting/",
-      server: "netease",
-      type: "song",
-      cloudMusicIds: ["1809646618", "3361076230"],
+      tracks: [
+        {
+          id: "1809646618",
+          title: "云月谣",
+          artist: "兰音Reine",
+          coverUrl: "/uploads/music/covers/yunyueyao.jpg",
+          audioUrl: "https://music.163.com/song/media/outer/url?id=1809646618.mp3",
+          lrc: "[00:01.00]第一句",
+        },
+      ],
       idleLyric: "欢迎来到资料归档首页",
       fallbackCover: "/uploads/ui/music-cover-fallback.jpg",
     },
@@ -68,8 +74,13 @@ describe("home page config helpers", () => {
     expect(parsed.form.searchPlaceholder).toContain("搜索");
     expect(parsed.form.announcementText).toBe("资料持续整理中\n部分页面含双语对照阅读");
     expect(parsed.form.backgroundImageText).toBe("/uploads/ui/bg-1.jpg\n/uploads/ui/bg-2.jpg");
-    expect(parsed.form.cloudMusicIdsText).toBe("1809646618\n3361076230");
-    expect(parsed.form.apiBaseUrl).toContain("meting");
+    expect(JSON.parse(parsed.form.musicTracksJson)).toEqual([
+      expect.objectContaining({
+        id: "1809646618",
+        title: "云月谣",
+        artist: "兰音Reine",
+      }),
+    ]);
     expect(parsed.form.fallbackCover).toContain("fallback");
     expect(parsed.form.idleLyric).toContain("资料归档");
   });
@@ -89,8 +100,20 @@ describe("home page config helpers", () => {
       searchPlaceholder: "搜索首页内容",
       announcementText: "首页改版中\n欢迎反馈",
       backgroundImageText: "/hero/a.jpg\n\n/hero/b.jpg",
-      cloudMusicIdsText: "1\n2\n\n3",
-      apiBaseUrl: "https://music.example/api",
+      musicTracksJson: JSON.stringify(
+        [
+          {
+            id: "1",
+            title: "静态曲目",
+            artist: "静态歌手",
+            coverUrl: "/img/cover.jpg",
+            audioUrl: "https://music.163.com/song/media/outer/url?id=1.mp3",
+            lrc: "",
+          },
+        ],
+        null,
+        2,
+      ),
       fallbackCover: "/img/fallback.jpg",
       idleLyric: "等待播放中",
     });
@@ -117,12 +140,20 @@ describe("home page config helpers", () => {
     });
     expect(next.announcements).toEqual(["首页改版中", "欢迎反馈"]);
     expect(next.backgroundImages).toEqual(["/hero/a.jpg", "/hero/b.jpg"]);
-    expect(next.music.cloudMusicIds).toEqual(["1", "2", "3"]);
-    expect(next.music.apiBaseUrl).toBe("https://music.example/api");
+    expect(next.music.tracks).toEqual([
+      {
+        id: "1",
+        title: "静态曲目",
+        artist: "静态歌手",
+        coverUrl: "/img/cover.jpg",
+        audioUrl: "https://music.163.com/song/media/outer/url?id=1.mp3",
+        lrc: "",
+      },
+    ]);
+    expect("cloudMusicIds" in next.music).toBe(false);
+    expect("apiBaseUrl" in next.music).toBe(false);
     expect(next.music.fallbackCover).toBe("/img/fallback.jpg");
     expect(next.music.idleLyric).toBe("等待播放中");
-    expect(next.music.server).toBe("netease");
-    expect(next.music.type).toBe("song");
     expect(next.blocks).toEqual([
       {
         type: "article-list",

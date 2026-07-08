@@ -7,11 +7,11 @@ describe("site shell config", () => {
     expect(siteShell.navItems.map((item) => item.label)).toEqual(
       expect.arrayContaining(["首页", "文稿", "资料库", "笔记", "照片墙", "专题", "关于"]),
     );
-    expect(siteShell.music.cloudMusicIds.length).toBeGreaterThan(0);
-    expect(siteShell.music.cloudMusicIds).toEqual(
+    expect(siteShell.music.tracks.length).toBeGreaterThan(0);
+    expect(siteShell.music.tracks.map((track) => track.id)).toEqual(
       expect.arrayContaining(["2050292874", "1459692412", "4930312"]),
     );
-    expect(siteShell.music.apiBaseUrl).toContain("http");
+    expect("apiBaseUrl" in siteShell.music).toBe(false);
     expect(siteShell.announcements.length).toBeGreaterThan(0);
   });
 });

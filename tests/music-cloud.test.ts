@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   buildCloudMusicRequestUrl,
   buildFallbackCloudTrack,
+  buildStaticCloudTracks,
   hydrateCloudTrackLyrics,
   loadCloudTracks,
   normalizeCloudTrack,
@@ -193,5 +194,34 @@ describe("music cloud adapter", () => {
     expect(tracks.every((track) => track.audioUrl.includes("music.163.com/song/media/outer/url"))).toBe(
       true
     );
+  });
+
+  it("builds tracks from static site metadata without needing the cloud api", () => {
+    const tracks = buildStaticCloudTracks(
+      [
+        {
+          id: "2050292874",
+          title: "静态曲目",
+          artist: "静态歌手",
+          coverUrl: "/uploads/music/covers/2050292874.jpg",
+          lrc: "[00:01.00]一行歌词",
+        },
+      ],
+      "/uploads/ui/music-cover-fallback.jpg",
+    );
+
+    expect(tracks).toEqual([
+      {
+        id: "2050292874",
+        title: "静态曲目",
+        artist: "静态歌手",
+        audioUrl: "https://music.163.com/song/media/outer/url?id=2050292874.mp3",
+        coverUrl: "/uploads/music/covers/2050292874.jpg",
+        lyrics: [{ time: 1, text: "一行歌词" }],
+        lyricsUrl: null,
+        duration: null,
+        album: null,
+      },
+    ]);
   });
 });

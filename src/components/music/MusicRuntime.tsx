@@ -1,7 +1,7 @@
 import { useStore } from "@nanostores/react";
 import { useEffect, useRef } from "react";
 import { siteShell } from "../../config/site-shell";
-import { loadCloudTracks } from "../../lib/music-cloud";
+import { buildStaticCloudTracks } from "../../lib/music-cloud";
 import {
   findActiveLyric,
   musicState,
@@ -64,45 +64,12 @@ export default function MusicRuntime() {
       return;
     }
 
-    let cancelled = false;
-    const controller = new AbortController();
+    const tracks = buildStaticCloudTracks(siteShell.music.tracks, siteShell.music.fallbackCover);
+    setTracks(tracks, { idleLyric: siteShell.music.idleLyric });
 
-    async function loadTracks() {
-      try {
-        const tracks = await loadCloudTracks({
-          ids: siteShell.music.cloudMusicIds,
-          apiBaseUrl: siteShell.music.apiBaseUrl,
-          server: siteShell.music.server,
-          type: siteShell.music.type,
-          fallbackCover: siteShell.music.fallbackCover,
-          signal: controller.signal,
-        });
-
-        if (cancelled) {
-          return;
-        }
-
-        setTracks(tracks, { idleLyric: siteShell.music.idleLyric });
-
-        if (tracks.length === 0) {
-          setMusicError("暂时没有可播放的曲目。", siteShell.music.idleLyric);
-        }
-      } catch (error) {
-        if (cancelled || controller.signal.aborted) {
-          return;
-        }
-
-        const message = error instanceof Error ? error.message : "云音乐加载失败。";
-        setMusicError(message, siteShell.music.idleLyric);
-      }
+    if (tracks.length === 0) {
+      setMusicError("暂时没有可播放的曲目。", siteShell.music.idleLyric);
     }
-
-    void loadTracks();
-
-    return () => {
-      cancelled = true;
-      controller.abort();
-    };
   }, []);
 
   useEffect(() => {
