@@ -1,12 +1,7 @@
 import { useStore } from "@nanostores/react";
 import { useEffect, useRef } from "react";
 import { siteShell } from "../../config/site-shell";
-import {
-  buildCloudMusicRequestUrl,
-  hydrateCloudTrackLyrics,
-  normalizeCloudTrack,
-  type CloudTrack,
-} from "../../lib/music-cloud";
+import { loadCloudTracks } from "../../lib/music-cloud";
 import {
   findActiveLyric,
   musicState,
@@ -74,45 +69,19 @@ export default function MusicRuntime() {
 
     async function loadTracks() {
       try {
-        const rows = await Promise.all(
-          siteShell.music.cloudMusicIds.map(async (id) => {
-            const url = buildCloudMusicRequestUrl({
-              apiBaseUrl: siteShell.music.apiBaseUrl,
-              server: siteShell.music.server,
-              type: siteShell.music.type,
-              id,
-            });
-
-            const response = await fetch(url, { signal: controller.signal });
-            if (!response.ok) {
-              throw new Error(`云音乐请求失败：${response.status}`);
-            }
-
-            const payload = (await response.json()) as unknown;
-            const track = normalizeCloudTrack(payload, siteShell.music.fallbackCover);
-            if (!track) {
-              return null;
-            }
-
-            try {
-              return await hydrateCloudTrackLyrics(track, {
-                signal: controller.signal,
-              });
-            } catch (error) {
-              if (controller.signal.aborted) {
-                throw error;
-              }
-
-              return track;
-            }
-          }),
-        );
+        const tracks = await loadCloudTracks({
+          ids: siteShell.music.cloudMusicIds,
+          apiBaseUrl: siteShell.music.apiBaseUrl,
+          server: siteShell.music.server,
+          type: siteShell.music.type,
+          fallbackCover: siteShell.music.fallbackCover,
+          signal: controller.signal,
+        });
 
         if (cancelled) {
           return;
         }
 
-        const tracks = rows.filter((track): track is CloudTrack => Boolean(track));
         setTracks(tracks, { idleLyric: siteShell.music.idleLyric });
 
         if (tracks.length === 0) {

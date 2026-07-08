@@ -1,7 +1,9 @@
 import { describe, expect, it } from "vitest";
 import {
   buildCloudMusicRequestUrl,
+  buildFallbackCloudTrack,
   hydrateCloudTrackLyrics,
+  loadCloudTracks,
   normalizeCloudTrack,
   parseLrc,
 } from "../src/lib/music-cloud";
@@ -155,5 +157,41 @@ describe("music cloud adapter", () => {
       { time: 1.5, text: "第一句" },
       { time: 5, text: "第二句" },
     ]);
+  });
+
+  it("builds a playable local fallback track when the cloud api is rate limited", () => {
+    const track = buildFallbackCloudTrack("2050292874", "/uploads/ui/music-cover-fallback.jpg");
+
+    expect(track).toMatchObject({
+      id: "2050292874",
+      title: "网易云歌曲 2050292874",
+      artist: "网易云音乐",
+      audioUrl: "https://music.163.com/song/media/outer/url?id=2050292874.mp3",
+      coverUrl: "/uploads/ui/music-cover-fallback.jpg",
+      lyrics: [],
+      lyricsUrl: null,
+      duration: null,
+      album: null,
+    });
+  });
+
+  it("keeps loading the playlist when the cloud api returns rate limit payloads", async () => {
+    const tracks = await loadCloudTracks({
+      ids: ["4931896", "2050292874"],
+      apiBaseUrl: "https://api.injahow.cn/meting/",
+      server: "netease",
+      type: "song",
+      fallbackCover: "/uploads/ui/music-cover-fallback.jpg",
+      fetch: async () =>
+        new Response(JSON.stringify({ message: "请求次数已达上限，请明天再试" }), {
+          status: 200,
+          headers: { "Content-Type": "application/json; charset=utf-8" },
+        }),
+    });
+
+    expect(tracks.map((track) => track.id)).toEqual(["4931896", "2050292874"]);
+    expect(tracks.every((track) => track.audioUrl.includes("music.163.com/song/media/outer/url"))).toBe(
+      true
+    );
   });
 });

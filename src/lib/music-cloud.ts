@@ -22,6 +22,16 @@ export type CloudTrack = {
   album: string | null;
 };
 
+export type LoadCloudTracksOptions = {
+  ids: readonly string[];
+  apiBaseUrl: string;
+  server: string;
+  type: string;
+  fallbackCover: string;
+  fetch?: typeof fetch;
+  signal?: AbortSignal;
+};
+
 type CloudRecord = Record<string, unknown>;
 
 const UNKNOWN_TITLE = "未命名曲目";
@@ -109,6 +119,20 @@ export function buildCloudMusicRequestUrl(config: CloudMusicConfig): string {
     `&id=${encodeURIComponent(config.id)}` +
     "&r=format=json"
   );
+}
+
+export function buildFallbackCloudTrack(id: string, fallbackCover: string): CloudTrack {
+  return {
+    id,
+    title: `网易云歌曲 ${id}`,
+    artist: "网易云音乐",
+    audioUrl: `https://music.163.com/song/media/outer/url?id=${encodeURIComponent(id)}.mp3`,
+    coverUrl: fallbackCover,
+    lyrics: [],
+    lyricsUrl: null,
+    duration: null,
+    album: null,
+  };
 }
 
 export function parseLrc(text: string): LyricLine[] {
@@ -248,4 +272,52 @@ export function normalizeCloudTrack(
     duration: pickNumber(record, ["duration", "length"]),
     album: pickString(record, ["album"], "") || null,
   };
+}
+
+export async function loadCloudTracks(options: LoadCloudTracksOptions): Promise<CloudTrack[]> {
+  const fetchImpl = options.fetch ?? fetch;
+
+  const rows = await Promise.all(
+    options.ids.map(async (id) => {
+      const fallbackTrack = buildFallbackCloudTrack(id, options.fallbackCover);
+
+      try {
+        const url = buildCloudMusicRequestUrl({
+          apiBaseUrl: options.apiBaseUrl,
+          server: options.server,
+          type: options.type,
+          id,
+        });
+
+        const response = await fetchImpl(url, { signal: options.signal });
+        if (!response.ok) {
+          return fallbackTrack;
+        }
+
+        const payload = (await response.json()) as unknown;
+        const track = normalizeCloudTrack(payload, options.fallbackCover) ?? fallbackTrack;
+
+        try {
+          return await hydrateCloudTrackLyrics(track, {
+            fetch: fetchImpl,
+            signal: options.signal,
+          });
+        } catch (error) {
+          if (options.signal?.aborted) {
+            throw error;
+          }
+
+          return track;
+        }
+      } catch (error) {
+        if (options.signal?.aborted) {
+          throw error;
+        }
+
+        return fallbackTrack;
+      }
+    }),
+  );
+
+  return rows.filter((track): track is CloudTrack => Boolean(track));
 }
