@@ -28,7 +28,7 @@ sourceTitle: パソコン通信 - Wikipedia
 sourceUrl: >-
   https://ja.wikipedia.org/wiki/%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3%E9%80%9A%E4%BF%A1
 publisher: Wikipedia
-note: 当前先公开站内归档文本与附件入口，后续再补全文分段整理、重点标注与对照翻译。
+note: 站内已接入归档文本与附件，可作为主稿论点、素材截图和资料出处的公开入口。
 relatedRefs:
   - ニフティサーブ-wikipedia
   - 会社情報-txn系列局-株式会社テレビ東京
@@ -69,4 +69,3 @@ readingBlocks:
     note: 这段可以直接拿来解释“为什么很多作品会先在特定圈层里迅速形成共识，再往外扩散”。
 ---
 这份参考资料已经接入站内归档文本与附件，可先直接在左侧阅读正文摘录。
-后续会继续补充逐段整理、重点标注，以及必要的对照翻译。

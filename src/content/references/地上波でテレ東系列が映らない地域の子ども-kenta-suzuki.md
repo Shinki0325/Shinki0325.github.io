@@ -1,4 +1,4 @@
-﻿---
+---
 title: 收不到东京电视台的地方孩子
 kind: source
 visibility: public
@@ -28,7 +28,7 @@ sourceType: 博客文章
 sourceTitle: 地上波でテレ東系列が映らない地域の子ども｜Kenta Suzuki
 sourceUrl: 'https://note.com/kenbo_0518/n/n18c794665137'
 publisher: note
-note: 当前先公开站内归档文本与附件入口，后续再补全文分段整理、重点标注与对照翻译。
+note: 站内已接入归档文本与附件，可作为主稿论点、素材截图和资料出处的公开入口。
 relatedRefs:
   - 会社情報-txn系列局-株式会社テレビ東京
   - なぜ地方ではアニメが放送されないのかをテレビ局の人に聞いてみた-toppyのくびったけ日記
@@ -83,4 +83,3 @@ readingBlocks:
     focus: true
 ---
 这份参考资料已经接入站内归档文本与附件，可先直接在左侧阅读正文摘录。
-后续会继续补充逐段整理、重点标注，以及必要的对照翻译。

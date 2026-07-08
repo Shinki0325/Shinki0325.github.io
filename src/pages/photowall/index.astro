@@ -1,0 +1,27 @@
+---
+import PhotoWallClient from "../../components/photowall/PhotoWallClient";
+import "../../components/photowall/photowall.css";
+import { getPublishedAlbums } from "../../lib/public-content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const entries = await getPublishedAlbums();
+const albums = entries.map((entry) => {
+  const cover = entry.data.cover ?? entry.data.photos[0]?.url ?? "";
+
+  return {
+    slug: entry.slug,
+    title: entry.data.title,
+    summary: entry.data.summary,
+    date: entry.data.date.toISOString(),
+    location: entry.data.location,
+    tags: entry.data.tags ?? [],
+    body: entry.body.trim(),
+    cover,
+    photos: entry.data.photos,
+  };
+});
+---
+
+<BaseLayout title="照片墙" description="浏览公开相册、图组与站点素材墙。">
+  <PhotoWallClient client:load albums={albums} />
+</BaseLayout>

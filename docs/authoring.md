@@ -14,7 +14,7 @@
 
 - `references` supports `visibility: public | private`.
 - Public pages must not wiki-link to private references.
-- Use wiki links like `[[Example Public Reference]]` inside scripts and reference pages.
+- Use wiki links like `[[PC-9801]]` or `[[Leaf、Key 对谈]]` inside scripts and reference pages.
 - Add aliases with `aliases: []` when one reference is likely to be searched under multiple names.
 - Public source-style references often include `sourceTitle`, `sourceUrl`, `author`, `quote`, and `note`.
 
@@ -31,6 +31,33 @@
 7. `页面配置` to edit homepage and reference hub JSON blocks.
 8. `资源` to copy local images/files into `public/uploads/`.
 9. `概览` to run validate/build/check commands and inspect git status.
+
+## Photo wall workflow
+
+- `src/content/albums/` stores public and hidden photo wall albums.
+- Use `draft: true` for albums that are still being assembled.
+- Use `visibility: hidden` for albums you want to keep in the local manager but not publish.
+- Use `visibility: public` for albums that should appear at `/photowall/`.
+- Home search may surface public albums by title and summary, but image-level matches stay inside the photo wall page itself.
+
+Recommended album frontmatter:
+
+```yaml
+title: "Leaf / Key 访谈相册"
+date: 2026-07-08
+summary: "为主稿和资料页整理的一组图片线索。"
+cover: "/uploads/albums/leaf-key/cover.jpg"
+tags: ["Leaf", "Key", "访谈"]
+draft: false
+visibility: public
+relatedArticles: ["galgame-90s-golden-age"]
+relatedReferences: ["leaf-key-interview"]
+photos:
+  - url: "/uploads/albums/leaf-key/page-01.jpg"
+    caption: "卷首页"
+    alt: "Leaf / Key 访谈卷首页"
+    credit: "原始扫描件"
+```
 
 ## Manual file workflow
 

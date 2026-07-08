@@ -24,22 +24,20 @@ interface Props {
 
 const { entry } = Astro.props;
 const attachments = buildReferenceAttachments(entry.data.title, entry.data.attachments ?? []);
+const tags = entry.data.tags ?? [];
 
 const rows = [
   { label: "资料分组", value: entry.data.librarySection },
-  { label: "类型", value: entry.data.kind === "source" ? "来源资料" : "专题资料" },
   { label: "来源类型", value: entry.data.sourceType },
   { label: "来源标题", value: entry.data.sourceTitle },
   { label: "作者", value: entry.data.author },
   { label: "发布方", value: entry.data.publisher },
-  { label: "发布时间", value: entry.data.publishedAt },
-  { label: "标签", value: entry.data.tags?.join("、") },
-  { label: "主题", value: entry.data.topics?.join("、") }
+  { label: "发布时间", value: entry.data.publishedAt }
 ].filter((row) => row.value);
 ---
 
 <section class="glass-panel side-panel stack">
-  <h2>资料详情</h2>
+  <h2>基本信息</h2>
   {rows.length > 0 && (
     <dl class="meta-grid">
       {rows.map((row) => (
@@ -60,43 +58,47 @@ const rows = [
   )}
   {entry.data.quote && <blockquote>{entry.data.quote}</blockquote>}
   {entry.data.note && <p class="muted">{entry.data.note}</p>}
-
-  {attachments.length > 0 && (
-    <div class="stack attachments-block">
-      <h3>归档文件</h3>
-      {attachments.some((attachment) => attachment.isText) && (
-        <p class="muted attachment-note">文字摘录默认下载，避免浏览器把 UTF-8 文本误判成乱码。</p>
-      )}
-      <ul class="attachment-list">
-        {attachments.map((attachment) => (
-          <li>
-            <a href={attachment.href} download={attachment.download || undefined}>
-              {attachment.label}
-            </a>
-          </li>
-        ))}
-      </ul>
-
-      {attachments.some((attachment) => attachment.isImage) && (
-        <div class="attachment-previews">
-          {attachments
-            .filter((attachment) => attachment.isImage)
-            .map((attachment) => (
-              <a href={attachment.href} class="attachment-preview">
-                <img src={attachment.href} alt={attachment.alt} loading="lazy" />
-              </a>
-            ))}
-        </div>
-      )}
-    </div>
+  {tags.length > 0 && (
+    <ul class="reference-tag-list" data-reference-tags>
+      {tags.map((tag) => (
+        <li><a href={`/tags/${tag}/`}>{tag}</a></li>
+      ))}
+    </ul>
   )}
 </section>
+
+{attachments.length > 0 && (
+  <section class="glass-panel side-panel stack attachments-block">
+    <h2>归档文件</h2>
+    <ul class="attachment-list">
+      {attachments.map((attachment) => (
+        <li>
+          <a href={attachment.href} download={attachment.download || undefined}>
+            {attachment.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    {attachments.some((attachment) => attachment.isImage) && (
+      <div class="attachment-previews">
+        {attachments
+          .filter((attachment) => attachment.isImage)
+          .map((attachment) => (
+            <a href={attachment.href} class="attachment-preview">
+              <img src={attachment.href} alt={attachment.alt} loading="lazy" />
+            </a>
+          ))}
+      </div>
+    )}
+  </section>
+)}
 
 <style>
   .meta-grid {
     display: grid;
     gap: 0.5rem 1rem;
-    grid-template-columns: max-content 1fr;
+    grid-template-columns: minmax(74px, max-content) minmax(0, 1fr);
     margin: 0;
   }
 
@@ -106,6 +108,31 @@ const rows = [
 
   dd {
     margin: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .reference-tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .reference-tag-list a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2rem;
+    padding: 0.28rem 0.72rem 0.34rem;
+    border: 1px solid rgba(195, 210, 237, 0.26);
+    border-radius: 12px;
+    background: linear-gradient(180deg, rgba(176, 196, 226, 0.2), rgba(95, 119, 159, 0.16));
+    color: var(--text-main);
+    font-size: 0.92rem;
+    line-height: 1.2;
+    text-decoration: none;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
   }
 
   blockquote {
@@ -119,11 +146,6 @@ const rows = [
 
   .attachments-block {
     gap: 0.9rem;
-  }
-
-  .attachments-block h3 {
-    margin: 0;
-    font-size: 1rem;
   }
 
   .attachment-list {

@@ -58,6 +58,48 @@ describe("music cloud adapter", () => {
     ]);
   });
 
+  it("merges same-timestamp Japanese and Chinese lyric pairs", () => {
+    const lines = parseLrc("[00:01.00]暁の祈り\n[00:01.00]拂晓的祈祷\n[00:05.00]次の歌詞");
+
+    expect(lines).toEqual([
+      { time: 1, text: "暁の祈り\n拂晓的祈祷" },
+      { time: 5, text: "次の歌詞" },
+    ]);
+  });
+
+  it("merges same-timestamp English and Chinese lyric pairs", () => {
+    const lines = parseLrc(
+      "[00:12.00]true drop ～ExE End～\n[00:12.00]真实坠落 ～ExE 终章～\n[00:17.00]next line"
+    );
+
+    expect(lines).toEqual([
+      { time: 12, text: "true drop ～ExE End～\n真实坠落 ～ExE 终章～" },
+      { time: 17, text: "next line" },
+    ]);
+  });
+
+  it("keeps Japanese ruby parentheses in the primary lyric while merging the Chinese pair", () => {
+    const lines = parseLrc(
+      "[00:09.00]零(ゼロ)の軌跡を辿って\n[00:09.00]追寻零之轨迹\n[00:14.00]刻(とき)の向こうへ"
+    );
+
+    expect(lines).toEqual([
+      { time: 9, text: "零(ゼロ)の軌跡を辿って\n追寻零之轨迹" },
+      { time: 14, text: "刻(とき)の向こうへ" },
+    ]);
+  });
+
+  it("keeps kanji-only Japanese continuations with the primary lyric before the Chinese translation", () => {
+    const lines = parseLrc(
+      "[00:21.00]空白の\n[00:21.00]道標 空白的路标\n[00:25.00]0(ゼロ)を謳う\n[00:25.00]足跡 歌颂著Zero的足迹"
+    );
+
+    expect(lines).toEqual([
+      { time: 21, text: "空白の道標\n空白的路标" },
+      { time: 25, text: "0(ゼロ)を謳う足跡\n歌颂著Zero的足迹" },
+    ]);
+  });
+
   it("keeps remote lyric urls for follow-up loading instead of parsing them as lyric text", () => {
     const track = normalizeCloudTrack(
       {

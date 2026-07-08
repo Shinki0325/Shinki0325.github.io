@@ -26,7 +26,7 @@ sourceType: 数据页面
 sourceTitle: PS ソフト歴代売上ランキング
 sourceUrl: 'https://gamesdata.info/soft-ps.html'
 publisher: gamesdata.info
-note: 当前先公开站内归档文本与附件入口，后续再补全文分段整理、重点标注与对照翻译。
+note: 站内已接入归档文本与附件，可作为主稿论点、素材截图和资料出处的公开入口。
 relatedRefs:
   - ss-ソフト歴代売上ランキング
   - pc-9800-15-million
@@ -65,4 +65,3 @@ readingBlocks:
     focus: true
 ---
 这份参考资料已经接入站内归档文本与附件，可先直接在左侧阅读正文摘录。
-后续会继续补充逐段整理、重点标注，以及必要的对照翻译。

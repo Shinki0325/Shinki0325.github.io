@@ -1,5 +1,6 @@
 import { useStore } from "@nanostores/react";
 import { siteShell } from "../../config/site-shell";
+import LyricLines from "./LyricLines";
 import { musicState, setCurrentTrack, setPlayback } from "./store";
 
 const formatTime = (value: number) => {
@@ -50,7 +51,11 @@ export default function HomeMusicCard() {
         </div>
       </div>
 
-      <p className="home-player-inline-lyric">{state.currentLyric || state.idleLyric}</p>
+      <LyricLines
+        className="home-player-inline-lyric"
+        fallback={state.idleLyric}
+        text={state.currentLyric}
+      />
 
       <div className="home-player-progress">
         <span>{formatTime(state.currentTime)}</span>
@@ -76,6 +81,7 @@ export default function HomeMusicCard() {
         <button
           aria-label={state.isPlaying ? "暂停" : "播放"}
           className="home-player-control home-player-control--primary"
+          data-home-music-toggle
           disabled={!state.ready}
           onClick={() => setPlayback({ isPlaying: !state.isPlaying })}
           type="button"

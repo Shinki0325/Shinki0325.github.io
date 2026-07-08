@@ -1,3 +1,4 @@
+import { useStore } from "@nanostores/react";
 import { useEffect, useRef } from "react";
 import { siteShell } from "../../config/site-shell";
 import {
@@ -16,15 +17,58 @@ import {
   type MusicState,
 } from "./store";
 
-function currentTrackFromState(): CloudTrack | null {
+function currentTrackFromState() {
   const state = musicState.get();
   return state.tracks[state.currentIndex] ?? null;
 }
 
+function nextTrackFromState(state: MusicState) {
+  if (state.tracks.length < 2) {
+    return null;
+  }
+
+  return state.tracks[(state.currentIndex + 1) % state.tracks.length] ?? null;
+}
+
+function syncAudioElement(audio: HTMLAudioElement | null, state: MusicState) {
+  const track = state.tracks[state.currentIndex] ?? null;
+
+  if (!audio || !track) {
+    return;
+  }
+
+  if (audio.getAttribute("src") !== track.audioUrl) {
+    audio.dataset.musicSwitching = "true";
+    audio.src = track.audioUrl;
+    audio.load();
+  }
+
+  if (state.isPlaying) {
+    if (audio.paused) {
+      void audio.play().catch(() => {
+        delete audio.dataset.musicSwitching;
+        setPlayback({ isPlaying: false });
+      });
+    }
+    return;
+  }
+
+  if (!audio.paused) {
+    audio.pause();
+  }
+}
+
 export default function MusicRuntime() {
+  const state = useStore(musicState);
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const nextTrack = nextTrackFromState(state);
 
   useEffect(() => {
+    const currentState = musicState.get();
+    if (currentState.ready || (!currentState.loading && currentState.error !== null)) {
+      return;
+    }
+
     let cancelled = false;
     const controller = new AbortController();
 
@@ -61,7 +105,7 @@ export default function MusicRuntime() {
 
               return track;
             }
-          })
+          }),
         );
 
         if (cancelled) {
@@ -93,26 +137,10 @@ export default function MusicRuntime() {
   }, []);
 
   useEffect(() => {
-    const unlisten = musicState.listen((state: MusicState) => {
-      const audio = audioRef.current;
-      const track = state.tracks[state.currentIndex] ?? null;
+    syncAudioElement(audioRef.current, musicState.get());
 
-      if (!audio || !track) {
-        return;
-      }
-
-      if (audio.src !== track.audioUrl) {
-        audio.src = track.audioUrl;
-        audio.load();
-      }
-
-      if (state.isPlaying) {
-        void audio.play().catch(() => {
-          setPlayback({ isPlaying: false });
-        });
-      } else {
-        audio.pause();
-      }
+    const unlisten = musicState.listen((nextState) => {
+      syncAudioElement(audioRef.current, nextState);
     });
 
     return () => {
@@ -121,39 +149,62 @@ export default function MusicRuntime() {
   }, []);
 
   return (
-    <audio
-      ref={audioRef}
-      preload="metadata"
-      aria-hidden="true"
-      onLoadedMetadata={(event) => {
-        const audio = event.currentTarget;
-        setPlayback({
-          duration: Number.isFinite(audio.duration) ? audio.duration : 0,
-        });
-      }}
-      onTimeUpdate={(event) => {
-        const audio = event.currentTarget;
-        const state = musicState.get();
-        const track = currentTrackFromState();
+    <>
+      <audio
+        ref={audioRef}
+        aria-hidden="true"
+        data-global-music-audio
+        data-playing={state.isPlaying ? "true" : "false"}
+        preload="auto"
+        onEnded={() => {
+          const currentState = musicState.get();
+          if (currentState.tracks.length === 0) {
+            setPlayback({ isPlaying: false });
+            return;
+          }
 
-        setPlayback({
-          currentTime: audio.currentTime,
-          duration: Number.isFinite(audio.duration) ? audio.duration : state.duration,
-          currentLyric: findActiveLyric(track, audio.currentTime, state.idleLyric),
-        });
-      }}
-      onPlay={() => setPlayback({ isPlaying: true })}
-      onPause={() => setPlayback({ isPlaying: false })}
-      onEnded={() => {
-        const state = musicState.get();
-        if (state.tracks.length === 0) {
+          setCurrentTrack(currentState.currentIndex + 1);
+          setPlayback({ isPlaying: true });
+        }}
+        onLoadedMetadata={(event) => {
+          const audio = event.currentTarget;
+          delete audio.dataset.musicSwitching;
+          setPlayback({
+            duration: Number.isFinite(audio.duration) ? audio.duration : 0,
+          });
+        }}
+        onPause={(event) => {
+          if (musicState.get().isPlaying || event.currentTarget.dataset.musicSwitching === "true") {
+            return;
+          }
+
           setPlayback({ isPlaying: false });
-          return;
-        }
+        }}
+        onPlay={(event) => {
+          delete event.currentTarget.dataset.musicSwitching;
+          setPlayback({ isPlaying: true });
+        }}
+        onTimeUpdate={(event) => {
+          const audio = event.currentTarget;
+          const currentState = musicState.get();
+          const track = currentTrackFromState();
 
-        setCurrentTrack(state.currentIndex + 1);
-        setPlayback({ isPlaying: true });
-      }}
-    />
+          setPlayback({
+            currentTime: audio.currentTime,
+            duration: Number.isFinite(audio.duration) ? audio.duration : currentState.duration,
+            currentLyric: findActiveLyric(track, audio.currentTime, currentState.idleLyric),
+          });
+        }}
+      />
+      {nextTrack ? (
+        <audio
+          aria-hidden="true"
+          data-next-music-audio
+          key={nextTrack.id}
+          preload="auto"
+          src={nextTrack.audioUrl}
+        />
+      ) : null}
+    </>
   );
 }

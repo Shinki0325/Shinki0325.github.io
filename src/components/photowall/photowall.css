@@ -1,0 +1,450 @@
+.photowall-shell {
+  position: relative;
+  min-height: calc(100vh - 96px);
+  margin: -18px calc(50% - 50vw) -48px;
+  padding: clamp(18px, 3vw, 40px) clamp(24px, 6vw, 96px) 56px;
+  overflow: visible;
+  color: #f8fbff;
+}
+
+.photowall-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background-position: center;
+  background-size: cover;
+  filter: blur(28px) saturate(0.9);
+  transform: scale(1.12);
+}
+
+.photowall-shell::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(180deg, rgba(136, 149, 173, 0.72), rgba(53, 72, 104, 0.72)),
+    radial-gradient(circle at 20% 72%, rgba(189, 84, 105, 0.36), transparent 28%),
+    radial-gradient(circle at 78% 16%, rgba(204, 172, 175, 0.34), transparent 26%),
+    radial-gradient(circle at 52% 24%, rgba(58, 54, 96, 0.42), transparent 30%);
+  pointer-events: none;
+}
+
+.photowall-shell::after {
+  content: "";
+  position: fixed;
+  inset: auto 0 0;
+  z-index: -1;
+  height: 32vh;
+  background:
+    linear-gradient(180deg, transparent, rgba(25, 39, 61, 0.74)),
+    repeating-linear-gradient(82deg, rgba(255, 255, 255, 0.14) 0 2px, transparent 2px 34px);
+  mask-image: linear-gradient(180deg, transparent, #000 42%);
+  pointer-events: none;
+}
+
+.photowall-hero {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: clamp(14px, 3vh, 30px);
+}
+
+.photowall-hero__copy {
+  display: grid;
+  gap: 6px;
+}
+
+.photowall-hero h1 {
+  margin: 0;
+  font-family: "Noto Serif SC", "Songti SC", serif;
+  font-size: clamp(2.45rem, 4.6vw, 5rem);
+  font-weight: 900;
+  line-height: 0.92;
+  letter-spacing: 0;
+  text-shadow: 0 8px 28px rgba(20, 28, 45, 0.24);
+}
+
+.photowall-hero p {
+  margin: 0;
+  color: rgba(218, 230, 249, 0.74);
+  font-size: clamp(0.96rem, 1.35vw, 1.16rem);
+  font-weight: 500;
+}
+
+.photowall-layout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: clamp(30px, 5vw, 64px);
+}
+
+.photowall-albums {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: clamp(220px, 23vw, 310px);
+  align-items: end;
+  gap: clamp(18px, 4vw, 56px);
+  min-height: clamp(320px, 48vh, 410px);
+  overflow-x: auto;
+  overflow-y: visible;
+  padding: clamp(24px, 4vh, 38px) 4vw 28px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.photowall-albums::-webkit-scrollbar {
+  display: none;
+}
+
+.photowall-album-card {
+  min-width: 0;
+  scroll-snap-align: center;
+}
+
+.photowall-album-card__button,
+.photowall-photo-tile,
+.photowall-lightbox__close,
+.photowall-lightbox__nav button {
+  border: 0;
+  cursor: pointer;
+}
+
+.photowall-album-card__button {
+  position: relative;
+  width: 100%;
+  min-height: 0;
+  display: grid;
+  align-content: start;
+  justify-items: center;
+  gap: 12px;
+  padding: 0 18px 0;
+  background: transparent;
+  color: inherit;
+  text-align: center;
+  transform: rotate(var(--album-tilt, -2deg));
+  transition:
+    transform 220ms ease,
+    filter 220ms ease;
+}
+
+.photowall-album-card__button:hover,
+.photowall-album-card__button:focus-visible,
+.photowall-album-card.is-active .photowall-album-card__button {
+  filter: brightness(1.06);
+  transform: translateY(-8px) rotate(0deg);
+}
+
+.photowall-album-stack {
+  position: relative;
+  width: calc(min(100%, 300px) * var(--album-scale, 0.86));
+  aspect-ratio: 0.72;
+  display: block;
+}
+
+.photowall-polaroid {
+  position: absolute;
+  inset: 0;
+  display: block;
+  padding: clamp(7px, 0.9vw, 12px);
+  border-radius: 5px;
+  background: #dce8f7;
+  box-shadow:
+    0 16px 32px rgba(21, 30, 48, 0.3),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.42);
+  transition:
+    transform 240ms ease,
+    box-shadow 240ms ease;
+}
+
+.photowall-polaroid img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.photowall-polaroid--1 {
+  z-index: 1;
+  opacity: 0.76;
+  transform: translate(-8%, -4%) rotate(-6deg);
+}
+
+.photowall-polaroid--2 {
+  z-index: 3;
+  transform: translate(0, 0) rotate(0.8deg);
+}
+
+.photowall-polaroid--3 {
+  z-index: 2;
+  opacity: 0.72;
+  transform: translate(11%, 7%) rotate(5deg);
+}
+
+.photowall-album-card__button:hover .photowall-polaroid--1,
+.photowall-album-card:focus-within .photowall-polaroid--1 {
+  transform: translate(-12%, -7%) rotate(-8deg);
+}
+
+.photowall-album-card__button:hover .photowall-polaroid--3,
+.photowall-album-card:focus-within .photowall-polaroid--3 {
+  transform: translate(15%, 10%) rotate(7deg);
+}
+
+.photowall-album-card__body {
+  position: relative;
+  z-index: 4;
+  display: grid;
+  gap: 5px;
+  justify-items: center;
+  padding: 0 18px;
+  transform: rotate(calc(var(--album-tilt, -2deg) * -1));
+  text-shadow: 0 4px 18px rgba(10, 16, 28, 0.46);
+}
+
+.photowall-album-card__body h2,
+.photowall-detail__copy h2,
+.photowall-empty h2,
+.photowall-empty-state h2 {
+  margin: 0;
+}
+
+.photowall-album-card__body h2 {
+  font-family: "Noto Serif SC", "Songti SC", serif;
+  font-size: clamp(1.12rem, 1.8vw, 1.65rem);
+  line-height: 1.1;
+  color: #fff;
+}
+
+.photowall-album-card__body p {
+  width: min(92%, 240px);
+  margin: 0;
+  color: rgba(215, 228, 248, 0.74);
+  font-size: clamp(0.76rem, 0.9vw, 0.88rem);
+  line-height: 1.38;
+}
+
+.photowall-album-card__meta {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  color: rgba(215, 228, 248, 0.8);
+  font-size: clamp(0.72rem, 0.9vw, 0.86rem);
+}
+
+.photowall-album-card__meta span:last-child {
+  padding: 2px 10px 3px;
+  border-radius: 8px;
+  background: rgba(30, 36, 58, 0.48);
+}
+
+.photowall-detail {
+  width: min(980px, calc(100vw - 72px));
+  margin: 18px auto 0;
+  padding: clamp(16px, 2.4vw, 26px);
+  display: grid;
+  gap: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 28px;
+  background: rgba(23, 31, 52, 0.42);
+  box-shadow: 0 28px 70px rgba(12, 18, 31, 0.28);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.photowall-detail__back {
+  width: fit-content;
+  padding: 0.55rem 0.95rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #f8fbff;
+  cursor: pointer;
+}
+
+.photowall-detail__hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.photowall-detail__cover,
+.photowall-photo-tile img,
+.photowall-lightbox__image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.photowall-detail__cover {
+  height: 100%;
+  min-height: 14rem;
+  border-radius: 20px;
+}
+
+.photowall-detail__copy {
+  display: grid;
+  align-content: center;
+  gap: 0.9rem;
+}
+
+.photowall-detail__copy > p,
+.photowall-detail__body,
+.photowall-empty p,
+.photowall-empty-state p {
+  color: rgba(226, 232, 240, 0.86);
+}
+
+.photowall-detail__facts {
+  margin: 0;
+  display: flex;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.photowall-detail__facts div {
+  min-width: 7rem;
+}
+
+.photowall-detail__facts dt,
+.photowall-photo-tile__overlay span {
+  color: rgba(186, 204, 230, 0.88);
+}
+
+.photowall-detail__facts dd {
+  margin: 0.2rem 0 0;
+}
+
+.photowall-photo-grid {
+  column-count: 3;
+  column-gap: 0.75rem;
+}
+
+.photowall-photo-tile {
+  position: relative;
+  width: 100%;
+  display: block;
+  margin: 0 0 0.75rem;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  background: rgba(15, 23, 42, 0.65);
+  break-inside: avoid;
+}
+
+.photowall-photo-tile img {
+  height: auto;
+  transition: transform 180ms ease;
+}
+
+.photowall-photo-tile:hover img {
+  transform: scale(1.03);
+}
+
+.photowall-photo-tile__overlay {
+  position: absolute;
+  inset: auto 0 0;
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.8rem;
+  background: linear-gradient(180deg, transparent, rgba(15, 23, 42, 0.94));
+  color: #f8fafc;
+}
+
+.photowall-empty,
+.photowall-empty-state {
+  display: grid;
+  gap: 0.6rem;
+  place-items: start;
+  padding: 1.2rem;
+}
+
+.photowall-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  background: rgba(2, 6, 23, 0.84);
+  backdrop-filter: blur(12px);
+}
+
+.photowall-lightbox__frame {
+  width: min(92vw, 72rem);
+  display: grid;
+  gap: 1rem;
+  padding: 1.25rem;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(15, 23, 42, 0.95);
+}
+
+.photowall-lightbox__close,
+.photowall-lightbox__nav button {
+  justify-self: end;
+  padding: 0.6rem 0.95rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  color: #f8fafc;
+}
+
+.photowall-lightbox__image {
+  max-height: 72vh;
+  border-radius: 18px;
+}
+
+.photowall-lightbox__caption {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.photowall-lightbox__caption p {
+  margin: 0;
+  color: rgba(226, 232, 240, 0.86);
+}
+
+.photowall-lightbox__nav {
+  display: flex;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 960px) {
+  .photowall-shell {
+    min-height: calc(100vh - 72px);
+    padding-top: 28px;
+  }
+
+  .photowall-hero {
+    margin-bottom: 22px;
+  }
+
+  .photowall-albums {
+    grid-auto-columns: minmax(190px, 70vw);
+    gap: 22px;
+    min-height: 350px;
+    padding: 34px 8vw 28px;
+  }
+
+  .photowall-album-card__button {
+    min-height: calc(320px * var(--album-scale, 0.86));
+  }
+
+  .photowall-detail__hero {
+    grid-template-columns: 1fr;
+  }
+
+  .photowall-photo-grid {
+    column-count: 1;
+  }
+
+  .photowall-lightbox {
+    padding: 1rem;
+  }
+}

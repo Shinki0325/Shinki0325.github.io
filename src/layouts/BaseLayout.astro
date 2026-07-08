@@ -1,5 +1,10 @@
 ---
 import "../styles/global.css";
+import { ClientRouter } from "astro:transitions";
+import ClickEffect from "../components/chrome/ClickEffect";
+import SplashScreen from "../components/home/SplashScreen";
+import FloatingPlayer from "../components/music/FloatingPlayer";
+import MusicRuntime from "../components/music/MusicRuntime";
 import SiteBackground from "../components/chrome/SiteBackground.astro";
 import TopNav from "../components/chrome/TopNav";
 import { siteShell } from "../config/site-shell";
@@ -24,6 +29,7 @@ const siteIcon = siteShell.profile?.avatarUrl ?? "https://s1.ax1x.com/2023/07/28
   <head>
     <meta charset="UTF-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <ClientRouter />
     <title>{title}</title>
     <meta content={description} name="description" />
     <link href={siteIcon} rel="icon" />
@@ -31,8 +37,16 @@ const siteIcon = siteShell.profile?.avatarUrl ?? "https://s1.ax1x.com/2023/07/28
     <link href={siteIcon} rel="apple-touch-icon" />
   </head>
   <body>
-    <SiteBackground />
+    <SiteBackground currentPath={currentPath} />
     <TopNav client:load currentPath={currentPath} />
+    <div transition:persist="global-music-runtime">
+      <MusicRuntime client:load />
+    </div>
+    <div transition:persist="global-floating-player">
+      <FloatingPlayer client:load initialPathname={currentPath} />
+    </div>
+    <SplashScreen client:load />
+    <ClickEffect client:load />
 
     <main class="shell">
       <div class="page-stack">

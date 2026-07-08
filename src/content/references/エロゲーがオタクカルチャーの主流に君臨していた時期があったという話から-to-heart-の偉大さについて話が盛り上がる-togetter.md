@@ -26,7 +26,7 @@ sourceType: 讨论汇编
 sourceTitle: エロゲーがオタクカルチャーの主流に君臨していた時期があったという話から「To Heart」の偉大さについて話が盛り上がる - Togetter
 sourceUrl: 'https://togetter.com/li/2668171'
 publisher: Togetter
-note: 当前已合并 Togetter 第 1 页与第 2 页的站内归档文本与附件，后续会继续补完整摘要、重点标注与对照翻译。
+note: 已合并 Togetter 第 1 页与第 2 页的站内归档文本与附件，可作为讨论串素材与主稿论点的公开入口。
 relatedRefs:
   - >-
     x-galgame-mainstream-thread
@@ -67,4 +67,3 @@ readingBlocks:
     note: 这一段能把《ToHeart》的影响，从“作品火”再往前推到“为什么后来整个创作生态也跟着活起来”。
 ---
 这份参考资料已经接入站内归档文本与附件，可先直接在左侧阅读正文摘录。
-后续会继续补充逐段整理、重点标注，以及必要的对照翻译。

@@ -13,6 +13,7 @@ type EntryLike = {
 
 type HomeCollections = {
   articles: EntryLike[];
+  albums: EntryLike[];
   notes: EntryLike[];
   references: EntryLike[];
 };
@@ -22,7 +23,7 @@ type SearchItem = {
   summary: string;
   tags: string[];
   href: string;
-  section: "文稿" | "笔记" | "资料库";
+  section: "文稿" | "笔记" | "资料库" | "照片墙";
 };
 
 export type HomeViewModel = {
@@ -42,7 +43,7 @@ export const buildHomeViewModel = ({
   articles,
   notes,
   references,
-}: HomeCollections): HomeViewModel => ({
+}: Omit<HomeCollections, "albums">): HomeViewModel => ({
   featuredArticle: articles[0] ?? null,
   featuredNote: notes[0] ?? null,
   featuredReference: references[0] ?? null,
@@ -55,6 +56,7 @@ export const buildHomeViewModel = ({
 
 export const buildHomeSearchIndex = ({
   articles,
+  albums,
   notes,
   references,
 }: HomeCollections): SearchItem[] => [
@@ -78,5 +80,12 @@ export const buildHomeSearchIndex = ({
     tags: withTags(entry.data.tags),
     href: `/references/${entry.slug}/`,
     section: "资料库" as const,
+  })),
+  ...albums.map((entry) => ({
+    title: entry.data.title,
+    summary: entry.data.summary,
+    tags: withTags(entry.data.tags),
+    href: `/photowall/#album-${entry.slug}`,
+    section: "照片墙" as const,
   })),
 ];

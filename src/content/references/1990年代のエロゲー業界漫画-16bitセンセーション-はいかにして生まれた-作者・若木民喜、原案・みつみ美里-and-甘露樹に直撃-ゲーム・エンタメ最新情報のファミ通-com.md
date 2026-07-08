@@ -1,4 +1,4 @@
-﻿---
+---
 title: 《16bit Sensation》创作访谈
 slug: 16bit-sensation-creation-interview
 kind: source
@@ -29,7 +29,7 @@ sourceTitle: >-
   ゲーム・エンタメ最新情報のファミ通.com
 sourceUrl: 'https://www.famitsu.com/news/202012/26211397.html'
 publisher: Fami通
-note: 当前先公开站内归档文本与附件入口，后续再补全文分段整理、重点标注与对照翻译。
+note: 站内已接入归档文本与附件，可作为主稿论点、素材截图和资料出处的公开入口。
 relatedRefs:
   - visual-novel-origins-famitsu
   - >-
@@ -71,4 +71,3 @@ readingBlocks:
     focus: true
 ---
 这份参考资料已经接入站内归档文本与附件，可先直接在左侧阅读正文摘录。
-后续会继续补充逐段整理、重点标注，以及必要的对照翻译。

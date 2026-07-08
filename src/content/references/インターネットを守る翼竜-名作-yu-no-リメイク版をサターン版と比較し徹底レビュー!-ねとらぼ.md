@@ -1,4 +1,4 @@
-﻿---
+---
 title: 《YU-NO》重制版与土星版对照
 kind: source
 visibility: public
@@ -26,7 +26,7 @@ sourceType: 网页资料
 sourceTitle: インターネットを守る翼竜：名作「YU-NO」リメイク版をサターン版と比較し徹底レビュー！ | ねとらぼ
 sourceUrl: 'https://nlab.itmedia.co.jp/cont/articles/3266363/'
 publisher: ITmedia nlab
-note: 当前先公开站内归档文本与附件入口，后续再补全文分段整理、重点标注与对照翻译。
+note: 站内已接入归档文本与附件，可作为主稿论点、素材截图和资料出处的公开入口。
 relatedRefs:
   - yu-no-wikipedia
   - ss-ソフト歴代売上ランキング
@@ -65,4 +65,3 @@ readingBlocks:
     note: 这块适合放在主稿中讨论“重制时代如何处理老玩家记忆”。
 ---
 这份参考资料已经接入站内归档文本与附件，可先直接在左侧阅读正文摘录。
-后续会继续补充逐段整理、重点标注，以及必要的对照翻译。

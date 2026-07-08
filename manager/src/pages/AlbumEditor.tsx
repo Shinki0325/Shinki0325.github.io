@@ -8,12 +8,12 @@ type AlbumEditorProps = {
 };
 
 type AlbumPhoto = {
-  src: string;
+  url: string;
   alt: string;
   caption?: string;
-  width?: number;
-  height?: number;
-  featured?: boolean;
+  credit?: string;
+  relatedReferences?: string[];
+  relatedArticles?: string[];
 };
 
 const slugify = (value: string) => {
@@ -49,21 +49,25 @@ const parsePhotos = (value: string) => {
     }
 
     const photo = item as Record<string, unknown>;
-    if (typeof photo.src !== "string" || !photo.src.trim()) {
-      throw new Error("每张照片都需要 src。");
+    if (typeof photo.url !== "string" || !photo.url.trim()) {
+      throw new Error("每张照片都需要 url。");
     }
     if (typeof photo.alt !== "string" || !photo.alt.trim()) {
       throw new Error("每张照片都需要 alt。");
     }
 
-    return {
-      src: photo.src.trim(),
-      alt: photo.alt.trim(),
-      caption: typeof photo.caption === "string" && photo.caption.trim() ? photo.caption.trim() : undefined,
-      width: typeof photo.width === "number" ? photo.width : undefined,
-      height: typeof photo.height === "number" ? photo.height : undefined,
-      featured: photo.featured === true
-    } satisfies AlbumPhoto;
+      return {
+        url: photo.url.trim(),
+        alt: photo.alt.trim(),
+        caption: typeof photo.caption === "string" && photo.caption.trim() ? photo.caption.trim() : undefined,
+        credit: typeof photo.credit === "string" && photo.credit.trim() ? photo.credit.trim() : undefined,
+        relatedReferences: Array.isArray(photo.relatedReferences)
+          ? photo.relatedReferences.map((item) => String(item))
+          : [],
+        relatedArticles: Array.isArray(photo.relatedArticles)
+          ? photo.relatedArticles.map((item) => String(item))
+          : []
+      } satisfies AlbumPhoto;
   });
 };
 
@@ -84,8 +88,11 @@ export default function AlbumEditor({ selectedEntry }: AlbumEditorProps) {
   const [cover, setCover] = useState("");
   const [photos, setPhotos] = useState("[]");
   const [tags, setTags] = useState("");
+  const [relatedArticles, setRelatedArticles] = useState("");
+  const [relatedReferences, setRelatedReferences] = useState("");
   const [draft, setDraft] = useState(false);
-  const [visibility, setVisibility] = useState<"public" | "private">("public");
+  const [pinned, setPinned] = useState(false);
+  const [visibility, setVisibility] = useState<"public" | "hidden">("public");
   const [body, setBody] = useState("");
   const [extras, setExtras] = useState("{}");
   const [message, setMessage] = useState<string | null>(null);
@@ -109,8 +116,11 @@ export default function AlbumEditor({ selectedEntry }: AlbumEditorProps) {
       setCover(String(frontmatter.cover ?? ""));
       setPhotos(toJsonString(Array.isArray(frontmatter.photos) ? frontmatter.photos : []));
       setTags(toLineList(frontmatter.tags));
+      setRelatedArticles(toLineList(frontmatter.relatedArticles));
+      setRelatedReferences(toLineList(frontmatter.relatedReferences));
       setDraft(frontmatter.draft === true);
-      setVisibility(frontmatter.visibility === "private" ? "private" : "public");
+      setPinned(frontmatter.pinned === true);
+      setVisibility(frontmatter.visibility === "hidden" ? "hidden" : "public");
       setBody(entry.body.trim());
       setExtras(
         toJsonString(
@@ -122,7 +132,10 @@ export default function AlbumEditor({ selectedEntry }: AlbumEditorProps) {
             "cover",
             "photos",
             "tags",
+            "relatedArticles",
+            "relatedReferences",
             "draft",
+            "pinned",
             "visibility"
           ])
         )
@@ -142,6 +155,7 @@ export default function AlbumEditor({ selectedEntry }: AlbumEditorProps) {
         date,
         visibility,
         draft,
+        pinned,
         photos: parsedPhotos
       };
 
@@ -153,6 +167,12 @@ export default function AlbumEditor({ selectedEntry }: AlbumEditorProps) {
       }
       if (tags.trim()) {
         frontmatter.tags = parseLineList(tags);
+      }
+      if (relatedArticles.trim()) {
+        frontmatter.relatedArticles = parseLineList(relatedArticles);
+      }
+      if (relatedReferences.trim()) {
+        frontmatter.relatedReferences = parseLineList(relatedReferences);
       }
 
       const saved = await saveContentEntry({
@@ -173,7 +193,10 @@ export default function AlbumEditor({ selectedEntry }: AlbumEditorProps) {
             "cover",
             "photos",
             "tags",
+            "relatedArticles",
+            "relatedReferences",
             "draft",
+            "pinned",
             "visibility"
           ])
         )
@@ -189,7 +212,7 @@ export default function AlbumEditor({ selectedEntry }: AlbumEditorProps) {
       <section className="panel stack">
         <div className="toolbar">
           <div>
-            <p className="eyebrow">Album Editor</p>
+            <p className="eyebrow">相册编辑</p>
             <h1>相册编辑器</h1>
           </div>
           <div className="actions">
@@ -216,10 +239,10 @@ export default function AlbumEditor({ selectedEntry }: AlbumEditorProps) {
             <span>可见性</span>
             <select
               value={visibility}
-              onChange={(event) => setVisibility(event.target.value === "private" ? "private" : "public")}
+              onChange={(event) => setVisibility(event.target.value === "hidden" ? "hidden" : "public")}
             >
-              <option value="public">public</option>
-              <option value="private">private</option>
+              <option value="public">公开</option>
+              <option value="hidden">隐藏</option>
             </select>
           </label>
           <label className="field field-span">
@@ -242,9 +265,29 @@ export default function AlbumEditor({ selectedEntry }: AlbumEditorProps) {
             <span>标签</span>
             <textarea className="meta-area" value={tags} onChange={(event) => setTags(event.target.value)} />
           </label>
+          <label className="field field-span">
+            <span>关联文稿</span>
+            <textarea
+              className="meta-area"
+              value={relatedArticles}
+              onChange={(event) => setRelatedArticles(event.target.value)}
+            />
+          </label>
+          <label className="field field-span">
+            <span>关联资料页</span>
+            <textarea
+              className="meta-area"
+              value={relatedReferences}
+              onChange={(event) => setRelatedReferences(event.target.value)}
+            />
+          </label>
           <label className="checkbox-field">
             <input checked={draft} onChange={(event) => setDraft(event.target.checked)} type="checkbox" />
             <span>设为草稿</span>
+          </label>
+          <label className="checkbox-field">
+            <input checked={pinned} onChange={(event) => setPinned(event.target.checked)} type="checkbox" />
+            <span>置顶展示</span>
           </label>
         </div>
 
@@ -252,6 +295,9 @@ export default function AlbumEditor({ selectedEntry }: AlbumEditorProps) {
           <span>照片列表（JSON）</span>
           <textarea className="meta-area" value={photos} onChange={(event) => setPhotos(event.target.value)} />
         </label>
+        <p className="hint">
+          每张图片请使用统一字段：`url`、`alt`、可选 `caption`、`credit`、`relatedReferences`、`relatedArticles`。
+        </p>
 
         <label className="field">
           <span>正文</span>

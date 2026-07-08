@@ -35,6 +35,7 @@ relatedRefs:
   - pc-9801-computer-museum
 relatedScripts:
   - galgame-90s-golden-age
+  - galgame-90s-video-structure
 readingMode: curated
 sourceLanguage: ja
 translationLanguage: zh-CN

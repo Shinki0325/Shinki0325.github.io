@@ -10,7 +10,31 @@ export const articleSchema = z.object({
   cover: z.string().optional(),
   draft: z.boolean().default(false),
   pinned: z.boolean().default(false),
-  template: z.string().optional()
+  template: z.string().optional(),
+});
+
+export const albumPhotoSchema = z.object({
+  url: z.string(),
+  alt: z.string(),
+  caption: z.string().optional(),
+  credit: z.string().optional(),
+  relatedReferences: z.array(z.string()).default([]),
+  relatedArticles: z.array(z.string()).default([]),
+});
+
+export const albumSchema = z.object({
+  title: z.string(),
+  date: z.coerce.date(),
+  summary: z.string(),
+  visibility: z.enum(["public", "hidden"]).default("public"),
+  location: z.string().optional(),
+  tags: z.array(z.string()).default([]),
+  cover: z.string().optional(),
+  draft: z.boolean().default(false),
+  pinned: z.boolean().default(false),
+  relatedArticles: z.array(z.string()).default([]),
+  relatedReferences: z.array(z.string()).default([]),
+  photos: z.array(albumPhotoSchema).min(1),
 });
 
 const readingBlockSchema = z.object({
@@ -18,16 +42,14 @@ const readingBlockSchema = z.object({
   original: z.string(),
   translation: z.string().optional(),
   note: z.string().optional(),
-  focus: z.boolean().default(false)
+  focus: z.boolean().default(false),
 });
 
 export const referenceSchema = z.object({
   title: z.string(),
   kind: z.enum(["source", "topic"]),
   visibility: z.enum(["public", "private"]).default("public"),
-  librarySection: z
-    .enum(["回忆、讨论与后见视角", "作品与人物", "社会背景"])
-    .optional(),
+  librarySection: z.enum(["回忆、讨论与后见视角", "作品与人物", "社会背景"]).optional(),
   date: z.coerce.date(),
   summary: z.string(),
   tags: z.array(z.string()).default([]),
@@ -50,5 +72,5 @@ export const referenceSchema = z.object({
   readingMode: z.enum(["curated", "extract"]).default("extract"),
   sourceLanguage: z.string().optional(),
   translationLanguage: z.string().optional(),
-  readingBlocks: z.array(readingBlockSchema).default([])
+  readingBlocks: z.array(readingBlockSchema).default([]),
 });

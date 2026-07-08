@@ -1,8 +1,31 @@
 ---
 import { siteShell } from "../../config/site-shell";
+
+interface Props {
+  currentPath?: string;
+}
+
+const { currentPath = "/" } = Astro.props;
+const isHome = currentPath === "/";
 ---
 
 <div class="site-backdrop" aria-hidden="true">
+  {
+    isHome && (
+      <video
+        autoplay
+        class="site-backdrop__video"
+        data-home-background-video
+        loop
+        muted
+        playsinline
+        poster="/uploads/backgrounds/home-loop-poster.jpg"
+        preload="auto"
+      >
+        <source src="/uploads/backgrounds/home-loop-h264.mp4" type="video/mp4" />
+      </video>
+    )
+  }
   <div class="site-backdrop__veil"></div>
   <div class="site-backdrop__gradient"></div>
 

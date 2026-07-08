@@ -1,4 +1,4 @@
-﻿---
+---
 title: 《同级生2》条目
 slug: doukyuusei-2-wikipedia
 kind: source
@@ -26,7 +26,7 @@ sourceType: 维基条目
 sourceTitle: 同級生2 - Wikipedia
 sourceUrl: 'https://ja.wikipedia.org/wiki/%E5%90%8C%E7%B4%9A%E7%94%9F2'
 publisher: Wikipedia
-note: 当前先公开站内归档文本与附件入口，后续再补全文分段整理、重点标注与对照翻译。
+note: 站内已接入归档文本与附件，可作为主稿论点、素材截图和资料出处的公开入口。
 relatedRefs:
   - doukyuusei-wikipedia
   - to-heart-entry
@@ -65,4 +65,3 @@ readingBlocks:
     note: 这段适合在主稿里快速说明它并不是一个只停留在九十年代的“死作品”。
 ---
 这份参考资料已经接入站内归档文本与附件，可先直接在左侧阅读正文摘录。
-后续会继续补充逐段整理、重点标注，以及必要的对照翻译。

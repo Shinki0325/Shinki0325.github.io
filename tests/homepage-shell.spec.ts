@@ -1,7 +1,17 @@
 import { expect, test } from "@playwright/test";
 
+async function dismissSplashIfVisible(page: Parameters<typeof test>[0]["page"]) {
+  const splash = page.locator("[data-splash-screen]");
+
+  if (await splash.isVisible().catch(() => false)) {
+    await page.getByRole("button", { name: /进入|开始|Enter/i }).click();
+    await expect(splash).toBeHidden();
+  }
+}
+
 test("homepage shows the welcome shell and music modules", async ({ page }) => {
   await page.goto("/");
+  await dismissSplashIfVisible(page);
 
   await expect(page.locator("[data-home-search]")).toBeVisible();
   await expect(page.locator("[data-home-hero]")).toBeVisible();
@@ -9,6 +19,23 @@ test("homepage shows the welcome shell and music modules", async ({ page }) => {
   await expect(page.locator("[data-home-music-card]")).toBeVisible();
   await expect(page.locator("[data-home-lyric-bar]")).toBeVisible();
   await expect(page.locator("[data-home-feature-grid]")).toBeVisible();
+});
+
+test("homepage uses the local looping video background without loading it on inner pages", async ({ page }) => {
+  await page.goto("/");
+  await dismissSplashIfVisible(page);
+
+  const backgroundVideo = page.locator("[data-home-background-video]");
+  await expect(backgroundVideo).toBeVisible();
+  await expect(backgroundVideo).toHaveAttribute("autoplay", "");
+  await expect(backgroundVideo).toHaveAttribute("loop", "");
+  await expect(backgroundVideo).toHaveAttribute("muted", "");
+  await expect(backgroundVideo).toHaveAttribute("playsinline", "");
+  await expect(backgroundVideo).toHaveAttribute("poster", "/uploads/backgrounds/home-loop-poster.jpg");
+  await expect(backgroundVideo.locator("source").first()).toHaveAttribute("src", "/uploads/backgrounds/home-loop-h264.mp4");
+
+  await page.goto("/references/");
+  await expect(page.locator("[data-home-background-video]")).toHaveCount(0);
 });
 
 test("homepage resolves remote lyric urls into visible lyric text", async ({ page }) => {
@@ -42,6 +69,7 @@ test("homepage resolves remote lyric urls into visible lyric text", async ({ pag
   });
 
   await page.goto("/");
+  await dismissSplashIfVisible(page);
 
   await expect(page.locator("[data-home-music-card]")).toContainText("云月谣");
   await expect(page.locator("[data-home-lyric-bar]")).toContainText("第一句");
@@ -49,6 +77,7 @@ test("homepage resolves remote lyric urls into visible lyric text", async ({ pag
 
 test("homepage hero matches the requested asymmetric profile layout", async ({ page }) => {
   await page.goto("/");
+  await dismissSplashIfVisible(page);
 
   await expect(page.locator("[data-home-hero].glass-panel")).toHaveCount(0);
   await expect(page.locator(".home-identity-brand")).toHaveCount(0);
@@ -97,8 +126,37 @@ test("homepage hero matches the requested asymmetric profile layout", async ({ p
   expect(musicTitleMetrics.height / musicTitleMetrics.lineHeight).toBeLessThanOrEqual(2.2);
 });
 
+test("homepage search and lower collage follow the reference shell without the old status strip", async ({ page }) => {
+  await page.goto("/");
+  await dismissSplashIfVisible(page);
+
+  const searchInput = page.locator("[data-home-search] input");
+  const searchMetrics = await searchInput.evaluate((node) => {
+    const styles = window.getComputedStyle(node);
+    const rect = node.getBoundingClientRect();
+
+    return {
+      width: rect.width,
+      height: rect.height,
+      radius: Number.parseFloat(styles.borderTopLeftRadius),
+      background: styles.backgroundImage,
+    };
+  });
+
+  expect(searchMetrics.width).toBeGreaterThanOrEqual(700);
+  expect(searchMetrics.width).toBeLessThanOrEqual(780);
+  expect(searchMetrics.height).toBeGreaterThanOrEqual(56);
+  expect(searchMetrics.height).toBeLessThanOrEqual(70);
+  expect(searchMetrics.radius).toBeGreaterThanOrEqual(28);
+  expect(searchMetrics.background).toContain("linear-gradient");
+  await expect(page.locator(".home-status-strip")).toHaveCount(0);
+  await expect(page.locator("[data-home-reference-card]")).toBeVisible();
+  await expect(page.locator("[data-home-reference-card]")).toContainText("运行回廊");
+});
+
 test("homepage head uses the current avatar as site icon", async ({ page }) => {
   await page.goto("/");
+  await dismissSplashIfVisible(page);
 
   await expect(page.locator('head link[rel="icon"]')).toHaveAttribute(
     "href",
@@ -108,4 +166,17 @@ test("homepage head uses the current avatar as site icon", async ({ page }) => {
     "href",
     "https://s1.ax1x.com/2023/07/28/pCx6j3R.jpg",
   );
+});
+
+test("homepage splash appears once per session and stays dismissed after reload", async ({ page }) => {
+  await page.goto("/");
+
+  const splash = page.locator("[data-splash-screen]");
+  await expect(splash).toBeVisible();
+
+  await page.getByRole("button", { name: /进入|开始|Enter/i }).click();
+  await expect(splash).toBeHidden();
+
+  await page.reload();
+  await expect(splash).toBeHidden();
 });

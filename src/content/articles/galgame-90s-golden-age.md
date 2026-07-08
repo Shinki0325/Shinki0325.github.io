@@ -54,4 +54,6 @@ tags:
 
 虽然我将90年代称之为黄金年代，但这并非意味着90年代的游戏就是阳春白雪，现在的游戏就是下里巴人，婆罗门越古越强这块，黄金年代并非意味着美少女这种游戏形式已经达到其内在的巅峰，而是代表着创作者在创作态度上的浪漫，对叙事边界的各种先锋性探索。但你说要我玩我肯定还是更喜欢玩年代更近一些的游戏，但当我打开yuno的时候，当我在不同的时间线中跳跃时，用在别的分支线路取得的道具、信息改变当下的线路的时候，我是真的惊叹于剑乃的对于时间线分支的鬼才设计，那种感觉无异于我们常常说的小时候扔出回旋镖而砸中了现在的自己。对于这样一个拥有着无限可能性的年代，对他的所有敬意并非意味着我想要回到这个年代，而是期待着这种可能性能将现在的我们引向更好的未来，期待着美少女这一形式实现更多的尚未达成的可能性，期望着这样的未来，而不是在将来某天业界真的药丸之后对着这些电子数据感叹“我们曾经到达过未来”。
 
-<!-- [[YU-NO]] [[To Heart]] [[PC-9801]] [[TECH GIAN]] [[E-LOGIN]] [[Leaf、Key対談]] -->
+## 参考资料入口
+
+这篇主稿对应的资料已经拆进站内资料库，核心入口包括 [X 讨论：黄油曾短暂站上主流](/references/x-galgame-mainstream-thread/)、[Togetter：To Heart 伟大性讨论](/references/エロゲーがオタクカルチャーの主流に君臨していた時期があったという話から-to-heart-の偉大さについて話が盛り上がる-togetter/)、[《YU-NO》条目](/references/yu-no-wikipedia/)、[《To Heart》条目](/references/to-heart-entry/)、[PC-9801 电脑博物馆](/references/pc-9801-computer-museum/)、[TECH GIAN 条目](/references/tech-gian-wikipedia/)、[E-LOGIN 条目](/references/e-login-wikipedia/)、[Leaf、Key 对谈](/references/leaf-key-interview/) 和 [视觉小说的诞生与繁盛](/references/visual-novel-origins-famitsu/)。

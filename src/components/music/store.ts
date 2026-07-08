@@ -91,6 +91,7 @@ export function findActiveLyric(track: CloudTrack | null, currentTime: number, i
   }
 
   let activeText = track.lyrics[0]?.text ?? idleLyric;
+
   for (const line of track.lyrics) {
     if (line.time <= currentTime) {
       activeText = line.text;

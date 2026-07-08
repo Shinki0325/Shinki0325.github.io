@@ -1,7 +1,9 @@
-import { articleSchema, referenceSchema } from "@maki/content-core";
+import { albumSchema, articleSchema, referenceSchema } from "@maki/content-core";
 import { defineCollection, z } from "astro:content";
 
 const article = defineCollection({ schema: articleSchema });
+
+const album = defineCollection({ schema: albumSchema });
 
 const reference = defineCollection({ schema: referenceSchema });
 
@@ -13,8 +15,8 @@ const note = defineCollection({
     topics: z.array(z.string()).default([]),
     images: z.array(z.string()).default([]),
     source: z.string().optional(),
-    draft: z.boolean().default(false)
-  })
+    draft: z.boolean().default(false),
+  }),
 });
 
 const topic = defineCollection({
@@ -22,8 +24,8 @@ const topic = defineCollection({
     title: z.string(),
     description: z.string(),
     cover: z.string().optional(),
-    pinned: z.boolean().default(false)
-  })
+    pinned: z.boolean().default(false),
+  }),
 });
 
 const draft = defineCollection({
@@ -34,22 +36,23 @@ const draft = defineCollection({
     summary: z.string().optional(),
     tags: z.array(z.string()).default([]),
     cover: z.string().optional(),
-    draft: z.boolean().default(true)
-  })
+    draft: z.boolean().default(true),
+  }),
 });
 
 const vault = defineCollection({
   schema: z.object({
     title: z.string(),
-    date: z.coerce.date()
-  })
+    date: z.coerce.date(),
+  }),
 });
 
 export const collections = {
   articles: article,
+  albums: album,
   references: reference,
   notes: note,
   topics: topic,
   drafts: draft,
-  vault: vault
+  vault: vault,
 };

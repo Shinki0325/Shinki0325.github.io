@@ -91,6 +91,7 @@ export default function HomeSearchBar({
           type="text"
           value={query}
         />
+        <span className="home-search-glow" aria-hidden="true" />
       </label>
 
       {open && query.trim() ? (

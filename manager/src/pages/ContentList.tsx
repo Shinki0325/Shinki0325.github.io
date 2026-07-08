@@ -27,13 +27,13 @@ const formatDate = (value?: string) => {
 };
 
 const VisibilityPill = ({ item }: { item: ContentListItem }) => {
-  if (item.visibility === "private") {
-    return <span className="pill muted">private</span>;
+  if (item.visibility === "hidden") {
+    return <span className="pill muted">隐藏</span>;
   }
   if (item.draft) {
-    return <span className="pill muted">draft</span>;
+    return <span className="pill muted">草稿</span>;
   }
-  return <span className="pill">public</span>;
+  return <span className="pill">公开</span>;
 };
 
 export default function ContentList({ defaultKind = "articles", onOpenEntry }: ContentListProps) {

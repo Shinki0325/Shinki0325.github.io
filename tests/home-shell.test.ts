@@ -3,9 +3,9 @@ import { siteShell } from "../src/config/site-shell";
 import { buildHomeSearchIndex, buildHomeViewModel } from "../src/lib/home-shell";
 
 describe("site shell config", () => {
-  it("uses 文稿 in the global navigation, keeps cloud music ids, and exposes homepage notices", () => {
+  it("adds 照片墙 to the global navigation and keeps homepage shell config intact", () => {
     expect(siteShell.navItems.map((item) => item.label)).toEqual(
-      expect.arrayContaining(["首页", "文稿", "资料库", "笔记", "专题", "关于"])
+      expect.arrayContaining(["首页", "文稿", "资料库", "笔记", "照片墙", "专题", "关于"]),
     );
     expect(siteShell.music.cloudMusicIds.length).toBeGreaterThan(0);
     expect(siteShell.music.apiBaseUrl).toContain("http");
@@ -56,7 +56,7 @@ describe("buildHomeViewModel", () => {
     expect(model.featuredReference?.slug).toBe("to-heart-entry");
   });
 
-  it("builds a mixed search index for articles, notes, and references", () => {
+  it("builds a mixed search index for articles, notes, references, and albums", () => {
     const items = buildHomeSearchIndex({
       articles: [
         {
@@ -88,6 +88,16 @@ describe("buildHomeViewModel", () => {
           },
         },
       ],
+      albums: [
+        {
+          slug: "site-assets-wall",
+          data: {
+            title: "站点素材墙示例",
+            summary: "公开照片墙相册",
+            tags: ["视觉素材"],
+          },
+        },
+      ],
     });
 
     expect(items).toEqual(
@@ -104,7 +114,11 @@ describe("buildHomeViewModel", () => {
           href: "/references/to-heart-entry/",
           section: "资料库",
         }),
-      ])
+        expect.objectContaining({
+          href: "/photowall/#album-site-assets-wall",
+          section: "照片墙",
+        }),
+      ]),
     );
   });
 });

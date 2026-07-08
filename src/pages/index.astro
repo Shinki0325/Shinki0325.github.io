@@ -2,18 +2,19 @@
 import HomeSearchBar from "../components/chrome/HomeSearchBar";
 import HomeLyricBar from "../components/music/HomeLyricBar";
 import HomeMusicCard from "../components/music/HomeMusicCard";
-import MusicRuntime from "../components/music/MusicRuntime";
 import { siteShell } from "../config/site-shell";
 import { buildHomeSearchIndex } from "../lib/home-shell";
 import {
+  getPublishedAlbums,
   getPublishedArticles,
   getPublishedNotes,
   getPublishedReferences,
 } from "../lib/public-content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
-const [articles, notes, references] = await Promise.all([
+const [articles, albums, notes, references] = await Promise.all([
   getPublishedArticles(),
+  getPublishedAlbums(),
   getPublishedNotes(),
   getPublishedReferences(),
 ]);
@@ -21,7 +22,7 @@ const [articles, notes, references] = await Promise.all([
 const latestScript = articles.find((entry) => entry.data.type === "script") ?? articles[0] ?? null;
 const featuredReference = references[0] ?? null;
 const latestNote = notes[0] ?? null;
-const searchItems = buildHomeSearchIndex({ articles, notes, references });
+const searchItems = buildHomeSearchIndex({ articles, albums, notes, references });
 const githubHref = siteShell.social?.github ?? "";
 const bilibiliHref = siteShell.social?.bilibili ?? "";
 const normalizeSocialHref = (value: string | undefined, kind: "email" | "url") => {
@@ -50,21 +51,18 @@ const formatDate = (value: Date | string | undefined) => {
 };
 
 const latestUpdate = formatDate(
-  [...articles, ...notes, ...references]
+  [...articles, ...albums, ...notes, ...references]
     .map((entry) => new Date(entry.data.date).getTime())
     .filter((value) => Number.isFinite(value))
-    .sort((left, right) => right - left)[0]
+    .sort((left, right) => right - left)[0],
 );
 
-const noteSummary =
-  latestNote?.data.tags?.length
-    ? `围绕 ${latestNote.data.tags.slice(0, 2).join(" / ")} 的整理笔记`
-    : "把零散线索先整理成可继续扩写的工作台。";
+const noteSummary = latestNote?.data.tags?.length
+  ? `围绕 ${latestNote.data.tags.slice(0, 2).join(" / ")} 的整理笔记`
+  : "把零散线索先整理成可继续扩写的工作台。";
 ---
 
 <BaseLayout>
-  <MusicRuntime client:load />
-
   <HomeSearchBar client:load items={searchItems} placeholder={siteShell.search?.placeholder ?? "搜索站内内容..."} />
 
   <section class="home-hero-shell" data-home-hero>
@@ -158,8 +156,7 @@ const noteSummary =
         <span class="spotlight-label">{latestScript?.data.type === "script" ? "文稿" : "文章"}</span>
       </div>
       <p class="muted">
-        {latestScript?.data.summary ??
-          "主文稿会把资料库、笔记和时间线线索收拢成一条更适合公开阅读的叙述。"}
+        {latestScript?.data.summary ?? "主文稿会把资料库、笔记和时间线线索收拢成一条更适合公开阅读的叙述。"}
       </p>
       {latestScript && (
         <a class="section-link" href={`/articles/${latestScript.slug}/`}>
@@ -202,38 +199,30 @@ const noteSummary =
       </a>
     </article>
 
-    <article class="home-feature-card glass-card">
+    <article class="home-feature-card home-feature-card--reference glass-card" data-home-reference-card>
       <div class="home-card-head">
         <div>
-          <p class="eyebrow">归档状态</p>
-          <h2>资料岛持续扩建中</h2>
+          <p class="eyebrow">运行回廊</p>
+          <h2>资料岛仍在缓慢发光</h2>
         </div>
-        <span class="spotlight-label">Archive</span>
+        <span class="spotlight-label">Live</span>
       </div>
-      <ul class="home-status-list">
-        <li>最近更新：{latestUpdate}</li>
-        <li>发布方式：Astro + GitHub Pages</li>
-        <li>内容结构：文稿 / 资料库 / 笔记 / 专题</li>
-      </ul>
-    </article>
-  </section>
-
-  <section class="home-status-strip glass-panel">
-    <article>
-      <span>站点定位</span>
-      <strong>归档、互链、再写作</strong>
-    </article>
-    <article>
-      <span>公开内容</span>
-      <strong>{articles.length + references.length + notes.length} 项</strong>
-    </article>
-    <article>
-      <span>资料方法</span>
-      <strong>站内正文优先引用</strong>
-    </article>
-    <article>
-      <span>最新更新</span>
-      <strong>{latestUpdate}</strong>
+      <div class="home-reference-orbit" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <dl class="home-reference-stats">
+        <div>
+          <dt>公开内容</dt>
+          <dd>{articles.length + references.length + notes.length + albums.length}</dd>
+        </div>
+        <div>
+          <dt>最新更新</dt>
+          <dd>{latestUpdate}</dd>
+        </div>
+      </dl>
+      <p class="muted">文稿、资料库、笔记和照片墙会继续向同一个归档系统汇流。</p>
     </article>
   </section>
 </BaseLayout>

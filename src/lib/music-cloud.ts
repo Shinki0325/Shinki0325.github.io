@@ -26,6 +26,75 @@ type CloudRecord = Record<string, unknown>;
 
 const UNKNOWN_TITLE = "未命名曲目";
 const UNKNOWN_ARTIST = "未知歌手";
+const TIMESTAMP_PATTERN = /\[(\d{2,}):(\d{2})(?:\.(\d{1,3}))?\]/g;
+const JAPANESE_KANA_PATTERN = /[\u3040-\u30ff]/;
+const CJK_PATTERN = /[\u3400-\u9fff]/;
+const LATIN_PATTERN = /[A-Za-z]/;
+const CJK_CONTINUATION_WITH_TRANSLATION_PATTERN = /^(?<continuation>[\u3400-\u9fff々〆〤ヶ]+)[\s　]+(?<translation>.+)$/;
+
+function looksLikeJapanesePrimary(text: string): boolean {
+  return JAPANESE_KANA_PATTERN.test(text);
+}
+
+function looksLikeTranslationLine(text: string): boolean {
+  return CJK_PATTERN.test(text) && !JAPANESE_KANA_PATTERN.test(text);
+}
+
+function looksLikeLyricPrimary(text: string): boolean {
+  return looksLikeJapanesePrimary(text) || LATIN_PATTERN.test(text) || !looksLikeTranslationLine(text);
+}
+
+function splitKanjiContinuationWithTranslation(text: string) {
+  const match = text.match(CJK_CONTINUATION_WITH_TRANSLATION_PATTERN);
+  const continuation = match?.groups?.continuation?.trim();
+  const translation = match?.groups?.translation?.trim();
+
+  if (!continuation || !translation || !looksLikeTranslationLine(translation)) {
+    return null;
+  }
+
+  return { continuation, translation };
+}
+
+function mergeBilingualLyricLines(lines: LyricLine[]): LyricLine[] {
+  const merged: LyricLine[] = [];
+
+  for (let index = 0; index < lines.length; index += 1) {
+    const current = lines[index];
+    const next = lines[index + 1];
+    const continuationPair =
+      next && current.time === next.time && looksLikeJapanesePrimary(current.text)
+        ? splitKanjiContinuationWithTranslation(next.text)
+        : null;
+
+    if (continuationPair) {
+      merged.push({
+        time: current.time,
+        text: `${current.text}${continuationPair.continuation}\n${continuationPair.translation}`,
+      });
+      index += 1;
+      continue;
+    }
+
+    if (
+      next &&
+      current.time === next.time &&
+      looksLikeLyricPrimary(current.text) &&
+      looksLikeTranslationLine(next.text)
+    ) {
+      merged.push({
+        time: current.time,
+        text: `${current.text}\n${next.text}`,
+      });
+      index += 1;
+      continue;
+    }
+
+    merged.push(current);
+  }
+
+  return merged;
+}
 
 export function buildCloudMusicRequestUrl(config: CloudMusicConfig): string {
   const normalizedBase = config.apiBaseUrl.endsWith("/")
@@ -46,13 +115,13 @@ export function parseLrc(text: string): LyricLine[] {
   const lines: LyricLine[] = [];
 
   for (const rawLine of text.split(/\r?\n/)) {
-    const matches = [...rawLine.matchAll(/\[(\d{2,}):(\d{2})(?:\.(\d{1,3}))?\]/g)];
+    const matches = [...rawLine.matchAll(TIMESTAMP_PATTERN)];
 
     if (matches.length === 0) {
       continue;
     }
 
-    const lyric = rawLine.replace(/\[(\d{2,}):(\d{2})(?:\.(\d{1,3}))?\]/g, "").trim();
+    const lyric = rawLine.replace(TIMESTAMP_PATTERN, "").trim();
     if (!lyric) {
       continue;
     }
@@ -68,7 +137,7 @@ export function parseLrc(text: string): LyricLine[] {
     }
   }
 
-  return lines.sort((left, right) => left.time - right.time);
+  return mergeBilingualLyricLines(lines.sort((left, right) => left.time - right.time));
 }
 
 function firstRecord(payload: unknown): CloudRecord | null {

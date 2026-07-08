@@ -1,4 +1,4 @@
-﻿---
+---
 title: PC98 与秋叶原租赁店回忆
 kind: source
 visibility: public
@@ -25,7 +25,7 @@ sourceType: 网页资料
 sourceTitle: PC98回顧録(90年代初頭、美少女ゲー、秋葉原、レンタル屋 | 秋葉原へよく行くヲタクのブログ～The way of TO ﾄｯﾌﾟｵﾀへの道
 sourceUrl: 'https://ameblo.jp/notchi-official/entry-12652608940.html'
 publisher: Ameba 博客
-note: 当前先公开站内归档文本与附件入口，后续再补全文分段整理、重点标注与对照翻译。
+note: 站内已接入归档文本与附件，可作为主稿论点、素材截图和资料出处的公开入口。
 relatedRefs:
   - 90年代半ばのアキバでのpcゲーム事情-サブカル回顧録
   - 国民機パソコン、その誕生から引退まで-大塚商会
@@ -73,4 +73,3 @@ readingBlocks:
     focus: true
 ---
 这份参考资料已经接入站内归档文本与附件，可先直接在左侧阅读正文摘录。
-后续会继续补充逐段整理、重点标注，以及必要的对照翻译。

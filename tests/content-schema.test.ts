@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
-import { referenceSchema } from "../packages/content-core/src/index";
+import { albumSchema, referenceSchema } from "../packages/content-core/src/index";
 
 vi.mock("@maki/content-core", async () => import("../packages/content-core/src/index.ts"));
 vi.mock("astro:content", async () => {
@@ -7,16 +7,44 @@ vi.mock("astro:content", async () => {
 
   return {
     defineCollection: (config: unknown) => config,
-    z
+    z,
   };
 });
 
 describe("content collections", () => {
-  it("exposes article and reference collections", async () => {
+  it("exposes article, album, and reference collections", async () => {
     const { collections } = await import("../src/content/config");
 
     expect(collections).toHaveProperty("articles");
+    expect(collections).toHaveProperty("albums");
     expect(collections).toHaveProperty("references");
+  });
+
+  it("parses album entries with agreed relationship fields", () => {
+    const parsed = albumSchema.parse({
+      title: "站点素材墙示例",
+      date: "2026-07-08",
+      summary: "示例照片墙内容。",
+      visibility: "hidden",
+      location: "本地素材库",
+      relatedArticles: ["galgame-90s-golden-age"],
+      relatedReferences: ["visual-novel-origins-famitsu"],
+      photos: [
+        {
+          url: "https://images.example.com/album/scene-01.jpg",
+          alt: "用于展示的视觉素材",
+          caption: "局部构图",
+          credit: "Example Studio",
+          relatedArticles: ["galgame-90s-golden-age"],
+          relatedReferences: ["visual-novel-origins-famitsu"],
+        },
+      ],
+    });
+
+    expect(parsed.visibility).toBe("hidden");
+    expect(parsed.relatedArticles).toEqual(["galgame-90s-golden-age"]);
+    expect(parsed.photos[0]?.url).toContain("/scene-01.jpg");
+    expect(parsed.photos[0]?.relatedReferences).toEqual(["visual-novel-origins-famitsu"]);
   });
 
   it("treats related reference metadata as optional", () => {
@@ -25,7 +53,7 @@ describe("content collections", () => {
       kind: "topic",
       librarySection: "社会背景",
       date: "2026-07-07",
-      summary: "Optional metadata should be omittable."
+      summary: "Optional metadata should be omittable.",
     });
 
     expect(parsed.librarySection).toBe("社会背景");
@@ -49,9 +77,9 @@ describe("content collections", () => {
           original: "原文段落",
           translation: "中文译文",
           note: "编者备注",
-          focus: true
-        }
-      ]
+          focus: true,
+        },
+      ],
     });
 
     expect(parsed.readingMode).toBe("curated");
@@ -64,7 +92,7 @@ describe("content collections", () => {
       title: "Minimal Reference",
       kind: "source",
       date: "2026-07-07",
-      summary: "Defaults should be applied."
+      summary: "Defaults should be applied.",
     });
 
     const blockParsed = referenceSchema.parse({
@@ -72,11 +100,7 @@ describe("content collections", () => {
       kind: "source",
       date: "2026-07-07",
       summary: "Reading block focus should default to false.",
-      readingBlocks: [
-        {
-          original: "Only original text"
-        }
-      ]
+      readingBlocks: [{ original: "Only original text" }],
     });
 
     expect(minimalParsed.readingMode).toBe("extract");

@@ -1,5 +1,14 @@
 import { expect, test } from "@playwright/test";
 
+async function dismissSplashIfVisible(page: Parameters<typeof test>[0]["page"]) {
+  const splash = page.locator("[data-splash-screen]");
+
+  if (await splash.isVisible().catch(() => false)) {
+    await page.getByRole("button", { name: /进入站点|进入|开始|Enter/i }).click();
+    await expect(splash).toBeHidden();
+  }
+}
+
 test("desktop homepage shows the new glass navigation with 文稿 entry", async ({ page }) => {
   await page.goto("/");
 
@@ -13,6 +22,7 @@ test("desktop homepage shows the new glass navigation with 文稿 entry", async 
 test("mobile homepage exposes the radial menu trigger and opens the overlay", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/");
+  await dismissSplashIfVisible(page);
 
   await expect(page.locator("[data-mobile-nav-trigger]")).toBeVisible();
   await page.locator("[data-mobile-nav-trigger]").click();
