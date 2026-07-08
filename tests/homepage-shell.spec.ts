@@ -118,9 +118,11 @@ test("homepage hero matches the requested asymmetric profile layout", async ({ p
   expect(musicBox).not.toBeNull();
   expect((profileBox?.width ?? 0)).toBeGreaterThan((musicBox?.width ?? 0));
   expect(Math.abs((profileBox?.height ?? 0) - (musicBox?.height ?? 0))).toBeLessThanOrEqual(2);
-  expect(profileRadius).toBeGreaterThanOrEqual(24);
-  expect(socialButtonMetrics.width).toBeGreaterThanOrEqual(50);
-  expect(socialButtonMetrics.height).toBeGreaterThanOrEqual(50);
+  expect(profileRadius).toBeGreaterThanOrEqual(22);
+  expect(socialButtonMetrics.width).toBeGreaterThanOrEqual(46);
+  expect(socialButtonMetrics.width).toBeLessThanOrEqual(50);
+  expect(socialButtonMetrics.height).toBeGreaterThanOrEqual(46);
+  expect(socialButtonMetrics.height).toBeLessThanOrEqual(50);
   expect(musicTitleMetrics.height).toBeGreaterThan(0);
   expect(musicTitleMetrics.lineHeight).toBeGreaterThan(0);
   expect(musicTitleMetrics.height / musicTitleMetrics.lineHeight).toBeLessThanOrEqual(2.2);
@@ -143,11 +145,11 @@ test("homepage search and lower collage follow the reference shell without the o
     };
   });
 
-  expect(searchMetrics.width).toBeGreaterThanOrEqual(700);
-  expect(searchMetrics.width).toBeLessThanOrEqual(780);
-  expect(searchMetrics.height).toBeGreaterThanOrEqual(56);
-  expect(searchMetrics.height).toBeLessThanOrEqual(70);
-  expect(searchMetrics.radius).toBeGreaterThanOrEqual(28);
+  expect(searchMetrics.width).toBeGreaterThanOrEqual(640);
+  expect(searchMetrics.width).toBeLessThanOrEqual(700);
+  expect(searchMetrics.height).toBeGreaterThanOrEqual(54);
+  expect(searchMetrics.height).toBeLessThanOrEqual(62);
+  expect(searchMetrics.radius).toBeGreaterThanOrEqual(26);
   expect(searchMetrics.background).toContain("linear-gradient");
   await expect(page.locator(".home-status-strip")).toHaveCount(0);
   await expect(page.locator("[data-home-reference-card]")).toBeVisible();
