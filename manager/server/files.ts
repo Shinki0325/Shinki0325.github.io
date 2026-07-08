@@ -21,6 +21,7 @@ const uploadRoot = path.join(publicRoot, "uploads");
 
 const CONTENT_DIRS: Record<ContentKind, string> = {
   articles: "articles",
+  albums: "albums",
   references: "references",
   drafts: "drafts",
   notes: "notes",

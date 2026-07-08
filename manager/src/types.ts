@@ -1,5 +1,6 @@
 export type ContentKind =
   | "articles"
+  | "albums"
   | "references"
   | "drafts"
   | "notes"

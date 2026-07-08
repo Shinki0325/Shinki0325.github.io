@@ -1,14 +1,11 @@
 import { useEffect, useState } from "react";
-import { getContentEntry, getContentList, saveContentEntry } from "../api";
-import { LinkInsertDialog } from "../components/LinkInsertDialog";
+import { getContentEntry, saveContentEntry } from "../api";
 import { MarkdownPreview } from "../components/MarkdownPreview";
-import type { ContentKind, ContentListItem } from "../types";
+import type { ContentListItem } from "../types";
 
-type EditorProps = {
+type AlbumEditorProps = {
   selectedEntry: ContentListItem | null;
 };
-
-const EDITOR_KINDS: ContentKind[] = ["articles", "drafts", "notes", "topics", "vault"];
 
 const slugify = (value: string) => {
   const ascii = value
@@ -17,15 +14,15 @@ const slugify = (value: string) => {
     .replace(/[^a-z0-9\u4e00-\u9fa5]+/g, "-")
     .replace(/^-+|-+$/g, "");
 
-  return ascii || `entry-${Date.now()}`;
+  return ascii || `album-${Date.now()}`;
 };
 
-const toCommaList = (value: unknown) =>
-  Array.isArray(value) ? value.map((item) => String(item)).join(", ") : "";
+const toMultilineList = (value: unknown) =>
+  Array.isArray(value) ? value.map((item) => String(item)).join("\n") : "";
 
-const parseCommaList = (value: string) =>
+const parseMultilineList = (value: string) =>
   value
-    .split(",")
+    .split(/\r?\n/)
     .map((item) => item.trim())
     .filter(Boolean);
 
@@ -37,30 +34,25 @@ const removeKnownKeys = (record: Record<string, unknown>, keys: string[]) => {
   return copy;
 };
 
-export default function Editor({ selectedEntry }: EditorProps) {
-  const [kind, setKind] = useState<ContentKind>("articles");
+export default function AlbumEditor({ selectedEntry }: AlbumEditorProps) {
   const [slug, setSlug] = useState("");
   const [title, setTitle] = useState("");
   const [summary, setSummary] = useState("");
   const [date, setDate] = useState("");
+  const [cover, setCover] = useState("");
+  const [photos, setPhotos] = useState("");
   const [tags, setTags] = useState("");
   const [draft, setDraft] = useState(false);
+  const [visibility, setVisibility] = useState("public");
   const [body, setBody] = useState("");
   const [extras, setExtras] = useState("{}");
-  const [references, setReferences] = useState<ContentListItem[]>([]);
-  const [showLinkDialog, setShowLinkDialog] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
 
   useEffect(() => {
-    void getContentList("references").then(setReferences).catch(() => setReferences([]));
-  }, []);
-
-  useEffect(() => {
-    if (!selectedEntry || selectedEntry.kind === "references" || selectedEntry.kind === "albums") {
+    if (!selectedEntry || selectedEntry.kind !== "albums") {
       return;
     }
 
-    setKind(selectedEntry.kind);
     void getContentEntry(selectedEntry.kind, selectedEntry.slug).then((entry) => {
       const frontmatter = entry.frontmatter;
       setSlug(entry.slug);
@@ -71,12 +63,24 @@ export default function Editor({ selectedEntry }: EditorProps) {
           ? frontmatter.date.slice(0, 10)
           : selectedEntry.date?.slice(0, 10) ?? ""
       );
-      setTags(toCommaList(frontmatter.tags));
+      setCover(String(frontmatter.cover ?? ""));
+      setPhotos(toMultilineList(frontmatter.photos));
+      setTags(toMultilineList(frontmatter.tags));
       setDraft(frontmatter.draft === true);
+      setVisibility(typeof frontmatter.visibility === "string" ? frontmatter.visibility : "public");
       setBody(entry.body.trim());
       setExtras(
         JSON.stringify(
-          removeKnownKeys(frontmatter, ["title", "summary", "date", "tags", "draft"]),
+          removeKnownKeys(frontmatter, [
+            "title",
+            "summary",
+            "date",
+            "cover",
+            "photos",
+            "tags",
+            "draft",
+            "visibility"
+          ]),
           null,
           2
         )
@@ -91,7 +95,8 @@ export default function Editor({ selectedEntry }: EditorProps) {
       const frontmatter: Record<string, unknown> = {
         ...parsedExtras,
         title,
-        draft
+        draft,
+        visibility
       };
 
       if (summary.trim()) {
@@ -100,19 +105,25 @@ export default function Editor({ selectedEntry }: EditorProps) {
       if (date) {
         frontmatter.date = date;
       }
+      if (cover.trim()) {
+        frontmatter.cover = cover.trim();
+      }
+      if (photos.trim()) {
+        frontmatter.photos = parseMultilineList(photos);
+      }
       if (tags.trim()) {
-        frontmatter.tags = parseCommaList(tags);
+        frontmatter.tags = parseMultilineList(tags);
       }
 
       const saved = await saveContentEntry({
-        kind,
+        kind: "albums",
         slug: nextSlug,
         frontmatter,
         body
       });
 
       setSlug(saved.slug);
-      setMessage(`已保存到 ${saved.slug}.md`);
+      setMessage(`Saved to ${saved.slug}.md`);
     } catch (error) {
       setMessage((error as Error).message);
     }
@@ -123,63 +134,80 @@ export default function Editor({ selectedEntry }: EditorProps) {
       <section className="panel stack">
         <div className="toolbar">
           <div>
-            <p className="eyebrow">Script Editor</p>
-            <h1>稿件与草稿编辑器</h1>
+            <p className="eyebrow">Album Editor</p>
+            <h1>Album Editor</h1>
           </div>
           <div className="actions">
-            <button className="secondary-button" onClick={() => setShowLinkDialog(true)} type="button">
-              插入资料链接
-            </button>
             <button className="primary-button" onClick={handleSave} type="button">
-              保存
+              Save
             </button>
           </div>
         </div>
 
         <div className="grid-form">
           <label className="field">
-            <span>集合</span>
-            <select value={kind} onChange={(event) => setKind(event.target.value as ContentKind)}>
-              {EDITOR_KINDS.map((item) => (
-                <option key={item} value={item}>
-                  {item}
-                </option>
-              ))}
-            </select>
-          </label>
-          <label className="field">
             <span>Slug</span>
             <input value={slug} onChange={(event) => setSlug(event.target.value)} placeholder="auto-from-title" />
           </label>
           <label className="field">
-            <span>标题</span>
+            <span>Title</span>
             <input value={title} onChange={(event) => setTitle(event.target.value)} />
           </label>
           <label className="field">
-            <span>日期</span>
+            <span>Date</span>
             <input type="date" value={date} onChange={(event) => setDate(event.target.value)} />
           </label>
+          <label className="field">
+            <span>Visibility</span>
+            <select value={visibility} onChange={(event) => setVisibility(event.target.value)}>
+              <option value="public">public</option>
+              <option value="private">private</option>
+              <option value="unlisted">unlisted</option>
+            </select>
+          </label>
           <label className="field field-span">
-            <span>摘要</span>
+            <span>Summary</span>
             <input value={summary} onChange={(event) => setSummary(event.target.value)} />
           </label>
           <label className="field field-span">
-            <span>标签</span>
-            <input value={tags} onChange={(event) => setTags(event.target.value)} placeholder="video, archive" />
+            <span>Cover</span>
+            <input
+              value={cover}
+              onChange={(event) => setCover(event.target.value)}
+              placeholder="/uploads/albums/cover.jpg"
+            />
+          </label>
+          <label className="field field-span">
+            <span>Photos</span>
+            <textarea
+              className="meta-area"
+              value={photos}
+              onChange={(event) => setPhotos(event.target.value)}
+              placeholder="/uploads/albums/1.jpg"
+            />
+          </label>
+          <label className="field field-span">
+            <span>Tags</span>
+            <textarea
+              className="meta-area"
+              value={tags}
+              onChange={(event) => setTags(event.target.value)}
+              placeholder={"travel\nfilm"}
+            />
           </label>
           <label className="checkbox-field">
             <input checked={draft} onChange={(event) => setDraft(event.target.checked)} type="checkbox" />
-            <span>设为草稿</span>
+            <span>Mark as draft</span>
           </label>
         </div>
 
         <label className="field">
-          <span>正文</span>
+          <span>Body</span>
           <textarea className="editor-area" value={body} onChange={(event) => setBody(event.target.value)} />
         </label>
 
         <label className="field">
-          <span>附加 frontmatter(JSON)</span>
+          <span>Extra frontmatter (JSON)</span>
           <textarea className="meta-area" value={extras} onChange={(event) => setExtras(event.target.value)} />
         </label>
 
@@ -187,17 +215,6 @@ export default function Editor({ selectedEntry }: EditorProps) {
       </section>
 
       <MarkdownPreview body={body} />
-
-      {showLinkDialog ? (
-        <LinkInsertDialog
-          onClose={() => setShowLinkDialog(false)}
-          onPick={(value) => {
-            setBody((current) => (current ? `${current}\n${value}` : value));
-            setShowLinkDialog(false);
-          }}
-          references={references}
-        />
-      ) : null}
     </main>
   );
 }

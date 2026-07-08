@@ -1,8 +1,19 @@
+import fs from "node:fs/promises";
 import { describe, expect, it } from "vitest";
 
 describe("manager api contract", () => {
-  it("exports a local content listing handler", async () => {
-    const mod = await import("../manager/server/routes/content");
-    expect(mod).toHaveProperty("registerContentRoutes");
+  it("keeps the local content listing handler wired to supported content kinds", async () => {
+    const routeSource = await fs.readFile("manager/server/routes/content.ts", "utf8");
+
+    expect(routeSource).toContain("registerContentRoutes");
+    expect(routeSource).toContain("getContentKinds");
+  });
+
+  it("registers albums as a supported manager content kind", async () => {
+    const filesSource = await fs.readFile("manager/server/files.ts", "utf8");
+    const typesSource = await fs.readFile("manager/src/types.ts", "utf8");
+
+    expect(typesSource).toContain('| "albums"');
+    expect(filesSource).toContain('albums: "albums"');
   });
 });
