@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { existsSync } from "node:fs";
 import { join } from "node:path";
+import birthdayData from "../src/data/character-birthdays.json";
 import {
   birthdayWorks,
   characterBirthdays,
@@ -16,6 +17,21 @@ import {
 } from "../src/data/character-birthdays";
 
 describe("character birthday dataset", () => {
+  it("is backed by an editable JSON source for manager CRUD", () => {
+    expect(birthdayData.works).toHaveLength(birthdayWorks.length);
+    expect(birthdayData.characters).toHaveLength(characterBirthdays.length);
+    expect(birthdayData.characters[0]).toEqual(
+      expect.objectContaining({
+        id: expect.any(String),
+        workId: expect.any(String),
+        name: expect.any(String),
+        birthday: expect.any(String),
+        avatar: expect.any(String),
+        bangumiId: expect.any(String),
+      }),
+    );
+  });
+
   it("covers the requested galgame works", () => {
     expect(birthdayWorks.map((work) => work.id)).toEqual(
       expect.arrayContaining([
