@@ -1,7 +1,7 @@
 type EntryData = {
-  title: string;
-  summary: string;
-  date?: string;
+  title?: string;
+  summary?: string;
+  date?: Date | string;
   tags?: string[];
   type?: string;
 };
@@ -61,29 +61,29 @@ export const buildHomeSearchIndex = ({
   references,
 }: HomeCollections): SearchItem[] => [
   ...articles.map((entry) => ({
-    title: entry.data.title,
-    summary: entry.data.summary,
+    title: entry.data.title ?? "未命名条目",
+    summary: entry.data.summary ?? "",
     tags: withTags(entry.data.tags),
     href: `/articles/${entry.slug}/`,
     section: "文稿" as const,
   })),
   ...notes.map((entry) => ({
-    title: entry.data.title,
-    summary: entry.data.summary,
+    title: entry.data.title ?? "未命名条目",
+    summary: entry.data.summary ?? "",
     tags: withTags(entry.data.tags),
     href: `/notes/${entry.slug}/`,
     section: "笔记" as const,
   })),
   ...references.map((entry) => ({
-    title: entry.data.title,
-    summary: entry.data.summary,
+    title: entry.data.title ?? "未命名条目",
+    summary: entry.data.summary ?? "",
     tags: withTags(entry.data.tags),
     href: `/references/${entry.slug}/`,
     section: "资料库" as const,
   })),
   ...albums.map((entry) => ({
-    title: entry.data.title,
-    summary: entry.data.summary,
+    title: entry.data.title ?? "未命名条目",
+    summary: entry.data.summary ?? "",
     tags: withTags(entry.data.tags),
     href: `/photowall/#album-${entry.slug}`,
     section: "照片墙" as const,

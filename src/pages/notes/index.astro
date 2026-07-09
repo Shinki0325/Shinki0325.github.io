@@ -4,9 +4,10 @@ import { getPublishedNotes } from "../../lib/public-content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
 const notes = await getPublishedNotes();
+const isString = (value: string | undefined): value is string => Boolean(value);
 const items = notes.map((entry) => ({
   category: entry.data.category,
-  covers: [...(entry.data.covers ?? []), entry.data.cover].filter(Boolean),
+  covers: [...(entry.data.covers ?? []), entry.data.cover].filter(isString),
   date: entry.data.date,
   eyebrow: "研究笔记",
   href: `/notes/${entry.slug}/`,

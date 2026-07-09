@@ -1,5 +1,5 @@
 import { useStore } from "@nanostores/react";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { siteShell } from "../../config/site-shell";
 import { buildStaticCloudTracks } from "../../lib/music-cloud";
 import {
@@ -15,14 +15,6 @@ import {
 function currentTrackFromState() {
   const state = musicState.get();
   return state.tracks[state.currentIndex] ?? null;
-}
-
-function nextTrackFromState(state: MusicState) {
-  if (state.tracks.length < 2) {
-    return null;
-  }
-
-  return state.tracks[(state.currentIndex + 1) % state.tracks.length] ?? null;
 }
 
 function syncAudioElement(audio: HTMLAudioElement | null, state: MusicState) {
@@ -56,7 +48,7 @@ function syncAudioElement(audio: HTMLAudioElement | null, state: MusicState) {
 export default function MusicRuntime() {
   const state = useStore(musicState);
   const audioRef = useRef<HTMLAudioElement | null>(null);
-  const nextTrack = nextTrackFromState(state);
+  const [hasActivatedAudio, setHasActivatedAudio] = useState(false);
 
   useEffect(() => {
     const currentState = musicState.get();
@@ -73,6 +65,16 @@ export default function MusicRuntime() {
   }, []);
 
   useEffect(() => {
+    if (state.isPlaying) {
+      setHasActivatedAudio(true);
+    }
+  }, [state.isPlaying]);
+
+  useEffect(() => {
+    if (!hasActivatedAudio) {
+      return;
+    }
+
     syncAudioElement(audioRef.current, musicState.get());
 
     const unlisten = musicState.listen((nextState) => {
@@ -82,65 +84,58 @@ export default function MusicRuntime() {
     return () => {
       unlisten();
     };
-  }, []);
+  }, [hasActivatedAudio]);
+
+  if (!hasActivatedAudio) {
+    return null;
+  }
 
   return (
-    <>
-      <audio
-        ref={audioRef}
-        aria-hidden="true"
-        data-global-music-audio
-        data-playing={state.isPlaying ? "true" : "false"}
-        preload="auto"
-        onEnded={() => {
-          const currentState = musicState.get();
-          if (currentState.tracks.length === 0) {
-            setPlayback({ isPlaying: false });
-            return;
-          }
-
-          setCurrentTrack(currentState.currentIndex + 1);
-          setPlayback({ isPlaying: true });
-        }}
-        onLoadedMetadata={(event) => {
-          const audio = event.currentTarget;
-          delete audio.dataset.musicSwitching;
-          setPlayback({
-            duration: Number.isFinite(audio.duration) ? audio.duration : 0,
-          });
-        }}
-        onPause={(event) => {
-          if (musicState.get().isPlaying || event.currentTarget.dataset.musicSwitching === "true") {
-            return;
-          }
-
+    <audio
+      ref={audioRef}
+      aria-hidden="true"
+      data-global-music-audio
+      data-playing={state.isPlaying ? "true" : "false"}
+      preload="none"
+      onEnded={() => {
+        const currentState = musicState.get();
+        if (currentState.tracks.length === 0) {
           setPlayback({ isPlaying: false });
-        }}
-        onPlay={(event) => {
-          delete event.currentTarget.dataset.musicSwitching;
-          setPlayback({ isPlaying: true });
-        }}
-        onTimeUpdate={(event) => {
-          const audio = event.currentTarget;
-          const currentState = musicState.get();
-          const track = currentTrackFromState();
+          return;
+        }
 
-          setPlayback({
-            currentTime: audio.currentTime,
-            duration: Number.isFinite(audio.duration) ? audio.duration : currentState.duration,
-            currentLyric: findActiveLyric(track, audio.currentTime, currentState.idleLyric),
-          });
-        }}
-      />
-      {nextTrack ? (
-        <audio
-          aria-hidden="true"
-          data-next-music-audio
-          key={nextTrack.id}
-          preload="auto"
-          src={nextTrack.audioUrl}
-        />
-      ) : null}
-    </>
+        setCurrentTrack(currentState.currentIndex + 1);
+        setPlayback({ isPlaying: true });
+      }}
+      onLoadedMetadata={(event) => {
+        const audio = event.currentTarget;
+        delete audio.dataset.musicSwitching;
+        setPlayback({
+          duration: Number.isFinite(audio.duration) ? audio.duration : 0,
+        });
+      }}
+      onPause={(event) => {
+        if (musicState.get().isPlaying || event.currentTarget.dataset.musicSwitching === "true") {
+          return;
+        }
+
+        setPlayback({ isPlaying: false });
+      }}
+      onPlay={(event) => {
+        delete event.currentTarget.dataset.musicSwitching;
+        setPlayback({ isPlaying: true });
+      }}
+      onTimeUpdate={(event) => {
+        const audio = event.currentTarget;
+        const currentState = musicState.get();
+        const track = currentTrackFromState();
+
+        setPlayback({
+          currentTime: audio.currentTime,
+          duration: Number.isFinite(audio.duration) ? audio.duration : currentState.duration,
+          currentLyric: findActiveLyric(track, audio.currentTime, currentState.idleLyric),
+        });
+      }}
+    />
   );
 }

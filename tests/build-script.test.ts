@@ -8,7 +8,9 @@ const packageJson = JSON.parse(readFileSync(packageJsonPath, "utf8")) as {
 };
 
 describe("build script", () => {
-  it("cleans dist before running astro build", () => {
-    expect(packageJson.scripts?.build).toBe("node scripts/clean-build.mjs && astro build");
+  it("generates archive thumbnails and cleans dist before running astro build", () => {
+    expect(packageJson.scripts?.build).toBe(
+      "node scripts/generate-archive-thumbnails.mjs && node scripts/clean-build.mjs && astro build",
+    );
   });
 });

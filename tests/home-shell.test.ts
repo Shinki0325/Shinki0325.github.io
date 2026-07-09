@@ -13,7 +13,7 @@ describe("site shell config", () => {
     );
     expect("apiBaseUrl" in siteShell.music).toBe(false);
     expect(siteShell.announcements.length).toBeGreaterThan(0);
-    expect(siteShell.homeBackground.videoSrc).toBe("/uploads/backgrounds/home-loop-h264.mp4");
+    expect(siteShell.homeBackground.videoSrc).toBe("/uploads/backgrounds/home-loop-1440p.mp4");
   });
 });
 

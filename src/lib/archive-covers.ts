@@ -16,6 +16,7 @@ export const SCRIPT_OVERVIEW_COVERS = [
 ];
 
 const webArchiveDir = path.join(process.cwd(), "public", "uploads", "galgame-90s-web-archive");
+const archiveThumbPublicDir = "/uploads/generated/archive-thumbs";
 
 const normalizeCoverList = (cover?: string, covers: string[] = []) =>
   [...covers, cover].filter((value): value is string => typeof value === "string" && value.trim().length > 0);
@@ -51,8 +52,11 @@ const findScrapedScreenshot = (sourceUrl?: string) => {
   const looseMatch = files.find((file) => file.endsWith(".png") && file.startsWith(prefix));
   const match = exactMatch ?? looseMatch;
 
-  return match ? `/uploads/galgame-90s-web-archive/${match}` : undefined;
+  return match ? getArchiveThumbnailPublicPath(match) : undefined;
 };
+
+export const getArchiveThumbnailPublicPath = (filename: string) =>
+  `${archiveThumbPublicDir}/${path.basename(filename, path.extname(filename))}.webp`;
 
 export const getArticleOverviewCovers = (data: {
   cover?: string;

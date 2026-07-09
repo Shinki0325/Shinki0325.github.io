@@ -3,5 +3,13 @@
   "compilerOptions": {
     "baseUrl": ".",
     "resolveJsonModule": true
-  }
+  },
+  "exclude": [
+    ".tmp",
+    "dist",
+    "manager/dist",
+    "tests",
+    "tmp-xinghui-ref",
+    "tmp-xinghui-zip"
+  ]
 }

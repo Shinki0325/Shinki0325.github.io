@@ -1,6 +1,12 @@
 import { describe, expect, it } from "vitest";
 
 describe("archive overview pages", () => {
+  const readArchiveStyleSource = async () => {
+    const fs = await import("node:fs/promises");
+
+    return fs.readFile("src/styles/archive-overview.css", "utf8");
+  };
+
   it("uses one shared archive overview shell for articles, references, and notes", async () => {
     const fs = await import("node:fs/promises");
     const [articlesSource, referencesSource, notesSource] = await Promise.all([
@@ -19,10 +25,14 @@ describe("archive overview pages", () => {
 
   it("defines the reference-blog-like archive controls without touching detail page templates", async () => {
     const fs = await import("node:fs/promises");
-    const componentSource = await fs.readFile("src/components/ArchiveOverview.astro", "utf8");
-    const styleSource = await fs.readFile("src/styles/global.css", "utf8");
+    const [componentSource, styleSource, globalStyleSource] = await Promise.all([
+      fs.readFile("src/components/ArchiveOverview.astro", "utf8"),
+      readArchiveStyleSource(),
+      fs.readFile("src/styles/global.css", "utf8"),
+    ]);
 
     expect(componentSource).toContain('data-archive-overview');
+    expect(componentSource).toContain('import "../styles/archive-overview.css"');
     expect(componentSource).toContain("archive-overview__hero");
     expect(componentSource).toContain("archive-overview__search");
     expect(componentSource).toContain("archive-overview__filters");
@@ -34,12 +44,11 @@ describe("archive overview pages", () => {
     expect(styleSource).toContain(".archive-overview__view-switch");
     expect(styleSource).toContain(".archive-overview__timeline");
     expect(styleSource).toContain(".archive-overview-card");
+    expect(globalStyleSource).not.toContain(".archive-overview__hero");
   });
 
   it("keeps the archive overview shell compact like the reference archive page", async () => {
-    const source = await import("node:fs/promises").then((fs) =>
-      fs.readFile("src/styles/global.css", "utf8")
-    );
+    const source = await readArchiveStyleSource();
 
     expect(source).toContain("min-height: clamp(230px, 28vw, 330px)");
     expect(source).toContain("font-size: clamp(2.35rem, 5vw, 4.2rem)");
@@ -63,7 +72,7 @@ describe("archive overview pages", () => {
     const fs = await import("node:fs/promises");
     const [componentSource, styleSource] = await Promise.all([
       fs.readFile("src/components/ArchiveOverview.astro", "utf8"),
-      fs.readFile("src/styles/global.css", "utf8"),
+      readArchiveStyleSource(),
     ]);
 
     expect(componentSource).toContain('data-archive-view="timeline"');
@@ -103,7 +112,7 @@ describe("archive overview pages", () => {
     const fs = await import("node:fs/promises");
     const [componentSource, styleSource] = await Promise.all([
       fs.readFile("src/components/ArchiveOverview.astro", "utf8"),
-      fs.readFile("src/styles/global.css", "utf8"),
+      readArchiveStyleSource(),
     ]);
 
     expect(componentSource).toContain("data-archive-covers");
@@ -135,11 +144,22 @@ describe("archive overview pages", () => {
     expect(referencesSource).toContain("getReferenceOverviewCovers");
     expect(referencesSource).toContain("category: entry.data.librarySection");
     expect(coverSource).toContain("SCRIPT_OVERVIEW_COVERS");
+    expect(coverSource).toContain("getArchiveThumbnailPublicPath");
     expect(coverSource).toContain("return SCRIPT_OVERVIEW_COVERS");
     expect(coverSource).toContain("033mTHwA1AgfSkEYQOEJ1F.jpg");
     expect(coverSource).not.toContain("033mRL5hL42K30lBIHwCpo.png");
     expect(coverSource).not.toContain("033mRL4ygydTIdfnHrklxE.png");
     expect(coverSource).toContain("galgame-90s-web-archive");
+  });
+
+  it("uses generated webp thumbnails for scraped reference screenshots", async () => {
+    const { getReferenceOverviewCovers } = await import("../src/lib/archive-covers");
+
+    const covers = getReferenceOverviewCovers({
+      sourceUrl: "https://www.famitsu.com/news/202012/26211397.html",
+    });
+
+    expect(covers[0]).toMatch(/^\/uploads\/generated\/archive-thumbs\/.+\.webp$/);
   });
 
   it("uses the compact reference-blog timeline only on the article overview", async () => {
@@ -148,7 +168,7 @@ describe("archive overview pages", () => {
       fs.readFile("src/components/ArchiveOverview.astro", "utf8"),
       fs.readFile("src/pages/articles/index.astro", "utf8"),
       fs.readFile("src/pages/references/index.astro", "utf8"),
-      fs.readFile("src/styles/global.css", "utf8"),
+      readArchiveStyleSource(),
     ]);
 
     expect(componentSource).toContain("archiveStyle");
@@ -180,7 +200,7 @@ describe("archive overview pages", () => {
     const [componentSource, referencesSource, styleSource] = await Promise.all([
       fs.readFile("src/components/ArchiveOverview.astro", "utf8"),
       fs.readFile("src/pages/references/index.astro", "utf8"),
-      fs.readFile("src/styles/global.css", "utf8"),
+      readArchiveStyleSource(),
     ]);
 
     expect(componentSource).toContain('"default" | "blog" | "reference"');

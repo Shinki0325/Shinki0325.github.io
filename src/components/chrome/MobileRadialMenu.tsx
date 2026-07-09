@@ -14,7 +14,7 @@ export default function MobileRadialMenu({
   currentPath,
   onClose,
 }: {
-  items: NavItem[];
+  items: readonly NavItem[];
   open: boolean;
   currentPath: string;
   onClose: () => void;

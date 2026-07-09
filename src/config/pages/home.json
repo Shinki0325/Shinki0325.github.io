@@ -28,7 +28,7 @@
   ],
   "homeBackground": {
     "enabled": true,
-    "videoSrc": "/uploads/backgrounds/home-loop-h264.mp4",
+    "videoSrc": "/uploads/backgrounds/home-loop-1440p.mp4",
     "poster": "/uploads/backgrounds/home-loop-poster.jpg"
   },
   "backgroundImages": [

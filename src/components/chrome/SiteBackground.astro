@@ -27,9 +27,9 @@ const nonHomeBackgroundImages: readonly string[] = isHome ? [] : backgroundImage
         muted
         playsinline
         poster={homeBackground.poster}
-        preload="auto"
+        preload="none"
       >
-        <source src={homeBackground.videoSrc} type="video/mp4" />
+        <source data-home-background-source data-src={homeBackground.videoSrc} type="video/mp4" />
       </video>
     )
   }
@@ -83,6 +83,58 @@ const nonHomeBackgroundImages: readonly string[] = isHome ? [] : backgroundImage
 
             setupBackgroundCarousels();
             document.addEventListener("astro:page-load", setupBackgroundCarousels);
+          })();
+        `}
+      />
+    )
+  }
+  {
+    isHome && homeBackground.enabled && homeBackground.videoSrc && (
+      <script
+        is:inline
+        set:html={`
+          (() => {
+            const canLoadMotionBackground = () => {
+              const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+              const saveData = Boolean(connection?.saveData);
+              const reducedMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches ?? false;
+              return !saveData && !reducedMotion;
+            };
+
+            const loadHomeBackgroundVideo = () => {
+              if (!canLoadMotionBackground()) {
+                return;
+              }
+
+              document.querySelectorAll("[data-home-background-video]").forEach((video) => {
+                if (video.dataset.videoReady === "true") {
+                  return;
+                }
+
+                const source = video.querySelector("[data-home-background-source]");
+                const src = source?.dataset.src;
+                if (!source || !src) {
+                  return;
+                }
+
+                video.dataset.videoReady = "true";
+                source.setAttribute("src", src);
+                video.load();
+                video.play?.().catch(() => {});
+              });
+            };
+
+            const scheduleHomeBackgroundVideo = () => {
+              if ("requestIdleCallback" in window) {
+                window.requestIdleCallback(loadHomeBackgroundVideo, { timeout: 2600 });
+                return;
+              }
+
+              window.setTimeout(loadHomeBackgroundVideo, 1400);
+            };
+
+            window.addEventListener("load", scheduleHomeBackgroundVideo, { once: true });
+            document.addEventListener("astro:page-load", scheduleHomeBackgroundVideo);
           })();
         `}
       />

@@ -23,7 +23,7 @@ const [articles, albums, notes, references] = await Promise.all([
   getPublishedReferences(),
 ]);
 
-const formatDate = (value: Date | string | undefined) => {
+const formatDate = (value: Date | number | string | undefined) => {
   if (!value) {
     return "持续整理中";
   }

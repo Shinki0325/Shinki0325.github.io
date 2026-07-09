@@ -128,7 +128,7 @@ export const uploadOriginalToImageHost = async (
       "x-amz-content-sha256": payloadHash,
       "x-amz-date": amzDate
     },
-    body: buffer
+    body: new Uint8Array(buffer)
   });
 
   if (!response.ok) {
