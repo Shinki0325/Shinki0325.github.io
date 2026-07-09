@@ -21,12 +21,19 @@ describe("manager api contract", () => {
     const birthdaySource = await fs.readFile("manager/server/birthdays.ts", "utf8");
 
     expect(birthdaySource).toContain("readBirthdayData");
+    expect(birthdaySource).toContain("writeBirthdayData");
+    expect(birthdaySource).toContain("getBirthdayStats");
     expect(birthdaySource).toContain("saveBirthdayWork");
+    expect(birthdaySource).toContain("deleteBirthdayWork");
     expect(birthdaySource).toContain("saveBirthdayCharacter");
     expect(birthdaySource).toContain("deleteBirthdayCharacter");
     expect(birthdaySource).toContain("copyBirthdayImage");
+    expect(birthdaySource).toContain("saveUploadedBirthdayImage");
     expect(birthdaySource).toContain("cropBirthdayAvatar");
     expect(birthdaySource).toContain("character-birthdays.json");
     expect(birthdaySource).toContain("public/uploads/character-birthdays");
+    expect(birthdaySource).toContain("missingAvatar");
+    expect(birthdaySource).toContain("missingImage");
+    expect(birthdaySource).toContain("todo");
   });
 });

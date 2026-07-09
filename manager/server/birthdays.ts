@@ -24,7 +24,7 @@ export type BirthdayCharacterDraft = {
   gender: BirthdayGender;
   avatar: string | null;
   image?: string | null;
-  sourceUrl?: string;
+  sourceUrl: string;
   sourceId?: string;
   bangumiId?: string;
   reading?: string;
@@ -217,7 +217,7 @@ const validateCharacterDraft = (
   const work = works.find((item) => item.id === workId);
   assertValid(work, `workId must reference an existing work: ${workId}.`);
 
-  const sourceUrl = draft.sourceUrl?.trim() || work.sourceUrl;
+  const sourceUrl = requiredText(draft.sourceUrl, "character sourceUrl");
   assertValid(sourceUrl === work.sourceUrl, "character sourceUrl must match the selected work sourceUrl.");
 
   const sourceId = optionalText(draft.sourceId, "character sourceId");
@@ -295,10 +295,11 @@ export const getBirthdayStats = (data: BirthdayDataFile) => {
   }, {});
 
   return {
-    workCount: data.works.length,
-    characterCount: data.characters.length,
-    verifiedCount: data.characters.filter((character) => character.verificationStatus === "verified").length,
-    todoCount: data.characters.filter((character) => character.verificationStatus === "todo").length,
+    works: data.works.length,
+    characters: data.characters.length,
+    missingAvatar: data.characters.filter((character) => !character.avatar?.trim()).length,
+    missingImage: data.characters.filter((character) => !character.image?.trim()).length,
+    todo: data.characters.filter((character) => character.verificationStatus === "todo").length,
     characterCountByWork
   };
 };
@@ -394,15 +395,9 @@ export const cropBirthdayAvatar = async (
   assertValid(Number.isFinite(crop.size) && crop.size > 0, "crop size must be a positive number.");
 
   const destinationPath = getImageDestination(workId, characterId, "avatar");
+  const cropArg = [Math.round(crop.x), Math.round(crop.y), Math.round(crop.size)].join(",");
   await fs.mkdir(path.dirname(destinationPath), { recursive: true });
-  await execFileAsync("python3", [
-    cropScriptPath,
-    sourcePath,
-    destinationPath,
-    String(crop.x),
-    String(crop.y),
-    String(crop.size)
-  ]);
+  await execFileAsync("python3", [cropScriptPath, sourcePath, destinationPath, cropArg]);
 
   return toPublicUrl(destinationPath);
 };
