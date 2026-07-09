@@ -6,6 +6,7 @@ import SplashScreen from "../components/home/SplashScreen";
 import FloatingPlayer from "../components/music/FloatingPlayer";
 import MusicRuntime from "../components/music/MusicRuntime";
 import SiteBackground from "../components/chrome/SiteBackground.astro";
+import { buildAppearanceStyle, siteAppearance } from "../config/site-appearance";
 import TopNav from "../components/chrome/TopNav";
 import { siteShell } from "../config/site-shell";
 import { siteDescription, siteTitle } from "../data/site";
@@ -22,6 +23,7 @@ const {
   currentPath = Astro.url.pathname,
 } = Astro.props;
 const siteIcon = siteShell.profile?.avatarUrl ?? "https://s1.ax1x.com/2023/07/28/pCx6j3R.jpg";
+const appearanceStyle = buildAppearanceStyle(siteAppearance);
 ---
 
 <!doctype html>
@@ -35,6 +37,7 @@ const siteIcon = siteShell.profile?.avatarUrl ?? "https://s1.ax1x.com/2023/07/28
     <link href={siteIcon} rel="icon" />
     <link href={siteIcon} rel="shortcut icon" />
     <link href={siteIcon} rel="apple-touch-icon" />
+    <style is:inline set:html={`:root {${appearanceStyle}}`}></style>
   </head>
   <body>
     <SiteBackground currentPath={currentPath} />

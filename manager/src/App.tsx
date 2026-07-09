@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { getSystemStatus } from "./api";
 import Assets from "./pages/Assets";
 import AlbumEditor from "./pages/AlbumEditor";
+import AppearanceEditor from "./pages/AppearanceEditor";
 import BirthdayManager from "./pages/BirthdayManager";
 import Dashboard from "./pages/Dashboard";
 import Editor from "./pages/Editor";
@@ -18,6 +19,7 @@ type View =
   | "reference-editor"
   | "birthdays"
   | "pages"
+  | "appearance"
   | "assets";
 
 export const getEditorViewForEntry = (item: ContentListItem | null): View => {
@@ -55,6 +57,7 @@ export default function App() {
     { view: "reference-editor", label: "资料编辑" },
     { view: "birthdays", label: "生日角色" },
     { view: "pages", label: "页面配置" },
+    { view: "appearance", label: "外观设置" },
     { view: "assets", label: "资源" }
   ];
 
@@ -84,6 +87,9 @@ export default function App() {
     }
     if (view === "pages") {
       return <PageBuilder />;
+    }
+    if (view === "appearance") {
+      return <AppearanceEditor />;
     }
     return <Assets />;
   };

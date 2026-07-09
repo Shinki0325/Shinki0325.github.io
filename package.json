@@ -6,6 +6,7 @@
     "dev": "astro dev",
     "dev:manager": "pnpm --filter @maki/manager dev",
     "dev:manager:server": "pnpm --filter @maki/manager server",
+    "dev:manager:local": "bash scripts/restart-manager-local.sh",
     "build": "node scripts/clean-build.mjs && astro build",
     "build:manager": "pnpm --filter @maki/manager build",
     "preview": "astro preview",

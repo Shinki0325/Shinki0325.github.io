@@ -39,7 +39,7 @@ const CONTENT_DIRS: Record<ContentKind, string> = {
 };
 
 const MARKDOWN_EXTENSIONS = new Set([".md", ".mdx"]);
-const PAGE_CONFIGS: PageConfigName[] = ["home", "references"];
+const PAGE_CONFIGS: PageConfigName[] = ["home", "references", "appearance"];
 
 const walkMarkdownFiles = async (dir: string): Promise<string[]> => {
   try {

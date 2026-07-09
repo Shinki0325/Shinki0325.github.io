@@ -787,6 +787,289 @@ ReactDOM.createRoot(app).render(
           margin-top: 12px;
         }
 
+        .dashboard-page {
+          gap: 16px;
+        }
+
+        .dashboard-hero {
+          position: relative;
+          overflow: hidden;
+          display: grid;
+          grid-template-columns: minmax(0, 1fr) auto;
+          gap: 18px;
+          align-items: end;
+          min-height: 178px;
+          background:
+            radial-gradient(circle at 86% 18%, rgba(255, 199, 111, 0.34), transparent 18rem),
+            linear-gradient(135deg, rgba(255, 252, 244, 0.74), rgba(246, 222, 188, 0.52));
+        }
+
+        .dashboard-hero::after {
+          position: absolute;
+          right: -80px;
+          bottom: -100px;
+          width: 260px;
+          height: 260px;
+          border: 1px solid rgba(114, 75, 35, 0.1);
+          border-radius: 50%;
+          content: "";
+          background: rgba(255, 255, 255, 0.18);
+        }
+
+        .dashboard-hero > * {
+          position: relative;
+          z-index: 1;
+        }
+
+        .dashboard-hero p:not(.eyebrow) {
+          max-width: 880px;
+          margin-top: 10px;
+          color: #5d4936;
+          font-size: 1.05rem;
+          font-weight: 700;
+          line-height: 1.6;
+        }
+
+        .dashboard-hero__badge {
+          display: grid;
+          place-items: center;
+          min-width: 138px;
+          min-height: 138px;
+          border: 1px solid rgba(255, 255, 255, 0.48);
+          border-radius: 36px;
+          background:
+            radial-gradient(circle at 35% 20%, rgba(255, 226, 172, 0.44), transparent 5rem),
+            rgba(77, 51, 29, 0.72);
+          box-shadow: 0 22px 48px rgba(82, 48, 22, 0.2);
+          color: #fff7e8;
+        }
+
+        .dashboard-hero__badge strong {
+          font-size: 2.4rem;
+          line-height: 1;
+        }
+
+        .dashboard-hero__badge span {
+          font-size: 0.85rem;
+          font-weight: 900;
+          letter-spacing: 0.08em;
+        }
+
+        .dashboard-grid {
+          display: grid;
+          grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+          gap: 14px;
+          align-items: stretch;
+        }
+
+        .dashboard-card {
+          min-width: 0;
+        }
+
+        .dashboard-card--wide {
+          background:
+            linear-gradient(135deg, rgba(255, 253, 246, 0.62), rgba(255, 239, 211, 0.42));
+        }
+
+        .dashboard-paths {
+          display: grid;
+          gap: 10px;
+        }
+
+        .dashboard-paths div {
+          padding: 12px;
+          border: 1px solid rgba(255, 255, 255, 0.42);
+          border-radius: 16px;
+          background: rgba(255, 255, 255, 0.26);
+        }
+
+        .dashboard-paths dt {
+          margin-bottom: 5px;
+          color: #7b6040;
+          font-size: 0.78rem;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+        }
+
+        .dashboard-paths dd {
+          overflow-wrap: anywhere;
+          color: #2f2318;
+          font-weight: 900;
+        }
+
+        .dashboard-metrics {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 10px;
+        }
+
+        .dashboard-metric {
+          min-height: 112px;
+          padding: 14px;
+          border: 1px solid rgba(255, 255, 255, 0.44);
+          border-radius: 20px;
+          background:
+            radial-gradient(circle at 80% 12%, rgba(255, 204, 122, 0.22), transparent 7rem),
+            rgba(255, 255, 255, 0.28);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.34);
+        }
+
+        .dashboard-metric strong,
+        .dashboard-metric span,
+        .dashboard-metric small {
+          display: block;
+        }
+
+        .dashboard-metric strong {
+          font-size: 2rem;
+          line-height: 1;
+        }
+
+        .dashboard-metric span {
+          margin-top: 8px;
+          color: #59442f;
+          font-weight: 900;
+        }
+
+        .dashboard-metric small {
+          margin-top: 4px;
+          color: #7b6040;
+          font-weight: 700;
+        }
+
+        .dashboard-workflow {
+          background:
+            radial-gradient(circle at 95% 8%, rgba(194, 112, 62, 0.14), transparent 20rem),
+            rgba(255, 250, 238, 0.58);
+        }
+
+        .dashboard-actions {
+          display: grid;
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+          gap: 10px;
+        }
+
+        .dashboard-action {
+          min-height: 118px;
+          border: 1px solid rgba(127, 91, 52, 0.16);
+          border-radius: 22px;
+          padding: 14px;
+          text-align: left;
+          color: #4b3824;
+          background: rgba(255, 252, 244, 0.44);
+          box-shadow: 0 12px 28px rgba(84, 58, 31, 0.08);
+          cursor: pointer;
+          transition:
+            transform 160ms ease,
+            background 160ms ease,
+            box-shadow 160ms ease;
+        }
+
+        .dashboard-action:hover:not(:disabled) {
+          transform: translateY(-2px);
+          background: rgba(255, 252, 244, 0.7);
+          box-shadow: 0 18px 34px rgba(84, 58, 31, 0.12);
+        }
+
+        .dashboard-action:disabled {
+          cursor: wait;
+          opacity: 0.62;
+        }
+
+        .dashboard-action strong,
+        .dashboard-action span {
+          display: block;
+        }
+
+        .dashboard-action strong {
+          font-size: 1rem;
+          font-weight: 900;
+        }
+
+        .dashboard-action span {
+          margin-top: 8px;
+          color: #6f563a;
+          font-size: 0.86rem;
+          font-weight: 700;
+          line-height: 1.5;
+        }
+
+        .dashboard-commit {
+          display: grid;
+          grid-template-columns: minmax(260px, 1fr) auto;
+          gap: 12px;
+          align-items: end;
+          padding: 12px;
+          border: 1px solid rgba(255, 255, 255, 0.4);
+          border-radius: 22px;
+          background: rgba(255, 255, 255, 0.22);
+        }
+
+        .dashboard-result {
+          padding: 16px;
+          border: 1px solid rgba(255, 255, 255, 0.48);
+          border-radius: 24px;
+          background: rgba(255, 255, 255, 0.28);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.34);
+        }
+
+        .dashboard-result--success {
+          border-color: rgba(90, 132, 50, 0.24);
+          background:
+            radial-gradient(circle at 92% 12%, rgba(142, 190, 92, 0.2), transparent 16rem),
+            rgba(249, 255, 240, 0.34);
+        }
+
+        .dashboard-result--warning {
+          border-color: rgba(190, 126, 45, 0.26);
+          background:
+            radial-gradient(circle at 92% 12%, rgba(255, 190, 91, 0.22), transparent 16rem),
+            rgba(255, 248, 235, 0.36);
+        }
+
+        .dashboard-result--error {
+          border-color: rgba(166, 67, 45, 0.26);
+          background:
+            radial-gradient(circle at 92% 12%, rgba(218, 94, 68, 0.18), transparent 16rem),
+            rgba(255, 243, 238, 0.4);
+        }
+
+        .dashboard-result__items {
+          display: flex;
+          gap: 8px;
+          flex-wrap: wrap;
+          padding: 0;
+          margin: 12px 0 0;
+          list-style: none;
+        }
+
+        .dashboard-result__items li {
+          padding: 7px 10px;
+          border: 1px solid rgba(125, 91, 52, 0.14);
+          border-radius: 999px;
+          background: rgba(255, 255, 255, 0.34);
+          color: #4c3a25;
+          font-weight: 800;
+        }
+
+        .dashboard-raw-output {
+          max-height: 280px;
+          overflow: auto;
+          margin: 0;
+          white-space: pre-wrap;
+          word-break: break-word;
+          font-family: "Cascadia Mono", Consolas, "Courier New", monospace;
+          font-size: 0.86rem;
+          line-height: 1.55;
+        }
+
+        .dashboard-history {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+          gap: 10px;
+        }
+
         .page-builder__tabs {
           display: grid;
           grid-template-columns: repeat(3, minmax(0, 1fr));

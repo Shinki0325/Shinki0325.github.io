@@ -1,0 +1,99 @@
+{
+  "panelOpacity": 0.58,
+  "panelStrongOpacity": 0.78,
+  "panelSoftOpacity": 0.08,
+  "backgroundVideoOpacity": 0.62,
+  "backgroundImageOpacity": 0.46,
+  "veilOpacity": 1,
+  "pageGutterMin": 44,
+  "pageGutterVw": 7,
+  "pageGutterMax": 112,
+  "maxWidth": 1052,
+  "cardScale": 1,
+  "radiusScale": 1,
+  "fontPreset": "serif",
+  "fontFamily": "\"Noto Serif SC\", \"Source Han Serif SC\", \"Songti SC\", serif",
+  "previewCards": [
+    {
+      "id": "featured",
+      "eyebrow": "当前主稿",
+      "title": "为什么90年代是galgame真正意义上的黄金年代",
+      "description": "围绕90年代 galgame 为何能形成黄金年代感的一篇长文主稿。",
+      "meta": "文稿",
+      "actionLabel": "打开文稿",
+      "variant": "strong",
+      "widthUnits": 7,
+      "minHeight": 260
+    },
+    {
+      "id": "reference",
+      "eyebrow": "重点资料",
+      "title": "E-LOGIN 条目",
+      "description": "E-LOGIN 条目梳理了这本杂志的创刊背景、内容定位与读者面向，适合用来解释九十年代游戏杂志如何承担作品曝光、资讯整理和玩家入口功能。",
+      "meta": "资料库",
+      "actionLabel": "打开资料页",
+      "variant": "strong",
+      "widthUnits": 5,
+      "minHeight": 260
+    },
+    {
+      "id": "notes",
+      "eyebrow": "最新笔记",
+      "title": "笔记整理中",
+      "description": "用于观察小卡片在整页布局里的比例、留白和阅读节奏。",
+      "meta": "笔记",
+      "actionLabel": "查看笔记",
+      "variant": "soft",
+      "widthUnits": 4,
+      "minHeight": 180
+    },
+    {
+      "id": "status",
+      "eyebrow": "运行回廊",
+      "title": "少女祈祷中......",
+      "description": "公开内容、最近更新和日历模块可以用这种中等尺寸卡片承接。",
+      "meta": "Live",
+      "actionLabel": "查看状态",
+      "variant": "outline",
+      "widthUnits": 8,
+      "minHeight": 180
+    }
+  ],
+  "navigation": {
+    "height": 49,
+    "maxWidth": 1052,
+    "paddingX": 21,
+    "blur": 24,
+    "linkGap": 12
+  },
+  "musicPlayer": {
+    "cardPadding": 29,
+    "coverSize": 91,
+    "controlSize": 38,
+    "primaryControlSize": 49,
+    "floatingWidth": 350,
+    "floatingHeight": 64,
+    "floatingCoverSize": 66
+  },
+  "lyricBar": {
+    "height": 67,
+    "paddingX": 22,
+    "radius": 25,
+    "opacity": 0.84,
+    "fontSize": 16
+  },
+  "searchBar": {
+    "width": 684,
+    "height": 60,
+    "marginBottom": 4,
+    "iconSize": 22
+  },
+  "profileCard": {
+    "paddingX": 27,
+    "paddingY": 32,
+    "avatarSize": 143,
+    "titleSize": 56,
+    "minHeight": 286,
+    "socialButtonSize": 51
+  }
+}

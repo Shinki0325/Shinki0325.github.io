@@ -38,7 +38,7 @@ export type SaveContentPayload = {
   body: string;
 };
 
-export type PageConfigName = "home" | "references";
+export type PageConfigName = "home" | "references" | "appearance";
 
 export type PageConfigFile = {
   name: PageConfigName;
