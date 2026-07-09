@@ -1,6 +1,5 @@
 import { useStore } from "@nanostores/react";
 import { siteShell } from "../../config/site-shell";
-import LyricLines from "./LyricLines";
 import { musicState, setCurrentTrack, setPlayback } from "./store";
 
 const formatTime = (value: number) => {
@@ -27,6 +26,8 @@ export default function HomeMusicCard() {
       ? "云音乐暂时不可用"
       : "曲目暂未载入";
   const detailText = track?.artist ?? state.error ?? "";
+  const titleText = track?.title ?? statusText;
+  const isLikelySingleLineTitle = titleText.replace(/\s+/g, "").length <= 14;
   const progress =
     state.duration > 0 ? Math.min(100, Math.max(0, (state.currentTime / state.duration) * 100)) : 0;
 
@@ -46,16 +47,10 @@ export default function HomeMusicCard() {
 
         <div className="home-player-copy">
           <span className="home-player-chip">Cloud Music</span>
-          <h2>{track?.title ?? statusText}</h2>
+          <h2 className={isLikelySingleLineTitle ? "is-single-line-title" : undefined}>{titleText}</h2>
           {detailText ? <p>{detailText}</p> : null}
         </div>
       </div>
-
-      <LyricLines
-        className="home-player-inline-lyric"
-        fallback={state.idleLyric}
-        text={state.currentLyric}
-      />
 
       <div className="home-player-progress">
         <span>{formatTime(state.currentTime)}</span>

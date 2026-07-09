@@ -32,6 +32,9 @@ export default function ReferenceEditor({ selectedEntry }: ReferenceEditorProps)
   const [date, setDate] = useState("");
   const [kind, setKind] = useState<"source" | "topic">("source");
   const [visibility, setVisibility] = useState<"public" | "private">("public");
+  const [librarySection, setLibrarySection] = useState("");
+  const [cover, setCover] = useState("");
+  const [covers, setCovers] = useState("");
   const [aliases, setAliases] = useState("");
   const [author, setAuthor] = useState("");
   const [sourceTitle, setSourceTitle] = useState("");
@@ -68,6 +71,9 @@ export default function ReferenceEditor({ selectedEntry }: ReferenceEditorProps)
       );
       setKind(frontmatter.kind === "topic" ? "topic" : "source");
       setVisibility(frontmatter.visibility === "private" ? "private" : "public");
+      setLibrarySection(String(frontmatter.librarySection ?? ""));
+      setCover(String(frontmatter.cover ?? ""));
+      setCovers(toCommaList(frontmatter.covers));
       setAliases(toCommaList(frontmatter.aliases));
       setAuthor(String(frontmatter.author ?? ""));
       setSourceTitle(String(frontmatter.sourceTitle ?? ""));
@@ -84,6 +90,9 @@ export default function ReferenceEditor({ selectedEntry }: ReferenceEditorProps)
             "date",
             "kind",
             "visibility",
+            "librarySection",
+            "cover",
+            "covers",
             "aliases",
             "author",
             "sourceTitle",
@@ -115,6 +124,15 @@ export default function ReferenceEditor({ selectedEntry }: ReferenceEditorProps)
 
       if (author.trim()) {
         frontmatter.author = author.trim();
+      }
+      if (librarySection.trim()) {
+        frontmatter.librarySection = librarySection.trim();
+      }
+      if (cover.trim()) {
+        frontmatter.cover = cover.trim();
+      }
+      if (covers.trim()) {
+        frontmatter.covers = parseCommaList(covers);
       }
       if (sourceTitle.trim()) {
         frontmatter.sourceTitle = sourceTitle.trim();
@@ -188,6 +206,15 @@ export default function ReferenceEditor({ selectedEntry }: ReferenceEditorProps)
             </select>
           </label>
           <label className="field">
+            <span>资料分区</span>
+            <select value={librarySection} onChange={(event) => setLibrarySection(event.target.value)}>
+              <option value="">未分区</option>
+              <option value="回忆、讨论与后见视角">回忆、讨论与后见视角</option>
+              <option value="社会背景">社会背景</option>
+              <option value="作品与人物">作品与人物</option>
+            </select>
+          </label>
+          <label className="field">
             <span>日期</span>
             <input type="date" value={date} onChange={(event) => setDate(event.target.value)} />
           </label>
@@ -198,6 +225,14 @@ export default function ReferenceEditor({ selectedEntry }: ReferenceEditorProps)
           <label className="field field-span">
             <span>别名</span>
             <input value={aliases} onChange={(event) => setAliases(event.target.value)} placeholder="Alias A, Alias B" />
+          </label>
+          <label className="field field-span">
+            <span>卡片头图</span>
+            <input value={cover} onChange={(event) => setCover(event.target.value)} placeholder="https://... 或 /uploads/..." />
+          </label>
+          <label className="field field-span">
+            <span>卡片头图池</span>
+            <input value={covers} onChange={(event) => setCovers(event.target.value)} placeholder="多张图片用逗号分隔，进入页面时随机显示" />
           </label>
           <label className="field">
             <span>作者</span>

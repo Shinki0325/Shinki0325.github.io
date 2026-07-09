@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
-import { albumSchema, referenceSchema } from "../packages/content-core/src/index";
+import { albumSchema, articleSchema, referenceSchema } from "../packages/content-core/src/index";
 
 vi.mock("@maki/content-core", async () => import("../packages/content-core/src/index.ts"));
 vi.mock("astro:content", async () => {
@@ -59,6 +59,28 @@ describe("content collections", () => {
     expect(parsed.librarySection).toBe("社会背景");
     expect(parsed.relatedRefs).toBeUndefined();
     expect(parsed.relatedScripts).toBeUndefined();
+  });
+
+  it("accepts archive card category and multiple cover candidates", () => {
+    const article = articleSchema.parse({
+      title: "Script with Covers",
+      date: "2026-07-09",
+      summary: "Archive cards can rotate through multiple covers.",
+      category: "回忆、讨论与后见视角",
+      covers: ["https://example.com/a.png", "https://example.com/b.png"],
+    });
+    const reference = referenceSchema.parse({
+      title: "Reference with Covers",
+      kind: "source",
+      librarySection: "作品与人物",
+      date: "2026-07-09",
+      summary: "Reference cards can keep scraped screenshots and custom covers.",
+      covers: ["/uploads/reference-a.webp"],
+    });
+
+    expect(article.category).toBe("回忆、讨论与后见视角");
+    expect(article.covers).toHaveLength(2);
+    expect(reference.covers).toEqual(["/uploads/reference-a.webp"]);
   });
 
   it("parses curated reading blocks with translation and focus markers", () => {

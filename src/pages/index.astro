@@ -3,8 +3,10 @@ import HomeSearchBar from "../components/chrome/HomeSearchBar";
 import CharacterBirthdayCalendar from "../components/birthdays/CharacterBirthdayCalendar";
 import HomeLyricBar from "../components/music/HomeLyricBar";
 import HomeMusicCard from "../components/music/HomeMusicCard";
+import { siteAppearance, type SiteAppearancePreviewCard } from "../config/site-appearance";
 import { siteShell } from "../config/site-shell";
 import { birthdayWorks, characterBirthdays } from "../data/character-birthdays";
+import { getArticleOverviewCovers } from "../lib/archive-covers";
 import { buildHomeSearchIndex } from "../lib/home-shell";
 import {
   getPublishedAlbums,
@@ -21,7 +23,38 @@ const [articles, albums, notes, references] = await Promise.all([
   getPublishedReferences(),
 ]);
 
+const formatDate = (value: Date | string | undefined) => {
+  if (!value) {
+    return "持续整理中";
+  }
+
+  return new Intl.DateTimeFormat("zh-CN", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  }).format(new Date(value));
+};
+
 const latestScript = articles.find((entry) => entry.data.type === "script") ?? articles[0] ?? null;
+const scriptCarouselEntries = articles.length > 0 ? articles : latestScript ? [latestScript] : [];
+const scriptCoverPool = Array.from(
+  new Set(scriptCarouselEntries.flatMap((entry) => getArticleOverviewCovers(entry.data)).filter(Boolean)),
+);
+const scriptSlideCount = Math.max(scriptCarouselEntries.length, scriptCoverPool.length, latestScript ? 1 : 0);
+const scriptCarouselSlides = Array.from({ length: scriptSlideCount }, (_, index) => {
+  const entry = scriptCarouselEntries[index % Math.max(scriptCarouselEntries.length, 1)] ?? latestScript;
+
+  return {
+    cover: scriptCoverPool[index % Math.max(scriptCoverPool.length, 1)] ?? "",
+    date: formatDate(entry?.data.date),
+    eyebrow: entry?.data.type === "script" ? "LATEST INSIGHT" : "LATEST ARTICLE",
+    href: entry ? `/articles/${entry.slug}/` : "/articles/",
+    label: entry?.data.type === "script" ? "文稿" : "文章",
+    summary: entry?.data.summary ?? "主文稿会把资料库、笔记和时间线线索收拢成一条更适合公开阅读的叙述。",
+    title: entry?.data.title ?? "文稿整理中",
+  };
+});
+const firstScriptSlide = scriptCarouselSlides[0];
 const featuredReference = references[0] ?? null;
 const latestNote = notes[0] ?? null;
 const searchItems = buildHomeSearchIndex({ articles, albums, notes, references });
@@ -40,18 +73,6 @@ const normalizeSocialHref = (value: string | undefined, kind: "email" | "url") =
 };
 const emailHref = normalizeSocialHref(siteShell.social?.email, "email");
 
-const formatDate = (value: Date | string | undefined) => {
-  if (!value) {
-    return "持续整理中";
-  }
-
-  return new Intl.DateTimeFormat("zh-CN", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  }).format(new Date(value));
-};
-
 const latestUpdate = formatDate(
   [...articles, ...albums, ...notes, ...references]
     .map((entry) => new Date(entry.data.date).getTime())
@@ -62,6 +83,70 @@ const latestUpdate = formatDate(
 const noteSummary = latestNote?.data.tags?.length
   ? `围绕 ${latestNote.data.tags.slice(0, 2).join(" / ")} 的整理笔记`
   : "把零散线索先整理成可继续扩写的工作台。";
+
+type HomeCardId = "featured" | "reference" | "notes" | "status";
+
+const homeCardFallbacks: Record<HomeCardId, SiteAppearancePreviewCard> = {
+  featured: {
+    id: "featured",
+    eyebrow: "当前主稿",
+    title: "当前主稿",
+    description: "",
+    meta: "文稿",
+    actionLabel: "打开文稿",
+    variant: "strong",
+    widthUnits: 5,
+    minHeight: 260,
+  },
+  reference: {
+    id: "reference",
+    eyebrow: "重点资料",
+    title: "重点资料",
+    description: "",
+    meta: "资料库",
+    actionLabel: "打开资料页",
+    variant: "strong",
+    widthUnits: 7,
+    minHeight: 260,
+  },
+  notes: {
+    id: "notes",
+    eyebrow: "最新笔记",
+    title: "最新笔记",
+    description: "",
+    meta: "笔记",
+    actionLabel: "打开笔记",
+    variant: "soft",
+    widthUnits: 4,
+    minHeight: 180,
+  },
+  status: {
+    id: "status",
+    eyebrow: "运行回廊",
+    title: "运行回廊",
+    description: "",
+    meta: "Live",
+    actionLabel: "查看状态",
+    variant: "outline",
+    widthUnits: 4,
+    minHeight: 180,
+  },
+};
+
+const homeCardConfig = new Map(siteAppearance.previewCards.map((card) => [card.id, card]));
+const getHomeCard = (id: HomeCardId) => homeCardConfig.get(id) ?? homeCardFallbacks[id];
+const getHomeFeatureCardClass = (id: HomeCardId, extraClass = "") => {
+  const card = getHomeCard(id);
+
+  return ["home-feature-card", `home-feature-card--variant-${card.variant}`, extraClass, "glass-card", "interactive-lift"]
+    .filter(Boolean)
+    .join(" ");
+};
+const getHomeFeatureCardStyle = (id: HomeCardId) => {
+  const card = getHomeCard(id);
+
+  return `--home-feature-card-span: ${card.widthUnits}; --home-feature-card-min-height: ${card.minHeight}px;`;
+};
 ---
 
 <BaseLayout>
@@ -105,14 +190,14 @@ const noteSummary = latestNote?.data.tags?.length
 
           <div class="home-social-row">
             {githubHref ? (
-              <a class="home-social-button" href={githubHref} rel="noreferrer" target="_blank" title="GitHub">
+              <a class="home-social-button interactive-lift" href={githubHref} rel="noreferrer" target="_blank" title="GitHub">
                 <svg fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03A9.6 9.6 0 0 1 12 6.84c.85 0 1.7.12 2.5.34 1.91-1.3 2.75-1.03 2.75-1.03.54 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.93.36.31.68.92.68 1.85 0 1.34-.01 2.42-.01 2.75 0 .26.18.58.69.48A10 10 0 0 0 22 12c0-5.52-4.48-10-10-10Z" />
                 </svg>
               </a>
             ) : null}
             {bilibiliHref ? (
-              <a class="home-social-button" href={bilibiliHref} rel="noreferrer" target="_blank" title="Bilibili">
+              <a class="home-social-button interactive-lift" href={bilibiliHref} rel="noreferrer" target="_blank" title="Bilibili">
                 <svg fill="none" viewBox="0 0 24 24">
                   <path d="M7 5.5 9.2 8M17 5.5 14.8 8" />
                   <path d="M6.5 8.5h11a2.5 2.5 0 0 1 2.5 2.5v5A2.5 2.5 0 0 1 17.5 18.5h-11A2.5 2.5 0 0 1 4 16v-5a2.5 2.5 0 0 1 2.5-2.5Z" />
@@ -129,7 +214,7 @@ const noteSummary = latestNote?.data.tags?.length
               </button>
             )}
             {emailHref ? (
-              <a class="home-social-button" href={emailHref} title="邮箱">
+              <a class="home-social-button interactive-lift" href={emailHref} title="邮箱">
                 <svg fill="none" viewBox="0 0 24 24">
                   <path d="M4 7.5h16v9H4z" />
                   <path d="m4.5 8 7.5 6 7.5-6" />
@@ -157,25 +242,40 @@ const noteSummary = latestNote?.data.tags?.length
       />
     </div>
 
-    <article class="home-feature-card home-feature-card--primary glass-card">
-      <div class="home-card-head">
-        <div>
-          <p class="eyebrow">当前主稿</p>
-          <h2>{latestScript?.data.title ?? "文稿整理中"}</h2>
-        </div>
-        <span class="spotlight-label">{latestScript?.data.type === "script" ? "文稿" : "文章"}</span>
+    <a
+      class={getHomeFeatureCardClass("featured", "home-feature-card--primary home-script-carousel")}
+      data-home-script-carousel
+      data-home-script-slides={JSON.stringify(scriptCarouselSlides)}
+      href={firstScriptSlide?.href ?? "/articles/"}
+      style={getHomeFeatureCardStyle("featured")}
+    >
+      <div class="home-script-carousel__media" aria-hidden="true">
+        {firstScriptSlide?.cover ? <img alt="" data-home-script-cover loading="lazy" src={firstScriptSlide.cover} /> : null}
       </div>
-      <p class="muted">
-        {latestScript?.data.summary ?? "主文稿会把资料库、笔记和时间线线索收拢成一条更适合公开阅读的叙述。"}
-      </p>
-      {latestScript && (
-        <a class="section-link" href={`/articles/${latestScript.slug}/`}>
-          打开文稿
-        </a>
-      )}
-    </article>
+      <div class="home-script-carousel__shade" aria-hidden="true"></div>
+      <div class="home-script-carousel__content">
+        <div class="home-script-carousel__chips">
+          <span data-home-script-eyebrow>{firstScriptSlide?.eyebrow ?? "LATEST INSIGHT"}</span>
+          <time data-home-script-date>{firstScriptSlide?.date ?? "持续整理中"}</time>
+        </div>
+        <h2 data-home-script-title>{firstScriptSlide?.title ?? "文稿整理中"}</h2>
+        <p data-home-script-summary>{firstScriptSlide?.summary}</p>
+        <div class="home-script-carousel__footer">
+          <span class="spotlight-label" data-home-script-label>{firstScriptSlide?.label ?? "文稿"}</span>
+          <span class="home-script-carousel__dots" aria-label="文稿轮播页码">
+            {scriptCarouselSlides.slice(0, 6).map((_, index) => (
+              <i class={index === 0 ? "is-active" : ""} data-home-script-dot={index} aria-hidden="true"></i>
+            ))}
+          </span>
+        </div>
+      </div>
+    </a>
 
-    <article class="home-feature-card home-feature-card--wide glass-card">
+    <a
+      class={getHomeFeatureCardClass("reference", "home-feature-card--wide")}
+      href={featuredReference ? `/references/${featuredReference.slug}/` : "/references/"}
+      style={getHomeFeatureCardStyle("reference")}
+    >
       <div class="home-card-head">
         <div>
           <p class="eyebrow">重点资料</p>
@@ -189,13 +289,15 @@ const noteSummary = latestNote?.data.tags?.length
       </p>
       <div class="home-feature-meta">
         <span>{featuredReference?.data.sourceTitle ?? "公开资料节点"}</span>
-        <a class="section-link" href={featuredReference ? `/references/${featuredReference.slug}/` : "/references/"}>
-          打开资料页
-        </a>
+        <span class="section-link home-feature-card__cta">打开资料页</span>
       </div>
-    </article>
+    </a>
 
-    <article class="home-feature-card glass-card">
+    <a
+      class={getHomeFeatureCardClass("notes")}
+      href={latestNote ? `/notes/${latestNote.slug}/` : "/notes/"}
+      style={getHomeFeatureCardStyle("notes")}
+    >
       <div class="home-card-head">
         <div>
           <p class="eyebrow">最新笔记</p>
@@ -204,12 +306,10 @@ const noteSummary = latestNote?.data.tags?.length
         <span class="spotlight-label">笔记</span>
       </div>
       <p class="muted">{noteSummary}</p>
-      <a class="section-link" href={latestNote ? `/notes/${latestNote.slug}/` : "/notes/"}>
-        打开笔记
-      </a>
-    </article>
+      <span class="section-link home-feature-card__cta">打开笔记</span>
+    </a>
 
-    <article class="home-feature-card home-feature-card--reference glass-card" data-home-reference-card>
+    <article class={getHomeFeatureCardClass("status", "home-feature-card--reference")} data-home-reference-card style={getHomeFeatureCardStyle("status")}>
       <div class="home-card-head">
         <div>
           <p class="eyebrow">运行回廊</p>
@@ -236,3 +336,70 @@ const noteSummary = latestNote?.data.tags?.length
     </article>
   </section>
 </BaseLayout>
+
+<script is:inline>
+  (() => {
+    const parseSlides = (value) => {
+      try {
+        const parsed = JSON.parse(value || "[]");
+        return Array.isArray(parsed) ? parsed : [];
+      } catch {
+        return [];
+      }
+    };
+
+    const applySlide = (card, slides, index) => {
+      const slide = slides[index % slides.length];
+      if (!slide) {
+        return;
+      }
+
+      const cover = card.querySelector("[data-home-script-cover]");
+      const title = card.querySelector("[data-home-script-title]");
+      const summary = card.querySelector("[data-home-script-summary]");
+      const eyebrow = card.querySelector("[data-home-script-eyebrow]");
+      const date = card.querySelector("[data-home-script-date]");
+      const label = card.querySelector("[data-home-script-label]");
+
+      card.href = slide.href || "/articles/";
+      if (cover && slide.cover && cover.getAttribute("src") !== slide.cover) {
+        cover.style.opacity = "0";
+        window.setTimeout(() => {
+          cover.setAttribute("src", slide.cover);
+          cover.style.opacity = "1";
+        }, 160);
+      }
+      if (title) title.textContent = slide.title || "文稿整理中";
+      if (summary) summary.textContent = slide.summary || "";
+      if (eyebrow) eyebrow.textContent = slide.eyebrow || "LATEST INSIGHT";
+      if (date) date.textContent = slide.date || "持续整理中";
+      if (label) label.textContent = slide.label || "文稿";
+
+      card.querySelectorAll("[data-home-script-dot]").forEach((dot) => {
+        dot.classList.toggle("is-active", Number(dot.dataset.homeScriptDot) === index % Math.min(slides.length, 6));
+      });
+    };
+
+    const initHomeScriptCarousels = () => {
+      document.querySelectorAll("[data-home-script-carousel]").forEach((card) => {
+        if (card.dataset.homeScriptCarouselReady) {
+          return;
+        }
+        const slides = parseSlides(card.dataset.homeScriptSlides);
+        if (slides.length <= 1) {
+          return;
+        }
+
+        card.dataset.homeScriptCarouselReady = "true";
+        let index = 0;
+        window.setInterval(() => {
+          index = (index + 1) % slides.length;
+          applySlide(card, slides, index);
+        }, 6000);
+      });
+    };
+
+    document.addEventListener("astro:page-load", initHomeScriptCarousels);
+    initHomeScriptCarousels();
+  })();
+</script>

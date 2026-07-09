@@ -39,7 +39,7 @@ const appearanceStyle = buildAppearanceStyle(siteAppearance);
     <link href={siteIcon} rel="apple-touch-icon" />
     <style is:inline set:html={`:root {${appearanceStyle}}`}></style>
   </head>
-  <body>
+  <body style={appearanceStyle}>
     <SiteBackground currentPath={currentPath} />
     <TopNav client:load currentPath={currentPath} />
     <div transition:persist="global-music-runtime">

@@ -28,23 +28,31 @@ export default function SplashScreen() {
     return null;
   }
 
+  const enterSite = () => {
+    window.sessionStorage.setItem(STORAGE_KEY, "true");
+    setIsVisible(false);
+  };
+
+  const leaveSite = () => {
+    window.location.href = "https://www.bilibili.com/video/BV1L4421S7Kr";
+  };
+
   return (
     <div className="splash-screen" data-splash-screen>
       <div className="splash-screen__backdrop" />
-      <section className="splash-screen__panel glass-card">
-        <span className="splash-screen__eyebrow">资料岛外壳</span>
-        <h2>欢迎回来</h2>
-        <p>音乐、导航和照片墙已经就绪，继续上次的浏览节奏吧。</p>
-        <button
-          className="splash-screen__button"
-          onClick={() => {
-            window.sessionStorage.setItem(STORAGE_KEY, "true");
-            setIsVisible(false);
-          }}
-          type="button"
-        >
-          进入站点
-        </button>
+      <section className="splash-screen__panel glass-card" aria-label="年龄确认">
+        <p className="splash-screen__notice">このWebサイトは18歳未満の方には有害な情報を一切含んでおりません。</p>
+        <p className="splash-screen__question">あなたは18歳以上ですか？</p>
+        <div className="splash-screen__actions">
+          <button className="splash-screen__button" onClick={enterSite} type="button">
+            <span>YES</span>
+            <small>はい</small>
+          </button>
+          <button className="splash-screen__button" onClick={leaveSite} type="button">
+            <span>NO</span>
+            <small>いいえ</small>
+          </button>
+        </div>
       </section>
     </div>
   );

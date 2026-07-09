@@ -517,7 +517,7 @@ export default function AppearanceEditor() {
               <p className="eyebrow">Preview</p>
               <h2>实时整页预览</h2>
             </div>
-            <span className="pill muted">{form.previewCards.length} 张预览卡片</span>
+            <span className="pill muted">{form.previewCards.length} 张首页卡片</span>
           </div>
           <div className="appearance-preview" style={previewStyle}>
             <div className="appearance-preview__background"></div>
@@ -1203,9 +1203,9 @@ export default function AppearanceEditor() {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          gap: calc(18px * var(--preview-card-scale));
+          gap: calc(14px * var(--preview-card-scale));
           border: 1px solid rgba(255, 255, 255, 0.14);
-          border-radius: var(--preview-radius-xl);
+          border-radius: var(--preview-radius-lg);
           padding: calc(22px * var(--preview-card-scale));
           background: var(--preview-panel);
           box-shadow: 0 18px 42px rgba(2, 6, 23, 0.22);

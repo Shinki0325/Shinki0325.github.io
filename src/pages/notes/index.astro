@@ -1,21 +1,29 @@
 ---
-import NoteCard from "../../components/NoteCard.astro";
+import ArchiveOverview from "../../components/ArchiveOverview.astro";
 import { getPublishedNotes } from "../../lib/public-content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
 const notes = await getPublishedNotes();
+const items = notes.map((entry) => ({
+  category: entry.data.category,
+  covers: [...(entry.data.covers ?? []), entry.data.cover].filter(Boolean),
+  date: entry.data.date,
+  eyebrow: "研究笔记",
+  href: `/notes/${entry.slug}/`,
+  meta: "打开笔记",
+  summary: entry.data.source ?? "与文稿和资料页互相连接的研究笔记。",
+  tags: entry.data.tags ?? [],
+  title: entry.data.title ?? "未命名笔记",
+}));
 ---
 
 <BaseLayout title="笔记" description="与视频稿和资料页互相连接的研究笔记。">
-  <section class="feature-section glass-panel stack">
-    <div class="section-head">
-      <div>
-        <p class="eyebrow">研究笔记</p>
-        <h2>笔记</h2>
-      </div>
-    </div>
-    <div class="grid cards">
-      {notes.map((entry) => <NoteCard entry={entry} />)}
-    </div>
-  </section>
+  <ArchiveOverview
+    description="与视频稿和资料页互相连接的研究笔记。"
+    eyebrow="Notes & Clues"
+    items={items}
+    searchPlaceholder="搜索笔记、线索、标签..."
+    title="笔记归档"
+    totalLabel="总计"
+  />
 </BaseLayout>

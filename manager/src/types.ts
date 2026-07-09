@@ -148,6 +148,7 @@ export type SystemCommandResult = {
   stdout?: string;
   stderr?: string;
   error?: string;
+  previewUrl?: string;
 };
 
 export type SystemStatus = {

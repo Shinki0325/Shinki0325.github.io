@@ -1,0 +1,387 @@
+---
+export type ArchiveOverviewItem = {
+  category?: string;
+  covers?: string[];
+  date?: Date | string;
+  eyebrow: string;
+  href: string;
+  meta?: string;
+  summary?: string;
+  tags?: string[];
+  title: string;
+};
+
+type Props = {
+  archiveStyle?: "default" | "blog" | "reference";
+  description: string;
+  eyebrow: string;
+  items: ArchiveOverviewItem[];
+  searchPlaceholder: string;
+  title: string;
+  totalLabel: string;
+};
+
+const { archiveStyle = "default", description, eyebrow, items, searchPlaceholder, title, totalLabel } = Astro.props;
+const showViewSwitch = archiveStyle !== "reference";
+
+const formatDate = (value: Date | string | undefined) => {
+  if (!value) {
+    return "持续整理";
+  }
+
+  return new Intl.DateTimeFormat("zh-CN", {
+    month: "2-digit",
+    day: "2-digit",
+    year: "numeric",
+  }).format(new Date(value));
+};
+
+const tagCounts = new Map<string, number>();
+
+for (const item of items) {
+  for (const tag of item.tags ?? []) {
+    tagCounts.set(tag, (tagCounts.get(tag) ?? 0) + 1);
+  }
+}
+
+const topTags = [...tagCounts.entries()]
+  .sort((left, right) => right[1] - left[1] || left[0].localeCompare(right[0], "zh-CN"))
+  .slice(0, 12);
+const categoryCounts = new Map<string, number>();
+const tagCategories = new Map<string, Set<string>>();
+
+for (const item of items) {
+  if (item.category) {
+    categoryCounts.set(item.category, (categoryCounts.get(item.category) ?? 0) + 1);
+  }
+
+  for (const tag of item.tags ?? []) {
+    if (!tagCategories.has(tag)) {
+      tagCategories.set(tag, new Set());
+    }
+    if (item.category) {
+      tagCategories.get(tag)?.add(item.category);
+    }
+  }
+}
+
+const topCategories = [...categoryCounts.entries()].sort(
+  (left, right) => right[1] - left[1] || left[0].localeCompare(right[0], "zh-CN"),
+);
+---
+
+<section class="archive-overview" data-archive-overview data-archive-style={archiveStyle} data-archive-view="timeline">
+  <header class="archive-overview__hero">
+    <p class="eyebrow">{eyebrow}</p>
+    <h1>{title}</h1>
+    <p class="archive-overview__summary">
+      <span aria-hidden="true">✧</span>
+      {totalLabel} {items.length} 条
+      <small>{description}</small>
+    </p>
+
+    <label class="archive-overview__search interactive-lift">
+      <svg aria-hidden="true" fill="none" viewBox="0 0 24 24">
+        <path d="m21 21-4.35-4.35M10.8 18.1a7.3 7.3 0 1 1 0-14.6 7.3 7.3 0 0 1 0 14.6Z" />
+      </svg>
+      <input data-archive-search placeholder={searchPlaceholder} type="search" />
+    </label>
+  </header>
+
+  <section class="archive-overview__filters glass-card">
+    <div class="archive-overview__filter-stack">
+      {topCategories.length > 0 ? (
+        <div class="archive-overview__category-cloud" aria-label="一级筛选">
+          <button class="archive-overview__category is-active" data-archive-category="all" type="button">
+            全部归档 <span>{items.length}</span>
+          </button>
+          {topCategories.map(([category, count]) => (
+            <button class="archive-overview__category" data-archive-category={category} type="button">
+              {category} <span>{count}</span>
+            </button>
+          ))}
+        </div>
+      ) : null}
+
+      <div class="archive-overview__tag-cloud" aria-label="二级标签筛选">
+        <button class="archive-overview__tag is-active" data-archive-tag="all" data-archive-tag-categories="[]" type="button">
+          全部标签 <span>{items.length}</span>
+        </button>
+        {topTags.map(([tag, count]) => (
+          <button
+            class="archive-overview__tag"
+            data-archive-tag={tag}
+            data-archive-tag-categories={JSON.stringify([...(tagCategories.get(tag) ?? [])])}
+            type="button"
+          >
+            {tag} <span>{count}</span>
+          </button>
+        ))}
+      </div>
+    </div>
+
+    {showViewSwitch ? (
+      <div class="archive-overview__view-switch" aria-label="归档显示方式">
+        <button aria-pressed="true" class="is-active" data-archive-view-button="timeline" type="button">
+          <span aria-hidden="true">☰</span>
+          串联链路
+        </button>
+        <button aria-pressed="false" data-archive-view-button="grid" type="button">
+          <span aria-hidden="true">▦</span>
+          矩阵网格
+        </button>
+      </div>
+    ) : null}
+  </section>
+
+  <div class="archive-overview__timeline">
+    {items.map((item, index) => (
+      <a
+        class="archive-overview-card glass-card interactive-lift"
+        data-archive-card
+        data-archive-card-category={item.category ?? ""}
+        data-archive-covers={JSON.stringify(item.covers ?? [])}
+        data-archive-search-text={[item.title, item.summary, item.eyebrow, item.meta, ...(item.tags ?? [])].filter(Boolean).join(" ")}
+        data-archive-tags={JSON.stringify(item.tags ?? [])}
+        href={item.href}
+        style={`--card-index: ${index}; --archive-card-row: ${index + 1}`}
+      >
+        <span class="archive-overview-card__rail" aria-hidden="true"></span>
+        <div class="archive-overview-card__image" aria-hidden="true">
+          {(item.covers?.length ?? 0) > 0 ? <img alt="" data-archive-card-image loading="lazy" /> : null}
+          <span>{String(index + 1).padStart(2, "0")}</span>
+        </div>
+        <div class="archive-overview-card__body">
+          <div class="archive-overview-card__meta">
+            <span>{item.eyebrow}</span>
+            <time>{formatDate(item.date)}</time>
+          </div>
+          <h2>{item.title}</h2>
+          {(item.tags?.length ?? 0) > 0 ? (
+            <div class="archive-overview-card__tags" aria-label="标签">
+              {item.tags?.slice(0, 4).map((tag) => <span>#{tag}</span>)}
+            </div>
+          ) : null}
+          {item.summary ? <p>{item.summary}</p> : null}
+          <div class="archive-overview-card__footer">
+            <span>{item.meta ?? "进入归档"}</span>
+            <em>打开</em>
+          </div>
+        </div>
+      </a>
+    ))}
+  </div>
+</section>
+
+<script is:inline>
+  (() => {
+    const normalize = (value) => (value || "").toString().trim().toLocaleLowerCase();
+    const parseJsonList = (value) => {
+      try {
+        const parsed = JSON.parse(value || "[]");
+        return Array.isArray(parsed) ? parsed : [];
+      } catch {
+        return [];
+      }
+    };
+    const coverQueues = new Map();
+
+    const shuffleArchiveCovers = (covers) => {
+      const queue = [...covers];
+      for (let index = queue.length - 1; index > 0; index -= 1) {
+        const swapIndex = Math.floor(Math.random() * (index + 1));
+        [queue[index], queue[swapIndex]] = [queue[swapIndex], queue[index]];
+      }
+      return queue;
+    };
+
+    const takeArchiveCover = (covers) => {
+      const key = JSON.stringify(covers);
+      let queue = coverQueues.get(key);
+      if (!queue || queue.length === 0) {
+        queue = shuffleArchiveCovers(covers);
+        coverQueues.set(key, queue);
+      }
+      return queue.shift();
+    };
+
+    const uniqueArchiveCovers = (covers) => [...new Set(covers.filter(Boolean))];
+
+    const applyArchiveFilters = (root) => {
+      const activeCategory = root.dataset.archiveCategory || "all";
+      const activeTag = root.dataset.archiveTag || "all";
+      const query = normalize(root.querySelector("[data-archive-search]")?.value);
+      const cards = [...root.querySelectorAll("[data-archive-card]")];
+
+      for (const card of cards) {
+        const tags = parseJsonList(card.dataset.archiveTags);
+        const matchesCategory = activeCategory === "all" || card.dataset.archiveCardCategory === activeCategory;
+        const matchesTag = activeTag === "all" || tags.includes(activeTag);
+        const matchesQuery = !query || normalize(card.dataset.archiveSearchText).includes(query);
+        card.hidden = !(matchesCategory && matchesTag && matchesQuery);
+      }
+    };
+
+    const syncArchiveTagVisibility = (root) => {
+      const activeCategory = root.dataset.archiveCategory || "all";
+      let activeTagIsVisible = true;
+
+      root.querySelectorAll("[data-archive-tag]").forEach((button) => {
+        const categories = parseJsonList(button.dataset.archiveTagCategories);
+        const isAllTag = button.dataset.archiveTag === "all";
+        const isVisible = isAllTag || activeCategory === "all" || categories.includes(activeCategory);
+        button.hidden = !isVisible;
+        if (button.classList.contains("is-active") && !isVisible) {
+          activeTagIsVisible = false;
+        }
+      });
+
+      if (!activeTagIsVisible) {
+        const allTag = root.querySelector('[data-archive-tag="all"]');
+        if (allTag) {
+          setArchiveTag(root, allTag);
+        }
+      }
+    };
+
+    const setArchiveCategory = (root, button) => {
+      root.dataset.archiveCategory = button.dataset.archiveCategory || "all";
+      root.querySelectorAll("[data-archive-category]").forEach((item) => {
+        const isActive = item === button;
+        item.classList.toggle("is-active", isActive);
+      });
+      syncArchiveTagVisibility(root);
+      applyArchiveFilters(root);
+    };
+
+    const setArchiveTag = (root, button) => {
+      root.dataset.archiveTag = button.dataset.archiveTag || "all";
+      root.querySelectorAll("[data-archive-tag]").forEach((item) => {
+        const isActive = item === button;
+        item.classList.toggle("is-active", isActive);
+      });
+      applyArchiveFilters(root);
+    };
+
+    const setArchiveView = (root, view) => {
+      root.dataset.archiveView = view;
+      root.querySelectorAll("[data-archive-view-button]").forEach((item) => {
+        const isActive = item.dataset.archiveViewButton === view;
+        item.classList.toggle("is-active", isActive);
+        item.setAttribute("aria-pressed", String(isActive));
+      });
+    };
+
+    const hydrateArchiveCardImages = (root) => {
+      const cards = [...root.querySelectorAll("[data-archive-card]")];
+      const rootCoverQueue = shuffleArchiveCovers(
+        uniqueArchiveCovers(cards.flatMap((card) => parseJsonList(card.dataset.archiveCovers))),
+      );
+      const usedRootCovers = new Set();
+
+      const takeRootUniqueCover = (covers) => {
+        const uniqueCovers = uniqueArchiveCovers(covers);
+        const queuedCover = rootCoverQueue.find((cover) => uniqueCovers.includes(cover) && !usedRootCovers.has(cover));
+        const selectedCover =
+          queuedCover ??
+          uniqueCovers.find((cover) => !usedRootCovers.has(cover)) ??
+          takeArchiveCover(uniqueCovers);
+
+        if (selectedCover) {
+          usedRootCovers.add(selectedCover);
+        }
+
+        return selectedCover;
+      };
+
+      cards.forEach((card) => {
+        const image = card.querySelector("[data-archive-card-image]");
+        const covers = parseJsonList(card.dataset.archiveCovers);
+        if (!image || covers.length === 0) {
+          return;
+        }
+        if (image.dataset.archiveAssignedCover) {
+          return;
+        }
+
+        const selectedCover = takeRootUniqueCover(covers);
+        if (!selectedCover) {
+          return;
+        }
+        image.addEventListener(
+          "load",
+          () => {
+            const isPortrait = image.naturalHeight > image.naturalWidth;
+            card.classList.toggle("is-portrait", isPortrait);
+            card.classList.toggle("is-landscape", !isPortrait);
+          },
+          { once: true },
+        );
+        image.src = selectedCover;
+        image.dataset.archiveAssignedCover = selectedCover;
+        card.classList.add("has-cover");
+      });
+    };
+
+    const initArchiveOverviews = () => {
+      document.querySelectorAll("[data-archive-overview]").forEach((root) => {
+        root.dataset.archiveCategory ||= "all";
+        root.dataset.archiveTag ||= "all";
+        root.dataset.archiveView ||= "timeline";
+        syncArchiveTagVisibility(root);
+        setArchiveView(root, root.dataset.archiveView);
+        hydrateArchiveCardImages(root);
+        applyArchiveFilters(root);
+      });
+    };
+
+    window.applyArchiveFilters = applyArchiveFilters;
+    window.initArchiveOverviews = initArchiveOverviews;
+
+    if (!window.__archiveOverviewReady) {
+      window.__archiveOverviewReady = true;
+
+      document.addEventListener("click", (event) => {
+        const target = event.target instanceof Element ? event.target : null;
+        const viewButton = target?.closest("[data-archive-view-button]");
+        if (viewButton) {
+          const root = viewButton.closest("[data-archive-overview]");
+          if (root) {
+            setArchiveView(root, viewButton.dataset.archiveViewButton || "timeline");
+          }
+          return;
+        }
+
+        const categoryButton = target?.closest("[data-archive-category]");
+        if (categoryButton) {
+          const root = categoryButton.closest("[data-archive-overview]");
+          if (root) {
+            setArchiveCategory(root, categoryButton);
+          }
+          return;
+        }
+
+        const tagButton = target?.closest("[data-archive-tag]");
+        if (tagButton) {
+          const root = tagButton.closest("[data-archive-overview]");
+          if (root) {
+            setArchiveTag(root, tagButton);
+          }
+        }
+      });
+
+      document.addEventListener("input", (event) => {
+        const target = event.target instanceof Element ? event.target : null;
+        const search = target?.closest("[data-archive-search]");
+        const root = search?.closest("[data-archive-overview]");
+        if (root) {
+          applyArchiveFilters(root);
+        }
+      });
+
+      document.addEventListener("astro:page-load", initArchiveOverviews);
+    }
+
+    initArchiveOverviews();
+  })();
+</script>

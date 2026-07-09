@@ -54,7 +54,11 @@ export default function LyricLines({ fallback, showSecondary = true, text, class
   const { primary, secondary } = splitLyricText(text, fallback);
 
   return (
-    <p className={`${className ?? ""} lyric-line-group`.trim()} {...props}>
+    <p
+      className={`${className ?? ""} lyric-line-group`.trim()}
+      data-lyric-lines={showSecondary && secondary ? "double" : "single"}
+      {...props}
+    >
       <span className="lyric-line-primary">{primary || fallback}</span>
       {showSecondary && secondary ? <span className="lyric-line-secondary">{secondary}</span> : null}
     </p>

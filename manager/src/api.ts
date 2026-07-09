@@ -232,6 +232,10 @@ export const runValidate = () => runSystemAction("/api/system/validate", {});
 
 export const runBuild = () => runSystemAction("/api/system/build", {});
 
+export const runStaticPreview = () => runSystemAction("/api/system/static-preview", {});
+
+export const runDeploy = () => runSystemAction("/api/system/deploy", {});
+
 export const runCheck = () => runSystemAction("/api/system/check", {});
 
 export const getGitStatus = () => runSystemAction("/api/system/git-status");

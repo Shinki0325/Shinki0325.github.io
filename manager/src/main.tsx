@@ -946,15 +946,15 @@ ReactDOM.createRoot(app).render(
 
         .dashboard-actions {
           display: grid;
-          grid-template-columns: repeat(4, minmax(0, 1fr));
-          gap: 10px;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 12px;
         }
 
         .dashboard-action {
-          min-height: 118px;
+          min-height: 132px;
           border: 1px solid rgba(127, 91, 52, 0.16);
           border-radius: 22px;
-          padding: 14px;
+          padding: 18px;
           text-align: left;
           color: #4b3824;
           background: rgba(255, 252, 244, 0.44);
@@ -983,7 +983,7 @@ ReactDOM.createRoot(app).render(
         }
 
         .dashboard-action strong {
-          font-size: 1rem;
+          font-size: 1.12rem;
           font-weight: 900;
         }
 
@@ -993,17 +993,6 @@ ReactDOM.createRoot(app).render(
           font-size: 0.86rem;
           font-weight: 700;
           line-height: 1.5;
-        }
-
-        .dashboard-commit {
-          display: grid;
-          grid-template-columns: minmax(260px, 1fr) auto;
-          gap: 12px;
-          align-items: end;
-          padding: 12px;
-          border: 1px solid rgba(255, 255, 255, 0.4);
-          border-radius: 22px;
-          background: rgba(255, 255, 255, 0.22);
         }
 
         .dashboard-result {
@@ -1033,6 +1022,20 @@ ReactDOM.createRoot(app).render(
           background:
             radial-gradient(circle at 92% 12%, rgba(218, 94, 68, 0.18), transparent 16rem),
             rgba(255, 243, 238, 0.4);
+        }
+
+        .dashboard-preview-link {
+          display: inline-flex;
+          width: fit-content;
+          margin-top: 12px;
+          border: 1px solid rgba(73, 43, 20, 0.16);
+          border-radius: 999px;
+          padding: 9px 14px;
+          background: linear-gradient(135deg, rgba(44, 33, 24, 0.92), rgba(137, 83, 42, 0.86));
+          box-shadow: 0 14px 28px rgba(91, 48, 22, 0.18);
+          color: #fff5e2;
+          font-weight: 900;
+          text-decoration: none;
         }
 
         .dashboard-result__items {

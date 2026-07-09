@@ -129,4 +129,24 @@ describe("manager api contract", () => {
     expect(routeSource).toContain("hydrateCloudTrackLyrics");
     expect(apiSource).toContain("fetchCloudMusicTrack");
   });
+
+  it("exposes practical workflow actions for static preview and deploy", async () => {
+    const routeSource = await fs.readFile("manager/server/routes/system.ts", "utf8");
+    const apiSource = await fs.readFile("manager/src/api.ts", "utf8");
+    const dashboardSource = await fs.readFile("manager/src/pages/Dashboard.tsx", "utf8");
+
+    expect(routeSource).toContain("/api/system/static-preview");
+    expect(routeSource).toContain("/api/system/deploy");
+    expect(routeSource).toContain("127.0.0.1:4321");
+    expect(routeSource).toContain("python3 -m http.server 4321 --bind 127.0.0.1 --directory dist");
+    expect(routeSource).toContain("git push");
+    expect(routeSource).toContain("':!.tmp'");
+    expect(apiSource).toContain("runStaticPreview");
+    expect(apiSource).toContain("runDeploy");
+    expect(dashboardSource).toContain("生成静态预览");
+    expect(dashboardSource).toContain("推送上线");
+    expect(dashboardSource).toContain("previewUrl");
+    expect(dashboardSource).not.toContain("验证公开内容");
+    expect(dashboardSource).not.toContain("查看 Git 状态");
+  });
 });

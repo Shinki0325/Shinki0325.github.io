@@ -45,6 +45,8 @@ wait_for_url "http://127.0.0.1:4173/" "Manager UI"
 
 SERVED_MODULE="$LOG_DIR/manager-appearance-served.js"
 curl -fsS "http://127.0.0.1:4173/src/pages/AppearanceEditor.tsx" > "$SERVED_MODULE"
+SERVED_DASHBOARD="$LOG_DIR/manager-dashboard-served.js"
+curl -fsS "http://127.0.0.1:4173/src/pages/Dashboard.tsx" > "$SERVED_DASHBOARD"
 
 required_markers=(
   "实时整页预览"
@@ -67,5 +69,21 @@ for marker in "${required_markers[@]}"; do
   fi
 done
 
-echo "Manager UI has the latest appearance editor markers."
+dashboard_markers=(
+  "生成静态预览"
+  "推送上线"
+  "runStaticPreview"
+  "runDeploy"
+  "previewUrl"
+)
+
+for marker in "${dashboard_markers[@]}"; do
+  if ! grep -Fq "$marker" "$SERVED_DASHBOARD"; then
+    echo "Manager UI is stale; missing dashboard marker: $marker" >&2
+    echo "Fetched module: $SERVED_DASHBOARD" >&2
+    exit 1
+  fi
+done
+
+echo "Manager UI has the latest appearance and workflow markers."
 echo "Open: http://127.0.0.1:4173/"

@@ -12,7 +12,8 @@ const homeBackground = siteShell.homeBackground ?? {
   videoSrc: "/uploads/backgrounds/home-loop-h264.mp4",
   poster: "/uploads/backgrounds/home-loop-poster.jpg",
 };
-const nonHomeBackgroundImages = isHome ? [] : siteShell.backgroundImages;
+const backgroundImages: readonly string[] = siteShell.backgroundImages ?? [];
+const nonHomeBackgroundImages: readonly string[] = isHome ? [] : backgroundImages;
 ---
 
 <div class="site-backdrop" aria-hidden="true">
@@ -39,9 +40,52 @@ const nonHomeBackgroundImages = isHome ? [] : siteShell.backgroundImages;
   <div class="site-backdrop__glow glow-two"></div>
   <div class="site-backdrop__glow glow-three"></div>
 
-  <div class="site-backdrop__slider">
-    {nonHomeBackgroundImages.map((src) => (
-      <div class="site-backdrop__image" style={`--bg-url: url('${src}');`}></div>
+  <div class="site-backdrop__slider" data-background-slider={nonHomeBackgroundImages.length > 1 ? "true" : undefined}>
+    {nonHomeBackgroundImages.map((src, index) => (
+      <div
+        class={index === 0 ? "site-backdrop__image is-active" : "site-backdrop__image"}
+        data-background-slide
+        style={`--bg-url: url('${src}');`}
+      ></div>
     ))}
   </div>
+  {
+    nonHomeBackgroundImages.length > 1 && (
+      <script
+        is:inline
+        set:html={`
+          (() => {
+            const setupBackgroundCarousels = () => {
+              document.querySelectorAll("[data-background-slider]").forEach((slider) => {
+                if (slider.dataset.carouselReady === "true") {
+                  return;
+                }
+
+                const slides = Array.from(slider.querySelectorAll("[data-background-slide]"));
+                if (slides.length <= 1) {
+                  return;
+                }
+
+                slider.dataset.carouselReady = "true";
+                let activeIndex = slides.findIndex((slide) => slide.classList.contains("is-active"));
+                if (activeIndex < 0) {
+                  activeIndex = 0;
+                  slides[0].classList.add("is-active");
+                }
+
+                setInterval(() => {
+                  slides[activeIndex]?.classList.remove("is-active");
+                  activeIndex = (activeIndex + 1) % slides.length;
+                  slides[activeIndex]?.classList.add("is-active");
+                }, 60000);
+              });
+            };
+
+            setupBackgroundCarousels();
+            document.addEventListener("astro:page-load", setupBackgroundCarousels);
+          })();
+        `}
+      />
+    )
+  }
 </div>

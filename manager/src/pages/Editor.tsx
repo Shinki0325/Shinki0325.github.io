@@ -44,6 +44,9 @@ export default function Editor({ selectedEntry }: EditorProps) {
   const [summary, setSummary] = useState("");
   const [date, setDate] = useState("");
   const [tags, setTags] = useState("");
+  const [category, setCategory] = useState("");
+  const [cover, setCover] = useState("");
+  const [covers, setCovers] = useState("");
   const [draft, setDraft] = useState(false);
   const [body, setBody] = useState("");
   const [extras, setExtras] = useState("{}");
@@ -72,11 +75,14 @@ export default function Editor({ selectedEntry }: EditorProps) {
           : selectedEntry.date?.slice(0, 10) ?? ""
       );
       setTags(toCommaList(frontmatter.tags));
+      setCategory(String(frontmatter.category ?? ""));
+      setCover(String(frontmatter.cover ?? ""));
+      setCovers(toCommaList(frontmatter.covers));
       setDraft(frontmatter.draft === true);
       setBody(entry.body.trim());
       setExtras(
         JSON.stringify(
-          removeKnownKeys(frontmatter, ["title", "summary", "date", "tags", "draft"]),
+          removeKnownKeys(frontmatter, ["title", "summary", "date", "tags", "category", "cover", "covers", "draft"]),
           null,
           2
         )
@@ -102,6 +108,15 @@ export default function Editor({ selectedEntry }: EditorProps) {
       }
       if (tags.trim()) {
         frontmatter.tags = parseCommaList(tags);
+      }
+      if (category.trim()) {
+        frontmatter.category = category.trim();
+      }
+      if (cover.trim()) {
+        frontmatter.cover = cover.trim();
+      }
+      if (covers.trim()) {
+        frontmatter.covers = parseCommaList(covers);
       }
 
       const saved = await saveContentEntry({
@@ -166,6 +181,18 @@ export default function Editor({ selectedEntry }: EditorProps) {
           <label className="field field-span">
             <span>标签</span>
             <input value={tags} onChange={(event) => setTags(event.target.value)} placeholder="video, archive" />
+          </label>
+          <label className="field">
+            <span>归档一级分类</span>
+            <input value={category} onChange={(event) => setCategory(event.target.value)} placeholder="回忆、讨论与后见视角" />
+          </label>
+          <label className="field field-span">
+            <span>卡片头图</span>
+            <input value={cover} onChange={(event) => setCover(event.target.value)} placeholder="https://... 或 /uploads/..." />
+          </label>
+          <label className="field field-span">
+            <span>卡片头图池</span>
+            <input value={covers} onChange={(event) => setCovers(event.target.value)} placeholder="多张图片用逗号分隔，进入页面时随机显示" />
           </label>
           <label className="checkbox-field">
             <input checked={draft} onChange={(event) => setDraft(event.target.checked)} type="checkbox" />

@@ -25,7 +25,28 @@ describe("site background config", () => {
 
     expect(source).toContain("homeBackground.videoSrc");
     expect(source).toContain("homeBackground.poster");
-    expect(source).toContain("const nonHomeBackgroundImages = isHome ? [] : siteShell.backgroundImages");
+    expect(source).toContain("const backgroundImages: readonly string[] = siteShell.backgroundImages ?? []");
+    expect(source).toContain("const nonHomeBackgroundImages: readonly string[] = isHome ? [] : backgroundImages");
+  });
+});
+
+describe("homepage feature cards", () => {
+  it("turns the featured script card into a cover-pool carousel", async () => {
+    const fs = await import("node:fs/promises");
+    const [homeSource, styleSource] = await Promise.all([
+      fs.readFile("src/pages/index.astro", "utf8"),
+      fs.readFile("src/styles/global.css", "utf8"),
+    ]);
+
+    expect(homeSource).toContain("getArticleOverviewCovers");
+    expect(homeSource).toContain("scriptCarouselSlides");
+    expect(homeSource).toContain("data-home-script-carousel");
+    expect(homeSource).toContain("data-home-script-slides");
+    expect(homeSource).toContain("data-home-script-cover");
+    expect(homeSource).toContain("data-home-script-dot");
+    expect(styleSource).toContain(".home-script-carousel");
+    expect(styleSource).toContain(".home-script-carousel__media");
+    expect(styleSource).toContain(".home-script-carousel__dots");
   });
 });
 

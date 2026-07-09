@@ -1,5 +1,6 @@
 ---
-import ReferenceCard from "../../components/ReferenceCard.astro";
+import ArchiveOverview from "../../components/ArchiveOverview.astro";
+import { getReferenceOverviewCovers } from "../../lib/archive-covers";
 import { loadReferencesConfig } from "../../lib/home-config";
 import { partitionReferenceLibrary } from "../../lib/reference-library";
 import { getPublishedReferences } from "../../lib/public-content";
@@ -8,46 +9,28 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 const config = await loadReferencesConfig();
 const references = await getPublishedReferences();
 const { topicEntries, sourceGroups } = partitionReferenceLibrary(references);
+const sourceEntries = sourceGroups.flatMap((group) => group.entries);
+const items = [...topicEntries, ...sourceEntries].map((entry) => ({
+  category: entry.data.librarySection,
+  covers: getReferenceOverviewCovers(entry.data),
+  date: entry.data.date,
+  eyebrow: entry.data.kind === "source" ? entry.data.librarySection ?? "来源资料" : "专题资料",
+  href: `/references/${entry.slug}/`,
+  meta: entry.data.sourceTitle ?? "查看资料",
+  summary: entry.data.summary,
+  tags: entry.data.tags ?? [],
+  title: entry.data.title,
+}));
 ---
 
 <BaseLayout title={config.title} description={config.description}>
-  <section class="library-hero glass-panel">
-    <div>
-      <p class="eyebrow">公开资料库</p>
-      <h2>{config.title}</h2>
-      <p>{config.description}</p>
-    </div>
-    <div class="library-hero__badge">
-      <span>{references.length}</span>
-      <small>公开卡片</small>
-    </div>
-  </section>
-
-  {topicEntries.length > 0 && (
-    <section class="feature-section glass-panel stack">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">入口索引</p>
-          <h2>资料包与专题入口</h2>
-        </div>
-      </div>
-      <div class="grid cards">
-        {topicEntries.map((entry) => <ReferenceCard entry={entry} />)}
-      </div>
-    </section>
-  )}
-
-  {sourceGroups.map((group) => (
-    <section class="feature-section glass-panel stack">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">开放知识书架</p>
-          <h2>{group.section}</h2>
-        </div>
-      </div>
-      <div class="grid cards">
-        {group.entries.map((entry) => <ReferenceCard entry={entry} />)}
-      </div>
-    </section>
-  ))}
+  <ArchiveOverview
+    archiveStyle="reference"
+    description={config.description}
+    eyebrow="Archive & Search"
+    items={items}
+    searchPlaceholder="搜索资料、来源、专题..."
+    title={config.title}
+    totalLabel="总计"
+  />
 </BaseLayout>

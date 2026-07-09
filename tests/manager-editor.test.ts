@@ -13,4 +13,23 @@ describe("manager editor modules", () => {
     expect(appSource).toContain('<AlbumEditor selectedEntry={selectedEntry} />');
     expect(editorSource).toContain('selectedEntry.kind === "albums"');
   });
+
+  it("exposes archive card category and cover fields in local editors", async () => {
+    const fs = await import("node:fs/promises");
+    const [editorSource, referenceEditorSource] = await Promise.all([
+      fs.readFile("manager/src/pages/Editor.tsx", "utf8"),
+      fs.readFile("manager/src/pages/ReferenceEditor.tsx", "utf8"),
+    ]);
+
+    expect(editorSource).toContain("setCategory");
+    expect(editorSource).toContain("setCover");
+    expect(editorSource).toContain("setCovers");
+    expect(editorSource).toContain("归档一级分类");
+    expect(editorSource).toContain("卡片头图池");
+    expect(referenceEditorSource).toContain("setLibrarySection");
+    expect(referenceEditorSource).toContain("setCover");
+    expect(referenceEditorSource).toContain("setCovers");
+    expect(referenceEditorSource).toContain("资料分区");
+    expect(referenceEditorSource).toContain("卡片头图池");
+  });
 });

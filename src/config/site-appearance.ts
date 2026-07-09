@@ -1,6 +1,19 @@
 import appearanceSource from "./pages/appearance.json";
 
 export type FontPreset = "serif" | "sans" | "rounded" | "custom";
+export type SiteAppearanceCardVariant = "strong" | "soft" | "outline";
+
+export type SiteAppearancePreviewCard = {
+  id: string;
+  eyebrow: string;
+  title: string;
+  description: string;
+  meta: string;
+  actionLabel: string;
+  variant: SiteAppearanceCardVariant;
+  widthUnits: number;
+  minHeight: number;
+};
 
 export type SiteAppearance = {
   panelOpacity: number;
@@ -17,6 +30,7 @@ export type SiteAppearance = {
   radiusScale: number;
   fontPreset: FontPreset;
   fontFamily: string;
+  previewCards: SiteAppearancePreviewCard[];
   navigation: {
     height: number;
     maxWidth: number;
@@ -71,6 +85,52 @@ export const siteAppearanceDefaults: SiteAppearance = {
   radiusScale: 1,
   fontPreset: "serif",
   fontFamily: "\"Noto Serif SC\", \"Source Han Serif SC\", \"Songti SC\", serif",
+  previewCards: [
+    {
+      id: "featured",
+      eyebrow: "当前主稿",
+      title: "为什么90年代是galgame真正意义上的黄金年代",
+      description: "围绕90年代 galgame 为何能形成黄金年代感的一篇长文主稿。",
+      meta: "文稿",
+      actionLabel: "打开文稿",
+      variant: "strong",
+      widthUnits: 5,
+      minHeight: 260,
+    },
+    {
+      id: "reference",
+      eyebrow: "重点资料",
+      title: "E-LOGIN 条目",
+      description: "E-LOGIN 条目梳理了这本杂志的创刊背景、内容定位与读者面向。",
+      meta: "资料库",
+      actionLabel: "打开资料页",
+      variant: "strong",
+      widthUnits: 7,
+      minHeight: 260,
+    },
+    {
+      id: "notes",
+      eyebrow: "最新笔记",
+      title: "笔记整理中",
+      description: "把零散线索先整理成可继续扩写的工作台。",
+      meta: "笔记",
+      actionLabel: "打开笔记",
+      variant: "soft",
+      widthUnits: 4,
+      minHeight: 180,
+    },
+    {
+      id: "status",
+      eyebrow: "运行回廊",
+      title: "资料岛仍在缓慢发光",
+      description: "文稿、资料库、笔记和照片墙会继续向同一个归档系统汇流。",
+      meta: "Live",
+      actionLabel: "查看状态",
+      variant: "outline",
+      widthUnits: 4,
+      minHeight: 180,
+    },
+  ],
   navigation: {
     height: 58,
     maxWidth: 1052,
@@ -126,6 +186,9 @@ const clamp = (value: unknown, min: number, max: number, fallback: number) =>
 const toFontPreset = (value: unknown): FontPreset =>
   value === "sans" || value === "rounded" || value === "custom" ? value : "serif";
 
+const toCardVariant = (value: unknown): SiteAppearanceCardVariant =>
+  value === "soft" || value === "outline" ? value : "strong";
+
 const normalizeFontFamily = (fontPreset: FontPreset, value: unknown) => {
   if (typeof value === "string" && value.trim()) {
     return value.trim();
@@ -136,6 +199,33 @@ const normalizeFontFamily = (fontPreset: FontPreset, value: unknown) => {
 
 const asRecord = (value: unknown) =>
   value && typeof value === "object" && !Array.isArray(value) ? (value as Record<string, unknown>) : {};
+
+const toString = (value: unknown, fallback: string) => (typeof value === "string" ? value : fallback);
+
+const normalizePreviewCard = (value: unknown, index: number): SiteAppearancePreviewCard => {
+  const source = asRecord(value);
+  const fallback = siteAppearanceDefaults.previewCards[index] ?? siteAppearanceDefaults.previewCards[0];
+
+  return {
+    id: toString(source.id, fallback.id || `card-${index + 1}`),
+    eyebrow: toString(source.eyebrow, fallback.eyebrow),
+    title: toString(source.title, fallback.title),
+    description: toString(source.description, fallback.description),
+    meta: toString(source.meta, fallback.meta),
+    actionLabel: toString(source.actionLabel, fallback.actionLabel),
+    variant: toCardVariant(source.variant),
+    widthUnits: Math.round(clamp(source.widthUnits, 3, 12, fallback.widthUnits)),
+    minHeight: Math.round(clamp(source.minHeight, 120, 360, fallback.minHeight)),
+  };
+};
+
+const normalizePreviewCards = (value: unknown): SiteAppearancePreviewCard[] => {
+  if (!Array.isArray(value) || value.length === 0) {
+    return siteAppearanceDefaults.previewCards;
+  }
+
+  return value.map(normalizePreviewCard);
+};
 
 const normalizeNavigation = (value: unknown): SiteAppearance["navigation"] => {
   const source = asRecord(value);
@@ -238,6 +328,7 @@ export const normalizeSiteAppearance = (value: unknown): SiteAppearance => {
     radiusScale: clamp(source.radiusScale, 0.72, 1.18, siteAppearanceDefaults.radiusScale),
     fontPreset,
     fontFamily: normalizeFontFamily(fontPreset, source.fontFamily),
+    previewCards: normalizePreviewCards(source.previewCards),
     navigation: normalizeNavigation(source.navigation),
     musicPlayer: normalizeMusicPlayer(source.musicPlayer),
     lyricBar: normalizeLyricBar(source.lyricBar),

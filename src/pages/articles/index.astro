@@ -1,21 +1,31 @@
 ---
-import ArticleCard from "../../components/ArticleCard.astro";
+import ArchiveOverview from "../../components/ArchiveOverview.astro";
+import { getArticleOverviewCovers } from "../../lib/archive-covers";
 import { getPublishedArticles } from "../../lib/public-content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
 const articles = await getPublishedArticles();
+const items = articles.map((entry) => ({
+  category: entry.data.category,
+  covers: getArticleOverviewCovers(entry.data),
+  date: entry.data.date,
+  eyebrow: entry.data.type === "script" ? "视频稿" : "文章",
+  href: `/articles/${entry.slug}/`,
+  meta: "打开文稿",
+  summary: entry.data.summary,
+  tags: entry.data.tags ?? [],
+  title: entry.data.title,
+}));
 ---
 
 <BaseLayout title="视频稿" description="公开的视频稿与长文条目。">
-  <section class="feature-section glass-panel stack">
-    <div class="section-head">
-      <div>
-        <p class="eyebrow">视频稿栏目</p>
-        <h2>视频稿</h2>
-      </div>
-    </div>
-    <div class="grid cards">
-      {articles.map((entry) => <ArticleCard entry={entry} />)}
-    </div>
-  </section>
+  <ArchiveOverview
+    archiveStyle="blog"
+    description="公开的视频稿与长文条目。"
+    eyebrow="Archive & Search"
+    items={items}
+    searchPlaceholder="搜索文稿、视频稿、长文..."
+    title="文稿归档"
+    totalLabel="总计"
+  />
 </BaseLayout>

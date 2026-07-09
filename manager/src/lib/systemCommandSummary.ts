@@ -1,6 +1,13 @@
 import type { SystemCommandResult } from "../types";
 
-export type SystemActionKind = "validate" | "check" | "build" | "git-status" | "commit";
+export type SystemActionKind =
+  | "validate"
+  | "check"
+  | "build"
+  | "static-preview"
+  | "deploy"
+  | "git-status"
+  | "commit";
 
 export type CommandSummary = {
   status: "success" | "warning" | "error";
@@ -8,12 +15,15 @@ export type CommandSummary = {
   description: string;
   items: string[];
   rawOutput: string;
+  previewUrl?: string;
 };
 
 const ACTION_LABELS: Record<SystemActionKind, string> = {
   validate: "公开内容验证",
   check: "项目检查",
   build: "站点构建",
+  "static-preview": "静态预览",
+  deploy: "推送上线",
   "git-status": "Git 状态",
   commit: "提交改动",
 };
@@ -119,6 +129,30 @@ export function summarizeSystemCommandResult(kind: SystemActionKind, result: Sys
       title: "站点构建成功",
       description: "Astro 静态站点已经完成构建，可以继续预览或发布。",
       items: getBuildItems(result.stdout),
+      rawOutput,
+    };
+  }
+
+  if (kind === "static-preview") {
+    const previewUrl = result.previewUrl ?? "http://127.0.0.1:4321/";
+    return {
+      status: "success",
+      title: "静态预览已生成",
+      description: "Astro 静态站点已经构建完成，本地预览服务也已启动。",
+      items: [...getBuildItems(result.stdout), `预览地址：${previewUrl}`],
+      rawOutput,
+      previewUrl,
+    };
+  }
+
+  if (kind === "deploy") {
+    return {
+      status: "success",
+      title: "推送上线已完成",
+      description: "站点已完成构建，并通过 git push 推送到远端。",
+      items: rawOutput.includes("No local changes to commit.")
+        ? ["没有新的本地改动需要提交", "已执行 git push"]
+        : ["已构建静态站点", "已提交本地改动", "已执行 git push"],
       rawOutput,
     };
   }

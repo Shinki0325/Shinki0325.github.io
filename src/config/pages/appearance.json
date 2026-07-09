@@ -5,11 +5,11 @@
   "backgroundVideoOpacity": 0.62,
   "backgroundImageOpacity": 0.46,
   "veilOpacity": 1,
-  "pageGutterMin": 44,
-  "pageGutterVw": 7,
-  "pageGutterMax": 112,
+  "pageGutterMin": 52,
+  "pageGutterVw": 8,
+  "pageGutterMax": 128,
   "maxWidth": 1052,
-  "cardScale": 1,
+  "cardScale": 0.9,
   "radiusScale": 1,
   "fontPreset": "serif",
   "fontFamily": "\"Noto Serif SC\", \"Source Han Serif SC\", \"Songti SC\", serif",
@@ -50,8 +50,8 @@
     {
       "id": "status",
       "eyebrow": "运行回廊",
-      "title": "少女祈祷中......",
-      "description": "公开内容、最近更新和日历模块可以用这种中等尺寸卡片承接。",
+      "title": "资料岛仍在缓慢发光",
+      "description": "文稿、资料库、笔记和照片墙会继续向同一个归档系统汇流。",
       "meta": "Live",
       "actionLabel": "查看状态",
       "variant": "outline",
@@ -61,39 +61,39 @@
   ],
   "navigation": {
     "height": 49,
-    "maxWidth": 1052,
-    "paddingX": 21,
+    "maxWidth": 947,
+    "paddingX": 18,
     "blur": 24,
     "linkGap": 12
   },
   "musicPlayer": {
-    "cardPadding": 29,
-    "coverSize": 91,
-    "controlSize": 38,
-    "primaryControlSize": 49,
+    "cardPadding": 26,
+    "coverSize": 82,
+    "controlSize": 34,
+    "primaryControlSize": 44,
     "floatingWidth": 350,
     "floatingHeight": 64,
     "floatingCoverSize": 66
   },
   "lyricBar": {
-    "height": 67,
-    "paddingX": 22,
+    "height": 60,
+    "paddingX": 20,
     "radius": 25,
     "opacity": 0.84,
     "fontSize": 16
   },
   "searchBar": {
-    "width": 684,
-    "height": 60,
+    "width": 616,
+    "height": 54,
     "marginBottom": 4,
     "iconSize": 22
   },
   "profileCard": {
-    "paddingX": 27,
-    "paddingY": 32,
-    "avatarSize": 143,
-    "titleSize": 56,
-    "minHeight": 286,
-    "socialButtonSize": 51
+    "paddingX": 24,
+    "paddingY": 29,
+    "avatarSize": 129,
+    "titleSize": 50,
+    "minHeight": 257,
+    "socialButtonSize": 46
   }
 }

@@ -1,11 +1,8 @@
 import { useEffect, useState } from "react";
 import {
-  commitAllChanges,
   getContentList,
-  getGitStatus,
-  runBuild,
-  runCheck,
-  runValidate,
+  runDeploy,
+  runStaticPreview,
 } from "../api";
 import {
   summarizeSystemCommandResult,
@@ -52,7 +49,6 @@ export default function Dashboard({ status }: DashboardProps) {
   const [activeAction, setActiveAction] = useState<SystemActionKind | null>(null);
   const [result, setResult] = useState<CommandSummary | null>(null);
   const [history, setHistory] = useState<CommandSummary[]>([]);
-  const [commitMessage, setCommitMessage] = useState("chore: update archive content");
 
   useEffect(() => {
     let cancelled = false;
@@ -97,28 +93,16 @@ export default function Dashboard({ status }: DashboardProps) {
 
   const actions: ActionConfig[] = [
     {
-      kind: "validate",
-      label: "验证公开内容",
-      description: "检查草稿、隐藏内容和公开数据边界。",
-      run: runValidate,
+      kind: "static-preview",
+      label: "生成静态预览",
+      description: "构建静态站点并启动本地预览，网址会显示在下方。",
+      run: runStaticPreview,
     },
     {
-      kind: "check",
-      label: "运行检查",
-      description: "执行 Astro 与 manager 构建检查。",
-      run: runCheck,
-    },
-    {
-      kind: "build",
-      label: "构建站点",
-      description: "生成静态站点，确认发布产物可用。",
-      run: runBuild,
-    },
-    {
-      kind: "git-status",
-      label: "查看 Git 状态",
-      description: "汇总当前新增、修改、删除的文件数量。",
-      run: getGitStatus,
+      kind: "deploy",
+      label: "推送上线",
+      description: "先构建站点，再自动提交未提交改动并推送到远端。",
+      run: runDeploy,
     },
   ];
 
@@ -131,16 +115,6 @@ export default function Dashboard({ status }: DashboardProps) {
     } finally {
       setActiveAction(null);
     }
-  };
-
-  const handleCommit = async () => {
-    const action: ActionConfig = {
-      kind: "commit",
-      label: "提交全部改动",
-      description: "暂存并提交当前工作区改动。",
-      run: () => commitAllChanges(commitMessage),
-    };
-    await execute(action);
   };
 
   return (
@@ -226,16 +200,6 @@ export default function Dashboard({ status }: DashboardProps) {
           ))}
         </div>
 
-        <div className="dashboard-commit">
-          <label className="field">
-            <span>提交说明</span>
-            <input value={commitMessage} onChange={(event) => setCommitMessage(event.target.value)} />
-          </label>
-          <button className="primary-button" disabled={Boolean(activeAction)} onClick={() => void handleCommit()} type="button">
-            {activeAction === "commit" ? "提交中..." : "提交全部改动"}
-          </button>
-        </div>
-
         {result ? (
           <article className={`dashboard-result dashboard-result--${result.status}`}>
             <div className="toolbar">
@@ -248,6 +212,11 @@ export default function Dashboard({ status }: DashboardProps) {
               </span>
             </div>
             <p>{result.description}</p>
+            {result.previewUrl ? (
+              <a className="dashboard-preview-link" href={result.previewUrl} rel="noreferrer" target="_blank">
+                打开静态预览：{result.previewUrl}
+              </a>
+            ) : null}
             <ul className="dashboard-result__items">
               {result.items.map((item) => (
                 <li key={item}>{item}</li>
