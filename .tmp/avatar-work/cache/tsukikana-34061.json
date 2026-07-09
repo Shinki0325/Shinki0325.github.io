@@ -1,0 +1,478 @@
+[
+  {
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 25,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/1a/55/68741_crt_snvSH.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/1a/55/68741_crt_snvSH.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/1a/55/68741_crt_snvSH.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1a/55/68741_crt_snvSH.jpg"
+    },
+    "summary": "主人公と同じ学校に通う同級生。\r\n日本人の母とアメリカ人の父を持った金髪のハーフ。\r\n\r\n両親はすでに他界しており、\r\n母方の祖母の実家で一人暮らし。\r\n\r\n高いＩＱを持ち、特にコンピュータ、ネットワーク関連に強い。\r\n引きこもりでゲーム三味のため対人能力が低く、\r\n中二的なイタイ言動や大人ぶった理知的な\r\nしゃべり方をすることも。\r\n\r\nなかなか素直になれないが、\r\n実は寂しがり屋で、温かい家族に憧れている。",
+    "name": "佐倉雨音",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "佐倉 雨音"
+          },
+          {
+            "k": "纯假名",
+            "v": "さくら れいん"
+          },
+          {
+            "k": "罗马字",
+            "v": "Sakura Rein"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "12月25日"
+      },
+      {
+        "key": "血型",
+        "value": "AB型"
+      },
+      {
+        "key": "身高",
+        "value": "148cm"
+      },
+      {
+        "key": "体重",
+        "value": "43kg"
+      },
+      {
+        "key": "BWH",
+        "value": "77(A)/55/80"
+      },
+      {
+        "key": "年齢",
+        "value": "２年生"
+      },
+      {
+        "key": "好きな食べ物",
+        "value": "べーグル"
+      },
+      {
+        "key": "嫌いな食べ物",
+        "value": "トマト、にんじん、ピーマン"
+      }
+    ],
+    "stat": {
+      "comments": 52,
+      "collects": 145
+    },
+    "id": 68741,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 30,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/e9/de/166553_crt_0b10f.jpg?r=1730986122",
+      "grid": "https://lain.bgm.tv/pic/crt/g/e9/de/166553_crt_0b10f.jpg?r=1730986122",
+      "large": "https://lain.bgm.tv/pic/crt/l/e9/de/166553_crt_0b10f.jpg?r=1730986122",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e9/de/166553_crt_0b10f.jpg?r=1730986122"
+    },
+    "summary": "プリズムステージ準優勝者\r\n\r\n過去2回、プリズムステージで碧音と瑠夏に敗北し挫折した中学3年生。ステージではスーパーアイドルだが、普段は…",
+    "name": "佐倉未雨",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "佐仓未雨"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "さくら　みう"
+          },
+          {
+            "k": "罗马字",
+            "v": "Miu Sakura"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "10月30日"
+      },
+      {
+        "key": "血型",
+        "value": "AB型"
+      },
+      {
+        "key": "所属",
+        "value": "TriumTone（トライアムトーン）"
+      },
+      {
+        "key": "好きなもの",
+        "value": "アイドル、ファン"
+      },
+      {
+        "key": "苦手なもの",
+        "value": "忘れたい過去"
+      },
+      {
+        "key": "星座",
+        "value": "蠍座"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 166553,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/37/143019_crt_GUL58.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/56/37/143019_crt_GUL58.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/56/37/143019_crt_GUL58.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/37/143019_crt_GUL58.jpg"
+    },
+    "summary": "ツンデレの定番ドＭっ子。\r\nイキながらおもらし挿入がデフォ。\r\n主人公が居候することにある家の三女。\r\n素直になれないツンデレ系妹。\r\n強気なロリっ娘で、いじられポジションに収まっている。\r\n\r\n「し、知ってるわよ。\r\n罵られながら踏まれたりするのが気持ちいいんでしょ？」",
+    "name": "佐倉守歌雨",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 143019,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/70/80/10077_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/70/80/10077_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/70/80/10077_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/70/80/10077_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "佐倉",
+    "infobox": [
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "佐倉"
+          },
+          {
+            "k": "罗马字",
+            "v": "Sakura"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 10077,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d5/d2/94616_crt_RK11p.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d5/d2/94616_crt_RK11p.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/d5/d2/94616_crt_RK11p.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d5/d2/94616_crt_RK11p.jpg"
+    },
+    "summary": "",
+    "name": "佐倉",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 94616,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/cf/06/162900_crt_iREO9.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/cf/06/162900_crt_iREO9.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/cf/06/162900_crt_iREO9.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cf/06/162900_crt_iREO9.jpg"
+    },
+    "summary": "",
+    "name": "佐倉",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "佐仓"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 162900,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/c0/184099_crt_VoDD3.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c7/c0/184099_crt_VoDD3.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c7/c0/184099_crt_VoDD3.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/c0/184099_crt_VoDD3.jpg"
+    },
+    "summary": "",
+    "name": "佐倉",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "佐仓"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 184099,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/3b/01/189292_crt_7eSsC.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/3b/01/189292_crt_7eSsC.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/3b/01/189292_crt_7eSsC.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3b/01/189292_crt_7eSsC.jpg"
+    },
+    "summary": "和カフェ「市」の従業員。\r\n\r\n二人を温かく見守り隊③\r\n\r\n梶が来てからはストッパー役となる。",
+    "name": "佐倉",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "引用来源",
+        "value": [
+          {
+            "k": "KillscudCherry",
+            "v": "https://www.killscudcherry.com/%E7%9B%B8%E5%8E%9F%E5%90%9B%E3%81%A8%E5%98%89%E5%B3%B6%E5%90%9B"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 189292,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/b3/101_ff8baf56627478ec76a704e9b52_hIxwu.jpg?r=1615794686",
+      "grid": "https://lain.bgm.tv/pic/crt/g/38/b3/101_ff8baf56627478ec76a704e9b52_hIxwu.jpg?r=1615794686",
+      "large": "https://lain.bgm.tv/pic/crt/l/38/b3/101_ff8baf56627478ec76a704e9b52_hIxwu.jpg?r=1615794686",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/b3/101_ff8baf56627478ec76a704e9b52_hIxwu.jpg?r=1615794686"
+    },
+    "summary": "升的女同学，跟高上升同属于学校里的羽毛球社，暗恋升。",
+    "name": "佐倉美咲",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "佐仓美咲"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "佐倉美咲"
+          },
+          {
+            "k": "罗马字",
+            "v": "Sakura Misaki"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 7
+    },
+    "id": 101,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/81/2d/635_crt_ZcBAT.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/81/2d/635_crt_ZcBAT.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/81/2d/635_crt_ZcBAT.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/81/2d/635_crt_ZcBAT.jpg"
+    },
+    "summary": "依人的同班同学，除了和真名一样在海鲜餐厅“Ajour”兼职，也有在一间便利店工作。好奇心和想像力丰富，经常对身边的事乱猜。喜欢有胡子的男人。",
+    "name": "佐倉紗絵",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "佐仓纱绘"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "佐倉 紗絵"
+          },
+          {
+            "k": "纯假名",
+            "v": "さくら さえ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Sakura Sae"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 6,
+      "collects": 10
+    },
+    "id": 635,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

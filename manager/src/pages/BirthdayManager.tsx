@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import type { CSSProperties, PointerEvent } from "react";
 import {
-  copyBirthdayImage,
   cropBirthdayAvatar,
   deleteBirthdayCharacter,
   getBirthdayData,
@@ -25,6 +25,25 @@ const EMPTY_WORK: BirthdayWorkDraft = {
   sourceUrl: ""
 };
 
+const IMAGE_ACCEPT = "image/webp,image/png,image/jpeg";
+const ALLOWED_IMAGE_MIME_TYPES = new Set(["image/webp", "image/png", "image/jpeg"]);
+const ALLOWED_IMAGE_EXTENSIONS = /\.(webp|png|jpe?g)$/i;
+
+type CropImageMetrics = {
+  naturalWidth: number;
+  naturalHeight: number;
+  renderedWidth: number;
+  renderedHeight: number;
+};
+
+type CropDragState = {
+  mode: "move" | "resize";
+  pointerId: number;
+  startClientX: number;
+  startClientY: number;
+  startCrop: BirthdayAvatarCrop;
+};
+
 const readFileAsDataUrl = (file: File) =>
   new Promise<string>((resolve, reject) => {
     const reader = new FileReader();
@@ -32,6 +51,11 @@ const readFileAsDataUrl = (file: File) =>
     reader.onerror = () => reject(new Error("读取图片失败"));
     reader.readAsDataURL(file);
   });
+
+const isAllowedImageFile = (file: File) =>
+  ALLOWED_IMAGE_MIME_TYPES.has(file.type) || ALLOWED_IMAGE_EXTENSIONS.test(file.name);
+
+const clampNumber = (value: number, min: number, max: number) => Math.min(Math.max(value, min), max);
 
 const getWorkSourceUrl = (works: BirthdayWorkDraft[], workId: string) =>
   works.find((work) => work.id === workId)?.sourceUrl ?? "";
@@ -58,9 +82,11 @@ export default function BirthdayManager() {
   const [characterSearch, setCharacterSearch] = useState("");
   const [editor, setEditor] = useState<BirthdayCharacterDraft | null>(null);
   const [editingExistingId, setEditingExistingId] = useState<string | null>(null);
-  const [sourcePath, setSourcePath] = useState("");
   const [crop, setCrop] = useState<BirthdayAvatarCrop>({ x: 0, y: 0, size: 512 });
+  const [cropImageMetrics, setCropImageMetrics] = useState<CropImageMetrics | null>(null);
+  const [cropDrag, setCropDrag] = useState<CropDragState | null>(null);
   const [message, setMessage] = useState<string | null>(null);
+  const cropImageRef = useRef<HTMLImageElement | null>(null);
 
   useEffect(() => {
     void getBirthdayData()
@@ -81,20 +107,31 @@ export default function BirthdayManager() {
     setWorkForm(selectedWork ? { ...selectedWork } : EMPTY_WORK);
   }, [data, selectedWorkId]);
 
+  useEffect(() => {
+    setCropImageMetrics(null);
+    setCropDrag(null);
+  }, [editor?.image]);
+
   const works = data?.works ?? [];
   const characters = data?.characters ?? [];
   const stats = data?.stats;
   const selectedWork = works.find((work) => work.id === selectedWorkId) ?? null;
   const selectedWorkCharacters = characters.filter((character) => character.workId === selectedWorkId);
   const searchTerm = characterSearch.trim().toLowerCase();
-  const visibleCharacters = selectedWorkCharacters.filter((character) => {
+  const characterPool = searchTerm ? characters : selectedWorkCharacters;
+  const visibleCharacters = characterPool.filter((character) => {
     if (!searchTerm) {
       return true;
     }
 
-    return [character.id, character.name, character.reading ?? ""].some((value) =>
-      value.toLowerCase().includes(searchTerm)
-    );
+    const work = works.find((item) => item.id === character.workId);
+    return [
+      character.id,
+      character.name,
+      character.reading ?? "",
+      work?.title ?? "",
+      work?.localizedTitle ?? ""
+    ].some((value) => value.toLowerCase().includes(searchTerm));
   });
 
   const updateData = (response: BirthdayDataResponse) => {
@@ -211,14 +248,151 @@ export default function BirthdayManager() {
     return editor;
   };
 
+  const constrainCrop = (nextCrop: BirthdayAvatarCrop, metrics = cropImageMetrics): BirthdayAvatarCrop => {
+    if (!metrics) {
+      return {
+        x: Math.max(0, Math.round(nextCrop.x)),
+        y: Math.max(0, Math.round(nextCrop.y)),
+        size: Math.max(1, Math.round(nextCrop.size))
+      };
+    }
+
+    const maxSize = Math.max(1, Math.min(metrics.naturalWidth, metrics.naturalHeight));
+    const size = clampNumber(Math.round(nextCrop.size), 1, maxSize);
+    const x = clampNumber(Math.round(nextCrop.x), 0, Math.max(0, metrics.naturalWidth - size));
+    const y = clampNumber(Math.round(nextCrop.y), 0, Math.max(0, metrics.naturalHeight - size));
+
+    return { x, y, size };
+  };
+
+  const readCropImageMetrics = (): CropImageMetrics | null => {
+    const image = cropImageRef.current;
+    if (!image || !image.naturalWidth || !image.naturalHeight) {
+      return null;
+    }
+
+    const rect = image.getBoundingClientRect();
+    return {
+      naturalWidth: image.naturalWidth,
+      naturalHeight: image.naturalHeight,
+      renderedWidth: rect.width,
+      renderedHeight: rect.height
+    };
+  };
+
+  const handleCropImageLoad = () => {
+    const metrics = readCropImageMetrics();
+    if (!metrics) {
+      return;
+    }
+
+    setCropImageMetrics(metrics);
+    setCrop((current) => constrainCrop(current, metrics));
+  };
+
+  const getCropFrameStyle = (): CSSProperties => {
+    if (!cropImageMetrics) {
+      return { display: "none" };
+    }
+
+    const scaleX = cropImageMetrics.renderedWidth / cropImageMetrics.naturalWidth;
+    const scaleY = cropImageMetrics.renderedHeight / cropImageMetrics.naturalHeight;
+
+    return {
+      left: `${crop.x * scaleX}px`,
+      top: `${crop.y * scaleY}px`,
+      width: `${crop.size * scaleX}px`,
+      height: `${crop.size * scaleY}px`
+    };
+  };
+
+  const beginCropDrag = (
+    event: PointerEvent<HTMLElement>,
+    mode: CropDragState["mode"],
+    nextCrop = crop
+  ) => {
+    event.preventDefault();
+    event.stopPropagation();
+    event.currentTarget.setPointerCapture(event.pointerId);
+    setCropDrag({
+      mode,
+      pointerId: event.pointerId,
+      startClientX: event.clientX,
+      startClientY: event.clientY,
+      startCrop: nextCrop
+    });
+  };
+
+  const handleCropStagePointerDown = (event: PointerEvent<HTMLDivElement>) => {
+    const metrics = readCropImageMetrics();
+    const image = cropImageRef.current;
+    if (!metrics || !image) {
+      return;
+    }
+
+    const rect = image.getBoundingClientRect();
+    const nextCrop = constrainCrop(
+      {
+        ...crop,
+        x: ((event.clientX - rect.left) / rect.width) * metrics.naturalWidth - crop.size / 2,
+        y: ((event.clientY - rect.top) / rect.height) * metrics.naturalHeight - crop.size / 2
+      },
+      metrics
+    );
+
+    setCrop(nextCrop);
+    beginCropDrag(event, "move", nextCrop);
+  };
+
+  const handleCropPointerMove = (event: PointerEvent<HTMLDivElement>) => {
+    if (!cropDrag || cropDrag.pointerId !== event.pointerId || !cropImageMetrics) {
+      return;
+    }
+
+    const scaleX = cropImageMetrics.renderedWidth / cropImageMetrics.naturalWidth;
+    const scaleY = cropImageMetrics.renderedHeight / cropImageMetrics.naturalHeight;
+    const deltaX = (event.clientX - cropDrag.startClientX) / scaleX;
+    const deltaY = (event.clientY - cropDrag.startClientY) / scaleY;
+
+    if (cropDrag.mode === "resize") {
+      setCrop(
+        constrainCrop(
+          {
+            ...cropDrag.startCrop,
+            size: cropDrag.startCrop.size + Math.max(deltaX, deltaY)
+          },
+          cropImageMetrics
+        )
+      );
+      return;
+    }
+
+    setCrop(
+      constrainCrop(
+        {
+          ...cropDrag.startCrop,
+          x: cropDrag.startCrop.x + deltaX,
+          y: cropDrag.startCrop.y + deltaY
+        },
+        cropImageMetrics
+      )
+    );
+  };
+
+  const handleCropPointerEnd = (event: PointerEvent<HTMLDivElement>) => {
+    if (cropDrag?.pointerId === event.pointerId) {
+      setCropDrag(null);
+    }
+  };
+
   const handleUploadImage = async (file: File | null, kind: BirthdayImageKind) => {
     const character = requireEditableCharacter();
     if (!character || !file) {
       return;
     }
 
-    if (file.type !== "image/webp") {
-      setMessage("请上传 WebP 图片，或使用本机路径导入。");
+    if (!isAllowedImageFile(file)) {
+      setMessage("请上传 JPG、PNG 或 WebP 图片。");
       return;
     }
 
@@ -227,27 +401,6 @@ export default function BirthdayManager() {
       const result = await uploadBirthdayImage(dataUrl, character.workId, character.id, kind);
       updateEditorImage(character, kind, result.url);
       setMessage(`已上传${kind === "avatar" ? "头像" : "大图"} ${result.url}`);
-    } catch (error) {
-      setMessage((error as Error).message);
-    }
-  };
-
-  const handleCopyImage = async (kind: BirthdayImageKind) => {
-    const character = requireEditableCharacter();
-    if (!character) {
-      return;
-    }
-
-    const trimmedSourcePath = sourcePath.trim();
-    if (!trimmedSourcePath.toLowerCase().endsWith(".webp")) {
-      setMessage("请导入 WebP 图片。");
-      return;
-    }
-
-    try {
-      const result = await copyBirthdayImage(trimmedSourcePath, character.workId, character.id, kind);
-      updateEditorImage(character, kind, result.url);
-      setMessage(`已导入${kind === "avatar" ? "头像" : "大图"} ${result.url}`);
     } catch (error) {
       setMessage((error as Error).message);
     }
@@ -306,7 +459,20 @@ export default function BirthdayManager() {
           </div>
         </dl>
 
-        {message ? <p className={message.startsWith("Request failed") ? "error" : "hint"}>{message}</p> : null}
+        <label className="field birthday-manager__global-search">
+          <span>全局搜索角色 / 作品</span>
+          <input
+            placeholder="输入角色名、读音、作品名或 ID"
+            value={characterSearch}
+            onChange={(event) => setCharacterSearch(event.target.value)}
+          />
+        </label>
+
+        {message ? (
+          <p className={`${message.startsWith("Request failed") ? "error" : "hint"} birthday-manager__message`}>
+            {message}
+          </p>
+        ) : null}
       </section>
 
       <section className="editor-layout birthday-manager__layout">
@@ -377,24 +543,21 @@ export default function BirthdayManager() {
             <div className="toolbar">
               <div>
                 <p className="eyebrow">Characters</p>
-                <h2>{selectedWork?.localizedTitle || selectedWork?.title || "角色浏览"}</h2>
+                <h2>
+                  {searchTerm
+                    ? "全局搜索结果"
+                    : selectedWork?.localizedTitle || selectedWork?.title || "角色浏览"}
+                </h2>
               </div>
-              <span className="pill muted">{selectedWorkCharacters.length} 人</span>
+              <span className="pill muted">{visibleCharacters.length} 人</span>
             </div>
 
-            <label className="field">
-              <span>按 ID / 名字 / 读音搜索</span>
-              <input value={characterSearch} onChange={(event) => setCharacterSearch(event.target.value)} />
-            </label>
-
-            <ul className="content-list compact">
+            <ul className="content-list compact birthday-manager__character-grid">
               {visibleCharacters.map((character) => (
                 <li key={character.id} className="content-item birthday-manager__character">
                   <button className="nav" onClick={() => handleSelectCharacter(character)} type="button">
                     <span>{character.name || character.id}</span>
-                    <span className="meta-line">
-                      {character.birthday} · {character.reading || "未填写读音"}
-                    </span>
+                    <span className="pill muted">{character.birthday}</span>
                   </button>
                 </li>
               ))}
@@ -494,93 +657,84 @@ export default function BirthdayManager() {
                 </div>
 
                 <section className="stack birthday-manager__images">
-                  <div>
-                    <p className="eyebrow">Images</p>
-                    <h2>图片资源</h2>
+                  <div className="toolbar birthday-manager__images-head">
+                    <div>
+                      <p className="eyebrow">Images</p>
+                      <h2>图片资源</h2>
+                      <p className="hint">上传 JPG、PNG、WebP 后会统一转成站点使用的 WebP。</p>
+                    </div>
                   </div>
 
-                  <div className="meta-grid birthday-manager__previews">
-                    <div className="preview birthday-manager__preview">
-                      <dt>头像</dt>
+                  <div className="birthday-manager__image-workbench">
+                    <div className="preview birthday-manager__preview birthday-manager__avatar-card">
+                      <div className="toolbar">
+                        <dt>头像</dt>
+                        <label className="secondary-button birthday-manager__upload-button">
+                          上传头像
+                          <input
+                            accept={IMAGE_ACCEPT}
+                            type="file"
+                            onChange={(event) => void handleUploadImage(event.target.files?.[0] ?? null, "avatar")}
+                          />
+                        </label>
+                      </div>
                       {editor.avatar ? <img alt={`${editor.name} 头像`} src={editor.avatar} /> : <dd>未设置头像</dd>}
-                      <label className="field">
-                        <span>上传头像 WebP</span>
-                        <input
-                          accept="image/webp"
-                          type="file"
-                          onChange={(event) => void handleUploadImage(event.target.files?.[0] ?? null, "avatar")}
-                        />
-                      </label>
                     </div>
-                    <div className="preview birthday-manager__preview">
-                      <dt>大图</dt>
-                      {editor.image ? <img alt={`${editor.name} 大图`} src={editor.image} /> : <dd>未设置大图</dd>}
-                      <label className="field">
-                        <span>上传大图 WebP</span>
-                        <input
-                          accept="image/webp"
-                          type="file"
-                          onChange={(event) => void handleUploadImage(event.target.files?.[0] ?? null, "image")}
-                        />
-                      </label>
-                    </div>
-                  </div>
 
-                  <div className="grid-form birthday-manager__image-import">
-                    <label className="field field-span">
-                      <span>本机源路径</span>
-                      <input
-                        placeholder="例如 /mnt/d/materials/character.webp"
-                        value={sourcePath}
-                        onChange={(event) => setSourcePath(event.target.value)}
-                      />
-                    </label>
-                    <div className="actions">
-                      <button className="secondary-button" onClick={() => void handleCopyImage("image")} type="button">
-                        导入为大图
-                      </button>
-                      <button className="secondary-button" onClick={() => void handleCopyImage("avatar")} type="button">
-                        导入为头像
-                      </button>
-                    </div>
-                  </div>
+                    <div className="preview birthday-manager__preview birthday-manager__crop-card">
+                      <div className="toolbar">
+                        <div>
+                          <dt>大图 / 头像裁切</dt>
+                          <p className="hint">上传大图后，拖动方框选择头像位置。</p>
+                        </div>
+                        <label className="secondary-button birthday-manager__upload-button">
+                          上传大图
+                          <input
+                            accept={IMAGE_ACCEPT}
+                            type="file"
+                            onChange={(event) => void handleUploadImage(event.target.files?.[0] ?? null, "image")}
+                          />
+                        </label>
+                      </div>
 
-                  <div className="grid-form birthday-manager__crop">
-                    <div className="field-span">
-                      <p className="eyebrow">头像裁切</p>
-                      <h2>从大图裁切头像</h2>
-                    </div>
-                    <label className="field">
-                      <span>x</span>
-                      <input
-                        min="0"
-                        type="number"
-                        value={crop.x}
-                        onChange={(event) => setCrop({ ...crop, x: Number(event.target.value) })}
-                      />
-                    </label>
-                    <label className="field">
-                      <span>y</span>
-                      <input
-                        min="0"
-                        type="number"
-                        value={crop.y}
-                        onChange={(event) => setCrop({ ...crop, y: Number(event.target.value) })}
-                      />
-                    </label>
-                    <label className="field">
-                      <span>size</span>
-                      <input
-                        min="1"
-                        type="number"
-                        value={crop.size}
-                        onChange={(event) => setCrop({ ...crop, size: Number(event.target.value) })}
-                      />
-                    </label>
-                    <div className="actions">
-                      <button className="primary-button" onClick={handleCropAvatar} type="button">
-                        裁切头像
-                      </button>
+                      {editor.image ? (
+                        <div
+                          className="birthday-manager__crop-stage"
+                          onPointerCancel={handleCropPointerEnd}
+                          onPointerDown={handleCropStagePointerDown}
+                          onPointerMove={handleCropPointerMove}
+                          onPointerUp={handleCropPointerEnd}
+                        >
+                          <img
+                            ref={cropImageRef}
+                            alt={`${editor.name} 裁切源`}
+                            className="birthday-manager__crop-source"
+                            onLoad={handleCropImageLoad}
+                            src={editor.image}
+                          />
+                          <div
+                            className="birthday-manager__crop-frame"
+                            onPointerDown={(event) => beginCropDrag(event, "move")}
+                            style={getCropFrameStyle()}
+                          >
+                            <span
+                              aria-label="调整裁切大小"
+                              className="birthday-manager__crop-handle"
+                              onPointerDown={(event) => beginCropDrag(event, "resize")}
+                              role="button"
+                              tabIndex={0}
+                            />
+                          </div>
+                        </div>
+                      ) : (
+                        <dd>未设置大图</dd>
+                      )}
+
+                      <div className="actions">
+                        <button className="primary-button" onClick={handleCropAvatar} type="button">
+                          裁切头像
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </section>

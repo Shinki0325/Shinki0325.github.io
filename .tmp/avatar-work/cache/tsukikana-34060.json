@@ -1,0 +1,528 @@
+[
+  {
+    "birth_mon": 2,
+    "gender": "female",
+    "birth_day": 22,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/d5/68739_crt_0yLsz.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/86/d5/68739_crt_0yLsz.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/86/d5/68739_crt_0yLsz.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/d5/68739_crt_0yLsz.jpg"
+    },
+    "summary": "一年の終わりになってやってきた。\r\n季節外れの転校生。\r\n\r\n東京の学校で問題を起こしたため、\r\n転校するハメになったともっぱらの噂。\r\n\r\n遅刻早退は当たり前で、深夜徘徊で補導されることたびらび。\r\nそのため、授業中は基本的眠っている。\r\n\r\nクールな外見に見えるが、話してみると意外と感情豊か。\r\n\r\n気まぐれで突拍子もない行動で、人を振り回す気分屋。\r\n\r\nとの距離感が異常なほど近く、それが誤解を生むこともしばしば。\r\n\r\n秘密を抱えているとよく公言するが、\r\nそれがなんなのか、決して教えてくれない。\r\n妙なサブカル知識に明るい。",
+    "name": "新谷灯華",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "新谷 灯華"
+          },
+          {
+            "k": "纯假名",
+            "v": "あらや とうか"
+          },
+          {
+            "k": "罗马字",
+            "v": "Araya Touka"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "2月22日"
+      },
+      {
+        "key": "血型",
+        "value": "知らない"
+      },
+      {
+        "key": "身高",
+        "value": "162cm"
+      },
+      {
+        "key": "体重",
+        "value": "51kg"
+      },
+      {
+        "key": "BWH",
+        "value": "89(D)/56/84"
+      },
+      {
+        "key": "年齢",
+        "value": "２年生"
+      },
+      {
+        "key": "好きな食べ物",
+        "value": "モンスターエレジー"
+      },
+      {
+        "key": "嫌いな食べ物",
+        "value": "生レバー"
+      }
+    ],
+    "stat": {
+      "comments": 29,
+      "collects": 51
+    },
+    "id": 68739,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/93/dd/89867_crt_YMN91.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/93/dd/89867_crt_YMN91.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/93/dd/89867_crt_YMN91.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/93/dd/89867_crt_YMN91.jpg"
+    },
+    "summary": "新闻社社长，虽是高中2年级生，但有着中二病的举动。",
+    "name": "新谷",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "新谷"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "あらや"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://zh.wikipedia.org/wiki/%E5%85%B6%E4%B8%AD1%E5%80%8B%E6%98%AF%E5%A6%B9%E5%A6%B9%EF%BC%81#主要人物"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 3
+    },
+    "id": 89867,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f1/97/1151_W2hSZ.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f1/97/1151_W2hSZ.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f1/97/1151_W2hSZ.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f1/97/1151_W2hSZ.jpg"
+    },
+    "summary": "比主人公高一级的前辈。\r\n尽管是无口感情不外露的性格，却是主人公们靠得住的姐姐般的存在。\r\n平时在燕妈妈开的咖啡屋中打工。",
+    "name": "新谷理沙美沙",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "新谷理沙美沙"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "しんたに りさみさ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 1151,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 9,
+    "gender": "male",
+    "birth_day": 23,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/fd/8c/14552_crt_939ZT.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/fd/8c/14552_crt_939ZT.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/fd/8c/14552_crt_939ZT.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fd/8c/14552_crt_939ZT.jpg"
+    },
+    "summary": "城教学院国中部1年C班，在旧校舍与新校舍错纵复杂在一起的学校中迷路，而偶然遇见人称“七大不可思议”旧校舍的幽灵夕子，并且找到她在旧校舍下的遗骸。\r\n唯一可以看见夕子真正样貌的人。\r\n现为阐明在学园内屡次发生的各种各样的怪异现象的原因和找寻夕子的过去而成立奇异调查部。\r\n对恋爱能直接表现好意(主要是夕子)，但经常表现的十分踌躇，或许是适值困惑的年龄。\r\n影夕子出现后，对消去记忆的夕子宣告感情。",
+    "name": "新谷貞一",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "新谷贞一"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "にいやていいち"
+          },
+          {
+            "k": "罗马字",
+            "v": "Niiya Teiichi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "9月23日"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 8
+    },
+    "id": 14552,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/07/f8/59117_crt_5S2Y9.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/07/f8/59117_crt_5S2Y9.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/07/f8/59117_crt_5S2Y9.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/07/f8/59117_crt_5S2Y9.jpg"
+    },
+    "summary": "",
+    "name": "新谷恵",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 59117,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/82/61033_crt_ok0XV.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/4e/82/61033_crt_ok0XV.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/4e/82/61033_crt_ok0XV.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/82/61033_crt_ok0XV.jpg"
+    },
+    "summary": "主人公たちが所属している病院の院長。\r\n優しく、年下の主人公たちを可愛がっている。\r\n褒める時には褒めてあげ、悪いことや失敗した時にはしっかり叱るいいお母さんタイプ。\r\n\r\n父から病院を受け継ぎ、若くして院長を務めている。\r\nより多くの人を助けたいと思っており、病院をさらに大きくできればいいと思っている。",
+    "name": "新谷桜子",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "新谷 桜子"
+          },
+          {
+            "k": "纯假名",
+            "v": "しんたに さくらこ"
+          }
+        ]
+      },
+      {
+        "key": "身高",
+        "value": "163cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B98/ W60/ H90"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 61033,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/68/ad/64099_crt_ERK5B.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/68/ad/64099_crt_ERK5B.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/68/ad/64099_crt_ERK5B.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/68/ad/64099_crt_ERK5B.jpg"
+    },
+    "summary": "真琴の幼なじみで、いつも引っ張り回され新聞部にも無理矢理付き合わされている。\r\n内気で人見知りのしやすい女の子で、巫女神や奈津に対して憧れを抱いている。\r\n\r\n「ほら、真琴ちゃん……巫女神様も困ってるって……」",
+    "name": "新谷千鶴",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "新谷 千鶴"
+          },
+          {
+            "k": "纯假名",
+            "v": "しんたに ちづる"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "CV",
+        "value": "柚木サチ"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 64099,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 14,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f4/f2/78936_crt_qlqT5.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f4/f2/78936_crt_qlqT5.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f4/f2/78936_crt_qlqT5.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f4/f2/78936_crt_qlqT5.jpg"
+    },
+    "summary": "AEGiSの紹介で成子坂製作所に派遣されてきた事務員。\r\nキャリアアップのためにアクトレス免許も取っている。\r\nていねいできちんとした仕事ぶりで、周囲への気配りも忘れない。\r\n百科文嘉に「成子坂始まって以来の常識的な社会人」と言わしめた。というのは表の顔。もうひとつの顔は……",
+    "name": "新谷芹菜",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "新谷芹菜"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "新谷 芹菜"
+          },
+          {
+            "k": "纯假名",
+            "v": "にいや せりな"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "3月14日"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "身高",
+        "value": "168cm"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://wikiwiki.jp/alicegear/"
+      },
+      {
+        "key": "年　齢",
+        "value": "23歳"
+      },
+      {
+        "key": "職　業",
+        "value": "派遣事務員"
+      },
+      {
+        "key": "趣味・特技",
+        "value": "テレビや新聞から社会潮流を感じる事。"
+      },
+      {
+        "key": "将来の目標",
+        "value": "安定した生活ができるといいですね。"
+      },
+      {
+        "key": "アクトレスを志した理由",
+        "value": "アクトレス業務に通じた事務員は多くはなく自分の需要を喚起できると考えたからです。"
+      },
+      {
+        "key": "自己ＰＲ",
+        "value": "多くの企業で事務職を担ってまいりました。順応力は高いと思っております。"
+      },
+      {
+        "key": "Another",
+        "value": "燐光"
+      },
+      {
+        "key": "キャッチフレーズ",
+        "value": "ふたつの顔を持つアクトレス"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 3
+    },
+    "id": 78936,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/94/0e/110473_crt_yFUcA.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/94/0e/110473_crt_yFUcA.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/94/0e/110473_crt_yFUcA.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/94/0e/110473_crt_yFUcA.jpg"
+    },
+    "summary": "理沙美沙の弟。主人公とつばめのクラスメイトで、主人公の悪友。姉からの仕打ち（理沙美沙×花子と比較すれば、「扱（しご）く」「玩（もてあそ）ぶ」的性質）の反動で妹キャラへの願望が強く、その点で恵まれすぎている主人公を羨ましがっている。いわゆるメガネ男子。",
+    "name": "新谷学",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "新谷学"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "新谷 学"
+          },
+          {
+            "k": "日文名",
+            "v": "しんたに まなぶ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 110473,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "",
+      "grid": "",
+      "large": "",
+      "medium": ""
+    },
+    "summary": "性務大学校を出たばかりの新人男性性務官。\r\n満香町性務署地域課で、立派な性務官になるために奮闘努力する。\r\nパッとしない風体で中肉中背。性格はまじめで熱血漢。体格に似合わず巨根。\r\nチンポはデカいものの、早漏という性務官としては武器にも弱点にもなる個性を持っている。",
+    "name": "新谷仁",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Shintani Jin"
+          },
+          {
+            "k": "日文名",
+            "v": "新谷 仁"
+          },
+          {
+            "k": "纯假名",
+            "v": "しんたに じん"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 131520,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

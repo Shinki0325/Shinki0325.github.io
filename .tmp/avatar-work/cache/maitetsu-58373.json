@@ -1,0 +1,477 @@
+[
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d7/31/93302_crt_U77yY.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d7/31/93302_crt_U77yY.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/d7/31/93302_crt_U77yY.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d7/31/93302_crt_U77yY.jpg"
+    },
+    "summary": "侍組織の実力を持つ家柄の娘。\r\nアイオーンとして生まれた依子を両親は隠していたが、組織にばれてしまい殺されてしまう。\r\n奔放でワガママ、自分勝手といった歪んだ性格。",
+    "name": "本宮依子",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ほんみや よりこ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://www.getchu.com/soft.phtml?id=242425"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 93302,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/11/104943_crt_ToksZ.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a6/11/104943_crt_ToksZ.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a6/11/104943_crt_ToksZ.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/11/104943_crt_ToksZ.jpg"
+    },
+    "summary": "",
+    "name": "宮本",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 104943,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/bc/ee/119452_crt_V9S3G.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/bc/ee/119452_crt_V9S3G.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/bc/ee/119452_crt_V9S3G.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bc/ee/119452_crt_V9S3G.jpg"
+    },
+    "summary": "大の父。\r\n妻を亡くし、スーパーの店長を務めながら男手ひとつで3人の子どもを育ててきた。",
+    "name": "宮本",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "宫本"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ミヤモト"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 119452,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/13/a1/207432_crt_G7z56.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/13/a1/207432_crt_G7z56.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/13/a1/207432_crt_G7z56.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/13/a1/207432_crt_G7z56.jpg"
+    },
+    "summary": "",
+    "name": "宮本",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "宫本"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Miyamoto"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 207432,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 10,
+    "gender": "male",
+    "birth_day": 28,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/78/fc/748_crt_d5PM1.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/78/fc/748_crt_d5PM1.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/78/fc/748_crt_d5PM1.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/78/fc/748_crt_d5PM1.jpg"
+    },
+    "summary": "人物特点：性格开朗，幽默风趣，喜欢开玩笑，属于搞笑人物，因为武士的身份有时候喜欢装酷，故作很酷的样子，还有一点儿固执的怪脾气。性格看上去有点像【灌篮高手】中的樱木花道。\r\n\t\r\n自从小时侯看了《沈默的武士》电视剧后，就被日本浪人与武士的洒脱、浪漫所深深吸引，从那时开始，他迷上通过看历史小说、电影、时代剧来对浪人与武士详加研究，甚至还研习剑道；一方面在心理上逐渐把自己当做一个真正的日本武士，还给自己取了一个武士味道浓厚的名字：宫本宝藏。\r\n〝真是怪人一个！〞朋友们实在受不了他的怪脾气，包括任何事非得和什么〝武士精神〞扯上关系，以及不知从何而来的正义感和侠义情操，还有那奇怪的八股语气，所以有人贴切地形容他是[日本版的唐吉柯德]。传言他曾经和一个叫〝忍太郎〞的忍者交手，没人知道结果谁胜谁负，他本人也不愿意证实传言是真是假。朋友说： 〝哎，就是受不了他这凡事爱耍酷的脾气！〞\r\n\r\n星座：天蝎座\r\n生日：10月28日\r\n血型：B型\r\n年龄：14岁\r\n生肖：虎\r\n身高：168公分\r\n体重：63公斤\r\n职业：演员\r\n兴趣：说相声\r\n宠物：老鹰\r\n最喜欢：在路上捡到一箱点券\r\n最讨厌：罚款\r\n偶像：美空云雀\r\n语言：日文\r\n口头禅：呵，我还是满行的嘛！",
+    "name": "宮本寶藏",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "宫本宝藏"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Miyamoto"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "10月28日"
+      },
+      {
+        "key": "星座",
+        "value": "天蠍座"
+      },
+      {
+        "key": "血型",
+        "value": "B型"
+      },
+      {
+        "key": "身高",
+        "value": "168cm"
+      },
+      {
+        "key": "体重",
+        "value": "63kg"
+      },
+      {
+        "key": "年龄",
+        "value": "14岁"
+      },
+      {
+        "key": "职业",
+        "value": "演员"
+      },
+      {
+        "key": "兴趣",
+        "value": "说相声"
+      },
+      {
+        "key": "口头禅",
+        "value": "进攻是最好的防守！、呵，我还是满行的嘛！"
+      },
+      {
+        "key": "引用来源",
+        "value": [
+          {
+            "v": "https://rmivfun.softstargames.com.tw/"
+          },
+          {
+            "v": "http://games.sina.com.cn/z/rich7/2003-11-03/62431.shtml"
+          },
+          {
+            "v": "https://richman.fandom.com/zh/wiki/宮本寶藏"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 1
+    },
+    "id": 748,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/1c/a6/7067_crt_LF191.jpg?r=1741600066",
+      "grid": "https://lain.bgm.tv/pic/crt/g/1c/a6/7067_crt_LF191.jpg?r=1741600066",
+      "large": "https://lain.bgm.tv/pic/crt/l/1c/a6/7067_crt_LF191.jpg?r=1741600066",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1c/a6/7067_crt_LF191.jpg?r=1741600066"
+    },
+    "summary": "交通課の女性警察官。佐藤刑事とは名前で呼び合うほど仲良し。警察内でも顔が広く、佐藤を合コンに誘ったり、刑事たちと徹夜で麻雀したり、アクティブな行動が目立つ。元カレの羽田秀𠮷の職業については紆余曲折を経て知ることとなった。現在は一緒に暮らしている模様。実は猫アレルギー。",
+    "name": "宮本由美",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "宫本由美"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "みやもと ゆみ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Miyamoto Yumi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 4,
+      "collects": 17
+    },
+    "id": 7067,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 3,
+    "gender": "male",
+    "birth_day": 9,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/7c/e8/9916_crt_k8P0t.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/7c/e8/9916_crt_k8P0t.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/7c/e8/9916_crt_k8P0t.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7c/e8/9916_crt_k8P0t.jpg"
+    },
+    "summary": "",
+    "name": "宮本総一",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "宫本总一"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "宮本 総一"
+          },
+          {
+            "k": "纯假名",
+            "v": "みやもと そういち"
+          },
+          {
+            "k": "罗马字",
+            "v": "Miyamoto Souichi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "3月9日"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "身高",
+        "value": "178cm"
+      },
+      {
+        "key": "体重",
+        "value": "65kg"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 9916,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c1/78/17552_crt_yilyY.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c1/78/17552_crt_yilyY.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c1/78/17552_crt_yilyY.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c1/78/17552_crt_yilyY.jpg"
+    },
+    "summary": "2年C組在籍。いわゆる\"不良少年\"だが、チャーリーとは正反対の硬派な一匹狼タイプ。無口だが芯があり、夢を持っている。用務員からボクシング選手になるよう薦められており、腕っぷしも相当な様子。\r\nパートナーの一人だが、1周目のプレイではパートナーにすることはできない。2周目以降に手順を踏むと、一度だけアキラの方からアプローチしてくる。\r\nアキラをパートナーに選ぶと、最初はチャーリー同様自分達の保身が目的となる。しかし、予想外の行動を取ったことでハザマの逆鱗に触れ、直後にハザマと敵対する悪魔に命を救われ状況が一変、「ハザマを倒すためだけ」に行動する事になる。　",
+    "name": "宮本明",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 17552,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/92/18094_crt_nKa45.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a2/92/18094_crt_nKa45.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a2/92/18094_crt_nKa45.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/92/18094_crt_nKa45.jpg"
+    },
+    "summary": "新免無二斎的兒子。作州「宮本村」浪人。二刀流的開山鼻祖。\r\n原名新免武藏。在关原之战中武藏所属的西军战败，从战场上得以逃脱武藏决定游历天下，挑战强者，朝着天下无双的目标前进。在无数次生死较量的过程中，武藏在逐渐变强的同时，也开始明白，真正的强大并不是通过杀戮体现的。",
+    "name": "宮本武蔵",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "宫本武藏"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "みやもと むさし"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 4,
+      "collects": 41
+    },
+    "id": 18094,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/cf/24/18509_crt_Jw90Z.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/cf/24/18509_crt_Jw90Z.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/cf/24/18509_crt_Jw90Z.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cf/24/18509_crt_Jw90Z.jpg"
+    },
+    "summary": "本作主人公，16岁，高中生。母亲在他小时候就已经去世，父亲（自称学者）又在世界各国游走，所以他与叔父宫本濑通住在一起，但因为伊织的叔父也和他父亲一样基本上只有他一个人在家里。有一天他收到了父亲7年前寄来海运货物——棺木，在里面他发现了一直处于沉睡的克莉丝塔蓓儿，之后不久在第一次被袭击的时候成为了“鞘之主”，虽然嘴上一直在抱怨，但还是会好好照顾克莉丝塔蓓儿。认为法式土司一定要搭配香草的香味，即使手边没有香草豆，也会用香草冰淇淋来制作法式土司（香草冰淇淋原本就是牛奶、糖、蛋和香草作成的）。为人有着远超同龄人的成熟，不善于表达感情，但感情并不迟钝，对于他人对自己的感情还是能够发现的，但由于其奉行“你不说我就没有回应的理由”这个信条而被大路常叶说很残忍。\r\n料理方面非常擅长西洋料理（尤其擅长各种意大利面和各种口味的土司），但日式料理却基本不会，由于家里有着大量的藏书，因此喜欢一边喝茶一边看书，因为克莉丝疯狂的食量而害怕带着克莉丝去外面吃饭，因为觉得非常丢脸。（曾在自助餐厅对克莉丝说，再待下去我的背会被挖出一个洞）与克莉丝生活一段时间后慢慢的喜欢上了照顾克莉丝的工作，就像是对待自己的女儿一样溺爱，最喜欢看着克莉丝吃着自己做的食物一边说好吃的样子，也因此对对他人的努力和善意都无动于衷的露提琪娅非常反感，如果没有自己叔父的关系，非常想要把她赶出自己的家。",
+    "name": "宮本伊織",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "宫本伊织"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 18509,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

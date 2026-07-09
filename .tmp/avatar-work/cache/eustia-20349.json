@@ -1,0 +1,480 @@
+[
+  {
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 16,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/0f/00/11359_crt_h92MX.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/0f/00/11359_crt_h92MX.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/0f/00/11359_crt_h92MX.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0f/00/11359_crt_h92MX.jpg"
+    },
+    "summary": "王家第一皇女，亦即皇位第一继承人。\r\n因为现任王卧床不起，目前由她作为代理执掌政务。\r\n虽然贵族中也有人讽刺还没继位的她为「无冠的女王」，但她本人并不以为意。\r\n为人干脆直爽，向来活力充沛，但似乎是因为教养过严，也有着亦步亦趋的一面。\r\n由于王家的人向来对庶民事项多加关心，要是被仆人抢了洗衣做饭等杂事，她就会一脸不悦。",
+    "name": "リシア・ド・ノーヴァス・ユーリィ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "莉西娅·德·诺瓦斯·尤利"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Licia de novus Yurii"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "8月16日"
+      },
+      {
+        "key": "血型",
+        "value": "AB型"
+      },
+      {
+        "key": "身高",
+        "value": "146.0cm"
+      },
+      {
+        "key": "体重",
+        "value": "37.7kg"
+      },
+      {
+        "key": "BWH",
+        "value": "73(A)/52/76"
+      }
+    ],
+    "stat": {
+      "comments": 52,
+      "collects": 195
+    },
+    "id": 11359,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d7/da/73619_crt_vBBe8.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d7/da/73619_crt_vBBe8.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/d7/da/73619_crt_vBBe8.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d7/da/73619_crt_vBBe8.jpg"
+    },
+    "summary": "突然、頼斗の元に現れたヒロインのひとりで、神界の姫君。\r\n\r\n優しい娘であるが、それゆえに、大伯母の死後、「人間は神界・神族にとって百害あって一利なし」という考えを持つように至る。\r\nやがては、自分が父王クンツァイトの跡を継ぎ、神王として即位し、皆を幸せにするのが目標。",
+    "name": "リシア",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Lithia"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "10月1日"
+      },
+      {
+        "key": "身高",
+        "value": "158cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B86/W57/H83"
+      },
+      {
+        "key": "好きなもの",
+        "value": "理想がある人、かわいいもの、向日葵"
+      },
+      {
+        "key": "嫌いなもの",
+        "value": "曲がったこと、理屈に合わないこと"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 8
+    },
+    "id": 73619,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/59/97/142315_crt_4D3Js.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/59/97/142315_crt_4D3Js.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/59/97/142315_crt_4D3Js.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/59/97/142315_crt_4D3Js.jpg"
+    },
+    "summary": "・主人公　名前:リシア\r\n明るくて前向き。ちょっとドジでうっかり屋さん。\r\nけれどもけして出しゃばったりはせず、基本的には控えめで謙虚。\r\nほんわかした性格だが、傷ついてもへこたれない芯の強さも持ち合わせている。\r\n綺麗なものが好きで、強くて優しい人を尊敬している。\r\n人魚なのに足をつって溺れかけたことを恥ずかしく思っているが、助けてくれた王子には心から感謝している。\r\n少し鈍いところが有るものの、人の心の傷には敏感。\r\n声をなくしたあとは主に筆談で会話をしていくことになるが、咄嗟の時に声が出ないことから思いがけないところですれ違いをしてしまうことも。",
+    "name": "リシア",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "リシア"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "CV",
+        "value": "響聖歌"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 142315,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/7a/211560_crt_wwR27.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c9/7a/211560_crt_wwR27.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c9/7a/211560_crt_wwR27.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/7a/211560_crt_wwR27.jpg"
+    },
+    "summary": "エリザーロワ付きの侍女で、リーゼやローラの世話もする。\r\nケイトとセリナがミシェール家に滞在するようになってからは、その世話も担当。\r\n侍女というメイドの中でも高位な立場のため、言葉使いはもちろん態度も礼儀正しく、模範的なメイド。\r\nただ、リーゼやローラの前では姉妹同然に育ったこともあり、友達感覚。（ただし丁寧語）。\r\nケイトやセリナに対しても普通に接して欲しいと頼まれ、リーゼ達と同様の接し方をするようになる。\r\n根は、リーゼやローラにも軽口を叩くなど天真爛漫な性格で憎めない存在（ギャグ担当）。\r\n性格的にも友達感覚で付き合えるため、元気系？のリーゼはリシアと特に仲がよい。\r\nまたお淑やか系のローラも、心からリシアのことを信頼している。",
+    "name": "リシア",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Rishia"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 211560,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/87/78/139916_crt_WiX2f.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/87/78/139916_crt_WiX2f.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/87/78/139916_crt_WiX2f.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/87/78/139916_crt_WiX2f.jpg"
+    },
+    "summary": "メティスの父親で、この国の国王。\r\n\r\n武に優れている訳ではないが、優れた政治手腕とその懐の深さで、\r\n国民全体に慕われている稀代の名君。\r\n\r\n彼にとって最も大切なものはまず自国の民なので、\r\n彼らを守るためならば時として非情に見える行為も厭わない。\r\n\r\nそんな彼の口調には常に他者への慈しみが込められているが、\r\n責められるべき行為が行われた時には、雷のごとき鋭さをもって叩き落される。\r\n\r\nまた、娘に対してもかなり甘い所を持っているが、それでも国と天秤にかければ迷わず国を選び、\r\n国民や臣下の言葉にもしっかり耳を貸す、公平さを重んじる王でもある。\r\n\r\n権力を使う事そのものに躊躇はないが、権力で全てを抑えられるとは思っていない。\r\n力なき正義、正義なき力、その無力さをよく知っている人物である。",
+    "name": "リシア・ゼウ・ジュピス",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Lycia Zew Jupis"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://windmill.suki.jp/product/3rd/creso_chara.html"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 139916,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/91/01/151857_crt_LddWu.jpg?r=1706445910",
+      "grid": "https://lain.bgm.tv/pic/crt/g/91/01/151857_crt_LddWu.jpg?r=1706445910",
+      "large": "https://lain.bgm.tv/pic/crt/l/91/01/151857_crt_LddWu.jpg?r=1706445910",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/91/01/151857_crt_LddWu.jpg?r=1706445910"
+    },
+    "summary": "カナレ郡トルベキスタの領主・ハマンドの娘でアルスの許嫁。愛嬌があり、文句のつけどころがない可憐な少女だが…！？",
+    "name": "リシア・プレイド",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "莉西娅·普雷德"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://kanteiskill.com/character/#/lycia"
+      }
+    ],
+    "stat": {
+      "comments": 12,
+      "collects": 17
+    },
+    "id": 151857,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/12/bd/3767_crt_oNdLD.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/12/bd/3767_crt_oNdLD.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/12/bd/3767_crt_oNdLD.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/12/bd/3767_crt_oNdLD.jpg"
+    },
+    "summary": "「阿斯特拉尔」竞争对手，魔法组织「盖提亚」的首领，持有「阿斯特拉尔」20%股份的股东，高中二年级学生，英国魔法师，能够使用所罗门王的秘术召唤72柱魔神。",
+    "name": "アディリシア・レン・メイザース",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "安缇莉西亚·雷·梅札斯"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Adilisia=lenn=Mathers"
+          },
+          {
+            "k": "日文名",
+            "v": "アディリシア・レン・メイザース"
+          },
+          {
+            "k": "纯假名",
+            "v": "アディリシア·レン·メイザース"
+          },
+          {
+            "k": "罗马字",
+            "v": "Adilisia Lenn Mathers"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "wikipedia.org"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 19
+    },
+    "id": 3767,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 8,
+    "birth_year": null,
+    "blood_type": 2,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/5f/eb/35733_crt_4aDCU.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/5f/eb/35733_crt_4aDCU.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/5f/eb/35733_crt_4aDCU.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5f/eb/35733_crt_4aDCU.jpg"
+    },
+    "summary": "圧倒的な攻撃力を誇る魔導装甲《クロス》を操る、世界的にも有名なスーパーエース。",
+    "name": "ユリシア・ファランドール",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "优莉西亚·法兰德尔"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "8月8日"
+      },
+      {
+        "key": "血型",
+        "value": "B"
+      },
+      {
+        "key": "身高",
+        "value": "168cm"
+      }
+    ],
+    "stat": {
+      "comments": 9,
+      "collects": 21
+    },
+    "id": 35733,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/fe/75/49175_crt_CgBum.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/fe/75/49175_crt_CgBum.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/fe/75/49175_crt_CgBum.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fe/75/49175_crt_CgBum.jpg"
+    },
+    "summary": "",
+    "name": "ナリシア・ユニリース",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Lulu Giruremo"
+          }
+        ]
+      },
+      {
+        "key": "身高",
+        "value": "159cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B92/ W89/ H91"
+      },
+      {
+        "key": "人種",
+        "value": "サッキュバス族"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 49175,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/35/134375_crt_KIo93.jpg?r=1690987998",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f5/35/134375_crt_KIo93.jpg?r=1690987998",
+      "large": "https://lain.bgm.tv/pic/crt/l/f5/35/134375_crt_KIo93.jpg?r=1690987998",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/35/134375_crt_KIo93.jpg?r=1690987998"
+    },
+    "summary": "　本編の主人公。地球産乙女ゲーム『銀の翼に恋をする』のヒロイン。\r\n\r\n　ヒロインに成り代わろうとする転生者に襲われ、断片的な知識を得て、乙女ゲームのヒロインの運命から逃れるために自分を鍛えはじめる。\r\n\r\n　知識のせいか同年代に比べて達観している。その性格は、冷酷・冷淡というより、究極の『効率厨』であり、問題の解決に最も早い解決方法として『殺害』を選択した。\r\n\r\n　ストイックなまでに力を求めるのは、そのほうが『効率的』なため。\r\n\r\n　そのため、問題解決のために『殺さない』という選択をする場合がある。\r\n\r\n　翡翠色の瞳。桃色がかったピンクブロンドは、旧メルローズ王家の直系の女系にのみ受け継がれる。\r\n\r\n　恋愛は興味がないと言うより、知識はあってもまだ理解できていない。\r\n\r\n　戦闘スタイル：暗殺者・幻術士",
+    "name": "アーリシア・メルローズ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "昵称",
+            "v": "アリア"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://ncode.syosetu.com/n1391fj/71/"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 11
+    },
+    "id": 134375,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

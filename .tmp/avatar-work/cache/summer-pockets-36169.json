@@ -1,0 +1,511 @@
+[
+  {
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 29,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f8/c5/61418_crt_vx7i4.jpg?r=1726452192",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f8/c5/61418_crt_vx7i4.jpg?r=1726452192",
+      "large": "https://lain.bgm.tv/pic/crt/l/f8/c5/61418_crt_vx7i4.jpg?r=1726452192",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f8/c5/61418_crt_vx7i4.jpg?r=1726452192"
+    },
+    "summary": "おっぱいは正義\r\n\r\n身長：164cm\r\n体重：54kg\r\n3サイズ：B98 W64 H88\r\n趣味：おっぱい\r\n好物：ザクロ\r\n原画：永山ゆうのん\r\nCV：小山さほみ\r\n\r\n本土にある、しろはらヒロインたちが通う学校の生徒会長。おつばいに対して並々ならぬ愛情と敬意を持っており、普段の会話でもちょいちょいと「おつばい語録」を交えてくる。紬のおつばいの成長を信じているか、lmmたりとも変化しておらず見誤っている説濃厚。実家は本土にあリ、夏休みの間、紬に会うために鳥白島にやってきている。",
+    "name": "水織静久",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "水织静久"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "水織 静久"
+          },
+          {
+            "k": "纯假名",
+            "v": "みずおり しずく"
+          },
+          {
+            "k": "罗马字",
+            "v": "Mizuori Shizuku"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "4月29日"
+      },
+      {
+        "key": "身高",
+        "value": "164cm"
+      },
+      {
+        "key": "体重",
+        "value": "54kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B98/W64/H88"
+      },
+      {
+        "key": "年龄",
+        "value": "18岁"
+      }
+    ],
+    "stat": {
+      "comments": 77,
+      "collects": 86
+    },
+    "id": 61418,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/60/215217_crt_klgH5.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/80/60/215217_crt_klgH5.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/80/60/215217_crt_klgH5.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/60/215217_crt_klgH5.jpg"
+    },
+    "summary": "",
+    "name": "水織の友人",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 215217,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": 3,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/46/6f/204564_crt_3TikT.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/46/6f/204564_crt_3TikT.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/46/6f/204564_crt_3TikT.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/46/6f/204564_crt_3TikT.jpg"
+    },
+    "summary": "芽衣子の妹。次女で中学生。\r\n本人はしっかり者だが、純粋でおっとりした姉の上京を心配している。\r\n女子プロレスラー・タンク樫木の大ファンで、プロレス観戦に夢中。",
+    "name": "森田水織",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "森田水织"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "7月7日"
+      },
+      {
+        "key": "血型",
+        "value": "AB"
+      },
+      {
+        "key": "身高",
+        "value": "147cm"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 8
+    },
+    "id": 204564,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 12,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/6a/95/45115_crt_mxgB1.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/6a/95/45115_crt_mxgB1.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/6a/95/45115_crt_mxgB1.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6a/95/45115_crt_mxgB1.jpg"
+    },
+    "summary": "主人公が引っ越した後近所に住んでいる女の子。\r\n主人公に対して好意を持つもストレートには表せない俗に言う「ツンデレ」娘。\r\n意外と世話焼きで、引っ越してきた主人公を何かと世話を焼いた。\r\n主人公は私がいないとなにもできないんだから、は本人談。\r\n学校内での人気は高い。\r\n\r\n気の強いところがあり、本人も女の子らしくないと自分をコンプレックスに思っているが意外と少女趣味の部分がある。\r\n最近それ以上に自分の胸の小ささがコンプレックス。",
+    "name": "速水伊織",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "速水伊织"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "はやみ いおり"
+          },
+          {
+            "k": "罗马字",
+            "v": "Iori Hayami"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "8月12日"
+      },
+      {
+        "key": "血型",
+        "value": "B型"
+      },
+      {
+        "key": "身高",
+        "value": "155cm"
+      },
+      {
+        "key": "BWH",
+        "value": "78(A)/57/80"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 19
+    },
+    "id": 45115,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 5,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/5d/33/5925_crt_yxyoO.jpg?r=1514883353",
+      "grid": "https://lain.bgm.tv/pic/crt/g/5d/33/5925_crt_yxyoO.jpg?r=1514883353",
+      "large": "https://lain.bgm.tv/pic/crt/l/5d/33/5925_crt_yxyoO.jpg?r=1514883353",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5d/33/5925_crt_yxyoO.jpg?r=1514883353"
+    },
+    "summary": "和有气质的外表正好相反，相当任性，蛮横娇羞型。非常讨厌输给别人。因父亲和765 Production的社长是朋友而透过关系进入演艺界。对2位哥哥怀有强烈的自卑感与竞争心理。经常随身带着兔子的玩偶，口癖是“にひひ!”。\r\n基本能力值高且易于管理情绪，和律子同様是“好用强角色”。似乎因为如此有许多人会让律子和伊织组成双人团体来争取排名。另外在双人、三人的时候，若不慎选谈话的对手会大幅影响心情，需要特别注意。\r\n\r\n（在偶像大师 XENOGLOSSIA中）\r\n身高156cm、B77/W54/H79、16岁。\r\n和春香、雪步是同校生兼室友。宽额头就是其最大的特征。总是自信满满的样子，喜欢毫不保留地直接说出自己的想法，事实上非常努力。而且因为她那闪亮到可以反光的额头，所以有着“小凸”的绰号。",
+    "name": "水瀬伊織",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "水濑伊织"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "水瀬 伊織"
+          },
+          {
+            "k": "纯假名",
+            "v": "みなせ いおり"
+          },
+          {
+            "k": "罗马字",
+            "v": "Minase Iori"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "5月5日"
+      },
+      {
+        "key": "血型",
+        "value": "AB型"
+      },
+      {
+        "key": "身高",
+        "value": "150→153cm"
+      },
+      {
+        "key": "体重",
+        "value": "39→40kg"
+      },
+      {
+        "key": "BWH",
+        "value": "77/54/79"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      },
+      {
+        "key": "年龄",
+        "value": "14→15"
+      }
+    ],
+    "stat": {
+      "comments": 72,
+      "collects": 209
+    },
+    "id": 5925,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/04/44348_crt_NljX2.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/04/04/44348_crt_NljX2.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/04/04/44348_crt_NljX2.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/04/44348_crt_NljX2.jpg"
+    },
+    "summary": "水瀬家長女で巴の姉。\r\nいつも肌を露出させた服を着て色香を振りまいている女優。\r\n妹の巴と異なり、大雑把で自分勝手な性格。\r\n\r\nあまり演技自体は上手くはないのだが、その豊満なボディで男たちを魅了してやまない。\r\nオペラ座の怪人ではクリスティーン役を演じている。",
+    "name": "水瀬香織",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "水瀬 香織"
+          },
+          {
+            "k": "纯假名",
+            "v": "みなせ かおり"
+          }
+        ]
+      },
+      {
+        "key": "BWH",
+        "value": "B100/ W57/ H94"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 6
+    },
+    "id": 44348,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/bb/4f/52410_crt_5gte8.jpg?r=1493035497",
+      "grid": "https://lain.bgm.tv/pic/crt/g/bb/4f/52410_crt_5gte8.jpg?r=1493035497",
+      "large": "https://lain.bgm.tv/pic/crt/l/bb/4f/52410_crt_5gte8.jpg?r=1493035497",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bb/4f/52410_crt_5gte8.jpg?r=1493035497"
+    },
+    "summary": "茜の母。専業主婦。\r\n短大卒業後に勤めていたデザイン会社に出入りしていた広報部時代の洋と入社3年目に結婚。\r\nペースよく彩音、茜と二女を設けたため比較的若く、生来明るく捌けた性格のため、\r\n娘二人とは割と友達感覚。",
+    "name": "水野沙織",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "水野沙织"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Saori Mizuno"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 1
+    },
+    "id": 52410,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/fc/a1/67717_crt_k3O1T.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/fc/a1/67717_crt_k3O1T.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/fc/a1/67717_crt_k3O1T.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fc/a1/67717_crt_k3O1T.jpg"
+    },
+    "summary": "2年B組の学級委員長を担っている、優等生。主人公とは隣の席同士。\r\n地味な容姿から、真面目で清純な性格がうかがえる。\r\n心優しく控えめな性格で、その分押しに弱いタイプ。\r\n\r\n実は眼鏡を外すとかなりの美少女で、なかなかの巨乳。\r\n恥ずかしがり屋の処女だが、むっつりドMな一面がある。\r\n主人公に調教されて過激なエッチを重ねるたびに\r\nマゾ性癖が露わとなり、大胆でドスケベな女の子に変化していく。",
+    "name": "水島詩織",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "水島 詩織"
+          },
+          {
+            "k": "纯假名",
+            "v": "みずしま しおり"
+          }
+        ]
+      },
+      {
+        "key": "身高",
+        "value": "157cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B98cm（Fカップ）/W62cm/H90"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 2
+    },
+    "id": 67717,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "",
+      "grid": "",
+      "large": "",
+      "medium": ""
+    },
+    "summary": "",
+    "name": "水野香织",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "水野香织"
+      },
+      {
+        "key": "别名",
+        "value": []
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 0
+    },
+    "id": 123987,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": 3,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/17/96/131880_crt_vA5Tm.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/17/96/131880_crt_vA5Tm.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/17/96/131880_crt_vA5Tm.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/17/96/131880_crt_vA5Tm.jpg"
+    },
+    "summary": "京香の妹で、演劇部に所属する少女。\r\nリアクションが派手で無駄によく動くが、舞台では委縮してしまう典型的な素人。\r\n衣装や小道具の製作能力はズバ抜けて高く、職人レベルだが、今回は、衣装兼キャストとして参加する。\r\n「あ！　おはようござぶしっ！」",
+    "name": "水鏡沙織",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ミカガミ サオリ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "血型",
+        "value": "AB"
+      },
+      {
+        "key": "身高",
+        "value": "160cm"
+      },
+      {
+        "key": "体重",
+        "value": "50kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B77 W61 H78"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 131880,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

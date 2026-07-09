@@ -1,0 +1,498 @@
+[
+  {
+    "birth_mon": 2,
+    "gender": "female",
+    "birth_day": 22,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/3a/ba/33217_crt_cQo32.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/3a/ba/33217_crt_cQo32.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/3a/ba/33217_crt_cQo32.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3a/ba/33217_crt_cQo32.jpg"
+    },
+    "summary": "主人公が好きでたまらない彼女は ロリっ子ゆるふわ少女\r\n\r\n海の近くにある御影浜学園に在籍する少女。\r\nとある事がきっかけで洸太郎のことが好きになり、不器用なアプローチを繰り返している。\r\nしかしマイペースな洸太郎は気にしない。 妹の菜子と仲良くしてくれよと頭を撫でている。\r\nそしてさらに ゆいは暴走する。\r\n\r\n「ふたりの愛を邪魔する者は消されてもういないということ……むぐっ！」",
+    "name": "小鞠ゆい",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "小鞠由依"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "こまり ゆい"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "2月22日"
+      },
+      {
+        "key": "血型",
+        "value": "O型"
+      },
+      {
+        "key": "学年",
+        "value": "3-A（御影浜）"
+      },
+      {
+        "key": "所属",
+        "value": "栽培クラブ"
+      },
+      {
+        "key": "バスト",
+        "value": "ぺったんこ"
+      },
+      {
+        "key": "趣味・特技",
+        "value": "絵を描く、主人公を観察する、耳がいい、鼻が利く"
+      },
+      {
+        "key": "好き",
+        "value": "主人公、絵本、静かな場所、花、小動物（うさぎさん、ねこさん）"
+      },
+      {
+        "key": "嫌い",
+        "value": "知らない人"
+      }
+    ],
+    "stat": {
+      "comments": 34,
+      "collects": 121
+    },
+    "id": 33217,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 29,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/8e/66/111330_crt_C5zCe.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/8e/66/111330_crt_C5zCe.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/8e/66/111330_crt_C5zCe.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8e/66/111330_crt_C5zCe.jpg"
+    },
+    "summary": "文芸部に所属している1年生女子。引っ込み思案な性格で、人としゃべるのが苦手。和彦と同じく友達がいない。文芸部の先輩たちには心を開いており、その視線の先にはいつも……。",
+    "name": "小鞠知花",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "小鞠知花"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "小鞠 知花"
+          },
+          {
+            "k": "纯假名",
+            "v": "こまり ちか"
+          },
+          {
+            "k": "罗马字",
+            "v": "Komari Chika"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "3-29"
+      },
+      {
+        "key": "身高",
+        "value": "148cm（SSS短篇集）"
+      },
+      {
+        "key": "体重",
+        "value": "41kg（SSS短篇集）"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://makeine-anime.com/character/"
+      }
+    ],
+    "stat": {
+      "comments": 186,
+      "collects": 573
+    },
+    "id": 111330,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/03/02/164058_crt_z83c8.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/03/02/164058_crt_z83c8.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/03/02/164058_crt_z83c8.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/03/02/164058_crt_z83c8.jpg"
+    },
+    "summary": "",
+    "name": "小鞠陽菜",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "小鞠阳菜"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Komari Hina"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 2
+    },
+    "id": 164058,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/3e/ed/164059_crt_d2M22.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/3e/ed/164059_crt_d2M22.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/3e/ed/164059_crt_d2M22.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3e/ed/164059_crt_d2M22.jpg"
+    },
+    "summary": "",
+    "name": "小鞠進",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "小鞠进"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Komari Shin"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 164059,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/60/177540_crt_HlFO7.jpg?r=1749482000",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b9/60/177540_crt_HlFO7.jpg?r=1749482000",
+      "large": "https://lain.bgm.tv/pic/crt/l/b9/60/177540_crt_HlFO7.jpg?r=1749482000",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/60/177540_crt_HlFO7.jpg?r=1749482000"
+    },
+    "summary": "優や亜鳥が生徒会行事で訪問した幼稚園の園児。亜鳥と出会って10分で彼女のファンになり、園内の女子園児全員でADC（亜鳥様大好きクラブ）を結成。その組織の頭取に就任する。",
+    "name": "小鞠まりあ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "小鞠玛莉亚"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "小鞠 まりあ"
+          },
+          {
+            "k": "纯假名",
+            "v": "こまり まりあ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Komari Maria"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 9,
+      "collects": 23
+    },
+    "id": 177540,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 14,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/3b/21371_crt_3cFQw.jpg?r=1438207786",
+      "grid": "https://lain.bgm.tv/pic/crt/g/7a/3b/21371_crt_3cFQw.jpg?r=1438207786",
+      "large": "https://lain.bgm.tv/pic/crt/l/7a/3b/21371_crt_3cFQw.jpg?r=1438207786",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/3b/21371_crt_3cFQw.jpg?r=1438207786"
+    },
+    "summary": "初二学生，越谷三兄妹中的老二，夏海的姐姐，血型AB型，9月14日出生。\r\n很在意自己身高不到140cm这件事。非常憧憬成为大人，凡事总想摆出大人的样子，但实际上很胆小，有着许多幼稚的一面。\r\n绰号是小小鞠（コマちゃん），但这个绰号不是来源于名字，而是因为她身材瘦小。有一次大家一起去海边时，她曾被误认为是迷路的小孩而被工作人员带走了。\r\n\r\n中学2年生。夏海の姉。血液型はAB型。9月14日生まれ。身長が140cmに満たないことを気にしている。大人に対する憧れが強く、何かにつけて大人ぶろうとするが、\r\n実際には怖いものが苦手であるなど幼い面が多い。あだ名はコマちゃん。由来は名前ではなく細いからである。みんなで海に行った時には、迷子の子供と間違われて連れて行かれてしまった。",
+    "name": "越谷小鞠",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "越谷小鞠"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "小小鞠"
+          },
+          {
+            "k": "纯假名",
+            "v": "こしがや こまり"
+          },
+          {
+            "k": "罗马字",
+            "v": "Koshigaya Komari"
+          },
+          {
+            "k": "昵称",
+            "v": "コマちゃん"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "9月14日"
+      },
+      {
+        "key": "血型",
+        "value": "AB型"
+      }
+    ],
+    "stat": {
+      "comments": 66,
+      "collects": 408
+    },
+    "id": 21371,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/03/7f/99413_crt_11Ci5.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/03/7f/99413_crt_11Ci5.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/03/7f/99413_crt_11Ci5.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/03/7f/99413_crt_11Ci5.jpg"
+    },
+    "summary": "",
+    "name": "後藤小鞠",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "后藤小鞠"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ごとう こまり"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 99413,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/82/e1/26990_crt_75IAk.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/82/e1/26990_crt_75IAk.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/82/e1/26990_crt_75IAk.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/82/e1/26990_crt_75IAk.jpg"
+    },
+    "summary": "プライドが高く、他人にも己にも厳しいスーパーお嬢様。\r\n悪を憎み弱きを助ける正義感の塊。 学園の風紀委員長を務めている。\r\n“優等星” の星を背負っている。\r\n\r\nツンデレではあるが、礼儀知らずではない。\r\n学園と生徒会のあり方に疑問を覚えているが、生徒会長に忠誠を誓っているため、その板挟みになっている。\r\nかわいい名前にコンプレックスを持っていて、名前で呼ぶと怒る。",
+    "name": "龍造寺小鞠",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "りゅうぞうじ こまり"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 26990,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/e4/50/52674_crt_1OHXT.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/e4/50/52674_crt_1OHXT.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/e4/50/52674_crt_1OHXT.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e4/50/52674_crt_1OHXT.jpg"
+    },
+    "summary": "京都伏見高校新1年生。中性的な容姿の新入生。口調も丁寧で落ち着いた雰囲気。他人の筋肉を触りその人の本質や技量を自ら定めている。御堂筋とは逆に先輩達には基本的な礼儀をわきまえた態度で接している様子。自転車に乗る際は必ず手を洗う。愛車はCARRERA。",
+    "name": "岸神小鞠",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "岸神小鞠"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "岸神 小鞠"
+          },
+          {
+            "k": "纯假名",
+            "v": "きしがみ こまり"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kishigami Komari"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 52674,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/55/8f/144291_crt_d4L9U.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/55/8f/144291_crt_d4L9U.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/55/8f/144291_crt_d4L9U.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/55/8f/144291_crt_d4L9U.jpg"
+    },
+    "summary": "主人公「滝川一馬」の実妹。\r\n普段は元気にしているがいつも兄のことを心配している。\r\nそのためか家事が苦手な兄をついつい甘やかしてしまう。\r\n\r\n兄のお世話をすることに生き甲斐を感じており、それが長じて介添人にまでなる。\r\n剣技や戦術について勉強し、大奉演やオリガミについても詳しい。",
+    "name": "滝川小鞠",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "たきがわ  こまり"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 10,
+      "collects": 22
+    },
+    "id": 144291,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

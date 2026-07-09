@@ -1,0 +1,400 @@
+[
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/47/9f/126776_crt_DBGpY.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/47/9f/126776_crt_DBGpY.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/47/9f/126776_crt_DBGpY.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/47/9f/126776_crt_DBGpY.jpg"
+    },
+    "summary": "自由を愛するニヒルな野良猫。片目と片耳に大きな傷がある。",
+    "name": "ニイ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 126776,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a0/18/146404_crt_j8FFf.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a0/18/146404_crt_j8FFf.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a0/18/146404_crt_j8FFf.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a0/18/146404_crt_j8FFf.jpg"
+    },
+    "summary": "素直で真面目、人一倍頑張るが、ついつい調子に乗って失敗ばかりしてしまうドジっ子魔法使い、ニー。魔法学校で一番の落ちこぼれだった彼女が、エリートしか選ばれない人間界への修行にひょんなことから選ばれてしまう。しかし、簡単な初級魔法でさえ失敗し、ホウキにも上手く乗れない。",
+    "name": "ニー",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 146404,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/2c/f9/16454_crt_V5O1L.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/2c/f9/16454_crt_V5O1L.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/2c/f9/16454_crt_V5O1L.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2c/f9/16454_crt_V5O1L.jpg"
+    },
+    "summary": "",
+    "name": "ニイガキ・テルヒコ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "新垣辉彦"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Niigaki Teruhiko"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 16454,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/22/a9/17346_crt_wzbWU.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/22/a9/17346_crt_wzbWU.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/22/a9/17346_crt_wzbWU.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/22/a9/17346_crt_wzbWU.jpg"
+    },
+    "summary": "「XFJ計画」のオペレーターを務める女性。3人のオペレータ―の中では軍曹と一番階級が高くまとめ役になっている。冷静沈着な性格と見た目とは別に妄想癖があるなどイマイチ思考が読めない。",
+    "name": "ニイラム・ラワヌナンド",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "妮拉姆·拉瓦努南德"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "NIRAM RAWAMUNANDO"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "国籍",
+        "value": "インド"
+      },
+      {
+        "key": "階級",
+        "value": "軍曹"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 3
+    },
+    "id": 17346,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 6,
+    "gender": "male",
+    "birth_day": 6,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/3e/4f/22527_crt_3d3nT.jpg?r=1620806142",
+      "grid": "https://lain.bgm.tv/pic/crt/g/3e/4f/22527_crt_3d3nT.jpg?r=1620806142",
+      "large": "https://lain.bgm.tv/pic/crt/l/3e/4f/22527_crt_3d3nT.jpg?r=1620806142",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3e/4f/22527_crt_3d3nT.jpg?r=1620806142"
+    },
+    "summary": "本作の主人公。娘/妹のヨナと二人で暮らしている。純粋で正義感が強く、仲間思い。唯一の肉親であるヨナを非常に大切にしている。ヨナの黒文病を治すため、シロと共に各地を奔走、マモノとの戦いへと身を投じていく。\r\n『レプリカント』では兄として登場。幼少期には貧しいながら笑顔を絶やさない、元気な少年として描かれているが、5年後の青年期ではどこか影を感じさせる青年へと成長。笑顔を見せる事が無くなっている。幼少期に比べ、言動に若干乱暴な部分が出てくるようになった。\r\n『ゲシュタルト』では、妻に先立たれてから男手一つでヨナを育てた父親として登場。愛娘の為に日々奮闘し、その溺愛っぷりは時折過保護とも受け取れる。",
+    "name": "ニーア",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "尼尔"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Nier"
+          },
+          {
+            "k": "昵称",
+            "v": "毁灭世界的男人"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "6月6日『人工生命』/9月11日『形态』"
+      },
+      {
+        "key": "身高",
+        "value": "157cm→183cm『人工生命』/185cm『形态』"
+      }
+    ],
+    "stat": {
+      "comments": 5,
+      "collects": 17
+    },
+    "id": 22527,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/84/25285_crt_DUan0.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/6e/84/25285_crt_DUan0.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/6e/84/25285_crt_DUan0.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/84/25285_crt_DUan0.jpg"
+    },
+    "summary": "独特な外見に反して、性格は気さくで明るい青年だが、\r\nすぐに泣いてしまう泣き虫なところも。\r\nまた、プリンが大好きというかわいらしい一面も持つ。\r\n“謎の青年”と仲がいいようだが……。",
+    "name": "ニイナ・ミチル",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 25285,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c6/e7/31616_crt_LA1we.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c6/e7/31616_crt_LA1we.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c6/e7/31616_crt_LA1we.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c6/e7/31616_crt_LA1we.jpg"
+    },
+    "summary": "哈曼派到姬娜身边的双胞胎护卫之一（实为监视者）。姓氏来自旧吉翁总帅基连·扎比。\r\n这个角色的脸是照着高达Z的大boss希洛克画的，声优也是岛田敏。估计是剧组玩的一个小彩蛋。",
+    "name": "ニー・ギーレン",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "尼·基连"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Nee Guerin"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 31616,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/45/32442_crt_tQjGJ.jpg?r=1431331285",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a7/45/32442_crt_tQjGJ.jpg?r=1431331285",
+      "large": "https://lain.bgm.tv/pic/crt/l/a7/45/32442_crt_tQjGJ.jpg?r=1431331285",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/45/32442_crt_tQjGJ.jpg?r=1431331285"
+    },
+    "summary": "诗惠美的使魔。绿男的幼体。\r\n只有手掌大小，戴着树叶帽子。能够从身体中变出各种各样的植物，通过这些来进行治疗与支援行动。",
+    "name": "ニーちゃん",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "小尼"
+      },
+      {
+        "key": "别名",
+        "value": []
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 1
+    },
+    "id": 32442,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/7f/68/44744_crt_85CH0.jpg?r=1471856582",
+      "grid": "https://lain.bgm.tv/pic/crt/g/7f/68/44744_crt_85CH0.jpg?r=1471856582",
+      "large": "https://lain.bgm.tv/pic/crt/l/7f/68/44744_crt_85CH0.jpg?r=1471856582",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7f/68/44744_crt_85CH0.jpg?r=1471856582"
+    },
+    "summary": "ジーンの友人。フリーの記者。趣味はバイク。チョコレートが好き。",
+    "name": "ニーノ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "尼诺"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "“克洛瓦”（“クロウ”）"
+          },
+          {
+            "k": "英文名",
+            "v": "Nino"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 8,
+      "collects": 26
+    },
+    "id": 44744,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/88/f9/55293_crt_h8P9C.jpg?r=1498228104",
+      "grid": "https://lain.bgm.tv/pic/crt/g/88/f9/55293_crt_h8P9C.jpg?r=1498228104",
+      "large": "https://lain.bgm.tv/pic/crt/l/88/f9/55293_crt_h8P9C.jpg?r=1498228104",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/88/f9/55293_crt_h8P9C.jpg?r=1498228104"
+    },
+    "summary": "",
+    "name": "ニーノ父",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "尼诺的父亲"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 55293,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

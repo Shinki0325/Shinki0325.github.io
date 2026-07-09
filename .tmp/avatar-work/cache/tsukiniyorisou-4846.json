@@ -1,0 +1,64 @@
+[
+  {
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 23,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a0/61/19927_crt_KSoyg.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a0/61/19927_crt_KSoyg.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a0/61/19927_crt_KSoyg.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a0/61/19927_crt_KSoyg.jpg"
+    },
+    "summary": "对在少女时代相遇的主人公，现在仍然抱有淡淡感觉的青梅竹马。\r\n明快温柔平易近人。缺乏大小姐气质，有着上流阶层的身份，兴趣与思维却是庶民派。\r\n很喜欢开心的事情，乐观而大大咧咧的性格。无论对方是谁都毫无差别地真诚对待。\r\n属于人见人爱的类型，但却遭到上流阶层的人对其过于卑俗的行为的嘲笑。\r\n\r\n小时候是个活泼假小子，自从遇上主人公后，其少女心就觉醒了。\r\n现在依然喜欢活动身体。拥有很好的运动能力，能应付所有运动项目。\r\n女主角之中唯一一个知道唯一主人公的身份，与他共有这个秘密。",
+    "name": "柳ヶ瀬湊",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "柳之濑凑"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "やながせ みなと"
+          },
+          {
+            "k": "罗马字",
+            "v": "Yanagase Minato"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "4月23日"
+      },
+      {
+        "key": "身高",
+        "value": "154cm"
+      },
+      {
+        "key": "体重",
+        "value": "87/57/84"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://www.project-navel.com/tsukiniyorisou/index.html"
+      }
+    ],
+    "stat": {
+      "comments": 33,
+      "collects": 75
+    },
+    "id": 19927,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

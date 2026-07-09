@@ -1,0 +1,508 @@
+[
+  {
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 31,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f0/5e/16642_crt_bit4h.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f0/5e/16642_crt_bit4h.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f0/5e/16642_crt_bit4h.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f0/5e/16642_crt_bit4h.jpg"
+    },
+    "summary": "主人公の隣人で、ときどき部室を訪れてはお菓子を食べたりテレビを見たりと、思わず誤解したくなる行動を取って主人公を困惑させる。\r\n人の部屋には来るくせに、自分の部屋についてはガードが堅く、「女の子の部屋はイチゴ味の秘密がいっぱい☆」 などと言って決して中を見せようとしない。\r\n性格はつかみ所のない気分屋。それでいて、ときどき冷静な発言をすることもある。\r\n物怖じしないタイプかと思いきや、動物全般が苦手でチワワに怯える一面も。\r\n\r\n「何でアンタが私より評価されてるの？　納得いかない」",
+    "name": "小太刀凪",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "小太刀凪"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "小太刀 凪"
+          },
+          {
+            "k": "纯假名",
+            "v": "こだち なぎ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kodachi Nagi"
+          },
+          {
+            "k": "昵称",
+            "v": "KDC"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "12-31"
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      },
+      {
+        "key": "身高",
+        "value": "152.1cm"
+      },
+      {
+        "key": "体重",
+        "value": "44.8kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B88(E)/ W56/ H82"
+      }
+    ],
+    "stat": {
+      "comments": 38,
+      "collects": 195
+    },
+    "id": 16642,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/c1/1654_crt_NFdqb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c9/c1/1654_crt_NFdqb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c9/c1/1654_crt_NFdqb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/c1/1654_crt_NFdqb.jpg"
+    },
+    "summary": "九能带刀的妹妹。女子学院体操冠军，人称“黑玫瑰小太刀”。迷恋乱马，经常对乱马死缠烂打。性格卑鄙，得意技为“黑玫瑰吹雪”。与哥哥一样，根本不知道乱马有由男变女的特质。",
+    "name": "九能小太刀",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "九能小太刀"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "九能小太刀"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kunou Kodachi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      },
+      {
+        "key": "声优",
+        "value": "岛津冴子"
+      }
+    ],
+    "stat": {
+      "comments": 8,
+      "collects": 12
+    },
+    "id": 1654,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ef/90/179591_crt_0Ca3x.jpg?r=1752425253",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ef/90/179591_crt_0Ca3x.jpg?r=1752425253",
+      "large": "https://lain.bgm.tv/pic/crt/l/ef/90/179591_crt_0Ca3x.jpg?r=1752425253",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ef/90/179591_crt_0Ca3x.jpg?r=1752425253"
+    },
+    "summary": "",
+    "name": "ちび太",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "小太"
+      },
+      {
+        "key": "别名",
+        "value": []
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 179591,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/8d/103143_crt_c3q3x.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/04/8d/103143_crt_c3q3x.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/04/8d/103143_crt_c3q3x.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/8d/103143_crt_c3q3x.jpg"
+    },
+    "summary": "和宙住在同一个男生宿舍的同班同学。总是依赖宙，遇到女孩立刻伸出鼻子。",
+    "name": "野村コタロウ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "野村小太郞"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Nomura Kotaro"
+          },
+          {
+            "k": "日文名",
+            "v": "野村 コタロウ"
+          },
+          {
+            "k": "纯假名",
+            "v": "ノムラ コタロウ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Nomura Kotarō"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://www.toei-anim.co.jp/tv/digimon_ghost_game/character/people.php?char=p002"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 103143,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/4a/fc/41999_crt_3FLDT.jpg?r=1464322373",
+      "grid": "https://lain.bgm.tv/pic/crt/g/4a/fc/41999_crt_3FLDT.jpg?r=1464322373",
+      "large": "https://lain.bgm.tv/pic/crt/l/4a/fc/41999_crt_3FLDT.jpg?r=1464322373",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4a/fc/41999_crt_3FLDT.jpg?r=1464322373"
+    },
+    "summary": "",
+    "name": "小源太",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "小源太"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 41999,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ea/1f/109968_crt_i5hIx.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ea/1f/109968_crt_i5hIx.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ea/1f/109968_crt_i5hIx.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ea/1f/109968_crt_i5hIx.jpg"
+    },
+    "summary": "航祐たちの同級生で、子犬のように動き回る遊び盛りの少年。時折遊び心が過ぎて、航祐、譲から呆れられることも。",
+    "name": "小祝太志",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "小祝太志"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "こいわいたいし"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "www.hyoryu-danchi.com"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 4
+    },
+    "id": 109968,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/2e/7d/141188_crt_Y0GrK.jpg?r=1698660341",
+      "grid": "https://lain.bgm.tv/pic/crt/g/2e/7d/141188_crt_Y0GrK.jpg?r=1698660341",
+      "large": "https://lain.bgm.tv/pic/crt/l/2e/7d/141188_crt_Y0GrK.jpg?r=1698660341",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2e/7d/141188_crt_Y0GrK.jpg?r=1698660341"
+    },
+    "summary": "",
+    "name": "小牧太",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "小牧太"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "こまき ふとし"
+          },
+          {
+            "k": "罗马字",
+            "v": "komaki futoshi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 141188,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 8,
+    "gender": "male",
+    "birth_day": 10,
+    "birth_year": 1965,
+    "blood_type": 4,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/47/4d/182115_crt_4229I.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/47/4d/182115_crt_4229I.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/47/4d/182115_crt_4229I.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/47/4d/182115_crt_4229I.jpg"
+    },
+    "summary": "小胖子一名，整天都很休闲，对食物感兴趣的疯狂程度简直可用不顾一切来形容，父母也为此烦恼但奈何。\r\n为了让大家对他刮目相看，曾努力练运球、跑步。所以在体能测试时，拥有十分优异的表现；大家都很佩服他的食量，亦对他因食而不顾一切的行径吃惊，曾经为去新开的店子买鳗鱼饭而上课时间冲出校门，最后被警察发现。也曾挑战吃五人份的炒饭而获1000日元奖金。",
+    "name": "小杉太",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "小杉太"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "小杉 太"
+          },
+          {
+            "k": "纯假名",
+            "v": "こすぎ ふとし"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "1965年8月10日"
+      },
+      {
+        "key": "血型",
+        "value": "O"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 182115,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/42/f7/26516_crt_hhWBX.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/42/f7/26516_crt_hhWBX.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/42/f7/26516_crt_hhWBX.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/42/f7/26516_crt_hhWBX.jpg"
+    },
+    "summary": "赤穂藩、江戸手下的下士。\r\n活用其小巧的身体，在江戸的小巷中奔走以获取各种情报。\r\n另外很不会使剑，虽然会得寸进尺但又被江戸急进派的众人宠爱着，同时也深受安兵衛的信任。\r\n赤穂家道断绝后化身为商人，养护着病弱的姐姐。\r\n\r\n「我啊，从今天开始就是直大哥手下最大的小妹啦！」",
+    "name": "毛利小平太",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "もうり こへいた"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "职务",
+        "value": "大納戸役"
+      },
+      {
+        "key": "俸禄",
+        "value": "20石5人扶持"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 4
+    },
+    "id": 26516,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 5,
+    "gender": "male",
+    "birth_day": 9,
+    "birth_year": 1973,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b0/96/2657_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b0/96/2657_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/b0/96/2657_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b0/96/2657_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "小橋健太",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "小桥健太"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "小橋健太"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kobashi Kenta"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "1973年5月9日"
+      },
+      {
+        "key": "血型",
+        "value": "O型"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 0
+    },
+    "id": 2657,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

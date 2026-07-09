@@ -1,0 +1,523 @@
+[
+  {
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 5,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/23/8b/755_crt_W4zm1.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/23/8b/755_crt_W4zm1.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/23/8b/755_crt_W4zm1.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/23/8b/755_crt_W4zm1.jpg"
+    },
+    "summary": "既能用魔法、长得又可爱，而且还是处女\r\n希露身为奴隶，被卖了个破天荒的高价\r\n兰斯看到希露以后，努力赚到钱，把她买了下来。自由都市有非常高的奴隶税，兰斯每年都非常规矩地交税\r\n\r\n身为兰斯的奴隶，与兰斯一同经历了众多冒险\r\n粉红色的蓬松发型是其标志\r\n打扫洗衣做饭家庭副业，以及魔法攻击与治疗等均由她负责",
+    "name": "シィル・プライン",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "希露·普莱因"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Sill Plain"
+          },
+          {
+            "k": "罗马字",
+            "v": "Shiiru Purain"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "GI1000年3月5日"
+      },
+      {
+        "key": "身高",
+        "value": "156cm"
+      },
+      {
+        "key": "体重",
+        "value": "46kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B83/W58/H85"
+      },
+      {
+        "key": "レベル / 才能限界",
+        "value": "LV10～40程度 / LV80"
+      },
+      {
+        "key": "技能LV(傾向)",
+        "value": "魔法LV1、神魔法LV1、家事LV0"
+      }
+    ],
+    "stat": {
+      "comments": 80,
+      "collects": 332
+    },
+    "id": 755,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/fb/0e/184635_crt_2c4Cm.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/fb/0e/184635_crt_2c4Cm.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/fb/0e/184635_crt_2c4Cm.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fb/0e/184635_crt_2c4Cm.jpg"
+    },
+    "summary": "蕈亚人族魅魔店“带领男人的蘑菇前往天国…”的小姐，由店长蕾西精准看出客人性癖并为其挑选适合的蘑菇娘。挑选给史坦克的是体内湿湿滑滑的滑菇女孩们。",
+    "name": "シィル／なめこA、B",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "汁汁／滑菇A、B"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": [
+          {
+            "v": "https://zh.wikipedia.org/wiki/%E5%BC%82%E7%A7%8D%E6%97%8F%E9%A3%8E%E4%BF%97%E5%A8%98%E8%AF%84%E9%89%B4%E6%8C%87%E5%8D%97#%E9%AD%85%E9%AD%94%E5%BA%97%E5%BA%97%E9%95%B7"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 184635,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/17/2c/139282_crt_6eAt7.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/17/2c/139282_crt_6eAt7.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/17/2c/139282_crt_6eAt7.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/17/2c/139282_crt_6eAt7.jpg"
+    },
+    "summary": "気まぐれでワガママな女の子。\r\nしかも、プライドで塗り固めた勝ち気さを誇っている。\r\nオシャレ好きで、綺麗にしてあげておくと機嫌が良いらしい。\r\n家事全般は得意で、メイドさんとしての素質は十分だが、常識が全く無い…\r\nこんな彼女を立派なメイドさんに躾けられるのだろうか？",
+    "name": "那智シィル",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Nachi Seale"
+          },
+          {
+            "k": "纯假名",
+            "v": "なち　しぃる"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "8/1"
+      },
+      {
+        "key": "血型",
+        "value": "B型"
+      },
+      {
+        "key": "身高",
+        "value": "164cm"
+      },
+      {
+        "key": "BWH",
+        "value": "88/58/88"
+      },
+      {
+        "key": "好きなもの",
+        "value": "ふぐの白子焼き"
+      },
+      {
+        "key": "嫌いなもの",
+        "value": "グリンピース"
+      },
+      {
+        "key": "CV",
+        "value": "さわたり由衣"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 139282,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/20/38/155873_crt_AG8zF.jpg?r=1715488769",
+      "grid": "https://lain.bgm.tv/pic/crt/g/20/38/155873_crt_AG8zF.jpg?r=1715488769",
+      "large": "https://lain.bgm.tv/pic/crt/l/20/38/155873_crt_AG8zF.jpg?r=1715488769",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/20/38/155873_crt_AG8zF.jpg?r=1715488769"
+    },
+    "summary": "数多の不幸を背負い続けている魔法少女。生まれてすぐに孤児となり、以来、過酷な人生を歩むことに。図らずとも他人の悩みを知る能力を持ってしまったが故に、その悩みを自分の苦しみとして夢の中で体験してしまうという苦難に苛まれている。",
+    "name": "シィ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "思"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "Shii"
+          },
+          {
+            "k": "日文名",
+            "v": "思惟"
+          },
+          {
+            "k": "纯假名",
+            "v": "しゆい"
+          },
+          {
+            "k": "罗马字",
+            "v": "Shiyui"
+          },
+          {
+            "k": "昵称",
+            "v": "C、椎"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "magireco.moe/椎"
+      },
+      {
+        "key": "人设",
+        "value": "劇団イヌカレー(泥犬)"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 155873,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/e4/08/95999_crt_PWqSs.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/e4/08/95999_crt_PWqSs.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/e4/08/95999_crt_PWqSs.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e4/08/95999_crt_PWqSs.jpg"
+    },
+    "summary": "主人公の通う高等学校の実習生。",
+    "name": "シィハン",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "引用来源",
+        "value": "http://hia.skr.jp/18/g-ydb.php"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 95999,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/81/8a/183377_crt_LB6FZ.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/81/8a/183377_crt_LB6FZ.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/81/8a/183377_crt_LB6FZ.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/81/8a/183377_crt_LB6FZ.jpg"
+    },
+    "summary": "护卫神殿光都公主的御影弓手之一。",
+    "name": "シィ・ブルアッテ・ライアー",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "希·普露亚提·莱亚"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "シィ・ブルアッテ・ライアー"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 183377,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/6e/9674_crt_w7RSb.jpg?r=1735054535",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ed/6e/9674_crt_w7RSb.jpg?r=1735054535",
+      "large": "https://lain.bgm.tv/pic/crt/l/ed/6e/9674_crt_w7RSb.jpg?r=1735054535",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/6e/9674_crt_w7RSb.jpg?r=1735054535"
+    },
+    "summary": "本名は伊佐未依衣子（イサミイイコ Iiko）。勇の実の姉であり、リクレイマーのグランチャー隊の指揮官。子供の頃から両親にパイロットとしての実験をされ性格が歪んでしまった。同じグランチャー部隊のジョナサンにそそのかされ、伊佐未ファミリーとしてではなくグランチャー部隊の女王としてクインシィ・イッサーを名乗る。",
+    "name": "クインシィ・イッサー",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Queency Itthor"
+          },
+          {
+            "k": "罗马字",
+            "v": "Quincy Issa"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 5,
+      "collects": 16
+    },
+    "id": 9674,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/03/4c/15741_crt_6NIXW.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/03/4c/15741_crt_6NIXW.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/03/4c/15741_crt_6NIXW.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/03/4c/15741_crt_6NIXW.jpg"
+    },
+    "summary": "2号機（バンシィ） \r\n \r\nオーガスタ研究所での重力下試験ののち、1号機の空間機動性能をフィードバックし調整された機体。1号機が単に「ユニコーン」と呼ばれるのに対し、本機は「バンシィ」の通称で呼ばれる。\r\n \r\n1号機同様NT-Dを搭載しているが、全身の装甲色が黒、サイコフレームの発光色が黄金色（1号機と同じくのちに緑）、La+を搭載していない点が相違している。また、頭部アンテナは一本角ではなく何本かの金色の角が一列に並ぶ鶏冠もしくは黒馬の立った鬣状となっているほか、フェイスカバーの顎部に牙のような形状が見て取れる。頭部アンテナは、デストロイモード時にライオンの鬣を思わせる形状となる。これはカーディアスが所有していたタペストリー「貴婦人と一角獣」に描かれていた神獣ユニコーンと対をなすライオンをモチーフにしたもので、ユニコーンを模した純白の装甲を持つ1号機とは対照的に禍々しい雰囲気を漂わせる。1号機で得られた空間機動データが反映されているため、大気圏内での機動性は1号機を上回る。\r\n \r\nOVA版では若干のデザイン変更が行われ、襟元の配色が金色になり、牙や爪のような意匠が追加されている。また、原作にはない追加武装「増加サイコフレーム兵装」を両腕に装備しており、デストロイモード時に展開する。追加武装は、ビーム・マグナムの特性から瞬間的な最大戦力を重視した1号機と対照的に、継戦能力に重点を置いている。\r\n \r\nパイロットは、連邦の捕虜となりオーガスタで再調整を受けたマリーダ･クルスが務める。ロンド・ベル隊の旗艦ラー・カイラムに収容されるが、調整や整備はすべてビスト財団直属のメカニックとオーガスタ研究所の者によって行われる。マリーダがジンネマンによって救出されて以降は、ゼネラル・レビルでリディ・マーセナスがパイロットを務めることとなる。 バナージとの死闘の後は、フロンタルのシナンジュを倒すため、1号機と共闘する。",
+    "name": "バンシィ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "报丧女妖高达"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "报丧"
+          },
+          {
+            "k": "英文名",
+            "v": "Rx-0 Unicorn Gundam 02 Banshee"
+          },
+          {
+            "k": "日文名",
+            "v": "ユニコーンガンダム 2号機 バンシィ"
+          }
+        ]
+      },
+      {
+        "key": "制造",
+        "value": "Anaheim Electronics,Inc."
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 21
+    },
+    "id": 15741,
+    "locked": false,
+    "type": 2,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/c0/23535_crt_hdSlA.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/6c/c0/23535_crt_hdSlA.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/6c/c0/23535_crt_hdSlA.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/c0/23535_crt_hdSlA.jpg"
+    },
+    "summary": "人间界的白金公主候选人代表，小时侯得到艾朗克(艾克王子)的救助而渴望与他重遇道谢。拥有一头蓝色长头发，发型向后梳，露出光滑的额头；顺带一提，艾朗克和古莲达也“称赞”过优希的额头。不知道如何应对义父过度的照顾。在动画初期，不知道艾朗克其实就是小时候遇见的王子，并对其存有好感。白金公主候补之一，活泼开朗却很孩子气，而且意志坚定；爱逞强、不过做事总是遇着失败。被好友丽娜评为“做事投入、执着又顽固、勇字当头；即使失败也会坚持到最后、永不退缩”，并被其视为偶像。画画功力与古莲达不相伯仲。梦想是能以17岁的姿态与王子共舞，而她的希望就靠成为白金公主才能达成。后来在妖精界对抗破坏神，艾朗克为了保护优希而受伤，破坏神侵入体内的艾朗克陷入无法治愈的危机，选择白金公主时因其余4人知道优希想救艾朗克为了让优希能以永恒三重勉的力量拯救艾朗克，纷纷放弃成为白金公主的资格，女王突然出现并告知优希许下愿望的话其余4人将会为压制永恒三重勉的力量而牺牲性命。优希不愿和其他朋友分开，也随后放弃资格，跟着四位朋友在异空间内找寻着回到人界的出口，但其余四人知道在这样下去，最痛苦的人将会是优希，同时马加赛伦说出：＂没有白金公主来分散永恒三重勉的力量的话，世界将会走向毁灭之后，四人一同决定让优希成为白金公主，也同时让优希遗忘掉和四位朋友在一起的所有回忆。得到永恒三重勉后，立即飞奔至艾朗克身边，对永恒三重勉许下愿望－让艾朗克复原，已经恢复原本生活的优希，却开始感觉身旁似乎少了什么，原本可以开开心心的拥抱艾朗克的优希，却不知为何的哭了出来，对着艾朗克哭着说要找回失去的东西的优希，五界的父亲们跟爱伦寿女王看到这情况也决定要让优希再到马加赛伦的异空间去找回＂失去的东西＂来到大法师马加赛伦的世界的优希和艾朗克，在一处遗迹内发现了歌可露最后所画下的－五人在一起的朋友图画面对这副图，留下眼泪的优希终于想起了自己＂失去的东西＂马加赛伦要求艾朗克跟优希立即离开这世界，并且说出了千年之前的前一届白金公主的遭遇，魔法界消失前，马加赛伦立即把优希和艾朗克送回人间界并且感谢优希对他所说的友谊的重要。优希似乎开始长高了。\r\n\r\n    朋友又回到优希身边。",
+    "name": "ユーシィ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "优希"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "尤丝"
+          },
+          {
+            "k": "罗马字",
+            "v": "Yuushii"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 5
+    },
+    "id": 23535,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/10/ef/35187_crt_m281i.jpg?r=1492703453",
+      "grid": "https://lain.bgm.tv/pic/crt/g/10/ef/35187_crt_m281i.jpg?r=1492703453",
+      "large": "https://lain.bgm.tv/pic/crt/l/10/ef/35187_crt_m281i.jpg?r=1492703453",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/10/ef/35187_crt_m281i.jpg?r=1492703453"
+    },
+    "summary": "亚可的室友，从东南亚来的身份不明的魔女。热衷于毒物，从蜘蛛和蛇之类的动物毒素到毒蘑菇之类的植物系毒素都有所研究。时常用亚可做试验，我行我素，毒舌。",
+    "name": "スーシィ・マンババラン",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "苏西·曼芭芭拉"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Sucy Mambavaran"
+          },
+          {
+            "k": "日文名",
+            "v": "スーシィ・マンババラン"
+          },
+          {
+            "k": "罗马字",
+            "v": "Sushi Manbabaran"
+          },
+          {
+            "k": "昵称",
+            "v": "苏西"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 43,
+      "collects": 193
+    },
+    "id": 35187,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

@@ -1,0 +1,469 @@
+[
+  {
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/8c/96/61419_crt_tHS5A.jpg?r=1726458548",
+      "grid": "https://lain.bgm.tv/pic/crt/g/8c/96/61419_crt_tHS5A.jpg?r=1726458548",
+      "large": "https://lain.bgm.tv/pic/crt/l/8c/96/61419_crt_tHS5A.jpg?r=1726458548",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8c/96/61419_crt_tHS5A.jpg?r=1726458548"
+    },
+    "summary": "原画：Na-Ga\r\nCV：田中あいみ",
+    "name": "加藤うみ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "加藤羽未"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "加藤海未"
+          },
+          {
+            "k": "第二中文名",
+            "v": "加藤海己"
+          },
+          {
+            "k": "日文名",
+            "v": "加藤 うみ"
+          },
+          {
+            "k": "纯假名",
+            "v": "かと うみ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kato Umi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "9月1日"
+      },
+      {
+        "key": "身高",
+        "value": "130cm"
+      },
+      {
+        "key": "体重",
+        "value": "29kg"
+      },
+      {
+        "key": "BWH",
+        "value": "坡度很小/稍稍有点细/唰的一下"
+      },
+      {
+        "key": "年龄",
+        "value": "12岁"
+      }
+    ],
+    "stat": {
+      "comments": 177,
+      "collects": 401
+    },
+    "id": 61419,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/07/dc/145223_crt_8Q8SI.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/07/dc/145223_crt_8Q8SI.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/07/dc/145223_crt_8Q8SI.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/07/dc/145223_crt_8Q8SI.jpg"
+    },
+    "summary": "百花の手紙に書かれていた最初の行き先である教会で、以前シスターをしていた女性。\r\n現在は教会を辞めてボランティア活動に勤しんでいる。\r\n論理的な思考の持ち主で、はっきりとした口調で話す大人の女性。\r\n要たちの旅に同行し、常に保護者としての立場でアドバイスをする。\r\n要たちをゲームの『プレイヤー』と呼ぶのに対し自分のことを『ゲームの駒』と称しているようだが、その真意とは…？",
+    "name": "加藤羽子",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "かとう うこ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 145223,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c8/ca/2073_crt_U6Rkr.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c8/ca/2073_crt_U6Rkr.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c8/ca/2073_crt_U6Rkr.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c8/ca/2073_crt_U6Rkr.jpg"
+    },
+    "summary": "",
+    "name": "加藤",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "加藤"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "加藤"
+          },
+          {
+            "k": "罗马字",
+            "v": "Katou"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 2073,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/0f/8938_crt_FzOXl.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/6e/0f/8938_crt_FzOXl.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/6e/0f/8938_crt_FzOXl.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/0f/8938_crt_FzOXl.jpg"
+    },
+    "summary": "",
+    "name": "加藤",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "加藤"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "加藤"
+          },
+          {
+            "k": "罗马字",
+            "v": "Katou"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 2
+    },
+    "id": 8938,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 12,
+    "gender": "male",
+    "birth_day": 31,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/36/67/39082_crt_745nx.jpg?r=1455766029",
+      "grid": "https://lain.bgm.tv/pic/crt/g/36/67/39082_crt_745nx.jpg?r=1455766029",
+      "large": "https://lain.bgm.tv/pic/crt/l/36/67/39082_crt_745nx.jpg?r=1455766029",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/36/67/39082_crt_745nx.jpg?r=1455766029"
+    },
+    "summary": "田中のクラスメイト。とってもおおらかな性格。\r\n運動神経がよく、サッカーが大好き。",
+    "name": "加藤",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "加藤"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "12月31日"
+      },
+      {
+        "key": "血型",
+        "value": "B型"
+      },
+      {
+        "key": "身高",
+        "value": "168cm"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 4
+    },
+    "id": 39082,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/32/98/59259_crt_S573g.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/32/98/59259_crt_S573g.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/32/98/59259_crt_S573g.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/32/98/59259_crt_S573g.jpg"
+    },
+    "summary": "藪崎の1年上。「貞子ヘアー」とソバカスが特徴で、前髪で隠れた素顔はお約束通りの美形。話し方は普段はぶっきらぼうだが素顔の時は優雅。\r\n面倒見が良く、荻上と藪崎の間を取り持ちつつ、複雑な事情を抱える漫研の均衡を保つ。大野と仲が良く、その趣味は推して知るべし。『二代目』では多忙な就活で出席率が減少。",
+    "name": "加藤",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "加藤"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "かとう"
+          },
+          {
+            "k": "罗马字",
+            "v": "Katō"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 59259,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/d3/104251_crt_x0NFf.jpg?r=1640900340",
+      "grid": "https://lain.bgm.tv/pic/crt/g/38/d3/104251_crt_x0NFf.jpg?r=1640900340",
+      "large": "https://lain.bgm.tv/pic/crt/l/38/d3/104251_crt_x0NFf.jpg?r=1640900340",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/d3/104251_crt_x0NFf.jpg?r=1640900340"
+    },
+    "summary": "幽灵。",
+    "name": "加藤",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "加藤"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 104251,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/7e/3b/136269_crt_bUiKb.jpg?r=1692804320",
+      "grid": "https://lain.bgm.tv/pic/crt/g/7e/3b/136269_crt_bUiKb.jpg?r=1692804320",
+      "large": "https://lain.bgm.tv/pic/crt/l/7e/3b/136269_crt_bUiKb.jpg?r=1692804320",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7e/3b/136269_crt_bUiKb.jpg?r=1692804320"
+    },
+    "summary": "宅配便の配達員として潜伏する忍者。キャリア（中忍以上）らしい。九郎に「忍務」を持ってくる。",
+    "name": "加藤",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "加藤"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "kato"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://under-ninja.jp/character/kato/"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 1
+    },
+    "id": 136269,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/e9/18/152197_crt_W3YZ3.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/e9/18/152197_crt_W3YZ3.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/e9/18/152197_crt_W3YZ3.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e9/18/152197_crt_W3YZ3.jpg"
+    },
+    "summary": "",
+    "name": "加藤さん",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "加藤"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 152197,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/9e/20/158127_crt_xNy2Q.jpg?r=1716577037",
+      "grid": "https://lain.bgm.tv/pic/crt/g/9e/20/158127_crt_xNy2Q.jpg?r=1716577037",
+      "large": "https://lain.bgm.tv/pic/crt/l/9e/20/158127_crt_xNy2Q.jpg?r=1716577037",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9e/20/158127_crt_xNy2Q.jpg?r=1716577037"
+    },
+    "summary": "",
+    "name": "加藤",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "加藤"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 158127,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

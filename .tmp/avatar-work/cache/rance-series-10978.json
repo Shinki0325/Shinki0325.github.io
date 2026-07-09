@@ -1,0 +1,491 @@
+[
+  {
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 9,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/98/1d/32883_crt_W4wnr.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/98/1d/32883_crt_W4wnr.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/98/1d/32883_crt_W4wnr.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/98/1d/32883_crt_W4wnr.jpg"
+    },
+    "summary": "元カスタム四魔女の一人。水の使い手。魔導師ラギシスの私塾で育てられたが、フィールの指輪によって力を失った魔法使い*1。才能はAクラス。\r\n力を失ってからは本来好きだった機械工作や研究活動に没頭し、その類まれな才能を開花させる。世界の常識を覆す様々な兵器(チューリップシリーズ)等を開発し続けている天才技術者。兵器開発以外にも、学術的興味をかき立てるような事柄への好奇心は非常に強い。メインウェポンはチューリップ1号。",
+    "name": "マリア・カスタード",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "玛丽亚·卡斯塔德"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "玛利亚·卡斯塔多"
+          },
+          {
+            "k": "英文名",
+            "v": "Maria Custard"
+          },
+          {
+            "k": "罗马字",
+            "v": "Maria Kasutādo"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "GI999年9月8日"
+      },
+      {
+        "key": "身高",
+        "value": "158cm→160cm"
+      },
+      {
+        "key": "体重",
+        "value": "49kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B85 / W59 / H88"
+      },
+      {
+        "key": "レベル / 才能限界",
+        "value": "Lv20 / Lv40"
+      },
+      {
+        "key": "技能LV(傾向)",
+        "value": "機械2、魔法1"
+      }
+    ],
+    "stat": {
+      "comments": 17,
+      "collects": 51
+    },
+    "id": 32883,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 24,
+    "birth_year": 1987,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/e6/2413_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/72/e6/2413_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/72/e6/2413_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/e6/2413_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "マリア",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "玛丽亚"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "マリア"
+          },
+          {
+            "k": "罗马字",
+            "v": "Maria"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "1987-12-24"
+      },
+      {
+        "key": "身高",
+        "value": "158cm"
+      },
+      {
+        "key": "体重",
+        "value": "42kg"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 36,
+      "collects": 161
+    },
+    "id": 2413,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c8/0b/4694_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c8/0b/4694_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c8/0b/4694_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c8/0b/4694_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "まりあ",
+    "infobox": [
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "まりあ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Maria"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 4694,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/1b/31/13442_crt_ffj4w.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/1b/31/13442_crt_ffj4w.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/1b/31/13442_crt_ffj4w.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1b/31/13442_crt_ffj4w.jpg"
+    },
+    "summary": "",
+    "name": "マリア",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "玛利亚"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Maria"
+          },
+          {
+            "k": "日文名",
+            "v": "マリア"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "血型",
+        "value": "AB型"
+      },
+      {
+        "key": "身高",
+        "value": "168 cm"
+      },
+      {
+        "key": "体重",
+        "value": "85 kg（暗器含む）"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 39
+    },
+    "id": 13442,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/e0/38/18063_crt_4Zaw1.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/e0/38/18063_crt_4Zaw1.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/e0/38/18063_crt_4Zaw1.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e0/38/18063_crt_4Zaw1.jpg"
+    },
+    "summary": "",
+    "name": "マリア",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "168cm"
+      },
+      {
+        "key": "体重",
+        "value": "52kg"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 18063,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/48/8c/23229_crt_f44F5.jpg?r=1401228620",
+      "grid": "https://lain.bgm.tv/pic/crt/g/48/8c/23229_crt_f44F5.jpg?r=1401228620",
+      "large": "https://lain.bgm.tv/pic/crt/l/48/8c/23229_crt_f44F5.jpg?r=1401228620",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/48/8c/23229_crt_f44F5.jpg?r=1401228620"
+    },
+    "summary": "女魔導師。容姿こそ男の目を惹く淑やかな美女だが、侮ると痛い目を見る実力の持ち主。生真面目かつ潔癖で、争いを好まない性格。\r\n    シナリオ前半で囚われの身となった際、アストラルに強引に抱かれてしまう。アダルトアニメ版ではそのことを特に嫌悪しており、前半終了間際にブチ切れる。",
+    "name": "マリア",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Maria"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 9,
+      "collects": 21
+    },
+    "id": 23229,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/74/ba/28969_crt_JyuuO.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/74/ba/28969_crt_JyuuO.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/74/ba/28969_crt_JyuuO.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/74/ba/28969_crt_JyuuO.jpg"
+    },
+    "summary": "本作の主人公。通称“マリアの森”に住む魔女。外見は少女だが強大な魔力を持ち、サキュバスをはじめ様々な異形の物を使役したり空を飛んだりする。箒や杖ではなく、2本歯のピッチフォークを使用する。戦争と、戦争を止めようとしないカトリック教会を嫌い、“マリアの森”に射ち込まれる矢文の依頼により夢魔を放って戦場そのものを消滅させてしまうため、同じような仕事を割り切ってやっている他の魔女達からは厄介者扱いされている。外見のイメージを気にしたり、何時でも処女など棄てられる（欲しけりゃ犬にでもくれてやる）と強がったり、何かにつけて逆上したりと性格も子供っぽい。\r\n強大な魔力をもって人の世の理（戦争）に介入するという天界の方針に沿わない行動のため、大天使ミカエルに目を付けられ、制裁として純潔（処女）を失ったとき、魔女としての能力も失う（世界の平和や幸福と自分の幸福や快楽を天秤にかけなければならない）ようにされてしまった。また、人前で魔力を使うことも禁止されており、その際にはミカエルの放つ槍により天に帰されることになっている。\r\n---\r\n住在森林里的魔女。\r\n虽然被教会称为异端，但在暗中却受到人们的仰慕。\r\n她并不只是会调合药物，还能够运用强大的魔力驱使梦魔或龙。\r\n这份力量主要被她用来阻止她所厌恶的战争以及争斗。\r\n处女。",
+    "name": "マリア",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "玛利亚"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 8,
+      "collects": 42
+    },
+    "id": 28969,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d2/14/31583_crt_1yFf3.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d2/14/31583_crt_1yFf3.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/d2/14/31583_crt_1yFf3.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d2/14/31583_crt_1yFf3.jpg"
+    },
+    "summary": "第四话中玻璃工厂的女工",
+    "name": "マリア",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "玛丽亚"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "真理亞"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 31583,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/24/5d/37516_crt_28l8q.jpg?r=1450500369",
+      "grid": "https://lain.bgm.tv/pic/crt/g/24/5d/37516_crt_28l8q.jpg?r=1450500369",
+      "large": "https://lain.bgm.tv/pic/crt/l/24/5d/37516_crt_28l8q.jpg?r=1450500369",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/24/5d/37516_crt_28l8q.jpg?r=1450500369"
+    },
+    "summary": "",
+    "name": "マリア",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "玛丽亚"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Maria"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 7,
+      "collects": 16
+    },
+    "id": 37516,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 11,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/af/38434_crt_rQkx1.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a5/af/38434_crt_rQkx1.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a5/af/38434_crt_rQkx1.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/af/38434_crt_rQkx1.jpg"
+    },
+    "summary": "ファニア出身の、奴隷の少女。\r\n奴隷商館でさまよっている最中にカナミと出会うが――？\r\n「……私はマリアといいます。名前はマリアです」",
+    "name": "マリア",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "玛利亚"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Maria"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "9月11日"
+      },
+      {
+        "key": "身高",
+        "value": "150～155cm（ディアと同じくらいだが、少しマリアの方が低い）"
+      }
+    ],
+    "stat": {
+      "comments": 12,
+      "collects": 21
+    },
+    "id": 38434,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

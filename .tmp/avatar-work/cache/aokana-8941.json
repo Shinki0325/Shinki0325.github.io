@@ -1,0 +1,517 @@
+[
+  {
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 20,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/6a/28/22882_crt_8a6YS.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/6a/28/22882_crt_8a6YS.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/6a/28/22882_crt_8a6YS.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6a/28/22882_crt_8a6YS.jpg"
+    },
+    "summary": "本土から四島列島にある久奈島に引っ越してきた女の子。主人公達と違い「フライングサーカス」が盛んな\r\n福富島のマンモス校に通う。本土では比較的盛んに「フライングサーカス」が行われていた学校に通っていた\r\n事もあり、彼女はその経験者である。\r\n　自分の気持ちに素直になれない意地っ張りな性格で、よく他人に強く当たっている。常に凛としてふるまうしっかり者だが、大好きな可愛いものを前にするとつい気がゆるんでしまう。新ビジュアルにおいてはかなり凛々しい。\r\n日記を書く事が趣味で、ブログをこっそり開設している。メールなどの文章を口に出して読む癖がある。\r\n　料理もそこそこ得意で、肉料理オムレツが得意。因みに主人公の日向晶也とはご近所同士。\r\n\r\nEXTRA1：\r\n高藤学園に通う、晶也の家のお隣さん。\r\n真白とはスピーダー同盟を通じて、お互いの家を行き来する仲に。\r\n\r\n親友として真白の恋を応援する。",
+    "name": "市ノ瀬莉佳",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "市之濑莉佳"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "市ノ瀬 莉佳"
+          },
+          {
+            "k": "纯假名",
+            "v": "いちのせ りか"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "12月20日"
+      },
+      {
+        "key": "身高",
+        "value": "152cm"
+      },
+      {
+        "key": "体重",
+        "value": "45kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B81/W55/H82"
+      },
+      {
+        "key": "所属",
+        "value": "高藤学園 福留島分校 1年"
+      },
+      {
+        "key": "趣味",
+        "value": "日記を書く事(ブログ)"
+      },
+      {
+        "key": "好きな食べ物",
+        "value": "肉全般、アイスクリーム"
+      },
+      {
+        "key": "飛行スタイル",
+        "value": "スピーダー"
+      }
+    ],
+    "stat": {
+      "comments": 62,
+      "collects": 135
+    },
+    "id": 22882,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/8b/95/35029_crt_F0odW.jpg?r=1439935036",
+      "grid": "https://lain.bgm.tv/pic/crt/g/8b/95/35029_crt_F0odW.jpg?r=1439935036",
+      "large": "https://lain.bgm.tv/pic/crt/l/8b/95/35029_crt_F0odW.jpg?r=1439935036",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8b/95/35029_crt_F0odW.jpg?r=1439935036"
+    },
+    "summary": "理化学研究所に在籍していた物理学者。若き俊英としてその才能を見込まれ、高千穂に引き抜かれる。高千穂とは協力関係にあるが、自身の理論を実証させることにしか興味が無い野心家である",
+    "name": "市ノ瀬",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "市之濑"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "いちのせ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Ichinose"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "wiki"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 35029,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/82/74/118921_crt_E5YeA.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/82/74/118921_crt_E5YeA.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/82/74/118921_crt_E5YeA.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/82/74/118921_crt_E5YeA.jpg"
+    },
+    "summary": "",
+    "name": "市ノ瀬",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 118921,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 2,
+    "gender": "male",
+    "birth_day": 22,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/ce/17919_crt_BfVBW.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/38/ce/17919_crt_BfVBW.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/38/ce/17919_crt_BfVBW.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/ce/17919_crt_BfVBW.jpg"
+    },
+    "summary": "茶色短发配有蓝色眼瞳，脸上有刺青。\r\n虽然是个长得英俊的美少年，思想却极为消极。\r\n因为有被周遭的人欺凌的过去，所以不擅于跟不信任的人类相处。\r\n即使共同乘船，也很少在公用地方出现。\r\n能力是操作‘水’。但由于身体承受不了完整的能力，所以一部分能力被暁人夺走了。\r\n恋愛テーマ：渇望",
+    "name": "市ノ瀬千里",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "市之濑千里"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "市ノ瀬千里"
+          },
+          {
+            "k": "罗马字",
+            "v": "Ichinose Senri"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "2月22日"
+      },
+      {
+        "key": "血型",
+        "value": "B型"
+      },
+      {
+        "key": "身高",
+        "value": "165cm"
+      },
+      {
+        "key": "星座",
+        "value": "双鱼座"
+      },
+      {
+        "key": "年龄",
+        "value": "16岁"
+      }
+    ],
+    "stat": {
+      "comments": 6,
+      "collects": 13
+    },
+    "id": 17919,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f7/87/31090_crt_JoS5f.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f7/87/31090_crt_JoS5f.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f7/87/31090_crt_JoS5f.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f7/87/31090_crt_JoS5f.jpg"
+    },
+    "summary": "最初に相談を受ける住人で、雅と同じマンションに住んでいる。\r\nふわっとした雰囲気を持っており、人懐っこくてお人好し。\r\n家事全般をそつなくこなし、料理が得意。 でも慌てると少しドジになる。\r\nお願いされると断れず、よく貧乏くじを引くことになる。\r\n\r\n人の役立ちたいという気持ちが強く、ボランティア活動に積極的に参加している。\r\n趣味はテニスで、近所のサークルでは無償でコーチもしている。\r\n自己管理ができないタイプではなく、対価を正当に請求できないタイプの貧乏さん。\r\n見かねた雅に、アシスタントして雇われることになる。\r\n\r\n「わたし、困っている人がいるとほっとけないんです」",
+    "name": "市ノ瀬雪",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "市ノ瀬 雪"
+          },
+          {
+            "k": "纯假名",
+            "v": "いちのせ ゆき"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "BWH",
+        "value": "B83（C）/ W61/ H86"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 4
+    },
+    "id": 31090,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/34/d2/45664_crt_fZlGu.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/34/d2/45664_crt_fZlGu.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/34/d2/45664_crt_fZlGu.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/34/d2/45664_crt_fZlGu.jpg"
+    },
+    "summary": "眼鏡女教師。24才。藤ノ宮学園音楽教師。\r\n厳しい先生。美しいが近づきがたい雰囲気を持つ、眼鏡の爆乳女教師。\r\n\r\n主人公が瑛里華と肉体関係にある写真を見せて脅迫。\r\n「先生の玩具になって」と要求する。しかし、その言葉の真意には裏はなく、\r\nただ純粋にセックスの相手として彼を求めているだけなのだが、底無しの彼女の性欲に付き合わせることになる。\r\nエロだけかと思いきや、主人公に手料理をご馳走してくれる側面もあったりする。\r\nそんな魔性と母性が入り交じった女性。 \r\n\r\n気に入った相手とは、徹底的にセックスし、徹底的に母性を与える、\r\nというのが性格らしい。",
+    "name": "市ノ瀬沙夜香",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "いちのせ さやか"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "163.0㎝"
+      },
+      {
+        "key": "体重",
+        "value": "54㎏"
+      },
+      {
+        "key": "BWH",
+        "value": "B：101㎝（Iカップ）/W：61㎝/H：91㎝"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 20
+    },
+    "id": 45664,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/3a/39/61598_crt_OnOW1.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/3a/39/61598_crt_OnOW1.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/3a/39/61598_crt_OnOW1.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3a/39/61598_crt_OnOW1.jpg"
+    },
+    "summary": "主人公の妹で、コスプレ好きの兄を嫌悪している。その反面、学園で見せる恰好良くて辣腕を振るう兄は頼り甲斐があって好きなタイプ。\r\nだが、自分に対しては変態的な本性しか見せない兄に対して苛立ちと嫌悪を抱いている。\r\n水泳部に所属していて、かなり期待されている選手。\r\nゲーム開始時は無自覚だが、精液の臭いや手触りで性的欲求のスイッチが入ってしまう性癖の持ち主で、顔射や口内射精、精液を飲み込むなどの行為でイってしまう。\r\n\r\n家事はあまり得意ではなく、食事当番の日はレトルトやインスタント中心のメニューが多い。\r\n掃除は、不必要なものはどんどん捨てていくためゴミ屋敷にはならないものの、兄の趣味のグッズも容赦なく捨てるためタチが悪い。\r\n\r\n「妹相手になにしてんのよっ!! このバカっ！変態兄貴っ!!」",
+    "name": "市ノ瀬遥",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "市ノ瀬 遥"
+          },
+          {
+            "k": "纯假名",
+            "v": "いちのせ はるか"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "体型",
+        "value": "引き締まったメリハリのある体型　Dカップ美乳"
+      },
+      {
+        "key": "特徴",
+        "value": "元気系美少女／猫かぶりで裏表あり"
+      },
+      {
+        "key": "フェチ属性",
+        "value": "精液で発情してしまう"
+      },
+      {
+        "key": "性感帯",
+        "value": "胸・乳首／髪・頭（撫でられる等ソフトなタッチ）"
+      },
+      {
+        "key": "男性経験",
+        "value": "なし（処女）"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 4
+    },
+    "id": 61598,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/d3/103306_crt_fIEKF.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/7a/d3/103306_crt_fIEKF.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/7a/d3/103306_crt_fIEKF.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/d3/103306_crt_fIEKF.jpg"
+    },
+    "summary": "アブノーマル科3年生。実家はもともと武道場をしており“ボディーガードにもなる愛人”を目指す特待生として、特別な教育を受けている。同姓同名の夏秋(なつき)とは仲がいい。\r\n　　「相手が男だからといって、嘘はつけない。好きだ」",
+    "name": "市ノ瀬夏秋",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "市之濑夏秋"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "いちのせ かしゅう"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "wikiwiki.jp/blgame/愛と欲望は学園で～華麗なる夜の舞踏会～?word=愛と欲望は学園で"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 103306,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/eb/aa/103307_crt_3HHJJ.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/eb/aa/103307_crt_3HHJJ.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/eb/aa/103307_crt_3HHJJ.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/eb/aa/103307_crt_3HHJJ.jpg"
+    },
+    "summary": "フルブルーム学園の清掃員。人前では明るく元気だが、実は独りが苦手の寂しがり屋。本当はアブノーマル科に入学するはずだったのに、手違いで同姓同名の夏秋(かしゅう)と入れ替わったという過去がある。\r\n　　「別にあんたが卒業したって平気だぜ」",
+    "name": "市ノ瀬夏秋",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "市之濑夏秋"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "いちのせ なつき"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "wikiwiki.jp/blgame/愛と欲望は学園で～華麗なる夜の舞踏会～?word=愛と欲望は学園で"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 103307,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/2d/c1/145723_crt_t0tZ0.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/2d/c1/145723_crt_t0tZ0.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/2d/c1/145723_crt_t0tZ0.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2d/c1/145723_crt_t0tZ0.jpg"
+    },
+    "summary": "種族：魔族\r\n\r\n地下に広がる巨大国家、魔族の国の第一王位継承者。\r\nが、父である先代 の魔王が亡くなり跡目争いが勃発した際、意地悪な叔母に言葉巧みに騙され、地下牢へ幽閉されてしまう。\r\n常に明るく、たまに落ち込む事はあれど絶対にくじけない前向きで明るい性格。幼くして幽閉されたせいか、基本的には世間知らずのお姫様。\r\n\r\nそんなある日の事、床に突如として表れた召喚ゲートによって地上世界に飛ばされてしまう。\r\nしかも飛ばされた先は、召喚術を行っていた主人公・真一の部屋。\r\n突然のことにワタワタしている間に、真一の使い魔にされてしまう。\r\n\r\n「自由になったらぜったいに殺すからな！　ホントに、ホントだぞ！\r\n　それまでは、私はお前のファミリアだ。ご奉仕するから覚悟しろ」",
+    "name": "イナルナ・パム・バーミリオン",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "市ノ瀬パム"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 145723,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

@@ -13,6 +13,19 @@ describe("site shell config", () => {
     );
     expect("apiBaseUrl" in siteShell.music).toBe(false);
     expect(siteShell.announcements.length).toBeGreaterThan(0);
+    expect(siteShell.homeBackground.videoSrc).toBe("/uploads/backgrounds/home-loop-h264.mp4");
+  });
+});
+
+describe("site background config", () => {
+  it("keeps homepage video config separate from non-home background images", async () => {
+    const source = await import("node:fs/promises").then((fs) =>
+      fs.readFile("src/components/chrome/SiteBackground.astro", "utf8")
+    );
+
+    expect(source).toContain("homeBackground.videoSrc");
+    expect(source).toContain("homeBackground.poster");
+    expect(source).toContain("const nonHomeBackgroundImages = isHome ? [] : siteShell.backgroundImages");
   });
 });
 

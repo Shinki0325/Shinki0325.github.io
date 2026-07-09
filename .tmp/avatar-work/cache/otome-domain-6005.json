@@ -1,0 +1,502 @@
+[
+  {
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/e4/64/38476_crt_Qirx8.jpg?r=1674289859",
+      "grid": "https://lain.bgm.tv/pic/crt/g/e4/64/38476_crt_Qirx8.jpg?r=1674289859",
+      "large": "https://lain.bgm.tv/pic/crt/l/e4/64/38476_crt_Qirx8.jpg?r=1674289859",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e4/64/38476_crt_Qirx8.jpg?r=1674289859"
+    },
+    "summary": "大财阀的大小姐，失去亲人的凑的监护人。因为小时候被身为女僕的凑的祖母带大，所以因缘际会收留了凑。\r\n既是学生，也是老家经营的女校的理事长。虽然收留的是男孩子，但因为嫌麻烦，所以让凑穿女装上自己家的学校。\r\n\r\n清秀又美丽的高岭之花……虽然她这样假装，但实际上在各方面都少根筋，是个笨手笨脚的女孩子。\r\n怕生、迟钝，又是个路痴，放着不管实在令人不安。在宿舍裡跟凑同房。",
+    "name": "西園寺風莉",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "西园寺风莉"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "西園寺 風莉"
+          },
+          {
+            "k": "纯假名",
+            "v": "さいおんじ かざり"
+          },
+          {
+            "k": "罗马字",
+            "v": "Saionji Kazari"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "12月7日（射手座）"
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      },
+      {
+        "key": "身高",
+        "value": "155cm"
+      },
+      {
+        "key": "BWH",
+        "value": "79 / 58 / 82"
+      },
+      {
+        "key": "引用来源",
+        "value": "qualia.clearrave.co.jp/character/chara01.html"
+      }
+    ],
+    "stat": {
+      "comments": 28,
+      "collects": 136
+    },
+    "id": 38476,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/e0/c2/12863_crt_612fc.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/e0/c2/12863_crt_612fc.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/e0/c2/12863_crt_612fc.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e0/c2/12863_crt_612fc.jpg"
+    },
+    "summary": "瞄准九郎身体内寄宿的“变若水”的妖怪。\r\n经常和另一个妖怪・クニミツ在一起行动，发挥着司令官的作用。\r\n性格虽然轻浮，但言辞用语都很认真，完全和外表不符的男人。\r\n\r\n【人类这种东西是不会明白自己的底线的。特别是对自己的欲望。】",
+    "name": "西園寺",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "西园寺"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "西園寺"
+          },
+          {
+            "k": "纯假名",
+            "v": "さいおんじ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Saionji"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "妖怪!!"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 12863,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 10,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/8c/7b/42285_crt_QM5z5.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/8c/7b/42285_crt_QM5z5.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/8c/7b/42285_crt_QM5z5.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8c/7b/42285_crt_QM5z5.jpg"
+    },
+    "summary": "",
+    "name": "西園寺",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "6月10日"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "身高",
+        "value": "159cm"
+      }
+    ],
+    "stat": {
+      "comments": 4,
+      "collects": 9
+    },
+    "id": 42285,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/25/88/58941_crt_PZtFp.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/25/88/58941_crt_PZtFp.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/25/88/58941_crt_PZtFp.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/25/88/58941_crt_PZtFp.jpg"
+    },
+    "summary": "ルイつきの執事。\r\n悪の秘密結社BO団の幹部。\r\n常にBO団総帥であるルイの傍らに控える非の打ち所のない老執事。\r\n主人公や優香、延彦の監督役。\r\n素手でもゆるキャラ型パワードスーツと互角以上に渡り合うツワモノ。\r\nその博識は最新の世界情勢からエロ方面まで深く広く、主人公にとっては仕事でもエロでも師匠となる。",
+    "name": "西園寺",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "西园寺"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "さいおんじ"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "http://www.alcot.biz/product/naka/page_ch/ch_10.html"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 0
+    },
+    "id": 58941,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/8c/c4/137707_crt_J9Jx4.jpg?r=1694229585",
+      "grid": "https://lain.bgm.tv/pic/crt/g/8c/c4/137707_crt_J9Jx4.jpg?r=1694229585",
+      "large": "https://lain.bgm.tv/pic/crt/l/8c/c4/137707_crt_J9Jx4.jpg?r=1694229585",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8c/c4/137707_crt_J9Jx4.jpg?r=1694229585"
+    },
+    "summary": "",
+    "name": "西園寺",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "西园寺"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 137707,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "",
+      "grid": "",
+      "large": "",
+      "medium": ""
+    },
+    "summary": "",
+    "name": "西園寺",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "西园寺"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 194238,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/87/b3/201418_crt_6NpN5.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/87/b3/201418_crt_6NpN5.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/87/b3/201418_crt_6NpN5.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/87/b3/201418_crt_6NpN5.jpg"
+    },
+    "summary": "",
+    "name": "西園寺",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 0
+    },
+    "id": 201418,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/68/e9/423_crt_mAz0p.jpg?r=1459666783",
+      "grid": "https://lain.bgm.tv/pic/crt/g/68/e9/423_crt_mAz0p.jpg?r=1459666783",
+      "large": "https://lain.bgm.tv/pic/crt/l/68/e9/423_crt_mAz0p.jpg?r=1459666783",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/68/e9/423_crt_mAz0p.jpg?r=1459666783"
+    },
+    "summary": "与母亲同住在家庭公寓。和刹那则是青梅竹马且是异母姐妹。是主要女主角之一。因其明亮的性格所以是气氛制造者。在男性之间拥有极高人气，但拒绝所有人的告白，且十分直截了当。对诚有秘密的感情，为了得到接近诚的借口而和他人调位坐在诚的旁边（原本是刹那的座位）。 \r\n在诚与言叶交往之前，与诚已亲近到可以直接称呼对方的名字，但诚这时没有把她当作为“一个女孩”。其后自称随意地看到诚手机的待机图片并觉得抱歉，其后安排言叶和诚之间的约会。但是，其原因是为了自己能接近诚，而诚在没有慎重考虑后轻易答应。 \r\n当初是在诚的背后作为支援并周旋在诚和言叶之间，而令他们一起共进午餐亦帮助他们发展关系，其后与言叶交谈后知道诚和言叶互相对对方有意思并且言叶已接受了诚的告白，这对世界来说都是预计以外的事。 \r\n其后为二人理应顺利的发展，世界不断抑制自己的感情，而在帮助诚约会言叶后吻了诚当作对自己的报答，但令这自己一手安排的关系和她本身的处境变得不正常。 \r\n于‘Summer Days’中登场，但其处境与本作相反变成坏的，另外成为攻略对象以外的角色。\r\n\r\n姓氏来自明治时代政坛元老，第12、14任日本首相西园寺公望",
+    "name": "西園寺世界",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "西园寺世界"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "さいおんじせかい"
+          },
+          {
+            "k": "罗马字",
+            "v": "Saionji Sekai"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "12月7日"
+      },
+      {
+        "key": "血型",
+        "value": "B型"
+      },
+      {
+        "key": "身高",
+        "value": "155.3cm"
+      },
+      {
+        "key": "BWH",
+        "value": "84/62/86"
+      },
+      {
+        "key": "声优",
+        "value": "河原木志穗"
+      }
+    ],
+    "stat": {
+      "comments": 77,
+      "collects": 179
+    },
+    "id": 423,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 8,
+    "gender": "male",
+    "birth_day": 25,
+    "birth_year": null,
+    "blood_type": 4,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/1f/dc/512_crt_fL7W8.jpg?r=1445739726",
+      "grid": "https://lain.bgm.tv/pic/crt/g/1f/dc/512_crt_fL7W8.jpg?r=1445739726",
+      "large": "https://lain.bgm.tv/pic/crt/l/1f/dc/512_crt_fL7W8.jpg?r=1445739726",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1f/dc/512_crt_fL7W8.jpg?r=1445739726"
+    },
+    "summary": "年齡：17\r\n星座：處女座\r\n薔薇：綠色\r\n\r\n學生會副會長，劍道部主將。是歐蒂娜之前的薔薇新娘的主人。雖然對玩弄女性非常拿手，但知情者就知道他背地裏是個蠢材。基於令人難以理解的怪異思考，歐蒂娜好幾次看到他對安茜用粗，令歐蒂娜頓生反感。不過，如果把這看成是鳳曉生和安茜為了令歐蒂娜捲入事件，而要求西園寺做的一場戲，那就顯得自然不過，西園寺跟安茜交換日記就是他心跡的印證（後來日記燒毀於冬芽之手）。跟冬芽自幼相識，對他那優秀有作為的性格有很強的情意結。\r\n\r\n不相信冬芽會否定和他的友情。希望得到永恆的友情，所以加入了薔薇新娘爭奪戰。",
+    "name": "西園寺莢一",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "西园寺荚一"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "さいおんじ きょういち"
+          },
+          {
+            "k": "罗马字",
+            "v": "Saionji Kyoichi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "8月25日"
+      },
+      {
+        "key": "血型",
+        "value": "O"
+      },
+      {
+        "key": "声优",
+        "value": "草尾毅"
+      }
+    ],
+    "stat": {
+      "comments": 10,
+      "collects": 12
+    },
+    "id": 512,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 28,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/7e/a7/2120_crt_tG5AR.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/7e/a7/2120_crt_tG5AR.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/7e/a7/2120_crt_tG5AR.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7e/a7/2120_crt_tG5AR.jpg"
+    },
+    "summary": "本作のヒロイン。第1期宇宙開拓隊 (SRF) に選出されたお嬢様。エッジとは幼馴染。エッジをサポートする、カルナスの副船長。「エッジよりも船長に向いている」と言われるしっかりもので、責任感が強い。料理、特にお菓子作りが得意。\r\nエッジと同じ、フォーチュンベイビー。うなじの辺りに紋章を持つ。本人の意思に関係なく、どんな過酷な環境にも身体を適応させてしまう能力を持っている（放射能汚染や未知の感染症など）。\r\nどういうわけか、作中全裸でエッジに見られてしまうことが多い。\r\n使用武器は弓。弓を利用した遠距離からの必殺技を習得するが、紋章術は使えない（シリーズのヒロインで紋章術が使えないのは彼女のみ）。",
+    "name": "西園寺麗美",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "西园寺丽美"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Reimi Saionji"
+          },
+          {
+            "k": "纯假名",
+            "v": "レイミ・サイオンジ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Reimi Saionji"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "3月28日"
+      },
+      {
+        "key": "身高",
+        "value": "167cm"
+      },
+      {
+        "key": "体重",
+        "value": "53kg"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 7
+    },
+    "id": 2120,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

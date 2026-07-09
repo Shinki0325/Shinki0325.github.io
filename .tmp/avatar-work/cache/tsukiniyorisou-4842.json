@@ -1,0 +1,490 @@
+[
+  {
+    "birth_mon": 1,
+    "gender": "male",
+    "birth_day": 6,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/87/2b/19925_crt_SLie1.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/87/2b/19925_crt_SLie1.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/87/2b/19925_crt_SLie1.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/87/2b/19925_crt_SLie1.jpg"
+    },
+    "summary": "伪装起性別与身份，作为樱小路露娜的女仆侍候她的伪娘。\r\n面庞继承了英国美女妈妈，中性的容姿。穿女装时会使用长假发。\r\n没有受到严峻的人生际遇影响，成长为明快而积极的纯真少年。\r\n基本上是万事全能。无论是学习运动还是所有家务，全都能轻松解决的万能人。\r\n会察颜观色的、善于交际的谨慎性格，反过来看，因为活在与普通社会隔绝的地方，所以有点缺乏常识。\r\n\r\n因为一族的思虑，人生的大部分时间基本上在异国的别墅里处于近乎软禁的状态。\r\n并不是通过普通的学习机构，而是以家庭学习的形式接受一流的家庭教师阵容各种对教养的训导。\r\n另外为了让他将来成为大蔵家的秘书，除了学问以外，还让他学习范围广泛的技术与方法。\r\n擅长家政与服饰等方面也是因为这个原因。",
+    "name": "大蔵遊星",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "大藏游星"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "小仓朝日"
+          },
+          {
+            "k": "日文名",
+            "v": "大蔵 遊星"
+          },
+          {
+            "k": "纯假名",
+            "v": "おおくら ゆうせい"
+          },
+          {
+            "k": "罗马字",
+            "v": "Ookura Uisei"
+          },
+          {
+            "k": "别名",
+            "v": "小倉朝日"
+          },
+          {
+            "k": "别名纯假名",
+            "v": "こくら あさひ"
+          },
+          {
+            "k": "别名罗马字",
+            "v": "Kokura Asahi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "1月6日"
+      },
+      {
+        "key": "身高",
+        "value": "164cm"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://www.project-navel.com/tsukiniyorisou/index.html"
+      }
+    ],
+    "stat": {
+      "comments": 92,
+      "collects": 342
+    },
+    "id": 19925,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/75/61805_crt_04qCV.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/04/75/61805_crt_04qCV.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/04/75/61805_crt_04qCV.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/75/61805_crt_04qCV.jpg"
+    },
+    "summary": "第8话中，永光的跟班",
+    "name": "小倉",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "小仓"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "おくら"
+          },
+          {
+            "k": "罗马字",
+            "v": "Okura"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 61805,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/36/43/71879_crt_tk6lt.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/36/43/71879_crt_tk6lt.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/36/43/71879_crt_tk6lt.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/36/43/71879_crt_tk6lt.jpg"
+    },
+    "summary": "慎二が所属する営業部の同僚。眼鏡が特徴。凪の過呼吸の現場に居合わせた。\r\n第5巻で童貞であることが営業部社員により暴露される。市川のことを「男にやたら色目使っている」と慎二に悪口を言っていた。",
+    "name": "小倉",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "小仓康明"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "小倉康明"
+          },
+          {
+            "k": "纯假名",
+            "v": "おぐら"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 71879,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/b1/15303_crt_Yd1iz.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b8/b1/15303_crt_Yd1iz.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/b8/b1/15303_crt_Yd1iz.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/b1/15303_crt_Yd1iz.jpg"
+    },
+    "summary": "",
+    "name": "小倉真奈美",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "小仓真奈美"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "おぐら まなみ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Ogura Manami"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "AniDB"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 10
+    },
+    "id": 15303,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 11,
+    "gender": "female",
+    "birth_day": 29,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/83/9c/26191_crt_oWbhb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/83/9c/26191_crt_oWbhb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/83/9c/26191_crt_oWbhb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/83/9c/26191_crt_oWbhb.jpg"
+    },
+    "summary": "桜雛学園 2年生。 主人公のクラスメイト。\r\n趣味はネイル・ファッション・ショッピング・カラオケと、いわゆるギャル系一般女子。\r\nスレンダーながらも出るところは出ており、モデル並の体型をしている。\r\n気さくで女子間の空気を読むことに長けており、友人は多いほう。\r\n一方で男子──特にある一定の層 “オタク” には少々手厳しい。\r\n他にオタク男子がいるにもかかわらず、ライトオタである主人公を何故か目の敵にしている。\r\n普段はクラスの女子とつるんでいるが、「家の用事があるから」 と一緒に遊ぶことはあまりなく、彼女の家に行った者はいないらしい。\r\n何かを隠しているようでもあるが、彼女のオタク嫌いと関係があるのだろうか……？\r\n\r\n「ちょっと、オタがうつるから話しかけないでくれる？」",
+    "name": "小倉香菜",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "小倉 香菜"
+          },
+          {
+            "k": "纯假名",
+            "v": "おぐら かな"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "11月29日（射手座）"
+      },
+      {
+        "key": "血型",
+        "value": "B型"
+      },
+      {
+        "key": "身高",
+        "value": "159cm"
+      },
+      {
+        "key": "容姿",
+        "value": "スレンダー・美乳"
+      },
+      {
+        "key": "趣味",
+        "value": "ネイル、ショッピング、カラオケ"
+      },
+      {
+        "key": "食の傾向",
+        "value": "辛いもの好き、甘いのは普通"
+      },
+      {
+        "key": "癖",
+        "value": "指を口の前に持ってくる"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 9
+    },
+    "id": 26191,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/60/b5/40885_crt_DR1A9.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/60/b5/40885_crt_DR1A9.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/60/b5/40885_crt_DR1A9.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/60/b5/40885_crt_DR1A9.jpg"
+    },
+    "summary": "常に全力全開で生きている活発な性格。\r\n元気の象徴である幼児体型は、スクール水着の日焼け跡によりさらに強調されている。\r\n\r\n「にゃははははー！」",
+    "name": "小倉杏湖",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "おぐら あこ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "145cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B67/W51/H68"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 3
+    },
+    "id": 40885,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/cf/40/48094_crt_dPq19.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/cf/40/48094_crt_dPq19.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/cf/40/48094_crt_dPq19.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cf/40/48094_crt_dPq19.jpg"
+    },
+    "summary": "信一にとっては父の再婚相手の連れ子で、三姉妹の長女にあたる女の子。 義姉。\r\n両親が留守がちなので、大学に通いつつも義弟や妹の面倒を見る保護者的な存在。\r\n信一たちが現在通う学園の卒業生。\r\n性格は温和で優しく、おしとやかで笑顔を絶やさない。\r\nただ家族のことを第一に考えてしまうため、自身の感情を押し殺す傾向にある。\r\nそのため主体性に乏しく、周囲に流されてしまうこともしばしば。\r\n\r\n「こんな風にけんかばっかりだと、心配で行けなくなっちゃうんだからね？」",
+    "name": "小倉佳澄",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "小倉 佳澄"
+          },
+          {
+            "k": "纯假名",
+            "v": "おぐら かすみ"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 6
+    },
+    "id": 48094,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/71/4f/48095_crt_6W8B1.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/71/4f/48095_crt_6W8B1.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/71/4f/48095_crt_6W8B1.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/71/4f/48095_crt_6W8B1.jpg"
+    },
+    "summary": "父の再婚相手の連れ子で、三姉妹の次女にあたる女の子。 義妹。\r\n信一とは同級生で、クラスメイト。\r\n性格は直情型で、口よりも先に身体が動くタイプ。\r\nしばらく父親がいなかったせいか、年上の男性に憧れのようなものを持っている。\r\nそのため信一のことは同い年というよりも、ある種弟のように思っている部分がある。\r\n\r\n「しっかりしなさいよ、もう。 お姉ちゃんに言うからね」",
+    "name": "小倉里未",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "小倉 里未"
+          },
+          {
+            "k": "纯假名",
+            "v": "おぐら さとみ"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 48095,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/66/6a/48096_crt_jMtmM.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/66/6a/48096_crt_jMtmM.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/66/6a/48096_crt_jMtmM.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/66/6a/48096_crt_jMtmM.jpg"
+    },
+    "summary": "父の再婚相手の連れ子で、三姉妹の三女にあたる女の子。 義妹。\r\n信一を “お兄ちゃん” と呼び慕っている。\r\n性格は物静かで、学園などでは少し存在感が薄い。\r\n気弱な部分があって周りが庇護欲に駆られ、守ってあげたいと思わせる。\r\nしかし反面、芯が強くて自分の信念を貫き通す頑固さも持っている。\r\n\r\n「ち、違うよ……私はお兄ちゃんのこと、お兄ちゃんとして好きなだけで……」",
+    "name": "小倉優",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "小倉 優"
+          },
+          {
+            "k": "纯假名",
+            "v": "おぐら ゆう"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 2
+    },
+    "id": 48096,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/e3/e0/51628_crt_vbSVn.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/e3/e0/51628_crt_vbSVn.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/e3/e0/51628_crt_vbSVn.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e3/e0/51628_crt_vbSVn.jpg"
+    },
+    "summary": "「ウチはシュラ・ムーン。修羅に代わって、お仕置きしちゃる！」\r\n\r\n    小倉駐屯地です。特徴なんかっち？う〜ん、普通科連隊と駐屯地業務隊が駐屯しとって……ってこれは特に珍しくもないやん。地味とか言わんでくれん〜。あ、自衛隊で最初に軽装甲機動車が配備された駐屯地なんよ！ラヴやけ、ラヴ。ライトアーマーでお馴染みの……ってこれもそこまで驚くことないわー。じゃあ、そろそろアニメ見たいけ戻ってもい〜？",
+    "name": "小倉雛子",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "こくら ひなこ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 51628,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

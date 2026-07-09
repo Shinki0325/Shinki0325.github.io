@@ -1,0 +1,433 @@
+[
+  {
+    "birth_mon": 2,
+    "gender": "female",
+    "birth_day": 11,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/43/d7/19929_crt_6GA4G.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/43/d7/19929_crt_6GA4G.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/43/d7/19929_crt_6GA4G.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/43/d7/19929_crt_6GA4G.jpg"
+    },
+    "summary": "京都出身。花一般的大和撫子。温厚而柔和的性格，但关键时刻会凛然表示自己意见的外柔内刚的女性。\r\n因为养在深闺所以缺乏与年轻男性接触的机会，另外也因为心理阴影而很讨厌男性。\r\n认为主人公是同性，对他很有好感。嘴里说着想当她上京以来第一个朋友，不断地接近他。\r\n\r\n从小就嗜好茶、花、书道等多种才艺。另外，弓道也有相当的能力。\r\n总括来说，对日本所有的传统技艺拥有很深的造诣。\r\n受惠于艺术的素养，在和服裁缝这方面早已作为备受期待的年轻设计师而得到名声。",
+    "name": "花之宮瑞穂",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "花之宫瑞穗"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "はなのみや みずほ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Hananomiya Mizuha"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "2月11日"
+      },
+      {
+        "key": "身高",
+        "value": "160cm"
+      },
+      {
+        "key": "BWH",
+        "value": "90/58/89"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://www.project-navel.com/tsukiniyorisou/index.html"
+      }
+    ],
+    "stat": {
+      "comments": 10,
+      "collects": 39
+    },
+    "id": 19929,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/5c/28/12405_crt_Z1I02.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/5c/28/12405_crt_Z1I02.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/5c/28/12405_crt_Z1I02.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5c/28/12405_crt_Z1I02.jpg"
+    },
+    "summary": "为了阻止夢子征服世界而转校来的原贵族少女。\r\n有着乌黑长发、身着黑色水手服的大和抚子。\r\n谈吐措辞也是恭敬有礼的「～です」「～ます」调。\r\n由于爱国精神极端强烈，觉得本国的男子都应该成为武士。\r\n看见主人公优柔寡断就会愤怒地谴责他缺乏武士精神。",
+    "name": "花之宮亜子",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "花之宮亚子"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "158cm"
+      },
+      {
+        "key": "体重",
+        "value": "42kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B82/W54/H80"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 6
+    },
+    "id": 12405,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/40/0b/159692_crt_vZTA1.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/40/0b/159692_crt_vZTA1.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/40/0b/159692_crt_vZTA1.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/40/0b/159692_crt_vZTA1.jpg"
+    },
+    "summary": "亜子の妹。\r\n姉とは違って一人では外出も出来ないほどの箱入りだが、姉が居ないと寂しくて仕方ないので東の土地までやってくる。\r\nのほほんとした性格なので、世界征服宣言などにはあまり関心がない。\r\nそれよりも実家を離れて生き生きしている姉の姿に興味津々なお年ごろ。\r\n亜子と同じ学園の付属へ通っている。\r\n\r\n「わあ、私の人生で初めてのお兄様です」",
+    "name": "花之宮良子",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 3
+    },
+    "id": 159692,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f8/51/173570_crt_jXGZ1.jpg?r=1743699144",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f8/51/173570_crt_jXGZ1.jpg?r=1743699144",
+      "large": "https://lain.bgm.tv/pic/crt/l/f8/51/173570_crt_jXGZ1.jpg?r=1743699144",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f8/51/173570_crt_jXGZ1.jpg?r=1743699144"
+    },
+    "summary": "",
+    "name": "鈴ノ宮有花",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "铃之宫有花"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "すずのみや ゆか"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 9,
+      "collects": 6
+    },
+    "id": 173570,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/fb/3e/149911_crt_ZAVFl.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/fb/3e/149911_crt_ZAVFl.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/fb/3e/149911_crt_ZAVFl.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fb/3e/149911_crt_ZAVFl.jpg"
+    },
+    "summary": "",
+    "name": "花の魔物",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "花之魔物"
+      },
+      {
+        "key": "别名",
+        "value": []
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 0
+    },
+    "id": 149911,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f3/5a/169220_crt_4xL7D.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f3/5a/169220_crt_4xL7D.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f3/5a/169220_crt_4xL7D.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f3/5a/169220_crt_4xL7D.jpg"
+    },
+    "summary": "",
+    "name": "お花の蜜大学附属高等学校",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "花之蜜大学附属高中"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "おはなのみつだいがくふぞくこうとうがっこう"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 0
+    },
+    "id": 169220,
+    "locked": false,
+    "type": 4,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/de/6f/198644_crt_3QjET.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/de/6f/198644_crt_3QjET.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/de/6f/198644_crt_3QjET.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/de/6f/198644_crt_3QjET.jpg"
+    },
+    "summary": "",
+    "name": "花の魔法使い",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "花之魔法师"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 198644,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/52/140828_crt_T36v6.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a5/52/140828_crt_T36v6.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a5/52/140828_crt_T36v6.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/52/140828_crt_T36v6.jpg"
+    },
+    "summary": "『悪いけど、あなたの事は殺すから』\r\n\r\n先代の“お役目様”であり、剣の達人。\r\n呪いに蝕まれながらも己の剣で斬り祓ってきた。\r\nそのため、しばしば現世と異界の区別がつかなくなる。",
+    "name": "花憐",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "四之宫花怜"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "四ノ宮 花憐"
+          },
+          {
+            "k": "纯假名",
+            "v": "かれん"
+          },
+          {
+            "k": "罗马字",
+            "v": "Shinomiya Karen"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 4,
+      "collects": 3
+    },
+    "id": 140828,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/41/a5/19887_crt_WEDSl.jpg?r=1367315072",
+      "grid": "https://lain.bgm.tv/pic/crt/g/41/a5/19887_crt_WEDSl.jpg?r=1367315072",
+      "large": "https://lain.bgm.tv/pic/crt/l/41/a5/19887_crt_WEDSl.jpg?r=1367315072",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/41/a5/19887_crt_WEDSl.jpg?r=1367315072"
+    },
+    "summary": "数百年もの間、真日羽市を守る土地神として存在してきた神様。\r\n千歳春樹の不幸を拭うために彼の家に居座る事になるのだが、面白い事が好きな性格のせいかトラブルメーカーになってしまうことも多い。\r\n人を試すような事を言って反応を見るのが最近のマイブーム。\r\n何事に対しても執着心は薄いが、気になる人間にはヤキモチを焼く一面も。",
+    "name": "卯花之佐久夜姫",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "卯花之佐久夜姬"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "うのはなのさくやひめ"
+          },
+          {
+            "k": "昵称",
+            "v": "姬（公主）"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://legacy.yuzu-soft.com/tenshin/chara.html#sana"
+      }
+    ],
+    "stat": {
+      "comments": 6,
+      "collects": 59
+    },
+    "id": 19887,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/c8/20501_crt_u8uwL.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f5/c8/20501_crt_u8uwL.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f5/c8/20501_crt_u8uwL.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/c8/20501_crt_u8uwL.jpg"
+    },
+    "summary": "",
+    "name": "ラフレシアの君",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "大王花之君"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 20501,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

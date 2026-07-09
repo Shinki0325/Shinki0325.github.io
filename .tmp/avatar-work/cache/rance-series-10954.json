@@ -1,0 +1,150 @@
+[
+  {
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 3,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/cf/0a/22097_crt_l6R2O.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/cf/0a/22097_crt_l6R2O.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/cf/0a/22097_crt_l6R2O.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cf/0a/22097_crt_l6R2O.jpg"
+    },
+    "summary": "现任利萨斯女王莉雅的直属女忍者，[mask]出身于位于JAPAN关东地区的风魔忍军。在年幼的时候到大陆去游学，但在途中与朋友走散，在利萨斯被莉雅捡到后服侍于她，因此被风魔忍军视为逃忍（抜け忍）。（初期设定是在战场上为莉亚所救。）只听从莉雅的命令，负责谍报与暗杀作业。在小光诱拐事件后与兰斯成了孽缘，负责当他与女王之间的联络人。刚开始时极为讨厌与兰斯做爱，但因为莉雅的命令就是要服侍兰斯，所以无法脱离这个不幸。加奈美是兰斯十位命运中的女人（運命の女）之一。原本是一位不管任务多么困难都会泰然处之的女忍者，不过随着年纪增长开始对“普通女孩子的生活”产生憧憬。忍术方面并不大出色，但因为时常与兰斯做爱，才能限界也因此提升。如果只看才能界限，还是有十万人选一的卓越才能。伊贺忍军首领犬饲认为如果她多加努力的话可以达到中忍水准。与利萨斯红色军团副将美娜德‧西塞是好朋友。在《战国》中回到故乡JAPAN，发觉自己的忍术才能跟故乡的忍者相较之下显得微不足道。曾接受伊贺忍者首领犬饲的锻炼。在《Quest》中，接受了变成幽灵的铃女加强忍术各项才能的基础训练。[/mask]\r\n喜欢穿带有青蛙 logo 的内衣。",
+    "name": "見当かなみ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "见当加奈美"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Kentou Kanami"
+          },
+          {
+            "k": "日文名",
+            "v": "見当 かなみ"
+          },
+          {
+            "k": "纯假名",
+            "v": "けんとう かなみ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kentō Kanami"
+          },
+          {
+            "k": "昵称",
+            "v": "不幸忍者"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "GI1001年5月3日"
+      },
+      {
+        "key": "身高",
+        "value": "154 cm"
+      },
+      {
+        "key": "体重",
+        "value": "41 kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B80 / W55 / H81"
+      },
+      {
+        "key": "引用来源",
+        "value": "zh.wikipedia.org/wiki/蘭斯系列角色列表"
+      },
+      {
+        "key": "レベル / 才能限界",
+        "value": "Lv28 / Lv40"
+      },
+      {
+        "key": "技能LV(傾向)",
+        "value": "忍者Lv1"
+      }
+    ],
+    "stat": {
+      "comments": 67,
+      "collects": 308
+    },
+    "id": 22097,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/59/0b/132164_crt_yajkN.jpg?r=1687575269",
+      "grid": "https://lain.bgm.tv/pic/crt/g/59/0b/132164_crt_yajkN.jpg?r=1687575269",
+      "large": "https://lain.bgm.tv/pic/crt/l/59/0b/132164_crt_yajkN.jpg?r=1687575269",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/59/0b/132164_crt_yajkN.jpg?r=1687575269"
+    },
+    "summary": "兰斯与加奈美的女儿\r\n拥有超强的忍者天赋，甚至让人无法相信是加奈美的孩子",
+    "name": "見当ウズメ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "见当钿女"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Kentou Uzume"
+          },
+          {
+            "k": "日文名",
+            "v": "見当 ウズメ"
+          },
+          {
+            "k": "罗马字",
+            "v": "kentō uzume"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "151cm"
+      },
+      {
+        "key": "レベル / 才能限界",
+        "value": "Lv90～140 / Lv∞"
+      },
+      {
+        "key": "技能LV(傾向)",
+        "value": "忍者Lv3"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 6
+    },
+    "id": 132164,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

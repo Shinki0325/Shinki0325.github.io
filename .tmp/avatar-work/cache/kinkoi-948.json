@@ -1,0 +1,529 @@
+[
+  {
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": 4,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/87/f3/57822_crt_5518k.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/87/f3/57822_crt_5518k.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/87/f3/57822_crt_5518k.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/87/f3/57822_crt_5518k.jpg"
+    },
+    "summary": "本篇\r\n\r\n「お姫様もお年頃だもん、オシャレも悪さもしたいよね～」\r\n\r\n央路のクラスメイトのギャル。\r\nかわいくて明るく、誰にでも気さくなのでクラスの人気者。\r\n男子からは非常にモテるが、いまは男より女友だちとわいわいやってたいタイプ。\r\n最近の流行は騙されやすいシルヴィをからかうこと。\r\n\r\n将来ファッション業界に入る勉強のためノーブル学園に入ったが、お嬢様というわけではないので、庶民同士ということで、央路と仲良くなる。\r\n-----\r\nFD\r\n\r\n「悩みがあるなら、れーなさんに任せんさい」\r\n\r\n将来ファッション業界に入る勉強のため、\r\nノーブル学園に入学した同じクラスのギャル。\r\n可愛くて明るく誰にでも気さくなのでクラスでは人気者。\r\nお金持ちが多い学園で、庶民同士ということで央路と仲良くなる。\r\n\r\nコーヒー牛乳があれば大半の悩みは解決すると信じていて、\r\n悩んでいることがあると、そっとコーヒー牛乳を差し出してくれる。\r\n\r\n親しみやすさと優しさから、\r\n男子生徒の間ではひそかに聖母として崇められている。",
+    "name": "妃玲奈",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "妃玲奈"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "妃 玲奈"
+          },
+          {
+            "k": "纯假名",
+            "v": "きさき れいな"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kisaki Reina"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "8月1日"
+      },
+      {
+        "key": "血型",
+        "value": "O"
+      },
+      {
+        "key": "身高",
+        "value": "156"
+      },
+      {
+        "key": "BWH",
+        "value": "81/56/83"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://sagaplanets.product.co.jp/works/kinkoi/chara02.html"
+      }
+    ],
+    "stat": {
+      "comments": 84,
+      "collects": 241
+    },
+    "id": 57822,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 10,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/22/06/7050_crt_wVw9M.jpg?r=1741598506",
+      "grid": "https://lain.bgm.tv/pic/crt/g/22/06/7050_crt_wVw9M.jpg?r=1741598506",
+      "large": "https://lain.bgm.tv/pic/crt/l/22/06/7050_crt_wVw9M.jpg?r=1741598506",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/22/06/7050_crt_wVw9M.jpg?r=1741598506"
+    },
+    "summary": "凛とした態度と、裁判長をも圧倒する弁論術で“法曹界の女王(クイーン)”と呼ばれる敏腕弁護士。１０年前の初公判以来、無敗の記録を誇る。高校時代には、東大入試問題を満点でクリア。ハーバード大学への留学話もあった。事件現場では探偵顔負けの推理力を発揮することも。幼なじみだった小五郎と結婚するも現在は別居中。「妃」は旧姓。３７歳。",
+    "name": "妃英理",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "妃英理"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "妃 英理"
+          },
+          {
+            "k": "纯假名",
+            "v": "きさき えり"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kisaki Eri"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "10月10日"
+      }
+    ],
+    "stat": {
+      "comments": 4,
+      "collects": 48
+    },
+    "id": 7050,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 3,
+    "gender": "male",
+    "birth_day": 12,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/83/10915_crt_40sx4.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b8/83/10915_crt_40sx4.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/b8/83/10915_crt_40sx4.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/83/10915_crt_40sx4.jpg"
+    },
+    "summary": "主人公。在困惑和绝望之际，被母亲强制和侍女史一起送进女校的不幸的人。\r\n\r\n因为父亲的缘故不信任男性，甚至发展为不信任任何人。\r\n最后只愿接触身边一部分的人，也不去上学了。\r\n担心的母亲于是将他送进了女校。\r\n\r\n从小开始就接受了各种英才教育，学习、茶道、花道、跳舞、钢琴、武道……样样精通。\r\n有点看不起别人，自己也知道自己这一点，对这样的自己不怎么喜欢。\r\n顺带一提，与前作主人公瑞穂所在的鏑木家有亲戚关系。",
+    "name": "妃宮千早",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "妃宮千早"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "3月12日"
+      },
+      {
+        "key": "血型",
+        "value": "AB型"
+      },
+      {
+        "key": "身高",
+        "value": "168cm"
+      }
+    ],
+    "stat": {
+      "comments": 9,
+      "collects": 55
+    },
+    "id": 10915,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 11,
+    "gender": null,
+    "birth_day": 13,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/61/14/41263_crt_9sEtq.jpg?r=1462513318",
+      "grid": "https://lain.bgm.tv/pic/crt/g/61/14/41263_crt_9sEtq.jpg?r=1462513318",
+      "large": "https://lain.bgm.tv/pic/crt/l/61/14/41263_crt_9sEtq.jpg?r=1462513318",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/61/14/41263_crt_9sEtq.jpg?r=1462513318"
+    },
+    "summary": "高難易度の技を次々と決める体操の申し子。冷静で滅多に笑わない。意味なく笑うのが嫌い。頭が良く、大人びている。凜世という名前が好きではなく、名前で呼ぶと怒る。なので周りは、名字から“ひめちゃん”と呼んでいる。友達が少なく、１人でいることが多い。",
+    "name": "妃月凛世",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "妃月凛世"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "ひめらぎ りんぜ"
+          }
+        ]
+      },
+      {
+        "key": "班级",
+        "value": "小学5-B"
+      },
+      {
+        "key": "所属",
+        "value": "体操部"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "生日",
+        "value": "11月13日"
+      },
+      {
+        "key": "星座",
+        "value": "天蝎座"
+      },
+      {
+        "key": "喜欢的事",
+        "value": "体操、一个人呆着"
+      },
+      {
+        "key": "不喜欢的事",
+        "value": "意义不明的笑、凛世这个名字"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://recolove.jp/rinze.html"
+      }
+    ],
+    "stat": {
+      "comments": 5,
+      "collects": 8
+    },
+    "id": 41263,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/76/44441_crt_Rd5Em.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/da/76/44441_crt_Rd5Em.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/da/76/44441_crt_Rd5Em.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/76/44441_crt_Rd5Em.jpg"
+    },
+    "summary": "太史局的攻魔师，人称“六刃”的黑发美少女。\r\n六刃与狮子王机关的剑巫是沿自同一祖宗，能够使用雪菜学习的八雷神法以及相同战斗技巧。\r\n看似十分冷静其实非常好战。\r\n武器为双乙型咒装双叉枪。通过魔力的复制可以达成人类无法使用及魔力模仿的能力。",
+    "name": "妃崎霧葉",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "妃崎雾叶"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "妃崎 霧葉"
+          },
+          {
+            "k": "纯假名",
+            "v": "きさき きりは"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kisaki Kiriha"
+          },
+          {
+            "k": "昵称",
+            "v": "六刃（りくじん）"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "wikipedia"
+      }
+    ],
+    "stat": {
+      "comments": 6,
+      "collects": 43
+    },
+    "id": 44441,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/cd/68616_crt_0pTX7.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/18/cd/68616_crt_0pTX7.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/18/cd/68616_crt_0pTX7.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/cd/68616_crt_0pTX7.jpg"
+    },
+    "summary": "卡美洛大祭司所属的魔女，亦是昴魔法学院高中部三年级学生（动画版第 10 话，因登场时间而改为四年级选拔班）。\r\n武等人的学姐，亦为十的前女友。除了十外第二强的破坏魔法使用者。",
+    "name": "妃えな",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "妃依那"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "きさき えな"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kisaki Ena"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 9
+    },
+    "id": 68616,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/22/05/72878_crt_W77RA.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/22/05/72878_crt_W77RA.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/22/05/72878_crt_W77RA.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/22/05/72878_crt_W77RA.jpg"
+    },
+    "summary": "邪魔大王国の女王。永い眠りから覚めた後、三幹部を従え「ハニワ幻人」「ハニワ兵士」を使い、地上征服に乗り出す。邪魔大王国の秘密が記された銅鐸の争奪を巡り、鋼鉄ジーグと激しい戦いを繰り広げる。",
+    "name": "妃魅禍",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "妃魅祸"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ヒミカ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Himika"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 0
+    },
+    "id": 72878,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/69/4d/100112_crt_7jy7s.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/69/4d/100112_crt_7jy7s.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/69/4d/100112_crt_7jy7s.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/69/4d/100112_crt_7jy7s.jpg"
+    },
+    "summary": "◆庶民×クイーン×？？？\r\n女人禁制の皇学園で突然の紅一点！？\r\n争いごとは好まない穏やかな心の持ち主。\r\n皇学園共学化のため、\r\n魔王に“駒”として選ばれた少女――",
+    "name": "妃乃笑深",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "妃乃笑深"
+          },
+          {
+            "k": "纯假名",
+            "v": "きさきのえみ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 100112,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/de/134241_crt_2cowS.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/96/de/134241_crt_2cowS.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/96/de/134241_crt_2cowS.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/de/134241_crt_2cowS.jpg"
+    },
+    "summary": "妃乃家の次女。進学を控えて母親につけられた家庭教師の主人公と受験勉強をすることになったが、なぜか身の入らない女の子である。\r\n勉強の合間に主人公に”男性”に関しての色々な質問をあびせる。勉強もそれなりにしてはいるが、むしろ年頃の少女の悩み事に話題は終始して……。\r\n\r\nうーん。私、性格は普通だと思います。学校はいろいろあるけど結構好きです。\r\n…最近おしゃれにも興味でてきたかなぁ。\r\nなんて☆\r\nえ、悩み事とか無いのって？うーん。自分で思っているより、周りのみんなに子供っぽく扱われてしまうこととお母さんにつけられた家庭教師さんかな。\r\n先生、悪い人ではないんだけど、どうしても…年上の男の人って感じしないよね。\r\nでもなんかほっとけないんだよなぁ、先生。\r\nなので、先生のいいとこも探してみたいと思います。…あーん。コメント普通っぽーい（泣）",
+    "name": "妃乃沙智",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Hino Sachi"
+          },
+          {
+            "k": "纯假名",
+            "v": "ひの さち"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://www.matsuri-kikaku.com/matsuri/index.html"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 134241,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/79/80/134242_crt_K6zUL.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/79/80/134242_crt_K6zUL.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/79/80/134242_crt_K6zUL.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/79/80/134242_crt_K6zUL.jpg"
+    },
+    "summary": "妃乃家の主。旦那は？だが、家事、パートと元気に毎日を生きる女性。容姿が若いので、姉妹に間違われる事もある。それが本人には至福の悦びらしい。料理は上手。\r\nとても3児の母とは思えない外見と円熟したオンナの色気のギャップが主人公にはたまらない。そんな主人公を小さな息子のように扱って喜んでいたが、次第に男を感じ始めて、一線を越えてしまうかどうか悩む。\r\n\r\nはぁーい。妃乃藍子××歳。\r\n主婦やってまーす。\r\nあ、いま「ホントに主婦？」って思ったでしょ？もう！イケないコね。\r\n\r\n一応、妃乃家の主として、\r\n家事にパートに全力投球でーすっ！\r\n沙智の先生、オンナばかりのウチだからかなり新鮮な感じです。あなたの事、みんなはいろいろ言うけれど、結構男っぽいところもあるのよね。ときどき、ドキっとしたりして…。そういうところに気付かないなんてまだまだお子様だな、うちの娘っこたちは（笑）\r\nえ？彼氏にどうだって？んふふ、うーん…。\r\n娘たちのこともあるし、\r\nその辺はきっちりけじめをつけます。\r\n…なんて、カッコつけちゃったら、面白くもなんともないですよね。だから、自分の気持ちに正直にいろんなことしよう、なんて思ってます。\r\nサービスしちゃうぞ！！",
+    "name": "妃乃藍子",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Hino Aiko"
+          },
+          {
+            "k": "纯假名",
+            "v": "ひの あいこ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://www.matsuri-kikaku.com/matsuri/index.html"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 134242,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

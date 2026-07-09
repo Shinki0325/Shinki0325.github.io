@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 from pathlib import Path
+import subprocess
 
 
 def parse_manual_crop(value: str) -> tuple[int, int, int]:
@@ -33,13 +34,28 @@ def crop_square(
     crop: tuple[int, int, int],
     output_size: int = 240,
 ) -> None:
-    import cv2
+    probe = subprocess.run(
+        [
+            "ffprobe",
+            "-v",
+            "error",
+            "-select_streams",
+            "v:0",
+            "-show_entries",
+            "stream=width,height",
+            "-of",
+            "csv=s=x:p=0",
+            str(source),
+        ],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    try:
+        image_w, image_h = (int(part) for part in probe.stdout.strip().split("x", 1))
+    except ValueError as error:
+        raise RuntimeError(f"Failed to read image dimensions: {source}") from error
 
-    image = cv2.imread(str(source), cv2.IMREAD_COLOR)
-    if image is None:
-        raise RuntimeError(f"Failed to read image: {source}")
-
-    image_h, image_w = image.shape[:2]
     if image_w <= 0 or image_h <= 0:
         raise RuntimeError(f"Image has invalid dimensions: {source}")
 
@@ -48,13 +64,30 @@ def crop_square(
     x = _clamp(crop_x, 0, image_w - side)
     y = _clamp(crop_y, 0, image_h - side)
 
-    cropped = image[y : y + side, x : x + side]
-    resized = cv2.resize(cropped, (output_size, output_size), interpolation=cv2.INTER_AREA)
     destination.parent.mkdir(parents=True, exist_ok=True)
-
-    ok = cv2.imwrite(str(destination), resized, [cv2.IMWRITE_WEBP_QUALITY, 92])
-    if not ok:
-        raise RuntimeError(f"Failed to write image: {destination}")
+    subprocess.run(
+        [
+            "ffmpeg",
+            "-y",
+            "-hide_banner",
+            "-loglevel",
+            "error",
+            "-i",
+            str(source),
+            "-vf",
+            f"crop={side}:{side}:{x}:{y},scale={output_size}:{output_size}:flags=lanczos",
+            "-frames:v",
+            "1",
+            "-c:v",
+            "libwebp",
+            "-quality",
+            "92",
+            "-compression_level",
+            "6",
+            str(destination),
+        ],
+        check=True,
+    )
 
 
 def main() -> int:

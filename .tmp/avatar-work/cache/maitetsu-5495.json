@@ -1,0 +1,60 @@
+[
+  {
+    "birth_mon": 1,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/7d/37750_crt_fvVAZ.jpg?r=1537798883",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a7/7d/37750_crt_fvVAZ.jpg?r=1537798883",
+      "large": "https://lain.bgm.tv/pic/crt/l/a7/7d/37750_crt_fvVAZ.jpg?r=1537798883",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/7d/37750_crt_fvVAZ.jpg?r=1537798883"
+    },
+    "summary": "剣術修行とふかみちゃんとが大好きな、蓑笠鍛冶店の自覚無き看板娘。\r\nとにかく明るく声が大きい元気のかたまりで、裏表がまるで無く学園でもご町内でも人気者。\r\n竹を割ったような性格と、竹を割った中身のような脳味噌とを持つがゆえ、非常に単純で判断が早い。\r\nふかみが川下り舟を操る姿に興味を持ち、その手伝いをするようになって急速に仲良くなった。\r\n恋愛に興味をもったことは無く、自身が女性であることすら深くは意識していない。\r\n「夜には、ケーキとご馳走が待っておるけんね、朝がおかゆでものたりんのも、丁度良かばい！」",
+    "name": "蓑笠凪",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "蓑笠凪"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "みのかさ なぎ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "1月7日"
+      },
+      {
+        "key": "身高",
+        "value": "130cm"
+      },
+      {
+        "key": "体重",
+        "value": "28kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B62/ W47/ H67"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 15
+    },
+    "id": 37750,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

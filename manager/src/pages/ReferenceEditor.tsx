@@ -230,10 +230,14 @@ export default function ReferenceEditor({ selectedEntry }: ReferenceEditorProps)
           <textarea className="editor-area" value={body} onChange={(event) => setBody(event.target.value)} />
         </label>
 
-        <label className="field">
-          <span>附加 frontmatter(JSON)</span>
-          <textarea className="meta-area" value={extras} onChange={(event) => setExtras(event.target.value)} />
-        </label>
+        <details className="advanced-panel">
+          <summary>高级 frontmatter</summary>
+          <p className="hint">常用字段已经在上面拆成表单；只有需要保留额外字段时再改这里。</p>
+          <label className="field">
+            <span>额外字段 JSON</span>
+            <textarea className="meta-area" value={extras} onChange={(event) => setExtras(event.target.value)} />
+          </label>
+        </details>
 
         {message ? <p className="hint">{message}</p> : null}
       </section>

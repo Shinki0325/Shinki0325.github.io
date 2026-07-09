@@ -1,0 +1,476 @@
+[
+  {
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 6,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a0/ad/21265_crt_4y3eE.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a0/ad/21265_crt_4y3eE.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a0/ad/21265_crt_4y3eE.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a0/ad/21265_crt_4y3eE.jpg"
+    },
+    "summary": "キリッとした容姿で、喜怒哀楽を表情にあまり出さないので周囲に冷たい印象を与えている。\r\n成績は優秀で、学生会書記を務めている。\r\n星渡り同好会が結成され学生会室を活動拠点にしたことにより、学生会の実務に支障が生じた。\r\nそのためか、同好会の存在を面白くないと感じている様子。\r\n休日は、親戚の神社でお手伝いをしていたりする。\r\n\r\n「ずっと気になってたのよ。 どうして、貴方は同好会になんか参加しているの？」",
+    "name": "笹倉未来",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "笹仓未来"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ささくら みらい"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "6月6日"
+      },
+      {
+        "key": "身高",
+        "value": "150"
+      },
+      {
+        "key": "体重",
+        "value": "45"
+      },
+      {
+        "key": "BWH",
+        "value": "85/56/83"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 12
+    },
+    "id": 21265,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/42/78/135132_crt_hn2hz.jpg?r=1691858214",
+      "grid": "https://lain.bgm.tv/pic/crt/g/42/78/135132_crt_hn2hz.jpg?r=1691858214",
+      "large": "https://lain.bgm.tv/pic/crt/l/42/78/135132_crt_hn2hz.jpg?r=1691858214",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/42/78/135132_crt_hn2hz.jpg?r=1691858214"
+    },
+    "summary": "",
+    "name": "笹倉",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "笹仓"
+      },
+      {
+        "key": "别名",
+        "value": []
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 135132,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 18,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/64/2070_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/29/64/2070_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/29/64/2070_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/64/2070_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "笹倉葉子",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "笹仓叶子"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "笹倉葉子"
+          },
+          {
+            "k": "纯假名",
+            "v": "ささくら ようこ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Sasakura Youko"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "7月18日"
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 5
+    },
+    "id": 2070,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/27/2e/38742_crt_5PS38.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/27/2e/38742_crt_5PS38.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/27/2e/38742_crt_5PS38.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/27/2e/38742_crt_5PS38.jpg"
+    },
+    "summary": "昔、主人公のことを弟のように可愛がっていた、二つ年上の女性。\r\n今は、実家である酒屋の看板娘。さっぱりした性格で、お酒が大好き。\r\n\r\n子供の頃は強引な一面をもっていて、主人公はよくオモチャにされていたが、それは彼女なりの愛情表現。\r\n豪快なお姉さんだが手先は器用。中でも裁縫が得意。\r\nみんなのお姉さん的存在。\r\n\r\n「うんうん！ ぱんぱんに甘えちゃって♪」",
+    "name": "笹倉深春",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "深春姉ぇ"
+          },
+          {
+            "v": "姉さん"
+          },
+          {
+            "k": "纯假名",
+            "v": "ささくら みはる"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "家族构成",
+        "value": "母親と二人暮らし"
+      },
+      {
+        "key": "好きなもの",
+        "value": "お酒 （種類は問わず）"
+      },
+      {
+        "key": "嫌いなもの",
+        "value": "不健康な人"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 4
+    },
+    "id": 38742,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/5f/39/65847_crt_V6f88.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/5f/39/65847_crt_V6f88.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/5f/39/65847_crt_V6f88.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5f/39/65847_crt_V6f88.jpg"
+    },
+    "summary": "風紀委員をしている二年生。\r\n学園の風紀を守るために日夜活動している。\r\nお世話能力高水準なしっかり者。\r\n困っている人を放っておけないタイプ。\r\nそのせいか厄介事を引き寄せる体質でもある。\r\n\r\n\r\n催眠から他人を守る力。\r\n自分は防御の対象外なのは秘密\r\n\r\n「口寂しいので貴方のそれ、ちょっと貸して貰えますか？大丈夫です。すぐ出ますから」",
+    "name": "笹倉梨子",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "笹倉 梨子"
+          },
+          {
+            "k": "纯假名",
+            "v": "ささくら りこ"
+          }
+        ]
+      },
+      {
+        "key": "血型",
+        "value": "O型"
+      },
+      {
+        "key": "身高",
+        "value": "151cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B89（Gカップ）／W56／H88"
+      },
+      {
+        "key": "性癖",
+        "value": "おしゃぶり好き"
+      },
+      {
+        "key": "趣味",
+        "value": "パッチワーク"
+      },
+      {
+        "key": "好きなもの",
+        "value": "直角や四角など整っているもの"
+      },
+      {
+        "key": "嫌いなもの",
+        "value": "乱れているもの全般、虫"
+      },
+      {
+        "key": "異能力",
+        "value": "風旗"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 65847,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/1f/46/86428_crt_5MVF0.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/1f/46/86428_crt_5MVF0.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/1f/46/86428_crt_5MVF0.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1f/46/86428_crt_5MVF0.jpg"
+    },
+    "summary": "吉祥寺で画廊を経営する画商。\r\n自身に絵の才能はないが、良い絵を見抜く才能はあると自負している。\r\n真崎を店員として雇っていた時期があり、顔見知りである。\r\n\r\n\r\nCV：松下尚之",
+    "name": "笹倉啓太",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "笹倉 啓太"
+          },
+          {
+            "k": "罗马字",
+            "v": "Sasakura Keita"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://www.gungnir.co.jp/innocentgrey/products/pro_shell3/ch/24.html"
+      }
+    ],
+    "stat": {
+      "comments": 10,
+      "collects": 1
+    },
+    "id": 86428,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/87/f7/136971_crt_M9zMq.jpg?r=1693816423",
+      "grid": "https://lain.bgm.tv/pic/crt/g/87/f7/136971_crt_M9zMq.jpg?r=1693816423",
+      "large": "https://lain.bgm.tv/pic/crt/l/87/f7/136971_crt_M9zMq.jpg?r=1693816423",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/87/f7/136971_crt_M9zMq.jpg?r=1693816423"
+    },
+    "summary": "下ネタ好きで、\r\n何でもギャグにするお調子者。\r\n進路希望はフリーター、\r\nただし他の町で。",
+    "name": "笹倉大輔",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "笹仓大辅"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 0
+    },
+    "id": 136971,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/7c/d6/147566_crt_2ttzB.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/7c/d6/147566_crt_2ttzB.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/7c/d6/147566_crt_2ttzB.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7c/d6/147566_crt_2ttzB.jpg"
+    },
+    "summary": "看護婦。\r\n自分に自信をもてない性格。心配性。\r\n実はいいところのお嬢さん。\r\n平均的な身長、スタイルも平均的。",
+    "name": "笹倉優名",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 147566,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ee/a9/191617_crt_zN321.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ee/a9/191617_crt_zN321.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ee/a9/191617_crt_zN321.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ee/a9/191617_crt_zN321.jpg"
+    },
+    "summary": "“兔离洲”基地的机械师。除负责维护飞机之外，喜好则是改装飞机，并经常在未经许可的状况下自行改装、调整增压器。他和草薙是熟识的朋友。原作中设定是与草薙同龄的男性，而电影版中则改为中年女性。",
+    "name": "笹倉永久",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "笹仓永久"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Towa Sasakura"
+          },
+          {
+            "k": "日文名",
+            "v": "笹倉 永久"
+          },
+          {
+            "k": "纯假名",
+            "v": "ササクラ トワ"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 191617,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/78/b0/200719_crt_E82bU.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/78/b0/200719_crt_E82bU.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/78/b0/200719_crt_E82bU.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/78/b0/200719_crt_E82bU.jpg"
+    },
+    "summary": "タケルの一つ上の先輩。\r\n\r\n普通に会話をしているのを見たことがない……と言われるほどの無口。\r\nただし、いつも抱えているぬいぐるみがあれば腹話術的な感じで話ができる。\r\nぬいぐるみが無いと泣き出すこともあり、授業中も腹話術での応答を容認されている。\r\nそんな娘の将来を心配をした親が、人と接する機会を増やすために寮住まいを申請した。",
+    "name": "笹倉萌花",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 200719,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

@@ -1,0 +1,453 @@
+[
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/dc/23/71593_crt_NFcm0.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/dc/23/71593_crt_NFcm0.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/dc/23/71593_crt_NFcm0.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dc/23/71593_crt_NFcm0.jpg"
+    },
+    "summary": "皇国人でありながら共和国軍に所属し、伊瀬野に攻め入るなど宗仁たちを追い詰めた人物。\r\n皇国に仇なしたことから極刑は免れないと考えられており、本人も一度は生を諦めたが、戦後、古杜音の嘆願により助命される。\r\n現在は、勅神殿の片隅に作られた《黒主大神》の社の責任者に任命され、静かに生きている。\r\nその才を使わぬのはもったいないと、とある国家事業に狩り出されることに。",
+    "name": "八岐雪花",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "八木雪花"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "BWH",
+        "value": "B82（C）/ W59/ H83"
+      }
+    ],
+    "stat": {
+      "comments": 8,
+      "collects": 10
+    },
+    "id": 71593,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/6d/e0/83606_crt_7UtOn.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/6d/e0/83606_crt_7UtOn.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/6d/e0/83606_crt_7UtOn.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6d/e0/83606_crt_7UtOn.jpg"
+    },
+    "summary": "鬼祭將軍座下第一大將，性格偏激、武功高絕，兼具霸氣與戾氣，是唯一知道鬼之瞳下落的人，在鬼祭軍中具有相當號召力。對莫召奴深惡痛絕，一心欲取出鬼之瞳內中的密寶，好重振鬼祭雄風。",
+    "name": "八岐太歲",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性別",
+        "value": "男"
+      },
+      {
+        "key": "初登場",
+        "value": "霹靂開疆紀 第4集"
+      },
+      {
+        "key": "來自",
+        "value": "東瀛"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://beta.pili.com.tw/role-view.php?rid=bajitaisui"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 83606,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c0/23/97421_crt_Aheas.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c0/23/97421_crt_Aheas.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c0/23/97421_crt_Aheas.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c0/23/97421_crt_Aheas.jpg"
+    },
+    "summary": "本作の主人公です。両親を事故で亡くしており、施設に預けられていたのを塔馬六介に引き取られ、現在に至ります。\r\n\r\n剣の腕には非凡なものがあるのですが、親友でありライバルの大斗剛には勝てたことがありません。もっとも本人はそのことを余り気にせず、純粋に剛のことを尊敬しています。かなりのお人好し。\r\n\r\n根が単純で素直なのですが、それがかえって他人を傷つけてしまうこともあります。成績は中の下。頭は悪くないけど勉強は好きではなく、剣道も好きだけど他人に勝とうという気持ちが薄いようです。\r\n\r\n使用する武器は剣。属性は『火』です。",
+    "name": "八岐猛",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Yagi Takeru"
+          },
+          {
+            "k": "纯假名",
+            "v": "やぎ　たける"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://www.studio-ego.jp/game/izumo2/character.html"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 97421,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/fc/6c/189483_crt_R882f.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/fc/6c/189483_crt_R882f.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/fc/6c/189483_crt_R882f.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fc/6c/189483_crt_R882f.jpg"
+    },
+    "summary": "ルドラサウムが大陸を作った時に、それを支える為に創り出した生物「聖獣」の一体。神には分類されず、魂も持っていない。見た目は白い八岐大蛇だが、桁違いのスケールを誇る生物。\r\n\r\n大陸を支えている四聖獣とは別な存在のようである。怠け者で、大陸を支えずにうろうろと飛び回っていた。\r\n\r\n正史にてランス達に討伐されたことになった。オロチの死によってJAPANでは地震が起こらなくなり、またそれを防ぐためにオロチを鎮伏していた巫女機関も解散となった。",
+    "name": "オロチ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "八岐大蛇"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Orochi"
+          },
+          {
+            "k": "罗马字",
+            "v": "orochi"
+          }
+        ]
+      },
+      {
+        "key": "レベル / 才能限界",
+        "value": "LV50 / 不明"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 189483,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d3/0f/196072_crt_8nVs6.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d3/0f/196072_crt_8nVs6.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/d3/0f/196072_crt_8nVs6.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d3/0f/196072_crt_8nVs6.jpg"
+    },
+    "summary": "実際は女の子モンスターではないが、外見的にこちらに分類される事もある。最強クラスに少し及ばない程度の強さを持つ女性型モンスター。JAPAN特有の存在で、正体は人間の魂を基部とした聖獣の縮小版",
+    "name": "オロチっこ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "八岐子"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Orochi Girl"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 196072,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/2b/0e/164694_crt_qU0S0.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/2b/0e/164694_crt_qU0S0.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/2b/0e/164694_crt_qU0S0.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2b/0e/164694_crt_qU0S0.jpg"
+    },
+    "summary": "古き神話の時代より陽と月の巫女、そして剣神天叢雲剣と戦いを繰り広げてきた邪神。\r\n\r\n普段は黒い太陽のような姿をしているが、戦闘時には武夜御鳴神を中心に全てのオロチロボが合体し、メイン画像の姿に変貌する。\r\n\r\nその戦闘力は凄まじく、（本来のパイロットでない為全力ではないにしても）他のオロチロボを瞬殺した剣神天群雲剣の攻撃を全く受け付けず、逆に大破に追い込んだ。\r\n\r\nしかし、あんなことやこんなことをした後に巫女として完全に覚醒した姫子と千歌音と、フルパワー状態となった剣神天群雲剣にボディを破壊され、再び黒い太陽の姿になって逃走。\r\n\r\n最後は復活した武夜御鳴神の日輪光烈大撃破によって撃破され、消滅した。\r\n\r\nしかし、オロチは人の持つ負の感情がある限り何度でも蘇るらしく、コミック版が「だが人の心に闇がある限り、そこを見上げて気づく者が現れるだろう」という言葉で締めくくられている事からして、オロチと巫女の戦いはまだまだ続くものと思われる。\r\n\r\nなお、オロチ衆の事は単なる手駒としか思っておらず、千歌音にオロチが全滅させられても平然としていた。",
+    "name": "邪神八岐大蛇",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "じゃしんやまたのおろち"
+          },
+          {
+            "k": "纯假名",
+            "v": "ジャシンヤマタノオロチ"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": [
+          {
+            "v": "https://dic.pixiv.net/a/邪神八岐大蛇"
+          },
+          {
+            "v": "https://x.com/metalmanga/status/1614244473848094722/photo/3"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 164694,
+    "locked": false,
+    "type": 2,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/32/1f/191816_crt_t8PB8.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/32/1f/191816_crt_t8PB8.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/32/1f/191816_crt_t8PB8.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/32/1f/191816_crt_t8PB8.jpg"
+    },
+    "summary": "",
+    "name": "超大魔王獣マガタノオロチ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "超大魔王兽玛伽八岐大蛇"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "身高",
+        "value": "77m"
+      },
+      {
+        "key": "体重",
+        "value": "88000t"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 191816,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 12,
+    "gender": "male",
+    "birth_day": 8,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/6f/d3/95910_crt_oVffF.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/6f/d3/95910_crt_oVffF.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/6f/d3/95910_crt_oVffF.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6f/d3/95910_crt_oVffF.jpg"
+    },
+    "summary": "七不思議「保健室のかなしばり」を起こしていた八岐大蛇。\r\nかつては、この町の土地神だった。\r\n人間によって歪められた悲しい過去を持つ。\r\nが、彼が執拗に貴女を絡め取るのは、\r\nただの性格なので気をつけて。\r\n貴女と将来を誓い合ってからは、とりわけ\r\n本能に従順になっちゃったので気をつけて。",
+    "name": "イリヤ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "八岐大蛇 イリヤ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "12月8日"
+      },
+      {
+        "key": "身高",
+        "value": "180cm"
+      },
+      {
+        "key": "体重",
+        "value": "64kg"
+      },
+      {
+        "key": "cv",
+        "value": "立花慎之介"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 95910,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/43/b7/70_crt_4kLiu.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/43/b7/70_crt_4kLiu.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/43/b7/70_crt_4kLiu.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/43/b7/70_crt_4kLiu.jpg"
+    },
+    "summary": "やくも：\r\n右手手腕有一个天生的胎记，被认为是不祥的预兆和带来灾难的孩子。 ",
+    "name": "八雲",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "八云"
+      },
+      {
+        "key": "性别",
+        "value": "未知"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 70,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 21,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/dd/1067_crt_d5q6I.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/dd/dd/1067_crt_d5q6I.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/dd/dd/1067_crt_d5q6I.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/dd/1067_crt_d5q6I.jpg"
+    },
+    "summary": "　　个性内向，温柔贤淑的女性代表。然而却有极端的“对人恐惧症”。目前是“校史编纂委员会”的成员。\r\n　　总是惊慌地害怕着某些事情，躲在她唯一能敞开心房的殿子身后。\r\n　　很少自己做决定，总是顺着其他人的意见。\r\n　　也因此害怕周围出现急遽的改变，希望能封闭于安稳的现状。\r\n　　另外因为会怯场，因此做事非常笨拙总是会犯些奇妙的错。",
+    "name": "八乙女梓乃",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "八乙女梓乃"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "八乙女 梓乃"
+          },
+          {
+            "k": "纯假名",
+            "v": "やおとめ しの"
+          },
+          {
+            "k": "罗马字",
+            "v": "Yaotome Shino"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "6月21日"
+      }
+    ],
+    "stat": {
+      "comments": 14,
+      "collects": 34
+    },
+    "id": 1067,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

@@ -1,0 +1,419 @@
+[
+  {
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 28,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/1d/29/38908_crt_3xfZ4.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/1d/29/38908_crt_3xfZ4.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/1d/29/38908_crt_3xfZ4.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1d/29/38908_crt_3xfZ4.jpg"
+    },
+    "summary": "カナダからやってきた、ブロンドのロングヘアーとブルーの瞳が印象的な転校生。\r\nあまり感情を表に出さない性格と日本語を勉強中なことが相まって、クールで無愛想だと思われがち。\r\n実際は繊細で優しい感性を持ち、絵を描くことが得意。",
+    "name": "ベスリー・ローズ・ディズリー",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "贝斯莉·罗斯·代斯利"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Bethly Rose Daisley"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "12月28日"
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      },
+      {
+        "key": "身高",
+        "value": "160cm"
+      },
+      {
+        "key": "体重",
+        "value": "48kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B90 / W58 / H89"
+      }
+    ],
+    "stat": {
+      "comments": 18,
+      "collects": 50
+    },
+    "id": 38908,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f2/87/9961_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f2/87/9961_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f2/87/9961_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f2/87/9961_crt_anidb.jpg"
+    },
+    "summary": "山田家的狗。",
+    "name": "ベス",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "贝斯"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Bess"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "公"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 1
+    },
+    "id": 9961,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/fc/0b/17120_crt_46P0s.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/fc/0b/17120_crt_46P0s.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/fc/0b/17120_crt_46P0s.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fc/0b/17120_crt_46P0s.jpg"
+    },
+    "summary": "テンプルナイトに所属する女性。メシア教の選んだ救世主をサポートする。メシア教の敬虔な信者で、メシアであるアレフに献身的に尽くす。 \r\nイラストでは前作のヒロインを模したデザインのコスチュームを着ている。ただし、前作のヒロインは赤系の色だったのに対し、ベスの衣装は青系でまとめられている。 \r\n正体は「メシアを支えるパートナー」として元老院に造られた人間。何よりもまずメシアを優先し、ダレスの一撃からアレフをかばって命を落とす。その魂は魔界のケセド仏殿に流れ着き、（ゲーム内の進行上、必ずしも訪れる必要はないが）再会すると自らの魂そのものを犠牲にしてアレフのパラメータを上げる。「BETH」はヘブライ語で「2」と「家」の意。",
+    "name": "ベス",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 3
+    },
+    "id": 17120,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/4f/71/39720_crt_URg33.jpg?r=1458822310",
+      "grid": "https://lain.bgm.tv/pic/crt/g/4f/71/39720_crt_URg33.jpg?r=1458822310",
+      "large": "https://lain.bgm.tv/pic/crt/l/4f/71/39720_crt_URg33.jpg?r=1458822310",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4f/71/39720_crt_URg33.jpg?r=1458822310"
+    },
+    "summary": "守備隊司令室のオペレーター。大柄で性格もおおらか。",
+    "name": "ベス",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "贝丝"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "kuromukuro.com/chara_016.html"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 6
+    },
+    "id": 39720,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "",
+      "grid": "",
+      "large": "",
+      "medium": ""
+    },
+    "summary": "收容在ZONAPHA症病房的女孩。总是抱着熊玩偶哈利。在ZONAPHA症病房被帕尔曼它们袭击时，由于紧张和恐惧使得病情恶化，在达到第三阶段前将哈利交给了鸣海。",
+    "name": "ベス",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "贝丝"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "貝絲"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 59431,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/7f/b7/148359_crt_M9mlo.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/7f/b7/148359_crt_M9mlo.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/7f/b7/148359_crt_M9mlo.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7f/b7/148359_crt_M9mlo.jpg"
+    },
+    "summary": "",
+    "name": "ベス",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 148359,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "",
+      "grid": "",
+      "large": "",
+      "medium": ""
+    },
+    "summary": "",
+    "name": "ベス",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 151949,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/81/152906_crt_wU15p.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a2/81/152906_crt_wU15p.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a2/81/152906_crt_wU15p.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/81/152906_crt_wU15p.jpg"
+    },
+    "summary": "",
+    "name": "ベス",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 152906,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/22/f7/168533_crt_E19Ks.jpg?r=1734501550",
+      "grid": "https://lain.bgm.tv/pic/crt/g/22/f7/168533_crt_E19Ks.jpg?r=1734501550",
+      "large": "https://lain.bgm.tv/pic/crt/l/22/f7/168533_crt_E19Ks.jpg?r=1734501550",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/22/f7/168533_crt_E19Ks.jpg?r=1734501550"
+    },
+    "summary": "バンド・スナッチの一人。\r\n冷静で的確な判断力の持ち主だが神経質気味。",
+    "name": "ベス",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "贝斯"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "8月吉日"
+      },
+      {
+        "key": "血型",
+        "value": "黑桃型"
+      },
+      {
+        "key": "身高",
+        "value": "183cm"
+      },
+      {
+        "key": "星座",
+        "value": "贄座"
+      },
+      {
+        "key": "兴趣",
+        "value": "思索にふける"
+      },
+      {
+        "key": "特长",
+        "value": "立ちながら眠れる"
+      },
+      {
+        "key": "喜欢的食物",
+        "value": "プレーンシュガードーナツ"
+      },
+      {
+        "key": "喜欢的话语",
+        "value": "備えあれば憂いなし"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 1
+    },
+    "id": 168533,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a9/2c/187988_crt_7VBob.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a9/2c/187988_crt_7VBob.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a9/2c/187988_crt_7VBob.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a9/2c/187988_crt_7VBob.jpg"
+    },
+    "summary": "【主人公の母】",
+    "name": "ベス",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 187988,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

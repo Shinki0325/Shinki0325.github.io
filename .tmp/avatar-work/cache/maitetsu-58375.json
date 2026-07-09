@@ -1,0 +1,445 @@
+[
+  {
+    "birth_mon": 6,
+    "gender": null,
+    "birth_day": 13,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/0f/86881_crt_KQ12h.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/56/0f/86881_crt_KQ12h.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/56/0f/86881_crt_KQ12h.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/0f/86881_crt_KQ12h.jpg"
+    },
+    "summary": "冥国製の汎用型レイルロオド。Ⅸ号機関車に乗務。\r\nハチロク以上の大ベテランで、保線にも詳しい。\r\nみかん鉄道に深い愛着と誇りとを抱いているが、御一夜鉄道へ移籍する。",
+    "name": "オリヴィ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "奥莉薇"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "生日",
+        "value": "6月13日"
+      }
+    ],
+    "stat": {
+      "comments": 7,
+      "collects": 15
+    },
+    "id": 86881,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/68/31/47590_crt_tOmgg.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/68/31/47590_crt_tOmgg.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/68/31/47590_crt_tOmgg.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/68/31/47590_crt_tOmgg.jpg"
+    },
+    "summary": "異世界から観光にやってきた謎の生き物。\r\n長ったらしい名前があるが、主人公には 「オヤジー」 と呼ばれる。\r\nあだ名の通り、オヤジ臭い関西弁を操る。\r\n\r\n異世界に帰るためのパワーをうっかりなくしてしまったため、代替品として “うら若き乙女が発するエロいパワー” を主人公に集めさせようと画策。\r\n\r\n「兄ちゃん、あんた、ええ筋しとるで……」",
+    "name": "オヤジー",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "インタオヤ・ジーグルト・オリヴィエール・イスカリオット・アンドリューズ・レム・アク・テティギスティ・フォン・ニシナカジマ＝ミナミカタ"
+          }
+        ]
+      },
+      {
+        "key": "CV",
+        "value": "南沙耶"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 47590,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ba/29/10170_crt_7ER3k.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ba/29/10170_crt_7ER3k.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ba/29/10170_crt_7ER3k.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ba/29/10170_crt_7ER3k.jpg"
+    },
+    "summary": "坚守亚美斯特利斯北部的布里格斯长城的冰之女王。激烈，强悍，无所畏惧。",
+    "name": "オリヴィエ・ミラ・アームストロング",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "奥莉薇亚·米娜·阿姆斯特朗"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Olivier Mira Armstrong"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 7,
+      "collects": 46
+    },
+    "id": 10170,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 2,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/78/93/12498_crt_l7167.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/78/93/12498_crt_l7167.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/78/93/12498_crt_l7167.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/78/93/12498_crt_l7167.jpg"
+    },
+    "summary": "职业：歌姬　 兴趣：讨价还价的对话　 特技：令人忘却时间\r\n喜欢：酒　 讨厌：争执\r\n\r\n魔术名：恋恋不舍\r\n能力：???\r\n\r\n在エンゲルブルク经营妓院兼酒馆的女性。\r\n有着作为歌姬驰名的过去。\r\n\r\n「欢迎光临……2楼的营业傍晚才开始哦」",
+    "name": "オリヴィア・ゴーティエ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "奥利维亚·戈蒂埃"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "2月7日"
+      },
+      {
+        "key": "身高",
+        "value": "164cm"
+      },
+      {
+        "key": "尺寸",
+        "value": "如你所见"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 12498,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/39/46822_crt_cFSpp.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/dd/39/46822_crt_cFSpp.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/dd/39/46822_crt_cFSpp.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/39/46822_crt_cFSpp.jpg"
+    },
+    "summary": "423年前、ミトラス大陸を制覇した覇王アッシュベルの末裔にして、リンデガルドの王位継承権第二位のお姫様。\r\n歴代最強、覇王アッシュベルの再来と呼ばれるほど強く、その圧倒的な強さと美しさを称えて 『ミトラスの白き薔薇』 と呼ばれている。\r\nしかし、セシル率いるケルトゥーラ王国の四度目の攻撃に敗北したことで、民の命を守ることを交換条件に、その身をセシルの情婦として捧げることになってしまう。",
+    "name": "オリヴィア・リンデガルド",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "奥丽维亚·里德加尔多"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Olivia Lindegard"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 13
+    },
+    "id": 46822,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/83/ad/61851_crt_WqwWT.jpg?r=1533534947",
+      "grid": "https://lain.bgm.tv/pic/crt/g/83/ad/61851_crt_WqwWT.jpg?r=1533534947",
+      "large": "https://lain.bgm.tv/pic/crt/l/83/ad/61851_crt_WqwWT.jpg?r=1533534947",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/83/ad/61851_crt_WqwWT.jpg?r=1533534947"
+    },
+    "summary": "華子たちの中学に転校してきた金髪碧眼の女の子。両親共に外国人で、一見すると英語が堪能なように見えるが、日本生まれの日本育ちのため、英語は不得意でほとんど喋ることができない。",
+    "name": "オリヴィア",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "奥莉薇"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Olivia"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 83,
+      "collects": 200
+    },
+    "id": 61851,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/de/65923_crt_1333s.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/fa/de/65923_crt_1333s.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/fa/de/65923_crt_1333s.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/de/65923_crt_1333s.jpg"
+    },
+    "summary": "",
+    "name": "オリヴィア兄",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "奥莉薇兄"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 5,
+      "collects": 1
+    },
+    "id": 65923,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/42/70788_crt_xI4Gj.jpg?r=1562560680",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c9/42/70788_crt_xI4Gj.jpg?r=1562560680",
+      "large": "https://lain.bgm.tv/pic/crt/l/c9/42/70788_crt_xI4Gj.jpg?r=1562560680",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/42/70788_crt_xI4Gj.jpg?r=1562560680"
+    },
+    "summary": "薇薇欧的母体original。故人。\r\n圣王家的王女，被称作“奥利维尔圣王女殿下”。\r\n也是后来的“摇篮最后的圣王”，以最强的武术造诣而威名四方。\r\n\r\n其形象出现于艾茵哈特的记忆，以及一些肖像画中。\r\n表情温柔典雅，不过与薇薇欧（尤其是大人模式）相比，奥利维尔的眼角略微下垂，而且体格相对比较小。\r\n王女风格的宽肩服装和貌似为骑士甲胄的战斗服装两种装束都出现过，但两者在手肘靠上的地方都着有护臂一样的局部甲胄。\r\n\r\n虽然是出身于摇篮的正统王女，但继承权却很低，对外宣称留学于与圣王家建交的修托拉。关于她与克劳斯的关系众说纷纭，以他们生于不同时代的说法为主，但根据克劳斯的回忆录抄本中所述，两人被视做姐弟一般养育（Memory;10）。\r\n\r\n名字的由来不清楚，不过是法语系的名字。\r\n特别指出的是，中世纪叙事诗《罗兰之歌》中，主人公罗兰的好友十二勇将中的一人，就叫“奥利维尔”。",
+    "name": "オリヴィエ・ゼーゲブレヒト",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "奥利维尔·瑟格布雷希特"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "摇篮最后的圣王"
+          },
+          {
+            "k": "英文名",
+            "v": "Olivie Sägebrecht"
+          },
+          {
+            "k": "日文名",
+            "v": "最後のゆりかごの聖王"
+          },
+          {
+            "k": "罗马字",
+            "v": "Orivie Zēgeburehito"
+          },
+          {
+            "k": "昵称",
+            "v": "圣王女"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "wiki.nanohas.com/?登场人物%2FViVid"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 3
+    },
+    "id": 70788,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/41/2b/73343_crt_1g0RK.jpg?r=1656070001",
+      "grid": "https://lain.bgm.tv/pic/crt/g/41/2b/73343_crt_1g0RK.jpg?r=1656070001",
+      "large": "https://lain.bgm.tv/pic/crt/l/41/2b/73343_crt_1g0RK.jpg?r=1656070001",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/41/2b/73343_crt_1g0RK.jpg?r=1656070001"
+    },
+    "summary": "テンブリッジの貴族。一族は落ち目であり、オリヴィアの政略結婚に一族の存続がかかっている。\r\n演劇を愛していて、自身がパトロンとなっている一座の座長を男装して務めている。\r\n勝ち気で、男勝りで、酒に強い。\r\nだがそんな性格も、女として舞台に立つことを奪われてしまった彼女が後天的に覚えた振る舞いであり、\r\n心の奥底にはしっかり乙女心を秘めている。\r\nアーティストは性欲が強いという通説があるが、オリヴィアももちろん例外ではない。\r\nプライドの高い彼女であるから、男として認めさせるのは一筋縄ではいかないが、一度パートナーができよう\r\nものならあっという間に恋愛至上主義になってしまい、会えない時間が長引くといじけ始めてしまう。\r\n「かまってほしい」\r\nその一言がオリヴィアには言えず、むしろ高圧的な態度に出てしまったりする。\r\nそういうときは男の方が折れてあげなければならない。男が折れてはいけないのは挿入中だけであり、\r\n本物の騎士はあえて折れてあげることをよく知っている。\r\nちなみにこれは男に限った話ではない。女性のほうも、素直に「かまって」と言ってくれていいと私は思う。\r\nあまり盛り上がらなかったか、と不安を覚えつつ迎えたデートの終盤に「もっとかまって」と一言言ってくれると、\r\n多くの男が救われる。",
+    "name": "オリヴィア・ベリー",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "奥莉薇娅·蓓丽"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Olivia Berry"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 23,
+      "collects": 74
+    },
+    "id": 73343,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 2,
+    "gender": "female",
+    "birth_day": 25,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a8/48/76825_crt_FmaB1.jpg?r=1637470059",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a8/48/76825_crt_FmaB1.jpg?r=1637470059",
+      "large": "https://lain.bgm.tv/pic/crt/l/a8/48/76825_crt_FmaB1.jpg?r=1637470059",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a8/48/76825_crt_FmaB1.jpg?r=1637470059"
+    },
+    "summary": "聖樹教会の頂点に立つ女教皇。クリスの教皇庁時代の先輩でもある。冷静沈着な教皇であろうと努めているが、クリスの前では負けず嫌いで悪戯好きな性格が出てしまうことも。\r\n\r\n種族：人間\r\n\r\n来歴\r\nハジャーズの大商人の家に生まれる。家が没落したため修道院に送られたが、ひたすら努力を重ねて教皇にまで上り詰めた。\r\n\r\n趣味・特技\r\n実力で教皇の地位にまで上り詰めた才媛。仕事がら交渉ごとが上手だが、実は人付き合いは苦手。\r\n猫と一緒にいるときが最もリラックスできる。\r\n性格は意外と俗っぽく、本性を知る人からは付き合いやすいと言われる。\r\n\r\n好きなもの・こと\r\n猫をこよなく愛しており、猫様と呼んで大切にしている。\r\n口には出さないが、信仰に命をかけるクリスを尊敬している。\r\n\r\n苦手なもの・こと\r\nお酒には弱い。ちょっと飲んだだけで目を回してしまう。\r\n自分は不運であると信じており、勝負事には手を出さないようにしている。",
+    "name": "オリヴィエ・クロムライト",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "奥莉芙"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "2月25日"
+      },
+      {
+        "key": "身高",
+        "value": "163cm"
+      },
+      {
+        "key": "BWH",
+        "value": "87(D)/56/86"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 7
+    },
+    "id": 76825,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

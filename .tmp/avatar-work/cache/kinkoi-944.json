@@ -1,0 +1,419 @@
+[
+  {
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 3,
+    "birth_year": null,
+    "blood_type": 3,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/2d/57821_crt_i959C.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/29/2d/57821_crt_i959C.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/29/2d/57821_crt_i959C.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/2d/57821_crt_i959C.jpg"
+    },
+    "summary": "本篇\r\n\r\n「わたし、色々なことがしりたいわ。日本のこと、学園のこと、あなたのこと」\r\n\r\n北欧の王国「ソルティレージュ」のお姫さま。愛称は「シルヴィ」王位継承権の序列は低いが、大事な国賓である。いつも無邪気で天真爛漫。\r\n食べ歩き好きで、メロンパンをよく買っている。自分の世界にはいなかったタイプの央路に興味を持つ。\r\n\r\n日本には「サムライ」「ニンジャ」がまだいると思っているなど、やや世間知らずで、しかも騙されやすい。世界的に有名なビアにストでもあり、日本の歌姫「マリア·ビショップ」のファン。\r\n------\r\nFD\r\n\r\n「今日は、ぜ～ったい寮にお泊りするのオーロと会ってから毎日が楽しいわ」\r\n\r\n北欧の王国「ソルティレージュ」のお姫様。愛称は「シルヴィ」\r\n王位継承権の序列は低いが、大事な国賓である。\r\n\r\nいつも無邪気で天真爛漫。超ポジティブシンキング。\r\nやりたいと思ったことはすぐ行動に移してしまう性格もあって、\r\nエルやおつきの者たちを困らせてしまうことも。\r\n\r\n世界的に有名なピアニストでもあり、\r\n日本の歌姫「マリア・ビショップ」のファン。",
+    "name": "シルヴィア・ル・クルスクラウン・ソルティレージュ・シスア",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "希尔维娅·路·库洛斯克劳恩·索尔特雷吉·希斯雅"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "シルヴィア"
+          },
+          {
+            "k": "英文名",
+            "v": "Sylvia le Cruzcrown Sortilege Sisua"
+          },
+          {
+            "k": "昵称",
+            "v": "シルヴィ,シル"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "3月3日"
+      },
+      {
+        "key": "血型",
+        "value": "AB"
+      },
+      {
+        "key": "身高",
+        "value": "165cm"
+      },
+      {
+        "key": "BWH",
+        "value": "84/52/82"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://sagaplanets.product.co.jp/works/kinkoi/chara01.html"
+      }
+    ],
+    "stat": {
+      "comments": 54,
+      "collects": 194
+    },
+    "id": 57821,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/71/87/48428_crt_VvCYw.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/71/87/48428_crt_VvCYw.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/71/87/48428_crt_VvCYw.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/71/87/48428_crt_VvCYw.jpg"
+    },
+    "summary": "リターニア王国の女王。 女王と呼ぶにはまだ若すぎる年齢だが、逝去した先代の王に代わり、王国を統治している。 お転婆かつ破天荒な性格で、側近の者たちはその王族らしからぬ振る舞いにいつも頭を痛めている。 だがその一方で、民の安全と王国の平和をいかなる時も第一に考えている名君でもある。 下ネタに対する抵抗が一切無く、卑猥な言葉を恥ずかしげもなくシレッと言い放つ。",
+    "name": "シルヴィア",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 48428,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/5d/5b/53506_crt_r0uQ9.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/5d/5b/53506_crt_r0uQ9.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/5d/5b/53506_crt_r0uQ9.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5d/5b/53506_crt_r0uQ9.jpg"
+    },
+    "summary": "",
+    "name": "シルヴィア",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Sylvia"
+          }
+        ]
+      },
+      {
+        "key": "BWH",
+        "value": "92/58/86"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 53506,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/58/61/80917_crt_V7nB6.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/58/61/80917_crt_V7nB6.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/58/61/80917_crt_V7nB6.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/58/61/80917_crt_V7nB6.jpg"
+    },
+    "summary": "元・断罪者。現在は《扉》としての力に目覚め、世界を見守っている。\r\n\r\nかつてはオリヴィエと敵対し、幾度となく刃を交えたが、外界からの敵を迎え撃つために共闘したことで和解した。\r\n\r\n同じく《扉》である少女・ティルとは一心同体であり、二人でよくミスタルシアの中を自由に出歩いている。",
+    "name": "シルヴィア",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "好きなもの",
+        "value": "世界"
+      },
+      {
+        "key": "嫌いなもの",
+        "value": "外敵"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 80917,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/37/d3/93272_crt_43tgV.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/37/d3/93272_crt_43tgV.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/37/d3/93272_crt_43tgV.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/37/d3/93272_crt_43tgV.jpg"
+    },
+    "summary": "「Sixty-Nine」なるバーチャルなお店のエクスポジター（案内人）。\r\n\r\n明朗快活でノリノリのハイテンション娘。\r\n\r\n最近、ジークンドーというマニアックな格闘技に凝っているらしく、事ある毎に拳が飛ぶ。",
+    "name": "シルヴィア",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://gyutto.com/i/item3332?select_uaflag=1"
+      },
+      {
+        "key": "CV",
+        "value": "桜井唯"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 1
+    },
+    "id": 93272,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/ff/140564_crt_ww7fZ.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ed/ff/140564_crt_ww7fZ.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ed/ff/140564_crt_ww7fZ.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/ff/140564_crt_ww7fZ.jpg"
+    },
+    "summary": "アメリカ人。有名サーカス団の団長の娘。元は空中ブランコの名人だった主人公の父親の元で修行するために、この小さなサーカス団に来ている。金髪、碧眼、ポニーテイル、ソバカス。やや意地悪そうな印象。普段はＴシャツにスパッツみたいなラフな格好をしているが、ステージに立つときは派手なレオタードを着ている。プライドが高く、他の団員を見下しているところがある。巨乳系のキャラだが、空中ブランコなどの軽業をするので、あまりムチムチはしていない。普段はお高くとまった感じで皮肉屋なキャラクターだが、本当は寂しがり屋でホームシックにかかったりする。怪しくない程度に外人なまりの日本語。",
+    "name": "シルヴィア",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 140564,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/33/6f/148189_crt_5D66w.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/33/6f/148189_crt_5D66w.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/33/6f/148189_crt_5D66w.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/33/6f/148189_crt_5D66w.jpg"
+    },
+    "summary": "",
+    "name": "シルヴィア",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "希尔薇娅"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 9
+    },
+    "id": 148189,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/28/2d/201252_crt_WuD6V.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/28/2d/201252_crt_WuD6V.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/28/2d/201252_crt_WuD6V.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/28/2d/201252_crt_WuD6V.jpg"
+    },
+    "summary": "",
+    "name": "シルヴィア",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Sylvia"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 201252,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/41/202339_crt_1m111.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/7a/41/202339_crt_1m111.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/7a/41/202339_crt_1m111.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/41/202339_crt_1m111.jpg"
+    },
+    "summary": "",
+    "name": "シルヴィア",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "希尔薇雅"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 202339,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b3/be/728_crt_vCcSX.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b3/be/728_crt_vCcSX.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/b3/be/728_crt_vCcSX.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b3/be/728_crt_vCcSX.jpg"
+    },
+    "summary": "与阿波罗尼亚斯陷入爱河的人类女战士塞丽昂的转世，却固执的认为自己的哥哥才是阿波罗尼亚斯的转世界，对哥哥似乎感情不一般（禁忌的恋爱，残念......）虽然是阿里西阿王国的公主，其超能力却是------蛮力（狂汗！~~~~~~）好胜心很强，经常跟主角阿波罗吵架，可关键时刻却配合默契。",
+    "name": "シルヴィア・ド・アリシア",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "西尔维亚·德·阿里西亚"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Silvia de Alisia"
+          },
+          {
+            "k": "罗马字",
+            "v": "Shiruvia do Arishia"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "声优",
+        "value": "かかずゆみ"
+      },
+      {
+        "key": "年龄",
+        "value": "14岁"
+      }
+    ],
+    "stat": {
+      "comments": 4,
+      "collects": 9
+    },
+    "id": 728,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

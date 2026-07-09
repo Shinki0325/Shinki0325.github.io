@@ -1,0 +1,555 @@
+[
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a9/b3/28351_crt_SjuG6.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a9/b3/28351_crt_SjuG6.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a9/b3/28351_crt_SjuG6.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a9/b3/28351_crt_SjuG6.jpg"
+    },
+    "summary": "遊真を幽霊部に引き込んだ張本人。 学園一の才媛にして、学園一の留年数を誇る。\r\n学園の居心地の良さを気に入っており、わざと単位不足で留年してまで居座っている。\r\n誰もが虜になってしまうような、わがままボディの持ち主。\r\n\r\n大人びた態度をしていたかと思うと急に子供っぽくなるなど、本心が掴めない人。\r\n計算なのか天然なのか、そのボディで遊真に擦り寄りからかって楽しんでいる節がある。\r\nお気に入りの羊のぬいぐるみをいつも持ち歩いている。\r\n\r\n「当たり～、私のこと知ってるんだ。 ふふ、悪い意味で、でしょ？」",
+    "name": "玖音彩乃",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "玖音彩乃"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Kuon Ayano"
+          },
+          {
+            "k": "日文名",
+            "v": "玖音 彩乃"
+          },
+          {
+            "k": "纯假名",
+            "v": "くおん あやの"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "？月？日"
+      },
+      {
+        "key": "血型",
+        "value": "AB型"
+      },
+      {
+        "key": "身高",
+        "value": "161cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B91/ W59/ H86"
+      },
+      {
+        "key": "学年",
+        "value": "3年生"
+      },
+      {
+        "key": "趣味",
+        "value": "誘惑、駄菓子、ヒカリ"
+      }
+    ],
+    "stat": {
+      "comments": 14,
+      "collects": 48
+    },
+    "id": 28351,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f0/8e/52574_crt_3fI8C.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f0/8e/52574_crt_3fI8C.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f0/8e/52574_crt_3fI8C.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f0/8e/52574_crt_3fI8C.jpg"
+    },
+    "summary": "奏多の両親の友人の娘さんで、山葉家に預けられ同居人として生活を共にしている。\r\n奏多をご両親から任されたと主張し、お姉ちゃんとして振舞う残念美人。\r\nM3部に主人公を引き込んだ張本人。\r\n歌が壊滅的に下手なので歌詞担当。 歌えなくても楽しんでおり、満足している。\r\nノリが良く人好きする性格で、リーダーシップがあるムードメーカー。\r\n楽しければそれでおっけー！ を地で行き、思いつきで行動して皆を巻き込んでいく。\r\n「いいじゃない、そういう自由なところを許容してこその、M3部なんだから」",
+    "name": "河和井玖音",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "河和井 玖音"
+          },
+          {
+            "k": "纯假名",
+            "v": "かわい くおん"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "160cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B92/ W59/ H88"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 5
+    },
+    "id": 52574,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 11,
+    "gender": "female",
+    "birth_day": 2,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b2/2c/55632_crt_68L6Z.jpg?r=1618749108",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b2/2c/55632_crt_68L6Z.jpg?r=1618749108",
+      "large": "https://lain.bgm.tv/pic/crt/l/b2/2c/55632_crt_68L6Z.jpg?r=1618749108",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b2/2c/55632_crt_68L6Z.jpg?r=1618749108"
+    },
+    "summary": "序章登场，如月学园高中部2年9班的副班主任兼英语老师，土豪级巨乳角色，温柔的大姐姐性格，有点天然呆，十分关心学生。",
+    "name": "丹羽玖音",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "丹羽玖音"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "丹羽玖远"
+          },
+          {
+            "k": "纯假名",
+            "v": "にわくおん"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "11月2日"
+      },
+      {
+        "key": "身高",
+        "value": "170cm"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 5
+    },
+    "id": 55632,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/23/87/56693_crt_28u7O.jpg?r=1530630161",
+      "grid": "https://lain.bgm.tv/pic/crt/g/23/87/56693_crt_28u7O.jpg?r=1530630161",
+      "large": "https://lain.bgm.tv/pic/crt/l/23/87/56693_crt_28u7O.jpg?r=1530630161",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/23/87/56693_crt_28u7O.jpg?r=1530630161"
+    },
+    "summary": "「切那さんは──あの子を救ってくださいますか？」\r\n\r\n御原家の現当主で、凛音の母親。五年前に夫を病で亡くしている。彼女も同じ病を患っており、日光を避けて生活している。一人の母親として、目の前の幸せを守り続けることの重要性を説き、空回りしがちな主人公を導いてくれる。だが、彼女自身もこの島のあり方には納得していない部分がある。",
+    "name": "御原玖音",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "御原玖音"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "おはら くおん"
+          },
+          {
+            "k": "罗马字",
+            "v": "Ohara Kuon"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 82,
+      "collects": 196
+    },
+    "id": 56693,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 17,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/2f/a3/33220_crt_x02iV.jpg?r=1538574684",
+      "grid": "https://lain.bgm.tv/pic/crt/g/2f/a3/33220_crt_x02iV.jpg?r=1538574684",
+      "large": "https://lain.bgm.tv/pic/crt/l/2f/a3/33220_crt_x02iV.jpg?r=1538574684",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2f/a3/33220_crt_x02iV.jpg?r=1538574684"
+    },
+    "summary": "コケティッシュなルックスと言動で、人気沸騰中の現役高校生アイドル。見た目とは裏腹に負けず嫌いで努力家な一面も持っており、所属しているアイドルグループ「SPIKA（スピカ）」では、同期メンバー2人と常にセンター争いをしている。\r\n人がいるところではSPIKAのメンバーとしてアイドルに徹しようとするが、1人になると地が出てしまうためか、一度素の自分を見られた相手には開き直って接する。",
+    "name": "玖我山璃音",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "玖我山璃音"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "玖我山 璃音"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "10月17日"
+      },
+      {
+        "key": "血型",
+        "value": "B型"
+      },
+      {
+        "key": "身高",
+        "value": "159cm"
+      },
+      {
+        "key": "BWH",
+        "value": "85/57/86"
+      },
+      {
+        "key": "年龄",
+        "value": "17岁"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 18
+    },
+    "id": 33220,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ab/05/86152_crt_FHmHR.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ab/05/86152_crt_FHmHR.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ab/05/86152_crt_FHmHR.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ab/05/86152_crt_FHmHR.jpg"
+    },
+    "summary": "黒スーツに狐面を被っており、単調な話し方が特徴。手刀で相手の首を切り落としたり、掌から相手を氷漬けにする冷凍光線を放つ。",
+    "name": "玖",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "玖"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "きゅう"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "Wikipedia"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 86152,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/9b/7f/215777_crt_N6ZE8.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/9b/7f/215777_crt_N6ZE8.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/9b/7f/215777_crt_N6ZE8.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9b/7f/215777_crt_N6ZE8.jpg"
+    },
+    "summary": "玖是动画《开心超人联盟》系列中的虚拟角色，由邓玉婷配音，初次登场于《开心超人联盟之星际联盟》。她18岁，出身唐街，左半身保持哥哥珑的形象，右半身为本体，使用九节鞭作为武器。作为星际超人联盟考生，她在白连发记录中排名第一。\r\n玖的哥哥珑为守护唐街牺牲后，她继承其遗志参加联盟考核。在星际联盟考核中两次获得榜首，重伤状态下击退神秘人并救下同伴。后与开心超人合作击败迷雾森林的青蛙怪兽，克服心理阴影。最终考核中因考场爆炸险胜开心超人，正式成为星际超人联盟成员。\r\n后续协助恢复开心超人记忆，参与对抗暗魔等行动。其九节鞭可幻化蛇形束缚敌人，战斗表现强于黑化伽罗。角色贯穿《能源核守护者》《星之力》等多季剧情。",
+    "name": "玖",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "玖"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Q"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 215777,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 15,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f0/45/10467_crt_jhOQu.jpg?r=1398389400",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f0/45/10467_crt_jhOQu.jpg?r=1398389400",
+      "large": "https://lain.bgm.tv/pic/crt/l/f0/45/10467_crt_jhOQu.jpg?r=1398389400",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f0/45/10467_crt_jhOQu.jpg?r=1398389400"
+    },
+    "summary": "经常驾驶机车，個性看似倔強，其實非常率直，容易被人猜中心意。由於懷疑母親玖我紗江子的死與一番地有關，所以不斷的查探其秘密及戰鬥。愛好收集內衣、打電動和賽馬，在游戏中还有害怕幽灵这一特征。喜歡的食物是美乃滋（就算即食麵也喜歡加進去）；和鴇羽為隔壁班同學，和學生會長藤乃靜留關係曖昧，和初中部的結城奈緒之間有點過節，二人只要見面就會發生爭執；子獸為迪蘭（デュラン）（狼型態。攻擊技有裝填鉻彈（火）/銀彈（冰）），元素武具為雙槍（銃型のエレメント）。开始时带着很小的迪兰满处走的样子很萌哦。在结尾处驾驭巨大化迪兰与静留双飘，并于最终话复生。最重要的人是藤乃靜留。",
+    "name": "玖我なつき",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "玖我夏树"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "玖我夏姬"
+          },
+          {
+            "k": "日文名",
+            "v": "玖我 なつき"
+          },
+          {
+            "k": "纯假名",
+            "v": "くが なつき"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kuga Natsuki"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "8/15"
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      },
+      {
+        "key": "身高",
+        "value": "160cm"
+      },
+      {
+        "key": "体重",
+        "value": "47kg"
+      },
+      {
+        "key": "BWH",
+        "value": "82/57/83"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://www.sunrise-inc.co.jp/my-hime/web/character/index.html"
+      }
+    ],
+    "stat": {
+      "comments": 7,
+      "collects": 31
+    },
+    "id": 10467,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/0b/28/10500_crt_9NC22.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/0b/28/10500_crt_9NC22.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/0b/28/10500_crt_9NC22.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0b/28/10500_crt_9NC22.jpg"
+    },
+    "summary": "阿伊青梅竹马的女孩，蓝发，无论何时都身穿一件黑色的大衣。电子工学，情报工学，机械工学的天才。19岁，绰号[青色的学者]、[死线之蓝]，[行走的逆鳞]。天真、无邪而又残酷。一旦记住的事物就不会忘记，也不可能忘记。\r\n    玖渚机关的千金大小姐，但在系列故事开始前就与家里断绝关系。一人独占着京都市高级住宅街.城咲的高级公寓的最高两蹭，过着几乎足不出户，成天吃着垃圾食品的生活。讨厌洗澡，无法一个人做极端的上下运动（如上下楼梯）。\r\n    曾经以“（行走逆鳞）死线之蓝（Dead Blue）”之名与【兔吊木垓辅——“审判罪人”害恶细菌(CreenGreenGreen)】、【日中凉——“埋葬寂静”双重世界(DoubleFlick)】、【梧轰正误——“嘲笑同胞”罪恶夜行(ReverseCruise)】、【栋冬六月——“喧嚣血眼”永久立体(CubicLoop)】、【抚桐伯乐——“颓丧饯别”狂喜乱舞(DancingWithMadness)】、【绫南豹——“旋转铃木”凶兽(Chita)】、【式岸轧骑——“蠢动没落”街(BadKind)】、【滋贺井统乃——“复苏恶名”尸(TriggerHappyEnd)】组成震撼世界的黑客组织——[集团]的首领。从事恐怖活动。现在是个家里蹲。",
+    "name": "玖渚友",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "玖渚友"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "死线之蓝（Dead Blue）"
+          },
+          {
+            "v": "暴君"
+          },
+          {
+            "k": "日文名",
+            "v": "くなぎさ とも"
+          },
+          {
+            "k": "罗马字",
+            "v": "kunagisa tomo"
+          },
+          {
+            "k": "昵称",
+            "v": "小友"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 16,
+      "collects": 127
+    },
+    "id": 10500,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a8/7a/13497_crt_J05ah.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a8/7a/13497_crt_J05ah.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a8/7a/13497_crt_J05ah.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a8/7a/13497_crt_J05ah.jpg"
+    },
+    "summary": "诗绪操纵的案山子。久羽子形容它是“超大的木偶怪物”。\r\n    头上有一对像是双马尾的手，武器是右手内的刀子，和头部放出的光线。以前是匡平的案山子。\r\n    名字的由来是菊理媛神。",
+    "name": "玖吼理",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "玖吼理"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "玖吼理"
+          },
+          {
+            "k": "纯假名",
+            "v": "ククリ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kukuri"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "Wiki(zh)"
+      }
+    ],
+    "stat": {
+      "comments": 4,
+      "collects": 4
+    },
+    "id": 13497,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

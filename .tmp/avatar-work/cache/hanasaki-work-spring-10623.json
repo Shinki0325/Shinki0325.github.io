@@ -1,0 +1,407 @@
+[
+  {
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 11,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/62/7d/56218_crt_Eb37i.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/62/7d/56218_crt_Eb37i.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/62/7d/56218_crt_Eb37i.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/62/7d/56218_crt_Eb37i.jpg"
+    },
+    "summary": "主人公的班主任。\r\n凭借着极为年幼的容姿，和学生们成为了朋友一般亲密的关系。\r\n\r\n和外表不符的，非常喜欢喝酒。\r\n周末或是节假日时总会外出灌酒，似乎经常会被其他人说教呢。\r\n\r\n最近开始着急自己依旧单身的情况，快被寂寞压垮了。\r\n\r\n「什么时候才能用上哟、这对玻璃杯！这样下去的话岂不是单纯放着铺尘嘛！」",
+    "name": "山下久美",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Yamashita Kumi"
+          },
+          {
+            "k": "纯假名",
+            "v": "やました くみ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "9月11日"
+      },
+      {
+        "key": "血型",
+        "value": "O型"
+      },
+      {
+        "key": "身高",
+        "value": "142cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B68/ W52/ H66"
+      },
+      {
+        "key": "兴趣",
+        "value": "晚上喝酒（虽然是倾向于在自家喝，不过因为输给了寂寞而跑到人多的店里了）"
+      }
+    ],
+    "stat": {
+      "comments": 4,
+      "collects": 4
+    },
+    "id": 56218,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/1e/c0/130038_crt_ZGza5.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/1e/c0/130038_crt_ZGza5.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/1e/c0/130038_crt_ZGza5.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1e/c0/130038_crt_ZGza5.jpg"
+    },
+    "summary": "名店街の中にある和菓子屋「太子堂」の売り子さんで、学校は卒業し社員になっているようだ。\r\nいわゆる巨乳でないすばでぃの上、天然フェロモン体質の持ち主。\r\nおっとりしていてお嬢様っぽい風格を漂わせてはいるが、実はかなりのおおボケ。\r\nかなりの悪戯好きで、主人公が驚くたびに嬉しそうに笑うのだが、その笑顔が凶悪に可愛らしいので今ひとつ憎みきれない。",
+    "name": "山下久美",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "山下　久美"
+          },
+          {
+            "k": "纯假名",
+            "v": "やましたくみ"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 130038,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/9b/66887_crt_2jbpf.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/29/9b/66887_crt_2jbpf.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/29/9b/66887_crt_2jbpf.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/9b/66887_crt_2jbpf.jpg"
+    },
+    "summary": "科学部部員。中学1年生。\r\n上野さんの田中への恋心を察してアシスト役に徹しているが、\r\n鈍感すぎる田中にイライラして時々、厳しく当たることもある。\r\n一番年下なのに実は一番冷静に科学部をみている。",
+    "name": "山下",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "山下"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Yamashita"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 5,
+      "collects": 28
+    },
+    "id": 66887,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/9d/86/94648_crt_iGmH4.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/9d/86/94648_crt_iGmH4.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/9d/86/94648_crt_iGmH4.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9d/86/94648_crt_iGmH4.jpg"
+    },
+    "summary": "",
+    "name": "山下",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 94648,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/24/6c/106612_crt_nnlJN.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/24/6c/106612_crt_nnlJN.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/24/6c/106612_crt_nnlJN.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/24/6c/106612_crt_nnlJN.jpg"
+    },
+    "summary": "ユズヒコのクラスメイト。初登場は4巻。アニメの初登場は第16話。川島の親友。川島と同様にユズヒコのことが好きで、彼に話しかけられただけで大喜びするほどだが、暴走気味な川島に比べるとその好意は常識的な範疇に収まっている。ユズヒコとは藤野、石田、須藤、川島の持ってきた疑問を討論することも多い。",
+    "name": "山下",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "山下"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://ja.wikipedia.org/wiki/あたしンちの登場人物"
+      },
+      {
+        "key": "関係",
+        "value": "ユズヒコに関係する主要人物"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 0
+    },
+    "id": 106612,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/30/df/163518_crt_JONF7.jpg?r=1724570362",
+      "grid": "https://lain.bgm.tv/pic/crt/g/30/df/163518_crt_JONF7.jpg?r=1724570362",
+      "large": "https://lain.bgm.tv/pic/crt/l/30/df/163518_crt_JONF7.jpg?r=1724570362",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/30/df/163518_crt_JONF7.jpg?r=1724570362"
+    },
+    "summary": "",
+    "name": "山下",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "山下"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 163518,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/26/86/188980_crt_2B2fo.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/26/86/188980_crt_2B2fo.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/26/86/188980_crt_2B2fo.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/26/86/188980_crt_2B2fo.jpg"
+    },
+    "summary": "",
+    "name": "山下",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "山下"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 188980,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/0d/24/199891_crt_nttO7.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/0d/24/199891_crt_nttO7.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/0d/24/199891_crt_nttO7.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0d/24/199891_crt_nttO7.jpg"
+    },
+    "summary": "",
+    "name": "山下",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "山下"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 199891,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f6/44/10981_crt_4CXxP.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f6/44/10981_crt_4CXxP.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f6/44/10981_crt_4CXxP.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f6/44/10981_crt_4CXxP.jpg"
+    },
+    "summary": "有名な陸軍元帥を祖父に持つ、日本帝国陸軍長官。\r\n祖父の七光での出世と言われるのを嫌い、努力して成果を出している。\r\n\r\n気合いや根性を重視する精神論者。",
+    "name": "山下利古里",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "山下利古里"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 5
+    },
+    "id": 10981,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/78/03/13524_crt_Qd30K.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/78/03/13524_crt_Qd30K.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/78/03/13524_crt_Qd30K.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/78/03/13524_crt_Qd30K.jpg"
+    },
+    "summary": "晶马的同学。",
+    "name": "山下洋介",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "山下洋介"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 3
+    },
+    "id": 13524,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

@@ -1,0 +1,528 @@
+[
+  {
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 21,
+    "birth_year": null,
+    "blood_type": 3,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/1e/df/38910_crt_qbkxN.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/1e/df/38910_crt_qbkxN.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/1e/df/38910_crt_qbkxN.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1e/df/38910_crt_qbkxN.jpg"
+    },
+    "summary": "主人公と席が隣同士になった女の子。\r\n演劇に大きな興味を持っており、放課後に愛読書を台本代わりにこっそり練習している。\r\n普段は\"ぽやっ\"としていて、少々おっちょこちょい。突拍子もない発言で、周囲を驚かせることもしばしば。",
+    "name": "名白椛",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "名白 椛"
+          },
+          {
+            "k": "纯假名",
+            "v": "なしろ もみじ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Nashiro Momiji"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "10月21日"
+      },
+      {
+        "key": "血型",
+        "value": "AB"
+      },
+      {
+        "key": "身高",
+        "value": "153cm"
+      },
+      {
+        "key": "体重",
+        "value": "50kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B85 / W59 / H86"
+      }
+    ],
+    "stat": {
+      "comments": 13,
+      "collects": 21
+    },
+    "id": 38910,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/70/95101_crt_cu4ci.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/06/70/95101_crt_cu4ci.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/06/70/95101_crt_cu4ci.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/70/95101_crt_cu4ci.jpg"
+    },
+    "summary": "名探偵をすることになった空丘夕陽の助手。\r\nスポーツ万能で、友達思いで裏表がなく、決断力がる。\r\n人に好かれる性格だけど、うかつな言動をして騷ぎをおこしてしまうことも。\r\nエロいことに興味がなく、発情している生徒を冷ややかな目でみているが、実は自分でも気づいていない隠れマゾ。",
+    "name": "水名とりねこ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "水名荆白"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "みずな　とりねこ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "160cm"
+      }
+    ],
+    "stat": {
+      "comments": 11,
+      "collects": 14
+    },
+    "id": 95101,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/38/12106_crt_mDXSV.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a4/38/12106_crt_mDXSV.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a4/38/12106_crt_mDXSV.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/38/12106_crt_mDXSV.jpg"
+    },
+    "summary": "さくら荘202号室の住人。編入してきた美術科の2年生。性格はおとなしく世界的な天才画家だが、常識の無さから空太に介護されている。両親は外国に住んでいる。",
+    "name": "椎名ましろ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "椎名真白"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "しいな ましろ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Shiina Mashiro"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "162cm"
+      },
+      {
+        "key": "体重",
+        "value": "45kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B79 W55 H78"
+      }
+    ],
+    "stat": {
+      "comments": 55,
+      "collects": 891
+    },
+    "id": 12106,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/9f/c3/1938_crt_NPzhP.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/9f/c3/1938_crt_NPzhP.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/9f/c3/1938_crt_NPzhP.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9f/c3/1938_crt_NPzhP.jpg"
+    },
+    "summary": "表面上是古董店“Venus engagement”的店主，可实质上本业是专门抵制“魔人”入侵世界的退治师。",
+    "name": "名橋ルチア",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "名桥露西亚"
+      },
+      {
+        "key": "别名",
+        "value": []
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 4
+    },
+    "id": 1938,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ef/77/11282_crt_h64w4.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ef/77/11282_crt_h64w4.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ef/77/11282_crt_h64w4.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ef/77/11282_crt_h64w4.jpg"
+    },
+    "summary": "生会组织的首脑。无论什么事都能优秀地完成，但也因此很容易在心里背上包袱。\r\n为了向宇宙科学会传达最后通牒而造访了他们的社团活动室，但却不知不觉间被空太他们卷了进去。",
+    "name": "名香野阳向",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "名香野阳向"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 7
+    },
+    "id": 11282,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/3b/98/13565_crt_8KgA8.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/3b/98/13565_crt_8KgA8.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/3b/98/13565_crt_8KgA8.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3b/98/13565_crt_8KgA8.jpg"
+    },
+    "summary": "天才写真家\r\n\r\n写真家。他人の醜い顔を写真に納めることを生き甲斐としているちょっと困った女の子。1巻で丈途が疑われた覗き事件の真犯人は彼女である。入学早々醜さの才能をのぞかせる丈途にしつこく付きまとうが、丈途に自分のパンチラ写真を送るなど好意をよせている。\r\nツンデレ要素が高い。",
+    "name": "名機来夏",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "名机来夏"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "名機 来夏"
+          },
+          {
+            "k": "纯假名",
+            "v": "めいき らいか"
+          },
+          {
+            "k": "罗马字",
+            "v": "Meiki Raika"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "Wiki(jp)"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 10
+    },
+    "id": 13565,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c2/c5/17482_crt_Ul2Fy.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c2/c5/17482_crt_Ul2Fy.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c2/c5/17482_crt_Ul2Fy.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c2/c5/17482_crt_Ul2Fy.jpg"
+    },
+    "summary": "",
+    "name": "名瀬夭歌",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "名濑夭歌"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "名瀬 夭歌"
+          },
+          {
+            "k": "纯假名",
+            "v": "なぜ ようか"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 4
+    },
+    "id": 17482,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 7,
+    "gender": "male",
+    "birth_day": 21,
+    "birth_year": null,
+    "blood_type": 2,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/52/20892_crt_8ae88.jpg?r=1611926447",
+      "grid": "https://lain.bgm.tv/pic/crt/g/29/52/20892_crt_8ae88.jpg?r=1611926447",
+      "large": "https://lain.bgm.tv/pic/crt/l/29/52/20892_crt_8ae88.jpg?r=1611926447",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/52/20892_crt_8ae88.jpg?r=1611926447"
+    },
+    "summary": "高中3年级学生。异界士，名濑家的长男。使用槛の能力的异界士。\r\n与美月同样监视着秋人，与秋人经常开玩笑，两人关系很好。\r\n极度的妹控，对美月非常疼爱。平时一副开玩笑的样子，但做事的时候很精干。实际上很会照顾人。\r\n文艺部的幽灵成员。",
+    "name": "名瀬博臣",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "名濑博臣"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "なせ ひろおみ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Nase Hiroomi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "7月21日"
+      },
+      {
+        "key": "血型",
+        "value": "B"
+      },
+      {
+        "key": "身高",
+        "value": "178cm"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 27,
+      "collects": 77
+    },
+    "id": 20892,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 11,
+    "gender": "female",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": 3,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/99/aa/20893_crt_tXtAe.jpg?r=1611926750",
+      "grid": "https://lain.bgm.tv/pic/crt/g/99/aa/20893_crt_tXtAe.jpg?r=1611926750",
+      "large": "https://lain.bgm.tv/pic/crt/l/99/aa/20893_crt_tXtAe.jpg?r=1611926750",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/99/aa/20893_crt_tXtAe.jpg?r=1611926750"
+    },
+    "summary": "高中2年级。作为异界士中名门望族的名濑家次女，身负监视秋人的任务，实际上却十分担心秋人。可以为秋人切腹的朋友。\r\n平时是重度S的言行，但也有担心大家的女生的一面。\r\n文艺部部长。与会长博臣是兄妹。",
+    "name": "名瀬美月",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "名濑美月"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Nase Mitsuki"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "11.01.????"
+      },
+      {
+        "key": "血型",
+        "value": "AB"
+      },
+      {
+        "key": "身高",
+        "value": "165cm"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 46,
+      "collects": 285
+    },
+    "id": 20893,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/fc/9e/22135_crt_vS2l8.jpg?r=1612038390",
+      "grid": "https://lain.bgm.tv/pic/crt/g/fc/9e/22135_crt_vS2l8.jpg?r=1612038390",
+      "large": "https://lain.bgm.tv/pic/crt/l/fc/9e/22135_crt_vS2l8.jpg?r=1612038390",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fc/9e/22135_crt_vS2l8.jpg?r=1612038390"
+    },
+    "summary": "名濑家的长女，博臣与美月的姐姐。\r\n身处在精明强干的异界士中以牢笼能力出名的的名濑一族，只有少数能使用冻结界的人。\r\n与某位神秘人物有着什么谋划，让栗山未来杀死神原秋人的幕后操纵者，实力强到可怕，被形容为“怪物”。",
+    "name": "名瀬泉",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "名濑泉"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "名瀬 泉"
+          },
+          {
+            "k": "纯假名",
+            "v": "なせ　いずみ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Nase Izumi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "4月7日"
+      },
+      {
+        "key": "血型",
+        "value": "RH-O型"
+      },
+      {
+        "key": "身高",
+        "value": "170cm"
+      },
+      {
+        "key": "引用来源",
+        "value": "百度百科"
+      }
+    ],
+    "stat": {
+      "comments": 11,
+      "collects": 42
+    },
+    "id": 22135,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

@@ -1,0 +1,270 @@
+[
+  {
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 22,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/e8/b3/42300_crt_w4uxx.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/e8/b3/42300_crt_w4uxx.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/e8/b3/42300_crt_w4uxx.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e8/b3/42300_crt_w4uxx.jpg"
+    },
+    "summary": "聖ガブリエレ学園 1年生。 中欧の小国・ベルクシュトラーセ公国の第三公女。\r\n彼女の歌う賛美歌は天使の美声と賞賛されている。\r\nが、本人にどこまでその自覚があるのかは不明。\r\nなにせ いつでも気だるげで、基本的にやる気を感じられない。\r\n\r\n歩くのも面倒な時は、ぐでーんとだらけた格好のまま主人公に担がれて運搬される。\r\nそんな彼女が突然なにゆえ日本へ留学してきたのかは謎である。\r\n\r\n「長い名前なんて無駄なんです、あーちゃんと呼んでくれていいですよ」",
+    "name": "アーデルハイト・フォン・ベルクシュトラーセ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "阿德尔海特·冯·贝格施特拉瑟"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "阿酱"
+          },
+          {
+            "k": "英文名",
+            "v": "Adelheid von Bergstrasse"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "5月22日"
+      },
+      {
+        "key": "血型",
+        "value": "B型"
+      },
+      {
+        "key": "身高",
+        "value": "150cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B75 /W57 /H79"
+      },
+      {
+        "key": "趣味",
+        "value": "寝ること"
+      }
+    ],
+    "stat": {
+      "comments": 32,
+      "collects": 107
+    },
+    "id": 42300,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/27/d2/50685_crt_r99FR.jpg?r=1774698678",
+      "grid": "https://lain.bgm.tv/pic/crt/g/27/d2/50685_crt_r99FR.jpg?r=1774698678",
+      "large": "https://lain.bgm.tv/pic/crt/l/27/d2/50685_crt_r99FR.jpg?r=1774698678",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/27/d2/50685_crt_r99FR.jpg?r=1774698678"
+    },
+    "summary": "帝国における魔導工学・概念術理学の大家にして、新型演算宝珠開発を行う帝国軍技術開発部の主任技師。技術を人間に合わせるのではなく、人間を技術に合わせようとする技術優先主義者として名を轟かせている。同業者が評して曰く、倫理と常識を研究力に置換した天才。名前で呼ぶと少し怒る。",
+    "name": "アーデルハイト・フォン・シューゲル",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "阿德海特·冯·修格鲁"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Adelheid von Schugel"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 0
+    },
+    "id": 50685,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/bf/35/66437_crt_4sz4a.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/bf/35/66437_crt_4sz4a.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/bf/35/66437_crt_4sz4a.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bf/35/66437_crt_4sz4a.jpg"
+    },
+    "summary": "ULFの新型機「EMC2－J」別名『ジャッジメント』のACEパイロット。\r\nこの機体はGX系と似たタイプで波動粒子砲などの高エネルギー放出タイプの兵装が装備されており、浬とは戦場で多々合間見えることとなる。",
+    "name": "アーデルハイト・フォン・ファイツェル",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "アーデルハイト・フォン・ファイツェル"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 66437,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/2e/a6/23196_crt_54kfc.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/2e/a6/23196_crt_54kfc.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/2e/a6/23196_crt_54kfc.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2e/a6/23196_crt_54kfc.jpg"
+    },
+    "summary": "掌管香气的名门的香水女巫\r\nアーデルハイト・リッター・フォン・ヴァインベルガー　CV：白月かなめ\r\n\r\n魔术名门之家的年轻女当家。\r\n也就是所谓的运用“香气”和“药草”的魔术世家，表面上是老铺香水厂家的经营者。\r\n据称她的祖母在赠予学校的创立人クラール・ラズリット的魔术道具之中，留有祖母的纪念品，为了取回这件物品而和管家ルイ一起来到学校。\r\n\r\n正义感很强，拥有行动力，不允许所有事情的不公正、歪曲、不诚实的高傲高洁的性格。\r\n受害于极度不服输的性格，即便是与互相总是拌嘴的管家逞口舌之争时处于下风也毫不退让，直至搬起石头砸了自己的脚才会哭着认输。\r\n被称呼为「ハイジちゃん」时会「我可没有允许你这么亲切的叫我！」地生气。\r\n\r\n「感到兴趣了吗？我可要解开夜之世界的秘密，助我一臂之力吧」",
+    "name": "アーデルハイト・リッター・フォン・ヴァインベルガー",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "爱蒂尔海特·利特·冯·瓦因贝尔格"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "Adelheid Ritter von Weinberger"
+          },
+          {
+            "k": "第二中文名",
+            "v": "海蒂"
+          },
+          {
+            "k": "纯假名",
+            "v": "アーデルハイト・リッター・フォン・ヴァインベルガー"
+          },
+          {
+            "k": "昵称",
+            "v": "ハイジ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "160cm"
+      }
+    ],
+    "stat": {
+      "comments": 6,
+      "collects": 24
+    },
+    "id": 23196,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/d4/161788_crt_swEE2.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/56/d4/161788_crt_swEE2.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/56/d4/161788_crt_swEE2.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/d4/161788_crt_swEE2.jpg"
+    },
+    "summary": "帝国軍特務捜査官。\r\n貴族の出身で、幼い頃から英才教育を受けており、\r\n剣技と魔法の両方に精通している。\r\n数々の功績を立てたことから、\r\n皇帝よりソフィアという真名（しんめい）を授かった。",
+    "name": "アーデルハイト・ソフィア・フォン・フィラルベルク",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 161788,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f4/f4/45147_crt_PDqdx.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f4/f4/45147_crt_PDqdx.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f4/f4/45147_crt_PDqdx.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f4/f4/45147_crt_PDqdx.jpg"
+    },
+    "summary": "失われた精霊たち「アルテミーズ」の長女。\r\n完全完璧にこなす兵器。\r\n全ての精霊たちの憧れであり、自慢の姉である。",
+    "name": "アーデルハイト",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 45147,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

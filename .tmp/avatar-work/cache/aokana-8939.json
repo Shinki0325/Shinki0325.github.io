@@ -1,0 +1,84 @@
+[
+  {
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 16,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/82/22881_crt_FG9mm.jpg?r=1459502612",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b8/82/22881_crt_FG9mm.jpg?r=1459502612",
+      "large": "https://lain.bgm.tv/pic/crt/l/b8/82/22881_crt_FG9mm.jpg?r=1459502612",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/82/22881_crt_FG9mm.jpg?r=1459502612"
+    },
+    "summary": "元々は島外の住人だが、母の死をきっかけに父の実家がある久奈島へ帰ってきた。\r\nよくフリーダムな行動で周囲を驚かせているサバサバとした気分屋だが、熱い一面も。また友達思い。\r\n自分の祖母が好きで好きなもの等に大きな影響を受けている。最近はぬか床作りを教わっているとの事。\r\n反射神経を必要とするスポーツが得意。従って、入部したフライングサーカスにて活躍するのだが・・・。\r\nちなみに祖母は猟銃を所有しているとの事。\r\n\r\nEXTRA1：\r\nその時その時の気分で行動する気分屋。\r\nうどんが大好物。\r\n\r\n真白が晶也と付き合ってからも、真白の慕う大好きな先輩であることは変わらず。",
+    "name": "鳶沢みさき",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "鸢泽美咲"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "鳶沢 みさき"
+          },
+          {
+            "k": "纯假名",
+            "v": "とびさわ みさき"
+          },
+          {
+            "k": "罗马字",
+            "v": "tobisawa misaki"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "4月16日"
+      },
+      {
+        "key": "身高",
+        "value": "165cm"
+      },
+      {
+        "key": "体重",
+        "value": "48kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B88 /W59 /H89"
+      },
+      {
+        "key": "所属",
+        "value": "久名浜学院 2年"
+      },
+      {
+        "key": "趣味",
+        "value": "おばあちゃんから教わる事"
+      },
+      {
+        "key": "好きな食べ物",
+        "value": "うどん、たけのこ"
+      },
+      {
+        "key": "飛行スタイル",
+        "value": "ファイター"
+      }
+    ],
+    "stat": {
+      "comments": 162,
+      "collects": 465
+    },
+    "id": 22881,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

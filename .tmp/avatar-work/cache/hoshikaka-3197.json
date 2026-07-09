@@ -1,0 +1,447 @@
+[
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/e6/11093_crt_6UdL9.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/da/e6/11093_crt_6UdL9.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/da/e6/11093_crt_6UdL9.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/e6/11093_crt_6UdL9.jpg"
+    },
+    "summary": "和从都市的学校转校而来的一馬，第一个接触的少女。\r\n活泼爱与人亲近，有着让任何人都喜欢的性格。\r\n反过来说，过于纯真不懂得怀疑人，那毫无防备的行为也让周围的人（特别是伊吹）吃起醋来。\r\n最爱自己出生成长的山比古町，希望这样的日子可以永远下去。\r\n一馬的转入，让这样的初的心和环境产生小小的变化。",
+    "name": "中津川初",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "中津川初"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "156cm"
+      }
+    ],
+    "stat": {
+      "comments": 5,
+      "collects": 72
+    },
+    "id": 11093,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/5a/41885_crt_xUU8z.jpg?r=1463759829",
+      "grid": "https://lain.bgm.tv/pic/crt/g/dd/5a/41885_crt_xUU8z.jpg?r=1463759829",
+      "large": "https://lain.bgm.tv/pic/crt/l/dd/5a/41885_crt_xUU8z.jpg?r=1463759829",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/5a/41885_crt_xUU8z.jpg?r=1463759829"
+    },
+    "summary": "〈フラクシナス〉のクルーの一人。自称100人の嫁（三次元かどうかは不明）を持つ男、通称〈次元を超える者（ディメンション・ブレイカー）〉。\r\nMUNECHIUKAというペンネームでとある有名サークルの代表をしていたこともあり、オタク業界ではかなりの有名人。\r\nアニメ版・劇場版では、声優であるゴー✩ジャスのネタである地球儀を持っている場面も存在する。",
+    "name": "中津川宗近",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "中津川宗近"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "なかつがわむねちか"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 41885,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a0/c9/54957_crt_228Y8.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a0/c9/54957_crt_228Y8.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a0/c9/54957_crt_228Y8.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a0/c9/54957_crt_228Y8.jpg"
+    },
+    "summary": "「どんと恋 間野山」のツアー参加者。",
+    "name": "中津川彩菜",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "中津川彩菜"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "中津川 彩菜"
+          },
+          {
+            "k": "纯假名",
+            "v": "なかつがわ あやな"
+          },
+          {
+            "k": "罗马字",
+            "v": "Nakatsugawa Ayana"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://sakura-quest.com/character/character34.html"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 54957,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d9/71/173418_crt_MaAVO.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d9/71/173418_crt_MaAVO.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/d9/71/173418_crt_MaAVO.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d9/71/173418_crt_MaAVO.jpg"
+    },
+    "summary": "狙撃手と名乗る男。勇敢なる海の戦士になることを本気で夢みている。",
+    "name": "中津川嘘風",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 173418,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/ad/154629_crt_FF27u.jpg?r=1711636759",
+      "grid": "https://lain.bgm.tv/pic/crt/g/4e/ad/154629_crt_FF27u.jpg?r=1711636759",
+      "large": "https://lain.bgm.tv/pic/crt/l/4e/ad/154629_crt_FF27u.jpg?r=1711636759",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/ad/154629_crt_FF27u.jpg?r=1711636759"
+    },
+    "summary": "主角组五人的学妹，与绘真是好友。在骑普通自行车上学时得到葵的帮助，所以喜欢并买入一辆山地自行车。在葵的邀请下加上了野外活动同好会。\r\n姓氏取自岐阜县中津川市。\r\n\r\nタ頭にリボンを付けた活発的な少女。高校生になったらなにか始めたいと思っている。",
+    "name": "中津川メイ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "中津川芽衣"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "中津川鸣"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://zh.wikipedia.org/wiki/%E6%90%96%E6%9B%B3%E9%9C%B2%E7%87%9F%E2%96%B3"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 11
+    },
+    "id": 154629,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 18,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/dd/12074_crt_GH9Gc.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/af/dd/12074_crt_GH9Gc.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/af/dd/12074_crt_GH9Gc.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/dd/12074_crt_GH9Gc.jpg"
+    },
+    "summary": "主人公的后辈、风纪委员会所属。无口但很直率。\r\n虽然不怎么说话但会通过行动来表达、感情表现很丰富的少女。\r\n几乎没像样地做过风纪委员的工作、为了让瑚太朗注意自己而对他进行监管。\r\n为了隐瞒自己的虹彩异色症而戴着眼罩、只有在亲近的人面前才会拿下。\r\n非常喜欢吃秋刀鱼。",
+    "name": "中津静流",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "中津静流"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "なかつ しずる"
+          },
+          {
+            "k": "罗马字",
+            "v": "Nakatsu Shizuru"
+          },
+          {
+            "k": "罗马字2",
+            "v": "Nakatsu Sizuru"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "6月18日"
+      },
+      {
+        "key": "身高",
+        "value": "149cm"
+      },
+      {
+        "key": "体重",
+        "value": "39kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B75/ W52/ H73"
+      }
+    ],
+    "stat": {
+      "comments": 72,
+      "collects": 316
+    },
+    "id": 12074,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/3f/09/43638_crt_z48Io.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/3f/09/43638_crt_z48Io.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/3f/09/43638_crt_z48Io.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3f/09/43638_crt_z48Io.jpg"
+    },
+    "summary": "",
+    "name": "中津静香",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "静流の妹"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 43638,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/9e/e8/91134_crt_v0554.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/9e/e8/91134_crt_v0554.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/9e/e8/91134_crt_v0554.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9e/e8/91134_crt_v0554.jpg"
+    },
+    "summary": "ワールド・クリエイティブ・パートナーズの社員。代表である城島の秘書であり、片腕その二。\r\n仕事一筋に生きてきたせいかプライドが高く、自身の能力には絶対の自信を持っている。\r\n城島が巳浦銀行にいた頃、取引先に在籍していたことがあり、その頃からの顔なじみで能力を買われていたこともあってスカウトされた。\r\n当然ながらケインに比べ城島との付き合いは長く、城島の色んな一面や秘密を知っている。\r\n\r\n城島は愛を高く評価してはいるものの、近頃は鼻っ柱の強さにいささか煙たがっている節もある。\r\n愛自身は城島を信頼しており、そのことに気づいていない。",
+    "name": "中津愛",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "なかつ あい"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://www.getchu.com/soft.phtml?id=683719"
+      },
+      {
+        "key": "CV",
+        "value": "華南"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 91134,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ac/b4/100942_crt_p5865.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ac/b4/100942_crt_p5865.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ac/b4/100942_crt_p5865.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ac/b4/100942_crt_p5865.jpg"
+    },
+    "summary": "俺、和也が片思い…の相手。不良っぽい外見で、乱暴な口をきくけど、実際はひたすら元気でノーテンキなやつ。俺をガキ扱いして、よく頭をぐりぐりしたり、羽交い絞めしたりしてくる。俺と同じように音楽はロックが好き。実は案外、子ども好きだったりするので、ショタ疑惑あり(おい)。2年生で、放送部オペレーション班、新部長(←とてもそうは見えない。",
+    "name": "中津丈士",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Nakatsu Takeshi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "vndb.org/v3579/chars#chars"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 100942,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/66/61/111980_crt_q3S9r.jpg?r=1655565927",
+      "grid": "https://lain.bgm.tv/pic/crt/g/66/61/111980_crt_q3S9r.jpg?r=1655565927",
+      "large": "https://lain.bgm.tv/pic/crt/l/66/61/111980_crt_q3S9r.jpg?r=1655565927",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/66/61/111980_crt_q3S9r.jpg?r=1655565927"
+    },
+    "summary": "回想シーンに登場するカルト教団の古参信者。24年前に夫と死別している。面倒見もよく鳥栖家からも村の信者からも信望が厚い。",
+    "name": "中津富子",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "中津富子"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "なかつ とみこ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "wiki"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 111980,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

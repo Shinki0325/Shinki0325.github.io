@@ -1,0 +1,430 @@
+[
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/24/c0/11097_crt_jAFHw.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/24/c0/11097_crt_jAFHw.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/24/c0/11097_crt_jAFHw.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/24/c0/11097_crt_jAFHw.jpg"
+    },
+    "summary": "比一馬大一岁的前辈，也是つむぎ的亲友。冷静不怎么为他事动摇的性格。\r\n另外又有着怕生的一面，有时候表现出来的那份笨拙的体贴温柔也佷好地传达到身边亲近的人心里。\r\n与名字相反的身高，笨口拙舌的自己等等，有着很多内心纠结地方的人",
+    "name": "酒井陽菜",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "酒井阳菜"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "175 cm"
+      }
+    ],
+    "stat": {
+      "comments": 6,
+      "collects": 28
+    },
+    "id": 11097,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/14/d7/50828_crt_hX7ID.jpg?r=1485938244",
+      "grid": "https://lain.bgm.tv/pic/crt/g/14/d7/50828_crt_hX7ID.jpg?r=1485938244",
+      "large": "https://lain.bgm.tv/pic/crt/l/14/d7/50828_crt_hX7ID.jpg?r=1485938244",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/14/d7/50828_crt_hX7ID.jpg?r=1485938244"
+    },
+    "summary": "搭乗車種…DC2 インテグラ TYPE R（前期型・96spec） \r\n东堂塾内最年轻的现役车手之一，驾驶搭载涡轮增压的Integra。会施展刹车欺敌。",
+    "name": "酒井",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "笑面虎酒井"
+          },
+          {
+            "k": "纯假名",
+            "v": "さかい"
+          },
+          {
+            "k": "罗马字",
+            "v": "Sakai"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 50828,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/01/155062_crt_ctgeU.jpg?r=1712675895",
+      "grid": "https://lain.bgm.tv/pic/crt/g/4c/01/155062_crt_ctgeU.jpg?r=1712675895",
+      "large": "https://lain.bgm.tv/pic/crt/l/4c/01/155062_crt_ctgeU.jpg?r=1712675895",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/01/155062_crt_ctgeU.jpg?r=1712675895"
+    },
+    "summary": "アソビング株式会社のデバッガーであり飄々とした人物。\r\nアイサツ代わりの冗談で、相手にナイフを突き立てるなど非常に軽薄な性格をしており、「現実に戻ってもいいことがあるわけじゃない」と開き直り、ゲームの中で好き勝手に生きている。ヴァンパイアの耐久実験（いわゆる拷問）にハマっており、残虐な一面も垣間見える。\r\n【ゲーム内設定】種族：クレボンティスト／職業：ファイター",
+    "name": "酒井",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "酒井"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "サカイ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 155062,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/8e/0c/8451_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/8e/0c/8451_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/8e/0c/8451_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8e/0c/8451_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "酒井なつき",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "酒井夏树"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Sakai Natsuki"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 8451,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/46/3e/19533_crt_epypS.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/46/3e/19533_crt_epypS.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/46/3e/19533_crt_epypS.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/46/3e/19533_crt_epypS.jpg"
+    },
+    "summary": "京都见回组组员，与维持治安相比更适合说相声。",
+    "name": "酒井正純",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "酒井正纯"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "さかい まさずみ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 19533,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/1b/37656_crt_VifGc.jpg?r=1454600966",
+      "grid": "https://lain.bgm.tv/pic/crt/g/2a/1b/37656_crt_VifGc.jpg?r=1454600966",
+      "large": "https://lain.bgm.tv/pic/crt/l/2a/1b/37656_crt_VifGc.jpg?r=1454600966",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/1b/37656_crt_VifGc.jpg?r=1454600966"
+    },
+    "summary": "年齢：16歳\r\n職業：学生\r\n性格：成績優秀だがそれを鼻にかけず、\r\nおっとりとした人を信じやすい少年。",
+    "name": "酒井光宗",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "酒井光宗"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "酒井 光宗"
+          },
+          {
+            "k": "纯假名",
+            "v": "さかい みつむね"
+          },
+          {
+            "k": "罗马字",
+            "v": "Sakai Mitsumune"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 16,
+      "collects": 9
+    },
+    "id": 37656,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/9e/54/41689_crt_ZXwpR.jpg?r=1463194976",
+      "grid": "https://lain.bgm.tv/pic/crt/g/9e/54/41689_crt_ZXwpR.jpg?r=1463194976",
+      "large": "https://lain.bgm.tv/pic/crt/l/9e/54/41689_crt_ZXwpR.jpg?r=1463194976",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9e/54/41689_crt_ZXwpR.jpg?r=1463194976"
+    },
+    "summary": "光宗的双胞胎兄弟。",
+    "name": "酒井時宗",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "酒井时宗"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "酒井 時宗"
+          },
+          {
+            "k": "纯假名",
+            "v": "さかい ときむね"
+          },
+          {
+            "k": "罗马字",
+            "v": "Sakai Tokimune"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 41689,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/91/3f/42960_crt_HQjJ9.jpg?r=1467109685",
+      "grid": "https://lain.bgm.tv/pic/crt/g/91/3f/42960_crt_HQjJ9.jpg?r=1467109685",
+      "large": "https://lain.bgm.tv/pic/crt/l/91/3f/42960_crt_HQjJ9.jpg?r=1467109685",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/91/3f/42960_crt_HQjJ9.jpg?r=1467109685"
+    },
+    "summary": "大学一年级学生。DREAMS的成员之一。\r\n虽然努力地想要完成拉拉队的动作，但有些笨手笨脚。",
+    "name": "酒井千裕",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "酒井千裕"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "酒井 千裕"
+          },
+          {
+            "k": "纯假名",
+            "v": "さかい ちひろ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Sakai Chihiro"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "www.cheer-boys.com/character/"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 3
+    },
+    "id": 42960,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/79/48753_crt_0pdg5.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/18/79/48753_crt_0pdg5.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/18/79/48753_crt_0pdg5.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/79/48753_crt_0pdg5.jpg"
+    },
+    "summary": "主人公のクラスの担任。妖艶な美貌と色香を持ち、かなりの自信家。\r\n自分にはそれに見合う力を持つパートナーがいて当たり前だと考えている。\r\n魔の圧倒的な力、存在に心酔してゆき、白の王の美しさと気高さ思考に取り込まれていく。\r\n魔に接した事によりすべてを凌駕する力に惹かれ自ら魔の道へと踏み込んでいく。",
+    "name": "酒井瞳",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 48753,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c8/ef/49617_crt_4aJAE.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c8/ef/49617_crt_4aJAE.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c8/ef/49617_crt_4aJAE.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c8/ef/49617_crt_4aJAE.jpg"
+    },
+    "summary": "火付盗賊改方・筆頭同心。剣の達人。与力の佐嶋を助けて、他の同心を束ねていく冷静有能な士。",
+    "name": "酒井祐助",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 49617,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

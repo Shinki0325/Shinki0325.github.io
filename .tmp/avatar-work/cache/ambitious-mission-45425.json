@@ -1,0 +1,450 @@
+[
+  {
+    "birth_mon": 2,
+    "gender": "female",
+    "birth_day": 14,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/e0/76/103854_crt_v4sL1.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/e0/76/103854_crt_v4sL1.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/e0/76/103854_crt_v4sL1.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e0/76/103854_crt_v4sL1.jpg"
+    },
+    "summary": "読モとして活動しているクラスメイト。\r\n可愛いだけではなく、明るく誰にでも気さくな態度で応じるため学校中の人気者。\r\nお調子者で基本的にノリがいいタイプ。\r\n一見すると勢いだけで行動しているように見えるが、虹夢なりにしっかりと考えていたりする。",
+    "name": "本郷虹夢",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ほんご　にじむ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Hongo Nijimu"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "2月14日"
+      },
+      {
+        "key": "血型",
+        "value": "AB型"
+      },
+      {
+        "key": "身高",
+        "value": "161cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B83/W55/H82"
+      }
+    ],
+    "stat": {
+      "comments": 30,
+      "collects": 22
+    },
+    "id": 103854,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/69/5d/17631_crt_9riZ2.jpg?r=1618744397",
+      "grid": "https://lain.bgm.tv/pic/crt/g/69/5d/17631_crt_9riZ2.jpg?r=1618744397",
+      "large": "https://lain.bgm.tv/pic/crt/l/69/5d/17631_crt_9riZ2.jpg?r=1618744397",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/69/5d/17631_crt_9riZ2.jpg?r=1618744397"
+    },
+    "summary": "",
+    "name": "本郷",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "本乡"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ほんきょう"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 5
+    },
+    "id": 17631,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/53/6a/1453_8X68F.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/53/6a/1453_8X68F.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/53/6a/1453_8X68F.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/53/6a/1453_8X68F.jpg"
+    },
+    "summary": "圣露琪亚学院的淑女之王，所有的女学生看到她也要退避三分。外表美丽优雅，实则内心邪恶，在芽衣的存在被发觉前，一直作为本乡家的养女，是理人的服侍对象。因为对理人异乎寻常的执著和芽衣正牌血统的回归而燃起了不可遏制的火焰。憎恨着芽衣。现在的执事是忍。",
+    "name": "本郷詩織",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "本乡诗织"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ほんごう しおり"
+          },
+          {
+            "k": "罗马字",
+            "v": "Hongo Shiori"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 1453,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/93/10255_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d0/93/10255_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/d0/93/10255_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/93/10255_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "本郷修二郎",
+    "infobox": [
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ほんごう しゅうじろう"
+          },
+          {
+            "k": "罗马字",
+            "v": "Hongou Shuujirou"
+          },
+          {
+            "k": "日文名",
+            "v": "本郷修二郎"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 10255,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/20/4f/24854_crt_3z4O2.jpg?r=1399408555",
+      "grid": "https://lain.bgm.tv/pic/crt/g/20/4f/24854_crt_3z4O2.jpg?r=1399408555",
+      "large": "https://lain.bgm.tv/pic/crt/l/20/4f/24854_crt_3z4O2.jpg?r=1399408555",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/20/4f/24854_crt_3z4O2.jpg?r=1399408555"
+    },
+    "summary": "",
+    "name": "本郷奈奈子",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "本乡奈奈子"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "本郷奈奈子"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 24854,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d4/dd/34068_crt_toh7z.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d4/dd/34068_crt_toh7z.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/d4/dd/34068_crt_toh7z.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d4/dd/34068_crt_toh7z.jpg"
+    },
+    "summary": "本郷　雪乃（ほんごう　ゆきの）　CV：中野志乃\r\n\r\n居住在洋馆内的寡言少女，除非有必要基本不说话。\r\n为了某个仪式而接受村里的男人的凌辱调教。\r\n虽然不太喜欢主人公的逗留，但本意是……？",
+    "name": "本郷雪乃",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "本乡雪乃"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ほんごう ゆきの"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 10
+    },
+    "id": 34068,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/5d/9a/34070_crt_rC0w7.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/5d/9a/34070_crt_rC0w7.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/5d/9a/34070_crt_rC0w7.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5d/9a/34070_crt_rC0w7.jpg"
+    },
+    "summary": "本郷　藍（ほんごう　あい）　CV：安堂りゅう\r\n\r\n亲近人的天真少女，将迷路的主人公带进自己居住的洋馆里。\r\n羞耻心淡薄，但在反复着啪啪啪的时候……？",
+    "name": "本郷藍",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "本乡蓝"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ほんごう あい"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 5
+    },
+    "id": 34070,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/9d/dd/34071_crt_0wRlL.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/9d/dd/34071_crt_0wRlL.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/9d/dd/34071_crt_0wRlL.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9d/dd/34071_crt_0wRlL.jpg"
+    },
+    "summary": "本郷　瑠璃子（ほんごう　るりこ）　CV：名和野恋\r\n\r\n雪乃和藍的亲生母亲，年轻的未亡人。\r\n是个穿着和服，给人以贤淑柔弱的印象的馆主，但是……。",
+    "name": "本郷瑠璃子",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "本乡琉璃子"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "本郷 瑠璃子"
+          },
+          {
+            "k": "纯假名",
+            "v": "ほんごう　るりこ"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 5
+    },
+    "id": 34071,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d7/33/52067_crt_7GdG2.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d7/33/52067_crt_7GdG2.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/d7/33/52067_crt_7GdG2.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d7/33/52067_crt_7GdG2.jpg"
+    },
+    "summary": "主人公がコーチとしておしえることになった、カナヅチの若奥様。\r\nおっとりと優しい性格で、そこがまた年上とは思えない、守ってあげたくなるような魅力に溢れている。\r\n水泳の練習をしていたはずが、いつの間にか主人公の手によってイカされてしまったことでその味を体が覚えてしまう。\r\n夫との夜の行為に満足していなかったことも手伝って身体に火がついたのか、その後は恥らいながらも主人公にコーチを依頼してくるようになり……!?\r\n\r\n「ああっ、嘘っ！　気持ちよすぎてぇっ……　ど、どうやってるんですか!?」",
+    "name": "本郷鞠奈",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "本郷　鞠奈"
+          },
+          {
+            "k": "纯假名",
+            "v": "ほんごう　まりな"
+          }
+        ]
+      },
+      {
+        "key": "BWH",
+        "value": "B90（Fカップ）/W59/H85"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 7
+    },
+    "id": 52067,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/30/eb/58120_crt_7Kk8z.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/30/eb/58120_crt_7Kk8z.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/30/eb/58120_crt_7Kk8z.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/30/eb/58120_crt_7Kk8z.jpg"
+    },
+    "summary": "仙石のパートナー。彼の賞金の使いみちについて揉めて一時期出場を停止していた時期がある。",
+    "name": "本郷千鶴",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "本乡千鹤"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "本郷 千鶴"
+          },
+          {
+            "k": "纯假名",
+            "v": "ほんごう ちづる"
+          },
+          {
+            "k": "罗马字",
+            "v": "Hongo Chizuru"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 6
+    },
+    "id": 58120,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

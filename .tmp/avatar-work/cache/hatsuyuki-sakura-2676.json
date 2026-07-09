@@ -1,0 +1,453 @@
+[
+  {
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 21,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a9/2c/13733_crt_dSXsY.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a9/2c/13733_crt_dSXsY.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a9/2c/13733_crt_dSXsY.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a9/2c/13733_crt_dSXsY.jpg"
+    },
+    "summary": "白咲学園3年生。 3年目の冬という半端な時期に転校してくる美しい少女。\r\nはぐれの主人公にも物怖じせず積極的に話しかけてくる。\r\n天真爛漫で、ちょっと変わっている。\r\nちゃんと学園生活を送ったことがないらしく、友達・授業・放課後……全てが新鮮に感じられるらしい。\r\n卒業間近の慌ただしい生活を無邪気に楽しもうとする。\r\n\r\n“ネム” というウサギを常に連れている。\r\n探しものがあって、この街にやって来たと言うが……。\r\n\r\n「う……。もっとこう、さ。偶然の再会を喜ぶとか、ないの？」",
+    "name": "玉樹桜",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "玉树樱"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "たまき さくら"
+          },
+          {
+            "k": "罗马字",
+            "v": "Tamaki Sakura"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "3月21日"
+      },
+      {
+        "key": "身高",
+        "value": "160cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B84/W54/H83"
+      }
+    ],
+    "stat": {
+      "comments": 74,
+      "collects": 253
+    },
+    "id": 13733,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/64/137248_crt_MjW83.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a6/64/137248_crt_MjW83.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a6/64/137248_crt_MjW83.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/64/137248_crt_MjW83.jpg"
+    },
+    "summary": "某学園の１年生。\r\nアイドル・天宮珠美（あまみや　たまみ）の大ファンで、彼女をセンターにすることが生きがい。\r\n目下最大の悩みは、投票券を買う資金が不足していること。\r\n明るく人当たりがいいが、情熱的なお調子者でもあり、好きなもののために暴走してしまうことがある。",
+    "name": "玉樹環",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "タマキ タマキ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 137248,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c6/ec/25292_crt_0810g.jpg?r=1401902698",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c6/ec/25292_crt_0810g.jpg?r=1401902698",
+      "large": "https://lain.bgm.tv/pic/crt/l/c6/ec/25292_crt_0810g.jpg?r=1401902698",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c6/ec/25292_crt_0810g.jpg?r=1401902698"
+    },
+    "summary": "片桐民间警备公司的社长兼促进者，与妹妹弓月两人共同经营，但收入程度与天童民间警备公司差不多。\r\nIP排行1850名，武器是附有链锯的铁手套与鞋子，擅与弓月进行巧妙的联合战术。\r\n视木更为女神，但却被木更当成跑腿以及新钱包奴役。\r\n在第三卷的关东大战中与莲太郎组成辅助部队。",
+    "name": "片桐玉樹",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "片桐玉树"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "片桐 玉樹"
+          },
+          {
+            "k": "纯假名",
+            "v": "かたぎり たまき"
+          },
+          {
+            "k": "罗马字",
+            "v": "Katagiri Tamaki"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 3
+    },
+    "id": 25292,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/47/c1/194514_crt_BvCA9.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/47/c1/194514_crt_BvCA9.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/47/c1/194514_crt_BvCA9.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/47/c1/194514_crt_BvCA9.jpg"
+    },
+    "summary": "",
+    "name": "나해수",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "罗海秀"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "羅海秀"
+          },
+          {
+            "k": "日文名",
+            "v": "児玉 樹里"
+          },
+          {
+            "k": "纯假名",
+            "v": "こだま じゅり"
+          },
+          {
+            "k": "罗马字",
+            "v": "Na Hae Soo"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": [
+          {
+            "k": "나무위키",
+            "v": "https://namu.wiki/w/나해수"
+          },
+          {
+            "k": "X(JP)",
+            "v": "https://x.com/LINEmanga/status/1925023746990989730"
+          },
+          {
+            "k": "X(JP)",
+            "v": "https://x.com/LINEmanga/status/1968510298144505925"
+          },
+          {
+            "k": "IG(JP)",
+            "v": "https://www.instagram.com/p/DOpbK6tj81D/"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 194514,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/62/6d/156985_crt_gmZx8.jpg?r=1715085983",
+      "grid": "https://lain.bgm.tv/pic/crt/g/62/6d/156985_crt_gmZx8.jpg?r=1715085983",
+      "large": "https://lain.bgm.tv/pic/crt/l/62/6d/156985_crt_gmZx8.jpg?r=1715085983",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/62/6d/156985_crt_gmZx8.jpg?r=1715085983"
+    },
+    "summary": "退伍军人，平定叛乱后来到陈滩。",
+    "name": "唐玉树",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "唐玉树"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 156985,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c8/a9/63562_crt_KQ3bk.jpg?r=1526989933",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c8/a9/63562_crt_KQ3bk.jpg?r=1526989933",
+      "large": "https://lain.bgm.tv/pic/crt/l/c8/a9/63562_crt_KQ3bk.jpg?r=1526989933",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c8/a9/63562_crt_KQ3bk.jpg?r=1526989933"
+    },
+    "summary": "本作の主人公で、和国の姫。\r\nさっぱりとした性格で明るく国民から好かれている。\r\n教養・礼儀作法・護身術などはしっかり身につけさせられているが、基本不器用。\r\n伝承上の存在である「ニンゲン」の研究に並々ならぬ熱意を持っている。",
+    "name": "タマ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "玉"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "162cm"
+      },
+      {
+        "key": "年龄",
+        "value": "17岁"
+      },
+      {
+        "key": "猫種",
+        "value": "白猫"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 63562,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/84/1481_Sc7ck.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/4e/84/1481_Sc7ck.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/4e/84/1481_Sc7ck.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/84/1481_Sc7ck.jpg"
+    },
+    "summary": "一手抚养她长大的母亲突然去世，被阿辽领养成了两个小姐弟的姐姐。非常坚强地想要自己养好弟弟，其实内心深处是因为不想麻烦任何人。一直梦想能闯荡好莱坞，成为一名音乐人。",
+    "name": "玉城美波",
+    "infobox": [],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 1481,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ab/54/1482_lyziX.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ab/54/1482_lyziX.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ab/54/1482_lyziX.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ab/54/1482_lyziX.jpg"
+    },
+    "summary": "是个害羞内向不大说话的孩子，最喜欢的妈妈突然去世对他打击很大。完全听不进美波和岛上人们的劝慰，但突然成为岛上驻岛警的养子非常开心。",
+    "name": "玉城星太",
+    "infobox": [],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 1482,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/5e/75/2728_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/5e/75/2728_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/5e/75/2728_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5e/75/2728_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "玉藻",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "玉藻"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "玉藻"
+          },
+          {
+            "k": "罗马字",
+            "v": "Tamamo"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 8
+    },
+    "id": 2728,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ec/79/8612_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ec/79/8612_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ec/79/8612_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ec/79/8612_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "玉木圭司",
+    "infobox": [
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "玉木圭司"
+          },
+          {
+            "k": "罗马字",
+            "v": "Tamaki Keiji"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 8612,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

@@ -1,0 +1,498 @@
+[
+  {
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/cf/4e/68750_crt_82m80.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/cf/4e/68750_crt_82m80.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/cf/4e/68750_crt_82m80.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cf/4e/68750_crt_82m80.jpg"
+    },
+    "summary": "函館出身のプロ少女漫画家。\r\nちょっぴり天然でほんわか明るく、ゆるふわな女の子。\r\n\r\nずっと女子校育ちだっったため、\r\n男性とは緊張して上手く話せず、自己主張も苦手。\r\n\r\n夢見がちの乙女脳で、\r\nよく勘違いしては恥ずかしい思いをしている。\r\n\r\nデビュー作以降ヒット作に恵まれず、\r\n読み切りや短期連載ばかりなのが悩みの種。",
+    "name": "岬栞菜",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "岬 栞菜"
+          },
+          {
+            "k": "纯假名",
+            "v": "みさき かんな"
+          },
+          {
+            "k": "罗马字",
+            "v": "Misaki Kanna"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "7月1日"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "身高",
+        "value": "155cm"
+      },
+      {
+        "key": "体重",
+        "value": "54kg"
+      },
+      {
+        "key": "BWH",
+        "value": "92(F)/58/85"
+      },
+      {
+        "key": "年齢",
+        "value": "25歳"
+      },
+      {
+        "key": "好きな食べ物",
+        "value": "刺身や煮付けなど魚介類全般"
+      },
+      {
+        "key": "嫌いな食べ物",
+        "value": "ストロング系缶チューハイ"
+      }
+    ],
+    "stat": {
+      "comments": 24,
+      "collects": 47
+    },
+    "id": 68750,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 9,
+    "gender": "male",
+    "birth_day": 3,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/aa/10/4878_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/aa/10/4878_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/aa/10/4878_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/aa/10/4878_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "岬",
+    "infobox": [
+      {
+        "key": "生日",
+        "value": "????-09-03"
+      },
+      {
+        "key": "身高",
+        "value": "181"
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Misaki"
+          },
+          {
+            "k": "日文名",
+            "v": "岬"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 4878,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/85/55/13150_crt_kV8vF.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/85/55/13150_crt_kV8vF.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/85/55/13150_crt_kV8vF.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/85/55/13150_crt_kV8vF.jpg"
+    },
+    "summary": "-丁寧な上から目線の接客が人気のテクニシャン-\r\n\r\n細かい指先のテクニックが絶品で、肌を操るマジシャンという異名を持つ。岬特製美容液での唇のケアは、まさにILLUSION。",
+    "name": "岬",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "年龄",
+        "value": "26岁"
+      },
+      {
+        "key": "血型",
+        "value": "B型"
+      },
+      {
+        "key": "得意分野",
+        "value": "ヨガを取り入れたリンパドレナージュ"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 13150,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/01/98155_crt_LKSoD.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/29/01/98155_crt_LKSoD.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/29/01/98155_crt_LKSoD.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/01/98155_crt_LKSoD.jpg"
+    },
+    "summary": "帝国劇場で上演されている『サロメ』の主演女優。ヴァンパイアとして十六特務隊の月島基地に捕獲されている。",
+    "name": "岬",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "岬"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 98155,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/10/e1/211699_crt_200Z4.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/10/e1/211699_crt_200Z4.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/10/e1/211699_crt_200Z4.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/10/e1/211699_crt_200Z4.jpg"
+    },
+    "summary": "林海学園サーバント２年生。\r\n\r\n函南家に恩義があるのか、評判の宜しくない函南に健気な態度で付き添っている。\r\n料理や菓子作りが得意。",
+    "name": "岬",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "みさき"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 211699,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/14/5e/16528_crt_aUTAU.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/14/5e/16528_crt_aUTAU.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/14/5e/16528_crt_aUTAU.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/14/5e/16528_crt_aUTAU.jpg"
+    },
+    "summary": "",
+    "name": "みさき",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "岬"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 16528,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/87/6e/190368_crt_XvL36.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/87/6e/190368_crt_XvL36.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/87/6e/190368_crt_XvL36.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/87/6e/190368_crt_XvL36.jpg"
+    },
+    "summary": "オペレーターのウミと共にヤクモを支援する参謀。\r\n[mask]しかし、その正体は本作の黒幕「魔神アキレス」であり、黒龍事変を引き起こした張本人。[/mask]",
+    "name": "ミサキ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "岬"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "引用来源",
+        "value": [
+          {
+            "v": "https://ja.wikipedia.org/wiki/NINJA_GAIDEN_4"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 0
+    },
+    "id": 190368,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/14/b8/6413_crt_rXLMw.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/14/b8/6413_crt_rXLMw.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/14/b8/6413_crt_rXLMw.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/14/b8/6413_crt_rXLMw.jpg"
+    },
+    "summary": "",
+    "name": "岬真夜",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "岬真夜"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "玛雅"
+          },
+          {
+            "k": "日文名",
+            "v": "岬真夜"
+          },
+          {
+            "k": "罗马字",
+            "v": "Misaki Maya"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 6,
+      "collects": 8
+    },
+    "id": 6413,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/e2/1b/8780_crt_anidb.jpg?r=1741715696",
+      "grid": "https://lain.bgm.tv/pic/crt/g/e2/1b/8780_crt_anidb.jpg?r=1741715696",
+      "large": "https://lain.bgm.tv/pic/crt/l/e2/1b/8780_crt_anidb.jpg?r=1741715696",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e2/1b/8780_crt_anidb.jpg?r=1741715696"
+    },
+    "summary": "",
+    "name": "岬直也",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "岬直也"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Misaki Naoya"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 8780,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 11,
+    "gender": "male",
+    "birth_day": 5,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/83/17375_crt_3k0ou.jpg?r=1363836230",
+      "grid": "https://lain.bgm.tv/pic/crt/g/04/83/17375_crt_3k0ou.jpg?r=1363836230",
+      "large": "https://lain.bgm.tv/pic/crt/l/04/83/17375_crt_3k0ou.jpg?r=1363836230",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/83/17375_crt_3k0ou.jpg?r=1363836230"
+    },
+    "summary": "タイプ：静\r\n「哲学する柔術家」の異名を持つ岬越寺流柔術の達人。38歳。11月5日生まれ。身長180cm。体重80kg。一人称は「私」。\r\n柔術着にストレートの口髭が特徴的な紳士。彼の柔術はあらゆる物を取り込んで昇華し、「岬越寺流」と呼ばれる独自の流派と化している。20年以上に及ぶ独自のトレーニング理論により、全身の筋肉を極限まで絞り込んでピンク筋（瞬発力の白筋と持久力の赤筋の両方を併せ持つ性質の筋肉）へと変えており、梁山泊の師匠らの中でも比較的小柄、痩身でありながら、逆鬼さえ一目置くほどの恐るべき筋力を誇る。\r\n冷静沈着・才気煥発で、独自の悟りを開いている。ゆえに、隼人が居ない時は大体彼が梁山泊のまとめ役。梁山泊の面々の中では最もダンディーな顔つきと理知的な振る舞いから若い女子高生から大人にまでモテる。兼一の各種修行における、全体の監督的立場でもある。普段は人当たりがよく、穏やかで理知的な性格に見えるがキレると一番恐ろしい。弟子の生命さえ脅かしかねない危険な修行のアイデアも彼の考案によるものが多く、兼一に対しての師弟愛はかなりドS気味である。嘘をつくとき髭をいじるという癖がある。本人曰く学生時代は苛められていたらしく、「自分が正しいと思ったことをするには力が必要」という兼一の言葉と同様の主張を、かつて自分の師に訴えたことがある。\r\n書画・陶芸・彫刻・演劇・音楽・茶道と何でもこなし、「書・画・陶芸・彫刻のすべてを極めたと謳われる天才芸術家」と崇敬され芸術家としても著名な上、接骨医としても有能で、梁山泊の裏で接骨院を経営し梁山泊の家計を助けている。医師の資格も所持しており外科手術も可能、その腕は日本屈指と評され即席の道具から瀕死のアパチャイを救命するほど超一流だが、血を見ると性格が変わるらしく病院では働けなかった。ただし名誉や金銭には淡白であり、梁山泊が経営破綻した際に逆鬼から「作品を売ればいい」と言われても「芸術は売り物じゃないから」と頑なに取り合わず、某国の元首にたまたま作っていた彫刻を買い取りたいと言われた際には莫大な報酬を積まれ、さらに窃盗、暗殺のプロを送り込まれてなお「え～やだ～」と一蹴し続けた。愛読書は罪と罰。囲碁、将棋、オセロまでもプロ級であり、更に多種多様の外国語までこなす多芸多才な人物。兼一の修行のために機械やからくりを作るうち、その技術も達人の域に達してきている。特に兼一を主動力にした、生活や移動に便利な機械を作るのが得意。その万能ぶりからよく「ドラ○もん」（オヤツとして「ドラ焼き」をよく食べている）と兼一に呼ばれ、助けを求められていた。ただし、寒さとピーマンが嫌いで、よく青椒肉絲のピーマンだけをアパチャイに食べさせている。",
+    "name": "岬越寺秋雨",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "岬越寺秋雨"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "岬越寺 秋雨"
+          },
+          {
+            "k": "纯假名",
+            "v": "こうえつじ あきさめ"
+          },
+          {
+            "k": "罗马字",
+            "v": "kouetsuji akisame"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "11月5日"
+      },
+      {
+        "key": "身高",
+        "value": "180cm"
+      },
+      {
+        "key": "体重",
+        "value": "80kg"
+      },
+      {
+        "key": "引用来源",
+        "value": "wikipedia.org; www.tv-tokyo.co.jp/anime/kenichi/"
+      },
+      {
+        "key": "年龄",
+        "value": "38"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 1
+    },
+    "id": 17375,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

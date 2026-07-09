@@ -1,0 +1,497 @@
+[
+  {
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 2,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/f9/22879_crt_764H5.jpg?r=1533540888",
+      "grid": "https://lain.bgm.tv/pic/crt/g/65/f9/22879_crt_764H5.jpg?r=1533540888",
+      "large": "https://lain.bgm.tv/pic/crt/l/65/f9/22879_crt_764H5.jpg?r=1533540888",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/f9/22879_crt_764H5.jpg?r=1533540888"
+    },
+    "summary": "晶也のクラスにやってきた転校生。\r\n感情がいつもオーバーリアクションでとても明るくまっすぐな性格。礼儀正しく、下級生と話す時も敬語を忘れない。\r\n唯一、空が飛べないのがコンプレックスで、晶也に空の飛び方を教えてもらううちに上達、やがてフライングサーカスの選手となる。好奇心旺盛。あと天然。\r\n\r\nEXTRA1 ：\r\nどんな人にも礼儀正しく敬語で話す少女。\r\n素直な性格で、一途な努力家でもある。\r\n\r\n真白のことを後輩として可愛く思っており、気持ちに素直になる大切さを教えた。",
+    "name": "倉科明日香",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "仓科明日香"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "倉科 明日香"
+          },
+          {
+            "k": "纯假名",
+            "v": "くらしな あすか"
+          },
+          {
+            "k": "罗马字",
+            "v": "kurashina asuka"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "5月2日"
+      },
+      {
+        "key": "身高",
+        "value": "158cm"
+      },
+      {
+        "key": "体重",
+        "value": "47kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B85/W56/H86"
+      },
+      {
+        "key": "所属",
+        "value": "久名浜学院 2年"
+      },
+      {
+        "key": "趣味",
+        "value": "飼い犬の散歩"
+      },
+      {
+        "key": "好きな食べ物",
+        "value": "いちご"
+      },
+      {
+        "key": "飛行スタイル",
+        "value": "オールラウンダー"
+      }
+    ],
+    "stat": {
+      "comments": 152,
+      "collects": 387
+    },
+    "id": 22879,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ee/a8/37848_crt_Nn66O.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ee/a8/37848_crt_Nn66O.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ee/a8/37848_crt_Nn66O.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ee/a8/37848_crt_Nn66O.jpg"
+    },
+    "summary": "まじめで地味な女教師。\r\n学生想いで一生懸命なため、何かと面倒ごとを背負い込んでしまう。",
+    "name": "倉科千尋",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "くらしな ちひろ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 37848,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/7a/38642_crt_LTcxr.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/da/7a/38642_crt_LTcxr.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/da/7a/38642_crt_LTcxr.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/7a/38642_crt_LTcxr.jpg"
+    },
+    "summary": "警視庁サイバー対策課サイバー対策室の広告塔「サイバーフォースドール」のセンター担当。\r\n４月から警察官になり、現場に出るようになってまだ数ヶ月の新人。職務に真面目で、何事にも全力で取り組むが、ちょっぴりドジ。\r\n日々、警察官としての訓練に加え、アイドルとしての練習にも取り組んでいる。\r\n19歳。",
+    "name": "倉科子鹿",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "仓科子鹿"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "倉科 子鹿"
+          },
+          {
+            "k": "纯假名",
+            "v": "くらしな ばんび"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kurashina Banbi"
+          },
+          {
+            "k": "昵称",
+            "v": "バンビ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 3
+    },
+    "id": 38642,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 17,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/1f/08/86236_crt_zYfZo.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/1f/08/86236_crt_zYfZo.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/1f/08/86236_crt_zYfZo.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1f/08/86236_crt_zYfZo.jpg"
+    },
+    "summary": "男性嫌いの少女愛好家。\r\n無愛想毒舌の辛辣な口調だが、主人公とだけは\r\nなぜが普通に接している。",
+    "name": "倉科双葉",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "仓科双叶"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "くらしな　ふたば"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "10月17日"
+      }
+    ],
+    "stat": {
+      "comments": 62,
+      "collects": 90
+    },
+    "id": 86236,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/36/90348_crt_OZ2y8.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a2/36/90348_crt_OZ2y8.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a2/36/90348_crt_OZ2y8.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/36/90348_crt_OZ2y8.jpg"
+    },
+    "summary": "ぶっきらぼうな化学系少女(ただし年齢は三十路手前)。\r\n人の名前を覚えるのが苦手で、ひきこもりで、めんどくさがり。\r\nタバコが好物。",
+    "name": "倉科結理",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "くらしな　ゆり"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://saga.usamimi.info/product/01/character.html"
+      },
+      {
+        "key": "CV",
+        "value": "椿木蓮華"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 90348,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a0/88/139259_crt_g5f3Q.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a0/88/139259_crt_g5f3Q.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a0/88/139259_crt_g5f3Q.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a0/88/139259_crt_g5f3Q.jpg"
+    },
+    "summary": "朝倉学園３年生。\r\n康平のひとつ年上のお幼なじみ。\r\n康平らが通う学園の生徒会長をしており、普段は凛としているが、\r\n康平の前では、あま～いお姉ちゃんになってしまう。\r\nとはいえ、康平に特別な感情を抱いている訳ではなく、\r\nデキの悪い弟の面倒をみる姉みたいな気持ちらしい。",
+    "name": "倉科美沙希",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Kurashina Misaki"
+          },
+          {
+            "k": "纯假名",
+            "v": "くらしな　みさき"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "164㎝"
+      },
+      {
+        "key": "体重",
+        "value": "52㎏"
+      },
+      {
+        "key": "BWH",
+        "value": "88・56・89"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 139259,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d5/08/188352_crt_6I8UC.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d5/08/188352_crt_6I8UC.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/d5/08/188352_crt_6I8UC.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d5/08/188352_crt_6I8UC.jpg"
+    },
+    "summary": "同じ施設で暮らしている女の子。\r\n陽太よりもあとから施設にやってきた。\r\n人見知りが激しく、少し男性恐怖症の気がある。\r\n女子校に通っている。\r\n麻梨愛になついていて、いつもパタパタと後ろをついて歩いている。\r\nなぜかあきらによく抱きつかれる。\r\nあきら曰く「マシュマロみたいな抱き心地」とのこと。\r\n\r\nあることをきっかけに、陽太とも仲良くなっていく。\r\nそして男性恐怖症も少しずつ回復していくかと思われたが……。",
+    "name": "倉科都子",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "くらしな みやこ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 188352,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a3/56/192710_crt_UB8nd.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a3/56/192710_crt_UB8nd.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a3/56/192710_crt_UB8nd.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a3/56/192710_crt_UB8nd.jpg"
+    },
+    "summary": "栞の幼馴染。歌とダンス配信で人気を集める【女子高生インフルエンサー】。\r\nある日、栞と二人で撮影した動画をSNSにアップしたことから、栞とSHIORIを巡る騒動を招いてしまい…？",
+    "name": "倉科希星",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "仓科希星"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Kurashina Kirara"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 192710,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/39/4e/133110_crt_WWjqw.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/39/4e/133110_crt_WWjqw.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/39/4e/133110_crt_WWjqw.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/39/4e/133110_crt_WWjqw.jpg"
+    },
+    "summary": "",
+    "name": "シャーロット・初音",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "夏洛特·初音"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "原名",
+            "v": "仓科水希"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 7
+    },
+    "id": 133110,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/0f/526_crt_XZ0ZT.jpg?r=1751192113",
+      "grid": "https://lain.bgm.tv/pic/crt/g/72/0f/526_crt_XZ0ZT.jpg?r=1751192113",
+      "large": "https://lain.bgm.tv/pic/crt/l/72/0f/526_crt_XZ0ZT.jpg?r=1751192113",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/0f/526_crt_XZ0ZT.jpg?r=1751192113"
+    },
+    "summary": "大学生。有交过男朋友。在外国留过学，会说英语。\r\n擅长社交，行动积极且自由奔放。另外有现实主义者的一面，对于难以沟通或不擅长应对的人会迅速拉开距离。喜欢体育运动。\r\n天然系大姐姐，无意中的行为就能让男人迷上她。对性行为不太感兴趣，和男朋友相处时更喜欢牵手或拥抱。",
+    "name": "倉敷恵梨香",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "仓敷惠梨香"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "172cm"
+      },
+      {
+        "key": "体重",
+        "value": "56kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B97/W54/H95"
+      },
+      {
+        "key": "年龄",
+        "value": "21"
+      }
+    ],
+    "stat": {
+      "comments": 6,
+      "collects": 6
+    },
+    "id": 526,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

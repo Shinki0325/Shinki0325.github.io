@@ -104,14 +104,14 @@ const withStats = (data: BirthdayDataFile) => ({
 });
 
 const parseBase64ImageDataUrl = (dataUrl: string): Buffer => {
-  const match = dataUrl.match(/^data:image\/webp;base64,([a-z0-9+/=\s]+)$/i);
+  const match = dataUrl.match(/^data:image\/(?:webp|png|jpe?g);base64,([a-z0-9+/=\s]+)$/i);
   if (!match) {
-    throw new RouteError(400, "dataUrl must be a data:image/webp;base64 URL.");
+    throw new RouteError(400, "dataUrl must be a data:image/webp, image/png, or image/jpeg;base64 URL.");
   }
 
   const buffer = Buffer.from(match[1].replace(/\s/g, ""), "base64");
   if (buffer.length === 0) {
-    throw new RouteError(400, "dataUrl must include WebP image data.");
+    throw new RouteError(400, "dataUrl must include image data.");
   }
 
   return buffer;
@@ -230,7 +230,6 @@ export const registerBirthdayRoutes = (app: Express) => {
   app.post("/api/birthdays/image/upload", async (req: Request, res: Response) => {
     try {
       const { dataUrl, workId, characterId, kind } = parseBirthdayImageUploadPayload(req.body);
-      // Manager uploads are local JSON WebP data URLs; larger originals should use path-copy import.
       const buffer = parseBase64ImageDataUrl(dataUrl);
       res.json(await saveUploadedBirthdayImage(buffer, workId, characterId, kind));
     } catch (error) {

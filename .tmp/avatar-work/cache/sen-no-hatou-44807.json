@@ -1,0 +1,464 @@
+[
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/33/b1/71592_crt_z2Dpu.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/33/b1/71592_crt_z2Dpu.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/33/b1/71592_crt_z2Dpu.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/33/b1/71592_crt_z2Dpu.jpg"
+    },
+    "summary": "伊瀬野の神職を統べる役職「管長」に就いている巫女。極めて真面目で優秀。\r\n斎巫女は天京の勅神殿にいることが多いため、皇国最大の神殿がある伊瀬野を取り仕切る。\r\n古杜音とは学生時代より親しくしており、その才を誰よりも認めている。\r\n古杜音の自由奔放な考え方に振り回されたり、口うるさく注意することも多いが、根っこの部分では、古杜音を最後まで支えることを決めている。",
+    "name": "閑倉五十鈴",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "BWH",
+        "value": "B82（C）/ W56/ H81"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 3
+    },
+    "id": 71592,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 1,
+    "gender": "female",
+    "birth_day": 20,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/01/ba/32335_crt_HsqiC.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/01/ba/32335_crt_HsqiC.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/01/ba/32335_crt_HsqiC.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/01/ba/32335_crt_HsqiC.jpg"
+    },
+    "summary": "ぽやんとした癒し系の幼なじみ。幼い頃に交わした結婚の約束を信じている、自称・婚約者。\r\n主人公が突然故郷を飛びだしていってしまったため、彼を捜しに上京してきた。\r\n紆余曲折を経て、彼女も女を磨くために東都で暮らすことになる。決断力・行動力は主人公以上かも。\r\nしかし後先考えず、疑うことも知らない田舎娘が都会をふらふら歩きまわる様は、端から見て危なっかしく放っておけない。\r\n結果、『なんだかんだ言いながら みつに付きそう主人公の図』ができあがる。\r\n\r\n東都での居場所はミルクホール 『開花堂』。住み込みの女給として働くことになる。\r\n人前では頑張って標準語を話すけど、主人公の前だと方言モードになる。\r\n主人公のことが大好き。昔、一緒にお風呂入ってたくらいの仲なので、主人公に対してすんごい無防備。\r\n健康的な豊満ボディに抱きつかれるたび、主人公はドギマギさせられている。\r\nもっとも、ふたりの間に恋愛感情があるかというと微妙なところ。長すぎる付き合いが逆に、ふたりの関係を落ちつかせてしまっている。\r\n\r\n厚く積もった思い出の下で、恋心は芽生えの訪れを待っている。\r\n\r\n「いらっしゃいませ、開花堂へようこそ♪　……どー？　様んなっとーね？」",
+    "name": "閑鳥みつ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "かんどり みつ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "1月20日"
+      },
+      {
+        "key": "プロポーション",
+        "value": "ふくよか"
+      },
+      {
+        "key": "好きなもの",
+        "value": "主人公"
+      },
+      {
+        "key": "怖いもの",
+        "value": "人混み"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 4
+    },
+    "id": 32335,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 8,
+    "gender": "male",
+    "birth_day": 22,
+    "birth_year": null,
+    "blood_type": 4,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/84/75/38049_crt_lRnKd.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/84/75/38049_crt_lRnKd.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/84/75/38049_crt_lRnKd.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/84/75/38049_crt_lRnKd.jpg"
+    },
+    "summary": "",
+    "name": "閑翔太",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "闲翔太"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Shizuka Shota"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "8月22日"
+      },
+      {
+        "key": "血型",
+        "value": "O"
+      },
+      {
+        "key": "身高",
+        "value": "172 cm"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 38049,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/09/c5/38855_crt_3r6rR.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/09/c5/38855_crt_3r6rR.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/09/c5/38855_crt_3r6rR.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/09/c5/38855_crt_3r6rR.jpg"
+    },
+    "summary": "黒迫家に住んでいる少女。\r\n当主である漸治朗に引き取られているが養子縁組はしていない。\r\nだが、両者の関係は実の祖父と孫のようなものである。\r\nヒロとはほぼ毎朝稽古に勤しんでいる。\r\n閑傘は特異体質を有する血筋の分家。その例に違わずウメも破壊不能な身体であり、壊したがり屋でもある。\r\n引っ込み思案だが、気の置けない相手には口よりも先に拳が出る。\r\n\r\n「……ヒロくんの、そういうところ嫌い。」",
+    "name": "閑傘ウメ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "かんがさ うめ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 38855,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/11/90/40963_crt_3f3Ch.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/11/90/40963_crt_3f3Ch.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/11/90/40963_crt_3f3Ch.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/11/90/40963_crt_3f3Ch.jpg"
+    },
+    "summary": "身長：160cm　 スリーサイズ：B89/ W60/ H88\r\n暮羽の 1学年上の先輩。\r\n自身に戦う力はないが、“夢”　と現実とを繋ぐ能力がある。\r\nこの能力がなければ、暮羽たちは夢にダイブすることができない。\r\n物静かな性格で、人当たりも柔らかい。\r\n幼い頃は身体が弱かったが、今は健康体となっている。\r\n「みんなで力を合わせれば、きっと、大丈夫」",
+    "name": "閑宮真幌",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "閑宮 真幌"
+          },
+          {
+            "k": "纯假名",
+            "v": "しずみや まほろ"
+          }
+        ]
+      },
+      {
+        "key": "身高",
+        "value": "160cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B89/ W60/ H88"
+      }
+    ],
+    "stat": {
+      "comments": 7,
+      "collects": 16
+    },
+    "id": 40963,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/cc/e0/41899_crt_ZE500.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/cc/e0/41899_crt_ZE500.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/cc/e0/41899_crt_ZE500.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cc/e0/41899_crt_ZE500.jpg"
+    },
+    "summary": "　本作の主人公でヒロイン。\r\n\r\n勉強の出来る天然娘で、童顔にそぐわぬ大きな胸が目立つスタイルは、学園でも人気高し。\r\n\r\n　とある目的のため、写真部のモデルとなり凌辱される。\r\n\r\n　たくさんの男たちに凌辱される自分と、恋人の柾に愛される二人の自分の存在に苦しみ悩んでいる。",
+    "name": "閑谷紫苑",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "闲谷紫苑"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "しずたに しおん"
+          },
+          {
+            "k": "罗马字",
+            "v": "Shizutani Shion"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 10
+    },
+    "id": 41899,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/e5/50149_crt_KPj2G.jpg?r=1484593168",
+      "grid": "https://lain.bgm.tv/pic/crt/g/4c/e5/50149_crt_KPj2G.jpg?r=1484593168",
+      "large": "https://lain.bgm.tv/pic/crt/l/4c/e5/50149_crt_KPj2G.jpg?r=1484593168",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/e5/50149_crt_KPj2G.jpg?r=1484593168"
+    },
+    "summary": "“因谁之故，衣染红尘。”\r\n外表俊朗飘逸、沉静温和，带有文雅之气，而“闲卿”显露的气质似乎与他表面上的谦谦公子形象并不相同。他服装上的祥云纹路和腰前悬挂的玉佩，都暗示着他身世不凡；异色的瞳发散发着强大的气势，而坚毅的眼神中，又带着几分潇洒。",
+    "name": "闲卿",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 50149,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/4f/e0/71452_crt_2wZmI.jpg?r=1566617830",
+      "grid": "https://lain.bgm.tv/pic/crt/g/4f/e0/71452_crt_2wZmI.jpg?r=1566617830",
+      "large": "https://lain.bgm.tv/pic/crt/l/4f/e0/71452_crt_2wZmI.jpg?r=1566617830",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4f/e0/71452_crt_2wZmI.jpg?r=1566617830"
+    },
+    "summary": "戦国時代、八百比丘尼と思われる老婆に血仙蟲を埋め込まれ、不死の体となった侍。戦で主君を失ってからは各地を放浪し、やがて天津影久率いる逸刀流に身を寄せるようになる。",
+    "name": "閑馬永空",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "闲马永空"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "しずま えいくう"
+          },
+          {
+            "k": "罗马字",
+            "v": "Shizuma Eiku"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 1
+    },
+    "id": 71452,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f4/63/196120_crt_Hz6pJ.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f4/63/196120_crt_Hz6pJ.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f4/63/196120_crt_Hz6pJ.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f4/63/196120_crt_Hz6pJ.jpg"
+    },
+    "summary": "色層の近さから、\r\n両親のいない菖愁の後見役となった【赤紫】の女性。\r\n菖愁が天供島へ戻ってきてからは別荘に引き取り、\r\n二人で暮らしている。\r\n子どもを産んだ過去があるらしいが、多くを語らない。",
+    "name": "閑紅",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "闲红"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "シズク"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": [
+          {
+            "v": "https://www.otomate.jp/olympia/catharsis/chara/?page=ch25"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 196120,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 19,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/6a/46/11403_crt_Z8vVm.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/6a/46/11403_crt_Z8vVm.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/6a/46/11403_crt_Z8vVm.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6a/46/11403_crt_Z8vVm.jpg"
+    },
+    "summary": "2年10组的学生。被称呼“空閑っち”。虽然基本上是扑克脸，常常以眼的变化来表现感情之外，被真砂说指不会笑而接受过特训后，好像变得会笑了。平时很少说话，对人说话时多半是说故弄玄虚的说话。最怕伯劳和心灵现象之类，在说这种话题的人前表情会变怪。养了一只名叫“小汤”的猫。",
+    "name": "空閑木陰",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "空闲木阴"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "くが こかげ"
+          },
+          {
+            "k": "昵称",
+            "v": "空閑っち"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "12月19日"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "身高",
+        "value": "140cm"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 4
+    },
+    "id": 11403,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

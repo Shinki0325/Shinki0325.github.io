@@ -1,0 +1,198 @@
+[
+  {
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 25,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/2b/37745_crt_w4e3j.jpg?r=1537798826",
+      "grid": "https://lain.bgm.tv/pic/crt/g/65/2b/37745_crt_w4e3j.jpg?r=1537798826",
+      "large": "https://lain.bgm.tv/pic/crt/l/65/2b/37745_crt_w4e3j.jpg?r=1537798826",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/2b/37745_crt_w4e3j.jpg?r=1537798826"
+    },
+    "summary": "主人公·右田双鉄の義理の妹。\r\nお絵描き大好きで、御一夜市内の看板やイラストマップ作成といった仕事を請け負っている。\r\nまじめで前向き。 人や物事の美点を誰より良く見出すことが出来る目を持っている。\r\n有能すぎる姉に対する引け目で押し隠していた絵への愛情を、再び見開かせてくれた双鉄のことを敬愛している。\r\nと同時に、敬愛以上の何かを感じてしまっていることを自覚し始めてもいる。\r\nそれが気恥ずかしくもどかしく、素直に接することができない日々を送っている。\r\n「結構すっごい絵描きの人と同じお誕生日ですよ？　え、誰かって……それは、調べてみてください」",
+    "name": "右田日々姫",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "右田日日姬"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "みぎた ひびき"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "10月25日"
+      },
+      {
+        "key": "身高",
+        "value": "148cm"
+      },
+      {
+        "key": "体重",
+        "value": "40kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B76/ W54/ H78"
+      }
+    ],
+    "stat": {
+      "comments": 15,
+      "collects": 64
+    },
+    "id": 37745,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 11,
+    "gender": "female",
+    "birth_day": 27,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/5b/04/37748_crt_RZoL7.jpg?r=1537798858",
+      "grid": "https://lain.bgm.tv/pic/crt/g/5b/04/37748_crt_RZoL7.jpg?r=1537798858",
+      "large": "https://lain.bgm.tv/pic/crt/l/5b/04/37748_crt_RZoL7.jpg?r=1537798858",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5b/04/37748_crt_RZoL7.jpg?r=1537798858"
+    },
+    "summary": "御一夜を代表する焼酎蔵·右田一酒造元の杜氏にして、右田双鉄の義理の姉。\r\n酒造りのセンスはもちろん経営センスにも優れ、商店会中から頼りにされている。\r\n両親が不在がちな右田家を支える実質的な主婦であり、包容力豊か。\r\n初対面の時から双鉄に惹かれ、けれど妹も同様の想いを抱いていることに気づいてしまったがため、その想いをひた隠しにしている。\r\n真闇と日々姫がくれた暖かで平凡な日常が、双鉄の心の傷をどれほどに癒してくれたのかは計り知れない。\r\n「なんねぇ、なんかプレゼントでもくれっと？　ふふ、ウソウソ。 お祝いの気持ちだけで嬉しかとよ」",
+    "name": "右田真闇",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "右田真闇"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "みぎた まくら"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "11月27日"
+      },
+      {
+        "key": "身高",
+        "value": "163cm"
+      },
+      {
+        "key": "体重",
+        "value": "50kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B92/ W60/ H86"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 15
+    },
+    "id": 37748,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/cd/37752_crt_MfFSt.jpg?r=1537798920",
+      "grid": "https://lain.bgm.tv/pic/crt/g/4e/cd/37752_crt_MfFSt.jpg?r=1537798920",
+      "large": "https://lain.bgm.tv/pic/crt/l/4e/cd/37752_crt_MfFSt.jpg?r=1537798920",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/cd/37752_crt_MfFSt.jpg?r=1537798920"
+    },
+    "summary": "大廃線時代末期に発生した鉄道事故の被害者。 家族をすべて失い、右田家に引き取られた。\r\n事故により見失った生きる目的を、“右田家への恩返し” に定めることで日常を取り戻すが、\r\n激しい感情を見せるようなことはなくなり、良く言えば極めて理性的であり、悪く言えば人間味に乏しい。\r\n進学に伴い離れていた御一夜へ、エアクラ工場誘致計画を撤回させる目的を持ち帰郷。\r\nそこで偶然にハチロクを目覚めさせたことにより、己から家族を奪った鉄道と真正面から向き合うことを強いられる。",
+    "name": "右田双鉄",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "みぎた そうてつ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 14,
+      "collects": 4
+    },
+    "id": 37752,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/b6/95599_crt_hhfvA.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a2/b6/95599_crt_hhfvA.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a2/b6/95599_crt_hhfvA.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/b6/95599_crt_hhfvA.jpg"
+    },
+    "summary": "女子にもてたいという理由だけで、サッカー部に入部した女好き。",
+    "name": "右田純一",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ミギタ　ジュンイチ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://www.t-apricot.jp/products/maple/chara02.html"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 95599,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

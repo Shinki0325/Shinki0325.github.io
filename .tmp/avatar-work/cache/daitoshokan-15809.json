@@ -1,0 +1,559 @@
+[
+  {
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 9,
+    "birth_year": null,
+    "blood_type": 4,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/9e/1f/27981_crt_AKTrF.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/9e/1f/27981_crt_AKTrF.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/9e/1f/27981_crt_AKTrF.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9e/1f/27981_crt_AKTrF.jpg"
+    },
+    "summary": "つぐみの2歳下の妹。数年前より病気で入院中。性格は明るく、素直で前向き。姉のことを慕っている。\r\n『大図書館の羊飼い』キャラクター人気投票では9位。\r\n『大図書館の羊飼い -Dreaming Sheep-』のおまけストーリーでは汐見学園に合格し、図書部に入っている。また、Hシーンも挿入されている。",
+    "name": "白崎さより",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "白崎细鱼"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "白崎纱依"
+          },
+          {
+            "k": "日文名",
+            "v": "白崎 さより"
+          },
+          {
+            "k": "纯假名",
+            "v": "しらさき さより"
+          },
+          {
+            "k": "罗马字",
+            "v": "Shirasaki Sayori"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "05-09"
+      },
+      {
+        "key": "血型",
+        "value": "O"
+      },
+      {
+        "key": "身高",
+        "value": "150.2cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B79(B)/W55/H80"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 12
+    },
+    "id": 27981,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 29,
+    "birth_year": null,
+    "blood_type": 4,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/89/5c/16638_crt_y3aRA.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/89/5c/16638_crt_y3aRA.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/89/5c/16638_crt_y3aRA.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/89/5c/16638_crt_y3aRA.jpg"
+    },
+    "summary": "図書部の中心的存在として、学園をより楽しくするための活動に勤しんでいる。\r\n人を引っ張っていくタイプではないが、その一生懸命さで周囲を手伝う気にさせてしまうあたり、深く静かなリーダーシップを持っている。\r\n性格は穏やかで、見ているほうが自分の汚れに身もだえするほどに素直。\r\n少し頑固なところが玉に瑕だが、口を尖らせたりと分かりやすいリアクションを取るため、メンバーからはよくいじられている。\r\n\r\n「だだだだ、だめだめっ、やだ、返して、見ないで、写真撮らないでっ」",
+    "name": "白崎つぐみ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "白崎绪美"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "白崎继美"
+          },
+          {
+            "v": "白崎鶫"
+          },
+          {
+            "k": "第二中文名",
+            "v": "白崎継美"
+          },
+          {
+            "k": "日文名",
+            "v": "白崎 つぐみ"
+          },
+          {
+            "k": "纯假名",
+            "v": "しらさき　つぐみ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Shirasaki Tsugumi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "03-29"
+      },
+      {
+        "key": "血型",
+        "value": "O"
+      },
+      {
+        "key": "身高",
+        "value": "156.4cm"
+      },
+      {
+        "key": "体重",
+        "value": "48.7kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B86(D)/ W59/ H87"
+      }
+    ],
+    "stat": {
+      "comments": 21,
+      "collects": 107
+    },
+    "id": 16638,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/52/3a/32893_crt_UR15r.jpg?r=1438176466",
+      "grid": "https://lain.bgm.tv/pic/crt/g/52/3a/32893_crt_UR15r.jpg?r=1438176466",
+      "large": "https://lain.bgm.tv/pic/crt/l/52/3a/32893_crt_UR15r.jpg?r=1438176466",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/52/3a/32893_crt_UR15r.jpg?r=1438176466"
+    },
+    "summary": "Post\r\nテストパイロット\r\n\r\nProfile\r\n霧科科学技術学園高等部の3年生。\r\n同時に「A-TEC」の看板テストパイロット。\r\n看板の名に偽りなく、本職パイロットも真っ青の\r\n驚異的な操縦技術を誇る。\r\nとはいえ安全意識がどうも希薄で、通学時に使う\r\nバイクの運転も荒く（本人は至って安全運転のつもり）\r\n親友のミズキにいつも注意されている。\r\nそんなわけで通学コースレコードの\r\n自己記録は日々更新中。",
+    "name": "白崎イリス",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "白崎伊莉丝"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Shirosaki Iris"
+          },
+          {
+            "k": "日文名",
+            "v": "白崎 イリス"
+          },
+          {
+            "k": "纯假名",
+            "v": "しろさき イリス"
+          },
+          {
+            "k": "罗马字",
+            "v": "Shirosaki Irisu"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "classroom-crisis.com/character"
+      }
+    ],
+    "stat": {
+      "comments": 9,
+      "collects": 19
+    },
+    "id": 32893,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/b6/189377_crt_Kgg7v.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/56/b6/189377_crt_Kgg7v.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/56/b6/189377_crt_Kgg7v.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/b6/189377_crt_Kgg7v.jpg"
+    },
+    "summary": "勝男の後輩。\r\n勝男の昭和っぽい性格が少し苦手。\r\n同棲中の彼女がおり、家事分担では料理を担当している。",
+    "name": "白崎ルイ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "しろさき ルイ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 189377,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/32/c4/6297_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/32/c4/6297_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/32/c4/6297_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/32/c4/6297_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "白崎",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "白崎"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "白崎"
+          },
+          {
+            "k": "罗马字",
+            "v": "Shirosaki"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 6297,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/3e/68/18961_crt_aN9w9.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/3e/68/18961_crt_aN9w9.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/3e/68/18961_crt_aN9w9.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3e/68/18961_crt_aN9w9.jpg"
+    },
+    "summary": "带着不可思议气氛的奇特少女，语言行动都很反常。\r\n虽然总是和随着带着的兔子玩偶说话，但其实是个天才。\r\n因为是一个美少女所以很显眼。\r\n\r\n“叔叔真温柔，carol！”",
+    "name": "白崎未散",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "白崎未散"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "茅原未散"
+          },
+          {
+            "k": "日文名",
+            "v": "白崎 未散"
+          },
+          {
+            "k": "纯假名",
+            "v": "しろさき みちる"
+          },
+          {
+            "k": "罗马字",
+            "v": "Shirosaki Michiru"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 21,
+      "collects": 52
+    },
+    "id": 18961,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d7/bf/22207_crt_Ff0tG.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d7/bf/22207_crt_Ff0tG.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/d7/bf/22207_crt_Ff0tG.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d7/bf/22207_crt_Ff0tG.jpg"
+    },
+    "summary": "颶風神（ぐふうしん）の少女で、台風十六号を司っている。通称「はーちゃん」。繭のゲーム友達。可奈子の立ち上げたゲーム会社で働いている。\r\n    羽振りは良く、最新鋭のゲームを所有している",
+    "name": "白崎蓮美",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "白崎莲美"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "白崎蓮美"
+          },
+          {
+            "k": "纯假名",
+            "v": "しらさき はすみ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Shirasaki Hasumi"
+          },
+          {
+            "k": "昵称",
+            "v": "はーちゃん"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 22207,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/57/b0/24213_crt_FMi4v.jpg?r=1399285729",
+      "grid": "https://lain.bgm.tv/pic/crt/g/57/b0/24213_crt_FMi4v.jpg?r=1399285729",
+      "large": "https://lain.bgm.tv/pic/crt/l/57/b0/24213_crt_FMi4v.jpg?r=1399285729",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/57/b0/24213_crt_FMi4v.jpg?r=1399285729"
+    },
+    "summary": "日乃出滨高中3年级生，与雪哉国中时就是好朋友，祖父在自家经营咖啡厅“风道”，兴趣是登山。",
+    "name": "白崎祐",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "白崎祐"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "白崎 祐"
+          },
+          {
+            "k": "纯假名",
+            "v": "しろさき ひろ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Shirosaki Hiro"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 2
+    },
+    "id": 24213,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f4/04/25210_crt_XkzhJ.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f4/04/25210_crt_XkzhJ.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f4/04/25210_crt_XkzhJ.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f4/04/25210_crt_XkzhJ.jpg"
+    },
+    "summary": "祐的姐姐，大学生。",
+    "name": "白崎百",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "白崎百"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Momo Shirosaki"
+          },
+          {
+            "k": "日文名",
+            "v": "白崎 百"
+          },
+          {
+            "k": "纯假名",
+            "v": "しろさき　もも"
+          },
+          {
+            "k": "罗马字",
+            "v": "Shirosaki Momo"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 5
+    },
+    "id": 25210,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/cc/ba/39568_crt_2JQjJ.jpg?r=1458230354",
+      "grid": "https://lain.bgm.tv/pic/crt/g/cc/ba/39568_crt_2JQjJ.jpg?r=1458230354",
+      "large": "https://lain.bgm.tv/pic/crt/l/cc/ba/39568_crt_2JQjJ.jpg?r=1458230354",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cc/ba/39568_crt_2JQjJ.jpg?r=1458230354"
+    },
+    "summary": "16歳。152cm。祥慶学園1年级。游洛院十和子的跟班。",
+    "name": "白崎京香",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "白崎京香"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "しらさき きょうか"
+          },
+          {
+            "k": "罗马字",
+            "v": "Shirasaki Kyouka"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "152cm"
+      },
+      {
+        "key": "体重",
+        "value": "42kg"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 39568,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

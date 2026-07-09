@@ -1,0 +1,493 @@
+[
+  {
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 9,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/48/3b/23091_crt_9cZrl.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/48/3b/23091_crt_9cZrl.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/48/3b/23091_crt_9cZrl.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/48/3b/23091_crt_9cZrl.jpg"
+    },
+    "summary": "自由都市地帯カスタム出身の魔法使い。\r\n [mask]幼少の頃から数年前まで、父を殺し母をさらった男、\r\nラガールへの復讐心にとらわれて生きていた。\r\nラガールの死後、その娘であり、志津香の異父姉妹でもあるナギ\r\n ・ス・ラガールに恨まれ、今度は自分が復讐を誓われてしまう。\r\n 現在は、妹を倒すことをよしとせず、たびたび来るナギの襲撃を\r\nかわして居所を転転とする日々を過ごしている。\r\nランスのことは大嫌いだと言っているが、結局行動を共にする\r\nことが多い腐れ縁。[/mask]",
+    "name": "魔想志津香",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "魔想志津香"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Shizuka Masou"
+          },
+          {
+            "k": "日文名",
+            "v": "魔想 志津香"
+          },
+          {
+            "k": "纯假名",
+            "v": "まそう しずか"
+          },
+          {
+            "k": "罗马字",
+            "v": "Masō Shizuka"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "GI999年7月30日"
+      },
+      {
+        "key": "身高",
+        "value": "159cm→132cm→163cm"
+      },
+      {
+        "key": "体重",
+        "value": "48kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B82 / W57 / H85"
+      },
+      {
+        "key": "レベル / 才能限界",
+        "value": "Lv40 / Lv61"
+      },
+      {
+        "key": "技能LV(傾向)",
+        "value": "魔法Lv2"
+      }
+    ],
+    "stat": {
+      "comments": 54,
+      "collects": 305
+    },
+    "id": 23091,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/60/68/189425_crt_KwWme.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/60/68/189425_crt_KwWme.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/60/68/189425_crt_KwWme.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/60/68/189425_crt_KwWme.jpg"
+    },
+    "summary": "魔想志津香的父亲。",
+    "name": "魔想惣造",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "魔想惣造"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Souzou Masou"
+          },
+          {
+            "k": "日文名",
+            "v": "魔想 惣造"
+          },
+          {
+            "k": "罗马字",
+            "v": "Masō Sōzō"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 189425,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/6b/130173_crt_l4j40.jpg?r=1684733663",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c9/6b/130173_crt_l4j40.jpg?r=1684733663",
+      "large": "https://lain.bgm.tv/pic/crt/l/c9/6b/130173_crt_l4j40.jpg?r=1684733663",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/6b/130173_crt_l4j40.jpg?r=1684733663"
+    },
+    "summary": "マリアの別人格で、メガネを外し、三つ編みを解くと表に現れる。大人しいマリアとは性格も雰囲気も異なり、その言動には妖艶さが加わるのがマオの特徴。こうした人格が生まれた経緯は不明だが、魔王の血を引き継ぐ者として周囲から蔑まれ続けたマリアが、5年程前から現実逃避のために生み出したものと思われる。",
+    "name": "マオ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "魔"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://eiyukyoushitsu-anime.com/character/#charb05"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 7
+    },
+    "id": 130173,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/cf/4d/3238_crt_Jm1eS.jpg?r=1421298239",
+      "grid": "https://lain.bgm.tv/pic/crt/g/cf/4d/3238_crt_Jm1eS.jpg?r=1421298239",
+      "large": "https://lain.bgm.tv/pic/crt/l/cf/4d/3238_crt_Jm1eS.jpg?r=1421298239",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cf/4d/3238_crt_Jm1eS.jpg?r=1421298239"
+    },
+    "summary": "国籍・ジャンルを問わず魔術師たちによって作られた自衛・管理団体。魔術を管理し、隠匿し、その発展を使命とする。（無論、名目上ではある）\r\n外敵（教会、自分たち以外の魔術団体、禁忌に触れる人間を罰する怪異）に対抗するための武力と、魔術の更なる発展（衰退ともいう）のための研究機関を持ち、魔術犯罪の防止法律を敷く。\r\n一般社会で魔術がらみの事件を起こしたものは処刑されるが、「正義」「道徳」ではなく、「神秘の漏洩」を防ぐことがその最大の目的。\r\nアトラス院は特に徹底されているが、魔術師は己の研究を公表することはなく、魔術師同士の研究の交流などというものはない（交流などというもがあるとすれば、それは世俗的な権力闘争くらいである）。隣り合った研究室を持つ魔術師同士が、互いが何を研究しているのか知らないなんてことは当たり前。\r\n魔術の研究は一人でするものであり、協会による束縛を嫌う魔術師も勿論いるが、大半の教本と、魔術の実践に適した歪みを抱えている霊地は、協会が押さえている。魔術を学ぶには最高の環境であり、自分の研究こそが最優先の魔術師にとって、それらの魅力は何物にも代え難い。名目上、支配者ではないことを標榜する協会は辞めることは自由だが、そんなことを考える魔術師はそうそういない（封印指定でも受ければしかたないが）。\r\n\r\n聖堂教会とは表向きは不可侵であるが、裏では記録に残さないことを条件に現在も殺し合いが続いている。\r\n\r\nまた、中東圏の魔術基盤、及び大陸（中国）の思想魔術とは互いに相容れず、やはり不可侵を装っている。加え、西洋魔術を扱う魔術協会では呪術は学問ではないとされて蔑視されており、中東圏に大きく遅れをとっている。",
+    "name": "魔術協会",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "魔术协会"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "まじゅつきょうかい"
+          },
+          {
+            "k": "罗马字",
+            "v": "Majutsu Kyoukai"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 14
+    },
+    "id": 3238,
+    "locked": false,
+    "type": 4,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/2c/26/5102_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/2c/26/5102_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/2c/26/5102_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2c/26/5102_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "魔碑斗",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Mahito"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 5102,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/92/c4/5792_crt_Y12ze.jpg?r=1693663654",
+      "grid": "https://lain.bgm.tv/pic/crt/g/92/c4/5792_crt_Y12ze.jpg?r=1693663654",
+      "large": "https://lain.bgm.tv/pic/crt/l/92/c4/5792_crt_Y12ze.jpg?r=1693663654",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/92/c4/5792_crt_Y12ze.jpg?r=1693663654"
+    },
+    "summary": "魔物里智力特别高、专门指挥魔物的家伙，最多能统率200只魔物，是魔军指挥系统中的低级军官",
+    "name": "魔物隊長",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "魔物队长"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Monster Captain"
+          },
+          {
+            "k": "罗马字",
+            "v": "Mamono Taichō"
+          }
+        ]
+      },
+      {
+        "key": "代表人物",
+        "value": [
+          {
+            "v": "拉康"
+          },
+          {
+            "v": "普罗比奥"
+          },
+          {
+            "v": "网走"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 5792,
+    "locked": false,
+    "type": 4,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/84/9060_crt_51IEg.jpg?r=1398733821",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b1/84/9060_crt_51IEg.jpg?r=1398733821",
+      "large": "https://lain.bgm.tv/pic/crt/l/b1/84/9060_crt_51IEg.jpg?r=1398733821",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/84/9060_crt_51IEg.jpg?r=1398733821"
+    },
+    "summary": "",
+    "name": "魔子",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "魔子"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "魔子"
+          },
+          {
+            "k": "罗马字",
+            "v": "Mako"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 9060,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/42/13165_crt_5tbb5.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/6e/42/13165_crt_5tbb5.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/6e/42/13165_crt_5tbb5.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/42/13165_crt_5tbb5.jpg"
+    },
+    "summary": "胸则的小女儿，拥有魔乳、胸杜两族血统，魔乳一族的继承者，特殊能力是斩乳后将其吸收。小时候第一次与狭山樱花比试，无意中夺走了樱花的乳房。",
+    "name": "魔乳千房",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "魔乳千房"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "まにゅう ちふさ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 11
+    },
+    "id": 13165,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/3a/9f/13167_crt_tPwTv.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/3a/9f/13167_crt_tPwTv.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/3a/9f/13167_crt_tPwTv.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3a/9f/13167_crt_tPwTv.jpg"
+    },
+    "summary": "千房的异母姐姐，胸则的次女。残忍的性格。在与千房战斗中被夺取乳房。",
+    "name": "魔乳影房",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "魔乳影房"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "まにゅうかげふさ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 5
+    },
+    "id": 13167,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f2/c6/19803_crt_UyvWY.jpg?r=1366272869",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f2/c6/19803_crt_UyvWY.jpg?r=1366272869",
+      "large": "https://lain.bgm.tv/pic/crt/l/f2/c6/19803_crt_UyvWY.jpg?r=1366272869",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f2/c6/19803_crt_UyvWY.jpg?r=1366272869"
+    },
+    "summary": "人間界侵攻を企てている、魔界の王。2000年前ダンテの父であるスパーダと戦い封印されたが、20年前に蘇った。名前の由来は「世界」という意味のラテン語。額に「第三の眼」がある。無から創造を行う絶大な力を持つが、役に立たなかった部下を自ら始末したり、ダンテに対し「母が欲しければいくらでも創造してやろう」と言い放つなど、無慈悲にして酷薄極まりない性格である。天使の翼を持つ三つ目の聖人のごとき神々しい容姿を持つが、ダンテから極度のダメージを受け、本来の姿を保てなくなりグロテスクな姿になる。ダンテとの死闘の末、トリッシュの協力もあり再び魔界と人間界の狭間に封印される。ダンテの母を殺し兄であるバージルをネロアンジェロに改造・洗脳した、ダンテの仇となる存在。\r\nラストバトルでダンテによって倒された以降、ムンドゥスなき魔界では、新たなる魔界の王にならんとする魔界四天王等をはじめとする魔界中の実力者が決起して群雄割拠の戦乱の世に突入し混乱が続いている模様。\r\n異伝扱いだが、『ビューティフルジョー新たなる希望』でダンテと真の決着をつける展開がある。また小説版2巻においてダンテは異世界のムンドゥスとも対戦しているが、『1』よりも円熟期に達していたダンテは堂々と勝利を収めている。",
+    "name": "魔帝ムンドゥス",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "魔帝蒙德斯"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "魔帝蒙杜斯"
+          },
+          {
+            "v": "魔帝穆图斯"
+          },
+          {
+            "k": "英文名",
+            "v": "Mundus"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 19803,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

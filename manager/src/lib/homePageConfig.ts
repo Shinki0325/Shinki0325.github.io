@@ -1,3 +1,14 @@
+export type MusicTrackForm = {
+  id: string;
+  title: string;
+  artist: string;
+  coverUrl: string;
+  audioUrl: string;
+  lrc: string;
+  duration?: number | null;
+  album?: string | null;
+};
+
 export type HomePageConfigForm = {
   brandTitle: string;
   brandSuffix: string;
@@ -13,8 +24,11 @@ export type HomePageConfigForm = {
   socialEmail: string;
   searchPlaceholder: string;
   announcementText: string;
+  homeBackgroundEnabled: boolean;
+  homeBackgroundVideoSrc: string;
+  homeBackgroundPoster: string;
   backgroundImageText: string;
-  musicTracksJson: string;
+  musicTracks: MusicTrackForm[];
   fallbackCover: string;
   idleLyric: string;
 };
@@ -31,6 +45,16 @@ const asRecord = (value: unknown): HomePageConfigRecord =>
 
 const asString = (value: unknown) => (typeof value === "string" ? value : "");
 
+const asBoolean = (value: unknown, fallback = false) => (typeof value === "boolean" ? value : fallback);
+
+const asNullableNumber = (value: unknown) => {
+  if (typeof value === "number" && Number.isFinite(value)) {
+    return value;
+  }
+
+  return null;
+};
+
 const asStringList = (value: unknown) =>
   Array.isArray(value) ? value.filter((item): item is string => typeof item === "string") : [];
 
@@ -42,33 +66,33 @@ const textToLines = (value: string) =>
     .map((line) => line.trim())
     .filter(Boolean);
 
-const musicTracksToJson = (music: HomePageConfigRecord) => {
+const normalizeMusicTrack = (track: unknown): MusicTrackForm => {
+  const record = asRecord(track);
+  return {
+    id: asString(record.id),
+    title: asString(record.title),
+    artist: asString(record.artist),
+    coverUrl: asString(record.coverUrl),
+    audioUrl: asString(record.audioUrl),
+    lrc: asString(record.lrc),
+    duration: asNullableNumber(record.duration),
+    album: asString(record.album) || null
+  };
+};
+
+const musicTracksToForm = (music: HomePageConfigRecord): MusicTrackForm[] => {
   if (Array.isArray(music.tracks)) {
-    return JSON.stringify(music.tracks, null, 2);
+    return music.tracks.map(normalizeMusicTrack);
   }
 
-  return JSON.stringify(
-    asStringList(music.cloudMusicIds).map((id) => ({
+  return asStringList(music.cloudMusicIds).map((id) => ({
       id,
       title: `网易云歌曲 ${id}`,
       artist: "网易云音乐",
       coverUrl: asString(music.fallbackCover),
       audioUrl: `https://music.163.com/song/media/outer/url?id=${encodeURIComponent(id)}.mp3`,
       lrc: ""
-    })),
-    null,
-    2
-  );
-};
-
-const parseMusicTracks = (value: string) => {
-  const parsed = JSON.parse(value);
-
-  if (!Array.isArray(parsed)) {
-    throw new Error("音乐曲库必须是数组 JSON。");
-  }
-
-  return parsed;
+  }));
 };
 
 export const parseHomePageConfig = (json: string): ParsedHomePageConfig => {
@@ -78,6 +102,7 @@ export const parseHomePageConfig = (json: string): ParsedHomePageConfig => {
   const profile = asRecord(source.profile);
   const social = asRecord(source.social);
   const search = asRecord(source.search);
+  const homeBackground = asRecord(source.homeBackground);
   const music = asRecord(source.music);
 
   return {
@@ -97,8 +122,11 @@ export const parseHomePageConfig = (json: string): ParsedHomePageConfig => {
       socialEmail: asString(social.email),
       searchPlaceholder: asString(search.placeholder),
       announcementText: linesToText(source.announcements),
+      homeBackgroundEnabled: asBoolean(homeBackground.enabled, true),
+      homeBackgroundVideoSrc: asString(homeBackground.videoSrc) || "/uploads/backgrounds/home-loop-h264.mp4",
+      homeBackgroundPoster: asString(homeBackground.poster) || "/uploads/backgrounds/home-loop-poster.jpg",
       backgroundImageText: linesToText(source.backgroundImages),
-      musicTracksJson: musicTracksToJson(music),
+      musicTracks: musicTracksToForm(music),
       fallbackCover: asString(music.fallbackCover),
       idleLyric: asString(music.idleLyric)
     }
@@ -146,10 +174,16 @@ export const serializeHomePageConfig = (source: HomePageConfigRecord, form: Home
         placeholder: form.searchPlaceholder
       },
       announcements: textToLines(form.announcementText),
+      homeBackground: {
+        ...asRecord(source.homeBackground),
+        enabled: form.homeBackgroundEnabled,
+        videoSrc: form.homeBackgroundVideoSrc,
+        poster: form.homeBackgroundPoster
+      },
       backgroundImages: textToLines(form.backgroundImageText),
       music: {
         ...musicSource,
-        tracks: parseMusicTracks(form.musicTracksJson),
+        tracks: form.musicTracks,
         fallbackCover: form.fallbackCover,
         idleLyric: form.idleLyric
       }

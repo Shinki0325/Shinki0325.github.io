@@ -1,0 +1,470 @@
+[
+  {
+    "birth_mon": 2,
+    "gender": "female",
+    "birth_day": 2,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/58/1e/61417_crt_8XuuI.jpg?r=1726452168",
+      "grid": "https://lain.bgm.tv/pic/crt/g/58/1e/61417_crt_8XuuI.jpg?r=1726452168",
+      "large": "https://lain.bgm.tv/pic/crt/l/58/1e/61417_crt_8XuuI.jpg?r=1726452168",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/58/1e/61417_crt_8XuuI.jpg?r=1726452168"
+    },
+    "summary": "鳥白島のスナイパー\r\n\r\n趣味：超長距離狙擊\r\n好物：おにぎり\r\n原画：ふむゆん\r\nCV：一宮朔\r\n\r\n鳥白島少年団の治安維持執行部に所属し、通っている学校でも風紀委員を担当している。主に島内の放送塔から不審人物を監視しているのが日課。風紀を乱す不届きものには愛用の水鉄砲「ハイドロクラディエーター改」による容赦ない鉄槌を下している。しろはや蒼、良一、天善とは同学年であり、幼いころからの付き合いでもある。親元を離れ、島内でひとり暮らしをしているという、影のある一面を覗かせる。\r\n\r\n「さて変態ども。往来で何をしている」",
+    "name": "野村美希",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "野村美希"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "野村 美希"
+          },
+          {
+            "k": "纯假名",
+            "v": "のむら みき"
+          },
+          {
+            "k": "罗马字",
+            "v": "Nomura Miki"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "2月2日"
+      },
+      {
+        "key": "身高",
+        "value": "148cm"
+      },
+      {
+        "key": "体重",
+        "value": "38kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B80/W55/H80"
+      },
+      {
+        "key": "年龄",
+        "value": "16岁"
+      }
+    ],
+    "stat": {
+      "comments": 54,
+      "collects": 90
+    },
+    "id": 61417,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/09/bb/25180_crt_n4IeI.jpg?r=1400951112",
+      "grid": "https://lain.bgm.tv/pic/crt/g/09/bb/25180_crt_n4IeI.jpg?r=1400951112",
+      "large": "https://lain.bgm.tv/pic/crt/l/09/bb/25180_crt_n4IeI.jpg?r=1400951112",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/09/bb/25180_crt_n4IeI.jpg?r=1400951112"
+    },
+    "summary": "内気でおとなしい中学2年生。幼い頃からピアノを習っているが、本人はあまりピアノの話をせず、ピアノの話をすると暗い顔をする。高橋先輩のことが好きだが、内気な性格のため告白できない。",
+    "name": "野村美雨",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "野村美雨"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "野村美雨"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 3
+    },
+    "id": 25180,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/55/e4/138593_crt_D53X1.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/55/e4/138593_crt_D53X1.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/55/e4/138593_crt_D53X1.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/55/e4/138593_crt_D53X1.jpg"
+    },
+    "summary": "",
+    "name": "野村美帆子",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Nomura Mihoko"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://vndb.org/c79041"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 138593,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": 2,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/76/46/59828_crt_5eyaa.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/76/46/59828_crt_5eyaa.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/76/46/59828_crt_5eyaa.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/76/46/59828_crt_5eyaa.jpg"
+    },
+    "summary": "八十八町のバス会社「入梅興業」の社員。美鈴と同じマンションに一人暮らしだが、お互いに面識は無い。恋愛には普通を求める一方、実は刺激を求めるタイプ。また、セックスは普通に好きで、既に肉体関係を持った大学生の彼氏がいる。主人公達が「冬至温泉」へ旅行に行く際、バスガイドとして同乗したことをきっかけに、彼氏より刺激的な雰囲気を持つ主人公に惹かれていく。\r\n竹井正樹曰く、「髪型が間違っている」とのことだが、どういう意味なのかは不明。OVA版では彼氏に去られた後という設定になっており、同行先の露天温泉で主人公と混浴中に青姦へ至るが、それ以外に見せ場らしい見せ場は無く、OVA版『卒業生』にも顔見せ程度で登場するのみ。SFC版では攻略不可。",
+    "name": "野々村美里",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "野野村美里"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ののむら みさと"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "血型",
+        "value": "B"
+      },
+      {
+        "key": "身高",
+        "value": "160cm"
+      },
+      {
+        "key": "BWH",
+        "value": "82/55/82"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 59828,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/13/57/92494_crt_u85si.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/13/57/92494_crt_u85si.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/13/57/92494_crt_u85si.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/13/57/92494_crt_u85si.jpg"
+    },
+    "summary": "自由形で日本を代表する競泳選手。\r\nあと2秒タイムを縮めれば世界水泳で優勝も狙えるので、水泳の練習以外で記録を向上させられるものを目下捜索中。\r\nそんな時、朝香の紹介で主人公のマッサージを受けた詠美は潮を噴いてイッてしまう。その後の詠美は好調で、タイムも伸びていた。「自分にはエッチなことが足りなかったんだ」と考えた詠美は、それから主人公の元に通うようになって……。",
+    "name": "野村詠美",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "のむら えみ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://www.getchu.com/soft.phtml?id=545685"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 4
+    },
+    "id": 92494,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/4e/35082_crt_nIzXj.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/65/4e/35082_crt_nIzXj.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/65/4e/35082_crt_nIzXj.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/4e/35082_crt_nIzXj.jpg"
+    },
+    "summary": "陽茉莉の親友で、彼女の事を「ひまひま」と呼んでいる。ミーハーでイケメンが大好きで、テンションがやたら高い。\r\n\r\n陽茉莉を弄って遊ぶのが日課だが、偶に陽茉莉からのカウンターとして嫌いなホラー鑑賞をさせられることがある。",
+    "name": "野々村智美",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "野野村智美"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ののむらともみ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 5
+    },
+    "id": 35082,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/68/bc/148251_crt_NzNGy.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/68/bc/148251_crt_NzNGy.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/68/bc/148251_crt_NzNGy.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/68/bc/148251_crt_NzNGy.jpg"
+    },
+    "summary": "野村家の長女。\r\n活発だが奥手なところのある女の子。\r\n生活費の全てが主人公の父親が支払っていることが大いに不満。\r\n主人公に好意を抱いていたが、そうした家庭の事情を知って主人公を嫌おうとするが……。",
+    "name": "野村真由美",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Nomura Mayumi"
+          },
+          {
+            "k": "纯假名",
+            "v": "のむらまゆみ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 148251,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c6/60/24301_crt_dhozi.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c6/60/24301_crt_dhozi.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c6/60/24301_crt_dhozi.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c6/60/24301_crt_dhozi.jpg"
+    },
+    "summary": "亜美の当初の年齢設定は、小学校5年生（11歳）だった。この点についてもビデ倫から指摘を受けてしまい、本編後半の幼い容姿と指摘後に追加された前半の制服姿で、体型の食い違いが生じることとなる。以降、亜美は高校生の設定となる。",
+    "name": "野々村亜美",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "野野村亚美"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "野々村 亜美"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 18,
+      "collects": 16
+    },
+    "id": 24301,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/40/3e/34987_crt_h4b4Y.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/40/3e/34987_crt_h4b4Y.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/40/3e/34987_crt_h4b4Y.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/40/3e/34987_crt_h4b4Y.jpg"
+    },
+    "summary": "乙坂歩未同班同学，班长。",
+    "name": "野村",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "野村"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "のむら"
+          },
+          {
+            "k": "罗马字",
+            "v": "Nomura"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 8,
+      "collects": 9
+    },
+    "id": 34987,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f6/32/104610_crt_245Hu.jpg?r=1642334283",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f6/32/104610_crt_245Hu.jpg?r=1642334283",
+      "large": "https://lain.bgm.tv/pic/crt/l/f6/32/104610_crt_245Hu.jpg?r=1642334283",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f6/32/104610_crt_245Hu.jpg?r=1642334283"
+    },
+    "summary": "",
+    "name": "野村",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "野村"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "のむら"
+          },
+          {
+            "k": "罗马字",
+            "v": "Nomura"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 104610,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

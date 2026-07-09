@@ -1,0 +1,585 @@
+[
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/19/43/32885_crt_dK718.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/19/43/32885_crt_dK718.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/19/43/32885_crt_dK718.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/19/43/32885_crt_dK718.jpg"
+    },
+    "summary": "先代皇帝の一人娘であり、最後に残された正統なる帝位継承者です。\r\n敗戦時の混乱のさなか、母親である皇帝は崩御するものの、彼女は辛うじて敵国の手を逃れました。\r\nその陰には、主人公・宗仁の獅子奮迅の働きがあったと言われています。\r\n戦後は身を守るため正体を隠し、王家を再興すべく臥薪嘗胆の日々を送ってきました。\r\n宗仁が通う学園に転校してきたことにも、何か目的があるようです。\r\n生まれながらの高貴さを持ちながらも感情表現は豊か。\r\n上品かつ屈託のない笑顔には誰もが心を奪われます。\r\n嬉しくても悲しくても泣いてしまうタイプで、周囲にからかわれないよう必死に涙をこらえていることも。",
+    "name": "宮国朱璃",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "宫国朱璃"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "本名",
+            "v": "桃花染の皇姫"
+          },
+          {
+            "k": "日文名",
+            "v": "宮国 朱璃"
+          },
+          {
+            "k": "纯假名",
+            "v": "みやぐに あかり"
+          },
+          {
+            "k": "罗马字",
+            "v": "Miyaguni Akari"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "BWH",
+        "value": "85D/57/84"
+      }
+    ],
+    "stat": {
+      "comments": 16,
+      "collects": 100
+    },
+    "id": 32885,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/59/49/208671_crt_Wl118.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/59/49/208671_crt_Wl118.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/59/49/208671_crt_Wl118.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/59/49/208671_crt_Wl118.jpg"
+    },
+    "summary": "一人称：私（わたくし）　年齢：20歳\r\n近隣の大学に通う大学生。\r\nおっとり系のお嬢様。財閥の令嬢だが、社会\r\n勉強もかねて都心環状線での通学を行ってい\r\nる。世間ずれした面があり、痴漢行為を男性\r\nの性的スキンシップとして、受け入れる寛容\r\nさを見せる。美人で垢抜けた雰囲気以上に豊\r\n満すぎる胸が特徴的。",
+    "name": "宮国亜弥乃",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Miyakuni Ayano"
+          },
+          {
+            "k": "纯假名",
+            "v": "みやくにあやの"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 208671,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/e9/b7/173542_crt_gT8hX.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/e9/b7/173542_crt_gT8hX.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/e9/b7/173542_crt_gT8hX.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e9/b7/173542_crt_gT8hX.jpg"
+    },
+    "summary": "来岚灯旅游游客，一起参加了旅馆提供的解密活动。\r\n大大咧咧的，非常热情但也容易急躁。\r\n身上一股淡淡的烟味。\r\n大冬天的还穿着旅馆提供的短袖，似乎非常健康，并不是很怕冷。",
+    "name": "宫",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "宫"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 173542,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ec/89/102_6637a99787bd197eacd77acce5e_Mgw9m.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ec/89/102_6637a99787bd197eacd77acce5e_Mgw9m.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ec/89/102_6637a99787bd197eacd77acce5e_Mgw9m.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ec/89/102_6637a99787bd197eacd77acce5e_Mgw9m.jpg"
+    },
+    "summary": "升的女同学，与升不同班级。暗恋升，是佐仓的劲敌。财阀大小姐，非常的有钱。因为血统的关系，在十六岁的时候会变成狼人，但是本质上还是个人类，所以不知道自己与空的实力差距。",
+    "name": "宮部紅葉",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "宫部红叶"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "宮部紅葉"
+          },
+          {
+            "k": "罗马字",
+            "v": "Miyabe Momiji"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 10
+    },
+    "id": 102,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/e0/0d/139_03b685a0dd18fb6a08af0923de0_rNgYo.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/e0/0d/139_03b685a0dd18fb6a08af0923de0_rNgYo.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/e0/0d/139_03b685a0dd18fb6a08af0923de0_rNgYo.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e0/0d/139_03b685a0dd18fb6a08af0923de0_rNgYo.jpg"
+    },
+    "summary": "海市蜃楼的一员，遗产强盗的内应。使用通用迷彩，主要使用小刀。被光城杀害。",
+    "name": "宮根瑠璃子",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "宫根琉璃子"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "宫根瑠璃子"
+          },
+          {
+            "k": "纯假名",
+            "v": "みやね るりこ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 139,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 4,
+    "gender": "male",
+    "birth_day": 30,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/e1/6a/366_crt_e22pK.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/e1/6a/366_crt_e22pK.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/e1/6a/366_crt_e22pK.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e1/6a/366_crt_e22pK.jpg"
+    },
+    "summary": "CV：長月優\r\n最强男儿，真人的对手\r\n为剑道献上人生，与真人是不同类型的傻瓜\r\n虽然在装酷，却有着爱憎分明的直性情\r\n有着其他成员所没有的愤世嫉俗的想法",
+    "name": "宮沢謙吾",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "宫泽谦吾"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Kengo Miyazawa"
+          },
+          {
+            "k": "日文名",
+            "v": "宮沢 謙吾"
+          },
+          {
+            "k": "纯假名",
+            "v": "みやざわ けんご"
+          },
+          {
+            "k": "罗马字",
+            "v": "Miyazawa Kengo"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "4月30日"
+      },
+      {
+        "key": "身高",
+        "value": "180cm"
+      },
+      {
+        "key": "体重",
+        "value": "72kg"
+      }
+    ],
+    "stat": {
+      "comments": 12,
+      "collects": 40
+    },
+    "id": 366,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 12,
+    "gender": "male",
+    "birth_day": 22,
+    "birth_year": 2014,
+    "blood_type": 2,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/be/ed/383_Qvquk.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/be/ed/383_Qvquk.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/be/ed/383_Qvquk.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/be/ed/383_Qvquk.jpg"
+    },
+    "summary": "黑客小组《罪犯》里唯一的男性成员。\r\n虽然看上去是个爽快的好青年，可实际上只是一个单纯的傻瓜。\r\n但是，他的古旧的价值观和火热的激情，总让人讨厌不起来。\r\n是个使用无聊的笑话让场面平静，降温的开心果\r\n和真佐实是欢喜冤家，关系十分要好。\r\n料理方面的专长是吃。\r\n\r\nTarot VII THE CHARIOT（07：戦車）",
+    "name": "宮田浩介",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "宫田浩介"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "骑士"
+          },
+          {
+            "v": "Eques（エクエス）"
+          },
+          {
+            "k": "日文名",
+            "v": "宮田 浩介"
+          },
+          {
+            "k": "罗马字",
+            "v": "Miyata Kousuke"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "2014年12月22日（Capricornus）"
+      },
+      {
+        "key": "血型",
+        "value": "B"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 3
+    },
+    "id": 383,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 10,
+    "gender": "male",
+    "birth_day": 28,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/78/fc/748_crt_d5PM1.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/78/fc/748_crt_d5PM1.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/78/fc/748_crt_d5PM1.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/78/fc/748_crt_d5PM1.jpg"
+    },
+    "summary": "人物特点：性格开朗，幽默风趣，喜欢开玩笑，属于搞笑人物，因为武士的身份有时候喜欢装酷，故作很酷的样子，还有一点儿固执的怪脾气。性格看上去有点像【灌篮高手】中的樱木花道。\r\n\t\r\n自从小时侯看了《沈默的武士》电视剧后，就被日本浪人与武士的洒脱、浪漫所深深吸引，从那时开始，他迷上通过看历史小说、电影、时代剧来对浪人与武士详加研究，甚至还研习剑道；一方面在心理上逐渐把自己当做一个真正的日本武士，还给自己取了一个武士味道浓厚的名字：宫本宝藏。\r\n〝真是怪人一个！〞朋友们实在受不了他的怪脾气，包括任何事非得和什么〝武士精神〞扯上关系，以及不知从何而来的正义感和侠义情操，还有那奇怪的八股语气，所以有人贴切地形容他是[日本版的唐吉柯德]。传言他曾经和一个叫〝忍太郎〞的忍者交手，没人知道结果谁胜谁负，他本人也不愿意证实传言是真是假。朋友说： 〝哎，就是受不了他这凡事爱耍酷的脾气！〞\r\n\r\n星座：天蝎座\r\n生日：10月28日\r\n血型：B型\r\n年龄：14岁\r\n生肖：虎\r\n身高：168公分\r\n体重：63公斤\r\n职业：演员\r\n兴趣：说相声\r\n宠物：老鹰\r\n最喜欢：在路上捡到一箱点券\r\n最讨厌：罚款\r\n偶像：美空云雀\r\n语言：日文\r\n口头禅：呵，我还是满行的嘛！",
+    "name": "宮本寶藏",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "宫本宝藏"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Miyamoto"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "10月28日"
+      },
+      {
+        "key": "星座",
+        "value": "天蠍座"
+      },
+      {
+        "key": "血型",
+        "value": "B型"
+      },
+      {
+        "key": "身高",
+        "value": "168cm"
+      },
+      {
+        "key": "体重",
+        "value": "63kg"
+      },
+      {
+        "key": "年龄",
+        "value": "14岁"
+      },
+      {
+        "key": "职业",
+        "value": "演员"
+      },
+      {
+        "key": "兴趣",
+        "value": "说相声"
+      },
+      {
+        "key": "口头禅",
+        "value": "进攻是最好的防守！、呵，我还是满行的嘛！"
+      },
+      {
+        "key": "引用来源",
+        "value": [
+          {
+            "v": "https://rmivfun.softstargames.com.tw/"
+          },
+          {
+            "v": "http://games.sina.com.cn/z/rich7/2003-11-03/62431.shtml"
+          },
+          {
+            "v": "https://richman.fandom.com/zh/wiki/宮本寶藏"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 1
+    },
+    "id": 748,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/85/65/1015_crt_01j18.jpg?r=1692105877",
+      "grid": "https://lain.bgm.tv/pic/crt/g/85/65/1015_crt_01j18.jpg?r=1692105877",
+      "large": "https://lain.bgm.tv/pic/crt/l/85/65/1015_crt_01j18.jpg?r=1692105877",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/85/65/1015_crt_01j18.jpg?r=1692105877"
+    },
+    "summary": "朋也的后辈，拥有着一颗能毫无隔阂地接待任何人的温柔的心。由于对于那样的有纪宁的仰慕，在她的身边聚集起了许多的朋友……（不知为何都是些可怕的人物）。兴趣是念咒语，而且咒语百发百中。（春原 阳平是个例外）",
+    "name": "宮沢有紀寧",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "宫泽有纪宁"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "みやざわ ゆきね"
+          },
+          {
+            "k": "罗马字",
+            "v": "Miyazawa Yukine"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "8月7日"
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      },
+      {
+        "key": "身高",
+        "value": "157cm"
+      },
+      {
+        "key": "体重",
+        "value": "45kg"
+      },
+      {
+        "key": "声优",
+        "value": "榎本温子"
+      }
+    ],
+    "stat": {
+      "comments": 37,
+      "collects": 210
+    },
+    "id": 1015,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 5,
+    "gender": "male",
+    "birth_day": 12,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/74/95/1079_crt_P79MP.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/74/95/1079_crt_P79MP.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/74/95/1079_crt_P79MP.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/74/95/1079_crt_P79MP.jpg"
+    },
+    "summary": "拥有美少女面孔的主人公(男)\r\n　　因为祖父的遗言,被强迫转学到女子学校——圣央女学院的悲惨命运的男孩子,由于家境原因,从小就受到优良的教育,从礼仪行为,一直到各种护身术的武术都很精通,但是性格又有点软弱，腼腆的男孩子不但外表秀丽,而且文武両道.进入学校不久，随即成为了学院唯一的\"姐姐大人\"本人对于此事,觉得很丢脸",
+    "name": "宮小路瑞穂",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "宫小路瑞穗"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "宮小路瑞穂"
+          },
+          {
+            "k": "纯假名",
+            "v": "みやのこうじみずほ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Miyanokouji Mizuho"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "5月12日"
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      },
+      {
+        "key": "身高",
+        "value": "173cm"
+      },
+      {
+        "key": "声优",
+        "value": "神村ひな"
+      }
+    ],
+    "stat": {
+      "comments": 23,
+      "collects": 76
+    },
+    "id": 1079,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

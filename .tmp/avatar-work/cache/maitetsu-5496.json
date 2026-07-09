@@ -1,0 +1,486 @@
+[
+  {
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 8,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c3/7f/37744_crt_Z3y5J.jpg?r=1537798814",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c3/7f/37744_crt_Z3y5J.jpg?r=1537798814",
+      "large": "https://lain.bgm.tv/pic/crt/l/c3/7f/37744_crt_Z3y5J.jpg?r=1537798814",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c3/7f/37744_crt_Z3y5J.jpg?r=1537798814"
+    },
+    "summary": "旧帝鉄 8620形蒸気機関車トップナンバー機 8620専用レイルロオド。\r\n帝鉄解体直前、8620と共に買い取られて御一夜へ運ばれてきたものの、そのままずっと眠らされ続けてきた。\r\nトップナンバーレイルロオドにふさわしい能力·知性·教養·気品を併せ持つ、まさに日ノ本撫子。\r\nが、目覚めて以降は著しい能力低下に苦しめられ、人知れず涙をこぼしている。\r\nしかし双鉄以外の何者もそんな姿を目にすることは無く、人の目に映るハチロクは凛とした自信に満ち、常に結果を示し続ける最優秀のレイルロオドに他ならない。\r\n「西暦1914年の3月8日―― 8620トップナンバー機の完成に一月ほど先立って、わたくしは完成いたしました」",
+    "name": "ハチロク",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "八六"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "铃"
+          },
+          {
+            "k": "罗马字",
+            "v": "Hachiroku"
+          },
+          {
+            "k": "昵称",
+            "v": "すず"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "3月8日"
+      },
+      {
+        "key": "身高",
+        "value": "124cm"
+      },
+      {
+        "key": "体重",
+        "value": "20kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B57/ W43/ H59"
+      }
+    ],
+    "stat": {
+      "comments": 47,
+      "collects": 137
+    },
+    "id": 37744,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/e2/7784_crt_PRGx3.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a4/e2/7784_crt_PRGx3.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a4/e2/7784_crt_PRGx3.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/e2/7784_crt_PRGx3.jpg"
+    },
+    "summary": "丰田生产的两款小巧、轻量、经济效益取向的高性能小型车Corolla Levin和Sprinter Trueno的底盘代号，在1983年分别以Corolla第五代产品线的身份面市。代号“AE86”，代表1600cc引擎气缸容积、后轮驱动形式，在丰田的代号系统中，“A”代表车型搭载的发动机型号（4A系列），“E”代表是卡罗拉车系，“8”代表第五代卡罗拉（即E80系列），而“6”代表是该世代第六款衍生车型。",
+    "name": "トヨタ・AE86",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "四代丰田Sprinter Trueno/卡罗拉雷凌"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "丰田AE86"
+          },
+          {
+            "k": "昵称",
+            "v": "ハチロク"
+          }
+        ]
+      },
+      {
+        "key": "发动机位置",
+        "value": "前置"
+      },
+      {
+        "key": "驱动形式",
+        "value": "后驱"
+      },
+      {
+        "key": "车身类型",
+        "value": "4座2门Coupe/4座3门Coupe"
+      },
+      {
+        "key": "发动机",
+        "value": "4A-GEU"
+      },
+      {
+        "key": "变速箱",
+        "value": "5速手动"
+      }
+    ],
+    "stat": {
+      "comments": 18,
+      "collects": 42
+    },
+    "id": 7784,
+    "locked": false,
+    "type": 3,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 26,
+    "birth_year": 1933,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/24/47/29487_crt_tY7ZF.jpg?r=1581054465",
+      "grid": "https://lain.bgm.tv/pic/crt/g/24/47/29487_crt_tY7ZF.jpg?r=1581054465",
+      "large": "https://lain.bgm.tv/pic/crt/l/24/47/29487_crt_tY7ZF.jpg?r=1581054465",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/24/47/29487_crt_tY7ZF.jpg?r=1581054465"
+    },
+    "summary": "生まれも育ちも呉の潜水艦なの。あのミッドウェーの大海戦のあと、飛龍が最後の力で深手を負わせたヨークタウンに留めを刺したのよ！\r\n空母たちの仇は取ったわ！　あの大変な島への輸送任務でも頑張ったの。\r\n\r\n伊号第一六八潜水艦（いごうだいひゃくろくじゅうはちせんすいかん）は、日本海軍の潜水艦。伊一六八型潜水艦（海大VI型a）の1番艦。竣工時の艦名は伊号第六八潜水艦。",
+    "name": "伊168",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "伊168"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "伊号第一六八潜水艦"
+          },
+          {
+            "k": "纯假名",
+            "v": "いひゃくろくじゅうはち"
+          },
+          {
+            "k": "罗马字",
+            "v": "Ihyakurokujuuhachi"
+          },
+          {
+            "k": "昵称",
+            "v": "伊姆娅"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "1933-06-26"
+      },
+      {
+        "key": "体重",
+        "value": "基準:1,400t/常備:1,785t/水中:2,440t"
+      },
+      {
+        "key": "BWH",
+        "value": "全長:104.70m/全幅:8.20m/吃水:4.58m"
+      },
+      {
+        "key": "图鉴编号",
+        "value": "126"
+      },
+      {
+        "key": "画师",
+        "value": "ショボン"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 12
+    },
+    "id": 29487,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a0/2e/9911_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a0/2e/9911_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a0/2e/9911_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a0/2e/9911_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "ハチ",
+    "infobox": [
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "ハチ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Hachi"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 9911,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 4,
+    "gender": "male",
+    "birth_day": 28,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/3d/23/27172_crt_Qzqvz.jpg?r=1420415817",
+      "grid": "https://lain.bgm.tv/pic/crt/g/3d/23/27172_crt_Qzqvz.jpg?r=1420415817",
+      "large": "https://lain.bgm.tv/pic/crt/l/3d/23/27172_crt_Qzqvz.jpg?r=1420415817",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3d/23/27172_crt_Qzqvz.jpg?r=1420415817"
+    },
+    "summary": "ジョーカーの助手。ちょっとドジな新人ドロボウ。忍者の里で生まれ育ったにもかかわらず、ドジなせいで落ちこぼれだった。のんびりした性格だが誰よりも正義感が強く、優しく義理と人情に熱い。少し頼りないところもあるがジョーカーをしっかりサポートしている。家事が得意で、料理はシェフ顔負けの腕前。\r\n\r\n○好きな本：\r\n本を読むのが大好き。特にミステリー小説が大好き。\r\n\r\n○好きな食べ物：\r\nいちご大福、せんべい、ようかん、みかん、お茶",
+    "name": "ハチ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "阿巴"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "小八"
+          },
+          {
+            "k": "英文名",
+            "v": "Hachi"
+          },
+          {
+            "k": "日文名",
+            "v": "風魔 八"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "4月28日"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "身高",
+        "value": "120cm"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 1
+    },
+    "id": 27172,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b5/fb/29037_crt_ool9I.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b5/fb/29037_crt_ool9I.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/b5/fb/29037_crt_ool9I.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b5/fb/29037_crt_ool9I.jpg"
+    },
+    "summary": "里見家の守り犬。\r\n性格は無邪気でかわいらしい。\r\n八犬士のことが大好き。\r\n里見家の危機を救うために大人の姿となる。",
+    "name": "はち",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 29037,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/cc/ef/30882_crt_59LeB.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/cc/ef/30882_crt_59LeB.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/cc/ef/30882_crt_59LeB.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cc/ef/30882_crt_59LeB.jpg"
+    },
+    "summary": "AIを搭載した多脚戦車で、あまり流暢に話すことはできないが意思疎通は十分に可能。\r\n元々は市街戦用に開発された機体でありAIの搭載は想定されていないのだが、この一機に限り薫の勤める “施設” にて改良が施され、AI研究の試作機として活動している。\r\n\r\nハチという愛称は教育係の小夜子がつけたもの。\r\n\r\n「ナニかおキにサワるようなことをしたでしょうか、アヤト」",
+    "name": "ハチ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "正式名称",
+        "value": "八四式多脚戦車乙型-改"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 30882,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/2f/9c/59838_crt_zKgQd.jpg?r=1514211861",
+      "grid": "https://lain.bgm.tv/pic/crt/g/2f/9c/59838_crt_zKgQd.jpg?r=1514211861",
+      "large": "https://lain.bgm.tv/pic/crt/l/2f/9c/59838_crt_zKgQd.jpg?r=1514211861",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2f/9c/59838_crt_zKgQd.jpg?r=1514211861"
+    },
+    "summary": "APE作战总部都市防卫作战司令官。\r\n在叫龙逼近13都市的战斗中向孩子们发出作战指令的司令。",
+    "name": "ハチ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "八"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "哈奇"
+          },
+          {
+            "k": "英文名",
+            "v": "HACHI"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://darli-fra.jp/character/"
+      }
+    ],
+    "stat": {
+      "comments": 7,
+      "collects": 3
+    },
+    "id": 59838,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/93/8c/156485_crt_d7I5T.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/93/8c/156485_crt_d7I5T.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/93/8c/156485_crt_d7I5T.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/93/8c/156485_crt_d7I5T.jpg"
+    },
+    "summary": "冒険好きな忠犬",
+    "name": "ハチ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 156485,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f7/3b/209690_crt_76gbz.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f7/3b/209690_crt_76gbz.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f7/3b/209690_crt_76gbz.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f7/3b/209690_crt_76gbz.jpg"
+    },
+    "summary": "",
+    "name": "ハチ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 209690,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

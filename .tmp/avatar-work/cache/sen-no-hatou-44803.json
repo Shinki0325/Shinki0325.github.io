@@ -1,0 +1,462 @@
+[
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/3b/38/32889_crt_7ivyo.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/3b/38/32889_crt_7ivyo.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/3b/38/32889_crt_7ivyo.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3b/38/32889_crt_7ivyo.jpg"
+    },
+    "summary": "学園の生徒会長を務めると同時に、共和国政府のスタッフとしても働いています。\r\n敵国のトップの娘であることは広く知られ、その言動はいつも注目の的。\r\n皇帝や武人といった特権的身分制度を解体し、平等な世界を作ろうと考えています。\r\n人柄は穏やかで誰からも慕われる温和な雰囲気を纏っています。\r\nしかし、皇国人に対しては異国の言葉できつい発言をしてしまうこともあります。\r\n皇国の文化は嫌いだと言い張りつつも、お風呂だけは例外のようです。",
+    "name": "エルザ・ヴァレンタイン",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "艾尔莎·瓦伦丁"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Elsa Valentine"
+          },
+          {
+            "k": "日文名",
+            "v": "エルザ・ヴァレンタイン"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "BWH",
+        "value": "85D/58/86"
+      }
+    ],
+    "stat": {
+      "comments": 25,
+      "collects": 79
+    },
+    "id": 32889,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/43/17/10120_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/43/17/10120_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/43/17/10120_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/43/17/10120_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "エルザ",
+    "infobox": [
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "エルザ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Elsa"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 10120,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/dc/4c/22140_crt_Ph7PM.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/dc/4c/22140_crt_Ph7PM.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/dc/4c/22140_crt_Ph7PM.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dc/4c/22140_crt_Ph7PM.jpg"
+    },
+    "summary": "ドクター・ウェストの集大成\r\n強くてかわいいアンドロイド\r\n\r\n韦斯特博士开发的对大十字九郎机器人，以“robo”句尾为口癖，有着强大的战斗力。对九郎一见钟情，并以darling称呼他。因为是韦斯特博士的发明，机器人三原则并没有被设定进系统。",
+    "name": "エルザ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "艾尔莎"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "埃儿莎"
+          },
+          {
+            "k": "英文名",
+            "v": "Elsa"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 11
+    },
+    "id": 22140,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/52/7c/41711_crt_1eEg5.jpg?r=1482833955",
+      "grid": "https://lain.bgm.tv/pic/crt/g/52/7c/41711_crt_1eEg5.jpg?r=1482833955",
+      "large": "https://lain.bgm.tv/pic/crt/l/52/7c/41711_crt_1eEg5.jpg?r=1482833955",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/52/7c/41711_crt_1eEg5.jpg?r=1482833955"
+    },
+    "summary": "ほえ猛る声の組合の騎士級ガンナーの女性。サジャの村出身。太陽暦431年生まれ（29歳）。クライブに追われ、ミューズ市内では主人公に2つの包みを預けた。クライブとの関連イベント（イベント全てに時間制限がある）を完遂した場合のみ、エルザとクライブの因縁が語られる。\r\n    『外伝』にはVol.1 Episode 3の正規ルートに登場。クライブに追われてグリンヒル方面へ逃走中にナッシュと遭遇し、一時行動を共にした。森でナッシュを追っていたハイランド軍のゴールドウルフに遭遇し、撃退した。",
+    "name": "エルザ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "埃露萨"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Elza"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 41711,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/6a/9b/49277_crt_36E5D.jpg?r=1487085207",
+      "grid": "https://lain.bgm.tv/pic/crt/g/6a/9b/49277_crt_36E5D.jpg?r=1487085207",
+      "large": "https://lain.bgm.tv/pic/crt/l/6a/9b/49277_crt_36E5D.jpg?r=1487085207",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6a/9b/49277_crt_36E5D.jpg?r=1487085207"
+    },
+    "summary": "あづみの猫。\r\nターキッシュアンゴラ。\r\nちょっとお嬢様っぽい。",
+    "name": "エルザ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "艾尔莎"
+      },
+      {
+        "key": "别名",
+        "value": []
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 5
+    },
+    "id": 49277,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/df/f3/74928_crt_znU33.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/df/f3/74928_crt_znU33.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/df/f3/74928_crt_znU33.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/df/f3/74928_crt_znU33.jpg"
+    },
+    "summary": "“性转换宿屋”的魅魔小姐。可利姆指名。鬣狗兽人族小姐，野性帅气的大姐，因为是鬣狗种也有类雄性生殖器官。魅魔小姐人气投票第6名。\r\n\r\n“性转换宿屋”是魔导士迪米亚监修的其中一家店，自身并没有小姐，但靠迪米亚的人脉联系其他店家，安排小姐已兼职形式到店服务。",
+    "name": "エルザ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "艾莎"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "艾露莎"
+          },
+          {
+            "k": "英文名",
+            "v": "Elza"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://zh.wikipedia.org/wiki/%E5%BC%82%E7%A7%8D%E6%97%8F%E9%A3%8E%E4%BF%97%E5%A8%98%E8%AF%84%E9%89%B4%E6%8C%87%E5%8D%97"
+      },
+      {
+        "key": "种族",
+        "value": "鬣狗"
+      }
+    ],
+    "stat": {
+      "comments": 4,
+      "collects": 8
+    },
+    "id": 74928,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/5e/6f/77059_crt_THw7Q.jpg?r=1589126057",
+      "grid": "https://lain.bgm.tv/pic/crt/g/5e/6f/77059_crt_THw7Q.jpg?r=1589126057",
+      "large": "https://lain.bgm.tv/pic/crt/l/5e/6f/77059_crt_THw7Q.jpg?r=1589126057",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5e/6f/77059_crt_THw7Q.jpg?r=1589126057"
+    },
+    "summary": "グラングランマの部下でライオン獣人",
+    "name": "エルザ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "艾尔莎"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 77059,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 11,
+    "gender": null,
+    "birth_day": 3,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/1e/b6/85634_crt_xWGxY.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/1e/b6/85634_crt_xWGxY.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/1e/b6/85634_crt_xWGxY.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1e/b6/85634_crt_xWGxY.jpg"
+    },
+    "summary": "つぎはぎの肢体で生きる謎の少女。どう見ても弱そうなのに世界を救う鍵だという主人公に興味を持ち、使い魔になった。",
+    "name": "エルザ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "年齢",
+        "value": "14歳"
+      },
+      {
+        "key": "生日",
+        "value": "11月3日"
+      },
+      {
+        "key": "身高",
+        "value": "160cm"
+      },
+      {
+        "key": "体重",
+        "value": "47kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B80/W54/H80"
+      },
+      {
+        "key": "出身地",
+        "value": "ヘカトニス"
+      },
+      {
+        "key": "血型",
+        "value": "不明"
+      },
+      {
+        "key": "趣味",
+        "value": "音楽鑑賞"
+      },
+      {
+        "key": "好きなもの",
+        "value": "赤いキャンディ"
+      },
+      {
+        "key": "嫌いなもの",
+        "value": "自虐的な言動"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://gomaotsu.jp/"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 85634,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/da/88238_crt_yl4y7.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f5/da/88238_crt_yl4y7.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f5/da/88238_crt_yl4y7.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/da/88238_crt_yl4y7.jpg"
+    },
+    "summary": "世界に10人しかいないと言われる大魔女の一人。\r\n態度や言動から冷徹でキツい印象を受けるが、その印象通りの中身である。\r\n他人をからかったり、イジめるのが好きな真性のサド。\r\n頭がいい反面、生活態度は非常にだらしない。本をそこら中に散らかしたり、床で寝たりする。\r\n\r\n「眠りの邪魔をしたのは、万死に値する。死んで詫びろ。」",
+    "name": "エルザ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "エルザ"
+          }
+        ]
+      },
+      {
+        "key": "CV",
+        "value": "高槻つばさ"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 88238,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d6/b6/119600_crt_q05UD.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d6/b6/119600_crt_q05UD.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/d6/b6/119600_crt_q05UD.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d6/b6/119600_crt_q05UD.jpg"
+    },
+    "summary": "于亚拉坎荒野一战中率军突袭波鲁裘斯时反被击杀，并被妮姬分尸示众。",
+    "name": "エルザ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "艾尔莎"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Elza"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 119600,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

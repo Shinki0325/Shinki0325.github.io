@@ -1,0 +1,508 @@
+[
+  {
+    "birth_mon": 11,
+    "gender": "female",
+    "birth_day": 27,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/5b/04/37748_crt_RZoL7.jpg?r=1537798858",
+      "grid": "https://lain.bgm.tv/pic/crt/g/5b/04/37748_crt_RZoL7.jpg?r=1537798858",
+      "large": "https://lain.bgm.tv/pic/crt/l/5b/04/37748_crt_RZoL7.jpg?r=1537798858",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5b/04/37748_crt_RZoL7.jpg?r=1537798858"
+    },
+    "summary": "御一夜を代表する焼酎蔵·右田一酒造元の杜氏にして、右田双鉄の義理の姉。\r\n酒造りのセンスはもちろん経営センスにも優れ、商店会中から頼りにされている。\r\n両親が不在がちな右田家を支える実質的な主婦であり、包容力豊か。\r\n初対面の時から双鉄に惹かれ、けれど妹も同様の想いを抱いていることに気づいてしまったがため、その想いをひた隠しにしている。\r\n真闇と日々姫がくれた暖かで平凡な日常が、双鉄の心の傷をどれほどに癒してくれたのかは計り知れない。\r\n「なんねぇ、なんかプレゼントでもくれっと？　ふふ、ウソウソ。 お祝いの気持ちだけで嬉しかとよ」",
+    "name": "右田真闇",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "右田真闇"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "みぎた まくら"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "11月27日"
+      },
+      {
+        "key": "身高",
+        "value": "163cm"
+      },
+      {
+        "key": "体重",
+        "value": "50kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B92/ W60/ H86"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 15
+    },
+    "id": 37748,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/95/e7/213070_crt_xsw0x.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/95/e7/213070_crt_xsw0x.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/95/e7/213070_crt_xsw0x.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/95/e7/213070_crt_xsw0x.jpg"
+    },
+    "summary": "右沙田凯罗的丈夫，编辑。\r\n\r\n成年时期 CV 木内秀信\r\n学生时期 CV 関根明良",
+    "name": "右沙田マサシ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "右沙田真司"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "うさだ まさし"
+          },
+          {
+            "k": "罗马字",
+            "v": "Usada Masashi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 213070,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 25,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/2b/37745_crt_w4e3j.jpg?r=1537798826",
+      "grid": "https://lain.bgm.tv/pic/crt/g/65/2b/37745_crt_w4e3j.jpg?r=1537798826",
+      "large": "https://lain.bgm.tv/pic/crt/l/65/2b/37745_crt_w4e3j.jpg?r=1537798826",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/2b/37745_crt_w4e3j.jpg?r=1537798826"
+    },
+    "summary": "主人公·右田双鉄の義理の妹。\r\nお絵描き大好きで、御一夜市内の看板やイラストマップ作成といった仕事を請け負っている。\r\nまじめで前向き。 人や物事の美点を誰より良く見出すことが出来る目を持っている。\r\n有能すぎる姉に対する引け目で押し隠していた絵への愛情を、再び見開かせてくれた双鉄のことを敬愛している。\r\nと同時に、敬愛以上の何かを感じてしまっていることを自覚し始めてもいる。\r\nそれが気恥ずかしくもどかしく、素直に接することができない日々を送っている。\r\n「結構すっごい絵描きの人と同じお誕生日ですよ？　え、誰かって……それは、調べてみてください」",
+    "name": "右田日々姫",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "右田日日姬"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "みぎた ひびき"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "10月25日"
+      },
+      {
+        "key": "身高",
+        "value": "148cm"
+      },
+      {
+        "key": "体重",
+        "value": "40kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B76/ W54/ H78"
+      }
+    ],
+    "stat": {
+      "comments": 15,
+      "collects": 64
+    },
+    "id": 37745,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/cd/37752_crt_MfFSt.jpg?r=1537798920",
+      "grid": "https://lain.bgm.tv/pic/crt/g/4e/cd/37752_crt_MfFSt.jpg?r=1537798920",
+      "large": "https://lain.bgm.tv/pic/crt/l/4e/cd/37752_crt_MfFSt.jpg?r=1537798920",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/cd/37752_crt_MfFSt.jpg?r=1537798920"
+    },
+    "summary": "大廃線時代末期に発生した鉄道事故の被害者。 家族をすべて失い、右田家に引き取られた。\r\n事故により見失った生きる目的を、“右田家への恩返し” に定めることで日常を取り戻すが、\r\n激しい感情を見せるようなことはなくなり、良く言えば極めて理性的であり、悪く言えば人間味に乏しい。\r\n進学に伴い離れていた御一夜へ、エアクラ工場誘致計画を撤回させる目的を持ち帰郷。\r\nそこで偶然にハチロクを目覚めさせたことにより、己から家族を奪った鉄道と真正面から向き合うことを強いられる。",
+    "name": "右田双鉄",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "みぎた そうてつ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 14,
+      "collects": 4
+    },
+    "id": 37752,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/b6/95599_crt_hhfvA.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a2/b6/95599_crt_hhfvA.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a2/b6/95599_crt_hhfvA.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/b6/95599_crt_hhfvA.jpg"
+    },
+    "summary": "女子にもてたいという理由だけで、サッカー部に入部した女好き。",
+    "name": "右田純一",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ミギタ　ジュンイチ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://www.t-apricot.jp/products/maple/chara02.html"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 95599,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/e8/91/213069_crt_ELmRr.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/e8/91/213069_crt_ELmRr.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/e8/91/213069_crt_ELmRr.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e8/91/213069_crt_ELmRr.jpg"
+    },
+    "summary": "右沙田春真的母亲，作家。\r\n\r\n成年时期 CV 甲斐田裕子\r\n学生时期 CV 鈴木みのり",
+    "name": "右沙田キャロル",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "右沙田凯罗"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "うさだ きゃろる"
+          },
+          {
+            "k": "罗马字",
+            "v": "Usada Carol"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 213069,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/61/21031_crt_du1dD.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/fa/61/21031_crt_du1dD.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/fa/61/21031_crt_du1dD.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/61/21031_crt_du1dD.jpg"
+    },
+    "summary": "否定姫の腹心。尾張幕府直轄内部監察所総監督補佐。元忍者。「不及（およばず）」「不答（こたえず）」「不得禁（きんじえず）」「不外（はずれず）」など、会話の際には、相手の言動に対して「不」の付く否定形の言葉を放つ。\r\n百七十年前、真庭忍軍に里を滅ぼされた「相生忍軍」の最後の一人。上下とも時代にそぐわない洋装で靴を履き、否定姫の命令で顔の上半分は「不忍」と大きく縦書きした面で隠している。便宜上剣士を自称するが刀や剣術への執着はなく、大小二本の刀を腰に差しているがどちらも変体刀ではない普通の刀。真庭鳳凰は親友であったが、忍法と人格(及び顔面の上半分)を奪われた関係でもある。それ以来しばらく「精神的に死んだ」状態だったが、否定姫に自分の「死」を否定された事がきっかけで忠誠を誓った。感情を露わにすることはめったになく、否定姫に強い忠誠心を持ち、任務には非常に忠実。しかし、否定姫が日和号を嘲笑した際に窘めるなど、意外とロマンチストである。なお、現在の名前は部下となった時に否定姫から授かったもの。\r\n年齢不詳。身長六尺一寸。体重十五貫。趣味は「掃除（天井裏の）」。",
+    "name": "左右田右衛門左衛門",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "左右田右卫门左卫门"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "左右田右衛門左衛門"
+          },
+          {
+            "k": "纯假名",
+            "v": "そうだ えもんざえもん"
+          },
+          {
+            "k": "罗马字",
+            "v": "Souda emonzaemon"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "身高",
+        "value": "六尺一寸"
+      },
+      {
+        "key": "体重",
+        "value": "十五貫"
+      }
+    ],
+    "stat": {
+      "comments": 4,
+      "collects": 5
+    },
+    "id": 21031,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/a6/153749_crt_1ngq9.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a7/a6/153749_crt_1ngq9.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a7/a6/153749_crt_1ngq9.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/a6/153749_crt_1ngq9.jpg"
+    },
+    "summary": "人間の侍。\r\n正式名は「桂右衛門尉瑞月朝臣高盛 (かつらうえもんのじょうみづきのあそんたかもり)」。\r\n心優しき大男で、野良仕事が好きすぎて厳格な父から常に叱られていた。\r\n戦から逃亡したことにより家に帰れなくなり、山賊に身を落とす。",
+    "name": "田右衛門",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "田右卫门"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "たうえもん"
+          },
+          {
+            "v": "Tauemon"
+          },
+          {
+            "k": "第二中文名",
+            "v": "桂右卫门尉瑞月朝臣高盛"
+          },
+          {
+            "k": "日文名",
+            "v": "桂右衛門尉瑞月朝臣高盛"
+          },
+          {
+            "k": "纯假名",
+            "v": "かつらうえもんのじょうみづきのあそんたかもり"
+          },
+          {
+            "k": "罗马字",
+            "v": "Katsura Uemon-no-jou Mizuki-no-ason Takamori"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 153749,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/7b/f4/34192_crt_w44E2.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/7b/f4/34192_crt_w44E2.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/7b/f4/34192_crt_w44E2.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7b/f4/34192_crt_w44E2.jpg"
+    },
+    "summary": "",
+    "name": "池田夜右衛門",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "池田夜右卫門"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "池田 夜右衛門"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 34192,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/52/d4/37795_crt_4ockQ.jpg?r=1464161046",
+      "grid": "https://lain.bgm.tv/pic/crt/g/52/d4/37795_crt_4ockQ.jpg?r=1464161046",
+      "large": "https://lain.bgm.tv/pic/crt/l/52/d4/37795_crt_4ockQ.jpg?r=1464161046",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/52/d4/37795_crt_4ockQ.jpg?r=1464161046"
+    },
+    "summary": "登场时为50岁，在本能寺之变发生时与森兰丸逃出，但与丰久经历了同样的经验而被传送到了异世界。打算以丰久为首，展开对异世界窃国的计划。信长是个善于煽动人民的策略家，对于战争有着自己的一套攻略法，懂得如何用恐惧将敌人逼退。信长不仅熟悉制造火药的方法，也对枪支极感兴趣，对于基德的新式枪支非常感兴趣，可是却找不到有技术的工匠可以量产，之后得知了矮人的工艺了得，所以第二个解放的种族才决定为矮人；解放后，矮人以一天十把的速度量产枪支，并在圣日耳曼伯爵倒戈加入后，成为其麾下五百男同性恋部队“圣军”、也是异世界首支火枪部队的指挥官。",
+    "name": "織田信長",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "织田信长"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "织田右府信长"
+          },
+          {
+            "k": "日文名",
+            "v": "織田 信長"
+          },
+          {
+            "k": "纯假名",
+            "v": "おだ のぶなが"
+          },
+          {
+            "k": "罗马字",
+            "v": "Oda Nobunaga"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "wiki"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 4
+    },
+    "id": 37795,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

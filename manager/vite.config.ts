@@ -7,7 +7,8 @@ export default defineConfig({
     host: "127.0.0.1",
     port: 4173,
     proxy: {
-      "/api": "http://127.0.0.1:4318"
+      "/api": "http://127.0.0.1:4318",
+      "/uploads": "http://127.0.0.1:4318"
     }
   },
   preview: {

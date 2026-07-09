@@ -1,0 +1,410 @@
+[
+  {
+    "workId": "happiness-nightmare",
+    "reason": "missing-days366-page",
+    "aliases": [
+      "ハピメア"
+    ]
+  },
+  {
+    "workId": "sakura-no-toki",
+    "reason": "missing-days366-page",
+    "aliases": [
+      "サクラノ刻",
+      "樱之刻"
+    ]
+  },
+  {
+    "sourceId": "76103",
+    "name": "しまこ",
+    "reading": "しまこ",
+    "gender": "female",
+    "birthday": "06-13",
+    "sourceUrl": "https://days366.com/title/21_02_35.html",
+    "id": "rewrite-76103",
+    "workId": "rewrite",
+    "page": "Rewrite リライト",
+    "bangumiId": "44757",
+    "reason": "avatar-download-or-crop-error",
+    "error": "Command failed: ffmpeg -y -hide_banner -loglevel error -i .tmp/avatar-work/new-birthday-batch/raw-avatars/rewrite-76103.jpg -vf scale=320:-1,crop=240:240:(iw-240)/2:min(max(0\\,ih*0.16)\\,ih-240) -frames:v 1 public/uploads/character-birthdays/rewrite/rewrite-76103.webp"
+  },
+  {
+    "sourceId": "28342",
+    "name": "瀬尾晶",
+    "reading": "せおあきら",
+    "gender": "female",
+    "birthday": "01-17",
+    "sourceUrl": "https://days366.com/title/16_03_09.html",
+    "id": "tsukihime-28342",
+    "workId": "tsukihime",
+    "page": "月姫",
+    "reason": "no-bangumi-exact-or-alias-match",
+    "candidates": [
+      {
+        "id": 161560,
+        "name": "瀬尾あきら",
+        "birthday": "1-17",
+        "aliases": [
+          "瀬尾あきら",
+          "濑尾晶",
+          "瀬尾 あきら",
+          "せお あきら",
+          "Seo Akira"
+        ]
+      },
+      {
+        "id": 8890,
+        "name": "瀬尾静音",
+        "birthday": "?-?",
+        "aliases": [
+          "瀬尾静音",
+          "濑尾静音",
+          "瀬尾静音",
+          "せお しずね",
+          "Seo Shizune"
+        ]
+      },
+      {
+        "id": 20365,
+        "name": "瀬尾結月",
+        "birthday": "7-7",
+        "aliases": [
+          "瀬尾結月",
+          "濑尾结月",
+          "周洁月",
+          "せお ゆづき",
+          "Seo Yuzuki"
+        ]
+      },
+      {
+        "id": 32597,
+        "name": "瀬尾智也",
+        "birthday": "?-?",
+        "aliases": [
+          "瀬尾智也",
+          "濑尾智也",
+          "瀬尾 智也",
+          "せお ともや",
+          "Seo Tomoya"
+        ]
+      },
+      {
+        "id": 46663,
+        "name": "瀬尾瑞希",
+        "birthday": "?-?",
+        "aliases": [
+          "瀬尾瑞希"
+        ]
+      }
+    ]
+  },
+  {
+    "sourceId": "28347",
+    "name": "セブン（ななこ）",
+    "reading": "せぶん（ななこ）",
+    "gender": "female",
+    "birthday": "03-20",
+    "sourceUrl": "https://days366.com/title/16_03_09.html",
+    "id": "tsukihime-28347",
+    "workId": "tsukihime",
+    "page": "月姫",
+    "reason": "no-bangumi-exact-or-alias-match",
+    "candidates": [
+      {
+        "id": 65681,
+        "name": "セブン",
+        "birthday": "3-20",
+        "aliases": [
+          "セブン",
+          "Seven",
+          "奈奈子",
+          "第七圣典",
+          "Seven",
+          "ななこ"
+        ]
+      },
+      {
+        "id": 13039,
+        "name": "セブン",
+        "birthday": "?-?",
+        "aliases": [
+          "セブン",
+          "赛文",
+          "Seven"
+        ]
+      },
+      {
+        "id": 71441,
+        "name": "セブン",
+        "birthday": "?-?",
+        "aliases": [
+          "セブン",
+          "赛文",
+          "七号",
+          "Seven"
+        ]
+      },
+      {
+        "id": 116268,
+        "name": "セブン",
+        "birthday": "?-?",
+        "aliases": [
+          "セブン",
+          "朱華"
+        ]
+      },
+      {
+        "id": 125717,
+        "name": "セブン",
+        "birthday": "1-8",
+        "aliases": [
+          "セブン",
+          "seven"
+        ]
+      }
+    ]
+  },
+  {
+    "sourceId": "72923",
+    "name": "ノエル先生（愛染ノエル）",
+    "reading": "のえるせんせい（あいぞめのえる）",
+    "gender": "female",
+    "birthday": "12-25",
+    "sourceUrl": "https://days366.com/title/16_03_09.html",
+    "id": "tsukihime-72923",
+    "workId": "tsukihime",
+    "page": "月姫",
+    "reason": "no-bangumi-exact-or-alias-match",
+    "candidates": [
+      {
+        "id": 10376,
+        "name": "ノエル",
+        "birthday": "?-?",
+        "aliases": [
+          "ノエル",
+          "ノエル",
+          "Noel"
+        ]
+      },
+      {
+        "id": 13147,
+        "name": "ノエル",
+        "birthday": "?-?",
+        "aliases": [
+          "ノエル"
+        ]
+      },
+      {
+        "id": 22722,
+        "name": "ノエル",
+        "birthday": "?-?",
+        "aliases": [
+          "ノエル"
+        ]
+      },
+      {
+        "id": 26456,
+        "name": "ノエル",
+        "birthday": "11-3",
+        "aliases": [
+          "ノエル",
+          "诺艾尔",
+          "Noel",
+          "ノエル"
+        ]
+      },
+      {
+        "id": 27692,
+        "name": "ノエル",
+        "birthday": "?-?",
+        "aliases": [
+          "ノエル"
+        ]
+      }
+    ]
+  },
+  {
+    "sourceId": "27046",
+    "name": "インドラ・サーダン・ミュン",
+    "reading": "いんどらさーだんみゅん",
+    "gender": "female",
+    "birthday": "11-19",
+    "sourceUrl": "https://days366.com/title/19_01_74.html",
+    "id": "muv-luv-alternative-27046",
+    "workId": "muv-luv-alternative",
+    "page": "マブラヴ オルタネイティヴ",
+    "reason": "no-bangumi-exact-or-alias-match",
+    "candidates": [
+      {
+        "id": 80333,
+        "name": "インドラ",
+        "birthday": "?-?",
+        "aliases": [
+          "インドラ",
+          "因陀罗"
+        ]
+      },
+      {
+        "id": 180483,
+        "name": "インドラ",
+        "birthday": "?-?",
+        "aliases": [
+          "インドラ",
+          "因陀罗",
+          "Indra"
+        ]
+      },
+      {
+        "id": 31756,
+        "name": "雷帝インドラ",
+        "birthday": "?-?",
+        "aliases": [
+          "雷帝インドラ",
+          "雷帝因陀罗"
+        ]
+      },
+      {
+        "id": 116054,
+        "name": "アズス・アインドラ",
+        "birthday": "?-?",
+        "aliases": [
+          "アズス・アインドラ",
+          "阿祖斯·艾因德拉",
+          "Azusu Aindora"
+        ]
+      },
+      {
+        "id": 34853,
+        "name": "ラキュース・アルベイン・デイル・アインドラ",
+        "birthday": "?-?",
+        "aliases": [
+          "ラキュース・アルベイン・デイル・アインドラ",
+          "菈秋丝·阿尔贝茵·提尔·安多菈",
+          "lakyus alvein dale aindra"
+        ]
+      }
+    ]
+  },
+  {
+    "sourceId": "24398",
+    "name": "シゼル・ステインブレッシェル",
+    "reading": "しぜるすていんぶれっしぇる",
+    "gender": "female",
+    "birthday": "11-22",
+    "sourceUrl": "https://days366.com/title/18_01_127.html",
+    "id": "baldr-sky-24398",
+    "workId": "baldr-sky",
+    "page": "BALDR SKY バルドスカイ",
+    "reason": "no-bangumi-exact-or-alias-match",
+    "candidates": [
+      {
+        "id": 27130,
+        "name": "シゼル・ステインブレッセル",
+        "birthday": "11-22",
+        "aliases": [
+          "シゼル・ステインブレッセル",
+          "希泽鲁·斯坦布雷歇尔",
+          "Shizel Steinbrecher"
+        ]
+      },
+      {
+        "id": 73907,
+        "name": "シゼル",
+        "birthday": "?-?",
+        "aliases": [
+          "シゼル",
+          "shizel"
+        ]
+      }
+    ]
+  },
+  {
+    "workId": "dimension-shift",
+    "reason": "missing-days366-page",
+    "aliases": [
+      "次元の違う恋",
+      "次元错位恋人"
+    ]
+  },
+  {
+    "workId": "otome-riron",
+    "reason": "missing-days366-page",
+    "aliases": [
+      "乙女理論とその周辺",
+      "乙女理論とその後の周辺"
+    ]
+  },
+  {
+    "workId": "konosora",
+    "reason": "missing-days366-page",
+    "aliases": [
+      "この大空に、翼をひろげて"
+    ]
+  },
+  {
+    "sourceId": "39303",
+    "name": "水神連",
+    "reading": "みなかみれん",
+    "gender": "female",
+    "birthday": "04-20",
+    "sourceUrl": "https://days366.com/title/15_01_90.html",
+    "id": "sakura-cloud-scarlet-39303",
+    "workId": "sakura-cloud-scarlet",
+    "page": "さくらの雲＊スカアレットの恋",
+    "reason": "no-bangumi-exact-or-alias-match",
+    "candidates": [
+      {
+        "id": 6901,
+        "name": "水神",
+        "birthday": "?-?",
+        "aliases": [
+          "水神",
+          "Mizugami",
+          "水神"
+        ]
+      },
+      {
+        "id": 77286,
+        "name": "水神蓮",
+        "birthday": "4-20",
+        "aliases": [
+          "水神蓮",
+          "水神莲",
+          "みなかみ れん",
+          "Minakami Ren"
+        ]
+      },
+      {
+        "id": 101570,
+        "name": "水神小夜/マジアアズール",
+        "birthday": "9-1",
+        "aliases": [
+          "水神小夜/マジアアズール",
+          "水神小夜/魔法碧蓝",
+          "みなかみ さよ"
+        ]
+      },
+      {
+        "id": 199593,
+        "name": "水神哲也",
+        "birthday": "?-?",
+        "aliases": [
+          "水神哲也",
+          "Mizukami Tetsuya",
+          "みずかみ・てつや"
+        ]
+      },
+      {
+        "id": 104481,
+        "name": "スイジンモン",
+        "birthday": "?-?",
+        "aliases": [
+          "スイジンモン",
+          "水神兽",
+          "Suijinmon",
+          "Suijinmon"
+        ]
+      }
+    ]
+  }
+]

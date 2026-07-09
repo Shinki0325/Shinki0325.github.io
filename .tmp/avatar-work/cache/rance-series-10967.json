@@ -1,0 +1,479 @@
+[
+  {
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/7d/34/36603_crt_3QtbA.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/7d/34/36603_crt_3QtbA.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/7d/34/36603_crt_3QtbA.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7d/34/36603_crt_3QtbA.jpg"
+    },
+    "summary": "魔法学校の卒業試験のトラブル（意図的に仕組まれた罠だった）で年を取らない異空間「玄武城」に飛んでしまい、そこに32年間閉じ込められていた。非常に騙されやすい性格で、そのために調教され、肉奴隷体質にされた。本人はそれを嫌がり治したいと願っていてチャンスも訪れたのだが、ランスの役に立ちたい想いからそれをフイにしている。なぜかハニーに好かれる。魔法学校では現国王ラグナロックアーク・スーパー・ガンジーの先輩であり、彼からは「リズ姉」と呼ばれている。学生時代にガンジーの攻撃魔法を浴び続けていたため、魔法耐性が非常に高い。自らを救い出してくれたランスに好意を持ち告白するもののランスがシィルを選んだことにより失恋。しかし失恋後もランスと多少の距離は取りつつも一定の関係を保っている。",
+    "name": "リズナ・ランフビット",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "利兹娜·兰菲比特"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "莉兹娜·兰弗毕特"
+          },
+          {
+            "k": "第二中文名",
+            "v": "丽姿娜"
+          },
+          {
+            "k": "英文名",
+            "v": "Rizna Lanfbitt"
+          },
+          {
+            "k": "罗马字",
+            "v": "rizuna ranfubitto"
+          },
+          {
+            "k": "昵称",
+            "v": "栗子"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "GI971年8月8日"
+      },
+      {
+        "key": "身高",
+        "value": "170cm"
+      },
+      {
+        "key": "体重",
+        "value": "56kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B105 W67 H96"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://seesaawiki.jp/rance-world-note/d/%a5%ea%a5%ba%a5%ca%a1%a6%a5%e9%a5%f3%a5%d5%a5%d3%a5%c3%a5%c8"
+      },
+      {
+        "key": "レベル / 才能限界",
+        "value": "Lv32 / Lv42、Lv11 / Lv39(ランス6)"
+      },
+      {
+        "key": "技能LV(傾向)",
+        "value": "魔法Lv1(光系、支援系)、護身術Lv1(薙刀)→槍戦闘Lv1(ランス10)、性技Lv2"
+      }
+    ],
+    "stat": {
+      "comments": 14,
+      "collects": 65
+    },
+    "id": 36603,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/fe/145308_crt_t72uT.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/04/fe/145308_crt_t72uT.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/04/fe/145308_crt_t72uT.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/fe/145308_crt_t72uT.jpg"
+    },
+    "summary": "快活で気さくな面倒見の良いお姉さん。 からかい上手で距離感が近く、それでご主人様をドキドキさせてくる。 誰とでも分け隔てなく接して仲良くなれるコミュニケーション能力が高い年上のお姉さん。 エッチな事に積極的で、好きな人に対しては情熱的。 快感、快楽に素直で、また相手を気持ちよくさせる事も大好き。",
+    "name": "来栖リズ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "気さくでちょっとエッチなお姉さん"
+          },
+          {
+            "k": "日文名",
+            "v": "来栖 リズ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 145308,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/63/20552_crt_cWKUm.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/4e/63/20552_crt_cWKUm.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/4e/63/20552_crt_cWKUm.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/63/20552_crt_cWKUm.jpg"
+    },
+    "summary": "No.6→4。警視庁鑑識班。冷静な性格をした女性。ボーシヤ派に所属している。「ビーチ」崩壊後はアリスと行動を共にしている。\r\n得意ジャンルは「だいや」。",
+    "name": "安梨鶴奈",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "安梨鹤奈"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "安 梨鶴奈"
+          },
+          {
+            "k": "纯假名",
+            "v": "あん りずな"
+          },
+          {
+            "k": "罗马字",
+            "v": "An rizuna"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 4
+    },
+    "id": 20552,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/19/d6/8170_crt_TW547.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/19/d6/8170_crt_TW547.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/19/d6/8170_crt_TW547.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/19/d6/8170_crt_TW547.jpg"
+    },
+    "summary": "",
+    "name": "リズ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "リズ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Rizu"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 8170,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ab/95/12674_crt_i86y9.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ab/95/12674_crt_i86y9.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ab/95/12674_crt_i86y9.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ab/95/12674_crt_i86y9.jpg"
+    },
+    "summary": "在ヤークレイル的的人们支持下被称为 “救世人”的少女。\r\n最初只不过是在路旁宣扬世界毁灭，随着事情的发展扩大，支持者也多起来。\r\n\r\n向使人宣扬只要把手合在一起就能够得到救赎……",
+    "name": "リズ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 12674,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/45/0f/39414_crt_TehDK.jpg?r=1457756098",
+      "grid": "https://lain.bgm.tv/pic/crt/g/45/0f/39414_crt_TehDK.jpg?r=1457756098",
+      "large": "https://lain.bgm.tv/pic/crt/l/45/0f/39414_crt_TehDK.jpg?r=1457756098",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/45/0f/39414_crt_TehDK.jpg?r=1457756098"
+    },
+    "summary": "リコの姉。魔法学校を主席で卒業し、魔法学校の先生を目指している。現在は教育実習生として魔法学校で生徒の指導にあたっている。",
+    "name": "リズ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "丽兹"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Liz"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 5
+    },
+    "id": 39414,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 6,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/35/97/44117_crt_AU0G7.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/35/97/44117_crt_AU0G7.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/35/97/44117_crt_AU0G7.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/35/97/44117_crt_AU0G7.jpg"
+    },
+    "summary": "クロムの妹で、イーリス聖王国の王女。\r\nクロムが率いる自警団に参加している。\r\nお姫さまらしく、世間知らずでワガママなところもあるが、心根は優しい。\r\n兵種は、治療の杖を駆使するシスター。",
+    "name": "リズ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "莉兹"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "Lissa"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "3月6日"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 4
+    },
+    "id": 44117,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/5f/a0/61545_crt_h8ht8.jpg?r=1554479733",
+      "grid": "https://lain.bgm.tv/pic/crt/g/5f/a0/61545_crt_h8ht8.jpg?r=1554479733",
+      "large": "https://lain.bgm.tv/pic/crt/l/5f/a0/61545_crt_h8ht8.jpg?r=1554479733",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5f/a0/61545_crt_h8ht8.jpg?r=1554479733"
+    },
+    "summary": "",
+    "name": "リズ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "莉兹"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 7,
+      "collects": 18
+    },
+    "id": 61545,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/57/76/63316_crt_rWvyD.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/57/76/63316_crt_rWvyD.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/57/76/63316_crt_rWvyD.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/57/76/63316_crt_rWvyD.jpg"
+    },
+    "summary": "利兹，《七大罪》中的角色。梅利奥达斯的前女友。利兹只是爱称，原名叫做伊丽莎白。\r\n\r\n亡国ダナフォールの聖騎士。エリザベスと同じ名を持ち、顔立ちも瓜二つだが、活発で男勝りという正反対の性格の持ち主。メリオダスからのセクハラに抵抗する。元はダナフォールの敵国の奴隷であったが、夜襲作戦の際に捕縛されて処刑されかけたところをメリオダスに救われ、彼の元で働いているうちに恋心を抱くようになる。ダナフォール壊滅事件でフラウドリンに殺された。殺生を嫌ったメリオダスに渡せずじまいだった遺品の短剣は、ケインとエリザベスを通じてメリオダスに託された。ドルイドのザネリによればエリザベスの前世にあたる存在。",
+    "name": "リズ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "利兹"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "エリザベス"
+          },
+          {
+            "k": "英文名",
+            "v": "Liz"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "162cm"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 4
+    },
+    "id": 63316,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/27/74/67866_crt_2IyMg.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/27/74/67866_crt_2IyMg.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/27/74/67866_crt_2IyMg.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/27/74/67866_crt_2IyMg.jpg"
+    },
+    "summary": "リズ是一位日本女性虛擬Youtuber，為Ficty旗下KMNZ（ケモノズ）成員之一，由株式会社Wright Flyer Live Entertainment協力製作，於2018年6月12日開始活動。\r\n\r\n2018年6月22日與リタ進行第一次生放送。[1]\r\n2018年7月6日與リタ共同主持的5分鐘節目『VIRTUAL BUZZ TALK』正式開播。\r\n\r\n人設しゅがお於2018年6月15日在推特上傳了人物設計圖。\r\n與外表不相符的是個人推特上的發言被人認為中之人是個キモオタ。",
+    "name": "リズ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "莉茲"
+          },
+          {
+            "k": "英文名",
+            "v": "KMNZ LIZ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://zh-tw.virtualyoutuber.wikia.com/wiki/リズ"
+      },
+      {
+        "key": "Twitter",
+        "value": "https://twitter.com/kmnzliz"
+      },
+      {
+        "key": "YouTube",
+        "value": "https://www.youtube.com/channel/UCRMpIxnySp7Fy5SbZ8dBv2w"
+      }
+    ],
+    "stat": {
+      "comments": 5,
+      "collects": 20
+    },
+    "id": 67866,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

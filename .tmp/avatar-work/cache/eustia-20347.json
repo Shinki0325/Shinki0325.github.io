@@ -1,0 +1,444 @@
+[
+  {
+    "birth_mon": 2,
+    "gender": "female",
+    "birth_day": 5,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/fc/b6/11357_crt_u8kzW.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/fc/b6/11357_crt_u8kzW.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/fc/b6/11357_crt_u8kzW.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fc/b6/11357_crt_u8kzW.jpg"
+    },
+    "summary": "在就要成为妓女之际被主人公赎出来的少女。\r\n如今在妓院街当医生，她的医术在妓女中有着极高的评价。只是本人总是坚决主张医生只是副业，真正的主业应该是主人公的妻子。\r\n美中不足的是，对患者的关怀和家务能力几乎等于零。\r\n向来冷冰冰又很不耐烦，但在治疗主人公时却会燃起无人可及的热情。\r\n一旦被她骂去死的话，说不定当真会挂掉，所以跟她说话可得小心才行。\r\n于她，主人公曰：先把自己的头脑治好为妙",
+    "name": "エリス・フローラリア",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "艾莉丝·弗罗拉莉"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Eris Floralia"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "2月5日"
+      },
+      {
+        "key": "血型",
+        "value": "B型"
+      },
+      {
+        "key": "身高",
+        "value": "158.8cm"
+      },
+      {
+        "key": "体重",
+        "value": "46.3kg"
+      },
+      {
+        "key": "BWH",
+        "value": "92(E)/56/85"
+      }
+    ],
+    "stat": {
+      "comments": 99,
+      "collects": 363
+    },
+    "id": 11357,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/2c/c9/13745_crt_Lo1WF.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/2c/c9/13745_crt_Lo1WF.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/2c/c9/13745_crt_Lo1WF.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2c/c9/13745_crt_Lo1WF.jpg"
+    },
+    "summary": "",
+    "name": "エリス",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "爱丽丝"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "178cm"
+      },
+      {
+        "key": "体重",
+        "value": "29kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B98（F）、W60、H85"
+      }
+    ],
+    "stat": {
+      "comments": 5,
+      "collects": 28
+    },
+    "id": 13745,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 25,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/5b/ca/35685_crt_Z82rR.jpg?r=1486083779",
+      "grid": "https://lain.bgm.tv/pic/crt/g/5b/ca/35685_crt_Z82rR.jpg?r=1486083779",
+      "large": "https://lain.bgm.tv/pic/crt/l/5b/ca/35685_crt_Z82rR.jpg?r=1486083779",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5b/ca/35685_crt_Z82rR.jpg?r=1486083779"
+    },
+    "summary": "国教“艾莉丝教”的神体，是个白发及腰的蓝眼美少女，为阿克娅的后辈，年龄不详。（外表16岁左右）\r\n跟阿克娅一样，是指引异世界英年早逝者的女神，但个性却大相径庭，温柔和善又淘气，有时候还会翘班跑下凡来玩。\r\n因为是国教之神的关系所以名字也是货币单位（1艾莉丝=1日圆）",
+    "name": "エリス",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "厄里斯"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Eris"
+          },
+          {
+            "k": "日文名",
+            "v": "エリス"
+          },
+          {
+            "k": "纯假名",
+            "v": "Erisu"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "12月25日"
+      },
+      {
+        "key": "引用来源",
+        "value": "wiki"
+      }
+    ],
+    "stat": {
+      "comments": 32,
+      "collects": 265
+    },
+    "id": 35685,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c4/0d/41410_crt_YcslY.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c4/0d/41410_crt_YcslY.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c4/0d/41410_crt_YcslY.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c4/0d/41410_crt_YcslY.jpg"
+    },
+    "summary": "キュラレ魔法図書館の管理者であり、3人の司書のメンター。まだ未熟な司書たちを温かく見守り、理解してくれるお姉さま。しかし多忙になると、過度のストレスで暴走する事も？！",
+    "name": "エリス",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 4
+    },
+    "id": 41410,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/0a/49/42832_crt_v99SJ.jpg?r=1466656067",
+      "grid": "https://lain.bgm.tv/pic/crt/g/0a/49/42832_crt_v99SJ.jpg?r=1466656067",
+      "large": "https://lain.bgm.tv/pic/crt/l/0a/49/42832_crt_v99SJ.jpg?r=1466656067",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0a/49/42832_crt_v99SJ.jpg?r=1466656067"
+    },
+    "summary": "鷗外と共に過ごす、金髪で可愛らしい幼女。鷗外のことを「リンタロウ」と呼ぶ。\r\n名前は森鴎外の短編小説「舞姫」の登場人物からと推測される。",
+    "name": "エリス",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "爱丽丝"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 11
+    },
+    "id": 42832,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/80/48427_crt_Wx4JF.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/38/80/48427_crt_Wx4JF.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/38/80/48427_crt_Wx4JF.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/80/48427_crt_Wx4JF.jpg"
+    },
+    "summary": "自由奔放な黒の精霊。\r\n500年前の戦いで、魔物たちの王「ベリアル」と交戦した後に行方不明となっており、以降の消息が掴めていない。\r\n攻撃魔法を得意としており、戦いでは高い火力で敵を殲滅する役割を担っている。",
+    "name": "エリス",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 48427,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/82/e8/51320_crt_PafwJ.jpg?r=1583099932",
+      "grid": "https://lain.bgm.tv/pic/crt/g/82/e8/51320_crt_PafwJ.jpg?r=1583099932",
+      "large": "https://lain.bgm.tv/pic/crt/l/82/e8/51320_crt_PafwJ.jpg?r=1583099932",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/82/e8/51320_crt_PafwJ.jpg?r=1583099932"
+    },
+    "summary": "因涉嫌杀害物理学家海因茨·修奈达而遭到通缉的少女。\r\n根据远古早已灭亡的“魔女”DNA创造，但其能力不稳定且不完全。被BLUE EYES复活以后学会掌控了魔女之力。\r\n为了查明博士死亡原因真相，她凭着微弱的记忆寻找着自己的故乡，向南进发。遇到娜蒂之后发生了很大变化。\r\n喜欢娜蒂，称两人为\"亲密夫妇\"，并在请求娜蒂杀死自己时告白。\r\n在结局和娜蒂踏上了新的路途。\r\n以上都是废话。\r\n其实就是一个喜欢着ナディ的超能力萌软天然妹子。",
+    "name": "エリス",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "爱丽丝"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Ellis"
+          },
+          {
+            "k": "日文名",
+            "v": "エリス"
+          },
+          {
+            "k": "罗马字",
+            "v": "Erisu"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 7,
+      "collects": 23
+    },
+    "id": 51320,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/0c/56136_crt_RtJSJ.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b8/0c/56136_crt_RtJSJ.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/b8/0c/56136_crt_RtJSJ.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/0c/56136_crt_RtJSJ.jpg"
+    },
+    "summary": "仮想世界VERTEX(ヴァーテックス)の本来の管理者だったがその立場を追われ、能力のほぼ全てを奪われている。\r\n限られた処理能力を動員することで不二を生み出した、母親ともいえる存在。\r\n不二を見守りサポートし、戦闘ではナビゲーター的役割を担う。\r\n感情表現は豊かで、まだ幼い不二の言動に一喜一憂したり、振り回されたりする。",
+    "name": "エリス",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "Elis"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "162cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B85/W58/H86(C)"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 7
+    },
+    "id": 56136,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d7/3a/61793_crt_lS2SS.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d7/3a/61793_crt_lS2SS.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/d7/3a/61793_crt_lS2SS.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d7/3a/61793_crt_lS2SS.jpg"
+    },
+    "summary": "",
+    "name": "エリス",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "艾莉丝"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 61793,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/f9/71829_crt_jcnJm.jpg?r=1568783993",
+      "grid": "https://lain.bgm.tv/pic/crt/g/af/f9/71829_crt_jcnJm.jpg?r=1568783993",
+      "large": "https://lain.bgm.tv/pic/crt/l/af/f9/71829_crt_jcnJm.jpg?r=1568783993",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/f9/71829_crt_jcnJm.jpg?r=1568783993"
+    },
+    "summary": "「伯林(ベルリン)華撃団・シュヴァルツシュテルン」隊長。18歳。\r\n与えられた任務には非常に忠実で、\r\n困難な任務でも断固として戦い抜く、伯林華撃団の女性隊長。\r\n口数は少ないが、何事にも動じない精神力と\r\n統率力を持っている。\r\n日本文化の奥深さに興味を持っており、\r\n帝都では歌舞伎を観劇する姿がしばしば見受けられる。",
+    "name": "エリス",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "えりす"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://sakura-taisen.com/game/shin-sakura/character/character16.html"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 3
+    },
+    "id": 71829,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

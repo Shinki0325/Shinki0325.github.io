@@ -1,0 +1,472 @@
+[
+  {
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 19,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ec/d7/32888_crt_7dqzr.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ec/d7/32888_crt_7dqzr.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ec/d7/32888_crt_7dqzr.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ec/d7/32888_crt_7dqzr.jpg"
+    },
+    "summary": "代々続く武人の家に生まれ、宗仁とは幼馴染。\r\n同じ剣術道場で共に汗を流していました。\r\n戦争では明義隊の隊長として奮闘するものの、部隊は壊滅。\r\n奇跡的に一命は取り留めたものの、多くの仲間を失いました。\r\n現在は武人階級をまとめ上げ、母国の独立のために活動しています。\r\n多人数でいる時はクールで口数が少ないにもかかわらず、宗仁と二人きりになると一生懸命にしゃべります。\r\n記憶を失った彼の身を案じ、一番近くで支えてきました。\r\n最近は組織の活動費を補うため秘密のアルバイトをしているようです。",
+    "name": "稲生滸",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Ino Hotori"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "5月19日"
+      },
+      {
+        "key": "BWH",
+        "value": "83C/57/83"
+      }
+    ],
+    "stat": {
+      "comments": 17,
+      "collects": 48
+    },
+    "id": 32888,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/dc/b1/44479_crt_8RzTh.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/dc/b1/44479_crt_8RzTh.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/dc/b1/44479_crt_8RzTh.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dc/b1/44479_crt_8RzTh.jpg"
+    },
+    "summary": "お通の教育係を務める切れ長の目をした美女。\r\n古今東西の故事に通じているだけでなく、妖術にも長ける。\r\n\r\nキリッとした見た目と違って、実は かなり気が弱く臆病。\r\n占いを趣味にしているが今まで当たった試しはない。",
+    "name": "稲生山茶",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Inoo Sancha"
+          },
+          {
+            "k": "纯假名",
+            "v": "いのお さんちゃ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "種族",
+        "value": "椿の精"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 44479,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/75/41/131138_crt_2dgl5.jpg?r=1686139407",
+      "grid": "https://lain.bgm.tv/pic/crt/g/75/41/131138_crt_2dgl5.jpg?r=1686139407",
+      "large": "https://lain.bgm.tv/pic/crt/l/75/41/131138_crt_2dgl5.jpg?r=1686139407",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/75/41/131138_crt_2dgl5.jpg?r=1686139407"
+    },
+    "summary": "綾ヵ島市の市長。優しげでどこか頼りない雰囲気を漂わせているものの、十年前の噴火で傷ついた一ノ島を観光地として蘇らせた確かな政治手腕を持つ。八凪真人とは学生の頃からの親友。彼の死後、その遺言を守り、まだ幼かった尽義や幸人の後見人となった。",
+    "name": "稲生三次",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "稻生三次"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Inou Sanji"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 131138,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/f0/152965_crt_6pe9P.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/2a/f0/152965_crt_6pe9P.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/2a/f0/152965_crt_6pe9P.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/f0/152965_crt_6pe9P.jpg"
+    },
+    "summary": "",
+    "name": "稲生融",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 152965,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 12,
+    "birth_year": null,
+    "blood_type": 4,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/fd/9b/6453_crt_225E2.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/fd/9b/6453_crt_225E2.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/fd/9b/6453_crt_225E2.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fd/9b/6453_crt_225E2.jpg"
+    },
+    "summary": "",
+    "name": "生稲雛美",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "生稲雏美"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "生稲雛美"
+          },
+          {
+            "k": "纯假名",
+            "v": "いくいな　すみ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Ikuina Sumi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "????-05-12"
+      },
+      {
+        "key": "血型",
+        "value": "O"
+      },
+      {
+        "key": "身高",
+        "value": "161"
+      },
+      {
+        "key": "BWH",
+        "value": "88/61/87"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 3
+    },
+    "id": 6453,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/71/8f/90720_crt_1OEO7.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/71/8f/90720_crt_1OEO7.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/71/8f/90720_crt_1OEO7.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/71/8f/90720_crt_1OEO7.jpg"
+    },
+    "summary": "花屋の店員をしている。むらせクリニックへ花を配達しにくる。",
+    "name": "生稲",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Ikuina"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "CV",
+        "value": "阿久里文化"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://www.nitrochiral.com/game/slow-damage/characters/Ikuina"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 1
+    },
+    "id": 90720,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/0b/4c/212814_crt_xUpUu.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/0b/4c/212814_crt_xUpUu.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/0b/4c/212814_crt_xUpUu.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0b/4c/212814_crt_xUpUu.jpg"
+    },
+    "summary": "主人公とヒロインが都会に出てきてからの勤務先の社長。\r\n住むところを世話してくれてたり、一緒についてきた恵美佳の仕事を紹介してくれる。\r\n性に対してはおおらかで、社員たちとAV鑑賞会を開いたりしている。\r\nいろんな業種でいくつかの店を経営しているらしい。",
+    "name": "福稲倖生",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Fukuina Kousei"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 212814,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/27/69/1179_crt_N5Fyh.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/27/69/1179_crt_N5Fyh.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/27/69/1179_crt_N5Fyh.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/27/69/1179_crt_N5Fyh.jpg"
+    },
+    "summary": "シオン住的研究所的护卫部队的队长。\r\n是一个能干的军人，但对成功不太感兴趣。\r\n不坦率的装糊涂的类型。\r\n内心对被政府和军队随意指使的シオン姐妹十分怜悯。\r\n比シオン岁数小很多，但作为保护者的态度与二人有过接触。\r\n基本上是一个好人。\r\n以前在某任务中捡到还是孩子的主人公并让其进入军队。\r\n对主人公来说是哥哥一般的存在。",
+    "name": "稲葉直人",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "稻叶直人"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "いなば なおと"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 10,
+      "collects": 16
+    },
+    "id": 1179,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 24,
+    "birth_year": 2018,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/5c/1231_crt_en3mZ.jpg?r=1397248454",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a2/5c/1231_crt_en3mZ.jpg?r=1397248454",
+      "large": "https://lain.bgm.tv/pic/crt/l/a2/5c/1231_crt_en3mZ.jpg?r=1397248454",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/5c/1231_crt_en3mZ.jpg?r=1397248454"
+    },
+    "summary": "跌跌撞撞的冒失鬼是一个非常爱哭的女孩子！因为是独生子女,喜欢受人宠爱和抱抱.很乐意助人.因为喜欢学美,所以常和她在一起，而且还是一个花痴哦！",
+    "name": "稲森光香",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "稻森光香"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "稲森 光香"
+          },
+          {
+            "k": "纯假名",
+            "v": "いなもり みか"
+          },
+          {
+            "k": "罗马字",
+            "v": "Inamori Mika"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "2018年12月24日"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "身高",
+        "value": "145cm"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      },
+      {
+        "key": "父",
+        "value": "稲森ルーク聖人"
+      },
+      {
+        "key": "母",
+        "value": "稲森ほのか"
+      }
+    ],
+    "stat": {
+      "comments": 20,
+      "collects": 44
+    },
+    "id": 1231,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c0/a2/1286_V2rba.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c0/a2/1286_V2rba.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c0/a2/1286_V2rba.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c0/a2/1286_V2rba.jpg"
+    },
+    "summary": "龟田真帆的Partner \r\n亲姐姐有暴力倾向，有家庭暴力。(第4集)",
+    "name": "稻井信太郎",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 1286,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

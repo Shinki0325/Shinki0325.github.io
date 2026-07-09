@@ -1,0 +1,544 @@
+[
+  {
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/2e/20332_crt_L40oC.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/72/2e/20332_crt_L40oC.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/72/2e/20332_crt_L40oC.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/2e/20332_crt_L40oC.jpg"
+    },
+    "summary": "学園きっての才女ではあるが、とっつきにくい。\r\nやや男前な口調で話しているので、話し掛けにくい印象を与えている。\r\n年頃になって、可愛くしたほうがいい （可愛く見られたい） と思い始め、少し勘違いした祖父のアドバイスでおしゃれ （和風） をしている。\r\n本人は気づいていないが、意外に面倒見が良く、人がいい。\r\n巷で人気のキャラグッズを愛する可愛い一面も持っているが、恥ずかしいので秘密。\r\n【Access key for KARUMARUKA：嫉妬】\r\n主人公のことを好きになってしまう。\r\n本人はどうして主人公のことを好きになってしまったのか分からず困っているのだが、主人公がどこにいるのか、誰と話しているのか、どんなことも気になって仕方ない。\r\n\r\n「私に近づかないでくれ、分かってるだろう。勝手に顔が赤くなってしまうんだ」",
+    "name": "天ヶ瀬奈月",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "あまがせ なつき"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "7月1日"
+      },
+      {
+        "key": "身高",
+        "value": "160"
+      },
+      {
+        "key": "BWH",
+        "value": "82/56/85"
+      }
+    ],
+    "stat": {
+      "comments": 12,
+      "collects": 67
+    },
+    "id": 20332,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 15,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/08/57/9114_crt_422TI.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/08/57/9114_crt_422TI.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/08/57/9114_crt_422TI.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/08/57/9114_crt_422TI.jpg"
+    },
+    "summary": "从天空中突然落在直树身上的神秘女孩。好象一碰头就把直树和某人弄错了，也许，直树和那个人有某种关连。性格非常坦率，开朗，活泼。被直树“强行”拉入了天文部，喜欢的食物是杏仁豆腐。",
+    "name": "天ヶ崎美琴",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "天ヶ崎美琴"
+          },
+          {
+            "k": "纯假名",
+            "v": "あまがさき　みこと"
+          },
+          {
+            "k": "罗马字",
+            "v": "Amagasaki Mikoto"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "????-05-15"
+      },
+      {
+        "key": "身高",
+        "value": "160"
+      },
+      {
+        "key": "BWH",
+        "value": "81/58/81"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 4
+    },
+    "id": 9114,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/54/ec/12554_crt_lVlDC.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/54/ec/12554_crt_lVlDC.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/54/ec/12554_crt_lVlDC.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/54/ec/12554_crt_lVlDC.jpg"
+    },
+    "summary": "白鷺学園2年C組。主人公のクラスメイト。\r\n国立大学病院の教授の一人娘。成績優秀、スポーツ万能な、文武両道のお嬢様。\r\nその出生と完璧さゆえに、周囲からは少し距離を置かれがち。\r\nそんな自分を好きになれず、普通の少女でありたいと願っている。\r\n\r\nなんでもかんでも積極的に興味を示す活発な性格で、お嬢様ゆえに知らない一般常識が見受けられる微笑ましい子。\r\n自分の感情をストレートに表現するタイプで社交的。太陽のような明るさでクラスの盛り上げ役になっている。\r\n異性の知識は保健体育の教科書レベルだが、恥ずかしがりながらも興味津々。\r\n\r\n「ああ、ごめん。まだみんなの名前を覚えてなくて。私は天ヶ瀬優希、よろしくっ」",
+    "name": "天ヶ瀬優希",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "天濑优希"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "あまがせゆうき"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 4,
+      "collects": 45
+    },
+    "id": 12554,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/5a/e4/13254_crt_vIrIr.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/5a/e4/13254_crt_vIrIr.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/5a/e4/13254_crt_vIrIr.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5a/e4/13254_crt_vIrIr.jpg"
+    },
+    "summary": "阶梯社中的二年级社员，拥有的别称是“黑翼天使”，特点是高速的下阶梯技巧。是天马财团的千金，但不喜欢被他人觉得她是大小姐而要求其他人称呼她的名字“泉”而非姓氏“天崎”，家族传统关系曾学习网球，因某些原因而放弃。被校内团体“女神委员会”公认为二年级三女神之一的“雷之女神”。",
+    "name": "天ヶ崎泉",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "天崎泉"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "天ヶ崎 泉"
+          },
+          {
+            "k": "纯假名",
+            "v": "あまがさき いずみ"
+          },
+          {
+            "k": "昵称",
+            "v": "黑翼天使"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 5
+    },
+    "id": 13254,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/27/10/21228_crt_81mdJ.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/27/10/21228_crt_81mdJ.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/27/10/21228_crt_81mdJ.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/27/10/21228_crt_81mdJ.jpg"
+    },
+    "summary": "大樹の義理の妹。学年は一級下。幼い頃、両親をなくし大樹の家に引き取られた。\r\n性格は明るく、人当たりも良い人気者。だが、大樹限定でお節介焼き。言葉遣いはフレンドリー。\r\n生来魔法の素養が高く、交換留学生に選ばれ、フォーティア魔法学園で魔法を学んでいる。\r\n魔法世界の住人の負けない程、優秀な魔法使いとしての成績を残している。\r\n大樹が学園に転入することになり、また一緒に過ごせることになり、大喜び。その喜びから、ポカミスが増えてしまったりする、可愛らしい面もあり。\r\n\r\n「……わたしも、お兄ちゃんが居てくれると嬉しいな」",
+    "name": "天ヶ瀬小雪",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "天濑 小雪"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 11
+    },
+    "id": 21228,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/cd/89/22006_crt_Fk9ss.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/cd/89/22006_crt_Fk9ss.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/cd/89/22006_crt_Fk9ss.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cd/89/22006_crt_Fk9ss.jpg"
+    },
+    "summary": "千秋（主人公）と同じ二年生。\r\n早くに両親を亡くし、千秋の家で一緒に生活していた。\r\n論理的思考が苦手なタイプで、引っ込み思案、地図読めない、 上がり症、なにかあると「ど、どうしよう……」と主人公を頼る。\r\n弄られ気質で料理上手＆お掃除好き、趣味は洗濯の主婦スキル 満載の少女……だがしかし！ 彼女には重大な出生の秘密が！\r\n\r\n「お、お願いしますです！理事とかやった事がない、新人の紅葉マークですけど」",
+    "name": "天ヶ原稲穂",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 4
+    },
+    "id": 22006,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 11,
+    "gender": "female",
+    "birth_day": 2,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/94/38/37709_crt_qSttG.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/94/38/37709_crt_qSttG.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/94/38/37709_crt_qSttG.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/94/38/37709_crt_qSttG.jpg"
+    },
+    "summary": "里緒のクラスメイト。 有名実業家の娘でお金持ち。\r\n突然カフェ部を作りたいと思い立ち、里緒たちを巻き込む。\r\n\r\n可愛い見た目とは裏腹に毒舌で皮肉屋。\r\n頭の回転が早く、目標達成のためには手段を選ばない。\r\nそんな性格のためか友達がいない。\r\nある理由から里緒のクラスでの人気に目をつけ、日頃から観察していた。",
+    "name": "天ヶ瀬初音",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "天ヶ瀬 初音"
+          },
+          {
+            "k": "纯假名",
+            "v": "あまがせ ねね"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "11月2日"
+      },
+      {
+        "key": "身高",
+        "value": "142cm"
+      },
+      {
+        "key": "体重",
+        "value": "36kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B74（B）/ W51/ H73"
+      },
+      {
+        "key": "学年",
+        "value": "3年"
+      },
+      {
+        "key": "趣味・特技",
+        "value": "他人いじり"
+      },
+      {
+        "key": "好き",
+        "value": "わかりやすい人、紅茶、お菓子"
+      },
+      {
+        "key": "嫌い",
+        "value": "自分をだまそうとする人"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 7
+    },
+    "id": 37709,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 3,
+    "gender": "male",
+    "birth_day": 3,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/40/2c/39469_crt_k547w.jpg?r=1530316251",
+      "grid": "https://lain.bgm.tv/pic/crt/g/40/2c/39469_crt_k547w.jpg?r=1530316251",
+      "large": "https://lain.bgm.tv/pic/crt/l/40/2c/39469_crt_k547w.jpg?r=1530316251",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/40/2c/39469_crt_k547w.jpg?r=1530316251"
+    },
+    "summary": "17岁／属性：Physical型／生日：3月3日（双鱼座）\r\n身高：175cm／体重：57kg／鞋码：25.5cm\r\n血型：B型／惯用手：右手／出身：神奈川\r\n趣味：足球、料理、收集手办／特技：从香料开始的咖喱烹饪\r\n前历：961Pro所属偶像／三围：81-65-80／所属组合：Jupiter\r\nCV：寺島拓篤\r\n\r\n原961Pro所属的偶像。经过面试选拔后，被961Pro社长·黑井崇男探中，成为了961Pro的所属偶像。于游戏「THE iDOL M@STER 2」中作为天海春香们的对手偶像而登场。\r\n但因之后发现了961Pro的不正当营销方针而对961Pro感到失望，与同组合成员的御手洗翔太&伊集院北斗共同退出了961Pro，移籍加入了315Pro。（⇒SideM）\r\n虽然说话很毒，但性格上很直率。趣味是收集机器人手办。\r\n母亲已过世，父亲单身赴任四国。现是独居状态。",
+    "name": "天ヶ瀬冬馬",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "天濑冬马"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "天之濑冬马"
+          },
+          {
+            "k": "日文名",
+            "v": "天ヶ瀬 冬馬"
+          },
+          {
+            "k": "纯假名",
+            "v": "あまがせ とうま"
+          },
+          {
+            "k": "罗马字",
+            "v": "Amagase Touma"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "3月3日"
+      },
+      {
+        "key": "血型",
+        "value": "B型"
+      },
+      {
+        "key": "身高",
+        "value": "175cm"
+      },
+      {
+        "key": "体重",
+        "value": "57kg"
+      },
+      {
+        "key": "BWH",
+        "value": "81/65/80"
+      },
+      {
+        "key": "年龄",
+        "value": "17岁"
+      },
+      {
+        "key": "出身地",
+        "value": "神奈川"
+      },
+      {
+        "key": "靴のサイズ",
+        "value": "25.5cm"
+      },
+      {
+        "key": "兴趣",
+        "value": "足球、料理、收集手办"
+      },
+      {
+        "key": "特技",
+        "value": "从香料开始的咖喱烹饪"
+      },
+      {
+        "key": "属性",
+        "value": "フィジカル"
+      }
+    ],
+    "stat": {
+      "comments": 10,
+      "collects": 26
+    },
+    "id": 39469,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/0e/80/40538_crt_22vw8.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/0e/80/40538_crt_22vw8.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/0e/80/40538_crt_22vw8.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0e/80/40538_crt_22vw8.jpg"
+    },
+    "summary": "野菊の協力者で、学校の教師。",
+    "name": "天ヶ崎祐賭",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "天崎祐赌"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "あまがさき ゆうと"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 1
+    },
+    "id": 40538,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/66/38/42684_crt_V3YGb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/66/38/42684_crt_V3YGb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/66/38/42684_crt_V3YGb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/66/38/42684_crt_V3YGb.jpg"
+    },
+    "summary": "学園生の自警団の発起人であり、学園の生徒会長。\r\n寂れていく海神と学園を憂い、また海神で起こっているテロ事件に怒りを覚え、\r\n「島の危機を救えば学園にも人が戻ってくるかもしれない」 と、自分たちの手で解決することを思い立つ。\r\n\r\n生意気、お節介焼き、口うるさいが実は親切。 気が強くてプライドが高い。\r\n直情型だけどすぐ冷静になる。 頑固そうに見えて意外と聞き分けは良い。\r\nムードメーカーで積極的、何事においても真っ先に行動する（良くも悪くも）。\r\n欠点も多いが、下級生たちからはそれなりに慕われている。\r\n勉学・シュミクラム操作ともに優秀だが、人知れず努力するタイプで仲間や下級生の前では決して弱みを見せまいとする。\r\n\r\n「あんたも自分の意志で学園生になったのなら、上級生としての努めぐらい果たしなさいよね？」",
+    "name": "天ヶ瀬茉緒",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "天之濑茉绪"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "天ヶ瀬 茉緒"
+          },
+          {
+            "k": "纯假名",
+            "v": "あまがせ まお"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "158cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B78（B） /W57 /H82"
+      },
+      {
+        "key": "シュミクラム",
+        "value": "暁雲（ドーンクラウド）"
+      }
+    ],
+    "stat": {
+      "comments": 8,
+      "collects": 14
+    },
+    "id": 42684,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

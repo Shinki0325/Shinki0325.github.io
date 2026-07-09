@@ -1,0 +1,815 @@
+[
+  {
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 8,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d6/16/59846_crt_5PYvw.jpg?r=1726452509",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d6/16/59846_crt_5PYvw.jpg?r=1726452509",
+      "large": "https://lain.bgm.tv/pic/crt/l/d6/16/59846_crt_5PYvw.jpg?r=1726452509",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d6/16/59846_crt_5PYvw.jpg?r=1726452509"
+    },
+    "summary": "夏休みを忘れた少女\r\n\r\n身長：155cm\r\n体重：39kg\r\n3サイズ：B81 W56 H83\r\n趣味：料理\r\n好物：スイカバー\r\n座右の銘：明日には明日の風を吹く\r\n原画：Na-Ga\r\nCV：小原好美\r\n\r\nクールで、人見知りをする島の少女。\r\n親しいのは肉親である祖父ぐらいで、島では孤立している。\r\n\r\n一人でいる期間が長かったせいで人との付き合い方がわからず、時に人の心を考えないことも言ってしまうこともある。\r\n\r\n島の外れなどで海を眺めている事が多い。\r\n\r\n「私にあまりかまわないほうがいいよ」",
+    "name": "鳴瀬しろは",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "鸣濑白羽"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "鷹原 しろは"
+          },
+          {
+            "k": "日文名",
+            "v": "鳴瀬 しろは"
+          },
+          {
+            "k": "纯假名",
+            "v": "なるせ しろは"
+          },
+          {
+            "k": "罗马字",
+            "v": "Naruse Shiroha"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "6月8日"
+      },
+      {
+        "key": "身高",
+        "value": "155cm"
+      },
+      {
+        "key": "体重",
+        "value": "39kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B81/W56/H83"
+      },
+      {
+        "key": "年龄",
+        "value": "17岁"
+      }
+    ],
+    "stat": {
+      "comments": 194,
+      "collects": 785
+    },
+    "id": 59846,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 20,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/0e/b7/151367_crt_ZzVgv.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/0e/b7/151367_crt_ZzVgv.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/0e/b7/151367_crt_ZzVgv.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0e/b7/151367_crt_ZzVgv.jpg"
+    },
+    "summary": "今早遇到了准备带队外出执行任务的晴。\r\n她佩戴着最爱的大口径手枪，右臂装备强大而灵活的特种作战生化义肢，正沉稳指挥着新兵们。\r\n我们都习惯了她以这幅稳重可靠的模样出现在战场上。\r\n即便距那个让她失去右手的“突发事件”只过了一年。\r\n大多数时候大家不会刻意询问她手臂的事情，正如她父亲的“意外事故”一样。",
+    "name": "鸣濑晴",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Naruse Haru"
+          },
+          {
+            "k": "日文名",
+            "v": "鳴瀬晴"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "08-20"
+      },
+      {
+        "key": "身高",
+        "value": "168cm"
+      },
+      {
+        "key": "年龄",
+        "value": "20"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 1
+    },
+    "id": 151367,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/74/a0/47851_crt_smkOz.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/74/a0/47851_crt_smkOz.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/74/a0/47851_crt_smkOz.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/74/a0/47851_crt_smkOz.jpg"
+    },
+    "summary": "凪の母親。\r\n町の海洋研究所の所長。\r\n\r\n大の甘党で、いつもシガレットチョコをくわえている。\r\nクールに見えて、実は情に厚い。\r\n表にはあまり出さないが、娘の凪を溺愛している。\r\n親バカ。",
+    "name": "鳴瀬川風子",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "鸣濑川风子"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 47851,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ab/b4/56372_crt_3gfz6.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ab/b4/56372_crt_3gfz6.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ab/b4/56372_crt_3gfz6.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ab/b4/56372_crt_3gfz6.jpg"
+    },
+    "summary": "容姿端麗、成績優秀。 家族や親戚もまとめて高学歴な家庭で生まれ育ったお嬢様。\r\nコミュニケーション能力が高く、言動はラフでもちょっとした仕草に気品があり、\r\n気軽には声を掛けられない雰囲気を持つ。\r\n誰も知らないだけで本当は押しに弱く、男性との交際経験もない。\r\n\r\n「先に帰って待ってるわ。 今晩は何が食べたい？」",
+    "name": "鳴瀬咲",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "鸣濑咲"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "鳴瀬 咲"
+          },
+          {
+            "k": "纯假名",
+            "v": "なるせ さき"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 54,
+      "collects": 95
+    },
+    "id": 56372,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 12,
+    "gender": "male",
+    "birth_day": 2,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/e0/a5/61458_crt_iEp96.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/e0/a5/61458_crt_iEp96.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/e0/a5/61458_crt_iEp96.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e0/a5/61458_crt_iEp96.jpg"
+    },
+    "summary": "鳥白島の頑強たる翁\r\n\r\n身長：185cm\r\n体重：96kg\r\n趣味：鳥白流古武術\r\n好物：チャーハン\r\n原画：Na-Ga\r\nCV：白石稔\r\n\r\nしろはの祖父。しろはの両親である娘と娘婿亡き後、男手ひとつで孫を育てている。島内で孤立して「ぼっち」でいるしろはを何かと気にかけており、しろはに近づくやからには容赦しない。鳥白島に伝わる「水中格闘技」の熟練者であり、しろはを巡り羽依里と対峙する。強面でロ数こそ少ないけれど、しろはに対する愛情は深い。",
+    "name": "鳴瀬小鳩",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "鸣濑小鸠"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "鳴瀬 小鳩"
+          },
+          {
+            "k": "纯假名",
+            "v": "なるせ こばと"
+          },
+          {
+            "k": "罗马字",
+            "v": "Naruse Kobato"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "12月2日"
+      },
+      {
+        "key": "身高",
+        "value": "185cm"
+      },
+      {
+        "key": "体重",
+        "value": "96kg"
+      },
+      {
+        "key": "年龄",
+        "value": "77岁"
+      }
+    ],
+    "stat": {
+      "comments": 18,
+      "collects": 6
+    },
+    "id": 61458,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/07/141530_crt_5x6b5.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/72/07/141530_crt_5x6b5.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/72/07/141530_crt_5x6b5.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/07/141530_crt_5x6b5.jpg"
+    },
+    "summary": "主人公の初恋の人。\r\n主人公や菜織とは、幼稚園時代からの幼なじみだったが、\r\n両親の都合で海外へ旅立ち、離れ離れになる。\r\nその後帰国と同時に「聖エルシア学園」に転校、主人公や菜織と６年ぶりの再会を果たす。\r\nかつて寂しがり屋だった自分といつも一緒にいてくれた主人公に、ほのかな恋心を抱く。\r\n性格は、優しくて気が利く、そして内罰的。明るいが、少々天然ボケなところがある。",
+    "name": "鳴瀬真奈美",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "鸣濑真奈美"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "鳴瀬 真奈美"
+          },
+          {
+            "k": "纯假名",
+            "v": "なるせ まなみ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Naruse Manami"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 141530,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f0/5f/181356_crt_UOiO3.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f0/5f/181356_crt_UOiO3.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f0/5f/181356_crt_UOiO3.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f0/5f/181356_crt_UOiO3.jpg"
+    },
+    "summary": "白羽的母亲",
+    "name": "鳴瀬瞳",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "鸣濑瞳"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "Naruse Hitomi"
+          },
+          {
+            "k": "罗马字",
+            "v": "なるせ ひとみ"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 1
+    },
+    "id": 181356,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 15,
+    "birth_year": null,
+    "blood_type": 2,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b2/dc/13339_crt_8zuq6.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b2/dc/13339_crt_8zuq6.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/b2/dc/13339_crt_8zuq6.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b2/dc/13339_crt_8zuq6.jpg"
+    },
+    "summary": "",
+    "name": "エリサ・D・鳴瀬",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "爱丽莎·D·鸣濑"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "えりさ・ドリトル・なるせ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "12/15"
+      },
+      {
+        "key": "血型",
+        "value": "B"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 3
+    },
+    "id": 13339,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d5/a9/75087_crt_ChDEz.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d5/a9/75087_crt_ChDEz.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/d5/a9/75087_crt_ChDEz.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d5/a9/75087_crt_ChDEz.jpg"
+    },
+    "summary": "声優になることを夢みる青年。\r\n転勤族だったので方言がめちゃくちゃ。\r\n友達に「声が良いよね」と褒められたことをきっかけに配信活動を始めた。",
+    "name": "成瀬鳴",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "成濑鸣"
+      },
+      {
+        "key": "别名",
+        "value": []
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 75087,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/3c/8c/66093_crt_75P81.jpg?r=1537019923",
+      "grid": "https://lain.bgm.tv/pic/crt/g/3c/8c/66093_crt_75P81.jpg?r=1537019923",
+      "large": "https://lain.bgm.tv/pic/crt/l/3c/8c/66093_crt_75P81.jpg?r=1537019923",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3c/8c/66093_crt_75P81.jpg?r=1537019923"
+    },
+    "summary": "特殊な記憶障害を背負った行動心理学の第一人者\r\nとても穏やかな性格で研究以外には無頓着",
+    "name": "瀬尾鳴海",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "濑尾鸣海"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "せお なるみ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Seo Narumi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 66093,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 6,
+    "gender": null,
+    "birth_day": 26,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/5e/43/41262_crt_7HWbB.jpg?r=1462512535",
+      "grid": "https://lain.bgm.tv/pic/crt/g/5e/43/41262_crt_7HWbB.jpg?r=1462512535",
+      "large": "https://lain.bgm.tv/pic/crt/l/5e/43/41262_crt_7HWbB.jpg?r=1462512535",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5e/43/41262_crt_7HWbB.jpg?r=1462512535"
+    },
+    "summary": "主人公の幼なじみで近所に住んでいるが、学校は別。ミツミキャンプの間だけ、光海学園に通っている。泳ぐのが好きで元気いっぱい。光海学園の水泳部にマネージャーとしておじゃましている。主人公を慕っていて、いつもそばにいたがる。嫉妬深いところあり。気に入らないと噛みつくことも。主人公のことを、夏のキャンプだけ毎日会える兄という意味で“ナツにい”と呼ぶ。",
+    "name": "鳴瀬まひろ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "なるせ まひろ"
+          }
+        ]
+      },
+      {
+        "key": "生日",
+        "value": "6月26日"
+      },
+      {
+        "key": "血型",
+        "value": "O型"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://recolove.jp/mahiro.html"
+      },
+      {
+        "key": "班级",
+        "value": "乙谷中学3年"
+      },
+      {
+        "key": "所属",
+        "value": "游泳部"
+      },
+      {
+        "key": "星座",
+        "value": "巨蟹座"
+      },
+      {
+        "key": "喜欢的事",
+        "value": "游泳、夏天"
+      },
+      {
+        "key": "不喜欢的事",
+        "value": "学习"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 3
+    },
+    "id": 41262,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 9,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/33/05/73206_crt_McXE7.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/33/05/73206_crt_McXE7.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/33/05/73206_crt_McXE7.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/33/05/73206_crt_McXE7.jpg"
+    },
+    "summary": "健太郎や他のヒロインたちに何かとお節介を焼いてくる、\r\n委員長気質のクラスメイト。\r\n\r\n和心とは以前から知り合って親友同志となっており、\r\nその縁から健太郎とも打ち解けている。\r\n\r\n現在はソシャゲ愛好会に出入りして、暇な時間を\r\nだらだら過ごしているが、ちょくちょく休んだり\r\n早退している一面も。\r\n\r\n普通科に所属しているが、実は現役の声優。\r\n『僕の未来は、恋と課金と。』 に登場し、\r\n現在は五子学園の3年に在籍する「朝森みつき」と\r\n同じ声優事務所に所属している。\r\n\r\n顔出しNGを通しているため、声優であることは、\r\n同級生たちにはバレていない。\r\n\r\nまた『僕の未来は、恋と課金と。』に登場する、\r\n鳴瀬拓人の従妹でもある。",
+    "name": "鳴瀬かなえ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "鳴瀬 かなえ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "8月9日"
+      },
+      {
+        "key": "血型",
+        "value": "AB型"
+      },
+      {
+        "key": "身高",
+        "value": "160cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B84（D）／W60／H82"
+      },
+      {
+        "key": "CV",
+        "value": "七坂真理"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 5
+    },
+    "id": 73206,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f4/60/214124_crt_E9rRr.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f4/60/214124_crt_E9rRr.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f4/60/214124_crt_E9rRr.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f4/60/214124_crt_E9rRr.jpg"
+    },
+    "summary": "チア部期待の新人。\r\n可愛さ、運動能力ともに新人の中では抜群。\r\n小生意気でツンツンした妹系で、勝手にファンになった親衛隊の男子がすでに何人もいる。 処女。\r\n同じチア部のトップである奈緒に異様なライバル心を見せている。",
+    "name": "鳴瀬みく",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Naruse Miku"
+          },
+          {
+            "k": "日文名",
+            "v": "鳴瀬 みく"
+          },
+          {
+            "k": "纯假名",
+            "v": "なるせ みく"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 214124,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/9a/5c/44206_crt_utmNG.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/9a/5c/44206_crt_utmNG.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/9a/5c/44206_crt_utmNG.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9a/5c/44206_crt_utmNG.jpg"
+    },
+    "summary": "幼なじみでクラクメイト\r\n誠志とは幼なじみの女の子。愛ノ杜へ帰って\r\nきた誠志と偶然、学園で再会。\r\n連絡もなく誠志はいきなりの帰郷だったが、\r\n久しぶりに会った二人は変わりなく意気投合、\r\n葵は茜を誘い誠志の引越しの後片付けを\r\n手伝う。\r\n\r\n葵はサパサパした性格でわりあいあっさりして\r\nいる。誠志とは結構、似たもの同士で気が\r\n合う仲。二人の間には友情的なものが\r\n存在し、昔からの付き合いである。",
+    "name": "鳴瀬葵",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "鳴瀬 葵"
+          },
+          {
+            "k": "纯假名",
+            "v": "なるせ あおい"
+          }
+        ]
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      },
+      {
+        "key": "身高",
+        "value": "165cm"
+      },
+      {
+        "key": "体重",
+        "value": "46kg"
+      },
+      {
+        "key": "BWH",
+        "value": "76/60/81"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 44206,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 12,
+    "gender": null,
+    "birth_day": 25,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b2/9d/44676_crt_xQNNM.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b2/9d/44676_crt_xQNNM.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/b2/9d/44676_crt_xQNNM.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b2/9d/44676_crt_xQNNM.jpg"
+    },
+    "summary": "渚沙学園の3年生。 主人公の先輩。見た目はロリっ子だが、れっきとした先輩。\r\n好奇心旺盛で、目を離すとどこかに消えている。\r\n小悪魔なところがあり、お姉さんぶって主人公を誘惑することも。\r\n好物は菓子パンとネコ。 甘いものとかわいいものが大好き。\r\n星夜祭のための部活・星夜部を立ち上げようと目論んでいる。\r\n「あたしを誰だと心得るー！　なんとかなるなる、鳴瀬川凪だー！」",
+    "name": "鳴瀬川凪",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "鸣瀬川凪"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "鳴瀬川 凪"
+          },
+          {
+            "k": "纯假名",
+            "v": "なるせがわ なぎ"
+          }
+        ]
+      },
+      {
+        "key": "生日",
+        "value": "12月25日"
+      },
+      {
+        "key": "身高",
+        "value": "149cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B74（A）/ W55/ H76"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 9
+    },
+    "id": 44676,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/17/11/47281_crt_doDde.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/17/11/47281_crt_doDde.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/17/11/47281_crt_doDde.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/17/11/47281_crt_doDde.jpg"
+    },
+    "summary": "百花の同級生。 母・弟・妹、母の両親との 6人暮らし。\r\n母は身体が強いほうではないため、パートで働いている。\r\nそこで亜美も村の外でバイトに励み、その稼ぎと農家からの頂き物で暮らしている。\r\n村を出るつもりはなく、将来は祖父母や親の面倒を見ながら暮らしたいと思っている。\r\n実は読書家で、将来は翻訳や校正の仕事をしたいと思っているが、\r\n現状のままではその勉強をすることもままならないのではと不安を抱いている。\r\n「わ、私は別にどっちでもいいんだけど…… やることないなら、ちょっと手伝ってよ」",
+    "name": "鳴瀬亜美",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "鳴瀬 亜美"
+          },
+          {
+            "k": "纯假名",
+            "v": "なるせ あみ"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 47281,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

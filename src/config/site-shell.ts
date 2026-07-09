@@ -7,6 +7,7 @@ export const siteShell = {
   social: homePageConfigSource.social,
   search: homePageConfigSource.search,
   announcements: homePageConfigSource.announcements,
+  homeBackground: homePageConfigSource.homeBackground,
   navItems: [
     { href: "/", label: "首页" },
     { href: "/articles/", label: "文稿" },

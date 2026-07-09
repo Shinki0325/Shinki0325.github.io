@@ -1,0 +1,528 @@
+[
+  {
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 3,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/fb/be/34205_crt_lWEG4.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/fb/be/34205_crt_lWEG4.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/fb/be/34205_crt_lWEG4.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fb/be/34205_crt_lWEG4.jpg"
+    },
+    "summary": "暁斗たちより一つ年下なだけで、何かと報われない女の子。\r\nひかりに懐いていて暁斗のことが好きなのに、歳のせいで仲間に入れなかった。\r\nそれなのにちゃっかり仲間になっている沙夜が気に食わず、何かと突っかかってしまう。\r\n暁斗を見つけて駆け寄ったらドブに落ち、そのまま発見されず泣いていたというエピソードもある。\r\n\r\nネコみたいな性格で、懐いてる相手にはとことん甘えたがる。\r\n暁斗にも必死にアピールしており、ただしお子様なので羞恥心が足りず、天然の小悪魔になる。\r\n\r\n「これに懲りたら、もうちょっかい出さないでよねっ、わかった？」",
+    "name": "日下部ころな",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "日下部可乐娜"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "くさかべ ころな"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kusakabe Korona"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "9月3日"
+      },
+      {
+        "key": "血型",
+        "value": "AB型"
+      },
+      {
+        "key": "身高",
+        "value": "153cm / 137cm（幼年）"
+      },
+      {
+        "key": "BWH",
+        "value": "B78/ W56/ H83"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://www.pulltop.com/full-of-stars/chara.html"
+      }
+    ],
+    "stat": {
+      "comments": 6,
+      "collects": 18
+    },
+    "id": 34205,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 20,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/5d/b6/3886_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/5d/b6/3886_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/5d/b6/3886_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5d/b6/3886_crt_anidb.jpg"
+    },
+    "summary": "声 - 高橋美佳子 / 水原薫 / 演 - 三宮ユリカ\r\n7月20日生まれ。血液型はB型。身長は162cm。左利き。胸ランクは中（3）。埼玉県出身で後述のあやのと幼馴染。\r\n高校在学時は3年C組所属（2年度はD組所属）、第6巻で卒業し、現在はこなたと同じ大学の同じ学部に通っている。得意科目は体育、苦手科目は世界史と数学。\r\n外見は、短めでややくせのある髪と八重歯が特徴。\r\n単純な性格で明るいアウトドア派で、趣味はスポーツ全般。また、同時にぐーたらな性格で、かがみからはこなたと似た人間として認識されている。一人称が「わたし」であることを除いて男っぽい言葉使いで話す。高校在学時は、クラブは陸上部に所属し、体育委員も務めていた。\r\n好きなものはハンバーグ、ミートボール、太陽。他にも、恋話に興味があるらしく、第4巻でかがみが恋の悩みがあると仄めかしかけた際、目を輝かせながら喰いついてくるといういかにも女の子らしい一面を見せたこともある。嫌いなものはコンニャク、野菜、雨。好きな色は黄色。\r\nもともとは「少年エース」連載版専用のキャラクターであったが、「少年エース」での連載が終了したことから、「コンプティーク」連載版にも登場するようになった。",
+    "name": "日下部みさお",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "日下部美纱绪"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "くさかべ みさお"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kusakabe Misao"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "7月20日"
+      },
+      {
+        "key": "血型",
+        "value": "B型"
+      },
+      {
+        "key": "身高",
+        "value": "162cm"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      },
+      {
+        "key": "惯用手",
+        "value": "左手"
+      }
+    ],
+    "stat": {
+      "comments": 4,
+      "collects": 64
+    },
+    "id": 3886,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/37/99/9004_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/37/99/9004_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/37/99/9004_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/37/99/9004_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "日下部ヒナ",
+    "infobox": [
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Kusakabe Hina"
+          },
+          {
+            "k": "日文名",
+            "v": "日下部ヒナ"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 9004,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ee/e3/13291_crt_38O7h.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ee/e3/13291_crt_38O7h.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ee/e3/13291_crt_38O7h.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ee/e3/13291_crt_38O7h.jpg"
+    },
+    "summary": "景一の幼なじみで 『リバーライト』 の近所にある会社のOL。\r\n職を失った景一を、家事担当を条件に自分の部屋に住まわせる。\r\n明るくのんきな性格で、お調子者。 ドジなところがあり、昔からなにかと景一に頼りきりになることが多く、お互い男女を意識しない兄妹のような関係になっている。\r\nそのためか、胸が大きいのを自覚しているものの、景一の前では無防備な姿をさらしたりする。\r\n\r\n耳年増だが、恋愛関係はわりと奥手。 夢見がちなところもあり、だらしない自分の面倒を見てくれる “王子様” はいないかと夢想して、景一に呆れられている。\r\n景一との関係を家族みたいなものとも割り切っているが、反面、他人が景一に近づくと張り合ってみたり。",
+    "name": "日下部みはる",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "くさかべみはる"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 11
+    },
+    "id": 13291,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 30,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/b7/22038_crt_rkzCl.jpg?r=1384584122",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f5/b7/22038_crt_rkzCl.jpg?r=1384584122",
+      "large": "https://lain.bgm.tv/pic/crt/l/f5/b7/22038_crt_rkzCl.jpg?r=1384584122",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/b7/22038_crt_rkzCl.jpg?r=1384584122"
+    },
+    "summary": "本作的主角。桃栗学园高中二年级。表面上是普通的女高中生，学校内新体操（即艺术体操）部成员，在准天使妃茵的帮助下可以利用十字架变身成为怪盗贞德，前世是圣女贞德。她的任务是把即将来临现世的恶魔封印，利用招式把恶魔“将军”成西洋棋的棋子，及后因恶魔力量加强而要使用“强力将军”封印恶魔。虽然自己一个人生活，性格仍开朗爽直，但暗里其实是个固执的人，常常口是心非。父母离婚后被遗弃，经常躲起来，感觉孤单落寞，感受不到自己身边其实有很多照顾自己的朋友（包括妃茵）。常常说自己受不了稚空，但心底是很喜欢他的。\r\n曾经因为发现稚空的真实身分为怪盗辛巴达而心情低落，但在稚空的解释下误会冰释。剧终两人结婚育有一女鱼月（转世后的妃茵）。\r\n父母在她出生后就被魔王派出的恶魔附身，感情日渐破裂，之后因工作而趁机分居，一直让麻吕一个人住在公寓。每个月都会给麻吕打钱，说好了会寄信，但从没写过。后来受魔王控制而离婚，以打击麻吕，使她的心灵受损。后在麻吕封印魔王后，一阵头疼，两人又在初始地相遇，后决定复婚。\r\n父母在她出生后，就因非常忙于工作而很少回家，总是让栗一个人度过孤独的夜晚。经常无法碰面的两人，在栗十岁的时候，各自到外国去，每月都给栗足够的生活费。虽然栗清楚的知道父母的联系方式甚至地址，但却从来不敢联系，害怕听到最不想要的答案。栗每天放学都在信箱前守望，但都没有等到她想要的信，于是她为了使自己变坚强，借助准天使菲的力量，变成怪盗贞德。漫画中是夏娃的转世，TV版中则是500年前牺牲的圣女贞德的转世。漫画版中与稚空结婚，生下菲的转世——鱼月（和心时是青梅竹马，感情很好）。TV版结局也皆大欢喜。",
+    "name": "日下部まろん",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "日下部栗"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "日下部玛伦 / 日下部麻吕 / 怪盗贞德"
+          },
+          {
+            "k": "日文名",
+            "v": "日下部まろん / 怪盗ジャンヌ"
+          },
+          {
+            "k": "纯假名",
+            "v": "くさかべ まろん"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kusakabe Maron / Kaitou Jeanne"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "????-05-30"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "身高",
+        "value": "154cm"
+      },
+      {
+        "key": "体重",
+        "value": "43kg"
+      },
+      {
+        "key": "BWH",
+        "value": "81.62/56.98/83.16"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 12
+    },
+    "id": 22038,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c0/ac/49410_crt_35g9d.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c0/ac/49410_crt_35g9d.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c0/ac/49410_crt_35g9d.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c0/ac/49410_crt_35g9d.jpg"
+    },
+    "summary": "○普段の顔\r\n田舎から出てきた、右も左も分からない女の子。伯母が経営する喫茶店（実は魔女のたまり場）で働いている。\r\n早朝の牛乳配達とともに、主人公の通う学校へプリンを納品。祖母から教わったという料理は家庭料理ながら、かなりの腕前。\r\n挫けても一人で解決しようとする、芯の強い女の子。\r\n\r\n○魔女の顔\r\n魔女としてはまだまだ半人前。日々見識を深めている。\r\n早口でまくし立てられると、オロオロしてしまう。琴線が切れると直情径行な性格がピンチを招き、後悔すること多々。\r\n大会に対して、優劣を付けることにそれほど興味を持ってないような…？",
+    "name": "日下部るるね",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "くさかべ るるね"
+          }
+        ]
+      },
+      {
+        "key": "属性",
+        "value": "テイマー（調教師）／サモナー（召還師）"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 49410,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/70/d2/61979_crt_ae0aG.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/70/d2/61979_crt_ae0aG.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/70/d2/61979_crt_ae0aG.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/70/d2/61979_crt_ae0aG.jpg"
+    },
+    "summary": "年上の従姉であり、主人公のことを年の離れた弟のように可愛がっている。\r\n大学の長期休暇中に海外ドラマにはまってしまい、そこから引きこもり、\r\n自堕落な生活を送っている。",
+    "name": "日下部 あすか",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "Before",
+        "value": "折り目正しく理知的な元生徒会長の幼馴染"
+      },
+      {
+        "key": "After",
+        "value": "ドラマにはまって自堕落な裸生活絶賛満喫中！"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 1
+    },
+    "id": 61979,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 2,
+    "gender": "female",
+    "birth_day": 9,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/63/56/130356_crt_1CtF7.jpg?r=1705766887",
+      "grid": "https://lain.bgm.tv/pic/crt/g/63/56/130356_crt_1CtF7.jpg?r=1705766887",
+      "large": "https://lain.bgm.tv/pic/crt/l/63/56/130356_crt_1CtF7.jpg?r=1705766887",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/63/56/130356_crt_1CtF7.jpg?r=1705766887"
+    },
+    "summary": "21歳。「波動実験艦 銀河」戦術長。\r\n指揮A.I が立案する戦術の有用性を瞬時に判断する冷静さを持つ。\r\n「軍人」であり「科学者」であり「女性」である自分を最大限に活かすことを常に自己に課している。",
+    "name": "日下部うらら",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "日下部丽"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Kusakabe Urara"
+          },
+          {
+            "k": "日文名",
+            "v": "日下部 うらら"
+          },
+          {
+            "k": "纯假名",
+            "v": "くさかべ うらら"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "2182年2月9日"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://yamato2202.net/character_mechanic/"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 130356,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/54/b0/170361_crt_FabGh.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/54/b0/170361_crt_FabGh.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/54/b0/170361_crt_FabGh.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/54/b0/170361_crt_FabGh.jpg"
+    },
+    "summary": "要領が良く、可愛らしい風貌を活かして周囲に取り入るのが上手いため寮ではマスコット的な存在としてちやほやされている。\r\nそうして甘やかされて過ごしてきたおかげでかなり自信家で子どもっぽく自惚れ屋な性格。\r\n主人公に注意されたことを根に持っており、寮から追放しようとしてくる。\r\n勉学に興味がないため成績は良くないが頭の回転は早く、主人公追放のために悪知恵を働かせる。",
+    "name": "日下部きらり",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "日下部希来莉"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "日下部 きらり"
+          },
+          {
+            "k": "纯假名",
+            "v": "くさかべ きらり"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kusakabe Kirari"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "151cm"
+      },
+      {
+        "key": "BWH",
+        "value": "82(B)/57/84"
+      },
+      {
+        "key": "学年",
+        "value": "1年生"
+      },
+      {
+        "key": "原画",
+        "value": "玄野トモアキ"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 3
+    },
+    "id": 170361,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/b9/185698_crt_g0vRa.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/05/b9/185698_crt_g0vRa.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/05/b9/185698_crt_g0vRa.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/b9/185698_crt_g0vRa.jpg"
+    },
+    "summary": " 存在感很弱的戏剧部员 ，性格非常低调，\r\n 很容易陷入消极的情绪里 。\r\n 常常在戏剧部活动中默默地进行小说或剧本的写作 。 \r\n \r\n 家里是非常非常的有钱，\r\n 但是本人对此并不感兴趣。",
+    "name": "日下部ハル",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 185698,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

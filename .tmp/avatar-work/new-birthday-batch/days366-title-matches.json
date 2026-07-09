@@ -1,0 +1,395 @@
+[
+  {
+    "id": "time-stop-fate",
+    "aliases": [
+      "出会って5分は俺のもの！時間停止と不可避な運命"
+    ],
+    "matches": [
+      {
+        "path": "16_04_74",
+        "label": "出会って5分は俺のもの！ 時間停止と不可避な運命"
+      }
+    ]
+  },
+  {
+    "id": "happiness-nightmare",
+    "aliases": [
+      "ハピメア"
+    ],
+    "matches": []
+  },
+  {
+    "id": "hoshizora-memoria",
+    "aliases": [
+      "星空のメモリア",
+      "星空的记忆"
+    ],
+    "matches": [
+      {
+        "path": "18_05_55",
+        "label": "星空のメモリア"
+      }
+    ]
+  },
+  {
+    "id": "sakura-moyu",
+    "aliases": [
+      "さくら、もゆ。",
+      "樱花、萌放"
+    ],
+    "matches": [
+      {
+        "path": "15_01_53",
+        "label": "さくら、もゆ。"
+      }
+    ]
+  },
+  {
+    "id": "irotoridori-no-sekai",
+    "aliases": [
+      "いろとりどりのセカイ",
+      "五彩斑斓的世界"
+    ],
+    "matches": [
+      {
+        "path": "13_02_52",
+        "label": "いろとりどりのセカイ"
+      }
+    ]
+  },
+  {
+    "id": "astralair",
+    "aliases": [
+      "アストラエアの白き永遠"
+    ],
+    "matches": [
+      {
+        "path": "13_01_118",
+        "label": "アストラエアの白き永遠"
+      }
+    ]
+  },
+  {
+    "id": "yukizome-koyo",
+    "aliases": [
+      "縁りて此の葉は紅に",
+      "缘染此叶、化作恋红"
+    ],
+    "matches": [
+      {
+        "path": "20_03_14",
+        "label": "縁りて此の葉は紅に"
+      }
+    ]
+  },
+  {
+    "id": "tayutama",
+    "aliases": [
+      "タユタマ",
+      "游魂"
+    ],
+    "matches": [
+      {
+        "path": "16_01_54",
+        "label": "タユタマ -kiss on my deity-"
+      },
+      {
+        "path": "16_01_55",
+        "label": "タユタマ2 -you're the only one-"
+      }
+    ]
+  },
+  {
+    "id": "amakano",
+    "aliases": [
+      "アマカノ",
+      "甜蜜女友"
+    ],
+    "matches": [
+      {
+        "path": "13_01_158",
+        "label": "アマカノ"
+      },
+      {
+        "path": "13_01_159",
+        "label": "アマカノ Second Season"
+      },
+      {
+        "path": "13_01_242",
+        "label": "アマカノ2"
+      },
+      {
+        "path": "13_01_443",
+        "label": "アマカノ3"
+      }
+    ]
+  },
+  {
+    "id": "sakura-no-uta",
+    "aliases": [
+      "サクラノ詩",
+      "樱之诗"
+    ],
+    "matches": [
+      {
+        "path": "15_01_47",
+        "label": "サクラノ詩"
+      }
+    ]
+  },
+  {
+    "id": "sakura-no-toki",
+    "aliases": [
+      "サクラノ刻",
+      "樱之刻"
+    ],
+    "matches": []
+  },
+  {
+    "id": "atri",
+    "aliases": [
+      "ATRI アトリ"
+    ],
+    "matches": [
+      {
+        "path": "13_01_407",
+        "label": "ATRI アトリ"
+      }
+    ]
+  },
+  {
+    "id": "rewrite",
+    "aliases": [
+      "Rewrite リライト"
+    ],
+    "matches": [
+      {
+        "path": "21_02_35",
+        "label": "Rewrite リライト"
+      }
+    ]
+  },
+  {
+    "id": "ef",
+    "aliases": [
+      "ef - a fairy tale of the two.",
+      "悠久之翼"
+    ],
+    "matches": [
+      {
+        "path": "13_04_31",
+        "label": "ef - a fairy tale of the two."
+      }
+    ]
+  },
+  {
+    "id": "tsukihime",
+    "aliases": [
+      "月姫",
+      "月姬"
+    ],
+    "matches": [
+      {
+        "path": "16_03_09",
+        "label": "月姫"
+      }
+    ]
+  },
+  {
+    "id": "ensemble-coda",
+    "aliases": [
+      "終わる世界とバースデイ",
+      "永不落幕的前奏诗"
+    ],
+    "matches": [
+      {
+        "path": "13_05_88",
+        "label": "終わる世界とバースデイ"
+      }
+    ]
+  },
+  {
+    "id": "itsusora",
+    "aliases": [
+      "いつか、届く、あの空に。",
+      "终有一日愿遂彼空"
+    ],
+    "matches": [
+      {
+        "path": "13_02_19",
+        "label": "いつか、届く、あの空に。"
+      }
+    ]
+  },
+  {
+    "id": "muv-luv-alternative",
+    "aliases": [
+      "マブラヴ オルタネイティヴ",
+      "Muv-Luv Alternative"
+    ],
+    "matches": [
+      {
+        "path": "19_01_74",
+        "label": "マブラヴ オルタネイティヴ"
+      },
+      {
+        "path": "19_01_76",
+        "label": "マブラヴ オルタネイティヴ トータル・イクリプス"
+      },
+      {
+        "path": "19_01_77",
+        "label": "マブラヴ オルタネイティヴ クロニクルズ 憧憬"
+      },
+      {
+        "path": "19_01_78",
+        "label": "マブラヴ オルタネイティヴ クロニクルズ 再誕"
+      },
+      {
+        "path": "19_01_80",
+        "label": "マブラヴ オルタネイティヴ レイン・ダンサーズ"
+      },
+      {
+        "path": "19_01_81",
+        "label": "マブラヴ オルタネイティヴ イン ユーロフロント DUTY -LOST ARCADIA-"
+      },
+      {
+        "path": "19_01_82",
+        "label": "マブラヴ オルタネイティヴ クロニクルズ チキン・ダイバーズ"
+      }
+    ]
+  },
+  {
+    "id": "baldr-sky",
+    "aliases": [
+      "BALDR SKY バルドスカイ"
+    ],
+    "matches": [
+      {
+        "path": "18_01_127",
+        "label": "BALDR SKY バルドスカイ"
+      }
+    ]
+  },
+  {
+    "id": "little-busters",
+    "aliases": [
+      "Little Busters!",
+      "リトルバスターズ"
+    ],
+    "matches": [
+      {
+        "path": "21_02_16",
+        "label": "リトルバスターズ！"
+      }
+    ]
+  },
+  {
+    "id": "dimension-shift",
+    "aliases": [
+      "次元の違う恋",
+      "次元错位恋人"
+    ],
+    "matches": []
+  },
+  {
+    "id": "kizuna-kirameku",
+    "aliases": [
+      "絆きらめく恋いろは",
+      "牵绊闪耀的恋之伊吕波"
+    ],
+    "matches": [
+      {
+        "path": "14_02_129",
+        "label": "絆きらめく恋いろは"
+      }
+    ]
+  },
+  {
+    "id": "otome-riron",
+    "aliases": [
+      "乙女理論とその周辺",
+      "乙女理論とその後の周辺"
+    ],
+    "matches": []
+  },
+  {
+    "id": "konosora",
+    "aliases": [
+      "この大空に、翼をひろげて"
+    ],
+    "matches": []
+  },
+  {
+    "id": "aozora-promise",
+    "aliases": [
+      "青空の見える丘",
+      "青空下的约定"
+    ],
+    "matches": [
+      {
+        "path": "13_01_65",
+        "label": "青空の見える丘"
+      }
+    ]
+  },
+  {
+    "id": "kimi-nozo",
+    "aliases": [
+      "君が望む永遠",
+      "你所期望的永远"
+    ],
+    "matches": [
+      {
+        "path": "14_02_42",
+        "label": "君が望む永遠"
+      }
+    ]
+  },
+  {
+    "id": "nine",
+    "aliases": [
+      "9-nine- ナイン"
+    ],
+    "matches": [
+      {
+        "path": "17_01_70",
+        "label": "9-nine- ナイン"
+      }
+    ]
+  },
+  {
+    "id": "sakura-cloud-scarlet",
+    "aliases": [
+      "さくらの雲＊スカアレットの恋",
+      "樱色之云"
+    ],
+    "matches": [
+      {
+        "path": "15_01_90",
+        "label": "さくらの雲＊スカアレットの恋"
+      }
+    ]
+  },
+  {
+    "id": "grisaia",
+    "aliases": [
+      "グリザイアの果実",
+      "グリザイアの迷宮",
+      "グリザイア：ファントムトリガー"
+    ],
+    "matches": [
+      {
+        "path": "14_03_29",
+        "label": "グリザイアの果実"
+      },
+      {
+        "path": "14_03_30",
+        "label": "グリザイアの迷宮"
+      },
+      {
+        "path": "14_03_31",
+        "label": "グリザイア：ファントムトリガー"
+      }
+    ]
+  }
+]

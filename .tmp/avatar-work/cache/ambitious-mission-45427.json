@@ -1,0 +1,386 @@
+[
+  {
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 20,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/be/24/103855_crt_jrEoe.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/be/24/103855_crt_jrEoe.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/be/24/103855_crt_jrEoe.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/be/24/103855_crt_jrEoe.jpg"
+    },
+    "summary": "インターポールより派遣された世界的な名探偵。\r\nこれまで99の事件に関わり、なんとその解決率100％にものぼるという\r\n圧倒的な実績を買われて沙幌の街にやってきた。\r\n素晴らしい探偵……なのだが、推理力は悲しくなるくらいに皆無。\r\nそんな彼女の最大の武器は、常軌を逸脱した圧倒的な身体能力。\r\n小柄な体躯に秘められた能力はあのカリスをも上回る。\r\n\r\n「この名探偵、シャルロット・イェーズにかかれば解けない謎はないのであります！」",
+    "name": "シャルロット・ディ・カーブホーン・イェーズ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Charlotte・Di・Curvehorn・Yeatz"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "7月20日"
+      },
+      {
+        "key": "血型",
+        "value": "AB型"
+      },
+      {
+        "key": "身高",
+        "value": "147cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B71/W52/H76"
+      },
+      {
+        "key": "cv",
+        "value": "榎本ねむ"
+      }
+    ],
+    "stat": {
+      "comments": 45,
+      "collects": 41
+    },
+    "id": 103855,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/cc/96/3280_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/cc/96/3280_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/cc/96/3280_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cc/96/3280_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "シャルロット",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "夏洛特"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "シャルロット"
+          },
+          {
+            "k": "罗马字",
+            "v": "Charlotte"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 8,
+      "collects": 9
+    },
+    "id": 3280,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/b2/34741_crt_iB9oC.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a2/b2/34741_crt_iB9oC.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a2/b2/34741_crt_iB9oC.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/b2/34741_crt_iB9oC.jpg"
+    },
+    "summary": "淑乃のサポートとしての役割を担っているフランス人の少女。\r\n淑乃には劣るが、一応退魔能力を持っている。\r\nただし自らに魂付与をするような技術や才能はない。\r\n戦いの際は西洋甲冑を身につけ、淑乃の背中を守る。",
+    "name": "シャルロット",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 34741,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/9c/67/56992_crt_zJttG.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/9c/67/56992_crt_zJttG.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/9c/67/56992_crt_zJttG.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9c/67/56992_crt_zJttG.jpg"
+    },
+    "summary": "どこにでもいそうな女の子。\r\nいつも笑顔で元気元気。\r\nその元気が時々暴走するが、それも愛嬌。\r\nやる時はやるが、やらない時はまったくやらない。\r\n学園内の平均値的存在。\r\n全ての学科が好き。",
+    "name": "シャルロット",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 56992,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/e5/d6/58769_crt_Djqzd.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/e5/d6/58769_crt_Djqzd.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/e5/d6/58769_crt_Djqzd.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e5/d6/58769_crt_Djqzd.jpg"
+    },
+    "summary": "父母是国王查理六世和王妃伊莎博，是法兰西王国的姬太子。十分傲慢，常常用居高临下的视线看着别人，一副公主大人的气质。",
+    "name": "シャルロット",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "夏洛特"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 12
+    },
+    "id": 58769,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/cf/b0/85871_crt_PS1nS.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/cf/b0/85871_crt_PS1nS.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/cf/b0/85871_crt_PS1nS.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cf/b0/85871_crt_PS1nS.jpg"
+    },
+    "summary": "清楚可憐な王国の姫君。\r\nその美しさは大陸中に知られており、王国の人々の憧れの的。\r\n多くの騎士、守護機神と呼ばれる巨大ゴーレムにその身を守られている。",
+    "name": "シャルロット",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 5
+    },
+    "id": 85871,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/67/d0/99522_crt_HQi6P.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/67/d0/99522_crt_HQi6P.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/67/d0/99522_crt_HQi6P.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/67/d0/99522_crt_HQi6P.jpg"
+    },
+    "summary": "フランベルジュ王国の王女。\r\n山賊に拉致され、木こり小屋に監禁されていたところを主人公に救われる。\r\nそのお礼に主人公を自分の花婿候補に指名し、男爵の位と領地を授ける。\r\n父王に寵愛されて育ったため、ワガママで奔放な性格。\r\n城の中での生活しか知らず、世間知らず。\r\n主人公のことは気に入っているらしく、時折、お忍びで主人公の様子を見にやってくる。",
+    "name": "シャルロット",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://www.getchu.com/soft.phtml?id=494"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 99522,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b0/42/108529_crt_1VWNR.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b0/42/108529_crt_1VWNR.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/b0/42/108529_crt_1VWNR.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b0/42/108529_crt_1VWNR.jpg"
+    },
+    "summary": "現在の館の主\r\n願いを叶えるため、プレイヤーを召喚した\r\n　\r\nキャシャの姉妹",
+    "name": "シャルロット",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://yako-spice.wixsite.com/"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 108529,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/8e/111664_crt_RZ6nM.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b4/8e/111664_crt_RZ6nM.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/b4/8e/111664_crt_RZ6nM.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/8e/111664_crt_RZ6nM.jpg"
+    },
+    "summary": "「わたしに決闘を挑む方は久しぶりですわね。」\r\n\r\n　フルネームは、ミィ・オーブリィ・シャルロット。\r\n　ある日ウインドネストで出会ったイヴォフ帝国の軍人。クラスは聖騎士。\r\n　軍の任務でウインドネストへやってきて長期滞在することになった。カリンという奴隷を連れている。見た目の印象もあり、周囲からはドＳのように思われているようだが……。\r\n　聖騎士は魔力を載せた攻撃を得意とする戦士系特殊クラス。シャルロット専用。\r\n　ゲーム中盤以降に仲間になる。",
+    "name": "シャルロット",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "夏洛特"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 111664,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/57/127795_crt_MNTOo.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/80/57/127795_crt_MNTOo.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/80/57/127795_crt_MNTOo.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/57/127795_crt_MNTOo.jpg"
+    },
+    "summary": "【爆乳おっぱいでミルクも出ちゃうおねぇちゃん系メイド】\r\n\r\n特技：ふわとろパイズリ、栄養たっぷり授乳\r\n特徴：母乳による精力促進\r\n\r\n「はい♪　正真正銘、エッチな悪魔の代名詞……サキュバスですよ♪」",
+    "name": "シャルロット",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "CV",
+        "value": "香山いちご"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 4
+    },
+    "id": 127795,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

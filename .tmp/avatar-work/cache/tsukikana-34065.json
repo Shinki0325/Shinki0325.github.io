@@ -1,0 +1,527 @@
+[
+  {
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 5,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/2f/80/68752_crt_rDrqR.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/2f/80/68752_crt_rDrqR.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/2f/80/68752_crt_rDrqR.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2f/80/68752_crt_rDrqR.jpg"
+    },
+    "summary": "大学在学中に\r\n小説家デビューした美人作家。\r\n処女作『プロセッサー』で小説よつば新人賞を受賞。\r\n映画化されるなど一世を風靡し、\r\nその後も次々とヒット作を飛ばしている。\r\n\r\nわがままかつ奔放、自由気ままな性格。\r\n同じ男と二度寝ないことを信条としている。",
+    "name": "月ヶ洞きらり",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "月ヶ洞 きらり"
+          },
+          {
+            "k": "纯假名",
+            "v": "つきがほら きらり"
+          },
+          {
+            "k": "罗马字",
+            "v": "Tsukigahora Kirari"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "5月5日"
+      },
+      {
+        "key": "血型",
+        "value": "B型"
+      },
+      {
+        "key": "身高",
+        "value": "161cm"
+      },
+      {
+        "key": "体重",
+        "value": "55kg"
+      },
+      {
+        "key": "BWH",
+        "value": "96(G)/60/89"
+      },
+      {
+        "key": "年齢",
+        "value": "29歳"
+      },
+      {
+        "key": "好きな食べ物",
+        "value": "ぽたぽた焼き"
+      },
+      {
+        "key": "嫌いな食べ物",
+        "value": "パセリ"
+      }
+    ],
+    "stat": {
+      "comments": 12,
+      "collects": 21
+    },
+    "id": 68752,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/49/e0/115486_crt_u8Ouo.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/49/e0/115486_crt_u8Ouo.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/49/e0/115486_crt_u8Ouo.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/49/e0/115486_crt_u8Ouo.jpg"
+    },
+    "summary": "志伸よりひとつ年下の、若き天才ティンク開発者。\r\n黙っていればクール系美少女。\r\n一般的に流通しているホログラム型ティンクではなく、\r\n実体を持った物理型ティンクを主に研究している。\r\nティンクとして破格の性能を持つイオに興味を持ち、イオの所有者である志伸に接近してくる。\r\nその突き抜けた才能ゆえか、コミュニケーションの取り方は独特かつマイペース。\r\n所有ティンクは、蝶型の物理ティンク『フェアリス』。",
+    "name": "月ヶ丘蘭",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "つきがおか らん"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 13,
+      "collects": 29
+    },
+    "id": 115486,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/2e/20332_crt_L40oC.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/72/2e/20332_crt_L40oC.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/72/2e/20332_crt_L40oC.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/2e/20332_crt_L40oC.jpg"
+    },
+    "summary": "学園きっての才女ではあるが、とっつきにくい。\r\nやや男前な口調で話しているので、話し掛けにくい印象を与えている。\r\n年頃になって、可愛くしたほうがいい （可愛く見られたい） と思い始め、少し勘違いした祖父のアドバイスでおしゃれ （和風） をしている。\r\n本人は気づいていないが、意外に面倒見が良く、人がいい。\r\n巷で人気のキャラグッズを愛する可愛い一面も持っているが、恥ずかしいので秘密。\r\n【Access key for KARUMARUKA：嫉妬】\r\n主人公のことを好きになってしまう。\r\n本人はどうして主人公のことを好きになってしまったのか分からず困っているのだが、主人公がどこにいるのか、誰と話しているのか、どんなことも気になって仕方ない。\r\n\r\n「私に近づかないでくれ、分かってるだろう。勝手に顔が赤くなってしまうんだ」",
+    "name": "天ヶ瀬奈月",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "あまがせ なつき"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "7月1日"
+      },
+      {
+        "key": "身高",
+        "value": "160"
+      },
+      {
+        "key": "BWH",
+        "value": "82/56/85"
+      }
+    ],
+    "stat": {
+      "comments": 12,
+      "collects": 67
+    },
+    "id": 20332,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/02/b7/66772_crt_76zbM.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/02/b7/66772_crt_76zbM.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/02/b7/66772_crt_76zbM.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/02/b7/66772_crt_76zbM.jpg"
+    },
+    "summary": "かつて境遼二に敗北し、実力を付けるために海を渡った少女。\r\n三年生の最後の夏、リベンジを果たしに葛切にやってきた。\r\n\r\n「最強を止めるのは、このわたくしです」",
+    "name": "水ヶ原夜月",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "水ヶ原 夜月"
+          },
+          {
+            "k": "纯假名",
+            "v": "みずがはら よつき"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 66772,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/33/86/19306_crt_OG848.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/33/86/19306_crt_OG848.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/33/86/19306_crt_OG848.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/33/86/19306_crt_OG848.jpg"
+    },
+    "summary": "駄菓子屋 『鮎ヶ瀬堂』 の娘。\r\n無邪気で素直。 朧白村を愛している。\r\n新しいお菓子を開発することに情熱を燃やす\r\n\r\n「新しいビジネスンリューション！」",
+    "name": "鮎ヶ瀬月子",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "鲇濑月子"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "2月生まれ（みずがめ座）"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "身高",
+        "value": "154cm"
+      },
+      {
+        "key": "体重",
+        "value": "39kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B73（B）/ W53/ H73"
+      },
+      {
+        "key": "兴趣",
+        "value": "点心制作"
+      }
+    ],
+    "stat": {
+      "comments": 15,
+      "collects": 45
+    },
+    "id": 19306,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d9/a5/61095_crt_4CZoO.jpg?r=1692040742",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d9/a5/61095_crt_4CZoO.jpg?r=1692040742",
+      "large": "https://lain.bgm.tv/pic/crt/l/d9/a5/61095_crt_4CZoO.jpg?r=1692040742",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d9/a5/61095_crt_4CZoO.jpg?r=1692040742"
+    },
+    "summary": "ふふふっ……実験台がこんなにたくさん……\r\n新しい薬ができたばかりだから助かるわ。久しぶりに\r\n私の「隻眼（め）」……解放しちゃおうかしら？\r\n\r\nいつも忙しそうにしており、常に目元に隈を浮かべている。性格は冷静沈着で、傍目からは良心的な医者に見える。\r\nだが本業は研究者であり、目的のためなら手段を選ばない質で、常に新薬を開発しては実験台となる患者を探している。ともあれ、自身の患者は絶対に殺さないし、回復するまで面倒を見るなど、医者としてのポリシーとプライド、そして優秀な腕前を持つ。そのため、患者たちからは意外と慕われている。ただ、本人は偽悪的なところがあり、良心的な医者として慕われるのもまんざらではないが、内心では「闇のマッドサイエンティスト」として恐れてほしいとも考えている。その意味では同じギルド所属の10歳年下の中二病と同類かもしれない。27歳にもなってそんな…。\r\n一方で、落ち着いた物腰の割に意外と喧嘩っ早く、大人げないことも平気でする子供っぽいところも。\r\nまた二つ名の通り左目に眼帯をしているが、魔力を解放するときに取り外すらしく、取り外そうとした時はイリヤやドクロ親父といった有力者が警戒するほどの雰囲気を醸し出す。実際に取り外した場合は左目から赤いバラのような魔力が溢れ出し、スペックが劇的に向上する。\r\n\r\nストーリーでも新薬開発を行っては主人公に被験者になってもらうマッドサイエンティストな側面が目立つが、マッドぶりではエリコの方がより激しい、というか「あちら」の世界においてもエリコの方が怪しい薬に精通してる節がある。\r\nそんなエリコとは新薬開発を行う仲間でギルド内でもだいたいコンビで行動することが多い。",
+    "name": "ミツキ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "深月"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "宵滨深月"
+          },
+          {
+            "k": "日文名",
+            "v": "宵ヶ浜深月"
+          },
+          {
+            "k": "纯假名",
+            "v": "よいがはま みつき"
+          },
+          {
+            "k": "罗马字",
+            "v": "Yoigahama Mitsuki"
+          },
+          {
+            "k": "昵称",
+            "v": "眼罩"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "3月7日"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "身高",
+        "value": "166cm"
+      },
+      {
+        "key": "体重",
+        "value": "53kg"
+      },
+      {
+        "key": "年齢",
+        "value": "27岁"
+      },
+      {
+        "key": "星座",
+        "value": "魚座"
+      },
+      {
+        "key": "所属",
+        "value": "トワイライトキャラバン"
+      },
+      {
+        "key": "趣味",
+        "value": "研究・実験"
+      },
+      {
+        "key": "种族",
+        "value": "人类"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 14
+    },
+    "id": 61095,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/bf/7999_crt_77fpT.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b1/bf/7999_crt_77fpT.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/b1/bf/7999_crt_77fpT.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/bf/7999_crt_77fpT.jpg"
+    },
+    "summary": "",
+    "name": "月",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "月"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "月"
+          },
+          {
+            "k": "罗马字",
+            "v": "Yue"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 61
+    },
+    "id": 7999,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/71/92/115009_crt_5Cur8.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/71/92/115009_crt_5Cur8.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/71/92/115009_crt_5Cur8.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/71/92/115009_crt_5Cur8.jpg"
+    },
+    "summary": "8歳前後\r\n悠の過去に深く関わりがあるようだが…。",
+    "name": "月",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ユエ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "110cm"
+      },
+      {
+        "key": "引用来源",
+        "value": "b-cluster.eek.jp/products/02_lc/character2.html"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 115009,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "",
+      "grid": "",
+      "large": "",
+      "medium": ""
+    },
+    "summary": "",
+    "name": "月",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 145367,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/4a/6c/161537_crt_zbSqV.jpg?r=1721310091",
+      "grid": "https://lain.bgm.tv/pic/crt/g/4a/6c/161537_crt_zbSqV.jpg?r=1721310091",
+      "large": "https://lain.bgm.tv/pic/crt/l/4a/6c/161537_crt_zbSqV.jpg?r=1721310091",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4a/6c/161537_crt_zbSqV.jpg?r=1721310091"
+    },
+    "summary": "心亜の側近。すごく器用。",
+    "name": "月",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "月"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 161537,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

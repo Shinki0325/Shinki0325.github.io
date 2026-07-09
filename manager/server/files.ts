@@ -1,8 +1,13 @@
+import { execFile } from "node:child_process";
 import fs from "node:fs/promises";
+import os from "node:os";
 import path from "node:path";
+import { promisify } from "node:util";
 import { fileURLToPath } from "node:url";
 import matter from "gray-matter";
+import { uploadOriginalToImageHost } from "./imageHost";
 import type {
+  AssetImageCrop,
   AssetItem,
   ContentEntry,
   ContentKind,
@@ -12,12 +17,16 @@ import type {
   SaveContentPayload
 } from "../src/types";
 
+const execFileAsync = promisify(execFile);
+
 const managerRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const repoRoot = path.resolve(managerRoot, "..");
 const contentRoot = path.join(repoRoot, "src", "content");
 const pageConfigRoot = path.join(repoRoot, "src", "config", "pages");
 const publicRoot = path.join(repoRoot, "public");
 const uploadRoot = path.join(publicRoot, "uploads");
+const convertScriptPath = path.join(repoRoot, "scripts", "convert_image_to_webp.py");
+const cropRegionScriptPath = path.join(repoRoot, "scripts", "crop_image_region.py");
 
 const CONTENT_DIRS: Record<ContentKind, string> = {
   articles: "articles",
@@ -134,6 +143,42 @@ export const listEntries = async (kind: ContentKind): Promise<ContentListItem[]>
 const toRelativePosixPath = (baseDir: string, targetPath: string) =>
   path.relative(baseDir, targetPath).replaceAll(path.sep, "/");
 
+const isWithinDirectory = (root: string, targetPath: string) => {
+  const relativePath = path.relative(root, targetPath);
+  return relativePath === "" || (!relativePath.startsWith("..") && !path.isAbsolute(relativePath));
+};
+
+const slugifyFilename = (value: string, fallback = "image") => {
+  const basename = path.basename(value, path.extname(value));
+  return (
+    basename
+      .trim()
+      .toLowerCase()
+      .replace(/[^a-z0-9\u4e00-\u9fa5]+/g, "-")
+      .replace(/^-+|-+$/g, "") || fallback
+  );
+};
+
+const resolveUploadTarget = (targetDir = "", filename = "image") => {
+  const outputDir = path.resolve(uploadRoot, targetDir.replace(/\.\./g, "").replace(/^\/+/, ""));
+  if (!isWithinDirectory(uploadRoot, outputDir)) {
+    throw new Error("Invalid asset directory.");
+  }
+
+  const destinationPath = path.resolve(outputDir, `${slugifyFilename(filename)}.webp`);
+  if (!isWithinDirectory(uploadRoot, destinationPath)) {
+    throw new Error("Invalid asset destination.");
+  }
+
+  return destinationPath;
+};
+
+const toAssetItem = async (destinationPath: string): Promise<AssetItem> => ({
+  path: toRelativePosixPath(publicRoot, destinationPath),
+  url: `/${toRelativePosixPath(publicRoot, destinationPath)}`,
+  size: (await fs.stat(destinationPath)).size
+});
+
 const resolveMarkdownPath = (kind: ContentKind, slug: string) => {
   const directory = path.join(contentRoot, CONTENT_DIRS[kind]);
   const normalizedSlug = slug.replaceAll("\\", "/").replace(/^\/+/, "").replace(/\.\./g, "");
@@ -241,4 +286,92 @@ export const copyAsset = async (sourcePath: string, targetDir = "") => {
     url: `/${toRelativePosixPath(publicRoot, destinationPath)}`,
     size: (await fs.stat(destinationPath)).size
   } satisfies AssetItem;
+};
+
+export const saveUploadedAssetImage = async (
+  buffer: Buffer,
+  targetDir = "",
+  filename = "image",
+  contentType = "image/jpeg"
+) => {
+  const destinationPath = resolveUploadTarget(targetDir, filename);
+  const originalUrl = await uploadOriginalToImageHost(buffer, targetDir, slugifyFilename(filename), contentType);
+  await fs.mkdir(path.dirname(destinationPath), { recursive: true });
+  const tempDir = await fs.mkdtemp(path.join(os.tmpdir(), "manager-asset-image-"));
+  const tempPath = path.join(tempDir, "upload-image");
+
+  try {
+    await fs.writeFile(tempPath, buffer);
+    await execFileAsync("python3", [convertScriptPath, tempPath, destinationPath]);
+  } finally {
+    await fs.rm(tempDir, { recursive: true, force: true });
+  }
+
+  return {
+    ...(await toAssetItem(destinationPath)),
+    ...(originalUrl ? { originalUrl } : {})
+  };
+};
+
+export const cropAssetImage = async (
+  sourceUrl: string,
+  targetDir: string,
+  filename: string,
+  crop: AssetImageCrop,
+  outputWidth: number,
+  outputHeight: number
+) => {
+  const sourcePath = path.resolve(publicRoot, sourceUrl.replace(/^\/+/, ""));
+  if (!isWithinDirectory(publicRoot, sourcePath)) {
+    throw new Error("Invalid sourceUrl path.");
+  }
+  if (
+    !Number.isFinite(crop.x) ||
+    !Number.isFinite(crop.y) ||
+    !Number.isFinite(crop.width) ||
+    !Number.isFinite(crop.height) ||
+    crop.width <= 0 ||
+    crop.height <= 0
+  ) {
+    throw new Error("crop must include positive x, y, width, and height.");
+  }
+  if (!Number.isFinite(outputWidth) || !Number.isFinite(outputHeight) || outputWidth <= 0 || outputHeight <= 0) {
+    throw new Error("outputWidth and outputHeight must be positive.");
+  }
+
+  const destinationPath = resolveUploadTarget(targetDir, filename);
+  const cropArg = [
+    Math.round(crop.x),
+    Math.round(crop.y),
+    Math.round(crop.width),
+    Math.round(crop.height)
+  ].join(",");
+  const finalPath =
+    path.resolve(sourcePath) === path.resolve(destinationPath)
+      ? path.join(path.dirname(destinationPath), `.${path.basename(destinationPath)}.${process.pid}.tmp.webp`)
+      : destinationPath;
+
+  try {
+    await execFileAsync("python3", [
+      cropRegionScriptPath,
+      sourcePath,
+      finalPath,
+      cropArg,
+      "--output-width",
+      String(Math.round(outputWidth)),
+      "--output-height",
+      String(Math.round(outputHeight))
+    ]);
+
+    if (finalPath !== destinationPath) {
+      await fs.rename(finalPath, destinationPath);
+    }
+  } catch (error) {
+    if (finalPath !== destinationPath) {
+      await fs.rm(finalPath, { force: true });
+    }
+    throw error;
+  }
+
+  return toAssetItem(destinationPath);
 };

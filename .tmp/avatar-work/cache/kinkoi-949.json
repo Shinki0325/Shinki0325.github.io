@@ -1,0 +1,585 @@
+[
+  {
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 13,
+    "birth_year": null,
+    "blood_type": 4,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/42/90/57846_crt_LhQlw.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/42/90/57846_crt_LhQlw.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/42/90/57846_crt_LhQlw.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/42/90/57846_crt_LhQlw.jpg"
+    },
+    "summary": "本篇\r\n\r\n「ファイトですセンパイ、燃えて行きましょう！」\r\n\r\n陸上部所属の熱血少女。主人公たちの１学年下。\r\n\r\n猪突猛進の不器用なタイプで、\r\n考えるならまずやってからというスタンスで、\r\n気合いと根性で乗りきろうとする。\r\n寮のみんなからはマスコット的な扱いで、\r\n玲奈にいじられ、シルヴィにかわいがられている。\r\n意外と押しには弱くて、すぐにあうあうする。\r\n-----\r\nFD\r\n\r\n「大丈夫ですよ、センパイがいてくれたら、わたしはちゃんと走っていけますから」\r\n\r\nとにかく、元気いっぱいの後輩。\r\n陸上部に所属する短距離走のホープで、\r\nノーブル学園に陸上の特待生枠で入学した。\r\n\r\n最近ケガが治ったばかりなので、\r\nリハビリと自主練を重ねながら本格的な復帰を目指している。\r\n\r\n何事も真っ直ぐで、裏表のない素直な子。\r\n隠しごとや嘘が苦手なタイプで、表に出せないことがある時は、\r\n顔に出たりボロを出してしまう。",
+    "name": "栗生茜",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "栗生茜"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Kuryu Akane"
+          },
+          {
+            "k": "日文名",
+            "v": "栗生 茜"
+          },
+          {
+            "k": "纯假名",
+            "v": "くりゅう あかね"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "9月13日"
+      },
+      {
+        "key": "血型",
+        "value": "O"
+      },
+      {
+        "key": "身高",
+        "value": "148"
+      },
+      {
+        "key": "BWH",
+        "value": "85/53/31"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://sagaplanets.product.co.jp/works/kinkoi/chara05.html"
+      }
+    ],
+    "stat": {
+      "comments": 24,
+      "collects": 48
+    },
+    "id": 57846,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 11,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/74/3527_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b8/74/3527_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/b8/74/3527_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/74/3527_crt_anidb.jpg"
+    },
+    "summary": "２年Ａ組所属。生真面目な性格で規則や規律の乱れを嫌い、新学期の委員決めでは真っ先に風紀委員に立候補している。座右の銘は「規律の乱れは心の乱れ」。武道にも通じ、柔道は二段の実力者。",
+    "name": "栗生恵",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "栗生惠"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "くりゅ　めぐみ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kuryu Megumi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "5月11日"
+      },
+      {
+        "key": "血型",
+        "value": "O型"
+      },
+      {
+        "key": "身高",
+        "value": "158cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B81・W58・H82"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 8
+    },
+    "id": 3527,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 7,
+    "gender": null,
+    "birth_day": 8,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/24/56/32875_crt_w9EEl.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/24/56/32875_crt_w9EEl.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/24/56/32875_crt_w9EEl.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/24/56/32875_crt_w9EEl.jpg"
+    },
+    "summary": "主人公の後輩にあたる 1年生。 大抵のことはそつなくこなす秀才タイプ。\r\n1年生だが月華会副会長を務め、資料作成やお茶くみ、口べたなアリスの代役など何でもこなす。\r\n周囲からの信頼も厚く、一部では “次期会長” との声も上がっている。\r\n趣味はお花の栽培で、校舎裏の一角でよく花の世話をしている。\r\n「お茶のおかわりはいかがですか？」",
+    "name": "栗生真白",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "栗生真白"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "栗生 真白"
+          }
+        ]
+      },
+      {
+        "key": "生日",
+        "value": "7月8日"
+      },
+      {
+        "key": "血型",
+        "value": "O型"
+      },
+      {
+        "key": "身高",
+        "value": "168cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B85（D）/ W57/ H90"
+      }
+    ],
+    "stat": {
+      "comments": 11,
+      "collects": 26
+    },
+    "id": 32875,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 9,
+    "gender": "male",
+    "birth_day": 23,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/2d/c5/77955_crt_nsONs.jpg?r=1593262407",
+      "grid": "https://lain.bgm.tv/pic/crt/g/2d/c5/77955_crt_nsONs.jpg?r=1593262407",
+      "large": "https://lain.bgm.tv/pic/crt/l/2d/c5/77955_crt_nsONs.jpg?r=1593262407",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2d/c5/77955_crt_nsONs.jpg?r=1593262407"
+    },
+    "summary": "日本人の父とロシア人の母を持ち、母の教育で幼い頃からバレエと格闘技を同時に習っていた。\r\n現在は「Gentiana」というショーレストランのオーナーをしている。",
+    "name": "栗生善",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "栗生善"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "くりゅ ぜん"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kuryu Zen"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "9月23日"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "身高",
+        "value": "187cm"
+      },
+      {
+        "key": "年龄",
+        "value": "50岁"
+      },
+      {
+        "key": "职业",
+        "value": "餐厅老板"
+      },
+      {
+        "key": "主题花",
+        "value": "龙胆"
+      },
+      {
+        "key": "兴趣",
+        "value": "电视购物"
+      },
+      {
+        "key": "特技",
+        "value": "做饭、打戏、舞蹈"
+      },
+      {
+        "key": "喜欢的食物",
+        "value": "任何芝士制品"
+      },
+      {
+        "key": "讨厌的食物",
+        "value": "无"
+      },
+      {
+        "key": "家庭构成",
+        "value": "母亲"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 77955,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/e2/be/43627_crt_eOCcn.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/e2/be/43627_crt_eOCcn.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/e2/be/43627_crt_eOCcn.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e2/be/43627_crt_eOCcn.jpg"
+    },
+    "summary": "私立白嶺学園にやって来る謎の少女。\r\n礼儀正しく争いを好まない性格だが、彼女の存在自体が熾烈な闘争を誘発する。\r\nその正体は不明。\r\n彼女がソラの前に現れる時、終焉の幕が上がる……。\r\n\r\n「ボクは鳴──粟生野鳴。今日から、白嶺学園に通う事になりました」",
+    "name": "粟生野鳴",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "栗生野鸣"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "あおの めい"
+          }
+        ]
+      },
+      {
+        "key": "身高",
+        "value": "160cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B80/ W46/ H79"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 4
+    },
+    "id": 43627,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/27/9d/162383_crt_EOs3P.jpg?r=1722741795",
+      "grid": "https://lain.bgm.tv/pic/crt/g/27/9d/162383_crt_EOs3P.jpg?r=1722741795",
+      "large": "https://lain.bgm.tv/pic/crt/l/27/9d/162383_crt_EOs3P.jpg?r=1722741795",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/27/9d/162383_crt_EOs3P.jpg?r=1722741795"
+    },
+    "summary": "",
+    "name": "栗原やよい",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "栗原弥生"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 162383,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 7,
+    "gender": "male",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": 4,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/82/35/6525_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/82/35/6525_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/82/35/6525_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/82/35/6525_crt_anidb.jpg"
+    },
+    "summary": "泥门恶魔蝙蝠队体型最大的成员，并且是球队的创立者之一。被称为“大魔神”。在比赛中经常阻挡三至四个队员的进攻。与蛭魔一起度过了泥门高校美式足球社只有两名成员的时代的馋鬼，食量惊人。 \r\n与蛭魔相反，性格宽厚平静。他卧举记录是东京地区第一（全国高校卧举最强是白秋恐龙的新人峨王力哉，210公斤；二人同被选为秋季关东大赛最强攻防线卫）。速度极低，但力量对抗上无人能敌（除了白秋的峨王力哉）。家里是寺院。",
+    "name": "栗田良寛",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "栗田良宽"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "栗田 良寛"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kurita Ryoukan"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "7月7日"
+      },
+      {
+        "key": "血型",
+        "value": "O"
+      },
+      {
+        "key": "身高",
+        "value": "195cm"
+      },
+      {
+        "key": "体重",
+        "value": "145kg"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 2
+    },
+    "id": 6525,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/89/00/7541_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/89/00/7541_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/89/00/7541_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/89/00/7541_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "栗山真美",
+    "infobox": [
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Kuriyama Mami"
+          },
+          {
+            "k": "日文名",
+            "v": "栗山真美"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 7541,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ab/c7/7722_crt_4UZ77.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ab/c7/7722_crt_4UZ77.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ab/c7/7722_crt_4UZ77.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ab/c7/7722_crt_4UZ77.jpg"
+    },
+    "summary": "弁護士で妃英理の秘書。当初は白鳥警部と同様、劇場版のゲストキャラクターだったが、後に原作・アニメオリジナル作品にも登場するようになった。\r\n    普段はクールな英理が、小五郎から連絡があるたびに感情的になって右往左往する姿を観察しては、「また旦那からか」と密かに楽しんでいる。",
+    "name": "栗山緑",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "栗山緑"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Kuriyama Midori"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 4
+    },
+    "id": 7722,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/b7/11404_crt_zJ2IT.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ed/b7/11404_crt_zJ2IT.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ed/b7/11404_crt_zJ2IT.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/b7/11404_crt_zJ2IT.jpg"
+    },
+    "summary": "喜欢大自然，常在山水之间游历。还有丰富的动植物知识，对记载了实地考察资料图鉴上的时大概都会了解。但是，以学生来说对实际接触动植物的经验有限，也曾在图鉴里没记载过的初次遇到的昆虫前感到困惑。除了大自然之外，亦有丰富的常识。与树树关系特别好。",
+    "name": "栗原渚",
+    "infobox": [
+      {
+        "key": "生日",
+        "value": "7月7日"
+      },
+      {
+        "key": "身高",
+        "value": "147cm"
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Kurihara Nagisa"
+          },
+          {
+            "k": "日文名",
+            "v": "栗原渚"
+          },
+          {
+            "k": "纯假名",
+            "v": "くりはら なぎさ"
+          },
+          {
+            "k": "昵称",
+            "v": "栗ちゃん"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      },
+      {
+        "key": "简体中文名",
+        "value": "栗原渚"
+      },
+      {
+        "key": "血型",
+        "value": "B型"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 1
+    },
+    "id": 11404,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

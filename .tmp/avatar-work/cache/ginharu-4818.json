@@ -1,0 +1,562 @@
+[
+  {
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 8,
+    "birth_year": null,
+    "blood_type": 3,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/39/95/38909_crt_S20ZS.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/39/95/38909_crt_S20ZS.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/39/95/38909_crt_S20ZS.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/39/95/38909_crt_S20ZS.jpg"
+    },
+    "summary": "主人公のひとつ年下の後輩。人なつっこく、友達が多い。\r\n困っている人に手を差し伸べずにはいられない性格で、面倒事に自分から首を突っ込んでいくことも。\r\n将来の夢はたくさんあるが、どれもギャルっぽい職業ばかり。動物が大好き。",
+    "name": "蒼井雛多",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "苍井雏多"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "蒼井 雛多"
+          },
+          {
+            "k": "纯假名",
+            "v": "あおい ひなた"
+          },
+          {
+            "k": "罗马字",
+            "v": "Aoi Hinata"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "8月8日"
+      },
+      {
+        "key": "血型",
+        "value": "AB"
+      },
+      {
+        "key": "身高",
+        "value": "158cm"
+      },
+      {
+        "key": "体重",
+        "value": "48kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B85 / W56 / H86"
+      }
+    ],
+    "stat": {
+      "comments": 5,
+      "collects": 16
+    },
+    "id": 38909,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/de/b3/11304_crt_8RRb1.jpg?r=1507398142",
+      "grid": "https://lain.bgm.tv/pic/crt/g/de/b3/11304_crt_8RRb1.jpg?r=1507398142",
+      "large": "https://lain.bgm.tv/pic/crt/l/de/b3/11304_crt_8RRb1.jpg?r=1507398142",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/de/b3/11304_crt_8RRb1.jpg?r=1507398142"
+    },
+    "summary": "4年月組。苺をモチーフにしたポニーテールのような髪型。髪の色は赤みがかった茶。",
+    "name": "蒼井渚砂",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "苍井渚砂"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "あおい なぎさ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Aoi Nagisa"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "血型",
+        "value": "O型"
+      },
+      {
+        "key": "身高",
+        "value": "155cm"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 19
+    },
+    "id": 11304,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/5a/2e/24103_crt_j4H4k.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/5a/2e/24103_crt_j4H4k.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/5a/2e/24103_crt_j4H4k.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5a/2e/24103_crt_j4H4k.jpg"
+    },
+    "summary": "",
+    "name": "蒼井晶",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "苍井晶"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "蒼井 晶"
+          },
+          {
+            "k": "纯假名",
+            "v": "あおい あきら"
+          },
+          {
+            "k": "罗马字",
+            "v": "Aoi Akira"
+          },
+          {
+            "k": "昵称",
+            "v": "Aki-Lucky、Aki-Lovely"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 24,
+      "collects": 21
+    },
+    "id": 24103,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/0f/e7/38145_crt_2y1Pz.jpg?r=1452636756",
+      "grid": "https://lain.bgm.tv/pic/crt/g/0f/e7/38145_crt_2y1Pz.jpg?r=1452636756",
+      "large": "https://lain.bgm.tv/pic/crt/l/0f/e7/38145_crt_2y1Pz.jpg?r=1452636756",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0f/e7/38145_crt_2y1Pz.jpg?r=1452636756"
+    },
+    "summary": "17歳。平凡な高校生。だいたま展望台での事件に巻き込まれミラージュマスターに覚醒する。その後、つばさとともに芸能事務所に強引に引き込まれるも、芸能の世界に憧れは特に無いが、徐々に芸能人やリーダーとして開花していく。恋愛には疎く天然扱いされている。\r\n戦闘では剣による攻撃の他に回復魔法や雷撃魔法が使用できる万能タイプ。ただし、サブキャストとの交代はできない。",
+    "name": "蒼井 樹",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "あおい いつき"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 1
+    },
+    "id": 38145,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 7,
+    "gender": "male",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ca/6d/39647_crt_Tl6r7.jpg?r=1530319818",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ca/6d/39647_crt_Tl6r7.jpg?r=1530319818",
+      "large": "https://lain.bgm.tv/pic/crt/l/ca/6d/39647_crt_Tl6r7.jpg?r=1530319818",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ca/6d/39647_crt_Tl6r7.jpg?r=1530319818"
+    },
+    "summary": "18岁／属性：Mental型／生日：7月7日（巨蟹座）\r\n身高：161cm／体重：52kg／鞋码：24.0cm\r\n血型：B型／惯用手：左手／出身：长野\r\n兴趣：足球／特技：足球\r\n前历：职业足球运动员／所属组合：W\r\nCV：菊池勇成\r\n\r\n因为左膝的伤病而引退、从职业足球选手转业成为了偶像。与双胞胎弟弟·享介组成了组合「W」，目标成为最强的双子偶像。左撇子·不戴眼镜的是哥哥悠介。称呼制作人为「教练」。",
+    "name": "蒼井悠介",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "苍井悠介"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "蒼井 悠介"
+          },
+          {
+            "k": "纯假名",
+            "v": "あおい ゆうすけ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Aoi Yuusuke"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "7月7日"
+      },
+      {
+        "key": "血型",
+        "value": "B型"
+      },
+      {
+        "key": "身高",
+        "value": "161cm"
+      },
+      {
+        "key": "体重",
+        "value": "52kg"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 39647,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 7,
+    "gender": "male",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/63/cf/39648_crt_QUOQe.jpg?r=1530319867",
+      "grid": "https://lain.bgm.tv/pic/crt/g/63/cf/39648_crt_QUOQe.jpg?r=1530319867",
+      "large": "https://lain.bgm.tv/pic/crt/l/63/cf/39648_crt_QUOQe.jpg?r=1530319867",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/63/cf/39648_crt_QUOQe.jpg?r=1530319867"
+    },
+    "summary": "18岁／属性：Intellectual型／生日：7月7日（巨蟹座）\r\n身高：161cm／体重：52kg／鞋码：24.0cm\r\n血型：B型／惯用手：右手／出身：长野\r\n兴趣：智力铁环／特技：定下练习清单、辅导工作\r\n前历：职业足球运动员／所属组合：W\r\nCV：山谷祥生\r\n\r\n职业足球选手的双胞胎哥哥·悠介因左膝的伤病而引退，所以陪着哥哥一同引退成为了偶像。与悠介组成了组合「W」。右撇子·戴眼镜的是弟弟享介。为辅助悠介疗伤养伤，学会了缠绕运动胶带等技能。称呼制作人为「教练」。",
+    "name": "蒼井享介",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "苍井享介"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "蒼井 享介"
+          },
+          {
+            "k": "纯假名",
+            "v": "あおい きょうすけ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Aoi Kyousuke"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "7月7日"
+      },
+      {
+        "key": "血型",
+        "value": "B型"
+      },
+      {
+        "key": "身高",
+        "value": "161cm"
+      },
+      {
+        "key": "体重",
+        "value": "52kg"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 3
+    },
+    "id": 39648,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 25,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/9e/3e/39993_crt_b4rxr.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/9e/3e/39993_crt_b4rxr.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/9e/3e/39993_crt_b4rxr.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9e/3e/39993_crt_b4rxr.jpg"
+    },
+    "summary": "美人で大人っぽい女の子。花日の親友。母を亡くし、父とふたり暮らし。桧山と交際中。",
+    "name": "蒼井結衣",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "苍井结衣"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "蒼井 結衣"
+          },
+          {
+            "k": "纯假名",
+            "v": "あおい ゆい"
+          },
+          {
+            "k": "罗马字",
+            "v": "Aoi Yui"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "6月25日"
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      },
+      {
+        "key": "身高",
+        "value": "155cm"
+      },
+      {
+        "key": "体重",
+        "value": "35kg"
+      }
+    ],
+    "stat": {
+      "comments": 4,
+      "collects": 5
+    },
+    "id": 39993,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/5e/45245_crt_BsI5k.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f5/5e/45245_crt_BsI5k.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f5/5e/45245_crt_BsI5k.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/5e/45245_crt_BsI5k.jpg"
+    },
+    "summary": "主人公の1つ下の妹。 兄と同じ櫻乃杜学園に通っている。\r\n極度の人見知りで、初対面の相手とは目を合わせることもできない。\r\n引っ込み思案で自己主張できないが、兄に対してだけは例外。\r\n言いたいことをハッキリと口にし、むしろ積極的ですらある。\r\n周囲からは重度のブラコンと思われているが、本人も自覚している。\r\n兄が寮生活を始め、離ればなれになってしまったことを悲しんでいる。\r\n早くコンクールを終えて帰ってきてほしいと祈らない日はない。\r\n「お兄ちゃん、お肉ばかりじゃなくて野菜も食べないと栄養が偏るよ……」",
+    "name": "蒼井遙",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "蒼井 遙"
+          },
+          {
+            "k": "纯假名",
+            "v": "あおい はるか"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "145cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B76（AA）/ W52/ H80"
+      },
+      {
+        "key": "学年",
+        "value": "1年"
+      },
+      {
+        "key": "好きなもの",
+        "value": "体臭"
+      },
+      {
+        "key": "苦手なもの",
+        "value": "無臭"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 11
+    },
+    "id": 45245,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f8/89/46095_crt_11Z8q.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f8/89/46095_crt_11Z8q.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f8/89/46095_crt_11Z8q.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f8/89/46095_crt_11Z8q.jpg"
+    },
+    "summary": "学園の3年生。優しくておっとした性格で、癒し系の美少女。\r\n校内でなぜかメイド喫茶を開いていて、いつも慎也を笑顔で出迎え、安らぎを与えている。",
+    "name": "蒼井詩亞",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "蒼井 詩亞"
+          },
+          {
+            "k": "纯假名",
+            "v": "あおい しあ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 46095,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/27/47593_crt_Vmm3i.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/06/27/47593_crt_Vmm3i.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/06/27/47593_crt_Vmm3i.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/27/47593_crt_Vmm3i.jpg"
+    },
+    "summary": "水着とランジェリーの店 『ピーカブー（peek-a-boo）』 の店長にして唯一の店員。\r\n店の前をウロウロしていた主人公に興味を持ち、店に引っ張り込んで話を聞いたとから知り合いとなる。\r\n細かいことを気にしない性格なうえ、自分の容姿やスタイルが人の視線を惹き付けることをちゃんと理解している。\r\n店で扱っている商品のモデルは、経費削減も兼ねて自ら務める。\r\n状況に応じてではあるが、人前で過激な水着を着ることにも抵抗はない。\r\n「フフフ…… コレ、さっきのコに着てもらうのかしら？」",
+    "name": "蒼井静",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "蒼井 静"
+          },
+          {
+            "k": "纯假名",
+            "v": "あおい しずか"
+          }
+        ]
+      },
+      {
+        "key": "プロポーション",
+        "value": "巨乳に引き締まったウエスト、大きくて形の良いお尻と三拍子揃い"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 3
+    },
+    "id": 47593,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

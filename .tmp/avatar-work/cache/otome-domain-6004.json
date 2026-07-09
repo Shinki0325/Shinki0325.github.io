@@ -1,0 +1,458 @@
+[
+  {
+    "birth_mon": 5,
+    "gender": "male",
+    "birth_day": 22,
+    "birth_year": null,
+    "blood_type": 4,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/eb/38475_crt_bH2pa.jpg?r=1498365168",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c5/eb/38475_crt_bH2pa.jpg?r=1498365168",
+      "large": "https://lain.bgm.tv/pic/crt/l/c5/eb/38475_crt_bH2pa.jpg?r=1498365168",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/eb/38475_crt_bH2pa.jpg?r=1498365168"
+    },
+    "summary": "主角。唯一的依靠──祖母过世后便无依无靠。走投无路的他被风莉收留，于是开始在女校上学。\r\n虽然是男孩子，但只要穿上女装和裙子，也丝毫没有违和感。\r\n他的美少女外表正适合用来隐藏身分，但他本人似乎不太能接受。\r\n\r\n兴趣与擅长的事物是下厨、打扫、洗衣等所有家务。搬进宿舍后，因为看不惯其中杂乱的生活，所以担起了所有家务。\r\n之后在新闻社的问卷企划中被选为「感觉会是完美新娘的女孩子No.1」。",
+    "name": "飛鳥湊",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "飞鸟凑"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "飛鳥 湊"
+          },
+          {
+            "k": "纯假名",
+            "v": "あすか みなと"
+          },
+          {
+            "k": "罗马字",
+            "v": "Asuka Minato"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "5月22日（双子座）"
+      },
+      {
+        "key": "血型",
+        "value": "O"
+      },
+      {
+        "key": "身高",
+        "value": "158cm"
+      },
+      {
+        "key": "引用来源",
+        "value": "qualia.clearrave.co.jp/character/chara04.html"
+      }
+    ],
+    "stat": {
+      "comments": 70,
+      "collects": 260
+    },
+    "id": 38475,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 8,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/e2/f0/18546_crt_BLwQI.jpg?r=1539440241",
+      "grid": "https://lain.bgm.tv/pic/crt/g/e2/f0/18546_crt_BLwQI.jpg?r=1539440241",
+      "large": "https://lain.bgm.tv/pic/crt/l/e2/f0/18546_crt_BLwQI.jpg?r=1539440241",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e2/f0/18546_crt_BLwQI.jpg?r=1539440241"
+    },
+    "summary": "いつも元気いっぱいで、どんなことにも一生懸命。忍の道とは何か、本人なりに一生懸命に考えている。忍としての実力はまだまだだが、偉大な忍を祖父「半蔵」に持っており、潜在能力は抜群。好きな物はじっちゃん（半蔵）の太巻き。趣味は修行。秘伝忍法はガマ。属性は土。長短2本の脇差を振るう戦闘をする二刀流での斬撃が中心の戦闘スタイル。",
+    "name": "飛鳥",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "飞鸟"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "あすか"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "9月8日"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "身高",
+        "value": "155 cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B90 W57 H85"
+      },
+      {
+        "key": "兴趣",
+        "value": "修行"
+      },
+      {
+        "key": "喜欢的食物",
+        "value": "爷爷的太卷寿司"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 40
+    },
+    "id": 18546,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/45/6a/83627_crt_x2bXq.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/45/6a/83627_crt_x2bXq.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/45/6a/83627_crt_x2bXq.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/45/6a/83627_crt_x2bXq.jpg"
+    },
+    "summary": "東瀛地下組織六道輪迴三殺手，刀法精奇、視死如歸，收銀買命欲殺神無月，趁神無月身中奇毒時逼殺，後為神風營不破玄鬼所擒，被玉藻以懷柔手法招供。",
+    "name": "飛鳥",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性別",
+        "value": "男"
+      },
+      {
+        "key": "初登場",
+        "value": "霹靂開疆紀 第13集"
+      },
+      {
+        "key": "來自",
+        "value": "東瀛"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://beta.pili.com.tw/role-view.php?rid=feiniao"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 83627,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d6/d1/117112_crt_KXEK0.jpg?r=1664512037",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d6/d1/117112_crt_KXEK0.jpg?r=1664512037",
+      "large": "https://lain.bgm.tv/pic/crt/l/d6/d1/117112_crt_KXEK0.jpg?r=1664512037",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d6/d1/117112_crt_KXEK0.jpg?r=1664512037"
+    },
+    "summary": "男を虜にする魔法を使う。以前、丹波のパイ屋で働いていた。丹波に片想いをしている。",
+    "name": "飛鳥",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "飞鸟"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://dorohedoro.net/"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 117112,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/cc/4b/134925_crt_EG4cJ.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/cc/4b/134925_crt_EG4cJ.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/cc/4b/134925_crt_EG4cJ.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cc/4b/134925_crt_EG4cJ.jpg"
+    },
+    "summary": "●飛鳥\r\n裕福な田舎の家庭で生まれ育った女の子。羽のようなデザインのピアスを気に入っている。\r\n「ヒメ」という偽名を使ってパパ活をしている不良。目標のためにお金を貯めているようだ。",
+    "name": "飛鳥",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 134925,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/70/135636_crt_DnJNa.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d0/70/135636_crt_DnJNa.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/d0/70/135636_crt_DnJNa.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/70/135636_crt_DnJNa.jpg"
+    },
+    "summary": "そうりゅう型潜水艦の鋼の乙女。皇族とも縁のある古くからの由緒ある家系で、不埒なことを嫌うお堅い性格。その他の潜水艦乙女が皆原子力潜水艦のため、通常型故のパワー面の差を少し気にしているが、そうりゅう型は通常動力の潜水艦のなかでも特に高い性能を持っている。",
+    "name": "飛鳥",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "あすか"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 135636,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/4c/145978_crt_kDCak.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/dd/4c/145978_crt_kDCak.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/dd/4c/145978_crt_kDCak.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/4c/145978_crt_kDCak.jpg"
+    },
+    "summary": "月影衆に所属する”くノ一”\r\n孤児として月影衆の頭領に拾われ、そのまま忍術や剣術を仕込まれた。\r\n女性であるにも関わらず、剣術などの強さは他の男達を圧倒している。\r\n身体こそすでに成熟しているが、色事にはうとい。",
+    "name": "飛鳥",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 145978,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/cb/150523_crt_0og7M.jpg?r=1704940645",
+      "grid": "https://lain.bgm.tv/pic/crt/g/29/cb/150523_crt_0og7M.jpg?r=1704940645",
+      "large": "https://lain.bgm.tv/pic/crt/l/29/cb/150523_crt_0og7M.jpg?r=1704940645",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/cb/150523_crt_0og7M.jpg?r=1704940645"
+    },
+    "summary": "翼のひとつ下の学年の後輩ギャル。沙友理とは幼馴染で、「さゆ姉」と呼んで親しくしている。あだ名は「あしゅ・あしゅにゃん」",
+    "name": "飛鳥",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "飞鸟"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Asuka"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://dosankogal-pr.com/#TopChar"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 2
+    },
+    "id": 150523,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/52/164339_crt_HTmV2.jpg?r=1726552282",
+      "grid": "https://lain.bgm.tv/pic/crt/g/7a/52/164339_crt_HTmV2.jpg?r=1726552282",
+      "large": "https://lain.bgm.tv/pic/crt/l/7a/52/164339_crt_HTmV2.jpg?r=1726552282",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/52/164339_crt_HTmV2.jpg?r=1726552282"
+    },
+    "summary": "",
+    "name": "飛鳥",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Asuka"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 164339,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/79/bc/175795_crt_8lph8.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/79/bc/175795_crt_8lph8.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/79/bc/175795_crt_8lph8.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/79/bc/175795_crt_8lph8.jpg"
+    },
+    "summary": "",
+    "name": "飛鳥",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "飞鸟"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Flying Bird"
+          },
+          {
+            "k": "纯假名",
+            "v": "あすか"
+          },
+          {
+            "k": "罗马字",
+            "v": "Asuka"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 175795,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

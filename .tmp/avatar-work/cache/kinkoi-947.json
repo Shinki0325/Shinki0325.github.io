@@ -1,0 +1,68 @@
+[
+  {
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 25,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/53/9f/57823_crt_wrUHr.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/53/9f/57823_crt_wrUHr.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/53/9f/57823_crt_wrUHr.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/53/9f/57823_crt_wrUHr.jpg"
+    },
+    "summary": "本篇\r\n\r\n「人間には品格というものが必要です。特にシルヴィア様と仲良くなさるには」\r\n\r\nシルヴィアの近衛警護を務める女騎士で、愛称は「エル」。\r\n武芸百般に精通し無敵の強さを誇るが、武芸以外はだいたいのことが不器用。\r\nシルヴィアと同じく素直で騙されやすいが、こっちは騙されたとわかるとキレるのでからかわれることは少ない。下ネタが大嫌いで、名前をイジられると怒る。\r\n\r\n学園ではその姿勢が孤高に映り、女子受けが良く、話しかけられれば優しく応じるため、潜在ファンは多い。\r\n-----\r\nFD\r\n\r\n「今この学園で不自由などありませんか？なにかあれば遠慮なく仰ってくださいね」\r\n\r\nシルヴィの近衛警護を務める女騎士。愛称は「エル」\r\n武芸百般に精通し無敵の強さを誇るが、\r\n武芸以外はだいたいのことが不器用。\r\n\r\nただ行軍訓練の経験から料理の知識は豊富で、\r\nエルの作ったシチューは、ミナからも抜群に美味しいと褒められている。\r\n\r\nなによりもシルヴィのことを大切にし、\r\n出会った頃は主人公のことをよく思っていなかったが、\r\n最近は少し信用し認めてくれるようになった。",
+    "name": "エロイナ・ディ・カバリェロ・イスタ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "艾罗伊娜·蒂·卡巴列罗·伊斯塔"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Heroina di Caballero Istaa"
+          },
+          {
+            "k": "昵称",
+            "v": "エル,Elle"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "5月25日"
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      },
+      {
+        "key": "身高",
+        "value": "170cm"
+      },
+      {
+        "key": "BWH",
+        "value": "90/63/87"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://sagaplanets.product.co.jp/works/kinkoi/chara03.html"
+      }
+    ],
+    "stat": {
+      "comments": 24,
+      "collects": 51
+    },
+    "id": 57823,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

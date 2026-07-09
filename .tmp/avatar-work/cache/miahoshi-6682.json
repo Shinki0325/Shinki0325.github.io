@@ -1,0 +1,171 @@
+[
+  {
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 20,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/5c/b5/34202_crt_eL35Z.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/5c/b5/34202_crt_eL35Z.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/5c/b5/34202_crt_eL35Z.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5c/b5/34202_crt_eL35Z.jpg"
+    },
+    "summary": "突然 彗星のごとく帰ってきた、暁斗たちの幼なじみ。\r\n明るく前向きな性格と、「やってみよう！」の一言で行動する旺盛な好奇心の持ち主。\r\n小さい頃はいつも 暁斗・沙夜 と3人で、秘密の天文台で星を観ていた。\r\n彼女にとって天体観測とは、銀河を旅する行為。 まだ見ぬ宙の彼方へ、その好奇心はまさしく “ひかり” の速度で広がっていった。\r\nが、そんな日々は自身の引っ越しによって終わりを迎えてしまう。\r\n\r\nその後は暁斗たちと疎遠となっていたが、年月を経てついに再開。\r\n当時は活発な男の子のようだったが、可愛くてスタイルも良い女子校生へと変身。\r\nそして、再び暁斗たちと星を眺める賑やかな日々を取り戻す。\r\n\r\n「それじゃ あたしたちも行こっか。 秘密の天文台へ」",
+    "name": "箒星ひかり",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "帚星光"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "箒星 ひかり"
+          },
+          {
+            "k": "纯假名",
+            "v": "ほうきぼし ひかり"
+          },
+          {
+            "k": "罗马字",
+            "v": "Houkiboshi Hikari"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "8月20日"
+      },
+      {
+        "key": "血型",
+        "value": "O型"
+      },
+      {
+        "key": "身高",
+        "value": "161cm / 142cm（幼年）"
+      },
+      {
+        "key": "BWH",
+        "value": "B91/ W58/ H88"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://www.pulltop.com/full-of-stars/chara.html"
+      }
+    ],
+    "stat": {
+      "comments": 17,
+      "collects": 54
+    },
+    "id": 34202,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/6b/97/105240_crt_4uSUu.jpg?r=1643297938",
+      "grid": "https://lain.bgm.tv/pic/crt/g/6b/97/105240_crt_4uSUu.jpg?r=1643297938",
+      "large": "https://lain.bgm.tv/pic/crt/l/6b/97/105240_crt_4uSUu.jpg?r=1643297938",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6b/97/105240_crt_4uSUu.jpg?r=1643297938"
+    },
+    "summary": "黒猫亭の厨房係。\r\n料理の腕はぴかいち。\r\n\r\nおっとり丁寧で楚々とした人形。\r\nいつも朗らかで、周囲を和ませる、お姉さん的存在。\r\n筆まめで、毎日几帳面に日記を付けている。",
+    "name": "箒星",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "箒星"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ほうきぼし"
+          },
+          {
+            "k": "罗马字",
+            "v": "Houkiboshi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "158cm"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://primadoll.jp/houkiboshi.html"
+      },
+      {
+        "key": "好きなもの",
+        "value": "日記や手紙を書くこと"
+      },
+      {
+        "key": "夢",
+        "value": "大きな声で歌いたい"
+      },
+      {
+        "key": "キャラクター原案",
+        "value": "森倉円"
+      }
+    ],
+    "stat": {
+      "comments": 10,
+      "collects": 20
+    },
+    "id": 105240,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/be/46/142470_crt_MDc6B.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/be/46/142470_crt_MDc6B.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/be/46/142470_crt_MDc6B.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/be/46/142470_crt_MDc6B.jpg"
+    },
+    "summary": "【彗星館の女主人】\r\n種族：悪魔　誕生日：柘榴の月1日\r\n身長：高　体重：軽い\r\n\r\n彗星館を取り仕切る女悪魔。\r\n常に薄い微笑を浮かべ、楽園に迷い込んだ者を館へ導く。\r\nただし、それが正しいかどうかは不明。\r\n年齢不詳だが、かつて存在した人魔共存の楽園出身であるような素振りを見せる。\r\n外から来る者に、さほど興味はなく、来る者は拒まず去る者は追わずのスタンスを貫いている。\r\nただし、元々館の住人に関しては、度を超すほどの過保護さをみせる。",
+    "name": "箒星",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 142470,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

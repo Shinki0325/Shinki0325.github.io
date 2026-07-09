@@ -1,0 +1,544 @@
+[
+  {
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 8,
+    "birth_year": null,
+    "blood_type": 4,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/d3/76763_crt_5h5ak.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f5/d3/76763_crt_5h5ak.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f5/d3/76763_crt_5h5ak.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/d3/76763_crt_5h5ak.jpg"
+    },
+    "summary": "あんたは今、幸せの途中を、ハツピーロードを突き進んでいる真つ最中なのよ！\r\n\r\n風見学園二年生。アクティ部所属。\r\n主人公の幼馴染。数年振りに風見市に帰ってきて、主人公と再会を果たす。明るく、社交的で、しかも美人ということもあり、一躍にクラスの中心的な存在になる。\r\nとにかく、面白いことをしたい、皆で楽しい学園生活を過ごしたいという気持ちから学園転入後、「行動部」通称「アクティ部」とという部を立ら上げる。",
+    "name": "小日向響",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "小日向响"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Kohinata Hibiki"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "8月8日"
+      },
+      {
+        "key": "血型",
+        "value": "O"
+      },
+      {
+        "key": "身高",
+        "value": "155"
+      },
+      {
+        "key": "BWH",
+        "value": "87/57/81"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://sagaplanets.product.co.jp/works/kakenuke/character.html"
+      },
+      {
+        "key": "兴趣",
+        "value": "スケポー、ワクワクすること"
+      },
+      {
+        "key": "喜欢的食物",
+        "value": "りんご、パンケーキ"
+      }
+    ],
+    "stat": {
+      "comments": 24,
+      "collects": 52
+    },
+    "id": 76763,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d6/d7/184206_crt_Y0m4h.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d6/d7/184206_crt_Y0m4h.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/d6/d7/184206_crt_Y0m4h.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d6/d7/184206_crt_Y0m4h.jpg"
+    },
+    "summary": "",
+    "name": "小日向",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "小日向"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 184206,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/57/08/172088_crt_kNO4Y.jpg?r=1740668884",
+      "grid": "https://lain.bgm.tv/pic/crt/g/57/08/172088_crt_kNO4Y.jpg?r=1740668884",
+      "large": "https://lain.bgm.tv/pic/crt/l/57/08/172088_crt_kNO4Y.jpg?r=1740668884",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/57/08/172088_crt_kNO4Y.jpg?r=1740668884"
+    },
+    "summary": "千葉モーターサンズスタジアムで働く売り子歴10年のOL。\r\n売り子たちのお姉さん的存在で1日に400杯売ったことのあるエース。\r\n過去の写真で新人の頃は盛り髪ギャルだったことが判明。\r\nお客さんとの距離感も抜群でプロ意識が高い。",
+    "name": "こひなた",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "小日向"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 7
+    },
+    "id": 172088,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/77/3f/5598_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/77/3f/5598_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/77/3f/5598_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/77/3f/5598_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "小日向雄真",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "小日向雄真"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "小日向 雄真"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kohinata Yuuma"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 5598,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/e7/6981_crt_d2DZH.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/af/e7/6981_crt_d2DZH.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/af/e7/6981_crt_d2DZH.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/e7/6981_crt_d2DZH.jpg"
+    },
+    "summary": "15歳。高校通学のため、耕四郎の家に同居した。兄を慕う行動が、猜疑心を持つ耕四郎には誤解され衝突しているが耕四郎の不器用な優しさや本当の自分を理解してくれる姿に惹かれてゆく。\r\n同級生からラブレターをもらった事をきっかけに兄への感情が恋であることを自覚する。",
+    "name": "小日向七夏",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "小日向七夏"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "小日向 七夏"
+          },
+          {
+            "k": "纯假名",
+            "v": "こひなた なのか"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kohinata Nanoka"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 7,
+      "collects": 34
+    },
+    "id": 6981,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/1b/6982_crt_XM0Av.jpg?r=1716974052",
+      "grid": "https://lain.bgm.tv/pic/crt/g/80/1b/6982_crt_XM0Av.jpg?r=1716974052",
+      "large": "https://lain.bgm.tv/pic/crt/l/80/1b/6982_crt_XM0Av.jpg?r=1716974052",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/1b/6982_crt_XM0Av.jpg?r=1716974052"
+    },
+    "summary": "耕四郎と七夏の母。美容院を営んでいる。二人の持っている熊のぬいぐるみは彼女の手作り。",
+    "name": "小日向梢絵",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "小日向梢绘"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "小日向 梢絵"
+          },
+          {
+            "k": "纯假名",
+            "v": "こひなた まきえ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kohinata Makie"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 6982,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/eb/f9/13975_crt_zNBw0.jpg?r=1440368347",
+      "grid": "https://lain.bgm.tv/pic/crt/g/eb/f9/13975_crt_zNBw0.jpg?r=1440368347",
+      "large": "https://lain.bgm.tv/pic/crt/l/eb/f9/13975_crt_zNBw0.jpg?r=1440368347",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/eb/f9/13975_crt_zNBw0.jpg?r=1440368347"
+    },
+    "summary": "需要用3个妹妹的汁液将瓶子收集满才能解开诅咒。但由于最终的失败，诅咒把他的性别进行了转换。",
+    "name": "小日向晶",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "小日向晶"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "小日向 晶"
+          },
+          {
+            "k": "纯假名",
+            "v": "こひなた あきら"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kohinata Akira"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "Wkipedia"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 13975,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/97/31/13976_crt_11Cx1.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/97/31/13976_crt_11Cx1.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/97/31/13976_crt_11Cx1.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/97/31/13976_crt_11Cx1.jpg"
+    },
+    "summary": "3姐妹中的长女。是个活泼开朗的女孩。",
+    "name": "小日向結希",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "小日向结希"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "小日向 結希"
+          },
+          {
+            "k": "纯假名",
+            "v": "こひなた ゆき"
+          },
+          {
+            "k": "罗马字",
+            "v": "kohinata yuki"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      },
+      {
+        "key": "身高",
+        "value": "151cm"
+      },
+      {
+        "key": "BWH",
+        "value": "77 55 79"
+      },
+      {
+        "key": "引用来源",
+        "value": "Wkipedia"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 7
+    },
+    "id": 13976,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/c5/13977_crt_v41UK.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c9/c5/13977_crt_v41UK.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c9/c5/13977_crt_v41UK.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/c5/13977_crt_v41UK.jpg"
+    },
+    "summary": "3姐妹中的次女。是个文静的女孩，不爱说话。",
+    "name": "小日向未卯",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "小日向未卯"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "小日向 未卯"
+          },
+          {
+            "k": "纯假名",
+            "v": "こひなた みう"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kohinata Miu"
+          }
+        ]
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      },
+      {
+        "key": "身高",
+        "value": "146cm"
+      },
+      {
+        "key": "BWH",
+        "value": "73 50 75"
+      },
+      {
+        "key": "引用来源",
+        "value": "Wkipedia"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 7
+    },
+    "id": 13977,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": 2,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/57/1f/13978_crt_SSNBi.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/57/1f/13978_crt_SSNBi.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/57/1f/13978_crt_SSNBi.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/57/1f/13978_crt_SSNBi.jpg"
+    },
+    "summary": "3姐妹中的么女。无论什么时候都很有干劲。",
+    "name": "小日向菜々",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "小日向菜菜"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "小日向 菜々"
+          },
+          {
+            "k": "纯假名",
+            "v": "こひなた なな"
+          },
+          {
+            "k": "罗马字",
+            "v": "kohinata nana"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "血型",
+        "value": "B"
+      },
+      {
+        "key": "身高",
+        "value": "148cm"
+      },
+      {
+        "key": "BWH",
+        "value": "70 51 72"
+      },
+      {
+        "key": "引用来源",
+        "value": "Wkipedia"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 7
+    },
+    "id": 13978,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

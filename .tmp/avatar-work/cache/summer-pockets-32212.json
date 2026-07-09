@@ -1,0 +1,494 @@
+[
+  {
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 31,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/5c/59849_crt_OekBv.jpg?r=1726452140",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c5/5c/59849_crt_OekBv.jpg?r=1726452140",
+      "large": "https://lain.bgm.tv/pic/crt/l/c5/5c/59849_crt_OekBv.jpg?r=1726452140",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/5c/59849_crt_OekBv.jpg?r=1726452140"
+    },
+    "summary": "自分探しの少女\r\n\r\n身長：152cm\r\n体重：38kg\r\n3サイズ：B78 W56 H80\r\n趣味：ぬいぐるみ集め\r\n好物：わたあめ\r\n座右の銘：私は私を探しています\r\n原画：永山ゆうのん\r\nCV：岩井映美里\r\n\r\n島の灯台の近くに現れる少女。\r\n真面目で素直なドイツ系ハーフで、夏休みを利用して『やりたいこと探し』をしている。\r\n\r\n海に流れ着いたゴミなどを掃除しては、まだ使える物を見つけ大事にする。\r\n困ったことや、言葉に困ると「むぎゅ」と呻く。\r\n\r\n異国の古い歌をよく口ずさんでいる。\r\n\r\n「探し物です。 やりたいことを探しています」",
+    "name": "紬ヴェンダース",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "䌷文德斯"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "紬 ヴェンダース"
+          },
+          {
+            "k": "纯假名",
+            "v": "つむぎ ヴェンダース"
+          },
+          {
+            "k": "罗马字",
+            "v": "Tsumugi Wenders"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "8月31日"
+      },
+      {
+        "key": "身高",
+        "value": "152cm"
+      },
+      {
+        "key": "体重",
+        "value": "38kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B78/W56/H80"
+      },
+      {
+        "key": "年龄",
+        "value": "16岁"
+      }
+    ],
+    "stat": {
+      "comments": 200,
+      "collects": 471
+    },
+    "id": 59849,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/3d/49/130020_crt_IV92P.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/3d/49/130020_crt_IV92P.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/3d/49/130020_crt_IV92P.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3d/49/130020_crt_IV92P.jpg"
+    },
+    "summary": "夜の国」第2夜の主人公。\r\n人見知りで意地っ張り、少々素直になれないところのある少女。",
+    "name": "紬",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "つむぎ"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 130020,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/34/dc/153967_crt_oBy1H.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/34/dc/153967_crt_oBy1H.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/34/dc/153967_crt_oBy1H.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/34/dc/153967_crt_oBy1H.jpg"
+    },
+    "summary": "",
+    "name": "ツムギ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "紬"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 12
+    },
+    "id": 153967,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 9,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/52/cf/7907_crt_iNWQ3.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/52/cf/7907_crt_iNWQ3.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/52/cf/7907_crt_iNWQ3.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/52/cf/7907_crt_iNWQ3.jpg"
+    },
+    "summary": "",
+    "name": "紬屋雨",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "䌷屋雨"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "紬屋雨"
+          },
+          {
+            "k": "纯假名",
+            "v": "つむぎや ウルル"
+          },
+          {
+            "k": "罗马字",
+            "v": "Tsumugiya Ururu"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "9月9日"
+      },
+      {
+        "key": "身高",
+        "value": "141cm"
+      },
+      {
+        "key": "体重",
+        "value": "32kg"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 9
+    },
+    "id": 7907,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 14,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/be/5d/46958_crt_2e3OE.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/be/5d/46958_crt_2e3OE.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/be/5d/46958_crt_2e3OE.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/be/5d/46958_crt_2e3OE.jpg"
+    },
+    "summary": "从幼时就拥有天才头脑的舜的青梅竹马，进行着智能机器人开发的科学家。\r\n虽然会被认为是喜欢搞实验的冷酷科学家，但其实是个温柔的人。\r\n和舜同龄但心理年龄很高，会像小恶魔般玩弄舜。",
+    "name": "紬木沙羅",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "紬木 沙羅"
+          },
+          {
+            "k": "纯假名",
+            "v": "つむぎ さら"
+          },
+          {
+            "k": "罗马字",
+            "v": "Tsumugi Sara"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "3月14日"
+      },
+      {
+        "key": "身高",
+        "value": "153cm"
+      },
+      {
+        "key": "体重",
+        "value": "46kg"
+      },
+      {
+        "key": "BWH",
+        "value": "91（G）・ 59 ・ 89cm"
+      }
+    ],
+    "stat": {
+      "comments": 10,
+      "collects": 59
+    },
+    "id": 46958,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/17/b0/94563_crt_yZTEZ.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/17/b0/94563_crt_yZTEZ.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/17/b0/94563_crt_yZTEZ.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/17/b0/94563_crt_yZTEZ.jpg"
+    },
+    "summary": "魔王の手違いで異世界転生してしまったギャル。\r\n男より女友達の方が多いタイプ。\r\nそのコミュ力で村娘とすぐ仲良くなれる。\r\n\r\n彼氏と上手くいっておらず1時間前に別れたばかり。\r\n現在かなり欲求不満気味。",
+    "name": "紬城恋",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "紬城 恋"
+          },
+          {
+            "k": "纯假名",
+            "v": "つむぎ れん"
+          }
+        ]
+      },
+      {
+        "key": "身高",
+        "value": "156cm"
+      },
+      {
+        "key": "BWH",
+        "value": "96/57/89（Hカップ）"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 94563,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/0c/57/111368_crt_8DdzJ.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/0c/57/111368_crt_8DdzJ.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/0c/57/111368_crt_8DdzJ.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0c/57/111368_crt_8DdzJ.jpg"
+    },
+    "summary": "とある会社の社長で、“レイ”のエース。レイが女性であることを知りながら、美しい夢を見せてくれるレイをエースとして支えている。",
+    "name": "紬十喜子",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "䌷十喜子"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 111368,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 1,
+    "gender": "male",
+    "birth_day": 28,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/3e/72/157751_crt_R8Rus.jpg?r=1742622900",
+      "grid": "https://lain.bgm.tv/pic/crt/g/3e/72/157751_crt_R8Rus.jpg?r=1742622900",
+      "large": "https://lain.bgm.tv/pic/crt/l/3e/72/157751_crt_R8Rus.jpg?r=1742622900",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3e/72/157751_crt_R8Rus.jpg?r=1742622900"
+    },
+    "summary": "長身・金髪・強面・物静か。\r\nそんな見た目から周囲に「不良」「怖い人」と言われている。\r\n実家はケーキ屋で、たまに手伝いをしている。",
+    "name": "紬凛太郎",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "䌷凛太郎"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "紬 凛太郎"
+          },
+          {
+            "k": "纯假名",
+            "v": "つむぎ りんたろう"
+          },
+          {
+            "k": "罗马字",
+            "v": "Tsumugi Rintaro"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "1月28日"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "身高",
+        "value": "190cm"
+      },
+      {
+        "key": "年龄",
+        "value": "16"
+      }
+    ],
+    "stat": {
+      "comments": 32,
+      "collects": 26
+    },
+    "id": 157751,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/bc/159596_crt_IzqEg.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/6c/bc/159596_crt_IzqEg.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/6c/bc/159596_crt_IzqEg.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/bc/159596_crt_IzqEg.jpg"
+    },
+    "summary": "",
+    "name": "紬綾音",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "158CM"
+      },
+      {
+        "key": "体重",
+        "value": "48KG"
+      },
+      {
+        "key": "BWH",
+        "value": "84-57-88"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 159596,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ae/9c/159599_crt_sdsLk.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ae/9c/159599_crt_sdsLk.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ae/9c/159599_crt_sdsLk.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ae/9c/159599_crt_sdsLk.jpg"
+    },
+    "summary": "",
+    "name": "紬千早",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 159599,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

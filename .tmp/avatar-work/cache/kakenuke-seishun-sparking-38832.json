@@ -1,0 +1,519 @@
+[
+  {
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 27,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/64/54/76766_crt_ddItq.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/64/54/76766_crt_ddItq.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/64/54/76766_crt_ddItq.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/64/54/76766_crt_ddItq.jpg"
+    },
+    "summary": "何よ。こんなに優しい先輩を捕まえて、随分失礼な態度ね\r\n\r\n風見学園三年生。アクティ部所属。\r\nサバサバした性格で、姉御肌。周囲から頼られることが多い。男に対する性が低く照れて、ついついそっけない態度を取ってしまい、「自分は末熟者」と自己嫌悪で凹んでいる。\r\n響とは従姉妹で、妹のように可愛がってきたがってきた響が立ち上げた「アクティ部」に入を決めた。\r\nスポーツ全搬が得意で、マリンスボーツと合気道を小さい頃からやっている。",
+    "name": "海堂凪子",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "海堂凪子"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Kaido Nagiko"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "5月27日"
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      },
+      {
+        "key": "身高",
+        "value": "159"
+      },
+      {
+        "key": "BWH",
+        "value": "83/56/85"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://sagaplanets.product.co.jp/works/kakenuke/character.html"
+      },
+      {
+        "key": "兴趣",
+        "value": "マリンスポーツ、合気道"
+      },
+      {
+        "key": "喜欢的食物",
+        "value": "焼きそばバン、シチュー"
+      }
+    ],
+    "stat": {
+      "comments": 7,
+      "collects": 28
+    },
+    "id": 76766,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ea/fd/43690_crt_5isz7.jpg?r=1469701754",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ea/fd/43690_crt_5isz7.jpg?r=1469701754",
+      "large": "https://lain.bgm.tv/pic/crt/l/ea/fd/43690_crt_5isz7.jpg?r=1469701754",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ea/fd/43690_crt_5isz7.jpg?r=1469701754"
+    },
+    "summary": "",
+    "name": "海堂",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "海堂"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 43690,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/6b/6c/183874_crt_5XeEP.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/6b/6c/183874_crt_5XeEP.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/6b/6c/183874_crt_5XeEP.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6b/6c/183874_crt_5XeEP.jpg"
+    },
+    "summary": "",
+    "name": "海堂",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "海堂"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 183874,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 5,
+    "gender": "male",
+    "birth_day": 11,
+    "birth_year": null,
+    "blood_type": 2,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/58/d2/6508_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/58/d2/6508_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/58/d2/6508_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/58/d2/6508_crt_anidb.jpg"
+    },
+    "summary": "通称「マムシ」。トレードマークのバンダナは、登場して間もない頃から定着[2]。同じ部内の2年生・桃城武とはしょっちゅうケンカしているが良きライバル。校内ランキング戦でリョーマがレギュラーメンバーの中で初めて試合した相手でもある。人付き合いが苦手で無口、少々血の気が多くケンカっ早い部分もあり、加えて目つきの鋭い強面であるため、他人から誤解を受けることが多い。実際は礼儀正しく常識をわきまえ、正義感の強い人物である。また、ネコをはじめとする小動物が好きという一面も持ち合わせる。大変な努力家であり、日夜のトレーニングを欠かすことがなく、1日の走行距離は平均25キロ。\r\n持ち前の精神力による持久力とスネイクにより相手の体力を奪い、そのことにより集中力をも奪われた相手をじわじわいたぶるようなプレイが得意（OVAの比嘉中戦D1の時には、パワーリストを付け、サーブ以外での乾の手助け無し、スネイク無しで、相手を棄権負けさせて勝利したほどの体力を見せ付けた）。技は基本スネイクオンリーだが、六里ヶ丘中との草試合では柳生とダブルスを組み、入れ替わりプレイで「レーザービーム」、四天宝寺戦では「ダンクスマッシュ」と「ジャックナイフ」を使用したことがある。元はシングルスプレイヤー希望であり、そのための技であるブーメランスネイク習得のため乾と特訓をしていたが、それがきっかけで乾とはその先何度もペアを組み、最終的には全国でも通用するダブルスとなった。全国では全試合ダブルスで出場しており、4試合中3試合乾とペアを組んだ。3年生の引退後、手塚の後を継いでテニス部の部長となった。\r\n『新-』では、U-17日本代表合宿に参加。脱落を賭けたタイブレークマッチで手塚と対戦し、部長としての心構えを教えられた上で敗北。その後、崖の上のコートでの特訓を経て、「革命軍」として2番コートに所属。\r\n1軍入れ替え戦発表後、真田と持久走でパワーアップを図る最中、種ケ島にマイドリンクを盗まれる。",
+    "name": "海堂薫",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "海堂薰"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "海堂 薫"
+          },
+          {
+            "k": "纯假名",
+            "v": "かいどう かおる"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kaidō Kaoru"
+          },
+          {
+            "k": "昵称",
+            "v": "マムシ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "5月11日"
+      },
+      {
+        "key": "血型",
+        "value": "B"
+      },
+      {
+        "key": "身高",
+        "value": "173"
+      },
+      {
+        "key": "体重",
+        "value": "57"
+      },
+      {
+        "key": "引用来源",
+        "value": "wiki/baidu"
+      },
+      {
+        "key": "星座",
+        "value": "金牛座"
+      },
+      {
+        "key": "学校",
+        "value": "青春学園中等部"
+      },
+      {
+        "key": "学年",
+        "value": "中学2年"
+      },
+      {
+        "key": "利き腕",
+        "value": "右"
+      },
+      {
+        "key": "击球类型",
+        "value": "「稳守突击型」(擅长稳定的底线抽击，令对手露出破绽。）、耐力型"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 8
+    },
+    "id": 6508,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/46/16740_crt_300yT.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d0/46/16740_crt_300yT.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/d0/46/16740_crt_300yT.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/46/16740_crt_300yT.jpg"
+    },
+    "summary": "巴别塔高中部A班学生，有名的跷课大王。个性开朗外向的他在一次机缘下结识晓月。\r\n看似平凡，实则为恐怖组织“血色黄昏”的成员，接近晓月的目的是为了观察。有着不弱于晓月的强大实力。",
+    "name": "海堂元春",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "海堂元春"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "かいどう もとはる"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "zh.wikipedia.org"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 16740,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/0d/73/73332_crt_4vltl.jpg?r=1688310820",
+      "grid": "https://lain.bgm.tv/pic/crt/g/0d/73/73332_crt_4vltl.jpg?r=1688310820",
+      "large": "https://lain.bgm.tv/pic/crt/l/0d/73/73332_crt_4vltl.jpg?r=1688310820",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0d/73/73332_crt_4vltl.jpg?r=1688310820"
+    },
+    "summary": "オニキスのジャックエース兼組長であり、巨大企業である海堂グループの御曹司。\r\n才能のる学生を好敵手として見ており、特に自身と同じジャックエースである睦実 介は「海堂リスト」のトップに入っている。",
+    "name": "海堂岳信",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "海堂岳信"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "かいどう だけしん"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kaido Dakeshin"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 73332,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/7f/81/91268_crt_MpQkU.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/7f/81/91268_crt_MpQkU.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/7f/81/91268_crt_MpQkU.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7f/81/91268_crt_MpQkU.jpg"
+    },
+    "summary": "鉄道会社を有する裏社会の出資者たちが、【特別性奴創造計画】のため自分たちにとって都合のいいように作り上げた男。\r\n元々は孤児である。計画に関わる者にその身柄を引き取られた後、幼い頃から性的技術を仕込まれ、生来の才能や身体能力にも恵まれた精治は、計画実行のため【満潮】の車掌に任命された。\r\n精治を育てた者たちは気づいていないが、実は天性の野心家である。\r\n精治はこの計画を逆に利用し、機会を見て一気に権力を掌握することを考えている。\r\n己の欲望に忠実な性格で、【欲・即・姦】がポリシーだが、実現のためには必要なだけ欲望を我慢することもできる計画的な一面も持つ。\r\n二面性があり、人のいい爽やかな車掌と、邪悪な○辱鬼のふたつの顔を巧みに使い分ける。",
+    "name": "海堂精治",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "かいどう せいじ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://www.getchu.com/soft.phtml?id=540925"
+      },
+      {
+        "key": "动画版CV",
+        "value": "鶴田力"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 91268,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 12,
+    "gender": "male",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c3/35/94477_crt_tBBAl.jpg?r=1618030352",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c3/35/94477_crt_tBBAl.jpg?r=1618030352",
+      "large": "https://lain.bgm.tv/pic/crt/l/c3/35/94477_crt_tBBAl.jpg?r=1618030352",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c3/35/94477_crt_tBBAl.jpg?r=1618030352"
+    },
+    "summary": "普通の学校に通いながらもアイドル活動に励む高校生。大人びていてクールな印象を持たれるが、恥ずかしがり屋な一面も。実は大の野球好きで、野球の話になるとつい熱くなってしまう。本屋でバイトをしており、時折行われる子ども達を集めた読み聞かせにも挑戦している。",
+    "name": "海堂飛鳥",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "海堂飞鸟"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "かいどう あすか"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kaido Asuka"
+          },
+          {
+            "k": "昵称",
+            "v": "飛鳥さん、飛鳥くん"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "12月1日"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "身高",
+        "value": "175cm"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 94477,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/6a/ee/98703_crt_rIc5z.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/6a/ee/98703_crt_rIc5z.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/6a/ee/98703_crt_rIc5z.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6a/ee/98703_crt_rIc5z.jpg"
+    },
+    "summary": "十年前に突然失踪した智基の叔父。海の町の時間が『巻き戻る』時に流れた歌『カナリア』のボーカルでもあるが、失踪した後に彼の消息を知る者はいない。\r\n失踪当時は２１歳。深山学園大学部三年生。友人達と結成していたバンドにはメジャーデビューの話もあった。",
+    "name": "海堂一基",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "かいどう・いつき"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://granatstealth.tumblr.com/post/63364183702"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 98703,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/90/5e/101294_crt_14Jyt.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/90/5e/101294_crt_14Jyt.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/90/5e/101294_crt_14Jyt.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/90/5e/101294_crt_14Jyt.jpg"
+    },
+    "summary": "本作の主人公。大統領・大空翔子の下に新たに赴任した首席補佐官。\r\n戦災孤児であり、5歳の頃、被災地で倒れていたところを翔子に発見された。\r\nそれ以前の記憶はなく、前大統領「大空翼一郎」に引き取られ、翔子の幼馴染として育った。\r\n他人の考えを読めてしまうという特殊な才能を持ち、史上２人めの「介入者」として認められた。\r\nこのためミスティクル研究者の安之雲ミブリによって、ミスティクル・ダイブ−他人の精神世界に介入する能力者として選出され、高野山の研究所へ赴任。それ以来、研究所でダイブの訓練を積んでいた。\r\n大統領首席補佐官に着任するために軽井沢に戻ってきたところから、物語は始まる。",
+    "name": "海堂清人",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://kaihoushoujo.jp/character/index.html"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 101294,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

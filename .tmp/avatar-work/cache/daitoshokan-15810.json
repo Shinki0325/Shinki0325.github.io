@@ -1,0 +1,460 @@
+[
+  {
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 16,
+    "birth_year": null,
+    "blood_type": 2,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/67/16641_crt_y3FcY.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f5/67/16641_crt_y3FcY.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f5/67/16641_crt_y3FcY.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/67/16641_crt_y3FcY.jpg"
+    },
+    "summary": "明るく人見知りしない性格で、初対面の人にも積極的に話しかける強い心臓の持ち主。\r\n友人相手には、遠くから手を振りながら駆け寄って来るような親しみを見せる一方で、年上には丁寧語を使うため、馴れ馴れしさはない。\r\nどれだけいじられてもめげることなく、いつも部室の雰囲気を明るくしている。\r\nまさに図書部のムードメーカー的存在。\r\n\r\n「いやいや、それは違うっていうか…… 先輩、いきなりマジにならないで下さい」",
+    "name": "鈴木佳奈",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "铃木佳奈"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "鈴木 佳奈"
+          },
+          {
+            "k": "纯假名",
+            "v": "すずき かな"
+          },
+          {
+            "k": "罗马字",
+            "v": "Suzuki Kana"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "06-16"
+      },
+      {
+        "key": "血型",
+        "value": "B"
+      },
+      {
+        "key": "身高",
+        "value": "148.0cm"
+      },
+      {
+        "key": "体重",
+        "value": "41.1kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B78(B)/W54/H79"
+      }
+    ],
+    "stat": {
+      "comments": 61,
+      "collects": 299
+    },
+    "id": 16641,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/33/26/2899_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/33/26/2899_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/33/26/2899_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/33/26/2899_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "鈴木",
+    "infobox": [
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "鈴木"
+          },
+          {
+            "k": "罗马字",
+            "v": "Suzuki"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 2899,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/57/63/6583_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/57/63/6583_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/57/63/6583_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/57/63/6583_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "鈴木",
+    "infobox": [
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "鈴木"
+          },
+          {
+            "k": "罗马字",
+            "v": "Suzuki"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 6583,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/1e/6757_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/6c/1e/6757_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/6c/1e/6757_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/1e/6757_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "鈴木",
+    "infobox": [
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Suzuki"
+          },
+          {
+            "k": "日文名",
+            "v": "鈴木"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 6757,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b4/3c/41056_crt_v44b7.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b4/3c/41056_crt_v44b7.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/b4/3c/41056_crt_v44b7.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b4/3c/41056_crt_v44b7.jpg"
+    },
+    "summary": "",
+    "name": "鈴木",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      }
+    ],
+    "stat": {
+      "comments": 5,
+      "collects": 2
+    },
+    "id": 41056,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/0a/bd/43030_crt_69Z15.jpg?r=1467496120",
+      "grid": "https://lain.bgm.tv/pic/crt/g/0a/bd/43030_crt_69Z15.jpg?r=1467496120",
+      "large": "https://lain.bgm.tv/pic/crt/l/0a/bd/43030_crt_69Z15.jpg?r=1467496120",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0a/bd/43030_crt_69Z15.jpg?r=1467496120"
+    },
+    "summary": "",
+    "name": "鈴木",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "铃木"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 1
+    },
+    "id": 43030,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/75/f0/92559_crt_X0eL0.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/75/f0/92559_crt_X0eL0.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/75/f0/92559_crt_X0eL0.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/75/f0/92559_crt_X0eL0.jpg"
+    },
+    "summary": "8号のサポートシステム。馬と融合したバグラーで、普段はウマミミ少女の姿をしている。転校生として藤井たちのクラスに転入してきた。藤井や極子に助言を与えたりと協力的。8号には忠誠を誓っているが平時はギャグ担当であり、彼のシャワーシーンを盗撮して映像資料に混ぜたり、過激な下ネタを放って主人にツッコませている。",
+    "name": "鈴木",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "铃木"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Bell Wood"
+          },
+          {
+            "k": "日文名",
+            "v": "ベルウッド"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 92559,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/85/35/106517_crt_22Z4k.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/85/35/106517_crt_22Z4k.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/85/35/106517_crt_22Z4k.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/85/35/106517_crt_22Z4k.jpg"
+    },
+    "summary": "立花家の居室の隣に住む主婦。原作の初登場は11巻。アニメ初登場は38話。本名は、下の名前は「杏（あん）」。「鈴木」という名前はアニメのみの設定で、原作では越野の前に住んでいた隣人の名前であり、越野とは無関係。\r\n垂れ目。母はよくおすそわけをもらっている。\r\nりん（声 - こじまかずこ）という幼い娘がおり、アニメ第1期では母譲りの垂れ目で年齢も幼稚園児くらいに描かれたが、アニメ第2期及び原作では丸目で赤ん坊という設定に描かれている（13巻より）。原作16巻以降及びアニメ第2期では夫のヒロシ（声 - 武田幸史）も登場した。\r\n仕事は漫画家で、アシスタントが2人いる。シロちゃん（声 - 永澤菜教）は漫画家を目指しており、背景や服などの絵を描いている他、りんの面倒見や買い物も担当している。クマゴロウ（声 - 片桐真衣）は、越野からは「ためぞう」とも言われている。\r\n担当編集者からもらったアドベントカレンダーの中に入ったチョコを毎日1つずつ開けて食べる予定だったが、お腹が空いて1人で食べてしまった。コーヒーを仕事中に1杯飲むのが日課で、締切前の修羅場には濃いコーヒーを2杯飲むと仕事がスムーズに運ぶらしいが、その後アシスタントを長々と説教するため、諸刃の剣でもある。",
+    "name": "鈴木",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "铃木"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "越野庵"
+          },
+          {
+            "k": "别名",
+            "v": "越野あん"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://ja.wikipedia.org/wiki/あたしンちの登場人物"
+      },
+      {
+        "key": "関係",
+        "value": "同じマンションに住む母の知り合い"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 106517,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "",
+      "grid": "",
+      "large": "",
+      "medium": ""
+    },
+    "summary": "県立玄石高校3年生の男子。野球部に所属している。髪型は茶髪のロングヘア。野球部では副キャプテンを務めており、キャプテンの兼子とは特に仲が良く、良好な信頼関係を築いている。容姿端麗で、クールな性格のため異性に人気があるが、鈴木自身はあまり異性に興味がない。中学時代には「井綿リトルリーグ」に所属していて、当時同じチームに所属していた角ケ谷尚志の野球センスを非常に高く買っている。 部ではセカンドを守っているが、実は中学時代まではピッチャーで、守屋宙樹とバッテリーを組んでいた過去を持つ。",
+    "name": "鈴木",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "すずき"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "mangapedia.com/群青にサイレン-jd2umvihq"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 107549,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/13/29/115381_crt_Y8qBx.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/13/29/115381_crt_Y8qBx.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/13/29/115381_crt_Y8qBx.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/13/29/115381_crt_Y8qBx.jpg"
+    },
+    "summary": "２年。\r\n八巻の仲間。\r\n同じく八巻と共謀し以下略。",
+    "name": "鈴木",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "すずき"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "j-am.net/00_bokukare/index.html"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 115381,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

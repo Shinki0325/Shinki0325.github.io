@@ -1,0 +1,507 @@
+[
+  {
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 14,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/85/26/11356_crt_o4Rtr.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/85/26/11356_crt_o4Rtr.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/85/26/11356_crt_o4Rtr.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/85/26/11356_crt_o4Rtr.jpg"
+    },
+    "summary": "被“羽化病”——一种会让人背后长出翅膀的疾病所困扰的少女。\r\n因某一件事而被主人公收养。\r\n亲生父母和养父母都已不在，从懂事起就被当作低级仆人使唤着。\r\n与她那凄苦的人生相反，性格倒是开朗乐观，总能缓和周围气氛。\r\n因此主人公总说她是天真单纯，宛如向日葵般的少女。\r\n至今的人生历程让她练就了家务全能的高超能力，虽说这也让她成为单方面爱照顾主人公的エリス的仇视。",
+    "name": "ユースティア・アストレア",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "尤斯蒂娅·阿斯托利亚"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Eustia Astraea"
+          },
+          {
+            "k": "昵称",
+            "v": "缇娅"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "3月14日"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "身高",
+        "value": "149.6cm"
+      },
+      {
+        "key": "体重",
+        "value": "39.1kg"
+      },
+      {
+        "key": "BWH",
+        "value": "79(C)/54/80"
+      }
+    ],
+    "stat": {
+      "comments": 124,
+      "collects": 403
+    },
+    "id": 11356,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 2,
+    "gender": "female",
+    "birth_day": 11,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/22/cf/184050_crt_546Yk.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/22/cf/184050_crt_546Yk.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/22/cf/184050_crt_546Yk.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/22/cf/184050_crt_546Yk.jpg"
+    },
+    "summary": "打击邪恶是我的使命\r\n\r\n\r\n有着可怕名称, 皎洁死神的少女剑士。\r\n只为打击邪恶的黑魔法师而行动。\r\n虽然个性强硬，但也有喜欢料理和吃饭的可爱的一面。",
+    "name": "유스티아 에델펠트",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "悠丝缇亚"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Justia Edelfeld"
+          },
+          {
+            "k": "日文名",
+            "v": "ユースティア・エーデルフェルト"
+          },
+          {
+            "k": "韩文名",
+            "v": "유스티아 에델펠트"
+          },
+          {
+            "k": "昵称",
+            "v": "悠缇"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "2月11日"
+      },
+      {
+        "key": "身高",
+        "value": "153cm"
+      },
+      {
+        "key": "年龄",
+        "value": "15岁"
+      },
+      {
+        "key": "所属/职位",
+        "value": "卡里安帝国皇家治安部队责任骑士"
+      },
+      {
+        "key": "兴趣",
+        "value": "收集各地区的料理食谱"
+      },
+      {
+        "key": "喜欢的东西",
+        "value": "开心享用料理的人"
+      },
+      {
+        "key": "讨厌的东西",
+        "value": "盯着角看的人"
+      },
+      {
+        "key": "珍爱的东西",
+        "value": "使命，还有···伙伴"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 3
+    },
+    "id": 184050,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/34/6e/58043_crt_o46Z0.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/34/6e/58043_crt_o46Z0.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/34/6e/58043_crt_o46Z0.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/34/6e/58043_crt_o46Z0.jpg"
+    },
+    "summary": "【ルカ】の一級上のルームメイト。\r\nいつも眠そうな顔でぼんやりしている。\r\n会話はいつも端的で説明不足、長くは続かないため、コミュニケーションに難アリ。\r\n色々頭の中では考えているらしいが、外から見ただけでは判別不能＝何を考えているのか分からない。\r\n口癖のように空腹と眠気を訴える。\r\n学内では有名人らしいが……？\r\n\r\n「……ここは壁と床が冷たい。睡眠をとるのに適している。」",
+    "name": "ユース",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "ユース"
+          },
+          {
+            "k": "纯假名",
+            "v": "ユースミルス・C・R・ウィンタテリウム"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "学年",
+        "value": "11年生"
+      },
+      {
+        "key": "身長",
+        "value": "173cm"
+      },
+      {
+        "key": "CV",
+        "value": "石田彰"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 58043,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/cc/dd/11649_crt_mI2m1.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/cc/dd/11649_crt_mI2m1.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/cc/dd/11649_crt_mI2m1.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cc/dd/11649_crt_mI2m1.jpg"
+    },
+    "summary": "「麗しのソフィア号」パイロット。１３才。\r\n「異界人を倒さなければいけない」と使命感に燃え、ソフィア号のパイロットに自ら志願。自分の国が魔族の支配を受けて滅亡しており、両親とはその時に死別。\r\nこの事態を招いた異界王事件に対してやるせない思いを抱いており、ダンに対して反抗的な態度をとり続けている。\r\nカードバトラーとしてはまだまだ半人前で、戦いの中、成長していく。",
+    "name": "ユース・グリンホルン",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "尤斯·格林赫伦"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "ユース・グリンホルン"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 3
+    },
+    "id": 11649,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 12,
+    "gender": "male",
+    "birth_day": 5,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/7e/ce/33906_crt_1YdND.jpg?r=1436088897",
+      "grid": "https://lain.bgm.tv/pic/crt/g/7e/ce/33906_crt_1YdND.jpg?r=1436088897",
+      "large": "https://lain.bgm.tv/pic/crt/l/7e/ce/33906_crt_1YdND.jpg?r=1436088897",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7e/ce/33906_crt_1YdND.jpg?r=1436088897"
+    },
+    "summary": "属于第七位始祖费里德·巴特利一派。",
+    "name": "クローリー・ユースフォード",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "克罗里·尤斯福德"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Crowley Eusford"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "12月5日"
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      },
+      {
+        "key": "身高",
+        "value": "190cm"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 4
+    },
+    "id": 33906,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/21/db/66186_crt_jmm1n.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/21/db/66186_crt_jmm1n.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/21/db/66186_crt_jmm1n.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/21/db/66186_crt_jmm1n.jpg"
+    },
+    "summary": "スウェーデンからの留学生。高校2年生。\r\n劇団ソレイユに所属しており、望とは友人関係。\r\n王子様のような容姿と力強い瞳はどんな女性でもついうっとりしてしまうほど。\r\n現在は叔父の屋敷に居候している。",
+    "name": "羽鳥・ユース・アクセル",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Hatori Y Axel"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 66186,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/01/77974_crt_iofWg.jpg?r=1593499111",
+      "grid": "https://lain.bgm.tv/pic/crt/g/29/01/77974_crt_iofWg.jpg?r=1593499111",
+      "large": "https://lain.bgm.tv/pic/crt/l/29/01/77974_crt_iofWg.jpg?r=1593499111",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/01/77974_crt_iofWg.jpg?r=1593499111"
+    },
+    "summary": "名门尤斯蒂兹家族之后，法学院毕业成绩最高的保持者，因继承父亲的议员之位而进入政治中枢，最终凭借超高的政治手腕与秉政劳民的内政治理手段，成为了帝国宰相。",
+    "name": "フロレンティア・ユースティーツ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "弗洛朗蒂娅·尤斯蒂兹"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "172cm"
+      },
+      {
+        "key": "体重",
+        "value": "52kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B88 W54 H84"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 77974,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ba/76/86192_crt_MgM3K.jpg?r=1602233081",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ba/76/86192_crt_MgM3K.jpg?r=1602233081",
+      "large": "https://lain.bgm.tv/pic/crt/l/ba/76/86192_crt_MgM3K.jpg?r=1602233081",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ba/76/86192_crt_MgM3K.jpg?r=1602233081"
+    },
+    "summary": "古雷斯坦帝国的女元帅，名门世家尤斯蒂兹家族的长女，也是帝国宰相弗洛朗蒂娅的亲生姐姐。\r\n会微笑着说出可怕和残忍的话语，对待生死也有着超乎常人的冷漠感，宛如一位无慈悲的女神。\r\n关于这位性感而强大的女元帅有着许多恐怖传言，在敌人眼中，希尔达俨然是一个疯狂的噩梦。",
+    "name": "ヒルダ・ユースティーツ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "希尔达·尤斯蒂兹"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 86192,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b7/f8/182407_crt_l3XHx.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b7/f8/182407_crt_l3XHx.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/b7/f8/182407_crt_l3XHx.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b7/f8/182407_crt_l3XHx.jpg"
+    },
+    "summary": "星界軍前衛翔士、突撃艦“バースロイル”先任翔士（航法士、時空泡の操作が仕事）。\r\n中性的な魅力を漂わすアーヴ人女性。けっこうな富豪らしい。",
+    "name": "ソバーシュ・ウェフ＝ドール・ユース",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 182407,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/79/103305_crt_cnNWV.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a5/79/103305_crt_cnNWV.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a5/79/103305_crt_cnNWV.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/79/103305_crt_cnNWV.jpg"
+    },
+    "summary": "ペットメイド科3年生。『レア』と呼ばれる処女・童貞で、国宝級の価値を持っているが、名神に買い取られる。名神一筋な、天然不思議ちゃん。\r\n　　「働いている名神は、プロってかんじがしてカッコイイから好きだなあ、僕」",
+    "name": "中牧遊水",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "名神英姿"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "なかまき ゆうす"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "wikiwiki.jp/blgame/愛と欲望は学園で～華麗なる夜の舞踏会～?word=愛と欲望は学園で"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 103305,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

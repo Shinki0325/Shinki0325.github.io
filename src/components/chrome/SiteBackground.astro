@@ -7,11 +7,17 @@ interface Props {
 
 const { currentPath = "/" } = Astro.props;
 const isHome = currentPath === "/";
+const homeBackground = siteShell.homeBackground ?? {
+  enabled: true,
+  videoSrc: "/uploads/backgrounds/home-loop-h264.mp4",
+  poster: "/uploads/backgrounds/home-loop-poster.jpg",
+};
+const nonHomeBackgroundImages = isHome ? [] : siteShell.backgroundImages;
 ---
 
 <div class="site-backdrop" aria-hidden="true">
   {
-    isHome && (
+    isHome && homeBackground.enabled && homeBackground.videoSrc && (
       <video
         autoplay
         class="site-backdrop__video"
@@ -19,10 +25,10 @@ const isHome = currentPath === "/";
         loop
         muted
         playsinline
-        poster="/uploads/backgrounds/home-loop-poster.jpg"
+        poster={homeBackground.poster}
         preload="auto"
       >
-        <source src="/uploads/backgrounds/home-loop-h264.mp4" type="video/mp4" />
+        <source src={homeBackground.videoSrc} type="video/mp4" />
       </video>
     )
   }
@@ -34,7 +40,7 @@ const isHome = currentPath === "/";
   <div class="site-backdrop__glow glow-three"></div>
 
   <div class="site-backdrop__slider">
-    {siteShell.backgroundImages.map((src) => (
+    {nonHomeBackgroundImages.map((src) => (
       <div class="site-backdrop__image" style={`--bg-url: url('${src}');`}></div>
     ))}
   </div>

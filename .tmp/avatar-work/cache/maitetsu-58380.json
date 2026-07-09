@@ -1,0 +1,398 @@
+[
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/0d/46/9951_crt_PHmwt.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/0d/46/9951_crt_PHmwt.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/0d/46/9951_crt_PHmwt.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0d/46/9951_crt_PHmwt.jpg"
+    },
+    "summary": "",
+    "name": "ヒヨコ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "ヒヨコ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Hiyoko"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 9951,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/72/88812_crt_tmjTP.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/65/72/88812_crt_tmjTP.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/65/72/88812_crt_tmjTP.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/72/88812_crt_tmjTP.jpg"
+    },
+    "summary": "身長：20cm　種族：何かの鳥　現況：カグヤのお供\r\n\r\nカグヤのお供の丸々としたひよこ。\r\n飼い主と同じく驚くほどの大食いで、真央の家に侵入しては夕飯を食い荒らしていく。\r\n見た目に反して動きは俊敏で、鋭いくちばしで逆襲されることも珍しくない。\r\n\r\n時折、鳥とは思えぬ苦みばしった表情を見せる謎のひよこである。\r\n\r\n「ぴぃぃー!!」",
+    "name": "ひよこ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "ひよこ"
+          }
+        ]
+      },
+      {
+        "key": "CV",
+        "value": "御苑生メイ"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 1
+    },
+    "id": 88812,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/09/33/144360_crt_q0jZJ.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/09/33/144360_crt_q0jZJ.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/09/33/144360_crt_q0jZJ.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/09/33/144360_crt_q0jZJ.jpg"
+    },
+    "summary": "主人公と同じ魔法学園に通う女の子。\r\n魔法学園の教師・ベルの妹。\r\n主人公がベルの家に居候することになったことから、結果的に同居することになる。\r\n風の魔法が得意で、空飛ぶホウキがトレードマーク。\r\nしかし、ホウキにまたがるとスピード狂に豹変する。\r\n将来の夢は「立派な魔法使いになって勇者様に仕えること」らしい。",
+    "name": "ヒヨコ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 144360,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/4a/7a/174210_crt_2jG2T.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/4a/7a/174210_crt_2jG2T.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/4a/7a/174210_crt_2jG2T.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4a/7a/174210_crt_2jG2T.jpg"
+    },
+    "summary": "被画在魔法立体绘本空白页的角落，为了寻找朋友展开冒险。",
+    "name": "ひよこ？",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "小灰鸡？"
+      },
+      {
+        "key": "别名",
+        "value": []
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 174210,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/3d/ef/125_84ad8f4755ff269862ea77393dd_JFHd2.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/3d/ef/125_84ad8f4755ff269862ea77393dd_JFHd2.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/3d/ef/125_84ad8f4755ff269862ea77393dd_JFHd2.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3d/ef/125_84ad8f4755ff269862ea77393dd_JFHd2.jpg"
+    },
+    "summary": "第２部白夜岬編に登場\r\nヒヨコ型ロボットを操るモンスターユニオンのエージェント\r\nきゅうちゃんを襲うその正体は、、、。\r\n\r\nＣＶ：天野由梨",
+    "name": "ミッドナイトひよこ",
+    "infobox": [
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 125,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b2/bb/40371_crt_W9wSP.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b2/bb/40371_crt_W9wSP.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/b2/bb/40371_crt_W9wSP.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b2/bb/40371_crt_W9wSP.jpg"
+    },
+    "summary": "一緒に児童養護施設 『がじゅまる』 で育った、真咲にとって妹的な存在。\r\n真咲をお兄ちゃんと慕いつつ、一人の女の子として見てほしいなーと思い始めている。\r\n妹という立ち位置からなんとか抜け出そうと頑張る、一生懸命で健気な女の子。\r\n\r\nたくさん勉強して聖キキリア学園に特待生として入学。\r\n学園で迷っているところを雪乃に助けられ、その後も色々と面倒を見てもらっている。\r\nドジっ子だが、がじゅまるではお姉ちゃんとして下の子たちの面倒を見ている。\r\n\r\n「きょ、今日からお世話になります！ 美朱ひよこですっ！　よ、よろしくおねがいしましゅっ！」",
+    "name": "美朱ひよこ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "みあけ ひよこ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "所属",
+        "value": "聖キキリア学園 1年生"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 5
+    },
+    "id": 40371,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/43/61397_crt_VV7qm.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b8/43/61397_crt_VV7qm.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/b8/43/61397_crt_VV7qm.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/43/61397_crt_VV7qm.jpg"
+    },
+    "summary": "もちひよことは、ロリっ娘バーチャルYouTuberである。\r\n\r\nおさげと黄色いワンピースがキュートなバーチャルYouTuber。一見園児服のようにも見えるため幼く見られがちだが、設定上の外見年齢は11歳である。\r\n\r\n元々ディズニーの有名キャラクターのキャストを志していたが諸事情により断念。その後、キズナアイやバーチャルのじゃロリ狐娘YouTuberおじさんに感銘を受けて自分自身をプロデュースしてスターになるためYouTuberとして活動を開始した。\r\n\r\nモデリングが得意であると述べており、自身のモデルのクオリティからもその技術の高さが窺える。\r\n\r\nまた、投稿動画でも一からだるま落としやモーニングスターを作成して遊んだりしているため技術系バーチャルYouTuberと呼ばれることも。\r\n\r\n音質の低さや喉を絞めたような声で喋っているためか一部視聴者からおじさん扱いされてしまっている。本人曰くボイスチェンジャーは未使用であり、音質も改善していきたいとのこと。",
+    "name": "もちひよこ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Mochi Hiyoko"
+          }
+        ]
+      },
+      {
+        "key": "Twitter",
+        "value": "https://twitter.com/mochi8hiyoko"
+      },
+      {
+        "key": "YouTube",
+        "value": "https://www.youtube.com/c/mochi8hiyoko"
+      },
+      {
+        "key": "niconico",
+        "value": "http://www.nicovideo.jp/user/76569231/"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 7
+    },
+    "id": 61397,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/88/2d/139185_crt_syPPs.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/88/2d/139185_crt_syPPs.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/88/2d/139185_crt_syPPs.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/88/2d/139185_crt_syPPs.jpg"
+    },
+    "summary": "水瀬隼人が院長を務める病院で働く新人ナース。\r\n総合内科勤務。\r\n\r\n水瀬隼人と彼の「妹」が事故に巻き込まれたとき、現場に居合わせた少女。\r\nそのさい瀕死の重傷を負った隼人に輸血用の血液を提供する。\r\nそのとき病院でテキパキと立ち働くナースの姿を見て、看護師を志す。\r\n明るく優しくおおらかで献身的な、まさに白衣の天使。\r\n\r\nある理由から隼人を尊敬し憧れていて、隼人の言動のすべてを盲目的に信奉し決して疑うことのない、ある意味究極の純真少女。\r\n\r\n隼人への憧憬ゆえに、隼人から「妹」再生（創造）のための「卵子と破瓜血と絶頂愛液」提供協力を要請されるや、ふたつ返事で受諾。\r\n\r\n「妹」が誕生したときは「先生てスゴイんですねー」と素直に感心し、さらに敬意を深めたりするそういう性格。",
+    "name": "桐山ひよこ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Kiriyama Hiyoko"
+          },
+          {
+            "k": "纯假名",
+            "v": "きりやま　ひよこ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://www.cellworks.co.jp/curious/main.htm"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 139185,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/cc/5b/140605_crt_56AFr.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/cc/5b/140605_crt_56AFr.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/cc/5b/140605_crt_56AFr.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cc/5b/140605_crt_56AFr.jpg"
+    },
+    "summary": "貧乏だが、いつもがんばっている健気な個。主人公の家の庭の掘っ建て小屋（昔、犬小屋だった）に住んでいる。\r\n５人兄妹の長女。\r\n\r\nぜんぜん苦労じゃないんだよ。にいちゃん。",
+    "name": "矢吹ひよこ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Hiyoko Yabuki"
+          },
+          {
+            "k": "纯假名",
+            "v": "やぶき　ひよこ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Yabuki Hiyoko"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "154センチ"
+      },
+      {
+        "key": "BWH",
+        "value": "80/54/75"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 140605,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/3b/89/142159_crt_j35sW.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/3b/89/142159_crt_j35sW.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/3b/89/142159_crt_j35sW.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3b/89/142159_crt_j35sW.jpg"
+    },
+    "summary": "常にトイレにいる謎の魔法少女。壱号生。\r\nとにかく何でも信じる素直な性格。女王様の命令で学園にいる悪魔を探しているらしい。\r\n\r\n「あ、ご主人様もいたんれすね！」",
+    "name": "羽鳥ひよこ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 142159,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

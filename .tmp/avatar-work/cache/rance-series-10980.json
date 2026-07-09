@@ -1,0 +1,76 @@
+[
+  {
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 2,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/8a/ef/36554_crt_07SBs.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/8a/ef/36554_crt_07SBs.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/8a/ef/36554_crt_07SBs.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8a/ef/36554_crt_07SBs.jpg"
+    },
+    "summary": "ポルトガル出身、父の名は、レオパルドン・ドット。おみくじ巫女。",
+    "name": "コパンドン・ドット",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "科潘冬·多特"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "科潘彤"
+          },
+          {
+            "k": "英文名",
+            "v": "Copandon Dott"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kopandon Dotto"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "GI992年9月9日"
+      },
+      {
+        "key": "身高",
+        "value": "146cm"
+      },
+      {
+        "key": "体重",
+        "value": "48kg"
+      },
+      {
+        "key": "BWH",
+        "value": "Bカップ"
+      },
+      {
+        "key": "レベル / 才能限界",
+        "value": "LV14 / LV27"
+      },
+      {
+        "key": "技能LV(傾向)",
+        "value": "お神籤LV1、経営LV2、金運LV2(旧設定)"
+      }
+    ],
+    "stat": {
+      "comments": 22,
+      "collects": 70
+    },
+    "id": 36554,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

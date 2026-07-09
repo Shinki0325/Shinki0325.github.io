@@ -1,0 +1,588 @@
+[
+  {
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 18,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/8b/7a/76768_crt_Is51s.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/8b/7a/76768_crt_Is51s.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/8b/7a/76768_crt_Is51s.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8b/7a/76768_crt_Is51s.jpg"
+    },
+    "summary": "一日中一緒にいて、お兄ちゃんを誘惑—もとい、お兄ちやと青春しようと思ってたのに！\r\n\r\n主人公の義妹,風見学園一年生。無所属。\r\n容姿は年齢からすると童顔。非常に可愛い性格で、誰にでも好かれる大人しめの優等生。\r\n遠野家の家事全般を担いしっかりしている。 \r\n兄に生意気な口を利くこともあるが、実は重度のプラコン。ところ構わず好き好きアピールしている。自分のために必死にバイトしている兄には、もっと学園生活一一青春を楽しんでしいと思っている。",
+    "name": "遠野律",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "远野律"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Tono Ritsu"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "6月18日"
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      },
+      {
+        "key": "身高",
+        "value": "148"
+      },
+      {
+        "key": "BWH",
+        "value": "70/54/77"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://sagaplanets.product.co.jp/works/kakenuke/character.html"
+      },
+      {
+        "key": "兴趣",
+        "value": "料理、アクセサリー作り"
+      },
+      {
+        "key": "喜欢的食物",
+        "value": "お汁粉、肉じゃが"
+      }
+    ],
+    "stat": {
+      "comments": 11,
+      "collects": 30
+    },
+    "id": 76768,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/fe/105139_crt_9Ec6D.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/56/fe/105139_crt_9Ec6D.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/56/fe/105139_crt_9Ec6D.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/fe/105139_crt_9Ec6D.jpg"
+    },
+    "summary": "",
+    "name": "遠野",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://vndb.org/v3471/chars#chars"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 105139,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 22,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/16/4f/58_crt_N4uSv.jpg?r=1488788969",
+      "grid": "https://lain.bgm.tv/pic/crt/g/16/4f/58_crt_N4uSv.jpg?r=1488788969",
+      "large": "https://lain.bgm.tv/pic/crt/l/16/4f/58_crt_N4uSv.jpg?r=1488788969",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/16/4f/58_crt_N4uSv.jpg?r=1488788969"
+    },
+    "summary": "国崎往人在旧车站遇到的第三位女孩。她与观铃是同班同学。身高1.69M，总是和好友小满在一起很文静的女孩子，经常为小满做便当。外表看不出是什么性格，看上去有点天然呆，说话也是慢吞吞，不过十分擅长料理及裁缝，学习成绩拔尖，还是学校天文部的部长，不过天文部其实只有她一人而已，她说那叫“少数精英”。还有一个特别的地方，美凪对米饭特别喜欢，经常随身携带很多的米券。",
+    "name": "遠野美凪",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "远野美凪"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "とおの みなぎ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Tohno Minagi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "12月22日"
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      },
+      {
+        "key": "身高",
+        "value": "169cm"
+      },
+      {
+        "key": "体重",
+        "value": "48kg"
+      },
+      {
+        "key": "BWH",
+        "value": "85/58/84"
+      }
+    ],
+    "stat": {
+      "comments": 31,
+      "collects": 147
+    },
+    "id": 58,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 12,
+    "gender": "male",
+    "birth_day": 23,
+    "birth_year": 1982,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/49/6e/305_qM2Rs.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/49/6e/305_qM2Rs.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/49/6e/305_qM2Rs.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/49/6e/305_qM2Rs.jpg"
+    },
+    "summary": "",
+    "name": "遠野貴樹",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "远野贵树"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "遠野 貴樹"
+          },
+          {
+            "k": "罗马字",
+            "v": "Toono Takaki"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "1982年12月23日"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 7,
+      "collects": 47
+    },
+    "id": 305,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 10,
+    "gender": "male",
+    "birth_day": 15,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ea/4a/856_crt_q5f5X.jpg?r=1630266470",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ea/4a/856_crt_q5f5X.jpg?r=1630266470",
+      "large": "https://lain.bgm.tv/pic/crt/l/ea/4a/856_crt_q5f5X.jpg?r=1630266470",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ea/4a/856_crt_q5f5X.jpg?r=1630266470"
+    },
+    "summary": "本作的男主角，个性上随和，因为八年前的事件而拥有可杀死万物的“直死之魔眼”。为避免带给脑部过大的负担，平常则是戴着“魔眼杀”的眼镜来抑止。\r\n\r\n真实身分是退魔者七夜一族，被远野家灭族后发现，因与远野家长子四季名字同音而被收养（也是因为远野慎久想借七夜家遗孤来抑止自己的反转冲动）利用催眠窜改记忆，而当成自己的儿子收养。体能上其实相当优越，不过有偶发性的贫血，外貌看起来就像个文弱书生，和好友乾有彦有相当的深交。",
+    "name": "遠野志貴",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "远野志贵"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "遠野 志貴"
+          },
+          {
+            "k": "纯假名",
+            "v": "とうの しき"
+          },
+          {
+            "k": "罗马字",
+            "v": "Touno Shiki"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "10月15日"
+      },
+      {
+        "key": "血型",
+        "value": "AB型"
+      },
+      {
+        "key": "身高",
+        "value": "169cm / 173cm(重制版)"
+      },
+      {
+        "key": "体重",
+        "value": "57kg"
+      }
+    ],
+    "stat": {
+      "comments": 34,
+      "collects": 136
+    },
+    "id": 856,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 22,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/19/857_crt_8MoCM.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b1/19/857_crt_8MoCM.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/b1/19/857_crt_8MoCM.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/19/857_crt_8MoCM.jpg"
+    },
+    "summary": "远野志贵的妹妹，本作里篇的女主角之一，远野家的现任当家。无论是外表或是礼仪态度上都无懈可击，个性上十分刚强，小时候则是完全相反的柔弱性格。对志贵有相当的执著心，抱有着超越兄妹的感情，志贵回到远野家的也是秋叶的命令。\r\n\r\n就读隔壁县的浅上女子学院，原本在浅上女子学院住宿，因为志贵搬回而改为通勤上课。在浅上有好友月姬苍香、三泽羽居，与具有未来视能力的学妹濑尾晶三人。\r\n\r\n远野家实际上是混有鬼之血的一族，偶尔会出现像秋叶名为“红赤朱”的反转现象。红赤朱是远野家出现反转现象时所称之名，此时头发会变红，名为“槛发”，会拥有特殊能力“掠夺”，本作中秋叶用来掠夺对手的热。",
+    "name": "遠野秋葉",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "远野秋叶"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "遠野 秋葉"
+          },
+          {
+            "k": "纯假名",
+            "v": "とおのあきは"
+          },
+          {
+            "k": "罗马字",
+            "v": "Tohno Akiha"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "9月22日"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "身高",
+        "value": "160cm"
+      },
+      {
+        "key": "体重",
+        "value": "45kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B73/W57/H79"
+      }
+    ],
+    "stat": {
+      "comments": 101,
+      "collects": 405
+    },
+    "id": 857,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 9,
+    "gender": "male",
+    "birth_day": 29,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/43/3237_crt_QS3Is.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/bd/43/3237_crt_QS3Is.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/bd/43/3237_crt_QS3Is.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/43/3237_crt_QS3Is.jpg"
+    },
+    "summary": "《月姬》远野线（里线）的BOSS。",
+    "name": "遠野四季",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "远野四季"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "遠野 四季"
+          },
+          {
+            "k": "罗马字",
+            "v": "Touno Shiki"
+          },
+          {
+            "k": "昵称",
+            "v": "春男"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "9月29日"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "身高",
+        "value": "178cm"
+      },
+      {
+        "key": "体重",
+        "value": "65kg"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 14,
+      "collects": 12
+    },
+    "id": 3237,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 2,
+    "gender": "female",
+    "birth_day": 27,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/e6/4868_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f5/e6/4868_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f5/e6/4868_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/e6/4868_crt_anidb.jpg"
+    },
+    "summary": "新宿区真神学园高校 3年C组，新闻部所属。据说只要是有关真神高中生（除了龙麻），什么情报都知道，从家庭成员生日住址到每天的便当甚至袜子有洞也知道。第一话里遭遇鬼被“打鬼部”救了不过记忆被清除，后来想起，第二次被救后加入“打鬼部”。\r\n称呼龙麻为“迷之转校生”。",
+    "name": "遠野杏子",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "远野杏子"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Touno Kyouko"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "????-02-27"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 4868,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 1,
+    "gender": "female",
+    "birth_day": 18,
+    "birth_year": null,
+    "blood_type": 3,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/0c/1b/6164_crt_c1hG9.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/0c/1b/6164_crt_c1hG9.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/0c/1b/6164_crt_c1hG9.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0c/1b/6164_crt_c1hG9.jpg"
+    },
+    "summary": "好きな色：水色\r\n好きな食べ物：コンビーフのサンドイッチ\r\n趣味：人形の洋服を作ること\r\n特技：家事全般\r\n\r\n主人公「潤和」の双子の妹で、\r\nとある私立の名門校から\r\nお呼びがかかるほどの天才少女。\r\n\r\n明るく世話好きなしっかり者だが、\r\n大事なところが抜けていたり、\r\n時折何かを思いついて他のことが\r\n一切頭に入らなかったり\r\nすることもしばしば・・・。",
+    "name": "遠野泉奈",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "远野泉奈"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Touno Senna"
+          },
+          {
+            "k": "日文名",
+            "v": "遠野泉奈"
+          },
+          {
+            "k": "纯假名",
+            "v": "とおの せんな"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "????-01-18"
+      },
+      {
+        "key": "血型",
+        "value": "AB"
+      },
+      {
+        "key": "身高",
+        "value": "150"
+      },
+      {
+        "key": "BWH",
+        "value": "75/54/79"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 4
+    },
+    "id": 6164,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ee/89/14890_crt_MVwib.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ee/89/14890_crt_MVwib.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ee/89/14890_crt_MVwib.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ee/89/14890_crt_MVwib.jpg"
+    },
+    "summary": "",
+    "name": "遠野潤和",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 14890,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

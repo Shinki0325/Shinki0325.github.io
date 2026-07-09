@@ -1,0 +1,549 @@
+[
+  {
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 31,
+    "birth_year": null,
+    "blood_type": 2,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/75/fb/21213_crt_vVU4g.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/75/fb/21213_crt_vVU4g.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/75/fb/21213_crt_vVU4g.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/75/fb/21213_crt_vVU4g.jpg"
+    },
+    "summary": "明るい笑顔でいることが多く、さばさばした性格。\r\n クラスなどでも男女問わず人気があるが、どちらかというと女子に好かれ同性の友達は多い。\r\n 仲間内ではリーダー的役割を担うことが多く、ネコ写真部でも部長を務めている。\r\n 逆に他人に頼るのはあまり得意ではない。\r\n 朔夜と慶に対しては密かに保護者を気取っている。\r\n 家が厳しく体育会的なむさ苦しい雰囲気だったため、やや反抗的にクールで格好いい方向を目指している。\r\n スタイルは良いが実はカナヅチ。",
+    "name": "土岐のぞみ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "土岐望"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "土岐 のぞみ"
+          },
+          {
+            "k": "纯假名",
+            "v": "とき のぞみ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Toki Nozomi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "10-31"
+      },
+      {
+        "key": "血型",
+        "value": "B"
+      },
+      {
+        "key": "身高",
+        "value": "164.3cm"
+      },
+      {
+        "key": "体重",
+        "value": "49.1kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B87(D)/ W59/ H88"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://august-soft.com/daito_sd/index.html"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 55
+    },
+    "id": 21213,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/e7/150864_crt_oRmdD.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b1/e7/150864_crt_oRmdD.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/b1/e7/150864_crt_oRmdD.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/e7/150864_crt_oRmdD.jpg"
+    },
+    "summary": "",
+    "name": "土岐",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 150864,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 8,
+    "gender": "male",
+    "birth_day": 21,
+    "birth_year": null,
+    "blood_type": 3,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/48/39/11294_crt_QitrW.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/48/39/11294_crt_QitrW.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/48/39/11294_crt_QitrW.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/48/39/11294_crt_QitrW.jpg"
+    },
+    "summary": "3年。担当楽器はヴァイオリン。管弦楽部副部長。関西弁で話す。楽しめるものが大好きで、主人公の反応を面白がってからかうことも多い。疲労を理由に、よく日陰で昼寝をしている。幼少期は身体が弱く休みがちだったために留年しており、同級の東金より1歳年上。\r\n趣味は都都逸で、特技は三味線。身長183cm。8月21日生まれ。しし座。AB型。\r\n\r\n就讀學校：神南高校普通科3年級\r\n社團：管弦樂部\r\n樂器：小提琴\r\n介紹：管弦樂部副部長，好逸惡勞，玩世不恭，和東金千秋從小一起長大，兩人都頗懂得抓住聽眾的心。",
+    "name": "土岐蓬生",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "土岐蓬生"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Housei Toki"
+          },
+          {
+            "k": "日文名",
+            "v": "土岐 蓬生"
+          },
+          {
+            "k": "纯假名",
+            "v": "とき ほうせい"
+          },
+          {
+            "k": "罗马字",
+            "v": "Toki Hōsei"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "8月21日"
+      },
+      {
+        "key": "血型",
+        "value": "AB"
+      },
+      {
+        "key": "身高",
+        "value": "183cm"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://ja.wikipedia.org/wiki/%E9%87%91%E8%89%B2%E3%81%AE%E3%82%B3%E3%83%AB%E3%83%803"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 3
+    },
+    "id": 11294,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 18,
+    "birth_year": null,
+    "blood_type": 2,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/a9/20934_crt_mK62J.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/7a/a9/20934_crt_mK62J.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/7a/a9/20934_crt_mK62J.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/a9/20934_crt_mK62J.jpg"
+    },
+    "summary": "主人公の従姉。聖ベルティナ学院に通う上級生で、既にベルティナの資格を持っており若手の舞い手として期待されている。\r\n外見は大人びた風貌でプロモーションがよく、内面は面倒見がよくて頼れるお姉さんとして男女問わず人気がある。\r\n実際のところはかなりやんちゃな性格なのだが、それは子供の頃から遊んでいた一騎ぐらいしか知らない。\r\n\r\n付き合いの長い一騎はカスミに油断を見せないようにしているが、カスミには弱点を知り尽くされている為いつもいじり倒されている。\r\n現在は『エルディス・ベルティナ』のキャロラインの元で修行中。キャロラインのことは『エルディス・ベルティナ』として尊敬してる。\r\n祭具は中華風の扇子で『エバーグリーン』。\r\n\r\n「ネコかぶってるなんて、人聞きが悪いわね。大人になったと言いなさいな」",
+    "name": "土岐遠カスミ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "土岐遠カスミ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "4月18日"
+      },
+      {
+        "key": "血型",
+        "value": "B"
+      },
+      {
+        "key": "身高",
+        "value": "167cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B92（G）/ W58/ H90"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 3
+    },
+    "id": 20934,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/fb/f9/50094_crt_5hLxO.jpg?r=1484430398",
+      "grid": "https://lain.bgm.tv/pic/crt/g/fb/f9/50094_crt_5hLxO.jpg?r=1484430398",
+      "large": "https://lain.bgm.tv/pic/crt/l/fb/f9/50094_crt_5hLxO.jpg?r=1484430398",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fb/f9/50094_crt_5hLxO.jpg?r=1484430398"
+    },
+    "summary": "将来は医者になろうと日々勉強をしている明るく活発な少女。時々頑固な一面も見せる。\r\n幼い頃に医者に命を助けられたという事があり、自分も将来は命を助ける仕事をしたいと思っている。\r\n姫巫女としての朱鷺家は途絶えてしまったのだが、数代後に女子として生を受けた穂乃香に、隔世遺伝で巫女としての素質が備わっていた。",
+    "name": "土岐穂乃香",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "土岐穗乃香"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "とき ほのか"
+          },
+          {
+            "k": "罗马字",
+            "v": "Toki Honoka"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 50094,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 10,
+    "gender": "male",
+    "birth_day": 15,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/34/76/58442_crt_NebBc.jpg?r=1508013031",
+      "grid": "https://lain.bgm.tv/pic/crt/g/34/76/58442_crt_NebBc.jpg?r=1508013031",
+      "large": "https://lain.bgm.tv/pic/crt/l/34/76/58442_crt_NebBc.jpg?r=1508013031",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/34/76/58442_crt_NebBc.jpg?r=1508013031"
+    },
+    "summary": "伊月的责任编辑。被伊月与剎那等个性刁钻的创作者们摆弄而疲于奔命。",
+    "name": "土岐健次郎",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "土岐健次郎"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "とき けんじろう"
+          },
+          {
+            "k": "罗马字",
+            "v": "Toki Kenjirō"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "10月15日"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 0
+    },
+    "id": 58442,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/4d/72949_crt_Koe94.jpg?r=1573463598",
+      "grid": "https://lain.bgm.tv/pic/crt/g/72/4d/72949_crt_Koe94.jpg?r=1573463598",
+      "large": "https://lain.bgm.tv/pic/crt/l/72/4d/72949_crt_Koe94.jpg?r=1573463598",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/4d/72949_crt_Koe94.jpg?r=1573463598"
+    },
+    "summary": "時女一族に所属する暗殺者だった魔法少女。心配性で思いやりがあり聞き上手。村や集落では大人から非常に愛されており、年下からはお姉さんとして甘えられている。今も過去の自分に苦しめられており、時々暗い影を見せることがある。",
+    "name": "土岐すなお",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "土岐沙绪"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "土岐 すなお"
+          },
+          {
+            "k": "纯假名",
+            "v": "とき すなお"
+          },
+          {
+            "k": "罗马字",
+            "v": "Toki Sunao"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "magireco.moe/wiki/土岐沙绪"
+      },
+      {
+        "key": "出身",
+        "value": "雾峰村附近的山麓"
+      },
+      {
+        "key": "学校",
+        "value": "雾峰村立雾峰中学校"
+      },
+      {
+        "key": "人设",
+        "value": "苍树梅"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 72949,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/30/55/78254_crt_EfZrR.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/30/55/78254_crt_EfZrR.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/30/55/78254_crt_EfZrR.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/30/55/78254_crt_EfZrR.jpg"
+    },
+    "summary": "おとなしくやさしい照れ屋な女の子。目立つことを好まず、ひっそりと人影に隠れて行動する。かなりの努力家。リリィ同士のゴシップ的な情報に特化したリリィオタクでもある。歌が好きで声が綺麗なため、姫歌が対抗心を燃やしている。学科は音楽（声楽）。",
+    "name": "土岐紅巴",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "土岐红巴"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "土岐 紅巴"
+          },
+          {
+            "k": "罗马字",
+            "v": "Toki Kureha"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "6月7日"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "印象色",
+        "value": "#81E6CB"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 4
+    },
+    "id": 78254,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/82/86/79670_crt_CyRC8.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/82/86/79670_crt_CyRC8.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/82/86/79670_crt_CyRC8.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/82/86/79670_crt_CyRC8.jpg"
+    },
+    "summary": "那古教徒，剑术高手。",
+    "name": "土岐遥",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ときはるか"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 5
+    },
+    "id": 79670,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 25,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/3e/81195_crt_aGhC4.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/6c/3e/81195_crt_aGhC4.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/6c/3e/81195_crt_aGhC4.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/3e/81195_crt_aGhC4.jpg"
+    },
+    "summary": "抚子住在静冈县滨松市时的儿时玩伴，抚子称她为“小绫”。两人在抚子搬家后仍有联络，也通过抚子发的相片知道她朋友的长相。\r\n与新年归乡的抚子，和到静冈旅行的凛交流过后，约定自己骑摩托车到山梨县找她们玩。有一台轻档车 HONDA APE。伊豆篇后的冬天，特地网购露营装备，并骑车前去大井川赴约。\r\n姓氏取自岐阜县土岐市。\r\n\r\n浜松に住む、なでしこの幼馴染。なでしこからは「アヤちゃん」と呼ばれており、中学時代のなでしこを知っている。やや気だるげなムードで話すのが特徴。",
+    "name": "土岐綾乃",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "土岐绫乃"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "土岐 綾乃"
+          },
+          {
+            "k": "纯假名",
+            "v": "とき あやの"
+          },
+          {
+            "k": "罗马字",
+            "v": "Toki Ayano"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "7月25日"
+      },
+      {
+        "key": "引用来源",
+        "value": "yurucamp.jp/second/character/character_6.php"
+      }
+    ],
+    "stat": {
+      "comments": 26,
+      "collects": 64
+    },
+    "id": 81195,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

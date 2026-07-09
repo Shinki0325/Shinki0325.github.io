@@ -1,0 +1,516 @@
+[
+  {
+    "birth_mon": 2,
+    "gender": "female",
+    "birth_day": 22,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/51/c3/20334_crt_1zR1c.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/51/c3/20334_crt_1zR1c.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/51/c3/20334_crt_1zR1c.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/51/c3/20334_crt_1zR1c.jpg"
+    },
+    "summary": "IQが高く、ペチャパイな生徒会長。\r\n無表情で何を考えているのか分かりづらい。\r\n各パーツはちっちゃくかわいいので、同好会のメンバーにはあれやこれやと もふもふされて、マスコットキャラ的に扱われる。\r\n普段は効率よく最小限のことしか話さないが、自分の知識を披露したい時や間違いを正す時は、饒舌に話し出す。\r\n本人は身長よりペチャパイを気にしており、そこを突っ込まれるとまだ発展途中だと言い張っている。\r\n副会長の夕姫羽には心を許しており、今の髪型は夕姫羽にいつもしてもらっている。\r\n【Access key for KARUMARUKA：怠惰】\r\n何をしていても、誰と話していても、眠気に襲われると突然寝てしまう。\r\nそれは自分の中の汚点であり、とても気にしている。\r\n寝ている時に、同好会メンバーにイタズラをされて可愛がられている。\r\n\r\n「……すごく眠い、です…… すひゅう……んふ、くう……」",
+    "name": "夏目暦",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "夏目历"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "なつめ こよみ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "2月22日"
+      },
+      {
+        "key": "身高",
+        "value": "148"
+      },
+      {
+        "key": "体重",
+        "value": "40"
+      },
+      {
+        "key": "BWH",
+        "value": "75/53/78"
+      }
+    ],
+    "stat": {
+      "comments": 20,
+      "collects": 71
+    },
+    "id": 20334,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/99/5e/1032_e7ZSH.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/99/5e/1032_e7ZSH.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/99/5e/1032_e7ZSH.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/99/5e/1032_e7ZSH.jpg"
+    },
+    "summary": "·“蛇”敌对组织所属，既身为伽南工作的赞助商，又是伽南执行任务的监视担当，是个冷静沉着，不怎么将感情表露的女性，因此给人一种十分冷淡的印象。",
+    "name": "夏目",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "夏目"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Natsume"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      },
+      {
+        "key": "声优",
+        "value": "皆川纯子"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 3
+    },
+    "id": 1032,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/eb/b3/15388_crt_P8ptu.jpg?r=1528197531",
+      "grid": "https://lain.bgm.tv/pic/crt/g/eb/b3/15388_crt_P8ptu.jpg?r=1528197531",
+      "large": "https://lain.bgm.tv/pic/crt/l/eb/b3/15388_crt_P8ptu.jpg?r=1528197531",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/eb/b3/15388_crt_P8ptu.jpg?r=1528197531"
+    },
+    "summary": "山吹高中美术科1年B組→2年B組→3年B組。与沙英、ヒロ同年级。蹭得累。经常无缘无故针对和嘲笑沙英。但是实际上她一直想沙英成为好友。当初入学时在无助的时候得到沙英的帮助，因而对沙英心存感激和好感。不过看到沙英和寻到亲密无间之后，由于妒嫉而改变了对沙英的态度。\r\n    在动画中，夏目还是沙英小说的Fans。",
+    "name": "夏目",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "夏目"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Natsume"
+          },
+          {
+            "k": "日文名",
+            "v": "夏目"
+          },
+          {
+            "k": "纯假名",
+            "v": "ナツメ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Natsume"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://zh.wikipedia.org/wiki/%E5%90%91%E9%99%BD%E7%B4%A0%E6%8F%8F"
+      }
+    ],
+    "stat": {
+      "comments": 9,
+      "collects": 26
+    },
+    "id": 15388,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/86/31/164922_crt_35q6q.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/86/31/164922_crt_35q6q.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/86/31/164922_crt_35q6q.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/86/31/164922_crt_35q6q.jpg"
+    },
+    "summary": "CV: 川村拓央",
+    "name": "夏目",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 164922,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/e4/5f/162488_crt_brAt4.jpg?r=1723047943",
+      "grid": "https://lain.bgm.tv/pic/crt/g/e4/5f/162488_crt_brAt4.jpg?r=1723047943",
+      "large": "https://lain.bgm.tv/pic/crt/l/e4/5f/162488_crt_brAt4.jpg?r=1723047943",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e4/5f/162488_crt_brAt4.jpg?r=1723047943"
+    },
+    "summary": "",
+    "name": "なつめ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "夏目"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 162488,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 7,
+    "gender": "male",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/62/dd/74_crt_Zt22s.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/62/dd/74_crt_Zt22s.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/62/dd/74_crt_Zt22s.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/62/dd/74_crt_Zt22s.jpg"
+    },
+    "summary": "祖母・レイコ同様、妖怪を見ることができる類稀なる妖力の持ち主。幼い頃に両親と死に別れ、親戚中をたらい回しにされてきた。\r\nレイコの遺産「友人帳」を継いで以来、さまざまな人と妖怪との関わりに戸惑いながらも、妖怪たちへその名を返す日々を送っている。",
+    "name": "夏目貴志",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "夏目贵志"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "なつめ たかし"
+          },
+          {
+            "k": "罗马字",
+            "v": "Natsume Takashi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "7月1日"
+      },
+      {
+        "key": "血型",
+        "value": "B型"
+      },
+      {
+        "key": "身高",
+        "value": "167cm"
+      }
+    ],
+    "stat": {
+      "comments": 49,
+      "collects": 672
+    },
+    "id": 74,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/07/916_crt_AYtyT.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ed/07/916_crt_AYtyT.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ed/07/916_crt_AYtyT.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/07/916_crt_AYtyT.jpg"
+    },
+    "summary": "里香的主治医师。年纪约30岁初头，不过外表比实际看起来更年轻。医术非常高明却十分怠惰，个性有些歇斯底里，有抽烟和饮酒的习惯。对裕一采取十分严苛和刁钻的态度，并且有事没事还会恶整裕一，导致裕一对他敬而远之。",
+    "name": "夏目吾郎",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "夏目吾郎"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "夏目 吾郎"
+          },
+          {
+            "k": "罗马字",
+            "v": "Natsume Gorou"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 5,
+      "collects": 5
+    },
+    "id": 916,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/22/84/1585_si44Y.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/22/84/1585_si44Y.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/22/84/1585_si44Y.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/22/84/1585_si44Y.jpg"
+    },
+    "summary": "赤铜学院高校的校医。平时在学校附近的医院里工作。某天在路上与久美子相撞了。那之后久美子就自作多情的认为这是两人的“命运般的相遇”。他是久美子的 “罗密欧大人”。",
+    "name": "夏目誠一",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "夏目诚一"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "夏目 誠一"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 1585,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/cc/d5/5812_crt_aRVr2.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/cc/d5/5812_crt_aRVr2.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/cc/d5/5812_crt_aRVr2.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cc/d5/5812_crt_aRVr2.jpg"
+    },
+    "summary": "本作的主人公，从三年前的飞机坠落事故生还后，因为“幽灵附身”而在近邻间出名的不幸体质的少年。\r\n从朱浬那得到“智春的哥哥所托”的手提箱，打开后成为了机巧魔神“黑鐵”的演操者，过上了波澜起伏的校园生活。",
+    "name": "夏目智春",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "夏目智春"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "夏目智春"
+          },
+          {
+            "k": "纯假名",
+            "v": "なつめ　ともはる"
+          },
+          {
+            "k": "罗马字",
+            "v": "Natsume Tomoharu"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "血型",
+        "value": "O型"
+      },
+      {
+        "key": "身高",
+        "value": "168cm"
+      },
+      {
+        "key": "体重",
+        "value": "58kg"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 4
+    },
+    "id": 5812,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/9b/5a/9082_crt_gZ9s1.jpg?r=1508651197",
+      "grid": "https://lain.bgm.tv/pic/crt/g/9b/5a/9082_crt_gZ9s1.jpg?r=1508651197",
+      "large": "https://lain.bgm.tv/pic/crt/l/9b/5a/9082_crt_gZ9s1.jpg?r=1508651197",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9b/5a/9082_crt_gZ9s1.jpg?r=1508651197"
+    },
+    "summary": "絆奈同様、変身部に所属。共にコスプレを披露している。しばしば、気ままな行動を取る他の3人に対するツッコミ役をおっている。",
+    "name": "夏目檸檬",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "夏目柠檬"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "夏目檸檬"
+          },
+          {
+            "k": "纯假名",
+            "v": "なつめ れもん"
+          },
+          {
+            "k": "罗马字",
+            "v": "Natsume Remon"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "血型",
+        "value": "O型"
+      },
+      {
+        "key": "身高",
+        "value": "150cm"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 4,
+      "collects": 1
+    },
+    "id": 9082,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

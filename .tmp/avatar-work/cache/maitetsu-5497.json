@@ -1,0 +1,476 @@
+[
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/0b/83/1636_crt_bbphP.jpg?r=1513962617",
+      "grid": "https://lain.bgm.tv/pic/crt/g/0b/83/1636_crt_bbphP.jpg?r=1513962617",
+      "large": "https://lain.bgm.tv/pic/crt/l/0b/83/1636_crt_bbphP.jpg?r=1513962617",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0b/83/1636_crt_bbphP.jpg?r=1513962617"
+    },
+    "summary": "为了变得更强以及逃离贵族那种颓废虚伪的生活，而离家出走的少女战士。\r\n在旅程中，与许多的美斗士们建立了羁绊，并变得更强。\r\n这次参加Queen's Blade正是为了变得更强。\r\n身份是巴恩斯伯爵家族的二女儿，而且是第一继承人。\r\n然而巴恩斯伯爵家族是继承自了Queen's Blade制度开始以前，一直支配着这个大陆的传统王家血脉家族，它是统领着大陆反女王势力（保守派）的强大的存在 \r\n然而蕾娜对早晚到手的巨大权利或者令人窒息的贵族生活完全没有兴趣。以离家出走为契机，与荒野义贼 丽斯蒂 相遇，命运从此被领向奇妙的方向....",
+    "name": "レイナ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "蕾娜"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "Leina Vance"
+          },
+          {
+            "v": "流浪の戦士 レイナ"
+          },
+          {
+            "k": "第二中文名",
+            "v": "蕾娜·万斯"
+          },
+          {
+            "k": "英文名",
+            "v": "Leina"
+          },
+          {
+            "k": "罗马字",
+            "v": "Reina"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "170cm"
+      },
+      {
+        "key": "BWH",
+        "value": "88-60-85"
+      }
+    ],
+    "stat": {
+      "comments": 4,
+      "collects": 12
+    },
+    "id": 1636,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/a4/6735_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/96/a4/6735_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/96/a4/6735_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/a4/6735_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "レイナ",
+    "infobox": [
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "レイナ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Reina"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 6735,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 26,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/09/69/37747_crt_J546a.jpg?r=1537798847",
+      "grid": "https://lain.bgm.tv/pic/crt/g/09/69/37747_crt_J546a.jpg?r=1537798847",
+      "large": "https://lain.bgm.tv/pic/crt/l/09/69/37747_crt_J546a.jpg?r=1537798847",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/09/69/37747_crt_J546a.jpg?r=1537798847"
+    },
+    "summary": "御一夜鉄道 キハ07S専用レイルロオド。\r\nレイルロオドの中でもひときわ小さな容姿と、舌っ足らずでほにゃほにゃとした性格が特徴的。\r\nかつては鉱山鉄道で大活躍し、その全盛期から廃鉱になるまでを見届けてきたという、なかなかに深い人生経験の持ち主でもある。\r\nこの世に嫌いなものは何一つ無いのではと思えるほど全方向に好意的で、天然の甘え上手。\r\n動物や赤ん坊にも非常に好かれ、時には会話をしているように見えるほど良好なコミュニケーションをとることが出来る。\r\n「うふふぅ、3月の26日ですよぉ。 車両と、ちょうどおんなじ日にできあがったんですぅ」",
+    "name": "れいな",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "玲奈"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "reina"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "3月26日"
+      },
+      {
+        "key": "身高",
+        "value": "113cm"
+      },
+      {
+        "key": "体重",
+        "value": "17kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B53/ W42/ H55"
+      }
+    ],
+    "stat": {
+      "comments": 14,
+      "collects": 18
+    },
+    "id": 37747,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/4b/f8/55362_crt_YfF88.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/4b/f8/55362_crt_YfF88.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/4b/f8/55362_crt_YfF88.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4b/f8/55362_crt_YfF88.jpg"
+    },
+    "summary": "DOLLS全体のリーダーでもある、情熱的で快活な少女。\r\n「美しいもの」を愛し自らも美しくあろうとする独特の思想を持っている。自信に満ちた立ち振る舞いからはカリスマ性があふれている。歌やダンスの造詣も深くアイドル活動そのものを愛している。 熱意と美意識からレッスンやパフォーマンスに完璧を求める気持ちが強い。面倒見のよさが逆に働き、過剰な特訓をメンバーに課す事もあるが本人は普通の努力だと思っている。",
+    "name": "レイナ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "164cm"
+      },
+      {
+        "key": "年龄",
+        "value": "19歳"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 55362,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a2/eb/67881_crt_DoQQQ.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a2/eb/67881_crt_DoQQQ.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a2/eb/67881_crt_DoQQQ.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a2/eb/67881_crt_DoQQQ.jpg"
+    },
+    "summary": "『調律の巫女』と呼ばれる少女。\r\nカオステラーを『調律』し、想区を元の姿に修復する力を宿している。\r\n『箱庭の王国』という不思議な本を所持にしており、その過去には謎も多い。",
+    "name": "レイナ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "蕾娜"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 4,
+      "collects": 21
+    },
+    "id": 67881,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/13/1e/81009_crt_ESO80.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/13/1e/81009_crt_ESO80.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/13/1e/81009_crt_ESO80.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/13/1e/81009_crt_ESO80.jpg"
+    },
+    "summary": "《黄昏の民》と呼ばれる、特別な力を宿したミスタルシア先住民族の女性。\n\n隠れ里にてひっそりと暮らしていたが、世界を平和にする希望の英雄を探すため旅に出た。\n\nこれまでずっと騎士の旅をサポートしてきた。他者の潜在能力を引き出すという能力を持つ。",
+    "name": "レイナ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "好きなもの",
+        "value": "胸に希望を抱いた人"
+      },
+      {
+        "key": "嫌いなもの",
+        "value": "絶望を齎す存在"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 81009,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 9,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/86/95439_crt_vpnP4.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ed/86/95439_crt_vpnP4.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ed/86/95439_crt_vpnP4.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/86/95439_crt_vpnP4.jpg"
+    },
+    "summary": "「雖然現實會背叛我，但是努力不會。\r\n一旦下定決心，只要放手去做就好。」\r\n\r\n工作能力很強的「完美精英」。對妳有好感。",
+    "name": "レイナ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "玲娜"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Reina"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "4月9日"
+      },
+      {
+        "key": "血型",
+        "value": "B型"
+      },
+      {
+        "key": "身高",
+        "value": "170cm"
+      },
+      {
+        "key": "年龄",
+        "value": "25岁"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 95439,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a1/04/95526_crt_Vcc5t.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a1/04/95526_crt_Vcc5t.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a1/04/95526_crt_Vcc5t.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a1/04/95526_crt_Vcc5t.jpg"
+    },
+    "summary": "",
+    "name": "レイナ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Reina"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 95526,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/57/c8/115014_crt_JmjOM.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/57/c8/115014_crt_JmjOM.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/57/c8/115014_crt_JmjOM.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/57/c8/115014_crt_JmjOM.jpg"
+    },
+    "summary": "ゴウの素行を心配し、探偵事務所に依頼をする。",
+    "name": "れいな",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://b-cluster.eek.jp/products/02_lc/character3.html"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 115014,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 2,
+    "gender": "female",
+    "birth_day": 14,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/8f/81/124043_crt_dKRR5.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/8f/81/124043_crt_dKRR5.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/8f/81/124043_crt_dKRR5.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8f/81/124043_crt_dKRR5.jpg"
+    },
+    "summary": "",
+    "name": "レイナ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Reina"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "2月14日"
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      },
+      {
+        "key": "身高",
+        "value": "170cm"
+      },
+      {
+        "key": "体重",
+        "value": "51kg"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 124043,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

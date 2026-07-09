@@ -1,0 +1,543 @@
+[
+  {
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 18,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/1a/46/28353_crt_FzF3Q.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/1a/46/28353_crt_FzF3Q.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/1a/46/28353_crt_FzF3Q.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1a/46/28353_crt_FzF3Q.jpg"
+    },
+    "summary": "遊真のクラスメイト。 仕分け委員会に所属。\r\n“人生楽しまなきゃ損” がポリシーで、興味のあるものは片っ端から手を出してみる。\r\n仕分け部に入ったのも、面白そうだったからの一言。\r\n遊真とは出会った瞬間に意気投合して以来の仲。\r\n\r\n勉強はからっきしだが、悪知恵に関しては人一倍頭が回る。\r\n実は従者が付くほどのお嬢様なのだが、ラテン系なノリでそんな雰囲をまったく感じさせない。\r\n今日も今日とて遊真を仕分け委員に勧誘中。\r\n\r\n「にししし。 今日こそは仕分け委員に入ってもらうからね」",
+    "name": "空森若葉",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "空森若叶"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Soramori Wakaba"
+          },
+          {
+            "k": "日文名",
+            "v": "空森 若葉"
+          },
+          {
+            "k": "纯假名",
+            "v": "そらもり わかば"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "3月18日"
+      },
+      {
+        "key": "血型",
+        "value": "B型"
+      },
+      {
+        "key": "身高",
+        "value": "153cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B78/ W54/ H81"
+      },
+      {
+        "key": "学年",
+        "value": "2年生"
+      },
+      {
+        "key": "趣味",
+        "value": "気分転換にキャッチボール"
+      }
+    ],
+    "stat": {
+      "comments": 30,
+      "collects": 69
+    },
+    "id": 28353,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 12,
+    "gender": "male",
+    "birth_day": 2,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/31/24992_crt_WWdQw.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b8/31/24992_crt_WWdQw.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/b8/31/24992_crt_WWdQw.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/31/24992_crt_WWdQw.jpg"
+    },
+    "summary": "天衣無縫の生徒会副会長。\r\n今日も元気に学園の掃除に励んでいる。\r\n無駄に前向きで、快活で親切。\r\nそして、フリーダムでマイウェイ。\r\nテンションがあがりすぎては、書記にツッこまれているが、気にしない。\r\n語学の天才＆フェンシングの腕もかなりのものと長所も多いが、全体的にずれている残念系王子",
+    "name": "鷺森空也",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "鹭森空也"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "12月2日"
+      },
+      {
+        "key": "血型",
+        "value": "B型"
+      },
+      {
+        "key": "身高",
+        "value": "179cm"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 24992,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/cd/c3/208384_crt_8Tt5N.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/cd/c3/208384_crt_8Tt5N.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/cd/c3/208384_crt_8Tt5N.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cd/c3/208384_crt_8Tt5N.jpg"
+    },
+    "summary": "",
+    "name": "森田空乃",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 208384,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/60/cb/137940_crt_4ocON.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/60/cb/137940_crt_4ocON.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/60/cb/137940_crt_4ocON.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/60/cb/137940_crt_4ocON.jpg"
+    },
+    "summary": "旧姓は「志度」。身長・体重ともに標準的だが、脱げばなかなか女らしい体型。特に胸の成長が著しい。ちょっと目が悪いので、普段は眼鏡を着用。\r\nすましていれば、人形のような美少女だが、表情がくるくる変わるので、とてもかわいらしい印象を与える。\r\n普通の「いまどきの女の子」ではあるが、内心日本の古風な「夫婦」の関係に憧れている。\r\n主人公が赴任した女子校に一緒に転校し、主人公との新婚生活をスタートさせることになる。",
+    "name": "森繁美空",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "もりしげ みそら"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 137940,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/98/d1/182337_crt_aGakE.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/98/d1/182337_crt_aGakE.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/98/d1/182337_crt_aGakE.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/98/d1/182337_crt_aGakE.jpg"
+    },
+    "summary": "阿瑞王者进化，拥有生命之源而成为王者的阿瑞斯强大无比，掌管着生命的力量，这就是生命王者。",
+    "name": "王者·阿瑞斯",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "神职",
+            "v": "生命王者·阿瑞斯"
+          },
+          {
+            "k": "传说",
+            "v": "传说王者·阿瑞斯"
+          },
+          {
+            "k": "天启",
+            "v": "森翎王者·阿瑞斯"
+          },
+          {
+            "k": "启元",
+            "v": "森羽鹰翔·阿瑞斯"
+          },
+          {
+            "k": "星迹",
+            "v": "鹰翎破空·阿瑞斯"
+          },
+          {
+            "k": "神运",
+            "v": "苍鹰掠空·阿瑞斯"
+          },
+          {
+            "k": "昵称",
+            "v": "王瑞"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 182337,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 22,
+    "birth_year": null,
+    "blood_type": 4,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/e9/12612_crt_Xo633.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/2a/e9/12612_crt_Xo633.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/2a/e9/12612_crt_Xo633.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/e9/12612_crt_Xo633.jpg"
+    },
+    "summary": "三姉妹の「次女」。本編の主人公で元気担当。力仕事が得意。ボーイッシュな熱血少女だが、やがて「両親」の存在が暗い影を落とす。仕事先で碧、海と出会い、三人でイルか屋を立ち上げる。ちなみに店の名前は元々「イルカ屋」とするところを看板を作るときに空がうっかり間違えて「イルか」と書いてしまったため。",
+    "name": "空",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "空"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Sora"
+          },
+          {
+            "k": "日文名",
+            "v": "空"
+          },
+          {
+            "k": "纯假名",
+            "v": "そら"
+          },
+          {
+            "k": "罗马字",
+            "v": "sora"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "8月22日"
+      },
+      {
+        "key": "血型",
+        "value": "O"
+      },
+      {
+        "key": "兴趣",
+        "value": "日曜大工、密かに貝殻集め（休息日自己做些小家具，偷偷收集贝壳）"
+      },
+      {
+        "key": "特技",
+        "value": "リヤカー曲乗り（两轮马车特技）"
+      },
+      {
+        "key": "引用来源",
+        "value": "wiki & http://www.irukaya.com/char.html"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 12612,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 7,
+    "gender": "male",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/61/37/23424_crt_CjM6b.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/61/37/23424_crt_CjM6b.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/61/37/23424_crt_CjM6b.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/61/37/23424_crt_CjM6b.jpg"
+    },
+    "summary": "童貞、コミュ障、ニート、ゲーム廃人。『』(くうはく)の一人で白の兄。駆け引きに長けており、卓越した読心術を身につけている。前提の覆し、発想を転換させ、閃きを駆使して戦うゲームスタイルから、不確定性要素を多く含むゲームが得意。",
+    "name": "空",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "空"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "そら"
+          },
+          {
+            "k": "罗马字",
+            "v": "Sora"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "7月7日"
+      }
+    ],
+    "stat": {
+      "comments": 10,
+      "collects": 176
+    },
+    "id": 23424,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/30/20/69166_crt_02Gnn.jpg?r=1721980264",
+      "grid": "https://lain.bgm.tv/pic/crt/g/30/20/69166_crt_02Gnn.jpg?r=1721980264",
+      "large": "https://lain.bgm.tv/pic/crt/l/30/20/69166_crt_02Gnn.jpg?r=1721980264",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/30/20/69166_crt_02Gnn.jpg?r=1721980264"
+    },
+    "summary": "海の双子の『兄』。ジムのサーフィンの教師。海とは異なる白い肌を持ち、乾燥に極端に弱く陸にずっといるのが苦手。海を守るべくジムとアングラードに自らの身体を調べるように依頼する。小笠原沖で自ら入手した隕石を琉花に託した後、光となって姿を消す。",
+    "name": "空",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "空"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 1
+    },
+    "id": 69166,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 12,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/28/70389_crt_sH2s9.jpg?r=1575385341",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b1/28/70389_crt_sH2s9.jpg?r=1575385341",
+      "large": "https://lain.bgm.tv/pic/crt/l/b1/28/70389_crt_sH2s9.jpg?r=1575385341",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/28/70389_crt_sH2s9.jpg?r=1575385341"
+    },
+    "summary": "现役偶像，因故暂时寄居于企鹅物流。在企鹅物流与罗德岛建立合作关系后，也作为罗德岛的一员行动。\r\n干员空能非主观地施展与声音有关的源石技艺，在战场上运用独特的歌声为其他干员提供支援。",
+    "name": "空",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Sora"
+          },
+          {
+            "k": "日文名",
+            "v": "ソラ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "9月12日"
+      },
+      {
+        "key": "身高",
+        "value": "155cm"
+      },
+      {
+        "key": "种族",
+        "value": "因经纪公司要求不公开"
+      },
+      {
+        "key": "矿石病感染情况",
+        "value": "参照医学检测报告，确认为非感染者。"
+      }
+    ],
+    "stat": {
+      "comments": 7,
+      "collects": 16
+    },
+    "id": 70389,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/17/cc/85978_crt_jXdDS.jpg?r=1600904726",
+      "grid": "https://lain.bgm.tv/pic/crt/g/17/cc/85978_crt_jXdDS.jpg?r=1600904726",
+      "large": "https://lain.bgm.tv/pic/crt/l/17/cc/85978_crt_jXdDS.jpg?r=1600904726",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/17/cc/85978_crt_jXdDS.jpg?r=1600904726"
+    },
+    "summary": "故国覆灭，与妹妹一起在无数的世界之间漂流。遭遇了陌生神明的阻拦，被迫与妹妹分离。",
+    "name": "空",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Aether"
+          },
+          {
+            "k": "日文名",
+            "v": "空"
+          },
+          {
+            "k": "纯假名",
+            "v": "そら"
+          },
+          {
+            "k": "罗马字",
+            "v": "Sora"
+          },
+          {
+            "k": "昵称",
+            "v": "아이테르"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "身份",
+        "value": "旅行者"
+      },
+      {
+        "key": "武器",
+        "value": "单手剑"
+      },
+      {
+        "key": "神之眼",
+        "value": "无"
+      },
+      {
+        "key": "命之座",
+        "value": "旅人座"
+      }
+    ],
+    "stat": {
+      "comments": 19,
+      "collects": 20
+    },
+    "id": 85978,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

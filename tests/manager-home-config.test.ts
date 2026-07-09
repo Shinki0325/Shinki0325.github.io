@@ -30,6 +30,11 @@ const HOME_JSON = JSON.stringify(
       placeholder: "搜索文稿、资料、笔记...",
     },
     announcements: ["资料持续整理中", "部分页面含双语对照阅读"],
+    homeBackground: {
+      enabled: true,
+      videoSrc: "/uploads/backgrounds/home-loop-h264.mp4",
+      poster: "/uploads/backgrounds/home-loop-poster.jpg",
+    },
     backgroundImages: ["/uploads/ui/bg-1.jpg", "/uploads/ui/bg-2.jpg"],
     music: {
       tracks: [
@@ -40,6 +45,8 @@ const HOME_JSON = JSON.stringify(
           coverUrl: "/uploads/music/covers/yunyueyao.jpg",
           audioUrl: "https://music.163.com/song/media/outer/url?id=1809646618.mp3",
           lrc: "[00:01.00]第一句",
+          duration: 240000,
+          album: "云月谣",
         },
       ],
       idleLyric: "欢迎来到资料归档首页",
@@ -58,6 +65,38 @@ const HOME_JSON = JSON.stringify(
 );
 
 describe("home page config helpers", () => {
+  it("wires a visual background image manager into the page builder", async () => {
+    const source = await import("node:fs/promises").then((fs) =>
+      fs.readFile("manager/src/pages/PageBuilder.tsx", "utf8")
+    );
+
+    expect(source).toContain("ImageUploadCropper");
+    expect(source).toContain("handleUploadBackground");
+    expect(source).toContain("handleCropBackground");
+    expect(source).toContain("manualBackgroundUrl");
+    expect(source).toContain("handleAddManualBackgroundImage");
+    expect(source).toContain("handleUploadHomeBackgroundPoster");
+    expect(source).toContain("handleCropHomeBackgroundPoster");
+    expect(source).toContain("主页背景");
+    expect(source).toContain("其他页面背景图片");
+    expect(source).toContain("CONFIG_TABS");
+    expect(source).toContain("activeConfigTab");
+    expect(source).toContain("page-builder__tabs");
+    expect(source).toContain("基础信息");
+    expect(source).toContain("音乐盒");
+    expect(source).toContain("updateMusicTrack");
+    expect(source).toContain("addMusicTrack");
+    expect(source).toContain("removeMusicTrack");
+    expect(source).toContain("fetchCloudMusicTrack");
+    expect(source).toContain("handleFetchAndAddMusicTrack");
+    expect(source).toContain("handleRefreshMusicTrack");
+    expect(source).toContain("抓取并添加");
+    expect(source).toContain("按 ID 刷新信息");
+    expect(source).toContain("page-builder__background-workbench");
+    expect(source).toContain("page-builder__music-grid");
+    expect(source).not.toContain("曲库 JSON");
+  });
+
   it("parses editable homepage fields into a form-friendly shape", () => {
     const parsed = parseHomePageConfig(HOME_JSON);
 
@@ -73,12 +112,17 @@ describe("home page config helpers", () => {
     expect(parsed.form.socialEmail).toContain("mailto:");
     expect(parsed.form.searchPlaceholder).toContain("搜索");
     expect(parsed.form.announcementText).toBe("资料持续整理中\n部分页面含双语对照阅读");
+    expect(parsed.form.homeBackgroundEnabled).toBe(true);
+    expect(parsed.form.homeBackgroundVideoSrc).toBe("/uploads/backgrounds/home-loop-h264.mp4");
+    expect(parsed.form.homeBackgroundPoster).toBe("/uploads/backgrounds/home-loop-poster.jpg");
     expect(parsed.form.backgroundImageText).toBe("/uploads/ui/bg-1.jpg\n/uploads/ui/bg-2.jpg");
-    expect(JSON.parse(parsed.form.musicTracksJson)).toEqual([
+    expect(parsed.form.musicTracks).toEqual([
       expect.objectContaining({
         id: "1809646618",
         title: "云月谣",
         artist: "兰音Reine",
+        album: "云月谣",
+        duration: 240000,
       }),
     ]);
     expect(parsed.form.fallbackCover).toContain("fallback");
@@ -99,21 +143,22 @@ describe("home page config helpers", () => {
       socialEmail: "mailto:maki@example.com",
       searchPlaceholder: "搜索首页内容",
       announcementText: "首页改版中\n欢迎反馈",
+      homeBackgroundEnabled: true,
+      homeBackgroundVideoSrc: "/uploads/backgrounds/custom-home.mp4",
+      homeBackgroundPoster: "/uploads/backgrounds/custom-home.jpg",
       backgroundImageText: "/hero/a.jpg\n\n/hero/b.jpg",
-      musicTracksJson: JSON.stringify(
-        [
-          {
-            id: "1",
-            title: "静态曲目",
-            artist: "静态歌手",
-            coverUrl: "/img/cover.jpg",
-            audioUrl: "https://music.163.com/song/media/outer/url?id=1.mp3",
-            lrc: "",
-          },
-        ],
-        null,
-        2,
-      ),
+      musicTracks: [
+        {
+          id: "1",
+          title: "静态曲目",
+          artist: "静态歌手",
+          coverUrl: "/img/cover.jpg",
+          audioUrl: "https://music.163.com/song/media/outer/url?id=1.mp3",
+          lrc: "",
+          duration: 180000,
+          album: "静态专辑",
+        },
+      ],
       fallbackCover: "/img/fallback.jpg",
       idleLyric: "等待播放中",
     });
@@ -139,6 +184,11 @@ describe("home page config helpers", () => {
       placeholder: "搜索首页内容",
     });
     expect(next.announcements).toEqual(["首页改版中", "欢迎反馈"]);
+    expect(next.homeBackground).toEqual({
+      enabled: true,
+      videoSrc: "/uploads/backgrounds/custom-home.mp4",
+      poster: "/uploads/backgrounds/custom-home.jpg",
+    });
     expect(next.backgroundImages).toEqual(["/hero/a.jpg", "/hero/b.jpg"]);
     expect(next.music.tracks).toEqual([
       {
@@ -148,6 +198,8 @@ describe("home page config helpers", () => {
         coverUrl: "/img/cover.jpg",
         audioUrl: "https://music.163.com/song/media/outer/url?id=1.mp3",
         lrc: "",
+        duration: 180000,
+        album: "静态专辑",
       },
     ]);
     expect("cloudMusicIds" in next.music).toBe(false);

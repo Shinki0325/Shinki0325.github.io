@@ -1,0 +1,596 @@
+[
+  {
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 29,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/e2/73/21214_crt_n2hOg.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/e2/73/21214_crt_n2hOg.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/e2/73/21214_crt_n2hOg.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e2/73/21214_crt_n2hOg.jpg"
+    },
+    "summary": "喜怒哀楽が分かりやすく、照れ屋で寂しがり屋。 素直でひねくれたところがない。\r\n そのため困っている時など、自然と助けてくれる人が現れる。\r\n 実家は歴史と格式のある旅館。 そこを家出同然に飛び出して、汐美学園に入学してくる。\r\n のぞみと慶の妹分で、田舎にいた頃はよく三人一緒に遊んでいた。\r\n ヤキモチ焼きだが、溜めて爆発させるタイプではなく、感じたらすぐ言っちゃうタイプ。\r\n 実家で叩き込まれたため家事は得意。",
+    "name": "藤宮朔夜",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "藤宫朔夜"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "藤宮 朔夜"
+          },
+          {
+            "k": "纯假名",
+            "v": "ふじみや さくや"
+          },
+          {
+            "k": "罗马字",
+            "v": "Fujimiya Sakuya"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "06-29"
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      },
+      {
+        "key": "身高",
+        "value": "150.2cm"
+      },
+      {
+        "key": "体重",
+        "value": "42.6kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B80(B)/ W55/ H79"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://august-soft.com/daito_sd/index.html"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 30
+    },
+    "id": 21214,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 3,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/1d/5d/104092_crt_mauMO.jpg?r=1640502426",
+      "grid": "https://lain.bgm.tv/pic/crt/g/1d/5d/104092_crt_mauMO.jpg?r=1640502426",
+      "large": "https://lain.bgm.tv/pic/crt/l/1d/5d/104092_crt_mauMO.jpg?r=1640502426",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1d/5d/104092_crt_mauMO.jpg?r=1640502426"
+    },
+    "summary": "たかふみの幼馴染みで、たかふみに好意を寄せている女子大生。\r\n偶然、おじさんの魔法の、たかふみとその秘密を共有することになる。\r\n常識人のため、たまに暴走するたかふみをたしなめることも。",
+    "name": "藤宮",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "藤宫"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "藤宫澄夏"
+          },
+          {
+            "k": "日文名",
+            "v": "藤宮澄夏"
+          },
+          {
+            "k": "纯假名",
+            "v": "ふじみや すみか"
+          },
+          {
+            "k": "罗马字",
+            "v": "Fujimiya Sumika"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "6月3日"
+      }
+    ],
+    "stat": {
+      "comments": 42,
+      "collects": 114
+    },
+    "id": 104092,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 19,
+    "birth_year": null,
+    "blood_type": 2,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/89/2a/11442_crt_5WtPL.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/89/2a/11442_crt_5WtPL.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/89/2a/11442_crt_5WtPL.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/89/2a/11442_crt_5WtPL.jpg"
+    },
+    "summary": "尋の後輩で高校1年生。尋を中学生の時代から知っている。桃香曰く「有名人」だったらしい。\r\n天文部に所属している他、ゲーム中では語られていないが設定上では茶道部にも所属している。\r\nクマのキャラクター「ダラグマー」が好きで、キャラクターグッズを集めている。\r\nやや思い込みが激しい面もある。また、子ども扱いされるのを激しく嫌う。\r\n祖母に厳しくしつけられたため基本的に誰にでも丁寧な言葉遣いで話すが、『綾乃スピリッツ』では口うるさい兄の哲郎に対して冷たく当たっている。もっとも嫌っているわけではなく、哲郎が落ち込んだ際には励ます場面も見られる。",
+    "name": "藤宮桃香",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "藤宫桃香"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ふじみや ももか"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "????-07-19"
+      },
+      {
+        "key": "血型",
+        "value": "B"
+      },
+      {
+        "key": "身高",
+        "value": "147cm"
+      },
+      {
+        "key": "体重",
+        "value": "38kg"
+      },
+      {
+        "key": "BWH",
+        "value": "71/54/74"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 6
+    },
+    "id": 11442,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 18,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c8/f9/12969_crt_z6Lb6.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c8/f9/12969_crt_z6Lb6.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c8/f9/12969_crt_z6Lb6.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c8/f9/12969_crt_z6Lb6.jpg"
+    },
+    "summary": "人物介绍：\r\n照料因为交通事故住院的主人公的姐妹女医生。\r\n行动积极，外表看起来完全不像是医生的霞，性格害羞与人交流战战兢兢外表看起来很朴实的雫。两人都是拥有很高医术的医生，而姐姐则更加是女人味十足。虽然作为医生的实力非常优秀，但是因为霞过于奔放，雫过分胆怯的性格，所以很难获得病人的信任。\r\n主人公住院的理由便是为了救在路上呆呆地走着的雫而被迎面而来的卡车所伤。惊慌失措的雫和霞联系，把男主角送入了自己经营的「藤宫医院」就诊。\r\n\r\n故事介绍:\r\n被卡车所撞入院的主人公，迎接他的是由[哗－]姐妹所经营的「藤宫医院」。\r\n被外向的霞和内向的雫照料着的主人公，即将退院之际，姐妹两人大胆的行动扑面而来……！\r\n\r\n霞CV：小林优 雫CV：中原麻衣",
+    "name": "藤宮霞&雫",
+    "infobox": [],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 12969,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 30,
+    "birth_year": 1990,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/1c/7f/21993_crt_0E2Lh.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/1c/7f/21993_crt_0E2Lh.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/1c/7f/21993_crt_0E2Lh.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1c/7f/21993_crt_0E2Lh.jpg"
+    },
+    "summary": "気さくなお嬢様。志摩野学園１年生。\r\n 明るく気さくだが、細やかな気配りも忘れないといういい奴である。主人公のおかしな冗談にもある程度は対応可能であり、そういう意味ではノリもいい。家が古くからの金持ちで、実は生粋のお嬢様である。そのお嬢様であるという事が、本人にとってちょっと重荷となってしまっている。\r\n\r\n 実は、千紗が最近町中で活躍している「魔女っ子」であるとの噂が流れているのだが、真偽は定かではない。小鳥の「ジンタ」といつも一緒に居る。動物が好きで、地元のペットショップでアルバイトをしているくらいだ。\r\n\r\n「そ。わたしってお嬢様だったんだよ」",
+    "name": "藤宮千紗",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "藤宫千纱"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "藤宮 千紗"
+          },
+          {
+            "k": "纯假名",
+            "v": "ふじみや ちさ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "1990-05-30"
+      },
+      {
+        "key": "身高",
+        "value": "153cm"
+      },
+      {
+        "key": "BWH",
+        "value": "76(A)/52/79"
+      }
+    ],
+    "stat": {
+      "comments": 4,
+      "collects": 9
+    },
+    "id": 21993,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/1e/90/23104_crt_meZBn.jpg?r=1396926816",
+      "grid": "https://lain.bgm.tv/pic/crt/g/1e/90/23104_crt_meZBn.jpg?r=1396926816",
+      "large": "https://lain.bgm.tv/pic/crt/l/1e/90/23104_crt_meZBn.jpg?r=1396926816",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1e/90/23104_crt_meZBn.jpg?r=1396926816"
+    },
+    "summary": "本作女主角，高中二年级，与祐树同班。由于“亲近之人的记忆一周后就会消失”的原因，所以不敢结交朋友而逃避人群。擅长数学。",
+    "name": "藤宮香織",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "藤宫香织"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "藤宮 香織"
+          },
+          {
+            "k": "纯假名",
+            "v": "ふじみや かおり"
+          },
+          {
+            "k": "罗马字",
+            "v": "Fujimiya Kaori"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "12月1日"
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      },
+      {
+        "key": "身高",
+        "value": "161.4cm"
+      },
+      {
+        "key": "体重",
+        "value": "47kg"
+      },
+      {
+        "key": "足长",
+        "value": "20.0cm"
+      },
+      {
+        "key": "家庭构成",
+        "value": "父、母"
+      },
+      {
+        "key": "擅长的科目",
+        "value": "数学"
+      },
+      {
+        "key": "不擅长的科目",
+        "value": "世界史"
+      },
+      {
+        "key": "喜欢的东西",
+        "value": "朋友"
+      },
+      {
+        "key": "讨厌的东西",
+        "value": "虫"
+      },
+      {
+        "key": "喜欢的食物",
+        "value": "日式蒸蛋"
+      },
+      {
+        "key": "讨厌的食物",
+        "value": "无"
+      }
+    ],
+    "stat": {
+      "comments": 22,
+      "collects": 157
+    },
+    "id": 23104,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/8e/04/24295_crt_0Um9i.jpg?r=1396926603",
+      "grid": "https://lain.bgm.tv/pic/crt/g/8e/04/24295_crt_0Um9i.jpg?r=1396926603",
+      "large": "https://lain.bgm.tv/pic/crt/l/8e/04/24295_crt_0Um9i.jpg?r=1396926603",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8e/04/24295_crt_0Um9i.jpg?r=1396926603"
+    },
+    "summary": "",
+    "name": "藤宮志穂",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "藤宫志穗"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "藤宮 志穂"
+          },
+          {
+            "k": "纯假名",
+            "v": "ふじみや しほ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "7月1日"
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      },
+      {
+        "key": "身高",
+        "value": "162.7cm"
+      },
+      {
+        "key": "体重",
+        "value": "54kg"
+      }
+    ],
+    "stat": {
+      "comments": 11,
+      "collects": 17
+    },
+    "id": 24295,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/45/f6/25442_crt_44gq8.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/45/f6/25442_crt_44gq8.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/45/f6/25442_crt_44gq8.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/45/f6/25442_crt_44gq8.jpg"
+    },
+    "summary": "みなもと同じ学園に通う藤宮姉妹の姉。剣術の使い手で、剣道部所属ではないが男子部員よりも圧倒的に強い。しかし重度の心臓病を患っており、時折倒れることがある。\r\n能力は「万物を切断する衝撃波を出す」。",
+    "name": "藤宮望",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "藤宫望"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "藤宮 望"
+          },
+          {
+            "k": "纯假名",
+            "v": "ふじみや のぞみ"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 25442,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 3,
+    "gender": "male",
+    "birth_day": 9,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/5b/d5/25715_crt_y2DZ0.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/5b/d5/25715_crt_y2DZ0.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/5b/d5/25715_crt_y2DZ0.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5b/d5/25715_crt_y2DZ0.jpg"
+    },
+    "summary": "晴真の父親で、『フラワーショップ・はるかぜ』 を経営している店主。\r\n晴真とこのみが放課後に店を手伝ってくれるため、平日の夕方や休日は近所の子供たちを対象に、学習塾と書道教室を開いている。\r\n見た目は怖いが、話してみると至って普通の優しいおじさん。\r\n普段から口数が少なくぶっきらぼうなため、敬遠されがちなだけ。\r\n妻は数年前に他界している。\r\n\r\n「お前が決めたことだ。お前の好きにやってみなさい。 父さんはいつでもお前の味方だ」",
+    "name": "藤宮真澄",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "藤宫真澄"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "藤宮 真澄"
+          },
+          {
+            "k": "纯假名",
+            "v": "ふじみや ますみ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Fujimiya Masumi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "3月9日"
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      },
+      {
+        "key": "身高",
+        "value": "177cm"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 25715,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/30/e3/30151_crt_1VoSn.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/30/e3/30151_crt_1VoSn.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/30/e3/30151_crt_1VoSn.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/30/e3/30151_crt_1VoSn.jpg"
+    },
+    "summary": "桜花荘の隣に住む同学年の従妹で、桜花荘の管理をする大家さん一家の次女。\r\n藤宮の家と桜花荘はもともと亡くなった祖父が持っていた建物で、子供の頃に引っ越してきた。\r\n道隆や麗奈とはその頃からの付き合い。 線が細い美少女だが、意外に頑固なところがある。\r\n\r\n両親が共働きのため、姉の千歳が藤宮家の家事を支えている。\r\n汐音も手伝っているうちに慣れてきたが、刃物が苦手なので料理には苦手意識を持っている。\r\nまた怪談話も大の苦手だが、間近に桜花がいるので徐々に常識が覆されていくことになる。\r\n\r\n「タカちゃん…… また桜花さんと何かやってる……」",
+    "name": "藤宮汐音",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "藤宫汐音"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ふじみや しおね"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "155cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B85/ W59/ H86"
+      },
+      {
+        "key": "得意",
+        "value": "料理以外の家事"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 31
+    },
+    "id": 30151,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

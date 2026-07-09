@@ -1,0 +1,495 @@
+[
+  {
+    "birth_mon": 11,
+    "gender": "female",
+    "birth_day": 28,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/1a/22572_crt_hkW24.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/56/1a/22572_crt_hkW24.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/56/1a/22572_crt_hkW24.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/1a/22572_crt_hkW24.jpg"
+    },
+    "summary": "所属演剧部，虎吉的双胞胎妹妹。\r\n和優人从小就是同班同学。\r\n\r\n爱照顾人，并且笑容迷人，在加上身材也不错。\r\n在学校被视作神圣的偶像。\r\n性格有些胆怯，对自己没有信心，不管在恋爱还是在表演方面都没有发挥出真正实力。\r\n\r\n“就一直这样下去……不行么？”",
+    "name": "竜胆つばめ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "龙胆燕"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "りんどう つばめ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "11月28日"
+      }
+    ],
+    "stat": {
+      "comments": 27,
+      "collects": 86
+    },
+    "id": 22572,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ea/c5/11352_crt_LEe11.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ea/c5/11352_crt_LEe11.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ea/c5/11352_crt_LEe11.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ea/c5/11352_crt_LEe11.jpg"
+    },
+    "summary": "ユウキ于来到ラスタル王国的首日再会的青梅竹马的女孩子。\r\n志愿是魔法使，以成为冒险者（兼偶像）为目标。\r\n开朗、爱掉泪、会关照人、性格讨人喜欢，不过对ユウキ则是说这说那很啰嗦。\r\n有一个身为冒险者的姐姐竜胆沙耶（さや）。老家是荞面条铺。",
+    "name": "竜胆リナ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "龙胆莉娜"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 3
+    },
+    "id": 11352,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/4a/33/19888_crt_r86rE.jpg?r=1367315463",
+      "grid": "https://lain.bgm.tv/pic/crt/g/4a/33/19888_crt_r86rE.jpg?r=1367315463",
+      "large": "https://lain.bgm.tv/pic/crt/l/4a/33/19888_crt_r86rE.jpg?r=1367315463",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4a/33/19888_crt_r86rE.jpg?r=1367315463"
+    },
+    "summary": "神様を追いかけてやってきた、狐耳の女の子。\r\n暖かいところとお菓子が大好きで、趣味はしっぽの手入れ。\r\n神様が苦労しているのは主人公のせいだと思い込み、一方的に敵視している。\r\n興味をひかれるものがあると、匂いをかいだり舐めてみたりする癖がある。\r\n好意を持つ相手には捕獲した小動物をプレゼントすることも！？",
+    "name": "竜胆ルリ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "龙胆琉璃"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "リンドウ瑠璃"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "妖族"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://legacy.yuzu-soft.com/tenshin/chara.html#sana"
+      }
+    ],
+    "stat": {
+      "comments": 6,
+      "collects": 41
+    },
+    "id": 19888,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 2,
+    "gender": "female",
+    "birth_day": 5,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/7f/84/31715_crt_7dAI4.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/7f/84/31715_crt_7dAI4.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/7f/84/31715_crt_7dAI4.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7f/84/31715_crt_7dAI4.jpg"
+    },
+    "summary": "15岁。表面是片桐镜磨的女仆以及保镖，其实是暗杀者一族的后裔。喜欢镜磨，会对镜磨的敌对者和附近的女性发动无情的攻势，也因而对镜华相当嫉妒。",
+    "name": "竜胆しづね",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "龙胆静音"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "竜胆 しづね"
+          },
+          {
+            "k": "纯假名",
+            "v": "りんどう しづね"
+          },
+          {
+            "k": "罗马字",
+            "v": "Rindō Shizune"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "2月5日"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 5
+    },
+    "id": 31715,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/62/df/37495_crt_SSQvk.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/62/df/37495_crt_SSQvk.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/62/df/37495_crt_SSQvk.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/62/df/37495_crt_SSQvk.jpg"
+    },
+    "summary": "“東塔生徒会” の新生徒会長。\r\n欧州の名門魔女一族を母方に、世界的な実業家を父方に持つ、完全無欠のお嬢様魔女。\r\n炎の魔女で、同世代の魔女としては世界トップクラスの才能を持つ有名人。\r\n\r\n表裏のない明るい性格で、人間愛にあふれ、接する人々を笑顔にする太陽のような少女。\r\n「C'est super！（セ シュペール！：素晴らしい！）」が口癖の感動屋さんでもある。\r\n箱入り娘なせいか少し世間知らずで、恋愛に関して王子様願望を持つピュアな一面も。\r\n\r\n前生徒会長・氷室舞生の説得工作により、新生徒会長に就任。\r\n持ち前の直向きさで、不慣れな生徒会活動にも積極的に取り組んでいる。\r\n\r\n「C'est super！ とってもロマンチック～」",
+    "name": "竜胆ほのか",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "りんどう ほのか"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "158cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B88（F）/ W56/ H85"
+      },
+      {
+        "key": "所属",
+        "value": "国立御久仁学園 東学舎塔 1年1組 （東学舎塔生徒会・会長）"
+      },
+      {
+        "key": "国籍",
+        "value": "日本"
+      },
+      {
+        "key": "趣味",
+        "value": "お茶会"
+      },
+      {
+        "key": "特技",
+        "value": "マルチリンガル（4ヵ国語）"
+      },
+      {
+        "key": "苦手",
+        "value": "人混み"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 5
+    },
+    "id": 37495,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/07/84/55617_crt_sp0fc.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/07/84/55617_crt_sp0fc.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/07/84/55617_crt_sp0fc.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/07/84/55617_crt_sp0fc.jpg"
+    },
+    "summary": "DXのルームメイト。ウルファネアからの留学生で、ウルファネア王家に連なる貴族筋の公子（次男）。16歳。\r\n穏やかな性格で、模範的な優等生。DXの突拍子も無い行動にいつも驚かされている。異母兄弟の兄が一人いるが、性格の相違や御家騒動などの問題が絡み合い、その仲は複雑。アカデミーに留学してきたのもそうした理由が背景にある。\r\nウルファネア式の剣術に秀で、居合においては達人並みの腕前を持つサムライ。次男坊気質で聞き分けが良過ぎるところもあり、自分を過小評価する発言が散見される。また、自制心が非常に強く、あまり自分の要望のようなものを表さない。幼い頃、跡継ぎ問題を避けるために母親に女装をさせられていた。\r\n故郷に戻っての御家騒動の最中、DX達の助力もあって兄との確執は除かれた事で、自身の夢を見据え、それを実現するための道を歩み始めた。現在はDXに協力することでそれを学ぼうとしている。\r\n極めて強力な「純天恵（クルール）」の持ち主で、竜脈を視る事なども出来るが、厳密にはどのような能力があるかは未だ不明となっている。",
+    "name": "竜胆・濤",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "龙胆·涛"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "濤・竜胆"
+          },
+          {
+            "k": "纯假名",
+            "v": "りんどう とう"
+          },
+          {
+            "k": "罗马字",
+            "v": "Rindō Tō"
+          },
+          {
+            "k": "昵称",
+            "v": "リド"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 55617,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/30/e4/71022_crt_UQu1v.jpg?r=1564103545",
+      "grid": "https://lain.bgm.tv/pic/crt/g/30/e4/71022_crt_UQu1v.jpg?r=1564103545",
+      "large": "https://lain.bgm.tv/pic/crt/l/30/e4/71022_crt_UQu1v.jpg?r=1564103545",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/30/e4/71022_crt_UQu1v.jpg?r=1564103545"
+    },
+    "summary": "帝国華撃団総司令である神崎すみれの秘書であり、\r\n帝国華撃団・風組の隊員。\r\n頭の回転が速く、数字にめっぽう強い。\r\n記憶力が異常に高く、帝国華撃団、大帝国劇場、\r\n神崎重工の要職を務めるすみれを全方位でサポートしており、\r\nすみれの全幅の信頼を得ている。\r\n帝劇では、事務、経理、財務も担当。\r\n特に予算には厳しく、しばしば大葉こまちとの予算バトルが目撃されている。\r\n花組の戦闘行動時には、風組隊員として作戦指令室や\r\n輸送艇「翔鯨丸」にて、司令のサポートを行う。",
+    "name": "竜胆カオル",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "りんどう カオル"
+          },
+          {
+            "k": "罗马字",
+            "v": "Rindo Kaoru"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 71022,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/82/80/75930_crt_CxwcC.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/82/80/75930_crt_CxwcC.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/82/80/75930_crt_CxwcC.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/82/80/75930_crt_CxwcC.jpg"
+    },
+    "summary": "奈央の母親で透のクラスの担任教師をしている。肉食系なママさん。\r\n過去に女王様的な仕事をしていた経験があり、透に対して素質を見出している。\r\nぶっちゃけいつか一発やりたいと思っている。ちなみに現在未亡人である。\r\n基本的には娘第一主義なので、奈央にエッチのテクニックを伝授して透と恋仲になれるように応援をしている。\r\n肉食系な彼女だが、学園ではかなり評判のいい教師であり、溢れ出る母性から『みんなのおかーさん』と呼ばれている。\r\n呑み友達を探していたみると意気投合し、毎夜雲雀の店に呑みに来る。",
+    "name": "竜胆のどか",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "竜胆 のどか"
+          },
+          {
+            "k": "纯假名",
+            "v": "りんどう のどか"
+          }
+        ]
+      },
+      {
+        "key": "スタイル",
+        "value": "164センチ/Hカップ"
+      },
+      {
+        "key": "好きなこと",
+        "value": "飲酒"
+      },
+      {
+        "key": "苦手なこと",
+        "value": "禁酒"
+      },
+      {
+        "key": "好きな食べ物",
+        "value": "肉、お酒"
+      },
+      {
+        "key": "苦手な食べ物",
+        "value": "野菜"
+      },
+      {
+        "key": "CV",
+        "value": "柚原みう"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 5
+    },
+    "id": 75930,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/71/89/91883_crt_4Q5w4.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/71/89/91883_crt_4Q5w4.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/71/89/91883_crt_4Q5w4.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/71/89/91883_crt_4Q5w4.jpg"
+    },
+    "summary": "梁谷学園1年生で、保健委員副委員長を務める。\r\n寡黙で何を考えているのかよく分からない不思議系少女だが、悪人ではなく、主人公たちに好意的に接する。\r\n華奢で線の細い体つきの持ち主。 ちょっと危ない雰囲気の漂う少女体型。",
+    "name": "竜胆つぐみ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "竜胆 つぐみ"
+          },
+          {
+            "k": "纯假名",
+            "v": "りんどう つぐみ"
+          }
+        ]
+      },
+      {
+        "key": "身高",
+        "value": "147cm"
+      },
+      {
+        "key": "体重",
+        "value": "44kg"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 91883,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f7/47/142841_crt_3V2F3.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f7/47/142841_crt_3V2F3.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f7/47/142841_crt_3V2F3.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f7/47/142841_crt_3V2F3.jpg"
+    },
+    "summary": "小次郎を襲ってくる忍者。\r\nガクランを着たバンカラ忍者。女の子ですよ。\r\n一直線な性格。武器は拳であります。",
+    "name": "竜胆ヒカル",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "146cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B74/W55/H77"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 142841,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

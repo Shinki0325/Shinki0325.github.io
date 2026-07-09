@@ -1,0 +1,589 @@
+[
+  {
+    "birth_mon": 2,
+    "gender": "female",
+    "birth_day": 1,
+    "birth_year": 1994,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/87/12381_crt_E6mMF.jpg?r=1529463836",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b1/87/12381_crt_E6mMF.jpg?r=1529463836",
+      "large": "https://lain.bgm.tv/pic/crt/l/b1/87/12381_crt_E6mMF.jpg?r=1529463836",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/87/12381_crt_E6mMF.jpg?r=1529463836"
+    },
+    "summary": "私立花浅葱大学附属学园二年级。\r\n保持着不紧不慢的行动和语调，是个一直挂着笑容的天然系角色。\r\n相当能吃，即使吃很多还是很瘦。\r\n虽然住在池袋，不过每天都去与学校和打工地点很近的未来道具研究所。\r\n对冈伦的厨二病发言不装傻也不吐槽而是直接点头接受(直接忽视的次数也很多)。\r\n\r\n虽然是未来道具研究所的成员，不过对于发明没有兴趣，所以转而制作 Cosplay 服。\r\n但实际上做的只有女性服装，而且自己并不穿，最近正努力地在使漆原(伪娘)穿上自己制作的衣服。\r\n受到景仰的奶奶的影响，喜欢抬头仰望星空，经常可以看到她面向夜空伸出手。",
+    "name": "椎名まゆり",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "椎名真由理"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "しいな まゆり"
+          },
+          {
+            "k": "罗马字",
+            "v": "Shiina Mayuri"
+          },
+          {
+            "k": "昵称",
+            "v": "まゆしぃ☆"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "1994年2月1日(水瓶座)"
+      },
+      {
+        "key": "血型",
+        "value": "O 型"
+      },
+      {
+        "key": "身高",
+        "value": "152cm"
+      },
+      {
+        "key": "体重",
+        "value": "45kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B85 W56 H82"
+      },
+      {
+        "key": "兴趣",
+        "value": [
+          {
+            "v": "天体观测(不是用望远镜，而是单单抬头看夜空那种程度而已)"
+          },
+          {
+            "v": "制作 Cosplay服装(但自己并不 cos)"
+          }
+        ]
+      },
+      {
+        "key": "喜欢的东西",
+        "value": [
+          {
+            "v": "奶奶(6 年前去世)"
+          },
+          {
+            "v": "裁缝"
+          },
+          {
+            "v": "所有食物(干炸食品，香蕉，大杂烩之类)"
+          },
+          {
+            "v": "乌帕(雷 net access battles的吉祥物)"
+          }
+        ]
+      },
+      {
+        "key": "讨厌的东西",
+        "value": "数字"
+      },
+      {
+        "key": "常用的东西",
+        "value": "手表"
+      }
+    ],
+    "stat": {
+      "comments": 261,
+      "collects": 989
+    },
+    "id": 12381,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/6b/2e/7394_crt_CY5Qv.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/6b/2e/7394_crt_CY5Qv.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/6b/2e/7394_crt_CY5Qv.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6b/2e/7394_crt_CY5Qv.jpg"
+    },
+    "summary": "D.D随身携带的备份用\"Rebels\"请求官方正式名称[›](リベルズ)在不明原因之下意外与翼结合变身并因此诞生的少女。于诞生的同时继承翼原有的长相、记忆加以共享，拥有与翼相反的乐观开朗与具有正义感的正面性格。\r\n完结篇中于性命垂危的情况下，用尽了最后的力气与翼变身后消失。当英夫看到翼拿着的手套时，说出了如果当初母亲生第二个小孩就会取名为\"光\"的往事（另外该名字是当初本人诞生时自己取的）。\r\n在D.D的记忆操作之下，表面上光为翼的双胞胎妹妹。\r\n“光”的名字及性格设定取自于歌手宇多田光 。",
+    "name": "椎名ひかり",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "椎名光"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "椎名ヒカル"
+          },
+          {
+            "k": "罗马字",
+            "v": "Shiina Hikaru"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 5,
+      "collects": 8
+    },
+    "id": 7394,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/38/12106_crt_mDXSV.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a4/38/12106_crt_mDXSV.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a4/38/12106_crt_mDXSV.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/38/12106_crt_mDXSV.jpg"
+    },
+    "summary": "さくら荘202号室の住人。編入してきた美術科の2年生。性格はおとなしく世界的な天才画家だが、常識の無さから空太に介護されている。両親は外国に住んでいる。",
+    "name": "椎名ましろ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "椎名真白"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "しいな ましろ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Shiina Mashiro"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "162cm"
+      },
+      {
+        "key": "体重",
+        "value": "45kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B79 W55 H78"
+      }
+    ],
+    "stat": {
+      "comments": 55,
+      "collects": 891
+    },
+    "id": 12106,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/79/c4/20138_crt_LYSzs.jpg?r=1500879625",
+      "grid": "https://lain.bgm.tv/pic/crt/g/79/c4/20138_crt_LYSzs.jpg?r=1500879625",
+      "large": "https://lain.bgm.tv/pic/crt/l/79/c4/20138_crt_LYSzs.jpg?r=1500879625",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/79/c4/20138_crt_LYSzs.jpg?r=1500879625"
+    },
+    "summary": "β世界線上の2028年に、まゆり（当時35歲）が働いていた児盾養護施設に預けられた女の島戦争で戶籍がはっきりせず、本当の氏名は不明。養護施設で成長していく過程で、まるで実の母のようにまゆりになつく。かがりと命名したのはまゆり。どんなに暗黑の世界線でも、みんなを照らす輝くかがり火のようであって欲しいという意味。2034年にまゆりの養女となる。",
+    "name": "椎名かがり",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "椎名篝"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "しぃな かがり"
+          },
+          {
+            "k": "罗马字",
+            "v": "Shiina Kagari"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "7月7日"
+      }
+    ],
+    "stat": {
+      "comments": 21,
+      "collects": 53
+    },
+    "id": 20138,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/31/a7/22495_crt_33u0k.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/31/a7/22495_crt_33u0k.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/31/a7/22495_crt_33u0k.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/31/a7/22495_crt_33u0k.jpg"
+    },
+    "summary": "住在北海道的小学四年级女孩。她性格温柔但内向，容易对任何事情持悲观态度。她和父亲一起生活（母亲已经去世），但父亲忙于面包师傅的修行，所以她几乎总是一个人在家。可能是因为刚从东京转学过来，她在学校和班级里都难以融入，过着孤独的生活。此外，她无法说出自己想说的话，因此受到了飞鸟的注意，被萩原和美奈误解。由于偶然的情况，她开始和光和D·D一起生活。她对相泽翔抱有好感",
+    "name": "椎名つばさ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "椎名翼"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "椎名 つばさ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 11
+    },
+    "id": 22495,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 16,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f4/18/22637_crt_P0tmx.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f4/18/22637_crt_P0tmx.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f4/18/22637_crt_P0tmx.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f4/18/22637_crt_P0tmx.jpg"
+    },
+    "summary": "杏鈴的姐姐。\r\n对与直人、杏鈴的3人友好关系觉得很舒服的样子。\r\n性格懒惰，总是显得很不耐烦。\r\n喜欢妹妹杏鈴的胸部与猫。记忆力很好。\r\n\r\n「不管怎么说，这个世界上不可思议的事情是很多的呀」",
+    "name": "椎名みずか",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "椎名瑞花"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "椎名水华"
+          },
+          {
+            "k": "日文名",
+            "v": "椎名 みずか"
+          },
+          {
+            "k": "纯假名",
+            "v": "しいな みずか"
+          },
+          {
+            "k": "罗马字",
+            "v": "shiina mizuka"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "4月16日"
+      },
+      {
+        "key": "血型",
+        "value": "B型"
+      },
+      {
+        "key": "身高",
+        "value": "155cm"
+      },
+      {
+        "key": "体重",
+        "value": "46kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B95（H）/ W59/ H87"
+      }
+    ],
+    "stat": {
+      "comments": 10,
+      "collects": 36
+    },
+    "id": 22637,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/aa/23944_crt_n1HE6.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b9/aa/23944_crt_n1HE6.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/b9/aa/23944_crt_n1HE6.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/aa/23944_crt_n1HE6.jpg"
+    },
+    "summary": "バイト先の同僚。 お嬢様だが社会勉強のため、ファミリーレストランで働いている。\r\n家は代々続いた名家。 母はイギリス人で、父は日本人の考古学者。\r\n主人公とは軽口を言い合える仲で、仕事上のライバル。\r\n過去に主人公に色々と助けられたことがあり、役に立たなかった自分のことを悔しく思っていた。\r\n強くなれたのは主人公のおかげなので、実は密かに感謝している。\r\n主人公の妹の花蓮とは同じ学園で、先輩と後輩の関係。\r\nバイト先では資産家である家の名前で優遇されないように、偽名を使って “椎名ゆかり” と名乗っている。 本名はまだ秘密。\r\n\r\n「その鼻に、フォークを突っ込まれたいのかしら？」",
+    "name": "椎名ゆかり",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "椎名 ゆかり"
+          },
+          {
+            "k": "纯假名",
+            "v": "しいな ゆかり"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 6
+    },
+    "id": 23944,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/b2/29454_crt_JaUO1.jpg?r=1423191587",
+      "grid": "https://lain.bgm.tv/pic/crt/g/38/b2/29454_crt_JaUO1.jpg?r=1423191587",
+      "large": "https://lain.bgm.tv/pic/crt/l/38/b2/29454_crt_JaUO1.jpg?r=1423191587",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/b2/29454_crt_JaUO1.jpg?r=1423191587"
+    },
+    "summary": "椎名母亲，看上去好年轻的样子，性格也比椎名活跃，经常下田农作。",
+    "name": "椎名の母親",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "椎名的母亲"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 5
+    },
+    "id": 29454,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 23,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/b7/41823_crt_fKxbt.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/72/b7/41823_crt_fKxbt.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/72/b7/41823_crt_fKxbt.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/b7/41823_crt_fKxbt.jpg"
+    },
+    "summary": "見た目通りのクラス委員長で見た目通りの保健委員で見た目通りの世話焼き。頼みごとをされれば最後まで付き合うし、怪我をしたら優しく優しく手当てしてくれる。校則や学園の文化を懇切丁寧にレクチャーしてくれる隣のお姉さんタイプ。",
+    "name": "椎名ゆかり",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "椎名 ゆかり"
+          },
+          {
+            "k": "纯假名",
+            "v": "しいな ゆかり"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "10月23日"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "身高",
+        "value": "161cm"
+      },
+      {
+        "key": "体重",
+        "value": "55kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B/89 W/60 H/92"
+      },
+      {
+        "key": "クラス",
+        "value": "リリィ"
+      },
+      {
+        "key": "年齢",
+        "value": "17"
+      },
+      {
+        "key": "所属",
+        "value": "なし"
+      },
+      {
+        "key": "好きな食べ物",
+        "value": "エクレア"
+      },
+      {
+        "key": "嫌いな食べ物",
+        "value": "辛いもの"
+      },
+      {
+        "key": "趣味",
+        "value": "読書"
+      },
+      {
+        "key": "特技",
+        "value": "応急処置"
+      },
+      {
+        "key": "在校年数",
+        "value": "5年"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 41823,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/85/90/47013_crt_o1Zd1.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/85/90/47013_crt_o1Zd1.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/85/90/47013_crt_o1Zd1.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/85/90/47013_crt_o1Zd1.jpg"
+    },
+    "summary": "ちーちゃんという愛称をあなたに強要する、天真爛漫おっとり小悪魔ぎゃる。\r\n私立逢乃里学園2年7組所属。学年全体で下から数えたほうが格段に早い成績の持ち主。運動も苦手。家事全般もダメ。\r\nその大きな胸を張って得意だと言えるのは、格ゲーとセックスだけ。そんなお勉強の出来とは正反対で、容姿は学園でもトップクラス。\r\n何処を抱きしめても気持ちがよさそうな身体は、情熱的な褐色美肌に覆われている。\r\nちなみに褐色の肌は焼いているのではなく、天然。母方にブラジルの血が入っているからだとか。\r\nそんな濃厚過ぎる女を撒き散らしているにも関わらず、屈託のない無邪気な性格と憎めない笑みのお蔭か、同性の受けも悪くない。",
+    "name": "椎名ちえり",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "椎名 ちえり"
+          },
+          {
+            "k": "纯假名",
+            "v": "しいな ちえり"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 22
+    },
+    "id": 47013,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

@@ -1,0 +1,444 @@
+[
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/a4/87153_crt_098kD.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/65/a4/87153_crt_098kD.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/65/a4/87153_crt_098kD.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/a4/87153_crt_098kD.jpg"
+    },
+    "summary": "仲国鉄道総公東富4 2000専用レイルロオドで、唯一原作ゲーム(Last Run!!)にも登場しているキャラクター。\r\n\r\n仲国が誇る電気式ディーゼル機関車、東富Ⅳ形の栄えある試作機のレイルロオドとして試走から本線運用まで貴重なデータをあげ続けた極めて優秀で快活なエリート。\r\n\r\n日ノ本語にも堪能で、試作機の役割を務め終えたのちは、日仲レイルロオドの架け橋として両国を行き来している。",
+    "name": "西瓜",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "西瓜"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "引用来源",
+        "value": "Wikipedia"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 12
+    },
+    "id": 87153,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/e4/9c/146090_crt_BddjN.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/e4/9c/146090_crt_BddjN.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/e4/9c/146090_crt_BddjN.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e4/9c/146090_crt_BddjN.jpg"
+    },
+    "summary": "彼女は労働者達の生活するスラムに住んでいる。厳しい生活に追われる毎日だが、持ち前の明るさで乗り切っている。いつでもお腹を空かせているようなので、食べ物には弱そう。脱ぐとすごいらしい。",
+    "name": "西瓜穂果",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 146090,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/fd/f2/169262_crt_JXKxh.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/fd/f2/169262_crt_JXKxh.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/fd/f2/169262_crt_JXKxh.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fd/f2/169262_crt_JXKxh.jpg"
+    },
+    "summary": "CV  広田みのる",
+    "name": "西瓜山河豚鬼",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 169262,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/cb/58370_crt_53O1K.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c7/cb/58370_crt_53O1K.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c7/cb/58370_crt_53O1K.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/cb/58370_crt_53O1K.jpg"
+    },
+    "summary": "硬度：七半\r\nメロンちゃん。\r\nマイペースだが、驚いたり怒ったりなどストレスがかかると帯電する。",
+    "name": "ウォーターメロン・トルマリン",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "西瓜电气石"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Watermelon Tourmaline"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 5
+    },
+    "id": 58370,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 9,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/e4/90/70596_crt_8evMB.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/e4/90/70596_crt_8evMB.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/e4/90/70596_crt_8evMB.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e4/90/70596_crt_8evMB.jpg"
+    },
+    "summary": "9岁。戴着整个西瓜皮的小个子少女，因为患有近视而利用西瓜皮上挖出的洞才看得清楚(小孔效果)。可以将身体完全缩在西瓜皮里伪装成单纯的西瓜来收集情报。",
+    "name": "スイカ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "西瓜"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Suika"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "9月9日"
+      },
+      {
+        "key": "血型",
+        "value": "O型"
+      },
+      {
+        "key": "身高",
+        "value": "119cm"
+      },
+      {
+        "key": "体重",
+        "value": "21kg"
+      }
+    ],
+    "stat": {
+      "comments": 22,
+      "collects": 58
+    },
+    "id": 70596,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d8/0c/158545_crt_69sF5.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d8/0c/158545_crt_69sF5.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/d8/0c/158545_crt_69sF5.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d8/0c/158545_crt_69sF5.jpg"
+    },
+    "summary": "Melon-pults do heavy damage to groups of zombies.\r\n\r\nThere's no false modesty with Melon-pult. \"Sun-for-damage, I deliver the biggest punch on the lawn,\" he says. \"I'm not bragging. Run the numbers. You'll see.\"",
+    "name": "Melon-pult",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "西瓜投手"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "Damage",
+        "value": "heavy"
+      },
+      {
+        "key": "Range",
+        "value": "lobbed"
+      },
+      {
+        "key": "Special",
+        "value": "melons damage nearby enemies on impact"
+      },
+      {
+        "key": "Cost",
+        "value": "300"
+      },
+      {
+        "key": "Recharge",
+        "value": "fast"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 158545,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/cb/f9/133763_crt_0Us2W.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/cb/f9/133763_crt_0Us2W.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/cb/f9/133763_crt_0Us2W.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cb/f9/133763_crt_0Us2W.jpg"
+    },
+    "summary": "■説明\r\n\r\nユグドラシルタワーの無人迎撃システムとして配備されていたスイカアームズ。\r\n\r\n巨大な薙刀「スイカ双刃刀」を操るヨロイモードや、空中から激しい銃撃を行うジャイロモード、火縄大橙DJ銃(ヒナワダイダイディージェイジュウ)の砲撃にも耐え得る防御形態の大玉モードへと変形可能。\r\n\r\nシド＝アーマードライダーシグルドはソニックアローを通してシドロックシードを使うことで、3機の無人スイカアームズを同時に起動・コントロールした。\r\n\r\n\r\n変身者：─\r\n\r\n起動・運用時に使用するアイテム：スイカロックシード ※シドロックシードで複数体を同時に起動・コントロールすることも可能",
+    "name": "無人スイカアームズ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "无人西瓜铠甲"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Unmanned Suika Arms"
+          },
+          {
+            "k": "纯假名",
+            "v": "むじんすいかあーむず"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "https://www.kamen-rider-official.com/zukan/kamen_rider_members/167"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 133763,
+    "locked": false,
+    "type": 2,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/de/47/158549_crt_6C61m.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/de/47/158549_crt_6C61m.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/de/47/158549_crt_6C61m.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/de/47/158549_crt_6C61m.jpg"
+    },
+    "summary": "Winter Melons do heavy damage and slow groups of zombies.\r\n\r\nMust be planted on melon-pults\r\n\r\nWinter Melon tries to calm his nerves. He hears the zombies approach. Will he make it? Will anyone make it?",
+    "name": "Winter Melon",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "冰西瓜投手"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "“冰”瓜"
+          }
+        ]
+      },
+      {
+        "key": "Damage",
+        "value": "very heavy"
+      },
+      {
+        "key": "Range",
+        "value": "lobbed"
+      },
+      {
+        "key": "Firing Speed",
+        "value": "1/2x"
+      },
+      {
+        "key": "Special",
+        "value": "melons damage and freeze nearby enemies on impact"
+      },
+      {
+        "key": "Cost",
+        "value": "200"
+      },
+      {
+        "key": "Recharge",
+        "value": "very slow"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 1
+    },
+    "id": 158549,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/a5/177151_crt_W4zWB.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/80/a5/177151_crt_W4zWB.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/80/a5/177151_crt_W4zWB.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/a5/177151_crt_W4zWB.jpg"
+    },
+    "summary": "三剑客的师傅兼无极的师弟，喜欢夜燕，为了夜燕经常与无极争风吃醋，人设对应《忍者乱太郎》里的土井半助，在第四季大结局中为了给果宝特攻争取足够的时间他与魔霸天王展开决斗，最终被东方求败和四大恶贼杀死。",
+    "name": "英雄",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "烂西瓜"
+          },
+          {
+            "v": "矮西瓜"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 177151,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/0a/8f/120146_crt_E8jxF.jpg?r=1668317860",
+      "grid": "https://lain.bgm.tv/pic/crt/g/0a/8f/120146_crt_E8jxF.jpg?r=1668317860",
+      "large": "https://lain.bgm.tv/pic/crt/l/0a/8f/120146_crt_E8jxF.jpg?r=1668317860",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0a/8f/120146_crt_E8jxF.jpg?r=1668317860"
+    },
+    "summary": "百七不思議のひとつ。ランドセル背負って園のクラスに居座る。",
+    "name": "物部スイカ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "物部西瓜"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ものべスイカ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 2
+    },
+    "id": 120146,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

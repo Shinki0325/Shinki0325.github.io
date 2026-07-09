@@ -1,0 +1,448 @@
+[
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/2c/8f/14497_crt_A88A8.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/2c/8f/14497_crt_A88A8.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/2c/8f/14497_crt_A88A8.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2c/8f/14497_crt_A88A8.jpg"
+    },
+    "summary": "駅前の屋外スケート場でよく練習をしている少女。 白咲学園2年生。\r\nスケートの実力はかなりのもので、噂では昔、世界選手権の候補にもなっていたという。\r\n\r\n学園では、気立てが良く友達も多い人気者。\r\nある事件により初雪を警戒しており、玉樹や希におかしなことをしないようにと、おせっかいを焼こうとする。\r\n\r\n「改めてください！　クリスマスなのに、どうして先輩はそうなんですか!?」",
+    "name": "あずま夜",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "吾妻夜"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "あずま よる"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "157cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B80/W54/H78"
+      }
+    ],
+    "stat": {
+      "comments": 23,
+      "collects": 126
+    },
+    "id": 14497,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f3/47/103350_crt_GWePp.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f3/47/103350_crt_GWePp.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f3/47/103350_crt_GWePp.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f3/47/103350_crt_GWePp.jpg"
+    },
+    "summary": "商人の父を手伝って教団に品物を納めていたとき、リューと出会い、親友になる。リューの危機に際し、彼を助けようとして瀕死の重傷を負い、そのまま行方知れずとなっていた。商人だからか、人付き合いは基本的に上手いのだが、特定の人物に対してのみ敵意をあらわにする。",
+    "name": "アズマ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Azuma"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://www.studio-ego.co.jp/"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 103350,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/5f/55/136818_crt_AODd1.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/5f/55/136818_crt_AODd1.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/5f/55/136818_crt_AODd1.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5f/55/136818_crt_AODd1.jpg"
+    },
+    "summary": "",
+    "name": "アズマ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 136818,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/21/5b/165588_crt_sgc1r.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/21/5b/165588_crt_sgc1r.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/21/5b/165588_crt_sgc1r.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/21/5b/165588_crt_sgc1r.jpg"
+    },
+    "summary": "",
+    "name": "アズマ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 165588,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/85/63/22700_crt_o2JqV.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/85/63/22700_crt_o2JqV.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/85/63/22700_crt_o2JqV.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/85/63/22700_crt_o2JqV.jpg"
+    },
+    "summary": "星影学園の廊下を、制服姿で徘徊している “魔女”。\r\n少しきつい性格であり、会えばわりと冷たいひと言を晴彦や教え子たちに投げ掛けてくる。\r\nきっと “風紀委員” みたいなものに違いない、と晴彦は勝手に思っているし、その評価が似合う少女。\r\n魔女としての能力は不明。\r\n噂ではこの学園と他の世界との出入口を管理している、と言われている。\r\n得意科目は数学。\r\n\r\n「あまりのんきに過ごし続けていると、良くないことが起こるわよ」",
+    "name": "アズマさん",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "血型",
+        "value": "??型"
+      },
+      {
+        "key": "身高",
+        "value": "160cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B83（C）/ W58/ H82"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 22700,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/2d/92/66383_crt_e136X.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/2d/92/66383_crt_e136X.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/2d/92/66383_crt_e136X.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2d/92/66383_crt_e136X.jpg"
+    },
+    "summary": "アズマリムとは、後輩系JKバーチャルYouTuberである。\r\n\r\n視聴者を「センパイ」と呼ぶ、女子高生バーチャルYouTuber。\r\n\r\n愛称はアズリム。\r\n\r\nゲーム実況などをよく見ており、自分も配信してみたい！との理由からVTuberデビューを果たした。\r\n\r\nあざとい猫耳パーカーと絶対領域ニーソ、そして絶望的なスタミナから繰り出される息切れ芸が特徴。\r\nダンスや筋トレ実況の直後には勿論、下手するとオープニングトーク時点で息が上がっていることもある。\r\n生放送中でもかまわず給水を行っており、度々尿意に襲われている。\r\n\r\n好きなものは牛丼(特に松屋フリーク)。\r\n苦手なものは虫。\r\n\r\nアニメなども好きで、特にアイカツ！などのアイドルアニメやキッズアニメをよく見ている様子。",
+    "name": "アズマリム",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "后辈"
+          },
+          {
+            "v": "饮水姬"
+          },
+          {
+            "v": "アズリム"
+          },
+          {
+            "k": "第二中文名",
+            "v": "梓璃梦"
+          },
+          {
+            "k": "英文名",
+            "v": "Azuma Lim"
+          },
+          {
+            "k": "昵称",
+            "v": "Azulim"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "7月7日"
+      },
+      {
+        "key": "身高",
+        "value": "154㎝前後"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://dic.nicovideo.jp/a/アズマリム"
+      },
+      {
+        "key": "Twitter",
+        "value": "https://twitter.com/azuma_lim"
+      },
+      {
+        "key": "YouTube",
+        "value": "https://www.youtube.com/channel/UCARI2g7r-PHaxrIcAYsMfmA"
+      },
+      {
+        "key": "niconico",
+        "value": "http://www.nicovideo.jp/user/78723080"
+      }
+    ],
+    "stat": {
+      "comments": 4,
+      "collects": 9
+    },
+    "id": 66383,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/0d/9d/105724_crt_45ZvR.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/0d/9d/105724_crt_45ZvR.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/0d/9d/105724_crt_45ZvR.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0d/9d/105724_crt_45ZvR.jpg"
+    },
+    "summary": "",
+    "name": "アズマ＝シノノメ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Azuma Shinonome"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://vndb.org/v3503/chars#chars"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 105724,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/5d/51/107013_crt_G9SiH.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/5d/51/107013_crt_G9SiH.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/5d/51/107013_crt_G9SiH.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5d/51/107013_crt_G9SiH.jpg"
+    },
+    "summary": "",
+    "name": "アズマノ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Azumano"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "317.zashiki.com/deathpair/"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 107013,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/07/13/112814_crt_kHc88.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/07/13/112814_crt_kHc88.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/07/13/112814_crt_kHc88.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/07/13/112814_crt_kHc88.jpg"
+    },
+    "summary": "シーブックの友人のひとりで、率先して物事を行うタイプ。スペース・アークに移ってらも、メカニックマンのナントたちを助けて働く。",
+    "name": "ジョージ・アズマ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "George Azuma"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "年齢",
+        "value": "17歳"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://www.gundam-f91.net/character/05.html"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 112814,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/2b/144965_crt_ysYYG.jpg?r=1701112179",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d0/2b/144965_crt_ysYYG.jpg?r=1701112179",
+      "large": "https://lain.bgm.tv/pic/crt/l/d0/2b/144965_crt_ysYYG.jpg?r=1701112179",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/2b/144965_crt_ysYYG.jpg?r=1701112179"
+    },
+    "summary": "",
+    "name": "安藤あずま",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Azuma Ando"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 144965,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

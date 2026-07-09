@@ -1,0 +1,1832 @@
+[
+  {
+    "id": "rance-series-10941",
+    "workId": "rance-series",
+    "name": "シィル・プライン",
+    "birthday": "02-10",
+    "avatar": "/uploads/character-birthdays/rance-series/rance-series-10941.webp",
+    "status": "existing"
+  },
+  {
+    "id": "rance-series-10954",
+    "workId": "rance-series",
+    "name": "見当かなみ",
+    "birthday": "05-03",
+    "avatar": "/uploads/character-birthdays/rance-series/rance-series-10954.webp",
+    "status": "existing"
+  },
+  {
+    "id": "rance-series-10965",
+    "workId": "rance-series",
+    "name": "魔想志津香",
+    "birthday": "07-30",
+    "avatar": "/uploads/character-birthdays/rance-series/rance-series-10965.webp",
+    "status": "existing"
+  },
+  {
+    "id": "rance-series-10967",
+    "workId": "rance-series",
+    "name": "リズナ・ランフビット",
+    "birthday": "08-08",
+    "avatar": "/uploads/character-birthdays/rance-series/rance-series-10967.webp",
+    "status": "existing"
+  },
+  {
+    "id": "rance-series-10978",
+    "workId": "rance-series",
+    "name": "マリア・カスタード",
+    "birthday": "09-08",
+    "avatar": "/uploads/character-birthdays/rance-series/rance-series-10978.webp",
+    "status": "existing"
+  },
+  {
+    "id": "rance-series-10980",
+    "workId": "rance-series",
+    "name": "コパンドン・ドット",
+    "birthday": "09-09",
+    "avatar": "/uploads/character-birthdays/rance-series/rance-series-10980.webp",
+    "status": "existing"
+  },
+  {
+    "id": "summer-pockets-36168",
+    "workId": "summer-pockets",
+    "name": "野村美希",
+    "birthday": "02-02",
+    "avatar": "/uploads/character-birthdays/summer-pockets/summer-pockets-36168.webp",
+    "status": "existing"
+  },
+  {
+    "id": "summer-pockets-32211",
+    "workId": "summer-pockets",
+    "name": "久島鴎",
+    "birthday": "04-04",
+    "avatar": "/uploads/character-birthdays/summer-pockets/summer-pockets-32211.webp",
+    "status": "existing"
+  },
+  {
+    "id": "summer-pockets-36169",
+    "workId": "summer-pockets",
+    "name": "水織静久",
+    "birthday": "04-29",
+    "avatar": "/uploads/character-birthdays/summer-pockets/summer-pockets-36169.webp",
+    "status": "existing"
+  },
+  {
+    "id": "summer-pockets-32209",
+    "workId": "summer-pockets",
+    "name": "鳴瀨しろは",
+    "birthday": "06-08",
+    "avatar": "/uploads/character-birthdays/summer-pockets/summer-pockets-32209.webp",
+    "status": "existing"
+  },
+  {
+    "id": "summer-pockets-39421",
+    "workId": "summer-pockets",
+    "name": "神山識",
+    "birthday": "07-04",
+    "avatar": "/uploads/character-birthdays/summer-pockets/summer-pockets-39421.webp",
+    "status": "existing"
+  },
+  {
+    "id": "summer-pockets-32212",
+    "workId": "summer-pockets",
+    "name": "紬ヴェンダース",
+    "birthday": "08-31",
+    "avatar": "/uploads/character-birthdays/summer-pockets/summer-pockets-32212.webp",
+    "status": "existing"
+  },
+  {
+    "id": "summer-pockets-36170",
+    "workId": "summer-pockets",
+    "name": "加藤羽未",
+    "birthday": "09-01",
+    "avatar": "/uploads/character-birthdays/summer-pockets/summer-pockets-36170.webp",
+    "status": "existing"
+  },
+  {
+    "id": "summer-pockets-32210",
+    "workId": "summer-pockets",
+    "name": "空門蒼",
+    "birthday": "09-20",
+    "avatar": "/uploads/character-birthdays/summer-pockets/summer-pockets-32210.webp",
+    "status": "existing"
+  },
+  {
+    "id": "summer-pockets-39422",
+    "workId": "summer-pockets",
+    "name": "空門藍",
+    "birthday": "09-20",
+    "avatar": "/uploads/character-birthdays/summer-pockets/summer-pockets-39422.webp",
+    "status": "existing"
+  },
+  {
+    "id": "hoshikaka-3190",
+    "workId": "hoshikaka",
+    "name": "七森星羅",
+    "birthday": "07-24",
+    "avatar": "/uploads/character-birthdays/hoshikaka/hoshikaka-3190.webp",
+    "status": "existing"
+  },
+  {
+    "id": "hoshikaka-3192",
+    "workId": "hoshikaka",
+    "name": "日向伊吹",
+    "birthday": "08-15",
+    "avatar": "/uploads/character-birthdays/hoshikaka/hoshikaka-3192.webp",
+    "status": "existing"
+  },
+  {
+    "id": "hoshikaka-3193",
+    "workId": "hoshikaka",
+    "name": "酒井陽菜",
+    "birthday": "09-29",
+    "avatar": "/uploads/character-birthdays/hoshikaka/hoshikaka-3193.webp",
+    "status": "existing"
+  },
+  {
+    "id": "hoshikaka-3194",
+    "workId": "hoshikaka",
+    "name": "藤堂こより",
+    "birthday": "10-05",
+    "avatar": "/uploads/character-birthdays/hoshikaka/hoshikaka-3194.webp",
+    "status": "existing"
+  },
+  {
+    "id": "hoshikaka-3195",
+    "workId": "hoshikaka",
+    "name": "藤堂かさね",
+    "birthday": "10-08",
+    "avatar": "/uploads/character-birthdays/hoshikaka/hoshikaka-3195.webp",
+    "status": "existing"
+  },
+  {
+    "id": "hoshikaka-3196",
+    "workId": "hoshikaka",
+    "name": "神本円佳",
+    "birthday": "10-13",
+    "avatar": "/uploads/character-birthdays/hoshikaka/hoshikaka-3196.webp",
+    "status": "existing"
+  },
+  {
+    "id": "hoshikaka-3197",
+    "workId": "hoshikaka",
+    "name": "中津川初",
+    "birthday": "10-17",
+    "avatar": "/uploads/character-birthdays/hoshikaka/hoshikaka-3197.webp",
+    "status": "existing"
+  },
+  {
+    "id": "hoshikaka-3199",
+    "workId": "hoshikaka",
+    "name": "藤堂つむぎ",
+    "birthday": "12-09",
+    "avatar": "/uploads/character-birthdays/hoshikaka/hoshikaka-3199.webp",
+    "status": "existing"
+  },
+  {
+    "id": "hoshikaka-3200",
+    "workId": "hoshikaka",
+    "name": "万千歌",
+    "birthday": "12-20",
+    "avatar": "/uploads/character-birthdays/hoshikaka/hoshikaka-3200.webp",
+    "status": "existing"
+  },
+  {
+    "id": "aokana-8938",
+    "workId": "aokana",
+    "name": "有坂真白",
+    "birthday": "02-14",
+    "avatar": "/uploads/character-birthdays/aokana/aokana-8938.webp",
+    "status": "existing"
+  },
+  {
+    "id": "aokana-8939",
+    "workId": "aokana",
+    "name": "鳶沢みさき",
+    "birthday": "04-16",
+    "avatar": "/uploads/character-birthdays/aokana/aokana-8939.webp",
+    "status": "existing"
+  },
+  {
+    "id": "aokana-8940",
+    "workId": "aokana",
+    "name": "倉科明日香",
+    "birthday": "05-02",
+    "avatar": "/uploads/character-birthdays/aokana/aokana-8940.webp",
+    "status": "existing"
+  },
+  {
+    "id": "aokana-8941",
+    "workId": "aokana",
+    "name": "市ノ瀬莉佳",
+    "birthday": "12-20",
+    "avatar": "/uploads/character-birthdays/aokana/aokana-8941.webp",
+    "status": "existing"
+  },
+  {
+    "id": "maitetsu-5495",
+    "workId": "maitetsu",
+    "name": "蓑笠凪",
+    "birthday": "01-07",
+    "avatar": "/uploads/character-birthdays/maitetsu/maitetsu-5495.webp",
+    "status": "existing"
+  },
+  {
+    "id": "maitetsu-58372",
+    "workId": "maitetsu",
+    "name": "斎藤帆香",
+    "birthday": "01-15",
+    "avatar": "/uploads/character-birthdays/maitetsu/maitetsu-58372.webp",
+    "status": "existing"
+  },
+  {
+    "id": "maitetsu-58381",
+    "workId": "maitetsu",
+    "name": "みろく",
+    "birthday": "01-28",
+    "avatar": "/uploads/character-birthdays/maitetsu/maitetsu-58381.webp",
+    "status": "existing"
+  },
+  {
+    "id": "maitetsu-58374",
+    "workId": "maitetsu",
+    "name": "十川路子",
+    "birthday": "02-02",
+    "avatar": "/uploads/character-birthdays/maitetsu/maitetsu-58374.webp",
+    "status": "existing"
+  },
+  {
+    "id": "maitetsu-58379",
+    "workId": "maitetsu",
+    "name": "ニイロク",
+    "birthday": "02-06",
+    "avatar": "/uploads/character-birthdays/maitetsu/maitetsu-58379.webp",
+    "status": "existing"
+  },
+  {
+    "id": "maitetsu-58380",
+    "workId": "maitetsu",
+    "name": "ひよこ",
+    "birthday": "02-28",
+    "avatar": "/uploads/character-birthdays/maitetsu/maitetsu-58380.webp",
+    "status": "existing"
+  },
+  {
+    "id": "maitetsu-58364",
+    "workId": "maitetsu",
+    "name": "浦上香月",
+    "birthday": "02-28",
+    "avatar": "/uploads/character-birthdays/maitetsu/maitetsu-58364.webp",
+    "status": "existing"
+  },
+  {
+    "id": "maitetsu-5496",
+    "workId": "maitetsu",
+    "name": "ハチロク（すず）",
+    "birthday": "03-08",
+    "avatar": "/uploads/character-birthdays/maitetsu/maitetsu-5496.webp",
+    "status": "existing"
+  },
+  {
+    "id": "maitetsu-5497",
+    "workId": "maitetsu",
+    "name": "れいな",
+    "birthday": "03-26",
+    "avatar": "/uploads/character-birthdays/maitetsu/maitetsu-5497.webp",
+    "status": "existing"
+  },
+  {
+    "id": "maitetsu-58384",
+    "workId": "maitetsu",
+    "name": "姜叶煌",
+    "birthday": "04-01",
+    "avatar": "/uploads/character-birthdays/maitetsu/maitetsu-58384.webp",
+    "status": "existing"
+  },
+  {
+    "id": "maitetsu-58370",
+    "workId": "maitetsu",
+    "name": "永山典子",
+    "birthday": "05-25",
+    "avatar": "/uploads/character-birthdays/maitetsu/maitetsu-58370.webp",
+    "status": "existing"
+  },
+  {
+    "id": "maitetsu-58375",
+    "workId": "maitetsu",
+    "name": "オリヴィ",
+    "birthday": "06-13",
+    "avatar": "/uploads/character-birthdays/maitetsu/maitetsu-58375.webp",
+    "status": "existing"
+  },
+  {
+    "id": "maitetsu-58373",
+    "workId": "maitetsu",
+    "name": "宮本依千",
+    "birthday": "06-20",
+    "avatar": "/uploads/character-birthdays/maitetsu/maitetsu-58373.webp",
+    "status": "existing"
+  },
+  {
+    "id": "maitetsu-5498",
+    "workId": "maitetsu",
+    "name": "宝生稀咲",
+    "birthday": "07-01",
+    "avatar": "/uploads/character-birthdays/maitetsu/maitetsu-5498.webp",
+    "status": "existing"
+  },
+  {
+    "id": "maitetsu-58366",
+    "workId": "maitetsu",
+    "name": "登呂結比",
+    "birthday": "07-11",
+    "avatar": "/uploads/character-birthdays/maitetsu/maitetsu-58366.webp",
+    "status": "existing"
+  },
+  {
+    "id": "maitetsu-58382",
+    "workId": "maitetsu",
+    "name": "西瓜",
+    "birthday": "07-31",
+    "avatar": "/uploads/character-birthdays/maitetsu/maitetsu-58382.webp",
+    "status": "existing"
+  },
+  {
+    "id": "maitetsu-5499",
+    "workId": "maitetsu",
+    "name": "早瀬ふかみ",
+    "birthday": "08-10",
+    "avatar": "/uploads/character-birthdays/maitetsu/maitetsu-5499.webp",
+    "status": "existing"
+  },
+  {
+    "id": "maitetsu-58385",
+    "workId": "maitetsu",
+    "name": "No.19",
+    "birthday": "08-28",
+    "avatar": "/uploads/character-birthdays/maitetsu/maitetsu-58385.webp",
+    "status": "existing"
+  },
+  {
+    "id": "maitetsu-58377",
+    "workId": "maitetsu",
+    "name": "右田ひかり",
+    "birthday": "09-10",
+    "avatar": "/uploads/character-birthdays/maitetsu/maitetsu-58377.webp",
+    "status": "existing"
+  },
+  {
+    "id": "maitetsu-58387",
+    "workId": "maitetsu",
+    "name": "中村千景",
+    "birthday": "09-30",
+    "avatar": "/uploads/character-birthdays/maitetsu/maitetsu-58387.webp",
+    "status": "existing"
+  },
+  {
+    "id": "maitetsu-5500",
+    "workId": "maitetsu",
+    "name": "右田日々姫",
+    "birthday": "10-25",
+    "avatar": "/uploads/character-birthdays/maitetsu/maitetsu-5500.webp",
+    "status": "existing"
+  },
+  {
+    "id": "maitetsu-5501",
+    "workId": "maitetsu",
+    "name": "右田真闇",
+    "birthday": "11-27",
+    "avatar": "/uploads/character-birthdays/maitetsu/maitetsu-5501.webp",
+    "status": "existing"
+  },
+  {
+    "id": "maitetsu-5502",
+    "workId": "maitetsu",
+    "name": "雛衣ポーレット",
+    "birthday": "12-18",
+    "avatar": "/uploads/character-birthdays/maitetsu/maitetsu-5502.webp",
+    "status": "existing"
+  },
+  {
+    "id": "kinkoi-943",
+    "workId": "kinkoi",
+    "name": "カミナル･ル･プルテア･ソルティレージュ･シスア",
+    "birthday": "02-22",
+    "avatar": "/uploads/character-birthdays/kinkoi/kinkoi-943.webp",
+    "status": "existing"
+  },
+  {
+    "id": "kinkoi-944",
+    "workId": "kinkoi",
+    "name": "シルヴィア･ル･クルスクラウン･ソルティレージュ･シスア",
+    "birthday": "03-03",
+    "avatar": "/uploads/character-birthdays/kinkoi/kinkoi-944.webp",
+    "status": "existing"
+  },
+  {
+    "id": "kinkoi-945",
+    "workId": "kinkoi",
+    "name": "僧間理亜",
+    "birthday": "03-03",
+    "avatar": "/uploads/character-birthdays/kinkoi/kinkoi-945.webp",
+    "status": "existing"
+  },
+  {
+    "id": "kinkoi-946",
+    "workId": "kinkoi",
+    "name": "城ヶ崎絢華",
+    "birthday": "04-25",
+    "avatar": "/uploads/character-birthdays/kinkoi/kinkoi-946.webp",
+    "status": "existing"
+  },
+  {
+    "id": "kinkoi-947",
+    "workId": "kinkoi",
+    "name": "エロイナ･ディ･カバリェロ･イスタ",
+    "birthday": "05-25",
+    "avatar": "/uploads/character-birthdays/kinkoi/kinkoi-947.webp",
+    "status": "existing"
+  },
+  {
+    "id": "kinkoi-948",
+    "workId": "kinkoi",
+    "name": "妃玲奈",
+    "birthday": "08-01",
+    "avatar": "/uploads/character-birthdays/kinkoi/kinkoi-948.webp",
+    "status": "existing"
+  },
+  {
+    "id": "kinkoi-949",
+    "workId": "kinkoi",
+    "name": "栗生茜",
+    "birthday": "09-13",
+    "avatar": "/uploads/character-birthdays/kinkoi/kinkoi-949.webp",
+    "status": "existing"
+  },
+  {
+    "id": "ambitious-mission-45425",
+    "workId": "ambitious-mission",
+    "name": "本郷虹夢",
+    "birthday": "02-14",
+    "avatar": "/uploads/character-birthdays/ambitious-mission/ambitious-mission-45425.webp",
+    "status": "existing"
+  },
+  {
+    "id": "ambitious-mission-45423",
+    "workId": "ambitious-mission",
+    "name": "有瀬かぐや",
+    "birthday": "04-11",
+    "avatar": "/uploads/character-birthdays/ambitious-mission/ambitious-mission-45423.webp",
+    "status": "existing"
+  },
+  {
+    "id": "ambitious-mission-45426",
+    "workId": "ambitious-mission",
+    "name": "有瀬あてな",
+    "birthday": "05-05",
+    "avatar": "/uploads/character-birthdays/ambitious-mission/ambitious-mission-45426.webp",
+    "status": "existing"
+  },
+  {
+    "id": "ambitious-mission-45427",
+    "workId": "ambitious-mission",
+    "name": "シャルロット・ディ・カーブホーン・イェーズ",
+    "birthday": "07-20",
+    "avatar": "/uploads/character-birthdays/ambitious-mission/ambitious-mission-45427.webp",
+    "status": "existing"
+  },
+  {
+    "id": "ambitious-mission-45424",
+    "workId": "ambitious-mission",
+    "name": "石川弥栄",
+    "birthday": "08-01",
+    "avatar": "/uploads/character-birthdays/ambitious-mission/ambitious-mission-45424.webp",
+    "status": "existing"
+  },
+  {
+    "id": "kakenuke-seishun-sparking-38833",
+    "workId": "kakenuke-seishun-sparking",
+    "name": "聖橘花",
+    "birthday": "01-08",
+    "avatar": "/uploads/character-birthdays/kakenuke-seishun-sparking/kakenuke-seishun-sparking-38833.webp",
+    "status": "existing"
+  },
+  {
+    "id": "kakenuke-seishun-sparking-38832",
+    "workId": "kakenuke-seishun-sparking",
+    "name": "海堂凪子",
+    "birthday": "05-27",
+    "avatar": "/uploads/character-birthdays/kakenuke-seishun-sparking/kakenuke-seishun-sparking-38832.webp",
+    "status": "existing"
+  },
+  {
+    "id": "kakenuke-seishun-sparking-38834",
+    "workId": "kakenuke-seishun-sparking",
+    "name": "遠野律",
+    "birthday": "06-18",
+    "avatar": "/uploads/character-birthdays/kakenuke-seishun-sparking/kakenuke-seishun-sparking-38834.webp",
+    "status": "existing"
+  },
+  {
+    "id": "kakenuke-seishun-sparking-38829",
+    "workId": "kakenuke-seishun-sparking",
+    "name": "小日向響",
+    "birthday": "08-08",
+    "avatar": "/uploads/character-birthdays/kakenuke-seishun-sparking/kakenuke-seishun-sparking-38829.webp",
+    "status": "existing"
+  },
+  {
+    "id": "kakenuke-seishun-sparking-38830",
+    "workId": "kakenuke-seishun-sparking",
+    "name": "鹿島理々",
+    "birthday": "10-13",
+    "avatar": "/uploads/character-birthdays/kakenuke-seishun-sparking/kakenuke-seishun-sparking-38830.webp",
+    "status": "existing"
+  },
+  {
+    "id": "kakenuke-seishun-sparking-38831",
+    "workId": "kakenuke-seishun-sparking",
+    "name": "柊栞里",
+    "birthday": "12-03",
+    "avatar": "/uploads/character-birthdays/kakenuke-seishun-sparking/kakenuke-seishun-sparking-38831.webp",
+    "status": "existing"
+  },
+  {
+    "id": "floral-flowlove-4184",
+    "workId": "floral-flowlove",
+    "name": "斉須莉玖",
+    "birthday": "01-06",
+    "avatar": "/uploads/character-birthdays/floral-flowlove/floral-flowlove-4184.webp",
+    "status": "existing"
+  },
+  {
+    "id": "floral-flowlove-4185",
+    "workId": "floral-flowlove",
+    "name": "美鳩夏乃",
+    "birthday": "02-14",
+    "avatar": "/uploads/character-birthdays/floral-flowlove/floral-flowlove-4185.webp",
+    "status": "existing"
+  },
+  {
+    "id": "floral-flowlove-4186",
+    "workId": "floral-flowlove",
+    "name": "朱鷺坂七緒",
+    "birthday": "03-07",
+    "avatar": "/uploads/character-birthdays/floral-flowlove/floral-flowlove-4186.webp",
+    "status": "existing"
+  },
+  {
+    "id": "floral-flowlove-4187",
+    "workId": "floral-flowlove",
+    "name": "アーデルハイト・フォン・ベルクシュトラーセ",
+    "birthday": "05-22",
+    "avatar": "/uploads/character-birthdays/floral-flowlove/floral-flowlove-4187.webp",
+    "status": "existing"
+  },
+  {
+    "id": "floral-flowlove-4188",
+    "workId": "floral-flowlove",
+    "name": "椿姫こはね",
+    "birthday": "11-11",
+    "avatar": "/uploads/character-birthdays/floral-flowlove/floral-flowlove-4188.webp",
+    "status": "existing"
+  },
+  {
+    "id": "floral-flowlove-4189",
+    "workId": "floral-flowlove",
+    "name": "碧衣愁",
+    "birthday": "12-25",
+    "avatar": "/uploads/character-birthdays/floral-flowlove/floral-flowlove-4189.webp",
+    "status": "existing"
+  },
+  {
+    "id": "hanasaki-work-spring-10619",
+    "workId": "hanasaki-work-spring",
+    "name": "空森若葉",
+    "birthday": "03-18",
+    "avatar": "/uploads/character-birthdays/hanasaki-work-spring/hanasaki-work-spring-10619.webp",
+    "status": "existing"
+  },
+  {
+    "id": "hanasaki-work-spring-10620",
+    "workId": "hanasaki-work-spring",
+    "name": "琴吹ヒカリ",
+    "birthday": "04-04",
+    "avatar": "/uploads/character-birthdays/hanasaki-work-spring/hanasaki-work-spring-10620.webp",
+    "status": "existing"
+  },
+  {
+    "id": "hanasaki-work-spring-10621",
+    "workId": "hanasaki-work-spring",
+    "name": "玖音彩乃",
+    "birthday": "06-26",
+    "avatar": "/uploads/character-birthdays/hanasaki-work-spring/hanasaki-work-spring-10621.webp",
+    "status": "existing"
+  },
+  {
+    "id": "hanasaki-work-spring-10622",
+    "workId": "hanasaki-work-spring",
+    "name": "不知火祈",
+    "birthday": "08-02",
+    "avatar": "/uploads/character-birthdays/hanasaki-work-spring/hanasaki-work-spring-10622.webp",
+    "status": "existing"
+  },
+  {
+    "id": "hanasaki-work-spring-10623",
+    "workId": "hanasaki-work-spring",
+    "name": "山下久美",
+    "birthday": "09-11",
+    "avatar": "/uploads/character-birthdays/hanasaki-work-spring/hanasaki-work-spring-10623.webp",
+    "status": "existing"
+  },
+  {
+    "id": "hanasaki-work-spring-10624",
+    "workId": "hanasaki-work-spring",
+    "name": "上月柑南",
+    "birthday": "10-01",
+    "avatar": "/uploads/character-birthdays/hanasaki-work-spring/hanasaki-work-spring-10624.webp",
+    "status": "existing"
+  },
+  {
+    "id": "hanasaki-work-spring-10626",
+    "workId": "hanasaki-work-spring",
+    "name": "花咲ののか",
+    "birthday": "12-15",
+    "avatar": "/uploads/character-birthdays/hanasaki-work-spring/hanasaki-work-spring-10626.webp",
+    "status": "existing"
+  },
+  {
+    "id": "karumaruka-circle-14922",
+    "workId": "karumaruka-circle",
+    "name": "乙音ニコル",
+    "birthday": "01-03",
+    "avatar": "/uploads/character-birthdays/karumaruka-circle/karumaruka-circle-14922.webp",
+    "status": "existing"
+  },
+  {
+    "id": "karumaruka-circle-14921",
+    "workId": "karumaruka-circle",
+    "name": "夏目暦",
+    "birthday": "02-22",
+    "avatar": "/uploads/character-birthdays/karumaruka-circle/karumaruka-circle-14921.webp",
+    "status": "existing"
+  },
+  {
+    "id": "karumaruka-circle-46563",
+    "workId": "karumaruka-circle",
+    "name": "高坂夕姫羽",
+    "birthday": "04-23",
+    "avatar": "/uploads/character-birthdays/karumaruka-circle/karumaruka-circle-46563.webp",
+    "status": "existing"
+  },
+  {
+    "id": "karumaruka-circle-46564",
+    "workId": "karumaruka-circle",
+    "name": "笹倉未来",
+    "birthday": "06-06",
+    "avatar": "/uploads/character-birthdays/karumaruka-circle/karumaruka-circle-46564.webp",
+    "status": "existing"
+  },
+  {
+    "id": "karumaruka-circle-14919",
+    "workId": "karumaruka-circle",
+    "name": "天ヶ瀬奈月",
+    "birthday": "07-01",
+    "avatar": "/uploads/character-birthdays/karumaruka-circle/karumaruka-circle-14919.webp",
+    "status": "existing"
+  },
+  {
+    "id": "karumaruka-circle-46566",
+    "workId": "karumaruka-circle",
+    "name": "成海杏",
+    "birthday": "08-20",
+    "avatar": "/uploads/character-birthdays/karumaruka-circle/karumaruka-circle-46566.webp",
+    "status": "existing"
+  },
+  {
+    "id": "karumaruka-circle-14920",
+    "workId": "karumaruka-circle",
+    "name": "朝比奈晴",
+    "birthday": "10-10",
+    "avatar": "/uploads/character-birthdays/karumaruka-circle/karumaruka-circle-14920.webp",
+    "status": "existing"
+  },
+  {
+    "id": "hatsuyuki-sakura-2675",
+    "workId": "hatsuyuki-sakura",
+    "name": "シロクマ",
+    "birthday": "01-02",
+    "avatar": "/uploads/character-birthdays/hatsuyuki-sakura/hatsuyuki-sakura-2675.webp",
+    "status": "existing"
+  },
+  {
+    "id": "hatsuyuki-sakura-2676",
+    "workId": "hatsuyuki-sakura",
+    "name": "玉樹桜",
+    "birthday": "03-21",
+    "avatar": "/uploads/character-birthdays/hatsuyuki-sakura/hatsuyuki-sakura-2676.webp",
+    "status": "existing"
+  },
+  {
+    "id": "hatsuyuki-sakura-2677",
+    "workId": "hatsuyuki-sakura",
+    "name": "あずま夜",
+    "birthday": "03-28",
+    "avatar": "/uploads/character-birthdays/hatsuyuki-sakura/hatsuyuki-sakura-2677.webp",
+    "status": "existing"
+  },
+  {
+    "id": "hatsuyuki-sakura-2678",
+    "workId": "hatsuyuki-sakura",
+    "name": "東雲希",
+    "birthday": "05-12",
+    "avatar": "/uploads/character-birthdays/hatsuyuki-sakura/hatsuyuki-sakura-2678.webp",
+    "status": "existing"
+  },
+  {
+    "id": "hatsuyuki-sakura-2679",
+    "workId": "hatsuyuki-sakura",
+    "name": "小坂井綾",
+    "birthday": "10-03",
+    "avatar": "/uploads/character-birthdays/hatsuyuki-sakura/hatsuyuki-sakura-2679.webp",
+    "status": "existing"
+  },
+  {
+    "id": "daitoshokan-15804",
+    "workId": "daitoshokan",
+    "name": "御園千莉",
+    "birthday": "01-23",
+    "avatar": "/uploads/character-birthdays/daitoshokan/daitoshokan-15804.webp",
+    "status": "existing"
+  },
+  {
+    "id": "daitoshokan-15805",
+    "workId": "daitoshokan",
+    "name": "一之江金魚",
+    "birthday": "02-22",
+    "avatar": "/uploads/character-birthdays/daitoshokan/daitoshokan-15805.webp",
+    "status": "existing"
+  },
+  {
+    "id": "daitoshokan-15806",
+    "workId": "daitoshokan",
+    "name": "白崎つぐみ",
+    "birthday": "03-29",
+    "avatar": "/uploads/character-birthdays/daitoshokan/daitoshokan-15806.webp",
+    "status": "existing"
+  },
+  {
+    "id": "daitoshokan-15809",
+    "workId": "daitoshokan",
+    "name": "白崎さより",
+    "birthday": "05-09",
+    "avatar": "/uploads/character-birthdays/daitoshokan/daitoshokan-15809.webp",
+    "status": "existing"
+  },
+  {
+    "id": "daitoshokan-15810",
+    "workId": "daitoshokan",
+    "name": "鈴木佳奈",
+    "birthday": "06-16",
+    "avatar": "/uploads/character-birthdays/daitoshokan/daitoshokan-15810.webp",
+    "status": "existing"
+  },
+  {
+    "id": "daitoshokan-15811",
+    "workId": "daitoshokan",
+    "name": "藤宮朔夜",
+    "birthday": "06-29",
+    "avatar": "/uploads/character-birthdays/daitoshokan/daitoshokan-15811.webp",
+    "status": "existing"
+  },
+  {
+    "id": "daitoshokan-15812",
+    "workId": "daitoshokan",
+    "name": "望月真帆",
+    "birthday": "08-08",
+    "avatar": "/uploads/character-birthdays/daitoshokan/daitoshokan-15812.webp",
+    "status": "existing"
+  },
+  {
+    "id": "daitoshokan-15813",
+    "workId": "daitoshokan",
+    "name": "嬉野紗弓実",
+    "birthday": "09-19",
+    "avatar": "/uploads/character-birthdays/daitoshokan/daitoshokan-15813.webp",
+    "status": "existing"
+  },
+  {
+    "id": "daitoshokan-15814",
+    "workId": "daitoshokan",
+    "name": "多岐川葵",
+    "birthday": "10-12",
+    "avatar": "/uploads/character-birthdays/daitoshokan/daitoshokan-15814.webp",
+    "status": "existing"
+  },
+  {
+    "id": "daitoshokan-15815",
+    "workId": "daitoshokan",
+    "name": "土岐のぞみ",
+    "birthday": "10-31",
+    "avatar": "/uploads/character-birthdays/daitoshokan/daitoshokan-15815.webp",
+    "status": "existing"
+  },
+  {
+    "id": "daitoshokan-15816",
+    "workId": "daitoshokan",
+    "name": "桜庭玉藻",
+    "birthday": "11-01",
+    "avatar": "/uploads/character-birthdays/daitoshokan/daitoshokan-15816.webp",
+    "status": "existing"
+  },
+  {
+    "id": "daitoshokan-15818",
+    "workId": "daitoshokan",
+    "name": "小太刀凪",
+    "birthday": "12-31",
+    "avatar": "/uploads/character-birthdays/daitoshokan/daitoshokan-15818.webp",
+    "status": "existing"
+  },
+  {
+    "id": "sen-no-hatou-44799",
+    "workId": "sen-no-hatou",
+    "name": "来嶌・マクスウェル・紫乃",
+    "birthday": "01-10",
+    "avatar": "/uploads/character-birthdays/sen-no-hatou/sen-no-hatou-44799.webp",
+    "status": "existing"
+  },
+  {
+    "id": "sen-no-hatou-44800",
+    "workId": "sen-no-hatou",
+    "name": "宮国朱璃",
+    "birthday": "02-28",
+    "avatar": "/uploads/character-birthdays/sen-no-hatou/sen-no-hatou-44800.webp",
+    "status": "existing"
+  },
+  {
+    "id": "sen-no-hatou-44803",
+    "workId": "sen-no-hatou",
+    "name": "エルザ・ヴァレンタイン",
+    "birthday": "04-10",
+    "avatar": "/uploads/character-birthdays/sen-no-hatou/sen-no-hatou-44803.webp",
+    "status": "existing"
+  },
+  {
+    "id": "sen-no-hatou-44802",
+    "workId": "sen-no-hatou",
+    "name": "稲生滸",
+    "birthday": "05-19",
+    "avatar": "/uploads/character-birthdays/sen-no-hatou/sen-no-hatou-44802.webp",
+    "status": "existing"
+  },
+  {
+    "id": "sen-no-hatou-44805",
+    "workId": "sen-no-hatou",
+    "name": "伊那子柚",
+    "birthday": "07-21",
+    "avatar": "/uploads/character-birthdays/sen-no-hatou/sen-no-hatou-44805.webp",
+    "status": "existing"
+  },
+  {
+    "id": "sen-no-hatou-44801",
+    "workId": "sen-no-hatou",
+    "name": "鴇田奏海",
+    "birthday": "08-20",
+    "avatar": "/uploads/character-birthdays/sen-no-hatou/sen-no-hatou-44801.webp",
+    "status": "existing"
+  },
+  {
+    "id": "sen-no-hatou-44798",
+    "workId": "sen-no-hatou",
+    "name": "椎葉千波矢",
+    "birthday": "08-30",
+    "avatar": "/uploads/character-birthdays/sen-no-hatou/sen-no-hatou-44798.webp",
+    "status": "existing"
+  },
+  {
+    "id": "sen-no-hatou-44797",
+    "workId": "sen-no-hatou",
+    "name": "椎葉古杜音",
+    "birthday": "10-27",
+    "avatar": "/uploads/character-birthdays/sen-no-hatou/sen-no-hatou-44797.webp",
+    "status": "existing"
+  },
+  {
+    "id": "sen-no-hatou-44806",
+    "workId": "sen-no-hatou",
+    "name": "八岐雪花",
+    "birthday": "11-30",
+    "avatar": "/uploads/character-birthdays/sen-no-hatou/sen-no-hatou-44806.webp",
+    "status": "existing"
+  },
+  {
+    "id": "sen-no-hatou-44804",
+    "workId": "sen-no-hatou",
+    "name": "更科睦美",
+    "birthday": "12-08",
+    "avatar": "/uploads/character-birthdays/sen-no-hatou/sen-no-hatou-44804.webp",
+    "status": "existing"
+  },
+  {
+    "id": "sen-no-hatou-44807",
+    "workId": "sen-no-hatou",
+    "name": "閑倉五十鈴",
+    "birthday": "12-11",
+    "avatar": "/uploads/character-birthdays/sen-no-hatou/sen-no-hatou-44807.webp",
+    "status": "existing"
+  },
+  {
+    "id": "eustia-20347",
+    "workId": "eustia",
+    "name": "エリス・フローラリア",
+    "birthday": "02-05",
+    "avatar": "/uploads/character-birthdays/eustia/eustia-20347.webp",
+    "status": "existing"
+  },
+  {
+    "id": "eustia-20346",
+    "workId": "eustia",
+    "name": "ユースティア・アストレア",
+    "birthday": "03-14",
+    "avatar": "/uploads/character-birthdays/eustia/eustia-20346.webp",
+    "status": "existing"
+  },
+  {
+    "id": "eustia-20349",
+    "workId": "eustia",
+    "name": "リシア・ド・ノーヴァス・ユーリィ",
+    "birthday": "08-16",
+    "avatar": "/uploads/character-birthdays/eustia/eustia-20349.webp",
+    "status": "existing"
+  },
+  {
+    "id": "eustia-20348",
+    "workId": "eustia",
+    "name": "聖女イレーヌ",
+    "birthday": "10-20",
+    "avatar": "/uploads/character-birthdays/eustia/eustia-20348.webp",
+    "status": "existing"
+  },
+  {
+    "id": "eustia-20350",
+    "workId": "eustia",
+    "name": "フィオネ・シルヴァリア",
+    "birthday": "11-09",
+    "avatar": "/uploads/character-birthdays/eustia/eustia-20350.webp",
+    "status": "existing"
+  },
+  {
+    "id": "steins-gate-21279",
+    "workId": "steins-gate",
+    "name": "椎名まゆり",
+    "birthday": "02-01",
+    "avatar": "/uploads/character-birthdays/steins-gate/steins-gate-21279.webp",
+    "status": "existing"
+  },
+  {
+    "id": "steins-gate-21281",
+    "workId": "steins-gate",
+    "name": "フェイリス・ニャンニャン（秋葉留未穂）",
+    "birthday": "04-03",
+    "avatar": "/uploads/character-birthdays/steins-gate/steins-gate-21281.webp",
+    "status": "existing"
+  },
+  {
+    "id": "steins-gate-21283",
+    "workId": "steins-gate",
+    "name": "桐生萌郁",
+    "birthday": "06-06",
+    "avatar": "/uploads/character-birthdays/steins-gate/steins-gate-21283.webp",
+    "status": "existing"
+  },
+  {
+    "id": "steins-gate-21278",
+    "workId": "steins-gate",
+    "name": "牧瀬紅莉栖",
+    "birthday": "07-25",
+    "avatar": "/uploads/character-birthdays/steins-gate/steins-gate-21278.webp",
+    "status": "existing"
+  },
+  {
+    "id": "steins-gate-21280",
+    "workId": "steins-gate",
+    "name": "阿万音鈴羽",
+    "birthday": "09-27",
+    "avatar": "/uploads/character-birthdays/steins-gate/steins-gate-21280.webp",
+    "status": "existing"
+  },
+  {
+    "id": "steins-gate-21285",
+    "workId": "steins-gate",
+    "name": "天王寺綯",
+    "birthday": "11-09",
+    "avatar": "/uploads/character-birthdays/steins-gate/steins-gate-21285.webp",
+    "status": "existing"
+  },
+  {
+    "id": "ginharu-4816",
+    "workId": "ginharu",
+    "name": "如月瑞羽",
+    "birthday": "01-25",
+    "avatar": "/uploads/character-birthdays/ginharu/ginharu-4816.webp",
+    "status": "existing"
+  },
+  {
+    "id": "ginharu-4817",
+    "workId": "ginharu",
+    "name": "新見雪月",
+    "birthday": "02-14",
+    "avatar": "/uploads/character-birthdays/ginharu/ginharu-4817.webp",
+    "status": "existing"
+  },
+  {
+    "id": "ginharu-4818",
+    "workId": "ginharu",
+    "name": "蒼井雛多",
+    "birthday": "08-08",
+    "avatar": "/uploads/character-birthdays/ginharu/ginharu-4818.webp",
+    "status": "existing"
+  },
+  {
+    "id": "ginharu-4819",
+    "workId": "ginharu",
+    "name": "名白椛",
+    "birthday": "10-21",
+    "avatar": "/uploads/character-birthdays/ginharu/ginharu-4819.webp",
+    "status": "existing"
+  },
+  {
+    "id": "ginharu-4820",
+    "workId": "ginharu",
+    "name": "ベスリー・ローズ・ディズリー",
+    "birthday": "12-28",
+    "avatar": "/uploads/character-birthdays/ginharu/ginharu-4820.webp",
+    "status": "existing"
+  },
+  {
+    "id": "hikoukigumo-14113",
+    "workId": "hikoukigumo",
+    "name": "広崎美奈",
+    "birthday": "04-01",
+    "avatar": "/uploads/character-birthdays/hikoukigumo/hikoukigumo-14113.webp",
+    "status": "existing"
+  },
+  {
+    "id": "hikoukigumo-14114",
+    "workId": "hikoukigumo",
+    "name": "美汐瑛莉",
+    "birthday": "08-27",
+    "avatar": "/uploads/character-birthdays/hikoukigumo/hikoukigumo-14114.webp",
+    "status": "existing"
+  },
+  {
+    "id": "hikoukigumo-14115",
+    "workId": "hikoukigumo",
+    "name": "佐藤里沙",
+    "birthday": "11-23",
+    "avatar": "/uploads/character-birthdays/hikoukigumo/hikoukigumo-14115.webp",
+    "status": "existing"
+  },
+  {
+    "id": "hikoukigumo-14116",
+    "workId": "hikoukigumo",
+    "name": "羽川原いろは",
+    "birthday": "12-12",
+    "avatar": "/uploads/character-birthdays/hikoukigumo/hikoukigumo-14116.webp",
+    "status": "existing"
+  },
+  {
+    "id": "miahoshi-6674",
+    "workId": "miahoshi",
+    "name": "天ノ川沙夜",
+    "birthday": "01-16",
+    "avatar": "/uploads/character-birthdays/miahoshi/miahoshi-6674.webp",
+    "status": "existing"
+  },
+  {
+    "id": "miahoshi-6676",
+    "workId": "miahoshi",
+    "name": "白鳥織姫",
+    "birthday": "03-14",
+    "avatar": "/uploads/character-birthdays/miahoshi/miahoshi-6676.webp",
+    "status": "existing"
+  },
+  {
+    "id": "miahoshi-6682",
+    "workId": "miahoshi",
+    "name": "箒星ひかり",
+    "birthday": "08-20",
+    "avatar": "/uploads/character-birthdays/miahoshi/miahoshi-6682.webp",
+    "status": "existing"
+  },
+  {
+    "id": "miahoshi-6683",
+    "workId": "miahoshi",
+    "name": "日下部ころな",
+    "birthday": "09-03",
+    "avatar": "/uploads/character-birthdays/miahoshi/miahoshi-6683.webp",
+    "status": "existing"
+  },
+  {
+    "id": "tsukikana-34060",
+    "workId": "tsukikana",
+    "name": "新谷灯華",
+    "birthday": "02-22",
+    "avatar": "/uploads/character-birthdays/tsukikana/tsukikana-34060.webp",
+    "status": "existing"
+  },
+  {
+    "id": "tsukikana-34062",
+    "workId": "tsukikana",
+    "name": "倉橋聖衣良",
+    "birthday": "03-31",
+    "avatar": "/uploads/character-birthdays/tsukikana/tsukikana-34062.webp",
+    "status": "existing"
+  },
+  {
+    "id": "tsukikana-34064",
+    "workId": "tsukikana",
+    "name": "松宮霧子",
+    "birthday": "04-24",
+    "avatar": "/uploads/character-birthdays/tsukikana/tsukikana-34064.webp",
+    "status": "existing"
+  },
+  {
+    "id": "tsukikana-34065",
+    "workId": "tsukikana",
+    "name": "月ヶ洞きらり",
+    "birthday": "05-05",
+    "avatar": "/uploads/character-birthdays/tsukikana/tsukikana-34065.webp",
+    "status": "existing"
+  },
+  {
+    "id": "tsukikana-34063",
+    "workId": "tsukikana",
+    "name": "岬栞菜",
+    "birthday": "07-01",
+    "avatar": "/uploads/character-birthdays/tsukikana/tsukikana-34063.webp",
+    "status": "existing"
+  },
+  {
+    "id": "tsukikana-34059",
+    "workId": "tsukikana",
+    "name": "日紫喜うぐいす",
+    "birthday": "07-07",
+    "avatar": "/uploads/character-birthdays/tsukikana/tsukikana-34059.webp",
+    "status": "existing"
+  },
+  {
+    "id": "tsukikana-34061",
+    "workId": "tsukikana",
+    "name": "佐倉雨音",
+    "birthday": "12-25",
+    "avatar": "/uploads/character-birthdays/tsukikana/tsukikana-34061.webp",
+    "status": "existing"
+  },
+  {
+    "id": "clover-days-12093",
+    "workId": "clover-days",
+    "name": "結橋泉",
+    "birthday": "04-26",
+    "avatar": "/uploads/character-birthdays/clover-days/clover-days-12093.webp",
+    "status": "existing"
+  },
+  {
+    "id": "clover-days-12095",
+    "workId": "clover-days",
+    "name": "鷹倉杏璃",
+    "birthday": "07-23",
+    "avatar": "/uploads/character-birthdays/clover-days/clover-days-12095.webp",
+    "status": "existing"
+  },
+  {
+    "id": "clover-days-12094",
+    "workId": "clover-days",
+    "name": "鷹倉杏鈴",
+    "birthday": "07-23",
+    "avatar": "/uploads/character-birthdays/clover-days/clover-days-12094.webp",
+    "status": "generated",
+    "bangumiName": "鷹倉杏鈴",
+    "pickReason": "exact-date",
+    "imageUrl": "https://lain.bgm.tv/pic/crt/l/8a/ab/22568_crt_YH1t1.jpg",
+    "crop": {
+      "mode": "face",
+      "image": [
+        551,
+        1404
+      ],
+      "face": [
+        195,
+        106,
+        212,
+        212
+      ],
+      "crop": [
+        498,
+        498,
+        52,
+        0
+      ]
+    }
+  },
+  {
+    "id": "clover-days-12097",
+    "workId": "clover-days",
+    "name": "加賀美ヒカル",
+    "birthday": "08-14",
+    "avatar": "/uploads/character-birthdays/clover-days/clover-days-12097.webp",
+    "status": "generated",
+    "bangumiName": "加賀美ヒカル",
+    "pickReason": "exact-date",
+    "imageUrl": "https://lain.bgm.tv/pic/crt/l/a2/2c/22571_crt_2s7LO.jpg",
+    "crop": {
+      "mode": "face",
+      "image": [
+        344,
+        1428
+      ],
+      "face": [
+        60,
+        91,
+        211,
+        211
+      ],
+      "crop": [
+        344,
+        344,
+        0,
+        45
+      ]
+    }
+  },
+  {
+    "id": "clover-days-12096",
+    "workId": "clover-days",
+    "name": "加賀美ヘキル",
+    "birthday": "08-14",
+    "avatar": "/uploads/character-birthdays/clover-days/clover-days-12096.webp",
+    "status": "generated",
+    "bangumiName": "加賀美ヘキル",
+    "pickReason": "exact-date",
+    "imageUrl": "https://lain.bgm.tv/pic/crt/l/2c/af/22570_crt_8q97Z.jpg",
+    "crop": {
+      "mode": "face",
+      "image": [
+        377,
+        1428
+      ],
+      "face": [
+        72,
+        89,
+        216,
+        216
+      ],
+      "crop": [
+        377,
+        377,
+        0,
+        31
+      ]
+    }
+  },
+  {
+    "id": "clover-days-12098",
+    "workId": "clover-days",
+    "name": "竜胆つばめ",
+    "birthday": "11-28",
+    "avatar": "/uploads/character-birthdays/clover-days/clover-days-12098.webp",
+    "status": "generated",
+    "bangumiName": "竜胆つばめ",
+    "pickReason": "exact-date",
+    "imageUrl": "https://lain.bgm.tv/pic/crt/l/56/1a/22572_crt_hkW24.jpg",
+    "crop": {
+      "mode": "face",
+      "image": [
+        459,
+        1479
+      ],
+      "face": [
+        78,
+        102,
+        220,
+        220
+      ],
+      "crop": [
+        459,
+        459,
+        0,
+        10
+      ]
+    }
+  },
+  {
+    "id": "koi-kake-6903",
+    "workId": "koi-kake",
+    "name": "國見菜子",
+    "birthday": "01-22",
+    "avatar": "/uploads/character-birthdays/koi-kake/koi-kake-6903.webp",
+    "status": "generated",
+    "bangumiName": "國見菜子",
+    "pickReason": "exact-date",
+    "imageUrl": "https://lain.bgm.tv/pic/crt/l/4e/d7/34991_crt_6TLjw.jpg",
+    "crop": {
+      "mode": "face",
+      "image": [
+        291,
+        691
+      ],
+      "face": [
+        45,
+        62,
+        207,
+        207
+      ],
+      "crop": [
+        291,
+        291,
+        0,
+        37
+      ]
+    }
+  },
+  {
+    "id": "koi-kake-6904",
+    "workId": "koi-kake",
+    "name": "小鞠ゆい",
+    "birthday": "02-22",
+    "avatar": "/uploads/character-birthdays/koi-kake/koi-kake-6904.webp",
+    "status": "generated",
+    "bangumiName": "小鞠ゆい",
+    "pickReason": "exact-date",
+    "imageUrl": "https://lain.bgm.tv/pic/crt/l/3a/ba/33217_crt_cQo32.jpg",
+    "crop": {
+      "mode": "face",
+      "image": [
+        250,
+        300
+      ],
+      "face": [
+        75,
+        42,
+        107,
+        107
+      ],
+      "crop": [
+        250,
+        250,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "id": "koi-kake-6905",
+    "workId": "koi-kake",
+    "name": "姫野星奏",
+    "birthday": "06-12",
+    "avatar": "/uploads/character-birthdays/koi-kake/koi-kake-6905.webp",
+    "status": "generated",
+    "bangumiName": "姫野星奏",
+    "pickReason": "exact-date",
+    "imageUrl": "https://lain.bgm.tv/pic/crt/l/be/bc/33215_crt_A7gb1.jpg",
+    "crop": {
+      "mode": "face",
+      "image": [
+        250,
+        300
+      ],
+      "face": [
+        71,
+        40,
+        107,
+        107
+      ],
+      "crop": [
+        250,
+        250,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "id": "koi-kake-6907",
+    "workId": "koi-kake",
+    "name": "新堂彩音",
+    "birthday": "07-26",
+    "avatar": "/uploads/character-birthdays/koi-kake/koi-kake-6907.webp",
+    "status": "generated",
+    "bangumiName": "新堂彩音",
+    "pickReason": "exact-date",
+    "imageUrl": "https://lain.bgm.tv/pic/crt/l/f9/13/33216_crt_UMmAv.jpg",
+    "crop": {
+      "mode": "face",
+      "image": [
+        250,
+        300
+      ],
+      "face": [
+        72,
+        27,
+        112,
+        112
+      ],
+      "crop": [
+        250,
+        250,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "id": "tsukiniyorisou-4842",
+    "workId": "tsukiniyorisou",
+    "name": "小倉朝日（大蔵遊星）",
+    "birthday": "01-06",
+    "avatar": "/uploads/character-birthdays/tsukiniyorisou/tsukiniyorisou-4842.webp",
+    "status": "generated",
+    "bangumiName": "大蔵遊星",
+    "pickReason": "date",
+    "imageUrl": "https://lain.bgm.tv/pic/crt/l/87/2b/19925_crt_SLie1.jpg",
+    "crop": {
+      "mode": "face",
+      "image": [
+        250,
+        300
+      ],
+      "face": [
+        74,
+        31,
+        104,
+        104
+      ],
+      "crop": [
+        244,
+        244,
+        4,
+        0
+      ]
+    }
+  },
+  {
+    "id": "tsukiniyorisou-4843",
+    "workId": "tsukiniyorisou",
+    "name": "花之宮瑞穂",
+    "birthday": "02-11",
+    "avatar": "/uploads/character-birthdays/tsukiniyorisou/tsukiniyorisou-4843.webp",
+    "status": "generated",
+    "bangumiName": "花之宮瑞穂",
+    "pickReason": "exact-date",
+    "imageUrl": "https://lain.bgm.tv/pic/crt/l/43/d7/19929_crt_6GA4G.jpg",
+    "crop": {
+      "mode": "face",
+      "image": [
+        250,
+        300
+      ],
+      "face": [
+        69,
+        30,
+        109,
+        109
+      ],
+      "crop": [
+        250,
+        250,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "id": "tsukiniyorisou-4845",
+    "workId": "tsukiniyorisou",
+    "name": "桜小路ルナ",
+    "birthday": "03-27",
+    "avatar": "/uploads/character-birthdays/tsukiniyorisou/tsukiniyorisou-4845.webp",
+    "status": "generated",
+    "bangumiName": "桜小路ルナ",
+    "pickReason": "exact-date",
+    "imageUrl": "https://lain.bgm.tv/pic/crt/l/91/5c/19926_crt_D7g4O.jpg",
+    "crop": {
+      "mode": "face",
+      "image": [
+        250,
+        300
+      ],
+      "face": [
+        70,
+        40,
+        102,
+        102
+      ],
+      "crop": [
+        240,
+        240,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "tsukiniyorisou-4846",
+    "workId": "tsukiniyorisou",
+    "name": "柳ヶ瀬湊",
+    "birthday": "04-29",
+    "avatar": "/uploads/character-birthdays/tsukiniyorisou/tsukiniyorisou-4846.webp",
+    "status": "generated",
+    "bangumiName": "柳ヶ瀬湊",
+    "pickReason": "exact-name",
+    "imageUrl": "https://lain.bgm.tv/pic/crt/l/a0/61/19927_crt_KSoyg.jpg",
+    "crop": {
+      "mode": "face",
+      "image": [
+        250,
+        300
+      ],
+      "face": [
+        69,
+        45,
+        101,
+        101
+      ],
+      "crop": [
+        237,
+        237,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "tsukiniyorisou-4847",
+    "workId": "tsukiniyorisou",
+    "name": "大蔵りそな",
+    "birthday": "05-15",
+    "avatar": "/uploads/character-birthdays/tsukiniyorisou/tsukiniyorisou-4847.webp",
+    "status": "generated",
+    "bangumiName": "大蔵りそな",
+    "pickReason": "exact-date",
+    "imageUrl": "https://lain.bgm.tv/pic/crt/l/34/51/19924_crt_R0hRY.jpg",
+    "crop": {
+      "mode": "face",
+      "image": [
+        250,
+        300
+      ],
+      "face": [
+        72,
+        35,
+        107,
+        107
+      ],
+      "crop": [
+        250,
+        250,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "id": "tsukiniyorisou-4848",
+    "workId": "tsukiniyorisou",
+    "name": "名波七愛",
+    "birthday": "07-07",
+    "avatar": "/uploads/character-birthdays/tsukiniyorisou/tsukiniyorisou-4848.webp",
+    "status": "generated",
+    "bangumiName": "名波七愛",
+    "pickReason": "exact-name",
+    "imageUrl": "https://lain.bgm.tv/pic/crt/l/83/4c/36131_crt_oEOez.jpg",
+    "crop": {
+      "mode": "face",
+      "image": [
+        250,
+        300
+      ],
+      "face": [
+        73,
+        47,
+        96,
+        96
+      ],
+      "crop": [
+        226,
+        226,
+        8,
+        0
+      ]
+    }
+  },
+  {
+    "id": "tsukiniyorisou-4849",
+    "workId": "tsukiniyorisou",
+    "name": "ユルシュール＝フルール＝ジャンメール",
+    "birthday": "08-01",
+    "avatar": "/uploads/character-birthdays/tsukiniyorisou/tsukiniyorisou-4849.webp",
+    "status": "generated",
+    "bangumiName": "ユルシュール・フルール・ジャンメール",
+    "pickReason": "first-result",
+    "imageUrl": "https://lain.bgm.tv/pic/crt/l/d0/e3/19928_crt_G8jy8.jpg",
+    "crop": {
+      "mode": "face",
+      "image": [
+        250,
+        300
+      ],
+      "face": [
+        71,
+        35,
+        111,
+        111
+      ],
+      "crop": [
+        250,
+        250,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "id": "otome-domain-6002",
+    "workId": "otome-domain",
+    "name": "大垣ひなた",
+    "birthday": "02-04",
+    "avatar": "/uploads/character-birthdays/otome-domain/otome-domain-6002.webp",
+    "status": "generated",
+    "bangumiName": "大垣ひなた",
+    "pickReason": "exact-date",
+    "imageUrl": "https://lain.bgm.tv/pic/crt/l/98/a3/40612_crt_O5bYX.jpg?r=1674290116",
+    "crop": {
+      "mode": "face",
+      "image": [
+        467,
+        1214
+      ],
+      "face": [
+        105,
+        67,
+        199,
+        199
+      ],
+      "crop": [
+        467,
+        467,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "id": "otome-domain-6003",
+    "workId": "otome-domain",
+    "name": "貴船柚子",
+    "birthday": "04-03",
+    "avatar": "/uploads/character-birthdays/otome-domain/otome-domain-6003.webp",
+    "status": "generated",
+    "bangumiName": "貴船柚子",
+    "pickReason": "exact-date",
+    "imageUrl": "https://lain.bgm.tv/pic/crt/l/ce/8c/40611_crt_V5SK5.jpg?r=1674289922",
+    "crop": {
+      "mode": "face",
+      "image": [
+        457,
+        1346
+      ],
+      "face": [
+        121,
+        92,
+        191,
+        191
+      ],
+      "crop": [
+        449,
+        449,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "id": "otome-domain-6004",
+    "workId": "otome-domain",
+    "name": "飛鳥湊",
+    "birthday": "05-22",
+    "avatar": "/uploads/character-birthdays/otome-domain/otome-domain-6004.webp",
+    "status": "generated",
+    "bangumiName": "飛鳥湊",
+    "pickReason": "exact-date",
+    "imageUrl": "https://lain.bgm.tv/pic/crt/l/c5/eb/38475_crt_bH2pa.jpg?r=1498365168",
+    "crop": {
+      "mode": "face",
+      "image": [
+        424,
+        1265
+      ],
+      "face": [
+        102,
+        79,
+        190,
+        190
+      ],
+      "crop": [
+        424,
+        424,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "id": "otome-domain-35092",
+    "workId": "otome-domain",
+    "name": "那波七海",
+    "birthday": "08-08",
+    "avatar": "/uploads/character-birthdays/otome-domain/otome-domain-35092.webp",
+    "status": "generated",
+    "bangumiName": "那波七海",
+    "pickReason": "exact-date",
+    "imageUrl": "https://lain.bgm.tv/pic/crt/l/65/b1/55347_crt_7yEu0.jpg?r=1498365929",
+    "crop": {
+      "mode": "face",
+      "image": [
+        421,
+        1338
+      ],
+      "face": [
+        90,
+        62,
+        201,
+        201
+      ],
+      "crop": [
+        421,
+        421,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "id": "otome-domain-35091",
+    "workId": "otome-domain",
+    "name": "皆見美結",
+    "birthday": "09-25",
+    "avatar": "/uploads/character-birthdays/otome-domain/otome-domain-35091.webp",
+    "status": "generated",
+    "bangumiName": "皆見美結",
+    "pickReason": "exact-date",
+    "imageUrl": "https://lain.bgm.tv/pic/crt/l/32/67/55346_crt_POOsZ.jpg?r=1498365755",
+    "crop": {
+      "mode": "face",
+      "image": [
+        507,
+        1254
+      ],
+      "face": [
+        118,
+        72,
+        189,
+        189
+      ],
+      "crop": [
+        444,
+        444,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "id": "otome-domain-6005",
+    "workId": "otome-domain",
+    "name": "西園寺風莉",
+    "birthday": "12-07",
+    "avatar": "/uploads/character-birthdays/otome-domain/otome-domain-6005.webp",
+    "status": "generated",
+    "bangumiName": "西園寺風莉",
+    "pickReason": "exact-date",
+    "imageUrl": "https://lain.bgm.tv/pic/crt/l/e4/64/38476_crt_Qirx8.jpg?r=1674289859",
+    "crop": {
+      "mode": "face",
+      "image": [
+        513,
+        1238
+      ],
+      "face": [
+        78,
+        78,
+        183,
+        183
+      ],
+      "crop": [
+        430,
+        430,
+        0,
+        0
+      ]
+    }
+  }
+]

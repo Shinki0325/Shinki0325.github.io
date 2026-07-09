@@ -1,0 +1,488 @@
+[
+  {
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 3,
+    "birth_year": null,
+    "blood_type": 4,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ce/8c/40611_crt_V5SK5.jpg?r=1674289922",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ce/8c/40611_crt_V5SK5.jpg?r=1674289922",
+      "large": "https://lain.bgm.tv/pic/crt/l/ce/8c/40611_crt_V5SK5.jpg?r=1674289922",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ce/8c/40611_crt_V5SK5.jpg?r=1674289922"
+    },
+    "summary": "跟凑和风莉同班，住的宿舍也一样。虽然是名门大小姐，却很讨喜，而且容易亲近，也很关心凑。\r\n\r\n简直是理想中的大和抚子……虽然让人这么想，却意外是个积极型的野丫头。\r\n不擅长处理琐事，房间非常脏乱。虽然对下厨感兴趣，成果却是灾难级的难吃。\r\n因为除了家务以外都很正常，所以任谁看到都会遗憾地说出「怎么会这样」。\r\n隶属于新闻社，而且是社长。",
+    "name": "貴船柚子",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "贵船柚子"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "貴船 柚子"
+          },
+          {
+            "k": "纯假名",
+            "v": "きふね ゆず"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kifune Yuzu"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "4月3日（白羊座）"
+      },
+      {
+        "key": "血型",
+        "value": "O"
+      },
+      {
+        "key": "身高",
+        "value": "162cm"
+      },
+      {
+        "key": "BWH",
+        "value": "94 / 60 / 86"
+      }
+    ],
+    "stat": {
+      "comments": 12,
+      "collects": 49
+    },
+    "id": 40611,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/f1/4385_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/65/f1/4385_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/65/f1/4385_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/f1/4385_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "貴船理",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "贵船理"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Kibune Makoto"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 4385,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/03/64/13080_crt_lg104.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/03/64/13080_crt_lg104.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/03/64/13080_crt_lg104.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/03/64/13080_crt_lg104.jpg"
+    },
+    "summary": "遭遇事故、在戸籍上是不存在的女性\r\n\r\n「我会守约的啦。能不能稍微相信姐姐一点」\r\n\r\n幼年时期、曾有过在八坂総合病院内被抚养的经历、事故发生的时候正好在那里、因为运气好而被救下。\r\n结果就那样逃离事故现场、戸籍、以及其他资料上都以死亡名义对待。\r\n作为当时事故后生存的证人、是知道八坂病院事故真正悲惨的其中一人。",
+    "name": "貴船未緒",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "贵船未绪"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "貴船未緒"
+          },
+          {
+            "k": "纯假名",
+            "v": "きふね みお"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kifune mio"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 4,
+      "collects": 9
+    },
+    "id": 13080,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/25/43169_crt_9rwP3.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/7a/25/43169_crt_9rwP3.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/7a/25/43169_crt_9rwP3.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/25/43169_crt_9rwP3.jpg"
+    },
+    "summary": "2年。ポジションはフルバック。努力家で、安定感のあるプレーが評価されている。気が弱く控えめなので、石清水に一方的に仲間意識を抱いている。",
+    "name": "貴船公",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "贵船公"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "きふね いさお"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 43169,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 6,
+    "gender": "male",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/58/72/107030_crt_2Eq2d.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/58/72/107030_crt_2Eq2d.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/58/72/107030_crt_2Eq2d.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/58/72/107030_crt_2Eq2d.jpg"
+    },
+    "summary": "やる気ゼロの汚職刑事\r\n\r\n愛称：貴船ちゃん　 誕生日：6月1日\r\n九十九市の治安を守る熱血刑事だったが、とあることから、あることないことでっち上げてしまう悪徳刑事に身をやつしている。\r\n\r\n恋愛についてはベリーライトなスタンスを貫くかなりの遊び人。\r\n男女問わずいけてしまう。",
+    "name": "貴船当麻",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "きふね とうま"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "6月1日"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://www.easy-peasy.jp/kms/disk1.php"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 107030,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/1d/141823_crt_2x7uF.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/4e/1d/141823_crt_2x7uF.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/4e/1d/141823_crt_2x7uF.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/1d/141823_crt_2x7uF.jpg"
+    },
+    "summary": "小さく整った顔立ちに栗色の髪、それを覆うかのような大きな髪飾り。\r\n若草色の着物と季節の花々が描かれた帯で、春の息吹、そして儚さが滲み出る。\r\n人となどもう会うこともないと思っていた東児は彼女と出会い、そして生活を共にすることになる。\r\nそこで喜びを得る代わり、味わわなくても良かったかもしれない、別離の悲しみも味わうことになる。\r\n一青年の（短い間の）成長の為のスケープゴートというには、とても悲しい存在。\r\nそれ故に、彼女を穏やかに送り出してやらなくてはいけない。",
+    "name": "貴船桜花",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 141823,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/71/57/160522_crt_lbx9g.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/71/57/160522_crt_lbx9g.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/71/57/160522_crt_lbx9g.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/71/57/160522_crt_lbx9g.jpg"
+    },
+    "summary": "出版社・大学館の編集者、36歳。\r\n楽観的で前向きだが、少しいい加減な性格。",
+    "name": "貴船虎次郎",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "きふね とらじろう"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 160522,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 23,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/dd/94/113232_crt_8zm80.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/dd/94/113232_crt_8zm80.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/dd/94/113232_crt_8zm80.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dd/94/113232_crt_8zm80.jpg"
+    },
+    "summary": "　幼い時に死別した両親はともに熱心な基督教徙だった。児亜養護施設で育ったさゆりは両親の希里通りにアングレカム学院に入学。選考試験を経てシオンとアミティエとなる。優秀でリーダーシップに優れていたさゆりは委員長に選ばれる。しかしある事件で自分が疑われ、窮地に陥る。級友のほとんどに疑われるが、唯一信じたのがシオンだった。シオンは天然ではあるが柔軟な思考力で意外な観点から事件を解決する。それを機に互いに認め仲を深めていく。\r\n　七不思議事件などを解いていく過程で恋仲になる二人。「標本に想いを伝えておくわ」というシオンの言葉に何となく察するが気恥ずかしく、手紙を読むことはなかった。そして聖母祭の聖母役を決める折に、さゆりでなくシオンが選ばれたことで亀裂が生じる。今までの成績、功績からさゆりが選ばれるのは当たり前だと思われていたが、口さがない級友たちは叔父のアスター教諭の横車が入ったのだと噂した。シオンは話しかけるも、さゆりは距離をとった。\r\n　そして聖母祭が終わり仲直りがしたいシオンは旧聖堂へさゆりを呼び出した。しかし頑なに為っていたさゆりは行かなかった。旧聖堂が火事に遭い、シオンとアスターの遗体が見付かったことを報される。\r\n　傷心のさゆりはシオンが隠した標本の手紙を読み、誤解だったことを知る。自分も決して読まれることのない手紙を標本にすると、薬の瓶を手にとった。願わくは、天国でシオンに会えますようにと、神に祈りながら——。\r\n\r\n（※一部、初期設定を含んでいます）",
+    "name": "貴船さゆり",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "贵船纱由理"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Kifune Sayuri"
+          },
+          {
+            "k": "昵称",
+            "v": "ユリ"
+          },
+          {
+            "k": "昵称2",
+            "v": "ゆりさん"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "6月23日"
+      },
+      {
+        "key": "身高",
+        "value": "162cm"
+      },
+      {
+        "key": "体重",
+        "value": "47kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B75/W55/H77"
+      },
+      {
+        "key": "引用来源",
+        "value": "Flowers Art Works Couleur"
+      },
+      {
+        "key": "年龄",
+        "value": "14歳（内部設定）1年生"
+      },
+      {
+        "key": "誕生花",
+        "value": "ヒメサユリ/花言葉： 飾らぬ美、純潔"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 3
+    },
+    "id": 113232,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/25/79/74056_crt_zrra1.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/25/79/74056_crt_zrra1.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/25/79/74056_crt_zrra1.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/25/79/74056_crt_zrra1.jpg"
+    },
+    "summary": "連続殺人犯を捜査する特殊組織・井戸端の室長。スタッフたちの指揮を執る。",
+    "name": "百貴船太郎",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "百贵船太郎"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ももき ふねたろう"
+          },
+          {
+            "k": "罗马字",
+            "v": "Momoki Funetarou"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://id-invaded-anime.com/character/"
+      }
+    ],
+    "stat": {
+      "comments": 10,
+      "collects": 14
+    },
+    "id": 74056,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/ff/62376_crt_bKdFj.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/65/ff/62376_crt_bKdFj.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/65/ff/62376_crt_bKdFj.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/ff/62376_crt_bKdFj.jpg"
+    },
+    "summary": "",
+    "name": "オルタナ5",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "奥尔塔纳5"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "貴船"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 0
+    },
+    "id": 62376,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

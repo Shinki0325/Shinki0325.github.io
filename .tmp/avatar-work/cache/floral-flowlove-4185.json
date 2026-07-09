@@ -1,0 +1,537 @@
+[
+  {
+    "birth_mon": 2,
+    "gender": "female",
+    "birth_day": 14,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/85/4d/42297_crt_C6FTW.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/85/4d/42297_crt_C6FTW.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/85/4d/42297_crt_C6FTW.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/85/4d/42297_crt_C6FTW.jpg"
+    },
+    "summary": "聖ガブリエレ学園 2年生。 容姿端麗にして歴史ある良家のお嬢様。\r\nしかし堅苦しいお嬢様っぽさは感じさせない、明るく前向きな女の子。\r\n男女ともに人気が高く、学園四大天使の筆頭と目されるほど。\r\nただし、勉強は中の下なのが玉にキズ。\r\n\r\n主人公は彼女の実家が出資する救済院の出身で、一応幼なじみ。\r\n近くて遠い存在だが、その壁を打ち破ろうとする夏乃の大好き攻勢は今日も続く。\r\nまた、自分には守護天使様がついていると固く信じている。\r\n\r\n「私に足りないのはお金でも名誉でもなくて、愛なんだよっ!?」",
+    "name": "美鳩夏乃",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "美鸠夏乃"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Mihato Kano"
+          },
+          {
+            "k": "纯假名",
+            "v": "みはと かの"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "2月14日"
+      },
+      {
+        "key": "血型",
+        "value": "O型"
+      },
+      {
+        "key": "身高",
+        "value": "157cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B87 /W56 /H82"
+      },
+      {
+        "key": "趣味",
+        "value": "マンガ読書"
+      }
+    ],
+    "stat": {
+      "comments": 31,
+      "collects": 103
+    },
+    "id": 42297,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/eb/38/134407_crt_CxXlc.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/eb/38/134407_crt_CxXlc.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/eb/38/134407_crt_CxXlc.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/eb/38/134407_crt_CxXlc.jpg"
+    },
+    "summary": "",
+    "name": "美鳩深春",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "美鸠深春"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 134407,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": 2,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/24/07/48461_crt_MFBF1.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/24/07/48461_crt_MFBF1.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/24/07/48461_crt_MFBF1.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/24/07/48461_crt_MFBF1.jpg"
+    },
+    "summary": "炼的姐姐，用一句话来形容的话，就是有些恋弟情结。炼也称“她是世界上最棒的姐姐”。被任命为未有的专属女仆。\r\n非常适合笑脸，是个有着优雅氛围的美人。喜欢关心他人，常常考虑着弟弟的幸福。\r\n想让主人公吃到好吃的东西的姐姐能量让她的能力成长至今。在主人公遇到困境时就会从裙子里拿出\"姐姐的49种秘密道具\"。\r\n平时非常的温柔，可生气的时候就是非常非常恐怖的。 拜她的教育的所赐导致主人公对女性的眼界有些偏高，认为只要是女孩子就都是很温柔的。",
+    "name": "上杉美鳩",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "上杉美鸠"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "上杉美鳩"
+          },
+          {
+            "k": "罗马字",
+            "v": "Uesugi Mihato"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "????-07-01"
+      },
+      {
+        "key": "血型",
+        "value": "B"
+      },
+      {
+        "key": "身高",
+        "value": "167cm"
+      },
+      {
+        "key": "BWH",
+        "value": "92/59/91"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://anidb.net/perl-bin/animedb.pl?show=character&charid=2302http://anidb.net/perl-bin/animedb.pl?show=character&charid=2302"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 9
+    },
+    "id": 48461,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d4/5c/177438_crt_ZdaPv.jpg?r=1749262703",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d4/5c/177438_crt_ZdaPv.jpg?r=1749262703",
+      "large": "https://lain.bgm.tv/pic/crt/l/d4/5c/177438_crt_ZdaPv.jpg?r=1749262703",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d4/5c/177438_crt_ZdaPv.jpg?r=1749262703"
+    },
+    "summary": "同級生「玖伊那（くいな）」の1つ下の妹。\r\n主人公と面識は見かけた事があるくらいで話すのは初めて。\r\n大人しい性格で、\r\n姉の事をとても慕っているようだ。",
+    "name": "東雲美鳩",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "冬云美鸠"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "しののめ みはと"
+          },
+          {
+            "k": "罗马字",
+            "v": "Shinonome Mihato"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 177438,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "",
+      "grid": "",
+      "large": "",
+      "medium": ""
+    },
+    "summary": "在一次流产之中受到极大打击，于是便陷入了自欺欺人的梦境之中，将长女美凪当作了未能出生的次女“小满”，一次的梦境之中，梦见了次女流产的景象，在接受了次女流产的事实之后，却也跟着怀疑了长女的存在，变成了没有女儿的人，经由往人的协助，终于和长女相认，也和由羽毛化成的次女相识。 ",
+    "name": "美凪の母",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "美凪的母亲"
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 71,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 2,
+    "gender": "female",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": 3,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/4d/bc/1000_crt_0YkG5.jpg?r=1523159719",
+      "grid": "https://lain.bgm.tv/pic/crt/g/4d/bc/1000_crt_0YkG5.jpg?r=1523159719",
+      "large": "https://lain.bgm.tv/pic/crt/l/4d/bc/1000_crt_0YkG5.jpg?r=1523159719",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4d/bc/1000_crt_0YkG5.jpg?r=1523159719"
+    },
+    "summary": "祐一的学妹，香里的妹妹。祐一和亚由跑到商店街外面时偶然相遇的少女。喜欢的食物是冰淇淋，就算是身处严冬的雪国还是能若无其事的吃香草冰淇淋。但是没办法吃咖哩，对辣的食物厌恶到称之为“人类的敌人”的地步。口头禅是“我讨厌说那种话的人”。从小身体孱弱，现在也是长期缺席没去上学。但是偶而会穿着便服溜进学校里。兴趣是素描，但是不擅长画人物画。另外，反应速度十分的慢，玩打地鼠之类的游戏时连一次也打不到(后来有所进步)。",
+    "name": "美坂栞",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "美坂栞"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "美坂汐里"
+          },
+          {
+            "k": "日文名",
+            "v": "美坂 栞"
+          },
+          {
+            "k": "纯假名",
+            "v": "みさか しおり"
+          },
+          {
+            "k": "罗马字",
+            "v": "Misaka Shiori"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "2月1日"
+      },
+      {
+        "key": "血型",
+        "value": "AB"
+      },
+      {
+        "key": "身高",
+        "value": "157cm"
+      },
+      {
+        "key": "体重",
+        "value": "43kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B79 W53 H80"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      },
+      {
+        "key": "CV",
+        "value": [
+          {
+            "v": "小西寛子(DC、PS2、PC民间汉化版)"
+          },
+          {
+            "v": "佐藤朱(TV、PSP、NS、Steam)"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 27,
+      "collects": 176
+    },
+    "id": 1000,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": 2,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/52/1004_crt_S7012.jpg?r=1523160035",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b8/52/1004_crt_S7012.jpg?r=1523160035",
+      "large": "https://lain.bgm.tv/pic/crt/l/b8/52/1004_crt_S7012.jpg?r=1523160035",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/52/1004_crt_S7012.jpg?r=1523160035"
+    },
+    "summary": "名雪的挚友、祐一的同学。个性冷静、负责吐槽（ツッコミ）、身兼班长的全学年第一的秀才。也有模仿名雪等淘气的一面。照理说应该是美坂栞的姐姐，因为妹妹病重，担心妹妹去世会难以割舍，所以否认自己有妹妹。",
+    "name": "美坂香里",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "美坂香里"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "美坂 香里"
+          },
+          {
+            "k": "纯假名",
+            "v": "みさか かおり"
+          },
+          {
+            "k": "罗马字",
+            "v": "Misaka Kaori"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "3月1日"
+      },
+      {
+        "key": "血型",
+        "value": "B"
+      },
+      {
+        "key": "身高",
+        "value": "164cm"
+      },
+      {
+        "key": "体重",
+        "value": "48kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B83 W55 H81"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 11,
+      "collects": 40
+    },
+    "id": 1004,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/f0/1546_sM9PP.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/af/f0/1546_sM9PP.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/af/f0/1546_sM9PP.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/f0/1546_sM9PP.jpg"
+    },
+    "summary": "在海外遭遇事故后突然对自己的人生有了新的觉醒，对虽然是个美女但是很古板的未婚妻规子提出了分手。但是，当他从规子那听说了奇怪的转校生贤人的事情后，觉得他可能是个天才，于是对贤人和贤人的母亲葵有了兴趣。",
+    "name": "美浦博之",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 1546,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/98/98/1554_htytg.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/98/98/1554_htytg.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/98/98/1554_htytg.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/98/98/1554_htytg.jpg"
+    },
+    "summary": "最先为神林议员之秘书，在朝仓诚死后说服其子朝仓启太竞选，并一路辅佐他。虽是政友党旧人，但对党内利用朝仓的计划不知情。",
+    "name": "美山理香",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 1554,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/27/a9/2953_crt_1zOsU.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/27/a9/2953_crt_1zOsU.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/27/a9/2953_crt_1zOsU.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/27/a9/2953_crt_1zOsU.jpg"
+    },
+    "summary": "17歳。綾人がラーゼフォンと関わる重要ポイントで出現するミステリアスな雰囲気の少女。綾人の同級生として登場するが、その実体は不明である。",
+    "name": "美嶋玲香",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "美屿玲香"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "神名玲香"
+          },
+          {
+            "k": "日文名",
+            "v": "美嶋玲香"
+          },
+          {
+            "k": "纯假名",
+            "v": "みしま れいか"
+          },
+          {
+            "k": "罗马字",
+            "v": "Mishima Reika"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 8,
+      "collects": 34
+    },
+    "id": 2953,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

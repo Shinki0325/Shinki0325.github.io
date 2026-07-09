@@ -15,6 +15,7 @@ export const articleSchema = z.object({
 
 export const albumPhotoSchema = z.object({
   url: z.string(),
+  originalUrl: z.string().optional(),
   alt: z.string(),
   caption: z.string().optional(),
   credit: z.string().optional(),

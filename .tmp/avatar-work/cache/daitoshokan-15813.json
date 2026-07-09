@@ -1,0 +1,512 @@
+[
+  {
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 19,
+    "birth_year": null,
+    "blood_type": 4,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/22/df/16646_crt_46ZRb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/22/df/16646_crt_46ZRb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/22/df/16646_crt_46ZRb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/22/df/16646_crt_46ZRb.jpg"
+    },
+    "summary": "第一食堂アプリオの看板ウェイトレス。\r\n鈴木の先輩にして同僚。 接客態度に優れており、「お人形さんのようでかわいい」 と高い人気を誇っている。\r\n一方で趣味はネトゲ。特に、オンラインFPSではスナイパーを担当しており、超人的な腕前。\r\nネットワークやプログラミングには抜群の才能を持ち、情報工学を専攻している。\r\n\r\n「当店は、お店を出るまでがエンターテインメントをモットーにやっておりますので、えっへん」",
+    "name": "嬉野紗弓実",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "嬉野纱弓实"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "嬉野 紗弓実"
+          },
+          {
+            "k": "纯假名",
+            "v": "うれしの さゆみ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Ureshino Sayumi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "09-19"
+      },
+      {
+        "key": "血型",
+        "value": "O"
+      },
+      {
+        "key": "身高",
+        "value": "141.5cm"
+      },
+      {
+        "key": "体重",
+        "value": "36.0kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B67(AA)/ W50/ H69"
+      }
+    ],
+    "stat": {
+      "comments": 32,
+      "collects": 138
+    },
+    "id": 16646,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f4/2a/54686_crt_ZFQM8.jpg?r=1496555092",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f4/2a/54686_crt_ZFQM8.jpg?r=1496555092",
+      "large": "https://lain.bgm.tv/pic/crt/l/f4/2a/54686_crt_ZFQM8.jpg?r=1496555092",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f4/2a/54686_crt_ZFQM8.jpg?r=1496555092"
+    },
+    "summary": "美を追求する為ならどんな努力も厭わないちょっぴりナルシストなむすめ。美味しいご飯や綺麗な空など写真をSNSに上げるのが好きで自撮りの腕もピカイチ。超美肌で美容にも精通し、女子力の高さを上げることに重きを置いている。",
+    "name": "嬉野六香",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "嬉野六香"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "うれしの りっか"
+          },
+          {
+            "k": "罗马字",
+            "v": "Ureshino Rikka"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "3月7日"
+      },
+      {
+        "key": "血型",
+        "value": "AB型"
+      },
+      {
+        "key": "身高",
+        "value": "161cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B87 W58 H85"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://onsen-musume.jp/character/ureshino_rikka"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 54686,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 13,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/52/b7/153186_crt_88ewM.jpg?r=1734755444",
+      "grid": "https://lain.bgm.tv/pic/crt/g/52/b7/153186_crt_88ewM.jpg?r=1734755444",
+      "large": "https://lain.bgm.tv/pic/crt/l/52/b7/153186_crt_88ewM.jpg?r=1734755444",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/52/b7/153186_crt_88ewM.jpg?r=1734755444"
+    },
+    "summary": "ニコ、モリヒトのクラスメイト。カラとは中学時代からの友人。「うろんミラージュ」という漫画が大好きで、自身のSNS「チッター」にイラストを投稿している。",
+    "name": "嬉野久々実",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "嬉野久久实"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "うれしの くくみ"
+          },
+          {
+            "k": "昵称",
+            "v": "クック"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "8月13日"
+      }
+    ],
+    "stat": {
+      "comments": 13,
+      "collects": 27
+    },
+    "id": 153186,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 11,
+    "gender": "male",
+    "birth_day": 29,
+    "birth_year": null,
+    "blood_type": 4,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/8f/f5/186026_crt_DSO9I.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/8f/f5/186026_crt_DSO9I.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/8f/f5/186026_crt_DSO9I.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8f/f5/186026_crt_DSO9I.jpg"
+    },
+    "summary": "シオリの叔父。常に筋トレしている。",
+    "name": "嬉野光彦",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "嬉野光彦"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "11月29日"
+      },
+      {
+        "key": "血型",
+        "value": "O"
+      },
+      {
+        "key": "引用来源",
+        "value": [
+          {
+            "k": "官方特设网站",
+            "v": "https://www.shonenjump.com/p/sp/2504/vote_marriagetoxin/"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 186026,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 10,
+    "gender": "male",
+    "birth_day": 31,
+    "birth_year": null,
+    "blood_type": 2,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/09/186027_crt_iqeZE.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/29/09/186027_crt_iqeZE.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/29/09/186027_crt_iqeZE.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/09/186027_crt_iqeZE.jpg"
+    },
+    "summary": "シオリの父。時価総額1.5兆円を誇るパーティ用品ブランドの前社長。",
+    "name": "嬉野和仁",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "嬉野和仁"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "10月31日"
+      },
+      {
+        "key": "血型",
+        "value": "B"
+      },
+      {
+        "key": "引用来源",
+        "value": [
+          {
+            "k": "官方特设网站",
+            "v": "https://www.shonenjump.com/p/sp/2504/vote_marriagetoxin/"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 186027,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/9b/a0/194104_crt_237F2.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/9b/a0/194104_crt_237F2.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/9b/a0/194104_crt_237F2.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9b/a0/194104_crt_237F2.jpg"
+    },
+    "summary": "実歩乃の同級生。10年前、恋人がいながら、実歩乃と関係をもつ。悪びれもせず、軽薄で、自分勝手。けれど時折見せる優しさ、無邪気さで実歩乃を翻弄する、つかみどころのない青年。実歩乃の会社に転職して来る。",
+    "name": "嬉野栄成",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "うれしの えいせい"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 194104,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/90/0c/117873_crt_GHGmz.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/90/0c/117873_crt_GHGmz.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/90/0c/117873_crt_GHGmz.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/90/0c/117873_crt_GHGmz.jpg"
+    },
+    "summary": "中学1年。\r\n恋愛気質で惚れっぽく、マイペース。",
+    "name": "ウレシノ / 嬉野遥",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "嬉野遥"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 4,
+      "collects": 2
+    },
+    "id": 117873,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/81/14/138702_crt_ZQX35.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/81/14/138702_crt_ZQX35.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/81/14/138702_crt_ZQX35.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/81/14/138702_crt_ZQX35.jpg"
+    },
+    "summary": "",
+    "name": "ウレシノの母",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "嬉野的妈妈"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 138702,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 31,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/57/ab/185941_crt_609w6.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/57/ab/185941_crt_609w6.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/57/ab/185941_crt_609w6.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/57/ab/185941_crt_609w6.jpg"
+    },
+    "summary": "時価総額1.5兆円のパーティグッズブランドを有する大企業・株式会社バルザックの次期社長で大学生。\r\n引っ込み思案で他人の気持ちばかりに気を遣う性格を本人も気にしており、変わりたいと思っている。手品が趣味で人を喜ばせるのが好き。",
+    "name": "嬉野シオリ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "嬉野诗织"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "うれしの シオリ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "3月31日"
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      }
+    ],
+    "stat": {
+      "comments": 18,
+      "collects": 45
+    },
+    "id": 185941,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 10,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/fb/58/186025_crt_fq6lj.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/fb/58/186025_crt_fq6lj.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/fb/58/186025_crt_fq6lj.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fb/58/186025_crt_fq6lj.jpg"
+    },
+    "summary": "シオリの叔母。シオリの想いを認めて支えている。",
+    "name": "嬉野フタエ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "嬉野二绘"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "4月10日"
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      },
+      {
+        "key": "引用来源",
+        "value": [
+          {
+            "k": "官方特设网站",
+            "v": "https://www.shonenjump.com/p/sp/2504/vote_marriagetoxin/"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 186025,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

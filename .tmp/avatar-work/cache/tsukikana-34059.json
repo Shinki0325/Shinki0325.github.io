@@ -1,0 +1,603 @@
+[
+  {
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ee/6c/68740_crt_W8911.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ee/6c/68740_crt_W8911.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ee/6c/68740_crt_W8911.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ee/6c/68740_crt_W8911.jpg"
+    },
+    "summary": "主人公と同じ学校に通う上級生で、\r\n文藝部の先輩。\r\n物静かな容姿と、凛とした佇まいで、\r\n男子女子問わず人気がある。\r\n\r\n文藝部に所属してはいるが、\r\n自身は読み専門で部員たちの作品に\r\n的確に批判·寸評をしている。\r\n\r\nずっと本を読んでいるだれに、様々な知識を蓄えているが、\r\n知ってるだれで実践出来るわけではない。\r\n\r\nだけど、彼女の物腰や纏う空気感から「出来る女」と\r\n周囲からは認識されている。\r\n本人は「普通」に接して欲しいと思っている。\r\n\r\n古いタイプのＳＮＳサイトで、毎日日記をつけている。",
+    "name": "日紫喜うぐいす",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "日紫喜 うぐいす"
+          },
+          {
+            "k": "纯假名",
+            "v": "ひしき うぐいす"
+          },
+          {
+            "k": "罗马字",
+            "v": "Hishiki Uguisu"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "7月7日"
+      },
+      {
+        "key": "血型",
+        "value": "O型"
+      },
+      {
+        "key": "身高",
+        "value": "166cm"
+      },
+      {
+        "key": "体重",
+        "value": "54kg"
+      },
+      {
+        "key": "BWH",
+        "value": "85(D)/58/86"
+      },
+      {
+        "key": "年齢",
+        "value": "３年生"
+      },
+      {
+        "key": "好きな食べ物",
+        "value": "おはぎ"
+      },
+      {
+        "key": "嫌いな食べ物",
+        "value": "熱い物全般（超猫舌）"
+      }
+    ],
+    "stat": {
+      "comments": 24,
+      "collects": 54
+    },
+    "id": 68740,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 3,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/40/b3/59584_crt_0spJ9.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/40/b3/59584_crt_0spJ9.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/40/b3/59584_crt_0spJ9.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/40/b3/59584_crt_0spJ9.jpg"
+    },
+    "summary": "那么……还请给我说明一下，这是怎么回事吧。”\r\n林钟寺女子高中2年级学生，16岁。\r\n对人对己都十分严格的学生会员，诺艾尔和寿奈樱的学姐。\r\n似乎是谁家的大小姐。",
+    "name": "日紫喜瑞羽",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "日紫喜瑞羽"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "日紫喜 瑞羽"
+          },
+          {
+            "k": "纯假名",
+            "v": "ひむらき みずは"
+          },
+          {
+            "k": "罗马字",
+            "v": "Himuraki Mizuha"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "12月3日"
+      }
+    ],
+    "stat": {
+      "comments": 26,
+      "collects": 40
+    },
+    "id": 59584,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 17,
+    "birth_year": null,
+    "blood_type": 2,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f7/6c/91051_crt_uBwmt.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f7/6c/91051_crt_uBwmt.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f7/6c/91051_crt_uBwmt.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f7/6c/91051_crt_uBwmt.jpg"
+    },
+    "summary": "日生光の祖母。名家の出自であり、他者に対して容赦がない。",
+    "name": "日生紫",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "日生紫"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ひなせ ゆかり"
+          },
+          {
+            "k": "罗马字",
+            "v": "Hinase Yukari"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "08-17"
+      },
+      {
+        "key": "血型",
+        "value": "B"
+      },
+      {
+        "key": "身高",
+        "value": "155cm"
+      },
+      {
+        "key": "年龄",
+        "value": "61"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 91051,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 11,
+    "gender": "female",
+    "birth_day": 2,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d6/d9/154449_crt_DMbM6.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d6/d9/154449_crt_DMbM6.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/d6/d9/154449_crt_DMbM6.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d6/d9/154449_crt_DMbM6.jpg"
+    },
+    "summary": "有名私立女子学園の教師として勤務。\r\n\r\n現在管理人不在の学校の寮兼マンションの管理もしているが、多忙のため管理人になる人物を探すよう校長からも言われていた。しかし、あまり信用できない人物に任せるわけにもいかず…そこで就職浪人中の主人公に目をつける。\r\n\r\n主人公とは遠い親戚に当たる。",
+    "name": "日之宮紫",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Hinomiya Yukari"
+          },
+          {
+            "k": "纯假名",
+            "v": "ひのみや　ゆかり"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "11月2日（蠍座）"
+      },
+      {
+        "key": "血型",
+        "value": "ＡＢ型"
+      },
+      {
+        "key": "身高",
+        "value": "167cm"
+      },
+      {
+        "key": "体重",
+        "value": "48kg"
+      },
+      {
+        "key": "BWH",
+        "value": "Ｂ93　Ｗ60　Ｈ89"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://www.will-japan.co.jp/rouge/gu09/gu0903.htm"
+      },
+      {
+        "key": "部屋",
+        "value": "203号室"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 154449,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/73/5f/83903_crt_7MxNj.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/73/5f/83903_crt_7MxNj.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/73/5f/83903_crt_7MxNj.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/73/5f/83903_crt_7MxNj.jpg"
+    },
+    "summary": "紫宮太一堂兄弟，個性驕矜、愛出風頭，派頭十足的少爺作風，一心力求表現、超越太一，好提昇自己在太君心目中的份量。負責巡守世家安危，不幸遭尋釁而來的襲滅天來所殺。",
+    "name": "紫宮日煌",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性別",
+        "value": "男"
+      },
+      {
+        "key": "初登場",
+        "value": "霹靂奇象 第37集"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://beta.pili.com.tw/role-view.php?rid=zigongrihuang"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 83903,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 23,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/50/24/91686_crt_Ns9Y1.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/50/24/91686_crt_Ns9Y1.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/50/24/91686_crt_Ns9Y1.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/50/24/91686_crt_Ns9Y1.jpg"
+    },
+    "summary": "和之国的公主，光月家族。被和之国的居民称之为“和之国第一美女”。曾经化名为小紫。",
+    "name": "光月日和",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "光月日和"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Kouzuki Hiyori"
+          },
+          {
+            "k": "纯假名",
+            "v": "こうづき ひより"
+          },
+          {
+            "k": "昵称",
+            "v": "小紫"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "12月23日"
+      },
+      {
+        "key": "血型",
+        "value": "XF型"
+      },
+      {
+        "key": "身高",
+        "value": "170cm"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 11
+    },
+    "id": 91686,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/bb/b2/187874_crt_0ZsJb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/bb/b2/187874_crt_0ZsJb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/bb/b2/187874_crt_0ZsJb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bb/b2/187874_crt_0ZsJb.jpg"
+    },
+    "summary": "本作の主人公。人前は苦手で地味だが本を読むのが大好きな図書委員の少女。16歳。\r\n丸い大きな眼鏡と三つ編みのおさげが特徴で、いつも敬語を使っている。普段は極度のアガリ症だが、眼鏡を外しておさげを解くと性格が変わり[注 3]、凛とした表情の名探偵になることから、同級生の梅崎仁から「ナゾトキ姫」というニックネームを付けられた。",
+    "name": "詩音ひなみ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "诗音日菜美"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "诗音紫苑"
+          },
+          {
+            "k": "纯假名",
+            "v": "しおん ひなみ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 187874,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 24,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/77/38_bce93e200c36f7cd9dfd0e5deaa_0gv2M.jpg?r=1394081009",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a5/77/38_bce93e200c36f7cd9dfd0e5deaa_0gv2M.jpg?r=1394081009",
+      "large": "https://lain.bgm.tv/pic/crt/l/a5/77/38_bce93e200c36f7cd9dfd0e5deaa_0gv2M.jpg?r=1394081009",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/77/38_bce93e200c36f7cd9dfd0e5deaa_0gv2M.jpg?r=1394081009"
+    },
+    "summary": "日比谷小姐是秀树所住的公寓的管理员，是揭开整个故事故事迷题的关键人物。平时总是拿着扫把在院前打扫，然而暗中关注着绣树和ちぃ的生活，总会在最关键的时刻出现，如在TV版第6话「ちぃ弱る」中Chii没电和Chii洗澡两话中帮秀树及时解决了难题。值得一提的是Chii的所有衣服（除内衣）全部是她送的，而且那本《空无一人的城市》也是日比谷小姐画的。里面所写的故事就是秀树和唧之间的故事~日比谷和其丈夫是CHOBITS系列的主要研发者。而制造者是日比谷小姐的丈夫。CHOBITS系列是其丈夫为不能生育的日比谷小姐做的，SO，她应该算是唧的妈妈。",
+    "name": "日比谷千歲",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "日比谷千岁"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "みはらちとせ"
+          },
+          {
+            "v": "Mihara Chitose"
+          },
+          {
+            "k": "第二中文名",
+            "v": "三原千岁"
+          },
+          {
+            "k": "日文名",
+            "v": "日比谷 千歲"
+          },
+          {
+            "k": "纯假名",
+            "v": "ひびや ちとせ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Hibiya Chitose"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "9月24日"
+      },
+      {
+        "key": "身高",
+        "value": "165cm"
+      },
+      {
+        "key": "声优",
+        "value": "井上喜久子"
+      }
+    ],
+    "stat": {
+      "comments": 10,
+      "collects": 25
+    },
+    "id": 38,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/4b/aa/685_crt_5yPMM.jpg?r=1733334158",
+      "grid": "https://lain.bgm.tv/pic/crt/g/4b/aa/685_crt_5yPMM.jpg?r=1733334158",
+      "large": "https://lain.bgm.tv/pic/crt/l/4b/aa/685_crt_5yPMM.jpg?r=1733334158",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4b/aa/685_crt_5yPMM.jpg?r=1733334158"
+    },
+    "summary": "梅里中学学生，雪辉（1st）班上的同学，爱管闲事，天生喜欢照顾别人。是雪辉（1st）在梅里中学交到的第一个朋友。表面上因猎狗袭击事件而死。但其实尸体和被袭都只是人为伪装的。真正身份是月岛狩人（10th）的女儿，因为父亲开始被秋濑调查而接收了月岛狩人（10th）的“饲养日记”和犬只，目的是想把秋濑捉住。为得到秋濑的未来日记，以雪辉（1st）为人质，与秋濑进行抛硬币的赌博游戏。后来加入雪辉的行列并参与部分行动。",
+    "name": "日野日向",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "日野日向"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ひの ひなた"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 4,
+      "collects": 9
+    },
+    "id": 685,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 2,
+    "gender": "female",
+    "birth_day": 27,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/56/9a/899_crt_DdBxD.jpg?r=1563809250",
+      "grid": "https://lain.bgm.tv/pic/crt/g/56/9a/899_crt_DdBxD.jpg?r=1563809250",
+      "large": "https://lain.bgm.tv/pic/crt/l/56/9a/899_crt_DdBxD.jpg?r=1563809250",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/56/9a/899_crt_DdBxD.jpg?r=1563809250"
+    },
+    "summary": "故事中女主角，普通科二年级。身高162 cm，生日2月27日。双鱼座。故事开始时全无音乐感，依赖魔法小提琴出赛。直率的性格，在游戏里名字可由玩家自行转换。\r\n\r\n普通科２年生 \r\n演奏楽器：ヴァイオリン\r\n\r\n音楽については全くの素人だったが、\r\nリリからもらった魔法のヴァイオリンで\r\n学内音楽コンクールに参加し、\r\n音楽の道を歩み始めた。",
+    "name": "日野香穂子",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "日野香穗子"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "日野香穂子"
+          },
+          {
+            "k": "纯假名",
+            "v": "ひの かほこ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Hino Kahoko"
+          },
+          {
+            "k": "昵称",
+            "v": "香穂"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "2月27日"
+      },
+      {
+        "key": "身高",
+        "value": "162cm"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      },
+      {
+        "key": "声优",
+        "value": "高木礼子"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 10
+    },
+    "id": 899,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

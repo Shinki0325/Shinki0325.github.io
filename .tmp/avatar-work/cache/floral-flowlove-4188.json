@@ -1,0 +1,451 @@
+[
+  {
+    "birth_mon": 11,
+    "gender": "female",
+    "birth_day": 11,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/6d/50/42301_crt_C5M55.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/6d/50/42301_crt_C5M55.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/6d/50/42301_crt_C5M55.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6d/50/42301_crt_C5M55.jpg"
+    },
+    "summary": "聖ガブリエレ学園 3年生。 修道院で育った敬虔な信徒であるらしい。\r\n容姿は十人並みだが、内面の美しさから天使とも聖母とも呼ばれている。\r\n底抜けに人がよく、主人公に対してもなにかと親身になってくれる。\r\n\r\n自分を粗末にするような行為をすると、厳しくたしなめられてしまう。\r\nそのため主人公と歳は 1つしか変わらないのに、頭が上がらない存在。\r\nモーセという名のモモンガを飼っている。\r\n\r\n「わざわざ訪ねて下さるなんて、嬉しいの極みですねっ」",
+    "name": "椿姫こはね",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "椿姬恋羽"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Tubaki Kohane"
+          },
+          {
+            "k": "纯假名",
+            "v": "つばき こはね"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "11月11日"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "身高",
+        "value": "154cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B92 /W57 /H80"
+      },
+      {
+        "key": "趣味",
+        "value": "旅行雑誌を眺めて、行った気になること"
+      }
+    ],
+    "stat": {
+      "comments": 9,
+      "collects": 14
+    },
+    "id": 42301,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d9/52/62270_crt_izxjK.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d9/52/62270_crt_izxjK.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/d9/52/62270_crt_izxjK.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d9/52/62270_crt_izxjK.jpg"
+    },
+    "summary": "カミサマ教育法によって降臨したアラガミ（荒神）。\r\n学園にも通わず、自由気ままに生活しているヤンチャなカミサマ。\r\n電気に干渉する力があるものの、アラガミなので電気系統を狂わすことしかできない。\r\nまた怒りっぽい性格で、ほぼ毎日のようにどこかで停電を引き起こしている。\r\n周囲を混乱させても、アラガミとしては当然のことなのでまったく気にしていない。\r\n我儘三昧だが、言うことを聞かないわけではなく納得できないことはやらないタイプ。\r\n将を誘惑して甘やかしてもらおうとするような小悪魔的な部分もある。\r\nまた舞花の前でわざと将を誘惑して嫉妬させるなど、悪ふざけをすることもしばしば。\r\n「ざーんねん。 今日は1日ごろごろするって予定が入ってるんでーす」",
+    "name": "椿姫アカネ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "椿姫 アカネ"
+          },
+          {
+            "k": "纯假名",
+            "v": "つばき あかね"
+          }
+        ]
+      },
+      {
+        "key": "身高",
+        "value": "161cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B88/ W58/ H90"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 6
+    },
+    "id": 62270,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/32/b8/26343_crt_2f9Ao.jpg?r=1407646744",
+      "grid": "https://lain.bgm.tv/pic/crt/g/32/b8/26343_crt_2f9Ao.jpg?r=1407646744",
+      "large": "https://lain.bgm.tv/pic/crt/l/32/b8/26343_crt_2f9Ao.jpg?r=1407646744",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/32/b8/26343_crt_2f9Ao.jpg?r=1407646744"
+    },
+    "summary": "由于戴上了神秘的王冠而成为“公主殿下”，本故事的主角。\r\n    性格是容易嘴馋和冒失。同时对于外国人的心结相当强。\r\n    国语很不好，会把抱歉说错成包谦等情形。\r\n    会有过度深信某件事，而对于周围的状况视而不见的情形。似乎有被迫害妄想症（像是在第2集被叫作“姫子大人”后，有整整一回没注意到自己的事情等。）\r\n    名字由来为椿和茶花女（日文名为椿姫）。",
+    "name": "椿姫子",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "椿姬子"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "椿 姫子"
+          },
+          {
+            "k": "纯假名",
+            "v": "つばき ひめこ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Tsubaki Himeko"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 26343,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/54/119032_crt_6lWMu.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a6/54/119032_crt_6lWMu.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a6/54/119032_crt_6lWMu.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/54/119032_crt_6lWMu.jpg"
+    },
+    "summary": "",
+    "name": "椿姫",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 119032,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/2d/6f/204733_crt_Fh41Y.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/2d/6f/204733_crt_Fh41Y.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/2d/6f/204733_crt_Fh41Y.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2d/6f/204733_crt_Fh41Y.jpg"
+    },
+    "summary": "資産家の娘であり、主人公の幼馴染み 。\r\n育ちのせいでワガママなところがあるが、基本的には性格の良い女の子。\r\n意外と友達は少なく、文芸部の２人（美智恵と明菜）が少ない親友。\r\n\r\n小さい頃両親が離婚しており、その時引っ越してしまうが、転校してきた主人公と偶然に再会する。\r\n資産家の娘ではあるが、お金には厳しく育てられたため無駄金を使うことは少ない。\r\nまた、自身でも学業と両立してネイルサロンを経営するなどしている 。",
+    "name": "椿姫子",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "BWH",
+        "value": "B81/W56/H84"
+      },
+      {
+        "key": "CV",
+        "value": "胡桃"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 204733,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/f7/207529_crt_kkx4F.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a7/f7/207529_crt_kkx4F.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a7/f7/207529_crt_kkx4F.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/f7/207529_crt_kkx4F.jpg"
+    },
+    "summary": "",
+    "name": "椿姫",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 207529,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/00/d6/17297_crt_l7N11.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/00/d6/17297_crt_l7N11.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/00/d6/17297_crt_l7N11.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/00/d6/17297_crt_l7N11.jpg"
+    },
+    "summary": "前作に登場した花椿吾郎の姪にあたる。主人公をデイジー、藤堂をベラドンナと呼ぶなど、気に入った人物に全く勝手な愛称をつける。突如現れては、ファッションをチェックしたり助言を与えたりとナビゲートしてくれる。既成のデザインを全く無視した制服を着ていて、常に取り巻きの女生徒に囲まれている。謎の団体「カメリア倶楽部」の主催者であり、はばたきウォッチャーでファッションコラムを連載している。姫子曰く「三度の飯よりおしゃれ！」なぜか若王子に「カメリア倶楽部」専属になるよう密かに勧誘し続けているよう。年齢不詳で真咲にも「先輩」と呼ばれていることからわかるように、昔から学園にいる謎の存在である。叔父の吾郎が不在のため、セレクトショップ「URSULA」のオーナー代理を務める。趣味は真の乙女を捜すこと。好きなものは乙女のファッションチェック・おしゃれ。誕生日・血液型などのパーソナルデータは公表されていない。",
+    "name": "花椿姫子",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "花椿姬子"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "はなつばき ひめこ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 17297,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/17/39/74801_crt_Ztz97.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/17/39/74801_crt_Ztz97.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/17/39/74801_crt_Ztz97.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/17/39/74801_crt_Ztz97.jpg"
+    },
+    "summary": "女性上位の社会を掲げ、その手腕と容姿で女性からの圧倒的な支持を受けている政治家。\r\nしかし、その本性は物欲と支配欲の塊であり、自らの利益のためなら汚いことも平気で行う外道である。",
+    "name": "九条椿姫",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "九条 椿姫"
+          },
+          {
+            "k": "纯假名",
+            "v": "くじょう つばき"
+          }
+        ]
+      },
+      {
+        "key": "BWH",
+        "value": "B90（F）/ W60/ H81"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 74801,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d3/f0/12169_crt_jGOL8.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d3/f0/12169_crt_jGOL8.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/d3/f0/12169_crt_jGOL8.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d3/f0/12169_crt_jGOL8.jpg"
+    },
+    "summary": "京介的同班同学，而且是班长，在家中是长女。总是拿着日记和写备忘。",
+    "name": "美輪椿姫",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "美轮椿姬"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "みわ つばき"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 22,
+      "collects": 41
+    },
+    "id": 12169,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/5f/98/15439_crt_QtW7L.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/5f/98/15439_crt_QtW7L.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/5f/98/15439_crt_QtW7L.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5f/98/15439_crt_QtW7L.jpg"
+    },
+    "summary": "柊雨の妹。優歌の同級生でもある。兄同様暗殺者として育てられ、様々な毒物の扱いに詳しい不気味な雰囲気の少女。しかし内面は兄を慕っていて、年相応の弱さや未熟さも持つ。毒針を使うのが得意らしい。",
+    "name": "竜骨寺椿姫",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "龙骨寺椿姬"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "竜骨寺椿姫"
+          },
+          {
+            "k": "纯假名",
+            "v": "りゅうこつじ つばき"
+          },
+          {
+            "k": "罗马字",
+            "v": "Ryuukotsuji Tsubaki"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "狂乱家族日記 - Wikipedia"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 15439,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

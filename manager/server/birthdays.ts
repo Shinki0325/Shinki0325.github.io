@@ -1,5 +1,6 @@
 import { execFile } from "node:child_process";
 import fs from "node:fs/promises";
+import os from "node:os";
 import path from "node:path";
 import { promisify } from "node:util";
 import { fileURLToPath } from "node:url";
@@ -63,6 +64,7 @@ const publicRoot = path.join(repoRoot, "public");
 const birthdayUploadRoot = "public/uploads/character-birthdays";
 const avatarRoot = path.join(publicRoot, "uploads", "character-birthdays");
 const cropScriptPath = path.join(repoRoot, "scripts", "crop_square_image.py");
+const convertScriptPath = path.join(repoRoot, "scripts", "convert_image_to_webp.py");
 
 const ID_PATTERN = /^[a-z0-9][a-z0-9-]*$/;
 let writeQueue: Promise<void> = Promise.resolve();
@@ -179,6 +181,11 @@ const getImageDestination = (workId: string, characterId: string, kind: Birthday
   assertValid(isWithinDirectory(avatarRoot, destinationPath), `Invalid ${birthdayUploadRoot} destination.`);
 
   return destinationPath;
+};
+
+const convertImageToWebp = async (sourcePath: string, destinationPath: string) => {
+  await fs.mkdir(path.dirname(destinationPath), { recursive: true });
+  await execFileAsync("python3", [convertScriptPath, sourcePath, destinationPath]);
 };
 
 const normalizeBirthdayImageUrl = (
@@ -425,8 +432,7 @@ export const copyBirthdayImage = async (
   assertValid(stat.isFile(), "Source path must be a file.");
 
   const destinationPath = getImageDestination(workId, characterId, kind);
-  await fs.mkdir(path.dirname(destinationPath), { recursive: true });
-  await fs.copyFile(sourceFile, destinationPath);
+  await convertImageToWebp(sourceFile, destinationPath);
 
   return toPublicUrl(destinationPath);
 };
@@ -439,7 +445,15 @@ export const saveUploadedBirthdayImage = async (
 ): Promise<BirthdayImageResult> => {
   const destinationPath = getImageDestination(workId, characterId, kind);
   await fs.mkdir(path.dirname(destinationPath), { recursive: true });
-  await fs.writeFile(destinationPath, buffer);
+  const tempDir = await fs.mkdtemp(path.join(os.tmpdir(), "birthday-image-"));
+  const tempPath = path.join(tempDir, "upload-image");
+
+  try {
+    await fs.writeFile(tempPath, buffer);
+    await convertImageToWebp(tempPath, destinationPath);
+  } finally {
+    await fs.rm(tempDir, { recursive: true, force: true });
+  }
 
   return toPublicUrl(destinationPath);
 };

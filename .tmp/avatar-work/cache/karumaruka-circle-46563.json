@@ -1,0 +1,545 @@
+[
+  {
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 23,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/43/ec/20620_crt_fLp8l.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/43/ec/20620_crt_fLp8l.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/43/ec/20620_crt_fLp8l.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/43/ec/20620_crt_fLp8l.jpg"
+    },
+    "summary": "身長が高く胸も大きい、メリハリのある体型の美人。\r\n見た目だけならキリッとしているようにも見えるが、中身はわりといいかげん。\r\n自称エコ少女。 エコといっても自分にとってのエコなので、とことん省エネ。\r\n基本的に自分から何かするのを面倒くさがり、人にさせようとする傾向がある。\r\nしかし、何かを押しつけられても不思議と嫌な気分はしない。\r\nまた、相手が本当に困っている時には、さっと現れて手助けをしてくれる。\r\n【Access key for KARUMARUKA：強欲】\r\n自分の意志とは関係なく物品を買い漁る。\r\nその支払いは、親のクレジットカードでなんとか賄っているが、本人は能力が発動するたびに激しく後悔する。\r\n\r\n「えー、だって、私のエネルギーは節約したいじゃん。 ほら、私、エコ少女だし♪」",
+    "name": "高坂夕姫羽",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "高坂夕姬羽"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "こうさか ゆきは"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "4月23日"
+      },
+      {
+        "key": "身高",
+        "value": "162"
+      },
+      {
+        "key": "体重",
+        "value": "49"
+      },
+      {
+        "key": "BWH",
+        "value": "90/59/89"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 13
+    },
+    "id": 20620,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/93/4d/157117_crt_002Dp.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/93/4d/157117_crt_002Dp.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/93/4d/157117_crt_002Dp.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/93/4d/157117_crt_002Dp.jpg"
+    },
+    "summary": "",
+    "name": "高坂",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Kousaka"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 157117,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 2,
+    "gender": "male",
+    "birth_day": 2,
+    "birth_year": 1984,
+    "blood_type": 2,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ed/de/309_DfXHy.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ed/de/309_DfXHy.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ed/de/309_DfXHy.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ed/de/309_DfXHy.jpg"
+    },
+    "summary": "重度御宅族，有跟御宅族形象無關的帥氣長相，格鬥遊戲無人能敵，尤其喜歡聖騎士之戰，與青梅竹馬的春日部咲交往中，但是ACG還是其第一順位。有cosplay經歷（漫畫版cos不籤的橘泉美，而動畫版則是cos不籤二期的秋山時乃），甚至比真正的女孩還上相。缺點是從來不會考慮他人的感受以及不會手下留情，即使與女朋友春日部咲對打遊戲時亦然。",
+    "name": "高坂真琴",
+    "infobox": [
+      {
+        "key": "生日",
+        "value": "1984年2月2日"
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Kousaka Makoto"
+          },
+          {
+            "k": "日文名",
+            "v": "高坂真琴"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      },
+      {
+        "key": "简体中文名",
+        "value": "高坂真琴"
+      },
+      {
+        "key": "血型",
+        "value": "B"
+      }
+    ],
+    "stat": {
+      "comments": 9,
+      "collects": 11
+    },
+    "id": 309,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/0e/ef/684_crt_CoiZX.jpg?r=1733334172",
+      "grid": "https://lain.bgm.tv/pic/crt/g/0e/ef/684_crt_CoiZX.jpg?r=1733334172",
+      "large": "https://lain.bgm.tv/pic/crt/l/0e/ef/684_crt_CoiZX.jpg?r=1733334172",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0e/ef/684_crt_CoiZX.jpg?r=1733334172"
+    },
+    "summary": "雪辉（1st）和由乃在樱见中学时同学，弥音（9th）事件中最先出卖雪辉（1st）的人之一。后来亦转校到梅里中学，跟雪辉（1st）还是在同一班中。因猎狗袭击事件开始卷进了事件。 \r\n也和雪辉（1st）一样喜欢记手机日记，因为使用了8th的平台而在寻找被通缉的由乃（2nd）时救了雪辉（1st）等人一命。",
+    "name": "高坂王子",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "高坂王子"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "高阪王子"
+          },
+          {
+            "k": "纯假名",
+            "v": "こうさか おうじ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kousaka Ouji"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 1
+    },
+    "id": 684,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/42/1813_RTnDH.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f5/42/1813_RTnDH.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f5/42/1813_RTnDH.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/42/1813_RTnDH.jpg"
+    },
+    "summary": "本作主角之一。高坂家的长子，葵的哥哥（无血缘关系）。18岁。非常喜欢和疼爱葵，且恋妹情结还不断上升，虽然葵完全不予理会，但是他为了葵可以做很多事情，是个很有责任感的哥哥。\r\n料理社的社员，但是已经完全忘记自己加入了该社，被称为“幽灵社员”。和绿叶是好友。",
+    "name": "高坂茜",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "高坂茜"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "こうさか あかね"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": [
+          {
+            "v": "zh.wikipedia.org/wiki/兄妹初體驗！"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 1813,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/c3/1818_77uE0.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f5/c3/1818_77uE0.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f5/c3/1818_77uE0.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/c3/1818_77uE0.jpg"
+    },
+    "summary": "本作主角之一。高坂家的长女，比茜小1岁的妹妹（无血缘关系），原姓松山。17岁。精明能干可靠，负责打理家中的日常事务，包括财务分配和开支等，对钱财十分精打细算。很关心茜，许多事情都会特意考虑到哥哥，同时也对他有许多要求。\r\n头上左侧戴着一个猫咪发饰，发饰的表情还会随着葵的心情而改变。胸部较小。喜欢吃螃蟹。\r\n料理社的社员。和萌葱是好友。",
+    "name": "高坂葵",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "高坂葵"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "こうさか あおい"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": [
+          {
+            "v": "zh.wikipedia.org/wiki/兄妹初體驗！"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 1818,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/17/1a/8782_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/17/1a/8782_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/17/1a/8782_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/17/1a/8782_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "高坂潤平",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "高坂润平"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "高坂潤平"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kousaka Junpei"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 8782,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/37/ca/8982_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/37/ca/8982_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/37/ca/8982_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/37/ca/8982_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "高坂鈴",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "高坂铃"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "高坂鈴"
+          },
+          {
+            "k": "纯假名",
+            "v": "こうさか すず"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kousaka Suzu"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 8982,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 8,
+    "birth_year": 1997,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/73/7d/10473_crt_glsIT.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/73/7d/10473_crt_glsIT.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/73/7d/10473_crt_glsIT.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/73/7d/10473_crt_glsIT.jpg"
+    },
+    "summary": "《我的妹妹哪有这么可爱》（俺の妹がこんなに可爱いわけがない）男主角高坂京介的妹妹，出生于1997年,居住于千叶市,目前就读国中二年级。和平凡的哥哥相反，外表出众，在流行杂志担任模特儿赚了不少钱。不知不觉间爱上了萌系动画和美少女游戏（不分是不是限制级），喜欢逛かーずSP和アキバBlog等网志，常因此冲动购物。对旁人的眼光十分在意而不敢公开自己的兴趣而闷在心理，刚好此时装在“梅露露”盒子中的“和妹妹恋爱吧♪”被哥哥发现，虽然不是她的本意，但还是向哥哥商量该怎么办。 在京介的建议和陪同下参加了“宅女集合”的线下聚会。在参加夏Comi后回家时偶遇好友新垣绫濑，并且暴露了自己的兴趣，曾一度绝交。在京介的介入下得以和绫濑恢复关系。",
+    "name": "高坂桐乃",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "高坂桐乃"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "こうさかきりの"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kousaka Kirino"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "1997年4月8日"
+      },
+      {
+        "key": "身高",
+        "value": "165cm"
+      },
+      {
+        "key": "体重",
+        "value": "45kg"
+      },
+      {
+        "key": "BWH",
+        "value": "82/54/81"
+      }
+    ],
+    "stat": {
+      "comments": 138,
+      "collects": 563
+    },
+    "id": 10473,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/6d/10814_crt_NYJ04.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a6/6d/10814_crt_NYJ04.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a6/6d/10814_crt_NYJ04.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/6d/10814_crt_NYJ04.jpg"
+    },
+    "summary": "男主角，是个长着一张“一看就是日后在某个不知名的可怜企业当小小室长”（加奈子语）的大众脸，喜欢喝麦茶的高中二年级学生。作为本作最接近“现实真实感”的人物，对于观众来说应该是最能引起共鸣的一个角色了，也正如他所说：“做人平凡最好”。其人一个突出的地方就是具有很强大的语言辩论能力（原作中表现为无时无刻的吐槽），甚至还有相当推理的思维出现（与黑猫一起为妹妹解决手机小说被侵权问题）。一直以来莫名其妙的被妹妹藐视，并且两人话少得可怜，自从在门口捡到以“梅露露”为封套实际为18x内容的DVD后，得知妹妹的秘密（当夜就被妹妹桐乃抓去进行“人生商谈”），在后来的日子里便一直为妹妹遮风挡雨奔波劳碌，是个典型口硬心软的好哥哥。经常把H书藏在床底下，被妈妈发现过。\r\n不知道是不是因为麻奈实的原因，偷藏的Ｈ书，多半是眼镜娘的类型。为此桐乃曾大发脾气（实际上是恼怒为什么没有妹控系列）在第七卷最后疑似跟黑猫交往。\r\n自从得知妹妹不想被别人知道的秘密以后，开始了被桐乃强迫玩“和妹妹谈恋爱吧♪”、“妹歼”多支18禁恋爱冒险游戏的生活。",
+    "name": "高坂京介",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "高坂京介"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "漆黑的贵公子"
+          },
+          {
+            "k": "日文名",
+            "v": "高坂 京介"
+          },
+          {
+            "k": "纯假名",
+            "v": "こうさか きょうすけ"
+          },
+          {
+            "k": "罗马字",
+            "v": "ko u sa ka kyou su ke"
+          },
+          {
+            "k": "昵称",
+            "v": "凶介"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "4月"
+      },
+      {
+        "key": "身高",
+        "value": "175cm"
+      },
+      {
+        "key": "体重",
+        "value": "60kg"
+      },
+      {
+        "key": "引用来源",
+        "value": "俺の妹がこんなに可爱いわけがない"
+      }
+    ],
+    "stat": {
+      "comments": 33,
+      "collects": 76
+    },
+    "id": 10814,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

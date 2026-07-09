@@ -1,0 +1,442 @@
+[
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/67/1d/13383_crt_5roZo.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/67/1d/13383_crt_5roZo.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/67/1d/13383_crt_5roZo.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/67/1d/13383_crt_5roZo.jpg"
+    },
+    "summary": "",
+    "name": "姜云凡",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "身高",
+        "value": "176cm"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 3
+    },
+    "id": 13383,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/e1/7a/19407_crt_MU865.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/e1/7a/19407_crt_MU865.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/e1/7a/19407_crt_MU865.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e1/7a/19407_crt_MU865.jpg"
+    },
+    "summary": "天水の麒麟児と称された若き将。\r\n諸葛亮の後継者として深く信任され、兵法を託される。\r\n五丈原の戦いの後、度重なる魏への侵攻の指揮を執った。\r\nその実直さと責任感の強さから、斜陽の蜀を最後まで支えつづけた。",
+    "name": "姜维",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 2
+    },
+    "id": 19407,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/07/1f/24898_crt_4y42b.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/07/1f/24898_crt_4y42b.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/07/1f/24898_crt_4y42b.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/07/1f/24898_crt_4y42b.jpg"
+    },
+    "summary": "霜刃何当承玉瓯，依稀梅浅敛灼流。\r\n剑折忿起千钧乱，朔气沧澜卷铁鍪。",
+    "name": "姜承",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "姜世离"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "身高",
+        "value": "183cm"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 3
+    },
+    "id": 24898,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/1a/38584_crt_knJ3h.jpg?r=1454566324",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a5/1a/38584_crt_knJ3h.jpg?r=1454566324",
+      "large": "https://lain.bgm.tv/pic/crt/l/a5/1a/38584_crt_knJ3h.jpg?r=1454566324",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/1a/38584_crt_knJ3h.jpg?r=1454566324"
+    },
+    "summary": "年 龄：20岁。\r\n\r\n身份背景：风小小的大学同学，杀手世家王牌杀手。\r\n\r\n能 力：武力值极高。\r\n\r\n特征：外表纯洁无辜的阳光少年，单纯、直线思维，化神时有羊角。风小小的追求者，凡事均以风小小为中心。除做杀手外，会积极生活工作，看似软萌阳光的无好少年，实际“能动手绝不动口”。",
+    "name": "姜礼(蚩尤)",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "姜礼(蚩尤)"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 38584,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/eb/59854_crt_5BQQ8.jpg?r=1745482551",
+      "grid": "https://lain.bgm.tv/pic/crt/g/6e/eb/59854_crt_5BQQ8.jpg?r=1745482551",
+      "large": "https://lain.bgm.tv/pic/crt/l/6e/eb/59854_crt_5BQQ8.jpg?r=1745482551",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/eb/59854_crt_5BQQ8.jpg?r=1745482551"
+    },
+    "summary": "擅长空手道。\r\n运动和学习万能的完美女高中生。\r\n原本性格好强的小敏在父母离婚的刺激下变得更加刁蛮倔强。\r\n虽对放荡不羁的父亲十分不满，但是和普通的女孩子一样离开父亲会感到寂寞孤独。",
+    "name": "姜辰敏",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "姜辰敏"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "ミソ"
+          },
+          {
+            "k": "纯假名",
+            "v": "ミンちゃん"
+          },
+          {
+            "k": "昵称",
+            "v": "小敏"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 7,
+      "collects": 17
+    },
+    "id": 59854,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 16,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/3c/67834_crt_4z1z1.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/2a/3c/67834_crt_4z1z1.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/2a/3c/67834_crt_4z1z1.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/3c/67834_crt_4z1z1.jpg"
+    },
+    "summary": "专业未知、年级未知除了姓名之外一切个人信息都未知的神秘少女，仿佛于校园中神出鬼没的幽灵，游离在众人之外。\r\n一年四季无论天气总是同样的侦探装扮，自称为“本侦探”的少女让人难以分辨她到底是活在幻想还是现实。",
+    "name": "姜明之",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "5月16日"
+      },
+      {
+        "key": "身高",
+        "value": "175cm"
+      },
+      {
+        "key": "CV",
+        "value": "凌晨"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 67834,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/1f/05/77253_crt_0d9gx.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/1f/05/77253_crt_0d9gx.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/1f/05/77253_crt_0d9gx.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1f/05/77253_crt_0d9gx.jpg"
+    },
+    "summary": "襄铃的生母，气质温婉的女子。曾与九尾天狐相恋，后因狐族纷争与丈夫分离。回到中原后，边旅行边行医助人。对于是否与女儿相认，心中有过纠结，对即将前往蓬莱决战的襄铃许诺，若她能安然而返，便会告诉她自己的身份。",
+    "name": "姜离",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "姜离"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "年龄",
+        "value": "30"
+      },
+      {
+        "key": "种族",
+        "value": "人"
+      },
+      {
+        "key": "登场位置",
+        "value": "江都城郊"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 77253,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d1/60/82173_crt_8SkQW.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d1/60/82173_crt_8SkQW.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/d1/60/82173_crt_8SkQW.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d1/60/82173_crt_8SkQW.jpg"
+    },
+    "summary": "善掌握局勢，具謀略智慧，又兼具妖狐迷離難測之性格，為藏魂家族葬魂一脈之司掌。精通葬魂咒術，破壞之力難以預估，畢生以藏魂家族存續之利益為最大考量，在藏魂家族復出之後，以最快的速度在妖市殺害活口，建立藏魂家族之威，葬魂咒術經過之處毫無生機，手段極為殘忍。",
+    "name": "姜嫄嬗易",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性別",
+        "value": "女"
+      },
+      {
+        "key": "初登場",
+        "value": "霹靂謎城之九輪異譜 第8章"
+      },
+      {
+        "key": "來自",
+        "value": "怪販妖市"
+      },
+      {
+        "key": "根據地",
+        "value": "玄黃窮野"
+      },
+      {
+        "key": "身份",
+        "value": "藏魂家族「葬魂一脈司掌」"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://beta.pili.com.tw/role-view.php?rid=cuaiansa"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 82173,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/cf/84183_crt_vz722.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b9/cf/84183_crt_vz722.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/b9/cf/84183_crt_vz722.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/cf/84183_crt_vz722.jpg"
+    },
+    "summary": "因洗骨大法導致容貌衰老的九幽，雖是功體大增，青春年華卻已流逝，更喪失了境壓苦境的野心，極欲恢復原貌，幸得小活佛點悟開釋，方讓九幽重新正視權勢蒙蔽的本心…。",
+    "name": "姜媻嬤嬤",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性別",
+        "value": "女"
+      },
+      {
+        "key": "初登場",
+        "value": "霹靂劫之闍城血印 第25集"
+      },
+      {
+        "key": "身份",
+        "value": "九幽"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://beta.pili.com.tw/role-view.php?rid=jiangpan"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 84183,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 11,
+    "gender": "male",
+    "birth_day": 9,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b3/06/92158_crt_Vb3VC.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b3/06/92158_crt_Vb3VC.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/b3/06/92158_crt_Vb3VC.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b3/06/92158_crt_Vb3VC.jpg"
+    },
+    "summary": "“我是姜白夜，韩国釜山警局四组组长。\r\n最近有个无知无畏的小子被安排到了我们组。每天只知道喊着‘伸张正义’\r\n难道这家伙是傻瓜吗？”",
+    "name": "姜白夜",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "11月9日"
+      },
+      {
+        "key": "国籍",
+        "value": "韩国"
+      },
+      {
+        "key": "年龄",
+        "value": "29岁"
+      },
+      {
+        "key": "爱好",
+        "value": "干坏蛋、高热量食物"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 92158,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

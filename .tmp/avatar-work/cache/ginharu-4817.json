@@ -1,0 +1,501 @@
+[
+  {
+    "birth_mon": 2,
+    "gender": "female",
+    "birth_day": 14,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/2b/5f/38912_crt_3z99B.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/2b/5f/38912_crt_3z99B.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/2b/5f/38912_crt_3z99B.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2b/5f/38912_crt_3z99B.jpg"
+    },
+    "summary": "主人公の父親の再婚相手の連れ子。\r\n元来の引っ込み思案な性格もあり当初は微妙な距離感があったが、一度心を開くと子犬のように慕い甘えてくる。\r\n大人しいながらも芯は強く、こつこつと努力を重ねていくタイプの少女。お菓子が好き。",
+    "name": "新見雪月",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "新见雪月"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "新見 雪月"
+          },
+          {
+            "k": "纯假名",
+            "v": "にいみ ゆづき"
+          },
+          {
+            "k": "罗马字",
+            "v": "Niimi Yuzuki"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "2月14日"
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      },
+      {
+        "key": "身高",
+        "value": "147cm"
+      },
+      {
+        "key": "体重",
+        "value": "46kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B77 / W54 / H79"
+      }
+    ],
+    "stat": {
+      "comments": 16,
+      "collects": 58
+    },
+    "id": 38912,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 11,
+    "gender": "male",
+    "birth_day": 25,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/a2/156665_crt_j7fyQ.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b9/a2/156665_crt_j7fyQ.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/b9/a2/156665_crt_j7fyQ.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/a2/156665_crt_j7fyQ.jpg"
+    },
+    "summary": "学園でも評判の優等生。\r\n\r\n人当たりの良い砕けた性格で、気配り上手。\r\n\r\n困っている人を見ると放っておけない性分で、人の嫌がることも率先して引き受ける。\r\n\r\nそのため周りからは、人が良すぎると揶揄されることもしばしば。",
+    "name": "新見雪兎",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "にいみ ゆきと"
+          },
+          {
+            "k": "罗马字",
+            "v": "Niimi Yukito"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "11月25日"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 1
+    },
+    "id": 156665,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 6,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/3b/95/14831_crt_alL5V.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/3b/95/14831_crt_alL5V.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/3b/95/14831_crt_alL5V.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3b/95/14831_crt_alL5V.jpg"
+    },
+    "summary": "主人公が憧れる、同じクラスの女の子。学園のヒロインで、男女問わず人気がある。テニスが得意で成績上位。なんでもそつなくこなすが、先頭を切るタイプではない。主人公とは幼なじみだが、きれいになってしまったために釣り合いが取れないと主人公が感じてしまい、距離ができてしまった。 \r\n\r\n（成绩优秀，擅长网球，与男主角是青梅竹马。）",
+    "name": "新見遙佳",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "新见遥佳"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "にいみ はるか"
+          },
+          {
+            "k": "罗马字",
+            "v": "Niimi Haruka"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "10月6日（天秤座）"
+      },
+      {
+        "key": "血型",
+        "value": "O型"
+      },
+      {
+        "key": "班级",
+        "value": "2年B班"
+      },
+      {
+        "key": "所属",
+        "value": "网球部"
+      },
+      {
+        "key": "喜欢的东西",
+        "value": "网球、聊天、读书"
+      },
+      {
+        "key": "不擅长的东西",
+        "value": "自己做主张"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 53
+    },
+    "id": 14831,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 11,
+    "gender": "female",
+    "birth_day": 3,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f6/f3/36743_crt_i0Q03.jpg?r=1605193886",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f6/f3/36743_crt_i0Q03.jpg?r=1605193886",
+      "large": "https://lain.bgm.tv/pic/crt/l/f6/f3/36743_crt_i0Q03.jpg?r=1605193886",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f6/f3/36743_crt_i0Q03.jpg?r=1605193886"
+    },
+    "summary": "2199系列新登场人物，技术科／情报长，阶级为一尉。27歳。东京都出生。拥有心理学博士。兼任心理辅导工作。",
+    "name": "新見薫",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "新见薰"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "新見薫"
+          },
+          {
+            "k": "罗马字",
+            "v": "Niimi Kaoru"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "11月3日"
+      }
+    ],
+    "stat": {
+      "comments": 4,
+      "collects": 17
+    },
+    "id": 36743,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/da/62/40811_crt_kIckb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/da/62/40811_crt_kIckb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/da/62/40811_crt_kIckb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/da/62/40811_crt_kIckb.jpg"
+    },
+    "summary": "主人公に痴漢をされるが、きちんと拒絶することができる。\r\nしっかりしてマジメで、ちょっとキツイ委員長タイプ。\r\n同年代には自分の意見をきっぱり言えるが、年上の男で暴力的な主人公に対しては臆してしまう。\r\n朝・夕は生徒会の仕事があるため、妹より早く出て遅く帰ってくることが多い。\r\n妹である葵のことを大切に想っているが、その想いを主人公に踏みにじられてしまう。",
+    "name": "新見 絵莉夏",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "にいみ えりか"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "BWH",
+        "value": "B83（C）/ W60/ H84"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 40811,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/70/1f/40812_crt_iFX30.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/70/1f/40812_crt_iFX30.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/70/1f/40812_crt_iFX30.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/70/1f/40812_crt_iFX30.jpg"
+    },
+    "summary": "絵莉夏の妹。 内気でおとなしいため、主人公に痴漢されても拒絶できない。\r\n性的な行為には嫌悪感が強いが、快楽に堕ちるのは絵莉夏より早い。\r\n泣き虫だが、声を上げて泣くことは少ない。 姉想いの優しい子。\r\nブレザーを着ているのは、自分の胸が大きいことを気にしているため。",
+    "name": "新見 葵",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "にいみ あおい"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "BWH",
+        "value": "B93（F）/ W62/ H83"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 4
+    },
+    "id": 40812,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/74/c5/57160_crt_Cl13N.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/74/c5/57160_crt_Cl13N.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/74/c5/57160_crt_Cl13N.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/74/c5/57160_crt_Cl13N.jpg"
+    },
+    "summary": "星奏学院音乐科学生",
+    "name": "新見晶",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "新见晶"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "新見 晶"
+          },
+          {
+            "k": "纯假名",
+            "v": "にいみ あきら"
+          },
+          {
+            "k": "罗马字",
+            "v": "Niimi Akira"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 57160,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/e8/fb/93094_crt_fPrs3.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/e8/fb/93094_crt_fPrs3.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/e8/fb/93094_crt_fPrs3.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e8/fb/93094_crt_fPrs3.jpg"
+    },
+    "summary": "薊学園一年生。\r\n育ち盛りなのかいつもお腹を空かせている腹ぺこキャラ。お小遣いはすべて食費に消える。\r\n性格は基本的に明るいが、ごく希にひどく冷めた眼をするときがある。\r\nある理由からつばきの家に居候しているが、つばきはそれをひた隠しにしようとするので苦労することが多い。\r\n友人の吉井からモテる事を羨ましがられるが、本人にはその自覚がまったくない。",
+    "name": "新見高嶺",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "にいみ たかね"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://www.getchu.com/soft.phtml?id=666808"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 93094,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/73/9b/144712_crt_5nEHb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/73/9b/144712_crt_5nEHb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/73/9b/144712_crt_5nEHb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/73/9b/144712_crt_5nEHb.jpg"
+    },
+    "summary": "ポニーテールが印象的な活発な女の子。\r\n男勝りな性格にあこがれる女子多数。\r\n運動神経はピカイチだが、手癖の悪さもピカイチ。\r\n多大な負債を抱え雲隠れした親を持つ悲劇の貧乏娘。\r\n今は落ちぶれているが、昔はご令嬢だった。今は一家離散している。\r\n\r\n学生寮を追い出され、寮の裏庭に段ボールハウスを設営してそこに住んでいる。\r\n\r\n事あることに嫌味を言う淺尾蓮の事があまり好きではない。\r\n同性から人気があるため、食事やお風呂には困らない。\r\nもちろん同性は下心を持っているが、この子は性的な興味がいっさいなかったりする。",
+    "name": "新見彩椰",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Niimi Saya"
+          },
+          {
+            "k": "纯假名",
+            "v": "にいみ　さや"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://www.caligulasoft.net/alea/index.html"
+      },
+      {
+        "key": "CV",
+        "value": "山崎杏　"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 144712,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/7e/163698_crt_2WnZO.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/96/7e/163698_crt_2WnZO.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/96/7e/163698_crt_2WnZO.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/7e/163698_crt_2WnZO.jpg"
+    },
+    "summary": "芹沢五人衆のなかで、最も芹沢と縁が深い。\r\n任務をきっちりこなす、仕事人。",
+    "name": "新見錦",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "新见锦"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 163698,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

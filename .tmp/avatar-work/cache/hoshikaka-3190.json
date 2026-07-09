@@ -1,0 +1,550 @@
+[
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/6b/cf/15812_crt_zCS07.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/6b/cf/15812_crt_zCS07.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/6b/cf/15812_crt_zCS07.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6b/cf/15812_crt_zCS07.jpg"
+    },
+    "summary": "毎夜、公園で星空を見ている女の子。\r\n歩やかさねとクラスメイトだが、交友関係は特に無し。\r\n年齢に見合わないスタイルの良さは周囲の眼を引くことが多い。\r\n\r\n一馬に対して最初はツンツンしているが、とある出来事をきっかけに……？\r\n\r\n「…ここで私が何をしていようとあなたには関係無いと思いますが？」",
+    "name": "七森星羅",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ななもり せいら"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "151cm"
+      },
+      {
+        "key": "バスト",
+        "value": "Eカップ"
+      }
+    ],
+    "stat": {
+      "comments": 6,
+      "collects": 39
+    },
+    "id": 15812,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/3e/60/2961_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/3e/60/2961_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/3e/60/2961_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3e/60/2961_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "七森小夜子",
+    "infobox": [
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "七森小夜子"
+          },
+          {
+            "k": "英文名",
+            "v": "Sayoko Nanamori"
+          },
+          {
+            "k": "罗马字",
+            "v": "Nanamori Sayoko"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 5
+    },
+    "id": 2961,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 3,
+    "gender": null,
+    "birth_day": 20,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/7c/bd/24337_crt_yrU6O.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/7c/bd/24337_crt_yrU6O.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/7c/bd/24337_crt_yrU6O.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7c/bd/24337_crt_yrU6O.jpg"
+    },
+    "summary": "主人公の妹で、最初に魔法少女として覚醒した少女。\r\nもう一人の自分とも言える存在の “みるく” と出会ったことをキッカケに魔法少女に覚醒する。\r\n魔法少女に変身する際に必要な “歌” が極度の音痴のため上手く歌えず、最初は満足に変身も出来ない、ある意味不器用で不幸な女の子。\r\n素直で誰からも好かれる性格で、ちょっぴり恥ずかしがり屋の一面も持っている。\r\n子供の頃から兄さんが大好きで、マイペースな兄の世話を焼くのが日課……なのだが、しっかり者の反面、兄に対しては際限なく甘くてどんなお願いでも聞いてしまう。\r\nみるくという新たな妹の登場に終始振り回されながらも、異世界からやってきた彼女をなにかと気遣う優しさも見せる。\r\n\r\n「兄さんが……兄さんが……わたしに隠れて妹を作ってたぁぁぁっっっっっっ!!」",
+    "name": "七森胡桃",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "七森胡桃"
+          },
+          {
+            "k": "纯假名",
+            "v": "ななもり くるみ"
+          },
+          {
+            "k": "罗马字",
+            "v": "nanamori kumiru"
+          }
+        ]
+      },
+      {
+        "key": "生日",
+        "value": "3月20日"
+      },
+      {
+        "key": "血型",
+        "value": "B型"
+      },
+      {
+        "key": "身高",
+        "value": "157cm"
+      },
+      {
+        "key": "体重",
+        "value": "42kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B77（B） /W55 /H81"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 6
+    },
+    "id": 24337,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ad/8f/200470_crt_Np2QF.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ad/8f/200470_crt_Np2QF.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ad/8f/200470_crt_Np2QF.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ad/8f/200470_crt_Np2QF.jpg"
+    },
+    "summary": "おっとりとした女の子。\r\n実家は裕福だが、本人はそのことを鼻にかけることもない、いわゆる性格の良い “お嬢様”。\r\n両親は一緒に住んでおらず、学園近くのマンションで一人暮らしをしている。\r\n緊縛することで快楽を得るという特殊性癖の持ち主のため、処女。\r\n爆発寸前の性癖を目安箱にぶつけていくのだが――。",
+    "name": "七森琴絵",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Nanamori Kotoe"
+          },
+          {
+            "k": "日文名",
+            "v": "七森 琴絵"
+          },
+          {
+            "k": "纯假名",
+            "v": "ななもり ことえ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "153cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B81（C）/ W59/ H82"
+      },
+      {
+        "key": "CV",
+        "value": "笹塚真琴"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 200470,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/2c/df/212583_crt_B5BVm.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/2c/df/212583_crt_B5BVm.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/2c/df/212583_crt_B5BVm.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2c/df/212583_crt_B5BVm.jpg"
+    },
+    "summary": "恋に狙いをつける痴漢の常習者。\r\n大学生だが顔がよくイケメンなこともあり\r\nセフレの女たちのヒモとなり、貢がせながら生計を立てている生粋のクズ。\r\n電車で見かける爆乳の恋が気になり、痴漢のターゲットとして目をつけることに。\r\n恋人は一切作らないが、抱いたオンナは数知れずヤリチンともっぱら評判。",
+    "name": "七森蒼哉",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Nanamori Souya"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 212583,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 2,
+    "gender": "male",
+    "birth_day": 9,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/62/18/99611_crt_7G7tx.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/62/18/99611_crt_7G7tx.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/62/18/99611_crt_7G7tx.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/62/18/99611_crt_7G7tx.jpg"
+    },
+    "summary": "トレンドを作ったり発信することが好きな新人ファッションモデル。\r\n他にも多彩な顔を持つミステリアスな高校生。",
+    "name": "七ツ森実",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "七ツ森 実"
+          },
+          {
+            "k": "纯假名",
+            "v": "ななつもり みのる"
+          },
+          {
+            "k": "罗马字",
+            "v": "Nanatsumori Minoru"
+          },
+          {
+            "k": "昵称",
+            "v": "NANA"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "2月9日"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "身高",
+        "value": "185cm"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://www.konami.com/games/girls_side/4th_Heart/chara_minoru.html"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 9
+    },
+    "id": 99611,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 16,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/5c/45040_crt_xUWu2.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b9/5c/45040_crt_xUWu2.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/b9/5c/45040_crt_xUWu2.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/5c/45040_crt_xUWu2.jpg"
+    },
+    "summary": "学園1年生。 面白いことが大好きな天真爛漫タイプ。\r\nボケとツッコミが脳内の大半を占めるぶっ飛んだ性格で、ギャグに生きている。\r\n人をからかうのが好きで、兄に対しては特に激しいが、一方で甘え上手な面も。\r\n「女子に恥かかしちゃ駄目でしょ？　……さきっちょだけ、入れておいでよ！」",
+    "name": "小森江七瑠",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "小森江 七瑠"
+          },
+          {
+            "k": "纯假名",
+            "v": "こもりえ ななる"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "10月16日"
+      },
+      {
+        "key": "身高",
+        "value": "156cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B90/ W59/ H83"
+      },
+      {
+        "key": "オタク属性",
+        "value": "可愛い系のアニメが好き"
+      }
+    ],
+    "stat": {
+      "comments": 9,
+      "collects": 39
+    },
+    "id": 45040,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 19,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/49/bc/91127_crt_c6CRj.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/49/bc/91127_crt_c6CRj.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/49/bc/91127_crt_c6CRj.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/49/bc/91127_crt_c6CRj.jpg"
+    },
+    "summary": "中央士官学校予科4年。医療班に所属。ナイチンゲールへの憧れから看護師を志す。相澤兄弟の幼馴染で秀平の恋人。ピンクの髪を持つ清楚な美少女。母性的・家庭的でお菓子作りが趣味(ただし編み物は苦手)。他人へは優しく親切に接する。真面目で努力家なしっかり者ではあるが、お嬢様育ちのためか、やや天然ボケが入っている。\r\nスキュラ化した秀平と交わった折、ハーフ・スキュラの稲月ななみを産み落とす。ゲーム終盤になるまで、本人もそのことは知らなかった。\r\n後日談では、秀平と結婚してななみと3人で暮らしている。",
+    "name": "森崎七央",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "森崎七央"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "もりさき なお"
+          },
+          {
+            "k": "罗马字",
+            "v": "Morisaki Nao"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "10月19日"
+      },
+      {
+        "key": "身高",
+        "value": "161cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B90/W60/H86"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 3
+    },
+    "id": 91127,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 3,
+    "gender": "male",
+    "birth_day": 9,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c8/93/334_crt_2Y33z.jpg?r=1687405532",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c8/93/334_crt_2Y33z.jpg?r=1687405532",
+      "large": "https://lain.bgm.tv/pic/crt/l/c8/93/334_crt_2Y33z.jpg?r=1687405532",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c8/93/334_crt_2Y33z.jpg?r=1687405532"
+    },
+    "summary": "冬彌的好友。對美咲有好感，但並沒有讓對方知道。",
+    "name": "七瀬彰",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "七濑彰"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ななせ あきら"
+          },
+          {
+            "k": "罗马字",
+            "v": "Nanase Akira"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "3月9日"
+      }
+    ],
+    "stat": {
+      "comments": 10,
+      "collects": 3
+    },
+    "id": 334,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 3,
+    "gender": "male",
+    "birth_day": 18,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/51/b9/543_crt_WKLKV.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/51/b9/543_crt_WKLKV.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/51/b9/543_crt_WKLKV.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/51/b9/543_crt_WKLKV.jpg"
+    },
+    "summary": "星月学园天文科2年级生，女主角与东月锡也的青梅竹马。\r\n性子急躁，易与人争吵，爱打抱不平，擅长打架。\r\n但因为从小就患有疑难杂症，体力的极限只有3分钟。",
+    "name": "七海哉太",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "七海哉太"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Nanami Kanata"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "3月18日"
+      },
+      {
+        "key": "血型",
+        "value": "B型"
+      },
+      {
+        "key": "身高",
+        "value": "175cm"
+      },
+      {
+        "key": "体重",
+        "value": "55kg"
+      },
+      {
+        "key": "星座",
+        "value": "双鱼座"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 33
+    },
+    "id": 543,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

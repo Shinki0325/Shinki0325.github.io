@@ -1,0 +1,556 @@
+[
+  {
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 27,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/67/7b/23403_crt_xsM3G.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/67/7b/23403_crt_xsM3G.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/67/7b/23403_crt_xsM3G.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/67/7b/23403_crt_xsM3G.jpg"
+    },
+    "summary": "康司とは同じクラスの、人呼んで “学園で2番目にモテる女”。\r\n 学園始まって以来の才女でありスポーツも万能。 明るく可愛くみんなを引っ張っていくノリの良い女の子。\r\n 傍から見る分には欠点と呼べるものは1つもない。\r\n しかし性格的には大いに難ありで、自分が楽しいと思えば他人を平気で巻きこむため、親しくなるとめんどくさい。\r\n 現在校内の天体観測部に属しているが、活動は不明。 いつも遊んでいるともっぱらの噂である。\r\n 自分よりモテると自覚している里沙と、近しくなった康司に対し興味を示す。\r\n \r\n「アンタに恋したら、すごく面白いことになるかも」",
+    "name": "美汐瑛莉",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "みしお えいり"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "8月27日"
+      },
+      {
+        "key": "血型",
+        "value": "B型"
+      },
+      {
+        "key": "身高",
+        "value": "161 cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B88/ W58/ H86"
+      }
+    ],
+    "stat": {
+      "comments": 27,
+      "collects": 92
+    },
+    "id": 23403,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/6b/92/18642_crt_WQ1er.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/6b/92/18642_crt_WQ1er.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/6b/92/18642_crt_WQ1er.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6b/92/18642_crt_WQ1er.jpg"
+    },
+    "summary": "地元の漁師の娘。\r\n少しおっとりした性格で、天然なところがある。\r\n小瑚より少しだけ年上で、しっかりしているところもある。\r\n家業の手伝いなどはいつも行っているので、海の生物は問題なく触ることができる。\r\n\r\n町全体がここ数年不漁に陥っていることは知っているので、少しでも町のためになるようにと行事の巫女を引き受けることに。",
+    "name": "奄美汐香",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "龙美汐香"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "奄美汐香"
+          },
+          {
+            "k": "纯假名",
+            "v": "あまみ きよか"
+          },
+          {
+            "k": "罗马字",
+            "v": "Amami kiyoka"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 18642,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 6,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/47/29/1005_crt_GYSnw.jpg?r=1523160105",
+      "grid": "https://lain.bgm.tv/pic/crt/g/47/29/1005_crt_GYSnw.jpg?r=1523160105",
+      "large": "https://lain.bgm.tv/pic/crt/l/47/29/1005_crt_GYSnw.jpg?r=1523160105",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/47/29/1005_crt_GYSnw.jpg?r=1523160105"
+    },
+    "summary": "祐一的学妹，性格沉默寡言，有些忧郁，唯一知道泽渡真琴真实身份的人。因为过去悲痛的经验而封闭自己的心，过著孤独的学校生活。",
+    "name": "天野美汐",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "天野美汐"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "天野 美汐"
+          },
+          {
+            "k": "纯假名",
+            "v": "あまの みしお"
+          },
+          {
+            "k": "罗马字",
+            "v": "Amano Mishio"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "12月6日"
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      },
+      {
+        "key": "身高",
+        "value": "159cm"
+      },
+      {
+        "key": "体重",
+        "value": "44kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B80 W53 H79"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 8,
+      "collects": 28
+    },
+    "id": 1005,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c2/d2/14045_crt_cjA1q.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c2/d2/14045_crt_cjA1q.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c2/d2/14045_crt_cjA1q.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c2/d2/14045_crt_cjA1q.jpg"
+    },
+    "summary": "",
+    "name": "前埜美汐",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "前埜美汐"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 2
+    },
+    "id": 14045,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 25,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/5d/91/25448_crt_SC50c.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/5d/91/25448_crt_SC50c.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/5d/91/25448_crt_SC50c.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5d/91/25448_crt_SC50c.jpg"
+    },
+    "summary": "澄之江学园1年级学生，也是学园创设者之一的祐天寺集团的大小姐。\r\n眉清目秀，学业优秀，加之体育也是全能级的出众，可说是无所不能的超级人物。\r\n不管哪个科目都是名列前茅，就连メティス能力也相当杰出，在学园内有着无人能及的优秀成绩。\r\n拥有能够自主产生火焰的“プロミネンス（日珥）”能力。\r\n\r\n为了解决澄之江学园及其周边诸多问题而设立『アルゴノート』，并宣称要创造更好的校园环境。",
+    "name": "祐天寺美汐",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "祐天寺美汐"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "祐天寺 美汐"
+          },
+          {
+            "k": "纯假名",
+            "v": "ゆうてんじ みしお"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "7月25日"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "身高",
+        "value": "159cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B89/ W58 /H87"
+      }
+    ],
+    "stat": {
+      "comments": 4,
+      "collects": 13
+    },
+    "id": 25448,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/3e/27/63398_crt_D2vsD.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/3e/27/63398_crt_D2vsD.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/3e/27/63398_crt_D2vsD.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3e/27/63398_crt_D2vsD.jpg"
+    },
+    "summary": "新戸ヶ杜動物公園に就職して動物飼育員として働く女性。\r\n元気いっぱいで素直な性格で、動物が大好き。\r\n担当している動物の中でも、ツンドラオオカミのボロとは最も仲が良く、\r\nお互いに信頼関係も生まれている。\r\nあまり人を疑わない性格が災いして園長の罠にかかり、\r\n夜の動物園の出し物の一人として獣姦の泥沼に沈んでいってしまう。",
+    "name": "洲ノ澤 美汐",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Sunosawa Mishio"
+          },
+          {
+            "k": "纯假名",
+            "v": "すのさわ みしお"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 63398,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/0b/d5/130959_crt_0I0jG.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/0b/d5/130959_crt_0I0jG.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/0b/d5/130959_crt_0I0jG.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0b/d5/130959_crt_0I0jG.jpg"
+    },
+    "summary": "与主人公同一个大学的女大学生。虽然给人清纯的感觉但是总觉得散发着妖艳的气息，在很多被其荷尔蒙吸引的男性中很有人气。一边上大学一边以小说家为目标进行活动，所以很少有社交，虽然有着开朗诚实认真的性格而且人缘也很好，但是不会让任何人踏入其私生活，被周围人认为是有些神秘感的女性。实际上其家人在色情领域是比较有名的人，所以因为这个影响性知识方面十分丰富。日常生活中，一有什么风吹草动就会陷入色情的妄想中，这个名副其实的闷骚型，其本人也非常害羞而在可以隐藏。",
+    "name": "沖名美汐",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "冲名美汐"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "おきな　みしお"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "159cm"
+      },
+      {
+        "key": "BWH",
+        "value": "90（F）/59/89"
+      },
+      {
+        "key": "年龄",
+        "value": "20岁"
+      },
+      {
+        "key": "原画",
+        "value": "水島☆多也"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 9
+    },
+    "id": 130959,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/3a/b8/202974_crt_836yE.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/3a/b8/202974_crt_836yE.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/3a/b8/202974_crt_836yE.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3a/b8/202974_crt_836yE.jpg"
+    },
+    "summary": "輝装LEVEL 1：永劫操姫 （アイオン・コッペリア）\r\n\r\n\r\n凌駕と同じ学年に属する優等生。\r\n高名な政治家の娘という出自、端麗な容貌、優秀な成績といった数々の天賦の要素と本人の才覚により、学園のマドンナとして憧れの視線を集めている。\r\n\r\nしかし、家族を襲った悲劇により天涯孤独の身の上となってからは、他人には見せない一面を宿すようになっている。\r\nそのためか人前では温厚な令嬢然として振る舞うが、敵と見なしたものを攻撃する時は徹底して容赦がない。\r\nいわば裏表を使い分ける仮面優等生。その秘密を一端とはいえ凌駕に知られてからは、彼を○く意識しはじめることに。",
+    "name": "青砥美汐",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 202974,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/e3/e7/27500_crt_f7brv.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/e3/e7/27500_crt_f7brv.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/e3/e7/27500_crt_f7brv.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e3/e7/27500_crt_f7brv.jpg"
+    },
+    "summary": "和泉が所属する文芸部の後輩。\r\n気弱でおとなしく、口数が少ないので一緒にいてもあまり目立たない感じの子。\r\n趣味は長編小説を書くこと。\r\n\r\n幼くして母親を亡くし、父子家庭で育った。\r\n近々父親が再婚するらしく、それ自体は問題ないことなのだが、人見知りが激しいので新しくできる家族と仲良く出来るか不安に思っている。\r\n特に異性が苦手なのに兄ができるということで、かなり不安になっている。\r\n自分が兄と上手くいかず、父親の再婚の足を引っ張ってしまうのではないかと心配している。\r\n\r\n「や、やっぱりご迷惑……ですよね」",
+    "name": "美月汐音",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "美月 汐音"
+          },
+          {
+            "k": "纯假名",
+            "v": "みづき しおね"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "148cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B75/ W52/ H73"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 5
+    },
+    "id": 27500,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c7/a0/185871_crt_D029G.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c7/a0/185871_crt_D029G.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c7/a0/185871_crt_D029G.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c7/a0/185871_crt_D029G.jpg"
+    },
+    "summary": "理想と現実の間で苦悩する、生徒思いの新米教師\r\n聖リリウム学園の卒業生で、教師歴２年の新米。\r\n人当たりが良く、生徒たちからは友人のように慕われているが、\r\n本人は「教師としての威厳が不足しているのでは」と気にしている。\r\n\r\n自身が学生時代、恩師と仰ぐ教師に救われた経験から、生徒の心に寄り添う指導を心がけている。\r\nそれが学園長の打ち出す“自主自立”を重んじる方針と相反してしまい、思い悩むことが多い。\r\n\r\n「獅堂先生みたいな立派な先生になれるよう、頑張ります！」",
+    "name": "美船汐里",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "美船汐里"
+          },
+          {
+            "k": "纯假名",
+            "v": "みふね しおり"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "160cm"
+      },
+      {
+        "key": "体重",
+        "value": "55kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B:98(H)/59/88"
+      },
+      {
+        "key": "役職",
+        "value": "教員"
+      },
+      {
+        "key": "担当",
+        "value": "現代国語"
+      },
+      {
+        "key": "乳輪",
+        "value": "5cm"
+      },
+      {
+        "key": "乳首",
+        "value": "3cm（母乳体質）"
+      },
+      {
+        "key": "乳首感度",
+        "value": "非常に良好"
+      },
+      {
+        "key": "膣内感度",
+        "value": "良好"
+      },
+      {
+        "key": "クリトリスサイズ",
+        "value": "2cm"
+      },
+      {
+        "key": "陰毛",
+        "value": "標準"
+      },
+      {
+        "key": "性感帯",
+        "value": "乳首・膣"
+      },
+      {
+        "key": "経験人数",
+        "value": "0人（処女）"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 11
+    },
+    "id": 185871,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

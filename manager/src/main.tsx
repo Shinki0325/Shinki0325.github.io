@@ -64,32 +64,32 @@ ReactDOM.createRoot(app).render(
 
         .shell {
           display: grid;
-          grid-template-columns: 274px minmax(0, 1fr);
+          grid-template-columns: 220px minmax(0, 1fr);
           min-height: 100vh;
-          padding: 18px;
-          gap: 18px;
+          padding: 14px;
+          gap: 14px;
           position: relative;
         }
 
         .sidebar {
           position: sticky;
-          top: 18px;
-          height: calc(100vh - 36px);
-          padding: 18px;
+          top: 14px;
+          height: calc(100vh - 28px);
+          padding: 14px;
           border: 1px solid rgba(255, 255, 255, 0.38);
-          border-radius: 30px;
+          border-radius: 24px;
           background: rgba(77, 57, 38, 0.42);
           box-shadow: 0 24px 70px rgba(74, 50, 26, 0.18);
           backdrop-filter: blur(22px);
           color: #fff7e8;
           display: flex;
           flex-direction: column;
-          gap: 12px;
+          gap: 8px;
         }
 
         .brand {
-          margin: 0 0 10px;
-          padding: 22px 20px;
+          margin: 0 0 6px;
+          padding: 16px 15px;
           border: 1px solid rgba(255, 226, 181, 0.28);
           border-radius: 24px;
           background:
@@ -97,7 +97,7 @@ ReactDOM.createRoot(app).render(
             linear-gradient(135deg, #211711 0%, #5d3d26 58%, #8c5d30 100%);
           box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.14), 0 18px 40px rgba(36, 25, 16, 0.28);
           color: #fff1d7;
-          font-size: 1.25rem;
+          font-size: 1.05rem;
           font-weight: 800;
           letter-spacing: 0.02em;
         }
@@ -105,8 +105,8 @@ ReactDOM.createRoot(app).render(
         .nav {
           width: 100%;
           border: 1px solid rgba(255, 255, 255, 0.18);
-          border-radius: 17px;
-          padding: 12px 14px;
+          border-radius: 14px;
+          padding: 9px 11px;
           text-align: left;
           color: inherit;
           background: rgba(255, 255, 255, 0.12);
@@ -134,19 +134,19 @@ ReactDOM.createRoot(app).render(
 
         .main-panel {
           min-width: 0;
-          padding: 8px 6px 28px;
+          padding: 4px 4px 22px;
         }
 
         .page {
           display: flex;
           flex-direction: column;
-          gap: 18px;
+          gap: 14px;
         }
 
         .panel {
           border: 1px solid rgba(255, 255, 255, 0.48);
-          border-radius: 28px;
-          padding: 24px;
+          border-radius: 24px;
+          padding: 18px;
           background: rgba(255, 250, 238, 0.58);
           box-shadow: 0 22px 60px rgba(86, 58, 30, 0.12);
           backdrop-filter: blur(20px);
@@ -175,7 +175,7 @@ ReactDOM.createRoot(app).render(
         }
 
         h1 {
-          font-size: clamp(2rem, 4vw, 3.75rem);
+          font-size: clamp(2rem, 3.3vw, 3.1rem);
           line-height: 0.95;
           letter-spacing: -0.06em;
         }
@@ -226,6 +226,13 @@ ReactDOM.createRoot(app).render(
           color: #59442f;
           font-size: 0.92rem;
           font-weight: 700;
+        }
+
+        .field-title {
+          display: inline-flex;
+          color: #59442f;
+          font-size: 0.92rem;
+          font-weight: 800;
         }
 
         .field select,
@@ -331,6 +338,10 @@ ReactDOM.createRoot(app).render(
           min-height: 120px;
         }
 
+        .meta-area--compact {
+          min-height: 78px;
+        }
+
         .code-area {
           min-height: 360px;
           font-family: "Cascadia Mono", Consolas, "Courier New", monospace;
@@ -345,7 +356,7 @@ ReactDOM.createRoot(app).render(
         .primary-button,
         .secondary-button {
           border-radius: 999px;
-          padding: 10px 16px;
+          padding: 8px 14px;
           cursor: pointer;
           font-weight: 800;
           transition:
@@ -451,15 +462,17 @@ ReactDOM.createRoot(app).render(
         }
 
         .birthday-manager {
-          gap: 20px;
+          gap: 14px;
         }
 
         .birthday-manager__hero {
           overflow: hidden;
           position: relative;
-          min-height: 220px;
-          display: flex;
-          justify-content: space-between;
+          min-height: 138px;
+          display: grid;
+          grid-template-columns: minmax(240px, 0.74fr) minmax(0, 1.26fr);
+          gap: 14px;
+          align-items: stretch;
           background:
             radial-gradient(circle at 84% 12%, rgba(255, 201, 111, 0.36), transparent 18rem),
             linear-gradient(135deg, rgba(255, 253, 245, 0.72), rgba(245, 222, 189, 0.54));
@@ -484,15 +497,35 @@ ReactDOM.createRoot(app).render(
 
         .birthday-manager__stats {
           grid-template-columns: repeat(4, minmax(120px, 1fr));
+          gap: 10px;
         }
 
         .birthday-manager__stats div {
+          min-height: 98px;
+          padding: 14px;
           background:
             linear-gradient(145deg, rgba(255, 255, 255, 0.54), rgba(255, 235, 203, 0.42));
         }
 
+        .birthday-manager__message {
+          grid-column: 1 / -1;
+          overflow-wrap: anywhere;
+          font-size: 0.9rem;
+        }
+
+        .birthday-manager__global-search {
+          grid-column: 1 / -1;
+          min-width: 0;
+        }
+
+        .birthday-manager__global-search input {
+          min-height: 38px;
+          padding: 8px 12px;
+        }
+
         .birthday-manager__layout {
-          grid-template-columns: minmax(260px, 0.72fr) minmax(0, 1.28fr);
+          grid-template-columns: minmax(220px, 0.52fr) minmax(0, 1.48fr);
+          gap: 14px;
         }
 
         .birthday-manager__works,
@@ -504,31 +537,49 @@ ReactDOM.createRoot(app).render(
 
         .birthday-manager__works {
           position: sticky;
-          top: 18px;
+          top: 14px;
         }
 
         .birthday-manager__workspace {
           display: grid;
-          gap: 18px;
+          gap: 14px;
         }
 
         .birthday-manager__work,
         .birthday-manager__character {
-          padding: 8px;
+          padding: 4px;
           background: rgba(255, 253, 246, 0.32);
         }
 
         .birthday-manager__work .nav,
         .birthday-manager__character .nav {
-          min-height: 54px;
+          min-height: 38px;
+        }
+
+        .birthday-manager__character-grid {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 8px;
+        }
+
+        .birthday-manager__character .nav {
+          display: grid;
+          grid-template-columns: minmax(0, 1fr) auto;
+          align-items: center;
+          gap: 7px;
+          padding: 8px 9px;
+        }
+
+        .birthday-manager__character .nav > span:first-child {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
         }
 
         .birthday-manager__work-form,
-        .birthday-manager__image-import,
         .birthday-manager__crop {
           border: 1px solid rgba(255, 255, 255, 0.36);
           border-radius: 22px;
-          padding: 16px;
+          padding: 14px;
           background: rgba(255, 255, 255, 0.25);
         }
 
@@ -538,17 +589,23 @@ ReactDOM.createRoot(app).render(
             rgba(255, 250, 238, 0.58);
         }
 
-        .birthday-manager__previews {
-          grid-template-columns: repeat(2, minmax(220px, 1fr));
+        .birthday-manager__image-workbench {
+          display: grid;
+          grid-template-columns: minmax(180px, 0.34fr) minmax(0, 0.66fr);
+          gap: 12px;
         }
 
         .birthday-manager__preview {
-          min-height: 260px;
+          min-height: 0;
+          padding: 14px;
+          border: 1px solid rgba(255, 255, 255, 0.36);
+          border-radius: 20px;
+          background: rgba(255, 255, 255, 0.25);
         }
 
         .birthday-manager__preview img {
           width: 100%;
-          max-height: 320px;
+          max-height: 270px;
           object-fit: contain;
           border: 1px solid rgba(255, 255, 255, 0.54);
           border-radius: 18px;
@@ -565,22 +622,360 @@ ReactDOM.createRoot(app).render(
 
         .birthday-manager__preview:first-child img {
           aspect-ratio: 1;
-          max-width: 220px;
+          max-width: 180px;
           object-fit: cover;
         }
 
-        .birthday-manager__image-import {
-          align-items: end;
+        .birthday-manager__upload-button {
+          position: relative;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+        }
+
+        .birthday-manager__upload-button input {
+          position: absolute;
+          inset: 0;
+          cursor: pointer;
+          opacity: 0;
+        }
+
+        .birthday-manager__crop-card {
+          gap: 10px;
         }
 
         .birthday-manager__crop {
           align-items: end;
         }
 
+        .birthday-manager__crop-stage {
+          position: relative;
+          width: fit-content;
+          max-width: 100%;
+          overflow: hidden;
+          border: 1px solid rgba(255, 255, 255, 0.58);
+          border-radius: 20px;
+          background:
+            linear-gradient(45deg, rgba(86, 61, 35, 0.07) 25%, transparent 25%),
+            linear-gradient(-45deg, rgba(86, 61, 35, 0.07) 25%, transparent 25%),
+            rgba(255, 255, 255, 0.36);
+          background-position:
+            0 0,
+            0 10px;
+          background-size: 20px 20px;
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.42), 0 16px 38px rgba(72, 48, 25, 0.12);
+          cursor: crosshair;
+          touch-action: none;
+          user-select: none;
+        }
+
+        .birthday-manager__crop-source {
+          display: block;
+          width: auto;
+          max-width: 100%;
+          max-height: 520px;
+          object-fit: contain;
+        }
+
+        .birthday-manager__crop-frame {
+          position: absolute;
+          border: 2px solid rgba(255, 255, 255, 0.96);
+          border-radius: 16px;
+          box-shadow:
+            0 0 0 9999px rgba(33, 23, 14, 0.28),
+            inset 0 0 0 1px rgba(77, 42, 18, 0.28),
+            0 12px 30px rgba(39, 26, 14, 0.24);
+          cursor: grab;
+          touch-action: none;
+        }
+
+        .birthday-manager__crop-frame:active {
+          cursor: grabbing;
+        }
+
+        .birthday-manager__crop-handle {
+          position: absolute;
+          right: -9px;
+          bottom: -9px;
+          width: 18px;
+          height: 18px;
+          border: 2px solid rgba(255, 255, 255, 0.98);
+          border-radius: 50%;
+          background: linear-gradient(135deg, #2c2118, #d27b45);
+          box-shadow: 0 8px 18px rgba(39, 26, 14, 0.26);
+          cursor: nwse-resize;
+        }
+
+        .image-cropper {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          padding: 14px;
+          border: 1px solid rgba(255, 255, 255, 0.36);
+          border-radius: 20px;
+          background: rgba(255, 255, 255, 0.25);
+        }
+
+        .image-cropper__stage {
+          position: relative;
+          width: fit-content;
+          max-width: 100%;
+          overflow: hidden;
+          border: 1px solid rgba(255, 255, 255, 0.58);
+          border-radius: 18px;
+          background:
+            linear-gradient(45deg, rgba(86, 61, 35, 0.07) 25%, transparent 25%),
+            linear-gradient(-45deg, rgba(86, 61, 35, 0.07) 25%, transparent 25%),
+            rgba(255, 255, 255, 0.36);
+          background-position:
+            0 0,
+            0 10px;
+          background-size: 20px 20px;
+          cursor: crosshair;
+          touch-action: none;
+          user-select: none;
+        }
+
+        .image-cropper__source {
+          display: block;
+          width: auto;
+          max-width: 100%;
+          max-height: 460px;
+          object-fit: contain;
+        }
+
+        .image-cropper__frame {
+          position: absolute;
+          border: 2px solid rgba(255, 255, 255, 0.96);
+          border-radius: 14px;
+          box-shadow:
+            0 0 0 9999px rgba(33, 23, 14, 0.28),
+            inset 0 0 0 1px rgba(77, 42, 18, 0.28),
+            0 12px 30px rgba(39, 26, 14, 0.24);
+          cursor: grab;
+          touch-action: none;
+        }
+
+        .image-cropper__handle {
+          position: absolute;
+          right: -9px;
+          bottom: -9px;
+          width: 18px;
+          height: 18px;
+          border: 2px solid rgba(255, 255, 255, 0.98);
+          border-radius: 50%;
+          background: linear-gradient(135deg, #2c2118, #d27b45);
+          box-shadow: 0 8px 18px rgba(39, 26, 14, 0.26);
+          cursor: nwse-resize;
+        }
+
+        .advanced-panel {
+          border: 1px solid rgba(125, 91, 52, 0.16);
+          border-radius: 20px;
+          padding: 12px 14px;
+          background: rgba(255, 255, 255, 0.22);
+        }
+
+        .advanced-panel summary {
+          cursor: pointer;
+          color: #5f452a;
+          font-weight: 900;
+        }
+
+        .advanced-panel > * + * {
+          margin-top: 12px;
+        }
+
+        .page-builder__tabs {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 10px;
+          padding: 8px;
+          border: 1px solid rgba(125, 91, 52, 0.14);
+          border-radius: 24px;
+          background: rgba(255, 255, 255, 0.2);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.34);
+        }
+
+        .page-builder__tab {
+          min-height: 74px;
+          border: 1px solid rgba(127, 91, 52, 0.14);
+          border-radius: 18px;
+          padding: 12px 14px;
+          text-align: left;
+          color: #62462b;
+          background: rgba(255, 252, 244, 0.4);
+          cursor: pointer;
+          transition:
+            background 160ms ease,
+            box-shadow 160ms ease,
+            transform 160ms ease,
+            border-color 160ms ease;
+        }
+
+        .page-builder__tab:hover {
+          transform: translateY(-1px);
+          background: rgba(255, 252, 244, 0.66);
+        }
+
+        .page-builder__tab.is-active {
+          border-color: rgba(119, 71, 31, 0.34);
+          background:
+            radial-gradient(circle at 16% 18%, rgba(255, 210, 133, 0.36), transparent 9rem),
+            linear-gradient(135deg, rgba(79, 49, 27, 0.92), rgba(184, 101, 51, 0.86));
+          box-shadow: 0 16px 34px rgba(84, 48, 24, 0.18);
+          color: #fff7e8;
+        }
+
+        .page-builder__tab span,
+        .page-builder__tab small {
+          display: block;
+        }
+
+        .page-builder__tab span {
+          font-size: 1.02rem;
+          font-weight: 900;
+        }
+
+        .page-builder__tab small {
+          margin-top: 5px;
+          line-height: 1.35;
+          opacity: 0.78;
+        }
+
+        .album-editor__image-workbench,
+        .page-builder__home-background,
+        .page-builder__background-workbench {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 12px;
+        }
+
+        .page-builder__home-background {
+          padding: 14px;
+          border: 1px solid rgba(255, 255, 255, 0.38);
+          border-radius: 22px;
+          background:
+            radial-gradient(circle at 10% 20%, rgba(255, 201, 111, 0.18), transparent 16rem),
+            rgba(255, 255, 255, 0.22);
+        }
+
+        .album-editor__selector {
+          display: grid;
+          grid-template-columns: minmax(260px, 0.44fr) minmax(0, 0.56fr);
+          gap: 12px;
+          align-items: end;
+          padding: 12px;
+          border: 1px solid rgba(255, 255, 255, 0.38);
+          border-radius: 20px;
+          background:
+            radial-gradient(circle at 12% 18%, rgba(255, 210, 133, 0.2), transparent 14rem),
+            rgba(255, 255, 255, 0.22);
+        }
+
+        .album-editor__selector .hint {
+          padding-bottom: 10px;
+        }
+
+        .album-editor__photo-grid,
+        .page-builder__music-grid,
+        .page-builder__background-list {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+          gap: 12px;
+        }
+
+        .album-editor__photo-card,
+        .page-builder__music-card,
+        .page-builder__background-card {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .album-editor__photo-card img,
+        .page-builder__background-card img {
+          width: 100%;
+          max-height: 220px;
+          object-fit: contain;
+          border: 1px solid rgba(255, 255, 255, 0.54);
+          border-radius: 16px;
+          background: rgba(255, 255, 255, 0.36);
+        }
+
+        .page-builder__background-card img {
+          aspect-ratio: 16 / 9;
+          object-fit: cover;
+        }
+
+        .page-builder__music-grid {
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        .page-builder__music-fetcher,
+        .page-builder__manual-url {
+          display: grid;
+          grid-template-columns: minmax(220px, 1fr) auto;
+          gap: 10px;
+          align-items: end;
+          padding: 12px;
+          border: 1px solid rgba(255, 255, 255, 0.38);
+          border-radius: 20px;
+          background:
+            radial-gradient(circle at 8% 24%, rgba(255, 201, 111, 0.18), transparent 18rem),
+            rgba(255, 255, 255, 0.24);
+        }
+
+        .page-builder__music-card {
+          padding: 12px;
+        }
+
+        .page-builder__music-card .grid-form {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 10px;
+        }
+
+        .page-builder__music-title {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          min-width: 0;
+        }
+
+        .page-builder__music-title img {
+          width: 46px;
+          height: 46px;
+          flex: 0 0 auto;
+          border: 1px solid rgba(255, 255, 255, 0.58);
+          border-radius: 14px;
+          object-fit: cover;
+          background: rgba(255, 255, 255, 0.38);
+        }
+
+        .page-builder__music-title strong {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        .page-builder__music-cover-upload {
+          align-self: end;
+          min-height: 42px;
+        }
+
         @media (max-width: 980px) {
           .shell,
           .editor-layout,
-          .birthday-manager__layout {
+          .birthday-manager__layout,
+          .birthday-manager__image-workbench,
+          .album-editor__image-workbench,
+          .album-editor__selector,
+            .page-builder__home-background,
+            .page-builder__background-workbench,
+            .page-builder__music-fetcher,
+            .page-builder__manual-url,
+            .page-builder__tabs {
             grid-template-columns: 1fr;
           }
 
@@ -634,7 +1029,8 @@ ReactDOM.createRoot(app).render(
           }
 
           .birthday-manager__stats,
-          .birthday-manager__previews {
+          .birthday-manager__previews,
+          .birthday-manager__character-grid {
             grid-template-columns: 1fr;
           }
 

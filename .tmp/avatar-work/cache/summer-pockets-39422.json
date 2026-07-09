@@ -1,0 +1,535 @@
+[
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/fc/f0/72528_crt_Y6h6y.jpg?r=1572011720",
+      "grid": "https://lain.bgm.tv/pic/crt/g/fc/f0/72528_crt_Y6h6y.jpg?r=1572011720",
+      "large": "https://lain.bgm.tv/pic/crt/l/fc/f0/72528_crt_Y6h6y.jpg?r=1572011720",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fc/f0/72528_crt_Y6h6y.jpg?r=1572011720"
+    },
+    "summary": "蒼の双子の姉。幼少の頃、夜の山に向かった蒼を捜す途中で崖から転落し、今なお意識不明で島の病院で入院している。",
+    "name": "空門藍",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "空门蓝"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 8,
+      "collects": 31
+    },
+    "id": 72528,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 20,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/44/e9/59847_crt_1BrIm.jpg?r=1726452108",
+      "grid": "https://lain.bgm.tv/pic/crt/g/44/e9/59847_crt_1BrIm.jpg?r=1726452108",
+      "large": "https://lain.bgm.tv/pic/crt/l/44/e9/59847_crt_1BrIm.jpg?r=1726452108",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/44/e9/59847_crt_1BrIm.jpg?r=1726452108"
+    },
+    "summary": "島の伝承を追う少女\r\n\r\n身長：160cm\r\n体重：46kg\r\n3サイズ：B85 W59 H86\r\n趣味：昼寝\r\n好物：かき氷\r\n座右の銘：果報は寝て待つ\r\n原画：和泉つばす\r\nCV：高森奈津美\r\n\r\n男女分け隔て無く友達感覚で接してくる島の少女。\r\n島の駄菓子屋でバイトをしていて、老若男女問わず慕われている。\r\n\r\n野生のキツネ(?)を連れている。\r\n\r\nよく島のいろいろな場所で眠っている姿を見るが、島民には日常茶飯事らしい。\r\n\r\n「とにかく、あたしが寝てても放っておいて」",
+    "name": "空門蒼",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "空门苍"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "空門 蒼"
+          },
+          {
+            "k": "纯假名",
+            "v": "そらかど あお"
+          },
+          {
+            "k": "罗马字",
+            "v": "Sorakado Ao"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "9月20日"
+      },
+      {
+        "key": "身高",
+        "value": "160cm"
+      },
+      {
+        "key": "体重",
+        "value": "46kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B85/W59/H86"
+      },
+      {
+        "key": "年龄",
+        "value": "16岁"
+      }
+    ],
+    "stat": {
+      "comments": 164,
+      "collects": 628
+    },
+    "id": 59847,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/89/2e/142948_crt_PW89B.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/89/2e/142948_crt_PW89B.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/89/2e/142948_crt_PW89B.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/89/2e/142948_crt_PW89B.jpg"
+    },
+    "summary": "名門「北御門家」の長女。\r\n容姿端麗・成績優秀・スポーツ万能のお嬢様。\r\n許嫁である汰地とは、両想いの恋人関係。\r\n毎朝楽しそうに汰地のお弁当を作ったりと可愛いところがある半面、キスすら結婚してからと決めていたりと少しお堅いところがある。\r\n父親に隠し子の桧太がいることが知り、ショックを受けるが弟として受け入れ、姉として外見や境遇で陰口をたたく周囲から守ろうとする。\r\n「う……うう、汰地さん……ごめんなさい……」",
+    "name": "北御門空桜",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "160"
+      },
+      {
+        "key": "体重",
+        "value": "48"
+      },
+      {
+        "key": "BWH",
+        "value": "B94 W60 H85"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 142948,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 22,
+    "birth_year": null,
+    "blood_type": 4,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/e9/12612_crt_Xo633.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/2a/e9/12612_crt_Xo633.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/2a/e9/12612_crt_Xo633.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/e9/12612_crt_Xo633.jpg"
+    },
+    "summary": "三姉妹の「次女」。本編の主人公で元気担当。力仕事が得意。ボーイッシュな熱血少女だが、やがて「両親」の存在が暗い影を落とす。仕事先で碧、海と出会い、三人でイルか屋を立ち上げる。ちなみに店の名前は元々「イルカ屋」とするところを看板を作るときに空がうっかり間違えて「イルか」と書いてしまったため。",
+    "name": "空",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "空"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Sora"
+          },
+          {
+            "k": "日文名",
+            "v": "空"
+          },
+          {
+            "k": "纯假名",
+            "v": "そら"
+          },
+          {
+            "k": "罗马字",
+            "v": "sora"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "8月22日"
+      },
+      {
+        "key": "血型",
+        "value": "O"
+      },
+      {
+        "key": "兴趣",
+        "value": "日曜大工、密かに貝殻集め（休息日自己做些小家具，偷偷收集贝壳）"
+      },
+      {
+        "key": "特技",
+        "value": "リヤカー曲乗り（两轮马车特技）"
+      },
+      {
+        "key": "引用来源",
+        "value": "wiki & http://www.irukaya.com/char.html"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 12612,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 7,
+    "gender": "male",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/61/37/23424_crt_CjM6b.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/61/37/23424_crt_CjM6b.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/61/37/23424_crt_CjM6b.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/61/37/23424_crt_CjM6b.jpg"
+    },
+    "summary": "童貞、コミュ障、ニート、ゲーム廃人。『』(くうはく)の一人で白の兄。駆け引きに長けており、卓越した読心術を身につけている。前提の覆し、発想を転換させ、閃きを駆使して戦うゲームスタイルから、不確定性要素を多く含むゲームが得意。",
+    "name": "空",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "空"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "そら"
+          },
+          {
+            "k": "罗马字",
+            "v": "Sora"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "7月7日"
+      }
+    ],
+    "stat": {
+      "comments": 10,
+      "collects": 176
+    },
+    "id": 23424,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/30/20/69166_crt_02Gnn.jpg?r=1721980264",
+      "grid": "https://lain.bgm.tv/pic/crt/g/30/20/69166_crt_02Gnn.jpg?r=1721980264",
+      "large": "https://lain.bgm.tv/pic/crt/l/30/20/69166_crt_02Gnn.jpg?r=1721980264",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/30/20/69166_crt_02Gnn.jpg?r=1721980264"
+    },
+    "summary": "海の双子の『兄』。ジムのサーフィンの教師。海とは異なる白い肌を持ち、乾燥に極端に弱く陸にずっといるのが苦手。海を守るべくジムとアングラードに自らの身体を調べるように依頼する。小笠原沖で自ら入手した隕石を琉花に託した後、光となって姿を消す。",
+    "name": "空",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "空"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 1
+    },
+    "id": 69166,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 12,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/28/70389_crt_sH2s9.jpg?r=1575385341",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b1/28/70389_crt_sH2s9.jpg?r=1575385341",
+      "large": "https://lain.bgm.tv/pic/crt/l/b1/28/70389_crt_sH2s9.jpg?r=1575385341",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/28/70389_crt_sH2s9.jpg?r=1575385341"
+    },
+    "summary": "现役偶像，因故暂时寄居于企鹅物流。在企鹅物流与罗德岛建立合作关系后，也作为罗德岛的一员行动。\r\n干员空能非主观地施展与声音有关的源石技艺，在战场上运用独特的歌声为其他干员提供支援。",
+    "name": "空",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Sora"
+          },
+          {
+            "k": "日文名",
+            "v": "ソラ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "9月12日"
+      },
+      {
+        "key": "身高",
+        "value": "155cm"
+      },
+      {
+        "key": "种族",
+        "value": "因经纪公司要求不公开"
+      },
+      {
+        "key": "矿石病感染情况",
+        "value": "参照医学检测报告，确认为非感染者。"
+      }
+    ],
+    "stat": {
+      "comments": 7,
+      "collects": 16
+    },
+    "id": 70389,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/17/cc/85978_crt_jXdDS.jpg?r=1600904726",
+      "grid": "https://lain.bgm.tv/pic/crt/g/17/cc/85978_crt_jXdDS.jpg?r=1600904726",
+      "large": "https://lain.bgm.tv/pic/crt/l/17/cc/85978_crt_jXdDS.jpg?r=1600904726",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/17/cc/85978_crt_jXdDS.jpg?r=1600904726"
+    },
+    "summary": "故国覆灭，与妹妹一起在无数的世界之间漂流。遭遇了陌生神明的阻拦，被迫与妹妹分离。",
+    "name": "空",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Aether"
+          },
+          {
+            "k": "日文名",
+            "v": "空"
+          },
+          {
+            "k": "纯假名",
+            "v": "そら"
+          },
+          {
+            "k": "罗马字",
+            "v": "Sora"
+          },
+          {
+            "k": "昵称",
+            "v": "아이테르"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "身份",
+        "value": "旅行者"
+      },
+      {
+        "key": "武器",
+        "value": "单手剑"
+      },
+      {
+        "key": "神之眼",
+        "value": "无"
+      },
+      {
+        "key": "命之座",
+        "value": "旅人座"
+      }
+    ],
+    "stat": {
+      "comments": 19,
+      "collects": 20
+    },
+    "id": 85978,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c8/2d/92145_crt_xRXHo.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c8/2d/92145_crt_xRXHo.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c8/2d/92145_crt_xRXHo.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c8/2d/92145_crt_xRXHo.jpg"
+    },
+    "summary": "主人公。\r\n苗字は無く、名前も偽名。\r\n戸籍すら売ってしまったため、便宜上の名前でしかない。\r\n子供の頃からさんざん苛められてきたせいで性格は卑屈。\r\nどうしようもなく頭が悪く、下品で、かなりのクズ人間。\r\nそのくせ性欲だけは人一倍強く、\r\nそのためだけに生きていると言っても過言ではない。\r\n失うものがないためなのか、欲しいものに対しては非常に貪欲。\r\nかなりの妄想癖あり……。",
+    "name": "空",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ソラ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://www.getchu.com/soft.phtml?id=94321"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 92145,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/60/d0/114139_crt_8QFeS.jpg?r=1658809235",
+      "grid": "https://lain.bgm.tv/pic/crt/g/60/d0/114139_crt_8QFeS.jpg?r=1658809235",
+      "large": "https://lain.bgm.tv/pic/crt/l/60/d0/114139_crt_8QFeS.jpg?r=1658809235",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/60/d0/114139_crt_8QFeS.jpg?r=1658809235"
+    },
+    "summary": "年齢の割りに言動が大人びている女の子。\r\n\r\n忘れっぽいところもあるが\r\n優しい性格。\r\n\r\n唯一「色」をもった「人」。",
+    "name": "空",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "空"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "そら"
+          },
+          {
+            "k": "罗马字",
+            "v": "Sora"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "twilight-web.wixsite.com/kuuhaku"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 114139,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

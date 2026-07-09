@@ -1,0 +1,620 @@
+[
+  {
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/70/95/42298_crt_Jd8U3.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/70/95/42298_crt_Jd8U3.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/70/95/42298_crt_Jd8U3.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/70/95/42298_crt_Jd8U3.jpg"
+    },
+    "summary": "聖ガブリエレ学園 2年生。 人を寄せ付けない黒髪ロングのクールビューティー。\r\nどこか冷めたところがあり、興味がない時はひたすらスマホをいじっている。\r\nしかしそれが反対に、彼女の魅力として受け入れられている。\r\n\r\n髪を伸ばしているのは昔、夏乃に褒めてもらったことがあるから。\r\n夏乃とは親友同士で、その夏乃とやけに親しい（彼女にはそう見える）主人公のことは、やたら警戒してくる。\r\n\r\n「お……お友達からなら、始めてあげてもいいよ。 ちょ、ちょっと待って！ 今の無しっ」",
+    "name": "朱鷺坂七緒",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "朱鹭坂七绪"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Tokisaka Nanao"
+          },
+          {
+            "k": "纯假名",
+            "v": "ときさか ななお"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "3月7日"
+      },
+      {
+        "key": "血型",
+        "value": "AB型"
+      },
+      {
+        "key": "身高",
+        "value": "159cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B80 /W58 /H83"
+      },
+      {
+        "key": "趣味",
+        "value": "お菓子作り"
+      }
+    ],
+    "stat": {
+      "comments": 21,
+      "collects": 107
+    },
+    "id": 42298,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 22,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/fe/47/121205_crt_OZ2tO.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/fe/47/121205_crt_OZ2tO.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/fe/47/121205_crt_OZ2tO.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fe/47/121205_crt_OZ2tO.jpg"
+    },
+    "summary": "「香月の作る料理はね……わたしにとっては特別なごちそうなの」\r\n\r\n香月の従姉にあたる、一歳年上の少女。\r\n香月のことを小さな頃から知っており、本当の弟のように……いや、それ以上に大事に思っている。\r\nよく姉ぶろうとするが、ぼーっとして見えるせいか、どうにも頼りない。一見おしとやかそうに見えるが、意外にワガママかつヤキモチ焼き。\r\n家事が一切ダメで、炊事洗濯においては全て香月に頼りきっている。",
+    "name": "朱鷺坂葉月",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Tokisaka Hazuki"
+          },
+          {
+            "k": "纯假名",
+            "v": "ときさか はづき"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "10月22日"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "身高",
+        "value": "155cm"
+      },
+      {
+        "key": "BWH",
+        "value": "94（E）/58/89"
+      },
+      {
+        "key": "星座",
+        "value": "てんびん座"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://fizzsoftware.jp/koimomo/chara.html"
+      },
+      {
+        "key": "CV",
+        "value": "杏"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 121205,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 6,
+    "gender": "male",
+    "birth_day": 11,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/7d/d0/121214_crt_06b9z.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/7d/d0/121214_crt_06b9z.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/7d/d0/121214_crt_06b9z.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7d/d0/121214_crt_06b9z.jpg"
+    },
+    "summary": "葉月の父",
+    "name": "朱鷺坂幸洋",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ときさか こうよう"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "6月11日"
+      },
+      {
+        "key": "血型",
+        "value": "O型"
+      },
+      {
+        "key": "身高",
+        "value": "176cm"
+      },
+      {
+        "key": "星座",
+        "value": "ふたご座"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://fizzsoftware.jp/koimomo/chara.html"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 121214,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 10,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/28/07/121215_crt_ax3Rx.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/28/07/121215_crt_ax3Rx.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/28/07/121215_crt_ax3Rx.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/28/07/121215_crt_ax3Rx.jpg"
+    },
+    "summary": "葉月の母",
+    "name": "朱鷺坂美智留",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ときさか みちる"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "7月10日"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "身高",
+        "value": "158cm"
+      },
+      {
+        "key": "星座",
+        "value": "かに座"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://fizzsoftware.jp/koimomo/chara.html"
+      },
+      {
+        "key": "CV",
+        "value": "森野花梨"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 121215,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/e3/72/153338_crt_RJ8K1.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/e3/72/153338_crt_RJ8K1.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/e3/72/153338_crt_RJ8K1.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e3/72/153338_crt_RJ8K1.jpg"
+    },
+    "summary": "図書委員のリーダーで、\r\n3年生にも関わらずその背丈故、\r\nよく千紗とくるみをいじって楽しんでいるようだ。",
+    "name": "朱鷺坂朋",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Tokisaka Tomo"
+          },
+          {
+            "k": "纯假名",
+            "v": "ときさか　とも"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 153338,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/fd/153767_crt_WKiKt.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/96/fd/153767_crt_WKiKt.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/96/fd/153767_crt_WKiKt.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/fd/153767_crt_WKiKt.jpg"
+    },
+    "summary": "七ヶ音学園2年3組　旅行部所属\r\n\r\n旅行部の副部長を務める本編の主人公。\r\n性格は冷静で頭も良く、年齢の割に大人びている。\r\nそれくらいしか特徴のない凡庸な男子生徒だった。\r\nだがある日、彼が手にした不思議なカードのせいで突然、女の子の姿になってしまった。\r\n\r\n当初は悩んでいたが、なってしまったからには仕方がないと、\r\nいつか男子に戻る希望を胸に秘め、女の子らしさを学んでいる最中。\r\n\r\nアーケン--------------------\r\n「？？？？」\r\n黒く虚ろな景のアーケンカード。\r\nLv1 ？？？？\r\n--------------------------------\r\n\r\n「やれやれ……女子ってのも楽じゃない」",
+    "name": "朱鷺坂景",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "朱鷺坂 景"
+          },
+          {
+            "k": "纯假名",
+            "v": "ときさか けい"
+          },
+          {
+            "k": "罗马字",
+            "v": "Tokisaka Kei"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "157cm"
+      },
+      {
+        "key": "体重",
+        "value": "48kg"
+      },
+      {
+        "key": "引用来源",
+        "value": [
+          {
+            "v": "https://www.getchu.com/soft.phtml?id=1159445"
+          },
+          {
+            "v": "https://dlsoft.dmm.com/detail/asukad_0016/"
+          },
+          {
+            "v": "https://www.dlsite.com/soft/work/=/product_id/VJ015377"
+          }
+        ]
+      },
+      {
+        "key": "サイズ",
+        "value": "C"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 3
+    },
+    "id": 153767,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 28,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/e0/05/41805_crt_ZUf0x.jpg?r=1572227338",
+      "grid": "https://lain.bgm.tv/pic/crt/g/e0/05/41805_crt_ZUf0x.jpg?r=1572227338",
+      "large": "https://lain.bgm.tv/pic/crt/l/e0/05/41805_crt_ZUf0x.jpg?r=1572227338",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e0/05/41805_crt_ZUf0x.jpg?r=1572227338"
+    },
+    "summary": "本人が申告したものを除き、年齢、出身など\r\n一切の素性が知れない謎のお姉さん。かなり\r\nのベテランと思われるが、なぜこれまで発見されなかったのかも不明。余裕のある穏やかな態度と、まれに見せる訳知り顔が特徴。戦闘能力は武田虎千代に匹敵する。",
+    "name": "朱鷺坂チトセ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "朱鷺坂 チトセ"
+          },
+          {
+            "k": "纯假名",
+            "v": "ときさか ちとせ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "10月28日"
+      },
+      {
+        "key": "血型",
+        "value": "不明"
+      },
+      {
+        "key": "身高",
+        "value": "172cm"
+      },
+      {
+        "key": "体重",
+        "value": "60kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B/87 W/57 H/86"
+      },
+      {
+        "key": "クラス",
+        "value": "ローズ"
+      },
+      {
+        "key": "年齢",
+        "value": "不明"
+      },
+      {
+        "key": "所属",
+        "value": "生徒会"
+      },
+      {
+        "key": "好きな食べ物",
+        "value": "食堂のごはん"
+      },
+      {
+        "key": "嫌いな食べ物",
+        "value": "トマトジュース"
+      },
+      {
+        "key": "趣味",
+        "value": "散歩"
+      },
+      {
+        "key": "特技",
+        "value": "魔法全般"
+      },
+      {
+        "key": "在学年数",
+        "value": "1年未満"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 4
+    },
+    "id": 41805,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/6f/43/44296_crt_5g7hh.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/6f/43/44296_crt_5g7hh.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/6f/43/44296_crt_5g7hh.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6f/43/44296_crt_5g7hh.jpg"
+    },
+    "summary": "学園理事長の孫で生徒会長のお嬢様。\r\nその容貌と（表向きの）振る舞いから男女問わず人気が高い。\r\nしかし本性は気まぐれでドS。\r\nちなみに名前は“有栖”だが、可愛くないとの理由で“アリス”で通している。\r\n恵まれた生活を送る一方 変化のない日々に退屈しており、常に刺激を求めている。\r\nある日 偶然にも颯太の弱みを握ったことで、退屈しのぎにいじめて愉しんでいる。\r\n「見ていて飽きない」そうで、わりと気に入っている様子。",
+    "name": "朱鷺坂アリス",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "朱鷺坂 アリス"
+          },
+          {
+            "k": "纯假名",
+            "v": "ときさか ありす"
+          }
+        ]
+      },
+      {
+        "key": "身高",
+        "value": "160cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B86（E） /W59 /H84"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 3
+    },
+    "id": 44296,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/2c/101552_crt_zfExI.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/80/2c/101552_crt_zfExI.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/80/2c/101552_crt_zfExI.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/2c/101552_crt_zfExI.jpg"
+    },
+    "summary": "異国からやってきたらしき、巫女装束の少女。\r\n主人公を自分の兄だと言うが…？\r\nある条件を満たすと、物語に登場してくる。",
+    "name": "朱鷺",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Toki"
+          },
+          {
+            "k": "纯假名",
+            "v": "トキ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://www.getchu.com/soft.phtml?id=36288"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 101552,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 21,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ee/eb/369_crt_e3NZV.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ee/eb/369_crt_e3NZV.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ee/eb/369_crt_e3NZV.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ee/eb/369_crt_e3NZV.jpg"
+    },
+    "summary": "天然呆完全无敌少女\r\nEX追加的新人物。表面上是姿容端丽的班级偶像。\r\n可是那个背后的面孔，却是被隐藏在校园某处的“秘宝”而在夜晚的校舍徘徊的充满神秘的少女。\r\n在与守护秘宝的“暗之执行部（闇の执行部）”战斗的谜之少女。",
+    "name": "朱鷺戸沙耶",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "朱鹭戸沙耶"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ときど さや"
+          },
+          {
+            "k": "罗马字",
+            "v": "Tokido Saya"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "10月21日"
+      },
+      {
+        "key": "身高",
+        "value": "156 cm"
+      },
+      {
+        "key": "体重",
+        "value": "44 kg"
+      },
+      {
+        "key": "BWH",
+        "value": "83/56/82"
+      }
+    ],
+    "stat": {
+      "comments": 48,
+      "collects": 303
+    },
+    "id": 369,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

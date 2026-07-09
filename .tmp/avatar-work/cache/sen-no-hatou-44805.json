@@ -1,0 +1,516 @@
+[
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/73/31/45904_crt_uN8KN.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/73/31/45904_crt_uN8KN.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/73/31/45904_crt_uN8KN.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/73/31/45904_crt_uN8KN.jpg"
+    },
+    "summary": "伊那家は武人としては珍しい隠密の家系で、奉刀会で密偵として活躍している。\r\n戦時中に命を救ってくれた滸を熱烈に慕っており、滸と親密な宗仁に対抗心を燃やす。\r\n性格にはやや幼い面もあり、数馬などにはからかわれることも。\r\n「ち、小さくてもいいんです！　潜入任務には役立ってますから！」",
+    "name": "伊那子柚",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "伊那 子柚"
+          },
+          {
+            "k": "纯假名",
+            "v": "いな こゆず"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "BWH",
+        "value": "B70（A）/ W51/ H73"
+      },
+      {
+        "key": "好き",
+        "value": "餅"
+      }
+    ],
+    "stat": {
+      "comments": 4,
+      "collects": 13
+    },
+    "id": 45904,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 15,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d0/46/23116_crt_5jLE3.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d0/46/23116_crt_5jLE3.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/d0/46/23116_crt_5jLE3.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d0/46/23116_crt_5jLE3.jpg"
+    },
+    "summary": "一脸不爽的1年生。\r\n 不想和其他人有所关系，所以没人知道她是个什么样的女孩。\r\n 运动能力拔群，因此总是给学生会和风纪委员两边招揽。\r\n\r\n 经常在龙宫（即学生会）的附近或者风纪委员的执勤部室附近等一般学生不会轻易靠近的地方出现，理由不明。\r\n 虽然只是个1年生但是刚处于成长期，刚买的校服穿得紧紧的，因此本人也很在意。\r\n 身高不断的长高，4月份的时候体检时是164cm，差点就触到ナギ的自尊心...\r\n\r\n 「请别要靠近我」",
+    "name": "伊那瀬子羽",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "伊那濑子羽"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "いなせ こはね"
+          },
+          {
+            "k": "罗马字",
+            "v": "inase kohane"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "4月15日"
+      },
+      {
+        "key": "血型",
+        "value": "O型"
+      },
+      {
+        "key": "身高",
+        "value": "164cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B86/W58/H82"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://www.candysoft.jp/ohp/01_products/tuyokiss-next/main_cha04.html"
+      }
+    ],
+    "stat": {
+      "comments": 5,
+      "collects": 6
+    },
+    "id": 23116,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/52/ef/183281_crt_98IuU.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/52/ef/183281_crt_98IuU.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/52/ef/183281_crt_98IuU.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/52/ef/183281_crt_98IuU.jpg"
+    },
+    "summary": "",
+    "name": "御世方那子 / アンナ・サリザエ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "御世方那子 / 安娜·莎莉赛伊"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "安娜·莎莉赛伊"
+          },
+          {
+            "k": "日文名",
+            "v": "アンナ・サリザエ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 183281,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 27,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/85/91/104990_crt_7Msqq.jpg?r=1751811306",
+      "grid": "https://lain.bgm.tv/pic/crt/g/85/91/104990_crt_7Msqq.jpg?r=1751811306",
+      "large": "https://lain.bgm.tv/pic/crt/l/85/91/104990_crt_7Msqq.jpg?r=1751811306",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/85/91/104990_crt_7Msqq.jpg?r=1751811306"
+    },
+    "summary": "ほんっとう気持ち悪いっすね、パイセン……\r\n\r\n“性帝\"のオペレーターを務める55五番隊の後費。\r\nいつも元気で笑顔が絶えず、\"性帝”のことも「ちょっと\r\nおちんちんが大きいだけの精神的童貞」と物怖じしない。\r\n楽しいことが大好きで、よく主人公と行動を共にしている。\r\nちなみに肩に乗っているのはフェラチオウ厶のチュパちゃん。",
+    "name": "スス子",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "丝丝子"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "那賀伊波（本名）"
+          },
+          {
+            "k": "日文名",
+            "v": "スス子"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "7月27日"
+      },
+      {
+        "key": "身高",
+        "value": "167cm"
+      }
+    ],
+    "stat": {
+      "comments": 57,
+      "collects": 131
+    },
+    "id": 104990,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/1c/f6/99043_crt_R1K6A.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/1c/f6/99043_crt_R1K6A.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/1c/f6/99043_crt_R1K6A.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1c/f6/99043_crt_R1K6A.jpg"
+    },
+    "summary": "バスケ部にいたが、個人プレーばかりしていた為に周りと衝突。そこを元浦に拾われる。スポーツセンスはピカイチで、目立つポジションで最大の効果を発揮するタイプ。負けず嫌いで自分が常に一番でいたいと思っているため、一番の実力者である円井晶とポジション争い等で衝突する。その性格から、校内では”女王様”というあだ名をつけられている。プロポーションもスポーツ体型でなく抜群のスタイル。しかし、それゆえ周りが距離を置いているという事もわかっており、その事に影で悩んでいる。\r\n（性格） 自己中心派。開放的。魅力的。アメリカンで、強い女性である。常にポジティブな思考をもち、失敗をうまく経験に転換できる。但し負けず嫌いなので、常にトラブルを巻き起こす。\r\n（コンプレックス） これまた性格の強さによる対人（？）コンプレックス。自分の周りにいるのは、常に自分の下（の立場）の人間ばかりな点にちょっとブルーになっている。その為、自分を恐れずあしらう元浦を気に入る。本当は自分と対等に接してくれる信頼できる仲間が欲しいが、今までの生き方に引きずられて、うまくコミュニケーションが取れずやきもきしている。その為か強い相手を探してはケンカを吹っ掛けると",
+    "name": "伊那部尚",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "いなべ なお"
+          },
+          {
+            "k": "昵称",
+            "v": "三番・サード"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://www.getchu.com/soft.phtml?id=65"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 99043,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/ea/147417_crt_jX99X.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/80/ea/147417_crt_jX99X.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/80/ea/147417_crt_jX99X.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/ea/147417_crt_jX99X.jpg"
+    },
+    "summary": "スーツをまとい、献身的に狭間に尽くす狭間の配下の女性。\r\n仕事ぶりは有能だが、無口であまり表情が変わらない。\r\nおそらく、狭間により抱擁された喰屍鬼だと思われる。",
+    "name": "伊那菊黒乃",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Inagiku Kurono"
+          },
+          {
+            "k": "日文名",
+            "v": "伊那菊黒乃"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "CV",
+        "value": "来栖玲"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 147417,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/41/9d/197242_crt_Lbb2o.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/41/9d/197242_crt_Lbb2o.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/41/9d/197242_crt_Lbb2o.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/41/9d/197242_crt_Lbb2o.jpg"
+    },
+    "summary": "思い立ったら即行動。裏表が無く以外と世話好き。\r\n　思った事を口に出してしまいがちなので、いつも気を付けようと\r\n　心掛けている。\r\n　あっけらかんとしてるが、根は優しいので女の子にも慕われている。\r\n　全体的に男っぽい性格だが、実はお嬢様に憧れている。",
+    "name": "伊那瀬千夏",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Inase Chinatsu"
+          },
+          {
+            "k": "纯假名",
+            "v": "いなせ　ちなつ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 197242,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 12,
+    "gender": "male",
+    "birth_day": 25,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/13/db/212178_crt_cw9tc.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/13/db/212178_crt_cw9tc.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/13/db/212178_crt_cw9tc.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/13/db/212178_crt_cw9tc.jpg"
+    },
+    "summary": "",
+    "name": "イナリ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "伊那利"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "12月25日"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "身高",
+        "value": "128.5cm"
+      },
+      {
+        "key": "体重",
+        "value": "27.6kg"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 212178,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 5,
+    "gender": null,
+    "birth_day": 20,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/00/42/85772_crt_N3LMm.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/00/42/85772_crt_N3LMm.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/00/42/85772_crt_N3LMm.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/00/42/85772_crt_N3LMm.jpg"
+    },
+    "summary": "こう見えても古き神の司祭である。ある日「変な本」を拾ってから触手を操れるようになった。彼女にとって触手は日常生活の一部であり、とくに何も思わない。でも、おしゃれはしてあげたい乙女心。\r\n\r\n力を得て以来、古き声から囁きや天啓を受け、無垢でごく普通な彼女はVTuber活動を通して人々のSAN値を削っている模様。",
+    "name": "Ninomae Ina’nis",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "一伊那尓栖"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "一伊那爾棲"
+          },
+          {
+            "k": "日文名",
+            "v": "一伊那尓栖"
+          },
+          {
+            "k": "纯假名",
+            "v": "にのまえいなにす"
+          }
+        ]
+      },
+      {
+        "key": "生日",
+        "value": "5月20日"
+      },
+      {
+        "key": "身高",
+        "value": "157cm"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://www.hololive.tv/portfolio/items/584542"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 11
+    },
+    "id": 85772,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/62/90/169760_crt_VT2hV.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/62/90/169760_crt_VT2hV.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/62/90/169760_crt_VT2hV.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/62/90/169760_crt_VT2hV.jpg"
+    },
+    "summary": "重考后考上大学的一年级生。\r\n在宿舍生活中逐渐体会到酒的魅力。\r\n喝醉后讲话会变得很大胆，常常吓到身边的人。\r\n\r\n\r\n浪人して入学した大学1年生。\r\n寮生活のなかでお酒の魅力に目覚めていく。\r\n酔うと発言が大胆になり、周囲をドキッとさせる。",
+    "name": "上伊那ぼたん",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "上伊那牡丹"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "上伊那 ぼたん"
+          },
+          {
+            "k": "纯假名",
+            "v": "かみいな ぼたん"
+          },
+          {
+            "k": "罗马字",
+            "v": "Botan Kamiina"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "4月7日"
+      }
+    ],
+    "stat": {
+      "comments": 92,
+      "collects": 194
+    },
+    "id": 169760,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

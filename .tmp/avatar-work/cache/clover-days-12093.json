@@ -1,0 +1,517 @@
+[
+  {
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 26,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/55/0a/22573_crt_QhNZt.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/55/0a/22573_crt_QhNZt.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/55/0a/22573_crt_QhNZt.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/55/0a/22573_crt_QhNZt.jpg"
+    },
+    "summary": "为了支持母女单亲生活过着以打工为中心的生活，つばめ的好友。\r\n看起来可爱，但实际上是个残念的女孩子。\r\n\r\n吵闹且爱面子，不坦率。\r\n内心很胆小，软弱起来就爱抱着别人。\r\n自称是優人的对手，常说他的坏话。但在旁人看来完全就是在秀恩爱。\r\n\r\n“烦死了笨蛋，想谈恋爱找别的女孩子去啊！”",
+    "name": "結橋泉",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "结桥泉"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ゆいばし いずみ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Yuibashi Izumi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "4月26日"
+      },
+      {
+        "key": "爱好",
+        "value": "演剧"
+      }
+    ],
+    "stat": {
+      "comments": 18,
+      "collects": 47
+    },
+    "id": 22573,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/1d/64/31872_crt_850Fz.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/1d/64/31872_crt_850Fz.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/1d/64/31872_crt_850Fz.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1d/64/31872_crt_850Fz.jpg"
+    },
+    "summary": "裕福な家に育ったお嬢様ゆえに世間知らず。\r\n深い付き合いの友人は居ない（作る時間がなかった）がクラスメイト達とはそれなりに交流している。\r\n親に反発し家を飛び出すが行く当てもなく、友人にだまされて『フリフレ』に登録。\r\n結果として主人公に純潔を奪われてしまう…。",
+    "name": "倉橋結依",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 7,
+      "collects": 21
+    },
+    "id": 31872,
+    "locked": false,
+    "type": 4,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 15,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/6f/99/96652_crt_oNpRZ.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/6f/99/96652_crt_oNpRZ.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/6f/99/96652_crt_oNpRZ.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6f/99/96652_crt_oNpRZ.jpg"
+    },
+    "summary": "小海琴一岁的妹妹，自幼便体弱多病。\r\n自小学开始，除了身体情况较好的时候之外，\r\n基本上都是在第2保健室度日。\r\n她会在第2保健室里以自习和独立课题的形式进行学习。\r\n经常因为去医院和住院而早退请假。\r\n第2保健室是一处为结海这样需要在保健室学习的学生而设立的教室。\r\n因为没有其他学生需要在保健室里学习，\r\n所以她几乎是把这里当成了自己的房间，\r\n不受约束地带来了自己的私人物品。\r\n她体弱多病，随时会有生命危险，而又经常读书，因此性格成熟。\r\n相比姐姐海琴，她在某些方面看得更开。",
+    "name": "倉橋結海",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "仓桥结海"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "くらはし　ゆみ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "3月15日"
+      },
+      {
+        "key": "血型",
+        "value": "AB型"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 3
+    },
+    "id": 96652,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/3d/d0/182216_crt_66ekz.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/3d/d0/182216_crt_66ekz.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/3d/d0/182216_crt_66ekz.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3d/d0/182216_crt_66ekz.jpg"
+    },
+    "summary": "演劇部では脚本を担当している。\r\n楠木のよき理解者。",
+    "name": "橋本結衣",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "桥本结衣"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 5
+    },
+    "id": 182216,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/6d/8e/9074_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/6d/8e/9074_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/6d/8e/9074_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6d/8e/9074_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "結",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "结"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "結"
+          },
+          {
+            "k": "纯假名",
+            "v": "むすび"
+          },
+          {
+            "k": "罗马字",
+            "v": "Musubi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "161cm"
+      },
+      {
+        "key": "体重",
+        "value": "48kg"
+      },
+      {
+        "key": "BWH",
+        "value": "97/58/89"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 29
+    },
+    "id": 9074,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/2b/78/110903_crt_os1Iv.jpg?r=1664387395",
+      "grid": "https://lain.bgm.tv/pic/crt/g/2b/78/110903_crt_os1Iv.jpg?r=1664387395",
+      "large": "https://lain.bgm.tv/pic/crt/l/2b/78/110903_crt_os1Iv.jpg?r=1664387395",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2b/78/110903_crt_os1Iv.jpg?r=1664387395"
+    },
+    "summary": "髪を団子状にまとめた若い女性の姿をしている簪の付喪神。ぼたんを溺愛しており兵馬を警戒している。ツンデレなところがあり、ぼたんへの気持ちの話になると顔を真っ赤にし語彙力がなくなる。初代面の印象が悪かったのもあり兵馬を警戒しているが性格上の相性はいい。\r\nぼたんと共に暮らす婚礼調度の一人、簪（カンザシ）の付喪神。髪を結い上げる簪で対象を攻撃する。冷血な性格だが、大好きなぼたんのこととなると途端に人間らしい一面を見せ、ぼたんのことを傷つける者には容赦しない。",
+    "name": "結",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "结"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ゆう"
+          },
+          {
+            "k": "罗马字",
+            "v": "Yu"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "wiki、https://twitter.com/mononogatari_pr/"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 10
+    },
+    "id": 110903,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 23,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/cd/7b/127392_crt_Q69Oy.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/cd/7b/127392_crt_Q69Oy.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/cd/7b/127392_crt_Q69Oy.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cd/7b/127392_crt_Q69Oy.jpg"
+    },
+    "summary": "石隠れの里長の８番目の娘。「普通」を大事にしている芯の強い女性。画眉丸が捕縛された後は、心を閉ざし里で過ごしている様子。",
+    "name": "結",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "结"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "画眉丸的妻子"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "8月23日"
+      },
+      {
+        "key": "身高",
+        "value": "154cm"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://www.jigokuraku.com/character/#oth"
+      }
+    ],
+    "stat": {
+      "comments": 12,
+      "collects": 25
+    },
+    "id": 127392,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/e0/e4/133503_crt_aBt5y.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/e0/e4/133503_crt_aBt5y.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/e0/e4/133503_crt_aBt5y.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e0/e4/133503_crt_aBt5y.jpg"
+    },
+    "summary": "",
+    "name": "結",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 133503,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 1,
+    "gender": "female",
+    "birth_day": 27,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/59/0a/179034_crt_AI5BL.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/59/0a/179034_crt_AI5BL.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/59/0a/179034_crt_AI5BL.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/59/0a/179034_crt_AI5BL.jpg"
+    },
+    "summary": "从属于某组织的神秘女性。\r\n出身成谜，目的成谜。\r\n通过坑蒙拐骗、威逼利诱的方式，半强制地使[mask]　　　[/mask]与其达成了合作关系。\r\n少数可确定的是，她身上同样有现实缺失的情况，且和弟弟妹妹们生活在一个特殊设施里。",
+    "name": "结",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "结"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "1月27日"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 179034,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 10,
+    "gender": null,
+    "birth_day": 16,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/55/7f/256_crt_7jno7.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/55/7f/256_crt_7jno7.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/55/7f/256_crt_7jno7.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/55/7f/256_crt_7jno7.jpg"
+    },
+    "summary": "本作品的男主角。故事开始时，他是彩南高中一年级的学生(十五岁)。他的爸爸是漫画家，妈妈在法国当服装设计师，还有一个能干的妹妹美柑。\r\n他的长相和能力都很普通。个性单纯，容易害羞和感动。是个充满正义感的青年，并会对为了权力而接近罗罗的卑鄙婚约者感到愤怒。他正周旋在爱上自己的菈菈和自己暗恋的春菜之间，也因各式各样的事件而渐渐与她们拉近距离，并感动其它少女。 \r\n中学时代是足球部的成员，高中后，为了协助家事落于一身的妹妹，所以就放弃足球。具有体贴家人的性格。运动神经优秀的设定是根据足球社员的身分而来。 \r\n爱好种植植物（认真照顾菈菈在生日送的奇怪宇宙植物），在中学时期也常在班中照顾花草。",
+    "name": "結城梨斗/夕崎梨子",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "结城梨斗/夕崎梨子"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Rito Yuki / Riko Yuusaki"
+          },
+          {
+            "k": "日文名",
+            "v": "結城 梨斗 / 夕崎 梨子"
+          },
+          {
+            "k": "纯假名",
+            "v": "ゆうき りと / ゆうさき りこ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Yuuki Rito / Yūsaki Riko"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男 / 女"
+      },
+      {
+        "key": "生日",
+        "value": "10月16日"
+      },
+      {
+        "key": "血型",
+        "value": "O型"
+      },
+      {
+        "key": "身高",
+        "value": "164.5cm / 163cm"
+      },
+      {
+        "key": "体重",
+        "value": "62kg / 52.5kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B83-W64-H76 / B85-W55.5-H84"
+      },
+      {
+        "key": "专长",
+        "value": "足球、游戏相关"
+      },
+      {
+        "key": "喜欢",
+        "value": "植物、炸鸡"
+      },
+      {
+        "key": "不擅长",
+        "value": "恋爱、蟑螂"
+      },
+      {
+        "key": "收到会开心的物品",
+        "value": "游戏软体"
+      },
+      {
+        "key": "喜欢的游玩地点",
+        "value": "看运动比赛"
+      },
+      {
+        "key": "喜欢的电影类型",
+        "value": "动作片、科幻片、奇幻片"
+      }
+    ],
+    "stat": {
+      "comments": 33,
+      "collects": 55
+    },
+    "id": 256,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

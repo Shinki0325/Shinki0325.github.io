@@ -1,0 +1,537 @@
+[
+  {
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 6,
+    "birth_year": 1990,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/23/ad/12400_crt_jM727.jpg?r=1529463935",
+      "grid": "https://lain.bgm.tv/pic/crt/g/23/ad/12400_crt_jM727.jpg?r=1529463935",
+      "large": "https://lain.bgm.tv/pic/crt/l/23/ad/12400_crt_jM727.jpg?r=1529463935",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/23/ad/12400_crt_jM727.jpg?r=1529463935"
+    },
+    "summary": "为了都市传说的取材而寻找幻之 PC「IBN5100」的时候，在秋叶原邂逅了冈伦。她沉默寡言到了与别人的交流全部都要通过手机短信的地步(就算对方在眼前)。虽然会让人觉得她的性格十分冷淡，但其实只是因为她不擅长与别人交谈罢了。而且这个不擅长当面交谈的问题即使通过电话也改不了，所以与其说是手机依赖症，不如说是手机短信依赖症更为恰当。\r\n　　让人大跌眼镜的是，她透过短信传达过来的感情意外的高昂开朗，与本人的形象有着鲜明的反差。\r\n　　每当有新机种上市，她都会立刻进行更换。另外，她打字的速度是连眼睛都跟不上的杰出的特技，亲眼目睹过的冈伦将其称之为「闪光的指压师」(Shining Finger，机战玩家一定很熟悉)。",
+    "name": "桐生萌郁",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "桐生萌郁"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "Shining Finger"
+          },
+          {
+            "v": "閃光の指圧師"
+          },
+          {
+            "v": "シャイニングフィンガー"
+          },
+          {
+            "k": "英文名",
+            "v": "Kiryu Moeka"
+          },
+          {
+            "k": "日文名",
+            "v": "桐生萌郁"
+          },
+          {
+            "k": "纯假名",
+            "v": "きりゅう もえか"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kiryū moeka"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "1990-06-06(双子座)"
+      },
+      {
+        "key": "血型",
+        "value": "B 型"
+      },
+      {
+        "key": "身高",
+        "value": "167cm"
+      },
+      {
+        "key": "体重",
+        "value": "54kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B88 W59 H88"
+      },
+      {
+        "key": "年龄",
+        "value": "20岁"
+      },
+      {
+        "key": "常用的东西",
+        "value": "手机"
+      },
+      {
+        "key": "特技",
+        "value": "快速发手机短信"
+      },
+      {
+        "key": "讨厌的事情",
+        "value": "与别人讲话"
+      },
+      {
+        "key": "喜欢的东西",
+        "value": "手机短信，巧克力"
+      },
+      {
+        "key": "兴趣",
+        "value": "玩手机"
+      }
+    ],
+    "stat": {
+      "comments": 38,
+      "collects": 135
+    },
+    "id": 12400,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/99/61236_crt_0LO0L.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/6e/99/61236_crt_0LO0L.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/6e/99/61236_crt_0LO0L.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/99/61236_crt_0LO0L.jpg"
+    },
+    "summary": "",
+    "name": "桐生",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "桐生"
+          },
+          {
+            "k": "日文名",
+            "v": "桐生"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "身高",
+        "value": "178"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://team-e.co.jp/waki_eiren/chara/kiryu/"
+      },
+      {
+        "key": "年龄",
+        "value": "28岁"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 61236,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/39/189207_crt_d3qdp.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c5/39/189207_crt_d3qdp.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c5/39/189207_crt_d3qdp.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/39/189207_crt_d3qdp.jpg"
+    },
+    "summary": "",
+    "name": "桐生",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 189207,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "",
+      "grid": "",
+      "large": "",
+      "medium": ""
+    },
+    "summary": "",
+    "name": "桐生",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "桐生（《仙王的日常生活》）"
+      },
+      {
+        "key": "别名",
+        "value": []
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 194627,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 6,
+    "gender": "male",
+    "birth_day": 4,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/0a/55/511_crt_8bqgl.jpg?r=1599554316",
+      "grid": "https://lain.bgm.tv/pic/crt/g/0a/55/511_crt_8bqgl.jpg?r=1599554316",
+      "large": "https://lain.bgm.tv/pic/crt/l/0a/55/511_crt_8bqgl.jpg?r=1599554316",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0a/55/511_crt_8bqgl.jpg?r=1599554316"
+    },
+    "summary": "年齡：17\r\n星座：雙子座\r\n薔薇：紅色\r\n\r\n鳳學園的學生會會長，是校園的花花公子。和西園寺莢一是青梅竹馬的朋友，同屬於劍道部。他有一頭長直髮，前髮交錯。與學生會成員唯一被叫「世界的盡頭」的人物（鳳曉生）秘密勾結。他生性自大，為了自己的慾望連童年的朋友和妹妹也利用。曾打敗過歐蒂娜一次，並得到薔薇新娘。但當歐蒂娜搶回安茜後，他變得沉鬱不歡，躲在房內自我封閉。\r\n\r\n他不相信亦不愛任何人，只有當他看到棺材中的少女（歐蒂娜）時，他才打開心窗寄託了感情。因為鳳曉生企圖獨佔歐蒂娜，使他萌生對抗鳳曉生的意識，並嘗試把歐蒂娜從鳯曉生中解放。但直至最後決鬪前，他仍無法阻止歐蒂娜想救出安茜的決心。\r\n\r\n在電影版中，他和鳳曉生一樣已離開了人世，被描繪成「已死的王子大人」。",
+    "name": "桐生冬芽",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "桐生冬芽"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "桐生冬芽"
+          },
+          {
+            "k": "纯假名",
+            "v": "きりゅう　とうが"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kiryuu Touga"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "6月4日"
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      },
+      {
+        "key": "声优",
+        "value": "子安武人"
+      }
+    ],
+    "stat": {
+      "comments": 14,
+      "collects": 23
+    },
+    "id": 511,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 8,
+    "birth_year": null,
+    "blood_type": 2,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/1d/aa/6430_crt_41J43.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/1d/aa/6430_crt_41J43.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/1d/aa/6430_crt_41J43.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1d/aa/6430_crt_41J43.jpg"
+    },
+    "summary": "年龄：13\r\n星座：狮子座\r\n蔷薇：黄色\r\n冬芽的妹妹。\r\n在冬芽被欧蒂娜打败后，代替冬芽当学生会会长。但在凤晓生篇，冬芽出现再当回学生会会长后，七实便退出了学生会。\r\n她对冬芽有独特的情结，常因希望引起对方的注意，而不择手段。\r\n崇尚名牌产品，也曾因此而变成一只母牛。有一名低年级生石蕗美蔓作为其跟班。\r\n电影版中只有一头名为娜娜美（音同七实）的母牛出现，但没有七实以人身分出现的场合。",
+    "name": "桐生七実",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "桐生七实"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "きりゅう ななみ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kiryuu Nanami"
+          },
+          {
+            "k": "昵称",
+            "v": "ナナミ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "8月8日"
+      },
+      {
+        "key": "血型",
+        "value": "B"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 27,
+      "collects": 29
+    },
+    "id": 6430,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/21/9c/6466_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/21/9c/6466_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/21/9c/6466_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/21/9c/6466_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "桐生大介",
+    "infobox": [
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "桐生大介"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kiryuu Daisuke"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 6466,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/5c/37/8638_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/5c/37/8638_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/5c/37/8638_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5c/37/8638_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "桐生忠範",
+    "infobox": [
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Kiryuu Tadanori"
+          },
+          {
+            "k": "日文名",
+            "v": "桐生忠範"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 8638,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 11,
+    "gender": "male",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/67/13045_crt_UDaTC.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c9/67/13045_crt_UDaTC.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c9/67/13045_crt_UDaTC.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/67/13045_crt_UDaTC.jpg"
+    },
+    "summary": "15歳の少年。生意気で偉そうな態度をとる。\r\n頭の回転が速くずる賢こく、どこか飄々としていて、\r\n別の世界や者が視える。ネクと手を組むことになるが、\r\n様々なこと詳しいため、信頼できそうな反面、どことなく\r\n信用ができない部分もある。",
+    "name": "桐生義弥",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "桐生义弥"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "キリュウ ヨシヤ"
+          },
+          {
+            "k": "昵称",
+            "v": "ヨシュア"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "11月1日"
+      }
+    ],
+    "stat": {
+      "comments": 16,
+      "collects": 12
+    },
+    "id": 13045,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/6b/d9/16750_crt_b6BKF.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/6b/d9/16750_crt_b6BKF.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/6b/d9/16750_crt_b6BKF.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6b/d9/16750_crt_b6BKF.jpg"
+    },
+    "summary": "「请你慎行…这样我不好保护你」 \r\n年幼时和弟弟一起被主人公家里所收养，是如同家人一般的青梅竹马。作为保护者代理，时常摆出一副沉默无表情的态度。在守护主人公的同时并不会刻意去接近她，是一个冷漠凛然的青年。",
+    "name": "桐生瞬",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "きりゅう しゅん"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 4
+    },
+    "id": 16750,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

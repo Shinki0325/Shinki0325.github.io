@@ -1,0 +1,441 @@
+[
+  {
+    "birth_mon": 1,
+    "gender": "female",
+    "birth_day": 6,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/6f/4f/42302_crt_Ta311.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/6f/4f/42302_crt_Ta311.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/6f/4f/42302_crt_Ta311.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6f/4f/42302_crt_Ta311.jpg"
+    },
+    "summary": "主人公の妹。 感情が薄くどこか冷たい、人形のような印象のある少女。\r\n普段から兄を呼び捨てにして、常に命令口調で話す。\r\nその実 子供っぽく、超が付くワガママなのにとびっきりの甘えん坊でもある。\r\nそのため、ちゃんと構ってやらないと機嫌が悪くなってしまう。\r\n\r\n兄の膝の上がお気に入りで、よくゲームやマンガを一緒に見るよう要求してくる。\r\nでもゲームは下手くそなので、自分ではプレーしない。\r\n\r\n「おい柾鷹、ゲームをするぞ。 お前に世界の平和を守らせてやる」",
+    "name": "斉須莉玖",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "齐须莉玖"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Saisu Riku"
+          },
+          {
+            "k": "纯假名",
+            "v": "さいす りく"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "1月6日"
+      },
+      {
+        "key": "血型",
+        "value": "？型"
+      },
+      {
+        "key": "身高",
+        "value": "148cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B73 /W55 /H78"
+      },
+      {
+        "key": "趣味",
+        "value": "ゲーム、マンガ"
+      }
+    ],
+    "stat": {
+      "comments": 18,
+      "collects": 62
+    },
+    "id": 42302,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/97/89/134404_crt_55KPK.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/97/89/134404_crt_55KPK.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/97/89/134404_crt_55KPK.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/97/89/134404_crt_55KPK.jpg"
+    },
+    "summary": "",
+    "name": "斉須柾鷹",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "齐须柾鹰"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 8,
+      "collects": 6
+    },
+    "id": 134404,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/79/1e/134405_crt_do3P8.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/79/1e/134405_crt_do3P8.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/79/1e/134405_crt_do3P8.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/79/1e/134405_crt_do3P8.jpg"
+    },
+    "summary": "",
+    "name": "斉須利成",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "齐须利成"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 8,
+      "collects": 4
+    },
+    "id": 134405,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/22/4c/134406_crt_cPp9I.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/22/4c/134406_crt_cPp9I.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/22/4c/134406_crt_cPp9I.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/22/4c/134406_crt_cPp9I.jpg"
+    },
+    "summary": "",
+    "name": "斉須柳蔵",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "齐须柳藏"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 1
+    },
+    "id": 134406,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/50/1320_P4g46.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/2a/50/1320_P4g46.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/2a/50/1320_P4g46.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/50/1320_P4g46.jpg"
+    },
+    "summary": "在银行工作，兼任流行杂志的读者模特儿。自称和树的女朋友，非常喜欢和树，但和树当作她是好朋友。时常被美绪揶揄。",
+    "name": "齐藤春菜",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 1320,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/db/19/1520_JZMmZ.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/db/19/1520_JZMmZ.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/db/19/1520_JZMmZ.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/db/19/1520_JZMmZ.jpg"
+    },
+    "summary": "心直口快且性格固执，对看不惯的事情从来都是直接指出来，因此遭到周围邻居的疏远。但她却认为了守护宝贝儿子润一的成长环境必须这么做。",
+    "name": "齐藤全子",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 1520,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "",
+      "grid": "",
+      "large": "",
+      "medium": ""
+    },
+    "summary": "",
+    "name": "斉藤",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "齐藤"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "斉藤"
+          },
+          {
+            "k": "罗马字",
+            "v": "Saitou"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 2040,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/99/10/4145_crt_XpZHM.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/99/10/4145_crt_XpZHM.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/99/10/4145_crt_XpZHM.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/99/10/4145_crt_XpZHM.jpg"
+    },
+    "summary": "女流棋士で初段。神園九段の最初で最後の弟子。女流棋士として活動しているが、実は男性。病気の母の治療費を稼ぐため、高校を中退して、性別を偽り女流棋士の道に進む。実力は本物であるが、手っ取り早く金を稼ぐために賞金は少ないが勝ちやすい「女流棋士」を選択した。棋士以外にも金を稼ぐため中華屋のバイトなどもしている。父親はいるが、酒に溺れて働かないろくでなしのため歩は縁を切りたがっている。本来の姿の時に偶々ストーカーから紫音を守った事で、男性として彼女と知り合い心を通わせる様になっていく。沙織いわく、荒削りだが実践的でなじみのない棋風。母親が死んだ事をきっかけに女流棋士であることを辞めて男(髪を断髪)として棋士を目指す際、性別詐称事件の影響を気遣う元の師匠・神園九段の計らいで新たな師匠・羽仁名人に預けられる。",
+    "name": "斉藤歩",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "齐藤步"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "さいとう あゆみ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Saitou Ayumi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 4145,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/9c/7a/9371_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/9c/7a/9371_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/9c/7a/9371_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9c/7a/9371_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "斉藤正義",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "齐藤正义"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "さいとう まさよし"
+          },
+          {
+            "k": "日文名",
+            "v": "斉藤正義"
+          },
+          {
+            "k": "罗马字",
+            "v": "Saitou Masayoshi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 9371,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/41/0a/10314_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/41/0a/10314_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/41/0a/10314_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/41/0a/10314_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "斉天",
+    "infobox": [
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Seiten"
+          },
+          {
+            "k": "日文名",
+            "v": "斉天"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 10314,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

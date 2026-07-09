@@ -1,0 +1,491 @@
+[
+  {
+    "birth_mon": 1,
+    "gender": "female",
+    "birth_day": 8,
+    "birth_year": null,
+    "blood_type": 4,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/e6/c3/76767_crt_t35i3.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/e6/c3/76767_crt_t35i3.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/e6/c3/76767_crt_t35i3.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e6/c3/76767_crt_t35i3.jpg"
+    },
+    "summary": "お久しぶりスね!そうっスよ！遠野先輩の愛しい愛しい後輩の聖橘花っス！\r\n\r\n風見学園の一年生。無所属。\r\n主人公の一個下の後輩だが、どのクラスなのか、どの部活に所属しているのか何故か教えてくれない。「そんなこといいじゃないっすかー、先軰あたし好きんすかー」といつも煙に卷かれる。\r\nお調子者で、老若男女問わず、ゼ口距離で馴れ馴れしく接する。\r\n趣味は主人公いじり。反応がーの男子と違ってて面白いらしい。",
+    "name": "聖橘花",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "圣橘花"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Hijiri Kikka"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "1月8日"
+      },
+      {
+        "key": "血型",
+        "value": "O"
+      },
+      {
+        "key": "身高",
+        "value": "153"
+      },
+      {
+        "key": "BWH",
+        "value": "82/53/79"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://sagaplanets.product.co.jp/works/kakenuke/character.html"
+      },
+      {
+        "key": "兴趣",
+        "value": "先辈いじり"
+      },
+      {
+        "key": "喜欢的食物",
+        "value": "ラーメン、ぽてち"
+      }
+    ],
+    "stat": {
+      "comments": 28,
+      "collects": 76
+    },
+    "id": 76767,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 2,
+    "gender": "female",
+    "birth_day": 13,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/58/56/27132_crt_5iygI.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/58/56/27132_crt_5iygI.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/58/56/27132_crt_5iygI.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/58/56/27132_crt_5iygI.jpg"
+    },
+    "summary": "涉足所有虚拟网络相关事业的方舟工业社社长。\r\n有着仿佛洞悉一切的视线。拥有「AI魔女」的绰号。\r\n甲母亲的妹妹，甲的姨妈。对甲来说也是很有缘分的人，但甲很不擅长面对她。\r\n在方舟本社的构造体（虚拟网络空间）深处，有着庄严的社长室。在那里可与她会面。",
+    "name": "橘聖良",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "橘圣良"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "たちばな せいら"
+          },
+          {
+            "k": "罗马字",
+            "v": "Tachibana Seira"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "????-02-13"
+      },
+      {
+        "key": "身高",
+        "value": "1.69m"
+      },
+      {
+        "key": "体重",
+        "value": "55kg"
+      },
+      {
+        "key": "BWH",
+        "value": "90-61-89cm"
+      }
+    ],
+    "stat": {
+      "comments": 8,
+      "collects": 7
+    },
+    "id": 27132,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/85/f5/132237_crt_sc0Uu.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/85/f5/132237_crt_sc0Uu.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/85/f5/132237_crt_sc0Uu.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/85/f5/132237_crt_sc0Uu.jpg"
+    },
+    "summary": "柳愛時たちが拠点とする【探偵事務所】に、ある調査を依頼した青年。\r\nその依頼内容からアドニスの関与が浮上するが……。\r\nフレンドリーな性格で、ノリが軽い。",
+    "name": "橘千聖",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "橘千圣"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "たちばな ちさと"
+          },
+          {
+            "k": "罗马字",
+            "v": "Tachibana Chisato"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 132237,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c2/21/110471_crt_x7AaU.jpg?r=1754071130",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c2/21/110471_crt_x7AaU.jpg?r=1754071130",
+      "large": "https://lain.bgm.tv/pic/crt/l/c2/21/110471_crt_x7AaU.jpg?r=1754071130",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c2/21/110471_crt_x7AaU.jpg?r=1754071130"
+    },
+    "summary": "現代の日本から“死者の国”に来て、\r\nスカーレットと共に旅をする心優しい看護師。",
+    "name": "聖",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 0
+    },
+    "id": 110471,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f5/4c/123883_crt_l3O7L.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f5/4c/123883_crt_l3O7L.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f5/4c/123883_crt_l3O7L.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f5/4c/123883_crt_l3O7L.jpg"
+    },
+    "summary": "英信を一途に慕う小姓。\r\n好悪がはっきりしていて、英信に対する\r\n態度と他の僧に向ける態度の違いは\r\n分かりやすい。\r\n特に、蓮生とは犬猿の仲で、\r\n日々喧嘩が繰り広げられている。",
+    "name": "聖",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ひじり"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://ashiya-spirit.com/cyousou/top.html"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 0
+    },
+    "id": 123883,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/37/dc/144546_crt_EC7t3.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/37/dc/144546_crt_EC7t3.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/37/dc/144546_crt_EC7t3.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/37/dc/144546_crt_EC7t3.jpg"
+    },
+    "summary": "姉御肌でいつも颱斗とケンカばかりしている。\r\nナイフの使い手であり、腰に刺したサバイバルナイフが彼女の得物。\r\nいつも颱斗と行動を共にしている。",
+    "name": "聖",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "153cm"
+      },
+      {
+        "key": "体重",
+        "value": "45kg"
+      },
+      {
+        "key": "BWH",
+        "value": "78-60-85cm, D cup"
+      },
+      {
+        "key": "年龄",
+        "value": "20岁"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 144546,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/61/0f/162568_crt_9e4RY.jpg?r=1723217185",
+      "grid": "https://lain.bgm.tv/pic/crt/g/61/0f/162568_crt_9e4RY.jpg?r=1723217185",
+      "large": "https://lain.bgm.tv/pic/crt/l/61/0f/162568_crt_9e4RY.jpg?r=1723217185",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/61/0f/162568_crt_9e4RY.jpg?r=1723217185"
+    },
+    "summary": "フルネームは不明。樋口の友人で主婦。樋口・梅子と同じく華子たちの女子校のOGで、映研とプロレス同好会に所属していた。\r\n当時モテていたが結婚願望がなく、プロレス好きで全日本女子プロレスに入団することが夢であった。iMacに書いた将来の自分へのメッセージも「第二のクラッシュギャルズになっていますか？」であったが、現在では3人の中で唯一結婚して後述の赤ん坊を授かっている。",
+    "name": "聖",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "聖"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ひじり"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 162568,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c3/48/197956_crt_VH0vA.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c3/48/197956_crt_VH0vA.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c3/48/197956_crt_VH0vA.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c3/48/197956_crt_VH0vA.jpg"
+    },
+    "summary": "職業　：　女子大生\r\n趣味　：　読書。カラオケ\r\n性格　：　明るく勤勉。天然ボケの傾向あり。 癒し系。\r\n性癖　：　オナ○スト\r\n病状　：　心的外傷による、男性恐怖症。\r\n　　　　　　精神的マゾヒストの傾向あり。",
+    "name": "聖",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "160cm"
+      },
+      {
+        "key": "BWH",
+        "value": "８８．５８．８６"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 197956,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/16/78/3239_crt_TRS8z.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/16/78/3239_crt_TRS8z.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/16/78/3239_crt_TRS8z.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/16/78/3239_crt_TRS8z.jpg"
+    },
+    "summary": "「普遍的な」意味を持つ一大宗教。その裏側に存在する組織。\r\n教義に反したモノを熱狂的に排斥する者たちによって設立された、「異端狩り」に特化した巨大な部門。これを聖堂教会と呼ぶ。\r\nTYPE-MOON世界最大の組織であり、代行者、各教会が保有する騎士団、そして教会本部が隠し持つ埋葬機関と、強大な戦力を保有しており、吸血種をはじめ、人の範疇から外れてしまった者達にとっての天敵として君臨している。\r\n\r\n彼らの目的は全ての異端を消し去り、人の手に余る神秘を正しく管理することである。このため、「神秘の秘匿」を第一主義とする魔術協会とは仲が悪く、幾度と無く刃を交えてきた間柄。しかし彼等にとって最大の敵は吸血種である為、現在は協定が結ばれ、表面上は不可侵を保ち、時として協力し合っている。尤も実際のところは、記録に残さない事を前提に、陰では現在もなお殺し合いを続けている。\r\nただ、特に教義に反しているというわけではないので、魔術師の持つ根源への渇望には関知しない。",
+    "name": "聖堂教会",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "圣堂教会"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "The Church"
+          },
+          {
+            "k": "纯假名",
+            "v": "せいどうきょうかい"
+          },
+          {
+            "k": "罗马字",
+            "v": "Seidou Kyoukai"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "http://hiki.cre.jp/typemoon/?CatholicChurch"
+      }
+    ],
+    "stat": {
+      "comments": 7,
+      "collects": 11
+    },
+    "id": 3239,
+    "locked": false,
+    "type": 4,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 4,
+    "gender": "male",
+    "birth_day": 13,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c3/48/4882_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c3/48/4882_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c3/48/4882_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c3/48/4882_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "聖陽一",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "聖陽一"
+          },
+          {
+            "k": "纯假名",
+            "v": "ひじり　よういち"
+          },
+          {
+            "k": "罗马字",
+            "v": "Hijiri Youichi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "????-04-13"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 5
+    },
+    "id": 4882,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

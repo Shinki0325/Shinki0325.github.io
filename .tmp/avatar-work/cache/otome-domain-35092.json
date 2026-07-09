@@ -1,0 +1,536 @@
+[
+  {
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 8,
+    "birth_year": null,
+    "blood_type": 2,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/b1/55347_crt_7yEu0.jpg?r=1498365929",
+      "grid": "https://lain.bgm.tv/pic/crt/g/65/b1/55347_crt_7yEu0.jpg?r=1498365929",
+      "large": "https://lain.bgm.tv/pic/crt/l/65/b1/55347_crt_7yEu0.jpg?r=1498365929",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/b1/55347_crt_7yEu0.jpg?r=1498365929"
+    },
+    "summary": "白铃女子学园的教职员。凑的班主任，教数学。\r\n同时还像个在各方面协助理事长的秘书，并且兼任主角们住的白铃女子学园第二宿舍的管理人。\r\n但她并非自愿如此辛劳，而是因为无法放着风莉不管，才自然而然走到这一步。\r\n\r\n口头禅是\"不想工作\"，座右铭是\"明天的事今天不做\"。\r\n因为想尽可能不工作，所以把第二宿舍的家务和照顾风莉的工作全推给凑。\r\n如果深究她的年龄或全名，似乎会受到她痛恨。",
+    "name": "那波七海",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "那波七海"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "那波 七海"
+          },
+          {
+            "k": "纯假名",
+            "v": "ななみ ななみ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Nanami Nanami"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "8月8日（狮子座）"
+      },
+      {
+        "key": "血型",
+        "value": "B"
+      },
+      {
+        "key": "身高",
+        "value": "161cm"
+      },
+      {
+        "key": "BWH",
+        "value": "83 / 61 / 86"
+      }
+    ],
+    "stat": {
+      "comments": 5,
+      "collects": 9
+    },
+    "id": 55347,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 16,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ca/8a/4127_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ca/8a/4127_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ca/8a/4127_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ca/8a/4127_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "七城那波",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "七城那波"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Nanashiro Nanami"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "????-07-16"
+      },
+      {
+        "key": "身高",
+        "value": "166"
+      },
+      {
+        "key": "BWH",
+        "value": "85/55/83"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 3
+    },
+    "id": 4127,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 1,
+    "gender": "female",
+    "birth_day": 29,
+    "birth_year": 1989,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/4d/c3/4934_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/4d/c3/4934_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/4d/c3/4934_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4d/c3/4934_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "那波千鶴",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "那波千鹤"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "那波千鶴"
+          },
+          {
+            "k": "罗马字",
+            "v": "Naba Chizuru"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "1989-01-29"
+      },
+      {
+        "key": "身高",
+        "value": "172"
+      },
+      {
+        "key": "BWH",
+        "value": "94/63/89"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 6
+    },
+    "id": 4934,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "",
+      "grid": "",
+      "large": "",
+      "medium": ""
+    },
+    "summary": "本編の主人公。学生時代にスク水少女が男たちに犯される現場を目撃してしまい、スク水に激しく執着するようになってしまう。\r\nある日、そのスク水愛好心を抑えることが出来ず、市民プールで少女に襲い掛かり逮捕されるが、謎の組織の力で保釈された。\r\n代償として現在は組織の一員となり、スク水奴隷を調教し続ける充実した日々を送っている。",
+    "name": "那波大和",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "那波大和"
+          },
+          {
+            "k": "纯假名",
+            "v": "なば やまと"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 175625,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/32/176352_crt_11HvI.jpg?r=1747833553",
+      "grid": "https://lain.bgm.tv/pic/crt/g/bd/32/176352_crt_11HvI.jpg?r=1747833553",
+      "large": "https://lain.bgm.tv/pic/crt/l/bd/32/176352_crt_11HvI.jpg?r=1747833553",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/32/176352_crt_11HvI.jpg?r=1747833553"
+    },
+    "summary": "",
+    "name": "那波浩志",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "那波浩志"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 176352,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/bc/c8/39740_crt_1k1t9.jpg?r=1463342958",
+      "grid": "https://lain.bgm.tv/pic/crt/g/bc/c8/39740_crt_1k1t9.jpg?r=1463342958",
+      "large": "https://lain.bgm.tv/pic/crt/l/bc/c8/39740_crt_1k1t9.jpg?r=1463342958",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bc/c8/39740_crt_1k1t9.jpg?r=1463342958"
+    },
+    "summary": "クールに見えるが素は純粋無垢な女の子。\t\r\n恋愛に奥手で本やドラマで得た知識しか持ち合わせていないため、\r\n男性と二人きりになるとテンパッた挙句に大胆な行動にでたりする。\r\nIQ200の天才。",
+    "name": "那波ナギサ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "那波渚"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "那波 ナギサ"
+          },
+          {
+            "k": "纯假名",
+            "v": "ななみ なぎさ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Nanami Nagisa"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 9
+    },
+    "id": 39740,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ad/24/73350_crt_GXJ2X.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ad/24/73350_crt_GXJ2X.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ad/24/73350_crt_GXJ2X.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ad/24/73350_crt_GXJ2X.jpg"
+    },
+    "summary": "主人公的同级生。\r\n　　一头乌黑亮丽的长发、白皙的皮肤让人印象深刻的女孩。身线细长，如同给人的印象一样身体比较弱。\r\n　　贵族小姐般彬彬有礼的口吻和脱线的行动，言行将人翻弄与手掌之中。只是，本人完全不坏恶意因而更显得性质恶劣。不知是不是因稳重的性格而气味相投的关系，与新城和泉出人意料的很要好。\r\n　　根据周围人的话来看，与主人公并非有着什么亲近的血缘关系，不知为何有点单方面粘着主人公的样子。加上奇妙的言行，在主人公眼里，感觉是充满谜团的少女。",
+    "name": "牧野那波",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "牧野那波"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "牧野 那波"
+          },
+          {
+            "k": "纯假名",
+            "v": "まきの　ななみ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Makino Nanami"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "百度百科"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 11
+    },
+    "id": 73350,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/1d/d0/143461_crt_4wgG8.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/1d/d0/143461_crt_4wgG8.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/1d/d0/143461_crt_4wgG8.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1d/d0/143461_crt_4wgG8.jpg"
+    },
+    "summary": "主人公の姉にして、主人公の担任教師。\r\n物腰柔らかく、明るく優しい女性。\r\nまた非常に負けず嫌いで、頑張り屋さん。\r\nお世話になる屋敷の手伝いをしたいと言い出し、メイドとして働くことになった。\r\n家事全般を器用にこなすが、主人公に褒められると舞い上がって失敗してしまうことも……。",
+    "name": "青山那波",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 143461,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/cd/ca/71846_crt_wK0Ng.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/cd/ca/71846_crt_wK0Ng.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/cd/ca/71846_crt_wK0Ng.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cd/ca/71846_crt_wK0Ng.jpg"
+    },
+    "summary": "矢矧樱学园1年生。\r\n\r\n元气作为卖点的开朗可爱巨乳系后辈的“女主角”的一人。\r\n\r\n总是积极是对“主人公”的彰展开攻势、而对于“友人角色”的達也则是“恰如友人”般的安逸随性的相处对待。\r\n从棒球大联盟这种大众文化到生冷的地下文化种种精通，对于達也抛出来的NETA段子都能准确无误对上的博识亦或者说是杂识小机灵。\r\n亦如“故事中情节一般”同“主人公”的彰儿时便有过接触，并因此定下了十分重要的约定的样子似乎。\r\n并且“自称，魔法使”来着，化为魔法之物便能操使（恩，至少本人是这么说的）。\r\n\r\n对于，“神”和“神所定下的规矩”，似乎知道什么重要的秘密的样子....？\r\n\r\n【放心交给我把，辈前（前辈）！别看小那波这样、在伦理协会上可是十八岁以上的人物哦，这样，那样的事情，都是可，以，的，哟！”】",
+    "name": "比嘉那波",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "HIGA NANAMI"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "血型",
+        "value": "O型"
+      },
+      {
+        "key": "身高",
+        "value": "秘密"
+      },
+      {
+        "key": "体重",
+        "value": "秘密"
+      },
+      {
+        "key": "BWH",
+        "value": "89-63-93"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://www.2dfan.com/topics/2901/page/2"
+      }
+    ],
+    "stat": {
+      "comments": 6,
+      "collects": 11
+    },
+    "id": 71846,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 31,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/2f/9f/60961_crt_E4sww.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/2f/9f/60961_crt_E4sww.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/2f/9f/60961_crt_E4sww.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2f/9f/60961_crt_E4sww.jpg"
+    },
+    "summary": "生徒会役員。書記。1年6組（文系クラス）処女。\r\nつかみ所のない感じの不思議ちゃん。\r\nマグダラ因子を持つ一族の末裔。\r\n一族に伝わる言い伝えによると、戯ィ牙などの吸血鬼因子を持つ者に「蟲」に変化させられてしまう為、吸血鬼因子を持つ者を監視し続けている。",
+    "name": "波那海りるか",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "波那海 りるか"
+          },
+          {
+            "k": "纯假名",
+            "v": "はなうみ りるか"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "10月31日"
+      },
+      {
+        "key": "血型",
+        "value": "AB(RHマイナス)型"
+      },
+      {
+        "key": "身高",
+        "value": "149cm"
+      },
+      {
+        "key": "BWH",
+        "value": "78(B)/53/80"
+      },
+      {
+        "key": "趣味",
+        "value": "読書"
+      },
+      {
+        "key": "特技",
+        "value": "ずばぬけた記憶力"
+      },
+      {
+        "key": "好きなもの",
+        "value": "童話、ハイファンタジー、ラノベ等々のファンタジー全般"
+      },
+      {
+        "key": "嫌いなもの",
+        "value": "うるさいもの"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 3
+    },
+    "id": 60961,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

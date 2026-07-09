@@ -1,0 +1,484 @@
+[
+  {
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 14,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/1b/92/34204_crt_7WZGj.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/1b/92/34204_crt_7WZGj.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/1b/92/34204_crt_7WZGj.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1b/92/34204_crt_7WZGj.jpg"
+    },
+    "summary": "エスカレーター式の名門校に通う3年生。 天文部の部長を務めている。\r\n実家がお金持ちで、丁寧な口調と鷹揚な態度が品の良さを感じさせるお嬢様。\r\n正統派美人だが、茶目っ気もあり若干 天然も入っている。\r\n怪しい占いに興じているが、実はそれは自分をミステリアスに見せるための演出。\r\n\r\nラスボス感が漂っており、彼女をよく知らない人からは敬遠されてしまうことも。\r\n実際は面倒見が良く後輩思いなので慕われており、男子にも後輩女子にもモテる。\r\n\r\n一度決めたことは貫き通す強い意志の持ち主……だが、その強さを保つために他人に弱さを見せられないでいる。\r\n\r\n「私は、運命を感じずにはいられないのです」",
+    "name": "白鳥織姫",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "白鸟织姬"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "しらとり おりひめ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Shiratori Orihime"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "3月14日"
+      },
+      {
+        "key": "血型",
+        "value": "O型"
+      },
+      {
+        "key": "身高",
+        "value": "162cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B93/ W57/ H89"
+      }
+    ],
+    "stat": {
+      "comments": 6,
+      "collects": 32
+    },
+    "id": 34204,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f7/67/197469_crt_A39No.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f7/67/197469_crt_A39No.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f7/67/197469_crt_A39No.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f7/67/197469_crt_A39No.jpg"
+    },
+    "summary": "",
+    "name": "白鳥",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "白鸟"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 197469,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d2/a2/207880_crt_vkwYZ.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d2/a2/207880_crt_vkwYZ.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/d2/a2/207880_crt_vkwYZ.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d2/a2/207880_crt_vkwYZ.jpg"
+    },
+    "summary": "宝泉班的学生。\r\n\r\n2年生編から登場した新1年生で、宝泉和臣と同じDクラスの男子生徒。\r\n4月時OAAの学力A。",
+    "name": "白鳥",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "白鸟"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "白鳥"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": [
+          {
+            "k": "seesaawiki",
+            "v": "https://seesaawiki.jp/you-zitsu/d/%c7%f2%c4%bb"
+          },
+          {
+            "k": "官方X",
+            "v": "https://x.com/youkosozitsu/media"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 207880,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/7a/216260_crt_J7nIw.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c9/7a/216260_crt_J7nIw.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c9/7a/216260_crt_J7nIw.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/7a/216260_crt_J7nIw.jpg"
+    },
+    "summary": "弾子たちの担任教師。マッチョだが野蛮なことは大嫌いで、ドッジボールを「役に立たない遊び」として見下している。校長とともに危険な闘球部の復活を阻止しようとしている。",
+    "name": "白鳥",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "白鸟"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "しらとり"
+          },
+          {
+            "k": "罗马字",
+            "v": "Shiratori"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 216260,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/40/7e/7062_crt_rHrpr.jpg?r=1741599338",
+      "grid": "https://lain.bgm.tv/pic/crt/g/40/7e/7062_crt_rHrpr.jpg?r=1741599338",
+      "large": "https://lain.bgm.tv/pic/crt/l/40/7e/7062_crt_rHrpr.jpg?r=1741599338",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/40/7e/7062_crt_rHrpr.jpg?r=1741599338"
+    },
+    "summary": "警部補時代は目暮警部の部下だったが、今では早くも警部に昇進。警視庁きってのキャリア組で、出世街道を突き進む。捜査一課のマドンナ・佐藤刑事に好意を抱き、高木刑事とは恋のライバルだった。その後、コナンの担任の小林先生と相思相愛の仲となり、三角関係は収束する。実は劇場版で初登場したアニメオリジナルキャラクター。",
+    "name": "白鳥任三郎",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "白鸟任三郎"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Ninzaburo Santos"
+          },
+          {
+            "k": "纯假名",
+            "v": "しらとり にんざぶろう"
+          },
+          {
+            "k": "罗马字",
+            "v": "Shiratori Ninzaburou"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 9
+    },
+    "id": 7062,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/07/9e/7635_crt_LssBZ.jpg?r=1741608369",
+      "grid": "https://lain.bgm.tv/pic/crt/g/07/9e/7635_crt_LssBZ.jpg?r=1741608369",
+      "large": "https://lain.bgm.tv/pic/crt/l/07/9e/7635_crt_LssBZ.jpg?r=1741608369",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/07/9e/7635_crt_LssBZ.jpg?r=1741608369"
+    },
+    "summary": "弁護士。白鳥警部の妹。",
+    "name": "白鳥沙羅",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "白鸟沙罗"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Shiratori Sara"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 7635,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/60/69/7688_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/60/69/7688_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/60/69/7688_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/60/69/7688_crt_anidb.jpg"
+    },
+    "summary": "血液型：O型、星座：獅子座。バストが大きい身長172cmの大女。妖精さんが見えるくらい天真爛漫な生徒。よく寝るため遅刻の常習犯だが、成績は良く実力テストで学年16位をとったこともある（ただしアニメでは追試を受けている）。また怪力の持ち主で、アニメでは乙女が持っていたビューラー（まつ毛を上げるための金属製の美容器具）を指で軽くへし折っていた。必殺技はチョップで、バスジャック犯を頭蓋骨陥没で病院送りにしたことがある。響から強奪したちび鈴音（パペット）と一緒に諜報部部室を乗っ取る。後にパペットを使用した白鳥人形劇団を設立する（勝手に名乗っているだけ）。秋山乙女と仲が良く、よく乙女のつむじを押す。当初は「背を伸びなくする」ツボと思って押していたが、早乙女先生に「そこは下痢ツボだ」と教えられてからは、ますます過激に押すようになった。「鈴音テレパシー」を操り、桃月学園を（本人の意思とは無関係に）不幸に陥れたことがある。",
+    "name": "白鳥鈴音",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "白鸟铃音"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "しらとり すずね"
+          },
+          {
+            "k": "罗马字",
+            "v": "Shiratori Suzune"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "狮子座"
+      },
+      {
+        "key": "血型",
+        "value": "O型"
+      },
+      {
+        "key": "引用来源",
+        "value": "ぱにぽにの登場人物 - Wikipedia"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 6
+    },
+    "id": 7688,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 3,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/8c/11858_crt_1hjY0.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/06/8c/11858_crt_1hjY0.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/06/8c/11858_crt_1hjY0.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/8c/11858_crt_1hjY0.jpg"
+    },
+    "summary": "星阳学院的学生。田径部所属。\r\n和光彦是青梅竹马，从很久前就是朋友。\r\n从小时候起就很擅长运动，貌似以前力气比光彦大得多。\r\n虽然是探险队的5人中最理智的，但总爱把会话转到吐槽上。\r\n但由于具有很高的运动能力，吐槽有时变得很暴力。\r\n似乎暗中对光彦抱有好感。",
+    "name": "白鳥里桜",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "白鸟里樱"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "9月3日"
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      },
+      {
+        "key": "身高",
+        "value": "156cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B82/ W58/ H84"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 6
+    },
+    "id": 11858,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/55/3d/12219_crt_NmIN6.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/55/3d/12219_crt_NmIN6.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/55/3d/12219_crt_NmIN6.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/55/3d/12219_crt_NmIN6.jpg"
+    },
+    "summary": "京介的同班同学，学校理事长的女儿，似乎对任何人都不关心。",
+    "name": "白鳥水羽",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "白鸟水羽"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "白鳥 水羽"
+          },
+          {
+            "k": "纯假名",
+            "v": "しらとり みずは"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 34,
+      "collects": 78
+    },
+    "id": 12219,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/1d/f1/31527_crt_r0Ku0.jpg?r=1428036578",
+      "grid": "https://lain.bgm.tv/pic/crt/g/1d/f1/31527_crt_r0Ku0.jpg?r=1428036578",
+      "large": "https://lain.bgm.tv/pic/crt/l/1d/f1/31527_crt_r0Ku0.jpg?r=1428036578",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1d/f1/31527_crt_r0Ku0.jpg?r=1428036578"
+    },
+    "summary": "",
+    "name": "白鳥美由",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "白鸟美由"
+      },
+      {
+        "key": "别名",
+        "value": []
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 9
+    },
+    "id": 31527,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

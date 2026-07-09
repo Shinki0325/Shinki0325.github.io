@@ -1,0 +1,535 @@
+[
+  {
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 3,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/79/07/25931_crt_VH87o.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/79/07/25931_crt_VH87o.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/79/07/25931_crt_VH87o.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/79/07/25931_crt_VH87o.jpg"
+    },
+    "summary": "演劇界で伝説的な人気を誇っていた元舞台女優。 進学を機に、3年前に引退した。\r\nだが進学というのは表向きの理由で、実際は一悟と一緒に居る時間を守るために引退を決意した。\r\n幼い頃から一悟にべったりの生活を送っていて、ほぼ依存状態。\r\n現在は一悟と同じ学園に通い、部活動も一悟と同じ文芸部所属。\r\nしかし、引退したとはいえとても有名な女優だったため、今でも学園中で好奇心の的になってしまうことがしばしば。\r\nそのため、保健室登校ならぬ文芸部室登校をしている。\r\n一悟に近付く女の子には誰にでも警戒心を露わにし、同じ文芸部の千奈のことは特に警戒している。\r\n\r\n「一悟が好き。 一悟さえいれば、他に何もいらない」",
+    "name": "十川真優",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "とがわ　まゆう"
+          },
+          {
+            "k": "罗马字",
+            "v": "togawa mayuu"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "3月3日"
+      },
+      {
+        "key": "血型",
+        "value": "AB型"
+      },
+      {
+        "key": "身高",
+        "value": "152cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B80 / W56 / H79"
+      },
+      {
+        "key": "学年",
+        "value": "2年"
+      },
+      {
+        "key": "星座",
+        "value": "魚座"
+      }
+    ],
+    "stat": {
+      "comments": 7,
+      "collects": 35
+    },
+    "id": 25931,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/58/77/34879_crt_mnPkt.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/58/77/34879_crt_mnPkt.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/58/77/34879_crt_mnPkt.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/58/77/34879_crt_mnPkt.jpg"
+    },
+    "summary": "「神林柚子」の専属メイド。\r\n通常の身の回りの世話以外、彼女が偉そうな発言をするたび持ち上げるタイコ持ちのような役割も。\r\n柚子が他人に迷惑をかけた場合などは、オドオドしながらも最低限のフォローをする。\r\nかなりの照れ屋で、一人では何もできない性格。柚子がそばにいると少しは安定するが、オドオドはする。\r\n主人である柚子に心酔している。\r\n\r\n「申し訳ありません、柚子さま……」",
+    "name": "十川雫",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "とおかわ しずく"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "158cm"
+      },
+      {
+        "key": "体重",
+        "value": "44kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B87（E）/ W60/ H87"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 34879,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/fe/f4/93947_crt_9j39B.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/fe/f4/93947_crt_9j39B.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/fe/f4/93947_crt_9j39B.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fe/f4/93947_crt_9j39B.jpg"
+    },
+    "summary": "付属校に通う、館住み込みのメイドさん。\r\n学校では弓道部に属し、胸が大きすぎるのが悩みのタネ。\r\n明るく、優しい普通の少女だが、一転、館では無表情で、\r\n誰に対しても返事は頷きで返すだけに。\r\n愛鳥クィルの世話をしている時だけは、館で年令相応の表情を見せ、\r\n時折、何かに耐えるようにスカートを握り締めている。\r\n\r\n葉月だけは特定の客専用の娼婦であり、その変態性嗜好の客の為、\r\nある場所だけを繰り返し犯されていた。\r\nそんな彼女には入院中の妹、伊月との対話が唯一の心の慰めになっているのだが…",
+    "name": "十川葉月",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "十川　葉月"
+          },
+          {
+            "k": "纯假名",
+            "v": "そがわ　はづき"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "156cm"
+      },
+      {
+        "key": "BWH",
+        "value": "Ｂ88／Ｗ59／Ｈ86"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 6
+    },
+    "id": 93947,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/75/7e/28400_crt_fh2FD.jpg?r=1418947956",
+      "grid": "https://lain.bgm.tv/pic/crt/g/75/7e/28400_crt_fh2FD.jpg?r=1418947956",
+      "large": "https://lain.bgm.tv/pic/crt/l/75/7e/28400_crt_fh2FD.jpg?r=1418947956",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/75/7e/28400_crt_fh2FD.jpg?r=1418947956"
+    },
+    "summary": "『ふたりはミルキィホームズ』より登場。明智小衣より指導を受けているヨコハマ警察・交通課所属の警察官。",
+    "name": "十津川警子",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "十津川警子"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "麗しき破滅の桃"
+          },
+          {
+            "k": "纯假名",
+            "v": "とつがわ けいこ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Totsugawa Keiko"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 3
+    },
+    "id": 28400,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 6,
+    "gender": null,
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f4/00/70802_crt_Q636q.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f4/00/70802_crt_Q636q.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f4/00/70802_crt_Q636q.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f4/00/70802_crt_Q636q.jpg"
+    },
+    "summary": "星見学園に通う一年生。\r\n\r\n成績優秀、スポーツ万能、誰からも好かれる性格でクラスの人気者と三拍子揃った彼女だが、\r\n親の都合で転校を繰り返しており、周囲に対して過度に気を遣うようになってしまった。\r\n\r\n写真を撮ることが好きで、出かけるときはいつも愛用の一眼レフカメラを持ち歩いている。\r\nカメラが趣味であることはクラスの誰にも秘密だったが、\r\nあるとき偶然、写真を撮っているところを主人公に見られてしまい……。\r\n\r\n「この街のこと、まだあんまり知らなくって。よかったらいろいろ案内してほしいな」",
+    "name": "十津川光",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "十津川 光"
+          },
+          {
+            "k": "纯假名",
+            "v": "とつかわ ひかる"
+          }
+        ]
+      },
+      {
+        "key": "生日",
+        "value": "6月1日"
+      },
+      {
+        "key": "身高",
+        "value": "164cm"
+      },
+      {
+        "key": "BWH",
+        "value": "92/60/85"
+      },
+      {
+        "key": "学年",
+        "value": "一年生"
+      },
+      {
+        "key": "好きなもの",
+        "value": "カメラ、散歩、スポーツ"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 5
+    },
+    "id": 70802,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/9c/8c/77111_crt_00Tit.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/9c/8c/77111_crt_00Tit.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/9c/8c/77111_crt_00Tit.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9c/8c/77111_crt_00Tit.jpg"
+    },
+    "summary": "主人公の父親の 秘書 兼 便所 で、現在は主人公の世話と家庭教師をしている。\r\nもちろん身の回りの世話には、セックスも含まれる。\r\n借金で破滅した一家の娘だが、そうさせたのは主人公の父親。\r\n子供も二人生まされたが、低年齢セックスの実験でどちらも死亡している。",
+    "name": "十津川芹那",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "十津川 芹那"
+          },
+          {
+            "k": "纯假名",
+            "v": "とつがわ せりな"
+          }
+        ]
+      },
+      {
+        "key": "身高",
+        "value": "165cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B88/ W60/ H87"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 77111,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/6c/8e/133975_crt_BZr44.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/6c/8e/133975_crt_BZr44.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/6c/8e/133975_crt_BZr44.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6c/8e/133975_crt_BZr44.jpg"
+    },
+    "summary": "剣術の達人で、桜火に対しライバル意識がある。\r\n高い才能を持ち、シャドウギアを得たことを自負している。\r\nそのせいか自信家であり了司に対しても高圧的。\r\nしかし、想定外の状況には脆く、そこが危うさとなっている。\r\n\r\n先行潜入している桜火たちとは違い、学園に潜む敵の出方を探るために、あえて妹の雷花と共に正規の手続きで学園に編入してくる。\r\n了司より学年は一つ上。\r\n水を操るシャドウフォースを持ち、水による結界を用いた攻防一体の技を駆使する。\r\n巨大な水刃を同時に八つ発生させ自在に攻撃を行うヴァイパーススラストが奥義。\r\n\r\n「馬鹿にしないで！　私は退魔忍なのよ、これくらいできて当然だわ!!」",
+    "name": "十乃川雪菜",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Toonogawa Setsuna"
+          },
+          {
+            "k": "日文名",
+            "v": "十乃川 雪菜"
+          },
+          {
+            "k": "纯假名",
+            "v": "とおのがわ せつな"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "158cm"
+      },
+      {
+        "key": "体重",
+        "value": "46kg"
+      },
+      {
+        "key": "BWH",
+        "value": "88(E)/58/78"
+      },
+      {
+        "key": "CV",
+        "value": "青井美海"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 133975,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/41/c1/133976_crt_m5n61.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/41/c1/133976_crt_m5n61.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/41/c1/133976_crt_m5n61.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/41/c1/133976_crt_m5n61.jpg"
+    },
+    "summary": "雪菜の妹、一つ下の学年。\r\n姉ほどの才能は無いが何事にも一生懸命な努力家。\r\n決して暗い性格ではないが、姉に比べて自分に自信が無く人見知りが激しい。\r\n無愛想な了司に苦手意識を持ってしまうが、桐枝の幻術によって了司の従兄弟と周囲が思い込んだため、必死に仲良くなろうと空回りをしてしまう。\r\n\r\n雷を操る能力を持ち、雷撃を纏わせた格闘戦を得意とするが、姉や桜火のように奥義を持たない。\r\nまた姉の雪菜の張り巡らせた水の結界に帯電させる等、姉妹で連携した技を駆使することが出来る。\r\n\r\n「え……ボクが？　でも、お姉ちゃんのようにできるかな」",
+    "name": "十乃川雷花",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Toonogawa Raika"
+          },
+          {
+            "k": "日文名",
+            "v": "十乃川 雷花"
+          },
+          {
+            "k": "纯假名",
+            "v": "とおのがわ らいか"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "146cm"
+      },
+      {
+        "key": "体重",
+        "value": "41kg"
+      },
+      {
+        "key": "BWH",
+        "value": "74(AA)/50/75"
+      },
+      {
+        "key": "CV",
+        "value": "東かりん"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 133976,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d8/47/146294_crt_51nrp.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d8/47/146294_crt_51nrp.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/d8/47/146294_crt_51nrp.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d8/47/146294_crt_51nrp.jpg"
+    },
+    "summary": "黒髪長髪の、非常に物静かな人。\r\n基本的に人づきあいが苦手で、おとなしい。接客が苦手。家事等器用な仕事はまるでダメだが、唯一、お金の勘定だけは優秀で、『歩く電卓』と呼ばれる。借金の額同様、10桁までの数字の四則演算が瞬時に可能。しかし惜しからむは、金銭感覚がまるで無い・・・・。スタイル抜群で超美人だが、色恋沙汰には全然興味がない。\r\n\r\n事務所管理スタッフ、会計係主任。",
+    "name": "十津川桜芽",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "155cm"
+      },
+      {
+        "key": "体重",
+        "value": "50kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B：90(D)　W：57　H：87"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 146294,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/ec/146295_crt_3n15T.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b1/ec/146295_crt_3n15T.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/b1/ec/146295_crt_3n15T.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/ec/146295_crt_3n15T.jpg"
+    },
+    "summary": "猪突猛進。直情一直線。如何なる困難にも、無駄な元気でぶつかってゆく。\r\n可愛らしく、小柄な外見とは裏腹に、拳法（骨法）を修得している凶悪さを持ち合わせている。いつもちょこまか動き回っていて、落ち着きがなく、礼儀作法がなってない。頭を使う事が基本的にダメ。働き虫なので、お掃除役に向いている。・・・雑だけど。\r\n\r\nホール管理スタッフ、清掃係主任。\r\n　",
+    "name": "十津川小夢",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "148cm"
+      },
+      {
+        "key": "体重",
+        "value": "37kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B：74(A)　W：50　H：73"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 146295,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

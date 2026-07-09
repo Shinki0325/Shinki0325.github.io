@@ -1,0 +1,500 @@
+[
+  {
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 20,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/ae/21266_crt_dLvxo.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a5/ae/21266_crt_dLvxo.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a5/ae/21266_crt_dLvxo.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/ae/21266_crt_dLvxo.jpg"
+    },
+    "summary": "成海大吾の双子の姉。 海人と大吾、杏は幼なじみの関係にある。\r\n双子ではあるが、大吾とはまったく似ていない。\r\n海人に対して気さくに話し掛ける一方、弟に対しては手厳しい発言をする。\r\n朝比奈晴とは親友で、授業をサボりがちな晴のことをいつも気に掛けている。\r\n\r\n「そっか、晴をよろしくね～。 仲良くしてあげてね、ご飯もあげてね」",
+    "name": "成海杏",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "成海杏"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "なるみ あん"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "8月20日"
+      },
+      {
+        "key": "身高",
+        "value": "154"
+      },
+      {
+        "key": "体重",
+        "value": "43"
+      },
+      {
+        "key": "BWH",
+        "value": "85/53/81"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 18
+    },
+    "id": 21266,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/2a/ac/119916_crt_Z4e59.jpg?r=1667999820",
+      "grid": "https://lain.bgm.tv/pic/crt/g/2a/ac/119916_crt_Z4e59.jpg?r=1667999820",
+      "large": "https://lain.bgm.tv/pic/crt/l/2a/ac/119916_crt_Z4e59.jpg?r=1667999820",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2a/ac/119916_crt_Z4e59.jpg?r=1667999820"
+    },
+    "summary": "ŹOOĻのゲリラライブに遭遇した後ファンになった関西弁の女性。",
+    "name": "成海",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "成海"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "なるみ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Narumi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 119916,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/5a/27477_crt_7B1oe.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/65/5a/27477_crt_7B1oe.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/65/5a/27477_crt_7B1oe.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/5a/27477_crt_7B1oe.jpg"
+    },
+    "summary": "天洲学園の1年生で、主人公の義妹。\r\n何事もすべて兄を基準に考えて行動し、その常軌を逸した溺愛っぷりは周囲の状況に関係なく盛大に発揮される。\r\n行き過ぎた愛ゆえに主人公を島へ拉致した張本人。\r\n\r\n妹という関係に一切の憂いはなく、むしろ他人より近い存在として誇りに思っている。\r\nもちろん将来の夢は、お兄ちゃんのお嫁さんになること。\r\n常に主人公を誘惑しようと色気アタックを仕掛けるが、まだ一度も成功していない。\r\n\r\n“願いが叶う水” の伝承を信じ込み、天洲学園に入学した。\r\n学園から専用の研究室を与えられるほど本格的に、エネルギー水に関して日夜研究を行っている。",
+    "name": "成海真莉音",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "なるみ まりね"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 14
+    },
+    "id": 27477,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "",
+      "grid": "",
+      "large": "",
+      "medium": ""
+    },
+    "summary": "本作の主人公。 2年生。 何事もノリと勢いの好青年。\r\nある日、いきなり天洲アイランドに連れてこられ、そこで鯨神と名乗る少女に出会う。\r\nそして御使いに任命されたことから天洲学園に転入することになった。\r\n\r\nついついエロに走ることもあるが、基本的にはイイ奴であり、様々な出来事に巻き込まれながらも女の子のためなら一肌も二肌も脱ぐ男。\r\n真莉音と恵那とは幼い頃から家族のように過ごしており、互いに本物の兄弟のように親しい仲になっている。",
+    "name": "成海悠真",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "なるみ ゆうま"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 27480,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 16,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ba/1e/36798_crt_CEn0J.jpg?r=1447384145",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ba/1e/36798_crt_CEn0J.jpg?r=1447384145",
+      "large": "https://lain.bgm.tv/pic/crt/l/ba/1e/36798_crt_CEn0J.jpg?r=1447384145",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ba/1e/36798_crt_CEn0J.jpg?r=1447384145"
+    },
+    "summary": "高校三年生。\r\nあかりの中学時代からの友人。明るいお嬢様。\r\n読者モデルをしており、女子に憧れられるタイプ。",
+    "name": "成海聖奈",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "成海圣奈"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "SENA NARUMI"
+          },
+          {
+            "k": "日文名",
+            "v": "成海 聖奈"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "10月16日"
+      },
+      {
+        "key": "血型",
+        "value": "B型"
+      },
+      {
+        "key": "身高",
+        "value": "160cm"
+      }
+    ],
+    "stat": {
+      "comments": 4,
+      "collects": 32
+    },
+    "id": 36798,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 23,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/91/b6/39592_crt_AfUiA.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/91/b6/39592_crt_AfUiA.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/91/b6/39592_crt_AfUiA.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/91/b6/39592_crt_AfUiA.jpg"
+    },
+    "summary": "常にみんなを気づかう母親的なポジションにいる。\r\nただ、食に関しては常人の域を逸脱しており、彼女の胃はどんな量でも食べつくす無限の可能性を持つ。\r\nまた、みきの料理を平気な顔で完食することも可能なので、質に対してのキャパシティも広いと思われる。",
+    "name": "成海遥香",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "成海遥香"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "なるみはるか"
+          },
+          {
+            "k": "罗马字",
+            "v": "Narumi Haruka"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "9月23日"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 10
+    },
+    "id": 39592,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ae/08/53942_crt_qnFrs.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ae/08/53942_crt_qnFrs.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ae/08/53942_crt_qnFrs.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ae/08/53942_crt_qnFrs.jpg"
+    },
+    "summary": "长发男子，懂得“铁锅の调律”，烹调高手。\r\n長髪で「死ねってカンジ?」（アニメでは「消えろってカンジ?」）が口癖のCMAPメンバー。生粋のナルシストとして訓練させられる。アニメでは口調におネエ系が入っている。かなり口は悪いが、彼も料理の腕は超一流で、「鉄鍋の調律」を使いこなす洋食のプロフェッショナルであり、口で言うだけの実力を持つ。ガセで恋人に堕胎させたというスキャンダルに遭った経験を持っている。",
+    "name": "成海静人",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "成海静人"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "なるみ しずと"
+          },
+          {
+            "k": "罗马字",
+            "v": "Shizuto Narumi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 53942,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c2/fd/60956_crt_NjxKN.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c2/fd/60956_crt_NjxKN.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c2/fd/60956_crt_NjxKN.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c2/fd/60956_crt_NjxKN.jpg"
+    },
+    "summary": "お隣に住んでいる専業主婦の奥様。\r\nおっとりとしているが芯が強く、交友関係も広い。\r\nななえとは旧知の仲で、いつも振り回されているが、日々の刺激として楽しんでいる。\r\n主人公たち家族の性行為を目撃し、噂の出所となった。\r\nしかし主人公に 旦那との性の不一致 につけ込まれ、言いなりになってしまう。\r\nその生真面目さが祟り、ずるずると爛れた関係を続けていく。\r\n「家族……って…… そう言ってたのに、そんな、こと……」",
+    "name": "成海弥千代",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "成海 弥千代"
+          },
+          {
+            "k": "纯假名",
+            "v": "なるみ やちよ"
+          }
+        ]
+      },
+      {
+        "key": "身高",
+        "value": "165cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B93/ W58/ H89"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 14
+    },
+    "id": 60956,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/3c/63/86145_crt_BQTE6.jpg?r=1645114040",
+      "grid": "https://lain.bgm.tv/pic/crt/g/3c/63/86145_crt_BQTE6.jpg?r=1645114040",
+      "large": "https://lain.bgm.tv/pic/crt/l/3c/63/86145_crt_BQTE6.jpg?r=1645114040",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3c/63/86145_crt_BQTE6.jpg?r=1645114040"
+    },
+    "summary": "Honey Worksの告白実行委員会に登場するキャラクター。\r\n楽曲「私、アイドル宣言」の主人公で、高校一年生の時にアイドル活動を始めた。\r\n芸名はmona。\r\nCHICOwithHoneyWorksのCD｢私を染めるiの歌｣の初回限定盤についている小説「私、アイドル宣言」の主人公。\r\n姉はモデルの成海聖奈\r\n努力家の姉を尊敬しており、一緒にショッピングに行ったりと姉妹仲もいい。\r\nしかしその反面、常に芸能人の姉と比べられて勝手に失望されるため少々複雑な気持ちを抱いている。\r\n\r\n成海聖奈の妹としてではなく、自分自身を見てほしいため芸名を「mona」とし、妹であることを秘密にアイドル活動を始めた。\r\n\r\n超がつくほどのアイドルオタク。",
+    "name": "成海萌奈",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "成海萌奈"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "mona"
+          },
+          {
+            "k": "纯假名",
+            "v": "なるみもな"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "160"
+      },
+      {
+        "key": "体重",
+        "value": "47kg"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 9
+    },
+    "id": 86145,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 6,
+    "gender": "male",
+    "birth_day": 13,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/31/57/54321_crt_ydhSh.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/31/57/54321_crt_ydhSh.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/31/57/54321_crt_ydhSh.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/31/57/54321_crt_ydhSh.jpg"
+    },
+    "summary": "類まれな歌唱力と透き通った歌声を持つヴォーカル。\r\n少し天然な性格だが、海外で多くの時間を過ごしてきたせいか物言いははっきりしていて、白黒つけたがる。\r\n真っ直ぐな性格とバンドの最年少という事もあり、メンバーから可愛がられている。\r\n作詞を担当することが多い。",
+    "name": "天城成海",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "天城成海"
+      },
+      {
+        "key": "别名",
+        "value": "NaL"
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "6月13日"
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      },
+      {
+        "key": "身高",
+        "value": "180cm"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://twitter.com/apple_p_NaL"
+      },
+      {
+        "key": "星座",
+        "value": "双子座"
+      },
+      {
+        "key": "引用来源2",
+        "value": "http://www.honeybee-cd.com/dynamic/artist/app_mem.html"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 54321,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

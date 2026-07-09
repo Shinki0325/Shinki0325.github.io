@@ -1,0 +1,371 @@
+[
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ab/4a/14499_crt_7dHed.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ab/4a/14499_crt_7dHed.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ab/4a/14499_crt_7dHed.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ab/4a/14499_crt_7dHed.jpg"
+    },
+    "summary": "初雪がバイトをしている喫茶店を訪れ、受験のために合宿を始めるという謎の少女。\r\nロシアからやって来たシロクマだと流暢な日本語で言い張るが、素性は不明。\r\n\r\n極端な世間知らずで、なんでも他人に頼らないと出来ない。\r\nシロクマというよりウサギみたいな子。\r\n\r\n「あまり触ると、かみついちゃうからっ。シロクマだぞ？」",
+    "name": "シロクマ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "白熊"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "望月宝"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "148cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B78/W51/H79"
+      }
+    ],
+    "stat": {
+      "comments": 26,
+      "collects": 66
+    },
+    "id": 14499,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/15/f4/15444_crt_5qM0V.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/15/f4/15444_crt_5qM0V.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/15/f4/15444_crt_5qM0V.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/15/f4/15444_crt_5qM0V.jpg"
+    },
+    "summary": "カフェのマスター。経営手腕に長け、店の経営を軌道に乗せている。会話の最中に駄洒落を連発して周囲を煙に巻いたり、作り話でパンダやグリズリーを担ぐなど、人を喰った性格が垣間見えることもしばしば。当人（熊）が語るところに拠れば、カナダのハドソン湾で三つ子の末っ子として生まれ、生後すぐに母親や兄弟と生き別れとなり、流氷に乗って漂流した末に食堂を営む人間の夫妻に育てられたというが、それが真実であるとすると、グリズリーと幼馴染であることの整合性が取れないこと、また、雑誌のインタビューで「建設会社を脱サラして開業した」と語っていることから、この経歴も上述の虚言癖の好例であることが窺える。",
+    "name": "シロクマ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "白熊"
+      },
+      {
+        "key": "别名",
+        "value": []
+      }
+    ],
+    "stat": {
+      "comments": 10,
+      "collects": 60
+    },
+    "id": 15444,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/98/0c/56898_crt_D677r.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/98/0c/56898_crt_D677r.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/98/0c/56898_crt_D677r.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/98/0c/56898_crt_D677r.jpg"
+    },
+    "summary": "アザラシ君に一目惚れ。種族の壁にもめげずに、一途な想いで猛アタック中。",
+    "name": "シロクマ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "白熊"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Shirokuma"
+          },
+          {
+            "k": "昵称",
+            "v": "シロクマさん"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "公"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://koisurushirokuma.jp/characters/"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 56898,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/96/c5/63417_crt_Qzfue.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/96/c5/63417_crt_Qzfue.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/96/c5/63417_crt_Qzfue.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/96/c5/63417_crt_Qzfue.jpg"
+    },
+    "summary": "",
+    "name": "シロクマ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "白熊"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 63417,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/7a/f7/174191_crt_uqVpZ.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/7a/f7/174191_crt_uqVpZ.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/7a/f7/174191_crt_uqVpZ.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7a/f7/174191_crt_uqVpZ.jpg"
+    },
+    "summary": "白熊是一只怕冷又内向的北极熊，虽然是北极熊但却害怕冷，所以从北方逃跑了出来，带着包袱南下。喜欢一切温暖的东西，像热茶、被窝等。白熊跟企鹅？是好朋友，但却常常为了争抢角落而吵架。\r\n特长：画画\r\n性格：怕生怕冷\r\n兴趣：喝茶",
+    "name": "しろくま",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "白熊"
+      },
+      {
+        "key": "别名",
+        "value": []
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 174191,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 8,
+    "gender": null,
+    "birth_day": 27,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/e4/176787_crt_WOTkB.jpg?r=1748501034",
+      "grid": "https://lain.bgm.tv/pic/crt/g/af/e4/176787_crt_WOTkB.jpg?r=1748501034",
+      "large": "https://lain.bgm.tv/pic/crt/l/af/e4/176787_crt_WOTkB.jpg?r=1748501034",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/e4/176787_crt_WOTkB.jpg?r=1748501034"
+    },
+    "summary": "ギアとロボット・Qu-0213と共に、盗み屋を行うシロクマ。\r\nギア達とはチームではなく、あくまで「ビジネスパートナー」だと言い張る。\r\n葉巻とギャンブルをこよなく愛している。",
+    "name": "シロクマ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Shirokuma"
+          }
+        ]
+      },
+      {
+        "key": "生日",
+        "value": "8月27日"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 0
+    },
+    "id": 176787,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/33/2a/50206_crt_iX9aV.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/33/2a/50206_crt_iX9aV.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/33/2a/50206_crt_iX9aV.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/33/2a/50206_crt_iX9aV.jpg"
+    },
+    "summary": "一代で財をなしたシロクマグループ総裁にしてシロクマ質店のオーナー。\r\nたま会長とはライバルで腐れ縁。",
+    "name": "シロクマ会長",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 50206,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/77/de/161278_crt_u6UUc.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/77/de/161278_crt_u6UUc.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/77/de/161278_crt_u6UUc.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/77/de/161278_crt_u6UUc.jpg"
+    },
+    "summary": "",
+    "name": "シロクマ女囚",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 161278,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b0/bc/174865_crt_K3h9B.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b0/bc/174865_crt_K3h9B.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/b0/bc/174865_crt_K3h9B.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b0/bc/174865_crt_K3h9B.jpg"
+    },
+    "summary": "「しろくまのふるさと」テーマから登場、手先が器用で料理などが上手。",
+    "name": "しろくまのおかあさん",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "白熊的母亲"
+      },
+      {
+        "key": "别名",
+        "value": []
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 174865,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/5c/9c/174866_crt_0r9Sr.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/5c/9c/174866_crt_0r9Sr.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/5c/9c/174866_crt_0r9Sr.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5c/9c/174866_crt_0r9Sr.jpg"
+    },
+    "summary": "「しろくまのふるさと」テーマから登場、しろくまのふたごのきょうだいで、陽気で明るくで、不器用。",
+    "name": "しろくまのふたごのきょうだい",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "白熊的兄弟"
+      },
+      {
+        "key": "别名",
+        "value": []
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 174866,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

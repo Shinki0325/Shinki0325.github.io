@@ -62,11 +62,11 @@ describe("manager api contract", () => {
     expect(routeSource).not.toMatch(/requireFields\([^)]*\[[^\]]*"avatar"/s);
   });
 
-  it("limits birthday JSON uploads to WebP data URLs", async () => {
+  it("accepts common local image upload formats for birthday image conversion", async () => {
     const routeSource = await fs.readFile("manager/server/routes/birthdays.ts", "utf8");
 
-    expect(routeSource).toContain("data:image/webp;base64");
-    expect(routeSource).toMatch(/data:image\/webp;base64/i);
+    expect(routeSource).toContain("webp|png|jpe?g");
+    expect(routeSource).toContain("data:image/webp, image/png, or image/jpeg;base64 URL");
     expect(routeSource).not.toContain("data:image/[a-z0-9.+-]+;base64");
   });
 
@@ -76,5 +76,57 @@ describe("manager api contract", () => {
     expect(apiSource).toContain("class ApiError extends Error");
     expect(apiSource).toContain("payload.error");
     expect(apiSource).toContain("this.status = status");
+  });
+
+  it("serves site upload assets inside the local manager", async () => {
+    const indexSource = await fs.readFile("manager/server/index.ts", "utf8");
+    const viteSource = await fs.readFile("manager/vite.config.ts", "utf8");
+
+    expect(indexSource).toContain('app.use("/uploads"');
+    expect(indexSource).toContain("express.static");
+    expect(viteSource).toContain('"/uploads": "http://127.0.0.1:4318"');
+  });
+
+  it("provides generic manager image upload and crop APIs for visual editors", async () => {
+    const routeSource = await fs.readFile("manager/server/routes/assets.ts", "utf8");
+    const filesSource = await fs.readFile("manager/server/files.ts", "utf8");
+    const apiSource = await fs.readFile("manager/src/api.ts", "utf8");
+
+    expect(routeSource).toContain("/api/assets/image/upload");
+    expect(routeSource).toContain("/api/assets/image/crop");
+    expect(filesSource).toContain("saveUploadedAssetImage");
+    expect(filesSource).toContain("cropAssetImage");
+    expect(apiSource).toContain("uploadAssetImage");
+    expect(apiSource).toContain("cropAssetImage");
+  });
+
+  it("allows large local image data URLs through the manager JSON parser", async () => {
+    const indexSource = await fs.readFile("manager/server/index.ts", "utf8");
+
+    expect(indexSource).toContain('express.json({ limit: "80mb" })');
+    expect(indexSource).not.toContain('express.json({ limit: "10mb" })');
+  });
+
+  it("exposes image host configuration and hosted original upload helpers", async () => {
+    const routeSource = await fs.readFile("manager/server/routes/assets.ts", "utf8");
+    const hostSource = await fs.readFile("manager/server/imageHost.ts", "utf8");
+    const apiSource = await fs.readFile("manager/src/api.ts", "utf8");
+
+    expect(routeSource).toContain("/api/image-host/status");
+    expect(hostSource).toContain("IMAGE_HOST_PROVIDER");
+    expect(hostSource).toContain("uploadOriginalToImageHost");
+    expect(apiSource).toContain("getImageHostStatus");
+  });
+
+  it("provides a manager-only cloud music fetch endpoint for local static track caching", async () => {
+    const indexSource = await fs.readFile("manager/server/index.ts", "utf8");
+    const routeSource = await fs.readFile("manager/server/routes/music.ts", "utf8");
+    const apiSource = await fs.readFile("manager/src/api.ts", "utf8");
+
+    expect(indexSource).toContain("registerMusicRoutes");
+    expect(routeSource).toContain("/api/music-cloud/track");
+    expect(routeSource).toContain("MUSIC_CLOUD_API_BASE_URL");
+    expect(routeSource).toContain("hydrateCloudTrackLyrics");
+    expect(apiSource).toContain("fetchCloudMusicTrack");
   });
 });

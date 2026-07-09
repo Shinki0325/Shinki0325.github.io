@@ -1,0 +1,455 @@
+[
+  {
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/64/a2/23402_crt_bUQut.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/64/a2/23402_crt_bUQut.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/64/a2/23402_crt_bUQut.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/64/a2/23402_crt_bUQut.jpg"
+    },
+    "summary": "主人公・康司の義理の妹。 屈託のない誰からも好かれる性格をしている。\r\n 勉強はできるし性格も良いしで友達は多く、男女問わずウケが良い。\r\n と、外では平均以上の理想的な女の子だが、ご家庭内ではかなり天然ボケなところがあり、しっかり者の兄をいつも心配させている。\r\n 本人もそんな自分の抜けたところは自覚しているが、その分 兄に甘えられるので直すつもりはないらしい。\r\n 兄・康司のことは心から頼りにしているし、大事にも思っている。\r\n その天真爛漫さが兄をやきもきさせているのには気づいていない。\r\n \r\n「お兄ちゃんの寝顔見てると眠くなるんだよなぁ。 おじゃましまーす」",
+    "name": "広崎美奈",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "広崎美奈"
+          },
+          {
+            "k": "纯假名",
+            "v": "ひろさき みな"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "4月1日"
+      },
+      {
+        "key": "血型",
+        "value": "O型"
+      },
+      {
+        "key": "身高",
+        "value": "155cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B75/ W54/ H82"
+      },
+      {
+        "key": "好きなもの",
+        "value": "お兄ちゃん"
+      }
+    ],
+    "stat": {
+      "comments": 5,
+      "collects": 24
+    },
+    "id": 23402,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/72/7b/181245_crt_53788.jpg?r=1754359006",
+      "grid": "https://lain.bgm.tv/pic/crt/g/72/7b/181245_crt_53788.jpg?r=1754359006",
+      "large": "https://lain.bgm.tv/pic/crt/l/72/7b/181245_crt_53788.jpg?r=1754359006",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/72/7b/181245_crt_53788.jpg?r=1754359006"
+    },
+    "summary": "学級担任の英語教師。年齢は30歳前半。軽やかな口調をしていて、身長は150センチメートル前後と小柄。\r\n生徒からの愛称は「みっちゃん」。\r\n[mask]クラス決めの際に、他の教員が真唯の担任となることを渋る中、自ら名乗り出て担任を受け持つ。その際に「王塚さんを御すための人材をください」と要望したため、当初は別のクラスになる予定だった紫陽花と紗月もA組となった。[/mask]",
+    "name": "広崎美智留",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "广崎美智留"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "広崎 美智留"
+          },
+          {
+            "k": "纯假名",
+            "v": "ひろさき みちる"
+          },
+          {
+            "k": "昵称",
+            "v": "みっちゃん"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "150cm"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 5
+    },
+    "id": 181245,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/00/bf/122228_crt_z0qgb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/00/bf/122228_crt_z0qgb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/00/bf/122228_crt_z0qgb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/00/bf/122228_crt_z0qgb.jpg"
+    },
+    "summary": "",
+    "name": "広崎和美",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Hirosaki Kazumi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "vndb.org/v13711/chars#chars"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 0
+    },
+    "id": 122228,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/32/68569_crt_pG5QF.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a4/32/68569_crt_pG5QF.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a4/32/68569_crt_pG5QF.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/32/68569_crt_pG5QF.jpg"
+    },
+    "summary": "主人公のクラスの学生。 品野くるみの親友。\r\n少しだが、くるみに対してまじめな恋愛感情を抱いている。\r\nややボーイッシュで、学園では人気が高い。\r\n気が強く沈着冷静、利発な学生。",
+    "name": "広崎鈴子",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "広崎 鈴子"
+          },
+          {
+            "k": "纯假名",
+            "v": "ひろさき りんこ"
+          }
+        ]
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "身高",
+        "value": "163cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B81（B）/ W55/ H83"
+      },
+      {
+        "key": "体重",
+        "value": "47kg"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 68569,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/1a/49/102514_crt_11a8V.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/1a/49/102514_crt_11a8V.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/1a/49/102514_crt_11a8V.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1a/49/102514_crt_11a8V.jpg"
+    },
+    "summary": "児童施設や老人ホームを回る大学の人形劇サークル『ゆきだるま』の劇団員。とにかくそれに打ち込んでおり、自分の犠牲をいとわない。不平不満をまったく言わず、人にやさしく、感謝の心を忘れない。周囲にとって聖母マリアの様な存在だが、心は強くガンコな一面も。",
+    "name": "広崎珠緒",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "広崎 珠緒"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 102514,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/02/d2/122224_crt_TEZk7.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/02/d2/122224_crt_TEZk7.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/02/d2/122224_crt_TEZk7.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/02/d2/122224_crt_TEZk7.jpg"
+    },
+    "summary": "",
+    "name": "広崎康司",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 122224,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "",
+      "grid": "",
+      "large": "",
+      "medium": ""
+    },
+    "summary": "",
+    "name": "広崎倭人",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 142363,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ff/25/80736_crt_O77na.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ff/25/80736_crt_O77na.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ff/25/80736_crt_O77na.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ff/25/80736_crt_O77na.jpg"
+    },
+    "summary": "",
+    "name": "蠣崎季広",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "入手方法",
+        "value": "イベント報酬"
+      },
+      {
+        "key": "入手情報詳細",
+        "value": "イベント「桜花の戦乱」総合ランキング報酬1位～700位など"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://shirohime.gamedbs.jp/"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 80736,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/97/08/105539_crt_ylCEf.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/97/08/105539_crt_ylCEf.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/97/08/105539_crt_ylCEf.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/97/08/105539_crt_ylCEf.jpg"
+    },
+    "summary": "思い込んだら一直線単細胞型。\r\n健全な不良男子高校生。",
+    "name": "末崎千広",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "まつざき　ちひろ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://www.dlsite.com/girls/work/=/product_id/RJ249859.html"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 105539,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 7,
+    "gender": "male",
+    "birth_day": 25,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/de/3f/149953_crt_R3h83.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/de/3f/149953_crt_R3h83.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/de/3f/149953_crt_R3h83.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/de/3f/149953_crt_R3h83.jpg"
+    },
+    "summary": "20岁",
+    "name": "三崎康広",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Misaki Yasuhiro"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "7月25日"
+      },
+      {
+        "key": "血型",
+        "value": "O型"
+      },
+      {
+        "key": "身高",
+        "value": "171cm"
+      },
+      {
+        "key": "体重",
+        "value": "63kg"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 149953,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

@@ -50,10 +50,36 @@ export type AssetItem = {
   path: string;
   url: string;
   size: number;
+  originalUrl?: string;
+};
+
+export type ImageHostStatus = {
+  enabled: boolean;
+  provider: string;
+  publicBaseUrl: string;
+  bucket: string;
 };
 
 export type AssetListResponse = {
   items: AssetItem[];
+};
+
+export type AssetImageCrop = {
+  x: number;
+  y: number;
+  width: number;
+  height: number;
+};
+
+export type MusicTrackDraft = {
+  id: string;
+  title: string;
+  artist: string;
+  coverUrl: string;
+  audioUrl: string;
+  lrc: string;
+  duration?: number | null;
+  album?: string | null;
 };
 
 export type BirthdayVerificationStatus = "verified" | "todo";

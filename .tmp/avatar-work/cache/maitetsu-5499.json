@@ -1,0 +1,512 @@
+[
+  {
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 10,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/eb/80/37751_crt_I2rGe.jpg?r=1537798893",
+      "grid": "https://lain.bgm.tv/pic/crt/g/eb/80/37751_crt_I2rGe.jpg?r=1537798893",
+      "large": "https://lain.bgm.tv/pic/crt/l/eb/80/37751_crt_I2rGe.jpg?r=1537798893",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/eb/80/37751_crt_I2rGe.jpg?r=1537798893"
+    },
+    "summary": "病弱な母に代わり、御一夜の誇る観光資源·クマ川下りの運営を務める苦労人の少女。\r\n読書好きで物静かな性格だが、必要に迫られたので営業トークはきっちりこなせる。\r\n反面プライベートは引っ込み思案で、凪が代弁してくれないと流されるがままになってしまう。\r\nそれゆえ凪を非常に頼りにしており、その明快さに憧れてもいる。\r\n読書癖の影響で、妄想力は密かに豊か。\r\n「凪ちゃんがもし男の子だったら」 的な妄想をしては、一人で布団にくるまり転げ回っている。\r\n「暑い盛りで、おかあさん大変だったって―― だからわたし、川が大好きなのかもしれません」",
+    "name": "早瀬ふかみ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "早濑深美"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "はやせ ふかみ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "8月10日"
+      },
+      {
+        "key": "身高",
+        "value": "143cm"
+      },
+      {
+        "key": "体重",
+        "value": "34kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B69/ W52/ H72"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 25
+    },
+    "id": 37751,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/3d/41/45890_crt_AJjk6.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/3d/41/45890_crt_AJjk6.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/3d/41/45890_crt_AJjk6.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3d/41/45890_crt_AJjk6.jpg"
+    },
+    "summary": "某都内学園に通う学生。\r\n彼女が偶然考え出したキャラクターがネット上で大ブレイク。\r\nキャラクターグッズなど関連商品が売れまくり、その印税として大金を手に入れる。",
+    "name": "早瀬ともみ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "はやせ ともみ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 3
+    },
+    "id": 45890,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 14,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/e1/fe/104648_crt_4e124.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/e1/fe/104648_crt_4e124.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/e1/fe/104648_crt_4e124.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e1/fe/104648_crt_4e124.jpg"
+    },
+    "summary": "千年学园学生会，“研讨会”的会计。\r\n\r\n在理科比例较高的千年学园中，她是首屈一指的数学奇才，总揽千年学园的预算管理。\r\n专长是珠算。每当思绪混乱或有心理矛盾时，她习惯靠打算盘来平复心情。",
+    "name": "早瀬ユウカ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "早濑优香"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Yuuka Hayase"
+          },
+          {
+            "k": "日文名",
+            "v": "早瀬 ユウカ"
+          },
+          {
+            "k": "纯假名",
+            "v": "はやせ ユウカ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Hayase Yuuka"
+          },
+          {
+            "k": "昵称",
+            "v": "阻充之，没包人，邮箱，100kg，大魔王"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "3月14日"
+      },
+      {
+        "key": "身高",
+        "value": "156cm"
+      },
+      {
+        "key": "学校",
+        "value": "千年科学学院"
+      },
+      {
+        "key": "社团",
+        "value": "研讨会"
+      },
+      {
+        "key": "年级",
+        "value": "高中二年级"
+      },
+      {
+        "key": "年龄",
+        "value": "16岁"
+      },
+      {
+        "key": "兴趣",
+        "value": "计算"
+      },
+      {
+        "key": "使用武器",
+        "value": "逻辑与理性"
+      },
+      {
+        "key": "原画",
+        "value": "Hwansang，Yutokamizu，Paruru"
+      }
+    ],
+    "stat": {
+      "comments": 42,
+      "collects": 162
+    },
+    "id": 104648,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/9f/110198_crt_vYf1Y.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c9/9f/110198_crt_vYf1Y.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c9/9f/110198_crt_vYf1Y.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/9f/110198_crt_vYf1Y.jpg"
+    },
+    "summary": "早瀬佐近の妹。春花学園の高校生。自らも女暴走族集団「赤い流れ星」を率い、関東近辺の暴走族を纏め上げている。\r\n兄の佐近と風吹の戦いを通じ、途中からは風吹と実質的な恋人関係となる。公道グランプリでは途中で右腕を負傷しシフトチェンジが困難になった風吹の代わりに、ロータス・ヨーロッパの助手席に同乗してシフト操作を担当するなど、風吹との深い結びつきが作中で示されることが多い。日光レース後、18歳になったミキは免許を取得し、初心者にしてポルシェ930ターボに乗っていた。",
+    "name": "早瀬ミキ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "はやせ みき"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 110198,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/af/3d/130417_crt_1PTbS.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/af/3d/130417_crt_1PTbS.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/af/3d/130417_crt_1PTbS.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/af/3d/130417_crt_1PTbS.jpg"
+    },
+    "summary": "主人公とは同じクラスで幼なじみ。\r\n才色兼備で人当たりもよく、人気NO1の女の子。ラクロス部所属。\r\n世間では、「特定の彼氏もいないのにガードの固い女の子」\r\nとして通っているが、実は学園の教師と付き合っている。\r\n主人公の親と、あおいの親（由緒ある名家）は、大人の事情で仲が良かっただけだったが、あおいは今でも主人公と幼なじみと思っている。押しが弱いため、泥沼にはまっていくタイプ。",
+    "name": "早瀬あおい",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "早瀬あおい"
+          },
+          {
+            "k": "纯假名",
+            "v": "はやせ　あおい"
+          }
+        ]
+      },
+      {
+        "key": "CV",
+        "value": "西田こむぎ"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 0
+    },
+    "id": 130417,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/7f/144920_crt_Rl6Om.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/4e/7f/144920_crt_Rl6Om.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/4e/7f/144920_crt_Rl6Om.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/7f/144920_crt_Rl6Om.jpg"
+    },
+    "summary": "本ゲームで彼女はヒロインタイプの女の子。\r\n主人公と同じクラスで幼なじみ。\r\n主人公は彼女にとってとても気の合う友達です。\r\nクラス委員である阿ヶ紗凪に任命されて主人公の監視係になりました。\r\nソフトボール部のキャプテンでピッチャー。\r\n面倒見の良い女の子。\r\n阿ヶ紗凪と仲良し。",
+    "name": "早瀬ちはる",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 144920,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/85/d6/110933_crt_1UJeK.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/85/d6/110933_crt_1UJeK.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/85/d6/110933_crt_1UJeK.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/85/d6/110933_crt_1UJeK.jpg"
+    },
+    "summary": "",
+    "name": "伊早瀬アラカ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "伊早瀬 アラカ"
+          },
+          {
+            "k": "纯假名",
+            "v": "いそうらい あらか"
+          },
+          {
+            "k": "罗马字",
+            "v": "Isourai Araka"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 1
+    },
+    "id": 110933,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/49/64/161729_crt_80eiV.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/49/64/161729_crt_80eiV.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/49/64/161729_crt_80eiV.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/49/64/161729_crt_80eiV.jpg"
+    },
+    "summary": "退魔師の少女。\r\nそして、この事件の『探偵』でもある。\r\n\r\nその横顔はなぜか、狂おしい程の思慕と、恐怖を思い出させる。",
+    "name": "伊早瀬アラカ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "伊早瀬 アラカ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "CV",
+        "value": "藤村莉央"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 161729,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 3,
+    "birth_year": 1990,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/1f/b3/6801_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/1f/b3/6801_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/1f/b3/6801_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1f/b3/6801_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "早瀬未沙",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "早濑未沙"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "はやせ みさ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Hayase Misa"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "1990-03-03"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "身高",
+        "value": "168cm"
+      },
+      {
+        "key": "体重",
+        "value": "45kg"
+      },
+      {
+        "key": "BWH",
+        "value": "83/57/83"
+      },
+      {
+        "key": "引用来源",
+        "value": "wikipedia"
+      },
+      {
+        "key": "年龄",
+        "value": "19歳（2009年時点）"
+      }
+    ],
+    "stat": {
+      "comments": 17,
+      "collects": 50
+    },
+    "id": 6801,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/71/ab/8563_crt_p6j85.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/71/ab/8563_crt_p6j85.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/71/ab/8563_crt_p6j85.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/71/ab/8563_crt_p6j85.jpg"
+    },
+    "summary": "",
+    "name": "早瀬隆司",
+    "infobox": [
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Hayase Takashi"
+          },
+          {
+            "k": "日文名",
+            "v": "早瀬隆司"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 8563,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

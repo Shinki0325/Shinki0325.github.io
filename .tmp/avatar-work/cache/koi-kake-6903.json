@@ -1,0 +1,541 @@
+[
+  {
+    "birth_mon": 1,
+    "gender": "female",
+    "birth_day": 22,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/4e/d7/34991_crt_6TLjw.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/4e/d7/34991_crt_6TLjw.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/4e/d7/34991_crt_6TLjw.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4e/d7/34991_crt_6TLjw.jpg"
+    },
+    "summary": "しっかり者で家族思いな彼女は 健気なハウスメイデン\r\n\r\n洸太郎の妹。 しっかり者で國見家の良心。\r\n父母は家を離れているので、家事全般は彼女が担当しているらしい。\r\nゆいとはクラスメイト。\r\n\r\n「お兄ちゃん。またテレビ付けたままソファで寝てたでしょ。 ちゃんとしてよね、もう！」",
+    "name": "國見菜子",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "国见菜子"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "くにみ なこ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "1月22日"
+      },
+      {
+        "key": "血型",
+        "value": "B型"
+      },
+      {
+        "key": "学年",
+        "value": "3年（御影浜）"
+      },
+      {
+        "key": "所属",
+        "value": "家庭科部"
+      },
+      {
+        "key": "バスト",
+        "value": "小さい"
+      },
+      {
+        "key": "好き",
+        "value": "家事全般、料理、裁縫"
+      },
+      {
+        "key": "嫌い",
+        "value": "炭酸飲料"
+      }
+    ],
+    "stat": {
+      "comments": 63,
+      "collects": 135
+    },
+    "id": 34991,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/07/66/195634_crt_zJjT0.jpg?r=1766411646",
+      "grid": "https://lain.bgm.tv/pic/crt/g/07/66/195634_crt_zJjT0.jpg?r=1766411646",
+      "large": "https://lain.bgm.tv/pic/crt/l/07/66/195634_crt_zJjT0.jpg?r=1766411646",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/07/66/195634_crt_zJjT0.jpg?r=1766411646"
+    },
+    "summary": "",
+    "name": "国見",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "国见"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 195634,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 1,
+    "gender": "male",
+    "birth_day": 16,
+    "birth_year": 1981,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f6/ad/11299_crt_H0Zc0.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f6/ad/11299_crt_H0Zc0.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f6/ad/11299_crt_H0Zc0.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f6/ad/11299_crt_H0Zc0.jpg"
+    },
+    "summary": "千川高校3年（開始当時：千川高校1年）。投手。右投げ・右打ち。\r\n物語の主人公。普段は飄々とした性格。中学時代から豪速球で名を馳せた投手だったが、上武医師の「3ヵ月で確実に肘が壊れる」という言葉を信じ、野球への未練を断ち切るため野球部のない千川高校へ進学する。その後上武医師の無免許が発覚、診断がウソだと知る。そして高校野球嫌いの校長に野球部創設を認めさせるために、地区大会準優勝校の明和第一高校と練習試合を行う。結果は故意の誤審により敗北を喫したが、野球部は創設され、千川高校野球部のエースになる",
+    "name": "国見比呂",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "国见比吕"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Hiro Kunimi"
+          },
+          {
+            "k": "日文名",
+            "v": "国見比呂"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "1981年1月16日"
+      },
+      {
+        "key": "引用来源",
+        "value": "维基百科"
+      }
+    ],
+    "stat": {
+      "comments": 13,
+      "collects": 29
+    },
+    "id": 11299,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/df/26330_crt_lu9zq.jpg?r=1407567093",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b8/df/26330_crt_lu9zq.jpg?r=1407567093",
+      "large": "https://lain.bgm.tv/pic/crt/l/b8/df/26330_crt_lu9zq.jpg?r=1407567093",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/df/26330_crt_lu9zq.jpg?r=1407567093"
+    },
+    "summary": "主人公の義妹。\r\n桐敷学園に通う一年生。\r\n\r\n冷静沈着で淡泊な印象。\r\n光の強い瞳が特徴的だが、自己主張には乏しい。\r\n主人公とはまた異なる意味で、積極性に欠けている。\r\n\r\n主人公の事を深く愛している。",
+    "name": "国見絵麻",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "国见绘麻"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "くにみえま"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 16,
+      "collects": 42
+    },
+    "id": 26330,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 6,
+    "gender": "male",
+    "birth_day": 12,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b6/d4/33219_crt_FWGln.jpg?r=1434013989",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b6/d4/33219_crt_FWGln.jpg?r=1434013989",
+      "large": "https://lain.bgm.tv/pic/crt/l/b6/d4/33219_crt_FWGln.jpg?r=1434013989",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b6/d4/33219_crt_FWGln.jpg?r=1434013989"
+    },
+    "summary": "主人公\r\n\r\n小説家志望。 マジメでおせっかい焼きな男子学生。\r\n効率が悪い・生産的でない事柄に関してはまったく興味を示さない。\r\n両親は海外赴任中。",
+    "name": "國見洸太郎",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "国见洸太郎"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "くにみ こうたろう"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "6月12日"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "学年",
+        "value": "2-D（御影ヶ丘）"
+      },
+      {
+        "key": "所属",
+        "value": "文芸部"
+      },
+      {
+        "key": "趣味・特技",
+        "value": "読書、小説を書く"
+      },
+      {
+        "key": "好き",
+        "value": "物語を書く、静かな場所"
+      },
+      {
+        "key": "嫌い",
+        "value": "働くこと"
+      }
+    ],
+    "stat": {
+      "comments": 27,
+      "collects": 14
+    },
+    "id": 33219,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 3,
+    "gender": "male",
+    "birth_day": 25,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/79/fe/39176_crt_Lgaaz.jpg?r=1731384706",
+      "grid": "https://lain.bgm.tv/pic/crt/g/79/fe/39176_crt_Lgaaz.jpg?r=1731384706",
+      "large": "https://lain.bgm.tv/pic/crt/l/79/fe/39176_crt_Lgaaz.jpg?r=1731384706",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/79/fe/39176_crt_Lgaaz.jpg?r=1731384706"
+    },
+    "summary": "冷静で無駄が嫌いな頭脳派プレイヤー。面倒を好まず囮役などはサボり気味だが、決してやる気がないわけではなく、効率を重視し試合終盤の勝負所で力を発揮する。影山と同じ北川第一中学の出身。",
+    "name": "国見英",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "国见英"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "国見 英"
+          },
+          {
+            "k": "纯假名",
+            "v": "くにみ あきら"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kunimi Akira"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "3月25日"
+      },
+      {
+        "key": "身高",
+        "value": "182.8cm"
+      },
+      {
+        "key": "体重",
+        "value": "66.1kg"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 5
+    },
+    "id": 39176,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 26,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/67/ed/50230_crt_w366S.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/67/ed/50230_crt_w366S.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/67/ed/50230_crt_w366S.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/67/ed/50230_crt_w366S.jpg"
+    },
+    "summary": "鳳雛院学園の社会科教師。\r\n主人公・了と彩のクラス担任でもある。\r\n\r\n生真面目で、仕事には手を抜かない。\r\n考え方は極めて理性的で、教え子からは少々カタブツな印象を持たれている。",
+    "name": "国見麻耶",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "くにみ まや"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "4月26日"
+      },
+      {
+        "key": "身高",
+        "value": "157cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B83/ W57/ H84"
+      },
+      {
+        "key": "星座",
+        "value": "おうし座"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 50230,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 11,
+    "gender": "female",
+    "birth_day": 22,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/e8/44/50231_crt_v5elF.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/e8/44/50231_crt_v5elF.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/e8/44/50231_crt_v5elF.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e8/44/50231_crt_v5elF.jpg"
+    },
+    "summary": "澄光香の同級生であり親友。\r\n学園の教師である国見麻耶は姉にあたる。\r\n\r\nスポーツ万能、好奇心旺盛で活動的な性格。\r\nセクハラ好きの傾向があり、澄光香は格好の標的にされている。",
+    "name": "国見麻里",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "くにみ まり"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "11月22日"
+      },
+      {
+        "key": "身高",
+        "value": "154cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B81/ W55/ H82"
+      },
+      {
+        "key": "星座",
+        "value": "さそり座"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 3
+    },
+    "id": 50231,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/8d/c1/58931_crt_ClZEc.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/8d/c1/58931_crt_ClZEc.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/8d/c1/58931_crt_ClZEc.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8d/c1/58931_crt_ClZEc.jpg"
+    },
+    "summary": "東五橋学校3年B組\r\n学年一の優等生であり、クラスメイトだけでなく先生からの信頼も厚い。\r\n\r\n男子からの人気も高いが、恋人がいるという話は一切ない。放課後に友達と遊んだりする事はほとんどないようで、プライベートは謎に包まれているが、彼女の人気に嫉妬している一部の女子には援助交際の疑惑を持たれてる。\r\n\r\n諒と関係を持つようになってからはまるで自分を傷つけるようにセックスをするが、どこかセックスという行為をバカにしている所があり、優等生とは違う一面があるようだ。 \r\n\r\n「間抜けな顔して腰振って……本当、バカみたい」",
+    "name": "国見佐彩",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "国见佐彩"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "国見 佐彩"
+          },
+          {
+            "k": "纯假名",
+            "v": "くにみ さや"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 8
+    },
+    "id": 58931,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ab/12/61656_crt_ssjLH.jpg?r=1535377984",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ab/12/61656_crt_ssjLH.jpg?r=1535377984",
+      "large": "https://lain.bgm.tv/pic/crt/l/ab/12/61656_crt_ssjLH.jpg?r=1535377984",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ab/12/61656_crt_ssjLH.jpg?r=1535377984"
+    },
+    "summary": "咲太の数少ない友人の1人。 \r\n咲太の周囲の評判を気にせずに友人として咲太に接する。",
+    "name": "国見佑真",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "国见佑真"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "くにみ ゆうま"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kunimi Yuma"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "身高",
+        "value": "178cm"
+      }
+    ],
+    "stat": {
+      "comments": 6,
+      "collects": 6
+    },
+    "id": 61656,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

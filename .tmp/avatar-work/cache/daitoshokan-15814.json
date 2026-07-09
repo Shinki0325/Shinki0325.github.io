@@ -1,0 +1,477 @@
+[
+  {
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 12,
+    "birth_year": null,
+    "blood_type": 3,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/5b/f6/27980_crt_7Fr4T.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/5b/f6/27980_crt_7Fr4T.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/5b/f6/27980_crt_7Fr4T.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5b/f6/27980_crt_7Fr4T.jpg"
+    },
+    "summary": "《大图书馆的牧羊人》及其衍生作品中登场的角色。汐美学园2年生，学生会副会长，作为望月真帆的有才后辈而受宠，也被周围期待成为下一代的学生会长。 有点洁癖且理想主义化，有点不太讲情面。 对望月真帆有着前辈后辈之上的感情，特别对接近她的男生（笕京太郎）露出明显的敌意。\r\n原作中不可攻略。\r\n在Fan Disc《大图书馆的牧羊人 -Dreaming Sheep-》中为可攻略角色。",
+    "name": "多岐川葵",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "多岐川葵"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "多岐川 葵"
+          },
+          {
+            "k": "纯假名",
+            "v": "たきがわ あおい"
+          },
+          {
+            "k": "罗马字",
+            "v": "Takigawa Aoi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "10-12"
+      },
+      {
+        "key": "血型",
+        "value": "AB"
+      },
+      {
+        "key": "身高",
+        "value": "151.9cm"
+      },
+      {
+        "key": "体重",
+        "value": "44.1kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B82(C)/ W57/ H82"
+      }
+    ],
+    "stat": {
+      "comments": 12,
+      "collects": 25
+    },
+    "id": 27980,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c0/11/58530_crt_RjkPj.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c0/11/58530_crt_RjkPj.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c0/11/58530_crt_RjkPj.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c0/11/58530_crt_RjkPj.jpg"
+    },
+    "summary": "現ライバル店舗の娘。特に小鳥遊弾に敵愾心を持つ。\r\n気が強い（っぽい）。口も悪い（っぽい）。\r\n計算高い（風）。いじっぱり。浪花節。\r\n\r\n得意技：フェラ\r\n性格：熱血・苦労人・隠れ感動屋\r\n備考：かつてCombat de Reinsに在籍した\r\n傾向：能力値はS低、Mが高い。体力は高い。",
+    "name": "多岐川基茜",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "多岐川基茜"
+          },
+          {
+            "k": "纯假名",
+            "v": "たきがわもとあかね"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 58530,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/94/c7/68775_crt_N00Mb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/94/c7/68775_crt_N00Mb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/94/c7/68775_crt_N00Mb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/94/c7/68775_crt_N00Mb.jpg"
+    },
+    "summary": "帝諜のエンジニア",
+    "name": "多岐川加奈子",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "多岐川加奈子"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "多岐川 加奈子"
+          },
+          {
+            "k": "纯假名",
+            "v": "たきがわ かなこ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "CV",
+        "value": "うさうさY"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 3
+    },
+    "id": 68775,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": 2,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/12/8d/88709_crt_zg184.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/12/8d/88709_crt_zg184.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/12/8d/88709_crt_zg184.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/12/8d/88709_crt_zg184.jpg"
+    },
+    "summary": "高校二年生の一般的な女の子。明るく前向きで年齢のわりに少し落ち着いている。\r\nどちらかと言えばお姉さんっぽい性格。いざという時は男らしくなる。\r\n\r\n「私は諦めたくない！だって諦めたら……\r\nきっとまう、貴方には出逢えないから」",
+    "name": "多岐川七瀬",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "たきがわ　ななせ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Takigawa Nanase"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "血型",
+        "value": "B"
+      },
+      {
+        "key": "引用来源",
+        "value": "stellatica.ciao.jp/charactor01.html"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 88709,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/09/88/152738_crt_yMJQM.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/09/88/152738_crt_yMJQM.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/09/88/152738_crt_yMJQM.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/09/88/152738_crt_yMJQM.jpg"
+    },
+    "summary": "主人公の３人の幼なじみの中の一人で、お隣さん。\r\n　大人しく秀才肌だが、特に勉強一筋というわけでもなく、いつも主人公には「要領がいいだけ」と言っている。\r\n　人一倍主人公の事を気にかけている。\r\n　本人はどの位自覚があるのかわからないが、傍目には主人公に気があるように見える。",
+    "name": "多岐川乃亜",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Takigawa Noa"
+          },
+          {
+            "k": "纯假名",
+            "v": "たきがわ　のあ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://www.assemblage.co.jp/asm/software/MZ/NS_MZ.html"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 152738,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/66/152744_crt_77Im4.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a6/66/152744_crt_77Im4.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a6/66/152744_crt_77Im4.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/66/152744_crt_77Im4.jpg"
+    },
+    "summary": "主人公の３人の幼なじみの中の一人で、乃亜のお姉さん。\r\n　仲良し４人組の中で一人年上だった美鈴は、当然のように何かと面倒見が良いお姉さんになってしまった。\r\n　今は花屋で働いており付き合いは減っているが、飲みに行こうと良く誘われる。",
+    "name": "多岐川美鈴",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Takigawa Misuzu"
+          },
+          {
+            "k": "纯假名",
+            "v": "たきがわ　みすず"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 152744,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/3b/45/176254_crt_OgXRM.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/3b/45/176254_crt_OgXRM.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/3b/45/176254_crt_OgXRM.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3b/45/176254_crt_OgXRM.jpg"
+    },
+    "summary": "真っ直ぐで真面目な性格。\r\n他人の意見に流されやすい一面もある。\r\n美少女だが、本人は一切鼻にかけることはない。\r\n誰にも優しく接し、明るい性格で皆を笑顔にさせてくれる。",
+    "name": "多岐川千早",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "たきがわ ちはや"
+          }
+        ]
+      },
+      {
+        "key": "サイズ",
+        "value": "T159 / バストGカップ"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 176254,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/7c/b9/205554_crt_04epm.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/7c/b9/205554_crt_04epm.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/7c/b9/205554_crt_04epm.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7c/b9/205554_crt_04epm.jpg"
+    },
+    "summary": "自分の好きなマンガを描いて、ほそぼそと同人活動をしている創作系の女の子。\r\n実はプロとして活躍している漫画家なのだが、編集部や読者の意向と、自分の描きたいものとのギャップに悩んでいるらしい…。",
+    "name": "多岐川翔",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 205554,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/7e/210560_crt_6111W.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/80/7e/210560_crt_6111W.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/80/7e/210560_crt_6111W.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/7e/210560_crt_6111W.jpg"
+    },
+    "summary": "御剣女子高等学校2年2組。OZ所属の魔導士。短気なちびっこ。口は悪いがノリは良い。",
+    "name": "多岐川眠兎",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "多岐川眠兔"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Takigawa Minto"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 210560,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 2,
+    "gender": "male",
+    "birth_day": 10,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/39/6b/121183_crt_2z2Z6.jpg?r=1669897378",
+      "grid": "https://lain.bgm.tv/pic/crt/g/39/6b/121183_crt_2z2Z6.jpg?r=1669897378",
+      "large": "https://lain.bgm.tv/pic/crt/l/39/6b/121183_crt_2z2Z6.jpg?r=1669897378",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/39/6b/121183_crt_2z2Z6.jpg?r=1669897378"
+    },
+    "summary": "「……諦めろ。俺はお前に、関わって欲しくない」\r\n\r\n和哉の両親とともにパーセプションアートの礎を作った、著名なグレーダーの父を持つ。\r\n和哉や純とは幼馴染で、かつては一緒にパーセプションアーティストになろうと約束していた。しかし10年前の事故を境にグレーダー志望に転向。理由も告げずに和哉や純と距離を置くようになった。\r\n\r\nグレーダーとしての実力は確かであり、頭脳明晰、スポーツ万能、と非の打ちどころがない。性格はクール且つドライ。和哉のくり出す懸命なモーションは一見まったく効いておらず、いつもつれなくあしらっている。\r\nその一方で、どこか和哉を気に掛けているようでもあり、本心が見えづらい人物。",
+    "name": "多岐瀬響",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "多岐濑响"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "たきせ きょう"
+          },
+          {
+            "k": "罗马字",
+            "v": "TAKISE KYO"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "2月10日"
+      },
+      {
+        "key": "血型",
+        "value": "B型"
+      },
+      {
+        "key": "身高",
+        "value": "181cm"
+      },
+      {
+        "key": "所属",
+        "value": "グレーダー専攻 3年"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 0
+    },
+    "id": 121183,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

@@ -1,0 +1,511 @@
+[
+  {
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/4b/15/37749_crt_0X56H.jpg?r=1537798873",
+      "grid": "https://lain.bgm.tv/pic/crt/g/4b/15/37749_crt_0X56H.jpg?r=1537798873",
+      "large": "https://lain.bgm.tv/pic/crt/l/4b/15/37749_crt_0X56H.jpg?r=1537798873",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4b/15/37749_crt_0X56H.jpg?r=1537798873"
+    },
+    "summary": "隈元銀行頭取·宝生元忠の一人娘にして、御一夜支店長を任されてもいる現役の学園生。\r\n学園で日々姫の絵の才能に気づき、それを活かせる環境を用意した頼れる先輩でもある。\r\n御一夜市が経済的苦境を脱する道はエアクラ工場誘致しかないと判断し、それを実現するため活発に活動している。\r\n意思が強く、合理性を重視し、現実的。\r\nある面では双鉄と似通った性格のため、立場が正反対でありながらも非常に話が合ってしまう。\r\n「偶然？ なのかな？　あの父だ。 案外と、狙ってたのかも知れないよ？」",
+    "name": "宝生稀咲",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "宝生稀咲"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ほうしょう きさき"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "7月1日"
+      },
+      {
+        "key": "身高",
+        "value": "160cm"
+      },
+      {
+        "key": "体重",
+        "value": "47kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B83/ W58/ H85"
+      }
+    ],
+    "stat": {
+      "comments": 4,
+      "collects": 22
+    },
+    "id": 37749,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/79/40/1306_risda.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/79/40/1306_risda.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/79/40/1306_risda.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/79/40/1306_risda.jpg"
+    },
+    "summary": "原本是一位女高生。因为在藤木的店铺扒窃而与竹虎他们认识，本来对竹虎有些讨厌，但逐渐融洽。在家里常被原是黑社会的父亲虐待，高中也因父亲的恶行而退学。在与竹虎认识的那一天，她的父亲杀了人，美月为了作出承诺而不再吸毒品的父亲顶罪，但父亲再次吸食毒品而想牺牲自己的生命，最後竹虎及时阻止。在父亲被捕後与竹虎一起居住，为竹虎制作盒饭，但她饭菜十分难吃。自称「小虎的老婆」。",
+    "name": "宝生美月",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 1306,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/48/68/11061_crt_3lfIl.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/48/68/11061_crt_3lfIl.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/48/68/11061_crt_3lfIl.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/48/68/11061_crt_3lfIl.jpg"
+    },
+    "summary": "在同性中有着压倒性的美貌。\r\n在学园中没有可以和她对等说话的人，但不知详情的彰是因 「同性的话是不会动摇的！」而装冷静，普通地对待。也因此被聖佳看上了，在很多方面都照顾他起来了。\r\n本家是旧华族，在大正时代就很富有的名家。\r\n偶尔会有不懂世俗的行动，但对他人的指出又会因自尊心高而不满反抗起来，有着这样孩子气的一面。",
+    "name": "宝生聖佳",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "宝生圣佳"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "160cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B84/ W55/ H86"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 8
+    },
+    "id": 11061,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/bf/6c/12812_crt_EN2I5.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/bf/6c/12812_crt_EN2I5.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/bf/6c/12812_crt_EN2I5.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bf/6c/12812_crt_EN2I5.jpg"
+    },
+    "summary": "性格温和，按照自己的步调行事的天然少女。\r\n看上去是很冷静的女生，其实和周围的感觉有点不协调。\r\n拥有非常独特的联想力，有时候还会做出一些脱离常识的无谋事情，让周围担心。\r\n相当严重的路痴。",
+    "name": "宝生雪乃",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "宝生雪乃"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 11
+    },
+    "id": 12812,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/21/aa/22739_crt_3Y1RC.jpg?r=1388327621",
+      "grid": "https://lain.bgm.tv/pic/crt/g/21/aa/22739_crt_3Y1RC.jpg?r=1388327621",
+      "large": "https://lain.bgm.tv/pic/crt/l/21/aa/22739_crt_3Y1RC.jpg?r=1388327621",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/21/aa/22739_crt_3Y1RC.jpg?r=1388327621"
+    },
+    "summary": "在動畫第9集中正式登場。 將悟祖父的兄弟的孫女，即其表妹。 謊稱自己是將悟的妹妹，與瀨利秘書勾結意圖使將悟與妹妹結婚，製造醜聞。本人似乎對將悟懷有非常深的恨意，但原因不明。 約10年前曾以壇埜那百合（だんの なゆり）這個屬於某藝能事務所的藝名，作為天才童角女演員活動著，但在約7年前 卻突然地消失了。 在動畫第9集中租了將悟所住的小公寓的其中一個房間，現在不時會偷聽將悟在公寓房間時所發生的事。 在動畫第12集中被將悟和水谷揭穿真正身份，之後在表明身份後就不見蹤影了。",
+    "name": "宝生柚璃奈",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "宝生柚璃奈"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "寶生柚璃奈"
+          },
+          {
+            "k": "日文名",
+            "v": "宝生 柚璃奈"
+          },
+          {
+            "k": "纯假名",
+            "v": "ほうしょう ゆずりな"
+          },
+          {
+            "k": "罗马字",
+            "v": "Hōshō Yuzurina"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "wiki"
+      }
+    ],
+    "stat": {
+      "comments": 4,
+      "collects": 20
+    },
+    "id": 22739,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 24,
+    "birth_year": 1989,
+    "blood_type": 2,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/64/0b/24753_crt_7eXxa.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/64/0b/24753_crt_7eXxa.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/64/0b/24753_crt_7eXxa.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/64/0b/24753_crt_7eXxa.jpg"
+    },
+    "summary": "生日：1989年5月24日\r\n    血型：B型\r\n    身高：160cm\r\n    年龄：14岁\r\n    星座：双子座[来源请求]\r\n    喜欢的颜色：水色（代表高贵与甜美）\r\n    爱好：购物、唱歌\r\n    专长：唱歌、化妆\r\n    喜欢的科目：音乐\r\n    喜欢的花：蓝铃\r\n    喜欢的男生类型：可爱型\r\n    喜欢的人：第一部海月太郎，第二部白井渚\r\n    喜欢的食物：薄荷巧克力冰激凌\r\n    主唱歌曲：“Ever Blue”、海月太郎为她而作的“水色の旋律”\r\n    变身口号：水蓝珍珠声调(大陆译)/ 浅蓝珍珠歌声(港译)/ 水色珍珠音调(台译)\r\n\r\n    南大西洋国的美人鱼公主，所属珍珠为水色(浅蓝色)。国家被侵占后到人类界躲避。一开始见到露西亚的项链便发觉露西亚是人鱼，所以便跟着露西亚。当初本来不太赞成人鱼和人类谈恋爱，但后来喜欢上海月太郎老师。失恋后又喜欢上白井渚。个性是活力而温柔。常被小波说是“爱情失控列车”、恋爱专家。",
+    "name": "宝生波音",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "宝生波音"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "宝生 波音"
+          },
+          {
+            "k": "纯假名",
+            "v": "ほうしょう はのん"
+          },
+          {
+            "k": "罗马字",
+            "v": "Houshou Honon"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "1989年5月24日"
+      },
+      {
+        "key": "血型",
+        "value": "B"
+      },
+      {
+        "key": "身高",
+        "value": "160cm"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 3
+    },
+    "id": 24753,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 6,
+    "gender": "female",
+    "birth_day": 4,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/18/d9/32399_crt_3P1AU.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/18/d9/32399_crt_3P1AU.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/18/d9/32399_crt_3P1AU.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/18/d9/32399_crt_3P1AU.jpg"
+    },
+    "summary": "宝生家长女。可以从手中召唤出使魔的“蛇”，中一级佛教系驱魔师。京都事务所深部一番队队长。取得到的称号是手骑士·咏唱骑士。24岁。\r\n讨厌着志摩家，尤其是和柔造的关系特别差。",
+    "name": "宝生蝮",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "宝生蝮"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "宝生 蝮"
+          },
+          {
+            "k": "纯假名",
+            "v": "ほうじょう まむし"
+          },
+          {
+            "k": "罗马字",
+            "v": "Houjyou Mamushi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "6月4日"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "身高",
+        "value": "164cm"
+      },
+      {
+        "key": "体重",
+        "value": "48kg"
+      }
+    ],
+    "stat": {
+      "comments": 6,
+      "collects": 9
+    },
+    "id": 32399,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/70/94/38646_crt_CK1re.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/70/94/38646_crt_CK1re.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/70/94/38646_crt_CK1re.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/70/94/38646_crt_CK1re.jpg"
+    },
+    "summary": "小津谷天弦探偵事務所に所属するハッカー兼ガジェット開発者。通称、ノンノ。\r\n見た目とは裏腹に大人相手にも物怖じしない、小生意気な少女。自分の才能に絶対的な自信を持っている。明るい性格のため学校には友達がたくさんいる。\r\n10歳。",
+    "name": "宝生乃々花",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "宝生乃乃花"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "宝生 乃々花"
+          },
+          {
+            "k": "纯假名",
+            "v": "ほうしょう ののか"
+          },
+          {
+            "k": "罗马字",
+            "v": "Hosho Nonoka"
+          },
+          {
+            "k": "昵称",
+            "v": "ノンノ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 5
+    },
+    "id": 38646,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/1a/4d/45001_crt_gSgo0.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/1a/4d/45001_crt_gSgo0.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/1a/4d/45001_crt_gSgo0.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1a/4d/45001_crt_gSgo0.jpg"
+    },
+    "summary": "一流の女優を目指す、世間知らずのお嬢様。\r\n高慢でコミュニケーション能力に難ありだが、演技に関しては真剣。\r\n演技力はあるのだが、苛烈な性格と貧乳が災いして端役しかもらえていない。\r\n巨乳化とひきかえにアイドルになることを持ちかけられるが、はたして……。\r\n「女性を胸だけで判断するな！」",
+    "name": "宝生綾音",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "宝生 綾音"
+          },
+          {
+            "k": "纯假名",
+            "v": "ほうしょう あやね"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 7
+    },
+    "id": 45001,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 9,
+    "gender": "male",
+    "birth_day": 3,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/78/fc/52838_crt_xQUdD.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/78/fc/52838_crt_xQUdD.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/78/fc/52838_crt_xQUdD.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/78/fc/52838_crt_xQUdD.jpg"
+    },
+    "summary": "宝生家三姐妹的父亲",
+    "name": "宝生蟒",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "宝生蟒"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "宝生 蟒"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "9月3日"
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      },
+      {
+        "key": "身高",
+        "value": "181cm"
+      },
+      {
+        "key": "体重",
+        "value": "63kg"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 52838,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

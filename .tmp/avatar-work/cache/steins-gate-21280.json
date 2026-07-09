@@ -1,0 +1,532 @@
+[
+  {
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 27,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ef/dd/12394_crt_tS3sq.jpg?r=1534305475",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ef/dd/12394_crt_tS3sq.jpg?r=1534305475",
+      "large": "https://lain.bgm.tv/pic/crt/l/ef/dd/12394_crt_tS3sq.jpg?r=1534305475",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ef/dd/12394_crt_tS3sq.jpg?r=1534305475"
+    },
+    "summary": "在未来道具研究所所在的一楼「显象管工房」打工的少女。\r\n因为直率的性格(也被说成自来熟)，所以和别人的关系能很快就融洽起来(但不知原因惟独敌视红莉栖) 。\r\n虽然有时元气过剩，时时让人感觉粗枝大叶，但实际相处起来还是个很乐于帮助人的人，也会有很细心的一面。 \r\n不过在与人交往时往往不会相交太深，也不喜欢借助他人的力量，因此即使自己已经陷入困境，除非实在无法忍耐下去，否则也不会向周围的人诉说。\r\n从不提及自己的事，因此让人感觉充满了谜团。　　\r\n\r\n能把杂草虫子之类的东西很好地进行料理，看起来拥有很高的生存能力。\r\n相当擅长的格斗技，有着在实战中也不辱其名的实力，本人则称之为生存技巧。\r\n\r\n　　她生活的中心就是骑自行车，是个狂热的自行车爱好者。\r\n一但提到时就会性格突变，采取积极的行动，甚至还会邀请冈伦和桥田等未来道具研究所成员一起骑车去兜风。\r\n常用Mountain Bike(山地自行车)，简称 MTB。\r\n虽然刚买不久，不过已经完全喜欢上了，常能看见她在「显像管工房」前努力维护自行车的身影。",
+    "name": "阿万音鈴羽",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "阿万音铃羽"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "阿万音 鈴羽"
+          },
+          {
+            "k": "纯假名",
+            "v": "あまね すずは"
+          },
+          {
+            "k": "罗马字",
+            "v": "Amane Suzuha"
+          },
+          {
+            "k": "昵称",
+            "v": "バイト戦士/打工战士"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "09-27"
+      },
+      {
+        "key": "血型",
+        "value": "O 型"
+      },
+      {
+        "key": "身高",
+        "value": "163cm"
+      },
+      {
+        "key": "体重",
+        "value": "51kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B80 W59 H86"
+      },
+      {
+        "key": "常用的东西",
+        "value": "自行车"
+      },
+      {
+        "key": "特技",
+        "value": "与别人关系变好，格斗技"
+      },
+      {
+        "key": "讨厌的东西",
+        "value": "被人命令，红莉栖"
+      },
+      {
+        "key": "喜欢的东西",
+        "value": "骑自行车，珍奇料理，显像管"
+      },
+      {
+        "key": "兴趣",
+        "value": "骑自行车，格斗技"
+      },
+      {
+        "key": "年龄",
+        "value": "18岁"
+      }
+    ],
+    "stat": {
+      "comments": 109,
+      "collects": 854
+    },
+    "id": 12394,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 31,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/8b/77/20136_crt_59I1V.jpg?r=1500878852",
+      "grid": "https://lain.bgm.tv/pic/crt/g/8b/77/20136_crt_59I1V.jpg?r=1500878852",
+      "large": "https://lain.bgm.tv/pic/crt/l/8b/77/20136_crt_59I1V.jpg?r=1500878852",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8b/77/20136_crt_59I1V.jpg?r=1500878852"
+    },
+    "summary": "大学の4回生でコスブレイヤー。ダルとはコミマで知り合って仲良くなる。ダルの未来の嫁で、鈴羽はダルと由季が結婚してもうける子供である。普段はショートカットだが、コスブレ用にウイッグを多数所持しているので、ロングだったりツインテールだったり三つ編みだったりする。性格はボーイッシこ系で、あまり細かいことは気にしない、クヨクヨしないボジティブ思考の持ち主.",
+    "name": "阿万音由季",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "阿万音由季"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "桥田由季"
+          },
+          {
+            "k": "英文名",
+            "v": "Hashida Yuki"
+          },
+          {
+            "k": "日文名",
+            "v": "橋田由季"
+          },
+          {
+            "k": "纯假名",
+            "v": "あまね ゆき"
+          },
+          {
+            "k": "罗马字",
+            "v": "Amane Yuki"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "5月31日"
+      }
+    ],
+    "stat": {
+      "comments": 25,
+      "collects": 63
+    },
+    "id": 20136,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/41/fb/75469_crt_q01wt.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/41/fb/75469_crt_q01wt.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/41/fb/75469_crt_q01wt.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/41/fb/75469_crt_q01wt.jpg"
+    },
+    "summary": "ラヴェニール学園に通学する少年で、はな、さあや、ほまれのクラスメイト。所属する吹奏楽部ではトランペットを担当しており、作中のハイキング回でも演奏を披露したことがある。\r\nはなのことが気になるようであり、パップルの屋台にあったぬいぐるみを全財産使って見事ゲット、彼女にプレゼントする。",
+    "name": "阿万野ひなせ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "あまの ひなせ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Amano Hinase"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 0
+    },
+    "id": 75469,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": 4,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/98/72/186_d9fc22fc182d371c3e9ed316094_vRKtc.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/98/72/186_d9fc22fc182d371c3e9ed316094_vRKtc.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/98/72/186_d9fc22fc182d371c3e9ed316094_vRKtc.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/98/72/186_d9fc22fc182d371c3e9ed316094_vRKtc.jpg"
+    },
+    "summary": "阿野万記\r\n(あの まき)\r\n通称：マキ\r\n(声：比嘉久美子）\r\n中学１年",
+    "name": "阿野万記",
+    "infobox": [
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "血型",
+        "value": "O"
+      },
+      {
+        "key": "身高",
+        "value": "145"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 3
+    },
+    "id": 186,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/21/a6/72668_crt_g7wAk.jpg?r=1572307442",
+      "grid": "https://lain.bgm.tv/pic/crt/g/21/a6/72668_crt_g7wAk.jpg?r=1572307442",
+      "large": "https://lain.bgm.tv/pic/crt/l/21/a6/72668_crt_g7wAk.jpg?r=1572307442",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/21/a6/72668_crt_g7wAk.jpg?r=1572307442"
+    },
+    "summary": "ヴァルストークファミリーの危機に現れた謎の機動兵器を駆る少女。カズマと密接な関係があるとされるが彼女は明かそうとせず、当人は何かと互いに衝突している。",
+    "name": "アリア・アドヴァンス",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "阿利亚・阿德万斯"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "年龄",
+        "value": "16（外表）"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 72668,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/27/11/67502_crt_BsSbs.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/27/11/67502_crt_BsSbs.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/27/11/67502_crt_BsSbs.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/27/11/67502_crt_BsSbs.jpg"
+    },
+    "summary": "麗子の一人娘。",
+    "name": "天吹万梨阿",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "天吹万梨阿"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "雾岛万梨阿"
+          },
+          {
+            "k": "纯假名",
+            "v": "あまぶき まりあ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Amabuki Maria"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 5,
+      "collects": 11
+    },
+    "id": 67502,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/6a/fb/131493_crt_v71L7.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/6a/fb/131493_crt_v71L7.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/6a/fb/131493_crt_v71L7.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6a/fb/131493_crt_v71L7.jpg"
+    },
+    "summary": "主人公の隣に住む人妻。\r\n明るく包容力があり、悪戯な面やうっかり屋な面もある。\r\n世話焼きで困っている人を放っておけないタイプ。\r\n近所で雑貨屋を夫とともに営んでいる。\r\n男好きのする身体つきで、色気が溢れている。",
+    "name": "高岡万梨阿",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "高岡 万梨阿"
+          },
+          {
+            "k": "纯假名",
+            "v": "タカオカ マリア"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 1
+    },
+    "id": 131493,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c2/cb/132327_crt_2ioOZ.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c2/cb/132327_crt_2ioOZ.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c2/cb/132327_crt_2ioOZ.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c2/cb/132327_crt_2ioOZ.jpg"
+    },
+    "summary": "殺し屋「阿牙倉」家の家長。",
+    "name": "阿牙倉マジリ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "阿牙仓万姬理"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "阿牙倉 マジリ"
+          },
+          {
+            "k": "纯假名",
+            "v": "あがくら マジリ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Agakura Majiri"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 1
+    },
+    "id": 132327,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 17,
+    "birth_year": 1997,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/74/6c/42324_crt_738Xj.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/74/6c/42324_crt_738Xj.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/74/6c/42324_crt_738Xj.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/74/6c/42324_crt_738Xj.jpg"
+    },
+    "summary": "刚刚来到莫斯科的乡下女孩。",
+    "name": "Анастасия Иванова",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "阿纳斯塔西娅・伊万诺娃"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Anastasia Ivanova"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "1997年4月17日"
+      },
+      {
+        "key": "体重",
+        "value": "46kg"
+      },
+      {
+        "key": "BWH",
+        "value": "60-45-66"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 42324,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/4f/8b/3864_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/4f/8b/3864_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/4f/8b/3864_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4f/8b/3864_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "ジャン・ヴァルジャン",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "冉·阿让"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "尚万强"
+          },
+          {
+            "k": "纯假名",
+            "v": "ジャン・ヴァルジャン"
+          },
+          {
+            "k": "罗马字",
+            "v": "Jean Valjean"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 9
+    },
+    "id": 3864,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

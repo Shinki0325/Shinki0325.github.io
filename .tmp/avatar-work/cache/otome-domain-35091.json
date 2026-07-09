@@ -1,0 +1,514 @@
+[
+  {
+    "birth_mon": 9,
+    "gender": "female",
+    "birth_day": 25,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/32/67/55346_crt_POOsZ.jpg?r=1498365755",
+      "grid": "https://lain.bgm.tv/pic/crt/g/32/67/55346_crt_POOsZ.jpg?r=1498365755",
+      "large": "https://lain.bgm.tv/pic/crt/l/32/67/55346_crt_POOsZ.jpg?r=1498365755",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/32/67/55346_crt_POOsZ.jpg?r=1498365755"
+    },
+    "summary": "在教室坐凑隔壁的同级生。开朗又直爽，初次见面就很友善的女孩子。\r\n做事认真确实，也擅长照顾人，跟大部分人都能马上打好关系。\r\n与柚子是好朋友，因为受到对方邀请，而成为新闻社的一员。\r\n\r\n虽然上的是大小姐学校，但其实老家只是一般百姓，学费是勉强凑出来的。\r\n原因是父母想让个性大大咧咧的她学会礼节，才把她送进铃女就读。\r\n但是很遗憾，她的成绩是吊车尾等级，父母只能叹气。然而她本人并不怎么在意。",
+    "name": "皆見美結",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "皆见美结"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "皆見 美結"
+          },
+          {
+            "k": "纯假名",
+            "v": "みなみ みゆ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Minami Miyu"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "9月25日（天秤座）"
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      },
+      {
+        "key": "身高",
+        "value": "154cm"
+      },
+      {
+        "key": "BWH",
+        "value": "77 / 59 / 83"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 9
+    },
+    "id": 55346,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c0/9e/58265_crt_2o4P5.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c0/9e/58265_crt_2o4P5.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c0/9e/58265_crt_2o4P5.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c0/9e/58265_crt_2o4P5.jpg"
+    },
+    "summary": "2-C所属で、柚南のクラスメイト。\r\nお嬢様然とした礼儀正しい性格、見た目の麗しさも相まって学園のアイドルといった物腰。\r\nクラスメイトの柚南が学食を盛り上げようとしているのを知って、度々訪ねてくる。\r\n\r\n料理評論家の間ではその名は有名で、味見をした瞬間、周囲にそのイメージを視覚にして伝えるという珍しい体質の持ち主。\r\nその瞬間は周囲の人間には彼女が女神のような姿に見えることから、業界では “神の味覚審判（ネメシス）” と呼ばれている。\r\n……が、何故か夜彦には食事を始めた途端、淫靡な雰囲気をまとっているようにしか見えないため、大変目のやり場に困る存在。",
+    "name": "皆見瑞希",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "皆見 瑞希"
+          },
+          {
+            "k": "纯假名",
+            "v": "みなみる みずき"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "CV",
+        "value": "加乃みるく"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 58265,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ff/c6/59078_crt_lQKPt.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ff/c6/59078_crt_lQKPt.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ff/c6/59078_crt_lQKPt.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ff/c6/59078_crt_lQKPt.jpg"
+    },
+    "summary": "主人公の義母。小さな喫茶店「minaminami」を経営している。\r\n悟流の父親、智佐都の夫は居なくなってしまったが、その面影を感じてか否かそのまま悟流の世話を続けてきた。\r\n温和でやさしい女性で、血の繋がらない主人公の事をも実の子供のように可愛がっている。",
+    "name": "皆見智佐都",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "皆見 智佐都"
+          },
+          {
+            "k": "纯假名",
+            "v": "みなみ ちさと"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 59078,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/12/5b/66301_crt_Qs4kq.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/12/5b/66301_crt_Qs4kq.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/12/5b/66301_crt_Qs4kq.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/12/5b/66301_crt_Qs4kq.jpg"
+    },
+    "summary": "主人公の一つ年下の後輩。元気いっぱいで明るい性格。しかし、明るい反面弄られやすく、良くも悪くも寮のムードメーカー的な存在。猪突猛進で寮内ではよくトラブルを起こすが、優しい性格のためみんなからの信頼は厚い。子供が大好きで、将来は保育師を目指している。\r\n「先輩すごいです！！完璧です！！でも下ネタはノーサンキューです！」",
+    "name": "皆見真央",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "皆見 真央"
+          },
+          {
+            "k": "纯假名",
+            "v": "みなみ まお"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 9,
+      "collects": 47
+    },
+    "id": 66301,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ab/e4/156084_crt_6099g.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ab/e4/156084_crt_6099g.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ab/e4/156084_crt_6099g.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ab/e4/156084_crt_6099g.jpg"
+    },
+    "summary": "恥ずかしがり屋のコミュ障かつゲームオタクという典型的な陰キャ女子高生。\r\nネットだと結構明るく、割りと話せるようになる。正に内弁慶。\r\n\r\n中島健太とは趣味が合う為、数少ない異性の友人となっている。\r\nオタクらしい趣味は大体抑えているが、特に好きなのがゲームである。\r\n熱中して遊ぶタイプで、ハマると練習量と合わせて上達が凄まじくなる。\r\n特に今やっているFPSではソロで高ティアに到達する程の実力者。\r\n外には出ないが、歌が大好きなので唯一カラオケだけにはよく行く。",
+    "name": "皆見彩夏",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "皆见彩夏"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "皆見彩夏"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 156084,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 12,
+    "gender": "male",
+    "birth_day": 27,
+    "birth_year": 2131,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/75/22/1735_crt_VnNn3.jpg?r=1672722818",
+      "grid": "https://lain.bgm.tv/pic/crt/g/75/22/1735_crt_VnNn3.jpg?r=1672722818",
+      "large": "https://lain.bgm.tv/pic/crt/l/75/22/1735_crt_VnNn3.jpg?r=1672722818",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/75/22/1735_crt_VnNn3.jpg?r=1672722818"
+    },
+    "summary": "一骑的挚友，皆城公藏与鞘的孩子。妹妹·乙姬沉睡于岛中的“女神的岩窟”中。\r\n与愉快成长的同龄人相比，自小就知晓着岛的真相与自身的责任。因为某个“事故”，在左眼处留下了一道伤疤。\r\n担任着于齐格飞系统中的与驾驶者们的指挥管理。",
+    "name": "皆城総士",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "皆城总士"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "皆城 総士"
+          },
+          {
+            "k": "纯假名",
+            "v": "みなしろ そうし"
+          },
+          {
+            "k": "罗马字",
+            "v": "Minashiro Soushi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "2131年12月27日"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "身高",
+        "value": "173cm"
+      },
+      {
+        "key": "体重",
+        "value": "61kg"
+      }
+    ],
+    "stat": {
+      "comments": 13,
+      "collects": 50
+    },
+    "id": 1735,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 5,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/89/e4/1742_crt_d72Aa.jpg?r=1419779486",
+      "grid": "https://lain.bgm.tv/pic/crt/g/89/e4/1742_crt_d72Aa.jpg?r=1419779486",
+      "large": "https://lain.bgm.tv/pic/crt/l/89/e4/1742_crt_d72Aa.jpg?r=1419779486",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/89/e4/1742_crt_d72Aa.jpg?r=1419779486"
+    },
+    "summary": "",
+    "name": "皆城乙姫",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "皆城乙姬"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "みなしろ つばき"
+          },
+          {
+            "k": "罗马字",
+            "v": "Minashiro Tsubaki"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "3月5日"
+      }
+    ],
+    "stat": {
+      "comments": 6,
+      "collects": 32
+    },
+    "id": 1742,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 1,
+    "gender": "female",
+    "birth_day": 11,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/1b/76/8610_crt_anidb.jpg?r=1389405165",
+      "grid": "https://lain.bgm.tv/pic/crt/g/1b/76/8610_crt_anidb.jpg?r=1389405165",
+      "large": "https://lain.bgm.tv/pic/crt/l/1b/76/8610_crt_anidb.jpg?r=1389405165",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1b/76/8610_crt_anidb.jpg?r=1389405165"
+    },
+    "summary": "この作品の主人公。白鴎学園高校1年生の15歳、1月11日生まれ。明るく元気な少女。鴻野唯（後述）の中学時代の後輩で、第1期のLemon Angelでメインヴォーカル・アンのモデルとなった。第1期のLemon Angel解散後、小暮に注目され彼の薦めによって応募。合格後、第2期Lemon Angelのメインヴォーカルの座を掴む。歌唱力はみると同等がそれ以上の才能を持つ。",
+    "name": "皆口智",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "皆口智"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "皆口 智"
+          },
+          {
+            "k": "纯假名",
+            "v": "みなぐち とも"
+          },
+          {
+            "k": "罗马字",
+            "v": "Minaguchi Tomo"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "1月11日"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 1
+    },
+    "id": 8610,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/84/66/10119_crt_anidb.jpg?r=1414888418",
+      "grid": "https://lain.bgm.tv/pic/crt/g/84/66/10119_crt_anidb.jpg?r=1414888418",
+      "large": "https://lain.bgm.tv/pic/crt/l/84/66/10119_crt_anidb.jpg?r=1414888418",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/84/66/10119_crt_anidb.jpg?r=1414888418"
+    },
+    "summary": "",
+    "name": "皆川瞳美",
+    "infobox": [
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "みながわ ひとみ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Minagawa Hitomi"
+          },
+          {
+            "k": "日文名",
+            "v": "皆川瞳美"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 5
+    },
+    "id": 10119,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ee/1f/10158_crt_616AA.jpg?r=1554250191",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ee/1f/10158_crt_616AA.jpg?r=1554250191",
+      "large": "https://lain.bgm.tv/pic/crt/l/ee/1f/10158_crt_616AA.jpg?r=1554250191",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ee/1f/10158_crt_616AA.jpg?r=1554250191"
+    },
+    "summary": "",
+    "name": "皆川素子",
+    "infobox": [
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "みながわ もとこ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Minagawa Motoko"
+          },
+          {
+            "k": "日文名",
+            "v": "皆川素子"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 7
+    },
+    "id": 10158,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

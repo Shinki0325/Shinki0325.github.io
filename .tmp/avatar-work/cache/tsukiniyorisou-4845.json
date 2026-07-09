@@ -1,0 +1,617 @@
+[
+  {
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 27,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/91/5c/19926_crt_D7g4O.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/91/5c/19926_crt_D7g4O.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/91/5c/19926_crt_D7g4O.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/91/5c/19926_crt_D7g4O.jpg"
+    },
+    "summary": "東京都出身。朝日がメイドとして仕える主人。フィリア女学院1年生。\r\n凋落した名門・桜小路家の末女（兄・姉が一人ずつ）。生まれたときから白銀の髪、緋色の瞳、透けるような白肌である。そのため直射日光に弱く、外を歩くときは日傘等が欠かせない（作中では特に言及されていないが、これらの特徴からアルビノと思われる）。先天性のその容姿から父親や一族からは疎まれ、小さいころは軟禁状態に近い扱いを受け、現在は実家とほぼ絶縁し、港区にある桜屋敷に一人暮らしである。桜屋敷はもともと桜小路家の別荘であったが、没落して手放すところを相場より高い言い値で買い取った経緯がある。\r\n常に冷静沈着で、才能が豊かな自信家。桜小路家の教育によりあえて偉そうにふるまい、とげのある喋りをしている。しかし威張り散らすわけでもなく、優しい心を持っており、その本質を知る人々からは慕われている。ただしサドっ気が強く、可愛い相手を虐めることが好きであり、朝日やユルシュールは時々酷い目に遭っている。性格が衣遠と似通った部分があるため、りそなから「上の兄（衣遠）の女版」とまで言われた事がある。\r\n株に手を出して大当たりし、その資金を元手に起業し、開発したソーシャルアプリケーションも大成功となった実業家。その資産は桜小路家当主である父のものを遥かに上回るまでになった。会社を部下に任せ、やりたかったデザインの勉強をするためにフィリア女学院に入学する。朝日はそのお付きのメイドとして採用した。\r\nデザインに関して天才的なセンスを持ち、何事にも厳しい衣遠も認めるほどだが、型紙や立体裁断は苦手なため朝日に任せている。\r\n名前の由来はさくら銀行より",
+    "name": "桜小路ルナ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "樱小路露娜"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "さくらこうじ るな"
+          },
+          {
+            "k": "罗马字",
+            "v": "Sakurakouji Runa"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "3月27日"
+      },
+      {
+        "key": "身高",
+        "value": "145cm"
+      },
+      {
+        "key": "BWH",
+        "value": "72/49/74"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://www.project-navel.com/tsukiniyorisou/index.html"
+      }
+    ],
+    "stat": {
+      "comments": 164,
+      "collects": 767
+    },
+    "id": 19926,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 27,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/06/98/26261_crt_lOhhh.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/06/98/26261_crt_lOhhh.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/06/98/26261_crt_lOhhh.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/06/98/26261_crt_lOhhh.jpg"
+    },
+    "summary": "主人公と父母を同じくする実の妹。\r\n兄と違い、一般的な日本人の容姿で生まれたことで、遠慮の気持ちを抱いている。\r\n上記の理由から、兄の力となることを生き甲斐にし、彼の目的のためなら協力を惜しまない。その愛情は献身に近いものであり、恋愛感情とは異なる。\r\n主人公が女装して入学するに当たって、その意思を尊重して協力者となる。\r\n女装して「朝陽」となった主人公に一目惚れして恋愛感情を抱く。朝陽を「お姉様」と呼び、本人が戶惑うほど過剩に慕うようになる。\r\n主人公の暮らすマンション「桜の園」の最上階に部屋を持つ、「桜の園」の大家は表向きアスト（管理業務は別會社へ委託）。",
+    "name": "桜小路アトレ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "樱小路亚十礼"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Atre Sakurakouji"
+          },
+          {
+            "k": "日文名",
+            "v": "桜小路 アトレ"
+          },
+          {
+            "k": "纯假名",
+            "v": "さくらこうじ あとれ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Sakurakouji Atore"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "3月27日"
+      },
+      {
+        "key": "身高",
+        "value": "146cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B78/W55/H80"
+      }
+    ],
+    "stat": {
+      "comments": 28,
+      "collects": 59
+    },
+    "id": 26261,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 10,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/07/f7/110077_crt_7VWi5.jpg?r=1651136568",
+      "grid": "https://lain.bgm.tv/pic/crt/g/07/f7/110077_crt_7VWi5.jpg?r=1651136568",
+      "large": "https://lain.bgm.tv/pic/crt/l/07/f7/110077_crt_7VWi5.jpg?r=1651136568",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/07/f7/110077_crt_7VWi5.jpg?r=1651136568"
+    },
+    "summary": "大らかで明るく人当たりも柔らかな、おっとりした、という表現がよく合う女の子。\r\n一人東京の高校に出てくると決心し、結ヶ丘女子に入学してきた。子供の頃から運動も勉強も苦手だったがスクールアイドルと出会い、自分を変えようと頑張っている。\r\n\r\nお、お初にお目にかかるっす。桜小路きな子と言うっす。北の大地北海道から、東京の結ヶ丘女子に入学してきたっす。スクールアイドルなんて華やかなもの、きな子には無理って思ってたっすけど、先輩たちのキラキラした姿を見て自分も頑張ってみようって思ったっす。特技は特にないっす。運動も苦手っすし、勉強も普通っすし……あ、ただ、動物の気持ちが分かるのは凄いってよく言われるっす。それくらいかなあ。\r\n右も左も分からない初めての大都会で、不安もいっぱいのきな子っすけど、先輩たちみたいな憧れのスクールアイドルになるために頑張るっす。よろしくお願いします。",
+    "name": "桜小路きな子",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "樱小路希奈子"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "桜小路 きな子"
+          },
+          {
+            "k": "纯假名",
+            "v": "さくらこうじ きなこ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Sakurakoji Kinako"
+          },
+          {
+            "k": "昵称",
+            "v": "きなきな"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "4月10日"
+      },
+      {
+        "key": "血型",
+        "value": "O型"
+      },
+      {
+        "key": "身高",
+        "value": "159cm"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://www.lovelive-anime.jp/yuigaoka/member"
+      },
+      {
+        "key": "趣味",
+        "value": "家庭菜園、パン作り"
+      },
+      {
+        "key": "特技",
+        "value": "動物と話せる。"
+      },
+      {
+        "key": "好きな食べ物",
+        "value": "じゃがいも、かぼちゃ、とうもろこし"
+      },
+      {
+        "key": "好きな教科",
+        "value": "生物、地理"
+      },
+      {
+        "key": "好きな動物",
+        "value": "キタキツネ"
+      },
+      {
+        "key": "分组",
+        "value": "5yncri5e!"
+      }
+    ],
+    "stat": {
+      "comments": 14,
+      "collects": 24
+    },
+    "id": 110077,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/12/b7/201584_crt_HX53F.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/12/b7/201584_crt_HX53F.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/12/b7/201584_crt_HX53F.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/12/b7/201584_crt_HX53F.jpg"
+    },
+    "summary": "リゼットの教育係だが、リゼットに押され軍師的な立場で姉攻撃に参加。\r\n幸が薄い。\r\nでも、強くて賢いんです。\r\n武器は刀。\r\nアリエルという名前を持っているところから、イリエル、ウリエル、エリエルなる姉妹がいるに違いない。\r\n\r\n\r\n\r\n妹専用、万能ファンネル。\r\n炊事洗濯裁縫から、戦闘、政治までなんでもこなす。",
+    "name": "アリエル・桜小路",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Ariel Sakurakouj"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 201584,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/bd/27/11165_crt_sORby.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/bd/27/11165_crt_sORby.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/bd/27/11165_crt_sORby.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bd/27/11165_crt_sORby.jpg"
+    },
+    "summary": "ヒロイン解説\r\n　遠い親戚である主人公を「お兄様」と呼び慕っている。\r\n　性格は地味で引っ込み思案だが、お淑やかで心優しい性格。\r\n　双子の姉である亜梨主には外見から性格まで、あらゆる面においてコンプレックスを持っているが、その優しい性格から姉を憎みきれない。\r\n　むしろ頼れるところもあり、基本的には姉を尊敬している。\r\n\r\nストーリー\r\n　外向的で派手な双子の姉・亜梨主の存在に隠れるように静かに生活してきた慧梨主。\r\n　ある日、遠縁の親戚にあたる主人公が学園に転入してくる。主人公とは子供の頃に顔をあわせただけだったが、久しぶりに見る彼は、立派な男性に成長していた。\r\n　姉を「お姉様」と呼ぶのに対し、主人公を「お兄様」と呼び、親愛の情を深めていく慧梨主。過去の苦い経験によるトラウマと現在抱く恋心の板ばさみに苦しむ慧梨主は、亜梨主に相談。姉の「あたしは彼には興味がない」「がんばりなさい」という言葉に励まされた慧梨主は、過去の自分への決別の意思を固め、一大決心をして主人公に告白するのだった……。",
+    "name": "桜ノ宮慧梨主",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "樱之宮慧梨主"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "桜ノ宮慧梨主"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "152cm"
+      },
+      {
+        "key": "BWH",
+        "value": "80cm/55cm/81cm"
+      },
+      {
+        "key": "髪型",
+        "value": "セミロング"
+      },
+      {
+        "key": "服装",
+        "value": "学園制服"
+      },
+      {
+        "key": "性格",
+        "value": "大人しく優しい、妹系少女"
+      },
+      {
+        "key": "ヤンデレタイプ",
+        "value": "恋敵排除型"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 11165,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/3b/fd/11168_crt_1qSES.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/3b/fd/11168_crt_1qSES.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/3b/fd/11168_crt_1qSES.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3b/fd/11168_crt_1qSES.jpg"
+    },
+    "summary": "ヒロイン解説\r\n　慧梨主の双子の姉。明るく外向的で、妹の慧梨主とは、あらゆる意味で異なる性格。\r\n　内向的で人見知りの激しい妹を小馬鹿にするような言動も見受けられるが、妹をいじめたりする輩にはきっちり報復する。\r\n　主人公に対しては気に入らないような態度を取り、理不尽な言いがかりによる口喧嘩が絶えないが、周りから見ると立派な夫婦喧嘩に見える。",
+    "name": "桜ノ宮亜梨主",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "樱之宮亚梨主"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "桜ノ宮亜梨主"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "154cm"
+      },
+      {
+        "key": "BWH",
+        "value": "84cm/57cm/82cm"
+      },
+      {
+        "key": "髪型",
+        "value": "ポニーテール"
+      },
+      {
+        "key": "服装",
+        "value": "学園制服"
+      },
+      {
+        "key": "性格",
+        "value": "明るく外向的な人気者、ツンデレ"
+      },
+      {
+        "key": "ヤンデレタイプ",
+        "value": "???型"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 11168,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 30,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/60/0d/20809_crt_H6AL3.jpg?r=1375525283",
+      "grid": "https://lain.bgm.tv/pic/crt/g/60/0d/20809_crt_H6AL3.jpg?r=1375525283",
+      "large": "https://lain.bgm.tv/pic/crt/l/60/0d/20809_crt_H6AL3.jpg?r=1375525283",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/60/0d/20809_crt_H6AL3.jpg?r=1375525283"
+    },
+    "summary": "引っ込み思案な姫月の親友。\r\n昔は主人公ともよく遊んでいたので幼馴染（?）的な存在。\r\n黒髪□ングにクマのへアピンが\r\nトレードマークの清楚系美少女。\r\n姫月の影に隠れてしまってあまり目立\r\n男子学生からの隠れ人気は高い。",
+    "name": "桜ほのか",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "樱穗乃香"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "10月30日"
+      },
+      {
+        "key": "血型",
+        "value": "O型"
+      },
+      {
+        "key": "身高",
+        "value": "159"
+      },
+      {
+        "key": "罩杯",
+        "value": "D"
+      },
+      {
+        "key": "BWH",
+        "value": "B85 W56"
+      }
+    ],
+    "stat": {
+      "comments": 4,
+      "collects": 21
+    },
+    "id": 20809,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 4,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/28/35/22186_crt_w152w.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/28/35/22186_crt_w152w.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/28/35/22186_crt_w152w.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/28/35/22186_crt_w152w.jpg"
+    },
+    "summary": "海邦高校1年生。洋菓子職人を目指す少女。一時は夢を諦めようとするが、今は離婚して別居している母の愛に教えられ、夢を取り戻していく。天然ボケな性格で、彼女のボケぶりはくるみの漫画のネタに使われている。",
+    "name": "桜瀬ちなみ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "樱濑千奈美"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "桜瀬ちなみ"
+          },
+          {
+            "k": "纯假名",
+            "v": "おうせ ちなみ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "7月4日"
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      },
+      {
+        "key": "身高",
+        "value": "１５６釐米"
+      },
+      {
+        "key": "体重",
+        "value": "４２千克"
+      },
+      {
+        "key": "BWH",
+        "value": "87/56/86"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 9
+    },
+    "id": 22186,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/6a/d1/23678_crt_66eRd.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/6a/d1/23678_crt_66eRd.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/6a/d1/23678_crt_66eRd.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6a/d1/23678_crt_66eRd.jpg"
+    },
+    "summary": "",
+    "name": "桜ひめき",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "桜ひめき"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 2
+    },
+    "id": 23678,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 9,
+    "gender": "male",
+    "birth_day": 15,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/34/aa/26644_crt_Mg2PP.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/34/aa/26644_crt_Mg2PP.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/34/aa/26644_crt_Mg2PP.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/34/aa/26644_crt_Mg2PP.jpg"
+    },
+    "summary": "もっとも神に近い女子力を持つ少女と言われ、最近テレビでも目立つようになった売れっ子アイドル。\r\n女子力を高めようと花凜が弟子入りするほどだが、なぜか主人公のバニーセンサーには引っ掛からない。\r\n\r\n「先生が望んでくれるなら…… ボク、なんでもできる気がするのっ」",
+    "name": "桜橋ユリア",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "桜橋 ユリア"
+          },
+          {
+            "k": "纯假名",
+            "v": "さくらばし ゆりあ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "9月15日"
+      },
+      {
+        "key": "血型",
+        "value": "B型"
+      },
+      {
+        "key": "身高",
+        "value": "160cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B75（C？）/ W50/ H79"
+      },
+      {
+        "key": "性癖",
+        "value": "苛められれれば苛められるほど感じてしまうMっ子体質。"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 3
+    },
+    "id": 26644,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

@@ -1,0 +1,477 @@
+[
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/88/ef/2031_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/88/ef/2031_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/88/ef/2031_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/88/ef/2031_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "永山朱鷺",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "永山朱鹭"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "永山朱鷺"
+          },
+          {
+            "k": "罗马字",
+            "v": "Nagayama Toki"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 2031,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/1c/49/58053_crt_OJ5Q7.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/1c/49/58053_crt_OJ5Q7.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/1c/49/58053_crt_OJ5Q7.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1c/49/58053_crt_OJ5Q7.jpg"
+    },
+    "summary": "明星学園の数学教師。教え子とためぐちのフランクな先生。\r\n明星学園のＯＧで、智史の１年先輩で学園自治会のメンバーだった。\r\nそのころ智史に想いを寄せていたこともある。",
+    "name": "永山梓",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "永山 梓"
+          },
+          {
+            "k": "纯假名",
+            "v": "ながやまあずさ"
+          }
+        ]
+      },
+      {
+        "key": "CV",
+        "value": "南雲涼"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 3
+    },
+    "id": 58053,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "",
+      "grid": "",
+      "large": "",
+      "medium": ""
+    },
+    "summary": "",
+    "name": "永山顕治",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Nagayama Kenji"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 195804,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/90/84/106370_crt_BHzPe.jpg?r=1644995957",
+      "grid": "https://lain.bgm.tv/pic/crt/g/90/84/106370_crt_BHzPe.jpg?r=1644995957",
+      "large": "https://lain.bgm.tv/pic/crt/l/90/84/106370_crt_BHzPe.jpg?r=1644995957",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/90/84/106370_crt_BHzPe.jpg?r=1644995957"
+    },
+    "summary": "路面店の販売員で由真の先輩。美人で眼鏡をかけており、ストレートヘアーの肩から下を縦ロールにしている。誰に対しても素でわがままを言える。あゆ姫と称されるネットアイドルにして同人作家。入社当時には出る杭として周囲から叩かれたが、雰囲気を察することのない薫から「似合う」「可愛い」と応援されることで救われる。",
+    "name": "永山あゆみ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "永山亚佑美"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ながやま あゆみ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Nagayama Ayumi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 106370,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 30,
+    "birth_year": null,
+    "blood_type": 4,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/7f/96/42441_crt_YxyZx.jpg?r=1465669896",
+      "grid": "https://lain.bgm.tv/pic/crt/g/7f/96/42441_crt_YxyZx.jpg?r=1465669896",
+      "large": "https://lain.bgm.tv/pic/crt/l/7f/96/42441_crt_YxyZx.jpg?r=1465669896",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7f/96/42441_crt_YxyZx.jpg?r=1465669896"
+    },
+    "summary": "Klab旗下的手机音乐节奏社交卡牌游戏《LoveLive! 学园偶像祭》登场人物。\r\n\r\n经常在母亲经营的托儿所里帮忙，自称“大家的姐姐”。",
+    "name": "永山みなみ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "永山南"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "永山 みなみ"
+          },
+          {
+            "k": "纯假名",
+            "v": "ながやまみなみ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Nagayama Minami"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "8月30日"
+      },
+      {
+        "key": "血型",
+        "value": "O"
+      },
+      {
+        "key": "身高",
+        "value": "163cm"
+      },
+      {
+        "key": "BWH",
+        "value": "85/60/83"
+      },
+      {
+        "key": "学校",
+        "value": "青藍高校"
+      },
+      {
+        "key": "学年",
+        "value": "3年级"
+      },
+      {
+        "key": "兴趣",
+        "value": "在托儿所帮忙"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 42441,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ea/69/4676_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ea/69/4676_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ea/69/4676_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ea/69/4676_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "永嶺隆人",
+    "infobox": [
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Nagamine Ryuujin"
+          },
+          {
+            "k": "日文名",
+            "v": "永嶺隆人"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 4676,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 7,
+    "gender": "male",
+    "birth_day": 6,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/3e/01/7012_crt_7zRT7.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/3e/01/7012_crt_7zRT7.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/3e/01/7012_crt_7zRT7.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3e/01/7012_crt_7zRT7.jpg"
+    },
+    "summary": "",
+    "name": "永泉",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "永泉"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "永泉"
+          },
+          {
+            "k": "罗马字",
+            "v": "Eisen"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "????-07-06"
+      },
+      {
+        "key": "身高",
+        "value": "166"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 11
+    },
+    "id": 7012,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/6e/17/11193_crt_RIHr1.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/6e/17/11193_crt_RIHr1.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/6e/17/11193_crt_RIHr1.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6e/17/11193_crt_RIHr1.jpg"
+    },
+    "summary": "",
+    "name": "永井篤",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "永井笃"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "永井 篤"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 11193,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/4b/b4/11339_crt_47n7Q.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/4b/b4/11339_crt_47n7Q.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/4b/b4/11339_crt_47n7Q.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4b/b4/11339_crt_47n7Q.jpg"
+    },
+    "summary": "学園の三年生。\r\n　主人公宅のお向かいに住んでいる一つ年上のお姉さん。\r\n\r\n　性格は粗忽で大ざっぱでハイテンション。主人公に対して何かとちょっかいを出してくるのだが、それも半分いじめに近い雰囲気。\r\n　豪快と表現したくなる言動で、幼い頃から主人公のことを翻弄してきた天敵。恐怖の幼児体験を刷り込まれているので、成長した主人公も彼女にだけは逆らえないでいる。\r\n\r\n　両親は現在海外出張中で、最近はちょっと寂しい思いをしている――わけもなく、一人暮らしをいいことにやりたい放題の毎日を過ごしている。",
+    "name": "永村冴香",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ながむら さえか"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 11339,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/dc/65/11501_crt_X44mg.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/dc/65/11501_crt_X44mg.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/dc/65/11501_crt_X44mg.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dc/65/11501_crt_X44mg.jpg"
+    },
+    "summary": "永远神剑：第六位　『清净』\r\n守护神兽：次元鲸鱼「ものべー」\r\n\r\n一心一意想着望的青梅竹马，且是同一天出生的隔壁邻居。\r\n虽尽力对抗了斑鳩沙月这位如同学园的麦当娜般存在的学姐，但是自己不太有主见。\r\n稍稍有些认生，但基本属于明朗温柔的性格。\r\n兴趣是料理和写日记。",
+    "name": "永峰希美",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "永峰希美"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 7
+    },
+    "id": 11501,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

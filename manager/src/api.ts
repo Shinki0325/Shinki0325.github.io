@@ -1,5 +1,6 @@
 import type {
   AssetItem,
+  AssetImageCrop,
   AssetListResponse,
   BirthdayAvatarCrop,
   BirthdayCharacterDraft,
@@ -10,6 +11,8 @@ import type {
   ContentEntry,
   ContentKind,
   ContentListResponse,
+  ImageHostStatus,
+  MusicTrackDraft,
   PageConfigFile,
   PageConfigName,
   SaveContentPayload,
@@ -107,6 +110,8 @@ export const getAssets = async () => {
   return response.items;
 };
 
+export const getImageHostStatus = () => request<ImageHostStatus>("/api/image-host/status");
+
 export const copyAsset = async (sourcePath: string, targetDir?: string) => {
   const response = await fetch("/api/assets/copy", {
     method: "POST",
@@ -117,6 +122,43 @@ export const copyAsset = async (sourcePath: string, targetDir?: string) => {
   });
 
   return (await readResponse<{ item: AssetItem }>(response)).item;
+};
+
+export const uploadAssetImage = async (dataUrl: string, targetDir: string, filename: string) => {
+  const response = await postJson<{ item: AssetItem }>("/api/assets/image/upload", {
+    dataUrl,
+    targetDir,
+    filename
+  });
+  return response.item;
+};
+
+export const cropAssetImage = async (
+  sourceUrl: string,
+  targetDir: string,
+  filename: string,
+  crop: AssetImageCrop,
+  outputWidth: number,
+  outputHeight: number
+) => {
+  const response = await postJson<{ item: AssetItem }>("/api/assets/image/crop", {
+    sourceUrl,
+    targetDir,
+    filename,
+    crop,
+    outputWidth,
+    outputHeight
+  });
+  return response.item;
+};
+
+export const fetchCloudMusicTrack = async (id: string, fallbackCover?: string) => {
+  const params = new URLSearchParams({ id });
+  if (fallbackCover) {
+    params.set("fallbackCover", fallbackCover);
+  }
+  const response = await request<{ track: MusicTrackDraft }>(`/api/music-cloud/track?${params.toString()}`);
+  return response.track;
 };
 
 export const getBirthdayData = () => request<BirthdayDataResponse>("/api/birthdays");

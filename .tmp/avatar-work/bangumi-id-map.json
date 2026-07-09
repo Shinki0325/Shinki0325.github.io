@@ -1,0 +1,539 @@
+{
+  "mapping": {
+    "rance-series-10941": "755",
+    "rance-series-10954": "22097",
+    "rance-series-10965": "23091",
+    "rance-series-10967": "36603",
+    "rance-series-10978": "32883",
+    "rance-series-10980": "36554",
+    "summer-pockets-36168": "61417",
+    "summer-pockets-32211": "59848",
+    "summer-pockets-36169": "61418",
+    "summer-pockets-39421": "73834",
+    "summer-pockets-32212": "59849",
+    "summer-pockets-36170": "61419",
+    "summer-pockets-32210": "59847",
+    "summer-pockets-39422": "72528",
+    "hoshikaka-3190": "15812",
+    "hoshikaka-3192": "11094",
+    "hoshikaka-3193": "11097",
+    "hoshikaka-3194": "11096",
+    "hoshikaka-3195": "15815",
+    "hoshikaka-3196": "11098",
+    "hoshikaka-3197": "11093",
+    "hoshikaka-3199": "11095",
+    "hoshikaka-3200": "15813",
+    "aokana-8938": "22880",
+    "aokana-8939": "22881",
+    "aokana-8940": "22879",
+    "aokana-8941": "22882",
+    "maitetsu-5495": "37750",
+    "maitetsu-5497": "37747",
+    "maitetsu-58375": "86881",
+    "maitetsu-5498": "37749",
+    "maitetsu-58382": "87153",
+    "maitetsu-5499": "37751",
+    "maitetsu-5500": "37745",
+    "maitetsu-5501": "37748",
+    "maitetsu-5502": "37746",
+    "kinkoi-943": "57845",
+    "kinkoi-944": "57821",
+    "kinkoi-945": "57824",
+    "kinkoi-946": "57844",
+    "kinkoi-947": "57823",
+    "kinkoi-948": "57822",
+    "kinkoi-949": "57846",
+    "ambitious-mission-45425": "103854",
+    "ambitious-mission-45423": "103852",
+    "ambitious-mission-45426": "103856",
+    "ambitious-mission-45427": "103855",
+    "ambitious-mission-45424": "103853",
+    "kakenuke-seishun-sparking-38833": "76767",
+    "kakenuke-seishun-sparking-38832": "76766",
+    "kakenuke-seishun-sparking-38834": "76768",
+    "kakenuke-seishun-sparking-38829": "76763",
+    "kakenuke-seishun-sparking-38830": "76764",
+    "kakenuke-seishun-sparking-38831": "76765",
+    "floral-flowlove-4184": "42302",
+    "floral-flowlove-4185": "42297",
+    "floral-flowlove-4186": "42298",
+    "floral-flowlove-4187": "42300",
+    "floral-flowlove-4188": "42301",
+    "floral-flowlove-4189": "42303",
+    "hanasaki-work-spring-10619": "28353",
+    "hanasaki-work-spring-10620": "28352",
+    "hanasaki-work-spring-10621": "28351",
+    "hanasaki-work-spring-10622": "28350",
+    "hanasaki-work-spring-10623": "56218",
+    "hanasaki-work-spring-10624": "28354",
+    "hanasaki-work-spring-10626": "28355",
+    "karumaruka-circle-14922": "20335",
+    "karumaruka-circle-14921": "20334",
+    "karumaruka-circle-46563": "20620",
+    "karumaruka-circle-46564": "21265",
+    "karumaruka-circle-14919": "20332",
+    "karumaruka-circle-46566": "21266",
+    "karumaruka-circle-14920": "20333",
+    "hatsuyuki-sakura-2675": "14499",
+    "hatsuyuki-sakura-2676": "13733",
+    "hatsuyuki-sakura-2677": "14497",
+    "hatsuyuki-sakura-2678": "14498",
+    "hatsuyuki-sakura-2679": "14496",
+    "daitoshokan-15804": "16640",
+    "daitoshokan-15805": "27982",
+    "daitoshokan-15806": "16638",
+    "daitoshokan-15809": "27981",
+    "daitoshokan-15810": "16641",
+    "daitoshokan-15811": "21214",
+    "daitoshokan-15812": "16644",
+    "daitoshokan-15813": "16646",
+    "daitoshokan-15814": "27980",
+    "daitoshokan-15815": "21213",
+    "daitoshokan-15816": "16639",
+    "daitoshokan-15818": "16642",
+    "sen-no-hatou-44799": "45902",
+    "sen-no-hatou-44800": "32885",
+    "sen-no-hatou-44803": "32889",
+    "sen-no-hatou-44802": "32888",
+    "sen-no-hatou-44805": "45904",
+    "sen-no-hatou-44801": "32886",
+    "sen-no-hatou-44798": "71591",
+    "sen-no-hatou-44797": "32887",
+    "sen-no-hatou-44806": "71593",
+    "sen-no-hatou-44804": "45903",
+    "sen-no-hatou-44807": "71592",
+    "eustia-20347": "11357",
+    "eustia-20346": "11356",
+    "eustia-20349": "11359",
+    "eustia-20348": "11358",
+    "eustia-20350": "11360",
+    "steins-gate-21279": "12381",
+    "steins-gate-21283": "12400",
+    "steins-gate-21278": "12393",
+    "steins-gate-21280": "12394",
+    "steins-gate-21285": "17778",
+    "ginharu-4816": "38911",
+    "ginharu-4817": "38912",
+    "ginharu-4818": "38909",
+    "ginharu-4819": "38910",
+    "ginharu-4820": "38908",
+    "hikoukigumo-14113": "23402",
+    "hikoukigumo-14114": "23403",
+    "hikoukigumo-14115": "23405",
+    "hikoukigumo-14116": "23404",
+    "miahoshi-6674": "34203",
+    "miahoshi-6676": "34204",
+    "miahoshi-6682": "34202",
+    "miahoshi-6683": "34205",
+    "tsukikana-34060": "68739",
+    "tsukikana-34062": "68742",
+    "tsukikana-34064": "68751",
+    "tsukikana-34065": "68752",
+    "tsukikana-34063": "68750",
+    "tsukikana-34059": "68740",
+    "tsukikana-34061": "68741",
+    "clover-days-12093": "22573",
+    "clover-days-12095": "22569",
+    "clover-days-12094": "22568",
+    "clover-days-12097": "22571",
+    "clover-days-12096": "22570",
+    "clover-days-12098": "22572",
+    "koi-kake-6903": "34991",
+    "koi-kake-6904": "33217",
+    "koi-kake-6905": "33215",
+    "koi-kake-6907": "33216",
+    "tsukiniyorisou-4843": "19929",
+    "tsukiniyorisou-4845": "19926",
+    "tsukiniyorisou-4846": "19927",
+    "tsukiniyorisou-4847": "19924",
+    "tsukiniyorisou-4848": "36131",
+    "otome-domain-6002": "40612",
+    "otome-domain-6003": "40611",
+    "otome-domain-6004": "38475",
+    "otome-domain-35092": "55347",
+    "otome-domain-35091": "55346",
+    "otome-domain-6005": "38476"
+  },
+  "failures": [
+    {
+      "id": "summer-pockets-32209",
+      "name": "鳴瀨しろは",
+      "reason": "no-exact-or-alias-match",
+      "candidates": [
+        {
+          "id": 59846,
+          "name": "鳴瀬しろは",
+          "aliases": [
+            "鳴瀬しろは",
+            "鸣濑白羽",
+            "鷹原 しろは",
+            "鳴瀬 しろは",
+            "なるせ しろは",
+            "Naruse Shiroha"
+          ]
+        },
+        {
+          "id": 151367,
+          "name": "鸣濑晴",
+          "aliases": [
+            "鸣濑晴",
+            "Naruse Haru",
+            "鳴瀬晴"
+          ]
+        },
+        {
+          "id": 47851,
+          "name": "鳴瀬川風子",
+          "aliases": [
+            "鳴瀬川風子",
+            "鸣濑川风子"
+          ]
+        },
+        {
+          "id": 56372,
+          "name": "鳴瀬咲",
+          "aliases": [
+            "鳴瀬咲",
+            "鸣濑咲",
+            "鳴瀬 咲",
+            "なるせ さき"
+          ]
+        },
+        {
+          "id": 61458,
+          "name": "鳴瀬小鳩",
+          "aliases": [
+            "鳴瀬小鳩",
+            "鸣濑小鸠",
+            "鳴瀬 小鳩",
+            "なるせ こばと",
+            "Naruse Kobato"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maitetsu-5496",
+      "name": "ハチロク（すず）",
+      "reason": "no-exact-or-alias-match",
+      "candidates": [
+        {
+          "id": 37744,
+          "name": "ハチロク",
+          "aliases": [
+            "ハチロク",
+            "八六",
+            "铃",
+            "Hachiroku",
+            "すず"
+          ]
+        },
+        {
+          "id": 7784,
+          "name": "トヨタ・AE86",
+          "aliases": [
+            "トヨタ・AE86",
+            "四代丰田Sprinter Trueno/卡罗拉雷凌",
+            "丰田AE86",
+            "ハチロク"
+          ]
+        },
+        {
+          "id": 29487,
+          "name": "伊168",
+          "aliases": [
+            "伊168",
+            "伊168",
+            "伊号第一六八潜水艦",
+            "いひゃくろくじゅうはち",
+            "Ihyakurokujuuhachi",
+            "伊姆娅"
+          ]
+        },
+        {
+          "id": 9911,
+          "name": "ハチ",
+          "aliases": [
+            "ハチ",
+            "ハチ",
+            "Hachi"
+          ]
+        },
+        {
+          "id": 27172,
+          "name": "ハチ",
+          "aliases": [
+            "ハチ",
+            "阿巴",
+            "小八",
+            "Hachi",
+            "風魔 八"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maitetsu-58373",
+      "name": "宮本依千",
+      "reason": "no-exact-or-alias-match",
+      "candidates": [
+        {
+          "id": 93302,
+          "name": "本宮依子",
+          "aliases": [
+            "本宮依子",
+            "ほんみや よりこ"
+          ]
+        },
+        {
+          "id": 104943,
+          "name": "宮本",
+          "aliases": [
+            "宮本"
+          ]
+        },
+        {
+          "id": 119452,
+          "name": "宮本",
+          "aliases": [
+            "宮本",
+            "宫本",
+            "ミヤモト"
+          ]
+        },
+        {
+          "id": 207432,
+          "name": "宮本",
+          "aliases": [
+            "宮本",
+            "宫本",
+            "Miyamoto"
+          ]
+        },
+        {
+          "id": 748,
+          "name": "宮本寶藏",
+          "aliases": [
+            "宮本寶藏",
+            "宫本宝藏",
+            "Miyamoto"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maitetsu-58377",
+      "name": "右田ひかり",
+      "reason": "no-exact-or-alias-match",
+      "candidates": [
+        {
+          "id": 37745,
+          "name": "右田日々姫",
+          "aliases": [
+            "右田日々姫",
+            "右田日日姬",
+            "みぎた ひびき"
+          ]
+        },
+        {
+          "id": 37748,
+          "name": "右田真闇",
+          "aliases": [
+            "右田真闇",
+            "右田真闇",
+            "みぎた まくら"
+          ]
+        },
+        {
+          "id": 37752,
+          "name": "右田双鉄",
+          "aliases": [
+            "右田双鉄",
+            "みぎた そうてつ"
+          ]
+        },
+        {
+          "id": 95599,
+          "name": "右田純一",
+          "aliases": [
+            "右田純一",
+            "ミギタ　ジュンイチ"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "daitoshokan-15808",
+      "name": "芹沢水結",
+      "reason": "missing-cache"
+    },
+    {
+      "id": "steins-gate-21281",
+      "name": "フェイリス・ニャンニャン（秋葉留未穂）",
+      "reason": "no-exact-or-alias-match",
+      "candidates": [
+        {
+          "id": 12398,
+          "name": "フェイリス・ニャンニャン",
+          "aliases": [
+            "フェイリス・ニャンニャン",
+            "菲利斯·喵喵",
+            "Akiha Rumiho",
+            "秋叶留未穗",
+            "Faris Nyan-Nyan",
+            "Feirisu· nyannyan",
+            "フェイリスたん，菲利斯碳"
+          ]
+        },
+        {
+          "id": 164110,
+          "name": "フェイリス・デア・クレイトス",
+          "aliases": [
+            "フェイリス・デア・クレイトス",
+            "菲莉丝·迪亚·克雷托斯"
+          ]
+        },
+        {
+          "id": 9738,
+          "name": "フェリオ",
+          "aliases": [
+            "フェリオ",
+            "菲力奥",
+            "フェリオ",
+            "Ferio"
+          ]
+        },
+        {
+          "id": 21097,
+          "name": "フェブリ",
+          "aliases": [
+            "フェブリ",
+            "菲布理",
+            "菲布里",
+            "Febri"
+          ]
+        },
+        {
+          "id": 28630,
+          "name": "フェリド・バートリー",
+          "aliases": [
+            "フェリド・バートリー",
+            "费里德·巴特利",
+            "Ferid Bathory"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tsukiniyorisou-4842",
+      "name": "小倉朝日（大蔵遊星）",
+      "reason": "no-exact-or-alias-match",
+      "candidates": [
+        {
+          "id": 19925,
+          "name": "大蔵遊星",
+          "aliases": [
+            "大蔵遊星",
+            "大藏游星",
+            "小仓朝日",
+            "大蔵 遊星",
+            "おおくら ゆうせい",
+            "Ookura Uisei",
+            "小倉朝日",
+            "こくら あさひ"
+          ]
+        },
+        {
+          "id": 61805,
+          "name": "小倉",
+          "aliases": [
+            "小倉",
+            "小仓",
+            "おくら",
+            "Okura"
+          ]
+        },
+        {
+          "id": 71879,
+          "name": "小倉",
+          "aliases": [
+            "小倉",
+            "小仓康明",
+            "小倉康明",
+            "おぐら"
+          ]
+        },
+        {
+          "id": 15303,
+          "name": "小倉真奈美",
+          "aliases": [
+            "小倉真奈美",
+            "小仓真奈美",
+            "おぐら まなみ",
+            "Ogura Manami"
+          ]
+        },
+        {
+          "id": 26191,
+          "name": "小倉香菜",
+          "aliases": [
+            "小倉香菜",
+            "小倉 香菜",
+            "おぐら かな"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tsukiniyorisou-4849",
+      "name": "ユルシュール＝フルール＝ジャンメール",
+      "reason": "no-exact-or-alias-match",
+      "candidates": [
+        {
+          "id": 19928,
+          "name": "ユルシュール・フルール・ジャンメール",
+          "aliases": [
+            "ユルシュール・フルール・ジャンメール",
+            "尤希尔·弗洛·让梅尔",
+            "Ursule Fleur Jeanmaire"
+          ]
+        },
+        {
+          "id": 6065,
+          "name": "ユノ",
+          "aliases": [
+            "ユノ",
+            "ユノ",
+            "Juno"
+          ]
+        },
+        {
+          "id": 7474,
+          "name": "ゆぴたん",
+          "aliases": [
+            "ゆぴたん",
+            "尤比炭",
+            "ゆぴたん",
+            "Jupiterm"
+          ]
+        },
+        {
+          "id": 8954,
+          "name": "ユナス",
+          "aliases": [
+            "ユナス",
+            "ユナス",
+            "Yunas"
+          ]
+        },
+        {
+          "id": 11341,
+          "name": "ゆのは",
+          "aliases": [
+            "ゆのは"
+          ]
+        }
+      ]
+    }
+  ]
+}

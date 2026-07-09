@@ -1,0 +1,442 @@
+[
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/0d/cb/44845_crt_36u22.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/0d/cb/44845_crt_36u22.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/0d/cb/44845_crt_36u22.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0d/cb/44845_crt_36u22.jpg"
+    },
+    "summary": "商国に根を下ろす豪商一族、グランセニック商会の御曹司。\r\n\r\n一見すると爽やかな好青年なのだが、超がつくドＭ、加えて筋金入りのロリコンという名状しがたい性癖カルマを抱えた残念くん。その嗜好からヴェンデッタに電撃的な一目惚れをするものの、当然脈無し。豚扱いされて喜びを感じたり、背中に乗られて恍惚したりと、玩具扱いを受けながら彼女の株を下げ続けている。\r\n\r\nただし、仕事に関しては非常に有能。ひとたびスイッチが入ると交渉、権謀に関して悪魔めいた手腕をみせることも。\r\n\r\n駄目人間同士でシンパシーが働くのか、ゼファーと非常に仲がいい。脱走兵である彼の身柄を匿い、見返りとして表にできない依頼を持ちかけている。",
+    "name": "ルシード・グランセニック",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "No.δ 錬金術士[デルタ アルケミスト]"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 3
+    },
+    "id": 44845,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/83/fe/29928_crt_C8c88.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/83/fe/29928_crt_C8c88.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/83/fe/29928_crt_C8c88.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/83/fe/29928_crt_C8c88.jpg"
+    },
+    "summary": "鬼面を纏った正体不明の怪物。\r\nウラヌスと共に大虐殺を生んだ張本人にして、星辰奏者 （エスペラント） をも上回る鋼鉄のアストラル運用兵器。\r\nその外見は特徴的で、日本の昔話にある “鬼” を連想させる姿をしている。\r\n独特の意匠から カンタベリー聖教国 で製造されたと推測されているものの、真相は未だハッキリしていない。\r\n口調は姿に似合わず、基本的に冷静、かつ理知的。\r\n時に相手の事情を慮るなど高い教養が伺える──かと思えば、一転して享楽的な振る舞いを演じるなど、真意を読み取るのが非常に困難。\r\n5年前にヴァルゼライドの手で討ち取られたはずだが、しかし──\r\n「見極めなければならんだろう。 あんたも、そしてオレたち自身をも」",
+    "name": "マルス-No.ε",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "殺塵鬼[カーネイジ]"
+          },
+          {
+            "k": "纯假名",
+            "v": "マルス ナンバー イプシロン"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 29928,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/60/6d/29929_crt_Rgj6p.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/60/6d/29929_crt_Rgj6p.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/60/6d/29929_crt_Rgj6p.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/60/6d/29929_crt_Rgj6p.jpg"
+    },
+    "summary": "素顔を仮面で隠した正体不明の異形。\r\nマルスと共に大虐殺を生んだ張本人にして、星辰奏者 （エスペラント） をも上回る鋼鉄のアストラル運用兵器。\r\n冷酷にして傲岸不遜な性格。 人類種を見限っているのか、常に侮蔑して見下した態度を崩さない。\r\nつまりは無慈悲。 彼女の前に立つことは、そのまま死に直結するだろう。\r\n過去にヴァルゼライドから苦渋を味わわされたらしく、深い憎悪を抱いている。\r\nマルスと同様、5年前に共々討ち取られたはずだが、しかし──\r\n「せいぜい足掻け、余興は終わり」",
+    "name": "ウラヌス-No.ζ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "氷河姫[ピリオド]"
+          },
+          {
+            "k": "纯假名",
+            "v": "ウラヌス ナンバー ゼータ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 29929,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 12,
+    "gender": "female",
+    "birth_day": 31,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/76/60050_crt_NkYQi.jpg?r=1519142441",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b1/76/60050_crt_NkYQi.jpg?r=1519142441",
+      "large": "https://lain.bgm.tv/pic/crt/l/b1/76/60050_crt_NkYQi.jpg?r=1519142441",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/76/60050_crt_NkYQi.jpg?r=1519142441"
+    },
+    "summary": "",
+    "name": "ν-No.13-",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "12/31"
+      },
+      {
+        "key": "身高",
+        "value": "155cm"
+      },
+      {
+        "key": "体重",
+        "value": "45kg"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://www.blazblue.jp/10th/characters/nu/"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 5
+    },
+    "id": 60050,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/73/7a/183351_crt_616c6.jpg?r=1756768300",
+      "grid": "https://lain.bgm.tv/pic/crt/g/73/7a/183351_crt_616c6.jpg?r=1756768300",
+      "large": "https://lain.bgm.tv/pic/crt/l/73/7a/183351_crt_616c6.jpg?r=1756768300",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/73/7a/183351_crt_616c6.jpg?r=1756768300"
+    },
+    "summary": "",
+    "name": "Λ-No.11-",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Lambda-11"
+          },
+          {
+            "k": "日文名",
+            "v": "ラムダ・イレブン"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 2
+    },
+    "id": 183351,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c1/41/206029_crt_17C57.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c1/41/206029_crt_17C57.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c1/41/206029_crt_17C57.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c1/41/206029_crt_17C57.jpg"
+    },
+    "summary": "「蒼」を継承した第十二素体であるノエル＝ヴァーミリオンの真の姿。\r\nカグツチで目を覚ました彼女を「世界の敵」として、かつての仲間達が次々と襲ってくる。\r\nその真意を確かめるため、再び行動を開始する。",
+    "name": "μ-No.12-",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "缪"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "1 ⁄ 7（精錬された日）"
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      },
+      {
+        "key": "身高",
+        "value": "157cm"
+      },
+      {
+        "key": "体重",
+        "value": "48kg"
+      },
+      {
+        "key": "趣味",
+        "value": "詩を書くこと（人には絶対見せない） 通販（人と会わずに済むため）"
+      },
+      {
+        "key": "好きなもの",
+        "value": "かわいいもの"
+      },
+      {
+        "key": "嫌いなもの",
+        "value": "虫（特に足の多いもの）"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 206029,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a5/ff/4115_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a5/ff/4115_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a5/ff/4115_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a5/ff/4115_crt_anidb.jpg"
+    },
+    "summary": "简称CP9，世界政府直属秘密谍报机关。世界政府培养的特工组织，从事各种秘密活动。主要针对世界性犯罪组织革命军。\r\n在司法岛事件后组织成员全部被除名，并且开始秘密培养新一代的CP9成员。",
+    "name": "サイファーポールNo.9",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "CP9"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "CIPHER POL No. 9"
+          },
+          {
+            "k": "英文名",
+            "v": "Cipher Pol Number 9"
+          },
+          {
+            "k": "纯假名",
+            "v": "シーピーナイン"
+          },
+          {
+            "k": "罗马字",
+            "v": "Saifā Pōru Nanbā Nain"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 4115,
+    "locked": false,
+    "type": 4,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/dc/79/112948_crt_A91yo.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/dc/79/112948_crt_A91yo.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/dc/79/112948_crt_A91yo.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/dc/79/112948_crt_A91yo.jpg"
+    },
+    "summary": "スラムと歓楽街、搾取で構成された最も治安の悪い区域出身の男\r\n\r\n生活費のため、今回の仕事に応募したらしい\r\n\r\n「その幸福はほんのひと時。でも溺れるには十分だった」",
+    "name": "被験体No.39",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://twitter.com/dotaihen/status/1545425916427268096"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 112948,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a3/18/207645_crt_Dz1Gv.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a3/18/207645_crt_Dz1Gv.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a3/18/207645_crt_Dz1Gv.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a3/18/207645_crt_Dz1Gv.jpg"
+    },
+    "summary": "",
+    "name": "人造人間No.100",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 207645,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a9/6d/2056_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a9/6d/2056_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a9/6d/2056_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a9/6d/2056_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "宮田の父",
+    "infobox": [
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Miyata no Chichi"
+          },
+          {
+            "k": "日文名",
+            "v": "宮田の父"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 2056,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

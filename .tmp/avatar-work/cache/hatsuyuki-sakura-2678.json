@@ -1,0 +1,403 @@
+[
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/85/55/14498_crt_PE9hM.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/85/55/14498_crt_PE9hM.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/85/55/14498_crt_PE9hM.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/85/55/14498_crt_PE9hM.jpg"
+    },
+    "summary": "白咲学園1年生。 一見間が抜けてそうで、実際かなり間が抜けている。\r\n進路指導委員長という面倒くさい役職を教師に押しつけられ、ワタワタしつつも、学園のちょい悪学生の進路の相談にのろうとがんばる。\r\n\r\n少しやんちゃな男の友情に憧れているらしく、尊敬している初雪に暑苦しい関係を求めてくる。",
+    "name": "東雲希",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "东云希"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "しののめ のぞむ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "155cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B91/W56/H85"
+      }
+    ],
+    "stat": {
+      "comments": 18,
+      "collects": 59
+    },
+    "id": 14498,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/49/ac/29816_crt_guiH6.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/49/ac/29816_crt_guiH6.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/49/ac/29816_crt_guiH6.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/49/ac/29816_crt_guiH6.jpg"
+    },
+    "summary": "一条勇治の幼なじみ。 小さい頃から勇治と共に魔法使いを目指し、共に切磋琢磨している。\r\nマイアレヌス学園への入学を決めた後も勇治のことを常に気に掛けており、勇治の学園編入を誰よりも喜んでいる。\r\n世話焼きというよりもお節介……。押しつけがましいとも言える性格で、相手のことを第一に考える優しい心の持ち主。\r\n正直で隠し事ができない性格で、特に勇治のことについてはそれが顕著。\r\n仕切りたがり屋で普段はしっかり者 （のつもり） だが、意外とメルヘンな趣味を持っている。\r\n得意魔法式は炎で、威力はあるのだが応用力に乏しく、あまり実践的とはいえない。",
+    "name": "東雲優希",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "しののめ ゆの"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "157cm"
+      },
+      {
+        "key": "体重",
+        "value": "46kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B80/ W62/ H81"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 6
+    },
+    "id": 29816,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/2d/28475_crt_9lgbq.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a4/2d/28475_crt_9lgbq.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a4/2d/28475_crt_9lgbq.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/2d/28475_crt_9lgbq.jpg"
+    },
+    "summary": "神出鬼行の狐の妖かし。\r\nよく高天原に顔を出すが、その本意は不明。\r\nいつも飄々とした態度をしており、人を喰ったような話し方をする謎の男。",
+    "name": "東雲",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 28475,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/23/68/59749_crt_E95eo.jpg?r=1513782823",
+      "grid": "https://lain.bgm.tv/pic/crt/g/23/68/59749_crt_E95eo.jpg?r=1513782823",
+      "large": "https://lain.bgm.tv/pic/crt/l/23/68/59749_crt_E95eo.jpg?r=1513782823",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/23/68/59749_crt_E95eo.jpg?r=1513782823"
+    },
+    "summary": "突然主人公の前に姿を現した、簪のつくも神。マイペースな怠け者で、食べることが大好き。面倒なことがあると、年寄りだからと逃げようとする。女の子には人一倍優しく、少し馴れ馴れしいところもある。",
+    "name": "東雲",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "しののめ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 59749,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a7/e9/71430_crt_66NrP.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a7/e9/71430_crt_66NrP.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a7/e9/71430_crt_66NrP.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a7/e9/71430_crt_66NrP.jpg"
+    },
+    "summary": "浮世離れした女子大生。携帯を持たず、ＴＶも見ず、パソコンも必要以上には触らない。父母がおらず祖母に育てられた。西条たちとかかわる中で、徐々に普通に近づいていく。法文学部人文社会学科。",
+    "name": "東雲",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "东云"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "しののめ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 3
+    },
+    "id": 71430,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/71/64/116270_crt_vjzba.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/71/64/116270_crt_vjzba.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/71/64/116270_crt_vjzba.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/71/64/116270_crt_vjzba.jpg"
+    },
+    "summary": "『背約の使徒』のナンバーズ12、医療研究者でユダの幼馴染。常に周囲を小馬鹿にした印象。",
+    "name": "東雲",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "身高",
+        "value": "185cm"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 116270,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/ae/119643_crt_005Bw.jpg?r=1704948520",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a6/ae/119643_crt_005Bw.jpg?r=1704948520",
+      "large": "https://lain.bgm.tv/pic/crt/l/a6/ae/119643_crt_005Bw.jpg?r=1704948520",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/ae/119643_crt_005Bw.jpg?r=1704948520"
+    },
+    "summary": "ジョージが雇った残念なスパイ。〈黄昏〉を一方的にライバル視している。",
+    "name": "東雲",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "东云"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "しののめ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Shinonome"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 119643,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d3/91/138781_crt_3OPDS.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d3/91/138781_crt_3OPDS.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/d3/91/138781_crt_3OPDS.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d3/91/138781_crt_3OPDS.jpg"
+    },
+    "summary": "ヤクザ「雨紋会」の幹部の一人\r\n雨紋会のシノギを取り仕切り、実質的に辰也の兄貴分にあたる\r\n組長吾郎の命令には絶対服従であり、かなり頭が切れる",
+    "name": "東雲",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Shinonome"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 138781,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/be/ca/152993_crt_R7ear.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/be/ca/152993_crt_R7ear.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/be/ca/152993_crt_R7ear.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/be/ca/152993_crt_R7ear.jpg"
+    },
+    "summary": "",
+    "name": "東雲",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 9
+    },
+    "id": 152993,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/2e/ac/168591_crt_INSQX.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/2e/ac/168591_crt_INSQX.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/2e/ac/168591_crt_INSQX.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2e/ac/168591_crt_INSQX.jpg"
+    },
+    "summary": "ひょんなことから主人公と\r\n生活を共にすることになる\r\n弱気な少年。\r\n菜乃と意気投合して\r\n菜乃に似てきている…。\r\n\r\n弱点。チョコレートなどのお菓子",
+    "name": "東雲",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "しののめ"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 168591,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

@@ -3,6 +3,7 @@ import type { CSSProperties } from "react";
 
 type AlbumPhoto = {
   url: string;
+  originalUrl?: string;
   alt: string;
   caption?: string;
   credit?: string;
@@ -281,7 +282,7 @@ export default function PhotoWallClient({ albums }: { albums: Album[] }) {
               alt={lightboxPhoto.alt}
               className="photowall-lightbox__image"
               data-lightbox-image
-              src={lightboxPhoto.url}
+              src={lightboxPhoto.originalUrl ?? lightboxPhoto.url}
             />
             <div className="photowall-lightbox__caption">
               <strong>{lightboxPhoto.alt}</strong>

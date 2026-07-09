@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
-import { getContentEntry, saveContentEntry } from "../api";
+import { cropAssetImage, getContentEntry, getContentList, getImageHostStatus, saveContentEntry, uploadAssetImage } from "../api";
+import { ImageUploadCropper } from "../components/ImageUploadCropper";
 import { MarkdownPreview } from "../components/MarkdownPreview";
+import type { AssetImageCrop, ImageHostStatus } from "../types";
 import type { ContentListItem } from "../types";
 
 type AlbumEditorProps = {
@@ -9,6 +11,7 @@ type AlbumEditorProps = {
 
 type AlbumPhoto = {
   url: string;
+  originalUrl?: string;
   alt: string;
   caption?: string;
   credit?: string;
@@ -28,6 +31,14 @@ const slugify = (value: string) => {
 
 const toJsonString = (value: unknown) => JSON.stringify(value, null, 2);
 
+const readFileAsDataUrl = (file: File) =>
+  new Promise<string>((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(String(reader.result));
+    reader.onerror = () => reject(new Error("读取图片失败"));
+    reader.readAsDataURL(file);
+  });
+
 const toLineList = (value: unknown) =>
   Array.isArray(value) ? value.map((item) => String(item)).join("\n") : "";
 
@@ -36,6 +47,8 @@ const parseLineList = (value: string) =>
     .split(/\r?\n/)
     .map((item) => item.trim())
     .filter(Boolean);
+
+const stringifyLineList = (value: string[] | undefined) => (value ?? []).join("\n");
 
 const parsePhotos = (value: string) => {
   const parsed = JSON.parse(value) as unknown;
@@ -58,6 +71,7 @@ const parsePhotos = (value: string) => {
 
       return {
         url: photo.url.trim(),
+        originalUrl: typeof photo.originalUrl === "string" && photo.originalUrl.trim() ? photo.originalUrl.trim() : undefined,
         alt: photo.alt.trim(),
         caption: typeof photo.caption === "string" && photo.caption.trim() ? photo.caption.trim() : undefined,
         credit: typeof photo.credit === "string" && photo.credit.trim() ? photo.credit.trim() : undefined,
@@ -79,14 +93,29 @@ const removeKnownKeys = (record: Record<string, unknown>, keys: string[]) => {
   return copy;
 };
 
+const sanitizePhotos = (items: AlbumPhoto[]) =>
+  items.map((photo) => ({
+    url: photo.url.trim(),
+    ...(photo.originalUrl?.trim() ? { originalUrl: photo.originalUrl.trim() } : {}),
+    alt: photo.alt.trim(),
+    ...(photo.caption?.trim() ? { caption: photo.caption.trim() } : {}),
+    ...(photo.credit?.trim() ? { credit: photo.credit.trim() } : {}),
+    ...(photo.relatedReferences?.length ? { relatedReferences: photo.relatedReferences } : {}),
+    ...(photo.relatedArticles?.length ? { relatedArticles: photo.relatedArticles } : {})
+  }));
+
+const NEW_ALBUM_VALUE = "__new_album__";
+
 export default function AlbumEditor({ selectedEntry }: AlbumEditorProps) {
+  const [albumItems, setAlbumItems] = useState<ContentListItem[]>([]);
+  const [activeAlbumSlug, setActiveAlbumSlug] = useState("");
   const [slug, setSlug] = useState("");
   const [title, setTitle] = useState("");
   const [summary, setSummary] = useState("");
   const [date, setDate] = useState("");
   const [location, setLocation] = useState("");
   const [cover, setCover] = useState("");
-  const [photos, setPhotos] = useState("[]");
+  const [photos, setPhotos] = useState<AlbumPhoto[]>([]);
   const [tags, setTags] = useState("");
   const [relatedArticles, setRelatedArticles] = useState("");
   const [relatedReferences, setRelatedReferences] = useState("");
@@ -95,58 +124,112 @@ export default function AlbumEditor({ selectedEntry }: AlbumEditorProps) {
   const [visibility, setVisibility] = useState<"public" | "hidden">("public");
   const [body, setBody] = useState("");
   const [extras, setExtras] = useState("{}");
+  const [imageHostStatus, setImageHostStatus] = useState<ImageHostStatus | null>(null);
   const [message, setMessage] = useState<string | null>(null);
+
+  useEffect(() => {
+    void getImageHostStatus().then(setImageHostStatus).catch(() => setImageHostStatus(null));
+  }, []);
+
+  const resetForm = () => {
+    setSlug("");
+    setTitle("");
+    setSummary("");
+    setDate("");
+    setLocation("");
+    setCover("");
+    setPhotos([]);
+    setTags("");
+    setRelatedArticles("");
+    setRelatedReferences("");
+    setDraft(false);
+    setPinned(false);
+    setVisibility("public");
+    setBody("");
+    setExtras("{}");
+  };
+
+  const loadAlbumList = async () => {
+    const items = await getContentList("albums");
+    setAlbumItems(items);
+    return items;
+  };
+
+  const loadAlbumEntry = async (albumSlug: string) => {
+    const entry = await getContentEntry("albums", albumSlug);
+    const frontmatter = entry.frontmatter;
+    setSlug(entry.slug);
+    setTitle(String(frontmatter.title ?? ""));
+    setSummary(String(frontmatter.summary ?? ""));
+    setDate(
+      typeof frontmatter.date === "string"
+        ? frontmatter.date.slice(0, 10)
+        : albumItems.find((item) => item.slug === albumSlug)?.date?.slice(0, 10) ?? ""
+    );
+    setLocation(String(frontmatter.location ?? ""));
+    setCover(String(frontmatter.cover ?? ""));
+    setPhotos(parsePhotos(toJsonString(Array.isArray(frontmatter.photos) ? frontmatter.photos : [])));
+    setTags(toLineList(frontmatter.tags));
+    setRelatedArticles(toLineList(frontmatter.relatedArticles));
+    setRelatedReferences(toLineList(frontmatter.relatedReferences));
+    setDraft(frontmatter.draft === true);
+    setPinned(frontmatter.pinned === true);
+    setVisibility(frontmatter.visibility === "hidden" ? "hidden" : "public");
+    setBody(entry.body.trim());
+    setExtras(
+      toJsonString(
+        removeKnownKeys(frontmatter, [
+          "title",
+          "summary",
+          "date",
+          "location",
+          "cover",
+          "photos",
+          "tags",
+          "relatedArticles",
+          "relatedReferences",
+          "draft",
+          "pinned",
+          "visibility"
+        ])
+      )
+    );
+  };
+
+  useEffect(() => {
+    void loadAlbumList().catch((error: Error) => setMessage(error.message));
+  }, []);
 
   useEffect(() => {
     if (!selectedEntry || selectedEntry.kind !== "albums") {
       return;
     }
 
-    void getContentEntry(selectedEntry.kind, selectedEntry.slug).then((entry) => {
-      const frontmatter = entry.frontmatter;
-      setSlug(entry.slug);
-      setTitle(String(frontmatter.title ?? ""));
-      setSummary(String(frontmatter.summary ?? ""));
-      setDate(
-        typeof frontmatter.date === "string"
-          ? frontmatter.date.slice(0, 10)
-          : selectedEntry.date?.slice(0, 10) ?? ""
-      );
-      setLocation(String(frontmatter.location ?? ""));
-      setCover(String(frontmatter.cover ?? ""));
-      setPhotos(toJsonString(Array.isArray(frontmatter.photos) ? frontmatter.photos : []));
-      setTags(toLineList(frontmatter.tags));
-      setRelatedArticles(toLineList(frontmatter.relatedArticles));
-      setRelatedReferences(toLineList(frontmatter.relatedReferences));
-      setDraft(frontmatter.draft === true);
-      setPinned(frontmatter.pinned === true);
-      setVisibility(frontmatter.visibility === "hidden" ? "hidden" : "public");
-      setBody(entry.body.trim());
-      setExtras(
-        toJsonString(
-          removeKnownKeys(frontmatter, [
-            "title",
-            "summary",
-            "date",
-            "location",
-            "cover",
-            "photos",
-            "tags",
-            "relatedArticles",
-            "relatedReferences",
-            "draft",
-            "pinned",
-            "visibility"
-          ])
-        )
-      );
-    });
+    setActiveAlbumSlug(selectedEntry.slug);
   }, [selectedEntry]);
+
+  useEffect(() => {
+    if (!activeAlbumSlug) {
+      return;
+    }
+
+    void loadAlbumEntry(activeAlbumSlug).catch((error: Error) => setMessage(error.message));
+  }, [activeAlbumSlug]);
+
+  const handleSelectAlbum = (value: string) => {
+    if (value === NEW_ALBUM_VALUE) {
+      setActiveAlbumSlug("");
+      resetForm();
+      setMessage("已切换到新建相册。");
+      return;
+    }
+
+    setActiveAlbumSlug(value);
+  };
 
   const handleSave = async () => {
     try {
       const parsedExtras = extras.trim() ? (JSON.parse(extras) as Record<string, unknown>) : {};
-      const parsedPhotos = parsePhotos(photos);
       const nextSlug = slug || slugify(title);
       const frontmatter: Record<string, unknown> = {
         ...parsedExtras,
@@ -156,7 +239,7 @@ export default function AlbumEditor({ selectedEntry }: AlbumEditorProps) {
         visibility,
         draft,
         pinned,
-        photos: parsedPhotos
+        photos: sanitizePhotos(photos)
       };
 
       if (location.trim()) {
@@ -183,6 +266,8 @@ export default function AlbumEditor({ selectedEntry }: AlbumEditorProps) {
       });
 
       setSlug(saved.slug);
+      setActiveAlbumSlug(saved.slug);
+      void loadAlbumList().catch(() => undefined);
       setExtras(
         toJsonString(
           removeKnownKeys(saved.frontmatter, [
@@ -207,6 +292,82 @@ export default function AlbumEditor({ selectedEntry }: AlbumEditorProps) {
     }
   };
 
+  const handleUploadCover = async (file: File) => {
+    try {
+      const dataUrl = await readFileAsDataUrl(file);
+      const item = await uploadAssetImage(dataUrl, "albums", `${slug || slugify(title)}-cover`);
+      setCover(item.url);
+      setMessage(`已上传封面 ${item.url}`);
+    } catch (error) {
+      setMessage((error as Error).message);
+    }
+  };
+
+  const handleCropCover = async (crop: AssetImageCrop) => {
+    if (!cover) {
+      return;
+    }
+
+    try {
+      const item = await cropAssetImage(cover, "albums", `${slug || slugify(title)}-cover`, crop, 1200, 800);
+      setCover(item.url);
+      setMessage(`已裁切封面 ${item.url}`);
+    } catch (error) {
+      setMessage((error as Error).message);
+    }
+  };
+
+  const handleUploadPhoto = async (file: File) => {
+    try {
+      const dataUrl = await readFileAsDataUrl(file);
+      const item = await uploadAssetImage(dataUrl, "albums/photos", `${slug || slugify(title)}-${Date.now()}`);
+      const nextPhotos = [
+        ...photos,
+        {
+          url: item.url,
+          originalUrl: item.originalUrl,
+          alt: title || slug || "相册照片",
+          relatedReferences: [],
+          relatedArticles: []
+        } satisfies AlbumPhoto
+      ];
+      setPhotos(nextPhotos);
+      setMessage(`已追加照片 ${item.url}`);
+    } catch (error) {
+      setMessage((error as Error).message);
+    }
+  };
+
+  const updatePhoto = (index: number, key: keyof AlbumPhoto, value: string) => {
+    setPhotos((current) =>
+      current.map((photo, photoIndex) =>
+        photoIndex === index
+          ? {
+              ...photo,
+              [key]: value
+            }
+          : photo
+      )
+    );
+  };
+
+  const updatePhotoLineList = (index: number, key: "relatedReferences" | "relatedArticles", value: string) => {
+    setPhotos((current) =>
+      current.map((photo, photoIndex) =>
+        photoIndex === index
+          ? {
+              ...photo,
+              [key]: parseLineList(value)
+            }
+          : photo
+      )
+    );
+  };
+
+  const removePhoto = (index: number) => {
+    setPhotos((current) => current.filter((_, photoIndex) => photoIndex !== index));
+  };
+
   return (
     <main className="page editor-layout">
       <section className="panel stack">
@@ -220,6 +381,23 @@ export default function AlbumEditor({ selectedEntry }: AlbumEditorProps) {
               保存
             </button>
           </div>
+        </div>
+
+        <div className="album-editor__selector">
+          <label className="field">
+            <span>选择相册</span>
+            <select value={activeAlbumSlug || NEW_ALBUM_VALUE} onChange={(event) => handleSelectAlbum(event.target.value)}>
+              <option value={NEW_ALBUM_VALUE}>新建相册</option>
+              {albumItems.map((item) => (
+                <option key={item.slug} value={item.slug}>
+                  {item.title || item.slug}
+                </option>
+              ))}
+            </select>
+          </label>
+          <p className="hint">
+            共 {albumItems.length} 个相册；选择后会载入对应内容，也可以切到“新建相册”从空白开始。
+          </p>
         </div>
 
         <div className="grid-form">
@@ -261,6 +439,39 @@ export default function AlbumEditor({ selectedEntry }: AlbumEditorProps) {
               placeholder="/uploads/albums/cover.jpg"
             />
           </label>
+          <div className="field-span album-editor__image-workbench">
+            <ImageUploadCropper
+              aspectRatio={1.5}
+              cropLabel="裁切封面"
+              hint="上传封面后可直接拖框裁切，输出为 1200x800 WebP。"
+              imageUrl={cover}
+              onCrop={handleCropCover}
+              onUpload={handleUploadCover}
+              title="封面上传 / 裁切"
+              uploadLabel="上传封面"
+            />
+            <div className="image-cropper">
+              <div className="toolbar">
+                <div>
+                  <dt>照片上传</dt>
+                  <p className="hint">
+                    上传后自动追加到照片列表；
+                    {imageHostStatus?.enabled ? "图床原图会写入 originalUrl。" : "未配置图床时只生成本地 WebP。"}
+                  </p>
+                </div>
+                <label className="secondary-button birthday-manager__upload-button">
+                  上传照片
+                  <input accept="image/webp,image/png,image/jpeg" type="file" onChange={(event) => {
+                    const file = event.target.files?.[0];
+                    if (file) {
+                      void handleUploadPhoto(file);
+                    }
+                  }} />
+                </label>
+              </div>
+              <dd>{photos.length} 张照片</dd>
+            </div>
+          </div>
           <label className="field field-span">
             <span>标签</span>
             <textarea className="meta-area" value={tags} onChange={(event) => setTags(event.target.value)} />
@@ -291,23 +502,89 @@ export default function AlbumEditor({ selectedEntry }: AlbumEditorProps) {
           </label>
         </div>
 
-        <label className="field">
-          <span>照片列表（JSON）</span>
-          <textarea className="meta-area" value={photos} onChange={(event) => setPhotos(event.target.value)} />
-        </label>
-        <p className="hint">
-          每张图片请使用统一字段：`url`、`alt`、可选 `caption`、`credit`、`relatedReferences`、`relatedArticles`。
-        </p>
+        <section className="stack">
+          <div className="toolbar">
+            <div>
+              <p className="eyebrow">Photos</p>
+              <h2>照片列表</h2>
+            </div>
+            <span className="pill muted">{photos.length} 张</span>
+          </div>
+          <div className="album-editor__photo-grid">
+            {photos.map((photo, index) => (
+              <article className="content-item album-editor__photo-card" key={`${photo.url}-${index}`}>
+                {photo.url ? <img alt={photo.alt || `照片 ${index + 1}`} src={photo.url} /> : null}
+                <div className="grid-form">
+                  <label className="field field-span">
+                    <span>预览 URL</span>
+                    <input value={photo.url} onChange={(event) => updatePhoto(index, "url", event.target.value)} />
+                  </label>
+                  <label className="field field-span">
+                    <span>图床原图 URL</span>
+                    <input
+                      value={photo.originalUrl ?? ""}
+                      onChange={(event) => updatePhoto(index, "originalUrl", event.target.value)}
+                    />
+                  </label>
+                  <label className="field">
+                    <span>Alt</span>
+                    <input value={photo.alt} onChange={(event) => updatePhoto(index, "alt", event.target.value)} />
+                  </label>
+                  <label className="field">
+                    <span>Caption</span>
+                    <input
+                      value={photo.caption ?? ""}
+                      onChange={(event) => updatePhoto(index, "caption", event.target.value)}
+                    />
+                  </label>
+                  <label className="field">
+                    <span>Credit</span>
+                    <input
+                      value={photo.credit ?? ""}
+                      onChange={(event) => updatePhoto(index, "credit", event.target.value)}
+                    />
+                  </label>
+                  <label className="field field-span">
+                    <span>关联文稿</span>
+                    <textarea
+                      className="meta-area meta-area--compact"
+                      value={stringifyLineList(photo.relatedArticles)}
+                      onChange={(event) => updatePhotoLineList(index, "relatedArticles", event.target.value)}
+                    />
+                    <small>每行一个文章 slug。</small>
+                  </label>
+                  <label className="field field-span">
+                    <span>关联资料页</span>
+                    <textarea
+                      className="meta-area meta-area--compact"
+                      value={stringifyLineList(photo.relatedReferences)}
+                      onChange={(event) => updatePhotoLineList(index, "relatedReferences", event.target.value)}
+                    />
+                    <small>每行一个资料页 slug。</small>
+                  </label>
+                </div>
+                <button className="secondary-button" onClick={() => removePhoto(index)} type="button">
+                  删除照片
+                </button>
+              </article>
+            ))}
+          </div>
+          {photos.length === 0 ? <p className="hint">暂无照片，使用上方“上传照片”添加。</p> : null}
+        </section>
 
         <label className="field">
           <span>正文</span>
           <textarea className="editor-area" value={body} onChange={(event) => setBody(event.target.value)} />
         </label>
 
-        <label className="field">
-          <span>附加 frontmatter（JSON）</span>
-          <textarea className="meta-area" value={extras} onChange={(event) => setExtras(event.target.value)} />
-        </label>
+        <details className="advanced-panel">
+          <summary>高级 frontmatter</summary>
+          <p className="hint">常用字段已经在上面拆成表单；只有需要保留额外字段时再改这里。</p>
+          <label className="field">
+            <span>额外字段 JSON</span>
+            <textarea className="meta-area" value={extras} onChange={(event) => setExtras(event.target.value)} />
+          </label>
+        </details>
 
         {message ? <p className="hint">{message}</p> : null}
       </section>

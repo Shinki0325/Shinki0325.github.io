@@ -1,0 +1,450 @@
+[
+  {
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 20,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/7d/f6/11358_crt_8e1BG.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/7d/f6/11358_crt_8e1BG.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/7d/f6/11358_crt_8e1BG.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7d/f6/11358_crt_8e1BG.jpg"
+    },
+    "summary": "第29代圣女イレーヌ。\r\n代替承担大崩落的责任而被处以极刑的前代圣女，她用祈祷之力让ノーヴァス・アイテル飘浮在空中。\r\n在民众面前现身的机会少之又少，基本上只在教会深处的圣域里献上祈福。\r\n从失去光明的那一刻起，她就被称之为「盲目的圣女」，在民众间有着极高的信仰。\r\n当然，她的性格之类的只有极少部分人能知道，其他人都只是猜测的而已。\r\n经常都被冷嘲热讽，似乎不怎么被好好对待。",
+    "name": "聖女イレーヌ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "圣女伊莲娜"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "柯蕾特·阿纳斯塔西娅"
+          },
+          {
+            "k": "英文名",
+            "v": "Saint Irene"
+          },
+          {
+            "k": "本名",
+            "v": "コレット・アナスタシア"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "10月20日"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "身高",
+        "value": "155.3cm"
+      },
+      {
+        "key": "体重",
+        "value": "42.7kg"
+      },
+      {
+        "key": "BWH",
+        "value": "80(B)/55/82"
+      }
+    ],
+    "stat": {
+      "comments": 54,
+      "collects": 209
+    },
+    "id": 11358,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b1/48/107622_crt_6QuB6.jpg?r=1730019492",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b1/48/107622_crt_6QuB6.jpg?r=1730019492",
+      "large": "https://lain.bgm.tv/pic/crt/l/b1/48/107622_crt_6QuB6.jpg?r=1730019492",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b1/48/107622_crt_6QuB6.jpg?r=1730019492"
+    },
+    "summary": "「最も真摯な」六番目の聖女。暗銀の騎士ガル・ヴィンランドに伴われ、救いの旅を続けていた。最初期にボーレタリアへ向かい、腐れ谷で消息を絶っている。",
+    "name": "聖女アストラエア",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "Maiden Astraea"
+          },
+          {
+            "k": "英文名",
+            "v": "Saint Astraea"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 107622,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/ab/163123_crt_pMCwp.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/38/ab/163123_crt_pMCwp.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/38/ab/163123_crt_pMCwp.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/ab/163123_crt_pMCwp.jpg"
+    },
+    "summary": "あなたを魔王界に召喚した、タルト王国の王立神殿に所属する女神官。\r\n\r\n「聖女」の称号を有するが、これは神の力を導く「神聖魔法」の先天的な使い手であることを示している。\r\n外見年齢は30代後半。未亡人。\r\n\r\n表向きは国王の忠実な配下であるが、実質的には主導権を握っている。\r\n一見すると優しく穏やかな性格だが、その本性は淫乱であり、娼婦顔負けのテクニックの持ち主。\r\n自らがマゾ役となってのSMプレイも好むが、それはハードなセックスを望んでのことであり、\r\n被虐願望自体はそれほど○くない。\r\n\r\n全体的にムッチリとした体付きで巨乳かつ巨尻。\r\nほとんど癖のない金髪をアップにまとめており、碧眼でメガネをかけている。\r\nいつもにこやかな表情を浮かべ、口調は丁寧でけして語気を荒げるようなことはない。\r\n左手の○指に指輪を嵌めている。\r\n\r\nセックス中は男に隷従するふうを装うが、\r\nそれはあくまで相手をより興奮させるためであり、実際には展開をリードすることを好む。\r\nとろけるように柔らかいくせにミッチリと詰まった膣肉による、\r\nオスに媚びるような吸い付きのマン穴が特徴。",
+    "name": "聖女ミカ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "留須原 美霞"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 163123,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d9/7a/156209_crt_4yM0n.jpg?r=1713846018",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d9/7a/156209_crt_4yM0n.jpg?r=1713846018",
+      "large": "https://lain.bgm.tv/pic/crt/l/d9/7a/156209_crt_4yM0n.jpg?r=1713846018",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d9/7a/156209_crt_4yM0n.jpg?r=1713846018"
+    },
+    "summary": "神の声を聞ける、聖女の力を持つ少女。線の細い美少女なのだが、「変人」と称しても差し支えない奇妙な言動をする。聖女の力を持っているのは確かなようなのだが、本人は信仰心がさっぱりなく働くのが大嫌い。もともとはただの下級シスターで、聖女になったのは主人公の過去の行いが関係している。それをネタにして教団に居座り、日中部屋に引きこもってぐーたらな生活を満喫する駄目聖女。",
+    "name": "レスタリア",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "聖女レスタリア"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://ci-en.dlsite.com/creator/65/article/416317"
+      },
+      {
+        "key": "原画",
+        "value": "梅鳥うりり"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 156209,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/8b/123756_crt_2bTbM.jpg?r=1673579281",
+      "grid": "https://lain.bgm.tv/pic/crt/g/38/8b/123756_crt_2bTbM.jpg?r=1673579281",
+      "large": "https://lain.bgm.tv/pic/crt/l/38/8b/123756_crt_2bTbM.jpg?r=1673579281",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/8b/123756_crt_2bTbM.jpg?r=1673579281"
+    },
+    "summary": "大昔にこの地で没したとされる聖女。水の都セーレンを守護し、邪悪な者を退けている。人前に出てこないが、本当は人に褒められるのが大好き。",
+    "name": "水の聖女",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "水之圣女"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://soushokudragon.jp/"
+      },
+      {
+        "key": "中文CV",
+        "value": "朔小踹"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 5
+    },
+    "id": 123756,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/2e/fd/170645_crt_44JMf.jpg?r=1750400880",
+      "grid": "https://lain.bgm.tv/pic/crt/g/2e/fd/170645_crt_44JMf.jpg?r=1750400880",
+      "large": "https://lain.bgm.tv/pic/crt/l/2e/fd/170645_crt_44JMf.jpg?r=1750400880",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2e/fd/170645_crt_44JMf.jpg?r=1750400880"
+    },
+    "summary": "教導国家ドラグマにおいて、歴史上初めて額に聖痕を宿した\"最も清らかなる聖女\"。\r\n朗らかな笑みと分け隔てない慈しみの心を持ち、民からの敬愛を一身に受ける。",
+    "name": "教導の聖女エクレシア",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "教导之圣女 艾克利西亚"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "艾克蕾西亚"
+          },
+          {
+            "v": "艾克莉西娅"
+          },
+          {
+            "k": "昵称",
+            "v": "吃货"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 5,
+      "collects": 9
+    },
+    "id": 170645,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c9/46/213659_crt_EfMSf.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c9/46/213659_crt_EfMSf.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c9/46/213659_crt_EfMSf.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c9/46/213659_crt_EfMSf.jpg"
+    },
+    "summary": "「脳液が欲しいの。暗く蕩けた脳液が…」\r\n\r\nDLCの実験棟にいる患者の一人。椅子に括り付けられ、スライムのように蠢く頭部を持つ異形の姿をしている。彼女も血の聖女であり、アイテム『脳液』との交換で血を与えてくれる。",
+    "name": "血の聖女アデライン",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 213659,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/0c/62/5469_crt_0UaRS.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/0c/62/5469_crt_0UaRS.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/0c/62/5469_crt_0UaRS.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/0c/62/5469_crt_0UaRS.jpg"
+    },
+    "summary": "",
+    "name": "メルファ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "梅尔法"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "帝都の聖女 メルファ"
+          },
+          {
+            "k": "英文名",
+            "v": "Melpha"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "166cm"
+      },
+      {
+        "key": "BWH",
+        "value": "96-67-88"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 4
+    },
+    "id": 5469,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/26/e3/131169_crt_T1bQs.jpg?r=1686169759",
+      "grid": "https://lain.bgm.tv/pic/crt/g/26/e3/131169_crt_T1bQs.jpg?r=1686169759",
+      "large": "https://lain.bgm.tv/pic/crt/l/26/e3/131169_crt_T1bQs.jpg?r=1686169759",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/26/e3/131169_crt_T1bQs.jpg?r=1686169759"
+    },
+    "summary": "",
+    "name": "見習聖女",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "见习圣女"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "至高神の聖女"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 5
+    },
+    "id": 131169,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/70/ec/77029_crt_M8khs.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/70/ec/77029_crt_M8khs.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/70/ec/77029_crt_M8khs.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/70/ec/77029_crt_M8khs.jpg"
+    },
+    "summary": "振り回す学生会会長属性。\r\n王族で女神の敬謙な信者である彼女は勇者と結婚するのが運命だと幼少の頃から思ってきた。\r\nしかし勇者が女だったため、その夢も破れたものの勇者のよき理解者として共に魔王を滅ぼすたびをしている。\r\nそんなおり、女神よりの使途が使わされ彼の子を産むことこそが天命であると信じて疑わない彼女。\r\n\r\n教会や貴族たちに深いコネクションをもっているため、主人公の文化を広めることに率先して協力。\r\n貴族たちを巻き込んでサロンで女貴族達とコスプレイベントを開いたりする。\r\n主人公の夢にじゃまな貴族を追い詰めたり謀略を繰り返したりと主人公を妄信するあまり腹黒姫を地でいく面も。\r\n\r\n「あなたが、わたしの運命の人ですね！ すぐに孕みますからおまかせください」",
+    "name": "サファイア",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "聖女サファイア"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 77029,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

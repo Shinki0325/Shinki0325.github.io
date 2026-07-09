@@ -1,0 +1,493 @@
+[
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/3f/2c/32886_crt_kNw4N.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/3f/2c/32886_crt_kNw4N.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/3f/2c/32886_crt_kNw4N.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3f/2c/32886_crt_kNw4N.jpg"
+    },
+    "summary": "戦後すぐに即位した皇国の皇帝、通称《翡翠帝》。\r\n国民に絶大な人気を誇り、可憐な姿と涼やかな声は敗戦で傷ついた国民の心を癒やしてきました。\r\n一般には先代皇帝の娘だと信じられていますが、実際には王家と血の繋がりはなく、正体は宗仁の義妹です。\r\nしかし、彼女の素性は最高機密とされ、兄妹ともに互いが生存していることすら知りません。\r\nどのような事情で彼女は皇帝に即位したのでしょうか。\r\n性格はかなり控えめ。男性の数歩後ろを静かについていくような奥ゆかしさがあります。",
+    "name": "鴇田奏海",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "鸨田奏海"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "鴇田 奏海"
+          },
+          {
+            "k": "纯假名",
+            "v": "ときた かなみ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Tokita Kanami"
+          },
+          {
+            "k": "昵称",
+            "v": "翡翠帝"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "BWH",
+        "value": "74B/52/76"
+      }
+    ],
+    "stat": {
+      "comments": 16,
+      "collects": 61
+    },
+    "id": 32886,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/5d/2d/9425_crt_OO9L1.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/5d/2d/9425_crt_OO9L1.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/5d/2d/9425_crt_OO9L1.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5d/2d/9425_crt_OO9L1.jpg"
+    },
+    "summary": "",
+    "name": "鴇田純",
+    "infobox": [
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ときた じゅん"
+          },
+          {
+            "k": "罗马字",
+            "v": "Tokita Jun"
+          },
+          {
+            "k": "日文名",
+            "v": "鴇田純"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 9425,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f2/ee/33032_crt_WEVOZ.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f2/ee/33032_crt_WEVOZ.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f2/ee/33032_crt_WEVOZ.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f2/ee/33032_crt_WEVOZ.jpg"
+    },
+    "summary": "先の戦争において、家族だけでなく過去の記憶まで失った武人です。戦後しばらくは稲生家で世話になっていました。現在は町の花屋【糀谷生花店】で働きながら一人暮らしをしています。\r\n道場で師範代を務めていたほどの剣の腕を持ち、仕えるべき主がいなくなった今でも鍛錬は怠りません。 性格は武人らしく実直そのもの。かつては冗談の一つも言えない性格でしたが、花屋の仕事のお陰か最近は肩の力が抜けてきたともっぱらの評判です。",
+    "name": "鴇田宗仁",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Tokita Sojin"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 25,
+      "collects": 9
+    },
+    "id": 33032,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/84/50/138579_crt_kkt71.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/84/50/138579_crt_kkt71.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/84/50/138579_crt_kkt71.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/84/50/138579_crt_kkt71.jpg"
+    },
+    "summary": "壮太の彼女。クラスは別。\r\n明るく社交的な性格だが、\r\n男性は苦手でエッチなことに関しても奥手。\r\nカノジョとして壮太を元気づけて\r\nあげようとしているが少々空回り気味。",
+    "name": "鴇田未弥",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "鴇田 未弥"
+          },
+          {
+            "k": "纯假名",
+            "v": "ときた みや"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "CV",
+        "value": "涼風一花"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 138579,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ff/f3/88244_crt_jssts.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ff/f3/88244_crt_jssts.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ff/f3/88244_crt_jssts.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ff/f3/88244_crt_jssts.jpg"
+    },
+    "summary": "身長：141cm　 スリーサイズ：B68/ W50/ H72　 誕生日：6月2日　 血液型：A型\r\n趣味：お兄ちゃんと遊ぶ、おふろ、ぬいぐるみ集め　 特技：うんどう、演技、そうじ\r\n好き：お兄ちゃんにほめてもらう、肉りょうり、甘いもの　 嫌い：生魚、イジメ\r\n\r\nじこしょうかいー、ちどりだよっ！\r\nこるりとはふたごで、ボクのほうが妹なの。\r\n好きなのはー、からだを動かすこと！　サッカーでもじゅーどーでもバスケでもできるよ。\r\nあともちろん、お兄ちゃんもだい好きっ！\r\nお兄ちゃんのにおいをかいでるだけで、ボク、おまたがむずむずしてきちゃうんだ。\r\nえへへ……ほら、いまも。 お兄ちゃん、見える？\r\n\r\n「えへへ……お兄ちゃんのにおいがするぅ……ボク、このにおいだ～いすき！」",
+    "name": "鴇田ちどり",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "鴇田 ちどり"
+          },
+          {
+            "k": "纯假名",
+            "v": "ときた ちどり"
+          }
+        ]
+      },
+      {
+        "key": "CV",
+        "value": "民安ともえ"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 88244,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/2f/47/88245_crt_OB5h0.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/2f/47/88245_crt_OB5h0.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/2f/47/88245_crt_OB5h0.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/2f/47/88245_crt_OB5h0.jpg"
+    },
+    "summary": "身長：144cm　 スリーサイズ：B72/ W51/ H73　 誕生日：6月2日　 血液型：A型\r\n趣味：お兄様かんさつ、妄想、読書、不思議ジュース飲み歩き　 特技：りょうり、あみ物、パズル\r\n好き：お兄様になでられる、不思議ジュース　 嫌い：うめぼし、血 （ケガした人とかを見ること）\r\n\r\nふたごの姉の、こるりです。\r\nちどりとちがって、うんどうはとくいではないですけれど……でもお兄様のためなら、わたしなんだってがんばれます。\r\nえっちなことだってちゃんと勉強してるんですよ。\r\nいつもお兄様のことをかんがえながら………はぁぁ……ああ、そんな、お兄様……\r\nそんなにされたら、こるりはもう、こるりは……っ！\r\n\r\n「わたし……お兄様にえっちなお勉強、教えてほしいです……」",
+    "name": "鴇田こるり",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "鴇田 こるり"
+          },
+          {
+            "k": "纯假名",
+            "v": "ときた こるり"
+          }
+        ]
+      },
+      {
+        "key": "CV",
+        "value": "青葉りんご"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 88245,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/3d/e0/88247_crt_n6mTT.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/3d/e0/88247_crt_n6mTT.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/3d/e0/88247_crt_n6mTT.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3d/e0/88247_crt_n6mTT.jpg"
+    },
+    "summary": "身長：138cm　 スリーサイズ：B69/ W48/ H69　 誕生日：3月3日　 血液型：O型\r\n趣味：弟いじり、恋愛相談、下着姿で寝転がりながらビール　 特技：保健体育、柔軟\r\n好き：お酒、お菓子、ゴスロリ、弟や妹たち　 嫌い：女学園の教頭先生\r\n\r\nはーい。おねえちゃんだよ～。\r\nむっ、その目は何かな？　身体はちっちゃくても、本当にれっきとした姉なんだからね。\r\n保健体育の先生で、保健室の先生もしてるから、準君は先輩としてもしっかりうやまうよーに。\r\n学園の中でどうしても我慢できなくなったら……保健室まで来れば、ナニかしてあげてもいいよ？　あははっ\r\n\r\n「あいたっ！　ぶった、準くんがお姉ちゃんをぶったー！」",
+    "name": "鴇田つばめ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "鴇田 つばめ"
+          },
+          {
+            "k": "纯假名",
+            "v": "ときた つばめ"
+          }
+        ]
+      },
+      {
+        "key": "CV",
+        "value": "桃井いちご"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 88247,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/82/7f/141243_crt_VQBV7.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/82/7f/141243_crt_VQBV7.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/82/7f/141243_crt_VQBV7.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/82/7f/141243_crt_VQBV7.jpg"
+    },
+    "summary": "カナダ人を母に持つオープンな性格。日本文化に興味があり、帰国子女と て学園に入学する。\r\n得意学科は、古文と日本史。\r\n大食漢の割には、抜群のプロポーションを誇る。",
+    "name": "ジュディ・鴇田（ときた）・アンダーソン",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 141243,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 22,
+    "birth_year": null,
+    "blood_type": 4,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/66/4a/5678_crt_NczPK.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/66/4a/5678_crt_NczPK.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/66/4a/5678_crt_NczPK.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/66/4a/5678_crt_NczPK.jpg"
+    },
+    "summary": "本动画之主角。15岁，生日为7/22，O型，身长157cm，体重46公斤，鸨羽巧海的姊姊。认真且责任感强，擅长料理，常常到处打工赚取所需花费。与菊川雪之、原田千绘、日暮茜、瀬能葵等为同班同学，室友为美袋命。她以迦具土身体抵挡爱莉莎•西亚斯子兽Artemis的射击，从而使迦具土变为新型迦具土。后半部一直想阻止HiME之间的战斗，但因目睹弟弟鸨羽巧海及楯祐一的消失，使情绪多次崩溃，甚至曾对失控的美袋命产生厌恶感。虽然鸨羽舞衣个人战斗能力一般，但其子兽迦具土却是众多子兽中最强最具破坏力，总括而言是实力首三位的HiME之一。\r\n    印记位置：胸前\r\n    元素武具（Element）：宝轮/风火轮（带火焰，脚上亦有宝轮帮助飞行，攻守兼备的武具。）\r\n    子兽（Child）：迦具土→新型迦具土（龙型态，以日本传说的火之神为原型，主要攻击方式为从嘴部喷出火焰，其破坏力惊人。）\r\n    最重要的人（大切な人）：鸨羽巧海→楯祐一\r\n    后半部败北原因：没有，她与美袋命都没有败北。",
+    "name": "鴇羽舞衣",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "鸨羽舞衣"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "鴇羽舞衣"
+          },
+          {
+            "k": "纯假名",
+            "v": "ときは まい"
+          },
+          {
+            "k": "罗马字",
+            "v": "Tokiha Mai"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "????-07-22"
+      },
+      {
+        "key": "血型",
+        "value": "O"
+      },
+      {
+        "key": "身高",
+        "value": "157"
+      },
+      {
+        "key": "体重",
+        "value": "46"
+      },
+      {
+        "key": "BWH",
+        "value": "87/56/83"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 27
+    },
+    "id": 5678,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 8,
+    "gender": "male",
+    "birth_day": 28,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/8b/a6/5689_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/8b/a6/5689_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/8b/a6/5689_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8b/a6/5689_crt_anidb.jpg"
+    },
+    "summary": "舞衣の弟。明るく素直でかなり誰からも好かれる性格の持ち主。だが、身体が弱く常に体育は見学している。舞衣がバイトに明け暮れる理由も、そのあたりにあるらしい。",
+    "name": "鴇羽巧海",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "鴇羽巧海"
+          },
+          {
+            "k": "罗马字",
+            "v": "Tokiha Takumi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "????-08-28"
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      },
+      {
+        "key": "身高",
+        "value": "152"
+      },
+      {
+        "key": "体重",
+        "value": "46"
+      },
+      {
+        "key": "BWH",
+        "value": "77/70/76"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://www.tv-tokyo.co.jp/anime/maihime/"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 3
+    },
+    "id": 5689,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

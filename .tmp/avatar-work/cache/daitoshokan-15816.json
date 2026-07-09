@@ -1,0 +1,577 @@
+[
+  {
+    "birth_mon": 11,
+    "gender": "female",
+    "birth_day": 1,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/e1/0b/16639_crt_Fjs2K.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/e1/0b/16639_crt_Fjs2K.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/e1/0b/16639_crt_Fjs2K.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/e1/0b/16639_crt_Fjs2K.jpg"
+    },
+    "summary": "図書部の実質的な進行役で、メンバーが豪快に脱線させた話を本題に戻すのが彼女の仕事。\r\n無駄を好まないこともあるが、白崎さんをサポートしたいという思いが彼女を動かしている。\r\n性格は真面目で自分に厳しい努力家。\r\nそれでいて、恋愛話や冗談にも対応できることから、男女問わず人気がある。\r\n\r\n「いい加減話を戻してくれ。このままじゃ、白崎の可愛い困り顔を堪能するだけで終わってしまうぞ」",
+    "name": "桜庭玉藻",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "樱庭玉藻"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "桜庭 玉藻"
+          },
+          {
+            "k": "纯假名",
+            "v": "さくらば たまも"
+          },
+          {
+            "k": "罗马字",
+            "v": "Sakuraba tamamo"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "11-01"
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      },
+      {
+        "key": "身高",
+        "value": "161.7cm"
+      },
+      {
+        "key": "体重",
+        "value": "47.2kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B85(C)/ W56/ H83"
+      }
+    ],
+    "stat": {
+      "comments": 17,
+      "collects": 105
+    },
+    "id": 16639,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/79/92/181220_crt_UKUUv.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/79/92/181220_crt_UKUUv.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/79/92/181220_crt_UKUUv.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/79/92/181220_crt_UKUUv.jpg"
+    },
+    "summary": "検事界ナンバーワンを目指す、凄腕の検事。実はユニバース戦士で、リュウソウレッドになって戦う。角乃からセンタイリングを奪おうとするが…!?",
+    "name": "桜庭",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "樱庭"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "演员",
+        "value": "大森寛人"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 181220,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c2/55/3870_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c2/55/3870_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c2/55/3870_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c2/55/3870_crt_anidb.jpg"
+    },
+    "summary": "饭纲纪之的死党，18岁，和土宫等人一样是超自然灾害对策室所属的代理。",
+    "name": "桜庭一騎",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "樱庭一骑"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "桜庭 一騎"
+          },
+          {
+            "k": "纯假名",
+            "v": "さくらば かずき"
+          },
+          {
+            "k": "罗马字",
+            "v": "Sakuraba Kazuki"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 7,
+      "collects": 3
+    },
+    "id": 3870,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f1/29/4582_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f1/29/4582_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f1/29/4582_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f1/29/4582_crt_anidb.jpg"
+    },
+    "summary": "本作的女主角。以成为薰的妻子为目标，一路从小努力的女孩。因花菱家突然取消婚约的缘故，而来到东京向薰确认他的心意。料理和家事全能，与薰居住在樱庭家位于东京的一座别馆之中。\r\n小时候因花菱与樱庭订婚的关系与葵相识，有着许多儿时的回忆。两人在神木下刻下自己的身高及名字，而后分离时葵也经常在神社祈求能尽速见到薰。\r\n取消与花菱家的婚约后，樱庭家帮葵选定另外的订婚对象时，遭到葵的拒绝。薰当时以不想让葵受到自己失去家人的痛苦为理由前去说服樱庭家接纳自己。在此之后，樱庭家便监视着薰是否有成为花菱家当主的可能性为前提继续让葵与薰同居。\r\n在花菱家的当家过世后，樱庭家参与软禁葵的行动。被软禁的葵想起小时候第一次遇到薰的情景，并回忆起自己一路努力过来的初衷。因此在订婚当天，主动说出要抛弃樱庭的名字，与薰在一起。最后与改回旧姓的薰结婚(从夫姓本条葵)，两人一起住在一栋小公寓中。",
+    "name": "桜庭葵",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "樱庭葵"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "桜庭 葵"
+          },
+          {
+            "k": "罗马字",
+            "v": "Sakuraba Aoi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "7月7日"
+      }
+    ],
+    "stat": {
+      "comments": 9,
+      "collects": 47
+    },
+    "id": 4582,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 4,
+    "gender": "male",
+    "birth_day": 21,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/4c/f0/13043_crt_eF755.jpg?r=1617953348",
+      "grid": "https://lain.bgm.tv/pic/crt/g/4c/f0/13043_crt_eF755.jpg?r=1617953348",
+      "large": "https://lain.bgm.tv/pic/crt/l/4c/f0/13043_crt_eF755.jpg?r=1617953348",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4c/f0/13043_crt_eF755.jpg?r=1617953348"
+    },
+    "summary": "本作の主人公。渋谷生まれ渋谷育ちの15歳の少年。他人と分かり合うことに疑問を感じ、一人でいることを好むと同時に他人と関わることを極度に嫌っている。常にヘッドフォンを着けているのは、自分と周りの世界を遮断していることの表れである。趣味は音楽や「グラフィティ」と呼ばれるストリートアート。シブヤで「CAT」と呼ばれる、グラフィティやデザインで有名な人物を尊敬している。バッジを利用したサイキックに長けている。",
+    "name": "桜庭音操",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "樱庭音操"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "サクラバ ネク"
+          },
+          {
+            "k": "昵称",
+            "v": "ネク"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "4月21日"
+      }
+    ],
+    "stat": {
+      "comments": 5,
+      "collects": 20
+    },
+    "id": 13043,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/5f/b2/19206_crt_ME5Bc.jpg?r=1676109548",
+      "grid": "https://lain.bgm.tv/pic/crt/g/5f/b2/19206_crt_ME5Bc.jpg?r=1676109548",
+      "large": "https://lain.bgm.tv/pic/crt/l/5f/b2/19206_crt_ME5Bc.jpg?r=1676109548",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5f/b2/19206_crt_ME5Bc.jpg?r=1676109548"
+    },
+    "summary": "二年级学生，编织研究会会长。在放榜日招募会员时被搭讪，正当她不知该如何是好时，孝太郎出手帮了她的忙，因此认识了孝太郎，成为他加入同好会的契机。不习惯和异性相处，对孝太郎以外的男学生都保持距离。\r\n身体不好，常到医院检查身体，并顺便读故事书给小孩子听，而被孩子们当成姊姊般爱慕。",
+    "name": "桜庭晴海",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "樱庭晴海"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "桜庭 晴海"
+          },
+          {
+            "k": "纯假名",
+            "v": "さくらば はるみ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Sakuraba Harumi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "161cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B80/W55/H79"
+      },
+      {
+        "key": "引用来源",
+        "value": "Wiki"
+      }
+    ],
+    "stat": {
+      "comments": 13,
+      "collects": 74
+    },
+    "id": 19206,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 3,
+    "gender": "male",
+    "birth_day": 12,
+    "birth_year": null,
+    "blood_type": 1,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b8/76/21486_crt_Zxufl.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b8/76/21486_crt_Zxufl.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/b8/76/21486_crt_Zxufl.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b8/76/21486_crt_Zxufl.jpg"
+    },
+    "summary": "入学时因为身高优势被拉入球队，虽然喜爱美式足球，却因为自己资质平平一度陷入迷茫。由于出色的外貌和身高被演艺公司经纪人发掘当上艺人，每场比 赛都会吸引大量的女性球迷，对于实力一般的自己被媒体吹捧为王城队主力感到异常苦恼，目睹了进的迅速成长后更是压力倍增，甚至一度想要放弃美式足球。受到濑那的鼓励后逐渐振作起来，在经过一系列的比赛后明确了自己的目标，毅然辞去了艺人的工作、专心做一名美式足球选手，目标是通过后天的努力成为一流的接球 手、甚至是球队的真正王牌。\r\n\r\n樱庭的毅力在王城中不比任何人弱，是唯一一人能有勇气与天才进清十郎比较同从后追赶的人。与队友高见伊知郎成了超高空传球的黄金搭档，由他接下高见伊知郎传出的“珠穆朗玛峰传球”达阵取分。泥门战把他加入防守来把门太的接球封锁。",
+    "name": "櫻庭春人",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "樱庭春人"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "櫻庭 春人"
+          },
+          {
+            "k": "纯假名",
+            "v": "さくらば はると"
+          },
+          {
+            "k": "罗马字",
+            "v": "Sakuraba Haruto"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "3月12日"
+      },
+      {
+        "key": "血型",
+        "value": "A"
+      },
+      {
+        "key": "身高",
+        "value": "186cm"
+      },
+      {
+        "key": "体重",
+        "value": "72kg"
+      },
+      {
+        "key": "背号",
+        "value": "18"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 3
+    },
+    "id": 21486,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/73/22620_crt_9d8d9.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/65/73/22620_crt_9d8d9.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/65/73/22620_crt_9d8d9.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/73/22620_crt_9d8d9.jpg"
+    },
+    "summary": "善一と血の繋がった実の妹であり、優しく清楚な女の子。\r\n両親が留守にしているため現在はお兄ちゃんと二人きりで生活中。\r\n\r\n勉強が得意で人当たりも良く、学園ではその見目麗しさから高嶺の花に例えられることも。\r\nだけど家ではお兄ちゃんにベタベタする甘えん坊。\r\n二人きりだと油断してしまい、服装が乱れて下着やおへそが見えてしまうことも。\r\nお兄ちゃんに指摘され、真っ赤になって恥ずかしがる可愛らしい女の子。",
+    "name": "桜庭水穂",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "桜庭 水穂"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "152cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B80/ W51/ H79"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 28
+    },
+    "id": 22620,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 7,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d1/d7/27252_crt_5AT9x.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d1/d7/27252_crt_5AT9x.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/d1/d7/27252_crt_5AT9x.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d1/d7/27252_crt_5AT9x.jpg"
+    },
+    "summary": "主人公の通う鶴羽学園の上級生。\r\nおっとりとした物腰と優しい笑顔が特徴で、学園内に知り合いが多い。\r\n 先日行なわれた “男女それぞれ100名に聞いた！ お嫁さんにしたい人ランキング” にて、男性版・女性版 両方で1位を獲得した有名人。\r\n\r\n家庭部に所属していた時から、手芸と料理どちらも完璧にこなすその姿にファンが急増。\r\n今も引退した家庭部に時々顔を出して、後輩たちから喜ばれている。\r\n\r\n「ああ、だめよ、そんなに乱暴にしちゃ……。 もう少し丁寧に……ね？」",
+    "name": "桜庭萌美",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "樱庭萌美"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "桜庭 萌美"
+          },
+          {
+            "k": "纯假名",
+            "v": "さくらば もえみ"
+          },
+          {
+            "k": "罗马字",
+            "v": "sakuraba moemi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "3月7日"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "身高",
+        "value": "158cm"
+      },
+      {
+        "key": "体重",
+        "value": "49kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B82/ W60/ H83"
+      },
+      {
+        "key": "所属",
+        "value": "私立鶴羽学園 3年D組、家庭部OG"
+      },
+      {
+        "key": "趣味",
+        "value": "お菓子作り"
+      },
+      {
+        "key": "特技",
+        "value": "お料理、お裁縫"
+      },
+      {
+        "key": "好き",
+        "value": "甘い物、可愛い物"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 11
+    },
+    "id": 27252,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/3c/7e/31093_crt_N8iNw.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/3c/7e/31093_crt_N8iNw.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/3c/7e/31093_crt_N8iNw.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3c/7e/31093_crt_N8iNw.jpg"
+    },
+    "summary": "雅と同じマンションの住人。\r\nほわっとした性格と悪意のない小悪魔キャラで人気の高いイベントコンパニオン。\r\n色々な意味で大らかな性格のため、同姓からは敬遠されやすいがイヤな人ではない。\r\n普段は下着にセーターだけの開放的な服装で、生活力という意味での女子力は低い。\r\n\r\n仕事に対しては非常にマジメだが、面倒くさがりなので仕事を受けたがらない。\r\n初めて会った雅に一目惚れしてしまい、処女なのに押し倒してしまう。\r\nまじめな雅をからかうのが楽しくて仕方ない様子。\r\n\r\n「あはっ♪ なんだか元気がないね～？　あたしの元気、分けてあげよっか？」",
+    "name": "桜庭佳織",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "桜庭 佳織"
+          },
+          {
+            "k": "纯假名",
+            "v": "さくらば かおり"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "BWH",
+        "value": "B84（D）/ W55/ H84"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 7
+    },
+    "id": 31093,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

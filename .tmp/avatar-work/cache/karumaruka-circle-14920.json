@@ -1,0 +1,437 @@
+[
+  {
+    "birth_mon": 10,
+    "gender": "female",
+    "birth_day": 10,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/14/80/20333_crt_jJcqJ.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/14/80/20333_crt_jJcqJ.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/14/80/20333_crt_jJcqJ.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/14/80/20333_crt_jJcqJ.jpg"
+    },
+    "summary": "学園一の不良かつ美人。\r\n学園では禁止されているピアスを着けたり、ネックレスなどいろんなアクセサリーを付けて登校している。\r\n遅刻早退が多く、授業中は昼寝をしているか、いつもお腹を鳴らしている。\r\nそんな態度のため周りから不良と見られているが、本人は自由奔放、マイペースに学園生活をエンジョイしているだけ。\r\n意外にも恋愛に無頓着で鈍感。\r\n親と折り合いが悪く、この学園に入れられた。\r\nしかし親の言いなりにはなりたくないと、寮を出てふらふらとそこら辺で野宿とバイトをしながら暮らしている。\r\n【Access key for KARUMARUKA：暴食】\r\nいつでも腹ぺこ。 余裕のある時は自作のサンドウィッチか食べ物を持ち歩いている。\r\n通常の量では全然足りない。 食べたい時に食べられないと、恐ろしくお腹が鳴る。ぐぴー。\r\n\r\n「うっさいな、学費と生活費全部、自分でまかなってんだ」",
+    "name": "朝比奈晴",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "朝比奈晴"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "あさひな しん"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "10月10日"
+      },
+      {
+        "key": "身高",
+        "value": "157"
+      },
+      {
+        "key": "BWH",
+        "value": "86/58/87"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 24
+    },
+    "id": 20333,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/85/73/91953_crt_VVJWe.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/85/73/91953_crt_VVJWe.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/85/73/91953_crt_VVJWe.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/85/73/91953_crt_VVJWe.jpg"
+    },
+    "summary": "",
+    "name": "朝比奈",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 91953,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/34/27/152471_crt_mQd3w.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/34/27/152471_crt_mQd3w.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/34/27/152471_crt_mQd3w.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/34/27/152471_crt_mQd3w.jpg"
+    },
+    "summary": "CV:野崎雨汰",
+    "name": "朝比奈",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 152471,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f6/db/152498_crt_R4Vp9.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f6/db/152498_crt_R4Vp9.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f6/db/152498_crt_R4Vp9.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f6/db/152498_crt_R4Vp9.jpg"
+    },
+    "summary": "",
+    "name": "朝比奈",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "朝比奈"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 152498,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/cf/bc/7976_crt_328i7.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/cf/bc/7976_crt_328i7.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/cf/bc/7976_crt_328i7.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cf/bc/7976_crt_328i7.jpg"
+    },
+    "summary": "纯情误会（純情ミステイク）主角。井坂龙一郎的青梅竹马，现秘书兼恋人。",
+    "name": "朝比奈薫",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "朝比奈薫"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "朝比奈薫"
+          },
+          {
+            "k": "纯假名",
+            "v": "あさひな かおる"
+          },
+          {
+            "k": "罗马字",
+            "v": "Asahina Kaoru"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 4
+    },
+    "id": 7976,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/9a/9e/16086_crt_LVQ9l.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/9a/9e/16086_crt_LVQ9l.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/9a/9e/16086_crt_LVQ9l.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9a/9e/16086_crt_LVQ9l.jpg"
+    },
+    "summary": "主人公的青梅竹马。\r\n是寻找好事的名人、口头禅是「良かった♪」的温柔个性。\r\n担任学级委员长，是认真的优等生。",
+    "name": "朝比奈苺",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "朝比奈莓"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 7
+    },
+    "id": 16086,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ad/06/17236_crt_eh6Fn.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ad/06/17236_crt_eh6Fn.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ad/06/17236_crt_eh6Fn.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ad/06/17236_crt_eh6Fn.jpg"
+    },
+    "summary": "早季的青梅竹马。性格上好恶分明，单纯而好动，同时也有着直来直去、敢说敢言、无所畏惧的易懂性格，经常跟早季争锋相对。\r\n时而没有恶意的夸大事实，对于认真严肃的劝解也总是左耳朵进右耳朵出，以敷衍、无所谓的态度来应付，但认真时也十分可靠。\r\n\r\n早季の幼馴染。悪びれることなくずけずけと物を言う明け透けな性格。早季とは憎まれ口を叩き合う仲。\r\nまた、悪気はないものの物事を大げさに語る傾向があり、真面目な話を”ホラ”と例えてしまうことも少なくない。",
+    "name": "朝比奈覚",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "朝比奈觉"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Satoru Asahina"
+          },
+          {
+            "k": "日文名",
+            "v": "朝比奈 覚"
+          },
+          {
+            "k": "纯假名",
+            "v": "あさひな さとる"
+          },
+          {
+            "k": "罗马字",
+            "v": "Asahina Satoru"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://zh.moegirl.org.cn/%E6%9C%9D%E6%AF%94%E5%A5%88%E8%A7%89"
+      }
+    ],
+    "stat": {
+      "comments": 28,
+      "collects": 65
+    },
+    "id": 17236,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/bb/98/17880_crt_20wqM.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/bb/98/17880_crt_20wqM.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/bb/98/17880_crt_20wqM.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/bb/98/17880_crt_20wqM.jpg"
+    },
+    "summary": "主人公たちの学園の保険医……、なのだが、全教科の教員免許を持ち、昼休みは食堂のシェフ、放課後は用務員と、あらゆる仕事を兼業しているスーパーオールラウンダー教員。\r\nその万能っぷりから、「朝比奈先生は六つ子」として学園七不思議の１つにも数えられている。",
+    "name": "朝比奈天馬",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "あさひな てんま"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "身高",
+        "value": "162cm"
+      },
+      {
+        "key": "体重",
+        "value": "52kg"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 17880,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ab/4f/18400_crt_mQVSs.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ab/4f/18400_crt_mQVSs.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ab/4f/18400_crt_mQVSs.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ab/4f/18400_crt_mQVSs.jpg"
+    },
+    "summary": "伦理委员会议长，觉的祖母（准确来说是九代之前的祖先）。凭借着只有自己才能使用的特殊咒力，已经活了两百多年。\r\n\r\n倫理委員会議長。覚の祖母（正確には9代前の先祖）。彼女にしか使えない特殊な呪力により200年以上生きている。",
+    "name": "朝比奈富子",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "朝比奈富子"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "朝比奈 富子"
+          },
+          {
+            "k": "纯假名",
+            "v": "あさひな とみこ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 9,
+      "collects": 14
+    },
+    "id": 18400,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/89/4d/18692_crt_APZ1F.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/89/4d/18692_crt_APZ1F.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/89/4d/18692_crt_APZ1F.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/89/4d/18692_crt_APZ1F.jpg"
+    },
+    "summary": "烈火の忍者ヴァイオリニスト",
+    "name": "朝比奈司",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "身高",
+        "value": "184cm"
+      },
+      {
+        "key": "体重",
+        "value": "75kg"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 18692,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

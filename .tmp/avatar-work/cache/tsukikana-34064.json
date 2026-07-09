@@ -1,0 +1,511 @@
+[
+  {
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 24,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a6/aa/68751_crt_4B5Oo.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a6/aa/68751_crt_4B5Oo.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a6/aa/68751_crt_4B5Oo.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a6/aa/68751_crt_4B5Oo.jpg"
+    },
+    "summary": "主人公と同じ出版社に勤める敏腕編集長。\r\n花形である『小説よつば』をはじめ、\r\n多数の人気小説の刊行に携わる。\r\n\r\nスタイル抜群、大人の魅力溢れる女性。\r\n人当たりもよく、憂いを帯びた\r\nにこやかな笑顔が特徴的。\r\n\r\n仕事に打ち込む余り、気が付けば結婚適齢期を過ぎ、\r\n母親からのプレッシャーに悩まされている。",
+    "name": "松宮霧子",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "松宮 霧子"
+          },
+          {
+            "k": "纯假名",
+            "v": "まつみや きりこ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Matsumiya Kiriko"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "4月24日"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "身高",
+        "value": "164cm"
+      },
+      {
+        "key": "体重",
+        "value": "54kg"
+      },
+      {
+        "key": "BWH",
+        "value": "91(F)/56/89"
+      },
+      {
+        "key": "年齢",
+        "value": "35歳"
+      },
+      {
+        "key": "好きな食べ物",
+        "value": "ハイボール"
+      },
+      {
+        "key": "嫌いな食べ物",
+        "value": "発泡酒"
+      }
+    ],
+    "stat": {
+      "comments": 19,
+      "collects": 35
+    },
+    "id": 68751,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/41/1a/130128_crt_pff8m.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/41/1a/130128_crt_pff8m.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/41/1a/130128_crt_pff8m.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/41/1a/130128_crt_pff8m.jpg"
+    },
+    "summary": "和哉の高校の先輩、現在は芸能プロデューサー。ゲームの冒頭、オルフェのラスト・ギグのあと、その会場で殺害されてしまう。周囲ではあまり良い噂がなかったようだ。",
+    "name": "松宮",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 130128,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/54/215434_crt_bc5Rh.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/29/54/215434_crt_bc5Rh.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/29/54/215434_crt_bc5Rh.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/54/215434_crt_bc5Rh.jpg"
+    },
+    "summary": "",
+    "name": "松宮",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "松宫"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 215434,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ab/cb/127777_crt_iIl6J.jpg?r=1680974494",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ab/cb/127777_crt_iIl6J.jpg?r=1680974494",
+      "large": "https://lain.bgm.tv/pic/crt/l/ab/cb/127777_crt_iIl6J.jpg?r=1680974494",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ab/cb/127777_crt_iIl6J.jpg?r=1680974494"
+    },
+    "summary": "「鬼島連合」の総長。怖がりな性格。\r\n乱奈を「鬼島連合」に引き入れたいと考えている。",
+    "name": "松ヶ宮童子",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "松之宫童子"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "松ヶ宮 童子"
+          },
+          {
+            "k": "纯假名",
+            "v": "まつがみや どうじ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Doji Matsugamiya"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://www.rokudo-akujo.com/character.html"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 127777,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/cb/70/141159_crt_m40yh.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/cb/70/141159_crt_m40yh.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/cb/70/141159_crt_m40yh.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cb/70/141159_crt_m40yh.jpg"
+    },
+    "summary": "ツインテールが特徴の妹。活発かつ開けっ広げな性格。\r\n姉とは対立しがちだが、義理堅くもあり心根は姉想いである。\r\n隣に住むお兄さん（主人公）に目をつけ、次々とHなイタズラを仕掛けていく。\r\n\r\n「うわあ、クサっ！ しかもベトベトしてる！　あ～あ、もう！ 服にもかかっちゃったじゃない……！」",
+    "name": "松宮ゆうみ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 141159,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/3e/7f/141160_crt_WI1jw.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/3e/7f/141160_crt_WI1jw.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/3e/7f/141160_crt_WI1jw.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3e/7f/141160_crt_WI1jw.jpg"
+    },
+    "summary": "控えめでおとなしい双子の姉。\r\n見た目は瓜二つだが、その表情と性格は妹と正反対で、おしとやかで優しさが表に立つ。\r\nしかし、一度カラダに火がつくと、妹同様に淫乱な性癖があらわになる。\r\n\r\n「ぶつかった時に胸をぶつけたみたいなの……ね、お兄ちゃん、痛いのとんでけって、してくれる？」",
+    "name": "松宮ゆうか",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 141160,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 2,
+    "gender": "female",
+    "birth_day": 3,
+    "birth_year": 1944,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a4/d3/77938_crt_Jf0Kq.jpg?r=1593200245",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a4/d3/77938_crt_Jf0Kq.jpg?r=1593200245",
+      "large": "https://lain.bgm.tv/pic/crt/l/a4/d3/77938_crt_Jf0Kq.jpg?r=1593200245",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a4/d3/77938_crt_Jf0Kq.jpg?r=1593200245"
+    },
+    "summary": "丁型駆逐艦、松型一番艦、松です。最後の量産型駆逐艦として、多数の妹が建造されました。戦時急増ながら、機関部の設定変更にある生産性向上と、対空対潜重視の兵装を整備しました。えっ、雑木林ですって？何言ってんの？私に任せて。\r\n我是丁型駆逐舰的松型一号舰——松。作为最后的量产型驱逐舰，当年还给我造了很多妹妹呢。为响应战时紧急建造的需求，机关部分的设计做了提高生産速度的调整，也配备了重视对空和反潜的武装。咦，说我们是「杂树丛」？乱讲什麽啦！放心让我办事就好了。",
+    "name": "松",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "松"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "松号驱逐舰1号舰"
+          },
+          {
+            "k": "日文名",
+            "v": "松型駆逐艦1番艦"
+          },
+          {
+            "k": "纯假名",
+            "v": "まつ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Matsu"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "1944-02-03"
+      },
+      {
+        "key": "体重",
+        "value": "1,262吨"
+      },
+      {
+        "key": "BWH",
+        "value": "全长100米/全宽9.35米/吃水3.3米"
+      },
+      {
+        "key": "图鉴编号",
+        "value": "641→702（改）"
+      },
+      {
+        "key": "画师",
+        "value": "渡辺明夫"
+      },
+      {
+        "key": "引用来源",
+        "value": "zh.kcwiki.cn/wiki/松"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 6
+    },
+    "id": 77938,
+    "locked": false,
+    "type": 3,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 25,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "",
+      "grid": "",
+      "large": "",
+      "medium": ""
+    },
+    "summary": "芳春院（1547年7月25日－1617年8月17日），前田利家正室，本名叫做松。生父为篠原一元（主计），其母竹野氏在丈夫战死后又改嫁给高田直吉。因为母亲改嫁的关系，她被送到姨母的夫家前田家，由利家的父亲前田利昌养育。她和利家本来是表兄妹的关系，大约在1558年时，与利家结婚，第二年时生下长女幸。\r\n\r\n阿松与利家生育二男九女，其中长男前田利长继承前田家，三女摩阿做了丰臣秀吉的侧室，四女豪姬成为秀吉的养女并嫁与五大老之一的宇喜多秀家，六女千世则是细川忠隆的妻子。阿松与利家夫妻在年轻时就与秀吉、宁宁这对夫妻是好朋友，他们之间的关系也特别亲密，甚至后来阿松也从秀吉那里得到化妆领地。\r\n\r\n1599年利家过世，阿松出家，号芳春院，并且在京都的大德寺里建立了芳春院。1600年，德川家康借口利家与利长当初有参与暗杀嫌疑而兴起征讨加贺的想法，芳春院为了前田家的前途，自愿成为人质前往江户，化解了危机，还让家康的孙女珠姬嫁到前田家。在关原之战以后，前田家成为百万石大名，芳春院功不可没。1614年，利长过世，芳春院才得以离开居住十五年的江户，回到金泽，并于1617年过世。法名“芳春院殿华严宗富大禅定尼”，墓在金泽的野田山墓地，而京都的大德寺芳春院也有她的墓。",
+    "name": "松",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "松"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "芳春院"
+          },
+          {
+            "v": "芳春院殿华严宗富大禅定尼"
+          },
+          {
+            "k": "第二中文名",
+            "v": "阿松"
+          },
+          {
+            "k": "日文名",
+            "v": "芳春院"
+          },
+          {
+            "k": "纯假名",
+            "v": "ほうしゅんいん"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "天文16年7月9日（1547年7月25日）"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://ja.wikipedia.org/wiki/%E8%8A%B3%E6%98%A5%E9%99%A2"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 78188,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/40/fb/114044_crt_AH3uF.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/40/fb/114044_crt_AH3uF.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/40/fb/114044_crt_AH3uF.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/40/fb/114044_crt_AH3uF.jpg"
+    },
+    "summary": "",
+    "name": "松",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "松"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Matsu"
+          },
+          {
+            "k": "纯假名",
+            "v": "まつ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "161cm"
+      },
+      {
+        "key": "体重",
+        "value": "47kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B-95 W-59 H-91"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://www.sekirei-tv.com/1st/chara"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 4
+    },
+    "id": 114044,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/b9/f1/75484_crt_fg1Gd.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/b9/f1/75484_crt_fg1Gd.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/b9/f1/75484_crt_fg1Gd.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/b9/f1/75484_crt_fg1Gd.jpg"
+    },
+    "summary": "",
+    "name": "まっつん",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "松"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 1
+    },
+    "id": 75484,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

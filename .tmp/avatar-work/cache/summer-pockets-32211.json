@@ -1,0 +1,444 @@
+[
+  {
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 4,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/aa/ca/59848_crt_YlLXl.jpg?r=1682925900",
+      "grid": "https://lain.bgm.tv/pic/crt/g/aa/ca/59848_crt_YlLXl.jpg?r=1682925900",
+      "large": "https://lain.bgm.tv/pic/crt/l/aa/ca/59848_crt_YlLXl.jpg?r=1682925900",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/aa/ca/59848_crt_YlLXl.jpg?r=1682925900"
+    },
+    "summary": "海賊船を探すお嬢様\r\n\r\n身長：158cm\r\n体重：43kg\r\n3サイズ：B86 W56 H85\r\n趣味：ボトルシップ\r\n好物：三角形の秘密を持ったお菓子\r\n座右の銘：心に冒険を\r\n原画：Na-Ga\r\nCV：嶺内ともみ\r\n\r\n島で出会った不思議な少女。\r\nいつでも大きなスーツケースを引いている。\r\n\r\n中に何が入っているのかは絶対教えてくれない。\r\nこの島には主人公と同じくこの夏だけ滞在する。\r\n\r\n何か探しものがある様で、手には古ぼけた地図を持って島をさまよっている。\r\nその地図については「宝の地図なんだよ」と彼女は言う。\r\n\r\n「行くよ。 もう一度、海賊船のある場所まで」",
+    "name": "久島鴎",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "久岛鸥"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "久島 鴎"
+          },
+          {
+            "k": "纯假名",
+            "v": "くしま かもめ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kushima Kamome"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "4月4日"
+      },
+      {
+        "key": "身高",
+        "value": "158cm"
+      },
+      {
+        "key": "体重",
+        "value": "43kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B86/W56/H85"
+      },
+      {
+        "key": "年龄",
+        "value": "17岁"
+      }
+    ],
+    "stat": {
+      "comments": 205,
+      "collects": 683
+    },
+    "id": 59848,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/ce/04/29872_crt_Fyw86.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/ce/04/29872_crt_Fyw86.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/ce/04/29872_crt_Fyw86.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/ce/04/29872_crt_Fyw86.jpg"
+    },
+    "summary": "主人公たちのクラス担任。\r\n歳の近い先生ということもあり、学生たちの間では人気者。\r\nしかし本人は、そろそろ結婚が気になり始めている。",
+    "name": "久島佳苗",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "ひさしま かなえ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 6
+    },
+    "id": 29872,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 10,
+    "gender": "male",
+    "birth_day": 7,
+    "birth_year": 1978,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/5b/c5/38169_crt_JZI55.jpg?r=1452695784",
+      "grid": "https://lain.bgm.tv/pic/crt/g/5b/c5/38169_crt_JZI55.jpg?r=1452695784",
+      "large": "https://lain.bgm.tv/pic/crt/l/5b/c5/38169_crt_JZI55.jpg?r=1452695784",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5b/c5/38169_crt_JZI55.jpg?r=1452695784"
+    },
+    "summary": "波留の旧友であり、彼に対し様々なサポートを計らっている。メタリアル・ネットワークの開発者でもある。脳以外全身義体化しているため、外見は49年前とほとんど変わらないが、実年齢は波留の1歳上の82歳である。ミナモの祖母・洋子とも昔から親交がある。また、書記長の次期候補に名を連ねている。",
+    "name": "久島永一朗",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "久岛永一朗"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "1978年10月7日"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 38169,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/55/55/96857_crt_9ua00.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/55/55/96857_crt_9ua00.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/55/55/96857_crt_9ua00.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/55/55/96857_crt_9ua00.jpg"
+    },
+    "summary": "主人公の復讐相手、貿易商・久島家の令嬢。 豪奢な振り袖に身を包んだ寂しげな美女。\r\nその昔、彼女の肖像画を描いた若き画家と恋に落ち、引き裂かれた経験を持つ。 以来、あまたの縁談を断り続け、恋人の絵を眺めて暮らしている。",
+    "name": "久島蘭子",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "くしま らんこ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://www.getchu.com/soft.phtml?id=284045"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 96857,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d6/5a/175824_crt_mc6p1.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d6/5a/175824_crt_mc6p1.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/d6/5a/175824_crt_mc6p1.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d6/5a/175824_crt_mc6p1.jpg"
+    },
+    "summary": "",
+    "name": "久島鷺",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "久岛鹭"
+      },
+      {
+        "key": "别名",
+        "value": []
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 3
+    },
+    "id": 175824,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/7d/87/208063_crt_dmKMK.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/7d/87/208063_crt_dmKMK.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/7d/87/208063_crt_dmKMK.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/7d/87/208063_crt_dmKMK.jpg"
+    },
+    "summary": "",
+    "name": "久島義信",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Kushima Yoshinobu"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "身高",
+        "value": "186cm"
+      },
+      {
+        "key": "体重",
+        "value": "88kg"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 208063,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/38/04/15902_crt_aCQCl.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/38/04/15902_crt_aCQCl.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/38/04/15902_crt_aCQCl.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/38/04/15902_crt_aCQCl.jpg"
+    },
+    "summary": "三年十一組・競泳部部長",
+    "name": "屋久島",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "屋久岛"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "やくしま"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 15902,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/8f/98/32362_crt_lqhZL.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/8f/98/32362_crt_lqhZL.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/8f/98/32362_crt_lqhZL.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8f/98/32362_crt_lqhZL.jpg"
+    },
+    "summary": "美藤学園の1年生。\r\n有紗・藍とは学年が違うが、小学生の頃から一緒に行動している。\r\nクールな性格で、オークが侵略してきてからも、冷静な判断力で切り抜けようとする。",
+    "name": "矢久島千遥",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "矢久岛千遥"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "矢久島 千遥"
+          },
+          {
+            "k": "纯假名",
+            "v": "やくしま ちはる"
+          },
+          {
+            "k": "罗马字",
+            "v": "Yakushima chiharu"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 32362,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/6b/90/61567_crt_XdQ5W.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/6b/90/61567_crt_XdQ5W.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/6b/90/61567_crt_XdQ5W.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/6b/90/61567_crt_XdQ5W.jpg"
+    },
+    "summary": "華陽学園一年生。主人公の義妹。\r\n穏やかでおっとりとした性格だが、兄が絡むと、強気で権高な気質を見せる。\r\n処女だが、兄を思っての自慰を繰り返しているため、肉体は十分に開発されている。",
+    "name": "屋久島可憐",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "屋久岛可怜"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "屋久島 可憐"
+          },
+          {
+            "k": "纯假名",
+            "v": "やくしま かれん"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 4
+    },
+    "id": 61567,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/9f/63/210347_crt_T8vtb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/9f/63/210347_crt_T8vtb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/9f/63/210347_crt_T8vtb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9f/63/210347_crt_T8vtb.jpg"
+    },
+    "summary": "日本屈指の権力と資産を持つ屋久島家の後継者。\r\n相手に対してただ情け無用なだけでなく、\r\n全てを持つ故に達観し、クレバーな頭脳を持つ男。\r\n基本的には自分の思い通りに事が運ばない事を嫌うが、\r\n逆に自分の思い通りにいかない蔵田伊吹と宮内晶を目障りに\r\n感じつつも興味を惹かれていた。\r\n以前から二人を何とか自分のモノにしようと考えていたが、\r\nとうとう実力行使に出る。\r\n\r\n学園で日頃からつるんでいる『暴力的な男・赤木康平』\r\n『蛇のような性格の男・黒崎一馬』と、\r\nターゲットに激しい嫌悪感を持たれている『デブオタ・大森毅』\r\nと共に偽の旅行を捏造して誘い出し二人を屋久島家所有の山奥の\r\n別荘に拉致してしまう。",
+    "name": "屋久島修治",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Yakushima Shuuji"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 210347,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

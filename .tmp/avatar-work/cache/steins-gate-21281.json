@@ -1,0 +1,501 @@
+[
+  {
+    "birth_mon": 4,
+    "gender": "female",
+    "birth_day": 3,
+    "birth_year": 1993,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/80/52/12398_crt_fm7rc.jpg?r=1529464038",
+      "grid": "https://lain.bgm.tv/pic/crt/g/80/52/12398_crt_fm7rc.jpg?r=1529464038",
+      "large": "https://lain.bgm.tv/pic/crt/l/80/52/12398_crt_fm7rc.jpg?r=1529464038",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/80/52/12398_crt_fm7rc.jpg?r=1529464038"
+    },
+    "summary": "　　在秋叶原的大人气猫耳女仆咖啡厅打工的少女。因为平时就戴着猫耳，所以使用着动画中常出现的“喵喵～”的口癖。自称有着只要注视对方眼睛就知道内心想法的特殊能力“笑面猫的微笑”，所以对他人的心情十分敏感。由于猫耳的萌要素和能力使她在打工的地方赢得了 No.1 的人气，是那种玩弄男人内心的小恶魔。\r\n　　在世界规模的人气对战卡片游戏『雷 net access battles』上有着一流的技术，不过并没有怎么在正式比赛中出过场。因为是战略性很高的游戏，所以她擅长的心理洞察的特殊能力能得到充分的发挥。\r\n　　虽然是冈伦天敌一般的存在，却亲切地(？)称呼他为“凤凰院凶真”，经常把他耍得团团转。",
+    "name": "フェイリス・ニャンニャン",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "菲利斯·喵喵"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "Akiha Rumiho"
+          },
+          {
+            "k": "第二中文名",
+            "v": "秋叶留未穗"
+          },
+          {
+            "k": "英文名",
+            "v": "Faris Nyan-Nyan"
+          },
+          {
+            "k": "罗马字",
+            "v": "Feirisu· nyannyan"
+          },
+          {
+            "k": "昵称",
+            "v": "フェイリスたん，菲利斯碳"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "1993-04-03(白羊座)"
+      },
+      {
+        "key": "血型",
+        "value": "AB 型"
+      },
+      {
+        "key": "身高",
+        "value": "143cm"
+      },
+      {
+        "key": "体重",
+        "value": "43kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B80 W54 H77"
+      },
+      {
+        "key": "年龄",
+        "value": "17岁"
+      },
+      {
+        "key": "常用的物品",
+        "value": "猫耳(数十种)"
+      },
+      {
+        "key": "讨厌的东西",
+        "value": "偏见，对自己的敌意，老鼠，太阳镜"
+      },
+      {
+        "key": "喜欢的东西",
+        "value": "引人注目，推理"
+      },
+      {
+        "key": "兴趣",
+        "value": "雷 net access battles(卡片游戏)，Cosplay，红茶"
+      }
+    ],
+    "stat": {
+      "comments": 38,
+      "collects": 289
+    },
+    "id": 12398,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/e3/164110_crt_wezyC.jpg?r=1725888957",
+      "grid": "https://lain.bgm.tv/pic/crt/g/65/e3/164110_crt_wezyC.jpg?r=1725888957",
+      "large": "https://lain.bgm.tv/pic/crt/l/65/e3/164110_crt_wezyC.jpg?r=1725888957",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/e3/164110_crt_wezyC.jpg?r=1725888957"
+    },
+    "summary": "クレイトス王国第一王女。\r\nジェラルドの妹。",
+    "name": "フェイリス・デア・クレイトス",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "菲莉丝·迪亚·克雷托斯"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 3,
+      "collects": 13
+    },
+    "id": 164110,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/65/6c/9738_crt_anidb.jpg?r=1495686123",
+      "grid": "https://lain.bgm.tv/pic/crt/g/65/6c/9738_crt_anidb.jpg?r=1495686123",
+      "large": "https://lain.bgm.tv/pic/crt/l/65/6c/9738_crt_anidb.jpg?r=1495686123",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/65/6c/9738_crt_anidb.jpg?r=1495686123"
+    },
+    "summary": "エスクードを探す光達が沈黙の森で出会った少年。身長160cm。緑色の髪に、鼻と頬に傷があるのが特徴。また、身長と同じくらいの長さの、先が湾曲した大剣を持つ。風が出した交換条件により、森を出るまで魔法騎士達とともに行動する。実はエメロードの弟でセフィーロの王子。\r\n原作では、沈黙の森を出た後のアルシオーネ戦で「これは私たちの戦い」と風が言い切り、援護を拒んだことがきっかけで彼女に惚れ、その後恋仲に。彼が両耳につけている金色のリング状ピアスはエメロードからもらったもので、沈黙の森の出口で別れる際に片方を風に贈る（風は第2部において、これを指輪として身に着けている）。\r\nアニメ版では当初、記憶喪失の状態で旅芸人の一座にいた。原作同様に沈黙の森を出た後、風に（ピアスではなく）通信機能を持つ赤いオーブ（マジックアイテム）を贈る。これは幼いフェリオが柱となったエメロードと引き離されることになった時、彼女の心配を少しでも減らそうと記憶を封じることを選んだため、エメロードから授けられたもの。なお、原作では沈黙の森を抜けた後、第2部になるまで再登場しないが、アニメ版では数話ごとに登場し、魔法騎士たちと行動する。\r\n\r\n艾美诺公主的亲弟弟，真正身份为王子。TV版中是因为艾美诺公主封印了他的记忆，所以不记得自己的真实身份，但在艾美诺公主力量变弱时获知自己的真实身份。漫画版中是为了不累及姐姐，所以一直隐瞒身份。剑术高强，喜欢四处游历。在“沉默之森”遇上光、海、风三人，与风相互斗智期间产生爱情。",
+    "name": "フェリオ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "菲力奥"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "フェリオ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Ferio"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "身高",
+        "value": "160cm"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 2
+    },
+    "id": 9738,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/3b/54/21097_crt_72435.jpg?r=1377320713",
+      "grid": "https://lain.bgm.tv/pic/crt/g/3b/54/21097_crt_72435.jpg?r=1377320713",
+      "large": "https://lain.bgm.tv/pic/crt/l/3b/54/21097_crt_72435.jpg?r=1377320713",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/3b/54/21097_crt_72435.jpg?r=1377320713"
+    },
+    "summary": "以下菲布理的情报来自杂志上制作人中山的回答：\r\n是至今为止出场的角色中最幼齿的一个。年纪跟外表很相配，言语行动也都非常可爱。在某种意义上是「超炮S」的吉祥物。\r\n关于菲布理是否为能力者一事……请各位在欣赏动画的同时来寻找答案吧。\r\n外在的特点：服装非常特别，总在吃棒棒糖。是一个充满了“可爱”要素的角色！\r\n\r\n据动画ep.20：为完全的科学造物。",
+    "name": "フェブリ",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "菲布理"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "第二中文名",
+            "v": "菲布里"
+          },
+          {
+            "k": "英文名",
+            "v": "Febri"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 7,
+      "collects": 67
+    },
+    "id": 21097,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 10,
+    "gender": "male",
+    "birth_day": 31,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/9e/13/28630_crt_e3du3.jpg?r=1420142644",
+      "grid": "https://lain.bgm.tv/pic/crt/g/9e/13/28630_crt_e3du3.jpg?r=1420142644",
+      "large": "https://lain.bgm.tv/pic/crt/l/9e/13/28630_crt_e3du3.jpg?r=1420142644",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/9e/13/28630_crt_e3du3.jpg?r=1420142644"
+    },
+    "summary": "吸血鬼第七真祖。\r\n将百夜幼儿园的孤儿全数捕获并当做牲畜饲养，之后把除优一郎和米迦尔以外妄图逃脱的孩子全部杀害。",
+    "name": "フェリド・バートリー",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "费里德·巴特利"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Ferid Bathory"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "10月31日"
+      },
+      {
+        "key": "血型",
+        "value": "O型"
+      },
+      {
+        "key": "体重",
+        "value": "54kg"
+      },
+      {
+        "key": "引用来源",
+        "value": "baike.baidu.com/item/费里德·巴特利"
+      },
+      {
+        "key": "喜欢的食物",
+        "value": "孩子的血"
+      }
+    ],
+    "stat": {
+      "comments": 9,
+      "collects": 21
+    },
+    "id": 28630,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/43/05/38462_crt_4dAvL.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/43/05/38462_crt_4dAvL.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/43/05/38462_crt_4dAvL.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/43/05/38462_crt_4dAvL.jpg"
+    },
+    "summary": "メフィウスの貴族。元帝国評議会議員でビラク領主。剣闘ギルドの長。魔道士ヘルマンの力を借り、オルバの顔を変え、ギルの影武者に仕立て上げた。オルバに対して本物のギルは既に死亡していることを隠している(オルバ自身は既に気づいている)。オルバの勝手な行動に対してフォローをしており、よく小言や脅しを言うが機嫌が良いと調子がよくなる。ただし、ギルを擁立して権力拡大を画策する野心家であるが、周囲からは知謀にそれほど長けていないと思われている。",
+    "name": "フェドム・オーリン",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "费德姆"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Fedom Orlin"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 38462,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/78/1b/45697_crt_iwRfz.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/78/1b/45697_crt_iwRfz.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/78/1b/45697_crt_iwRfz.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/78/1b/45697_crt_iwRfz.jpg"
+    },
+    "summary": "ゼアボロスの姉で、\r\n【怠惰】の刻印を持つ魔王。\r\n\r\nゼアボロスの事を「ゼボちん」と呼び、主人公からは「姉上」と呼ばれている。\r\n言葉は少ないが弟思いなため、トリリオン討伐を引き受けた。\r\n極度の面倒くさがりでいつも寝てばかりいるが、実は主人公を凌ぐほどの強大な魔力の持ち主である。",
+    "name": "フェゴール",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 45697,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c1/e2/54379_crt_MDUMi.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c1/e2/54379_crt_MDUMi.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c1/e2/54379_crt_MDUMi.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c1/e2/54379_crt_MDUMi.jpg"
+    },
+    "summary": "戦乙女“ロスヴィゼ”の魂と、巨狼“フェンリル”の欠片を元に作られた心霊兵器。\r\n戦闘力は極めて高く、いつも従者（監視者）の双子と共に行動する。\r\n人としての感情はほとんど持っていないため、普段はクールで無口。\r\nしかし、食べ物に釣られるなど子供っぽい側面もある。 根はとても素直。\r\n「……。 死ぬ覚悟ができたのか？　なら、いい。 始めよう……」",
+    "name": "フェン・リー・ルー",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Fen Lee Lou"
+          }
+        ]
+      },
+      {
+        "key": "身高",
+        "value": "160cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B83/ W58/ H84"
+      },
+      {
+        "key": "ルーン",
+        "value": "イズ"
+      },
+      {
+        "key": "武器",
+        "value": "冷艶鋸"
+      },
+      {
+        "key": "戦闘力ランキング",
+        "value": "2位"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 3
+    },
+    "id": 54379,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/04/c2/68401_crt_skT3b.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/04/c2/68401_crt_skT3b.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/04/c2/68401_crt_skT3b.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/04/c2/68401_crt_skT3b.jpg"
+    },
+    "summary": "レスリア王国内でも有数の剣術流派（カミューズ流）の創始者を父に持つ同作の主人公。彼もその才能を受け継いでいる。ここ数年の「暗黒の7年間」と呼ばれる不安定な時期の中では、スタールの治安を守るために重要な役割を果たすようになっている。",
+    "name": "フェデル・カミューズ",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 68401,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "",
+      "grid": "",
+      "large": "",
+      "medium": ""
+    },
+    "summary": "年齢：15歳　性別：女性 \r\n身長：155cm　体重：不詳 \r\n声優：小清水　亜美 \r\n出身：大陸の水の民の里（シャーリィたちとは違う村らしい） \r\n水の民の少女。なぜかオートマタに好かれる体質を持っている。 \r\nかつて陸の民の兵士に同胞を次々と殺され、自身も虐待を受けた経験から \r\n陸の民に対し強い嫌悪感と不信感を抱いており、この状況から救い出してくれる \r\n唯一の希望としてメルネスの降臨を堅く待ち望んでいた。 \r\nだがそのメルネスの生まれ変わりだという少女が何の力も無いただの女の子であったこと、 \r\n自分が憎悪している陸の民に懸想しているのだという事実に激しい失望感と憤りを抱く。 \r\nしかしながら、シャーリィと二人で行動し、彼女の真摯な想いに心絆され、いつしか \r\n彼女の唯一の親友と呼べる存在にまでなっていった。 \r\nシャーリィ本人は与り知らぬことだが、彼女はセネルにより助けられ、守られて、 \r\n一緒に行動しているうちに、微妙に淡い感情を抱くようになっていっている。 \r\nそれにより陸の民に対する感情が軟化していったことも理由のひとつだろう",
+    "name": "フェニモール・ゼルへス",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "155cm"
+      },
+      {
+        "key": "引用来源",
+        "value": "https://www31.atwiki.jp/talesofdic/pages/2062.html"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 70151,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

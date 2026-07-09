@@ -1,0 +1,42 @@
+[
+  {
+    "raw": ".tmp/avatar-work/raw/rance-series-10965-manual.jpg",
+    "out": "public/uploads/character-birthdays/rance-series/rance-series-10965.webp",
+    "mode": "anime-face-tight",
+    "image": [
+      1005,
+      1079
+    ],
+    "face": [
+      340,
+      170,
+      316,
+      316
+    ],
+    "crop": [
+      126,
+      3,
+      743
+    ]
+  },
+  {
+    "raw": ".tmp/avatar-work/raw/rance-series-10980-manual.jpg",
+    "out": "public/uploads/character-birthdays/rance-series/rance-series-10980.webp",
+    "mode": "anime-face-tight",
+    "image": [
+      712,
+      908
+    ],
+    "face": [
+      294,
+      134,
+      278,
+      278
+    ],
+    "crop": [
+      59,
+      0,
+      653
+    ]
+  }
+]

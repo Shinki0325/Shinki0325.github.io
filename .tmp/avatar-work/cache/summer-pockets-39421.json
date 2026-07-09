@@ -1,0 +1,522 @@
+[
+  {
+    "birth_mon": 7,
+    "gender": "female",
+    "birth_day": 4,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/43/c3/73834_crt_a2CxC.jpg?r=1726452078",
+      "grid": "https://lain.bgm.tv/pic/crt/g/43/c3/73834_crt_a2CxC.jpg?r=1726452078",
+      "large": "https://lain.bgm.tv/pic/crt/l/43/c3/73834_crt_a2CxC.jpg?r=1726452078",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/43/c3/73834_crt_a2CxC.jpg?r=1726452078"
+    },
+    "summary": "鬼を追う少女\r\n\r\n兴趣：独自旅行\r\n喜欢的东西：饭团子（おむすび / omusubi）\r\n\r\n鳥白島にやってきた旅好きの少女。\r\n日本の各地を歩き回り「鬼の昔話」を集めている。\r\n鳥白島にも、この島に残っているという鬼の伝承を聞きに訪れた。\r\nこの島に来たのは初めてと言っているけれど、島民が知らないような場所にも現れる。\r\n\r\nサバイバル能力に長けていて、主に食べられる物を見つけるのが上手い。・・・・・・はずなのに、島のいたる場所で腹を空かせて行き倒れている。\r\nおむすびをあげると、従順になる。 \r\n\r\n「ねえ、この島に居たという鬼のことを知っているかい？」",
+    "name": "神山識",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "神山识"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Kamiyama Shiki"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "7月4日"
+      },
+      {
+        "key": "身高",
+        "value": "144cm"
+      },
+      {
+        "key": "体重",
+        "value": "36kg"
+      },
+      {
+        "key": "BWH",
+        "value": "B73/W54/H74"
+      },
+      {
+        "key": "年龄",
+        "value": "14"
+      }
+    ],
+    "stat": {
+      "comments": 147,
+      "collects": 324
+    },
+    "id": 73834,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/d4/8e/151271_crt_fC6nc.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/d4/8e/151271_crt_fC6nc.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/d4/8e/151271_crt_fC6nc.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/d4/8e/151271_crt_fC6nc.jpg"
+    },
+    "summary": "",
+    "name": "神山",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Kamiyama"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 0
+    },
+    "id": 151271,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/64/b3/4347_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/64/b3/4347_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/64/b3/4347_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/64/b3/4347_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "神山治",
+    "infobox": [
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Kamiyama Osamu"
+          },
+          {
+            "k": "日文名",
+            "v": "神山治"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 4347,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/47/5d/4348_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/47/5d/4348_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/47/5d/4348_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/47/5d/4348_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "神山美佐",
+    "infobox": [
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Kamiyama Misa"
+          },
+          {
+            "k": "日文名",
+            "v": "神山美佐"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 4348,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/5e/98/6792_crt_anidb.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/5e/98/6792_crt_anidb.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/5e/98/6792_crt_anidb.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/5e/98/6792_crt_anidb.jpg"
+    },
+    "summary": "",
+    "name": "神山文月",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "神山文月"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "神山 文月"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kouyama Fuzuki"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 6792,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/1d/5f/14043_crt_Pq6je.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/1d/5f/14043_crt_Pq6je.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/1d/5f/14043_crt_Pq6je.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/1d/5f/14043_crt_Pq6je.jpg"
+    },
+    "summary": "第四话登场",
+    "name": "神山瑠音",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "神山琉音"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "罗马字",
+            "v": "Kamiyama Ruon"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 6
+    },
+    "id": 14043,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 8,
+    "gender": "female",
+    "birth_day": 17,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/15/c8/14399_crt_SraVR.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/15/c8/14399_crt_SraVR.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/15/c8/14399_crt_SraVR.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/15/c8/14399_crt_SraVR.jpg"
+    },
+    "summary": "高校1年生、水泳部所属。\r\n雪乃の部活の後輩。奏を偏愛しており、雪乃を買収して奏の写真や持ち物を密かに集めたりと、ストーカーのような行動をしている。裏表のある性格で実は結構黒い。大手ゼネコンの社長令嬢であり、家は超が付くほどのお金持ちだが、お嬢様のために少々浮世離れしている。実家通学だが、ある目的のために「無理矢理入寮計画」を画策している。趣味はネットオークションとカヌー、奏の観察。",
+    "name": "神山咲夜",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "神山咲夜"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "かみやま さくや"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kamiyama Sakuya"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "8月17日"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "身高",
+        "value": "147cm"
+      },
+      {
+        "key": "BWH",
+        "value": "B91/W56/H85"
+      },
+      {
+        "key": "引用来源",
+        "value": "Candy☆Boy - Wikipedia"
+      }
+    ],
+    "stat": {
+      "comments": 4,
+      "collects": 27
+    },
+    "id": 14399,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 6,
+    "gender": "male",
+    "birth_day": 27,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/fa/07/18332_crt_RZKjw.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/fa/07/18332_crt_RZKjw.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/fa/07/18332_crt_RZKjw.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fa/07/18332_crt_RZKjw.jpg"
+    },
+    "summary": "",
+    "name": "神山高志",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "神山高志"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "日文名",
+            "v": "神山 高志"
+          },
+          {
+            "k": "纯假名",
+            "v": "かみやま たかし"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kamiyama Takashi"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "生日",
+        "value": "6月27日"
+      }
+    ],
+    "stat": {
+      "comments": 1,
+      "collects": 3
+    },
+    "id": 18332,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": 5,
+    "gender": "female",
+    "birth_day": 12,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/fb/c5/23117_crt_A31RA.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/fb/c5/23117_crt_A31RA.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/fb/c5/23117_crt_A31RA.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/fb/c5/23117_crt_A31RA.jpg"
+    },
+    "summary": "本作主角，长得很像母亲。12岁的小学生。原作漫画设定生日是5月12日（动画是4月4日）。\r\n母亲在生她后不久过世，父亲也在她一岁时过世。曾在孤儿院住了一段日子，两年前才由外祖母接回家照顾。\r\n在达克托的帮助下，满月能变成16岁的高中生，以艺名“Fullmoon”（台译：芙璐梦）当歌手，工作完毕后再由达克托变回12岁。\r\n当歌手的其中一个目的是为了实践跟英知的承诺。\r\n视达克托与梅洛蔻为重要的朋友。\r\n原本喜欢英知，最后喜欢上达克托。",
+    "name": "神山満月",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "神山满月"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "艺名",
+            "v": "フルムーン（Fullmoon）"
+          },
+          {
+            "k": "纯假名",
+            "v": "こうやま みつき"
+          },
+          {
+            "k": "罗马字",
+            "v": "Kouyama Mitsuki"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "5月12日"
+      },
+      {
+        "key": "血型",
+        "value": "A型"
+      },
+      {
+        "key": "身高",
+        "value": "142cm"
+      },
+      {
+        "key": "体重",
+        "value": "34kg"
+      }
+    ],
+    "stat": {
+      "comments": 4,
+      "collects": 13
+    },
+    "id": 23117,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "female",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/a9/67/35440_crt_f7ny9.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/a9/67/35440_crt_f7ny9.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/a9/67/35440_crt_f7ny9.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/a9/67/35440_crt_f7ny9.jpg"
+    },
+    "summary": "れーこの同級生。えいことマブっている。\r\n口数が少なく、えいこのボケに対しこちらはツッコミ。\r\nえいこがよくわからない略語を発した時の翻訳係でもある。\r\n物事をズバスバ言うタイプで、口が悪い一面もある。\r\n自分の教室での立ち位置を気にし、キャラ付けの為に語尾をつくったりも。\r\n――実はオタクである。\r\n\r\n「だって私普通だし、の略」",
+    "name": "神山微意子",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "かみやま びいこ"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "身高",
+        "value": "いちよより高い"
+      },
+      {
+        "key": "好きなもの",
+        "value": "犬"
+      },
+      {
+        "key": "嫌いなもの",
+        "value": "キャラかぶり"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 35440,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]

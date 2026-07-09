@@ -1,0 +1,425 @@
+[
+  {
+    "birth_mon": 3,
+    "gender": "female",
+    "birth_day": 3,
+    "birth_year": null,
+    "blood_type": 2,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/05/e0/57824_crt_lLLlp.jpg?r=1578845618",
+      "grid": "https://lain.bgm.tv/pic/crt/g/05/e0/57824_crt_lLLlp.jpg?r=1578845618",
+      "large": "https://lain.bgm.tv/pic/crt/l/05/e0/57824_crt_lLLlp.jpg?r=1578845618",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/05/e0/57824_crt_lLLlp.jpg?r=1578845618"
+    },
+    "summary": "本篇\r\n\r\n「チッ、誰にも言うなよ。少なくともこの場所はな、オレだけの特等席なんだ」\r\n\r\n央路とは別のクラスに通う根暗なヤンキー少女。\r\n\r\n喫煙癖があり、何度も停学をくらっている。かなり口が悪く、何ごとにも退屈そうで、ヒネくれている。\r\n不良として有名で、玲奈等のネアカ以外は近づいてこない\r\n-----\r\nFD\r\n\r\n「ンだよてめェ、文句あんのか、オレがなにしようがオレの勝手だ」\r\n\r\n央路とは別のクラスのヤンキー少女。\r\n喫煙癖があり、何度も停学をくらっている。\r\n\r\nかなり口が悪く、何ごとにも退屈そうで、どこか厭世的。\r\n主人公と親しく話すようになってからは、\r\n勝手に部屋にきて一人でくつろいでいることも。\r\n\r\n裏ではマリア・ビショップとして活動しているが、\r\nそのことは主人公を含む一部の人しか知らない。",
+    "name": "僧間理亜",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "僧间理亚"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Soma Ria"
+          },
+          {
+            "k": "纯假名",
+            "v": "そうま りあ"
+          },
+          {
+            "k": "罗马字",
+            "v": "Souma Ria"
+          },
+          {
+            "k": "昵称",
+            "v": "ソーマ君"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "女"
+      },
+      {
+        "key": "生日",
+        "value": "3月3日"
+      },
+      {
+        "key": "血型",
+        "value": "B"
+      },
+      {
+        "key": "身高",
+        "value": "150"
+      },
+      {
+        "key": "BWH",
+        "value": "76/51/78"
+      },
+      {
+        "key": "引用来源",
+        "value": "http://sagaplanets.product.co.jp/works/kinkoi/chara04.html"
+      },
+      {
+        "key": "去世",
+        "value": "2018年12月24日(本篇)/存活确认(fd)"
+      }
+    ],
+    "stat": {
+      "comments": 100,
+      "collects": 284
+    },
+    "id": 57824,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/87/58/175308_crt_OBJ62.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/87/58/175308_crt_OBJ62.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/87/58/175308_crt_OBJ62.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/87/58/175308_crt_OBJ62.jpg"
+    },
+    "summary": "",
+    "name": "僧",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 175308,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c3/a8/175692_crt_m8FfE.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c3/a8/175692_crt_m8FfE.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c3/a8/175692_crt_m8FfE.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c3/a8/175692_crt_m8FfE.jpg"
+    },
+    "summary": "",
+    "name": "僧",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 175692,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/4f/e4/78819_crt_8y2YU.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/4f/e4/78819_crt_8y2YU.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/4f/e4/78819_crt_8y2YU.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/4f/e4/78819_crt_8y2YU.jpg"
+    },
+    "summary": "用自己的體術作戰的戰鬥職業根據對手狀態情況變化作戰方式",
+    "name": "モンク",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "僧"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "职业类型",
+        "value": "祭司高阶职业"
+      },
+      {
+        "key": "推荐能力",
+        "value": "STR"
+      },
+      {
+        "key": "武器",
+        "value": "鈍器・指虎"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 1
+    },
+    "id": 78819,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/c5/bd/120768_crt_n9dd0.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/c5/bd/120768_crt_n9dd0.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/c5/bd/120768_crt_n9dd0.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/c5/bd/120768_crt_n9dd0.jpg"
+    },
+    "summary": "作家。極度の人間嫌いのため狂信者のふりをする。",
+    "name": "僧裏チウド",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "纯假名",
+            "v": "そうり ちうど"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 120768,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/29/5c/150572_crt_6Q0P4.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/29/5c/150572_crt_6Q0P4.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/29/5c/150572_crt_6Q0P4.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/29/5c/150572_crt_6Q0P4.jpg"
+    },
+    "summary": "",
+    "name": "僧侶",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "僧侣"
+      },
+      {
+        "key": "别名",
+        "value": []
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 150572,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": "male",
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/8b/7f/172966_crt_86FhA.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/8b/7f/172966_crt_86FhA.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/8b/7f/172966_crt_86FhA.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/8b/7f/172966_crt_86FhA.jpg"
+    },
+    "summary": "在魔法方面达到神之领域的魔神之一，真·格雷姆林成员。在欧提努斯造成的全世界骚乱结束后，因亚雷斯塔·克劳利的算计来到学园都市，为了让上条当麻成为魔神们的「仲裁者」而行动。",
+    "name": "僧正",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "僧正"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "High Priest"
+          },
+          {
+            "k": "纯假名",
+            "v": "そうじょう"
+          }
+        ]
+      },
+      {
+        "key": "性别",
+        "value": "男"
+      },
+      {
+        "key": "引用来源",
+        "value": [
+          {
+            "k": "魔法禁书目录中文维基",
+            "v": "https://toaru.huijiwiki.com/wiki/僧正"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 172966,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "",
+      "grid": "",
+      "large": "",
+      "medium": ""
+    },
+    "summary": "",
+    "name": "赤眉",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": [
+          {
+            "v": "僧总管"
+          }
+        ]
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 193894,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/cf/46/5794_crt_13xx8.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/cf/46/5794_crt_13xx8.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/cf/46/5794_crt_13xx8.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/cf/46/5794_crt_13xx8.jpg"
+    },
+    "summary": "破戒僧海贼团是由船长乌尔基所率领的海贼团。全员穿着以和尚僧衣为主。",
+    "name": "破戒僧海賊団",
+    "infobox": [
+      {
+        "key": "简体中文名",
+        "value": "破戒僧海贼团"
+      },
+      {
+        "key": "别名",
+        "value": [
+          {
+            "k": "英文名",
+            "v": "Fallen Monk Pirates"
+          },
+          {
+            "k": "罗马字",
+            "v": "Hakaisō Kaizokudan"
+          }
+        ]
+      },
+      {
+        "key": "引用来源",
+        "value": "anidb.net"
+      }
+    ],
+    "stat": {
+      "comments": 2,
+      "collects": 0
+    },
+    "id": 5794,
+    "locked": false,
+    "type": 4,
+    "nsfw": false
+  },
+  {
+    "birth_mon": null,
+    "gender": null,
+    "birth_day": null,
+    "birth_year": null,
+    "blood_type": null,
+    "images": {
+      "small": "https://lain.bgm.tv/r/100/pic/crt/l/f3/d1/26835_crt_KE29s.jpg",
+      "grid": "https://lain.bgm.tv/pic/crt/g/f3/d1/26835_crt_KE29s.jpg",
+      "large": "https://lain.bgm.tv/pic/crt/l/f3/d1/26835_crt_KE29s.jpg",
+      "medium": "https://lain.bgm.tv/r/400/pic/crt/l/f3/d1/26835_crt_KE29s.jpg"
+    },
+    "summary": "",
+    "name": "大僧官",
+    "infobox": [
+      {
+        "key": "别名",
+        "value": []
+      }
+    ],
+    "stat": {
+      "comments": 0,
+      "collects": 0
+    },
+    "id": 26835,
+    "locked": false,
+    "type": 1,
+    "nsfw": false
+  }
+]
