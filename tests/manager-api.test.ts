@@ -36,4 +36,21 @@ describe("manager api contract", () => {
     expect(birthdaySource).toContain("missingImage");
     expect(birthdaySource).toContain("todo");
   });
+
+  it("registers birthday manager routes and client API helpers", async () => {
+    const indexSource = await fs.readFile("manager/server/index.ts", "utf8");
+    const routeSource = await fs.readFile("manager/server/routes/birthdays.ts", "utf8");
+    const apiSource = await fs.readFile("manager/src/api.ts", "utf8");
+    const typesSource = await fs.readFile("manager/src/types.ts", "utf8");
+
+    expect(indexSource).toContain("registerBirthdayRoutes");
+    expect(routeSource).toContain("/api/birthdays");
+    expect(routeSource).toContain("/api/birthdays/character/save");
+    expect(routeSource).toContain("/api/birthdays/image/upload");
+    expect(apiSource).toContain("getBirthdayData");
+    expect(apiSource).toContain("saveBirthdayCharacter");
+    expect(apiSource).toContain("uploadBirthdayImage");
+    expect(typesSource).toContain("BirthdayDataFile");
+    expect(typesSource).toContain("BirthdayCharacterDraft");
+  });
 });

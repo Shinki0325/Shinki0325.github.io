@@ -2,6 +2,7 @@ import cors from "cors";
 import express from "express";
 import { registerContentRoutes } from "./routes/content";
 import { registerAssetRoutes } from "./routes/assets";
+import { registerBirthdayRoutes } from "./routes/birthdays";
 import { registerSystemRoutes } from "./routes/system";
 
 const app = express();
@@ -16,6 +17,7 @@ app.use(express.json({ limit: "10mb" }));
 
 registerContentRoutes(app);
 registerAssetRoutes(app);
+registerBirthdayRoutes(app);
 registerSystemRoutes(app);
 
 app.listen(port, "127.0.0.1", () => {

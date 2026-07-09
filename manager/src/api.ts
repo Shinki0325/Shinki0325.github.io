@@ -1,6 +1,12 @@
 import type {
   AssetItem,
   AssetListResponse,
+  BirthdayAvatarCrop,
+  BirthdayCharacterDraft,
+  BirthdayDataResponse,
+  BirthdayImageKind,
+  BirthdayImageResult,
+  BirthdayWorkDraft,
   ContentEntry,
   ContentKind,
   ContentListResponse,
@@ -16,6 +22,22 @@ const request = async <T>(path: string) => {
   if (!response.ok) {
     throw new Error(`Request failed: ${response.status} ${response.statusText}`);
   }
+  return (await response.json()) as T;
+};
+
+const postJson = async <T>(path: string, body: Record<string, unknown>) => {
+  const response = await fetch(path, {
+    method: "POST",
+    headers: {
+      "content-type": "application/json"
+    },
+    body: JSON.stringify(body)
+  });
+
+  if (!response.ok) {
+    throw new Error(`Request failed: ${response.status} ${response.statusText}`);
+  }
+
   return (await response.json()) as T;
 };
 
@@ -84,6 +106,59 @@ export const copyAsset = async (sourcePath: string, targetDir?: string) => {
 
   return ((await response.json()) as { item: AssetItem }).item;
 };
+
+export const getBirthdayData = () => request<BirthdayDataResponse>("/api/birthdays");
+
+export const saveBirthdayWork = (payload: BirthdayWorkDraft) =>
+  postJson<BirthdayDataResponse>("/api/birthdays/work/save", payload);
+
+export const deleteBirthdayWork = (id: string) =>
+  postJson<BirthdayDataResponse>("/api/birthdays/work/delete", { id });
+
+export const saveBirthdayCharacter = (payload: BirthdayCharacterDraft) =>
+  postJson<BirthdayDataResponse>("/api/birthdays/character/save", payload);
+
+export const deleteBirthdayCharacter = (id: string) =>
+  postJson<BirthdayDataResponse>("/api/birthdays/character/delete", { id });
+
+export const copyBirthdayImage = (
+  sourcePath: string,
+  workId: string,
+  characterId: string,
+  kind: BirthdayImageKind
+) =>
+  postJson<BirthdayImageResult>("/api/birthdays/image/copy", {
+    sourcePath,
+    workId,
+    characterId,
+    kind
+  });
+
+export const uploadBirthdayImage = (
+  dataUrl: string,
+  workId: string,
+  characterId: string,
+  kind: BirthdayImageKind
+) =>
+  postJson<BirthdayImageResult>("/api/birthdays/image/upload", {
+    dataUrl,
+    workId,
+    characterId,
+    kind
+  });
+
+export const cropBirthdayAvatar = (
+  sourceUrl: string,
+  workId: string,
+  characterId: string,
+  crop: BirthdayAvatarCrop
+) =>
+  postJson<BirthdayImageResult>("/api/birthdays/avatar/crop", {
+    sourceUrl,
+    workId,
+    characterId,
+    crop
+  });
 
 const runSystemAction = async (path: string, body?: Record<string, unknown>) => {
   const response = await fetch(path, {
