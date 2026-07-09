@@ -51,7 +51,179 @@ type BirthdayDataJson = {
   characters: CharacterBirthday[];
 };
 
-const typedBirthdayData = birthdayData as unknown as BirthdayDataJson;
+type JsonRecord = Record<string, unknown>;
+
+const isRecord = (value: unknown): value is JsonRecord => {
+  return typeof value === "object" && value !== null && !Array.isArray(value);
+};
+
+const isNonEmptyString = (value: unknown): value is string => {
+  return typeof value === "string" && value.length > 0;
+};
+
+const isOptionalString = (value: unknown): value is string | undefined => {
+  return value === undefined || typeof value === "string";
+};
+
+const isNullableString = (value: unknown): value is string | null => {
+  return value === null || typeof value === "string";
+};
+
+function assertBirthdayData(condition: unknown, message: string): asserts condition {
+  if (!condition) {
+    throw new Error(`Invalid birthday JSON: ${message}`);
+  }
+}
+
+const isBirthdayDate = (value: unknown): value is BirthdayDate => {
+  if (typeof value !== "string") {
+    return false;
+  }
+
+  const match = value.match(/^(\d{2})-(\d{2})$/);
+  if (!match) {
+    return false;
+  }
+
+  const month = Number(match[1]);
+  const day = Number(match[2]);
+  if (month < 1 || month > 12) {
+    return false;
+  }
+
+  return day >= 1 && day <= new Date(2024, month, 0).getDate();
+};
+
+const validateBirthdayWork = (value: unknown, index: number): BirthdayWork => {
+  assertBirthdayData(isRecord(value), `works[${index}] must be an object`);
+
+  const { id, title, localizedTitle, sourceUrl } = value;
+  assertBirthdayData(isNonEmptyString(id), `works[${index}].id must be a non-empty string`);
+  assertBirthdayData(isNonEmptyString(title), `works[${index}].title must be a non-empty string`);
+  assertBirthdayData(
+    isNonEmptyString(sourceUrl),
+    `works[${index}].sourceUrl must be a non-empty string`,
+  );
+  assertBirthdayData(
+    isOptionalString(localizedTitle),
+    `works[${index}].localizedTitle must be a string when present`,
+  );
+
+  return localizedTitle === undefined
+    ? { id, title, sourceUrl }
+    : { id, title, localizedTitle, sourceUrl };
+};
+
+const validateCharacterBirthday = (
+  value: unknown,
+  index: number,
+  workSourceUrls: Map<string, string>,
+): CharacterBirthday => {
+  assertBirthdayData(isRecord(value), `characters[${index}] must be an object`);
+
+  const {
+    id,
+    name,
+    workId,
+    birthday,
+    gender,
+    avatar,
+    image,
+    sourceUrl,
+    sourceId,
+    bangumiId,
+    reading,
+    verificationStatus,
+  } = value;
+
+  assertBirthdayData(isNonEmptyString(id), `characters[${index}].id must be a non-empty string`);
+  assertBirthdayData(isNonEmptyString(name), `characters[${index}].name must be a non-empty string`);
+  assertBirthdayData(
+    isNonEmptyString(workId),
+    `characters[${index}].workId must be a non-empty string`,
+  );
+  assertBirthdayData(isBirthdayDate(birthday), `characters[${index}].birthday must be a valid MM-DD date`);
+  assertBirthdayData(
+    gender === "female" || gender === "male",
+    `characters[${index}].gender must be female or male`,
+  );
+  assertBirthdayData(
+    isNullableString(avatar),
+    `characters[${index}].avatar must be null or a string`,
+  );
+  assertBirthdayData(
+    image === undefined || isNullableString(image),
+    `characters[${index}].image must be null or a string when present`,
+  );
+  assertBirthdayData(
+    isNonEmptyString(sourceUrl),
+    `characters[${index}].sourceUrl must be a non-empty string`,
+  );
+  assertBirthdayData(
+    isOptionalString(sourceId),
+    `characters[${index}].sourceId must be a string when present`,
+  );
+  assertBirthdayData(
+    isOptionalString(bangumiId),
+    `characters[${index}].bangumiId must be a string when present`,
+  );
+  assertBirthdayData(
+    isOptionalString(reading),
+    `characters[${index}].reading must be a string when present`,
+  );
+  assertBirthdayData(
+    verificationStatus === "verified" || verificationStatus === "todo",
+    `characters[${index}].verificationStatus must be verified or todo`,
+  );
+
+  const workSourceUrl = workSourceUrls.get(workId);
+  assertBirthdayData(workSourceUrl !== undefined, `characters[${index}].workId must reference a known work`);
+  assertBirthdayData(
+    sourceUrl === workSourceUrl,
+    `characters[${index}].sourceUrl must match sourceUrl for work ${workId}`,
+  );
+
+  return {
+    id,
+    name,
+    workId,
+    birthday,
+    gender,
+    avatar,
+    sourceUrl,
+    verificationStatus,
+    ...(image !== undefined ? { image } : {}),
+    ...(sourceId !== undefined ? { sourceId } : {}),
+    ...(bangumiId !== undefined ? { bangumiId } : {}),
+    ...(reading !== undefined ? { reading } : {}),
+  };
+};
+
+const validateBirthdayData = (data: unknown): BirthdayDataJson => {
+  assertBirthdayData(isRecord(data), "root must be an object");
+  assertBirthdayData(Array.isArray(data.works), "works must be an array");
+  assertBirthdayData(Array.isArray(data.characters), "characters must be an array");
+
+  const works = data.works.map(validateBirthdayWork);
+  const workSourceUrls = new Map<string, string>();
+  for (const work of works) {
+    assertBirthdayData(!workSourceUrls.has(work.id), `duplicate work id: ${work.id}`);
+    workSourceUrls.set(work.id, work.sourceUrl);
+  }
+
+  const characters = data.characters.map((character, index) =>
+    validateCharacterBirthday(character, index, workSourceUrls),
+  );
+  const characterIds = new Set<string>();
+  for (const character of characters) {
+    assertBirthdayData(!characterIds.has(character.id), `duplicate character id: ${character.id}`);
+    characterIds.add(character.id);
+  }
+
+  return { works, characters };
+};
+
+const typedBirthdayData = validateBirthdayData(birthdayData);
 
 export const birthdayWorks: BirthdayWork[] = typedBirthdayData.works;
 export const characterBirthdays: CharacterBirthday[] = typedBirthdayData.characters;

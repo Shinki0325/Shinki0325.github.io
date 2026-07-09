@@ -1,4 +1,4 @@
-import { describe, expect, it } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 import { existsSync } from "node:fs";
 import { join } from "node:path";
 import birthdayData from "../src/data/character-birthdays.json";
@@ -16,6 +16,11 @@ import {
   type CharacterBirthday,
 } from "../src/data/character-birthdays";
 
+afterEach(() => {
+  vi.doUnmock("../src/data/character-birthdays.json");
+  vi.resetModules();
+});
+
 describe("character birthday dataset", () => {
   it("is backed by an editable JSON source for manager CRUD", () => {
     expect(birthdayData.works).toHaveLength(birthdayWorks.length);
@@ -30,6 +35,54 @@ describe("character birthday dataset", () => {
         bangumiId: expect.any(String),
       }),
     );
+  });
+
+  it("keeps every JSON work id unique with title and source URL", () => {
+    const workIds = birthdayData.works.map((work) => work.id);
+    expect(new Set(workIds).size).toBe(workIds.length);
+
+    for (const work of birthdayData.works) {
+      expect(work.id).not.toBe("");
+      expect(work.title).not.toBe("");
+      expect(work.sourceUrl).toMatch(/^https:\/\//);
+    }
+  });
+
+  it("keeps every JSON character linked, dated, typed, and source-synchronized", () => {
+    const workSourceUrls = new Map(birthdayData.works.map((work) => [work.id, work.sourceUrl]));
+    const validGenders = new Set(["female", "male"]);
+    const validVerificationStatuses = new Set(["verified", "todo"]);
+
+    for (const character of birthdayData.characters) {
+      const match = character.birthday.match(/^(\d{2})-(\d{2})$/);
+      expect(match, character.name).not.toBeNull();
+
+      const month = Number(match?.[1]);
+      const day = Number(match?.[2]);
+      const daysInMonth = new Date(2024, month, 0).getDate();
+
+      expect(workSourceUrls.has(character.workId), character.name).toBe(true);
+      expect(month, character.name).toBeGreaterThanOrEqual(1);
+      expect(month, character.name).toBeLessThanOrEqual(12);
+      expect(day, character.name).toBeGreaterThanOrEqual(1);
+      expect(day, character.name).toBeLessThanOrEqual(daysInMonth);
+      expect(validGenders.has(character.gender), character.name).toBe(true);
+      expect(validVerificationStatuses.has(character.verificationStatus), character.name).toBe(true);
+      expect(character.sourceUrl, character.name).toBe(workSourceUrls.get(character.workId));
+    }
+  });
+
+  it("rejects JSON characters whose duplicated source URL drifts from their work", async () => {
+    const invalidData = structuredClone(birthdayData);
+    invalidData.characters[0] = {
+      ...invalidData.characters[0],
+      sourceUrl: "https://example.com/drifted-source",
+    };
+
+    vi.resetModules();
+    vi.doMock("../src/data/character-birthdays.json", () => ({ default: invalidData }));
+
+    await expect(import("../src/data/character-birthdays")).rejects.toThrow(/sourceUrl/);
   });
 
   it("covers the requested galgame works", () => {
@@ -111,6 +164,9 @@ describe("character birthday dataset", () => {
       expect(character.avatar, character.name).toMatch(
         /^\/uploads\/character-birthdays\/.+\.webp$/,
       );
+      if (character.avatar === null) {
+        throw new Error(`Expected ${character.name} to have a generated avatar`);
+      }
       expect(
         existsSync(join(process.cwd(), "public", character.avatar.replace(/^\//, ""))),
         character.name,
