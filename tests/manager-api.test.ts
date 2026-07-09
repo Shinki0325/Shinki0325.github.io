@@ -16,4 +16,17 @@ describe("manager api contract", () => {
     expect(typesSource).toContain('| "albums"');
     expect(filesSource).toContain('albums: "albums"');
   });
+
+  it("adds a birthday data service for local CRUD and image operations", async () => {
+    const birthdaySource = await fs.readFile("manager/server/birthdays.ts", "utf8");
+
+    expect(birthdaySource).toContain("readBirthdayData");
+    expect(birthdaySource).toContain("saveBirthdayWork");
+    expect(birthdaySource).toContain("saveBirthdayCharacter");
+    expect(birthdaySource).toContain("deleteBirthdayCharacter");
+    expect(birthdaySource).toContain("copyBirthdayImage");
+    expect(birthdaySource).toContain("cropBirthdayAvatar");
+    expect(birthdaySource).toContain("character-birthdays.json");
+    expect(birthdaySource).toContain("public/uploads/character-birthdays");
+  });
 });
