@@ -17,12 +17,40 @@ import type {
   SystemStatus
 } from "./types";
 
+export class ApiError extends Error {
+  status: number;
+
+  constructor(status: number, message: string) {
+    super(message);
+    this.status = status;
+  }
+}
+
+const isErrorPayload = (payload: unknown): payload is { error: string } =>
+  typeof payload === "object" &&
+  payload !== null &&
+  "error" in payload &&
+  typeof (payload as { error?: unknown }).error === "string";
+
+const readResponse = async <T>(response: Response) => {
+  const payload = (await response.json().catch(() => undefined)) as
+    | { error?: unknown }
+    | T
+    | undefined;
+
+  if (!response.ok) {
+    const serverMessage = isErrorPayload(payload)
+      ? payload.error
+      : `${response.status} ${response.statusText}`;
+    throw new ApiError(response.status, `Request failed: ${serverMessage}`);
+  }
+
+  return payload as T;
+};
+
 const request = async <T>(path: string) => {
   const response = await fetch(path);
-  if (!response.ok) {
-    throw new Error(`Request failed: ${response.status} ${response.statusText}`);
-  }
-  return (await response.json()) as T;
+  return readResponse<T>(response);
 };
 
 const postJson = async <T>(path: string, body: Record<string, unknown>) => {
@@ -34,11 +62,7 @@ const postJson = async <T>(path: string, body: Record<string, unknown>) => {
     body: JSON.stringify(body)
   });
 
-  if (!response.ok) {
-    throw new Error(`Request failed: ${response.status} ${response.statusText}`);
-  }
-
-  return (await response.json()) as T;
+  return readResponse<T>(response);
 };
 
 export const getSystemStatus = () => request<SystemStatus>("/api/system");
@@ -60,11 +84,7 @@ export const saveContentEntry = async (payload: SaveContentPayload) => {
     body: JSON.stringify(payload)
   });
 
-  if (!response.ok) {
-    throw new Error(`Request failed: ${response.status} ${response.statusText}`);
-  }
-
-  return (await response.json()) as ContentEntry;
+  return readResponse<ContentEntry>(response);
 };
 
 export const getPageConfig = (name: PageConfigName) =>
@@ -79,11 +99,7 @@ export const savePageConfig = async (name: PageConfigName, json: string) => {
     body: JSON.stringify({ name, json })
   });
 
-  if (!response.ok) {
-    throw new Error(`Request failed: ${response.status} ${response.statusText}`);
-  }
-
-  return (await response.json()) as PageConfigFile;
+  return readResponse<PageConfigFile>(response);
 };
 
 export const getAssets = async () => {
@@ -100,11 +116,7 @@ export const copyAsset = async (sourcePath: string, targetDir?: string) => {
     body: JSON.stringify({ sourcePath, targetDir })
   });
 
-  if (!response.ok) {
-    throw new Error(`Request failed: ${response.status} ${response.statusText}`);
-  }
-
-  return ((await response.json()) as { item: AssetItem }).item;
+  return (await readResponse<{ item: AssetItem }>(response)).item;
 };
 
 export const getBirthdayData = () => request<BirthdayDataResponse>("/api/birthdays");

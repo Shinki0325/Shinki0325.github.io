@@ -53,4 +53,28 @@ describe("manager api contract", () => {
     expect(typesSource).toContain("BirthdayDataFile");
     expect(typesSource).toContain("BirthdayCharacterDraft");
   });
+
+  it("keeps birthday character save avatar nullable at the route boundary", async () => {
+    const routeSource = await fs.readFile("manager/server/routes/birthdays.ts", "utf8");
+
+    expect(routeSource).toContain("parseBirthdayCharacterDraft");
+    expect(routeSource).toContain("avatar: body.avatar");
+    expect(routeSource).not.toMatch(/requireFields\([^)]*\[[^\]]*"avatar"/s);
+  });
+
+  it("limits birthday JSON uploads to WebP data URLs", async () => {
+    const routeSource = await fs.readFile("manager/server/routes/birthdays.ts", "utf8");
+
+    expect(routeSource).toContain("data:image/webp;base64");
+    expect(routeSource).toMatch(/data:image\/webp;base64/i);
+    expect(routeSource).not.toContain("data:image/[a-z0-9.+-]+;base64");
+  });
+
+  it("surfaces birthday API server error messages to clients", async () => {
+    const apiSource = await fs.readFile("manager/src/api.ts", "utf8");
+
+    expect(apiSource).toContain("class ApiError extends Error");
+    expect(apiSource).toContain("payload.error");
+    expect(apiSource).toContain("this.status = status");
+  });
 });

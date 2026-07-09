@@ -13,6 +13,7 @@ app.use(
     origin: [/^http:\/\/127\.0\.0\.1:\d+$/, /^http:\/\/localhost:\d+$/]
   })
 );
+// JSON uploads are intended for small manager-local WebP data URLs; use path-copy for larger originals.
 app.use(express.json({ limit: "10mb" }));
 
 registerContentRoutes(app);
