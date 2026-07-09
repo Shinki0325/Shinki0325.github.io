@@ -13,7 +13,21 @@ def load_module():
     return module
 
 
+def load_manual_crop_module():
+    script_path = Path(__file__).resolve().parents[1] / "scripts" / "crop_square_image.py"
+    spec = importlib.util.spec_from_file_location("crop_square_image", script_path)
+    module = importlib.util.module_from_spec(spec)
+    sys.modules[spec.name] = module
+    spec.loader.exec_module(module)
+    return module
+
+
 class CharacterAvatarCropTest(unittest.TestCase):
+    def test_parse_manual_crop_accepts_x_y_size(self):
+        cropper = load_manual_crop_module()
+
+        self.assertEqual(cropper.parse_manual_crop("10,20,120"), (10, 20, 120))
+
     def test_tight_face_crop_matches_approved_preview_parameters(self):
         cropper = load_module()
 

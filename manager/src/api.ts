@@ -1,6 +1,12 @@
 import type {
   AssetItem,
   AssetListResponse,
+  BirthdayAvatarCrop,
+  BirthdayCharacterDraft,
+  BirthdayDataResponse,
+  BirthdayImageKind,
+  BirthdayImageResult,
+  BirthdayWorkDraft,
   ContentEntry,
   ContentKind,
   ContentListResponse,
@@ -11,12 +17,52 @@ import type {
   SystemStatus
 } from "./types";
 
+export class ApiError extends Error {
+  status: number;
+
+  constructor(status: number, message: string) {
+    super(message);
+    this.status = status;
+  }
+}
+
+const isErrorPayload = (payload: unknown): payload is { error: string } =>
+  typeof payload === "object" &&
+  payload !== null &&
+  "error" in payload &&
+  typeof (payload as { error?: unknown }).error === "string";
+
+const readResponse = async <T>(response: Response) => {
+  const payload = (await response.json().catch(() => undefined)) as
+    | { error?: unknown }
+    | T
+    | undefined;
+
+  if (!response.ok) {
+    const serverMessage = isErrorPayload(payload)
+      ? payload.error
+      : `${response.status} ${response.statusText}`;
+    throw new ApiError(response.status, `Request failed: ${serverMessage}`);
+  }
+
+  return payload as T;
+};
+
 const request = async <T>(path: string) => {
   const response = await fetch(path);
-  if (!response.ok) {
-    throw new Error(`Request failed: ${response.status} ${response.statusText}`);
-  }
-  return (await response.json()) as T;
+  return readResponse<T>(response);
+};
+
+const postJson = async <T>(path: string, body: Record<string, unknown>) => {
+  const response = await fetch(path, {
+    method: "POST",
+    headers: {
+      "content-type": "application/json"
+    },
+    body: JSON.stringify(body)
+  });
+
+  return readResponse<T>(response);
 };
 
 export const getSystemStatus = () => request<SystemStatus>("/api/system");
@@ -38,11 +84,7 @@ export const saveContentEntry = async (payload: SaveContentPayload) => {
     body: JSON.stringify(payload)
   });
 
-  if (!response.ok) {
-    throw new Error(`Request failed: ${response.status} ${response.statusText}`);
-  }
-
-  return (await response.json()) as ContentEntry;
+  return readResponse<ContentEntry>(response);
 };
 
 export const getPageConfig = (name: PageConfigName) =>
@@ -57,11 +99,7 @@ export const savePageConfig = async (name: PageConfigName, json: string) => {
     body: JSON.stringify({ name, json })
   });
 
-  if (!response.ok) {
-    throw new Error(`Request failed: ${response.status} ${response.statusText}`);
-  }
-
-  return (await response.json()) as PageConfigFile;
+  return readResponse<PageConfigFile>(response);
 };
 
 export const getAssets = async () => {
@@ -78,12 +116,61 @@ export const copyAsset = async (sourcePath: string, targetDir?: string) => {
     body: JSON.stringify({ sourcePath, targetDir })
   });
 
-  if (!response.ok) {
-    throw new Error(`Request failed: ${response.status} ${response.statusText}`);
-  }
-
-  return ((await response.json()) as { item: AssetItem }).item;
+  return (await readResponse<{ item: AssetItem }>(response)).item;
 };
+
+export const getBirthdayData = () => request<BirthdayDataResponse>("/api/birthdays");
+
+export const saveBirthdayWork = (payload: BirthdayWorkDraft) =>
+  postJson<BirthdayDataResponse>("/api/birthdays/work/save", payload);
+
+export const deleteBirthdayWork = (id: string) =>
+  postJson<BirthdayDataResponse>("/api/birthdays/work/delete", { id });
+
+export const saveBirthdayCharacter = (payload: BirthdayCharacterDraft) =>
+  postJson<BirthdayDataResponse>("/api/birthdays/character/save", payload);
+
+export const deleteBirthdayCharacter = (id: string) =>
+  postJson<BirthdayDataResponse>("/api/birthdays/character/delete", { id });
+
+export const copyBirthdayImage = (
+  sourcePath: string,
+  workId: string,
+  characterId: string,
+  kind: BirthdayImageKind
+) =>
+  postJson<BirthdayImageResult>("/api/birthdays/image/copy", {
+    sourcePath,
+    workId,
+    characterId,
+    kind
+  });
+
+export const uploadBirthdayImage = (
+  dataUrl: string,
+  workId: string,
+  characterId: string,
+  kind: BirthdayImageKind
+) =>
+  postJson<BirthdayImageResult>("/api/birthdays/image/upload", {
+    dataUrl,
+    workId,
+    characterId,
+    kind
+  });
+
+export const cropBirthdayAvatar = (
+  sourceUrl: string,
+  workId: string,
+  characterId: string,
+  crop: BirthdayAvatarCrop
+) =>
+  postJson<BirthdayImageResult>("/api/birthdays/avatar/crop", {
+    sourceUrl,
+    workId,
+    characterId,
+    crop
+  });
 
 const runSystemAction = async (path: string, body?: Record<string, unknown>) => {
   const response = await fetch(path, {

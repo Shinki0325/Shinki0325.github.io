@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { getSystemStatus } from "./api";
 import Assets from "./pages/Assets";
 import AlbumEditor from "./pages/AlbumEditor";
+import BirthdayManager from "./pages/BirthdayManager";
 import Dashboard from "./pages/Dashboard";
 import Editor from "./pages/Editor";
 import PageBuilder from "./pages/PageBuilder";
@@ -15,6 +16,7 @@ type View =
   | "editor"
   | "album-editor"
   | "reference-editor"
+  | "birthdays"
   | "pages"
   | "assets";
 
@@ -51,6 +53,7 @@ export default function App() {
     { view: "editor", label: "稿件编辑" },
     { view: "album-editor", label: "相册编辑" },
     { view: "reference-editor", label: "资料编辑" },
+    { view: "birthdays", label: "生日角色" },
     { view: "pages", label: "页面配置" },
     { view: "assets", label: "资源" }
   ];
@@ -75,6 +78,9 @@ export default function App() {
     }
     if (view === "reference-editor") {
       return <ReferenceEditor selectedEntry={selectedEntry} />;
+    }
+    if (view === "birthdays") {
+      return <BirthdayManager />;
     }
     if (view === "pages") {
       return <PageBuilder />;
