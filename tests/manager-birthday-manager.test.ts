@@ -41,4 +41,14 @@ describe("manager birthday manager UI", () => {
     expect(source).toContain(".webp");
     expect(source).toContain("请导入 WebP 图片。");
   });
+
+  it("uses the refreshed glass control-room manager shell", () => {
+    const source = readSource("manager/src/main.tsx");
+
+    expect(source).toContain("backdrop-filter");
+    expect(source).toContain("birthday-manager__layout");
+    expect(source).toContain("birthday-manager__hero");
+    expect(source).toContain("birthday-manager__stats");
+    expect(source).toContain("birthday-manager__preview");
+  });
 });
