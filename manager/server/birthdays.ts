@@ -65,6 +65,7 @@ const avatarRoot = path.join(publicRoot, "uploads", "character-birthdays");
 const cropScriptPath = path.join(repoRoot, "scripts", "crop_square_image.py");
 
 const ID_PATTERN = /^[a-z0-9][a-z0-9-]*$/;
+let writeQueue: Promise<void> = Promise.resolve();
 
 const assertValid: (condition: unknown, message: string) => asserts condition = (
   condition,
@@ -143,6 +144,15 @@ const normalizeWindowsPath = (inputPath: string) => {
 const toRelativePosixPath = (baseDir: string, targetPath: string) =>
   path.relative(baseDir, targetPath).replaceAll(path.sep, "/");
 
+const getExpectedBirthdayImageUrl = (
+  workId: string,
+  characterId: string,
+  kind: BirthdayImageKind
+) => {
+  const filename = kind === "avatar" ? `${characterId}.webp` : `${characterId}-full.webp`;
+  return `/uploads/character-birthdays/${workId}/${filename}`;
+};
+
 const toPublicUrl = async (destinationPath: string): Promise<BirthdayImageResult> => {
   const relativePath = toRelativePosixPath(publicRoot, destinationPath);
 
@@ -169,6 +179,40 @@ const getImageDestination = (workId: string, characterId: string, kind: Birthday
   assertValid(isWithinDirectory(avatarRoot, destinationPath), `Invalid ${birthdayUploadRoot} destination.`);
 
   return destinationPath;
+};
+
+const normalizeBirthdayImageUrl = (
+  value: string | null | undefined,
+  field: "avatar" | "image",
+  workId: string,
+  characterId: string,
+  kind: BirthdayImageKind
+) => {
+  if (value === undefined) {
+    return undefined;
+  }
+  if (value === null) {
+    return null;
+  }
+
+  const trimmed = value.trim();
+  if (trimmed.length === 0) {
+    return null;
+  }
+
+  const expectedUrl = getExpectedBirthdayImageUrl(workId, characterId, kind);
+  assertValid(trimmed === expectedUrl, `${field} must be ${expectedUrl}.`);
+
+  return trimmed;
+};
+
+const withBirthdayWriteLock = async <T>(operation: () => Promise<T>): Promise<T> => {
+  const run = writeQueue.then(operation, operation);
+  writeQueue = run.then(
+    () => undefined,
+    () => undefined
+  );
+  return run;
 };
 
 const sortBirthdayData = (data: BirthdayDataFile): BirthdayDataFile => ({
@@ -230,6 +274,8 @@ const validateCharacterDraft = (
     draft.image === undefined || nullableString(draft.image),
     "character image must be null or a string when present."
   );
+  const avatar = normalizeBirthdayImageUrl(draft.avatar, "avatar", workId, id, "avatar") ?? null;
+  const image = normalizeBirthdayImageUrl(draft.image, "image", workId, id, "image");
 
   return {
     id,
@@ -237,10 +283,10 @@ const validateCharacterDraft = (
     workId,
     birthday: validateBirthday(draft.birthday),
     gender: validateGender(draft.gender),
-    avatar: draft.avatar,
+    avatar,
     sourceUrl,
     verificationStatus: validateVerificationStatus(draft.verificationStatus),
-    ...(draft.image !== undefined ? { image: draft.image } : {}),
+    ...(image !== undefined ? { image } : {}),
     ...(sourceId ? { sourceId } : {}),
     ...(bangumiId ? { bangumiId } : {}),
     ...(reading ? { reading } : {})
@@ -284,7 +330,19 @@ export const readBirthdayData = async (): Promise<BirthdayDataFile> => {
 
 export const writeBirthdayData = async (data: BirthdayDataFile): Promise<BirthdayDataFile> => {
   const sortedData = validateBirthdayData(data);
-  await fs.writeFile(dataPath, `${JSON.stringify(sortedData, null, 2)}\n`, "utf8");
+  const tempPath = path.join(
+    path.dirname(dataPath),
+    `.${path.basename(dataPath)}.${process.pid}.${Date.now()}.${Math.random().toString(36).slice(2)}.tmp`
+  );
+
+  try {
+    await fs.writeFile(tempPath, `${JSON.stringify(sortedData, null, 2)}\n`, "utf8");
+    await fs.rename(tempPath, dataPath);
+  } catch (error) {
+    await fs.rm(tempPath, { force: true });
+    throw error;
+  }
+
   return sortedData;
 };
 
@@ -304,53 +362,57 @@ export const getBirthdayStats = (data: BirthdayDataFile) => {
   };
 };
 
-export const saveBirthdayWork = async (draft: BirthdayWorkDraft) => {
-  const data = await readBirthdayData();
-  const work = validateWorkDraft(draft);
-  const works = data.works.filter((item) => item.id !== work.id);
+export const saveBirthdayWork = async (draft: BirthdayWorkDraft) =>
+  withBirthdayWriteLock(async () => {
+    const data = await readBirthdayData();
+    const work = validateWorkDraft(draft);
+    const works = data.works.filter((item) => item.id !== work.id);
 
-  return writeBirthdayData({
-    works: [...works, work],
-    characters: data.characters
+    return writeBirthdayData({
+      works: [...works, work],
+      characters: data.characters
+    });
   });
-};
 
-export const deleteBirthdayWork = async (id: string) => {
-  const data = await readBirthdayData();
-  const workId = requiredText(id, "work id");
-  validateId(workId, "work id");
-  assertValid(
-    !data.characters.some((character) => character.workId === workId),
-    `Cannot delete work ${workId} while characters reference it.`
-  );
+export const deleteBirthdayWork = async (id: string) =>
+  withBirthdayWriteLock(async () => {
+    const data = await readBirthdayData();
+    const workId = requiredText(id, "work id");
+    validateId(workId, "work id");
+    assertValid(
+      !data.characters.some((character) => character.workId === workId),
+      `Cannot delete work ${workId} while characters reference it.`
+    );
 
-  return writeBirthdayData({
-    works: data.works.filter((work) => work.id !== workId),
-    characters: data.characters
+    return writeBirthdayData({
+      works: data.works.filter((work) => work.id !== workId),
+      characters: data.characters
+    });
   });
-};
 
-export const saveBirthdayCharacter = async (draft: BirthdayCharacterDraft) => {
-  const data = await readBirthdayData();
-  const character = validateCharacterDraft(draft, data.works);
-  const characters = data.characters.filter((item) => item.id !== character.id);
+export const saveBirthdayCharacter = async (draft: BirthdayCharacterDraft) =>
+  withBirthdayWriteLock(async () => {
+    const data = await readBirthdayData();
+    const character = validateCharacterDraft(draft, data.works);
+    const characters = data.characters.filter((item) => item.id !== character.id);
 
-  return writeBirthdayData({
-    works: data.works,
-    characters: [...characters, character]
+    return writeBirthdayData({
+      works: data.works,
+      characters: [...characters, character]
+    });
   });
-};
 
-export const deleteBirthdayCharacter = async (id: string) => {
-  const data = await readBirthdayData();
-  const characterId = requiredText(id, "character id");
-  validateId(characterId, "character id");
+export const deleteBirthdayCharacter = async (id: string) =>
+  withBirthdayWriteLock(async () => {
+    const data = await readBirthdayData();
+    const characterId = requiredText(id, "character id");
+    validateId(characterId, "character id");
 
-  return writeBirthdayData({
-    works: data.works,
-    characters: data.characters.filter((character) => character.id !== characterId)
+    return writeBirthdayData({
+      works: data.works,
+      characters: data.characters.filter((character) => character.id !== characterId)
+    });
   });
-};
 
 export const copyBirthdayImage = async (
   sourcePath: string,
