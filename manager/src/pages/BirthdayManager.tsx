@@ -57,6 +57,7 @@ export default function BirthdayManager() {
   const [workForm, setWorkForm] = useState<BirthdayWorkDraft>(EMPTY_WORK);
   const [characterSearch, setCharacterSearch] = useState("");
   const [editor, setEditor] = useState<BirthdayCharacterDraft | null>(null);
+  const [editingExistingId, setEditingExistingId] = useState<string | null>(null);
   const [sourcePath, setSourcePath] = useState("");
   const [crop, setCrop] = useState<BirthdayAvatarCrop>({ x: 0, y: 0, size: 512 });
   const [message, setMessage] = useState<string | null>(null);
@@ -145,12 +146,14 @@ export default function BirthdayManager() {
 
   const handleSelectCharacter = (character: BirthdayCharacterDraft) => {
     setEditor({ ...character });
+    setEditingExistingId(character.id);
     setMessage(null);
   };
 
   const handleNewCharacter = () => {
     const workId = selectedWorkId || works[0]?.id || "";
     setEditor(makeEmptyCharacter(workId, works));
+    setEditingExistingId(null);
     setMessage("已创建空白角色草稿");
   };
 
@@ -163,7 +166,9 @@ export default function BirthdayManager() {
       const response = await saveBirthdayCharacter(editor);
       updateData(response);
       setSelectedWorkId(editor.workId);
-      setEditor({ ...editor });
+      const savedCharacter = response.characters.find((character) => character.id === editor.id);
+      setEditor(savedCharacter ? { ...savedCharacter } : { ...editor });
+      setEditingExistingId(editor.id);
       setMessage(`已保存角色 ${editor.name || editor.id}`);
     } catch (error) {
       setMessage((error as Error).message);
@@ -175,14 +180,17 @@ export default function BirthdayManager() {
       return;
     }
 
-    if (!window.confirm(`确认删除 ${editor.name || editor.id}？`)) {
+    const characterId = editingExistingId ?? editor.id;
+
+    if (!window.confirm(`确认删除 ${editor.name || characterId}？`)) {
       return;
     }
 
     try {
-      const response = await deleteBirthdayCharacter(editor.id);
+      const response = await deleteBirthdayCharacter(characterId);
       updateData(response);
       setEditor(null);
+      setEditingExistingId(null);
       setMessage("已删除角色");
     } catch (error) {
       setMessage((error as Error).message);
@@ -230,8 +238,14 @@ export default function BirthdayManager() {
       return;
     }
 
+    const trimmedSourcePath = sourcePath.trim();
+    if (!trimmedSourcePath.toLowerCase().endsWith(".webp")) {
+      setMessage("请导入 WebP 图片。");
+      return;
+    }
+
     try {
-      const result = await copyBirthdayImage(sourcePath, character.workId, character.id, kind);
+      const result = await copyBirthdayImage(trimmedSourcePath, character.workId, character.id, kind);
       updateEditorImage(character, kind, result.url);
       setMessage(`已导入${kind === "avatar" ? "头像" : "大图"} ${result.url}`);
     } catch (error) {
@@ -408,7 +422,11 @@ export default function BirthdayManager() {
                 <div className="grid-form birthday-manager__character-form">
                   <label className="field">
                     <span>ID</span>
-                    <input value={editor.id} onChange={(event) => updateEditor("id", event.target.value)} />
+                    <input
+                      disabled={editingExistingId !== null}
+                      value={editor.id}
+                      onChange={(event) => updateEditor("id", event.target.value)}
+                    />
                   </label>
                   <label className="field">
                     <span>作品</span>
@@ -421,7 +439,9 @@ export default function BirthdayManager() {
                             ? {
                                 ...current,
                                 workId,
-                                sourceUrl: current.sourceUrl || getWorkSourceUrl(works, workId)
+                                sourceUrl: getWorkSourceUrl(works, workId),
+                                avatar: null,
+                                image: null
                               }
                             : current
                         );

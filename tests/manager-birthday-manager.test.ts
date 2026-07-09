@@ -28,4 +28,17 @@ describe("manager birthday manager UI", () => {
     expect(source).toContain("大图");
     expect(source).toContain("头像裁切");
   });
+
+  it("guards editor state when changing existing birthday characters", () => {
+    const source = readSource("manager/src/pages/BirthdayManager.tsx");
+
+    expect(source).toContain("editingExistingId");
+    expect(source).toContain("disabled={editingExistingId !== null}");
+    expect(source).toContain("sourceUrl: getWorkSourceUrl(works, workId)");
+    expect(source).toContain("avatar: null");
+    expect(source).toContain("image: null");
+    expect(source).toContain("response.characters.find");
+    expect(source).toContain(".webp");
+    expect(source).toContain("请导入 WebP 图片。");
+  });
 });
