@@ -21,14 +21,14 @@ const createEntry = (slug: string, date: string, draft = false, tags: string[] =
 
 describe("public content helpers", () => {
   it("derives public content helpers from one shared collection list", () => {
-    expect(PUBLIC_CONTENT_COLLECTIONS).toEqual(["articles", "notes", "topics", "references"]);
+    expect(PUBLIC_CONTENT_COLLECTIONS).toEqual(["articles", "notes", "references"]);
   });
 
   it("allows only public content collections", () => {
     expect(isPublicCollection("articles")).toBe(true);
     expect(isPublicCollection("notes")).toBe(true);
     expect(isPublicCollection("references")).toBe(true);
-    expect(isPublicCollection("topics")).toBe(true);
+    expect(isPublicCollection("topics")).toBe(false);
     expect(isPublicCollection("drafts")).toBe(false);
     expect(isPublicCollection("vault")).toBe(false);
   });
@@ -37,7 +37,6 @@ describe("public content helpers", () => {
     expect(publicContentGlob).toEqual([
       "src/content/articles/**/*",
       "src/content/notes/**/*",
-      "src/content/topics/**/*",
       "src/content/references/**/*",
     ]);
   });

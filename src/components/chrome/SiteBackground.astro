@@ -43,7 +43,7 @@ const nonHomeBackgroundImages: readonly string[] = isHome ? [] : backgroundImage
   <div class="site-backdrop__slider" data-background-slider={nonHomeBackgroundImages.length > 1 ? "true" : undefined}>
     {nonHomeBackgroundImages.map((src, index) => (
       <div
-        class={index === 0 ? "site-backdrop__image is-active" : "site-backdrop__image"}
+        class={nonHomeBackgroundImages.length === 1 && index === 0 ? "site-backdrop__image is-active" : "site-backdrop__image"}
         data-background-slide
         style={`--bg-url: url('${src}');`}
       ></div>
@@ -68,15 +68,21 @@ const nonHomeBackgroundImages: readonly string[] = isHome ? [] : backgroundImage
 
                 slider.dataset.carouselReady = "true";
                 let activeIndex = slides.findIndex((slide) => slide.classList.contains("is-active"));
-                if (activeIndex < 0) {
-                  activeIndex = 0;
-                  slides[0].classList.add("is-active");
+                const activateSlide = (nextIndex) => {
+                  slides[activeIndex]?.classList.remove("is-active");
+                  activeIndex = nextIndex;
+                  slides[activeIndex]?.classList.add("is-active");
+                };
+
+                const randomIndex = Math.floor(Math.random() * slides.length);
+                if (activeIndex >= 0) {
+                  activateSlide(activeIndex);
+                } else {
+                  activateSlide(randomIndex);
                 }
 
                 setInterval(() => {
-                  slides[activeIndex]?.classList.remove("is-active");
-                  activeIndex = (activeIndex + 1) % slides.length;
-                  slides[activeIndex]?.classList.add("is-active");
+                  activateSlide((activeIndex + 1) % slides.length);
                 }, 60000);
               });
             };

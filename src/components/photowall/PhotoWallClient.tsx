@@ -127,23 +127,18 @@ export default function PhotoWallClient({ albums }: { albums: Album[] }) {
 
   const lightboxPhoto =
     selectedAlbum && lightboxIndex !== null ? selectedAlbum.photos[lightboxIndex] ?? null : null;
-  const backgroundImage = selectedAlbum?.cover ?? albums[0]?.cover ?? "";
 
   return (
     <div className="photowall-shell" data-photowall-shell>
-      {backgroundImage ? (
-        <div
-          aria-hidden="true"
-          className="photowall-backdrop"
-          data-album-backdrop
-          style={{ backgroundImage: `url(${backgroundImage})` }}
-        />
-      ) : null}
-
-      <section className="photowall-hero">
+      <section className="photowall-hero archive-style-hero">
         <div className="photowall-hero__copy">
+          <p className="eyebrow">Photo Archive</p>
           <h1>照片墙</h1>
-          <p>把每一次练习、采风和临摹整理成相纸，留在这片光影走廊里。</p>
+          <p className="photowall-hero__summary">
+            <span aria-hidden="true">✧</span>
+            共 {albums.length} 个相册
+            <small>把每一次练习、采风和临摹整理成相纸，留在这片光影走廊里。</small>
+          </p>
         </div>
       </section>
 

@@ -12,4 +12,20 @@ describe("site background performance", () => {
     expect(source).toContain("data-home-background-source");
     expect(source).toContain("requestIdleCallback");
   });
+
+  it("randomizes non-home background slides and gives active images a gentle drift", async () => {
+    const [componentSource, styleSource] = await Promise.all([
+      import("node:fs/promises").then((fs) => fs.readFile("src/components/chrome/SiteBackground.astro", "utf8")),
+      import("node:fs/promises").then((fs) => fs.readFile("src/styles/global.css", "utf8")),
+    ]);
+
+    expect(componentSource).toContain("Math.floor(Math.random() * slides.length)");
+    expect(componentSource).toContain("activateSlide(randomIndex)");
+    expect(componentSource).toContain("data-background-slide");
+    expect(styleSource).toContain("animation: drift-pan 96s ease-in-out infinite alternate");
+    expect(styleSource).toContain("translate3d(-1.15%, -0.58%, 0)");
+    expect(styleSource).toContain("translate3d(1.15%, 0.58%, 0)");
+    expect(styleSource).toContain(".site-backdrop__image.is-active");
+    expect(styleSource).toContain(".site-backdrop__image.is-active {\n    animation: none;");
+  });
 });

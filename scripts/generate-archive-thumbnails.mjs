@@ -5,12 +5,16 @@ import sharp from "sharp";
 const root = process.cwd();
 const sourceDir = path.join(root, "public", "uploads", "galgame-90s-web-archive");
 const outputDir = path.join(root, "public", "uploads", "generated", "archive-thumbs");
+const THUMBNAIL_WIDTH = 960;
+const THUMBNAIL_HEIGHT = 1280;
+const THUMBNAIL_QUALITY = 86;
+const THUMBNAIL_SIGNATURE = `top-${THUMBNAIL_WIDTH}x${THUMBNAIL_HEIGHT}-q${THUMBNAIL_QUALITY}`;
 
 const shouldProcess = async (sourcePath, outputPath) => {
   try {
     const [sourceStat, outputStat] = await Promise.all([stat(sourcePath), stat(outputPath)]);
 
-    return sourceStat.mtimeMs > outputStat.mtimeMs;
+    return sourceStat.mtimeMs > outputStat.mtimeMs || outputStat.size < 20_000;
   } catch {
     return true;
   }
@@ -36,12 +40,20 @@ for (const file of files) {
 
   await sharp(sourcePath)
     .resize({
-      width: 900,
-      height: 540,
-      fit: "inside",
+      width: THUMBNAIL_WIDTH,
+      height: THUMBNAIL_HEIGHT,
+      fit: "cover",
+      position: "top",
       withoutEnlargement: true,
     })
-    .webp({ quality: 72, effort: 5 })
+    .webp({ quality: THUMBNAIL_QUALITY, effort: 6 })
+    .withMetadata({
+      exif: {
+        IFD0: {
+          ImageDescription: THUMBNAIL_SIGNATURE,
+        },
+      },
+    })
     .toFile(outputPath);
 
   generated += 1;

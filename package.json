@@ -7,6 +7,7 @@
     "dev:manager": "pnpm --filter @maki/manager dev",
     "dev:manager:server": "pnpm --filter @maki/manager server",
     "dev:manager:local": "bash scripts/restart-manager-local.sh",
+    "sync:bangumi": "node scripts/sync-bangumi-collections.mjs",
     "build": "node scripts/generate-archive-thumbnails.mjs && node scripts/clean-build.mjs && astro build",
     "build:manager": "pnpm --filter @maki/manager build",
     "preview": "astro preview",

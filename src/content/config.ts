@@ -22,15 +22,6 @@ const note = defineCollection({
   }),
 });
 
-const topic = defineCollection({
-  schema: z.object({
-    title: z.string(),
-    description: z.string(),
-    cover: z.string().optional(),
-    pinned: z.boolean().default(false),
-  }),
-});
-
 const draft = defineCollection({
   schema: z.object({
     title: z.string(),
@@ -55,7 +46,6 @@ export const collections = {
   albums: album,
   references: reference,
   notes: note,
-  topics: topic,
   drafts: draft,
   vault: vault,
 };

@@ -4,9 +4,15 @@ import { buildHomeSearchIndex, buildHomeViewModel } from "../src/lib/home-shell"
 
 describe("site shell config", () => {
   it("adds 照片墙 to the global navigation and keeps homepage shell config intact", () => {
-    expect(siteShell.navItems.map((item) => item.label)).toEqual(
-      expect.arrayContaining(["首页", "文稿", "资料库", "笔记", "照片墙", "专题", "关于"]),
-    );
+    expect(siteShell.navItems.map((item) => item.label)).toEqual([
+      "首页",
+      "文稿",
+      "资料库",
+      "笔记",
+      "照片墙",
+      "关于",
+    ]);
+    expect(siteShell.navItems.map((item) => item.href)).not.toContain("/topics/");
     expect(siteShell.music.tracks.length).toBeGreaterThan(0);
     expect(siteShell.music.tracks.map((track) => track.id)).toEqual(
       expect.arrayContaining(["2050292874", "1459692412", "4930312"]),

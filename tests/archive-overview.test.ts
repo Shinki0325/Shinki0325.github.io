@@ -162,6 +162,18 @@ describe("archive overview pages", () => {
     expect(covers[0]).toMatch(/^\/uploads\/generated\/archive-thumbs\/.+\.webp$/);
   });
 
+  it("generates high-resolution top-cropped archive thumbnails instead of tiny full-page strips", async () => {
+    const source = await import("node:fs/promises").then((fs) =>
+      fs.readFile("scripts/generate-archive-thumbnails.mjs", "utf8")
+    );
+
+    expect(source).toContain("THUMBNAIL_WIDTH = 960");
+    expect(source).toContain("THUMBNAIL_HEIGHT = 1280");
+    expect(source).toContain("THUMBNAIL_QUALITY = 86");
+    expect(source).toContain('fit: "cover"');
+    expect(source).toContain('position: "top"');
+  });
+
   it("uses the compact reference-blog timeline only on the article overview", async () => {
     const fs = await import("node:fs/promises");
     const [componentSource, articlesSource, referencesSource, styleSource] = await Promise.all([

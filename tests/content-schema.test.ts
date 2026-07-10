@@ -18,6 +18,8 @@ describe("content collections", () => {
     expect(collections).toHaveProperty("articles");
     expect(collections).toHaveProperty("albums");
     expect(collections).toHaveProperty("references");
+    expect(collections).toHaveProperty("notes");
+    expect(collections).not.toHaveProperty("topics");
   });
 
   it("parses album entries with agreed relationship fields", () => {

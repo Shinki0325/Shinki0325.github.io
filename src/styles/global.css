@@ -235,13 +235,14 @@ button:disabled,
   background-size: cover;
   filter: saturate(0.98) brightness(0.84);
   opacity: 0;
-  transform: scale(1.03);
-  transition: opacity 1200ms ease, transform 9000ms ease;
+  transform: scale(1.045) translate3d(0, 0, 0);
+  transition: opacity 1200ms ease;
+  will-change: opacity, transform;
 }
 
 .site-backdrop__image.is-active {
   opacity: var(--bg-image-opacity);
-  transform: scale(1.08);
+  animation: drift-pan 96s ease-in-out infinite alternate;
 }
 
 .site-backdrop__veil {
@@ -262,6 +263,11 @@ button:disabled,
 @media (prefers-reduced-motion: reduce) {
   .site-backdrop__video {
     display: none;
+  }
+
+  .site-backdrop__image.is-active {
+    animation: none;
+    transform: scale(1.045);
   }
 }
 
@@ -1948,7 +1954,6 @@ a.home-feature-card {
   --link-card-text: #e0e7ff;
 }
 
-.prose a[href^="/topics/"],
 .prose a[href^="/tags/"] {
   --link-card-bg: rgba(168, 85, 247, 0.2);
   --link-card-border: rgba(216, 180, 254, 0.42);
@@ -2218,6 +2223,383 @@ a.home-feature-card {
   gap: 0.65rem;
 }
 
+.about-bangumi {
+  margin-top: clamp(26px, 4vw, 44px);
+  padding: clamp(18px, 3vw, 26px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 30px;
+  background:
+    radial-gradient(circle at top left, rgba(125, 161, 255, 0.22), transparent 34%),
+    rgba(8, 13, 24, calc(var(--panel-alpha) + 0.08));
+  box-shadow: 0 28px 70px rgba(2, 6, 23, 0.34);
+}
+
+.about-bangumi__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.about-bangumi__title {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.about-bangumi__icon {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 13px;
+  background: linear-gradient(135deg, #8fb2ff, #6f94ff);
+  color: #101827;
+  font-size: 1.08rem;
+  font-weight: 1000;
+  box-shadow: 0 12px 24px rgba(87, 124, 255, 0.3);
+}
+
+.about-bangumi__head h2 {
+  margin: 2px 0 5px;
+  font-size: clamp(1.55rem, 3.6vw, 3.1rem);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+}
+
+.about-bangumi__head p {
+  margin: 0;
+  color: rgba(226, 232, 240, 0.72);
+  font-size: clamp(0.76rem, 1vw, 0.95rem);
+  font-weight: 800;
+}
+
+.about-bangumi__categories {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.about-bangumi__categories button,
+.about-bangumi__statuses button,
+.about-bangumi__sort button {
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
+.about-bangumi__categories button {
+  position: relative;
+  display: flex;
+  min-height: 38px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 13px;
+  background: transparent;
+  color: rgba(226, 232, 240, 0.72);
+  font-size: 0.86rem;
+  font-weight: 1000;
+  transition:
+    background 160ms ease,
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+.about-bangumi__categories button::after {
+  position: absolute;
+  right: 14px;
+  bottom: -13px;
+  left: 14px;
+  height: 2px;
+  border-radius: 999px;
+  background: transparent;
+  content: "";
+}
+
+.about-bangumi__categories button strong {
+  min-width: 30px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: rgba(125, 161, 255, 0.18);
+  color: #a9c3ff;
+}
+
+.about-bangumi__categories button:hover,
+.about-bangumi__categories button.is-active {
+  background: rgba(125, 161, 255, 0.12);
+  color: #a9c3ff;
+  transform: translateY(-1px);
+}
+
+.about-bangumi__categories button.is-active::after {
+  background: linear-gradient(90deg, #8fb2ff, #a9c3ff);
+}
+
+.about-bangumi__toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 14px 0 16px;
+}
+
+.about-bangumi__statuses,
+.about-bangumi__sort {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.about-bangumi__sort {
+  justify-content: flex-end;
+}
+
+.about-bangumi__statuses button {
+  min-height: 28px;
+  padding: 0 11px;
+  border-radius: 999px;
+  background: rgba(125, 161, 255, 0.18);
+  color: #a9c3ff;
+  font-size: 0.76rem;
+  font-weight: 1000;
+  transition:
+    background 160ms ease,
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+.about-bangumi__sort button {
+  min-height: 28px;
+  padding: 0 10px;
+  border: 1px solid rgba(169, 195, 255, 0.22);
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.36);
+  color: rgba(219, 234, 254, 0.78);
+  font-size: 0.72rem;
+  font-weight: 1000;
+  transition:
+    background 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+.about-bangumi__statuses button span {
+  margin-left: 4px;
+  opacity: 0.8;
+}
+
+.about-bangumi__statuses button:hover,
+.about-bangumi__statuses button.is-active,
+.about-bangumi__sort button:hover,
+.about-bangumi__sort button.is-active {
+  background: linear-gradient(135deg, #7da1ff, #8fb2ff);
+  border-color: transparent;
+  color: white;
+  transform: translateY(-1px);
+}
+
+.about-bangumi__grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.about-bangumi-card {
+  position: relative;
+  min-height: clamp(154px, 13.4vw, 211px);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 13px;
+  background: rgba(15, 23, 42, 0.55);
+  box-shadow: 0 10px 22px rgba(2, 6, 23, 0.24);
+  isolation: isolate;
+  transition:
+    box-shadow 180ms ease,
+    transform 180ms ease,
+    border-color 180ms ease;
+}
+
+.about-bangumi-card[hidden] {
+  display: none;
+}
+
+.about-bangumi__pager {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.about-bangumi__pager[hidden] {
+  display: none;
+}
+
+.about-bangumi__pager button {
+  min-height: 36px;
+  padding: 0 16px;
+  border: 1px solid rgba(169, 195, 255, 0.24);
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.42);
+  color: rgba(219, 234, 254, 0.86);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 1000;
+  transition:
+    background 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease,
+    transform 160ms ease,
+    opacity 160ms ease;
+}
+
+.about-bangumi__pager button:hover:not(:disabled) {
+  border-color: transparent;
+  background: linear-gradient(135deg, #7da1ff, #8fb2ff);
+  color: white;
+  transform: translateY(-1px);
+}
+
+.about-bangumi__pager button:disabled {
+  cursor: not-allowed;
+  opacity: 0.38;
+}
+
+.about-bangumi__pager span {
+  min-width: 138px;
+  color: rgba(226, 232, 240, 0.72);
+  font-size: 0.78rem;
+  font-weight: 1000;
+  text-align: center;
+}
+
+.about-bangumi-card:hover {
+  border-color: rgba(143, 178, 255, 0.48);
+  box-shadow: 0 14px 32px rgba(2, 6, 23, 0.34);
+  transform: translateY(-2px);
+}
+
+.about-bangumi-card img {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 500ms ease;
+}
+
+.about-bangumi-card:hover img {
+  transform: scale(1.045);
+}
+
+.about-bangumi-card__shade {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(180deg, rgba(2, 6, 23, 0.04) 0%, rgba(2, 6, 23, 0.14) 42%, rgba(2, 6, 23, 0.9) 100%),
+    linear-gradient(90deg, rgba(2, 6, 23, 0.28), transparent 45%);
+}
+
+.about-bangumi-card__status,
+.about-bangumi-card__score {
+  position: absolute;
+  top: 7px;
+  z-index: 2;
+  display: inline-flex;
+  min-height: 20px;
+  align-items: center;
+  border-radius: 999px;
+  color: white;
+  font-size: 0.58rem;
+  font-weight: 1000;
+  line-height: 1;
+}
+
+.about-bangumi-card__status {
+  left: 7px;
+  padding: 0 7px;
+  background: linear-gradient(135deg, #2f85ff, #4b8cff);
+}
+
+.about-bangumi-card__status.is-done {
+  background: linear-gradient(135deg, #19c765, #32d979);
+}
+
+.about-bangumi-card__status.is-doing {
+  background: linear-gradient(135deg, #ffb100, #ffd45b);
+  color: #2a1d04;
+}
+
+.about-bangumi-card__status.is-on_hold,
+.about-bangumi-card__status.is-dropped {
+  background: linear-gradient(135deg, #64748b, #94a3b8);
+}
+
+.about-bangumi-card__score {
+  right: 7px;
+  padding: 0 7px;
+  background: rgba(15, 23, 42, 0.64);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.about-bangumi-card__body {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  left: 8px;
+  display: grid;
+  gap: 4px;
+  color: white;
+}
+
+.about-bangumi-card__body strong {
+  display: -webkit-box;
+  overflow: hidden;
+  font-size: clamp(0.66rem, 0.72vw, 0.78rem);
+  font-weight: 1000;
+  letter-spacing: -0.03em;
+  line-height: 1.16;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.48);
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.about-bangumi-card__body small {
+  color: rgba(226, 232, 240, 0.78);
+  font-size: 0.58rem;
+  font-weight: 900;
+}
+
+.about-bangumi-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.about-bangumi-card__tags em {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 2px 4px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.22);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.48rem;
+  font-style: normal;
+  font-weight: 900;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 @keyframes gradient-shift {
   0% {
     background-position: 0% 50%;
@@ -2234,11 +2616,11 @@ a.home-feature-card {
 
 @keyframes drift-pan {
   0% {
-    transform: scale(1.06) translate3d(-1.5%, 0, 0);
+    transform: scale(1.05) translate3d(-1.15%, -0.58%, 0);
   }
 
   100% {
-    transform: scale(1.12) translate3d(1.5%, 0, 0);
+    transform: scale(1.085) translate3d(1.15%, 0.58%, 0);
   }
 }
 
@@ -2421,6 +2803,84 @@ a.home-feature-card {
   .about-tabs a {
     flex: 1;
     padding: 0 14px;
+  }
+
+  .about-bangumi {
+    padding: 16px;
+    border-radius: 22px;
+  }
+
+  .about-bangumi__head {
+    flex-direction: column;
+  }
+
+  .about-bangumi__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+  }
+
+  .about-bangumi__categories {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .about-bangumi__categories button {
+    min-height: 38px;
+  }
+
+  .about-bangumi__toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .about-bangumi__statuses,
+  .about-bangumi__sort {
+    gap: 6px;
+  }
+
+  .about-bangumi__sort {
+    justify-content: flex-start;
+  }
+
+  .about-bangumi__statuses button,
+  .about-bangumi__sort button {
+    min-height: 30px;
+    padding: 0 11px;
+    font-size: 0.78rem;
+  }
+
+  .about-bangumi__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .about-bangumi__pager {
+    gap: 8px;
+  }
+
+  .about-bangumi__pager button {
+    min-height: 34px;
+    padding: 0 12px;
+    font-size: 0.78rem;
+  }
+
+  .about-bangumi__pager span {
+    min-width: 112px;
+    font-size: 0.72rem;
+  }
+
+  .about-bangumi-card {
+    min-height: 340px;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 1180px) {
+  .about-bangumi__grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .about-bangumi-card {
+    min-height: clamp(170px, 22vw, 260px);
   }
 }
 

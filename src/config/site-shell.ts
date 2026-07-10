@@ -14,7 +14,6 @@ export const siteShell = {
     { href: "/references/", label: "资料库" },
     { href: "/notes/", label: "笔记" },
     { href: "/photowall/", label: "照片墙" },
-    { href: "/topics/", label: "专题" },
     { href: "/about/", label: "关于" },
   ],
   backgroundImages: homePageConfigSource.backgroundImages,

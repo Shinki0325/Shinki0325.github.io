@@ -1,10 +1,26 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import bangumiCollections from "../data/bangumi-collections.json";
 import { siteShell } from "../config/site-shell";
+import { buildBangumiCollectionViewModel } from "../lib/bangumi-collections";
 
 const avatarUrl = siteShell.profile?.avatarUrl ?? "https://s1.ax1x.com/2023/07/28/pCx6j3R.jpg";
 const displayName = siteShell.profile?.displayName ?? siteShell.brand.title;
 const coverImage = "/uploads/backgrounds/home-loop-poster.jpg";
+const bangumi = buildBangumiCollectionViewModel(bangumiCollections);
+const displayedBangumiCategoryKeys = ["anime", "game"];
+const displayedBangumiItems = bangumi.items.filter((item) => displayedBangumiCategoryKeys.includes(item.category));
+const displayedBangumiCategories = bangumi.categories.filter((category) =>
+  displayedBangumiCategoryKeys.includes(category.key)
+);
+const displayedBangumiStatuses = bangumi.statuses.map((status) => ({
+  ...status,
+  count:
+    status.key === "all"
+      ? displayedBangumiItems.length
+      : displayedBangumiItems.filter((item) => item.status === status.key).length,
+}));
+const initialBangumiCategory = displayedBangumiCategories.find((category) => category.count > 0)?.key ?? "anime";
 ---
 
 <BaseLayout title="About">
@@ -28,6 +44,7 @@ const coverImage = "/uploads/backgrounds/home-loop-poster.jpg";
         <nav aria-label="关于页分区" class="about-tabs" data-about-tabs>
           <a class="is-active" href="#intro">自我介绍</a>
           <a href="#focus">研究动态</a>
+          <a href="#bangumi">番组计划</a>
         </nav>
       </header>
 
@@ -49,6 +66,237 @@ const coverImage = "/uploads/backgrounds/home-loop-poster.jpg";
           <li>保留一点轻松的个人空间，让网站不只是资料柜，也像能坐下来的房间。</li>
         </ul>
       </section>
+
+      <section class="about-bangumi" data-bangumi-panel id="bangumi">
+        <header class="about-bangumi__head">
+          <div class="about-bangumi__title">
+            <span aria-hidden="true" class="about-bangumi__icon">▣</span>
+            <div>
+              <p class="eyebrow">Bangumi Collection</p>
+              <h2>番组计划</h2>
+              <p>记录我的二次元之旅</p>
+            </div>
+          </div>
+        </header>
+
+        <div aria-label="番组分类" class="about-bangumi__categories">
+          {displayedBangumiCategories.map((category) => (
+            <button
+              class={category.key === initialBangumiCategory ? "is-active" : undefined}
+              data-bangumi-category-filter={category.key}
+              type="button"
+            >
+              <span>{category.label}</span>
+              <strong>{category.count}</strong>
+            </button>
+          ))}
+        </div>
+
+        <div class="about-bangumi__toolbar">
+          <div aria-label="收藏状态" class="about-bangumi__statuses">
+            {displayedBangumiStatuses.map((status) => (
+              <button
+                class={status.key === "all" ? "is-active" : undefined}
+                data-bangumi-status-filter={status.key}
+                type="button"
+              >
+                {status.label}
+                <span>({status.count})</span>
+              </button>
+            ))}
+          </div>
+
+          <div aria-label="排序方式" class="about-bangumi__sort">
+            <button class="is-active" data-bangumi-sort="default" type="button">默认</button>
+            <button data-bangumi-sort="rating" type="button">个人评分</button>
+          </div>
+        </div>
+
+        <div class="about-bangumi__grid">
+          {displayedBangumiItems.map((item, index) => {
+            const isInitiallyVisible = item.category === initialBangumiCategory;
+
+            return (
+              <a
+                class="about-bangumi-card"
+                data-bangumi-card
+                data-bangumi-category={item.category}
+                data-bangumi-index={index}
+                data-bangumi-score={item.userRate}
+                data-bangumi-status={item.status}
+                href={item.url}
+                hidden={!isInitiallyVisible}
+                rel="noreferrer"
+                target="_blank"
+              >
+                <img alt={item.title} decoding="async" loading="lazy" referrerpolicy="no-referrer" src={item.cover} />
+                <span class={`about-bangumi-card__status is-${item.status}`}>{item.statusLabel}</span>
+                {item.userRate > 0 ? (
+                  <span class="about-bangumi-card__score" title={`我的评分：${item.userRate.toFixed(1)}`}>
+                    个评 {item.userRate.toFixed(1)}
+                  </span>
+                ) : null}
+                <span class="about-bangumi-card__shade"></span>
+                <span class="about-bangumi-card__body">
+                  <strong>{item.title}</strong>
+                  <small>{item.year}</small>
+                  <span class="about-bangumi-card__tags">
+                    {item.tags.map((tag) => (
+                      <em>{tag}</em>
+                    ))}
+                  </span>
+                </span>
+              </a>
+            );
+          })}
+        </div>
+
+        <div class="about-bangumi__pager" data-bangumi-pager>
+          <button data-bangumi-page-prev type="button">上一页</button>
+          <span aria-live="polite" data-bangumi-page-info>第 1 页</span>
+          <button data-bangumi-page-next type="button">下一页</button>
+        </div>
+      </section>
     </div>
   </article>
+
+  <script>
+    const initBangumiPanel = () => {
+      document.querySelectorAll("[data-bangumi-panel]").forEach((panel) => {
+        if (!(panel instanceof HTMLElement) || panel.dataset.ready === "true") {
+          return;
+        }
+
+        panel.dataset.ready = "true";
+        let category = panel.querySelector("[data-bangumi-category-filter].is-active")?.getAttribute("data-bangumi-category-filter") ?? "anime";
+        let status = panel.querySelector("[data-bangumi-status-filter].is-active")?.getAttribute("data-bangumi-status-filter") ?? "all";
+        let sortMode = panel.querySelector("[data-bangumi-sort].is-active")?.getAttribute("data-bangumi-sort") ?? "default";
+        let page = 1;
+        const pageSize = 14;
+        const categoryButtons = Array.from(panel.querySelectorAll("[data-bangumi-category-filter]"));
+        const statusButtons = Array.from(panel.querySelectorAll("[data-bangumi-status-filter]"));
+        const sortButtons = Array.from(panel.querySelectorAll("[data-bangumi-sort]"));
+        const cards = Array.from(panel.querySelectorAll("[data-bangumi-card]"));
+        const grid = panel.querySelector(".about-bangumi__grid");
+        const pager = panel.querySelector("[data-bangumi-pager]");
+        const pageInfo = panel.querySelector("[data-bangumi-page-info]");
+        const prevButton = panel.querySelector("[data-bangumi-page-prev]");
+        const nextButton = panel.querySelector("[data-bangumi-page-next]");
+
+        const setActive = (buttons: Element[], key: string, attribute: string) => {
+          buttons.forEach((button) => {
+            button.classList.toggle("is-active", button.getAttribute(attribute) === key);
+          });
+        };
+
+        const getOrderedBangumiCards = () =>
+          grid ? Array.from(grid.querySelectorAll("[data-bangumi-card]")) : cards;
+
+        const getMatchedCards = () =>
+          getOrderedBangumiCards().filter((card) => {
+            const matchesCategory = card.getAttribute("data-bangumi-category") === category;
+            const matchesStatus = status === "all" || card.getAttribute("data-bangumi-status") === status;
+            return matchesCategory && matchesStatus;
+          });
+
+        const updateBangumiPagination = () => {
+          const matchedCards = getMatchedCards();
+          const pageCount = Math.max(1, Math.ceil(matchedCards.length / pageSize));
+          page = Math.min(Math.max(page, 1), pageCount);
+          const visibleCards = new Set(matchedCards.slice((page - 1) * pageSize, page * pageSize));
+
+          cards.forEach((card) => {
+            card.toggleAttribute("hidden", !visibleCards.has(card));
+          });
+
+          if (pager instanceof HTMLElement) {
+            pager.hidden = matchedCards.length <= pageSize;
+          }
+
+          if (pageInfo) {
+            pageInfo.textContent = matchedCards.length > 0 ? `第 ${page} / ${pageCount} 页，共 ${matchedCards.length} 个` : "暂无条目";
+          }
+
+          if (prevButton instanceof HTMLButtonElement) {
+            prevButton.disabled = page <= 1;
+          }
+
+          if (nextButton instanceof HTMLButtonElement) {
+            nextButton.disabled = page >= pageCount;
+          }
+        };
+
+        const applyBangumiFilters = () => {
+          updateBangumiPagination();
+        };
+
+        const getNumber = (card: Element, attribute: string) => Number(card.getAttribute(attribute) ?? 0);
+
+        const sortBangumiCards = () => {
+          if (!grid) {
+            return;
+          }
+
+          const sortedCards = [...cards].sort((first, second) => {
+            if (sortMode === "rating") {
+              const scoreDiff = getNumber(second, "data-bangumi-score") - getNumber(first, "data-bangumi-score");
+              if (scoreDiff !== 0) {
+                return scoreDiff;
+              }
+            }
+
+            return getNumber(first, "data-bangumi-index") - getNumber(second, "data-bangumi-index");
+          });
+
+          sortedCards.forEach((card) => grid.append(card));
+        };
+
+        panel.dataset.applyBangumiFilters = "true";
+
+        categoryButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            category = button.getAttribute("data-bangumi-category-filter") ?? category;
+            page = 1;
+            setActive(categoryButtons, category, "data-bangumi-category-filter");
+            applyBangumiFilters();
+          });
+        });
+
+        statusButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            status = button.getAttribute("data-bangumi-status-filter") ?? status;
+            page = 1;
+            setActive(statusButtons, status, "data-bangumi-status-filter");
+            applyBangumiFilters();
+          });
+        });
+
+        sortButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            sortMode = button.getAttribute("data-bangumi-sort") ?? sortMode;
+            page = 1;
+            setActive(sortButtons, sortMode, "data-bangumi-sort");
+            sortBangumiCards();
+            applyBangumiFilters();
+          });
+        });
+
+        prevButton?.addEventListener("click", () => {
+          page -= 1;
+          updateBangumiPagination();
+        });
+
+        nextButton?.addEventListener("click", () => {
+          page += 1;
+          updateBangumiPagination();
+        });
+
+        sortBangumiCards();
+        applyBangumiFilters();
+      });
+    };
+
+    initBangumiPanel();
+    document.addEventListener("astro:page-load", initBangumiPanel);
+  </script>
 </BaseLayout>
