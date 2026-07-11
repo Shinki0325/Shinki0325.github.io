@@ -15,41 +15,31 @@ const museumRoute = preview.museumRoute;
 const experience = preview.museumExperience;
 const nodeCards = Object.fromEntries(experience.nodeCards.map((card) => [card.nodeId, card])) as Record<string, MuseumExperienceCard>;
 const routeTickYears = getMuseumRouteYearTicks(museumRoute);
-const canvasHeight = getMuseumRouteCanvasHeight(museumRoute);
+const baseCanvasHeight = getMuseumRouteCanvasHeight(museumRoute);
+const chapterGateHeight = 116;
+const canvasHeight = baseCanvasHeight + museumRoute.galleries.length * chapterGateHeight;
 const toPct = (value: number) => `${(value * 100).toFixed(3)}%`;
 const toSvg = (value: number) => (value * 100).toFixed(3);
+const gatesBefore = (y: number) => museumRoute.galleries.filter((gallery) => gallery.layout.yStart < y - 0.0001).length;
+const visualY = (y: number, includeGateAtPoint = true) => {
+  const gates = includeGateAtPoint
+    ? museumRoute.galleries.filter((gallery) => gallery.layout.yStart <= y + 0.0001).length
+    : gatesBefore(y);
+  return (y * baseCanvasHeight + gates * chapterGateHeight) / canvasHeight;
+};
 const yearToY = (year: number) => {
   const { startYear, endYear, yStart, yEnd } = museumRoute.timeDomain;
-  return yStart + ((year - startYear) / (endYear - startYear)) * (yEnd - yStart);
+  return visualY(yStart + ((year - startYear) / (endYear - startYear)) * (yEnd - yStart));
 };
 const pathFor = (link: MuseumRouteLink) =>
-  link.layout.points.map((point, index) => `${index === 0 ? "M" : "L"} ${toSvg(point.x)} ${toSvg(point.y)}`).join(" ");
+  link.layout.points.map((point, index) => `${index === 0 ? "M" : "L"} ${toSvg(point.x)} ${toSvg(visualY(point.y))}`).join(" ");
 
-const staggerByNodeId = new Map<string, number>();
-for (const group of Object.values(
-  museumRoute.nodes.reduce<Record<string, MuseumRouteNode[]>>((groups, node) => {
-    const key = node.track;
-    groups[key] ??= [];
-    groups[key].push(node);
-    return groups;
-  }, {}),
-)) {
-  let nextPrimaryLabelY = Number.NEGATIVE_INFINITY;
-  group
-    .sort((a, b) => a.layout.y - b.layout.y || a.yearStart - b.yearStart || a.id.localeCompare(b.id))
-    .forEach((node) => {
-      if (node.importance !== "primary") return;
-      const baseY = node.layout.y * canvasHeight;
-      const visualY = Math.max(baseY, nextPrimaryLabelY);
-      staggerByNodeId.set(node.id, visualY - baseY);
-      nextPrimaryLabelY = visualY + 72;
-    });
-}
-
-const nodeStyleFor = (node: MuseumRouteNode) =>
-  `--node-x: ${toPct(node.layout.x)}; --node-y: ${toPct(node.layout.y)}; --node-stack-y: ${staggerByNodeId.get(node.id) ?? 0}px;`;
+const nodeStyleFor = (node: MuseumRouteNode) => {
+  const offset = node.layout.labelOffsetNormalized ?? { x: 0, y: 0 };
+  return `--node-x: ${toPct(node.layout.x)}; --node-y: ${toPct(visualY(node.layout.visualAnchorY ?? node.layout.anchorY ?? node.layout.y))}; --node-label-shift-x: ${offset.x * 1000}px; --node-label-shift-y: ${offset.y * 1000}px;`;
+};
 const galleryStyleFor = (gallery: (typeof museumRoute.galleries)[number]) =>
-  `--gallery-start: ${toPct(gallery.layout.yStart)}; --gallery-end: ${toPct(gallery.layout.yEnd)};`;
+  `--gallery-start: ${toPct(visualY(gallery.layout.yStart, false))}; --gallery-end: ${toPct(visualY(gallery.layout.yEnd))}; --gallery-gate-height: ${chapterGateHeight}px;`;
 const clientPayload = JSON.stringify({
   cards: experience.nodeCards,
   clues: experience.clueCards,
@@ -57,6 +47,9 @@ const clientPayload = JSON.stringify({
   nodes: museumRoute.nodes.map((node) => ({
     id: node.id,
     galleryId: node.galleryId,
+    canonicalNodeId: node.canonicalNodeId ?? node.id,
+    visualRole: node.visualRole ?? "canonical",
+    interactive: node.interactive !== false,
     importance: node.importance,
     labelZh: node.labelZh,
   })),
@@ -67,6 +60,11 @@ const clientPayload = JSON.stringify({
     galleryId: link.galleryId,
     lineStyle: link.lineStyle,
     directionality: link.directionality,
+    canonicalFromNodeId: link.canonicalFromNodeId ?? link.from,
+    canonicalToNodeId: link.canonicalToNodeId ?? link.to,
+    localTreeRole: link.localTreeRole ?? "lateral",
+    displayPriority: link.displayPriority ?? 99,
+    dedupeKey: link.dedupeKey ?? link.id,
   })),
   galleries: museumRoute.galleries.map((gallery) => ({
     id: gallery.id,
@@ -101,6 +99,7 @@ const clientPayload = JSON.stringify({
         <button type="button" data-museum-gallery-jump={gallery.id}>{gallery.yearStart}-{gallery.yearEnd}</button>
       ))}
     </nav>
+    <p class="museum-gallery-indicator" data-museum-gallery-indicator aria-live="polite"></p>
 
     <div class="museum-route-layout">
       <main class="museum-route" data-history-museum-route data-layout-mode={museumRoute.layoutMode}>
@@ -117,7 +116,7 @@ const clientPayload = JSON.stringify({
               data-museum-gallery={gallery.id}
               aria-labelledby={`museum-gallery-title-${gallery.id}`}
             >
-              <div class="museum-gallery__chapter">
+              <div class="museum-gallery__chapter" data-museum-chapter-gate>
                 <p>{gallery.yearStart}-{gallery.yearEnd}</p>
                 <h2 id={`museum-gallery-title-${gallery.id}`}>{gallery.titleZh}</h2>
                 <span>{gallery.theme}</span>
@@ -142,8 +141,9 @@ const clientPayload = JSON.stringify({
             {museumRoute.nodes.map((node) => {
               const card = nodeCards[node.id];
               const primary = node.importance === "primary";
+              const interactive = node.interactive !== false && node.mapVisible !== false;
               return (
-                <button
+                interactive ? <button
                   class={`museum-node museum-node--${node.track} museum-node--${node.importance}`}
                   style={nodeStyleFor(node)}
                   type="button"
@@ -158,7 +158,9 @@ const clientPayload = JSON.stringify({
                     <small>{node.dateDisplay}</small>
                     <strong>{card?.titleZh ?? node.labelZh}</strong>
                   </span>
-                </button>
+                </button> : <span class={`museum-node museum-node--${node.track} museum-node--continuation`} style={nodeStyleFor(node)} data-museum-continuation={node.id} aria-hidden="true">
+                  <span class="museum-node__mark"></span>
+                </span>
               );
             })}
           </div>
@@ -198,7 +200,7 @@ const clientPayload = JSON.stringify({
             <div class={`museum-mobile-track museum-mobile-track--${track.id}`}>
               <h3>{track.labelZh}</h3>
               {museumRoute.nodes
-                .filter((node) => node.galleryId === gallery.id && node.track === track.id)
+                .filter((node) => node.galleryId === gallery.id && node.track === track.id && node.interactive !== false)
                 .map((node) => (
                   <button type="button" data-museum-mobile-node={node.id}>
                     <small>{node.dateDisplay}</small>
@@ -220,7 +222,7 @@ const clientPayload = JSON.stringify({
         <h2 data-museum-dialogue-title></h2>
         <p data-museum-dialogue-deck></p>
       </div>
-      <div class="museum-dialogue__choices" data-museum-dialogue-choices></div>
+      <div class="museum-dialogue__choices" data-museum-route-tree></div>
       <div class="museum-dialogue__actions">
         <button type="button" data-museum-dialogue-back>Back</button>
         <button type="button" data-museum-archive-open>打开完整档案</button>
@@ -315,9 +317,14 @@ const clientPayload = JSON.stringify({
             try { return JSON.parse(localStorage.getItem("galgame-history:sfx") || "{}"); } catch { return {}; }
           })();
           const state = {
-            nodeId: null,
+            activeNodeId: null,
             galleryId: data.galleries[0]?.id || null,
-            trail: [],
+            relatedNodeIds: new Set(),
+            relatedLinkIds: new Set(),
+            previewNodeId: null,
+            previewLinkId: null,
+            trailNodeIds: [],
+            trailLinkIds: [],
             chainId: null,
             archiveOrigin: null,
             sfxEnabled: stored.enabled !== false,
@@ -350,10 +357,31 @@ const clientPayload = JSON.stringify({
           };
           const setLive = (message) => { if (live) live.textContent = message; };
           const activeChain = () => data.chains.find((chain) => chain.id === state.chainId) || null;
-          const neighborhood = () => {
-            const card = cardByNode.get(state.nodeId);
-            const chain = activeChain();
-            return new Set([state.nodeId, ...(card?.highlightNodeIds || []), ...(chain?.nodeIds.filter((id) => state.trail.includes(id)) || [])]);
+          const canonicalId = (id) => data.nodes.find((node) => node.id === id)?.canonicalNodeId || id;
+          const relatedFor = (nodeId) => {
+            const canonical = canonicalId(nodeId);
+            const candidates = new Map();
+            data.links.forEach((link) => {
+              const from = canonicalId(link.canonicalFromNodeId || link.from);
+              const to = canonicalId(link.canonicalToNodeId || link.to);
+              if (from !== canonical && to !== canonical) return;
+              const targetNodeId = from === canonical ? to : from;
+              const key = link.dedupeKey || targetNodeId;
+              const previous = candidates.get(key);
+              if (!previous || link.displayPriority < previous.displayPriority) candidates.set(key, { ...link, targetNodeId });
+            });
+            return [...candidates.values()].sort((a, b) => a.displayPriority - b.displayPriority);
+          };
+          const rebuildRelated = () => {
+            const related = state.activeNodeId ? relatedFor(state.activeNodeId) : [];
+            state.relatedNodeIds = new Set(related.map((item) => item.targetNodeId));
+            state.relatedLinkIds = new Set(related.map((item) => item.id));
+            return related;
+          };
+          const setPreview = (nodeId = null, linkId = null) => {
+            state.previewNodeId = nodeId;
+            state.previewLinkId = linkId;
+            syncVisuals();
           };
           const syncSfxControls = () => {
             if (sfxToggle) {
@@ -363,24 +391,24 @@ const clientPayload = JSON.stringify({
             if (sfxVolume) sfxVolume.value = String(state.sfxVolume);
           };
           const syncVisuals = () => {
-            const nearby = neighborhood();
-            const card = cardByNode.get(state.nodeId);
-            const activeLinks = new Set([...(card?.highlightLinkIds || []), ...(activeChain()?.linkIds || [])]);
             root.querySelectorAll("[data-museum-node]").forEach((node) => {
               const id = node.dataset.museumNode;
               const primary = node.dataset.museumNodePrimary === "true";
-              const selected = id === state.nodeId;
+              const selected = id === state.activeNodeId;
               node.classList.toggle("is-selected", selected);
-              node.classList.toggle("is-neighbor", nearby.has(id));
-              node.classList.toggle("is-dimmed", Boolean(state.nodeId) && !nearby.has(id));
+              node.classList.toggle("is-neighbor", state.relatedNodeIds.has(id));
+              node.classList.toggle("is-preview", id === state.previewNodeId);
+              node.classList.toggle("is-trail", state.trailNodeIds.includes(id));
+              node.classList.toggle("is-dimmed", Boolean(state.activeNodeId) && !selected && !state.relatedNodeIds.has(id));
               node.setAttribute("aria-pressed", String(selected));
               node.classList.toggle("is-primary", primary);
             });
             root.querySelectorAll("[data-museum-link]").forEach((link) => {
               const id = link.dataset.museumLink;
-              const connected = link.dataset.museumLinkFrom === state.nodeId || link.dataset.museumLinkTo === state.nodeId;
-              link.classList.toggle("is-highlight", activeLinks.has(id) || connected);
-              link.classList.toggle("is-muted", Boolean(state.nodeId) && !(activeLinks.has(id) || connected));
+              link.classList.toggle("is-related", state.relatedLinkIds.has(id));
+              link.classList.toggle("is-preview", id === state.previewLinkId);
+              link.classList.toggle("is-trail", state.trailLinkIds.includes(id));
+              link.classList.toggle("is-muted", Boolean(state.activeNodeId) && !state.relatedLinkIds.has(id) && !state.trailLinkIds.includes(id));
             });
             root.querySelectorAll("[data-museum-gallery]").forEach((gallery) => {
               gallery.classList.toggle("is-active", gallery.dataset.museumGallery === state.galleryId);
@@ -396,22 +424,25 @@ const clientPayload = JSON.stringify({
             if (minimapStatus && activeGallery) minimapStatus.textContent = `${activeGallery.yearStart}-${activeGallery.yearEnd}`;
             const marker = root.querySelector("[data-museum-viewport-marker]");
             if (marker && activeGallery) marker.style.setProperty("--minimap-y", `${activeGallery.yearStart - 1980}`);
+            const indicator = root.querySelector("[data-museum-gallery-indicator]");
+            if (indicator && activeGallery) indicator.textContent = `GALLERY ${activeGallery.yearStart}-${activeGallery.yearEnd}`;
           };
           const renderDialogue = () => {
-            const card = cardByNode.get(state.nodeId);
+            const card = cardByNode.get(state.activeNodeId);
             if (!card || !dialogue) return;
             dialogue.hidden = false;
             root.querySelector("[data-museum-dialogue-title]").textContent = card.titleZh;
             root.querySelector("[data-museum-dialogue-deck]").textContent = card.deckZh || card.introZh;
-            root.querySelector("[data-museum-breadcrumb]").textContent = state.trail.map((id) => cardByNode.get(id)?.titleZh).filter(Boolean).join(" / ");
-            const choices = root.querySelector("[data-museum-dialogue-choices]");
+            root.querySelector("[data-museum-breadcrumb]").textContent = state.trailNodeIds.map((id) => cardByNode.get(id)?.titleZh).filter(Boolean).join(" / ");
+            const choices = root.querySelector("[data-museum-route-tree]");
             choices.replaceChildren();
-            card.relationHints.slice(0, 4).forEach((hint) => {
+            relatedFor(state.activeNodeId).slice(0, 6).forEach((hint) => {
               const button = document.createElement("button");
               button.type = "button";
               button.dataset.museumRelationChoice = hint.targetNodeId;
-              button.dataset.museumRelationLink = hint.linkId;
-              button.textContent = `${relationLabel(hint)} · ${hint.targetLabelZh}`;
+              button.dataset.museumRelationLink = hint.id;
+              button.dataset.museumRelationRole = hint.localTreeRole;
+              button.textContent = `${hint.localTreeRole === "upstream" ? "前序" : hint.localTreeRole === "downstream" ? "后续" : "语境"} · ${cardByNode.get(hint.targetNodeId)?.titleZh || hint.targetNodeId}`;
               choices.append(button);
             });
             if (!choices.childElementCount) {
@@ -424,12 +455,20 @@ const clientPayload = JSON.stringify({
               });
             }
           };
-          const focusNode = (nodeId, { stepped = false, scroll = true } = {}) => {
+          const focusNode = (nodeId, { stepped = false, linkId = null, scroll = true } = {}) => {
             const card = cardByNode.get(nodeId);
             if (!card) return;
-            state.nodeId = nodeId;
+            state.activeNodeId = nodeId;
             state.galleryId = card.galleryId;
-            if (!state.trail.length || state.trail.at(-1) !== nodeId) state.trail.push(nodeId);
+            if (linkId) {
+              state.trailLinkIds.push(linkId);
+              if (state.trailNodeIds.at(-1) !== nodeId) state.trailNodeIds.push(nodeId);
+            } else if (!state.trailNodeIds.includes(nodeId)) {
+              state.trailNodeIds = [nodeId];
+              state.trailLinkIds = [];
+            }
+            rebuildRelated();
+            setPreview();
             syncVisuals();
             renderDialogue();
             const node = root.querySelector(`[data-museum-node="${CSS.escape(nodeId)}"]`);
@@ -441,14 +480,19 @@ const clientPayload = JSON.stringify({
             playSfx(stepped ? "route-step" : "node-focus");
             setLive(`已聚焦 ${card.titleZh}`);
             const chain = activeChain();
-            if (chain && chain.nodeIds.every((id) => state.trail.includes(id))) {
+            if (chain && chain.nodeIds.every((id) => state.trailNodeIds.includes(id))) {
               setLive(`路线已阅：${chain.titleZh}`);
               playSfx("route-complete");
             }
           };
           const exitFocus = () => {
-            state.nodeId = null;
-            state.trail = [];
+            state.activeNodeId = null;
+            state.relatedNodeIds.clear();
+            state.relatedLinkIds.clear();
+            state.trailNodeIds = [];
+            state.trailLinkIds = [];
+            state.previewNodeId = null;
+            state.previewLinkId = null;
             state.chainId = null;
             if (dialogue) dialogue.hidden = true;
             syncVisuals();
@@ -515,7 +559,7 @@ const clientPayload = JSON.stringify({
             const relation = target?.closest("[data-museum-relation-choice]");
             if (relation) {
               const nextId = relation.dataset.museumRelationChoice;
-              if (nextId) focusNode(nextId, { stepped: true });
+              if (nextId) focusNode(nextId, { stepped: true, linkId: relation.dataset.museumRelationLink });
               return;
             }
             const archiveNext = target?.closest("[data-museum-archive-next]");
@@ -543,15 +587,17 @@ const clientPayload = JSON.stringify({
               const chain = data.chains.find((item) => item.id === routeStart.dataset.museumRouteStart);
               if (chain) {
                 state.chainId = chain.id;
-                state.trail = [];
+                state.trailNodeIds = [];
+                state.trailLinkIds = [];
                 routeSelect.hidden = true;
                 focusNode(chain.startNodeIds[0], { stepped: true });
               }
               return;
             }
             if (target?.closest("[data-museum-dialogue-back]")) {
-              state.trail.pop();
-              const previous = state.trail.at(-1);
+              state.trailNodeIds.pop();
+              state.trailLinkIds.pop();
+              const previous = state.trailNodeIds.at(-1);
               if (previous) focusNode(previous, { scroll: false }); else exitFocus();
               playSfx("ui-back");
               return;
@@ -562,7 +608,7 @@ const clientPayload = JSON.stringify({
               return;
             }
             if (target?.closest("[data-museum-archive-open]")) {
-              if (state.nodeId) renderArchive(state.nodeId);
+              if (state.activeNodeId) renderArchive(state.activeNodeId);
               return;
             }
             if (target?.closest("[data-museum-archive-close]")) {
@@ -588,6 +634,24 @@ const clientPayload = JSON.stringify({
               return;
             }
             if (target?.closest(".museum-route__canvas")) exitFocus();
+          });
+          const previewFromTarget = (target) => {
+            if (!state.activeNodeId) return;
+            const relation = target?.closest("[data-museum-relation-choice]");
+            if (relation) return setPreview(relation.dataset.museumRelationChoice, relation.dataset.museumRelationLink);
+            const node = target?.closest("[data-museum-node]");
+            const related = relatedFor(state.activeNodeId).find((item) => item.targetNodeId === node?.dataset.museumNode);
+            if (related) setPreview(related.targetNodeId, related.id);
+          };
+          root.addEventListener("pointerover", (event) => previewFromTarget(event.target instanceof Element ? event.target : null));
+          root.addEventListener("focusin", (event) => previewFromTarget(event.target instanceof Element ? event.target : null));
+          root.addEventListener("pointerout", (event) => {
+            const target = event.target instanceof Element ? event.target : null;
+            if (target?.closest("[data-museum-relation-choice], [data-museum-node]")) setPreview();
+          });
+          root.addEventListener("focusout", (event) => {
+            const target = event.target instanceof Element ? event.target : null;
+            if (target?.closest("[data-museum-relation-choice], [data-museum-node]")) setPreview();
           });
           sfxVolume?.addEventListener("input", () => {
             state.sfxVolume = Number(sfxVolume.value);

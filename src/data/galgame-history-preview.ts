@@ -192,6 +192,13 @@ export type MuseumRouteNode = {
   caveats: string[];
   defaultVisible: boolean;
   importance: "primary" | "secondary" | "context";
+  canonicalNodeId?: string;
+  visualRole?: "canonical" | "continuation-reference" | "context";
+  interactive?: boolean;
+  mapVisible?: boolean;
+  showMapLabel?: boolean;
+  detailAliasOf?: string | null;
+  visualGalleryId?: string;
   layout: {
     x: number;
     y: number;
@@ -200,6 +207,15 @@ export type MuseumRouteNode = {
     branchId?: string;
     anchor?: string;
     stackOffset?: number;
+    anchorY?: number;
+    visualAnchorY?: number;
+    anchorMode?: string;
+    preferredLabelSide?: "left" | "right" | "center";
+    labelSlot?: number;
+    labelOffsetNormalized?: { x: number; y: number };
+    collisionGroupId?: string | null;
+    durationRail?: { startY: number; endY: number; x: number; renderAs: string };
+    durationRailRef?: { canonicalNodeId: string; startY: number; endY: number; x: number };
   };
 };
 
@@ -216,6 +232,14 @@ export type MuseumRouteLink = {
   directionality: "directional" | "contextual" | "none";
   defaultVisible: boolean;
   crossTrack: boolean;
+  canonicalFromNodeId?: string;
+  canonicalToNodeId?: string;
+  localTreeRole?: "upstream" | "downstream" | "lateral";
+  localTreeRoles?: ("upstream" | "downstream" | "lateral")[];
+  displayPriority?: number;
+  visualRole?: string;
+  dedupeKey?: string;
+  renderDeduplication?: string;
   layout: {
     pathType: string;
     points: { x: number; y: number }[];

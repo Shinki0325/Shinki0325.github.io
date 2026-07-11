@@ -64,6 +64,19 @@ describe("galgame history research preview", () => {
     expect(nonCausalChronology.every((link) => link.lineStyle !== "solid")).toBe(true);
   });
 
+  it("uses canonical geometry and relation metadata for focused route exploration", () => {
+    const museumRoute = galgameHistoryPreview.museumRoute;
+
+    expect(museumRoute.version).toBe("0.2.0");
+    expect(museumRoute.nodes.every((node) => typeof node.layout.anchorY === "number")).toBe(true);
+    expect(museumRoute.nodes.every((node) => typeof node.layout.labelSlot === "number")).toBe(true);
+    expect(museumRoute.links.every((link) => link.dedupeKey && link.localTreeRole)).toBe(true);
+
+    const pc9801Nodes = museumRoute.nodes.filter((node) => node.objectId === "obj-pc9801" && node.interactive);
+    expect(pc9801Nodes).toHaveLength(1);
+    expect(pc9801Nodes[0].layout.anchorY).toBeLessThan(pc9801Nodes[0].layout.spanEnd ?? 1);
+  });
+
   it("exposes the full museum experience data through a public-safe view model", () => {
     const museumRoute = galgameHistoryPreview.museumRoute;
     const experience = galgameHistoryPreview.museumExperience;
@@ -120,6 +133,10 @@ describe("galgame history research preview", () => {
     expect(source).toContain("data-museum-viewport-marker");
     expect(source).toContain("data-museum-dialogue");
     expect(source).toContain("data-museum-relation-choice");
+    expect(source).toContain("data-museum-route-tree");
+    expect(source).toContain("data-museum-chapter-gate");
+    expect(source).toContain("previewLinkId");
+    expect(source).toContain("trailLinkIds");
     expect(source).toContain("data-museum-breadcrumb");
     expect(source).toContain("data-museum-route-select");
     expect(source).toContain("data-museum-archive-dialog");
