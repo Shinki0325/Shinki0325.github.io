@@ -12,6 +12,8 @@
 
 Default rule: do not directly modify `D:\blog` unless you are the Blog Manager Agent or the user explicitly authorizes direct edits for the current task.
 
+Do not use the Codex In-app Browser for this project. Use local preview URLs, command-line checks, or user-provided screenshots instead.
+
 If a blog change is needed and you are not authorized to edit `D:\blog` directly, prepare a handoff in `D:\blog-kb\outbox` for the Blog Manager Agent. Include the requested change, relevant files, context, risks, and suggested verification steps.
 
 Before any direct edit in `D:\blog`, check `git status` and avoid overwriting existing user or agent work.
