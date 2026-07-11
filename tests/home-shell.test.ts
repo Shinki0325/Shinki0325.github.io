@@ -37,6 +37,14 @@ describe("site background config", () => {
 });
 
 describe("homepage feature cards", () => {
+  it("places a dedicated history museum entry card above the birthday calendar", async () => {
+    const source = await import("node:fs/promises").then((fs) => fs.readFile("src/pages/index.astro", "utf8"));
+
+    expect(source).toContain('data-home-history-entry');
+    expect(source).toContain('href="/galgame-history/"');
+    expect(source.indexOf('data-home-history-entry')).toBeLessThan(source.indexOf('data-home-birthday-calendar'));
+  });
+
   it("turns the featured script card into a cover-pool carousel", async () => {
     const fs = await import("node:fs/promises");
     const [homeSource, styleSource] = await Promise.all([

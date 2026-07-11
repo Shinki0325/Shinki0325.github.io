@@ -234,6 +234,15 @@ const getHomeFeatureCardStyle = (id: HomeCardId) => {
   <HomeLyricBar client:load />
 
   <section class="home-feature-grid" data-home-feature-grid>
+    <a class="home-history-entry glass-card interactive-lift" data-home-history-entry href="/galgame-history/">
+      <div>
+        <p class="eyebrow">ONLINE MUSEUM</p>
+        <h2>1980-1999 Galgame 历史博物馆</h2>
+        <p>沿作品、制度与技术三条线，进入一条可自由探索的年代路线。</p>
+      </div>
+      <span aria-hidden="true" class="home-history-entry__arrow">-&gt;</span>
+    </a>
+
     <div class="home-feature-card--calendar" data-home-birthday-calendar>
       <CharacterBirthdayCalendar
         characters={characterBirthdays}
