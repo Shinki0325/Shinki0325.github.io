@@ -14,6 +14,8 @@ Default rule: do not directly modify `D:\blog` unless you are the Blog Manager A
 
 Do not use the Codex In-app Browser for this project. Use local preview URLs, command-line checks, or user-provided screenshots instead.
 
+Prefer the local WSL environment for commands, dependency tooling, builds, and verification. Use native Windows shells only when WSL is unavailable or a task specifically requires Windows-native tooling.
+
 If a blog change is needed and you are not authorized to edit `D:\blog` directly, prepare a handoff in `D:\blog-kb\outbox` for the Blog Manager Agent. Include the requested change, relevant files, context, risks, and suggested verification steps.
 
 Before any direct edit in `D:\blog`, check `git status` and avoid overwriting existing user or agent work.
