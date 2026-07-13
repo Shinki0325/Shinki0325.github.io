@@ -1,10 +1,27 @@
 import { useStore } from "@nanostores/react";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { siteShell } from "../../config/site-shell";
 import LyricLines from "./LyricLines";
 import { musicState, setCurrentTrack, setPlayback } from "./store";
 
 const ROUTE_EVENTS = ["astro:page-load", "astro:after-swap", "popstate", "hashchange"] as const;
+const FLOATING_PLAYER_COLLAPSED_KEY = "blog:floating-player-collapsed";
+
+function readCollapsedPreference() {
+  try {
+    return window.localStorage.getItem(FLOATING_PLAYER_COLLAPSED_KEY) === "true";
+  } catch {
+    return false;
+  }
+}
+
+function writeCollapsedPreference(collapsed: boolean) {
+  try {
+    window.localStorage.setItem(FLOATING_PLAYER_COLLAPSED_KEY, String(collapsed));
+  } catch {
+    // Storage is optional; playback and controls remain usable without it.
+  }
+}
 
 interface FloatingPlayerProps {
   initialPathname?: string;
@@ -33,6 +50,11 @@ export default function FloatingPlayer({ initialPathname }: FloatingPlayerProps)
   const state = useStore(musicState);
   const track = state.tracks[state.currentIndex] ?? null;
   const [pathname, setPathname] = useState(() => initialPathname ?? currentPathname());
+  const [collapsed, setCollapsed] = useState(false);
+  const [collapseReady, setCollapseReady] = useState(false);
+  const bodyRef = useRef<HTMLDivElement>(null);
+  const collapseRef = useRef<HTMLButtonElement>(null);
+  const restoreRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     const syncPathname = () => setPathname(currentPathname());
@@ -51,6 +73,25 @@ export default function FloatingPlayer({ initialPathname }: FloatingPlayerProps)
     };
   }, []);
 
+  useEffect(() => {
+    setCollapsed(readCollapsedPreference());
+    setCollapseReady(true);
+  }, []);
+
+  useEffect(() => {
+    if (bodyRef.current) {
+      bodyRef.current.inert = collapsed;
+    }
+  }, [collapsed]);
+
+  const changeCollapsed = (next: boolean) => {
+    setCollapsed(next);
+    writeCollapsedPreference(next);
+    window.requestAnimationFrame(() => {
+      (next ? restoreRef.current : collapseRef.current)?.focus({ preventScroll: true });
+    });
+  };
+
   const progress =
     state.duration > 0 ? Math.min(100, Math.max(0, (state.currentTime / state.duration) * 100)) : 0;
   const title =
@@ -60,8 +101,9 @@ export default function FloatingPlayer({ initialPathname }: FloatingPlayerProps)
 
   return (
     <aside
-      className={`floating-player-shell${state.isPlaying ? " is-playing" : ""}`}
+      className={`floating-player-shell${state.isPlaying ? " is-playing" : ""}${collapsed ? " is-collapsed" : ""}${collapseReady ? " is-collapse-ready" : ""}`}
       data-floating-player
+      data-floating-player-collapsed={collapsed ? "true" : "false"}
       hidden={pathname === "/"}
     >
       <section className="floating-player glass-card">
@@ -73,7 +115,23 @@ export default function FloatingPlayer({ initialPathname }: FloatingPlayerProps)
           />
         </div>
 
-        <div className="floating-player__body">
+        <button
+          ref={restoreRef}
+          aria-expanded={!collapsed}
+          aria-label="展开音乐播放器"
+          className="floating-player__restore"
+          data-floating-player-restore
+          onClick={() => changeCollapsed(false)}
+          tabIndex={collapsed ? 0 : -1}
+          type="button"
+        />
+
+        <div
+          ref={bodyRef}
+          aria-hidden={collapsed ? "true" : "false"}
+          className="floating-player__body"
+          data-floating-player-body
+        >
           <div className="floating-player__copy">
             <strong data-floating-player-title>{title}</strong>
             {detail ? <span>{detail}</span> : null}
@@ -142,6 +200,22 @@ export default function FloatingPlayer({ initialPathname }: FloatingPlayerProps)
             </div>
           </div>
         </div>
+
+        <button
+          ref={collapseRef}
+          aria-expanded={!collapsed}
+          aria-label="收起音乐播放器"
+          className="floating-player__collapse"
+          data-floating-player-collapse
+          onClick={() => changeCollapsed(true)}
+          tabIndex={collapsed ? -1 : 0}
+          title="收起音乐播放器"
+          type="button"
+        >
+          <svg aria-hidden="true" fill="none" viewBox="0 0 24 24">
+            <path d="m9 6 6 6-6 6" />
+          </svg>
+        </button>
       </section>
     </aside>
   );
