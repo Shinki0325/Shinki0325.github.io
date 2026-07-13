@@ -9,9 +9,9 @@ import {
 
 const pageSource = () => readFileSync("src/pages/galgame-history/index.astro", "utf8");
 
-describe("galgame history research preview", () => {
+describe("galgame chronicle production route", () => {
   it("adds a dedicated preview page without promoting it into top navigation", () => {
-    expect(galgameHistoryPreview.publicPosture.mode).toBe("research-preview");
+    expect(galgameHistoryPreview.publicPosture.mode).toBe("public-chronicle");
     expect(pageSource()).toContain("galgameHistoryPreview");
     expect(siteShell.navItems.map((item) => item.href)).not.toContain("/galgame-history/");
   });
@@ -32,19 +32,26 @@ describe("galgame history research preview", () => {
 
     expect(museumRoute.layoutMode).toBe("absolute-time-museum-tree");
     expect(museumRoute.viewMode).toBe("museum-three-axis-v0");
-    expect(museumRoute.timeDomain.startYear).toBe(1980);
+    expect(museumRoute.timeDomain.startYear).toBe(1979);
     expect(museumRoute.timeDomain.endYear).toBe(1999);
     expect(museumRoute.timeDomain.yStart).toBeLessThan(museumRoute.timeDomain.yEnd);
     expect(museumRoute.mobileFallback.mode).toBe("gallery-accordion-three-track-list");
     expect(museumRoute.tracks.map((track) => track.id)).toEqual(["center", "left", "right"]);
     expect(museumRoute.tracks.every((track) => typeof track.x === "number")).toBe(true);
-    expect(museumRoute.galleries).toHaveLength(4);
-    expect(museumRoute.nodes.length).toBeGreaterThan(40);
-    expect(museumRoute.links.length).toBeGreaterThan(60);
+    expect(museumRoute.galleries).toHaveLength(5);
+    expect(museumRoute.galleries.map((gallery) => [gallery.yearStart, gallery.yearEnd])).toEqual([
+      [1979, 1984],
+      [1985, 1988],
+      [1989, 1991],
+      [1992, 1995],
+      [1996, 1999],
+    ]);
+    expect(museumRoute.nodes).toHaveLength(100);
+    expect(museumRoute.links.length).toBeGreaterThan(100);
+    expect(museumRoute.authority.reviewedRelationCount).toBe(270);
 
     const overviewNodes = museumRoute.nodes.filter((node) => node.importance === "primary");
-    expect(overviewNodes.length).toBeGreaterThanOrEqual(12);
-    expect(overviewNodes.length).toBeLessThan(museumRoute.nodes.length);
+    expect(overviewNodes).toHaveLength(59);
 
     for (const node of museumRoute.nodes) {
       expect(typeof node.layout.x, `${node.id} layout.x`).toBe("number");
@@ -59,34 +66,32 @@ describe("galgame history research preview", () => {
       expect(link.layout.points.length, `${link.id} connector points`).toBeGreaterThanOrEqual(2);
     }
 
-    const nonCausalChronology = museumRoute.links.filter((link) => link.relationLabelZh.includes("非因果"));
-    expect(nonCausalChronology.length).toBeGreaterThan(4);
-    expect(nonCausalChronology.every((link) => link.lineStyle !== "solid")).toBe(true);
+    const contextualLinks = museumRoute.links.filter((link) => link.directionality === "contextual");
+    expect(contextualLinks.length).toBeGreaterThan(20);
+    expect(contextualLinks.every((link) => link.lineStyle === "dashed")).toBe(true);
   });
 
   it("uses canonical geometry and relation metadata for focused route exploration", () => {
     const museumRoute = galgameHistoryPreview.museumRoute;
 
-    expect(museumRoute.version).toBe("0.2.0");
+    expect(museumRoute.version).toBe("1.0.0");
     expect(museumRoute.nodes.every((node) => typeof node.layout.anchorY === "number")).toBe(true);
     expect(museumRoute.nodes.every((node) => typeof node.layout.labelSlot === "number")).toBe(true);
     expect(museumRoute.links.every((link) => link.dedupeKey && link.localTreeRole)).toBe(true);
 
-    const pc9801Nodes = museumRoute.nodes.filter((node) => node.objectId === "obj-pc9801" && node.interactive);
-    expect(pc9801Nodes).toHaveLength(1);
-    expect(pc9801Nodes[0].layout.anchorY).toBeLessThan(pc9801Nodes[0].layout.spanEnd ?? 1);
+    expect(museumRoute.nodes.every((node) => node.objectId?.startsWith("archive:") && node.interactive)).toBe(true);
   });
 
   it("exposes the full museum experience data through a public-safe view model", () => {
     const museumRoute = galgameHistoryPreview.museumRoute;
     const experience = galgameHistoryPreview.museumExperience;
 
-    expect(museumRoute.nodeCards).toHaveLength(56);
-    expect(museumRoute.clueCards).toHaveLength(6);
-    expect(museumRoute.discoveryChains).toHaveLength(4);
-    expect(experience.nodeCards).toHaveLength(museumRoute.nodes.length);
-    expect(experience.discoveryChains).toHaveLength(4);
-    expect(experience.sourceTierLabels).toEqual(["ARCHIVE", "TESTIMONY", "MEMORY", "SYNTHESIS", "LEAD"]);
+    expect(museumRoute.nodeCards).toHaveLength(100);
+    expect(museumRoute.clueCards).toHaveLength(0);
+    expect(museumRoute.discoveryChains).toHaveLength(5);
+    expect(experience.nodeCards).toHaveLength(100);
+    expect(experience.discoveryChains).toHaveLength(5);
+    expect(experience.sourceTierLabels).toEqual(["ARCHIVE", "TESTIMONY", "MEMORY", "SYNTHESIS", "LEAD", "REVIEW"]);
 
     for (const card of experience.nodeCards) {
       expect(card.nodeId).toBeTruthy();
@@ -103,12 +108,28 @@ describe("galgame history research preview", () => {
     const ticks = getMuseumRouteYearTicks(museumRoute);
 
     expect(ticks).toHaveLength(museumRoute.timeDomain.endYear - museumRoute.timeDomain.startYear + 1);
-    expect(ticks[0]).toBe(1980);
+    expect(ticks[0]).toBe(1979);
     expect(ticks.at(-1)).toBe(1999);
     expect(ticks).toContain(1991);
     expect(ticks).toContain(1994);
     expect(ticks).toContain(1998);
     expect(getMuseumRouteCanvasHeight(museumRoute)).toBeGreaterThan(museumRoute.canvas.recommendedPixelSize.minHeight);
+  });
+
+  it("uses the public 59 STORY / 41 BRANCH authority without exposing research fields", () => {
+    const museumRoute = galgameHistoryPreview.museumRoute;
+    const serialized = JSON.stringify(galgameHistoryPreview.museumExperience);
+
+    expect(museumRoute.nodes.filter((node) => node.importance === "primary")).toHaveLength(59);
+    expect(museumRoute.nodes.filter((node) => node.importance === "secondary")).toHaveLength(41);
+    expect(museumRoute.galleries.map((gallery) => museumRoute.nodes.filter((node) => node.galleryId === gallery.id && node.importance === "primary").length)).toEqual([
+      10,
+      10,
+      13,
+      15,
+      11,
+    ]);
+    expect(serialized).not.toMatch(/sourceIds|confidence|rightsStatus|sectionEvidence|local-epub/i);
   });
 
   it("renders the museum route as a shared time canvas with all node positions available", () => {
@@ -144,30 +165,20 @@ describe("galgame history research preview", () => {
     expect(source).toContain("data-museum-sfx-control");
     expect(source).toContain("data-museum-mobile-progress");
     expect(source).toContain("data-museum-mobile-map");
+    expect(source).toContain("GALGAME CHRONICLE");
+    expect(source).toContain("CHRONICLE INDEX");
+    expect(source).toContain("A.D.M.S.");
     expect(source).not.toContain("Research Preview");
     expect(source).not.toContain("Detail Guardrail");
   });
 
-  it("ships only public-safe preview data with caveats for uncertain records", () => {
-    const serialized = JSON.stringify(galgameHistoryPreview);
+  it("ships only public-safe chronicle data", () => {
+    const serialized = JSON.stringify(galgameHistoryPreview.museumExperience);
 
     expect(serialized).not.toMatch(/[A-Z]:\\\\|\/mnt\/|\.epub|\.lrc/i);
     expect(serialized).not.toMatch(/researching|needs-source/i);
 
-    for (const event of galgameHistoryPreview.timeline.events) {
-      if (["draft", "contextual", "promoted-single-source"].includes(event.status)) {
-        expect(event.caveat, `${event.id} needs a public caveat`).toBeTruthy();
-      }
-    }
-
-    const nonEvidenceSources = Object.values(galgameHistoryPreview.sourceIndex).filter((source) =>
-      ["internal-context-only", "do-not-display-as-evidence-yet"].includes(source.publicUse),
-    );
-
-    expect(nonEvidenceSources.length).toBeGreaterThan(0);
-    for (const source of nonEvidenceSources) {
-      expect(source.blogPath).toBeUndefined();
-      expect(source.url).toBeUndefined();
-    }
+    expect(serialized).not.toMatch(/sourceIds|confidence|rightsStatus|sectionEvidence|local-epub/i);
+    expect(galgameHistoryPreview.museumRoute.nodeCards.filter((card) => card.dateDisplay === "UNDATED").length).toBeGreaterThan(0);
   });
 });

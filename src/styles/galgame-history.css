@@ -5,6 +5,156 @@
   color: var(--text-main);
 }
 
+.museum-experience--chronicle {
+  --chronicle-line: rgb(113 151 137 / 0.46);
+  --chronicle-signal: #f4c95d;
+  --chronicle-branch: #d77a61;
+  --chronicle-panel: rgb(17 30 29 / 0.82);
+  --chronicle-ink: #d7e4db;
+  color: var(--chronicle-ink);
+}
+
+.museum-experience--chronicle .museum-masthead {
+  align-items: center;
+  padding: 20px 0 16px;
+  border-color: var(--chronicle-line);
+}
+
+.museum-experience--chronicle .museum-kicker {
+  color: var(--chronicle-signal);
+}
+
+.museum-experience--chronicle .museum-masthead h1 {
+  margin-top: 4px;
+  font-size: 2.45rem;
+  letter-spacing: 0;
+}
+
+.museum-command-label {
+  color: var(--chronicle-signal);
+  font-size: 0.72rem;
+  font-weight: 900;
+}
+
+.museum-density {
+  display: flex;
+  gap: 4px;
+}
+
+.museum-experience--chronicle .museum-utility[aria-pressed="true"] {
+  border-color: var(--chronicle-signal);
+  background: rgb(244 201 93 / 0.14);
+  color: #fff4c8;
+}
+
+.museum-chronicle-routes {
+  margin-top: 10px;
+  border-block: 1px solid var(--chronicle-line);
+  background: var(--chronicle-panel);
+}
+
+.museum-chronicle-routes summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 38px;
+  padding: 0 12px;
+  color: var(--chronicle-ink);
+  cursor: pointer;
+  font-size: 0.74rem;
+  font-weight: 900;
+}
+
+.museum-chronicle-routes summary span {
+  color: var(--chronicle-signal);
+}
+
+.museum-chronicle-routes > div {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 6px;
+  padding: 0 12px 12px;
+}
+
+.museum-chronicle-routes button {
+  min-height: 34px;
+  border: 1px solid rgb(113 151 137 / 0.38);
+  border-radius: 3px;
+  background: rgb(0 0 0 / 0.14);
+  color: var(--chronicle-ink);
+  font: inherit;
+  font-size: 0.7rem;
+  text-align: left;
+}
+
+.museum-chronicle-routes button:hover,
+.museum-chronicle-routes button:focus-visible {
+  border-color: var(--chronicle-signal);
+  outline: none;
+}
+
+.museum-experience--chronicle .museum-gallery__chapter {
+  border-color: var(--chronicle-line);
+  background: rgb(12 25 24 / 0.9);
+}
+
+.museum-experience--chronicle .museum-gallery__chapter p,
+.museum-experience--chronicle .museum-gallery__chapter span {
+  color: var(--chronicle-signal);
+}
+
+.museum-experience--chronicle .museum-node--primary {
+  border-color: rgb(94 234 212 / 0.72);
+  background: rgb(15 39 37 / 0.95);
+}
+
+.museum-experience--chronicle .museum-node--primary .museum-node__label::before {
+  content: "STORY";
+  display: block;
+  color: var(--chronicle-signal);
+  font-size: 0.58rem;
+  font-weight: 900;
+}
+
+.museum-experience--chronicle .museum-node--secondary {
+  border-style: dashed;
+  border-color: rgb(215 122 97 / 0.66);
+  background: repeating-linear-gradient(135deg, rgb(37 34 31 / 0.9), rgb(37 34 31 / 0.9) 4px, rgb(48 39 34 / 0.9) 4px, rgb(48 39 34 / 0.9) 8px);
+}
+
+.museum-experience--chronicle .museum-node--secondary .museum-node__label::before {
+  content: "BRANCH";
+  display: block;
+  color: #f0a88d;
+  font-size: 0.58rem;
+  font-weight: 900;
+}
+
+.museum-experience--chronicle[data-museum-density="main"] .museum-node--secondary,
+.museum-experience--chronicle[data-museum-density="main"] .museum-route-link--dotted {
+  opacity: 0.12;
+  pointer-events: none;
+}
+
+.museum-experience--chronicle .museum-minimap {
+  border-color: var(--chronicle-line);
+  background: rgb(12 25 24 / 0.94);
+}
+
+@media (max-width: 760px) {
+  .museum-experience--chronicle .museum-masthead {
+    align-items: flex-start;
+  }
+
+  .museum-experience--chronicle .museum-masthead h1 {
+    font-size: 1.85rem;
+  }
+
+  .museum-chronicle-routes > div {
+    grid-template-columns: 1fr;
+  }
+}
+
 .museum-masthead {
   display: flex;
   align-items: end;

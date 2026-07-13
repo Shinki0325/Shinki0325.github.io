@@ -75,24 +75,35 @@ const clientPayload = JSON.stringify({
 }).replace(/</g, "\\u003c");
 ---
 
-<BaseLayout title="1980-1999 Galgame 历史博物馆" description="沿作品、制度与技术三条线行走的在线博物馆。" currentPath="/galgame-history/">
-  <section class="museum-experience" data-museum-route-root>
+<BaseLayout title="GALGAME CHRONICLE" description="1979-1999 美少女游戏编年档案。" currentPath="/galgame-history/">
+  <section class="museum-experience museum-experience--chronicle" data-museum-route-root data-museum-density="main">
     <header class="museum-masthead">
       <div>
-        <p class="museum-kicker">ONLINE MUSEUM / 1980-1999</p>
-        <h1>1980-1999 Galgame 历史博物馆</h1>
-        <p class="museum-masthead__copy">从作品、制度与技术的分岔出发，沿四个展厅读一条仍在校对中的历史路线。</p>
+        <p class="museum-kicker">GALGAME CHRONICLE</p>
+        <h1>美少女游戏编年档案</h1>
+        <p class="museum-masthead__copy">1979-1999 / 100 PUBLIC FILES / 59 STORY / 41 BRANCH</p>
       </div>
       <div class="museum-utilities" aria-label="路线工具">
-        <button class="museum-utility" type="button" data-museum-route-select-open>ROUTE SELECT</button>
+        <span class="museum-command-label">CHRONICLE INDEX</span>
+        <div class="museum-density" aria-label="阅读密度">
+          <button class="museum-utility" type="button" data-museum-density="main" aria-pressed="true">主线</button>
+          <button class="museum-utility" type="button" data-museum-density="full" aria-pressed="false">全景</button>
+        </div>
         <label class="museum-sfx" data-museum-sfx-control title="切换页面音效">
-          <span>SFX</span>
+          <span>音效</span>
           <button type="button" data-museum-sfx-toggle aria-pressed="true" aria-label="切换页面音效">ON</button>
           <input type="range" min="0" max="1" step="0.1" value="0.7" data-museum-sfx-volume aria-label="页面音效音量" />
         </label>
         <button class="museum-utility museum-utility--map" type="button" data-museum-mobile-map-open>MAP</button>
       </div>
     </header>
+
+    <details class="museum-chronicle-routes" data-museum-route-strip>
+      <summary>ROUTE SELECT <span>ALL ROUTES</span></summary>
+      <div>
+        {museumRoute.galleries.map((gallery) => <button type="button" data-museum-gallery-jump={gallery.id}>{gallery.yearStart}-{gallery.yearEnd} / {gallery.theme}</button>)}
+      </div>
+    </details>
 
     <nav class="museum-mobile-progress" data-museum-mobile-progress aria-label="展厅进度">
       {museumRoute.galleries.map((gallery) => (
@@ -215,7 +226,7 @@ const clientPayload = JSON.stringify({
 
     <section class="museum-dialogue" data-museum-dialogue hidden aria-live="polite">
       <div class="museum-dialogue__meta">
-        <span>CURATOR LOG</span>
+        <span>相关条目索引 / A.D.M.S.</span>
         <span data-museum-breadcrumb></span>
       </div>
       <div class="museum-dialogue__copy">
@@ -562,14 +573,24 @@ const clientPayload = JSON.stringify({
               if (nextId) focusNode(nextId, { stepped: true, linkId: relation.dataset.museumRelationLink });
               return;
             }
-            const archiveNext = target?.closest("[data-museum-archive-next]");
-            if (archiveNext) {
+             const archiveNext = target?.closest("[data-museum-archive-next]");
+             if (archiveNext) {
               const nextId = archiveNext.dataset.museumArchiveNext;
               if (nextId) focusNode(nextId, { stepped: true, scroll: false });
               if (nextId) renderArchive(nextId);
-              return;
-            }
-            const gallery = target?.closest("[data-museum-gallery-jump]");
+               return;
+             }
+             const density = target?.closest("[data-museum-density]");
+             if (density) {
+               const mode = density.dataset.museumDensity;
+               root.dataset.museumDensity = mode === "full" ? "full" : "main";
+               root.querySelectorAll("[data-museum-density]").forEach((button) => {
+                 button.setAttribute("aria-pressed", String(button.dataset.museumDensity === root.dataset.museumDensity));
+               });
+               playSfx("route-step");
+               return;
+             }
+             const gallery = target?.closest("[data-museum-gallery-jump]");
             if (gallery) {
               jumpGallery(gallery.dataset.museumGalleryJump);
               return;

@@ -22,10 +22,12 @@ describe("site background performance", () => {
     expect(componentSource).toContain("Math.floor(Math.random() * slides.length)");
     expect(componentSource).toContain("activateSlide(randomIndex)");
     expect(componentSource).toContain("data-background-slide");
-    expect(styleSource).toContain("animation: drift-pan 96s ease-in-out infinite alternate");
-    expect(styleSource).toContain("translate3d(-1.15%, -0.58%, 0)");
-    expect(styleSource).toContain("translate3d(1.15%, 0.58%, 0)");
-    expect(styleSource).toContain(".site-backdrop__image.is-active");
-    expect(styleSource).toContain(".site-backdrop__image.is-active {\n    animation: none;");
+    const normalizedStyleSource = styleSource.replace(/\r\n/g, "\n");
+
+    expect(normalizedStyleSource).toContain("animation: drift-pan 96s ease-in-out infinite alternate");
+    expect(normalizedStyleSource).toContain("translate3d(-1.15%, -0.58%, 0)");
+    expect(normalizedStyleSource).toContain("translate3d(1.15%, 0.58%, 0)");
+    expect(normalizedStyleSource).toContain(".site-backdrop__image.is-active");
+    expect(normalizedStyleSource).toContain(".site-backdrop__image.is-active {\n    animation: none;");
   });
 });
