@@ -8,6 +8,12 @@ import {
 } from "../src/data/galgame-history-preview";
 
 const pageSource = () => readFileSync("src/pages/galgame-history/index.astro", "utf8");
+const clientSource = () => readFileSync("public/galgame-history/app.js", "utf8");
+const sfxSource = () => readFileSync("public/galgame-history/sfx.js", "utf8");
+const styleSource = () => [
+  readFileSync("public/galgame-history/styles.css", "utf8"),
+  readFileSync("public/galgame-history/theme-tactical-tree.css", "utf8"),
+].join("\n");
 
 describe("galgame chronicle production route", () => {
   it("adds a dedicated preview page without promoting it into top navigation", () => {
@@ -17,11 +23,10 @@ describe("galgame chronicle production route", () => {
   });
 
   it("keeps source and claim guardrails visible in page copy", () => {
-    const source = pageSource();
+    const source = `${pageSource()}\n${clientSource()}`;
 
-    expect(source).toContain("ARCHIVE NOTE");
-    expect(source).toContain("来源与阅读提示");
-    expect(source).toContain("不能自动读作直接因果");
+    expect(source).toContain("archiveNoteZh");
+    expect(source).toContain("caveats");
     expect(source).not.toContain("Research Preview");
     expect(source).not.toContain("Detail Guardrail");
     expect(source).not.toMatch(/[A-Z]:\\\\|\/mnt\/|local file path/i);
@@ -49,6 +54,7 @@ describe("galgame chronicle production route", () => {
     expect(museumRoute.nodes).toHaveLength(100);
     expect(museumRoute.links.length).toBeGreaterThan(100);
     expect(museumRoute.authority.reviewedRelationCount).toBe(270);
+    expect(pageSource()).toContain("reviewedRelationCount: route.authority.reviewedRelationCount");
 
     const overviewNodes = museumRoute.nodes.filter((node) => node.importance === "primary");
     expect(overviewNodes).toHaveLength(59);
@@ -132,53 +138,47 @@ describe("galgame chronicle production route", () => {
     expect(serialized).not.toMatch(/sourceIds|confidence|rightsStatus|sectionEvidence|local-epub/i);
   });
 
-  it("renders the museum route as a shared time canvas with all node positions available", () => {
-    const source = pageSource();
+  it("ports the approved Tactical preview structure instead of the rejected museum composition", () => {
+    const source = `${pageSource()}\n${clientSource()}`;
 
-    expect(source).toContain("data-history-museum-route");
-    expect(source).toContain("data-route-canvas");
-    expect(source).toContain("museum-route__links");
-    expect(source).toContain("data-museum-node");
-    expect(source).toContain("data-museum-link");
-    expect(source).toContain("getMuseumRouteYearTicks");
-    expect(source).toContain("data-layout-mode={museumRoute.layoutMode}");
+    for (const surface of ["site-heading", "command-bar", "route-selector", "screen", "map-shell", "tech-tree", "timeline", "dossier"]) {
+      expect(source).toContain(surface);
+    }
+    expect(source).toContain("data-chronological-tree");
+    expect(source).toContain("data-galgame-chronicle-payload");
+    expect(pageSource()).toContain("data-completed-dossier-count");
+    expect(pageSource()).toContain("data-public-dossier-count");
+    expect(source).not.toContain("museum-dialogue");
+    expect(source).not.toContain("museum-archive");
   });
 
-  it("ships the continuous museum route interaction surfaces", () => {
-    const source = pageSource();
+  it("ports the approved Dossier, A.D.M.S., minimap, and SFX state machine", () => {
+    const source = `${pageSource()}\n${clientSource()}\n${sfxSource()}\n${styleSource()}`;
 
-    expect(source).toContain("data-museum-route-root");
-    expect(source).toContain("data-museum-gallery");
-    expect(source).toContain("data-museum-node");
-    expect(source).toContain("data-museum-minimap");
-    expect(source).toContain("data-museum-viewport-marker");
-    expect(source).toContain("data-museum-dialogue");
-    expect(source).toContain("data-museum-relation-choice");
-    expect(source).toContain("data-museum-route-tree");
-    expect(source).toContain("data-museum-chapter-gate");
-    expect(source).toContain("previewLinkId");
-    expect(source).toContain("trailLinkIds");
-    expect(source).toContain("data-museum-breadcrumb");
-    expect(source).toContain("data-museum-route-select");
-    expect(source).toContain("data-museum-archive-dialog");
-    expect(source).toContain("data-museum-archive-next");
-    expect(source).toContain("data-museum-sfx-control");
-    expect(source).toContain("data-museum-mobile-progress");
-    expect(source).toContain("data-museum-mobile-map");
     expect(source).toContain("GALGAME CHRONICLE");
     expect(source).toContain("CHRONICLE INDEX");
     expect(source).toContain("A.D.M.S.");
-    expect(source).not.toContain("Research Preview");
-    expect(source).not.toContain("Detail Guardrail");
+    for (const surface of ["research-node", "branch-index", "map-dock", "minimap", "dossier__return-strip", "dossier__tabs", "dossier__relations"]) {
+      expect(source).toContain(surface);
+    }
+    expect(source).toContain('density: "story"');
+    expect(source).toContain('routeCollapsed: true');
+    expect(source).toContain("trimMs: 330");
+    expect(source).toContain("db: 6");
+    expect(source).toContain('action: { audio: null');
+    expect(source).toContain('hover: { audio: null');
+    expect(source).not.toContain('/blog/public/uploads/backgrounds');
   });
 
   it("ships only public-safe chronicle data", () => {
     const serialized = JSON.stringify(galgameHistoryPreview.museumExperience);
+    const productionSource = `${pageSource()}\n${clientSource()}`;
 
     expect(serialized).not.toMatch(/[A-Z]:\\\\|\/mnt\/|\.epub|\.lrc/i);
     expect(serialized).not.toMatch(/researching|needs-source/i);
 
     expect(serialized).not.toMatch(/sourceIds|confidence|rightsStatus|sectionEvidence|local-epub/i);
+    expect(productionSource).not.toMatch(/sourceIds|confidence|rightsStatus|sectionEvidence|local-epub/i);
     expect(galgameHistoryPreview.museumRoute.nodeCards.filter((card) => card.dateDisplay === "UNDATED").length).toBeGreaterThan(0);
   });
 });

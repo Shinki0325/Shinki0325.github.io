@@ -1,705 +1,127 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import {
-  galgameHistoryPreview,
-  getMuseumRouteCanvasHeight,
-  getMuseumRouteYearTicks,
-  type MuseumExperienceCard,
-  type MuseumRouteLink,
-  type MuseumRouteNode,
-} from "../../data/galgame-history-preview";
+import { galgameHistoryPreview } from "../../data/galgame-history-preview";
 import "../../styles/galgame-history.css";
 
-const preview = galgameHistoryPreview;
-const museumRoute = preview.museumRoute;
-const experience = preview.museumExperience;
-const nodeCards = Object.fromEntries(experience.nodeCards.map((card) => [card.nodeId, card])) as Record<string, MuseumExperienceCard>;
-const routeTickYears = getMuseumRouteYearTicks(museumRoute);
-const baseCanvasHeight = getMuseumRouteCanvasHeight(museumRoute);
-const chapterGateHeight = 116;
-const canvasHeight = baseCanvasHeight + museumRoute.galleries.length * chapterGateHeight;
-const toPct = (value: number) => `${(value * 100).toFixed(3)}%`;
-const toSvg = (value: number) => (value * 100).toFixed(3);
-const gatesBefore = (y: number) => museumRoute.galleries.filter((gallery) => gallery.layout.yStart < y - 0.0001).length;
-const visualY = (y: number, includeGateAtPoint = true) => {
-  const gates = includeGateAtPoint
-    ? museumRoute.galleries.filter((gallery) => gallery.layout.yStart <= y + 0.0001).length
-    : gatesBefore(y);
-  return (y * baseCanvasHeight + gates * chapterGateHeight) / canvasHeight;
-};
-const yearToY = (year: number) => {
-  const { startYear, endYear, yStart, yEnd } = museumRoute.timeDomain;
-  return visualY(yStart + ((year - startYear) / (endYear - startYear)) * (yEnd - yStart));
-};
-const pathFor = (link: MuseumRouteLink) =>
-  link.layout.points.map((point, index) => `${index === 0 ? "M" : "L"} ${toSvg(point.x)} ${toSvg(visualY(point.y))}`).join(" ");
+const route = galgameHistoryPreview.museumRoute;
+const experience = galgameHistoryPreview.museumExperience;
+const cardById = new Map(experience.nodeCards.map((card) => [card.nodeId, card]));
+const trackIds = { left: "works", center: "public", right: "systems" } as const;
+const relationCounts = new Map<string, number>();
+for (const relation of route.links) {
+  relationCounts.set(relation.from, (relationCounts.get(relation.from) ?? 0) + 1);
+  relationCounts.set(relation.to, (relationCounts.get(relation.to) ?? 0) + 1);
+}
 
-const nodeStyleFor = (node: MuseumRouteNode) => {
-  const offset = node.layout.labelOffsetNormalized ?? { x: 0, y: 0 };
-  return `--node-x: ${toPct(node.layout.x)}; --node-y: ${toPct(visualY(node.layout.visualAnchorY ?? node.layout.anchorY ?? node.layout.y))}; --node-label-shift-x: ${offset.x * 1000}px; --node-label-shift-y: ${offset.y * 1000}px;`;
-};
-const galleryStyleFor = (gallery: (typeof museumRoute.galleries)[number]) =>
-  `--gallery-start: ${toPct(visualY(gallery.layout.yStart, false))}; --gallery-end: ${toPct(visualY(gallery.layout.yEnd))}; --gallery-gate-height: ${chapterGateHeight}px;`;
-const clientPayload = JSON.stringify({
-  cards: experience.nodeCards,
-  clues: experience.clueCards,
-  chains: experience.discoveryChains,
-  nodes: museumRoute.nodes.map((node) => ({
+const presentationRecords = route.nodes.map((node) => {
+  const card = cardById.get(node.id);
+  return {
+    nodeId: node.id,
+    compactTitleZh: node.labelZh,
+    displayYear: node.yearStart,
+    dateDisplay: node.dateDisplay,
+    dateStart: node.dateDisplay === "UNDATED" ? null : node.dateDisplay,
+    track: trackIds[node.track],
+    cardKind: node.type.toLowerCase(),
+    sourceTier: card?.sourceTiers[0] ?? "REVIEW",
+    dossierStatus: "complete",
+    presentationTier: node.importance === "primary" ? "main" : "supporting",
+    nodeTypeLabelEn: node.type,
+    evidenceLabelEn: card?.sourceTiers[0] ?? "REVIEW",
+    branchAnchorIds: node.importance === "secondary" ? (card?.relationHints.slice(0, 2).map((hint) => hint.targetNodeId) ?? []) : [],
+    archiveNoteRecommendation: "preserve",
+    presentationReasonZh: card?.deckZh ?? node.summaryZh,
+  };
+});
+
+const previewData = {
+  generatedAt: route.generatedAt,
+  reviewedRelationCount: route.authority.reviewedRelationCount,
+  timeRange: { start: 1979, end: 1999 },
+  tracks: [
+    { id: "works", label: "WORKS / FORMS", labelZh: "作品 / 形式" },
+    { id: "public", label: "PUBLIC / INSTITUTIONS", labelZh: "公共 / 制度" },
+    { id: "systems", label: "SYSTEMS / CIRCULATION", labelZh: "平台 / 流通" },
+  ],
+  nodes: route.nodes.map((node) => ({
     id: node.id,
-    galleryId: node.galleryId,
-    canonicalNodeId: node.canonicalNodeId ?? node.id,
-    visualRole: node.visualRole ?? "canonical",
-    interactive: node.interactive !== false,
-    importance: node.importance,
-    labelZh: node.labelZh,
+    title: node.labelZh,
+    cardTier: node.type.toLowerCase(),
+    cardStatus: "standard-complete",
+    completed: true,
+    sourceTier: cardById.get(node.id)?.sourceTiers[0] ?? "REVIEW",
+    displayYear: node.yearStart,
+    dateLabel: node.dateDisplay,
+    dateMode: node.dateDisplay === "UNDATED" ? "undated" : "year",
+    degree: relationCounts.get(node.id) ?? 0,
+    exhibitRole: node.importance === "primary" ? "story" : "branch",
+    track: trackIds[node.track],
+    primary: node.importance === "primary",
   })),
-  links: museumRoute.links.map((link) => ({
-    id: link.id,
-    from: link.from,
-    to: link.to,
-    galleryId: link.galleryId,
-    lineStyle: link.lineStyle,
-    directionality: link.directionality,
-    canonicalFromNodeId: link.canonicalFromNodeId ?? link.from,
-    canonicalToNodeId: link.canonicalToNodeId ?? link.to,
-    localTreeRole: link.localTreeRole ?? "lateral",
-    displayPriority: link.displayPriority ?? 99,
-    dedupeKey: link.dedupeKey ?? link.id,
+  relations: route.links.map((relation) => ({
+    id: relation.id,
+    from: relation.from,
+    to: relation.to,
+    relationType: relation.relationType,
+    label: relation.relationLabelZh,
+    publicLabelZh: relation.relationLabelZh,
+    evidenceMode: "reviewed",
+    causalStrength: relation.directionality === "contextual" ? "contextual" : "none",
   })),
-  galleries: museumRoute.galleries.map((gallery) => ({
+};
+
+const cards = experience.nodeCards.map((card) => ({
+  nodeId: card.nodeId,
+  titleZh: card.titleZh,
+  compactTitleZh: route.nodes.find((node) => node.id === card.nodeId)?.labelZh ?? card.titleZh,
+  dateDisplay: card.dateDisplay,
+  archiveNoteZh: card.introZh,
+  deckZh: card.deckZh,
+  sections: card.sections,
+  sourceTier: card.sourceTiers[0] ?? "REVIEW",
+  caveats: card.caveats,
+  relationHints: card.relationHints,
+  imageSlot: { placeholderZh: card.imagePlaceholder },
+}));
+
+const guidedConfig = {
+  worldNodeIds: route.nodes.filter((node) => node.importance === "primary").map((node) => node.id),
+  guideLinks: route.links.slice(0, 32).map((relation) => [relation.from, relation.to]),
+  chapters: route.galleries.map((gallery, index) => ({
     id: gallery.id,
-    yearStart: gallery.yearStart,
-    yearEnd: gallery.yearEnd,
+    number: String(index + 1).padStart(2, "0"),
+    label: gallery.theme,
     titleZh: gallery.titleZh,
+    yearRange: [gallery.yearStart, gallery.yearEnd],
+    nodeIds: route.nodes.filter((node) => node.galleryId === gallery.id).map((node) => node.id),
   })),
-}).replace(/</g, "\\u003c");
+};
+
+const clientPayload = JSON.stringify({ previewData, guidedConfig, presentationRecords, cards }).replace(/</g, "\\u003c");
 ---
 
 <BaseLayout title="GALGAME CHRONICLE" description="1979-1999 美少女游戏编年档案。" currentPath="/galgame-history/">
-  <section class="museum-experience museum-experience--chronicle" data-museum-route-root data-museum-density="main">
-    <header class="museum-masthead">
-      <div>
-        <p class="museum-kicker">GALGAME CHRONICLE</p>
+  <script is:inline>document.documentElement.dataset.visualStyle = "tactical-tree";</script>
+  <link rel="stylesheet" href="/galgame-history/styles.css" />
+  <link rel="stylesheet" href="/galgame-history/theme-tactical-tree.css" />
+
+  <main class="research-tree" data-chronological-tree>
+    <header class="site-heading">
+      <span class="site-heading__code" aria-hidden="true">CHRONICLE / 01</span>
+      <div class="site-heading__identity">
+        <p class="site-heading__system">GALGAME CHRONICLE</p>
         <h1>美少女游戏编年档案</h1>
-        <p class="museum-masthead__copy">1979-1999 / 100 PUBLIC FILES / 59 STORY / 41 BRANCH</p>
       </div>
-      <div class="museum-utilities" aria-label="路线工具">
-        <span class="museum-command-label">CHRONICLE INDEX</span>
-        <div class="museum-density" aria-label="阅读密度">
-          <button class="museum-utility" type="button" data-museum-density="main" aria-pressed="true">主线</button>
-          <button class="museum-utility" type="button" data-museum-density="full" aria-pressed="false">全景</button>
-        </div>
-        <label class="museum-sfx" data-museum-sfx-control title="切换页面音效">
-          <span>音效</span>
-          <button type="button" data-museum-sfx-toggle aria-pressed="true" aria-label="切换页面音效">ON</button>
-          <input type="range" min="0" max="1" step="0.1" value="0.7" data-museum-sfx-volume aria-label="页面音效音量" />
-        </label>
-        <button class="museum-utility museum-utility--map" type="button" data-museum-mobile-map-open>MAP</button>
+      <div class="site-heading__range">
+        <span>ARCHIVE RANGE</span>
+        <strong>1979-1999</strong>
       </div>
+      <div class="archive-count"><strong data-completed-dossier-count>100</strong><span>FILES</span><strong data-public-dossier-count>100</strong><span>PUBLIC</span></div>
     </header>
 
-    <details class="museum-chronicle-routes" data-museum-route-strip>
-      <summary>ROUTE SELECT <span>ALL ROUTES</span></summary>
-      <div>
-        {museumRoute.galleries.map((gallery) => <button type="button" data-museum-gallery-jump={gallery.id}>{gallery.yearStart}-{gallery.yearEnd} / {gallery.theme}</button>)}
-      </div>
-    </details>
+    <div data-app></div>
+    <script is:inline type="application/json" data-galgame-chronicle-payload set:html={clientPayload}></script>
+  </main>
 
-    <nav class="museum-mobile-progress" data-museum-mobile-progress aria-label="展厅进度">
-      {museumRoute.galleries.map((gallery) => (
-        <button type="button" data-museum-gallery-jump={gallery.id}>{gallery.yearStart}-{gallery.yearEnd}</button>
-      ))}
-    </nav>
-    <p class="museum-gallery-indicator" data-museum-gallery-indicator aria-live="polite"></p>
-
-    <div class="museum-route-layout">
-      <main class="museum-route" data-history-museum-route data-layout-mode={museumRoute.layoutMode}>
-        <div class="museum-route__axis" aria-hidden="true">
-          {routeTickYears.map((year) => <span style={`--year-y: ${toPct(yearToY(year))}`}>{year}</span>)}
-        </div>
-
-        <div class="museum-route__canvas" style={`--museum-canvas-height: ${canvasHeight}px;`} data-route-canvas>
-          {museumRoute.galleries.map((gallery) => (
-            <section
-              id={`museum-${gallery.id}`}
-              class="museum-gallery"
-              style={galleryStyleFor(gallery)}
-              data-museum-gallery={gallery.id}
-              aria-labelledby={`museum-gallery-title-${gallery.id}`}
-            >
-              <div class="museum-gallery__chapter" data-museum-chapter-gate>
-                <p>{gallery.yearStart}-{gallery.yearEnd}</p>
-                <h2 id={`museum-gallery-title-${gallery.id}`}>{gallery.titleZh}</h2>
-                <span>{gallery.theme}</span>
-              </div>
-            </section>
-          ))}
-
-          <svg class="museum-route__links" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-            {museumRoute.links.map((link) => (
-              <path
-                class={`museum-route-link museum-route-link--${link.lineStyle} ${link.crossTrack ? "museum-route-link--cross" : ""}`}
-                d={pathFor(link)}
-                data-museum-link={link.id}
-                data-museum-link-from={link.from}
-                data-museum-link-to={link.to}
-                data-museum-link-gallery={link.galleryId}
-              />
-            ))}
-          </svg>
-
-          <div class="museum-route__nodes">
-            {museumRoute.nodes.map((node) => {
-              const card = nodeCards[node.id];
-              const primary = node.importance === "primary";
-              const interactive = node.interactive !== false && node.mapVisible !== false;
-              return (
-                interactive ? <button
-                  class={`museum-node museum-node--${node.track} museum-node--${node.importance}`}
-                  style={nodeStyleFor(node)}
-                  type="button"
-                  data-museum-node={node.id}
-                  data-museum-node-gallery={node.galleryId}
-                  data-museum-node-primary={String(primary)}
-                  aria-label={`${node.dateDisplay}，${card?.titleZh ?? node.labelZh}`}
-                  aria-pressed="false"
-                >
-                  <span class="museum-node__mark" aria-hidden="true"></span>
-                  <span class="museum-node__label">
-                    <small>{node.dateDisplay}</small>
-                    <strong>{card?.titleZh ?? node.labelZh}</strong>
-                  </span>
-                </button> : <span class={`museum-node museum-node--${node.track} museum-node--continuation`} style={nodeStyleFor(node)} data-museum-continuation={node.id} aria-hidden="true">
-                  <span class="museum-node__mark"></span>
-                </span>
-              );
-            })}
-          </div>
-        </div>
-
-        <footer class="museum-method-note">
-          展示路线保留不确定性：虚线、点线与来源层级用于说明阅读关系，不能自动读作直接因果。
-        </footer>
-      </main>
-
-      <aside class="museum-minimap" data-museum-minimap aria-label="路线导航图">
-        <div class="museum-minimap__head">
-          <span>MAP</span>
-          <button type="button" data-museum-minimap-collapse aria-label="收起路线导航图" title="收起路线导航图">−</button>
-        </div>
-        <div class="museum-minimap__body">
-          <div class="museum-minimap__spine" aria-hidden="true"></div>
-          {museumRoute.galleries.map((gallery) => (
-            <button type="button" data-museum-gallery-jump={gallery.id} data-museum-minimap-gallery={gallery.id}>
-              <span>{gallery.yearStart}-{gallery.yearEnd}</span>
-            </button>
-          ))}
-          <span class="museum-minimap__viewport" data-museum-viewport-marker aria-hidden="true"></span>
-        </div>
-        <small data-museum-minimap-status>1980-1986</small>
-      </aside>
-    </div>
-
-    <section class="museum-mobile-route" aria-label="移动端路线列表">
-      {museumRoute.galleries.map((gallery) => (
-        <section data-museum-mobile-gallery={gallery.id}>
-          <header>
-            <span>{gallery.yearStart}-{gallery.yearEnd}</span>
-            <h2>{gallery.titleZh}</h2>
-          </header>
-          {museumRoute.tracks.map((track) => (
-            <div class={`museum-mobile-track museum-mobile-track--${track.id}`}>
-              <h3>{track.labelZh}</h3>
-              {museumRoute.nodes
-                .filter((node) => node.galleryId === gallery.id && node.track === track.id && node.interactive !== false)
-                .map((node) => (
-                  <button type="button" data-museum-mobile-node={node.id}>
-                    <small>{node.dateDisplay}</small>
-                    <strong>{nodeCards[node.id]?.titleZh ?? node.labelZh}</strong>
-                  </button>
-                ))}
-            </div>
-          ))}
-        </section>
-      ))}
-    </section>
-
-    <section class="museum-dialogue" data-museum-dialogue hidden aria-live="polite">
-      <div class="museum-dialogue__meta">
-        <span>相关条目索引 / A.D.M.S.</span>
-        <span data-museum-breadcrumb></span>
-      </div>
-      <div class="museum-dialogue__copy">
-        <h2 data-museum-dialogue-title></h2>
-        <p data-museum-dialogue-deck></p>
-      </div>
-      <div class="museum-dialogue__choices" data-museum-route-tree></div>
-      <div class="museum-dialogue__actions">
-        <button type="button" data-museum-dialogue-back>Back</button>
-        <button type="button" data-museum-archive-open>打开完整档案</button>
-        <button type="button" data-museum-dialogue-exit>Exit</button>
-      </div>
-    </section>
-
-    <div class="museum-route-select" data-museum-route-select hidden>
-      <div class="museum-route-select__panel" role="dialog" aria-modal="true" aria-label="路线选择">
-        <div>
-          <p class="museum-kicker">OPTIONAL GUIDED ROUTES</p>
-          <h2>ROUTE SELECT</h2>
-        </div>
-        <div class="museum-route-select__list">
-          {experience.discoveryChains.map((chain) => (
-            <button type="button" data-museum-route-start={chain.id}>
-              <strong>{chain.titleZh}</strong>
-              <small>{chain.nodeIds.length} 个节点</small>
-            </button>
-          ))}
-        </div>
-        <button type="button" data-museum-route-select-close>Close</button>
-      </div>
-    </div>
-
-    <section class="museum-mobile-map" data-museum-mobile-map hidden aria-label="移动端路线概览">
-      <header>
-        <span>MAP</span>
-        <button type="button" data-museum-mobile-map-close aria-label="关闭路线概览">Close</button>
-      </header>
-      {museumRoute.galleries.map((gallery) => (
-        <button type="button" data-museum-gallery-jump={gallery.id}>
-          <strong>{gallery.yearStart}-{gallery.yearEnd}</strong>
-          <span>{gallery.titleZh}</span>
-        </button>
-      ))}
-    </section>
-
-    <dialog class="museum-archive" data-museum-archive-dialog aria-labelledby="museum-archive-title">
-      <div class="museum-archive__layout">
-        <div class="museum-archive__media" data-museum-archive-media aria-hidden="true"></div>
-        <div class="museum-archive__copy">
-          <div class="museum-archive__head">
-            <p data-museum-archive-meta></p>
-            <button type="button" data-museum-archive-close aria-label="关闭档案">Close</button>
-          </div>
-          <h2 id="museum-archive-title" data-museum-archive-title></h2>
-          <p class="museum-archive__note"><span>ARCHIVE NOTE</span><em data-museum-archive-deck></em></p>
-          <div data-museum-archive-sections></div>
-          <details class="museum-archive__sources">
-            <summary>来源与阅读提示</summary>
-            <div data-museum-archive-caveats></div>
-          </details>
-          <div class="museum-archive__next">
-            <span>继续探索</span>
-            <div data-museum-archive-next></div>
-          </div>
-        </div>
-      </div>
-    </dialog>
-
-    <p class="museum-live" data-museum-live aria-live="polite"></p>
-    <script is:inline type="application/json" data-museum-experience set:html={clientPayload}></script>
-  </section>
-
-  <script is:inline>
-    (() => {
-      const sfxFiles = {
-        "node-focus": ["/uploads/galgame-history/sfx/click_2.wav", 1.585],
-        "route-step": ["/uploads/galgame-history/sfx/misc_menu.wav", 1],
-        "archive-open": ["/uploads/galgame-history/sfx/misc_menu_2.wav", 1],
-        "ui-back": ["/uploads/galgame-history/sfx/click.wav", 1],
-        "route-complete": ["/uploads/galgame-history/sfx/positive.wav", 1],
-      };
-
-      const relationLabel = (hint) => {
-        if (hint.relationType === "track-continuation") return "时间顺序";
-        if (hint.relationLabelZh.includes("技术") || hint.targetLabelZh.includes("HDD") || hint.targetLabelZh.includes("PC-")) return "技术条件";
-        if (hint.directionality === "contextual" || hint.relationLabelZh.includes("制度")) return "制度语境";
-        return "回响关联";
-      };
-
-      const initMuseumRoute = () => {
-        document.querySelectorAll("[data-museum-route-root]").forEach((root) => {
-          const payload = root.querySelector("[data-museum-experience]");
-          if (!(payload instanceof HTMLScriptElement)) return;
-          const data = JSON.parse(payload.textContent || "{}");
-          const cardByNode = new Map(data.cards.map((card) => [card.nodeId, card]));
-          const galleryById = new Map(data.galleries.map((gallery) => [gallery.id, gallery]));
-          const audioByRole = new Map();
-          const stored = (() => {
-            try { return JSON.parse(localStorage.getItem("galgame-history:sfx") || "{}"); } catch { return {}; }
-          })();
-          const state = {
-            activeNodeId: null,
-            galleryId: data.galleries[0]?.id || null,
-            relatedNodeIds: new Set(),
-            relatedLinkIds: new Set(),
-            previewNodeId: null,
-            previewLinkId: null,
-            trailNodeIds: [],
-            trailLinkIds: [],
-            chainId: null,
-            archiveOrigin: null,
-            sfxEnabled: stored.enabled !== false,
-            sfxVolume: typeof stored.volume === "number" ? stored.volume : 0.7,
-          };
-          const dialogue = root.querySelector("[data-museum-dialogue]");
-          const archive = root.querySelector("[data-museum-archive-dialog]");
-          const live = root.querySelector("[data-museum-live]");
-          const sfxToggle = root.querySelector("[data-museum-sfx-toggle]");
-          const sfxVolume = root.querySelector("[data-museum-sfx-volume]");
-          const routeSelect = root.querySelector("[data-museum-route-select]");
-          const mobileMap = root.querySelector("[data-museum-mobile-map]");
-
-          const persistSfx = () => {
-            try { localStorage.setItem("galgame-history:sfx", JSON.stringify({ enabled: state.sfxEnabled, volume: state.sfxVolume })); } catch {}
-          };
-          const playSfx = (role) => {
-            if (!state.sfxEnabled || !sfxFiles[role]) return;
-            const [src, gain] = sfxFiles[role];
-            let audio = audioByRole.get(role);
-            if (!audio) {
-              audio = new Audio(src);
-              audio.preload = "auto";
-              audioByRole.set(role, audio);
-            }
-            audio.pause();
-            audio.currentTime = 0;
-            audio.volume = Math.min(1, state.sfxVolume * gain);
-            void audio.play().catch(() => {});
-          };
-          const setLive = (message) => { if (live) live.textContent = message; };
-          const activeChain = () => data.chains.find((chain) => chain.id === state.chainId) || null;
-          const canonicalId = (id) => data.nodes.find((node) => node.id === id)?.canonicalNodeId || id;
-          const relatedFor = (nodeId) => {
-            const canonical = canonicalId(nodeId);
-            const candidates = new Map();
-            data.links.forEach((link) => {
-              const from = canonicalId(link.canonicalFromNodeId || link.from);
-              const to = canonicalId(link.canonicalToNodeId || link.to);
-              if (from !== canonical && to !== canonical) return;
-              const targetNodeId = from === canonical ? to : from;
-              const key = link.dedupeKey || targetNodeId;
-              const previous = candidates.get(key);
-              if (!previous || link.displayPriority < previous.displayPriority) candidates.set(key, { ...link, targetNodeId });
-            });
-            return [...candidates.values()].sort((a, b) => a.displayPriority - b.displayPriority);
-          };
-          const rebuildRelated = () => {
-            const related = state.activeNodeId ? relatedFor(state.activeNodeId) : [];
-            state.relatedNodeIds = new Set(related.map((item) => item.targetNodeId));
-            state.relatedLinkIds = new Set(related.map((item) => item.id));
-            return related;
-          };
-          const setPreview = (nodeId = null, linkId = null) => {
-            state.previewNodeId = nodeId;
-            state.previewLinkId = linkId;
-            syncVisuals();
-          };
-          const syncSfxControls = () => {
-            if (sfxToggle) {
-              sfxToggle.textContent = state.sfxEnabled ? "ON" : "OFF";
-              sfxToggle.setAttribute("aria-pressed", String(state.sfxEnabled));
-            }
-            if (sfxVolume) sfxVolume.value = String(state.sfxVolume);
-          };
-          const syncVisuals = () => {
-            root.querySelectorAll("[data-museum-node]").forEach((node) => {
-              const id = node.dataset.museumNode;
-              const primary = node.dataset.museumNodePrimary === "true";
-              const selected = id === state.activeNodeId;
-              node.classList.toggle("is-selected", selected);
-              node.classList.toggle("is-neighbor", state.relatedNodeIds.has(id));
-              node.classList.toggle("is-preview", id === state.previewNodeId);
-              node.classList.toggle("is-trail", state.trailNodeIds.includes(id));
-              node.classList.toggle("is-dimmed", Boolean(state.activeNodeId) && !selected && !state.relatedNodeIds.has(id));
-              node.setAttribute("aria-pressed", String(selected));
-              node.classList.toggle("is-primary", primary);
-            });
-            root.querySelectorAll("[data-museum-link]").forEach((link) => {
-              const id = link.dataset.museumLink;
-              link.classList.toggle("is-related", state.relatedLinkIds.has(id));
-              link.classList.toggle("is-preview", id === state.previewLinkId);
-              link.classList.toggle("is-trail", state.trailLinkIds.includes(id));
-              link.classList.toggle("is-muted", Boolean(state.activeNodeId) && !state.relatedLinkIds.has(id) && !state.trailLinkIds.includes(id));
-            });
-            root.querySelectorAll("[data-museum-gallery]").forEach((gallery) => {
-              gallery.classList.toggle("is-active", gallery.dataset.museumGallery === state.galleryId);
-            });
-            root.querySelectorAll("[data-museum-minimap-gallery]").forEach((gallery) => {
-              gallery.classList.toggle("is-active", gallery.dataset.museumMinimapGallery === state.galleryId);
-            });
-            root.querySelectorAll("[data-museum-mobile-gallery]").forEach((gallery) => {
-              gallery.hidden = gallery.dataset.museumMobileGallery !== state.galleryId;
-            });
-            const activeGallery = galleryById.get(state.galleryId);
-            const minimapStatus = root.querySelector("[data-museum-minimap-status]");
-            if (minimapStatus && activeGallery) minimapStatus.textContent = `${activeGallery.yearStart}-${activeGallery.yearEnd}`;
-            const marker = root.querySelector("[data-museum-viewport-marker]");
-            if (marker && activeGallery) marker.style.setProperty("--minimap-y", `${activeGallery.yearStart - 1980}`);
-            const indicator = root.querySelector("[data-museum-gallery-indicator]");
-            if (indicator && activeGallery) indicator.textContent = `GALLERY ${activeGallery.yearStart}-${activeGallery.yearEnd}`;
-          };
-          const renderDialogue = () => {
-            const card = cardByNode.get(state.activeNodeId);
-            if (!card || !dialogue) return;
-            dialogue.hidden = false;
-            root.querySelector("[data-museum-dialogue-title]").textContent = card.titleZh;
-            root.querySelector("[data-museum-dialogue-deck]").textContent = card.deckZh || card.introZh;
-            root.querySelector("[data-museum-breadcrumb]").textContent = state.trailNodeIds.map((id) => cardByNode.get(id)?.titleZh).filter(Boolean).join(" / ");
-            const choices = root.querySelector("[data-museum-route-tree]");
-            choices.replaceChildren();
-            relatedFor(state.activeNodeId).slice(0, 6).forEach((hint) => {
-              const button = document.createElement("button");
-              button.type = "button";
-              button.dataset.museumRelationChoice = hint.targetNodeId;
-              button.dataset.museumRelationLink = hint.id;
-              button.dataset.museumRelationRole = hint.localTreeRole;
-              button.textContent = `${hint.localTreeRole === "upstream" ? "前序" : hint.localTreeRole === "downstream" ? "后续" : "语境"} · ${cardByNode.get(hint.targetNodeId)?.titleZh || hint.targetNodeId}`;
-              choices.append(button);
-            });
-            if (!choices.childElementCount) {
-              card.nextNodeIds.slice(0, 3).forEach((id) => {
-                const button = document.createElement("button");
-                button.type = "button";
-                button.dataset.museumRelationChoice = id;
-                button.textContent = `回响关联 · ${cardByNode.get(id)?.titleZh || "继续探索"}`;
-                choices.append(button);
-              });
-            }
-          };
-          const focusNode = (nodeId, { stepped = false, linkId = null, scroll = true } = {}) => {
-            const card = cardByNode.get(nodeId);
-            if (!card) return;
-            state.activeNodeId = nodeId;
-            state.galleryId = card.galleryId;
-            if (linkId) {
-              state.trailLinkIds.push(linkId);
-              if (state.trailNodeIds.at(-1) !== nodeId) state.trailNodeIds.push(nodeId);
-            } else if (!state.trailNodeIds.includes(nodeId)) {
-              state.trailNodeIds = [nodeId];
-              state.trailLinkIds = [];
-            }
-            rebuildRelated();
-            setPreview();
-            syncVisuals();
-            renderDialogue();
-            const node = root.querySelector(`[data-museum-node="${CSS.escape(nodeId)}"]`);
-            if (scroll && node) {
-              const rect = node.getBoundingClientRect();
-              const blockedBottom = window.innerHeight - (dialogue?.getBoundingClientRect().height || 0) - 24;
-              if (rect.top < 112 || rect.bottom > blockedBottom) node.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "center" });
-            }
-            playSfx(stepped ? "route-step" : "node-focus");
-            setLive(`已聚焦 ${card.titleZh}`);
-            const chain = activeChain();
-            if (chain && chain.nodeIds.every((id) => state.trailNodeIds.includes(id))) {
-              setLive(`路线已阅：${chain.titleZh}`);
-              playSfx("route-complete");
-            }
-          };
-          const exitFocus = () => {
-            state.activeNodeId = null;
-            state.relatedNodeIds.clear();
-            state.relatedLinkIds.clear();
-            state.trailNodeIds = [];
-            state.trailLinkIds = [];
-            state.previewNodeId = null;
-            state.previewLinkId = null;
-            state.chainId = null;
-            if (dialogue) dialogue.hidden = true;
-            syncVisuals();
-            setLive("已退出关联探索");
-          };
-          const renderArchive = (nodeId) => {
-            const card = cardByNode.get(nodeId);
-            if (!card || !(archive instanceof HTMLDialogElement)) return;
-            state.archiveOrigin = nodeId;
-            root.querySelector("[data-museum-archive-meta]").textContent = `${card.dateDisplay} / ${card.sourceTiers.join(" · ")}`;
-            root.querySelector("[data-museum-archive-title]").textContent = card.titleZh;
-            root.querySelector("[data-museum-archive-deck]").textContent = card.deckZh;
-            root.querySelector("[data-museum-archive-media]").textContent = card.imagePlaceholder;
-            const sections = root.querySelector("[data-museum-archive-sections]");
-            sections.replaceChildren();
-            card.sections.slice(0, 2).forEach((section) => {
-              const fragment = document.createElement("section");
-              const heading = document.createElement("h3");
-              const body = document.createElement("p");
-              heading.textContent = section.headingZh;
-              body.textContent = section.bodyZh;
-              fragment.append(heading, body);
-              sections.append(fragment);
-            });
-            const caveats = root.querySelector("[data-museum-archive-caveats]");
-            caveats.replaceChildren();
-            card.caveats.forEach((caveat) => {
-              const paragraph = document.createElement("p");
-              paragraph.textContent = caveat;
-              caveats.append(paragraph);
-            });
-            const next = root.querySelector("[data-museum-archive-next]");
-            next.replaceChildren();
-            [...card.relationHints.map((hint) => hint.targetNodeId), ...card.nextNodeIds]
-              .filter((id, index, list) => list.indexOf(id) === index)
-              .slice(0, 3)
-              .forEach((id) => {
-                const button = document.createElement("button");
-                button.type = "button";
-                button.dataset.museumArchiveNext = id;
-                button.textContent = cardByNode.get(id)?.titleZh || "继续探索";
-                next.append(button);
-              });
-            if (!archive.open) archive.showModal();
-            playSfx("archive-open");
-          };
-          const jumpGallery = (galleryId) => {
-            const target = root.querySelector(`[data-museum-gallery="${CSS.escape(galleryId)}"]`);
-            if (!target) return;
-            state.galleryId = galleryId;
-            syncVisuals();
-            target.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
-          };
-
-          syncSfxControls();
-          syncVisuals();
-          root.addEventListener("click", (event) => {
-            const target = event.target instanceof Element ? event.target : null;
-            const node = target?.closest("[data-museum-node], [data-museum-mobile-node]");
-            if (node) {
-              focusNode(node.dataset.museumNode || node.dataset.museumMobileNode);
-              return;
-            }
-            const relation = target?.closest("[data-museum-relation-choice]");
-            if (relation) {
-              const nextId = relation.dataset.museumRelationChoice;
-              if (nextId) focusNode(nextId, { stepped: true, linkId: relation.dataset.museumRelationLink });
-              return;
-            }
-             const archiveNext = target?.closest("[data-museum-archive-next]");
-             if (archiveNext) {
-              const nextId = archiveNext.dataset.museumArchiveNext;
-              if (nextId) focusNode(nextId, { stepped: true, scroll: false });
-              if (nextId) renderArchive(nextId);
-               return;
-             }
-             const density = target?.closest("[data-museum-density]");
-             if (density) {
-               const mode = density.dataset.museumDensity;
-               root.dataset.museumDensity = mode === "full" ? "full" : "main";
-               root.querySelectorAll("[data-museum-density]").forEach((button) => {
-                 button.setAttribute("aria-pressed", String(button.dataset.museumDensity === root.dataset.museumDensity));
-               });
-               playSfx("route-step");
-               return;
-             }
-             const gallery = target?.closest("[data-museum-gallery-jump]");
-            if (gallery) {
-              jumpGallery(gallery.dataset.museumGalleryJump);
-              return;
-            }
-            if (target?.closest("[data-museum-route-select-open]")) {
-              routeSelect.hidden = false;
-              return;
-            }
-            if (target?.closest("[data-museum-route-select-close]")) {
-              routeSelect.hidden = true;
-              return;
-            }
-            const routeStart = target?.closest("[data-museum-route-start]");
-            if (routeStart) {
-              const chain = data.chains.find((item) => item.id === routeStart.dataset.museumRouteStart);
-              if (chain) {
-                state.chainId = chain.id;
-                state.trailNodeIds = [];
-                state.trailLinkIds = [];
-                routeSelect.hidden = true;
-                focusNode(chain.startNodeIds[0], { stepped: true });
-              }
-              return;
-            }
-            if (target?.closest("[data-museum-dialogue-back]")) {
-              state.trailNodeIds.pop();
-              state.trailLinkIds.pop();
-              const previous = state.trailNodeIds.at(-1);
-              if (previous) focusNode(previous, { scroll: false }); else exitFocus();
-              playSfx("ui-back");
-              return;
-            }
-            if (target?.closest("[data-museum-dialogue-exit]")) {
-              exitFocus();
-              playSfx("ui-back");
-              return;
-            }
-            if (target?.closest("[data-museum-archive-open]")) {
-              if (state.activeNodeId) renderArchive(state.activeNodeId);
-              return;
-            }
-            if (target?.closest("[data-museum-archive-close]")) {
-              archive?.close();
-              return;
-            }
-            if (target?.closest("[data-museum-sfx-toggle]")) {
-              state.sfxEnabled = !state.sfxEnabled;
-              persistSfx();
-              syncSfxControls();
-              return;
-            }
-            if (target?.closest("[data-museum-mobile-map-open]")) {
-              mobileMap.hidden = false;
-              return;
-            }
-            if (target?.closest("[data-museum-mobile-map-close]")) {
-              mobileMap.hidden = true;
-              return;
-            }
-            if (target?.closest("[data-museum-minimap-collapse]")) {
-              root.classList.toggle("is-minimap-collapsed");
-              return;
-            }
-            if (target?.closest(".museum-route__canvas")) exitFocus();
-          });
-          const previewFromTarget = (target) => {
-            if (!state.activeNodeId) return;
-            const relation = target?.closest("[data-museum-relation-choice]");
-            if (relation) return setPreview(relation.dataset.museumRelationChoice, relation.dataset.museumRelationLink);
-            const node = target?.closest("[data-museum-node]");
-            const related = relatedFor(state.activeNodeId).find((item) => item.targetNodeId === node?.dataset.museumNode);
-            if (related) setPreview(related.targetNodeId, related.id);
-          };
-          root.addEventListener("pointerover", (event) => previewFromTarget(event.target instanceof Element ? event.target : null));
-          root.addEventListener("focusin", (event) => previewFromTarget(event.target instanceof Element ? event.target : null));
-          root.addEventListener("pointerout", (event) => {
-            const target = event.target instanceof Element ? event.target : null;
-            if (target?.closest("[data-museum-relation-choice], [data-museum-node]")) setPreview();
-          });
-          root.addEventListener("focusout", (event) => {
-            const target = event.target instanceof Element ? event.target : null;
-            if (target?.closest("[data-museum-relation-choice], [data-museum-node]")) setPreview();
-          });
-          sfxVolume?.addEventListener("input", () => {
-            state.sfxVolume = Number(sfxVolume.value);
-            persistSfx();
-          });
-          archive?.addEventListener("close", () => {
-            const origin = state.archiveOrigin;
-            state.archiveOrigin = null;
-            if (origin) root.querySelector(`[data-museum-node="${CSS.escape(origin)}"]`)?.focus();
-          });
-          root.addEventListener("keydown", (event) => {
-            if (event.key !== "Escape") return;
-            if (archive instanceof HTMLDialogElement && archive.open) { archive.close(); return; }
-            if (!routeSelect.hidden) { routeSelect.hidden = true; return; }
-            exitFocus();
-          });
-          const observer = new IntersectionObserver((entries) => {
-            const active = entries.filter((entry) => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-            if (!active) return;
-            state.galleryId = active.target.dataset.museumGallery;
-            syncVisuals();
-          }, { rootMargin: "-22% 0px -62% 0px", threshold: [0.02, 0.2, 0.6] });
-          root.querySelectorAll("[data-museum-gallery]").forEach((gallery) => observer.observe(gallery));
-        });
-      };
-      document.addEventListener("astro:page-load", initMuseumRoute);
-      initMuseumRoute();
-    })();
-  </script>
+  <script type="module" src="/galgame-history/app.js"></script>
 </BaseLayout>
