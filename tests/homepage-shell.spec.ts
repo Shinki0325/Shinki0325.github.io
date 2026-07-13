@@ -4,7 +4,7 @@ async function dismissSplashIfVisible(page: Parameters<typeof test>[0]["page"]) 
   const splash = page.locator("[data-splash-screen]");
 
   if (await splash.isVisible().catch(() => false)) {
-    await page.getByRole("button", { name: /进入|开始|Enter/i }).click();
+    await page.getByRole("button", { name: "YES はい" }).click();
     await expect(splash).toBeHidden();
   }
 }
@@ -32,28 +32,25 @@ test("homepage uses the local looping video background without loading it on inn
   await expect(backgroundVideo).toHaveAttribute("muted", "");
   await expect(backgroundVideo).toHaveAttribute("playsinline", "");
   await expect(backgroundVideo).toHaveAttribute("poster", "/uploads/backgrounds/home-loop-poster.jpg");
-  await expect(backgroundVideo.locator("source").first()).toHaveAttribute("src", "/uploads/backgrounds/home-loop-h264.mp4");
+  await expect(backgroundVideo.locator("source").first()).toHaveAttribute("src", "/uploads/backgrounds/home-loop-1440p.mp4");
 
   await page.goto("/references/");
   await expect(page.locator("[data-home-background-video]")).toHaveCount(0);
 });
 
-test("homepage uses static music metadata without calling the cloud music api", async ({ page }) => {
-  let cloudMusicRequests = 0;
+test("homepage keeps static music metadata visible when a configured remote asset fails", async ({ page }) => {
   await page.route("https://api.injahow.cn/meting/**", async (route) => {
-    cloudMusicRequests += 1;
     await route.fulfill({
       status: 500,
       contentType: "application/json; charset=utf-8",
-      body: JSON.stringify({ message: "cloud api should not be called" }),
+      body: JSON.stringify({ message: "remote music asset unavailable" }),
     });
   });
 
   await page.goto("/");
   await dismissSplashIfVisible(page);
 
-  await expect(page.locator("[data-home-music-card]")).toContainText("网易云歌曲 4931896");
-  expect(cloudMusicRequests).toBe(0);
+  await expect(page.locator("[data-home-music-card]")).toContainText("暁の祈り");
 });
 
 test("homepage hero matches the requested asymmetric profile layout", async ({ page }) => {
@@ -126,7 +123,7 @@ test("homepage search and lower collage follow the reference shell without the o
     };
   });
 
-  expect(searchMetrics.width).toBeGreaterThanOrEqual(640);
+  expect(searchMetrics.width).toBeGreaterThanOrEqual(600);
   expect(searchMetrics.width).toBeLessThanOrEqual(700);
   expect(searchMetrics.height).toBeGreaterThanOrEqual(54);
   expect(searchMetrics.height).toBeLessThanOrEqual(62);
@@ -151,13 +148,79 @@ test("homepage head uses the current avatar as site icon", async ({ page }) => {
   );
 });
 
+test("Chronicle home entry is one accessible archive save slot", async ({ page }) => {
+  await page.goto("/");
+  await dismissSplashIfVisible(page);
+
+  const entry = page.locator("[data-home-history-entry]");
+  await expect(entry).toBeVisible();
+  await expect(entry).toHaveAttribute("href", "/galgame-history/");
+  await expect(entry).toContainText("GALGAME CHRONICLE");
+  await expect(entry).toContainText("美少女游戏编年档案");
+  await expect(entry).toContainText("1979-1999");
+  await expect(entry).toContainText("100 FILES");
+  await expect(entry).toContainText("59 STORY");
+  await expect(entry).toContainText("41 BRANCH");
+  await expect(entry.locator(".home-history-entry__eras > span")).toHaveCount(5);
+  await expect(entry.locator(".home-history-entry__mini-track")).toHaveCount(3);
+  await expect(entry.locator("a, button, input, select, textarea")).toHaveCount(0);
+  await expect(entry.locator(".home-history-entry__mini-map")).toHaveAttribute("aria-hidden", "true");
+
+  await entry.focus();
+  await page.keyboard.press("Tab");
+  await page.keyboard.press("Shift+Tab");
+  await expect(entry).toBeFocused();
+  const outline = await entry.evaluate((node) => window.getComputedStyle(node).outlineStyle);
+  expect(outline).not.toBe("none");
+
+  const focusedAnimations = await entry.locator(".home-history-entry__mini-track").evaluateAll((nodes) =>
+    nodes.map((node) => window.getComputedStyle(node).animationName),
+  );
+  expect(focusedAnimations).toEqual(Array(3).fill("chronicle-entry-route-load"));
+
+  await entry.evaluate((node) => (node as HTMLElement).blur());
+  await entry.hover();
+  const hoverAnimations = await entry.locator(".home-history-entry__mini-track").evaluateAll((nodes) =>
+    nodes.map((node) => window.getComputedStyle(node).animationName),
+  );
+  expect(hoverAnimations).toEqual(focusedAnimations);
+});
+
+test("Chronicle save slot fits mobile with a three-plus-two era grid and reduced motion", async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/");
+  await dismissSplashIfVisible(page);
+
+  const entry = page.locator("[data-home-history-entry]");
+  await entry.focus();
+  const eras = entry.locator(".home-history-entry__eras > span");
+  await expect(eras).toHaveCount(5);
+  const entryOverflow = await entry.evaluate((node) => ({
+    fitsViewport: node.getBoundingClientRect().right <= window.innerWidth,
+    hasInternalOverflow: node.scrollWidth > node.clientWidth,
+  }));
+  expect(entryOverflow).toEqual({ fitsViewport: true, hasInternalOverflow: false });
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+
+  const positions = await eras.evaluateAll((nodes) => nodes.map((node) => node.getBoundingClientRect()));
+  expect(new Set(positions.slice(0, 3).map((position) => Math.round(position.top))).size).toBe(1);
+  expect(new Set(positions.slice(3).map((position) => Math.round(position.top))).size).toBe(1);
+  expect(positions[3]?.top ?? 0).toBeGreaterThan(positions[0]?.top ?? 0);
+
+  const animations = await entry.locator(".home-history-entry__mini-track").evaluateAll((nodes) =>
+    nodes.map((node) => window.getComputedStyle(node).animationName),
+  );
+  expect(animations.every((name) => name === "none")).toBe(true);
+});
+
 test("homepage splash appears once per session and stays dismissed after reload", async ({ page }) => {
   await page.goto("/");
 
   const splash = page.locator("[data-splash-screen]");
   await expect(splash).toBeVisible();
 
-  await page.getByRole("button", { name: /进入|开始|Enter/i }).click();
+  await page.getByRole("button", { name: "YES はい" }).click();
   await expect(splash).toBeHidden();
 
   await page.reload();

@@ -37,12 +37,37 @@ describe("site background config", () => {
 });
 
 describe("homepage feature cards", () => {
-  it("places a dedicated history museum entry card above the birthday calendar", async () => {
+  it("renders the Chronicle entry as one authority-backed archive save slot", async () => {
     const source = await import("node:fs/promises").then((fs) => fs.readFile("src/pages/index.astro", "utf8"));
 
+    expect(source).toContain('import { galgameHistoryPreview } from "../data/galgame-history-preview"');
+    expect(source).toContain("const chronicleSummary");
     expect(source).toContain('data-home-history-entry');
+    expect(source).toContain('data-home-chronicle-slot="01"');
     expect(source).toContain('href="/galgame-history/"');
+    expect(source).toContain("GALGAME CHRONICLE");
+    expect(source).toContain("美少女游戏编年档案");
+    expect(source).toContain("LOAD ARCHIVE");
+    expect(source).toContain("chronicleSummary.eras.map");
+    expect(source).toContain("chronicleSummary.publicDossierCount");
+    expect(source).not.toContain("ONLINE MUSEUM");
+    expect(source).not.toContain("1980-1999 Galgame");
     expect(source.indexOf('data-home-history-entry')).toBeLessThan(source.indexOf('data-home-birthday-calendar'));
+  });
+
+  it("uses the current Chronicle public counts and five eras", async () => {
+    const { galgameHistoryPreview } = await import("../src/data/galgame-history-preview");
+    const route = galgameHistoryPreview.museumRoute;
+
+    expect(route.timeDomain).toMatchObject({ startYear: 1979, endYear: 1999 });
+    expect(route.authority).toMatchObject({ publicDossierCount: 100, storyCount: 59, branchCount: 41 });
+    expect(route.galleries.map((gallery) => [gallery.theme, gallery.yearStart, gallery.yearEnd])).toEqual([
+      ["ORIGINS", 1979, 1984],
+      ["FORMATION", 1985, 1988],
+      ["EXPANSION", 1989, 1991],
+      ["TRANSITION", 1992, 1995],
+      ["NARRATIVE", 1996, 1999],
+    ]);
   });
 
   it("turns the featured script card into a cover-pool carousel", async () => {
