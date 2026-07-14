@@ -12,7 +12,7 @@ type Props = {
 };
 
 export default function HomeMusicVolume({ onClose, open, triggerRef }: Props) {
-  const state = useStore(musicState);
+  const state = useStore(musicState, { ssr: "initial" });
   const panelRef = useRef<HTMLElement>(null);
   const sliderRef = useRef<HTMLInputElement>(null);
   useDismissibleMusicPanel({ open, panelRef, triggerRef, onClose });

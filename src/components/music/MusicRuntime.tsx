@@ -56,7 +56,7 @@ function syncAudioElement(audio: HTMLAudioElement | null, state: MusicState) {
 }
 
 export default function MusicRuntime() {
-  const state = useStore(musicState);
+  const state = useStore(musicState, { ssr: "initial" });
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [hasActivatedAudio, setHasActivatedAudio] = useState(false);
   const [preferencesReady, setPreferencesReady] = useState(false);

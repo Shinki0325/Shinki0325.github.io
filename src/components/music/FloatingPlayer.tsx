@@ -47,7 +47,7 @@ function currentPathname() {
 }
 
 export default function FloatingPlayer({ initialPathname }: FloatingPlayerProps) {
-  const state = useStore(musicState);
+  const state = useStore(musicState, { ssr: "initial" });
   const track = state.tracks[state.currentIndex] ?? null;
   const [pathname, setPathname] = useState(() => initialPathname ?? currentPathname());
   const [collapsed, setCollapsed] = useState(false);

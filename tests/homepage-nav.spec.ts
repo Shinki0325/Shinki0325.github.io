@@ -91,6 +91,40 @@ test("desktop command bar hides on downward scroll and keeps only the primary br
   await expect(topNav).not.toHaveClass(/is-hidden/);
 });
 
+test("repeated client navigation hydrates shared music controls without route stalls", async ({ page }) => {
+  test.setTimeout(60_000);
+  const hydrationErrors: string[] = [];
+  const recordHydrationError = (message: string) => {
+    if (/hydration|server-rendered|#(?:418|423|425)/i.test(message)) {
+      hydrationErrors.push(message);
+    }
+  };
+
+  page.on("console", (message) => {
+    if (message.type() === "error") recordHydrationError(message.text());
+  });
+  page.on("pageerror", (error) => recordHydrationError(error.message));
+
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await page.goto("/");
+  await dismissSplashIfVisible(page);
+  await expect(page.locator('[data-utility="music"]')).toBeEnabled();
+
+  for (const href of ["/articles/", "/", "/notes/", "/"]) {
+    await page.locator(`[data-character-rail] a[href="${href}"]`).click();
+    await expect(page).toHaveURL(new RegExp(`${href.replaceAll("/", "\\/")}$`));
+    await expect(page.locator("[data-top-nav]")).toBeVisible();
+  }
+
+  await page.locator("[data-home-history-entry]").click();
+  await expect(page).toHaveURL(/\/galgame-history\/$/);
+  await page.locator('[data-character-rail] a[href="/"]').click();
+  await expect(page).toHaveURL(/\/$/);
+  await expect(page.locator("[data-home-history-entry]")).toBeVisible();
+
+  expect(hydrationErrors).toEqual([]);
+});
+
 test("mobile homepage exposes the radial menu trigger and opens the overlay", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/");

@@ -12,7 +12,7 @@ type Props = {
 };
 
 export default function HomeMusicPlaylist({ onClose, open, triggerRef }: Props) {
-  const state = useStore(musicState);
+  const state = useStore(musicState, { ssr: "initial" });
   const panelRef = useRef<HTMLElement>(null);
   const activeRowRef = useRef<HTMLButtonElement>(null);
   useDismissibleMusicPanel({ open, panelRef, triggerRef, onClose });

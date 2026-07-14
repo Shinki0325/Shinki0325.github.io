@@ -25,7 +25,7 @@ import {
 } from "./store";
 
 export default function HomeMusicCard() {
-  const state = useStore(musicState);
+  const state = useStore(musicState, { ssr: "initial" });
   const [activePanel, setActivePanel] = useState<"playlist" | "volume" | null>(null);
   const playlistTriggerRef = useRef<HTMLButtonElement>(null);
   const volumeTriggerRef = useRef<HTMLButtonElement>(null);

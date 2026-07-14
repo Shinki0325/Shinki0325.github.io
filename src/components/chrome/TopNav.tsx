@@ -30,7 +30,7 @@ export default function TopNav({ currentPath, searchItems, searchPlaceholder }: 
   const [railOpen, setRailOpen] = useState(true);
   const [hidden, setHidden] = useState(false);
   const lastY = useRef(0);
-  const music = useStore(musicState);
+  const music = useStore(musicState, { ssr: "initial" });
 
   useEffect(() => {
     let storedValue: string | null = null;

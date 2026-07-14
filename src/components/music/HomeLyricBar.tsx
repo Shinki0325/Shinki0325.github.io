@@ -5,7 +5,7 @@ import { musicState } from "./store";
 const WAVE_DELAYS = ["0ms", "160ms", "320ms", "120ms", "240ms"];
 
 export default function HomeLyricBar() {
-  const state = useStore(musicState);
+  const state = useStore(musicState, { ssr: "initial" });
 
   return (
     <section className="home-lyric-bar" data-home-lyric-bar>

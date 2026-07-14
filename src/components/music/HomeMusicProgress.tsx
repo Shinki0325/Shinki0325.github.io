@@ -23,7 +23,7 @@ const formatTime = (value: number) => {
 };
 
 export default function HomeMusicProgress() {
-  const state = useStore(musicState);
+  const state = useStore(musicState, { ssr: "initial" });
   const [draftTime, setDraftTime] = useState<number | null>(null);
   const draftRef = useRef<number | null>(null);
   const duration = Number.isFinite(state.duration) ? Math.max(0, state.duration) : 0;
