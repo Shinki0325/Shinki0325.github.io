@@ -335,6 +335,11 @@ button:disabled,
   box-shadow: 0 12px 30px rgba(2, 6, 23, 0.34);
   backdrop-filter: blur(22px);
   -webkit-backdrop-filter: blur(22px);
+  transition: transform 240ms ease;
+}
+
+.top-nav-shell.is-hidden {
+  transform: translateY(-120%);
 }
 
 .top-nav-inner {

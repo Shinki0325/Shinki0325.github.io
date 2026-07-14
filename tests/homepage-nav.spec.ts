@@ -75,6 +75,22 @@ test("desktop command search opens real indexed results", async ({ page }) => {
   await expect(search.locator(".home-search-result").first()).toContainText("E-LOGIN");
 });
 
+test("desktop command bar hides on downward scroll and keeps only the primary brand", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await page.goto("/");
+  await dismissSplashIfVisible(page);
+
+  const topNav = page.locator("[data-top-nav]");
+  await expect(topNav).not.toContainText("SAKURA");
+  await expect(topNav).toContainText("ARCHIVE");
+
+  await page.evaluate(() => window.scrollTo({ top: 900, behavior: "instant" }));
+  await expect(topNav).toHaveClass(/is-hidden/);
+
+  await page.evaluate(() => window.scrollTo({ top: 0, behavior: "instant" }));
+  await expect(topNav).not.toHaveClass(/is-hidden/);
+});
+
 test("mobile homepage exposes the radial menu trigger and opens the overlay", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/");

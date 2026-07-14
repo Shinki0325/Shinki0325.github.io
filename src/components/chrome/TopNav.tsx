@@ -1,6 +1,6 @@
 import { useStore } from "@nanostores/react";
 import { Music2, PanelLeftClose, PanelLeftOpen, Palette } from "lucide-react";
-import { useEffect, useState, type CSSProperties } from "react";
+import { useEffect, useRef, useState, type CSSProperties } from "react";
 import { siteShell } from "../../config/site-shell";
 import { musicState, setPlayback } from "../music/store";
 import HomeSearchBar, { type HomeSearchItem } from "./HomeSearchBar";
@@ -28,26 +28,48 @@ type Props = {
 export default function TopNav({ currentPath, searchItems, searchPlaceholder }: Props) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [railOpen, setRailOpen] = useState(true);
+  const [hidden, setHidden] = useState(false);
+  const lastY = useRef(0);
   const music = useStore(musicState);
 
   useEffect(() => {
-    const storedValue = window.localStorage.getItem(RAIL_STORAGE_KEY);
+    let storedValue: string | null = null;
+    try {
+      storedValue = window.localStorage.getItem(RAIL_STORAGE_KEY);
+    } catch {
+      storedValue = null;
+    }
     if (storedValue === "true" || storedValue === "false") {
       setRailOpen(storedValue === "true");
     }
   }, []);
 
+  useEffect(() => {
+    const onScroll = () => {
+      const nextY = window.scrollY;
+      setHidden(nextY > lastY.current && nextY > 80);
+      lastY.current = nextY;
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   const toggleRail = () => {
     setRailOpen((current) => {
       const next = !current;
-      window.localStorage.setItem(RAIL_STORAGE_KEY, String(next));
+      try {
+        window.localStorage.setItem(RAIL_STORAGE_KEY, String(next));
+      } catch {
+        // Rail toggling remains available when storage is blocked.
+      }
       return next;
     });
   };
 
   return (
     <>
-      <header className="top-nav-shell" data-rail-open={railOpen} data-top-nav>
+      <header className={`top-nav-shell${hidden ? " is-hidden" : ""}`} data-rail-open={railOpen} data-top-nav>
         <div className="top-nav-inner">
           <div className="top-nav-left">
             <button
@@ -66,7 +88,7 @@ export default function TopNav({ currentPath, searchItems, searchPlaceholder }: 
             </button>
             <a aria-label="首页" className="top-nav-wordmark" href="/">
               <strong>SHINKI</strong>
-              <span>SAKURA ARCHIVE</span>
+              <span>ARCHIVE</span>
             </a>
           </div>
 
