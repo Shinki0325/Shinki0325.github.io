@@ -1,5 +1,4 @@
 ---
-import HomeSearchBar from "../components/chrome/HomeSearchBar";
 import CharacterBirthdayCalendar from "../components/birthdays/CharacterBirthdayCalendar";
 import HomeLyricBar from "../components/music/HomeLyricBar";
 import HomeMusicCard from "../components/music/HomeMusicCard";
@@ -8,7 +7,6 @@ import { siteShell } from "../config/site-shell";
 import { birthdayWorks, characterBirthdays } from "../data/character-birthdays";
 import { galgameHistoryPreview } from "../data/galgame-history-preview";
 import { getArticleOverviewCovers } from "../lib/archive-covers";
-import { buildHomeSearchIndex } from "../lib/home-shell";
 import {
   getPublishedAlbums,
   getPublishedArticles,
@@ -58,7 +56,6 @@ const scriptCarouselSlides = Array.from({ length: scriptSlideCount }, (_, index)
 const firstScriptSlide = scriptCarouselSlides[0];
 const featuredReference = references[0] ?? null;
 const latestNote = notes[0] ?? null;
-const searchItems = buildHomeSearchIndex({ articles, albums, notes, references });
 const githubHref = siteShell.social?.github ?? "";
 const bilibiliHref = siteShell.social?.bilibili ?? "";
 const normalizeSocialHref = (value: string | undefined, kind: "email" | "url") => {
@@ -170,8 +167,6 @@ const chronicleMiniTracks = [
 ---
 
 <BaseLayout>
-  <HomeSearchBar client:load items={searchItems} placeholder={siteShell.search?.placeholder ?? "搜索站内内容..."} />
-
   <section class="home-hero-shell" data-home-hero>
     <div class="home-hero-grid">
       <article class="home-profile-card glass-card" data-home-profile-card>

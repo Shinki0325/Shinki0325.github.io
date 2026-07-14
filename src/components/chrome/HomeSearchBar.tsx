@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 
-type SearchItem = {
+export type HomeSearchItem = {
   title: string;
   summary: string;
   tags: string[];
@@ -37,7 +37,7 @@ export default function HomeSearchBar({
   items,
   placeholder,
 }: {
-  items: SearchItem[];
+  items: HomeSearchItem[];
   placeholder: string;
 }) {
   const [query, setQuery] = useState("");

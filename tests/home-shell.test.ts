@@ -21,6 +21,29 @@ describe("site shell config", () => {
     expect(siteShell.announcements.length).toBeGreaterThan(0);
     expect(siteShell.homeBackground.videoSrc).toBe("/uploads/backgrounds/home-loop-1440p.mp4");
   });
+
+  it("mounts the shared search and six-slot character rail in the production shell", async () => {
+    const fs = await import("node:fs/promises");
+    const [layoutSource, homeSource, navSource, styleSource] = await Promise.all([
+      fs.readFile("src/layouts/BaseLayout.astro", "utf8"),
+      fs.readFile("src/pages/index.astro", "utf8"),
+      fs.readFile("src/components/chrome/TopNav.tsx", "utf8"),
+      fs.readFile("src/styles/global.css", "utf8"),
+    ]);
+
+    expect(layoutSource).toContain("buildHomeSearchIndex");
+    expect(layoutSource).toContain("searchItems={searchItems}");
+    expect(navSource).toContain("HomeSearchBar");
+    expect(navSource).toContain("blog-shell-character-rail-open");
+    expect(navSource).toContain("data-character-rail");
+    expect(navSource.match(/character-[1-6]\.webp/g)).toHaveLength(6);
+    expect(homeSource).not.toContain("<HomeSearchBar");
+    expect(homeSource).not.toContain("buildHomeSearchIndex");
+    expect(styleSource).toContain("height: 72px");
+    expect(styleSource).toContain("top: 88px");
+    expect(styleSource).toContain("width: 112px");
+    expect(styleSource).toContain("height: 74px");
+  });
 });
 
 describe("site background config", () => {

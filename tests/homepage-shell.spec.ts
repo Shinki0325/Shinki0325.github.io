@@ -123,12 +123,11 @@ test("homepage search and lower collage follow the reference shell without the o
     };
   });
 
-  expect(searchMetrics.width).toBeGreaterThanOrEqual(600);
-  expect(searchMetrics.width).toBeLessThanOrEqual(700);
-  expect(searchMetrics.height).toBeGreaterThanOrEqual(54);
-  expect(searchMetrics.height).toBeLessThanOrEqual(62);
-  expect(searchMetrics.radius).toBeGreaterThanOrEqual(26);
-  expect(searchMetrics.background).toContain("linear-gradient");
+  expect(searchMetrics.width).toBeGreaterThanOrEqual(240);
+  expect(searchMetrics.width).toBeLessThanOrEqual(684);
+  expect(searchMetrics.height).toBe(44);
+  expect(searchMetrics.radius).toBeLessThanOrEqual(7);
+  expect(searchMetrics.background).toBe("none");
   await expect(page.locator(".home-status-strip")).toHaveCount(0);
   await expect(page.locator("[data-home-reference-card]")).toBeVisible();
   await expect(page.locator("[data-home-reference-card]")).toContainText("运行回廊");

@@ -10,6 +10,13 @@ import { buildAppearanceStyle, siteAppearance } from "../config/site-appearance"
 import TopNav from "../components/chrome/TopNav";
 import { siteShell } from "../config/site-shell";
 import { siteDescription, siteTitle } from "../data/site";
+import { buildHomeSearchIndex } from "../lib/home-shell";
+import {
+  getPublishedAlbums,
+  getPublishedArticles,
+  getPublishedNotes,
+  getPublishedReferences,
+} from "../lib/public-content";
 
 interface Props {
   title?: string;
@@ -24,6 +31,13 @@ const {
 } = Astro.props;
 const siteIcon = siteShell.profile?.avatarUrl ?? "https://s1.ax1x.com/2023/07/28/pCx6j3R.jpg";
 const appearanceStyle = buildAppearanceStyle(siteAppearance);
+const [articles, albums, notes, references] = await Promise.all([
+  getPublishedArticles(),
+  getPublishedAlbums(),
+  getPublishedNotes(),
+  getPublishedReferences(),
+]);
+const searchItems = buildHomeSearchIndex({ articles, albums, notes, references });
 ---
 
 <!doctype html>
@@ -45,7 +59,12 @@ const appearanceStyle = buildAppearanceStyle(siteAppearance);
   </head>
   <body style={appearanceStyle}>
     <SiteBackground currentPath={currentPath} />
-    <TopNav client:load currentPath={currentPath} />
+    <TopNav
+      client:load
+      currentPath={currentPath}
+      searchItems={searchItems}
+      searchPlaceholder={siteShell.search?.placeholder ?? "搜索站内内容..."}
+    />
     <div transition:persist="global-music-runtime">
       <MusicRuntime client:load />
     </div>
