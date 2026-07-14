@@ -1,5 +1,5 @@
 ---
-import CharacterBirthdayCalendar from "../components/birthdays/CharacterBirthdayCalendar";
+import CharacterArchiveTerminal from "../components/characters/CharacterArchiveTerminal";
 import HomeLyricBar from "../components/music/HomeLyricBar";
 import HomeMusicCard from "../components/music/HomeMusicCard";
 import { siteAppearance, type SiteAppearancePreviewCard } from "../config/site-appearance";
@@ -309,8 +309,8 @@ const chronicleMiniTracks = [
       </span>
     </a>
 
-    <div class="home-feature-card--calendar" data-home-birthday-calendar>
-      <CharacterBirthdayCalendar
+    <div class="home-feature-card--calendar" data-home-birthday-calendar data-home-character-archive>
+      <CharacterArchiveTerminal
         characters={characterBirthdays}
         client:only="react"
         works={birthdayWorks}

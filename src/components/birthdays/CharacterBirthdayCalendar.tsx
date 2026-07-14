@@ -1,5 +1,6 @@
 import { ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
 import { useMemo, useState, type CSSProperties } from "react";
+import { createPortal } from "react-dom";
 import {
   getAdjacentCalendarMonth,
   getCalendarMonth,
@@ -19,7 +20,10 @@ import {
 import "./character-birthday-calendar.css";
 
 type Props = {
+  active?: boolean;
   characters: CharacterBirthday[];
+  controlsHost?: HTMLElement | null;
+  embedded?: boolean;
   works: BirthdayWork[];
 };
 
@@ -40,7 +44,13 @@ const formatMonth = (year: number, month: number) =>
 const formatSelectedDate = ({ year, month, day }: BirthdayConstellationDate) =>
   `${year}.${month.toString().padStart(2, "0")}.${day.toString().padStart(2, "0")}`;
 
-export default function CharacterBirthdayCalendar({ characters, works }: Props) {
+export default function CharacterBirthdayCalendar({
+  active = true,
+  characters,
+  controlsHost = null,
+  embedded = false,
+  works,
+}: Props) {
   const today = useMemo(() => getToday(), []);
   const [visibleMonth, setVisibleMonth] = useState(() => ({
     year: today.year,
@@ -99,6 +109,18 @@ export default function CharacterBirthdayCalendar({ characters, works }: Props) 
     );
   };
 
+  const monthControl = (
+    <div className="birthday-constellation__month-control" aria-label="月份切换">
+      <button aria-label="上个月" onClick={() => goToMonth(-1)} type="button">
+        <ChevronLeft aria-hidden="true" size={16} strokeWidth={1.8} />
+      </button>
+      <span data-birthday-month>{formatMonth(calendar.year, calendar.month)}</span>
+      <button aria-label="下个月" onClick={() => goToMonth(1)} type="button">
+        <ChevronRight aria-hidden="true" size={16} strokeWidth={1.8} />
+      </button>
+    </div>
+  );
+
   const renderPortrait = (character: CharacterBirthday, kind: "primary" | "support") => {
     const work = workById.get(character.workId);
     const workTitle = work?.localizedTitle ?? work?.title ?? character.workId;
@@ -128,24 +150,26 @@ export default function CharacterBirthdayCalendar({ characters, works }: Props) 
   return (
     <section
       aria-label="角色生日星图"
-      className="birthday-constellation"
+      className={[
+        "birthday-constellation",
+        embedded ? "birthday-constellation--embedded" : "",
+      ]
+        .filter(Boolean)
+        .join(" ")}
       data-theme="starmap"
     >
-      <header className="birthday-constellation__header">
-        <div className="birthday-constellation__title">
-          <h2>角色生日星图</h2>
-        </div>
-
-        <div className="birthday-constellation__month-control" aria-label="月份切换">
-          <button aria-label="上个月" onClick={() => goToMonth(-1)} type="button">
-            <ChevronLeft aria-hidden="true" size={16} strokeWidth={1.8} />
-          </button>
-          <span data-birthday-month>{formatMonth(calendar.year, calendar.month)}</span>
-          <button aria-label="下个月" onClick={() => goToMonth(1)} type="button">
-            <ChevronRight aria-hidden="true" size={16} strokeWidth={1.8} />
-          </button>
-        </div>
-      </header>
+      {embedded && controlsHost && active
+        ? createPortal(monthControl, controlsHost)
+        : !embedded
+          ? (
+              <header className="birthday-constellation__header">
+                <div className="birthday-constellation__title">
+                  <h2>角色生日星图</h2>
+                </div>
+                {monthControl}
+              </header>
+            )
+          : null}
 
       <div className="birthday-constellation__body">
         <div className="birthday-constellation__stage">

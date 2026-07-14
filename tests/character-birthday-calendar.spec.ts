@@ -19,7 +19,10 @@ async function openCalendar(page: Parameters<typeof test>[0]["page"], width = 14
 test("birthday constellation uses the approved fixed simplified shell", async ({ page }) => {
   const calendar = await openCalendar(page);
 
-  await expect(calendar.getByRole("heading", { name: "角色生日星图", exact: true })).toBeVisible();
+  await expect(calendar.getByRole("tab", { name: "角色生日星图", exact: true })).toHaveAttribute(
+    "aria-selected",
+    "true",
+  );
   await expect(calendar.getByText(
     /MONTH ROUTE|CHARACTER BIRTHDAY|BIRTHDAY FILE|ARCHIVE STATUS|W1|W2|章节路线|星图事件|TODAY/,
   )).toHaveCount(0);
@@ -28,10 +31,7 @@ test("birthday constellation uses the approved fixed simplified shell", async ({
   await expect(calendar.locator("[data-birthday-month]")).toHaveText("2026.07");
   await expect(calendar.locator("[data-selected-birthday-date]")).toHaveText("2026.07.14");
   await expect(calendar.locator('[data-birthday-node="14"]')).toHaveAttribute("aria-pressed", "true");
-  await expect(calendar.getByRole("heading", { name: "角色生日星图" })).toHaveCSS(
-    "font-family",
-    /Noto Sans SC.*Microsoft YaHei.*sans-serif/,
-  );
+  await expect(calendar.getByRole("heading", { name: "角色生日星图" })).toHaveCount(0);
 });
 
 test("birthday nodes select a date and expose every related portrait", async ({ page }) => {
@@ -52,7 +52,11 @@ test("birthday nodes preserve the approved reference geometry", async ({ page })
   const emptyNode = calendar.locator('[data-birthday-node="2"]');
   const primaryPortrait = birthdayNode.locator("[data-primary-portrait]");
 
-  await expect(console).toHaveCSS("border-top-left-radius", "6px");
+  await expect(calendar.locator("[data-character-archive]")).toHaveCSS(
+    "border-top-left-radius",
+    "5px",
+  );
+  await expect(console).toHaveCSS("border-top-left-radius", "0px");
   await expect(birthdayNode).toHaveCSS("width", "48px");
   await expect(birthdayNode).toHaveCSS("height", "48px");
   await expect(emptyNode).toHaveCSS("width", "7px");
