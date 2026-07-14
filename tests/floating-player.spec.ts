@@ -57,6 +57,13 @@ async function dismissSplash(page: Parameters<typeof test>[0]["page"]) {
 
 test("global player keeps playback across navigation and appears on inner pages", async ({ page }) => {
   await stubMediaPlayback(page);
+  await page.addInitScript((key) => {
+    Math.random = () => 0;
+    window.localStorage.setItem(
+      key,
+      JSON.stringify({ volume: 0.42, muted: false, playbackMode: "shuffle" }),
+    );
+  }, "blog:music-preferences:v1");
 
   await page.goto("/");
   await dismissSplash(page);
@@ -67,7 +74,7 @@ test("global player keeps playback across navigation and appears on inner pages"
   expect(homeTrackTitle).not.toBe("");
   expect(homeTrackArtist).not.toBe("");
 
-  await page.locator("[data-home-music-card]").getByRole("button", { name: /play|播放/i }).click();
+  await page.locator("[data-home-music-toggle]").click();
   await expect(page.locator("[data-global-music-audio]")).toHaveAttribute("data-playing", "true");
 
   await page.locator('a[href="/references/"]').first().click();
@@ -79,9 +86,17 @@ test("global player keeps playback across navigation and appears on inner pages"
   await expect(floatingPlayer).toContainText(homeTrackTitle);
   await expect(floatingPlayer).toContainText(homeTrackArtist);
   await expect(page.locator("[data-global-music-audio]")).toHaveAttribute("data-playing", "true");
+  await expect(page.locator("[data-global-music-audio]")).toHaveAttribute(
+    "data-playback-mode",
+    "shuffle",
+  );
+  await expect(page.locator("[data-global-music-audio]")).toHaveAttribute("data-volume", "0.42");
+  expect(await floatingPlayer.locator("[data-home-music-mode]").count()).toBe(0);
+  expect(await floatingPlayer.locator("[data-home-music-volume-trigger]").count()).toBe(0);
 
-  await floatingPlayer.getByRole("button", { name: "下一首" }).click();
+  await floatingPlayer.locator(".floating-player__controls > button").last().click();
   await expect(page.locator("[data-global-music-audio]")).toHaveAttribute("data-playing", "true");
+  await expect(floatingPlayer.locator("[data-floating-player-title]")).toHaveText("get the regret over");
 
   await floatingPlayer.locator("[data-floating-player-collapse]").click();
   await expect(floatingPlayer).toHaveAttribute("data-floating-player-collapsed", "true");

@@ -2,7 +2,7 @@ import { useStore } from "@nanostores/react";
 import { useEffect, useRef, useState } from "react";
 import { siteShell } from "../../config/site-shell";
 import LyricLines from "./LyricLines";
-import { musicState, setCurrentTrack, setPlayback } from "./store";
+import { musicState, nextTrack, previousTrack, setPlayback } from "./store";
 
 const ROUTE_EVENTS = ["astro:page-load", "astro:after-swap", "popstate", "hashchange"] as const;
 const FLOATING_PLAYER_COLLAPSED_KEY = "blog:floating-player-collapsed";
@@ -159,7 +159,7 @@ export default function FloatingPlayer({ initialPathname }: FloatingPlayerProps)
                 aria-label="上一首"
                 className="floating-player__button"
                 disabled={state.tracks.length < 2}
-                onClick={() => setCurrentTrack(state.currentIndex - 1)}
+                onClick={previousTrack}
                 type="button"
               >
                 <svg fill="currentColor" viewBox="0 0 24 24">
@@ -190,7 +190,7 @@ export default function FloatingPlayer({ initialPathname }: FloatingPlayerProps)
                 aria-label="下一首"
                 className="floating-player__button"
                 disabled={state.tracks.length < 2}
-                onClick={() => setCurrentTrack(state.currentIndex + 1)}
+                onClick={() => nextTrack()}
                 type="button"
               >
                 <svg fill="currentColor" viewBox="0 0 24 24">

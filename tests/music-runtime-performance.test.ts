@@ -8,6 +8,11 @@ describe("music runtime performance", () => {
 
     expect(source).toContain("hasActivatedAudio");
     expect(source).toContain("state.isPlaying");
+    expect(source).toContain("audio.volume =");
+    expect(source).toContain("audio.muted = state.muted");
+    expect(source).toContain("audio.currentTime = state.seekTarget");
+    expect(source).toContain("seekTarget: null");
+    expect(source).toContain("nextTrack();");
     expect(source).not.toContain('preload="auto"');
     expect(source).not.toContain("data-next-music-audio");
   });
