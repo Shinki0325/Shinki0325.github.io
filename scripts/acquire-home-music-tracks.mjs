@@ -19,6 +19,9 @@ export const REQUESTED_IDS = [
 const metadataUrl = (id) =>
   `https://api.injahow.cn/meting/?server=netease&type=song&id=${encodeURIComponent(id)}&r=format=json`;
 
+const publicAudioUrl = (id) =>
+  `https://music.163.com/song/media/outer/url?id=${encodeURIComponent(id)}.mp3`;
+
 async function fetchRequired(fetchImpl, url, kind) {
   const response = await fetchImpl(url, {
     headers: { "user-agent": "Maki Archive music asset builder" },
@@ -51,7 +54,7 @@ export async function acquireTracks({
   for (const id of REQUESTED_IDS) {
     const payload = await (await fetchRequired(fetchImpl, metadataUrl(id), "metadata")).json();
     const metadata = Array.isArray(payload) ? payload[0] : payload;
-    if (!metadata?.name || !metadata?.artist || !metadata?.url || !metadata?.pic || !metadata?.lrc) {
+    if (!metadata?.name || !metadata?.artist || !metadata?.pic || !metadata?.lrc) {
       throw new Error(`Incomplete metadata for NetEase song ${id}`);
     }
 
@@ -71,7 +74,7 @@ export async function acquireTracks({
       title: String(metadata.name).trim(),
       artist: String(metadata.artist).trim(),
       coverUrl: `/uploads/music/covers/${id}.jpg`,
-      audioUrl: String(metadata.url),
+      audioUrl: publicAudioUrl(id),
       lrc: lyric.replace(/\r\n/g, "\n").trimEnd(),
       duration: null,
       album: metadata.album ? String(metadata.album).trim() : null,

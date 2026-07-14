@@ -64,5 +64,8 @@ it("appends the requested IDs once in approved order and localizes their data", 
   expect(result.music.tracks.at(-1)?.coverUrl).toBe(
     "/uploads/music/covers/2052322513.jpg",
   );
+  expect(result.music.tracks.at(-1)?.audioUrl).toBe(
+    "https://music.163.com/song/media/outer/url?id=2052322513.mp3",
+  );
   expect(result.music.tracks.at(-1)?.lrc).toContain("[00:01.00]");
 });

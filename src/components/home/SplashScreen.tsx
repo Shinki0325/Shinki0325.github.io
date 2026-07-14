@@ -7,7 +7,12 @@ export default function SplashScreen() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const dismissed = window.sessionStorage.getItem(STORAGE_KEY) === "true";
+    let dismissed = false;
+    try {
+      dismissed = window.sessionStorage.getItem(STORAGE_KEY) === "true";
+    } catch {
+      dismissed = false;
+    }
     setIsVisible(!dismissed);
     setIsReady(true);
   }, []);
@@ -29,7 +34,11 @@ export default function SplashScreen() {
   }
 
   const enterSite = () => {
-    window.sessionStorage.setItem(STORAGE_KEY, "true");
+    try {
+      window.sessionStorage.setItem(STORAGE_KEY, "true");
+    } catch {
+      // Session persistence is optional; entering the site still works.
+    }
     setIsVisible(false);
   };
 
