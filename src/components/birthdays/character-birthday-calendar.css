@@ -1,430 +1,643 @@
-.birthday-calendar {
+.birthday-constellation {
+  --route-background: var(--panel-strong);
+  --route-foreground: var(--text-main);
+  --route-card: var(--panel);
+  --route-muted-base: color-mix(in srgb, var(--panel-strong) 76%, #263248 24%);
+  --route-muted-foreground: var(--text-muted);
+  --route-border-base: var(--line-strong);
+  --route-accent-base: var(--accent-soft);
+  --route-viz-1: #77d9e7;
+  --route-viz-2: var(--accent-strong);
+  --route-viz-3: var(--accent);
+  --route-viz-5: #ed8ea9;
+  --route-viz-6: #88c7ca;
+  --route-surface: color-mix(in srgb, var(--route-background) 84%, var(--route-viz-3) 16%);
+  --route-surface-strong: color-mix(in srgb, var(--route-background) 90%, var(--route-viz-1) 10%);
+  --route-line: color-mix(in srgb, var(--route-viz-1) 82%, var(--route-foreground) 18%);
+  --route-glow: color-mix(in srgb, var(--route-viz-1) 46%, transparent);
+  --route-today: color-mix(in srgb, var(--route-viz-1) 78%, var(--route-foreground) 22%);
+  --route-selected: color-mix(in srgb, var(--route-viz-2) 76%, var(--route-viz-3) 24%);
+  --route-alert: color-mix(in srgb, var(--route-viz-5) 78%, var(--route-foreground) 22%);
+  --route-muted: color-mix(in srgb, var(--route-muted-foreground) 82%, var(--route-foreground) 18%);
+  --route-border: color-mix(in srgb, var(--route-border-base) 74%, var(--route-foreground) 16%);
+  --archive-band: color-mix(in srgb, var(--panel-strong) 92%, #17233f 8%);
+  --archive-band-text: var(--text-main);
+  --route-paper: color-mix(in srgb, var(--route-background) 88%, var(--route-viz-3) 12%);
+  --dossier-paper: color-mix(in srgb, var(--route-background) 92%, var(--route-viz-1) 8%);
   position: relative;
-  overflow: visible;
-  padding: clamp(18px, 3vw, 28px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 30px;
-  background:
-    radial-gradient(circle at 12% 0%, rgba(255, 255, 255, 0.18), transparent 32%),
-    linear-gradient(135deg, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.09));
-  box-shadow: 0 24px 72px rgba(2, 6, 23, 0.34);
-  backdrop-filter: blur(22px);
-  -webkit-backdrop-filter: blur(22px);
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid var(--route-border);
+  border-radius: 6px;
+  color: var(--route-foreground);
+  background: var(--route-surface);
+  box-shadow: 0 20px 52px color-mix(in srgb, var(--route-foreground) 14%, transparent);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
-.birthday-calendar__header {
+.birthday-constellation::before,
+.birthday-constellation::after {
+  position: absolute;
+  z-index: 0;
+  content: "";
+  pointer-events: none;
+}
+
+.birthday-constellation::before {
+  inset: 0;
+  background-image:
+    radial-gradient(circle, color-mix(in srgb, var(--route-foreground) 38%, transparent) 0 1px, transparent 1.5px),
+    linear-gradient(90deg, color-mix(in srgb, var(--route-foreground) 3%, transparent) 1px, transparent 1px),
+    linear-gradient(color-mix(in srgb, var(--route-foreground) 3%, transparent) 1px, transparent 1px);
+  background-position: 7px 11px, 0 0, 0 0;
+  background-size: 47px 43px, 48px 48px, 48px 48px;
+  opacity: 0.22;
+}
+
+.birthday-constellation::after {
+  inset: 0 auto 0 0;
+  width: 5px;
+  background: linear-gradient(to bottom, var(--route-alert), var(--route-selected) 46%, var(--route-today));
+  box-shadow: 0 0 18px color-mix(in srgb, var(--route-selected) 34%, transparent);
+}
+
+.birthday-constellation button {
+  font: inherit;
+}
+
+.birthday-constellation__header {
+  position: relative;
+  z-index: 2;
   display: grid;
-  grid-template-columns: minmax(0, auto) minmax(220px, 1fr) auto;
-  align-items: flex-end;
-  gap: 18px;
-  margin-bottom: 18px;
-}
-
-.birthday-calendar__eyebrow {
-  margin: 0 0 4px;
-  color: rgba(226, 232, 240, 0.72);
-  font-family: "Georgia", "Times New Roman", serif;
-  font-size: 0.76rem;
-  font-style: italic;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.birthday-calendar h1 {
-  margin: 0;
-  color: #fff;
-  font-size: clamp(1.85rem, 5vw, 3.25rem);
-  letter-spacing: -0.05em;
-  line-height: 1;
-}
-
-.birthday-calendar__stats {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  gap: 16px;
-  padding-bottom: 5px;
-  color: rgba(226, 232, 240, 0.72);
-}
-
-.birthday-calendar__stats span {
-  display: inline-flex;
-  align-items: baseline;
-  gap: 5px;
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  white-space: nowrap;
-}
-
-.birthday-calendar__stats span + span {
-  padding-left: 16px;
-  border-left: 1px solid rgba(226, 232, 240, 0.22);
-}
-
-.birthday-calendar__stats strong {
-  color: #fff;
-  font-size: clamp(1.25rem, 2.4vw, 1.78rem);
-  line-height: 0.9;
-  letter-spacing: -0.05em;
-  text-shadow: 0 0 20px rgba(255, 255, 255, 0.12);
-}
-
-.birthday-calendar__controls {
-  display: flex;
+  grid-template-columns: minmax(160px, 1fr) auto;
   align-items: center;
-  justify-content: flex-end;
-  gap: 8px;
-  flex-wrap: wrap;
+  gap: 14px;
+  padding: 14px 16px 13px 20px;
+  border-bottom: 3px solid var(--route-selected);
+  color: var(--archive-band-text);
+  background: var(--archive-band);
+  box-shadow: inset 0 -1px 0 color-mix(in srgb, var(--archive-band-text) 24%, transparent);
 }
 
-.birthday-calendar__controls button {
-  min-height: 36px;
-  padding: 0 14px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 999px;
-  color: rgba(248, 251, 255, 0.9);
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 10px 24px rgba(2, 6, 23, 0.16);
-  transition:
-    transform 160ms ease,
-    background 160ms ease,
-    border-color 160ms ease;
+.birthday-constellation__title {
+  min-width: 0;
 }
 
-.birthday-calendar__controls button:hover {
-  transform: translateY(-1px);
-  border-color: rgba(255, 255, 255, 0.34);
-  background: rgba(255, 255, 255, 0.18);
+.birthday-constellation__title h2 {
+  margin: 0;
+  color: inherit;
+  font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 1.22rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.2;
 }
 
-.birthday-calendar__controls .is-today {
-  color: #14213a;
-  background: rgba(255, 255, 255, 0.84);
+.birthday-constellation__month-control {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px;
+  border: 1px solid color-mix(in srgb, var(--archive-band-text) 28%, transparent);
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--archive-band-text) 7%, transparent);
 }
 
-.birthday-calendar__weekdays,
-.birthday-calendar__grid {
+.birthday-constellation__month-control button {
   display: grid;
-  grid-template-columns: repeat(7, minmax(0, 1fr));
+  width: 31px;
+  min-height: 31px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  color: color-mix(in srgb, var(--archive-band-text) 70%, transparent);
+  background: transparent;
+  clip-path: polygon(0 0, calc(100% - 5px) 0, 100% 5px, 100% 100%, 0 100%);
+  cursor: pointer;
+  place-items: center;
 }
 
-.birthday-calendar__weekdays {
-  gap: 8px;
-  margin-bottom: 8px;
-  color: rgba(226, 232, 240, 0.66);
+.birthday-constellation__month-control button:hover,
+.birthday-constellation__month-control button:focus-visible {
+  color: var(--archive-band-text);
+  background: color-mix(in srgb, var(--archive-band-text) 15%, transparent);
+  outline: none;
+}
+
+.birthday-constellation__month-control span {
+  min-width: 68px;
+  color: var(--archive-band-text);
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
   font-size: 0.78rem;
-  font-weight: 800;
+  font-weight: 500;
+  letter-spacing: 0;
   text-align: center;
 }
 
-.birthday-calendar__grid {
-  gap: 8px;
-}
-
-.birthday-calendar__day {
+.birthday-constellation__body {
   position: relative;
-  min-height: clamp(78px, 8vw, 112px);
-  overflow: visible;
-  padding: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 20px;
-  background: rgba(8, 15, 34, 0.34);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(220px, 3fr);
+  min-height: 430px;
 }
 
-.birthday-calendar__day time {
+.birthday-constellation__stage {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  border-right: 1px solid var(--route-border);
+  background: var(--route-paper);
+}
+
+.birthday-constellation__route,
+.birthday-constellation__node-layer {
+  position: absolute;
+  inset: 12px 10px;
+  width: calc(100% - 20px);
+  height: calc(100% - 24px);
+}
+
+.birthday-constellation__route {
+  overflow: visible;
+}
+
+.birthday-constellation__route text {
+  fill: var(--route-muted);
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 2.4px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.birthday-constellation__weekday-guide,
+.birthday-constellation__week-guide {
+  stroke: color-mix(in srgb, var(--route-border) 72%, transparent);
+  stroke-width: 0.24;
+  opacity: 0.48;
+  vector-effect: non-scaling-stroke;
+}
+
+.birthday-constellation__week-guide {
+  stroke-dasharray: 1 3;
+  opacity: 0.36;
+}
+
+.birthday-constellation__track-shadow,
+.birthday-constellation__track {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.birthday-constellation__week-track {
+  fill: none;
+  stroke: transparent;
+  stroke-width: 3;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 140ms ease, stroke 140ms ease;
+}
+
+.birthday-constellation__week-track.is-active {
+  stroke: color-mix(in srgb, var(--route-today) 76%, white 24%);
+  opacity: 0.72;
+  filter: drop-shadow(0 0 5px var(--route-glow));
+}
+
+.birthday-constellation__track-shadow {
+  stroke: var(--route-glow);
+  stroke-width: 5;
+  opacity: 0.18;
+  filter: blur(4px);
+}
+
+.birthday-constellation__track {
+  stroke: var(--route-line);
+  stroke-width: 1.2;
+}
+
+.birthday-constellation__node-layer {
+  pointer-events: none;
+}
+
+.birthday-constellation__node {
+  --node-size: 10px;
+  position: absolute;
+  left: calc(var(--x) * 1%);
+  top: calc(var(--y) * 1%);
+  display: grid;
+  width: var(--node-size);
+  height: var(--node-size);
+  padding: 0;
+  border: 1px solid color-mix(in srgb, var(--route-line) 54%, var(--route-border) 46%);
+  border-radius: 50%;
+  color: var(--route-foreground);
+  background: var(--route-paper);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--route-paper) 82%, transparent);
+  cursor: pointer;
+  pointer-events: auto;
+  place-items: center;
+  transform: translate(-50%, -50%);
+  transition: transform 150ms ease, box-shadow 150ms ease, border-color 150ms ease;
+}
+
+.birthday-constellation__node:hover,
+.birthday-constellation__node:focus-visible {
+  z-index: 8;
+  outline: none;
+  box-shadow:
+    0 0 0 3px var(--route-paper),
+    0 0 0 5px color-mix(in srgb, var(--route-today) 24%, transparent),
+    0 0 22px var(--route-glow);
+  transform: translate(-50%, -50%) scale(1.08);
+}
+
+.birthday-constellation__node.has-birthday {
+  --node-size: 48px;
+  border-width: 1px;
+  border-color: color-mix(in srgb, var(--route-border) 76%, var(--route-foreground) 24%);
+  box-shadow:
+    0 0 0 2px var(--route-paper),
+    0 0 0 3px color-mix(in srgb, var(--route-border) 42%, transparent),
+    0 8px 18px color-mix(in srgb, var(--route-foreground) 12%, transparent);
+}
+
+.birthday-constellation__node.is-selected {
+  z-index: 7;
+  border-width: 2px;
+  border-color: var(--route-selected);
+  box-shadow:
+    0 0 0 3px var(--route-paper),
+    0 0 0 5px color-mix(in srgb, var(--route-selected) 30%, transparent),
+    0 0 18px var(--route-glow);
+}
+
+.birthday-constellation__node:not(.has-birthday) {
+  --node-size: 7px;
+  border: 0;
+  background: var(--route-line);
+  box-shadow: 0 0 7px var(--route-glow);
+}
+
+.birthday-constellation__node.is-today {
+  border-width: 2px;
+  border-color: var(--route-today);
+  box-shadow:
+    0 0 0 3px var(--route-paper),
+    0 0 0 6px color-mix(in srgb, var(--route-today) 46%, transparent),
+    0 0 20px var(--route-glow);
+}
+
+.birthday-constellation__node.is-today:not(.has-birthday) {
+  --node-size: 16px;
+  border: 2px solid var(--route-today);
+  background: color-mix(in srgb, var(--route-today) 46%, var(--route-paper));
+}
+
+.birthday-constellation__node.is-today.is-selected {
+  box-shadow:
+    0 0 0 3px var(--route-paper),
+    0 0 0 5px color-mix(in srgb, var(--route-selected) 34%, transparent),
+    0 0 0 7px color-mix(in srgb, var(--route-today) 24%, transparent);
+}
+
+.birthday-constellation__date {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 50%;
+  color: var(--route-muted);
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 0.64rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1;
+  pointer-events: none;
+  transform: translateX(-50%);
+}
+
+.birthday-constellation__node.has-birthday .birthday-constellation__date,
+.birthday-constellation__node.is-selected .birthday-constellation__date,
+.birthday-constellation__node.is-today .birthday-constellation__date {
+  color: var(--route-foreground);
+}
+
+.birthday-constellation__portraits {
+  position: absolute;
+  inset: 2px;
+  display: grid;
+  overflow: visible;
+  place-items: center;
+}
+
+.birthday-constellation__portrait {
+  display: grid;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--route-foreground) 68%, transparent);
+  border-radius: 50%;
+  background: var(--route-muted-base);
+  box-shadow: 0 3px 9px color-mix(in srgb, var(--route-background) 32%, transparent);
+  place-items: center;
+  transition: width 160ms ease, height 160ms ease, margin-left 160ms ease, transform 160ms ease;
+}
+
+.birthday-constellation__portrait--primary {
   position: relative;
   z-index: 2;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 25px;
-  height: 25px;
-  border-radius: 999px;
-  color: rgba(248, 251, 255, 0.86);
-  font-size: 0.82rem;
-  font-weight: 900;
-  line-height: 1;
+  width: 38px;
+  height: 38px;
 }
 
-.birthday-calendar__day.is-muted {
-  opacity: 0.46;
-}
-
-.birthday-calendar__day.has-birthday {
-  background:
-    radial-gradient(circle at 80% 12%, rgba(255, 255, 255, 0.16), transparent 42%),
-    rgba(8, 15, 34, 0.38);
-}
-
-.birthday-calendar__day.has-open-overflow {
-  z-index: 30;
-}
-
-.birthday-calendar__day.is-today {
-  border-color: rgba(255, 232, 164, 0.72);
-  box-shadow:
-    0 0 0 1px rgba(255, 232, 164, 0.28),
-    0 14px 34px rgba(250, 204, 21, 0.12);
-}
-
-.birthday-calendar__day.is-today time {
-  color: #1d2538;
-  background: linear-gradient(135deg, #fef3c7, #f9a8d4);
-}
-
-.birthday-calendar__avatars {
+.birthday-constellation__support-strip {
   position: absolute;
-  z-index: 3;
-  inset: 7px 7px 7px 34px;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 5px;
-  align-content: start;
-  justify-items: end;
+  top: 57%;
+  left: 56%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+  transition: top 160ms ease, left 160ms ease;
 }
 
-.birthday-calendar__day.has-open-overflow .birthday-calendar__avatars {
-  z-index: 31;
+.birthday-constellation__portrait--support {
+  width: 19px;
+  height: 19px;
+  margin-left: -7px;
 }
 
-.birthday-calendar__avatar,
-.birthday-calendar__more,
-.birthday-calendar__overflow {
-  position: relative;
-  width: min(100%, 40px);
-  aspect-ratio: 1;
+.birthday-constellation__portrait--support:first-child {
+  margin-left: 0;
 }
 
-.birthday-calendar__avatar,
-.birthday-calendar__more {
-  border: 2px solid rgba(255, 255, 255, 0.76);
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.16);
-  box-shadow: 0 10px 20px rgba(2, 6, 23, 0.2);
+.birthday-constellation__node:hover .birthday-constellation__support-strip,
+.birthday-constellation__node:focus-visible .birthday-constellation__support-strip {
+  top: 72%;
+  left: 58%;
 }
 
-.birthday-calendar__avatar {
-  display: block;
-  transition:
-    transform 160ms ease,
-    z-index 160ms ease;
+.birthday-constellation__node:hover .birthday-constellation__portrait--support,
+.birthday-constellation__node:focus-visible .birthday-constellation__portrait--support {
+  width: 24px;
+  height: 24px;
+  margin-left: 3px;
 }
 
-.birthday-calendar__avatar:hover {
-  z-index: 5;
-  transform: translateY(-2px) scale(1.06);
+.birthday-constellation__node:hover .birthday-constellation__portrait--support:first-child,
+.birthday-constellation__node:focus-visible .birthday-constellation__portrait--support:first-child {
+  margin-left: 0;
 }
 
-.birthday-calendar__avatar img,
-.birthday-calendar__avatar > span:first-child {
+.birthday-constellation__portrait img,
+.birthday-constellation__detail-avatar img {
   width: 100%;
   height: 100%;
-  border-radius: 11px;
-}
-
-.birthday-calendar__avatar img {
   object-fit: cover;
 }
 
-.birthday-calendar__avatar > span:first-child {
-  display: grid;
-  place-items: center;
-  color: rgba(255, 255, 255, 0.9);
-  font-weight: 900;
+.birthday-constellation__portrait > span,
+.birthday-constellation__detail-avatar > span {
+  color: var(--route-foreground);
+  font-size: 0.68rem;
+  font-weight: 500;
 }
 
-.birthday-calendar__tooltip {
+.birthday-constellation__detail {
+  position: relative;
+  display: flex;
+  min-width: 0;
+  padding: 17px 15px 14px;
+  border-left: 1px solid color-mix(in srgb, var(--route-alert) 34%, transparent);
+  background: var(--dossier-paper);
+  flex-direction: column;
+}
+
+.birthday-constellation__detail::before {
   position: absolute;
-  left: 50%;
-  bottom: calc(100% + 8px);
-  z-index: 10;
-  min-width: 130px;
-  max-width: 220px;
-  padding: 8px 10px;
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  border-radius: 14px;
-  color: #f8fbff;
-  background: rgba(5, 9, 22, 0.9);
-  box-shadow: 0 18px 40px rgba(2, 6, 23, 0.36);
-  opacity: 0;
-  pointer-events: none;
-  text-align: left;
-  transform: translate(-50%, 6px);
-  transition:
-    opacity 140ms ease,
-    transform 140ms ease;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--route-selected), var(--route-alert) 58%, var(--route-today));
+  content: "";
 }
 
-.birthday-calendar__tooltip strong,
-.birthday-calendar__tooltip small {
+.birthday-constellation__detail-date {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.birthday-constellation__detail-date strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.55rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.birthday-constellation__detail-date span {
+  color: var(--route-muted);
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0;
+}
+
+.birthday-constellation__detail > hr {
+  width: 100%;
+  height: 1px;
+  margin: 0 0 11px;
+  border: 0;
+  background: var(--route-border);
+}
+
+.birthday-constellation__detail-list {
+  display: grid;
+  gap: 2px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.birthday-constellation__detail-row {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 9px;
+  min-height: 50px;
+  padding: 6px 7px 6px 6px;
+  border-left: 3px solid transparent;
+  background: color-mix(in srgb, var(--route-background) 68%, var(--route-viz-6) 4%);
+  transition: transform 140ms ease, border-color 140ms ease, background 140ms ease;
+}
+
+.birthday-constellation__detail-row:nth-child(even) {
+  background: color-mix(in srgb, var(--route-background) 80%, var(--route-viz-3) 8%);
+}
+
+.birthday-constellation__detail-row:hover,
+.birthday-constellation__detail-row:focus-within {
+  border-left-color: var(--route-selected);
+  background: color-mix(in srgb, var(--route-background) 76%, var(--route-viz-2) 10%);
+  transform: translateX(2px);
+}
+
+.birthday-constellation__detail-row:hover .birthday-constellation__detail-avatar,
+.birthday-constellation__detail-row:focus-within .birthday-constellation__detail-avatar {
+  border-color: var(--route-selected);
+  box-shadow: 0 0 12px color-mix(in srgb, var(--route-selected) 38%, transparent);
+}
+
+.birthday-constellation__detail-avatar {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  overflow: hidden;
+  border: 1px solid var(--route-border);
+  border-radius: 50%;
+  background: var(--route-muted-base);
+  place-items: center;
+}
+
+.birthday-constellation__detail-copy {
+  min-width: 0;
+}
+
+.birthday-constellation__detail-copy strong,
+.birthday-constellation__detail-copy small {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.birthday-constellation__detail-copy strong {
+  font-size: 0.78rem;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.birthday-constellation__detail-copy small {
+  margin-top: 2px;
+  color: var(--route-muted);
+  font-size: 0.65rem;
+  line-height: 1.35;
+}
+
+.birthday-constellation__detail-row a {
+  display: grid;
+  width: 29px;
+  height: 29px;
+  border: 1px solid var(--route-border);
+  border-radius: 0;
+  color: var(--route-muted-foreground);
+  background: color-mix(in srgb, var(--route-background) 72%, transparent);
+  clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 0 100%);
+  text-decoration: none;
+  place-items: center;
+}
+
+.birthday-constellation__detail-row a:hover,
+.birthday-constellation__detail-row a:focus-visible {
+  color: var(--route-foreground);
+  border-color: var(--route-selected);
+  background: var(--route-accent-base);
+  outline: none;
+}
+
+.birthday-constellation__empty-detail {
+  display: grid;
+  min-height: 190px;
+  color: var(--route-muted);
+  text-align: center;
+  place-items: center;
+}
+
+.birthday-constellation__empty-detail strong,
+.birthday-constellation__empty-detail span {
   display: block;
 }
 
-.birthday-calendar__tooltip strong {
-  font-size: 0.82rem;
-  line-height: 1.35;
+.birthday-constellation__empty-detail strong {
+  color: var(--route-foreground);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
-.birthday-calendar__tooltip small {
-  margin-top: 2px;
-  color: rgba(226, 232, 240, 0.68);
+.birthday-constellation__empty-detail span {
+  margin-top: 4px;
   font-size: 0.7rem;
-  line-height: 1.35;
 }
 
-.birthday-calendar__avatar:hover .birthday-calendar__tooltip,
-.birthday-calendar__avatar:focus-visible .birthday-calendar__tooltip {
-  opacity: 1;
-  transform: translate(-50%, 0);
-}
-
-.birthday-calendar__more {
-  display: grid;
-  place-items: center;
-  color: #fff;
-  font-size: 0.78rem;
-  font-weight: 900;
-}
-
-.birthday-calendar__more {
-  padding: 0;
-  cursor: pointer;
-  transition:
-    transform 160ms ease,
-    background 160ms ease,
-    border-color 160ms ease;
-}
-
-.birthday-calendar__more:hover,
-.birthday-calendar__more[aria-expanded="true"] {
-  transform: translateY(-2px) scale(1.04);
-  border-color: rgba(255, 255, 255, 0.92);
-  background: rgba(255, 255, 255, 0.24);
-}
-
-.birthday-calendar__overflow-strip {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 40;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 0;
-}
-
-.birthday-calendar__expanded-avatar {
-  flex: 0 0 40px;
-  width: 40px;
-  border-color: rgba(255, 255, 255, 0.76);
-  background: transparent;
-  box-shadow: none;
-}
-
-.birthday-calendar__expanded-avatar:hover,
-.birthday-calendar__expanded-avatar:focus-visible {
-  z-index: 25;
-  transform: translateY(-1px);
-}
-
-.birthday-calendar__expanded-avatar .birthday-calendar__tooltip {
-  left: 0;
-  bottom: calc(100% + 7px);
-  transform: translate(0, 6px);
-}
-
-.birthday-calendar__expanded-avatar:hover .birthday-calendar__tooltip,
-.birthday-calendar__expanded-avatar:focus-visible .birthday-calendar__tooltip {
-  transform: translate(0, 0);
-}
-
-@media (max-width: 760px) {
-  .birthday-calendar__header {
+@media (max-width: 620px) {
+  .birthday-constellation__body {
     grid-template-columns: 1fr;
-    align-items: stretch;
   }
 
-  .birthday-calendar__controls {
-    justify-content: flex-start;
+  .birthday-constellation__stage {
+    min-height: 420px;
+    border-right: 0;
+    border-bottom: 1px solid var(--route-border);
   }
 
-  .birthday-calendar__stats {
-    padding-bottom: 0;
+  .birthday-constellation__detail {
+    min-height: 260px;
+    border-left: 0;
   }
 
-  .birthday-calendar__grid {
-    gap: 5px;
-  }
-
-  .birthday-calendar__weekdays {
-    gap: 5px;
-  }
-
-  .birthday-calendar__day {
-    min-height: 70px;
-    padding: 6px;
-    border-radius: 15px;
-  }
-
-  .birthday-calendar__day time {
-    width: 21px;
-    height: 21px;
-    font-size: 0.72rem;
-  }
-
-  .birthday-calendar__avatars {
-    inset: 6px 5px 5px 27px;
-    gap: 3px;
-  }
-
-  .birthday-calendar__avatar,
-  .birthday-calendar__more,
-  .birthday-calendar__overflow {
-    width: min(100%, 30px);
-    border-radius: 11px;
-  }
-
-  .birthday-calendar__avatar img,
-  .birthday-calendar__avatar > span:first-child {
-    border-radius: 8px;
-  }
-
-  .birthday-calendar__expanded-avatar {
-    flex-basis: 30px;
-    width: 30px;
-  }
-
-  .birthday-calendar__overflow-strip {
-    gap: 4px;
-    padding: 2px;
-    border-radius: 13px;
+  .birthday-constellation__detail-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 520px) {
-  .birthday-calendar {
-    padding: 14px;
-    border-radius: 24px;
+  .birthday-constellation__header {
+    padding: 11px 12px 10px 14px;
   }
 
-  .birthday-calendar__day {
-    min-height: 58px;
+  .birthday-constellation__stage {
+    min-height: 390px;
   }
 
-  .birthday-calendar__avatars {
+  .birthday-constellation__node.has-birthday {
+    --node-size: 34px;
+  }
+
+  .birthday-constellation__portrait--primary {
+    width: 25px;
+    height: 25px;
+  }
+
+  .birthday-constellation__portrait--support {
+    width: 13px;
+    height: 13px;
+    margin-left: -5px;
+  }
+
+  .birthday-constellation__node:hover .birthday-constellation__portrait--support,
+  .birthday-constellation__node:focus-visible .birthday-constellation__portrait--support {
+    width: 17px;
+    height: 17px;
+    margin-left: 2px;
+  }
+
+  .birthday-constellation__detail-list {
     grid-template-columns: 1fr;
   }
+}
 
-  .birthday-calendar__avatar,
-  .birthday-calendar__more,
-  .birthday-calendar__overflow {
-    width: min(100%, 28px);
-  }
-
-  .birthday-calendar__expanded-avatar {
-    flex-basis: 28px;
-    width: 28px;
+@media (prefers-reduced-motion: reduce) {
+  .birthday-constellation__node,
+  .birthday-constellation__portrait,
+  .birthday-constellation__support-strip,
+  .birthday-constellation__week-track,
+  .birthday-constellation__detail-row {
+    transition: none;
   }
 }

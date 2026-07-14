@@ -1,4 +1,5 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
+import { useMemo, useState, type CSSProperties } from "react";
 import {
   getAdjacentCalendarMonth,
   getCalendarMonth,
@@ -6,6 +7,15 @@ import {
   type BirthdayWork,
   type CharacterBirthday,
 } from "../../data/character-birthdays";
+import {
+  birthdayConstellationXPositions,
+  birthdayConstellationYPositions,
+  buildBirthdayConstellationPath,
+  buildBirthdayConstellationWeekPath,
+  getBirthdayConstellationLayout,
+  isBirthdayConstellationDateVisible,
+  type BirthdayConstellationDate,
+} from "./birthday-constellation";
 import "./character-birthday-calendar.css";
 
 type Props = {
@@ -13,8 +23,7 @@ type Props = {
   works: BirthdayWork[];
 };
 
-const weekDays = ["一", "二", "三", "四", "五", "六", "日"];
-const maxBirthdaySlots = 4;
+const weekdays = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"];
 
 const getToday = () => {
   const now = new Date();
@@ -25,209 +34,288 @@ const getToday = () => {
   };
 };
 
-const formatMonth = (year: number, month: number) => `${year}年 ${month}月`;
+const formatMonth = (year: number, month: number) =>
+  `${year}.${month.toString().padStart(2, "0")}`;
 
-export const getBirthdayDisplaySlots = (
-  birthdays: CharacterBirthday[],
-  maxSlots = maxBirthdaySlots,
-) => {
-  if (birthdays.length <= maxSlots) {
-    return {
-      visibleBirthdays: birthdays,
-      overflowBirthdays: [] as CharacterBirthday[],
-    };
-  }
-
-  return {
-    visibleBirthdays: birthdays.slice(0, Math.max(maxSlots - 1, 0)),
-    overflowBirthdays: birthdays.slice(Math.max(maxSlots - 1, 0)),
-  };
-};
+const formatSelectedDate = ({ year, month, day }: BirthdayConstellationDate) =>
+  `${year}.${month.toString().padStart(2, "0")}.${day.toString().padStart(2, "0")}`;
 
 export default function CharacterBirthdayCalendar({ characters, works }: Props) {
-  const calendarRef = useRef<HTMLElement>(null);
   const today = useMemo(() => getToday(), []);
   const [visibleMonth, setVisibleMonth] = useState(() => ({
     year: today.year,
     month: today.month,
   }));
-  const [openOverflowDate, setOpenOverflowDate] = useState<string | null>(null);
-  const birthdayStats = useMemo(
-    () => ({
-      workCount: new Set(characters.map((character) => character.workId)).size,
-      characterCount: characters.length,
-    }),
-    [characters],
+  const [selectedDate, setSelectedDate] = useState<BirthdayConstellationDate>(() => ({
+    year: today.year,
+    month: today.month,
+    day: today.date.getDate(),
+  }));
+  const [hoveredWeek, setHoveredWeek] = useState<number | null>(null);
+  const workById = useMemo(
+    () => new Map(works.map((work) => [work.id, work])),
+    [works],
+  );
+  const calendar = useMemo(
+    () =>
+      getCalendarMonth({
+        year: visibleMonth.year,
+        month: visibleMonth.month,
+        today: today.date,
+        records: characters,
+      }),
+    [characters, today.date, visibleMonth.month, visibleMonth.year],
+  );
+  const layout = useMemo(() => getBirthdayConstellationLayout(calendar), [calendar]);
+  const routePath = useMemo(() => buildBirthdayConstellationPath(layout), [layout]);
+  const weekCount = useMemo(
+    () => Math.max(0, ...layout.map((node) => node.week)) + 1,
+    [layout],
+  );
+  const selectedCalendar = useMemo(
+    () =>
+      getCalendarMonth({
+        year: selectedDate.year,
+        month: selectedDate.month,
+        today: today.date,
+        records: characters,
+      }),
+    [characters, selectedDate.month, selectedDate.year, today.date],
+  );
+  const selectedCalendarDay = selectedCalendar.days.find(
+    (day) => day.isCurrentMonth && day.day === selectedDate.day,
+  );
+  const selectedBirthdays = selectedCalendarDay?.birthdays ?? [];
+  const selectedWeekday = weekdays[((selectedCalendarDay?.weekday ?? 1) + 6) % 7];
+  const selectedDateIsVisible = isBirthdayConstellationDateVisible(
+    selectedDate,
+    calendar.year,
+    calendar.month,
   );
 
-  const workById = useMemo(() => {
-    return new Map(works.map((work) => [work.id, work]));
-  }, [works]);
-
-  const calendar = useMemo(() => {
-    return getCalendarMonth({
-      year: visibleMonth.year,
-      month: visibleMonth.month,
-      today: today.date,
-      records: characters,
-    });
-  }, [characters, today.date, visibleMonth.month, visibleMonth.year]);
-
   const goToMonth = (offset: number) => {
-    setOpenOverflowDate(null);
-    setVisibleMonth((current) => getAdjacentCalendarMonth(current.year, current.month, offset));
+    setVisibleMonth((current) =>
+      getAdjacentCalendarMonth(current.year, current.month, offset),
+    );
   };
 
-  const goToToday = () => {
-    setOpenOverflowDate(null);
-    setVisibleMonth({ year: today.year, month: today.month });
+  const renderPortrait = (character: CharacterBirthday, kind: "primary" | "support") => {
+    const work = workById.get(character.workId);
+    const workTitle = work?.localizedTitle ?? work?.title ?? character.workId;
+
+    return (
+      <span
+        className={[
+          "birthday-constellation__portrait",
+          kind === "primary"
+            ? "birthday-constellation__portrait--primary"
+            : "birthday-constellation__portrait--support",
+        ].join(" ")}
+        data-primary-portrait={kind === "primary" ? "" : undefined}
+        data-support-portrait={kind === "support" ? "" : undefined}
+        key={character.id}
+        title={`${character.name} · ${workTitle}`}
+      >
+        {character.avatar ? (
+          <img alt={character.name} loading="lazy" src={character.avatar} />
+        ) : (
+          <span aria-hidden="true">{character.name.slice(0, 1)}</span>
+        )}
+      </span>
+    );
   };
-
-  useEffect(() => {
-    if (!openOverflowDate) {
-      return;
-    }
-
-    const closeOverflowFromOutside = (event: PointerEvent) => {
-      if (!calendarRef.current?.contains(event.target as Node)) {
-        setOpenOverflowDate(null);
-      }
-    };
-
-    document.addEventListener("pointerdown", closeOverflowFromOutside);
-
-    return () => {
-      document.removeEventListener("pointerdown", closeOverflowFromOutside);
-    };
-  }, [openOverflowDate]);
 
   return (
-    <section className="birthday-calendar" aria-label="角色生日日历" ref={calendarRef}>
-      <header className="birthday-calendar__header">
-        <div>
-          <p className="birthday-calendar__eyebrow">Character Birthday Calendar</p>
-          <h1>{formatMonth(calendar.year, calendar.month)}</h1>
+    <section
+      aria-label="角色生日星图"
+      className="birthday-constellation"
+      data-theme="starmap"
+    >
+      <header className="birthday-constellation__header">
+        <div className="birthday-constellation__title">
+          <h2>角色生日星图</h2>
         </div>
 
-        <div className="birthday-calendar__stats" aria-label="生日历收录统计">
-          <span>
-            <strong>{birthdayStats.workCount}</strong>
-            作品
-          </span>
-          <span>
-            <strong>{birthdayStats.characterCount}</strong>
-            角色
-          </span>
-        </div>
-
-        <div className="birthday-calendar__controls" aria-label="月份切换">
-          <button type="button" onClick={() => goToMonth(-1)}>
-            上个月
+        <div className="birthday-constellation__month-control" aria-label="月份切换">
+          <button aria-label="上个月" onClick={() => goToMonth(-1)} type="button">
+            <ChevronLeft aria-hidden="true" size={16} strokeWidth={1.8} />
           </button>
-          <button type="button" className="is-today" onClick={goToToday}>
-            回到今天
-          </button>
-          <button type="button" onClick={() => goToMonth(1)}>
-            下个月
+          <span data-birthday-month>{formatMonth(calendar.year, calendar.month)}</span>
+          <button aria-label="下个月" onClick={() => goToMonth(1)} type="button">
+            <ChevronRight aria-hidden="true" size={16} strokeWidth={1.8} />
           </button>
         </div>
       </header>
 
-      <div className="birthday-calendar__weekdays" aria-hidden="true">
-        {weekDays.map((day) => (
-          <span key={day}>{day}</span>
-        ))}
-      </div>
+      <div className="birthday-constellation__body">
+        <div className="birthday-constellation__stage">
+          <svg
+            aria-label="按星期坐标排列的生日路线"
+            className="birthday-constellation__route"
+            data-birthday-route
+            preserveAspectRatio="none"
+            role="img"
+            viewBox="0 0 100 100"
+          >
+            {weekdays.map((weekday, index) => (
+              <g key={weekday}>
+                <text
+                  data-birthday-weekday-label
+                  textAnchor="middle"
+                  x={birthdayConstellationXPositions[index]}
+                  y="3.8"
+                >
+                  {weekday}
+                </text>
+                <line
+                  className="birthday-constellation__weekday-guide"
+                  x1={birthdayConstellationXPositions[index]}
+                  x2={birthdayConstellationXPositions[index]}
+                  y1="6"
+                  y2="94"
+                />
+              </g>
+            ))}
+            {Array.from({ length: weekCount }, (_, week) => (
+              <line
+                className="birthday-constellation__week-guide"
+                key={week}
+                x1="3"
+                x2="97"
+                y1={birthdayConstellationYPositions[week]}
+                y2={birthdayConstellationYPositions[week]}
+              />
+            ))}
+            <path className="birthday-constellation__track-shadow" d={routePath} />
+            <path className="birthday-constellation__track" d={routePath} />
+            {Array.from({ length: weekCount }, (_, week) => (
+              <path
+                className={[
+                  "birthday-constellation__week-track",
+                  hoveredWeek === week ? "is-active" : "",
+                ]
+                  .filter(Boolean)
+                  .join(" ")}
+                d={buildBirthdayConstellationWeekPath(layout, week)}
+                data-birthday-week-track={week}
+                key={week}
+              />
+            ))}
+          </svg>
 
-      <div className="birthday-calendar__grid">
-        {calendar.days.map((day) => {
-          const { visibleBirthdays, overflowBirthdays } = getBirthdayDisplaySlots(
-            day.birthdays,
-            maxBirthdaySlots,
-          );
-          const overflowPanelId = `birthday-overflow-${day.date}`;
-          const isOverflowOpen = openOverflowDate === day.date;
-          const renderAvatar = (character: CharacterBirthday, className = "birthday-calendar__avatar") => {
-            const work = workById.get(character.workId);
-            const workTitle = work?.localizedTitle ?? work?.title ?? character.workId;
-            const characterHref = getCharacterBangumiUrl(character);
+          <div className="birthday-constellation__node-layer">
+            {layout.map((node) => {
+              const isSelected = selectedDateIsVisible && node.day === selectedDate.day;
+              const hasBirthday = node.birthdays.length > 0;
+              const primary = node.birthdays[0];
+              const support = node.birthdays.slice(1);
+              const dateLabel = `${calendar.month}月${node.day}日`;
 
-            if (!characterHref) {
-              return null;
-            }
-
-            return (
-              <a
-                className={className}
-                href={characterHref}
-                key={character.id}
-                rel="noreferrer"
-                target="_blank"
-                title={`${character.name} · ${workTitle}`}
-              >
-                {character.avatar ? (
-                  <img alt={character.name} src={character.avatar} loading="lazy" />
-                ) : (
-                  <span aria-hidden="true">{character.name.slice(0, 1)}</span>
-                )}
-                <span className="birthday-calendar__tooltip" role="tooltip">
-                  <strong>{character.name}</strong>
-                  <small>{workTitle}</small>
-                </span>
-              </a>
-            );
-          };
-
-          return (
-            <article
-              className={[
-                "birthday-calendar__day",
-                day.isCurrentMonth ? "" : "is-muted",
-                day.isToday ? "is-today" : "",
-                day.birthdays.length > 0 ? "has-birthday" : "",
-                isOverflowOpen ? "has-open-overflow" : "",
-              ]
-                .filter(Boolean)
-                .join(" ")}
-              key={day.date}
-              aria-label={`${day.date}${day.isToday ? "，今天" : ""}`}
-            >
-              <time dateTime={day.date}>{day.day}</time>
-
-              {day.birthdays.length > 0 ? (
-                <div className="birthday-calendar__avatars">
-                  {visibleBirthdays.map((character) => renderAvatar(character))}
-
-                  {overflowBirthdays.length > 0 ? (
-                    <div className="birthday-calendar__overflow">
-                      {isOverflowOpen ? (
-                        <div className="birthday-calendar__overflow-strip" id={overflowPanelId}>
-                          {overflowBirthdays.map((character) =>
-                            renderAvatar(
-                              character,
-                              "birthday-calendar__avatar birthday-calendar__expanded-avatar",
-                            ),
-                          )}
-                        </div>
-                      ) : (
-                        <button
-                          aria-controls={overflowPanelId}
-                          aria-expanded={false}
-                          className="birthday-calendar__more"
-                          onClick={() => setOpenOverflowDate(day.date)}
-                          title={overflowBirthdays.map((character) => character.name).join("、")}
-                          type="button"
-                        >
-                          +{overflowBirthdays.length}
-                        </button>
-                      )}
-                    </div>
+              return (
+                <button
+                  aria-label={`${dateLabel}，${node.birthdays.length}位角色生日`}
+                  aria-pressed={isSelected}
+                  className={[
+                    "birthday-constellation__node",
+                    hasBirthday ? "has-birthday" : "",
+                    isSelected ? "is-selected" : "",
+                    node.isToday ? "is-today" : "",
+                  ]
+                    .filter(Boolean)
+                    .join(" ")}
+                  data-birthday-node={node.day}
+                  data-birthday-today={node.isToday ? "" : undefined}
+                  key={node.day}
+                  onBlur={() => setHoveredWeek(null)}
+                  onClick={() =>
+                    setSelectedDate({
+                      year: calendar.year,
+                      month: calendar.month,
+                      day: node.day,
+                    })
+                  }
+                  onFocus={() => setHoveredWeek(node.week)}
+                  onPointerEnter={() => setHoveredWeek(node.week)}
+                  onPointerLeave={() => setHoveredWeek(null)}
+                  style={{ "--x": node.x, "--y": node.y } as CSSProperties}
+                  type="button"
+                >
+                  {primary ? (
+                    <span className="birthday-constellation__portraits">
+                      {renderPortrait(primary, "primary")}
+                      {support.length > 0 ? (
+                        <span className="birthday-constellation__support-strip">
+                          {support.map((character) => renderPortrait(character, "support"))}
+                        </span>
+                      ) : null}
+                    </span>
                   ) : null}
-                </div>
-              ) : null}
-            </article>
-          );
-        })}
+                  <span className="birthday-constellation__date">
+                    {node.day.toString().padStart(2, "0")}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        <aside
+          aria-label="选中日期的角色"
+          aria-live="polite"
+          className="birthday-constellation__detail"
+        >
+          <div className="birthday-constellation__detail-date">
+            <strong data-selected-birthday-date>
+              {formatSelectedDate(selectedDate)}
+            </strong>
+            <span>{selectedWeekday}</span>
+          </div>
+          <hr />
+
+          <ul className="birthday-constellation__detail-list">
+            {selectedBirthdays.length > 0 ? (
+              selectedBirthdays.map((character) => {
+                const work = workById.get(character.workId);
+                const bangumiUrl = getCharacterBangumiUrl(character);
+
+                return (
+                  <li
+                    className="birthday-constellation__detail-row"
+                    data-birthday-detail-row
+                    key={character.id}
+                  >
+                    <span className="birthday-constellation__detail-avatar">
+                      {character.avatar ? (
+                        <img alt="" loading="lazy" src={character.avatar} />
+                      ) : (
+                        <span aria-hidden="true">{character.name.slice(0, 1)}</span>
+                      )}
+                    </span>
+                    <span className="birthday-constellation__detail-copy">
+                      <strong>{character.name}</strong>
+                      <small>{work?.localizedTitle ?? work?.title ?? character.workId}</small>
+                    </span>
+                    {bangumiUrl ? (
+                      <a
+                        aria-label={`打开${character.name}的 Bangumi 页面`}
+                        href={bangumiUrl}
+                        rel="noreferrer"
+                        target="_blank"
+                      >
+                        <ExternalLink aria-hidden="true" size={16} strokeWidth={1.6} />
+                      </a>
+                    ) : null}
+                  </li>
+                );
+              })
+            ) : (
+              <li className="birthday-constellation__empty-detail">
+                <strong>无生日事件</strong>
+                <span>路线坐标保留，当前日期没有生日条目</span>
+              </li>
+            )}
+          </ul>
+        </aside>
       </div>
     </section>
   );
