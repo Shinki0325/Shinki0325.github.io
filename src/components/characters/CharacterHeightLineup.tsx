@@ -1,7 +1,7 @@
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Check, ChevronDown, ChevronLeft, ChevronRight, Menu } from "lucide-react";
 import {
-  useCallback,
   useEffect,
+  useLayoutEffect,
   useMemo,
   useRef,
   useState,
@@ -46,36 +46,94 @@ export default function CharacterHeightLineup({ active, controlsHost }: Props) {
   const characters = heightCharacters as HeightCharacter[];
   const rootRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
+  const controlsRef = useRef<HTMLDivElement>(null);
+  const focusTriggerRef = useRef<HTMLButtonElement>(null);
+  const menuOpenRef = useRef(false);
+  const fullScrollLeft = useRef(0);
+  const restoreFullScroll = useRef(false);
   const drag = useRef({ pending: false, dragging: false, startX: 0, scrollLeft: 0 });
   const suppressClick = useRef(false);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [activeId, setActiveId] = useState<string | null>(null);
-  const [viewportWindow, setViewportWindow] = useState({ left: 0, width: 20 });
+  const [focusId, setFocusId] = useState<string | null>(null);
+  const [menuOpen, setMenuOpen] = useState(false);
+  menuOpenRef.current = menuOpen;
   const selected = useMemo(
     () => characters.find((character) => character.id === selectedId) ?? null,
     [characters, selectedId],
   );
   const activeCharacter = useMemo(
-    () => characters.find((character) => character.id === activeId) ?? selected,
-    [activeId, characters, selected],
+    () =>
+      characters.find((character) => character.id === focusId) ??
+      characters.find((character) => character.id === activeId) ??
+      selected,
+    [activeId, characters, focusId, selected],
   );
-
-  const updateViewportWindow = useCallback(() => {
-    const track = trackRef.current;
-    if (!track) return;
-    const max = Math.max(0, track.scrollWidth - track.clientWidth);
-    const width = Math.min(100, (track.clientWidth / track.scrollWidth) * 100);
-    const left = max > 0 ? (track.scrollLeft / max) * (100 - width) : 0;
-    setViewportWindow({ left, width });
-  }, []);
+  const focusCharacter = useMemo(
+    () => characters.find((character) => character.id === focusId) ?? null,
+    [characters, focusId],
+  );
+  const visibleCharacters = focusCharacter ? [focusCharacter] : characters;
 
   useEffect(() => {
-    updateViewportWindow();
-    window.addEventListener("resize", updateViewportWindow, { passive: true });
-    return () => window.removeEventListener("resize", updateViewportWindow);
-  }, [updateViewportWindow]);
+    const closeMenu = (restoreFocus: boolean) => {
+      setMenuOpen(false);
+      if (restoreFocus) window.requestAnimationFrame(() => focusTriggerRef.current?.focus());
+    };
+    const onPointerDown = (event: PointerEvent) => {
+      const target = event.target as Node;
+      if (!menuOpenRef.current || controlsRef.current?.contains(target)) return;
+      closeMenu(true);
+    };
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (!menuOpenRef.current || event.key !== "Escape") return;
+      event.preventDefault();
+      closeMenu(true);
+    };
+    document.addEventListener("pointerdown", onPointerDown, true);
+    document.addEventListener("keydown", onKeyDown, true);
+    return () => {
+      document.removeEventListener("pointerdown", onPointerDown, true);
+      document.removeEventListener("keydown", onKeyDown, true);
+    };
+  }, []);
+
+  useLayoutEffect(() => {
+    if (!menuOpen) return;
+    const frame = window.requestAnimationFrame(() => {
+      controlsRef.current
+        ?.querySelector<HTMLButtonElement>('[role="menuitemradio"][aria-checked="true"]')
+        ?.focus();
+    });
+    return () => window.cancelAnimationFrame(frame);
+  }, [menuOpen]);
+
+  useLayoutEffect(() => {
+    if (focusId !== null || !restoreFullScroll.current || !trackRef.current) return;
+    restoreFullScroll.current = false;
+    trackRef.current.scrollLeft = fullScrollLeft.current;
+  }, [focusId]);
+
+  const selectFocus = (id: string | null) => {
+    if (id && focusId === null) fullScrollLeft.current = trackRef.current?.scrollLeft ?? 0;
+    if (id === null) restoreFullScroll.current = true;
+    setFocusId(id);
+    setActiveId(null);
+    if (id) setSelectedId(id);
+    setMenuOpen(false);
+    window.requestAnimationFrame(() => focusTriggerRef.current?.focus());
+  };
 
   const scrollByViewport = (direction: -1 | 1) => {
+    if (focusId) {
+      const index = characters.findIndex((character) => character.id === focusId);
+      const next = characters[index + direction];
+      if (!next) return;
+      setFocusId(next.id);
+      setSelectedId(next.id);
+      setActiveId(null);
+      return;
+    }
     const track = trackRef.current;
     if (!track) return;
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -83,20 +141,6 @@ export default function CharacterHeightLineup({ active, controlsHost }: Props) {
       behavior: reducedMotion ? "auto" : "smooth",
       left: direction * track.clientWidth * 0.78,
     });
-  };
-
-  const scrollToCharacter = (id: string) => {
-    const track = trackRef.current;
-    const button = track?.querySelector<HTMLElement>(`[data-height-character="${id}"]`);
-    if (!track || !button) return;
-    const isLast = id === characters.at(-1)?.id;
-    track.scrollTo({
-      behavior: "auto",
-      left: isLast
-        ? track.scrollWidth - track.clientWidth
-        : button.offsetLeft - (track.clientWidth - button.offsetWidth) / 2,
-    });
-    setActiveId(id);
   };
 
   const stopDragging = (event: ReactPointerEvent<HTMLDivElement>) => {
@@ -110,18 +154,68 @@ export default function CharacterHeightLineup({ active, controlsHost }: Props) {
   };
 
   const controls = (
-    <div className="character-height__header-tools">
-      <span className="character-height__readout" data-height-readout>
-        {activeCharacter
-          ? `${activeCharacter.name} / ${formatHeight(activeCharacter.heightCm)} CM`
-          : "124-165 CM / 41"}
-      </span>
-      <button aria-label="查看较矮角色" onClick={() => scrollByViewport(-1)} type="button">
-        <ChevronLeft aria-hidden="true" size={16} strokeWidth={1.8} />
-      </button>
-      <button aria-label="查看较高角色" onClick={() => scrollByViewport(1)} type="button">
-        <ChevronRight aria-hidden="true" size={16} strokeWidth={1.8} />
-      </button>
+    <div className="character-height__controls-shell" ref={controlsRef}>
+      <div
+        className="character-height__header-tools character-archive__status-cassette"
+        data-archive-status-cassette
+      >
+        <button aria-label="查看较矮角色" onClick={() => scrollByViewport(-1)} type="button">
+          <ChevronLeft aria-hidden="true" size={16} strokeWidth={1.8} />
+        </button>
+        <button
+          aria-expanded={menuOpen}
+          aria-haspopup="menu"
+          aria-label={`选择身高焦点：${focusCharacter ? `${focusCharacter.name}，${formatHeight(focusCharacter.heightCm)}厘米` : "全员"}`}
+          className="character-height__focus-trigger"
+          data-height-focus-trigger
+          onClick={() => setMenuOpen((current) => !current)}
+          ref={focusTriggerRef}
+          type="button"
+        >
+          <Menu aria-hidden="true" className="character-height__focus-menu-icon" size={13} />
+          <span data-height-readout>
+            {focusCharacter
+              ? `${focusCharacter.name} / ${formatHeight(focusCharacter.heightCm)} CM`
+              : "全员 / 41"}
+          </span>
+          <ChevronDown aria-hidden="true" className="character-height__focus-chevron" size={12} />
+        </button>
+        <button aria-label="查看较高角色" onClick={() => scrollByViewport(1)} type="button">
+          <ChevronRight aria-hidden="true" size={16} strokeWidth={1.8} />
+        </button>
+      </div>
+      {menuOpen ? (
+        <div
+          aria-label="角色身高焦点"
+          className="character-height__focus-menu"
+          data-height-focus-menu
+          role="menu"
+        >
+          <button
+            aria-checked={focusId === null}
+            onClick={() => selectFocus(null)}
+            role="menuitemradio"
+            type="button"
+          >
+            <span>全员</span>
+            <small>41 RECORDS</small>
+            {focusId === null ? <Check aria-hidden="true" size={13} /> : null}
+          </button>
+          {characters.map((character) => (
+            <button
+              aria-checked={focusId === character.id}
+              key={character.id}
+              onClick={() => selectFocus(character.id)}
+              role="menuitemradio"
+              type="button"
+            >
+              <span>{character.name}</span>
+              <small>{formatHeight(character.heightCm)} CM</small>
+              {focusId === character.id ? <Check aria-hidden="true" size={13} /> : null}
+            </button>
+          ))}
+        </div>
+      ) : null}
     </div>
   );
 
@@ -130,7 +224,13 @@ export default function CharacterHeightLineup({ active, controlsHost }: Props) {
       className="character-height"
       data-active-id={activeCharacter?.id ?? ""}
       data-character-height-lineup
+      data-focus-id={focusId ?? ""}
       data-selected-id={selectedId ?? ""}
+      onPointerDownCapture={(event) => {
+        if (!menuOpen || controlsRef.current?.contains(event.target as Node)) return;
+        setMenuOpen(false);
+        window.requestAnimationFrame(() => focusTriggerRef.current?.focus());
+      }}
       ref={rootRef}
       style={{ "--active-cm": activeCharacter?.heightCm ?? 124 } as CSSProperties}
     >
@@ -152,7 +252,7 @@ export default function CharacterHeightLineup({ active, controlsHost }: Props) {
           data-height-track
           onPointerCancel={stopDragging}
           onPointerDown={(event) => {
-            if (event.button !== 0) return;
+            if (event.button !== 0 || focusId) return;
             drag.current = {
               pending: true,
               dragging: false,
@@ -162,7 +262,7 @@ export default function CharacterHeightLineup({ active, controlsHost }: Props) {
             suppressClick.current = false;
           }}
           onPointerMove={(event) => {
-            if (!drag.current.pending) return;
+            if (!drag.current.pending || focusId) return;
             const distance = event.clientX - drag.current.startX;
             if (!drag.current.dragging && Math.abs(distance) >= 5) {
               drag.current.dragging = true;
@@ -175,10 +275,9 @@ export default function CharacterHeightLineup({ active, controlsHost }: Props) {
             }
           }}
           onPointerUp={stopDragging}
-          onScroll={updateViewportWindow}
           ref={trackRef}
         >
-          {characters.map((character) => {
+          {visibleCharacters.map((character) => {
             const style = {
               "--baseline-offset": `${character.baselineOffset}px`,
               "--render-height": `${getRenderHeight(character).toFixed(2)}px`,
@@ -225,40 +324,6 @@ export default function CharacterHeightLineup({ active, controlsHost }: Props) {
             );
           })}
         </div>
-      </div>
-
-      <div className="character-height__roster">
-        <span>124 CM</span>
-        <div aria-label="完整阵容索引" className="character-height__roster-map">
-          <span
-            className="character-height__roster-window"
-            data-roster-window
-            style={{ left: `${viewportWindow.left}%`, width: `${viewportWindow.width}%` }}
-          />
-          {characters.map((character, index) => {
-            const sameHeightIndex = characters
-              .slice(0, index)
-              .filter((candidate) => candidate.heightCm === character.heightCm).length;
-            return (
-              <button
-                aria-current={selectedId === character.id}
-                aria-label={`定位到${character.name}，${formatHeight(character.heightCm)}厘米`}
-                className="character-height__roster-mark"
-                data-roster-mark={character.id}
-                key={character.id}
-                onClick={() => scrollToCharacter(character.id)}
-                style={
-                  {
-                    "--mark-lane": sameHeightIndex,
-                    "--mark-left": `${(index / (characters.length - 1)) * 100}%`,
-                  } as CSSProperties
-                }
-                type="button"
-              />
-            );
-          })}
-        </div>
-        <span>165 CM</span>
       </div>
     </div>
   );

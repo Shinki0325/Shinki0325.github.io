@@ -42,33 +42,56 @@
   position: relative;
   z-index: 20;
   display: grid;
-  grid-template-columns: minmax(320px, 1fr) auto;
+  grid-template-columns: minmax(430px, 1fr) auto;
   align-items: stretch;
-  min-height: 58px;
+  min-height: 64px;
   border-bottom: 1px solid var(--archive-border);
   background: color-mix(in srgb, var(--panel-strong) 96%, #17233f 4%);
   box-shadow: inset 0 -1px 0 color-mix(in srgb, var(--text-main) 9%, transparent);
 }
 
 .character-archive__tabs {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(210px, 1fr));
   align-items: stretch;
   min-width: 0;
-  padding-left: 5px;
+  padding-left: 0;
 }
 
 .character-archive__tab {
+  --tab-accent: var(--archive-accent);
   position: relative;
-  display: inline-flex;
-  min-width: 0;
+  display: grid;
+  grid-template-columns: 24px 32px minmax(0, 1fr) auto;
+  min-width: 210px;
   align-items: center;
-  gap: 8px;
-  padding: 0 17px;
+  gap: 9px;
+  padding: 0 18px 0 12px;
   border: 0;
+  border-right: 1px solid color-mix(in srgb, var(--archive-border) 54%, transparent);
   color: color-mix(in srgb, var(--text-muted) 88%, transparent);
   background: transparent;
   cursor: pointer;
+  text-align: left;
   white-space: nowrap;
+}
+
+.character-archive__tab:nth-child(2) {
+  --tab-accent: var(--archive-accent-alt);
+}
+
+.character-archive__tab::before {
+  position: absolute;
+  top: 9px;
+  bottom: 9px;
+  left: 0;
+  width: 3px;
+  background: var(--tab-accent);
+  box-shadow: 0 0 12px color-mix(in srgb, var(--tab-accent) 58%, transparent);
+  content: "";
+  opacity: 0;
+  transform: scaleY(0.55);
+  transition: opacity 140ms ease, transform 140ms ease;
 }
 
 .character-archive__tab::after {
@@ -77,7 +100,7 @@
   bottom: 0;
   left: 12px;
   height: 2px;
-  background: var(--archive-accent);
+  background: var(--tab-accent);
   content: "";
   opacity: 0;
   transform: scaleX(0.6);
@@ -86,31 +109,79 @@
 
 .character-archive__tab[aria-selected="true"] {
   color: var(--text-main);
-  background: color-mix(in srgb, var(--archive-accent) 10%, transparent);
+  background: color-mix(in srgb, var(--tab-accent) 9%, transparent);
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%);
 }
 
+.character-archive__tab[aria-selected="true"]::before,
 .character-archive__tab[aria-selected="true"]::after {
   opacity: 1;
   transform: scaleX(1);
 }
 
+.character-archive__tab[aria-selected="true"]::before {
+  transform: scaleY(1);
+}
+
 .character-archive__tab:hover,
 .character-archive__tab:focus-visible {
   color: var(--text-main);
-  background: color-mix(in srgb, var(--archive-accent) 8%, transparent);
+  background: color-mix(in srgb, var(--tab-accent) 7%, transparent);
   outline: none;
 }
 
 .character-archive__tab:focus-visible {
-  box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--archive-accent) 48%, transparent);
+  box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--tab-accent) 42%, transparent);
+}
+
+.character-archive__tab-index {
+  color: color-mix(in srgb, var(--text-muted) 64%, transparent);
+  font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
+  font-size: 0.58rem;
+}
+
+.character-archive__tab-icon {
+  display: grid;
+  width: 32px;
+  height: 32px;
+  border: 1px solid color-mix(in srgb, var(--archive-border) 70%, transparent);
+  color: color-mix(in srgb, var(--text-muted) 80%, transparent);
+  background: color-mix(in srgb, var(--tab-accent) 5%, transparent);
+  clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 0 100%);
+  place-items: center;
+}
+
+.character-archive__tab-label {
+  overflow: hidden;
+  font-size: 0.94rem;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.character-archive__tab-badge-host {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  justify-self: end;
+  pointer-events: none;
+}
+
+.character-archive__tab[aria-selected="true"] .character-archive__tab-index,
+.character-archive__tab[aria-selected="true"] .character-archive__tab-icon,
+.character-archive__tab:hover .character-archive__tab-icon,
+.character-archive__tab:focus-visible .character-archive__tab-icon {
+  border-color: color-mix(in srgb, var(--tab-accent) 68%, var(--archive-border));
+  color: var(--text-main);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--tab-accent) 12%, transparent);
 }
 
 .character-archive__controls {
   display: flex;
-  min-width: 180px;
+  min-width: 256px;
   align-items: center;
   justify-content: flex-end;
-  padding: 8px 14px 8px 8px;
+  padding: 12px 14px;
 }
 
 .character-archive__panels,
@@ -133,6 +204,21 @@
   min-width: 0;
 }
 
+.character-archive .character-archive__status-cassette {
+  display: grid;
+  grid-template-columns: 36px minmax(144px, 1fr) 36px;
+  width: 228px;
+  min-width: 228px;
+  min-height: 38px;
+  padding: 0;
+  gap: 0;
+  overflow: hidden;
+  border: 1px solid var(--archive-border);
+  border-radius: 0;
+  background: color-mix(in srgb, var(--archive-accent) 6%, transparent);
+  clip-path: polygon(0 0, calc(100% - 7px) 0, 100% 7px, 100% 100%, 0 100%);
+}
+
 .character-height {
   --height-floor-offset: 64px;
   width: 100%;
@@ -142,17 +228,15 @@
 }
 
 .character-height__header-tools {
-  display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 6px;
 }
 
-.character-height__readout {
-  min-width: 152px;
-  padding: 6px 10px;
+.character-height__focus-trigger {
+  min-width: 0;
+  padding: 6px 9px;
   overflow: hidden;
-  border-left: 2px solid var(--archive-accent);
+  border-right: 1px solid color-mix(in srgb, var(--archive-border) 62%, transparent);
+  border-left: 1px solid color-mix(in srgb, var(--archive-border) 62%, transparent);
   color: var(--text-muted);
   background: color-mix(in srgb, var(--archive-accent) 7%, transparent);
   font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
@@ -162,15 +246,100 @@
   white-space: nowrap;
 }
 
+.character-height__controls-shell {
+  position: relative;
+  width: 228px;
+}
+
+.character-height__header-tools .character-height__focus-trigger {
+  display: grid;
+  width: 100%;
+  height: 36px;
+  grid-template-columns: 14px minmax(0, 1fr) 12px;
+  align-items: center;
+  gap: 5px;
+  text-align: center;
+}
+
+.character-height__focus-trigger > span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.character-height__focus-menu-icon,
+.character-height__focus-chevron {
+  color: var(--archive-accent);
+}
+
+.character-height__focus-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  z-index: 40;
+  display: grid;
+  width: 228px;
+  max-height: 336px;
+  padding: 5px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border: 1px solid var(--archive-border);
+  background: color-mix(in srgb, var(--panel-strong) 96%, #07101f 4%);
+  box-shadow: 0 12px 30px color-mix(in srgb, #020617 72%, transparent);
+  scrollbar-color: var(--archive-border) transparent;
+  scrollbar-width: thin;
+}
+
+.character-height__focus-menu button {
+  display: grid;
+  width: 100%;
+  min-height: 34px;
+  grid-template-columns: minmax(0, 1fr) auto 14px;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 8px;
+  border: 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--archive-border) 28%, transparent);
+  border-radius: 0;
+  color: var(--text-main);
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+}
+
+.character-height__focus-menu button:hover,
+.character-height__focus-menu button:focus-visible,
+.character-height__focus-menu button[aria-checked="true"] {
+  color: var(--text-main);
+  background: color-mix(in srgb, var(--archive-accent) 18%, transparent);
+  outline: 1px solid color-mix(in srgb, var(--archive-accent) 62%, transparent);
+  outline-offset: -1px;
+}
+
+.character-height__focus-menu button span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.character-height__focus-menu button small {
+  color: var(--text-muted);
+  font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
+  font-size: 0.58rem;
+  white-space: nowrap;
+}
+
 .character-height__header-tools button {
   display: grid;
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
   padding: 0;
-  border: 1px solid var(--archive-border);
-  border-radius: 3px;
+  border: 0;
+  border-radius: 0;
   color: var(--text-muted);
-  background: color-mix(in srgb, var(--archive-accent) 7%, transparent);
+  background: transparent;
   cursor: pointer;
   place-items: center;
 }
@@ -273,6 +442,14 @@
 .character-height__track.is-dragging {
   cursor: grabbing;
   scroll-behavior: auto;
+  scroll-snap-type: none;
+}
+
+.character-height[data-focus-id]:not([data-focus-id=""]) .character-height__track {
+  justify-content: center;
+  padding-inline: 0;
+  overflow: hidden;
+  cursor: default;
   scroll-snap-type: none;
 }
 
@@ -384,79 +561,6 @@
   background: color-mix(in srgb, var(--accent) 20%, var(--panel-strong) 80%);
 }
 
-.character-height__roster {
-  position: relative;
-  z-index: 8;
-  display: grid;
-  grid-template-columns: 72px minmax(0, 1fr) 72px;
-  align-items: center;
-  gap: 12px;
-  min-height: 56px;
-  padding: 8px 14px;
-  border-top: 1px solid var(--archive-border);
-  background: color-mix(in srgb, var(--panel-strong) 96%, #17233f 4%);
-}
-
-.character-height__roster > span {
-  color: var(--text-muted);
-  font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
-  font-size: 0.62rem;
-}
-
-.character-height__roster > span:last-child {
-  text-align: right;
-}
-
-.character-height__roster-map {
-  position: relative;
-  height: 34px;
-  border-bottom: 1px solid color-mix(in srgb, var(--archive-border) 54%, transparent);
-}
-
-.character-height__roster-map::before {
-  position: absolute;
-  top: 17px;
-  right: 0;
-  left: 0;
-  height: 1px;
-  background: color-mix(in srgb, var(--archive-border) 44%, transparent);
-  content: "";
-}
-
-.character-height__roster-window {
-  position: absolute;
-  top: 3px;
-  bottom: 3px;
-  border: 1px solid color-mix(in srgb, var(--archive-accent) 68%, transparent);
-  background: color-mix(in srgb, var(--archive-accent) 12%, transparent);
-  pointer-events: none;
-  transition: left 100ms linear, width 100ms linear;
-}
-
-.character-height__roster-mark {
-  position: absolute;
-  top: calc(4px + var(--mark-lane) * 6px);
-  left: var(--mark-left);
-  z-index: 2;
-  width: 6px;
-  height: 6px;
-  padding: 0;
-  border: 1px solid var(--archive-border);
-  border-radius: 1px;
-  background: var(--panel-strong);
-  cursor: pointer;
-  transform: translateX(-50%);
-}
-
-.character-height__roster-mark:hover,
-.character-height__roster-mark:focus-visible,
-.character-height__roster-mark[aria-current="true"] {
-  border-color: var(--archive-accent-alt);
-  background: var(--archive-accent-alt);
-  box-shadow: 0 0 8px color-mix(in srgb, var(--archive-accent-alt) 60%, transparent);
-  outline: none;
-}
-
 @keyframes character-archive-panel-in {
   from {
     opacity: 0;
@@ -474,11 +578,8 @@
   }
 
   .character-archive__tab {
-    padding-inline: 11px;
-  }
-
-  .character-height__readout {
-    display: none;
+    min-width: 0;
+    padding-inline: 9px;
   }
 }
 
@@ -489,18 +590,24 @@
 
   .character-archive__header {
     grid-template-columns: 1fr;
-    min-height: 104px;
+    min-height: 116px;
   }
 
   .character-archive__tabs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     min-height: 52px;
   }
 
   .character-archive__tab {
-    flex: 1;
-    justify-content: center;
+    grid-template-columns: 19px 28px minmax(0, 1fr) auto;
+    gap: 6px;
     padding-inline: 7px;
     font-size: 0.78rem;
+  }
+
+  .character-archive__tab-icon {
+    width: 28px;
+    height: 28px;
   }
 
   .character-archive__controls {
@@ -515,10 +622,9 @@
     padding-left: 44px;
   }
 
-  .character-height__roster {
-    grid-template-columns: 50px minmax(0, 1fr) 50px;
-    gap: 7px;
-    padding-inline: 8px;
+  .character-height__controls-shell,
+  .character-height__focus-menu {
+    width: min(228px, calc(100vw - 20px));
   }
 }
 
@@ -532,7 +638,7 @@
   .character-height__character img,
   .character-height__ground,
   .character-height__active-line,
-  .character-height__roster-window {
+  .character-height__focus-menu {
     transition: none;
   }
 

@@ -1,5 +1,5 @@
 import { ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
-import { useMemo, useState, type CSSProperties } from "react";
+import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
 import { createPortal } from "react-dom";
 import {
   getAdjacentCalendarMonth,
@@ -9,18 +9,24 @@ import {
   type CharacterBirthday,
 } from "../../data/character-birthdays";
 import {
+  buildBirthdayConstellationFocusPath,
   birthdayConstellationXPositions,
   birthdayConstellationYPositions,
   buildBirthdayConstellationPath,
   buildBirthdayConstellationWeekPath,
+  getBirthdayNeighborDates,
   getBirthdayConstellationLayout,
   isBirthdayConstellationDateVisible,
+  type BirthdayNeighborDate,
   type BirthdayConstellationDate,
 } from "./birthday-constellation";
+import BirthdayNeighborRoute from "./BirthdayNeighborRoute";
+import { getMonthlyBirthdaySky } from "./monthly-birthday-sky";
 import "./character-birthday-calendar.css";
 
 type Props = {
   active?: boolean;
+  badgeHost?: HTMLElement | null;
   characters: CharacterBirthday[];
   controlsHost?: HTMLElement | null;
   embedded?: boolean;
@@ -38,14 +44,12 @@ const getToday = () => {
   };
 };
 
-const formatMonth = (year: number, month: number) =>
-  `${year}.${month.toString().padStart(2, "0")}`;
-
 const formatSelectedDate = ({ year, month, day }: BirthdayConstellationDate) =>
   `${year}.${month.toString().padStart(2, "0")}.${day.toString().padStart(2, "0")}`;
 
 export default function CharacterBirthdayCalendar({
   active = true,
+  badgeHost = null,
   characters,
   controlsHost = null,
   embedded = false,
@@ -61,7 +65,11 @@ export default function CharacterBirthdayCalendar({
     month: today.month,
     day: today.date.getDate(),
   }));
+  const [selectionSequence, setSelectionSequence] = useState(0);
   const [hoveredWeek, setHoveredWeek] = useState<number | null>(null);
+  const [focusedDay, setFocusedDay] = useState<number | null>(null);
+  const rootRef = useRef<HTMLElement>(null);
+  const pendingFocusDay = useRef<number | null>(null);
   const workById = useMemo(
     () => new Map(works.map((work) => [work.id, work])),
     [works],
@@ -78,6 +86,10 @@ export default function CharacterBirthdayCalendar({
   );
   const layout = useMemo(() => getBirthdayConstellationLayout(calendar), [calendar]);
   const routePath = useMemo(() => buildBirthdayConstellationPath(layout), [layout]);
+  const focusPath = useMemo(
+    () => buildBirthdayConstellationFocusPath(layout, focusedDay),
+    [focusedDay, layout],
+  );
   const weekCount = useMemo(
     () => Math.max(0, ...layout.map((node) => node.week)) + 1,
     [layout],
@@ -102,6 +114,31 @@ export default function CharacterBirthdayCalendar({
     calendar.year,
     calendar.month,
   );
+  const birthdayNeighbors = useMemo(
+    () => getBirthdayNeighborDates(selectedDate, characters),
+    [characters, selectedDate],
+  );
+  const selectedVisibleNode =
+    layout.find((node) => selectedDateIsVisible && node.day === selectedDate.day) ?? null;
+  const selectedPulsePath = useMemo(
+    () =>
+      selectionSequence > 0
+        ? buildBirthdayConstellationFocusPath(layout, selectedVisibleNode?.day ?? null)
+        : "",
+    [layout, selectedVisibleNode?.day, selectionSequence],
+  );
+  const skyProfile = useMemo(() => getMonthlyBirthdaySky(calendar.month), [calendar.month]);
+  const skyBadgeStars = useMemo(() => skyProfile.stars.slice(0, 4), [skyProfile]);
+  const skyBadgeEdges = useMemo(() => {
+    const visibleStars = new Set(skyBadgeStars.map((star) => star.id));
+    return skyProfile.edges.filter(
+      (edge) => visibleStars.has(edge.from) && visibleStars.has(edge.to),
+    );
+  }, [skyBadgeStars, skyProfile]);
+  const skyBadgeStarById = useMemo(
+    () => new Map(skyBadgeStars.map((star) => [star.id, star])),
+    [skyBadgeStars],
+  );
 
   const goToMonth = (offset: number) => {
     setVisibleMonth((current) =>
@@ -109,16 +146,91 @@ export default function CharacterBirthdayCalendar({
     );
   };
 
+  const selectDate = (date: BirthdayConstellationDate, revealMonth = false) => {
+    if (revealMonth) setVisibleMonth({ year: date.year, month: date.month });
+    setSelectedDate(date);
+    setSelectionSequence((current) => current + 1);
+  };
+
+  const selectNeighbor = (date: BirthdayNeighborDate) => {
+    pendingFocusDay.current = date.day;
+    selectDate(date, true);
+  };
+
+  useEffect(() => {
+    const day = pendingFocusDay.current;
+    if (day === null || !selectedDateIsVisible) return;
+    pendingFocusDay.current = null;
+    const frame = window.requestAnimationFrame(() => {
+      rootRef.current
+        ?.querySelector<HTMLButtonElement>(`[data-birthday-node="${day}"]`)
+        ?.focus();
+    });
+    return () => window.cancelAnimationFrame(frame);
+  }, [calendar.month, calendar.year, selectedDateIsVisible]);
+
   const monthControl = (
-    <div className="birthday-constellation__month-control" aria-label="月份切换">
+    <div
+      aria-label="月份切换"
+      className="birthday-constellation__month-control character-archive__status-cassette"
+      data-archive-status-cassette
+    >
       <button aria-label="上个月" onClick={() => goToMonth(-1)} type="button">
         <ChevronLeft aria-hidden="true" size={16} strokeWidth={1.8} />
       </button>
-      <span data-birthday-month>{formatMonth(calendar.year, calendar.month)}</span>
+      <span
+        aria-label={`${calendar.year}年${calendar.month}月`}
+        data-birthday-month
+        data-month-key={`${calendar.year}-${calendar.month.toString().padStart(2, "0")}`}
+        key={`${calendar.year}-${calendar.month}`}
+      >
+        <small>{calendar.year}</small>
+        <b aria-hidden="true">/</b>
+        <strong>{calendar.month.toString().padStart(2, "0")}</strong>
+      </span>
       <button aria-label="下个月" onClick={() => goToMonth(1)} type="button">
         <ChevronRight aria-hidden="true" size={16} strokeWidth={1.8} />
       </button>
     </div>
+  );
+
+  const skyBadge = (
+    <span
+      aria-label={skyProfile.label}
+      className="birthday-constellation__sky-badge"
+      data-birthday-sky-badge
+      data-sky-badge-month={calendar.month}
+      role="img"
+      title={skyProfile.label}
+    >
+      <span aria-hidden="true" data-sky-badge-month-label>
+        {calendar.month.toString().padStart(2, "0")}
+      </span>
+      <svg aria-hidden="true" preserveAspectRatio="xMidYMid meet" viewBox="0 0 100 100">
+        {skyBadgeEdges.map((edge) => {
+          const from = skyBadgeStarById.get(edge.from)!;
+          const to = skyBadgeStarById.get(edge.to)!;
+          return (
+            <line
+              key={`${edge.from}:${edge.to}`}
+              x1={from.x}
+              x2={to.x}
+              y1={from.y}
+              y2={to.y}
+            />
+          );
+        })}
+        {skyBadgeStars.map((star) => (
+          <circle
+            className={`is-${star.magnitude}`}
+            cx={star.x}
+            cy={star.y}
+            key={star.id}
+            r={star.magnitude === "primary" ? 4.2 : 3}
+          />
+        ))}
+      </svg>
+    </span>
   );
 
   const renderPortrait = (character: CharacterBirthday, kind: "primary" | "support") => {
@@ -157,7 +269,9 @@ export default function CharacterBirthdayCalendar({
         .filter(Boolean)
         .join(" ")}
       data-theme="starmap"
+      ref={rootRef}
     >
+      {embedded && badgeHost && active ? createPortal(skyBadge, badgeHost) : null}
       {embedded && controlsHost && active
         ? createPortal(monthControl, controlsHost)
         : !embedded
@@ -166,6 +280,7 @@ export default function CharacterBirthdayCalendar({
                 <div className="birthday-constellation__title">
                   <h2>角色生日星图</h2>
                 </div>
+                {skyBadge}
                 {monthControl}
               </header>
             )
@@ -212,6 +327,23 @@ export default function CharacterBirthdayCalendar({
             ))}
             <path className="birthday-constellation__track-shadow" d={routePath} />
             <path className="birthday-constellation__track" d={routePath} />
+            <path
+              className="birthday-constellation__route-scan"
+              d={routePath}
+              data-birthday-route-scan
+              key={`scan-${calendar.year}-${calendar.month}`}
+              pathLength="1"
+            />
+            <path className="birthday-constellation__focus-track" d={focusPath} />
+            {selectedPulsePath ? (
+              <path
+                className="birthday-constellation__selection-pulse"
+                d={selectedPulsePath}
+                data-birthday-selection-pulse
+                key={`selection-${selectionSequence}`}
+                pathLength="1"
+              />
+            ) : null}
             {Array.from({ length: weekCount }, (_, week) => (
               <path
                 className={[
@@ -250,17 +382,29 @@ export default function CharacterBirthdayCalendar({
                   data-birthday-node={node.day}
                   data-birthday-today={node.isToday ? "" : undefined}
                   key={node.day}
-                  onBlur={() => setHoveredWeek(null)}
+                  onBlur={() => {
+                    setHoveredWeek(null);
+                    setFocusedDay(null);
+                  }}
                   onClick={() =>
-                    setSelectedDate({
+                    selectDate({
                       year: calendar.year,
                       month: calendar.month,
                       day: node.day,
                     })
                   }
-                  onFocus={() => setHoveredWeek(node.week)}
-                  onPointerEnter={() => setHoveredWeek(node.week)}
-                  onPointerLeave={() => setHoveredWeek(null)}
+                  onFocus={() => {
+                    setHoveredWeek(node.week);
+                    setFocusedDay(node.day);
+                  }}
+                  onPointerEnter={() => {
+                    setHoveredWeek(node.week);
+                    setFocusedDay(node.day);
+                  }}
+                  onPointerLeave={() => {
+                    setHoveredWeek(null);
+                    setFocusedDay(null);
+                  }}
                   style={{ "--x": node.x, "--y": node.y } as CSSProperties}
                   type="button"
                 >
@@ -297,8 +441,7 @@ export default function CharacterBirthdayCalendar({
           <hr />
 
           <ul className="birthday-constellation__detail-list">
-            {selectedBirthdays.length > 0 ? (
-              selectedBirthdays.map((character) => {
+            {selectedBirthdays.map((character) => {
                 const work = workById.get(character.workId);
                 const bangumiUrl = getCharacterBangumiUrl(character);
 
@@ -331,14 +474,14 @@ export default function CharacterBirthdayCalendar({
                     ) : null}
                   </li>
                 );
-              })
-            ) : (
-              <li className="birthday-constellation__empty-detail">
-                <strong>无生日事件</strong>
-                <span>路线坐标保留，当前日期没有生日条目</span>
-              </li>
-            )}
+              })}
           </ul>
+          <BirthdayNeighborRoute
+            birthdayCount={selectedBirthdays.length}
+            next={birthdayNeighbors.next}
+            onSelect={selectNeighbor}
+            previous={birthdayNeighbors.previous}
+          />
         </aside>
       </div>
     </section>

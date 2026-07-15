@@ -22,6 +22,10 @@ export type BirthdayConstellationDate = {
   day: number;
 };
 
+export type BirthdayNeighborDate = BirthdayConstellationDate & {
+  birthdays: CharacterBirthday[];
+};
+
 export const getBirthdayConstellationLayout = (
   calendar: BirthdayCalendarMonth,
 ): BirthdayConstellationNode[] => {
@@ -84,4 +88,51 @@ export const buildBirthdayConstellationPath = (nodes: BirthdayConstellationNode[
   }
 
   return path;
+};
+
+const toUtcDay = ({ year, month, day }: BirthdayConstellationDate) =>
+  Date.UTC(year, month - 1, day);
+
+export const getBirthdayNeighborDates = (
+  selected: BirthdayConstellationDate,
+  records: CharacterBirthday[],
+): { previous: BirthdayNeighborDate | null; next: BirthdayNeighborDate | null } => {
+  const groups = new Map<string, CharacterBirthday[]>();
+  for (const character of records) {
+    const group = groups.get(character.birthday) ?? [];
+    group.push(character);
+    groups.set(character.birthday, group);
+  }
+
+  const candidates: BirthdayNeighborDate[] = [];
+  for (const year of [selected.year - 1, selected.year, selected.year + 1]) {
+    for (const [key, birthdays] of groups) {
+      const [month, day] = key.split("-").map(Number);
+      const date = new Date(Date.UTC(year, month - 1, day));
+      if (date.getUTCMonth() + 1 !== month || date.getUTCDate() !== day) continue;
+      candidates.push({ year, month, day, birthdays });
+    }
+  }
+
+  const selectedTime = toUtcDay(selected);
+  const previous =
+    candidates
+      .filter((candidate) => toUtcDay(candidate) < selectedTime)
+      .sort((left, right) => toUtcDay(right) - toUtcDay(left))[0] ?? null;
+  const next =
+    candidates
+      .filter((candidate) => toUtcDay(candidate) > selectedTime)
+      .sort((left, right) => toUtcDay(left) - toUtcDay(right))[0] ?? null;
+
+  return { previous, next };
+};
+
+export const buildBirthdayConstellationFocusPath = (
+  nodes: BirthdayConstellationNode[],
+  day: number | null,
+) => {
+  if (day === null) return "";
+  const index = nodes.findIndex((node) => node.day === day);
+  if (index < 0) return "";
+  return buildBirthdayConstellationPath(nodes.slice(Math.max(0, index - 1), index + 2));
 };

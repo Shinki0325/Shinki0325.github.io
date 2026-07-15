@@ -71,7 +71,7 @@
   position: relative;
   z-index: 2;
   display: grid;
-  grid-template-columns: minmax(160px, 1fr) auto;
+  grid-template-columns: minmax(160px, 1fr) auto auto;
   align-items: center;
   gap: 14px;
   padding: 14px 16px 13px 20px;
@@ -95,8 +95,64 @@
   line-height: 1.2;
 }
 
+.birthday-constellation__sky-badge {
+  position: relative;
+  display: block;
+  width: 26px;
+  height: 26px;
+  min-width: 26px;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--route-today) 78%, white 22%);
+  color: white;
+  background: color-mix(in srgb, var(--route-selected) 34%, var(--route-surface) 66%);
+  box-shadow: inset 0 0 9px color-mix(in srgb, var(--route-today) 28%, transparent);
+  clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 0 100%);
+  filter: drop-shadow(0 0 3px color-mix(in srgb, var(--route-today) 40%, transparent));
+  pointer-events: none;
+}
+
+.birthday-constellation__sky-badge svg {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 16px;
+  height: 13px;
+  overflow: visible;
+}
+
+.birthday-constellation__sky-badge line {
+  stroke: color-mix(in srgb, var(--route-today) 84%, white 16%);
+  stroke-width: 4.6;
+  opacity: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.birthday-constellation__sky-badge circle {
+  fill: color-mix(in srgb, var(--route-today) 62%, white 38%);
+  opacity: 1;
+}
+
+.birthday-constellation__sky-badge circle.is-primary {
+  opacity: 1;
+  filter: drop-shadow(0 0 3px var(--route-glow));
+}
+
+.birthday-constellation__sky-badge > [data-sky-badge-month-label] {
+  position: absolute;
+  bottom: 1px;
+  left: 3px;
+  z-index: 2;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 0.48rem;
+  font-weight: 700;
+  line-height: 1;
+  text-shadow: 0 0 5px var(--route-glow);
+  white-space: nowrap;
+}
+
 .birthday-constellation__month-control {
-  display: inline-flex;
+  display: grid;
+  grid-template-columns: 31px minmax(68px, 1fr) 31px;
   align-items: center;
   gap: 4px;
   padding: 3px;
@@ -127,13 +183,53 @@
 }
 
 .birthday-constellation__month-control span {
-  min-width: 68px;
+  position: relative;
+  display: grid;
+  min-width: 0;
+  height: 100%;
+  grid-template-columns: auto 12px auto;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
   color: var(--archive-band-text);
   font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
   font-size: 0.78rem;
   font-weight: 500;
   letter-spacing: 0;
   text-align: center;
+}
+
+.birthday-constellation__month-control span::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -38%;
+  width: 32%;
+  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--route-line) 28%, transparent), transparent);
+  content: "";
+  pointer-events: none;
+  animation: birthday-cassette-scan 260ms ease-out both;
+}
+
+.birthday-constellation__month-control small,
+.birthday-constellation__month-control b,
+.birthday-constellation__month-control strong {
+  font: inherit;
+  font-weight: 500;
+}
+
+.birthday-constellation__month-control small {
+  color: color-mix(in srgb, var(--archive-band-text) 62%, transparent);
+  font-size: 0.65rem;
+}
+
+.birthday-constellation__month-control b {
+  color: color-mix(in srgb, var(--route-line) 54%, transparent);
+}
+
+.birthday-constellation__month-control strong {
+  color: var(--archive-band-text);
+  font-size: 0.86rem;
 }
 
 .birthday-constellation__body {
@@ -158,6 +254,7 @@
   inset: 12px 10px;
   width: calc(100% - 20px);
   height: calc(100% - 24px);
+  z-index: 1;
 }
 
 .birthday-constellation__route {
@@ -210,6 +307,27 @@
   filter: drop-shadow(0 0 5px var(--route-glow));
 }
 
+.birthday-constellation__focus-track {
+  fill: none;
+  stroke: color-mix(in srgb, var(--route-today) 74%, white 26%);
+  stroke-width: 2;
+  filter: drop-shadow(0 0 5px var(--route-glow));
+  pointer-events: none;
+  vector-effect: non-scaling-stroke;
+}
+
+.birthday-constellation__selection-pulse {
+  fill: none;
+  stroke: color-mix(in srgb, var(--route-selected) 72%, white 28%);
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 0 6px var(--route-glow));
+  pointer-events: none;
+  vector-effect: non-scaling-stroke;
+  animation: birthday-selection-pulse 180ms ease-out both;
+}
+
 .birthday-constellation__track-shadow {
   stroke: var(--route-glow);
   stroke-width: 5;
@@ -220,6 +338,22 @@
 .birthday-constellation__track {
   stroke: var(--route-line);
   stroke-width: 1.2;
+  stroke-dasharray: none;
+  stroke-dashoffset: 0;
+  animation: none;
+}
+
+.birthday-constellation__route-scan {
+  fill: none;
+  stroke: color-mix(in srgb, var(--route-today) 76%, white 24%);
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 0.16 0.84;
+  filter: drop-shadow(0 0 4px var(--route-glow));
+  pointer-events: none;
+  vector-effect: non-scaling-stroke;
+  animation: birthday-route-scan 400ms ease-out both;
 }
 
 .birthday-constellation__node-layer {
@@ -258,6 +392,11 @@
   transform: translate(-50%, -50%) scale(1.08);
 }
 
+.birthday-constellation__node:hover .birthday-constellation__portrait--primary,
+.birthday-constellation__node:focus-visible .birthday-constellation__portrait--primary {
+  transform: translateY(-3px);
+}
+
 .birthday-constellation__node.has-birthday {
   --node-size: 48px;
   border-width: 1px;
@@ -283,6 +422,31 @@
   border: 0;
   background: var(--route-line);
   box-shadow: 0 0 7px var(--route-glow);
+}
+
+.birthday-constellation__node:not(.has-birthday)::before,
+.birthday-constellation__node:not(.has-birthday)::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 13px;
+  height: 1px;
+  background: var(--route-today);
+  content: "";
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity 120ms ease;
+}
+
+.birthday-constellation__node:not(.has-birthday)::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.birthday-constellation__node:not(.has-birthday):hover::before,
+.birthday-constellation__node:not(.has-birthday):hover::after,
+.birthday-constellation__node:not(.has-birthday):focus-visible::before,
+.birthday-constellation__node:not(.has-birthday):focus-visible::after {
+  opacity: 0.9;
 }
 
 .birthday-constellation__node.is-today {
@@ -550,19 +714,6 @@
   outline: none;
 }
 
-.birthday-constellation__empty-detail {
-  display: grid;
-  min-height: 190px;
-  color: var(--route-muted);
-  text-align: center;
-  place-items: center;
-}
-
-.birthday-constellation__empty-detail strong,
-.birthday-constellation__empty-detail span {
-  display: block;
-}
-
 .birthday-constellation--embedded {
   height: 100%;
   border: 0;
@@ -582,16 +733,257 @@
   min-height: 0;
 }
 
-.birthday-constellation__empty-detail strong {
+.birthday-neighbor-route {
+  --neighbor-date-track: 52px;
+  --neighbor-node-track: 68px;
+  --neighbor-track-gap: 10px;
+  position: relative;
+  display: grid;
+  flex: 1;
+  min-height: 0;
+  align-items: center;
+}
+
+.birthday-neighbor-route::before {
+  position: absolute;
+  top: 12%;
+  bottom: 12%;
+  left: calc(
+    var(--neighbor-date-track) + var(--neighbor-track-gap) +
+    var(--neighbor-node-track) / 2
+  );
+  width: 1px;
+  background: linear-gradient(transparent, var(--route-line) 18%, var(--route-line) 82%, transparent);
+  content: "";
+  opacity: 0.64;
+  pointer-events: none;
+}
+
+.birthday-neighbor-route[data-density="expanded"] {
+  grid-template-rows: minmax(110px, 1fr) 72px minmax(110px, 1fr);
+}
+
+.birthday-neighbor-route[data-density="compact"] {
+  grid-template-rows: minmax(74px, 1fr) 48px minmax(74px, 1fr);
+  margin-top: 10px;
+}
+
+.birthday-neighbor-route[data-density="strip"] {
+  grid-template-columns: minmax(0, 1fr) 40px minmax(0, 1fr);
+  grid-template-rows: 54px;
+  flex: 0 0 54px;
+  margin-top: 8px;
+}
+
+.birthday-neighbor-route[data-density="strip"]::before {
+  top: 50%;
+  right: 10%;
+  bottom: auto;
+  left: 10%;
+  width: auto;
+  height: 1px;
+}
+
+.birthday-neighbor-route__node,
+.birthday-neighbor-route__current {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  width: 100%;
+  min-width: 0;
+  grid-template-columns:
+    var(--neighbor-date-track)
+    var(--neighbor-node-track)
+    minmax(0, 1fr);
+  align-items: center;
+  column-gap: var(--neighbor-track-gap);
+}
+
+.birthday-neighbor-route__node {
+  display: grid;
+  width: 100%;
+  min-height: 74px;
+  padding: 6px 4px;
+  border: 0;
   color: var(--route-foreground);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1rem;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  transition: color 140ms ease;
+}
+
+.birthday-neighbor-route__node:hover,
+.birthday-neighbor-route__node:focus-visible {
+  color: white;
+  outline: none;
+}
+
+.birthday-neighbor-route__node:hover .birthday-neighbor-route__portraits > :first-child,
+.birthday-neighbor-route__node:focus-visible .birthday-neighbor-route__portraits > :first-child {
+  border-color: var(--route-today);
+  box-shadow: 0 0 12px var(--route-glow);
+}
+
+.birthday-neighbor-route__date {
+  grid-column: 1;
+  color: var(--route-muted);
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 0.65rem;
+  text-align: right;
+}
+
+.birthday-neighbor-route__portraits {
+  position: relative;
+  display: grid;
+  width: 52px;
+  height: 52px;
+  grid-column: 2;
+  justify-self: center;
+  place-items: center;
+}
+
+.birthday-neighbor-route__portraits > img,
+.birthday-neighbor-route__portraits > span {
+  position: absolute;
+  display: grid;
+  width: 46px;
+  height: 46px;
+  overflow: hidden;
+  border: 1px solid var(--route-border);
+  border-radius: 50%;
+  background: var(--route-muted-base);
+  object-fit: cover;
+  place-items: center;
+}
+
+.birthday-neighbor-route__portraits > :nth-child(n + 2) {
+  right: -1px;
+  bottom: -1px;
+  width: 19px;
+  height: 19px;
+}
+
+.birthday-neighbor-route__portraits > :nth-child(3) {
+  right: 11px;
+}
+
+.birthday-neighbor-route__portraits > :nth-child(n + 4) {
+  display: none;
+}
+
+.birthday-neighbor-route__copy,
+.birthday-neighbor-route__current-copy {
+  display: flex;
+  min-width: 0;
+  grid-column: 3;
+  align-items: baseline;
+  gap: 7px;
+}
+
+.birthday-neighbor-route__copy strong {
+  min-width: 0;
+  overflow: hidden;
+  font-size: 0.72rem;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.birthday-neighbor-route__copy small {
+  flex: 0 0 auto;
+  color: var(--route-muted);
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 0.6rem;
+}
+
+.birthday-neighbor-route__current {
+  text-align: left;
+}
+
+.birthday-neighbor-route__current-node {
+  width: 16px;
+  height: 16px;
+  grid-column: 2;
+  justify-self: center;
+  border: 2px solid var(--route-selected);
+  border-radius: 50%;
+  background: var(--dossier-paper);
+  box-shadow: 0 0 12px var(--route-glow);
+}
+
+.birthday-neighbor-route__current-copy strong {
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 0.64rem;
   font-weight: 500;
 }
 
-.birthday-constellation__empty-detail span {
-  margin-top: 4px;
-  font-size: 0.7rem;
+.birthday-neighbor-route__current-copy small {
+  color: var(--route-muted);
+  font-size: 0.62rem;
+}
+
+.birthday-neighbor-route[data-density="strip"] .birthday-neighbor-route__node {
+  min-height: 54px;
+  grid-template-columns: 34px minmax(0, 1fr);
+  column-gap: 6px;
+  padding: 3px 2px;
+}
+
+.birthday-neighbor-route[data-density="strip"] .birthday-neighbor-route__date {
+  display: none;
+}
+
+.birthday-neighbor-route[data-density="strip"] .birthday-neighbor-route__portraits {
+  grid-column: 1;
+  width: 30px;
+  height: 30px;
+}
+
+.birthday-neighbor-route[data-density="strip"] .birthday-neighbor-route__portraits > img,
+.birthday-neighbor-route[data-density="strip"] .birthday-neighbor-route__portraits > span {
+  width: 30px;
+  height: 30px;
+}
+
+.birthday-neighbor-route[data-density="strip"] .birthday-neighbor-route__portraits > :nth-child(n + 2) {
+  display: none;
+}
+
+.birthday-neighbor-route[data-density="strip"] .birthday-neighbor-route__copy {
+  grid-column: 2;
+  font-size: 0.62rem;
+}
+
+.birthday-neighbor-route[data-density="strip"] .birthday-neighbor-route__current {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 0;
+}
+
+.birthday-neighbor-route[data-density="strip"] .birthday-neighbor-route__current-node {
+  grid-column: 1;
+}
+
+.birthday-neighbor-route[data-density="strip"] .birthday-neighbor-route__current
+  [data-neighbor-date-track],
+.birthday-neighbor-route[data-density="strip"] .birthday-neighbor-route__current-copy {
+  display: none;
+}
+
+@keyframes birthday-route-scan {
+  from { opacity: 0; stroke-dashoffset: 1; }
+  38% { opacity: 0.85; }
+  to { opacity: 0; stroke-dashoffset: 0; }
+}
+
+@keyframes birthday-selection-pulse {
+  from { opacity: 0.96; stroke-dasharray: 0.24 0.76; stroke-dashoffset: 0.24; }
+  to { opacity: 0; stroke-dasharray: 1 0; stroke-dashoffset: 0; }
+}
+
+@keyframes birthday-cassette-scan {
+  from { transform: translateX(0); }
+  to { transform: translateX(430%); }
 }
 
 @media (max-width: 620px) {
@@ -616,6 +1008,40 @@
 
   .birthday-constellation__detail-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 621px) and (max-width: 760px) {
+  .birthday-neighbor-route {
+    --neighbor-date-track: 40px;
+    --neighbor-node-track: 52px;
+    --neighbor-track-gap: 6px;
+  }
+
+  .birthday-neighbor-route__current-copy {
+    flex-direction: row;
+    gap: 3px;
+    white-space: nowrap;
+  }
+
+  .birthday-neighbor-route__current-copy strong,
+  .birthday-neighbor-route__current-copy small {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+
+  .birthday-neighbor-route__copy {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .birthday-neighbor-route__copy strong {
+    width: 100%;
+  }
+
+  .birthday-constellation__sky-badge {
+    width: 26px;
   }
 }
 
@@ -653,6 +1079,11 @@
   .birthday-constellation__detail-list {
     grid-template-columns: 1fr;
   }
+
+  .birthday-constellation__sky-badge {
+    width: 26px;
+    height: 26px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -662,5 +1093,21 @@
   .birthday-constellation__week-track,
   .birthday-constellation__detail-row {
     transition: none;
+  }
+
+  .birthday-constellation__route-scan,
+  .birthday-constellation__selection-pulse {
+    animation: none !important;
+  }
+
+  .birthday-constellation__month-control span::after {
+    animation: none;
+  }
+
+  .birthday-constellation__node:hover .birthday-constellation__portrait--primary,
+  .birthday-constellation__node:focus-visible .birthday-constellation__portrait--primary,
+  .birthday-neighbor-route__node:hover,
+  .birthday-neighbor-route__node:focus-visible {
+    transform: none;
   }
 }

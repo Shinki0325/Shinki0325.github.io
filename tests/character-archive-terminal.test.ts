@@ -14,8 +14,24 @@ describe("character archive terminal production contract", () => {
     expect(terminal).toContain('blog:character-archive-view:v1');
     expect(terminal).toContain('role="tablist"');
     expect(terminal.match(/role="tab"/g)).toHaveLength(2);
-    expect(terminal).toContain("角色生日星图");
-    expect(terminal).toContain("角色身高图鉴");
+    expect(terminal).toContain("生日星图");
+    expect(terminal).toContain("身高图鉴");
+  });
+
+  it("uses the approved short archive labels and indexed command entries", async () => {
+    const terminal = await fs.readFile(
+      "src/components/characters/CharacterArchiveTerminal.tsx",
+      "utf8",
+    );
+
+    expect(terminal).toContain(">生日星图<");
+    expect(terminal).toContain(">身高图鉴<");
+    expect(terminal).not.toContain(">角色生日星图<");
+    expect(terminal).not.toContain(">角色身高图鉴<");
+    expect(terminal).toContain('className="character-archive__tab-index"');
+    expect(terminal).toContain('className="character-archive__tab-icon"');
+    expect(terminal).toContain("01");
+    expect(terminal).toContain("02");
   });
 
   it("uses the accepted 41-entry roster in ascending height order", async () => {
@@ -47,5 +63,21 @@ describe("character archive terminal production contract", () => {
     expect(styles).toMatch(/flex:\s*0 0 168px/);
     expect(styles).toContain("--height-floor-offset: 64px");
     expect(styles).toContain("2.2px");
+  });
+
+  it("replaces the misleading roster map with the approved focus selector contract", async () => {
+    const lineup = await fs.readFile(
+      "src/components/characters/CharacterHeightLineup.tsx",
+      "utf8",
+    );
+
+    expect(lineup).not.toContain("viewportWindow");
+    expect(lineup).not.toContain("updateViewportWindow");
+    expect(lineup).not.toContain("character-height__roster");
+    expect(lineup).not.toContain("data-roster-mark");
+    expect(lineup).toContain("data-height-focus-trigger");
+    expect(lineup).toContain("data-height-focus-menu");
+    expect(lineup).toContain('role="menuitemradio"');
+    expect(lineup).toContain("全员 / 41");
   });
 });

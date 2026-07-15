@@ -18,6 +18,7 @@ export default function CharacterArchiveTerminal({ characters, works }: Props) {
   const [view, setView] = useState<ArchiveView>("birthday");
   const [heightMounted, setHeightMounted] = useState(false);
   const [controlsHost, setControlsHost] = useState<HTMLDivElement | null>(null);
+  const [birthdayBadgeHost, setBirthdayBadgeHost] = useState<HTMLSpanElement | null>(null);
   const birthdayTabRef = useRef<HTMLButtonElement>(null);
   const heightTabRef = useRef<HTMLButtonElement>(null);
 
@@ -48,6 +49,7 @@ export default function CharacterArchiveTerminal({ characters, works }: Props) {
       <header className="character-archive__header">
         <div aria-label="角色资料视图" className="character-archive__tabs" role="tablist">
           <button
+            aria-label="生日星图"
             aria-controls="character-archive-birthday"
             aria-selected={view === "birthday"}
             className="character-archive__tab"
@@ -59,8 +61,15 @@ export default function CharacterArchiveTerminal({ characters, works }: Props) {
             tabIndex={view === "birthday" ? 0 : -1}
             type="button"
           >
-            <CalendarDays aria-hidden="true" size={17} strokeWidth={1.7} />
-            <span>角色生日星图</span>
+            <span aria-hidden="true" className="character-archive__tab-index">01</span>
+            <span aria-hidden="true" className="character-archive__tab-icon">
+              <CalendarDays size={17} strokeWidth={1.7} />
+            </span>
+            <span className="character-archive__tab-label">生日星图</span>
+            <span
+              className="character-archive__tab-badge-host"
+              ref={setBirthdayBadgeHost}
+            />
           </button>
           <button
             aria-controls="character-archive-height"
@@ -74,8 +83,11 @@ export default function CharacterArchiveTerminal({ characters, works }: Props) {
             tabIndex={view === "height" ? 0 : -1}
             type="button"
           >
-            <Ruler aria-hidden="true" size={17} strokeWidth={1.7} />
-            <span>角色身高图鉴</span>
+            <span aria-hidden="true" className="character-archive__tab-index">02</span>
+            <span aria-hidden="true" className="character-archive__tab-icon">
+              <Ruler size={17} strokeWidth={1.7} />
+            </span>
+            <span className="character-archive__tab-label">身高图鉴</span>
           </button>
         </div>
         <div className="character-archive__controls" ref={setControlsHost} />
@@ -91,6 +103,7 @@ export default function CharacterArchiveTerminal({ characters, works }: Props) {
         >
           <CharacterBirthdayCalendar
             active={view === "birthday"}
+            badgeHost={birthdayBadgeHost}
             characters={characters}
             controlsHost={controlsHost}
             embedded
