@@ -21,6 +21,8 @@ const displayedBangumiStatuses = bangumi.statuses.map((status) => ({
       : displayedBangumiItems.filter((item) => item.status === status.key).length,
 }));
 const initialBangumiCategory = displayedBangumiCategories.find((category) => category.count > 0)?.key ?? "anime";
+const bangumiPageSize = 14;
+let initialBangumiCategoryIndex = 0;
 ---
 
 <BaseLayout title="About">
@@ -114,7 +116,9 @@ const initialBangumiCategory = displayedBangumiCategories.find((category) => cat
 
         <div class="about-bangumi__grid">
           {displayedBangumiItems.map((item, index) => {
-            const isInitiallyVisible = item.category === initialBangumiCategory;
+            const isInitialCategory = item.category === initialBangumiCategory;
+            const categoryIndex = isInitialCategory ? initialBangumiCategoryIndex++ : -1;
+            const isInitiallyVisible = isInitialCategory && categoryIndex < bangumiPageSize;
 
             return (
               <a
@@ -129,7 +133,14 @@ const initialBangumiCategory = displayedBangumiCategories.find((category) => cat
                 rel="noreferrer"
                 target="_blank"
               >
-                <img alt={item.title} decoding="async" loading="lazy" referrerpolicy="no-referrer" src={item.cover} />
+                <img
+                  alt={item.title}
+                  data-bangumi-cover={item.cover}
+                  decoding="async"
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                  src={isInitiallyVisible ? item.cover : undefined}
+                />
                 <span class={`about-bangumi-card__status is-${item.status}`}>{item.statusLabel}</span>
                 {item.userRate > 0 ? (
                   <span class="about-bangumi-card__score" title={`我的评分：${item.userRate.toFixed(1)}`}>
@@ -199,6 +210,13 @@ const initialBangumiCategory = displayedBangumiCategories.find((category) => cat
             return matchesCategory && matchesStatus;
           });
 
+        const hydrateBangumiCard = (card: Element) => {
+          const image = card.querySelector("img[data-bangumi-cover]");
+          if (!(image instanceof HTMLImageElement) || image.getAttribute("src")) return;
+          const cover = image.dataset.bangumiCover;
+          if (cover) image.setAttribute("src", cover);
+        };
+
         const updateBangumiPagination = () => {
           const matchedCards = getMatchedCards();
           const pageCount = Math.max(1, Math.ceil(matchedCards.length / pageSize));
@@ -206,7 +224,9 @@ const initialBangumiCategory = displayedBangumiCategories.find((category) => cat
           const visibleCards = new Set(matchedCards.slice((page - 1) * pageSize, page * pageSize));
 
           cards.forEach((card) => {
-            card.toggleAttribute("hidden", !visibleCards.has(card));
+            const visible = visibleCards.has(card);
+            if (visible) hydrateBangumiCard(card);
+            card.toggleAttribute("hidden", !visible);
           });
 
           if (pager instanceof HTMLElement) {

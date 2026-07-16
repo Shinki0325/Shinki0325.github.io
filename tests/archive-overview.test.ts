@@ -1,4 +1,13 @@
+import { stat } from "node:fs/promises";
+import sharp from "sharp";
 import { describe, expect, it } from "vitest";
+import { SCRIPT_OVERVIEW_COVERS } from "../src/lib/archive-covers";
+
+const scriptCoverPaths = Array.from(
+  { length: 11 },
+  (_, index) =>
+    `public/uploads/articles/script-covers/script-cover-${String(index + 1).padStart(2, "0")}.webp`,
+);
 
 describe("archive overview pages", () => {
   const readArchiveStyleSource = async () => {
@@ -6,6 +15,22 @@ describe("archive overview pages", () => {
 
     return fs.readFile("src/styles/archive-overview.css", "utf8");
   };
+
+  it("publishes the eleven ordered fallback covers as bounded local WebPs", async () => {
+    expect(SCRIPT_OVERVIEW_COVERS).toHaveLength(11);
+    expect(new Set(SCRIPT_OVERVIEW_COVERS).size).toBe(11);
+    expect(SCRIPT_OVERVIEW_COVERS).toEqual(
+      scriptCoverPaths.map((path) => path.replace(/^public/, "")),
+    );
+
+    for (const path of scriptCoverPaths) {
+      const [metadata, file] = await Promise.all([sharp(path).metadata(), stat(path)]);
+      expect(metadata.format).toBe("webp");
+      expect(metadata.width ?? 0).toBeLessThanOrEqual(960);
+      expect(metadata.height ?? 0).toBeLessThanOrEqual(1280);
+      expect(file.size).toBeLessThan(250_000);
+    }
+  });
 
   it("uses one shared archive overview shell for articles, references, and notes", async () => {
     const fs = await import("node:fs/promises");
@@ -134,7 +159,8 @@ describe("archive overview pages", () => {
 
   it("feeds article script covers and scraped reference screenshots into overview cards", async () => {
     const fs = await import("node:fs/promises");
-    const [articlesSource, referencesSource, coverSource] = await Promise.all([
+    const [acquisitionSource, articlesSource, referencesSource, coverSource] = await Promise.all([
+      fs.readFile("scripts/acquire-script-overview-covers.mjs", "utf8"),
       fs.readFile("src/pages/articles/index.astro", "utf8"),
       fs.readFile("src/pages/references/index.astro", "utf8"),
       fs.readFile("src/lib/archive-covers.ts", "utf8"),
@@ -146,9 +172,9 @@ describe("archive overview pages", () => {
     expect(coverSource).toContain("SCRIPT_OVERVIEW_COVERS");
     expect(coverSource).toContain("getArchiveThumbnailPublicPath");
     expect(coverSource).toContain("return SCRIPT_OVERVIEW_COVERS");
-    expect(coverSource).toContain("033mTHwA1AgfSkEYQOEJ1F.jpg");
-    expect(coverSource).not.toContain("033mRL5hL42K30lBIHwCpo.png");
-    expect(coverSource).not.toContain("033mRL4ygydTIdfnHrklxE.png");
+    expect(acquisitionSource).toContain("033mTHwA1AgfSkEYQOEJ1F.jpg");
+    expect(acquisitionSource).not.toContain("033mRL5hL42K30lBIHwCpo.png");
+    expect(acquisitionSource).not.toContain("033mRL4ygydTIdfnHrklxE.png");
     expect(coverSource).toContain("galgame-90s-web-archive");
   });
 

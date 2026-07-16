@@ -7,6 +7,10 @@ const outputPaths = [
   "public/uploads/albums/hidden-cg/hidden-cg-03.webp",
   "public/uploads/albums/hidden-cg/hidden-cg-04.webp",
 ];
+const displayPaths = [
+  "public/uploads/albums/hidden-cg/cover-display.webp",
+  "public/uploads/albums/hidden-cg/hidden-cg-02-display.webp",
+];
 
 describe("photowall hidden CG assets", () => {
   it("publishes four unique photos with the approved metadata", async () => {
@@ -18,6 +22,10 @@ describe("photowall hidden CG assets", () => {
     expect(urls).toHaveLength(4);
     expect(new Set(urls).size).toBe(4);
     expect(source).toContain('cover: "/uploads/albums/hidden-cg/hidden-cg-03.webp"');
+    expect(source).toContain('url: "/uploads/albums/hidden-cg/cover-display.webp"');
+    expect(source).toContain('originalUrl: "/uploads/albums/hidden-cg/cover.png"');
+    expect(source).toContain('url: "/uploads/albums/hidden-cg/hidden-cg-02-display.webp"');
+    expect(source).toContain('originalUrl: "/uploads/albums/hidden-cg/hidden-cg-02.jpg"');
     expect(source).toContain("date: 2026-07-15");
     expect(source).toContain('alt: "白色水手服坐姿造型"');
     expect(source).toContain(
@@ -39,5 +47,14 @@ describe("photowall hidden CG assets", () => {
     expect(metadata.height).toBeGreaterThan(0);
     expect(longEdge).toBeLessThanOrEqual(2400);
     expect(file.size).toBeLessThan(1_200_000);
+  });
+
+  it.each(displayPaths)("publishes bounded display media at %s", async (path) => {
+    const [metadata, file] = await Promise.all([sharp(path).metadata(), stat(path)]);
+    const longEdge = Math.max(metadata.width ?? 0, metadata.height ?? 0);
+
+    expect(metadata.format).toBe("webp");
+    expect(longEdge).toBeLessThanOrEqual(1920);
+    expect(file.size).toBeLessThan(750_000);
   });
 });

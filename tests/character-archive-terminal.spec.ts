@@ -19,6 +19,23 @@ async function openArchive(page: Parameters<typeof test>[0]["page"], width = 144
   return page.locator("[data-character-archive]");
 }
 
+test("response HTML contains the real birthday archive with compact island props", async ({
+  page,
+  request,
+}) => {
+  const response = await request.get("/");
+  expect(response.ok()).toBe(true);
+  const html = await response.text();
+  expect(html).toContain("data-character-archive");
+  expect(html).toContain("data-birthday-node");
+
+  const archive = await openArchive(page);
+  await expect(archive.locator("[data-birthday-node]").first()).toBeVisible();
+  const island = page.locator('astro-island[component-url*="CharacterArchiveTerminal"]');
+  await expect(island).toHaveAttribute("client", "load");
+  expect((await island.getAttribute("props"))?.length ?? Number.POSITIVE_INFINITY).toBeLessThan(2_000);
+});
+
 test("uses one shell with a birthday default and a deferred height view", async ({ page }) => {
   const heightRequests: string[] = [];
   page.on("request", (request) => {
@@ -34,6 +51,11 @@ test("uses one shell with a birthday default and a deferred height view", async 
   );
   await expect(archive.locator("[data-character-height-lineup]")).toHaveCount(0);
   expect(heightRequests).toHaveLength(0);
+
+  const heightTab = archive.getByRole("tab").nth(1);
+  await heightTab.focus();
+  await expect.poll(() => heightRequests.length).toBeGreaterThan(0);
+  expect(new Set(heightRequests).size).toBeLessThanOrEqual(8);
 
   await archive.getByRole("tab", { name: "身高图鉴", exact: true }).click();
   await expect(archive.locator("[data-character-height-lineup]")).toBeVisible();

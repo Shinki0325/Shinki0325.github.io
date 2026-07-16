@@ -159,10 +159,15 @@ describe("site appearance config", () => {
     expect(componentSource).toContain("backgroundImages: readonly string[]");
     expect(componentSource).toContain("data-background-slider");
     expect(componentSource).toContain("data-background-slide");
-    expect(componentSource).toContain('index === 0 ? "site-backdrop__image is-active"');
+    expect(componentSource).toContain("data-background-src={src}");
+    expect(componentSource).not.toContain('index === 0 ? "site-backdrop__image is-active"');
+    expect(componentSource).toContain('classList.add("is-active")');
+    expect(componentSource).toContain("Math.floor(Math.random() * slides.length)");
     expect(componentSource).toContain("set:html");
-    expect(componentSource).toContain("setInterval");
-    expect(componentSource).toContain("60000");
+    expect(componentSource).toContain("rotationTimer = setTimeout");
+    expect(componentSource).toContain("nextRotationAt - Date.now()");
+    expect(componentSource).not.toContain("setInterval");
+    expect(componentSource).toContain("BACKGROUND_ROTATION_MS = 60_000");
     expect(styleSource).toContain("grid-template-columns: 1fr");
     expect(styleSource).toContain("grid-area: 1 / 1");
     expect(styleSource).toContain("opacity: 0");

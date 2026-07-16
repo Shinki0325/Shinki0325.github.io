@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { siteShell } from "../src/config/site-shell";
+import { SCRIPT_OVERVIEW_COVERS } from "../src/lib/archive-covers";
 import { buildHomeSearchIndex, buildHomeViewModel } from "../src/lib/home-shell";
 
 describe("site shell config", () => {
@@ -95,7 +96,8 @@ describe("homepage feature cards", () => {
 
   it("turns the featured script card into a cover-pool carousel", async () => {
     const fs = await import("node:fs/promises");
-    const [homeSource, styleSource] = await Promise.all([
+    const [coverSource, homeSource, styleSource] = await Promise.all([
+      fs.readFile("src/lib/archive-covers.ts", "utf8"),
       fs.readFile("src/pages/index.astro", "utf8"),
       fs.readFile("src/styles/global.css", "utf8"),
     ]);
@@ -106,6 +108,15 @@ describe("homepage feature cards", () => {
     expect(homeSource).toContain("data-home-script-slides");
     expect(homeSource).toContain("data-home-script-cover");
     expect(homeSource).toContain("data-home-script-dot");
+    expect(homeSource).toContain('document.addEventListener("astro:before-swap"');
+    expect(homeSource).toContain("clearInterval(carouselTimer)");
+    expect(coverSource).not.toContain("https://pic.imgdd.cc/i/");
+    expect(SCRIPT_OVERVIEW_COVERS).toHaveLength(11);
+    expect(
+      SCRIPT_OVERVIEW_COVERS.every((cover) =>
+        /^\/uploads\/articles\/script-covers\/script-cover-\d{2}\.webp$/.test(cover),
+      ),
+    ).toBe(true);
     expect(styleSource).toContain(".home-script-carousel");
     expect(styleSource).toContain(".home-script-carousel__media");
     expect(styleSource).toContain(".home-script-carousel__dots");

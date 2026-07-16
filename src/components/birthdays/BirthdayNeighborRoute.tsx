@@ -44,13 +44,19 @@ export default function BirthdayNeighborRoute({
         </span>
         <span className="birthday-neighbor-route__portraits" data-neighbor-node-track>
           {primary.avatar ? (
-            <img alt="" src={primary.avatar} />
+            <img alt="" decoding="async" loading="lazy" src={primary.avatar} />
           ) : (
             <span aria-hidden="true">{primary.name.slice(0, 1)}</span>
           )}
           {supporting.map((character) =>
             character.avatar ? (
-              <img alt="" key={character.id} src={character.avatar} />
+              <img
+                alt=""
+                decoding="async"
+                key={character.id}
+                loading="lazy"
+                src={character.avatar}
+              />
             ) : (
               <span aria-hidden="true" key={character.id}>
                 {character.name.slice(0, 1)}

@@ -41,11 +41,11 @@ const nonHomeBackgroundImages: readonly string[] = isHome ? [] : backgroundImage
   <div class="site-backdrop__glow glow-three"></div>
 
   <div class="site-backdrop__slider" data-background-slider={nonHomeBackgroundImages.length > 1 ? "true" : undefined}>
-    {nonHomeBackgroundImages.map((src, index) => (
+    {nonHomeBackgroundImages.map((src) => (
       <div
-        class={nonHomeBackgroundImages.length === 1 && index === 0 ? "site-backdrop__image is-active" : "site-backdrop__image"}
+        class="site-backdrop__image"
         data-background-slide
-        style={`--bg-url: url('${src}');`}
+        data-background-src={src}
       ></div>
     ))}
   </div>
@@ -55,6 +55,41 @@ const nonHomeBackgroundImages: readonly string[] = isHome ? [] : backgroundImage
         is:inline
         set:html={`
           (() => {
+            const BACKGROUND_PRELOAD_DELAY_MS = 55_000;
+            const BACKGROUND_ROTATION_MS = 60_000;
+            const BACKGROUND_STATE_KEY = "blog:nonhome-background-state:v1";
+            const cleanupCallbacks = [];
+
+            const readBackgroundState = (slideCount) => {
+              try {
+                const parsed = JSON.parse(window.sessionStorage.getItem(BACKGROUND_STATE_KEY));
+                if (
+                  !parsed ||
+                  !Number.isInteger(parsed.activeIndex) ||
+                  parsed.activeIndex < 0 ||
+                  parsed.activeIndex >= slideCount ||
+                  !Number.isFinite(parsed.nextRotationAt) ||
+                  parsed.nextRotationAt <= 0
+                ) {
+                  return null;
+                }
+                return parsed;
+              } catch {
+                return null;
+              }
+            };
+
+            const writeBackgroundState = (activeIndex, nextRotationAt) => {
+              try {
+                window.sessionStorage.setItem(
+                  BACKGROUND_STATE_KEY,
+                  JSON.stringify({ activeIndex, nextRotationAt }),
+                );
+              } catch {
+                // The visual fallback remains functional when storage is unavailable.
+              }
+            };
+
             const setupBackgroundCarousels = () => {
               document.querySelectorAll("[data-background-slider]").forEach((slider) => {
                 if (slider.dataset.carouselReady === "true") {
@@ -67,28 +102,83 @@ const nonHomeBackgroundImages: readonly string[] = isHome ? [] : backgroundImage
                 }
 
                 slider.dataset.carouselReady = "true";
-                let activeIndex = slides.findIndex((slide) => slide.classList.contains("is-active"));
-                const activateSlide = (nextIndex) => {
-                  slides[activeIndex]?.classList.remove("is-active");
-                  activeIndex = nextIndex;
-                  slides[activeIndex]?.classList.add("is-active");
+                const now = Date.now();
+                const restored = readBackgroundState(slides.length);
+                let activeIndex = restored?.activeIndex ?? Math.floor(Math.random() * slides.length);
+                let nextRotationAt = restored?.nextRotationAt ?? now + BACKGROUND_ROTATION_MS;
+                while (nextRotationAt <= now) {
+                  activeIndex = (activeIndex + 1) % slides.length;
+                  nextRotationAt += BACKGROUND_ROTATION_MS;
+                }
+                writeBackgroundState(activeIndex, nextRotationAt);
+
+                let renderedIndex = -1;
+                let preloadTimer;
+                let rotationTimer;
+
+                const loadSlide = (slide) => {
+                  if (!slide || slide.dataset.backgroundLoaded === "true") {
+                    return;
+                  }
+
+                  const src = slide.dataset.backgroundSrc;
+                  if (!src) {
+                    return;
+                  }
+
+                  slide.style.setProperty("--bg-url", "url('" + src + "')");
+                  slide.dataset.backgroundLoaded = "true";
                 };
 
-                const randomIndex = Math.floor(Math.random() * slides.length);
-                if (activeIndex >= 0) {
-                  activateSlide(activeIndex);
-                } else {
-                  activateSlide(randomIndex);
-                }
+                const scheduleNextPreload = () => {
+                  clearTimeout(preloadTimer);
+                  const preloadAt = nextRotationAt - (
+                    BACKGROUND_ROTATION_MS - BACKGROUND_PRELOAD_DELAY_MS
+                  );
+                  preloadTimer = setTimeout(() => {
+                    loadSlide(slides[(activeIndex + 1) % slides.length]);
+                  }, Math.max(0, preloadAt - Date.now()));
+                };
 
-                setInterval(() => {
-                  activateSlide((activeIndex + 1) % slides.length);
-                }, 60000);
+                const activateSlide = (nextIndex) => {
+                  loadSlide(slides[nextIndex]);
+                  slides[renderedIndex]?.classList.remove("is-active");
+                  renderedIndex = nextIndex;
+                  slides[renderedIndex]?.classList.add("is-active");
+                  slider.dataset.backgroundActiveIndex = String(nextIndex);
+                };
+
+                const scheduleRotation = () => {
+                  clearTimeout(rotationTimer);
+                  rotationTimer = setTimeout(() => {
+                    const rotationNow = Date.now();
+                    do {
+                      activeIndex = (activeIndex + 1) % slides.length;
+                      nextRotationAt += BACKGROUND_ROTATION_MS;
+                    } while (nextRotationAt <= rotationNow);
+                    writeBackgroundState(activeIndex, nextRotationAt);
+                    activateSlide(activeIndex);
+                    scheduleNextPreload();
+                    scheduleRotation();
+                  }, Math.max(0, nextRotationAt - Date.now()));
+                };
+
+                activateSlide(activeIndex);
+                scheduleNextPreload();
+                scheduleRotation();
+
+                cleanupCallbacks.push(() => {
+                  clearTimeout(rotationTimer);
+                  clearTimeout(preloadTimer);
+                });
               });
             };
 
             setupBackgroundCarousels();
             document.addEventListener("astro:page-load", setupBackgroundCarousels);
+            document.addEventListener("astro:before-swap", () => {
+              cleanupCallbacks.splice(0).forEach((cleanup) => cleanup());
+            });
           })();
         `}
       />

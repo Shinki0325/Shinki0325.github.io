@@ -31,6 +31,22 @@ type Props = {
 };
 
 const rulerValues = Array.from({ length: 11 }, (_, index) => 120 + index * 5);
+let heightFirstScreenPreloaded = false;
+
+export const preloadHeightFirstScreen = () => {
+  if (heightFirstScreenPreloaded || typeof window === "undefined") return;
+  const connection = (
+    navigator as Navigator & { connection?: { saveData?: boolean } }
+  ).connection;
+  if (connection?.saveData) return;
+
+  heightFirstScreenPreloaded = true;
+  (heightCharacters as HeightCharacter[]).slice(0, 8).forEach((character) => {
+    const image = new Image();
+    image.decoding = "async";
+    image.src = `/uploads/character-heights/${character.image}`;
+  });
+};
 
 const formatHeight = (height: number) =>
   Number.isInteger(height) ? String(height) : height.toFixed(1);
@@ -277,7 +293,7 @@ export default function CharacterHeightLineup({ active, controlsHost }: Props) {
           onPointerUp={stopDragging}
           ref={trackRef}
         >
-          {visibleCharacters.map((character) => {
+          {visibleCharacters.map((character, index) => {
             const style = {
               "--baseline-offset": `${character.baselineOffset}px`,
               "--render-height": `${getRenderHeight(character).toFixed(2)}px`,
@@ -311,8 +327,9 @@ export default function CharacterHeightLineup({ active, controlsHost }: Props) {
                 <img
                   alt=""
                   decoding="async"
+                  fetchPriority={index < 8 ? "high" : "auto"}
                   height={character.sourceHeight}
-                  loading="lazy"
+                  loading={index < 8 ? "eager" : "lazy"}
                   src={`/uploads/character-heights/${character.image}`}
                   width={character.sourceWidth}
                 />

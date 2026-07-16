@@ -32,11 +32,11 @@
     "poster": "/uploads/backgrounds/home-loop-poster.jpg"
   },
   "backgroundImages": [
-    "https://pic.imgdd.cc/i/033mKdPGvSW4H4Kdr8Z7qh.png",
-    "https://pic.imgdd.cc/i/033mKdJZSowAnZfhAT19Jx.png",
-    "https://pic.imgdd.cc/i/033mKdQMNqxcA7EXIMKPgG.png",
-    "https://pic.imgdd.cc/i/033mRL5hL42K30lBIHwCpo.png",
-    "https://pic.imgdd.cc/i/033mRL4ygydTIdfnHrklxE.png"
+    "/uploads/backgrounds/nonhome/background-01.webp",
+    "/uploads/backgrounds/nonhome/background-02.webp",
+    "/uploads/backgrounds/nonhome/background-03.webp",
+    "/uploads/backgrounds/nonhome/background-04.webp",
+    "/uploads/backgrounds/nonhome/background-05.webp"
   ],
   "music": {
     "tracks": [

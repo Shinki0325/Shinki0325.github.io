@@ -30,18 +30,15 @@ type Props = {
   characters: CharacterBirthday[];
   controlsHost?: HTMLElement | null;
   embedded?: boolean;
+  initialDate: string;
   works: BirthdayWork[];
 };
 
 const weekdays = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"];
 
-const getToday = () => {
-  const now = new Date();
-  return {
-    date: now,
-    year: now.getFullYear(),
-    month: now.getMonth() + 1,
-  };
+const parseInitialDate = (value: string) => {
+  const [year, month, day] = value.split("-").map(Number);
+  return new Date(year, month - 1, day, 12, 0, 0);
 };
 
 const formatSelectedDate = ({ year, month, day }: BirthdayConstellationDate) =>
@@ -53,17 +50,19 @@ export default function CharacterBirthdayCalendar({
   characters,
   controlsHost = null,
   embedded = false,
+  initialDate,
   works,
 }: Props) {
-  const today = useMemo(() => getToday(), []);
+  const initialToday = useMemo(() => parseInitialDate(initialDate), [initialDate]);
+  const [today, setToday] = useState(initialToday);
   const [visibleMonth, setVisibleMonth] = useState(() => ({
-    year: today.year,
-    month: today.month,
+    year: initialToday.getFullYear(),
+    month: initialToday.getMonth() + 1,
   }));
   const [selectedDate, setSelectedDate] = useState<BirthdayConstellationDate>(() => ({
-    year: today.year,
-    month: today.month,
-    day: today.date.getDate(),
+    year: initialToday.getFullYear(),
+    month: initialToday.getMonth() + 1,
+    day: initialToday.getDate(),
   }));
   const [selectionSequence, setSelectionSequence] = useState(0);
   const [hoveredWeek, setHoveredWeek] = useState<number | null>(null);
@@ -79,10 +78,10 @@ export default function CharacterBirthdayCalendar({
       getCalendarMonth({
         year: visibleMonth.year,
         month: visibleMonth.month,
-        today: today.date,
+        today,
         records: characters,
       }),
-    [characters, today.date, visibleMonth.month, visibleMonth.year],
+    [characters, today, visibleMonth.month, visibleMonth.year],
   );
   const layout = useMemo(() => getBirthdayConstellationLayout(calendar), [calendar]);
   const routePath = useMemo(() => buildBirthdayConstellationPath(layout), [layout]);
@@ -99,10 +98,10 @@ export default function CharacterBirthdayCalendar({
       getCalendarMonth({
         year: selectedDate.year,
         month: selectedDate.month,
-        today: today.date,
+        today,
         records: characters,
       }),
-    [characters, selectedDate.month, selectedDate.year, today.date],
+    [characters, selectedDate.month, selectedDate.year, today],
   );
   const selectedCalendarDay = selectedCalendar.days.find(
     (day) => day.isCurrentMonth && day.day === selectedDate.day,
@@ -156,6 +155,29 @@ export default function CharacterBirthdayCalendar({
     pendingFocusDay.current = date.day;
     selectDate(date, true);
   };
+
+  useEffect(() => {
+    const visitorToday = new Date();
+    if (
+      visitorToday.getFullYear() === initialToday.getFullYear() &&
+      visitorToday.getMonth() === initialToday.getMonth() &&
+      visitorToday.getDate() === initialToday.getDate()
+    ) {
+      return;
+    }
+
+    visitorToday.setHours(12, 0, 0, 0);
+    setToday(visitorToday);
+    setVisibleMonth({
+      year: visitorToday.getFullYear(),
+      month: visitorToday.getMonth() + 1,
+    });
+    setSelectedDate({
+      year: visitorToday.getFullYear(),
+      month: visitorToday.getMonth() + 1,
+      day: visitorToday.getDate(),
+    });
+  }, [initialToday]);
 
   useEffect(() => {
     const day = pendingFocusDay.current;
@@ -251,7 +273,7 @@ export default function CharacterBirthdayCalendar({
         title={`${character.name} · ${workTitle}`}
       >
         {character.avatar ? (
-          <img alt={character.name} loading="lazy" src={character.avatar} />
+          <img alt={character.name} decoding="async" loading="lazy" src={character.avatar} />
         ) : (
           <span aria-hidden="true">{character.name.slice(0, 1)}</span>
         )}
@@ -453,7 +475,7 @@ export default function CharacterBirthdayCalendar({
                   >
                     <span className="birthday-constellation__detail-avatar">
                       {character.avatar ? (
-                        <img alt="" loading="lazy" src={character.avatar} />
+                        <img alt="" decoding="async" loading="lazy" src={character.avatar} />
                       ) : (
                         <span aria-hidden="true">{character.name.slice(0, 1)}</span>
                       )}

@@ -1,6 +1,13 @@
 import { expect, test } from "@playwright/test";
 
 async function dismissSplash(page: Parameters<typeof test>[0]["page"]) {
+  const island = page.locator('astro-island[component-url*="SplashScreen"]');
+  await expect
+    .poll(async () => {
+      if ((await island.count()) === 0) return false;
+      return island.evaluate((element) => !element.hasAttribute("ssr"));
+    })
+    .toBe(true);
   const splash = page.locator("[data-splash-screen]");
   if (await splash.isVisible().catch(() => false)) {
     await splash.getByRole("button", { name: /YES|はい/i }).click();
@@ -61,6 +68,7 @@ test("home music console keeps a stable three-zone layout", async ({ page }) => 
   expect(centers[4]).toBeLessThan(centers[5]);
 
   const before = await card.boundingBox();
+  await expect(card.locator("[data-home-music-track]")).toHaveCount(0);
   await playlistTrigger.click();
   await expect(card.locator("[data-home-music-playlist]")).toHaveAttribute("data-open", "true");
   await expect(card.locator("[data-home-music-track]")).toHaveCount(17);

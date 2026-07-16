@@ -9,10 +9,12 @@ cover: "/uploads/albums/hidden-cg/hidden-cg-03.webp"
 draft: false
 pinned: true
 photos:
-  - url: "/uploads/albums/hidden-cg/cover.png"
+  - url: "/uploads/albums/hidden-cg/cover-display.webp"
+    originalUrl: "/uploads/albums/hidden-cg/cover.png"
     alt: "镜前制服自拍构图"
     caption: "镜前竖图，重点测试相册封面在竖向照片上的裁切和层叠效果。"
-  - url: "/uploads/albums/hidden-cg/hidden-cg-02.jpg"
+  - url: "/uploads/albums/hidden-cg/hidden-cg-02-display.webp"
+    originalUrl: "/uploads/albums/hidden-cg/hidden-cg-02.jpg"
     alt: "黑白服装俯拍构图"
     caption: "横向俯拍，测试照片墙详情页里不同宽高比图片的混排表现。"
   - url: "/uploads/albums/hidden-cg/hidden-cg-03.webp"

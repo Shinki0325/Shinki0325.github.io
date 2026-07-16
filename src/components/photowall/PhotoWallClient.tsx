@@ -232,7 +232,12 @@ export default function PhotoWallClient({ albums }: { albums: Album[] }) {
                 onClick={(event) => openLightbox(index, event.currentTarget)}
                 type="button"
               >
-                <img alt={photo.alt} src={photo.url} />
+                <img
+                  alt={photo.alt}
+                  decoding="async"
+                  loading={index === 0 ? "eager" : "lazy"}
+                  src={photo.url}
+                />
                 <span className="photowall-photo-tile__caption">
                   <strong>{photo.alt}</strong>
                   {photo.caption ? <span>{photo.caption}</span> : null}
@@ -284,7 +289,7 @@ export default function PhotoWallClient({ albums }: { albums: Album[] }) {
                             data-album-backing
                             key={photo.url}
                           >
-                            <img alt="" src={photo.url} />
+                            <img alt="" decoding="async" loading="lazy" src={photo.url} />
                           </span>
                         ))}
                       </span>
@@ -294,7 +299,12 @@ export default function PhotoWallClient({ albums }: { albums: Album[] }) {
                         </span>
                       ) : null}
                       <span className="photowall-album-card__image-well">
-                        <img alt={preview.lead.alt} src={preview.lead.url} />
+                        <img
+                          alt={preview.lead.alt}
+                          decoding="async"
+                          loading={albumIndex === 0 ? "eager" : "lazy"}
+                          src={preview.lead.url}
+                        />
                       </span>
                       <span className="photowall-album-card__body">
                         <h2>{album.title}</h2>
@@ -374,6 +384,7 @@ export default function PhotoWallClient({ albums }: { albums: Album[] }) {
               alt={lightboxPhoto.alt}
               className="photowall-lightbox__image"
               data-lightbox-image
+              decoding="async"
               src={lightboxPhoto.originalUrl ?? lightboxPhoto.url}
             />
             <div className="photowall-lightbox__caption">

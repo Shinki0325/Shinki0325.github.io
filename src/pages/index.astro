@@ -4,7 +4,6 @@ import HomeLyricBar from "../components/music/HomeLyricBar";
 import HomeMusicCard from "../components/music/HomeMusicCard";
 import { siteAppearance, type SiteAppearancePreviewCard } from "../config/site-appearance";
 import { siteShell } from "../config/site-shell";
-import { birthdayWorks, characterBirthdays } from "../data/character-birthdays";
 import { galgameHistoryPreview } from "../data/galgame-history-preview";
 import { getArticleOverviewCovers } from "../lib/archive-covers";
 import {
@@ -21,6 +20,7 @@ const [articles, albums, notes, references] = await Promise.all([
   getPublishedNotes(),
   getPublishedReferences(),
 ]);
+const characterArchiveInitialDate = new Date().toISOString().slice(0, 10);
 
 const formatDate = (value: Date | number | string | undefined) => {
   if (!value) {
@@ -311,9 +311,8 @@ const chronicleMiniTracks = [
 
     <div class="home-feature-card--calendar" data-home-birthday-calendar data-home-character-archive>
       <CharacterArchiveTerminal
-        characters={characterBirthdays}
-        client:only="react"
-        works={birthdayWorks}
+        client:load
+        initialDate={characterArchiveInitialDate}
       />
     </div>
 
@@ -414,6 +413,8 @@ const chronicleMiniTracks = [
 
 <script is:inline>
   (() => {
+    const cleanupCallbacks = [];
+
     const parseSlides = (value) => {
       try {
         const parsed = JSON.parse(value || "[]");
@@ -467,14 +468,18 @@ const chronicleMiniTracks = [
 
         card.dataset.homeScriptCarouselReady = "true";
         let index = 0;
-        window.setInterval(() => {
+        const carouselTimer = window.setInterval(() => {
           index = (index + 1) % slides.length;
           applySlide(card, slides, index);
         }, 6000);
+        cleanupCallbacks.push(() => window.clearInterval(carouselTimer));
       });
     };
 
     document.addEventListener("astro:page-load", initHomeScriptCarousels);
+    document.addEventListener("astro:before-swap", () => {
+      cleanupCallbacks.splice(0).forEach((cleanup) => cleanup());
+    }, { once: true });
     initHomeScriptCarousels();
   })();
 </script>

@@ -1,20 +1,49 @@
 import { CalendarDays, Ruler } from "lucide-react";
-import { useEffect, useRef, useState, type KeyboardEvent } from "react";
-import type { BirthdayWork, CharacterBirthday } from "../../data/character-birthdays";
+import {
+  lazy,
+  Suspense,
+  useEffect,
+  useRef,
+  useState,
+  type CSSProperties,
+  type KeyboardEvent,
+} from "react";
+import { birthdayWorks, characterBirthdays } from "../../data/character-birthdays";
 import CharacterBirthdayCalendar from "../birthdays/CharacterBirthdayCalendar";
-import CharacterHeightLineup from "./CharacterHeightLineup";
 import "./character-archive-terminal.css";
 
 type ArchiveView = "birthday" | "height";
 
-type Props = {
-  characters: CharacterBirthday[];
-  works: BirthdayWork[];
-};
+type Props = { initialDate: string };
 
 const storageKey = "blog:character-archive-view:v1";
+const heightRulerValues = Array.from({ length: 11 }, (_, index) => 120 + index * 5);
+const importHeightModule = () => import("./CharacterHeightLineup");
+let heightModulePromise: ReturnType<typeof importHeightModule> | null = null;
+const loadHeightModule = () => (heightModulePromise ??= importHeightModule());
+const LazyCharacterHeightLineup = lazy(() => loadHeightModule());
 
-export default function CharacterArchiveTerminal({ characters, works }: Props) {
+const preloadHeight = () => {
+  void loadHeightModule().then((module) => module.preloadHeightFirstScreen());
+};
+
+const HeightStageFallback = () => (
+  <div aria-hidden="true" className="character-height">
+    <div className="character-height__stage">
+      {heightRulerValues.map((height) => (
+        <div
+          className={`character-height__ruler-line ${height % 10 === 0 ? "is-major" : ""}`}
+          key={height}
+          style={{ "--line-cm": height } as CSSProperties}
+        >
+          <span>{height}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+);
+
+export default function CharacterArchiveTerminal({ initialDate }: Props) {
   const [view, setView] = useState<ArchiveView>("birthday");
   const [heightMounted, setHeightMounted] = useState(false);
   const [controlsHost, setControlsHost] = useState<HTMLDivElement | null>(null);
@@ -77,7 +106,10 @@ export default function CharacterArchiveTerminal({ characters, works }: Props) {
             className="character-archive__tab"
             id="character-archive-tab-height"
             onClick={() => activate("height")}
+            onFocus={preloadHeight}
             onKeyDown={handleTabKeyDown}
+            onPointerDown={preloadHeight}
+            onPointerEnter={preloadHeight}
             ref={heightTabRef}
             role="tab"
             tabIndex={view === "height" ? 0 : -1}
@@ -104,10 +136,11 @@ export default function CharacterArchiveTerminal({ characters, works }: Props) {
           <CharacterBirthdayCalendar
             active={view === "birthday"}
             badgeHost={birthdayBadgeHost}
-            characters={characters}
+            characters={characterBirthdays}
             controlsHost={controlsHost}
             embedded
-            works={works}
+            initialDate={initialDate}
+            works={birthdayWorks}
           />
         </div>
 
@@ -119,7 +152,9 @@ export default function CharacterArchiveTerminal({ characters, works }: Props) {
             id="character-archive-height"
             role="tabpanel"
           >
-            <CharacterHeightLineup active={view === "height"} controlsHost={controlsHost} />
+            <Suspense fallback={<HeightStageFallback />}>
+              <LazyCharacterHeightLineup active={view === "height"} controlsHost={controlsHost} />
+            </Suspense>
           </div>
         ) : null}
       </div>

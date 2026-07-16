@@ -13,6 +13,10 @@ describe("photowall overview UI", () => {
     expect(componentSource).toContain("data-album-backing");
     expect(componentSource).toContain("data-album-new");
     expect(componentSource).toContain("new Set<string>()");
+    expect(componentSource).toContain('decoding="async"');
+    expect(componentSource).toContain('loading="lazy"');
+    expect(componentSource).toContain('loading={albumIndex === 0 ? "eager" : "lazy"}');
+    expect(componentSource).toContain('loading={index === 0 ? "eager" : "lazy"}');
     expect(componentSource).not.toContain('className="photowall-hero archive-style-hero"');
     expect(componentSource).not.toContain("stackPhotosForAlbum");
     expect(componentSource).not.toContain("return [photos[1]");

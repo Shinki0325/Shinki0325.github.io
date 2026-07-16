@@ -54,32 +54,42 @@ export default function HomeMusicPlaylist({ onClose, open, triggerRef }: Props) 
         </button>
       </header>
       <div className="home-music-playlist__tracks">
-        {state.tracks.length === 0 ? <p>暂无可播放曲目</p> : null}
-        {state.tracks.map((track, index) => {
-          const active = index === state.currentIndex;
-          return (
-            <button
-              ref={active ? activeRowRef : undefined}
-              aria-current={active ? "true" : undefined}
-              className={`home-music-track${active ? " is-active" : ""}`}
-              data-home-music-track={track.id}
-              key={track.id}
-              onClick={() => selectTrack(index, { play: true })}
-              tabIndex={open ? 0 : -1}
-              type="button"
-            >
-              <span className="home-music-track__index">{String(index + 1).padStart(2, "0")}</span>
-              <img alt="" referrerPolicy="no-referrer" src={track.coverUrl} />
-              <span className="home-music-track__copy">
-                <strong>{track.title}</strong>
-                <small>{track.artist}</small>
-              </span>
-              <span aria-hidden="true" className="home-music-track__playing">
-                {active ? state.isPlaying ? <><i /><i /><i /></> : <AudioLines /> : null}
-              </span>
-            </button>
-          );
-        })}
+        {open ? (
+          <>
+            {state.tracks.length === 0 ? <p>暂无可播放曲目</p> : null}
+            {state.tracks.map((track, index) => {
+              const active = index === state.currentIndex;
+              return (
+                <button
+                  ref={active ? activeRowRef : undefined}
+                  aria-current={active ? "true" : undefined}
+                  className={`home-music-track${active ? " is-active" : ""}`}
+                  data-home-music-track={track.id}
+                  key={track.id}
+                  onClick={() => selectTrack(index, { play: true })}
+                  tabIndex={0}
+                  type="button"
+                >
+                  <span className="home-music-track__index">{String(index + 1).padStart(2, "0")}</span>
+                  <img
+                    alt=""
+                    decoding="async"
+                    loading="lazy"
+                    referrerPolicy="no-referrer"
+                    src={track.coverUrl}
+                  />
+                  <span className="home-music-track__copy">
+                    <strong>{track.title}</strong>
+                    <small>{track.artist}</small>
+                  </span>
+                  <span aria-hidden="true" className="home-music-track__playing">
+                    {active ? state.isPlaying ? <><i /><i /><i /></> : <AudioLines /> : null}
+                  </span>
+                </button>
+              );
+            })}
+          </>
+        ) : null}
       </div>
     </section>
   );

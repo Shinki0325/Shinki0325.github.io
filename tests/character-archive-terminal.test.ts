@@ -18,6 +18,38 @@ describe("character archive terminal production contract", () => {
     expect(terminal).toContain("身高图鉴");
   });
 
+  it("server-renders from one deterministic date without serializing birthday authority", async () => {
+    const [home, terminal, calendar] = await Promise.all([
+      fs.readFile("src/pages/index.astro", "utf8"),
+      fs.readFile("src/components/characters/CharacterArchiveTerminal.tsx", "utf8"),
+      fs.readFile("src/components/birthdays/CharacterBirthdayCalendar.tsx", "utf8"),
+    ]);
+
+    expect(home).toContain("const characterArchiveInitialDate = new Date().toISOString().slice(0, 10)");
+    expect(home).toContain("client:load");
+    expect(home).toContain("initialDate={characterArchiveInitialDate}");
+    expect(home).not.toContain('client:only="react"');
+    expect(home).not.toContain("characters={characterBirthdays}");
+    expect(home).not.toContain("works={birthdayWorks}");
+    expect(terminal).toContain('type Props = { initialDate: string }');
+    expect(terminal).toContain("birthdayWorks, characterBirthdays");
+    expect(calendar).toContain("initialDate: string");
+    expect(calendar).toContain("parseInitialDate");
+  });
+
+  it("splits the height module and preloads only on height-tab intent", async () => {
+    const terminal = await fs.readFile(
+      "src/components/characters/CharacterArchiveTerminal.tsx",
+      "utf8",
+    );
+
+    expect(terminal).not.toContain('import CharacterHeightLineup from "./CharacterHeightLineup"');
+    expect(terminal).toContain("lazy(() => loadHeightModule())");
+    expect(terminal).toContain("onPointerEnter={preloadHeight}");
+    expect(terminal).toContain("onPointerDown={preloadHeight}");
+    expect(terminal).toContain("onFocus={preloadHeight}");
+  });
+
   it("uses the approved short archive labels and indexed command entries", async () => {
     const terminal = await fs.readFile(
       "src/components/characters/CharacterArchiveTerminal.tsx",
