@@ -6,6 +6,7 @@ const BACKGROUND_PATHS = [
   "/uploads/backgrounds/nonhome/background-03.webp",
   "/uploads/backgrounds/nonhome/background-04.webp",
   "/uploads/backgrounds/nonhome/background-05.webp",
+  "/uploads/backgrounds/nonhome/background-06.webp",
 ] as const;
 
 const LOCAL_BACKGROUND_PREFIX = "/uploads/backgrounds/nonhome/";

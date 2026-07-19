@@ -5,14 +5,14 @@ import { describe, expect, it } from "vitest";
 import { siteShell } from "../src/config/site-shell";
 
 const expectedBackgrounds = Array.from(
-  { length: 5 },
+  { length: 6 },
   (_, index) => `/uploads/backgrounds/nonhome/background-${String(index + 1).padStart(2, "0")}.webp`,
 );
 
 describe("non-home background assets", () => {
-  it("publishes five unique bounded WebPs in the approved order", async () => {
+  it("publishes six unique bounded WebPs in the approved order", async () => {
     expect(siteShell.backgroundImages).toEqual(expectedBackgrounds);
-    expect(new Set(siteShell.backgroundImages).size).toBe(5);
+    expect(new Set(siteShell.backgroundImages).size).toBe(6);
 
     let totalBytes = 0;
     for (const publicPath of siteShell.backgroundImages) {
@@ -25,7 +25,7 @@ describe("non-home background assets", () => {
       expect(fileStat.size).toBeLessThan(250_000);
     }
 
-    expect(totalBytes).toBeLessThan(900_000);
+    expect(totalBytes).toBeLessThan(1_080_000);
   });
 
   it("keeps source provenance in the manual acquisition script only", async () => {
@@ -38,12 +38,15 @@ describe("non-home background assets", () => {
       "https://pic.imgdd.cc/i/033mKdQMNqxcA7EXIMKPgG.png",
       "https://pic.imgdd.cc/i/033mRL5hL42K30lBIHwCpo.png",
       "https://pic.imgdd.cc/i/033mRL4ygydTIdfnHrklxE.png",
+      "https://pic.imgdd.cc/i/033sANQbp4eAi1Iw97zRwt.png",
     ];
 
     originalUrls.forEach((url) => expect(source).toContain(url));
     expect(JSON.stringify(siteShell.backgroundImages)).not.toContain("pic.imgdd.cc");
     expect(source).toContain("withoutEnlargement: true");
     expect(source).toContain("quality: 80");
+    expect(source).toContain("quality: 59");
     expect(source).toContain("effort: 6");
+    expect(source).toContain("1_080_000");
   });
 });

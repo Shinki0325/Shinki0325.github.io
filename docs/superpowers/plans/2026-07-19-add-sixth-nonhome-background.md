@@ -16,7 +16,7 @@
 - Modify: `tests/nonhome-background-assets.test.ts`
 - Modify: `tests/loading-performance.spec.ts`
 
-- [ ] **Step 1: Expand the expected asset list to six entries**
+- [x] **Step 1: Expand the expected asset list to six entries**
 
 Change the generated expected list in `tests/nonhome-background-assets.test.ts` to:
 
@@ -40,7 +40,7 @@ expect(source).toContain("quality: 59");
 expect(source).toContain("1_080_000");
 ```
 
-- [ ] **Step 2: Expand the Playwright background path authority**
+- [x] **Step 2: Expand the Playwright background path authority**
 
 Append this entry to `BACKGROUND_PATHS` in `tests/loading-performance.spec.ts`:
 
@@ -48,7 +48,7 @@ Append this entry to `BACKGROUND_PATHS` in `tests/loading-performance.spec.ts`:
 "/uploads/backgrounds/nonhome/background-06.webp",
 ```
 
-- [ ] **Step 3: Run the focused asset test and verify RED**
+- [x] **Step 3: Run the focused asset test and verify RED**
 
 Run:
 
@@ -65,7 +65,7 @@ Expected: failure because the configuration and `background-06.webp` still conta
 - Create: `public/uploads/backgrounds/nonhome/background-06.webp`
 - Modify: `src/config/pages/home.json`
 
-- [ ] **Step 1: Record hashes for backgrounds 01-05**
+- [x] **Step 1: Record hashes for backgrounds 01-05**
 
 Run:
 
@@ -75,7 +75,7 @@ sha256sum public/uploads/backgrounds/nonhome/background-0{1,2,3,4,5}.webp
 
 Keep the output for comparison after regeneration.
 
-- [ ] **Step 2: Add source-specific quality configuration**
+- [x] **Step 2: Add source-specific quality configuration**
 
 Replace `sourceUrls` with:
 
@@ -108,7 +108,7 @@ Change the aggregate guard to:
 if (totalBytes >= 1_080_000) {
 ```
 
-- [ ] **Step 3: Generate all six assets**
+- [x] **Step 3: Generate all six assets**
 
 Run:
 
@@ -118,11 +118,11 @@ node scripts/acquire-nonhome-backgrounds.mjs
 
 Expected: six WebPs; every file below 250 KB; total below 1.08 MB; the sixth image approximately `1529x1080 / 248KB`.
 
-- [ ] **Step 4: Verify backgrounds 01-05 are byte-identical**
+- [x] **Step 4: Verify backgrounds 01-05 are byte-identical**
 
 Run the same `sha256sum` command and compare it with Step 1. Expected: all five hashes unchanged.
 
-- [ ] **Step 5: Append the sixth configured path**
+- [x] **Step 5: Append the sixth configured path**
 
 Change `backgroundImages` in `src/config/pages/home.json` to end with:
 
@@ -131,7 +131,7 @@ Change `backgroundImages` in `src/config/pages/home.json` to end with:
 "/uploads/backgrounds/nonhome/background-06.webp"
 ```
 
-- [ ] **Step 6: Run focused Vitest and verify GREEN**
+- [x] **Step 6: Run focused Vitest and verify GREEN**
 
 Run:
 
@@ -150,7 +150,7 @@ Expected: all focused background tests pass.
 - Modify after release: `D:/blog-kb/CHANGELOG.md`
 - Modify after release: `D:/blog-kb/agent-state/blog-manager.md`
 
-- [ ] **Step 1: Run focused Playwright background coverage**
+- [x] **Step 1: Run focused Playwright background coverage**
 
 Run:
 
@@ -160,7 +160,7 @@ pnpm exec playwright test tests/loading-performance.spec.ts
 
 Expected: 7/7 tests pass; every deterministic background selection requests one configured local background initially, no remote background, and session continuity remains green with six paths.
 
-- [ ] **Step 2: Run the complete release gates**
+- [x] **Step 2: Run the complete release gates**
 
 Run in WSL:
 

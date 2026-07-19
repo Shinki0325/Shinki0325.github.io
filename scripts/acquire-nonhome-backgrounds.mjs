@@ -3,12 +3,13 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
 
-const sourceUrls = [
-  "https://pic.imgdd.cc/i/033mKdPGvSW4H4Kdr8Z7qh.png",
-  "https://pic.imgdd.cc/i/033mKdJZSowAnZfhAT19Jx.png",
-  "https://pic.imgdd.cc/i/033mKdQMNqxcA7EXIMKPgG.png",
-  "https://pic.imgdd.cc/i/033mRL5hL42K30lBIHwCpo.png",
-  "https://pic.imgdd.cc/i/033mRL4ygydTIdfnHrklxE.png",
+const sourceBackgrounds = [
+  { url: "https://pic.imgdd.cc/i/033mKdPGvSW4H4Kdr8Z7qh.png", quality: 80 },
+  { url: "https://pic.imgdd.cc/i/033mKdJZSowAnZfhAT19Jx.png", quality: 80 },
+  { url: "https://pic.imgdd.cc/i/033mKdQMNqxcA7EXIMKPgG.png", quality: 80 },
+  { url: "https://pic.imgdd.cc/i/033mRL5hL42K30lBIHwCpo.png", quality: 80 },
+  { url: "https://pic.imgdd.cc/i/033mRL4ygydTIdfnHrklxE.png", quality: 80 },
+  { url: "https://pic.imgdd.cc/i/033sANQbp4eAi1Iw97zRwt.png", quality: 59 },
 ];
 
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -17,7 +18,7 @@ const outputDir = path.join(projectRoot, "public", "uploads", "backgrounds", "no
 await mkdir(outputDir, { recursive: true });
 
 let totalBytes = 0;
-for (const [index, sourceUrl] of sourceUrls.entries()) {
+for (const [index, { url: sourceUrl, quality }] of sourceBackgrounds.entries()) {
   const response = await fetch(sourceUrl, { signal: AbortSignal.timeout(30_000) });
   if (!response.ok) {
     throw new Error(`Background ${index + 1} failed with HTTP ${response.status}`);
@@ -31,7 +32,7 @@ for (const [index, sourceUrl] of sourceUrls.entries()) {
   await sharp(source)
     .rotate()
     .resize({ width: 1920, height: 1080, fit: "inside", withoutEnlargement: true })
-    .webp({ quality: 80, effort: 6 })
+    .webp({ quality, effort: 6 })
     .toFile(outputPath);
 
   const metadata = await sharp(outputPath).metadata();
@@ -43,7 +44,7 @@ for (const [index, sourceUrl] of sourceUrls.entries()) {
   console.log(`${path.basename(outputPath)} ${metadata.width}x${metadata.height} ${bytes} bytes`);
 }
 
-if (totalBytes >= 900_000) {
-  throw new Error(`Background set exceeds 900KB: ${totalBytes}`);
+if (totalBytes >= 1_080_000) {
+  throw new Error(`Background set exceeds 1.08MB: ${totalBytes}`);
 }
 console.log(`Total ${totalBytes} bytes`);
