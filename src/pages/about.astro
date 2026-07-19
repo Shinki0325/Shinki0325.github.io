@@ -2,321 +2,123 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import bangumiCollections from "../data/bangumi-collections.json";
 import { siteShell } from "../config/site-shell";
-import { buildBangumiCollectionViewModel } from "../lib/bangumi-collections";
+import { buildAboutCollectionPayload } from "../lib/about-collection";
+import "../styles/about.css";
 
 const avatarUrl = siteShell.profile?.avatarUrl ?? "https://s1.ax1x.com/2023/07/28/pCx6j3R.jpg";
-const displayName = siteShell.profile?.displayName ?? siteShell.brand.title;
-const coverImage = "/uploads/backgrounds/home-loop-poster.jpg";
-const bangumi = buildBangumiCollectionViewModel(bangumiCollections);
-const displayedBangumiCategoryKeys = ["anime", "game"];
-const displayedBangumiItems = bangumi.items.filter((item) => displayedBangumiCategoryKeys.includes(item.category));
-const displayedBangumiCategories = bangumi.categories.filter((category) =>
-  displayedBangumiCategoryKeys.includes(category.key)
-);
-const displayedBangumiStatuses = bangumi.statuses.map((status) => ({
-  ...status,
-  count:
-    status.key === "all"
-      ? displayedBangumiItems.length
-      : displayedBangumiItems.filter((item) => item.status === status.key).length,
-}));
-const initialBangumiCategory = displayedBangumiCategories.find((category) => category.count > 0)?.key ?? "anime";
-const bangumiPageSize = 14;
-let initialBangumiCategoryIndex = 0;
+const collection = buildAboutCollectionPayload(bangumiCollections);
+const animeCount = collection.categories.find((category) => category.key === "anime")?.count ?? 0;
+const gameCount = collection.categories.find((category) => category.key === "game")?.count ?? 0;
+
+const modules = [
+  {
+    index: "01",
+    href: "/?archive=birthday#character-archive",
+    title: "角色生日星图",
+    copy: "按日期阅读角色、作品和相邻生日关系。",
+  },
+  {
+    index: "02",
+    href: "/?archive=height#character-archive",
+    title: "角色身高图鉴",
+    copy: "用立绘比例查看角色视觉设定。",
+  },
+  {
+    index: "03",
+    href: "/galgame-history/",
+    title: "GALGAME CHRONICLE",
+    copy: "按时间和分支路线阅读历史词条。",
+  },
+  {
+    index: "04",
+    href: "/#home-music-card",
+    title: "首页音乐盒",
+    copy: "品鉴旮旯game主理人的音乐品位。",
+  },
+] as const;
 ---
 
-<BaseLayout title="About">
-  <article class="about-shell" data-about-shell>
-    <div class="about-cover" data-about-cover>
-      <img alt="About Hero" src={coverImage} />
-      <span aria-hidden="true"></span>
-    </div>
+<BaseLayout title="关于项目">
+  <div class="about-project" data-about-project>
+    <header class="about-project__identity" data-about-identity>
+      <span class="about-project__avatar"><img alt="" src={avatarUrl} /></span>
+      <div><small>ABOUT THIS PROJECT</small><h1>美少女游戏生态档案</h1></div>
+      <b>SYSTEM / PROJECT OVERVIEW</b>
+    </header>
 
-    <div class="about-body">
-      <div class="about-avatar" data-about-avatar>
-        <img alt={`${displayName} avatar`} src={avatarUrl} />
+    <section class="about-project__hero" data-about-hero>
+      <div class="about-project__hero-copy">
+        <span class="about-project__eyebrow">PROJECT OVERVIEW</span>
+        <h2>并非追忆往昔的荣光，<br /><strong>而是重现诞生这些美妙故事的瞬间</strong></h2>
+        <p>这里记录的不只是作品本身，也追寻它们诞生时的制作现场、玩家记忆与时代空气。希望当我们再次回望那些故事时，看到的不仅是屏幕中的角色，也能重新靠近那些创造它、等待它，并曾为它心动的人们。</p>
+        <div class="about-project__tags" aria-label="项目关注范围">
+          {["作品", "制作方", "玩家", "社会背景", "互动游戏"].map((tag) => <span>{tag}</span>)}
+        </div>
       </div>
+      <div class="about-project__guide" data-about-guide aria-hidden="true">
+        <img
+          alt=""
+          decoding="async"
+          fetchpriority="high"
+          height="1773"
+          src="/uploads/about/about-guide-character.webp"
+          width="696"
+        />
+      </div>
+    </section>
 
-      <header class="about-head">
-        <div>
-          <h1>关于我</h1>
-          <p>Hello World, I'm {displayName}</p>
-        </div>
+    <section class="about-project__band" data-about-modules>
+      <header class="about-project__section-head"><h2>已经完成的入口</h2><span>ONLINE MODULES / 04</span></header>
+      <div class="about-project__modules">
+        {modules.map((module) => (
+          <a class="about-project__module" href={module.href}>
+            <small>MODULE {module.index}</small><strong>{module.title}</strong><p>{module.copy}</p><span aria-hidden="true">›</span>
+          </a>
+        ))}
+      </div>
+    </section>
 
-        <nav aria-label="关于页分区" class="about-tabs" data-about-tabs>
-          <a class="is-active" href="#intro">自我介绍</a>
-          <a href="#focus">研究动态</a>
-          <a href="#bangumi">番组计划</a>
-        </nav>
+    <section class="about-project__band" data-about-research>
+      <header class="about-project__section-head"><h2>正在推进的内容</h2><span>RESEARCH IN PROGRESS</span></header>
+      <div class="about-project__research-grid">
+        <article><small>DATA<br />BUILDING</small><div><h3>作品与歌手分析</h3><p>整理 ErogameScape、VNDB、Bangumi 中的作品、歌曲、歌手、制作方与评价关系。</p></div></article>
+        <article><small>GAME<br />DESIGN</small><div><h3>资料驱动问答游戏</h3><p>把已经核实的知识库内容转化成可以游玩的提问与反馈。</p></div></article>
+        <article><small>TEXT<br />EDITING</small><div><h3>Chronicle 词条整理</h3><p>继续整理具体历史词条，并补充来源、时间与相互关系。</p></div></article>
+        <article><small>SOURCE<br />REVIEW</small><div><h3>分析资料扩展</h3><p>保留来源、版本和不确定性，再逐步开放比较与分析视图。</p></div></article>
+      </div>
+    </section>
+
+    <section class="about-project__band" data-about-route>
+      <header class="about-project__section-head"><h2>项目路线</h2><span>PROJECT ROUTE</span></header>
+      <div class="about-project__route">
+        <article><small>01 / ARCHIVE</small><h3>资料档案</h3><p>完善资料入口、角色图鉴和历史编年结构。</p></article>
+        <article><small>02 / PLAY</small><h3>问答游戏</h3><p>以核实后的知识库为基础开发网页问答。</p></article>
+        <article class="is-future"><small>03 / ECOLOGY</small><h3>互动世界</h3><p>以 80-90 年代业界生态为背景制作网页互动游戏。</p></article>
+      </div>
+    </section>
+
+    <section
+      class="about-project__band about-project__collection"
+      data-about-collection
+      data-collection-endpoint="/data/about-collection.json"
+    >
+      <header class="about-project__collection-head">
+        <div><span class="about-project__eyebrow">PERSONAL COLLECTION</span><h2>番组收藏档案</h2><p>个人观看、游玩与评分记录，放在项目主线之后。</p></div>
+        <div class="about-project__counts"><span><strong>{animeCount}</strong>动画</span><span><strong>{gameCount}</strong>游戏</span></div>
       </header>
-
-      <div class="about-divider"></div>
-
-      <section class="about-intro prose" data-about-intro id="intro">
-        <h2>关于我</h2>
-        <p>
-          这个新站会继续作为公开归档页使用，用来整理长文、短笔记和一些长期留下来的想法。
-        </p>
-        <p>
-          目前这里更像一座慢慢搭起来的资料岛：一边放文稿，一边存参考资料、阅读笔记、照片墙和一些还没成形的兴趣线索。
-        </p>
-
-        <h3 id="focus">近期目标</h3>
-        <ul>
-          <li>把 galgame 与 90 年代媒介环境相关资料整理成可长期维护的资料库。</li>
-          <li>持续补全视频稿、参考引用和站内交叉链接。</li>
-          <li>保留一点轻松的个人空间，让网站不只是资料柜，也像能坐下来的房间。</li>
-        </ul>
-      </section>
-
-      <section class="about-bangumi" data-bangumi-panel id="bangumi">
-        <header class="about-bangumi__head">
-          <div class="about-bangumi__title">
-            <span aria-hidden="true" class="about-bangumi__icon">▣</span>
-            <div>
-              <p class="eyebrow">Bangumi Collection</p>
-              <h2>番组计划</h2>
-              <p>记录我的二次元之旅</p>
-            </div>
-          </div>
-        </header>
-
-        <div aria-label="番组分类" class="about-bangumi__categories">
-          {displayedBangumiCategories.map((category) => (
-            <button
-              class={category.key === initialBangumiCategory ? "is-active" : undefined}
-              data-bangumi-category-filter={category.key}
-              type="button"
-            >
-              <span>{category.label}</span>
-              <strong>{category.count}</strong>
-            </button>
-          ))}
-        </div>
-
-        <div class="about-bangumi__toolbar">
-          <div aria-label="收藏状态" class="about-bangumi__statuses">
-            {displayedBangumiStatuses.map((status) => (
-              <button
-                class={status.key === "all" ? "is-active" : undefined}
-                data-bangumi-status-filter={status.key}
-                type="button"
-              >
-                {status.label}
-                <span>({status.count})</span>
-              </button>
-            ))}
-          </div>
-
-          <div aria-label="排序方式" class="about-bangumi__sort">
-            <button class="is-active" data-bangumi-sort="default" type="button">默认</button>
-            <button data-bangumi-sort="rating" type="button">个人评分</button>
-          </div>
-        </div>
-
-        <div class="about-bangumi__grid">
-          {displayedBangumiItems.map((item, index) => {
-            const isInitialCategory = item.category === initialBangumiCategory;
-            const categoryIndex = isInitialCategory ? initialBangumiCategoryIndex++ : -1;
-            const isInitiallyVisible = isInitialCategory && categoryIndex < bangumiPageSize;
-
-            return (
-              <a
-                class="about-bangumi-card"
-                data-bangumi-card
-                data-bangumi-category={item.category}
-                data-bangumi-index={index}
-                data-bangumi-score={item.userRate}
-                data-bangumi-status={item.status}
-                href={item.url}
-                hidden={!isInitiallyVisible}
-                rel="noreferrer"
-                target="_blank"
-              >
-                <img
-                  alt={item.title}
-                  data-bangumi-cover={item.cover}
-                  decoding="async"
-                  loading="lazy"
-                  referrerpolicy="no-referrer"
-                  src={isInitiallyVisible ? item.cover : undefined}
-                />
-                <span class={`about-bangumi-card__status is-${item.status}`}>{item.statusLabel}</span>
-                {item.userRate > 0 ? (
-                  <span class="about-bangumi-card__score" title={`我的评分：${item.userRate.toFixed(1)}`}>
-                    个评 {item.userRate.toFixed(1)}
-                  </span>
-                ) : null}
-                <span class="about-bangumi-card__shade"></span>
-                <span class="about-bangumi-card__body">
-                  <strong>{item.title}</strong>
-                  <small>{item.year}</small>
-                  <span class="about-bangumi-card__tags">
-                    {item.tags.map((tag) => (
-                      <em>{tag}</em>
-                    ))}
-                  </span>
-                </span>
-              </a>
-            );
-          })}
-        </div>
-
-        <div class="about-bangumi__pager" data-bangumi-pager>
-          <button data-bangumi-page-prev type="button">上一页</button>
-          <span aria-live="polite" data-bangumi-page-info>第 1 页</span>
-          <button data-bangumi-page-next type="button">下一页</button>
-        </div>
-      </section>
-    </div>
-  </article>
-
-  <script>
-    const initBangumiPanel = () => {
-      document.querySelectorAll("[data-bangumi-panel]").forEach((panel) => {
-        if (!(panel instanceof HTMLElement) || panel.dataset.ready === "true") {
-          return;
-        }
-
-        panel.dataset.ready = "true";
-        let category = panel.querySelector("[data-bangumi-category-filter].is-active")?.getAttribute("data-bangumi-category-filter") ?? "anime";
-        let status = panel.querySelector("[data-bangumi-status-filter].is-active")?.getAttribute("data-bangumi-status-filter") ?? "all";
-        let sortMode = panel.querySelector("[data-bangumi-sort].is-active")?.getAttribute("data-bangumi-sort") ?? "default";
-        let page = 1;
-        const pageSize = 14;
-        const categoryButtons = Array.from(panel.querySelectorAll("[data-bangumi-category-filter]"));
-        const statusButtons = Array.from(panel.querySelectorAll("[data-bangumi-status-filter]"));
-        const sortButtons = Array.from(panel.querySelectorAll("[data-bangumi-sort]"));
-        const cards = Array.from(panel.querySelectorAll("[data-bangumi-card]"));
-        const grid = panel.querySelector(".about-bangumi__grid");
-        const pager = panel.querySelector("[data-bangumi-pager]");
-        const pageInfo = panel.querySelector("[data-bangumi-page-info]");
-        const prevButton = panel.querySelector("[data-bangumi-page-prev]");
-        const nextButton = panel.querySelector("[data-bangumi-page-next]");
-
-        const setActive = (buttons: Element[], key: string, attribute: string) => {
-          buttons.forEach((button) => {
-            button.classList.toggle("is-active", button.getAttribute(attribute) === key);
-          });
-        };
-
-        const getOrderedBangumiCards = () =>
-          grid ? Array.from(grid.querySelectorAll("[data-bangumi-card]")) : cards;
-
-        const getMatchedCards = () =>
-          getOrderedBangumiCards().filter((card) => {
-            const matchesCategory = card.getAttribute("data-bangumi-category") === category;
-            const matchesStatus = status === "all" || card.getAttribute("data-bangumi-status") === status;
-            return matchesCategory && matchesStatus;
-          });
-
-        const hydrateBangumiCard = (card: Element) => {
-          const image = card.querySelector("img[data-bangumi-cover]");
-          if (!(image instanceof HTMLImageElement) || image.getAttribute("src")) return;
-          const cover = image.dataset.bangumiCover;
-          if (cover) image.setAttribute("src", cover);
-        };
-
-        const updateBangumiPagination = () => {
-          const matchedCards = getMatchedCards();
-          const pageCount = Math.max(1, Math.ceil(matchedCards.length / pageSize));
-          page = Math.min(Math.max(page, 1), pageCount);
-          const visibleCards = new Set(matchedCards.slice((page - 1) * pageSize, page * pageSize));
-
-          cards.forEach((card) => {
-            const visible = visibleCards.has(card);
-            if (visible) hydrateBangumiCard(card);
-            card.toggleAttribute("hidden", !visible);
-          });
-
-          if (pager instanceof HTMLElement) {
-            pager.hidden = matchedCards.length <= pageSize;
-          }
-
-          if (pageInfo) {
-            pageInfo.textContent = matchedCards.length > 0 ? `第 ${page} / ${pageCount} 页，共 ${matchedCards.length} 个` : "暂无条目";
-          }
-
-          if (prevButton instanceof HTMLButtonElement) {
-            prevButton.disabled = page <= 1;
-          }
-
-          if (nextButton instanceof HTMLButtonElement) {
-            nextButton.disabled = page >= pageCount;
-          }
-        };
-
-        const applyBangumiFilters = () => {
-          updateBangumiPagination();
-        };
-
-        const getNumber = (card: Element, attribute: string) => Number(card.getAttribute(attribute) ?? 0);
-
-        const sortBangumiCards = () => {
-          if (!grid) {
-            return;
-          }
-
-          const sortedCards = [...cards].sort((first, second) => {
-            if (sortMode === "rating") {
-              const scoreDiff = getNumber(second, "data-bangumi-score") - getNumber(first, "data-bangumi-score");
-              if (scoreDiff !== 0) {
-                return scoreDiff;
-              }
-            }
-
-            return getNumber(first, "data-bangumi-index") - getNumber(second, "data-bangumi-index");
-          });
-
-          sortedCards.forEach((card) => grid.append(card));
-        };
-
-        panel.dataset.applyBangumiFilters = "true";
-
-        categoryButtons.forEach((button) => {
-          button.addEventListener("click", () => {
-            category = button.getAttribute("data-bangumi-category-filter") ?? category;
-            page = 1;
-            setActive(categoryButtons, category, "data-bangumi-category-filter");
-            applyBangumiFilters();
-          });
-        });
-
-        statusButtons.forEach((button) => {
-          button.addEventListener("click", () => {
-            status = button.getAttribute("data-bangumi-status-filter") ?? status;
-            page = 1;
-            setActive(statusButtons, status, "data-bangumi-status-filter");
-            applyBangumiFilters();
-          });
-        });
-
-        sortButtons.forEach((button) => {
-          button.addEventListener("click", () => {
-            sortMode = button.getAttribute("data-bangumi-sort") ?? sortMode;
-            page = 1;
-            setActive(sortButtons, sortMode, "data-bangumi-sort");
-            sortBangumiCards();
-            applyBangumiFilters();
-          });
-        });
-
-        prevButton?.addEventListener("click", () => {
-          page -= 1;
-          updateBangumiPagination();
-        });
-
-        nextButton?.addEventListener("click", () => {
-          page += 1;
-          updateBangumiPagination();
-        });
-
-        sortBangumiCards();
-        applyBangumiFilters();
-      });
-    };
-
-    initBangumiPanel();
-    document.addEventListener("astro:page-load", initBangumiPanel);
-  </script>
+      <div class="about-project__shelf" data-about-collection-showcase>
+        {collection.showcase.map((item) => (
+          <a href={item.url} rel="noreferrer" target="_blank">
+            <img alt={item.title} decoding="async" height="4" loading="lazy" referrerpolicy="no-referrer" src={item.cover} width="3" />
+            <span>{item.title}</span>
+          </a>
+        ))}
+      </div>
+      <div class="about-project__collection-action">
+        <p>默认展示六项个人收藏；完整筛选仅在展开后加载。</p>
+        <button aria-controls="about-collection-panel" aria-expanded="false" data-about-collection-toggle type="button">展开完整收藏</button>
+      </div>
+      <div class="about-project__collection-panel" data-about-collection-panel hidden id="about-collection-panel" tabindex="-1"></div>
+    </section>
+  </div>
 </BaseLayout>
