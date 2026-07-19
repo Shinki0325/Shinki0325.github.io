@@ -182,14 +182,14 @@ Stage only the acquisition script, sixth asset, configuration, tests, and plan s
 git commit -m "feat: add sixth non-home background"
 ```
 
-- [ ] **Step 4: Push and monitor GitHub Pages**
+- [x] **Step 4: Push and monitor GitHub Pages (`29687350214`)**
 
 Push `master`, identify the repository-owned Pages workflow triggered by the implementation commit, and wait for successful build and deploy jobs. Treat unrelated duplicate legacy workflow failures as non-authoritative only if the repository-owned workflow succeeds.
 
-- [ ] **Step 5: Verify production**
+- [x] **Step 5: Verify production**
 
 Confirm the public site and `/uploads/backgrounds/nonhome/background-06.webp` return HTTP 200, verify the deployed asset byte length matches the repository file, and confirm generated public HTML includes the sixth local path with no runtime reference to the remote source URL.
 
-- [ ] **Step 6: Publish the Blog Manager handoff state**
+- [x] **Step 6: Publish the Blog Manager handoff state**
 
 Append concise release evidence to `D:/blog-kb/STATUS.md`, `D:/blog-kb/MANIFEST.md`, and `D:/blog-kb/CHANGELOG.md`; refresh `D:/blog-kb/agent-state/blog-manager.md`. Record commit, workflow IDs, verification counts, production checks, and preservation of pre-existing dirty files.
