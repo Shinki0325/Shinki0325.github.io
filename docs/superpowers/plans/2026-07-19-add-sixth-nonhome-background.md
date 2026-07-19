@@ -174,7 +174,7 @@ git diff --check
 
 Expected: no new failures; report test counts, generated page count, existing hints, and key errors only.
 
-- [ ] **Step 3: Commit the scoped implementation**
+- [x] **Step 3: Commit the scoped implementation (`e3313d9`)**
 
 Stage only the acquisition script, sixth asset, configuration, tests, and plan status. Commit with:
 
