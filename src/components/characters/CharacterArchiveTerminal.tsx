@@ -9,10 +9,12 @@ import {
   type KeyboardEvent,
 } from "react";
 import { birthdayWorks, characterBirthdays } from "../../data/character-birthdays";
+import {
+  resolveCharacterArchiveView,
+  type CharacterArchiveView,
+} from "../../lib/character-archive-route";
 import CharacterBirthdayCalendar from "../birthdays/CharacterBirthdayCalendar";
 import "./character-archive-terminal.css";
-
-type ArchiveView = "birthday" | "height";
 
 type Props = { initialDate: string };
 
@@ -44,7 +46,7 @@ const HeightStageFallback = () => (
 );
 
 export default function CharacterArchiveTerminal({ initialDate }: Props) {
-  const [view, setView] = useState<ArchiveView>("birthday");
+  const [view, setView] = useState<CharacterArchiveView>("birthday");
   const [heightMounted, setHeightMounted] = useState(false);
   const [controlsHost, setControlsHost] = useState<HTMLDivElement | null>(null);
   const [birthdayBadgeHost, setBirthdayBadgeHost] = useState<HTMLSpanElement | null>(null);
@@ -52,14 +54,18 @@ export default function CharacterArchiveTerminal({ initialDate }: Props) {
   const heightTabRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
-    const stored = window.sessionStorage.getItem(storageKey);
-    if (stored === "height") {
+    const nextView = resolveCharacterArchiveView(
+      window.location.search,
+      window.sessionStorage.getItem(storageKey),
+    );
+    if (nextView === "height") {
       setHeightMounted(true);
-      setView("height");
     }
+    setView(nextView);
+    window.sessionStorage.setItem(storageKey, nextView);
   }, []);
 
-  const activate = (nextView: ArchiveView) => {
+  const activate = (nextView: CharacterArchiveView) => {
     if (nextView === "height") setHeightMounted(true);
     setView(nextView);
     window.sessionStorage.setItem(storageKey, nextView);

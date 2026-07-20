@@ -21,6 +21,31 @@ test("about page presents the approved project console", async ({ page }) => {
   await expect(page.locator("[data-about-tabs], [data-about-cover]")).toHaveCount(0);
 });
 
+test("About birthday and height entries activate the requested archive view", async ({ page }) => {
+  await page.goto("/about/");
+  await page.locator('a[href="/?archive=height#character-archive"]').click();
+  await expect(page).toHaveURL(/archive=height#character-archive$/);
+  await expect(page.locator("#character-archive").getByRole("tab").nth(1)).toHaveAttribute(
+    "aria-selected",
+    "true",
+  );
+
+  await page.goto("/about/");
+  await page.locator('a[href="/?archive=birthday#character-archive"]').click();
+  await expect(page).toHaveURL(/archive=birthday#character-archive$/);
+  await expect(page.locator("#character-archive").getByRole("tab").first()).toHaveAttribute(
+    "aria-selected",
+    "true",
+  );
+});
+
+test("About music entry reaches the homepage music console", async ({ page }) => {
+  await page.goto("/about/");
+  await page.locator('a[href="/#home-music-card"]').click();
+  await expect(page).toHaveURL(/#home-music-card$/);
+  await expect(page.locator("#home-music-card")).toBeVisible();
+});
+
 test("collection loads once, preserves state, and restores focus", async ({ page }) => {
   const pageErrors: Error[] = [];
   let payloadRequests = 0;

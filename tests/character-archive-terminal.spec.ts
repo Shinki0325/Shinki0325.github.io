@@ -200,6 +200,33 @@ test("restores the selected tab for the browser session", async ({ page }) => {
   );
 });
 
+test("explicit archive query overrides the stored session tab", async ({ page }) => {
+  await page.addInitScript(() => {
+    window.sessionStorage.setItem("blog-shell-splash-dismissed", "true");
+  });
+  await page.goto("/about/");
+  await page.evaluate(() => {
+    window.sessionStorage.setItem("blog:character-archive-view:v1", "height");
+  });
+  await page.goto("/?archive=birthday#character-archive");
+  const archive = page.locator("[data-character-archive]");
+  await expect(archive.getByRole("tab", { name: "生日星图", exact: true })).toHaveAttribute(
+    "aria-selected",
+    "true",
+  );
+  await expect.poll(() =>
+    page.evaluate(() => window.sessionStorage.getItem("blog:character-archive-view:v1")),
+  ).toBe("birthday");
+
+  await page.goto("/#character-archive");
+  await expect(
+    page.locator("[data-character-archive]").getByRole("tab", {
+      name: "生日星图",
+      exact: true,
+    }),
+  ).toHaveAttribute("aria-selected", "true");
+});
+
 for (const width of [1440, 736, 390]) {
   test(`${width}px archive has no document overflow in either view`, async ({ page }) => {
     const archive = await openArchive(page, width);

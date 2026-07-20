@@ -1,5 +1,14 @@
 import fs from "node:fs/promises";
+import { resolveCharacterArchiveView } from "../src/lib/character-archive-route";
 import { describe, expect, it } from "vitest";
+
+it("lets explicit About deep links override stored archive state", () => {
+  expect(resolveCharacterArchiveView("?archive=height", "birthday")).toBe("height");
+  expect(resolveCharacterArchiveView("?archive=birthday", "height")).toBe("birthday");
+  expect(resolveCharacterArchiveView("", "height")).toBe("height");
+  expect(resolveCharacterArchiveView("?archive=unknown", "height")).toBe("height");
+  expect(resolveCharacterArchiveView("", null)).toBe("birthday");
+});
 
 describe("character archive terminal production contract", () => {
   it("replaces the standalone birthday slot with one dual-view archive shell", async () => {
