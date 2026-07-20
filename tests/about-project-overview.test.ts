@@ -136,6 +136,36 @@ describe("About project overview production assets", () => {
     expect(aboutSource).not.toContain("data-about-tabs");
   });
 
+  it("uses a page-local VN-system stylesheet and removes obsolete profile CSS", async () => {
+    const [aboutSource, pageStyles, globalStyles] = await Promise.all([
+      readFile("src/pages/about.astro", "utf8"),
+      readFile("src/styles/about.css", "utf8"),
+      readFile("src/styles/global.css", "utf8"),
+    ]);
+
+    expect(aboutSource).toContain('import "../styles/about.css"');
+    expect(pageStyles).toContain(".about-project__hero");
+    expect(pageStyles).toContain(".about-project__guide img");
+    expect(pageStyles).toContain("prefers-reduced-motion");
+    expect(pageStyles).toContain("@media (max-width: 820px)");
+    expect(pageStyles).toContain("@media (max-width: 560px)");
+    expect(pageStyles).toMatch(
+      /\.shell:has\(> \.page-stack > \.about-project\)\s*\{[^}]*width:\s*100%;[^}]*max-width:\s*none;/s,
+    );
+    expect(pageStyles).toMatch(
+      /\.about-project\s*\{[^}]*width:\s*min\(100% - 44px,\s*1016px\);/s,
+    );
+    expect(pageStyles).toMatch(
+      /@media \(max-width: 560px\)\s*\{[\s\S]*?\.about-project\s*\{[^}]*width:\s*min\(100% - 24px,\s*1016px\);/s,
+    );
+    expect(pageStyles).toMatch(
+      /\.about-project__collection-controls button,\s*\.about-project__collection-pager button,\s*\.about-project__collection-panel > button\s*\{[^}]*min-height:\s*44px;/s,
+    );
+    expect(globalStyles).not.toContain(".about-cover");
+    expect(globalStyles).not.toContain(".about-tabs");
+    expect(globalStyles).not.toContain(".about-bangumi-card");
+  });
+
   it("defines a prerendered deferred collection endpoint", async () => {
     const response = await GET({} as Parameters<typeof GET>[0]);
 
