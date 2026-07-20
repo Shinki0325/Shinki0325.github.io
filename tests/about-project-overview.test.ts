@@ -166,6 +166,46 @@ describe("About project overview production assets", () => {
     expect(globalStyles).not.toContain(".about-bangumi-card");
   });
 
+  it("loads the deferred controller once and renders untrusted payloads with DOM APIs", async () => {
+    const [aboutSource, controllerSource] = await Promise.all([
+      readFile("src/pages/about.astro", "utf8"),
+      readFile("src/scripts/about-collection.ts", "utf8"),
+    ]);
+
+    expect(aboutSource).toContain('import "../scripts/about-collection";');
+    expect(controllerSource).toContain(
+      'document.querySelectorAll<HTMLElement>("[data-about-collection]")',
+    );
+    expect(controllerSource).toMatch(
+      /if \(root\.dataset\.ready === "true"\) return;\s*root\.dataset\.ready = "true";/,
+    );
+    expect(controllerSource.match(/let payloadPromise:/g)).toHaveLength(1);
+    expect(controllerSource).toContain("const parseAboutCollectionPayload");
+    expect(controllerSource).toContain("Invalid about collection payload");
+    expect(controllerSource).not.toContain("as AboutCollectionPayload");
+    expect(controllerSource).toMatch(/Number\.isFinite\([^)]+\)/);
+    expect(controllerSource).toMatch(
+      /payloadPromise = fetch\([\s\S]*?\.catch\(\(error\) => \{\s*payloadPromise = null;\s*throw error;/,
+    );
+    expect(controllerSource.match(/payloadPromise = null;/g)?.length ?? 0).toBeGreaterThanOrEqual(1);
+    expect(controllerSource).toContain('document.createElement("a")');
+    expect(controllerSource).toContain("panel.replaceChildren()");
+    expect(controllerSource).not.toMatch(/innerHTML|insertAdjacentHTML|outerHTML/);
+    expect(controllerSource).toContain('Accept: "application/json"');
+    expect(controllerSource).toContain("Collection request failed: ${response.status}");
+    expect(controllerSource).toContain('panel.setAttribute("aria-busy", "true")');
+    expect(controllerSource).toContain('panel.removeAttribute("aria-busy")');
+    expect(controllerSource).toContain("完整收藏暂时无法加载。");
+    expect(controllerSource).toContain("重新加载");
+    expect(controllerSource).toContain('setAttribute("role", "group")');
+    expect(controllerSource).toContain('setAttribute("aria-pressed", String(pressed))');
+    expect(controllerSource).toContain("retry.disabled = true");
+    expect(controllerSource).toContain("showError(focusRetry)");
+    expect(controllerSource).toContain(
+      'document.addEventListener("astro:page-load", initAboutCollection)',
+    );
+  });
+
   it("defines a prerendered deferred collection endpoint", async () => {
     const response = await GET({} as Parameters<typeof GET>[0]);
 
