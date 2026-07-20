@@ -206,3 +206,117 @@ test("collection filters expose grouped pressed state without marking commands",
   ).toBeNull();
   expect(pageErrors).toHaveLength(0);
 });
+
+const responsiveCases = [
+  { width: 1440, projectWidth: 1016, moduleColumns: 4, routeColumns: 3 },
+  { width: 1024, projectWidth: 980, moduleColumns: 4, routeColumns: 3 },
+  { width: 768, projectWidth: 724, moduleColumns: 2, routeColumns: 1 },
+  { width: 390, projectWidth: 366, moduleColumns: 1, routeColumns: 1 },
+] as const;
+
+for (const { width, projectWidth, moduleColumns, routeColumns } of responsiveCases) {
+  test(`${width}px About page preserves project geometry and visual hierarchy`, async ({
+    page,
+  }) => {
+    await page.setViewportSize({ width, height: 1000 });
+    await page.goto("/about/");
+
+    const project = page.locator("[data-about-project]");
+    const hero = page.locator("[data-about-hero]");
+    const guide = page.locator("[data-about-guide]");
+    const guideImage = guide.locator("img");
+    const heroCopy = hero.locator(".about-project__hero-copy");
+    const heading = hero.getByRole("heading", { level: 2 }).first();
+    const modules = page.locator("[data-about-modules] .about-project__module");
+    const routes = page.locator("[data-about-route] article");
+    const characterRail = page.locator("[data-character-rail]");
+    const railToggle = page.locator("[data-character-rail-toggle]");
+
+    await expect(project).toBeVisible();
+    await expect(guideImage).toBeVisible();
+    await expect(modules).toHaveCount(4);
+    await expect(routes).toHaveCount(3);
+
+    const [projectBox, heroBox, guideBox, headingBox, railBox] = await Promise.all([
+      project.boundingBox(),
+      hero.boundingBox(),
+      guideImage.boundingBox(),
+      heading.boundingBox(),
+      characterRail.boundingBox(),
+    ]);
+    expect(projectBox?.width).toBeCloseTo(projectWidth, 0);
+    expect((guideBox?.y ?? 0) + 1).toBeGreaterThanOrEqual(heroBox?.y ?? 0);
+    expect(headingBox?.x ?? -1).toBeGreaterThanOrEqual(heroBox?.x ?? 0);
+    expect((headingBox?.x ?? 0) + (headingBox?.width ?? 0)).toBeLessThanOrEqual(
+      (heroBox?.x ?? 0) + (heroBox?.width ?? 0) + 1,
+    );
+    expect(headingBox?.y ?? -1).toBeGreaterThanOrEqual(heroBox?.y ?? 0);
+    expect((headingBox?.y ?? 0) + (headingBox?.height ?? 0)).toBeLessThanOrEqual(
+      (heroBox?.y ?? 0) + (heroBox?.height ?? 0) + 1,
+    );
+    if (railBox) {
+      expect(railBox.x + railBox.width).toBeLessThanOrEqual((projectBox?.x ?? 0) + 1);
+    } else {
+      await expect(railToggle).toBeHidden();
+    }
+
+    const [copyZIndex, guideZIndex, actualModuleColumns, actualRouteColumns, overflow] =
+      await Promise.all([
+        heroCopy.evaluate((element) => Number.parseInt(getComputedStyle(element).zIndex, 10)),
+        guide.evaluate((element) => Number.parseInt(getComputedStyle(element).zIndex, 10)),
+        modules.evaluateAll((elements) => new Set(elements.map((element) => element.getBoundingClientRect().x)).size),
+        routes.evaluateAll((elements) => new Set(elements.map((element) => element.getBoundingClientRect().x)).size),
+        page.evaluate(
+          () => document.documentElement.scrollWidth - document.documentElement.clientWidth,
+        ),
+      ]);
+    expect(copyZIndex).toBeGreaterThan(guideZIndex);
+    expect(actualModuleColumns).toBe(moduleColumns);
+    expect(actualRouteColumns).toBe(routeColumns);
+    expect(overflow).toBeLessThanOrEqual(1);
+  });
+}
+
+test("About motion respects reduced motion", async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await page.goto("/about/");
+
+  const guide = page.locator("[data-about-guide]");
+  const module = page.locator(".about-project__module").first();
+  const showcaseCard = page.locator("[data-about-collection-showcase] a").first();
+
+  await expect(guide).toHaveCSS("transition-duration", "0s");
+  await expect(module).toHaveCSS("transition-duration", "0s");
+  await expect(showcaseCard).toHaveCSS("transition-duration", "0s");
+
+  await page.locator("[data-about-hero]").hover();
+  await expect(guide).toHaveCSS("transform", "none");
+  await module.hover();
+  await expect(module).toHaveCSS("transform", "none");
+  await showcaseCard.hover();
+  await expect(showcaseCard).toHaveCSS("transform", "none");
+});
+
+test("1024px About keeps main navigation reachable without leaking its shell override", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1024, height: 1000 });
+  await page.goto("/about/");
+
+  const mobileTrigger = page.locator("[data-mobile-nav-trigger]");
+  await expect(page.locator("[data-character-rail]")).toBeHidden();
+  await expect(page.locator("[data-character-rail-toggle]")).toBeHidden();
+  await expect(mobileTrigger).toBeVisible();
+  await mobileTrigger.click();
+
+  const mobileMenu = page.locator("[data-mobile-radial-menu]");
+  await expect(mobileMenu).toBeVisible();
+  const notesEntry = mobileMenu.locator('a[href="/notes/"]');
+  await expect(notesEntry).toBeVisible();
+  await notesEntry.click();
+  await expect(page).toHaveURL(/\/notes\/$/);
+
+  await expect(page.locator("[data-character-rail]")).toBeVisible();
+  await expect(page.locator("[data-character-rail-toggle]")).toBeVisible();
+  await expect(page.locator("[data-mobile-nav-trigger]")).toBeHidden();
+});

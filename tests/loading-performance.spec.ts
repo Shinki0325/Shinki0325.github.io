@@ -331,42 +331,97 @@ test("character archive SSR stays compact and height intent meets the throttled 
   );
 });
 
-test("about requests only the current fourteen-card page", async ({ page }) => {
+test("about loads six showcase covers before intent and fourteen covers per expanded page", async ({ page }) => {
   await dismissSplash(page);
+  const onePixelPng = Buffer.from(
+    "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+/p9sAAAAASUVORK5CYII=",
+    "base64",
+  );
   const coverRequests: string[] = [];
+  const payloadRequests: string[] = [];
+  await page.route("https://lain.bgm.tv/**", async (route) => {
+    await route.fulfill({
+      body: onePixelPng,
+      contentType: "image/png",
+      headers: { "Cache-Control": "public, max-age=31536000, immutable" },
+      status: 200,
+    });
+  });
   page.on("request", (request) => {
     try {
-      if (new URL(request.url()).hostname === "lain.bgm.tv") coverRequests.push(request.url());
+      const url = new URL(request.url());
+      if (url.hostname === "lain.bgm.tv") coverRequests.push(url.href);
+      if (url.pathname === "/data/about-collection.json") payloadRequests.push(url.href);
     } catch {
       // Ignore browser-internal request URLs.
     }
   });
 
   await page.goto("/about/", { waitUntil: "domcontentloaded" });
-  await page.waitForTimeout(10_000);
-  await expect(page.locator("[data-bangumi-card]:not([hidden])")).toHaveCount(14);
-  const firstPageRequests = new Set(coverRequests);
-  expect(firstPageRequests.size).toBeLessThanOrEqual(14);
-
-  await page.locator("[data-bangumi-page-next]").click();
-  await expect(page.locator("[data-bangumi-card]:not([hidden])")).toHaveCount(14);
-  await expect.poll(() => new Set(coverRequests).size).toBeGreaterThan(firstPageRequests.size);
-  const secondPageRequests = new Set(
-    coverRequests.filter((url) => !firstPageRequests.has(url)),
+  const showcaseImages = page.locator("[data-about-collection-showcase] img");
+  await expect(showcaseImages).toHaveCount(6);
+  const showcaseSources = await showcaseImages.evaluateAll((images: HTMLImageElement[]) =>
+    images.map((image) => image.currentSrc || image.src),
   );
-  expect(secondPageRequests.size).toBeLessThanOrEqual(14);
+  expect(new Set(showcaseSources).size).toBe(6);
+  await page.locator("[data-about-collection-showcase]").scrollIntoViewIfNeeded();
+  await expect
+    .poll(() =>
+      showcaseImages.evaluateAll((images: HTMLImageElement[]) =>
+        images.every((image) => image.complete && image.naturalWidth > 0),
+      ),
+    )
+    .toBe(true);
+  expect(new Set(coverRequests).size).toBe(6);
+  expect(payloadRequests).toHaveLength(0);
 
-  const requestCountAfterPageTwo = coverRequests.length;
-  await page.locator("[data-bangumi-page-prev]").click();
-  await expect(page.locator("[data-bangumi-card]:not([hidden])")).toHaveCount(14);
-  await page.waitForTimeout(2_000);
-  expect(coverRequests).toHaveLength(requestCountAfterPageTwo);
+  const beforeExpansion = new Set(coverRequests);
+  await page.locator("[data-about-collection-toggle]").click();
+  await expect(page.locator("[data-about-collection-card]")).toHaveCount(14);
+  await expect
+    .poll(() =>
+      page
+        .locator("[data-about-collection-card] img")
+        .evaluateAll((images: HTMLImageElement[]) =>
+          images.every((image) => image.complete && image.naturalWidth > 0),
+        ),
+    )
+    .toBe(true);
+  expect(payloadRequests).toHaveLength(1);
+  const firstPageNewCovers = new Set(
+    coverRequests.filter((url) => !beforeExpansion.has(url)),
+  );
+  expect(firstPageNewCovers.size).toBeLessThanOrEqual(14);
+
+  const beforeSecondPage = new Set(coverRequests);
+  await page.locator("[data-about-collection-page-next]").click();
+  await expect(page.locator("[data-about-collection-card]")).toHaveCount(14);
+  await expect(page.locator("[data-about-collection-page-info]")).toContainText("2 /");
+  await expect
+    .poll(() =>
+      page
+        .locator("[data-about-collection-card] img")
+        .evaluateAll((images: HTMLImageElement[]) =>
+          images.every((image) => image.complete && image.naturalWidth > 0),
+        ),
+    )
+    .toBe(true);
+  const secondPageNewCovers = new Set(
+    coverRequests.filter((url) => !beforeSecondPage.has(url)),
+  );
+  expect(secondPageNewCovers.size).toBeLessThanOrEqual(14);
+
+  await page.locator("[data-about-collection-toggle]").click();
+  await page.locator("[data-about-collection-toggle]").click();
+  await expect(page.locator("[data-about-collection-card]")).toHaveCount(14);
+  expect(payloadRequests).toHaveLength(1);
 
   console.log(
     `PERF about ${JSON.stringify({
-      firstPageRequests: firstPageRequests.size,
-      returnPageDuplicateRequests: coverRequests.length - requestCountAfterPageTwo,
-      secondPageRequests: secondPageRequests.size,
+      firstPageNewCovers: firstPageNewCovers.size,
+      initialCoverRequests: beforeExpansion.size,
+      payloadRequests: payloadRequests.length,
+      secondPageNewCovers: secondPageNewCovers.size,
     })}`,
   );
 });

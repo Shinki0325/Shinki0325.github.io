@@ -594,6 +594,17 @@
   opacity: 0.38;
 }
 
+@media (min-width: 901px) and (max-width: 1275px) {
+  body:has(.about-project) .character-rail,
+  body:has(.about-project) .top-nav-desktop-toggle {
+    display: none;
+  }
+
+  body:has(.about-project) .top-nav-mobile-trigger {
+    display: inline-flex;
+  }
+}
+
 @media (max-width: 820px) {
   .about-project__hero-copy {
     max-width: 76%;
