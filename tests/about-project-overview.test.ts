@@ -166,6 +166,137 @@ describe("About project overview production assets", () => {
     expect(globalStyles).not.toContain(".about-bangumi-card");
   });
 
+  it("locks the approved navigation and readability correction in page-local CSS", async () => {
+    const pageStyles = await readFile("src/styles/about.css", "utf8");
+    const extractBlock = (source: string, header: RegExp, label: string) => {
+      const match = source.match(header);
+      const openingIndex = match?.index === undefined ? -1 : source.indexOf("{", match.index);
+      let startingDepth = 0;
+      for (let index = 0; index < (match?.index ?? 0); index += 1) {
+        if (source[index] === "{") startingDepth += 1;
+        if (source[index] === "}") startingDepth -= 1;
+      }
+
+      expect(match, `expected ${label}`).not.toBeNull();
+      expect(startingDepth, `${label} must be top-level in its scope`).toBe(0);
+      expect(openingIndex, `expected opening brace for ${label}`).toBeGreaterThanOrEqual(0);
+      if (!match || openingIndex < 0) return "";
+
+      let depth = 0;
+      for (let index = openingIndex; index < source.length; index += 1) {
+        if (source[index] === "{") depth += 1;
+        if (source[index] !== "}") continue;
+        depth -= 1;
+        if (depth === 0) return source.slice(openingIndex + 1, index);
+      }
+
+      throw new Error(`expected closing brace for ${label}`);
+    };
+    const extractRule = (source: string, selector: string) => {
+      const escapedSelector = selector.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      return extractBlock(
+        source,
+        new RegExp(`(?:^|\\n)\\s*${escapedSelector}\\s*(?:,|\\{)`),
+        `rule for ${selector}`,
+      );
+    };
+    const expectDeclarations = (source: string, selector: string, declarations: string[]) => {
+      const rule = extractRule(source, selector);
+      for (const declaration of declarations) {
+        expect(rule, `${selector} must contain ${declaration}`).toContain(declaration);
+      }
+    };
+
+    const firstMediaIndex = pageStyles.search(/(?:^|\n)@media\b/);
+    expect(firstMediaIndex, "expected a media-query boundary").toBeGreaterThanOrEqual(0);
+    const baseStyles = pageStyles.slice(0, firstMediaIndex);
+    const mediumStyles = extractBlock(
+      pageStyles,
+      /@media\s*\(min-width:\s*901px\)\s*and\s*\(max-width:\s*1275px\)\s*\{/,
+      "901px-1275px media block",
+    );
+
+    expectDeclarations(baseStyles, ".about-project", [
+      "background: rgba(8, 14, 28, 0.9);",
+      "box-shadow: 0 0 0 1px rgba(188, 146, 192, 0.2), 0 24px 54px rgba(2, 6, 18, 0.3);",
+    ]);
+    expectDeclarations(baseStyles, ".about-project__band", ["padding: 26px 18px;"]);
+    expectDeclarations(baseStyles, ".about-project__section-head h2", ["font-size: 22px;"]);
+    expectDeclarations(baseStyles, ".about-project__collection-head h2", ["font-size: 22px;"]);
+    expectDeclarations(baseStyles, ".about-project__module", [
+      "min-height: 142px;",
+      "padding: 16px;",
+      "border: 1px solid rgba(177, 139, 183, 0.68);",
+      "background: rgba(20, 28, 49, 0.86);",
+      "box-shadow: inset 0 1px rgba(255, 255, 255, 0.035);",
+    ]);
+    expectDeclarations(baseStyles, ".about-project__module strong", ["font-size: 15px;"]);
+    expectDeclarations(baseStyles, ".about-project__module p", [
+      "color: #d7e0ed;",
+      "font-size: 12px;",
+      "line-height: 1.7;",
+    ]);
+    expectDeclarations(baseStyles, ".about-project__research-grid article", [
+      "min-height: 126px;",
+      "border: 1px solid rgba(177, 139, 183, 0.68);",
+      "background: rgba(20, 28, 49, 0.86);",
+      "box-shadow: inset 0 1px rgba(255, 255, 255, 0.035);",
+    ]);
+    expectDeclarations(baseStyles, ".about-project__research-grid article > small", [
+      "background: rgba(16, 22, 40, 0.58);",
+      "font-size: 10px;",
+    ]);
+    expectDeclarations(baseStyles, ".about-project__research-grid h3", ["font-size: 15px;"]);
+    expectDeclarations(baseStyles, ".about-project__research-grid p", [
+      "color: #d7e0ed;",
+      "font-size: 12px;",
+      "line-height: 1.7;",
+    ]);
+    expectDeclarations(baseStyles, ".about-project__route article", [
+      "min-height: 116px;",
+      "padding: 16px;",
+      "border: 1px solid rgba(177, 139, 183, 0.68);",
+      "background: rgba(20, 28, 49, 0.86);",
+      "box-shadow: inset 0 1px rgba(255, 255, 255, 0.035);",
+    ]);
+    expectDeclarations(baseStyles, ".about-project__route h3", ["font-size: 14px;"]);
+    for (const selector of [
+      ".about-project__route p",
+      ".about-project__collection-head p",
+      ".about-project__collection-panel > p",
+    ]) {
+      expectDeclarations(baseStyles, selector, [
+        "color: #d7e0ed;",
+        "font-size: 12px;",
+        "line-height: 1.7;",
+      ]);
+    }
+    expectDeclarations(baseStyles, ".about-project__collection-action", [
+      "color: #cbd6e6;",
+      "font-size: 11px;",
+      "line-height: 1.7;",
+    ]);
+
+    expectDeclarations(mediumStyles, "body:has(.about-project) .character-rail", [
+      "display: block;",
+    ]);
+    expectDeclarations(mediumStyles, "body:has(.about-project) .top-nav-desktop-toggle", [
+      "display: inline-grid;",
+    ]);
+    expectDeclarations(mediumStyles, "body:has(.about-project) .top-nav-mobile-trigger", [
+      "display: none;",
+    ]);
+    expectDeclarations(mediumStyles, "body:has(.about-project) .top-nav-shell.is-hidden", [
+      "transform: none;",
+    ]);
+    expectDeclarations(mediumStyles, ".about-project", [
+      "width: min(calc(100% - 264px), 1016px);",
+    ]);
+    expectDeclarations(mediumStyles, ".about-project__modules", [
+      "grid-template-columns: repeat(2, minmax(0, 1fr));",
+    ]);
+  });
+
   it("loads the deferred controller once and renders untrusted payloads with DOM APIs", async () => {
     const [aboutSource, controllerSource] = await Promise.all([
       readFile("src/pages/about.astro", "utf8"),

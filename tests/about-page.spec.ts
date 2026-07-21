@@ -209,7 +209,7 @@ test("collection filters expose grouped pressed state without marking commands",
 
 const responsiveCases = [
   { width: 1440, projectWidth: 1016, moduleColumns: 4, routeColumns: 3 },
-  { width: 1024, projectWidth: 980, moduleColumns: 4, routeColumns: 3 },
+  { width: 1024, projectWidth: 760, moduleColumns: 2, routeColumns: 3 },
   { width: 768, projectWidth: 724, moduleColumns: 2, routeColumns: 1 },
   { width: 390, projectWidth: 366, moduleColumns: 1, routeColumns: 1 },
 ] as const;
@@ -231,6 +231,7 @@ for (const { width, projectWidth, moduleColumns, routeColumns } of responsiveCas
     const routes = page.locator("[data-about-route] article");
     const characterRail = page.locator("[data-character-rail]");
     const railToggle = page.locator("[data-character-rail-toggle]");
+    const mobileTrigger = page.locator("[data-mobile-nav-trigger]");
 
     await expect(project).toBeVisible();
     await expect(guideImage).toBeVisible();
@@ -254,10 +255,17 @@ for (const { width, projectWidth, moduleColumns, routeColumns } of responsiveCas
     expect((headingBox?.y ?? 0) + (headingBox?.height ?? 0)).toBeLessThanOrEqual(
       (heroBox?.y ?? 0) + (heroBox?.height ?? 0) + 1,
     );
-    if (railBox) {
-      expect(railBox.x + railBox.width).toBeLessThanOrEqual((projectBox?.x ?? 0) + 1);
+    if (width > 900) {
+      await expect(characterRail).toBeVisible();
+      await expect(railToggle).toBeVisible();
+      await expect(mobileTrigger).toBeHidden();
+      expect((railBox?.x ?? 0) + (railBox?.width ?? 0)).toBeLessThanOrEqual(
+        (projectBox?.x ?? 0) + 1,
+      );
     } else {
+      await expect(characterRail).toBeHidden();
       await expect(railToggle).toBeHidden();
+      await expect(mobileTrigger).toBeVisible();
     }
 
     const [copyZIndex, guideZIndex, actualModuleColumns, actualRouteColumns, overflow] =
@@ -297,26 +305,195 @@ test("About motion respects reduced motion", async ({ page }) => {
   await expect(showcaseCard).toHaveCSS("transform", "none");
 });
 
-test("1024px About keeps main navigation reachable without leaking its shell override", async ({
+test("1024px About keeps a centered plane and reachable desktop navigation after scrolling", async ({
   page,
 }) => {
   await page.setViewportSize({ width: 1024, height: 1000 });
   await page.goto("/about/");
 
-  const mobileTrigger = page.locator("[data-mobile-nav-trigger]");
-  await expect(page.locator("[data-character-rail]")).toBeHidden();
-  await expect(page.locator("[data-character-rail-toggle]")).toBeHidden();
-  await expect(mobileTrigger).toBeVisible();
-  await mobileTrigger.click();
+  const project = page.locator("[data-about-project]");
+  const topNav = page.locator("[data-top-nav]");
+  const rail = page.locator("[data-character-rail]");
+  const railToggle = page.locator("[data-character-rail-toggle]");
 
-  const mobileMenu = page.locator("[data-mobile-radial-menu]");
-  await expect(mobileMenu).toBeVisible();
-  const notesEntry = mobileMenu.locator('a[href="/notes/"]');
-  await expect(notesEntry).toBeVisible();
-  await notesEntry.click();
-  await expect(page).toHaveURL(/\/notes\/$/);
-
-  await expect(page.locator("[data-character-rail]")).toBeVisible();
-  await expect(page.locator("[data-character-rail-toggle]")).toBeVisible();
+  await expect(rail).toBeVisible();
+  await expect(railToggle).toBeVisible();
   await expect(page.locator("[data-mobile-nav-trigger]")).toBeHidden();
+
+  const geometry = await project.evaluate((element) => {
+    const rect = element.getBoundingClientRect();
+    return {
+      left: rect.left,
+      right: window.innerWidth - rect.right,
+      width: rect.width,
+    };
+  });
+  expect(geometry.width).toBeCloseTo(760, 0);
+  expect(Math.abs(geometry.left - geometry.right)).toBeLessThanOrEqual(2);
+
+  await page.mouse.wheel(0, 1000);
+  await expect(topNav).toHaveClass(/is-hidden/);
+  await expect(topNav).toHaveCSS("transform", "none");
+  expect((await topNav.boundingBox())?.y ?? -1).toBeGreaterThanOrEqual(0);
+
+  await railToggle.focus();
+  await expect(railToggle).toBeFocused();
+  await expect(railToggle).toHaveAttribute("aria-expanded", "true");
+  await railToggle.press("Enter");
+  await expect(rail).toHaveAttribute("data-open", "false");
+  await expect(railToggle).toHaveAttribute("aria-expanded", "false");
+  await expect(railToggle).toBeFocused();
+  await expect(railToggle).toBeVisible();
+  await expect(topNav).toHaveCSS("transform", "none");
+  const topNavBox = await topNav.boundingBox();
+  const viewportHeight = page.viewportSize()?.height ?? 0;
+  expect(topNavBox?.y ?? -1).toBeGreaterThanOrEqual(0);
+  expect((topNavBox?.y ?? 0) + (topNavBox?.height ?? 0)).toBeLessThanOrEqual(
+    viewportHeight,
+  );
+
+  await railToggle.press("Enter");
+  await expect(rail).toHaveAttribute("data-open", "true");
+  await expect(railToggle).toHaveAttribute("aria-expanded", "true");
+  await expect(railToggle).toBeFocused();
+});
+
+test("About lower panels use the approved readable card treatment", async ({ page }) => {
+  await page.setViewportSize({ width: 1024, height: 1000 });
+  await page.goto("/about/");
+
+  const module = page.locator(".about-project__module").first();
+  await expect(module).toHaveCSS("background-color", "rgba(20, 28, 49, 0.86)");
+  await expect(module).toHaveCSS("border-color", "rgba(177, 139, 183, 0.68)");
+  await expect(module.locator("strong")).toHaveCSS("font-size", "15px");
+  await expect(module.locator("p")).toHaveCSS("font-size", "12px");
+  await expect(module.locator("p")).toHaveCSS("color", "rgb(215, 224, 237)");
+  await expect(page.locator(".about-project__research-grid h3").first()).toHaveCSS(
+    "font-size",
+    "15px",
+  );
+  await expect(page.locator(".about-project__research-grid p").first()).toHaveCSS(
+    "font-size",
+    "12px",
+  );
+  await expect(page.locator(".about-project__route h3").first()).toHaveCSS(
+    "font-size",
+    "14px",
+  );
+  await expect(page.locator(".about-project__route p").first()).toHaveCSS(
+    "font-size",
+    "12px",
+  );
+  await expect(page.locator(".about-project__collection-head p")).toHaveCSS(
+    "font-size",
+    "12px",
+  );
+  await expect(page.locator(".about-project__collection-action")).toHaveCSS(
+    "font-size",
+    "11px",
+  );
+});
+
+test("901px About lower cards contain their copy without resizing on interaction", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 901, height: 1000 });
+  await page.goto("/about/");
+
+  const cardGroups = [
+    {
+      cards: page.locator(".about-project__module"),
+      label: "module",
+      textSelector: "small, strong, p",
+    },
+    {
+      cards: page.locator(".about-project__research-grid article"),
+      label: "research",
+      textSelector: "small, h3, p",
+    },
+    {
+      cards: page.locator(".about-project__route article"),
+      label: "route",
+      textSelector: "small, h3, p",
+    },
+  ] as const;
+
+  for (const { cards, label, textSelector } of cardGroups) {
+    const measurements = await cards.evaluateAll((elements, selector) =>
+      elements.map((element, cardIndex) => {
+        const cardRect = element.getBoundingClientRect();
+        return {
+          cardIndex,
+          cardRect: { bottom: cardRect.bottom, right: cardRect.right },
+          clientHeight: element.clientHeight,
+          scrollHeight: element.scrollHeight,
+          textRects: Array.from(element.querySelectorAll(selector)).map((text, textIndex) => {
+            const rect = text.getBoundingClientRect();
+            return { bottom: rect.bottom, right: rect.right, textIndex };
+          }),
+        };
+      }),
+    textSelector);
+
+    expect(measurements.length, `${label} cards must exist`).toBeGreaterThan(0);
+    for (const measurement of measurements) {
+      expect(
+        measurement.scrollHeight,
+        `${label} card ${measurement.cardIndex} must not clip vertically`,
+      ).toBeLessThanOrEqual(measurement.clientHeight + 1);
+      expect(
+        measurement.textRects.length,
+        `${label} card ${measurement.cardIndex} must expose key copy`,
+      ).toBeGreaterThan(0);
+      for (const textRect of measurement.textRects) {
+        expect(
+          textRect.bottom,
+          `${label} card ${measurement.cardIndex} text ${textRect.textIndex} must stay above the card bottom`,
+        ).toBeLessThanOrEqual(measurement.cardRect.bottom + 1);
+        expect(
+          textRect.right,
+          `${label} card ${measurement.cardIndex} text ${textRect.textIndex} must stay inside the card right edge`,
+        ).toBeLessThanOrEqual(measurement.cardRect.right + 1);
+      }
+    }
+  }
+
+  const firstModule = page.locator(".about-project__module").first();
+  const readModuleTranslateY = () =>
+    firstModule.evaluate((element) => {
+      const transform = getComputedStyle(element).transform;
+      return transform === "none" ? 0 : new DOMMatrixReadOnly(transform).m42;
+    });
+  const initialBox = await firstModule.boundingBox();
+  expect(initialBox, "module must have initial geometry").not.toBeNull();
+  await firstModule.hover();
+  await expect.poll(readModuleTranslateY).toBeCloseTo(-3, 1);
+  const hoverBox = await firstModule.boundingBox();
+  expect(hoverBox, "module must have hover geometry").not.toBeNull();
+  await page.mouse.move(0, 0);
+  await firstModule.focus();
+  await page.keyboard.press("Shift+Tab");
+  await page.keyboard.press("Tab");
+  await expect(firstModule).toBeFocused();
+  await expect.poll(readModuleTranslateY).toBeCloseTo(-3, 1);
+  const focusBox = await firstModule.boundingBox();
+  expect(focusBox, "module must have keyboard-focus geometry").not.toBeNull();
+
+  if (!initialBox || !hoverBox || !focusBox) {
+    throw new Error("module geometry must remain measurable across interaction states");
+  }
+
+  for (const [state, box] of [
+    ["hover", hoverBox],
+    ["keyboard focus", focusBox],
+  ] as const) {
+    expect(
+      Math.abs(box.width - initialBox.width),
+      `module width must remain stable on ${state}`,
+    ).toBeLessThanOrEqual(0.5);
+    expect(
+      Math.abs(box.height - initialBox.height),
+      `module height must remain stable on ${state}`,
+    ).toBeLessThanOrEqual(0.5);
+  }
 });
