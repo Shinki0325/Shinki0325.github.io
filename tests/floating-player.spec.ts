@@ -3,6 +3,9 @@ import { expect, test } from "@playwright/test";
 const FLOATING_PLAYER_COLLAPSED_KEY = "blog:floating-player-collapsed";
 
 async function clearCollapsedPreference(page: Parameters<typeof test>[0]["page"]) {
+  await page.addInitScript(() => {
+    window.sessionStorage.setItem("blog-shell-splash-dismissed", "true");
+  });
   await page.goto("/");
   await page.evaluate((key) => window.localStorage.removeItem(key), FLOATING_PLAYER_COLLAPSED_KEY);
 }

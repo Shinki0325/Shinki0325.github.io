@@ -96,7 +96,8 @@ test("homepage hero matches the requested asymmetric profile layout", async ({ p
   expect(musicBox).not.toBeNull();
   expect((profileBox?.width ?? 0)).toBeGreaterThan((musicBox?.width ?? 0));
   expect(Math.abs((profileBox?.height ?? 0) - (musicBox?.height ?? 0))).toBeLessThanOrEqual(2);
-  expect(profileRadius).toBeGreaterThanOrEqual(22);
+  expect(profileRadius).toBe(0);
+  await expect(page.locator("[data-home-opening-surface]")).toHaveCSS("border-radius", "5px");
   expect(socialButtonMetrics.width).toBeGreaterThanOrEqual(46);
   expect(socialButtonMetrics.width).toBeLessThanOrEqual(50);
   expect(socialButtonMetrics.height).toBeGreaterThanOrEqual(46);
