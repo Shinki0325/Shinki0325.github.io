@@ -83,8 +83,8 @@ export const siteAppearanceDefaults: SiteAppearance = {
   maxWidth: 1052,
   cardScale: 1,
   radiusScale: 1,
-  fontPreset: "serif",
-  fontFamily: "\"Noto Serif SC\", \"Source Han Serif SC\", \"Songti SC\", serif",
+  fontPreset: "sans",
+  fontFamily: "\"Noto Sans SC\", \"Source Han Sans SC\", \"Microsoft YaHei\", sans-serif",
   previewCards: [
     {
       id: "featured",
@@ -116,17 +116,6 @@ export const siteAppearanceDefaults: SiteAppearance = {
       meta: "笔记",
       actionLabel: "打开笔记",
       variant: "soft",
-      widthUnits: 4,
-      minHeight: 180,
-    },
-    {
-      id: "status",
-      eyebrow: "运行回廊",
-      title: "资料岛仍在缓慢发光",
-      description: "文稿、资料库、笔记和照片墙会继续向同一个归档系统汇流。",
-      meta: "Live",
-      actionLabel: "查看状态",
-      variant: "outline",
       widthUnits: 4,
       minHeight: 180,
     },
@@ -184,7 +173,9 @@ const clamp = (value: unknown, min: number, max: number, fallback: number) =>
   Math.min(max, Math.max(min, toFiniteNumber(value, fallback)));
 
 const toFontPreset = (value: unknown): FontPreset =>
-  value === "sans" || value === "rounded" || value === "custom" ? value : "serif";
+  value === "serif" || value === "sans" || value === "rounded" || value === "custom"
+    ? value
+    : siteAppearanceDefaults.fontPreset;
 
 const toCardVariant = (value: unknown): SiteAppearanceCardVariant =>
   value === "soft" || value === "outline" ? value : "strong";
@@ -356,6 +347,7 @@ export const buildAppearanceStyle = (appearance: SiteAppearance) => {
       appearance.pageGutterMax
     )}px);`,
     `--site-font-family: ${appearance.fontFamily};`,
+    `--font-ui: ${appearance.fontFamily};`,
     `--nav-height: ${appearance.navigation.height}px;`,
     `--nav-max-width: ${appearance.navigation.maxWidth}px;`,
     `--nav-padding-x: ${appearance.navigation.paddingX}px;`,

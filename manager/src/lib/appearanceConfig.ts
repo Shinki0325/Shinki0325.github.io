@@ -99,8 +99,8 @@ export const appearanceDefaults: AppearanceConfigForm = {
   maxWidth: 1052,
   cardScale: 1,
   radiusScale: 1,
-  fontPreset: "serif",
-  fontFamily: "\"Noto Serif SC\", \"Source Han Serif SC\", \"Songti SC\", serif",
+  fontPreset: "sans",
+  fontFamily: "\"Noto Sans SC\", \"Source Han Sans SC\", \"Microsoft YaHei\", sans-serif",
   previewCards: [
     {
       id: "featured",
@@ -132,17 +132,6 @@ export const appearanceDefaults: AppearanceConfigForm = {
       meta: "笔记",
       actionLabel: "查看笔记",
       variant: "soft",
-      widthUnits: 4,
-      minHeight: 180,
-    },
-    {
-      id: "status",
-      eyebrow: "运行回廊",
-      title: "资料岛仍在缓慢发光",
-      description: "公开内容、最近更新和日历模块可以用这种中等尺寸卡片承接。",
-      meta: "Live",
-      actionLabel: "查看状态",
-      variant: "outline",
       widthUnits: 4,
       minHeight: 180,
     },
@@ -218,7 +207,9 @@ const asNumber = (value: unknown, fallback: number) =>
 const asString = (value: unknown, fallback = "") => (typeof value === "string" ? value : fallback);
 
 const asFontPreset = (value: unknown): AppearanceFontPreset =>
-  value === "sans" || value === "rounded" || value === "custom" ? value : "serif";
+  value === "serif" || value === "sans" || value === "rounded" || value === "custom"
+    ? value
+    : appearanceDefaults.fontPreset;
 
 const asPreviewCardVariant = (value: unknown): AppearancePreviewCardVariant =>
   value === "soft" || value === "outline" ? value : "strong";

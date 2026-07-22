@@ -74,6 +74,16 @@ const APPEARANCE_JSON = JSON.stringify(
 );
 
 describe("manager appearance editor", () => {
+  it("keeps Crystal Terminal defaults aligned between manager and production", async () => {
+    const [{ appearanceDefaults }, { siteAppearanceDefaults }] = await Promise.all([
+      import("../manager/src/lib/appearanceConfig"),
+      import("../src/config/site-appearance"),
+    ]);
+    expect(appearanceDefaults.fontPreset).toBe("sans");
+    expect(appearanceDefaults.fontFamily).toBe(siteAppearanceDefaults.fontFamily);
+    expect(appearanceDefaults.previewCards.map((card) => card.id)).toEqual(["featured", "reference", "notes"]);
+  });
+
   it("parses global appearance json into form controls", () => {
     const parsed = parseAppearanceConfig(APPEARANCE_JSON);
 

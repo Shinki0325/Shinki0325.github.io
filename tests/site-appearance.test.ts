@@ -6,6 +6,17 @@ import {
 } from "../src/config/site-appearance";
 
 describe("site appearance config", () => {
+  it("uses a modern UI font and keeps only actionable homepage content cards", async () => {
+    const fs = await import("node:fs/promises");
+    const config = JSON.parse(await fs.readFile("src/config/pages/appearance.json", "utf8"));
+    expect(siteAppearanceDefaults.fontPreset).toBe("sans");
+    expect(siteAppearanceDefaults.fontFamily).toContain("Noto Sans SC");
+    expect(normalizeSiteAppearance({}).fontPreset).toBe("sans");
+    expect(config.fontPreset).toBe("sans");
+    expect(config.fontFamily).toContain("Noto Sans SC");
+    expect(config.previewCards.map((card: { id: string }) => card.id)).toEqual(["featured", "reference", "notes"]);
+  });
+
   it("normalizes global visual controls into safe defaults", () => {
     const appearance = normalizeSiteAppearance({
       panelOpacity: 2,
@@ -61,6 +72,7 @@ describe("site appearance config", () => {
     expect(css).toContain("--bg-image-opacity: 0.7;");
     expect(css).toContain("--page-gutter: clamp(44px, 8vw, 112px);");
     expect(css).toContain('--site-font-family: "LXGW WenKai Screen", "Noto Serif SC", serif;');
+    expect(css).toContain('--font-ui: "LXGW WenKai Screen", "Noto Serif SC", serif;');
     expect(css).toContain("--nav-height: 64px;");
     expect(css).toContain("--floating-player-cover-size: 72px;");
     expect(css).toContain("--home-lyric-bar-font-size: 18px;");
@@ -121,7 +133,7 @@ describe("site appearance config", () => {
     expect(indexSource).toContain('style={getHomeFeatureCardStyle("featured")}');
     expect(indexSource).toContain('style={getHomeFeatureCardStyle("reference")}');
     expect(indexSource).toContain('style={getHomeFeatureCardStyle("notes")}');
-    expect(indexSource).toContain('style={getHomeFeatureCardStyle("status")}');
+    expect(indexSource).not.toContain('getHomeCard("status")');
     expect(styleSource).toContain("--home-feature-card-span");
     expect(styleSource).toContain("--home-feature-card-min-height");
   });
@@ -182,7 +194,7 @@ describe("site appearance config", () => {
     expect(source).toContain("buildAppearanceStyle");
     expect(source).toContain("siteAppearance");
     expect(source).toContain("set:html={`:root {${appearanceStyle}}`}");
-    expect(source).toContain("<body style={appearanceStyle}>");
+    expect(source).toContain('data-interface-theme="crystal-terminal"');
   });
 
   it("uses the custom Yin Xingzhu cursor set for core pointer states", async () => {
