@@ -1,7 +1,9 @@
 ---
 import CharacterArchiveTerminal from "../components/characters/CharacterArchiveTerminal";
+import HomeSectionHeader from "../components/home/HomeSectionHeader.astro";
 import HomeLyricBar from "../components/music/HomeLyricBar";
 import HomeMusicCard from "../components/music/HomeMusicCard";
+import "../styles/home-crystal-terminal.css";
 import { siteAppearance, type SiteAppearancePreviewCard } from "../config/site-appearance";
 import { siteShell } from "../config/site-shell";
 import { galgameHistoryPreview } from "../data/galgame-history-preview";
@@ -82,7 +84,7 @@ const noteSummary = latestNote?.data.tags?.length
   ? `围绕 ${latestNote.data.tags.slice(0, 2).join(" / ")} 的整理笔记`
   : "把零散线索先整理成可继续扩写的工作台。";
 
-type HomeCardId = "featured" | "reference" | "notes" | "status";
+type HomeCardId = "featured" | "reference" | "notes";
 
 const homeCardFallbacks: Record<HomeCardId, SiteAppearancePreviewCard> = {
   featured: {
@@ -118,17 +120,6 @@ const homeCardFallbacks: Record<HomeCardId, SiteAppearancePreviewCard> = {
     widthUnits: 4,
     minHeight: 180,
   },
-  status: {
-    id: "status",
-    eyebrow: "运行回廊",
-    title: "运行回廊",
-    description: "",
-    meta: "Live",
-    actionLabel: "查看状态",
-    variant: "outline",
-    widthUnits: 4,
-    minHeight: 180,
-  },
 };
 
 const homeCardConfig = new Map(siteAppearance.previewCards.map((card) => [card.id, card]));
@@ -136,7 +127,7 @@ const getHomeCard = (id: HomeCardId) => homeCardConfig.get(id) ?? homeCardFallba
 const getHomeFeatureCardClass = (id: HomeCardId, extraClass = "") => {
   const card = getHomeCard(id);
 
-  return ["home-feature-card", `home-feature-card--variant-${card.variant}`, extraClass, "glass-card", "interactive-lift"]
+  return ["home-feature-card", `home-feature-card--variant-${card.variant}`, extraClass, "crystal-module", "interactive-lift"]
     .filter(Boolean)
     .join(" ");
 };
@@ -168,8 +159,8 @@ const chronicleMiniTracks = [
 
 <BaseLayout>
   <section class="home-hero-shell" data-home-hero>
-    <div class="home-hero-grid">
-      <article class="home-profile-card glass-card" data-home-profile-card>
+    <div class="home-hero-grid" data-home-opening-surface>
+      <article class="home-profile-card" data-home-profile-card>
         <div class="home-profile-card__top">
           <div class="home-profile-avatar-shell">
             <div class="home-profile-avatar-frame">
@@ -248,7 +239,9 @@ const chronicleMiniTracks = [
 
   <HomeLyricBar client:load />
 
-  <section class="home-feature-grid" data-home-feature-grid>
+  <div class="home-feature-grid" data-home-feature-grid>
+    <section class="home-chapter" data-home-chapter="history">
+      <HomeSectionHeader accent="gold" index="01" meta={`${chronicleSummary.startYear}-${chronicleSummary.endYear}`} title="历史路线" />
     <a
       aria-label="进入 Galgame Chronicle 美少女游戏编年档案"
       class="home-history-entry glass-card"
@@ -309,6 +302,10 @@ const chronicleMiniTracks = [
       </span>
     </a>
 
+    </section>
+
+    <section class="home-chapter" data-home-chapter="characters">
+      <HomeSectionHeader accent="pink" index="02" meta="生日 / 身高" title="角色档案" />
     <div
       class="home-feature-card--calendar"
       data-home-birthday-calendar
@@ -320,7 +317,11 @@ const chronicleMiniTracks = [
         initialDate={characterArchiveInitialDate}
       />
     </div>
+    </section>
 
+    <section class="home-chapter" data-home-chapter="records">
+      <HomeSectionHeader accent="cyan" index="03" meta={`${articles.length + references.length + notes.length + albums.length} 条公开内容`} title="最新记录" />
+      <div class="home-records-grid">
     <a
       class={getHomeFeatureCardClass("featured", "home-feature-card--primary home-script-carousel")}
       data-home-script-carousel
@@ -388,32 +389,14 @@ const chronicleMiniTracks = [
       <span class="section-link home-feature-card__cta">打开笔记</span>
     </a>
 
-    <article class={getHomeFeatureCardClass("status", "home-feature-card--reference")} data-home-reference-card style={getHomeFeatureCardStyle("status")}>
-      <div class="home-card-head">
-        <div>
-          <p class="eyebrow">运行回廊</p>
-          <h2>资料岛仍在缓慢发光</h2>
-        </div>
-        <span class="spotlight-label">Live</span>
       </div>
-      <div class="home-reference-orbit" aria-hidden="true">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <dl class="home-reference-stats">
-        <div>
-          <dt>公开内容</dt>
-          <dd>{articles.length + references.length + notes.length + albums.length}</dd>
-        </div>
-        <div>
-          <dt>最新更新</dt>
-          <dd>{latestUpdate}</dd>
-        </div>
-      </dl>
-      <p class="muted">文稿、资料库、笔记和照片墙会继续向同一个归档系统汇流。</p>
-    </article>
-  </section>
+      <aside aria-label="站点资料状态" class="home-system-status" data-home-system-status>
+        <span><small>公开内容</small><strong>{articles.length + references.length + notes.length + albums.length}</strong></span>
+        <span><small>最新更新</small><time>{latestUpdate}</time></span>
+        <p>文稿、资料库、笔记和照片墙正在汇入同一套档案系统。</p>
+      </aside>
+    </section>
+  </div>
 </BaseLayout>
 
 <script is:inline>

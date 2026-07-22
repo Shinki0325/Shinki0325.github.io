@@ -129,8 +129,15 @@ test("homepage search and lower collage follow the reference shell without the o
   expect(searchMetrics.radius).toBeLessThanOrEqual(7);
   expect(searchMetrics.background).toBe("none");
   await expect(page.locator(".home-status-strip")).toHaveCount(0);
-  await expect(page.locator("[data-home-reference-card]")).toBeVisible();
-  await expect(page.locator("[data-home-reference-card]")).toContainText("运行回廊");
+  await expect(page.locator("[data-home-section-command]")).toHaveCount(3);
+  await expect(page.locator('[data-home-chapter="history"]')).toContainText("历史路线");
+  await expect(page.locator('[data-home-chapter="characters"]')).toContainText("角色档案");
+  await expect(page.locator('[data-home-chapter="records"]')).toContainText("最新记录");
+  await expect(page.locator("[data-home-reference-card]")).toHaveCount(0);
+  await expect(page.locator("[data-home-system-status]")).toBeVisible();
+  await expect(page.locator("[data-home-system-status]")).toContainText("公开内容");
+  await expect(page.locator("[data-home-system-status]")).toContainText("最新更新");
+  await expect(page.locator("[data-home-system-status] a")).toHaveCount(0);
 });
 
 test("homepage head uses the current avatar as site icon", async ({ page }) => {

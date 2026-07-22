@@ -61,6 +61,20 @@ describe("site background config", () => {
 });
 
 describe("homepage feature cards", () => {
+  it("groups the homepage into three semantic archive chapters", async () => {
+    const source = await import("node:fs/promises").then((fs) => fs.readFile("src/pages/index.astro", "utf8"));
+    expect(source).toContain('import HomeSectionHeader from "../components/home/HomeSectionHeader.astro"');
+    expect(source).toContain('data-home-chapter="history"');
+    expect(source).toContain('data-home-chapter="characters"');
+    expect(source).toContain('data-home-chapter="records"');
+    expect(source).toContain("历史路线");
+    expect(source).toContain("角色档案");
+    expect(source).toContain("最新记录");
+    expect(source).toContain("data-home-system-status");
+    expect(source).not.toContain("运行回廊");
+    expect(source).not.toContain('getHomeCard("status")');
+  });
+
   it("renders the Chronicle entry as one authority-backed archive save slot", async () => {
     const source = await import("node:fs/promises").then((fs) => fs.readFile("src/pages/index.astro", "utf8"));
 

@@ -45,8 +45,7 @@ export default function HomeMusicCard() {
       : Volume2;
 
   return (
-    <section className="home-player-card glass-card" data-home-music-card id="home-music-card">
-      <div className="home-player-orb" />
+    <section className="home-player-card" data-home-music-card id="home-music-card">
 
       <div className="home-player-top">
         <div className={`home-player-cover${state.isPlaying ? " is-spinning" : ""}`}>

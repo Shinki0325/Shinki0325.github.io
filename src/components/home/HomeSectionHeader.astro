@@ -1,0 +1,13 @@
+---
+type Accent = "cyan" | "pink" | "gold";
+interface Props { index: string; title: string; meta?: string; accent?: Accent; }
+const { index, title, meta, accent = "cyan" } = Astro.props;
+---
+<header class="home-section-command" data-accent={accent} data-home-section-command>
+  <span aria-hidden="true" class="home-section-command__index">{index}</span>
+  <span class="home-section-command__copy">
+    <strong>{title}</strong>
+    {meta ? <small>{meta}</small> : null}
+  </span>
+  <span class="home-section-command__actions"><slot name="actions" /></span>
+</header>
