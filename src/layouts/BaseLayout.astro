@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import "../styles/crystal-terminal.css";
 import { ClientRouter } from "astro:transitions";
 import ClickEffect from "../components/chrome/ClickEffect";
 import SplashScreen from "../components/home/SplashScreen";
@@ -57,7 +58,7 @@ const searchItems = buildHomeSearchIndex({ articles, albums, notes, references }
     <link href={siteIcon} rel="apple-touch-icon" />
     <style is:inline set:html={`:root {${appearanceStyle}}`}></style>
   </head>
-  <body style={appearanceStyle}>
+  <body data-interface-theme="crystal-terminal" style={appearanceStyle}>
     <SiteBackground currentPath={currentPath} />
     <TopNav
       client:load
