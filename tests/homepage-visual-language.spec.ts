@@ -23,10 +23,109 @@ test("homepage assigns story, UI, metadata, and surface roles", async ({ page })
 test("content-card hover and focus preserve geometry", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 1000 }); await prepare(page); const card = page.locator(".home-feature-card").nth(1); await card.scrollIntoViewIfNeeded(); const before = await card.boundingBox(); await card.hover(); await expect(card).toHaveCSS("transform", "matrix(1, 0, 0, 1, 0, -2)"); const hovered = await card.boundingBox(); expect(hovered?.width).toBe(before?.width); expect(hovered?.height).toBe(before?.height); expect((hovered?.y ?? 0) - (before?.y ?? 0)).toBeCloseTo(-2, 0); await card.focus(); expect(await card.evaluate((node) => getComputedStyle(node).outlineStyle)).not.toBe("none");
 });
+
+test("latest record dossier keeps both primary card heights across a carousel transition", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await prepare(page);
+
+  const pair = page.locator(".home-records-grid__primary-pair");
+  const article = pair.locator("[data-home-script-carousel]");
+  const reference = pair.locator(".home-feature-card--reference");
+  await expect(pair).toBeVisible();
+  await expect(article).toBeVisible();
+  await expect(reference).toBeVisible();
+
+  if (reviewOutput) {
+    await mkdir(reviewOutput, { recursive: true });
+    await pair.screenshot({ path: `${reviewOutput}/home-records-before-1440.png` });
+  }
+  const before = await Promise.all([article.boundingBox(), reference.boundingBox()]);
+  await page.waitForTimeout(6500);
+  const after = await Promise.all([article.boundingBox(), reference.boundingBox()]);
+  if (reviewOutput) await pair.screenshot({ path: `${reviewOutput}/home-records-after-1440.png` });
+
+  expect(after[0]?.height).toBe(before[0]?.height);
+  expect(after[1]?.height).toBe(before[1]?.height);
+  expect(after[0]?.height).toBeGreaterThanOrEqual(350);
+  expect(after[1]?.height).toBe(after[0]?.height);
+  expect((before[1]?.x ?? 0)).toBeGreaterThan((before[0]?.x ?? 0) + (before[0]?.width ?? 0));
+  expect(await article.locator("h2").evaluate((node) => ({
+    lineClamp: getComputedStyle(node).webkitLineClamp,
+    overflow: getComputedStyle(node).overflow,
+  }))).toEqual({ lineClamp: "4", overflow: "hidden" });
+  await expect(reference.locator(".home-feature-card__cta")).toBeVisible();
+});
+
+test("character rail hover and focus keep tile geometry stable", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await prepare(page);
+
+  const slots = page.locator("[data-character-rail] .character-slot");
+  const rail = page.locator("[data-character-rail]");
+  if (reviewOutput) {
+    await mkdir(reviewOutput, { recursive: true });
+    await rail.screenshot({ path: `${reviewOutput}/home-rail-default-active-1440.png` });
+  }
+  const before = await slots.evaluateAll((nodes) => nodes.map((node) => {
+    const rect = node.getBoundingClientRect();
+    return { height: rect.height, left: rect.left, top: rect.top, width: rect.width };
+  }));
+  await slots.nth(1).hover();
+  if (reviewOutput) await rail.screenshot({ path: `${reviewOutput}/home-rail-hover-1440.png` });
+  await slots.nth(2).focus();
+  if (reviewOutput) await rail.screenshot({ path: `${reviewOutput}/home-rail-focus-1440.png` });
+  const after = await slots.evaluateAll((nodes) => nodes.map((node) => {
+    const rect = node.getBoundingClientRect();
+    return { height: rect.height, left: rect.left, top: rect.top, width: rect.width };
+  }));
+
+  expect(after).toEqual(before);
+  await expect(slots.nth(1).locator(".character-slot__label")).toBeVisible();
+  await expect(slots.nth(2)).toHaveCSS("outline-style", "solid");
+  if (reviewOutput) {
+    const toggle = page.locator("[data-character-rail-toggle]");
+    await toggle.click();
+    await expect(rail).toHaveAttribute("data-open", "false");
+    await page.screenshot({ path: `${reviewOutput}/home-rail-collapsed-1440.png` });
+    await toggle.click();
+    await expect(rail).toHaveAttribute("data-open", "true");
+    await page.screenshot({ path: `${reviewOutput}/home-rail-expanded-1440.png` });
+  }
+});
+
+test("homepage correction adds no new remote assets or runtime errors", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  const requests: string[] = [];
+  const runtimeErrors: string[] = [];
+  page.on("request", (request) => requests.push(request.url()));
+  page.on("pageerror", (error) => runtimeErrors.push(error.message));
+  page.on("console", (message) => {
+    if (message.type() === "error") runtimeErrors.push(message.text());
+  });
+
+  await prepare(page);
+  await page.waitForLoadState("load");
+  await page.waitForTimeout(6500);
+
+  const requestUrls = requests.map((url) => new URL(url));
+  const externalOrigins = [...new Set(requestUrls
+    .filter((url) => url.origin !== "http://127.0.0.1:44022")
+    .map((url) => url.origin))].sort();
+  const railAssets = new Set(requestUrls
+    .filter((url) => url.pathname.startsWith("/uploads/navigation/character-select/"))
+    .map((url) => url.pathname));
+  const fontRequests = requestUrls.filter((url) => /\.(?:woff2?|ttf|otf)$/i.test(url.pathname));
+
+  expect(runtimeErrors).toEqual([]);
+  expect(externalOrigins).toEqual(["https://s1.ax1x.com"]);
+  expect(railAssets.size).toBe(6);
+  expect(fontRequests).toHaveLength(0);
+  console.log(`NETWORK homepage ${JSON.stringify({ externalOrigins, fontRequests: fontRequests.length, railAssets: railAssets.size, requests: requests.length })}`);
+});
 for (const viewport of viewports) {
   test(`${viewport.name}px homepage has no overlap or horizontal overflow`, async ({ page }) => {
     await page.setViewportSize({ width: viewport.width, height: viewport.height }); await prepare(page); const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth); expect(overflow).toBeLessThanOrEqual(1);
-    const recordLinks = page.locator('[data-home-chapter="records"] .home-records-grid > a');
+    const recordLinks = page.locator('[data-home-chapter="records"] .home-records-grid a.home-feature-card');
     await expect(recordLinks).toHaveCount(3);
     for (let recordIndex = 0; recordIndex < 3; recordIndex += 1) await expect(recordLinks.nth(recordIndex)).toBeVisible();
     const opening = page.locator("[data-home-opening-surface]");

@@ -59,9 +59,11 @@ body[data-interface-theme="crystal-terminal"] .top-nav-command-button[aria-press
 }
 body[data-interface-theme="crystal-terminal"] :where(a, button, input, select, textarea):focus-visible { outline: 2px solid var(--crystal-cyan); outline-offset: 3px; }
 body[data-interface-theme="crystal-terminal"] .top-nav-command-button:focus { outline: 2px solid var(--crystal-cyan); outline-offset: 3px; }
-body[data-interface-theme="crystal-terminal"] .character-slot::before { border-color: var(--crystal-line); background: rgba(13, 25, 42, 0.92); }
 body[data-interface-theme="crystal-terminal"] .character-slot[aria-current="page"] { color: var(--crystal-text); }
-body[data-interface-theme="crystal-terminal"] .character-slot[aria-current="page"]::before { border-color: var(--crystal-cyan); box-shadow: inset 3px 0 var(--crystal-pink); }
+body[data-interface-theme="crystal-terminal"] .character-slot[aria-current="page"]::after {
+  background: linear-gradient(90deg, var(--crystal-cyan) 0 72%, var(--crystal-pink) 72% 100%);
+  box-shadow: 0 0 11px rgba(107, 220, 226, 0.62), 0 0 7px rgba(241, 164, 205, 0.48);
+}
 body[data-interface-theme="crystal-terminal"] .interactive-lift::after { display: none; }
 body[data-interface-theme="crystal-terminal"] .interactive-lift:hover,
 body[data-interface-theme="crystal-terminal"] .interactive-lift:focus-visible { border-color: var(--crystal-cyan); filter: none; box-shadow: 0 16px 34px rgba(2, 6, 18, 0.28); transform: translateY(-2px); }

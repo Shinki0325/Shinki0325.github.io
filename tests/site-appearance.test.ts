@@ -146,7 +146,7 @@ describe("site appearance config", () => {
     expect(indexSource).toContain('href={featuredReference ? `/references/${featuredReference.slug}/` : "/references/"}');
     expect(indexSource).toContain('href={latestNote ? `/notes/${latestNote.slug}/` : "/notes/"}');
     expect(indexSource).toContain('class={getHomeFeatureCardClass("featured", "home-feature-card--primary home-script-carousel")}');
-    expect(indexSource).toContain('class={getHomeFeatureCardClass("reference", "home-feature-card--wide")}');
+    expect(indexSource).toContain('class={getHomeFeatureCardClass("reference", "home-feature-card--wide home-feature-card--reference")}');
     expect(indexSource).toContain('class={getHomeFeatureCardClass("notes")}');
   });
 

@@ -135,6 +135,31 @@ describe("homepage feature cards", () => {
     expect(styleSource).toContain(".home-script-carousel__media");
     expect(styleSource).toContain(".home-script-carousel__dots");
   });
+
+  it("keeps the latest records in a fixed primary dossier pair", async () => {
+    const fs = await import("node:fs/promises");
+    const [homeSource, styleSource] = await Promise.all([
+      fs.readFile("src/pages/index.astro", "utf8"),
+      fs.readFile("src/styles/home-crystal-terminal.css", "utf8"),
+    ]);
+
+    expect(homeSource).toContain('class="home-records-grid__primary-pair"');
+    expect(styleSource).toContain(".home-records-grid__primary-pair");
+    expect(styleSource).toContain("height: 360px");
+    expect(styleSource).toContain("grid-template-columns: minmax(0, 5fr) minmax(0, 7fr)");
+    expect(styleSource).toContain("min-height: 0");
+    expect(styleSource).toContain("overflow: hidden");
+    expect(styleSource).toContain("-webkit-line-clamp: 4");
+  });
+
+  it("makes character rail artwork the visual tile body", async () => {
+    const styleSource = await import("node:fs/promises").then((fs) => fs.readFile("src/styles/global.css", "utf8"));
+
+    expect(styleSource).toContain(".character-slot::before { display: none; }");
+    expect(styleSource).toContain("transform: translate(-50%, 0) scale(0.94)");
+    expect(styleSource).not.toMatch(/\.character-slot:(?:hover|focus-visible|is-active)::before[\s\S]{0,500}translateX\(5px\)/);
+    expect(styleSource).toContain("background: linear-gradient(180deg, transparent 48%, rgba(7, 17, 29, 0.92) 100%)");
+  });
 });
 
 describe("buildHomeViewModel", () => {

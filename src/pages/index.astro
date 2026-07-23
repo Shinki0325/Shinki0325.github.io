@@ -322,6 +322,7 @@ const chronicleMiniTracks = [
     <section class="home-chapter" data-home-chapter="records">
       <HomeSectionHeader accent="cyan" index="03" meta={`${articles.length + references.length + notes.length + albums.length} 条公开内容`} title="最新记录" />
       <div class="home-records-grid">
+    <div class="home-records-grid__primary-pair">
     <a
       class={getHomeFeatureCardClass("featured", "home-feature-card--primary home-script-carousel")}
       data-home-script-carousel
@@ -352,7 +353,7 @@ const chronicleMiniTracks = [
     </a>
 
     <a
-      class={getHomeFeatureCardClass("reference", "home-feature-card--wide")}
+      class={getHomeFeatureCardClass("reference", "home-feature-card--wide home-feature-card--reference")}
       href={featuredReference ? `/references/${featuredReference.slug}/` : "/references/"}
       style={getHomeFeatureCardStyle("reference")}
     >
@@ -372,6 +373,7 @@ const chronicleMiniTracks = [
         <span class="section-link home-feature-card__cta">打开资料页</span>
       </div>
     </a>
+    </div>
 
     <a
       class={getHomeFeatureCardClass("notes")}
