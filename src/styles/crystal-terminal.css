@@ -76,6 +76,12 @@ body[data-interface-theme="crystal-terminal"] .site-backdrop__veil { background:
 @media (prefers-reduced-motion: reduce) {
   body[data-interface-theme="crystal-terminal"] :where(.interactive-lift, .top-nav-command-button, .character-slot)::before,
   body[data-interface-theme="crystal-terminal"] :where(.interactive-lift, .top-nav-command-button, .character-slot) { transition-duration: 0s !important; }
+  body[data-interface-theme="crystal-terminal"] .character-slot__image { transition-duration: 0s !important; }
+  body[data-interface-theme="crystal-terminal"] .character-slot:hover .character-slot__image,
+  body[data-interface-theme="crystal-terminal"] .character-slot:focus-visible .character-slot__image,
+  body[data-interface-theme="crystal-terminal"] .character-slot.is-active .character-slot__image {
+    transform: translate(-50%, 0) scale(0.94);
+  }
   body[data-interface-theme="crystal-terminal"] :where(.interactive-lift, .top-nav-command-button):hover,
   body[data-interface-theme="crystal-terminal"] :where(.interactive-lift, .top-nav-command-button):focus-visible { transform: none !important; }
 }

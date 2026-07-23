@@ -56,6 +56,27 @@ test("latest record dossier keeps both primary card heights across a carousel tr
   await expect(reference.locator(".home-feature-card__cta")).toBeVisible();
 });
 
+for (const dossierViewport of [
+  { width: 1024, articleHeight: 360, referenceHeight: 360 },
+  { width: 768, articleHeight: 320, referenceHeight: 260 },
+  { width: 390, articleHeight: 320, referenceHeight: 260 },
+]) {
+  test(`${dossierViewport.width}px dossier keeps its responsive envelopes across a transition`, async ({ page }) => {
+    await page.setViewportSize({ width: dossierViewport.width, height: 1000 });
+    await prepare(page);
+    const article = page.locator("[data-home-script-carousel]");
+    const reference = page.locator(".home-records-grid__primary-pair .home-feature-card--reference");
+    const before = await Promise.all([article.boundingBox(), reference.boundingBox()]);
+    await page.waitForTimeout(6500);
+    const after = await Promise.all([article.boundingBox(), reference.boundingBox()]);
+
+    expect(before[0]?.height).toBe(dossierViewport.articleHeight);
+    expect(before[1]?.height).toBe(dossierViewport.referenceHeight);
+    expect(after[0]?.height).toBe(before[0]?.height);
+    expect(after[1]?.height).toBe(before[1]?.height);
+  });
+}
+
 test("character rail hover and focus keep tile geometry stable", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 1000 });
   await prepare(page);
@@ -158,4 +179,20 @@ for (const viewport of viewports) {
     if (reviewOutput) { await mkdir(reviewOutput, { recursive: true }); await page.screenshot({ fullPage: true, path: `${reviewOutput}/home-crystal-${viewport.name}.png` }); }
   });
 }
-test("reduced motion keeps hierarchy without travel", async ({ page }) => { await page.emulateMedia({ reducedMotion: "reduce" }); await page.setViewportSize({ width: 1440, height: 1000 }); await prepare(page); const card = page.locator(".home-feature-card").nth(1); await card.hover(); await expect(card).toHaveCSS("transition-duration", "0s"); await expect(card).toHaveCSS("transform", "none"); await expect(page.locator("[data-home-history-entry]")).toBeVisible(); await expect(page.locator("[data-home-character-archive]")).toBeVisible(); });
+test("reduced motion keeps hierarchy and rail state without travel", async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await prepare(page);
+  const card = page.locator(".home-feature-card").nth(1);
+  await card.hover();
+  await expect(card).toHaveCSS("transition-duration", "0s");
+  await expect(card).toHaveCSS("transform", "none");
+
+  const slotImage = page.locator(".character-slot").nth(1).locator(".character-slot__image");
+  const before = await slotImage.evaluate((node) => getComputedStyle(node).transform);
+  await slotImage.locator("..").hover();
+  await expect(slotImage).toHaveCSS("transition-duration", "0s");
+  await expect(slotImage).toHaveCSS("transform", before);
+  await expect(page.locator("[data-home-history-entry]")).toBeVisible();
+  await expect(page.locator("[data-home-character-archive]")).toBeVisible();
+});

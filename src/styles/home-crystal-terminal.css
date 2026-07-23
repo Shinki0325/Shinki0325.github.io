@@ -123,8 +123,8 @@
     grid-template-columns: 1fr;
     height: auto;
   }
-  .home-records-grid__primary-pair > .home-script-carousel { height: 320px; }
-  .home-records-grid__primary-pair > .home-feature-card--reference { height: 260px; min-height: 260px; }
+  .home-records-grid .home-records-grid__primary-pair > .home-script-carousel { height: 320px; }
+  .home-records-grid .home-records-grid__primary-pair > .home-feature-card--reference { height: 260px; min-height: 260px; }
   .home-records-grid .home-feature-card, .home-records-grid .home-feature-card--primary, .home-records-grid .home-feature-card--wide { grid-column: span 1; }
   .home-records-grid__primary-pair > .home-feature-card--primary { display: grid; visibility: visible; opacity: 1; grid-column: 1 / -1; }
   .home-system-status { grid-template-columns: repeat(2, minmax(0, 1fr)); }
