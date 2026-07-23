@@ -15,7 +15,8 @@ test("homepage uses one opening surface and three command chapters", async ({ pa
 });
 test("homepage assigns story, UI, metadata, and surface roles", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 1000 }); await prepare(page);
-  const profileFamily = await page.locator("[data-home-profile-card] h1").evaluate((node) => getComputedStyle(node).fontFamily); const commandFamily = await page.locator("[data-home-section-command] strong").first().evaluate((node) => getComputedStyle(node).fontFamily);
+  await expect(page.locator("[data-home-section-command] h2")).toHaveCount(3);
+  const profileFamily = await page.locator("[data-home-profile-card] h1").evaluate((node) => getComputedStyle(node).fontFamily); const commandFamily = await page.locator("[data-home-section-command] h2").first().evaluate((node) => getComputedStyle(node).fontFamily);
   expect(profileFamily).toMatch(/Noto Serif SC|Source Han Serif SC|Songti SC|STSong|Georgia/); expect(commandFamily).toMatch(/Noto Serif SC|Source Han Serif SC|Songti SC|STSong|Georgia/); await expect(page.locator("[data-home-system-status] p")).toHaveCSS("font-size", "12px");
   for (const card of await page.locator(".home-feature-card").all()) { const radius = await card.evaluate((node) => parseFloat(getComputedStyle(node).borderTopLeftRadius)); expect(radius).toBeLessThanOrEqual(5); }
 });
@@ -25,8 +26,36 @@ test("content-card hover and focus preserve geometry", async ({ page }) => {
 for (const viewport of viewports) {
   test(`${viewport.name}px homepage has no overlap or horizontal overflow`, async ({ page }) => {
     await page.setViewportSize({ width: viewport.width, height: viewport.height }); await prepare(page); const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth); expect(overflow).toBeLessThanOrEqual(1);
-    const rects = await page.locator("[data-home-section-command], [data-home-history-entry], [data-home-character-archive], .home-records-grid, [data-home-system-status]").evaluateAll((nodes) => nodes.map((node) => node.getBoundingClientRect()).map((rect) => ({ bottom: rect.bottom, left: rect.left, right: rect.right, top: rect.top })));
+    const recordLinks = page.locator('[data-home-chapter="records"] .home-records-grid > a');
+    await expect(recordLinks).toHaveCount(3);
+    for (let recordIndex = 0; recordIndex < 3; recordIndex += 1) await expect(recordLinks.nth(recordIndex)).toBeVisible();
+    const opening = page.locator("[data-home-opening-surface]");
+    const lyricBar = page.locator("[data-home-lyric-bar]");
+    const chapters = page.locator("[data-home-chapter]");
+    await expect(opening).toHaveCount(1); await expect(opening).toBeVisible();
+    await expect(lyricBar).toHaveCount(1); await expect(lyricBar).toBeVisible();
+    await expect(chapters).toHaveCount(3);
+    for (let chapterIndex = 0; chapterIndex < 3; chapterIndex += 1) await expect(chapters.nth(chapterIndex)).toBeVisible();
+    const rects = await page.locator("[data-home-opening-surface], [data-home-lyric-bar], [data-home-chapter]").evaluateAll((nodes) => nodes.map((node) => node.getBoundingClientRect()).map((rect) => ({ bottom: rect.bottom, left: rect.left, right: rect.right, top: rect.top })));
     for (const rect of rects) { expect(rect.left).toBeGreaterThanOrEqual(-1); expect(rect.right).toBeLessThanOrEqual(viewport.width + 1); expect(rect.bottom).toBeGreaterThan(rect.top); }
+    for (let leftIndex = 0; leftIndex < rects.length; leftIndex += 1) {
+      for (let rightIndex = leftIndex + 1; rightIndex < rects.length; rightIndex += 1) {
+        const left = rects[leftIndex]; const right = rects[rightIndex];
+        const overlapWidth = Math.max(0, Math.min(left.right, right.right) - Math.max(left.left, right.left));
+        const overlapHeight = Math.max(0, Math.min(left.bottom, right.bottom) - Math.max(left.top, right.top));
+        expect(overlapWidth * overlapHeight, `regions ${leftIndex} and ${rightIndex} overlap`).toBeLessThanOrEqual(1);
+      }
+    }
+    await expect(page.locator(".top-nav-shell")).toHaveCount(1); await expect(page.locator(".top-nav-shell")).toBeVisible(); await expect(page.locator(".top-nav-shell")).toHaveCSS("position", "fixed");
+    const fixedRects = await page.locator(".top-nav-shell, .character-rail").evaluateAll((nodes) => nodes.filter((node) => { const style = getComputedStyle(node); return style.position === "fixed" && style.visibility !== "hidden" && style.display !== "none"; }).map((node) => node.getBoundingClientRect()).map((rect) => ({ bottom: rect.bottom, left: rect.left, right: rect.right, top: rect.top })));
+    expect(fixedRects.length).toBeGreaterThan(0);
+    const firstInteractive = await page.locator("[data-home-opening-surface] a, [data-home-opening-surface] button, [data-home-opening-surface] input").first().boundingBox();
+    expect(firstInteractive).not.toBeNull();
+    for (const fixed of fixedRects) {
+      const overlapWidth = Math.max(0, Math.min(fixed.right, firstInteractive?.x! + firstInteractive?.width!) - Math.max(fixed.left, firstInteractive?.x!));
+      const overlapHeight = Math.max(0, Math.min(fixed.bottom, firstInteractive?.y! + firstInteractive?.height!) - Math.max(fixed.top, firstInteractive?.y!));
+      expect(overlapWidth * overlapHeight, "fixed shell or rail overlaps first opening control").toBeLessThanOrEqual(1);
+    }
     if (reviewOutput) { await mkdir(reviewOutput, { recursive: true }); await page.screenshot({ fullPage: true, path: `${reviewOutput}/home-crystal-${viewport.name}.png` }); }
   });
 }

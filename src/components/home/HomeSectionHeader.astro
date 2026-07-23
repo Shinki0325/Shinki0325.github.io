@@ -5,9 +5,9 @@ const { index, title, meta, accent = "cyan" } = Astro.props;
 ---
 <header class="home-section-command" data-accent={accent} data-home-section-command>
   <span aria-hidden="true" class="home-section-command__index">{index}</span>
-  <span class="home-section-command__copy">
-    <strong>{title}</strong>
+  <div class="home-section-command__copy">
+    <h2>{title}</h2>
     {meta ? <small>{meta}</small> : null}
-  </span>
+  </div>
   <span class="home-section-command__actions"><slot name="actions" /></span>
 </header>
