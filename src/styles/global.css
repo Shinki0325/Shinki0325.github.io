@@ -610,7 +610,7 @@ button:disabled,
   padding: 9px 6px 3px;
   border: 0;
   color: color-mix(in srgb, var(--slot-color) 72%, var(--text-main));
-  background: linear-gradient(180deg, transparent 48%, rgba(7, 17, 29, 0.92) 100%);
+  background: none;
   font-size: 0.68rem;
   font-weight: 600;
   place-items: end center;
@@ -636,7 +636,7 @@ button:disabled,
 .character-slot:focus-visible .character-slot__label,
 .character-slot.is-active .character-slot__label {
   color: var(--text-main);
-  background: linear-gradient(180deg, transparent 42%, rgba(7, 17, 29, 0.96) 100%);
+  background: none;
 }
 
 .character-slot:focus-visible {

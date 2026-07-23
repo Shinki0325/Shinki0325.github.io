@@ -31,9 +31,9 @@
 .home-records-grid__primary-pair {
   display: grid;
   grid-column: 1 / -1;
-  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
   gap: calc(16px * var(--card-scale));
-  height: 360px;
+  height: clamp(400px, 32vw, 416px);
   min-height: 0;
 }
 .home-records-grid .home-records-grid__primary-pair > .home-feature-card {
@@ -115,6 +115,9 @@
 .home-system-status small { color: var(--crystal-muted); font-size: 12px; }
 .home-system-status strong, .home-system-status time { color: var(--crystal-green); font: 700 12px/1.4 var(--font-meta); }
 .home-system-status p { margin: 0; color: var(--crystal-muted); font-size: 12px; line-height: 1.65; text-align: right; }
+@media (min-width: 981px) and (max-width: 1100px) {
+  .home-records-grid__primary-pair { height: 360px; }
+}
 @media (max-width: 980px) {
   .home-hero-grid[data-home-opening-surface] { grid-template-columns: 1fr; }
   .home-profile-card { border-right: 0; border-bottom: 1px solid var(--crystal-line); }

@@ -56,6 +56,26 @@ test("latest record dossier keeps both primary card heights across a carousel tr
   await expect(reference.locator(".home-feature-card__cta")).toBeVisible();
 });
 
+for (const desktopWidth of [1440, 1280]) {
+  test(`${desktopWidth}px dossier restores a stable landscape article emphasis`, async ({ page }) => {
+    await page.setViewportSize({ width: desktopWidth, height: 1000 });
+    await prepare(page);
+    const pair = page.locator(".home-records-grid__primary-pair");
+    const article = pair.locator("[data-home-script-carousel]");
+    const reference = pair.locator(".home-feature-card--reference");
+    const before = await Promise.all([article.boundingBox(), reference.boundingBox()]);
+    await page.waitForTimeout(6500);
+    const after = await Promise.all([article.boundingBox(), reference.boundingBox()]);
+    const articleRatio = (before[0]?.width ?? 0) / (before[0]?.height ?? 1);
+    const columnRatio = (before[0]?.width ?? 0) / (before[1]?.width ?? 1);
+
+    expect(articleRatio).toBeGreaterThanOrEqual(1.3);
+    expect(articleRatio).toBeLessThanOrEqual(1.5);
+    expect(columnRatio).toBeCloseTo(7 / 5, 1);
+    expect(after).toEqual(before);
+  });
+}
+
 for (const dossierViewport of [
   { width: 1024, articleHeight: 360, referenceHeight: 360 },
   { width: 768, articleHeight: 320, referenceHeight: 260 },
@@ -91,9 +111,18 @@ test("character rail hover and focus keep tile geometry stable", async ({ page }
     const rect = node.getBoundingClientRect();
     return { height: rect.height, left: rect.left, top: rect.top, width: rect.width };
   }));
+  const assertUnboxedLabel = async (slot: ReturnType<typeof slots.nth>) => {
+    const label = slot.locator(".character-slot__label");
+    await expect(label).toHaveCSS("background-image", "none");
+    await expect(label).toHaveCSS("background-color", "rgba(0, 0, 0, 0)");
+  };
+  await assertUnboxedLabel(slots.nth(1));
   await slots.nth(1).hover();
+  await assertUnboxedLabel(slots.nth(1));
   if (reviewOutput) await rail.screenshot({ path: `${reviewOutput}/home-rail-hover-1440.png` });
   await slots.nth(2).focus();
+  await assertUnboxedLabel(slots.nth(2));
+  await assertUnboxedLabel(page.locator(".character-slot[aria-current='page']"));
   if (reviewOutput) await rail.screenshot({ path: `${reviewOutput}/home-rail-focus-1440.png` });
   const after = await slots.evaluateAll((nodes) => nodes.map((node) => {
     const rect = node.getBoundingClientRect();
