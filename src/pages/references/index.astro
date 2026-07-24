@@ -14,6 +14,7 @@ const items = [...topicEntries, ...sourceEntries].map((entry) => ({
   category: entry.data.librarySection,
   covers: getReferenceOverviewCovers(entry.data),
   date: entry.data.date,
+  entryKind: entry.data.kind,
   eyebrow: entry.data.kind === "source" ? entry.data.librarySection ?? "来源资料" : "专题资料",
   href: `/references/${entry.slug}/`,
   meta: entry.data.sourceTitle ?? "查看资料",

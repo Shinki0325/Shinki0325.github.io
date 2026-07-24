@@ -48,6 +48,18 @@ describe("archive overview pages", () => {
     }
   });
 
+  it("uses the published reference entry kind as presentation authority", async () => {
+    const fs = await import("node:fs/promises");
+    const [componentSource, referencesSource] = await Promise.all([
+      fs.readFile("src/components/ArchiveOverview.astro", "utf8"),
+      fs.readFile("src/pages/references/index.astro", "utf8"),
+    ]);
+
+    expect(componentSource).toContain('entryKind?: "topic" | "source" | "default"');
+    expect(referencesSource).toContain("entryKind: entry.data.kind");
+    expect(referencesSource).not.toMatch(/entryKind:\s*.*(?:title|category|index)/);
+  });
+
   it("defines the reference-blog-like archive controls without touching detail page templates", async () => {
     const fs = await import("node:fs/promises");
     const [componentSource, styleSource, globalStyleSource] = await Promise.all([
@@ -70,6 +82,34 @@ describe("archive overview pages", () => {
     expect(styleSource).toContain(".archive-overview__timeline");
     expect(styleSource).toContain(".archive-overview-card");
     expect(globalStyleSource).not.toContain(".archive-overview__hero");
+  });
+
+  it("defines a reference-only query terminal branch and scoped style boundary", async () => {
+    const fs = await import("node:fs/promises");
+    const [componentSource, articlesSource, referencesSource, notesSource] = await Promise.all([
+      fs.readFile("src/components/ArchiveOverview.astro", "utf8"),
+      fs.readFile("src/pages/articles/index.astro", "utf8"),
+      fs.readFile("src/pages/references/index.astro", "utf8"),
+      fs.readFile("src/pages/notes/index.astro", "utf8"),
+    ]);
+
+    for (const hook of [
+      "data-reference-query-terminal",
+      "data-reference-visible-count",
+      "data-reference-clear",
+      "data-reference-tag-details",
+      "data-reference-empty",
+    ]) {
+      expect(componentSource).toContain(hook);
+    }
+    expect(componentSource).toContain('data-reference-entry-kind={item.entryKind ?? "default"}');
+    expect(componentSource).toContain('import "../styles/reference-query-terminal.css"');
+    expect(componentSource).toContain('target?.closest("button[data-archive-category]")');
+    expect(componentSource).toContain('target?.closest("button[data-archive-tag]")');
+    expect(componentSource).toContain("archive-overview__timeline");
+    expect(articlesSource).not.toContain("reference-query-terminal.css");
+    expect(notesSource).not.toContain("reference-query-terminal.css");
+    expect(referencesSource).toContain('archiveStyle="reference"');
   });
 
   it("keeps the archive overview shell compact like the reference archive page", async () => {
@@ -264,6 +304,6 @@ describe("archive overview pages", () => {
     expect(source).toContain('document.addEventListener("input"');
     expect(source).toContain('document.addEventListener("astro:page-load"');
     expect(source).toContain("closest(\"[data-archive-view-button]\")");
-    expect(source).toContain("closest(\"[data-archive-tag]\")");
+    expect(source).toContain("closest(\"button[data-archive-tag]\")");
   });
 });

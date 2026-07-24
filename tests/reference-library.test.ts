@@ -6,6 +6,20 @@ import {
 } from "../src/lib/reference-library";
 
 describe("partitionReferenceLibrary", () => {
+  it("preserves topic and source kinds in the overview adapter contract", async () => {
+    const referencesSource = await import("node:fs/promises").then((fs) =>
+      fs.readFile("src/pages/references/index.astro", "utf8")
+    );
+    const entries = [
+      { slug: "topic-entry", data: { kind: "topic" as const } },
+      { slug: "source-entry", data: { kind: "source" as const } },
+    ];
+    const mapped = entries.map((entry) => ({ entryKind: entry.data.kind }));
+
+    expect(referencesSource).toContain("entryKind: entry.data.kind");
+    expect(mapped.map((item) => item.entryKind)).toEqual(["topic", "source"]);
+  });
+
   it("separates topic pages and groups source pages by the configured section order", () => {
     const result = partitionReferenceLibrary([
       {

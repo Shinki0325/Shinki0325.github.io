@@ -1,10 +1,12 @@
 ---
 import "../styles/archive-overview.css";
+import "../styles/reference-query-terminal.css";
 
 export type ArchiveOverviewItem = {
   category?: string;
   covers?: string[];
   date?: Date | string;
+  entryKind?: "topic" | "source" | "default";
   eyebrow: string;
   href: string;
   meta?: string;
@@ -25,6 +27,7 @@ type Props = {
 
 const { archiveStyle = "default", description, eyebrow, items, searchPlaceholder, title, totalLabel } = Astro.props;
 const showViewSwitch = archiveStyle !== "reference";
+const referenceTopicCount = items.filter((item) => item.entryKind === "topic").length;
 
 const formatDate = (value: Date | string | undefined) => {
   if (!value) {
@@ -72,6 +75,153 @@ const topCategories = [...categoryCounts.entries()].sort(
 );
 ---
 
+{archiveStyle === "reference" ? (
+  <section
+    class="archive-overview reference-query-terminal"
+    data-archive-overview
+    data-archive-style="reference"
+    data-archive-view="timeline"
+    data-reference-query-terminal
+  >
+    <header class="reference-query-terminal__identity">
+      <div class="reference-query-terminal__identity-copy">
+        <p class="reference-query-terminal__kicker">REFERENCE ARCHIVE / QUERY TERMINAL</p>
+        <h1>{title}</h1>
+        <p>{description}</p>
+      </div>
+      <div class="reference-query-terminal__status" aria-label="资料库状态">
+        <span><small>RECORDS</small><strong>{String(items.length).padStart(2, "0")}</strong></span>
+        <span><small>TOPICS</small><strong>{String(referenceTopicCount).padStart(2, "0")}</strong></span>
+        <span class="is-online"><small>STATE</small><strong>ONLINE</strong></span>
+        <span><small>MODE</small><strong>QUERY</strong></span>
+      </div>
+    </header>
+
+    <section class="reference-query-terminal__query" aria-label="资料检索">
+      <label class="reference-query-terminal__search">
+        <span>ARCHIVE QUERY</span>
+        <span class="reference-query-terminal__search-slot">
+          <span aria-hidden="true">⌕</span>
+          <input data-archive-search placeholder={searchPlaceholder} type="search" />
+          <button data-reference-clear hidden title="清除检索" aria-label="清除检索" type="button">×</button>
+        </span>
+      </label>
+
+      <div class="reference-query-terminal__filters">
+        <span class="reference-query-terminal__filter-label">SECTION</span>
+        <button
+          aria-pressed="true"
+          class="archive-overview__category is-active"
+          data-archive-category="all"
+          type="button"
+        >
+          全部 <span>{items.length}</span>
+        </button>
+        {topCategories.map(([category, count]) => (
+          <button
+            aria-pressed="false"
+            class="archive-overview__category"
+            data-archive-category={category}
+            type="button"
+          >
+            {category} <span>{count}</span>
+          </button>
+        ))}
+        <details class="reference-query-terminal__tag-details" data-reference-tag-details>
+          <summary>
+            <span>标签索引 {topTags.length}</span>
+            <span class="reference-query-terminal__tag-symbol" data-reference-tag-symbol aria-hidden="true">+</span>
+          </summary>
+          <div class="reference-query-terminal__tag-drawer" aria-label="标签筛选">
+            <button
+              aria-pressed="true"
+              class="archive-overview__tag is-active"
+              data-archive-tag="all"
+              data-archive-tag-categories="[]"
+              type="button"
+            >
+              全部标签 <span>{items.length}</span>
+            </button>
+            {topTags.map(([tag, count]) => (
+              <button
+                aria-pressed="false"
+                class="archive-overview__tag"
+                data-archive-tag={tag}
+                data-archive-tag-categories={JSON.stringify([...(tagCategories.get(tag) ?? [])])}
+                type="button"
+              >
+                {tag} <span>{count}</span>
+              </button>
+            ))}
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <header class="reference-query-terminal__results-head">
+      <h2>检索结果</h2>
+      <p>VISIBLE <output aria-live="polite" data-reference-visible-count>{String(items.length).padStart(2, "0")}</output> / {String(items.length).padStart(2, "0")}</p>
+    </header>
+
+    <div class="reference-query-terminal__results">
+      {items.map((item, index) => item.entryKind === "topic" ? (
+        <a
+          class="reference-query-terminal__topic"
+          data-archive-card
+          data-archive-card-category={item.category ?? ""}
+          data-archive-covers={JSON.stringify(item.covers ?? [])}
+          data-archive-search-text={[item.title, item.summary, item.eyebrow, item.meta, ...(item.tags ?? [])].filter(Boolean).join(" ")}
+          data-archive-tags={JSON.stringify(item.tags ?? [])}
+          data-reference-entry-kind={item.entryKind ?? "default"}
+          href={item.href}
+        >
+          <span class="reference-query-terminal__topic-code">
+            <small>TOPIC GATE</small>
+            <strong>{String(index + 1).padStart(2, "0")}</strong>
+          </span>
+          <span class="reference-query-terminal__topic-copy">
+            <h3>{item.title}</h3>
+            {item.summary ? <p>{item.summary}</p> : null}
+          </span>
+          <span class="reference-query-terminal__open-command">OPEN TOPIC</span>
+        </a>
+      ) : (
+        <a
+          class="reference-query-terminal__record"
+          data-archive-card
+          data-archive-card-category={item.category ?? ""}
+          data-archive-covers={JSON.stringify(item.covers ?? [])}
+          data-archive-search-text={[item.title, item.summary, item.eyebrow, item.meta, ...(item.tags ?? [])].filter(Boolean).join(" ")}
+          data-archive-tags={JSON.stringify(item.tags ?? [])}
+          data-reference-entry-kind={item.entryKind ?? "default"}
+          href={item.href}
+        >
+          <span class="reference-query-terminal__record-cover" aria-hidden="true">
+            {(item.covers?.length ?? 0) > 0 ? <img alt="" data-archive-card-image loading="lazy" /> : null}
+            <span>{String(index + 1).padStart(2, "0")}</span>
+          </span>
+          <span class="reference-query-terminal__record-copy">
+            <span class="reference-query-terminal__record-meta">
+              <b>{item.eyebrow}</b>
+              <time>{formatDate(item.date)}</time>
+            </span>
+            <h3>{item.title}</h3>
+            {item.summary ? <p>{item.summary}</p> : null}
+            <span class="reference-query-terminal__record-foot">
+              <span>{item.meta ?? "查看资料"}</span>
+              <em>OPEN RECORD</em>
+            </span>
+          </span>
+        </a>
+      ))}
+    </div>
+
+    <div class="reference-query-terminal__empty" data-reference-empty hidden>
+      <span>NO MATCHING RECORDS</span>
+      <button data-reference-clear type="button">清除筛选</button>
+    </div>
+  </section>
+) : (
 <section class="archive-overview" data-archive-overview data-archive-style={archiveStyle} data-archive-view="timeline">
   <header class="archive-overview__hero">
     <p class="eyebrow">{eyebrow}</p>
@@ -174,6 +324,7 @@ const topCategories = [...categoryCounts.entries()].sort(
     ))}
   </div>
 </section>
+)}
 
 <script is:inline>
   (() => {
@@ -214,6 +365,7 @@ const topCategories = [...categoryCounts.entries()].sort(
       const activeTag = root.dataset.archiveTag || "all";
       const query = normalize(root.querySelector("[data-archive-search]")?.value);
       const cards = [...root.querySelectorAll("[data-archive-card]")];
+      let visibleCount = 0;
 
       for (const card of cards) {
         const tags = parseJsonList(card.dataset.archiveTags);
@@ -221,6 +373,26 @@ const topCategories = [...categoryCounts.entries()].sort(
         const matchesTag = activeTag === "all" || tags.includes(activeTag);
         const matchesQuery = !query || normalize(card.dataset.archiveSearchText).includes(query);
         card.hidden = !(matchesCategory && matchesTag && matchesQuery);
+        if (!card.hidden) {
+          visibleCount += 1;
+        }
+      }
+
+      const visibleCountNode = root.querySelector("[data-reference-visible-count]");
+      if (visibleCountNode) {
+        visibleCountNode.textContent = String(visibleCount).padStart(2, "0");
+      }
+      const emptyState = root.querySelector("[data-reference-empty]");
+      if (emptyState) {
+        emptyState.hidden = visibleCount > 0;
+      }
+      const hasActiveQuery = Boolean(query) || activeCategory !== "all" || activeTag !== "all";
+      root.querySelectorAll("[data-reference-clear]").forEach((button) => {
+        button.hidden = !hasActiveQuery;
+      });
+      const searchSlot = root.querySelector(".reference-query-terminal__search-slot");
+      if (searchSlot) {
+        searchSlot.dataset.hasQuery = String(Boolean(query));
       }
     };
 
@@ -251,6 +423,7 @@ const topCategories = [...categoryCounts.entries()].sort(
       root.querySelectorAll("[data-archive-category]").forEach((item) => {
         const isActive = item === button;
         item.classList.toggle("is-active", isActive);
+        item.setAttribute("aria-pressed", String(isActive));
       });
       syncArchiveTagVisibility(root);
       applyArchiveFilters(root);
@@ -261,8 +434,37 @@ const topCategories = [...categoryCounts.entries()].sort(
       root.querySelectorAll("[data-archive-tag]").forEach((item) => {
         const isActive = item === button;
         item.classList.toggle("is-active", isActive);
+        item.setAttribute("aria-pressed", String(isActive));
       });
       applyArchiveFilters(root);
+    };
+
+    const resetReferenceQuery = (root) => {
+      const search = root.querySelector("[data-archive-search]");
+      if (search) {
+        search.value = "";
+      }
+      root.dataset.archiveCategory = "all";
+      root.dataset.archiveTag = "all";
+      root.querySelectorAll("[data-archive-category]").forEach((button) => {
+        const isActive = button.dataset.archiveCategory === "all";
+        button.classList.toggle("is-active", isActive);
+        button.setAttribute("aria-pressed", String(isActive));
+      });
+      root.querySelectorAll("[data-archive-tag]").forEach((button) => {
+        const isActive = button.dataset.archiveTag === "all";
+        button.classList.toggle("is-active", isActive);
+        button.setAttribute("aria-pressed", String(isActive));
+      });
+      syncArchiveTagVisibility(root);
+      applyArchiveFilters(root);
+    };
+
+    const syncReferenceTagDisclosure = (details) => {
+      const symbol = details.querySelector("[data-reference-tag-symbol]");
+      if (symbol) {
+        symbol.textContent = details.open ? "−" : "+";
+      }
     };
 
     const setArchiveView = (root, view) => {
@@ -332,6 +534,7 @@ const topCategories = [...categoryCounts.entries()].sort(
         root.dataset.archiveView ||= "timeline";
         syncArchiveTagVisibility(root);
         setArchiveView(root, root.dataset.archiveView);
+        root.querySelectorAll("[data-reference-tag-details]").forEach(syncReferenceTagDisclosure);
         hydrateArchiveCardImages(root);
         applyArchiveFilters(root);
       });
@@ -345,6 +548,23 @@ const topCategories = [...categoryCounts.entries()].sort(
 
       document.addEventListener("click", (event) => {
         const target = event.target instanceof Element ? event.target : null;
+        document.querySelectorAll("[data-reference-tag-details][open]").forEach((details) => {
+          if (!details.contains(target)) {
+            details.removeAttribute("open");
+            syncReferenceTagDisclosure(details);
+          }
+        });
+
+        const clearButton = target?.closest("[data-reference-clear]");
+        if (clearButton) {
+          const root = clearButton.closest("[data-archive-overview]");
+          if (root) {
+            resetReferenceQuery(root);
+            root.querySelector("[data-archive-search]")?.focus();
+          }
+          return;
+        }
+
         const viewButton = target?.closest("[data-archive-view-button]");
         if (viewButton) {
           const root = viewButton.closest("[data-archive-overview]");
@@ -354,7 +574,7 @@ const topCategories = [...categoryCounts.entries()].sort(
           return;
         }
 
-        const categoryButton = target?.closest("[data-archive-category]");
+        const categoryButton = target?.closest("button[data-archive-category]");
         if (categoryButton) {
           const root = categoryButton.closest("[data-archive-overview]");
           if (root) {
@@ -363,7 +583,7 @@ const topCategories = [...categoryCounts.entries()].sort(
           return;
         }
 
-        const tagButton = target?.closest("[data-archive-tag]");
+        const tagButton = target?.closest("button[data-archive-tag]");
         if (tagButton) {
           const root = tagButton.closest("[data-archive-overview]");
           if (root) {
@@ -380,6 +600,13 @@ const topCategories = [...categoryCounts.entries()].sort(
           applyArchiveFilters(root);
         }
       });
+
+      document.addEventListener("toggle", (event) => {
+        const details = event.target instanceof Element ? event.target.closest("[data-reference-tag-details]") : null;
+        if (details) {
+          syncReferenceTagDisclosure(details);
+        }
+      }, true);
 
       document.addEventListener("astro:page-load", initArchiveOverviews);
     }
