@@ -1,4 +1,5 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
+import { readFile } from "node:fs/promises";
 import { getTextExtractFromAttachments } from "../src/lib/reference-extract";
 import { buildReferenceReadingState } from "../src/lib/reference-reading";
 
@@ -88,5 +89,35 @@ describe("buildReferenceReadingState", () => {
     expect(state.blocks).toHaveLength(0);
     expect(state.extract).toBe("mock extract body");
     expect(getTextExtractFromAttachments).toHaveBeenCalledWith([]);
+  });
+});
+
+describe("ReferenceReading source states", () => {
+  it("renders explicit curated, extract, and pending state roots", async () => {
+    const source = await readFile("src/components/ReferenceReading.astro", "utf8");
+
+    expect(source).toContain('data-reference-reading-state="curated"');
+    expect(source).toContain('data-reference-reading-state="extract"');
+    expect(source).toContain('data-reference-reading-state="pending"');
+    expect(source).not.toContain("整理完成后，会在这里");
+  });
+
+  it("keeps curated fields and renders extract text as structured paragraphs", async () => {
+    const source = await readFile("src/components/ReferenceReading.astro", "utf8");
+
+    expect(source).toContain("block.original");
+    expect(source).toContain("block.translation");
+    expect(source).toContain("block.note");
+    expect(source).toContain("block.focus");
+    expect(source).toContain("extractParagraphs.map");
+    expect(source).not.toContain("<pre>{extract}</pre>");
+  });
+
+  it("uses one concise pending row instead of explanatory card stacks", async () => {
+    const source = await readFile("src/components/ReferenceReading.astro", "utf8");
+
+    expect(source).toContain('class="reference-reading__pending"');
+    expect(source).toContain("当前资料暂无可展示的站内正文");
+    expect(source).not.toContain("reading-empty");
   });
 });

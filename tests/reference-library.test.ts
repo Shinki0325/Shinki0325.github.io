@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   buildReferenceIntro,
   buildRelatedReferenceSlugs,
+  buildReferenceSourceNeighbors,
   partitionReferenceLibrary
 } from "../src/lib/reference-library";
 
@@ -173,5 +174,33 @@ describe("buildRelatedReferenceSlugs", () => {
     );
 
     expect(result).toEqual(["manual-link", "same-section-best", "same-section-next"]);
+  });
+});
+
+describe("buildReferenceSourceNeighbors", () => {
+  const entries = [
+    { slug: "source-a", data: { kind: "source" as const, title: "Source A", summary: "A" } },
+    { slug: "topic-x", data: { kind: "topic" as const, title: "Topic X", summary: "X" } },
+    { slug: "source-b", data: { kind: "source" as const, title: "Source B", summary: "B" } },
+    { slug: "source-c", data: { kind: "source" as const, title: "Source C", summary: "C" } }
+  ];
+
+  it("preserves published source order while excluding topics", () => {
+    expect(buildReferenceSourceNeighbors(entries, "source-b")).toEqual({
+      previous: { slug: "source-a", title: "Source A" },
+      next: { slug: "source-c", title: "Source C" }
+    });
+    expect(buildReferenceSourceNeighbors(entries, "topic-x")).toEqual({ previous: null, next: null });
+  });
+
+  it("does not wrap at the first or last published source", () => {
+    expect(buildReferenceSourceNeighbors(entries, "source-a")).toEqual({
+      previous: null,
+      next: { slug: "source-b", title: "Source B" }
+    });
+    expect(buildReferenceSourceNeighbors(entries, "source-c")).toEqual({
+      previous: { slug: "source-b", title: "Source B" },
+      next: null
+    });
   });
 });

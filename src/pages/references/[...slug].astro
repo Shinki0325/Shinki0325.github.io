@@ -2,9 +2,10 @@
 import BacklinkList from "../../components/BacklinkList.astro";
 import ReferenceMeta from "../../components/ReferenceMeta.astro";
 import ReferenceReading from "../../components/ReferenceReading.astro";
+import ReferenceSourcePage from "../../components/ReferenceSourcePage.astro";
 import PostLayout from "../../layouts/PostLayout.astro";
 import { getPublishedArticles, getPublishedNotes, getPublishedReferences } from "../../lib/public-content";
-import { buildReferenceIntro, buildRelatedReferenceSlugs } from "../../lib/reference-library";
+import { buildReferenceIntro, buildReferenceSourceNeighbors, buildRelatedReferenceSlugs } from "../../lib/reference-library";
 import { createReferenceIndex } from "../../lib/reference-index";
 import { buildReferenceReadingState } from "../../lib/reference-reading";
 
@@ -83,6 +84,8 @@ export async function getStaticPaths() {
 
   return references.map((entry) => {
     const relatedReferenceSlugs = buildRelatedReferenceSlugs(entry, references);
+    const sourceEntries = references.filter((reference) => reference.data.kind === "source");
+    const sourcePosition = sourceEntries.findIndex((reference) => reference.slug === entry.slug);
 
     return {
       params: { slug: entry.slug },
@@ -106,17 +109,32 @@ export async function getStaticPaths() {
               title: entryId
             }
           );
-        })
+        }),
+        sourceNeighbors: buildReferenceSourceNeighbors(references, entry.slug),
+        sourcePosition,
+        sourceTotal: sourceEntries.length
       }
     };
   });
 }
 
-const { entry, backlinks, networkLinks } = Astro.props;
+const { entry, backlinks, networkLinks, sourceNeighbors, sourcePosition, sourceTotal } = Astro.props;
 const readingState = buildReferenceReadingState(entry.data);
 const referenceIntro = buildReferenceIntro(entry.data);
 ---
 
+{entry.data.kind === "source" ? (
+  <ReferenceSourcePage
+    entry={entry}
+    referenceIntro={referenceIntro}
+    readingState={readingState}
+    networkLinks={networkLinks}
+    backlinks={backlinks}
+    sourceNeighbors={sourceNeighbors}
+    sourcePosition={sourcePosition}
+    sourceTotal={sourceTotal}
+  />
+) : (
 <PostLayout title={entry.data.title} summary={entry.data.summary} date={entry.data.date}>
   <section class="reading-section stack">
     <div class="reading-section__header">
@@ -188,3 +206,4 @@ const referenceIntro = buildReferenceIntro(entry.data);
   <ReferenceReading blocks={readingState.blocks} extract={readingState.extract} />
   <BacklinkList slot="after" items={backlinks} />
 </PostLayout>
+)}

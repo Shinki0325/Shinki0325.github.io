@@ -113,6 +113,25 @@ export const partitionReferenceLibrary = <T extends ReferenceEntryLike>(entries:
   };
 };
 
+export const buildReferenceSourceNeighbors = <T extends ReferenceEntryLike>(
+  entries: T[],
+  currentSlug: string
+) => {
+  const sources = entries.filter((entry) => entry.data.kind === "source");
+  const currentIndex = sources.findIndex((entry) => entry.slug === currentSlug);
+  const toRoute = (entry: T | undefined) =>
+    entry ? { slug: entry.slug, title: entry.data.title } : null;
+
+  if (currentIndex < 0) {
+    return { previous: null, next: null };
+  }
+
+  return {
+    previous: toRoute(sources[currentIndex - 1]),
+    next: toRoute(sources[currentIndex + 1])
+  };
+};
+
 export const buildRelatedReferenceSlugs = <T extends ReferenceEntryLike>(
   current: T,
   references: T[],

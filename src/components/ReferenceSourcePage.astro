@@ -1,0 +1,191 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ReferenceIndexDrawer from "./ReferenceIndexDrawer.astro";
+import ReferenceReading from "./ReferenceReading.astro";
+import "../styles/reference-source-reading.css";
+
+interface RouteLink {
+  slug: string;
+  title: string;
+}
+
+interface Props {
+  entry: {
+    slug: string;
+    data: {
+      title: string;
+      summary: string;
+      date: Date;
+      tags?: string[];
+      attachments?: string[];
+      librarySection?: string;
+      sourceType?: string;
+      readingMode?: "curated" | "extract";
+    };
+  };
+  referenceIntro: string;
+  readingState: { mode: "curated" | "extract"; blocks: Array<{ label?: string; original: string; translation?: string; note?: string; focus?: boolean }>; extract: string | null };
+  networkLinks: { relatedReferences: RouteLink[]; relatedScripts: RouteLink[] };
+  backlinks: Array<{ href: string; title: string; kind: string }>;
+  sourceNeighbors: { previous: RouteLink | null; next: RouteLink | null };
+  sourcePosition: number;
+  sourceTotal: number;
+}
+
+const {
+  entry,
+  referenceIntro,
+  readingState,
+  networkLinks,
+  backlinks,
+  sourceNeighbors,
+  sourcePosition,
+  sourceTotal
+} = Astro.props;
+const sourceCode = String(sourcePosition + 1).padStart(2, "0");
+const sourceCount = String(sourceTotal).padStart(2, "0");
+---
+
+<BaseLayout title={entry.data.title} description={entry.data.summary}>
+  <div class="reference-source" data-reference-source-page data-reference-source-slug={entry.slug}>
+    <div class="reference-source__progress" data-reference-progress aria-hidden="true"><span data-reference-progress-bar></span></div>
+    <button
+      class="reference-source__index-trigger"
+      data-reference-index-trigger
+      aria-controls="reference-index"
+      aria-expanded="false"
+      type="button"
+    >
+      <span>INDEX</span><strong>+</strong>
+    </button>
+
+    <header class="reference-source__dossier">
+      <div class="reference-source__dossier-meta">
+        <p>SOURCE / {sourceCode} — {sourceCount}</p>
+        <p>{entry.data.librarySection ?? "REFERENCE ARCHIVE"}</p>
+      </div>
+      <div class="reference-source__dossier-copy">
+        <h1>{entry.data.title}</h1>
+        <p>{entry.data.summary}</p>
+      </div>
+      <div class="reference-source__dossier-status">
+        <span>{entry.data.sourceType ?? "SOURCE"}</span>
+        <time datetime={entry.data.date.toISOString()}>{entry.data.date.toISOString().slice(0, 10)}</time>
+      </div>
+    </header>
+
+    <div class="reference-source__progress-copy" data-reference-progress-copy>
+      <span>READING / <b data-reference-progress-section>01</b> / 02</span>
+      <output data-reference-progress-value>0%</output>
+    </div>
+
+    <main class="reference-source__reading-plane">
+      <section class="reference-source__intro" data-reference-section>
+        <p class="reference-source__section-label">EDITORIAL INTRO</p>
+        <h2>这份资料在讲什么</h2>
+        <p>{referenceIntro}</p>
+      </section>
+      <section class="reference-source__reading" data-reference-section>
+        <p class="reference-source__section-label">FOCUS READING</p>
+        <ReferenceReading blocks={readingState.blocks} extract={readingState.extract} />
+      </section>
+    </main>
+
+    <nav class="reference-source__route-strip" aria-label="资料来源连续阅读">
+      {sourceNeighbors.previous ? (
+        <a data-reference-route-prev href={`/references/${sourceNeighbors.previous.slug}/`}>
+          <span>PREVIOUS SOURCE</span><strong>{sourceNeighbors.previous.title}</strong>
+        </a>
+      ) : <span class="reference-source__route-placeholder" />}
+      <span class="reference-source__route-position">{sourceCode} / {sourceCount}</span>
+      {sourceNeighbors.next ? (
+        <a data-reference-route-next href={`/references/${sourceNeighbors.next.slug}/`}>
+          <span>NEXT SOURCE</span><strong>{sourceNeighbors.next.title}</strong>
+        </a>
+      ) : <span class="reference-source__route-placeholder" />}
+    </nav>
+
+    <ReferenceIndexDrawer entry={entry} networkLinks={networkLinks} backlinks={backlinks} />
+  </div>
+
+  <script>
+    type ReferenceSourceWindow = Window & {
+      __referenceSourceReadingCleanup?: () => void;
+      __referenceSourceReadingPageLoadRegistered?: boolean;
+    };
+
+    const referenceWindow = window as ReferenceSourceWindow;
+    const setupReferenceSourceReading = () => {
+      referenceWindow.__referenceSourceReadingCleanup?.();
+
+      const sourceRoot = document.querySelector<HTMLElement>("[data-reference-source-page]");
+      if (!sourceRoot) return;
+
+      const trigger = sourceRoot.querySelector<HTMLElement>("[data-reference-index-trigger]");
+      const dialog = sourceRoot.querySelector<HTMLDialogElement>("dialog[data-reference-index]");
+      const closeButton = sourceRoot.querySelector<HTMLElement>("[data-reference-index-close]");
+      const progressBar = sourceRoot.querySelector<HTMLElement>("[data-reference-progress-bar]");
+      const progressValue = sourceRoot.querySelector<HTMLOutputElement>("[data-reference-progress-value]");
+      const progressSection = sourceRoot.querySelector<HTMLElement>("[data-reference-progress-section]");
+      let raf = 0;
+      let restoreFocus = false;
+
+      const syncClosed = () => {
+        trigger?.setAttribute("aria-expanded", "false");
+        if (restoreFocus) trigger?.focus();
+        restoreFocus = false;
+      };
+      const close = () => {
+        if (dialog?.open) dialog.close();
+        else syncClosed();
+      };
+      const open = () => {
+        if (!dialog || dialog.open) return;
+        trigger?.setAttribute("aria-expanded", "true");
+        restoreFocus = true;
+        dialog.showModal();
+      };
+      const updateProgress = () => {
+        raf = 0;
+        const max = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+        const ratio = Math.min(1, Math.max(0, window.scrollY / max));
+        progressBar?.style.setProperty("--reference-progress", `${ratio * 100}%`);
+        if (progressValue) progressValue.textContent = `${Math.round(ratio * 100)}%`;
+        if (progressSection) progressSection.textContent = ratio > 0.5 ? "02" : "01";
+      };
+      const onScroll = () => {
+        if (!raf) raf = requestAnimationFrame(updateProgress);
+      };
+      const onDialogClick = (event: MouseEvent) => {
+        if (event.target === dialog) close();
+      };
+      const cleanup = () => {
+        restoreFocus = false;
+        if (dialog?.open) dialog.close();
+        trigger?.removeEventListener("click", open);
+        closeButton?.removeEventListener("click", close);
+        dialog?.removeEventListener("click", onDialogClick);
+        dialog?.removeEventListener("close", syncClosed);
+        window.removeEventListener("scroll", onScroll);
+        document.removeEventListener("astro:before-swap", cleanup);
+        if (raf) cancelAnimationFrame(raf);
+      };
+
+      trigger?.addEventListener("click", open);
+      closeButton?.addEventListener("click", close);
+      dialog?.addEventListener("click", onDialogClick);
+      dialog?.addEventListener("close", syncClosed);
+      window.addEventListener("scroll", onScroll, { passive: true });
+      document.addEventListener("astro:before-swap", cleanup);
+      updateProgress();
+
+      referenceWindow.__referenceSourceReadingCleanup = cleanup;
+    };
+
+    if (!referenceWindow.__referenceSourceReadingPageLoadRegistered) {
+      document.addEventListener("astro:page-load", setupReferenceSourceReading);
+      referenceWindow.__referenceSourceReadingPageLoadRegistered = true;
+    }
+    setupReferenceSourceReading();
+  </script>
+</BaseLayout>

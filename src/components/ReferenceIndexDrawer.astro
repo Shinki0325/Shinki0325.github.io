@@ -1,0 +1,135 @@
+---
+import { buildReferenceAttachments } from "../lib/reference-attachments";
+
+interface LinkItem {
+  href: string;
+  title: string;
+}
+
+interface BacklinkItem extends LinkItem {
+  kind: string;
+}
+
+interface Props {
+  entry: {
+    data: {
+      title: string;
+      librarySection?: string;
+      sourceType?: string;
+      sourceTitle?: string;
+      sourceUrl?: string;
+      author?: string;
+      publishedAt?: string;
+      publisher?: string;
+      quote?: string;
+      note?: string;
+      tags?: string[];
+      attachments?: string[];
+    };
+  };
+  networkLinks: { relatedReferences: LinkItem[]; relatedScripts: LinkItem[] };
+  backlinks: BacklinkItem[];
+}
+
+const { entry, networkLinks, backlinks } = Astro.props;
+const attachments = buildReferenceAttachments(entry.data.title, entry.data.attachments ?? []);
+const metadata = [
+  ["SECTION", entry.data.librarySection],
+  ["SOURCE TYPE", entry.data.sourceType],
+  ["SOURCE TITLE", entry.data.sourceTitle],
+  ["AUTHOR", entry.data.author],
+  ["PUBLISHER", entry.data.publisher],
+  ["PUBLISHED", entry.data.publishedAt]
+].filter((row): row is [string, string] => Boolean(row[1]));
+---
+
+<dialog id="reference-index" class="reference-index" data-reference-index aria-labelledby="reference-index-title">
+  <div class="reference-index__panel">
+    <header class="reference-index__header">
+      <div>
+        <p class="reference-index__eyebrow">ARCHIVE INDEX / SOURCE DOSSIER</p>
+        <h2 id="reference-index-title">资料索引</h2>
+      </div>
+      <button class="reference-index__close" data-reference-index-close type="button" aria-label="关闭资料索引">CLOSE</button>
+    </header>
+
+    <div class="reference-index__body">
+      <section class="reference-index__section">
+        <p class="reference-index__label">RECORD</p>
+        <h3>{entry.data.title}</h3>
+        {entry.data.quote && <blockquote>{entry.data.quote}</blockquote>}
+        {entry.data.note && <p>{entry.data.note}</p>}
+      </section>
+
+      {metadata.length > 0 && (
+        <section class="reference-index__section">
+          <p class="reference-index__label">METADATA</p>
+          <dl>
+            {metadata.map(([label, value]) => (
+              <>
+                <dt>{label}</dt>
+                <dd>{value}</dd>
+              </>
+            ))}
+            {entry.data.sourceUrl && (
+              <>
+                <dt>SOURCE URL</dt>
+                <dd><a href={entry.data.sourceUrl}>{entry.data.sourceUrl}</a></dd>
+              </>
+            )}
+          </dl>
+        </section>
+      )}
+
+      {(entry.data.tags?.length ?? 0) > 0 && (
+        <section class="reference-index__section">
+          <p class="reference-index__label">TAGS</p>
+          <ul class="reference-index__tags">
+            {entry.data.tags?.map((tag) => <li><a href={`/tags/${tag}/`}>{tag}</a></li>)}
+          </ul>
+        </section>
+      )}
+
+      {attachments.length > 0 && (
+        <section class="reference-index__section">
+          <p class="reference-index__label">ATTACHMENTS</p>
+          <ul class="reference-index__links">
+            {attachments.map((attachment) => (
+              <li><a href={attachment.href} download={attachment.download || undefined}>{attachment.label}</a></li>
+            ))}
+          </ul>
+          {attachments.some((attachment) => attachment.isImage) && (
+            <div class="reference-index__previews">
+              {attachments.filter((attachment) => attachment.isImage).map((attachment) => (
+                <a href={attachment.href} class="reference-index__preview">
+                  <img src={attachment.href} alt={attachment.alt} loading="lazy" />
+                </a>
+              ))}
+            </div>
+          )}
+        </section>
+      )}
+
+      {(networkLinks.relatedReferences.length > 0 || networkLinks.relatedScripts.length > 0) && (
+        <section class="reference-index__section">
+          <p class="reference-index__label">NETWORK</p>
+          <ul class="reference-index__links">
+            {networkLinks.relatedReferences.map((item) => <li><a href={item.href}>{item.title}</a><small>REFERENCE</small></li>)}
+            {networkLinks.relatedScripts.map((item) => <li><a href={item.href}>{item.title}</a><small>ARTICLE</small></li>)}
+          </ul>
+        </section>
+      )}
+
+      <section class="reference-index__section">
+        <p class="reference-index__label">BACKLINKS</p>
+        {backlinks.length > 0 ? (
+          <ul class="reference-index__links">
+            {backlinks.map((item) => <li><a href={item.href}>{item.title}</a><small>{item.kind}</small></li>)}
+          </ul>
+        ) : (
+          <p class="reference-index__muted">暂无公开页面引用此资料。</p>
+        )}
+      </section>
+    </div>
+  </div>
+</dialog>
