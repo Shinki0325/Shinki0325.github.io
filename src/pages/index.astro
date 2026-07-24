@@ -38,15 +38,11 @@ const formatDate = (value: Date | number | string | undefined) => {
 
 const latestScript = articles.find((entry) => entry.data.type === "script") ?? articles[0] ?? null;
 const scriptCarouselEntries = articles.length > 0 ? articles : latestScript ? [latestScript] : [];
-const scriptCoverPool = Array.from(
-  new Set(scriptCarouselEntries.flatMap((entry) => getArticleOverviewCovers(entry.data)).filter(Boolean)),
-);
-const scriptSlideCount = Math.max(scriptCarouselEntries.length, scriptCoverPool.length, latestScript ? 1 : 0);
-const scriptCarouselSlides = Array.from({ length: scriptSlideCount }, (_, index) => {
-  const entry = scriptCarouselEntries[index % Math.max(scriptCarouselEntries.length, 1)] ?? latestScript;
+const scriptCarouselSlides = scriptCarouselEntries.map((entry, index) => {
+  const entryCovers = getArticleOverviewCovers(entry.data);
 
   return {
-    cover: scriptCoverPool[index % Math.max(scriptCoverPool.length, 1)] ?? "",
+    cover: entryCovers[index % Math.max(entryCovers.length, 1)] ?? "",
     date: formatDate(entry?.data.date),
     eyebrow: entry?.data.type === "script" ? "LATEST INSIGHT" : "LATEST ARTICLE",
     href: entry ? `/articles/${entry.slug}/` : "/articles/",
@@ -344,7 +340,7 @@ const chronicleMiniTracks = [
         <div class="home-script-carousel__footer">
           <span class="spotlight-label" data-home-script-label>{firstScriptSlide?.label ?? "文稿"}</span>
           <span class="home-script-carousel__dots" aria-label="文稿轮播页码">
-            {scriptCarouselSlides.slice(0, 6).map((_, index) => (
+            {scriptCarouselSlides.map((_, index) => (
               <i class={index === 0 ? "is-active" : ""} data-home-script-dot={index} aria-hidden="true"></i>
             ))}
           </span>
@@ -442,7 +438,7 @@ const chronicleMiniTracks = [
       if (label) label.textContent = slide.label || "文稿";
 
       card.querySelectorAll("[data-home-script-dot]").forEach((dot) => {
-        dot.classList.toggle("is-active", Number(dot.dataset.homeScriptDot) === index % Math.min(slides.length, 6));
+        dot.classList.toggle("is-active", Number(dot.dataset.homeScriptDot) === index % slides.length);
       });
     };
 

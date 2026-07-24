@@ -108,7 +108,7 @@ describe("homepage feature cards", () => {
     ]);
   });
 
-  it("turns the featured script card into a cover-pool carousel", async () => {
+  it("builds the featured script carousel from article authority", async () => {
     const fs = await import("node:fs/promises");
     const [coverSource, homeSource, styleSource] = await Promise.all([
       fs.readFile("src/lib/archive-covers.ts", "utf8"),
@@ -118,10 +118,17 @@ describe("homepage feature cards", () => {
 
     expect(homeSource).toContain("getArticleOverviewCovers");
     expect(homeSource).toContain("scriptCarouselSlides");
+    expect(homeSource).toContain("scriptCarouselEntries.map((entry, index)");
+    expect(homeSource).toContain("getArticleOverviewCovers(entry.data)");
+    expect(homeSource).not.toContain("scriptCoverPool");
+    expect(homeSource).not.toContain("scriptSlideCount");
     expect(homeSource).toContain("data-home-script-carousel");
     expect(homeSource).toContain("data-home-script-slides");
     expect(homeSource).toContain("data-home-script-cover");
     expect(homeSource).toContain("data-home-script-dot");
+    expect(homeSource).toContain("scriptCarouselSlides.map((_, index)");
+    expect(homeSource).not.toContain("scriptCarouselSlides.slice(0, 6)");
+    expect(homeSource).not.toContain("Math.min(slides.length, 6)");
     expect(homeSource).toContain('document.addEventListener("astro:before-swap"');
     expect(homeSource).toContain("clearInterval(carouselTimer)");
     expect(coverSource).not.toContain("https://pic.imgdd.cc/i/");
@@ -150,6 +157,8 @@ describe("homepage feature cards", () => {
     expect(styleSource).toContain("min-height: 0");
     expect(styleSource).toContain("overflow: hidden");
     expect(styleSource).toContain("-webkit-line-clamp: 4");
+    expect(styleSource).toMatch(/\.home-script-carousel__content\s*\{[\s\S]{0,350}align-content: end;/);
+    expect(styleSource).not.toMatch(/\.home-script-carousel__content\s*\{[\s\S]{0,350}minmax\(0, 1fr\)/);
   });
 
   it("makes character rail artwork the visual tile body", async () => {

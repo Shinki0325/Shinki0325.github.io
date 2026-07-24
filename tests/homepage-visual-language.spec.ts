@@ -56,6 +56,62 @@ test("latest record dossier keeps both primary card heights across a carousel tr
   await expect(reference.locator(".home-feature-card__cta")).toBeVisible();
 });
 
+test("article carousel matches the public article and indicator authority", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await prepare(page);
+  const card = page.locator("[data-home-script-carousel]");
+  const articleCount = Number(await page.locator(".home-stat-card strong").first().textContent());
+  const slides = JSON.parse((await card.getAttribute("data-home-script-slides")) ?? "[]");
+
+  expect.soft(slides).toHaveLength(articleCount);
+  await expect.soft(card.locator("[data-home-script-dot]")).toHaveCount(articleCount);
+  await expect(card.locator("[data-home-script-cover]")).toHaveCount(1);
+  await expect(card.locator("[data-home-script-cover]")).toHaveAttribute("loading", "lazy");
+});
+
+for (const carouselWidth of [1440, 1280]) {
+  test(`${carouselWidth}px article carousel stays bottom anchored through fifth and wrap states`, async ({ page }) => {
+    await page.clock.install({ time: new Date("2026-07-23T00:00:00Z") });
+    await page.clock.pauseAt(new Date("2026-07-23T00:00:01Z"));
+    await page.setViewportSize({ width: carouselWidth, height: 1000 });
+    const coverRequests: string[] = [];
+    page.on("request", (request) => {
+      if (new URL(request.url()).pathname.startsWith("/uploads/articles/script-covers/")) coverRequests.push(request.url());
+    });
+    await prepare(page);
+    const card = page.locator("[data-home-script-carousel]");
+    const content = card.locator(".home-script-carousel__content");
+    const slides = JSON.parse((await card.getAttribute("data-home-script-slides")) ?? "[]");
+    const dots = card.locator("[data-home-script-dot]");
+    const activeDot = () => card.locator("[data-home-script-dot].is-active");
+    const assertSlide = async (index: number) => {
+      await expect(card.locator("[data-home-script-title]")).toHaveText(slides[index].title);
+      await expect(card.locator("[data-home-script-cover]")).toHaveAttribute("src", slides[index].cover);
+      await expect(activeDot()).toHaveCount(1);
+      await expect(dots.nth(index)).toHaveClass(/is-active/);
+    };
+
+    await expect(content).toHaveCSS("align-content", "end");
+    const [cardBox, chipsBox] = await Promise.all([card.boundingBox(), card.locator(".home-script-carousel__chips").boundingBox()]);
+    expect(chipsBox?.y ?? 0).toBeGreaterThan((cardBox?.y ?? 0) + (cardBox?.height ?? 0) * 0.32);
+    await assertSlide(0);
+    expect(new Set(coverRequests).size).toBeLessThanOrEqual(1);
+    if (reviewOutput) {
+      await mkdir(reviewOutput, { recursive: true });
+      await card.screenshot({ path: `${reviewOutput}/home-records-first-${carouselWidth}.png` });
+    }
+
+    for (let index = 1; index < slides.length; index += 1) {
+      await page.clock.runFor(6_200);
+      await assertSlide(index);
+    }
+    if (reviewOutput) await card.screenshot({ path: `${reviewOutput}/home-records-fifth-${carouselWidth}.png` });
+    await page.clock.runFor(6_200);
+    await assertSlide(0);
+    expect(new Set(coverRequests).size).toBeLessThanOrEqual(slides.length);
+  });
+}
+
 for (const desktopWidth of [1440, 1280]) {
   test(`${desktopWidth}px dossier restores a stable landscape article emphasis`, async ({ page }) => {
     await page.setViewportSize({ width: desktopWidth, height: 1000 });

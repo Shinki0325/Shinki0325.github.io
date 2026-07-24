@@ -50,10 +50,12 @@
 .home-script-carousel { border-radius: var(--crystal-radius); background: var(--crystal-surface-1); }
 .home-records-grid__primary-pair .home-script-carousel { min-height: 0; }
 .home-records-grid__primary-pair .home-script-carousel__content {
-  grid-template-rows: auto minmax(0, auto) minmax(0, 1fr) auto;
-  align-content: stretch;
+  position: absolute;
+  inset: 0;
+  grid-template-rows: auto minmax(0, auto) minmax(0, auto) auto;
+  align-content: end;
   gap: 10px;
-  height: 100%;
+  height: auto;
   min-height: 0;
   padding: 22px;
 }
