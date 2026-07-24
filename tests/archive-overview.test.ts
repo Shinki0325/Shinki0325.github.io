@@ -104,6 +104,7 @@ describe("archive overview pages", () => {
     }
     expect(componentSource).toContain('data-reference-entry-kind={item.entryKind ?? "default"}');
     expect(componentSource).toContain('import "../styles/reference-query-terminal.css"');
+    expect(componentSource).toContain('<h2 class="reference-query-terminal__results-title">检索结果</h2>');
     expect(componentSource).toContain('target?.closest("button[data-archive-category]")');
     expect(componentSource).toContain('target?.closest("button[data-archive-tag]")');
     expect(componentSource).toContain("archive-overview__timeline");

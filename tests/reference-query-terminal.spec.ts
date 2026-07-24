@@ -52,6 +52,29 @@ for (const viewport of desktopViewports) {
       nodes.filter((node) => node.scrollWidth > node.clientWidth + 1 || node.scrollHeight > node.clientHeight + 1).length
     );
     expect(clippedStatus).toBe(0);
+    const statusTextOverflow = await root.locator(".reference-query-terminal__status small, .reference-query-terminal__status strong").evaluateAll((nodes) =>
+      nodes.map((node) => getComputedStyle(node).textOverflow)
+    );
+    expect(statusTextOverflow).not.toContain("ellipsis");
+
+    const identity = root.locator(".reference-query-terminal__identity");
+    const identityCopyBox = await box(identity.locator(".reference-query-terminal__identity-copy"));
+    const statusBox = await box(identity.locator(".reference-query-terminal__status"));
+    if (viewport.width === 1024) {
+      expect(statusBox.y).toBeGreaterThanOrEqual(identityCopyBox.y + identityCopyBox.height - 1);
+      expect(statusBox.width).toBeCloseTo(identityCopyBox.width, 0);
+    } else {
+      expect(statusBox.x).toBeGreaterThanOrEqual(identityCopyBox.x + identityCopyBox.width - 1);
+      expect(statusBox.y).toBeCloseTo(identityCopyBox.y, 0);
+    }
+
+    const resultsHead = root.locator(".reference-query-terminal__results-head");
+    const resultsTitle = resultsHead.locator("h2");
+    await expect(resultsTitle).toHaveText("检索结果");
+    const resultsTitleBox = await box(resultsTitle);
+    expect(resultsTitleBox.width).toBeLessThanOrEqual(1);
+    expect(resultsTitleBox.height).toBeLessThanOrEqual(1);
+    expect((await box(resultsHead)).height).toBeLessThanOrEqual(42);
 
     const rail = page.locator("[data-character-rail]");
     const railBox = await box(rail);
@@ -71,6 +94,8 @@ for (const viewport of desktopViewports) {
       await page.locator("[data-character-rail-toggle]").click();
       await expect(rail).toHaveAttribute("data-open", "true");
       await page.screenshot({ fullPage: true, path: reviewOutput + "/reference-query-terminal-" + viewport.name + ".png" });
+      await identity.screenshot({ path: reviewOutput + "/reference-query-identity-" + viewport.name + ".png" });
+      await resultsHead.screenshot({ path: reviewOutput + "/reference-query-count-strip-" + viewport.name + ".png" });
     }
 
     expect(runtimeErrors).toEqual([]);
