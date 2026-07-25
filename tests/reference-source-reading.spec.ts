@@ -1,7 +1,10 @@
 import { mkdir } from "node:fs/promises";
 import { expect, test, type Page } from "@playwright/test";
 
-const curatedPath = "/references/player-games-1990-2003/";
+const curatedPath = "/references/jpnic-pccomm-internet-interconnect/";
+const legacyPath = "/references/player-games-1990-2003/";
+const chapteredPath = "/references/baba-visualarts-interview/";
+const singleChapterPath = "/references/takeru-official-history/";
 const topicPath = "/references/galgame-90s-web-archive-package/";
 const reviewOutput = process.env.REVIEW_OUTPUT;
 const desktopViewports = [
@@ -31,6 +34,21 @@ const intersects = (left: Awaited<ReturnType<typeof box>>, right: Awaited<Return
   left.y < right.y + right.height &&
   left.y + left.height > right.y;
 
+const waitForScrollSettled = (page: Page) => page.evaluate(() => new Promise<number>((resolve) => {
+  let previous = window.scrollY;
+  let stableFrames = 0;
+  let frames = 0;
+  const sample = () => {
+    const current = window.scrollY;
+    stableFrames = Math.abs(current - previous) <= 1 ? stableFrames + 1 : 0;
+    previous = current;
+    frames += 1;
+    if (stableFrames >= 4 || frames >= 20) resolve(current);
+    else requestAnimationFrame(sample);
+  };
+  requestAnimationFrame(sample);
+}));
+
 test("source route contract uses Focus Reading while topic keeps its existing composition", async ({ page }) => {
   const response = await prepare(page, curatedPath);
   expect(response?.status()).toBe(200);
@@ -43,6 +61,13 @@ test("source route contract uses Focus Reading while topic keeps its existing co
   await page.goto(topicPath, { waitUntil: "domcontentloaded" });
   await expect(page.locator("[data-reference-source-page]")).toHaveCount(0);
   await expect(page.locator("article.entry-shell h1")).toContainText("90年代 galgame 网页归档资料包");
+});
+
+test("legacy package route remains contextual without impersonating an authorized main entrance", async ({ page }) => {
+  const response = await prepare(page, legacyPath);
+  expect(response?.status()).toBe(200);
+  await expect(page.locator("[data-reference-source-page]")).toHaveCount(0);
+  await expect(page.locator("article.entry-shell h1")).toContainText("1990 到 2003 年的游戏回忆");
 });
 
 test("drawer close paths restore focus and preserve reading geometry", async ({ page }) => {
@@ -103,6 +128,76 @@ test("progress and ClientRouter re-entry stay idempotent", async ({ page }) => {
   await page.keyboard.press("Escape");
   await expect(dialog).not.toHaveJSProperty("open", true);
   await expect(trigger).toBeFocused();
+});
+
+test("chapter route follows hash, compact controls, and active chapter state", async ({ page }) => {
+  await prepare(page, chapteredPath);
+  const route = page.locator("[data-reference-chapter-route]");
+  const links = route.locator("[data-reference-chapter-link]");
+  const chapters = page.locator("[data-reference-chapter]");
+
+  await expect(route).toHaveAttribute("aria-label", "本文目录");
+  expect(await links.count()).toBeGreaterThan(1);
+  await expect(route.locator('[data-reference-chapter-link][aria-current="location"]')).toHaveCount(0);
+  await expect(page.locator("[data-reference-progress-section]")).toHaveText("00");
+  await expect(page.locator("[data-reference-progress-total]")).toHaveText(
+    String(await chapters.count()).padStart(2, "0")
+  );
+
+  const target = links.nth(1);
+  const targetId = await target.getAttribute("data-chapter-id");
+  expect(targetId).toBeTruthy();
+  await target.click();
+  await expect(page).toHaveURL(new RegExp(`#${targetId}$`));
+  await expect(page.locator(`#${targetId} h2`)).toBeFocused();
+  await expect(target).toHaveAttribute("aria-current", "location");
+  await expect(page.locator("[data-reference-progress-section]")).toHaveText("02");
+
+  await page.locator(`#${targetId}`).evaluate((node) => node.scrollIntoView({ block: "start" }));
+  await expect(route).toHaveClass(/is-compact/);
+  const toggle = route.locator("[data-reference-chapter-toggle]");
+  await expect(toggle).toHaveAttribute("aria-expanded", "false");
+  await toggle.click();
+  await expect(toggle).toHaveAttribute("aria-expanded", "true");
+  await page.keyboard.press("Escape");
+  await expect(toggle).toHaveAttribute("aria-expanded", "false");
+  await expect(toggle).toBeFocused();
+});
+
+test("one-chapter source keeps real progress without a collapsible compact menu", async ({ page }) => {
+  await prepare(page, singleChapterPath);
+  await expect(page.locator("[data-reference-chapter-link]")).toHaveCount(1);
+  await expect(page.locator("[data-reference-progress-total]")).toHaveText("01");
+  await expect(page.locator("[data-reference-chapter-toggle]")).toHaveCount(0);
+});
+
+test("INDEX overlay preserves chapter route geometry and state", async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await prepare(page, chapteredPath);
+  const reading = page.locator(".reference-source__reading-plane");
+  const route = page.locator("[data-reference-chapter-route]");
+  const secondLink = route.locator("[data-reference-chapter-link]").nth(1);
+  const secondId = await secondLink.getAttribute("data-chapter-id");
+  expect(secondId).toBeTruthy();
+  await secondLink.click();
+  await expect(secondLink).toHaveAttribute("aria-current", "location");
+  await expect(route).toHaveClass(/is-compact/);
+  await waitForScrollSettled(page);
+
+  const before = await box(reading);
+  const scrollBefore = await page.evaluate(() => window.scrollY);
+  const trigger = page.locator("[data-reference-index-trigger]");
+  const dialog = page.locator("dialog[data-reference-index]");
+  const triggerBox = await box(trigger);
+  await page.mouse.click(triggerBox.x + triggerBox.width / 2, triggerBox.y + triggerBox.height / 2);
+  await expect(dialog).toHaveJSProperty("open", true);
+  await waitForScrollSettled(page);
+  const after = await box(reading);
+  expect(Math.abs(after.x - before.x)).toBeLessThanOrEqual(1);
+  expect(Math.abs(after.width - before.width)).toBeLessThanOrEqual(1);
+  expect(Math.abs((await page.evaluate(() => window.scrollY)) - scrollBefore)).toBeLessThanOrEqual(1);
+  await expect(secondLink).toHaveAttribute("aria-current", "location");
+  await expect(page).toHaveURL(new RegExp(`#${secondId}$`));
 });
 
 for (const viewport of desktopViewports) {

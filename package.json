@@ -9,7 +9,7 @@
     "dev:manager:local": "bash scripts/restart-manager-local.sh",
     "music:acquire": "node scripts/acquire-home-music-tracks.mjs",
     "sync:bangumi": "node scripts/sync-bangumi-collections.mjs",
-    "build": "node scripts/generate-archive-thumbnails.mjs && node scripts/clean-build.mjs && astro build",
+    "build": "node scripts/generate-archive-thumbnails.mjs && node scripts/clean-build.mjs && astro build --force",
     "build:manager": "pnpm --filter @maki/manager build",
     "preview": "astro preview",
     "test": "vitest run",

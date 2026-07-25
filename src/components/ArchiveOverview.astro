@@ -11,7 +11,7 @@ export type ArchiveOverviewItem = {
   href: string;
   meta?: string;
   summary?: string;
-  tags?: string[];
+  tags?: Array<string | { key: string; label: string }>;
   title: string;
 };
 
@@ -41,16 +41,20 @@ const formatDate = (value: Date | string | undefined) => {
   }).format(new Date(value));
 };
 
-const tagCounts = new Map<string, number>();
+const tagKey = (tag: string | { key: string; label: string }) => typeof tag === "string" ? tag : tag.key;
+const tagLabel = (tag: string | { key: string; label: string }) => typeof tag === "string" ? tag : tag.label;
+const tagCounts = new Map<string, { count: number; label: string }>();
 
 for (const item of items) {
   for (const tag of item.tags ?? []) {
-    tagCounts.set(tag, (tagCounts.get(tag) ?? 0) + 1);
+    const key = tagKey(tag);
+    const current = tagCounts.get(key);
+    tagCounts.set(key, { count: (current?.count ?? 0) + 1, label: tagLabel(tag) });
   }
 }
 
 const topTags = [...tagCounts.entries()]
-  .sort((left, right) => right[1] - left[1] || left[0].localeCompare(right[0], "zh-CN"))
+  .sort((left, right) => right[1].count - left[1].count || left[1].label.localeCompare(right[1].label, "zh-CN"))
   .slice(0, 12);
 const categoryCounts = new Map<string, number>();
 const tagCategories = new Map<string, Set<string>>();
@@ -61,11 +65,12 @@ for (const item of items) {
   }
 
   for (const tag of item.tags ?? []) {
-    if (!tagCategories.has(tag)) {
-      tagCategories.set(tag, new Set());
+    const key = tagKey(tag);
+    if (!tagCategories.has(key)) {
+      tagCategories.set(key, new Set());
     }
     if (item.category) {
-      tagCategories.get(tag)?.add(item.category);
+      tagCategories.get(key)?.add(item.category);
     }
   }
 }
@@ -142,7 +147,7 @@ const topCategories = [...categoryCounts.entries()].sort(
             >
               全部标签 <span>{items.length}</span>
             </button>
-            {topTags.map(([tag, count]) => (
+            {topTags.map(([tag, { count, label }]) => (
               <button
                 aria-pressed="false"
                 class="archive-overview__tag"
@@ -150,7 +155,7 @@ const topCategories = [...categoryCounts.entries()].sort(
                 data-archive-tag-categories={JSON.stringify([...(tagCategories.get(tag) ?? [])])}
                 type="button"
               >
-                {tag} <span>{count}</span>
+                {label} <span>{count}</span>
               </button>
             ))}
           </div>
@@ -170,8 +175,8 @@ const topCategories = [...categoryCounts.entries()].sort(
           data-archive-card
           data-archive-card-category={item.category ?? ""}
           data-archive-covers={JSON.stringify(item.covers ?? [])}
-          data-archive-search-text={[item.title, item.summary, item.eyebrow, item.meta, ...(item.tags ?? [])].filter(Boolean).join(" ")}
-          data-archive-tags={JSON.stringify(item.tags ?? [])}
+          data-archive-search-text={[item.title, item.summary, item.eyebrow, item.meta, ...(item.tags ?? []).map(tagLabel)].filter(Boolean).join(" ")}
+          data-archive-tags={JSON.stringify((item.tags ?? []).map(tagKey))}
           data-reference-entry-kind={item.entryKind ?? "default"}
           href={item.href}
         >
@@ -191,8 +196,8 @@ const topCategories = [...categoryCounts.entries()].sort(
           data-archive-card
           data-archive-card-category={item.category ?? ""}
           data-archive-covers={JSON.stringify(item.covers ?? [])}
-          data-archive-search-text={[item.title, item.summary, item.eyebrow, item.meta, ...(item.tags ?? [])].filter(Boolean).join(" ")}
-          data-archive-tags={JSON.stringify(item.tags ?? [])}
+          data-archive-search-text={[item.title, item.summary, item.eyebrow, item.meta, ...(item.tags ?? []).map(tagLabel)].filter(Boolean).join(" ")}
+          data-archive-tags={JSON.stringify((item.tags ?? []).map(tagKey))}
           data-reference-entry-kind={item.entryKind ?? "default"}
           href={item.href}
         >
@@ -259,14 +264,14 @@ const topCategories = [...categoryCounts.entries()].sort(
         <button class="archive-overview__tag is-active" data-archive-tag="all" data-archive-tag-categories="[]" type="button">
           全部标签 <span>{items.length}</span>
         </button>
-        {topTags.map(([tag, count]) => (
+        {topTags.map(([tag, { count, label }]) => (
           <button
             class="archive-overview__tag"
             data-archive-tag={tag}
             data-archive-tag-categories={JSON.stringify([...(tagCategories.get(tag) ?? [])])}
             type="button"
           >
-            {tag} <span>{count}</span>
+            {label} <span>{count}</span>
           </button>
         ))}
       </div>
@@ -293,8 +298,8 @@ const topCategories = [...categoryCounts.entries()].sort(
         data-archive-card
         data-archive-card-category={item.category ?? ""}
         data-archive-covers={JSON.stringify(item.covers ?? [])}
-        data-archive-search-text={[item.title, item.summary, item.eyebrow, item.meta, ...(item.tags ?? [])].filter(Boolean).join(" ")}
-        data-archive-tags={JSON.stringify(item.tags ?? [])}
+        data-archive-search-text={[item.title, item.summary, item.eyebrow, item.meta, ...(item.tags ?? []).map(tagLabel)].filter(Boolean).join(" ")}
+        data-archive-tags={JSON.stringify((item.tags ?? []).map(tagKey))}
         href={item.href}
         style={`--card-index: ${index}; --archive-card-row: ${index + 1}`}
       >
@@ -311,7 +316,7 @@ const topCategories = [...categoryCounts.entries()].sort(
           <h2>{item.title}</h2>
           {(item.tags?.length ?? 0) > 0 ? (
             <div class="archive-overview-card__tags" aria-label="标签">
-              {item.tags?.slice(0, 4).map((tag) => <span>#{tag}</span>)}
+              {item.tags?.slice(0, 4).map((tag) => <span>#{tagLabel(tag)}</span>)}
             </div>
           ) : null}
           {item.summary ? <p>{item.summary}</p> : null}

@@ -20,4 +20,11 @@ const EXPLICIT_LABELS: Record<string, string> = {
 };
 
 export const publicReferenceTags = (tags: string[] = []) =>
-  [...new Set(tags.map((tag) => DOMAIN_LABELS[tag] ?? EXPLICIT_LABELS[tag] ?? (/\p{Script=Han}/u.test(tag) ? tag : undefined)).filter(Boolean))];
+  [...new Map(
+    tags
+      .map((key) => {
+        const label = DOMAIN_LABELS[key] ?? EXPLICIT_LABELS[key];
+        return label ? [key, { key, label }] as const : undefined;
+      })
+      .filter((entry): entry is readonly [string, { key: string; label: string }] => Boolean(entry))
+  ).values()];

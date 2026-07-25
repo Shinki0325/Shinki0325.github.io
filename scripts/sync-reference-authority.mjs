@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import matter from "gray-matter";
 
 const root = process.cwd();
 const kbRoot = "D:/blog-kb";
@@ -99,15 +100,17 @@ const readingDocumentFor = (pkg, ownerPublication) => {
 
 const existing = new Map();
 for (const file of fs.readdirSync(referencesRoot).filter((file) => file.endsWith(".md"))) {
-  existing.set(file.replace(/\.md$/u, ""), fs.readFileSync(path.join(referencesRoot, file), "utf8"));
+  existing.set(
+    file.replace(/\.md$/u, ""),
+    matter(fs.readFileSync(path.join(referencesRoot, file), "utf8")).data
+  );
 }
-const existingField = (source, name) => source.match(new RegExp(`^${name}:\\s*(.+)$`, "mu"))?.[1];
 
 const allowedAttachments = new Set();
 const generatedSlugs = new Set();
 for (const entry of authority.entries) {
   const slug = entry.route.slug;
-  const previous = existing.get(slug) ?? "";
+  const previous = existing.get(slug) ?? {};
   const pkg = entry.content.packagePath ? readPackage(path.join(kbRoot, entry.content.packagePath), entry) : null;
   const ownerPublication = ownerPublicationFor(entry);
   const source = pkg?.source ?? {};
@@ -127,8 +130,8 @@ for (const entry of authority.entries) {
     allowedAttachments.add(path.basename(target));
   }
 
-  const title = entry.titleZh ?? pkg?.titleZh ?? existingField(previous, "title") ?? slug;
-  const summary = pkg?.overviewZh?.[0] ?? existingField(previous, "summary") ?? title;
+  const title = entry.titleZh ?? pkg?.titleZh ?? previous.title ?? slug;
+  const summary = pkg?.overviewZh?.[0] ?? (topic ? title : previous.summary) ?? title;
   const frontmatter = [
     "---",
     `title: ${yaml(title)}`,
@@ -159,7 +162,7 @@ for (const entry of authority.entries) {
     `readingMode: ${topic ? "extract" : "curated"}`,
     `sourceLanguage: ${yaml(pkg?.sourceLanguage ?? "ja")}`,
     `translationLanguage: "zh-CN"`,
-    `readingDocument: ${yaml(readingDocument)}`,
+    ...(readingDocument ? [`readingDocument: ${yaml(readingDocument)}`] : []),
     "readingBlocks: []",
     "---",
     "",

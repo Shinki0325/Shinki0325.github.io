@@ -25,6 +25,22 @@ export type ReferenceEntryLike = {
   data: ReferenceDataLike;
 };
 
+type PublicationAuthorityEntry = {
+  data: {
+    ownerPublication?: {
+      decision?: string;
+      entrance?: boolean;
+    };
+  };
+};
+
+export const selectPublishedReferenceAuthority = <T extends PublicationAuthorityEntry>(entries: T[]) =>
+  entries.filter(
+    (entry) =>
+      entry.data.ownerPublication?.decision === "project-owner-authorized-all-layers" &&
+      entry.data.ownerPublication?.entrance === true,
+  );
+
 const hindsightTypes = new Set(["博客文章", "讨论汇编", "社交媒体", "访谈"]);
 const workTypes = new Set(["维基条目"]);
 

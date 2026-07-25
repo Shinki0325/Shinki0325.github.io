@@ -125,6 +125,24 @@ draft: false
     expect(parsed.body).toBe("[[Alpha]]");
   });
 
+  it("keeps provenance boundary separate from owner publication authority", async () => {
+    const { parseContentFile } = await import("../scripts/assert-public-content.mjs");
+    const parsed = parseContentFile(`---
+title: Owner Authorized
+publicationBoundary:
+  visibility: local-review-package
+ownerPublication:
+  decision: project-owner-authorized-all-layers
+  entrance: true
+---`);
+
+    expect(parsed.metadata.publicationBoundary.visibility).toBe("local-review-package");
+    expect(parsed.metadata.ownerPublication).toMatchObject({
+      decision: "project-owner-authorized-all-layers",
+      entrance: true,
+    });
+  });
+
   it("wires public validation through a TypeScript-capable runtime", () => {
     const packageJson = JSON.parse(
       fs.readFileSync(new URL("../package.json", import.meta.url), "utf8")

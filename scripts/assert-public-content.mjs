@@ -53,6 +53,7 @@ export const parseContentFile = (source) => {
         ? parsed.data.aliases.filter((value) => typeof value === "string")
         : [],
       publicationBoundary: parsed.data.publicationBoundary,
+      ownerPublication: parsed.data.ownerPublication,
       visibility: parsed.data.visibility === "private" ? "private" : "public",
       draft: parsed.data.draft === true
     },
@@ -77,7 +78,11 @@ const readReferenceEntries = async () => {
     const source = await readFile(filePath, "utf8");
     const parsed = parseContentFile(source);
 
-    if (parsed.metadata.draft || parsed.metadata.publicationBoundary?.visibility !== "production-authorized") {
+    if (
+      parsed.metadata.draft ||
+      parsed.metadata.ownerPublication?.decision !== "project-owner-authorized-all-layers" ||
+      parsed.metadata.ownerPublication?.entrance !== true
+    ) {
       continue;
     }
 

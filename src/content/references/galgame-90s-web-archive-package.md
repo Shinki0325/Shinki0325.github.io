@@ -4,8 +4,8 @@ kind: topic
 visibility: public
 librarySection: "回忆、讨论与后见视角"
 date: "2026-07-25"
-summary: "\"\\\"\\\\\\\"90年代 galgame 网页归档资料包\\\\\\\"\\\"\""
-intro: "\"\\\"\\\\\\\"90年代 galgame 网页归档资料包\\\\\\\"\\\"\""
+summary: "90年代 galgame 网页归档资料包"
+intro: "90年代 galgame 网页归档资料包"
 tags: ["媒体与传播"]
 topics: ["美少女游戏史"]
 attachments: []
@@ -26,6 +26,5 @@ ownerPublication: {"decision":"project-owner-authorized-all-layers","decidedAt":
 readingMode: extract
 sourceLanguage: "ja"
 translationLanguage: "zh-CN"
-readingDocument: ""
 readingBlocks: []
 ---

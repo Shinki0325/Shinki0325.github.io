@@ -1,6 +1,7 @@
 import { getCollection } from "astro:content";
 import { collectTags, filterPublishedEntries, sortByDateDesc } from "./content";
 import { dedupeReferencesBySourceUrl } from "./reference-dedupe";
+import { selectPublishedReferenceAuthority } from "./reference-library";
 
 export const getPublishedArticles = async () =>
   sortByDateDesc(filterPublishedEntries(await getCollection("articles")));
@@ -27,8 +28,12 @@ const getVisibleReferences = async () =>
 export const getPublicReferenceEntries = getVisibleReferences;
 
 export const getPublishedReferences = async () =>
-  (await getVisibleReferences()).filter(
-    (entry) => entry.data.ownerPublication?.decision === "project-owner-authorized-all-layers" && entry.data.ownerPublication?.entrance === true,
+  selectPublishedReferenceAuthority(
+    sortByDateDesc(
+      filterPublishedEntries(await getCollection("references")).filter(
+        (entry) => entry.data.visibility === "public",
+      ),
+    ),
   );
 
 export const getPublishedTags = async () => {

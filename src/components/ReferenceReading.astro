@@ -1,5 +1,5 @@
 ---
-import type { ReferenceReadingDocument, ReferenceSourceBlock } from "../lib/reference-publication";
+import type { ReferenceReadingDocument } from "../lib/reference-publication";
 
 type ReadingBlock = { label?: string; original: string; translation?: string; note?: string; focus?: boolean };
 interface Props {
@@ -10,9 +10,6 @@ interface Props {
 const { blocks, extract, document } = Astro.props;
 const hasCuratedBlocks = blocks.length > 0;
 const extractParagraphs = (extract ?? "").split(/\r?\n\s*\r?\n/u).map((text) => text.trim()).filter(Boolean);
-const renderSourceBlock = (block: ReferenceSourceBlock) => block.kind === "heading"
-  ? <h3 data-source-block-id={block.id}>{block.text.replace(/^#{1,6}\s*/u, "")}</h3>
-  : <p data-source-block-id={block.id}>{block.text}</p>;
 ---
 
 {document ? (
@@ -20,7 +17,9 @@ const renderSourceBlock = (block: ReferenceSourceBlock) => block.kind === "headi
     {document.prefaceBlocks.length > 0 && (
       <section class="reference-reading__preface" aria-label="原文前言">
         <p class="reference-reading__source-label">SOURCE PREFACE / 原文</p>
-        {document.prefaceBlocks.map(renderSourceBlock)}
+        {document.prefaceBlocks.map((block) => block.kind === "heading"
+          ? <h3 data-source-block-id={block.id}>{block.text.replace(/^#{1,6}\s*/u, "")}</h3>
+          : <p data-source-block-id={block.id}>{block.text}</p>)}
       </section>
     )}
     {document.chapters.map((chapter) => (
@@ -32,12 +31,14 @@ const renderSourceBlock = (block: ReferenceSourceBlock) => block.kind === "headi
         tabindex="-1"
       >
         <p class="reference-reading__chapter-marker">CHAPTER {String(chapter.number).padStart(2, "0")} / {String(document.chapters.length).padStart(2, "0")}</p>
-        <h2>{chapter.titleZh}</h2>
+        <h2 tabindex="-1">{chapter.titleZh}</h2>
         {chapter.summaryZh && <p class="reference-reading__chapter-summary">{chapter.summaryZh}</p>}
         {chapter.sourceBlocks.length > 0 && (
           <div class="reference-reading__source-body">
             <strong class="reference-reading__source-label">原文</strong>
-            {chapter.sourceBlocks.map(renderSourceBlock)}
+            {chapter.sourceBlocks.map((block) => block.kind === "heading"
+              ? <h3 data-source-block-id={block.id}>{block.text.replace(/^#{1,6}\s*/u, "")}</h3>
+              : <p data-source-block-id={block.id}>{block.text}</p>)}
           </div>
         )}
       </section>

@@ -3,7 +3,8 @@ import {
   buildReferenceIntro,
   buildRelatedReferenceSlugs,
   buildReferenceSourceNeighbors,
-  partitionReferenceLibrary
+  partitionReferenceLibrary,
+  selectPublishedReferenceAuthority
 } from "../src/lib/reference-library";
 
 describe("partitionReferenceLibrary", () => {
@@ -206,6 +207,29 @@ describe("buildReferenceSourceNeighbors", () => {
 });
 
 describe("production reference authority", () => {
+  it("keeps distinct owner-authorized entrances even when they share a source URL", () => {
+    const sharedSourceUrl = "https://example.com/shared-source";
+    const entries = [
+      {
+        slug: "authority-a",
+        data: { sourceUrl: sharedSourceUrl, ownerPublication: { decision: "project-owner-authorized-all-layers", entrance: true } }
+      },
+      {
+        slug: "authority-b",
+        data: { sourceUrl: sharedSourceUrl, ownerPublication: { decision: "project-owner-authorized-all-layers", entrance: true } }
+      },
+      {
+        slug: "legacy-duplicate",
+        data: { sourceUrl: sharedSourceUrl }
+      }
+    ];
+
+    expect(selectPublishedReferenceAuthority(entries).map((entry) => entry.slug)).toEqual([
+      "authority-a",
+      "authority-b"
+    ]);
+  });
+
   it("publishes exactly 59 unique authority entries and preserves legacy redirects", async () => {
     const { readdir, readFile } = await import("node:fs/promises");
     const { join } = await import("node:path");

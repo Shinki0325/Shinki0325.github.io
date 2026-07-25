@@ -70,6 +70,15 @@ const readingDocumentSchema = z.object({
   sourceLanguage: z.string().optional(),
   publicBodyAllowed: z.boolean(),
 });
+const ownerPublicationSchema = z.object({
+  decision: z.literal("project-owner-authorized-all-layers"),
+  decidedAt: z.string(),
+  entrance: z.boolean(),
+  overview: z.boolean(),
+  chapterSummaries: z.boolean(),
+  sourceBody: z.boolean(),
+  attachments: z.boolean(),
+});
 
 export const referenceSchema = z.object({
   title: z.string(),
@@ -105,7 +114,7 @@ export const referenceSchema = z.object({
   sourceBlocks: z.array(readingBlockSchema).default([]),
   readingDocument: readingDocumentSchema.optional(),
   originalBoundary: z.record(z.string(), z.unknown()).optional(),
-  ownerPublication: z.record(z.string(), z.unknown()).optional(),
+  ownerPublication: ownerPublicationSchema.optional(),
   sourceIds: z.array(z.string()).default([]),
   retrievedAt: z.string().optional(),
   reliability: z.string().optional(),

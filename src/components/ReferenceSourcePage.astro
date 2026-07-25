@@ -84,7 +84,7 @@ const chapterTotal = String(chapterCount).padStart(2, "0");
     </header>
 
     <div class="reference-source__progress-copy" data-reference-progress-copy>
-      <span>CHAPTER / <b data-reference-progress-section>{chapterCount ? "01" : "00"}</b> / <span data-reference-progress-total>{chapterTotal}</span></span>
+      <span>CHAPTER / <b data-reference-progress-section>00</b> / <span data-reference-progress-total>{chapterTotal}</span></span>
       <output data-reference-progress-value>0%</output>
     </div>
 
@@ -146,8 +146,10 @@ const chapterTotal = String(chapterCount).padStart(2, "0");
       const currentTitle = sourceRoot.querySelector<HTMLElement>("[data-reference-current-title]");
       const chapterLinks = [...sourceRoot.querySelectorAll<HTMLAnchorElement>("[data-reference-chapter-link]")];
       let raf = 0;
+      let hashRaf = 0;
+      let dialogRaf = 0;
       let restoreFocus = false;
-      let activeChapter = chapters[0]?.id ?? "";
+      let activeChapter = "";
 
       const setChapterPanel = (open: boolean) => {
         if (!chapterToggle || !chapterList) return;
@@ -159,7 +161,10 @@ const chapterTotal = String(chapterCount).padStart(2, "0");
         const chapter = chapters.find((item) => item.id === id);
         if (!chapter) return;
         activeChapter = id;
-        chapterLinks.forEach((link) => link.toggleAttribute("aria-current", link.dataset.chapterId === id));
+        chapterLinks.forEach((link) => {
+          if (link.dataset.chapterId === id) link.setAttribute("aria-current", "location");
+          else link.removeAttribute("aria-current");
+        });
         if (currentNumber) currentNumber.textContent = chapter.dataset.chapterNumber ?? "01";
         if (currentTitle) currentTitle.textContent = chapter.querySelector("h2")?.textContent ?? "";
         if (progressSection) progressSection.textContent = chapter.dataset.chapterNumber ?? "01";
@@ -176,9 +181,15 @@ const chapterTotal = String(chapterCount).padStart(2, "0");
       };
       const open = () => {
         if (!dialog || dialog.open) return;
+        const scrollPosition = { x: window.scrollX, y: window.scrollY };
         trigger?.setAttribute("aria-expanded", "true");
         restoreFocus = true;
         dialog.showModal();
+        closeButton?.focus({ preventScroll: true });
+        dialogRaf = requestAnimationFrame(() => {
+          window.scrollTo(scrollPosition.x, scrollPosition.y);
+          dialogRaf = requestAnimationFrame(() => window.scrollTo(scrollPosition.x, scrollPosition.y));
+        });
       };
       const updateProgress = () => {
         raf = 0;
@@ -209,9 +220,9 @@ const chapterTotal = String(chapterCount).padStart(2, "0");
         const chapter = chapters.find((item) => item.id === id);
         if (!chapter) return;
         event.preventDefault();
-        history.pushState(null, "", `#${id}`);
+        if (location.hash !== `#${id}`) history.pushState(null, "", `#${id}`);
         chapter.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
-        chapter.focus({ preventScroll: true });
+        chapter.querySelector<HTMLElement>("h2")?.focus({ preventScroll: true });
         setChapterPanel(false);
         setActiveChapter(id);
       };
@@ -238,6 +249,8 @@ const chapterTotal = String(chapterCount).padStart(2, "0");
         chapterObserver.disconnect();
         sentinelObserver.disconnect();
         if (raf) cancelAnimationFrame(raf);
+        if (hashRaf) cancelAnimationFrame(hashRaf);
+        if (dialogRaf) cancelAnimationFrame(dialogRaf);
       };
 
       trigger?.addEventListener("click", open);
@@ -252,9 +265,9 @@ const chapterTotal = String(chapterCount).padStart(2, "0");
       document.addEventListener("astro:before-swap", cleanup);
       updateProgress();
       if (location.hash && chapters.some((chapter) => `#${chapter.id}` === location.hash)) {
-        requestAnimationFrame(() => chapters.find((chapter) => `#${chapter.id}` === location.hash)?.scrollIntoView({ block: "start" }));
+        hashRaf = requestAnimationFrame(() => chapters.find((chapter) => `#${chapter.id}` === location.hash)?.scrollIntoView({ block: "start" }));
         setActiveChapter(location.hash.slice(1));
-      } else if (activeChapter) setActiveChapter(activeChapter);
+      }
 
       referenceWindow.__referenceSourceReadingCleanup = cleanup;
     };

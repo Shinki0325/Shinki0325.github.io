@@ -1,9 +1,29 @@
 import { describe, expect, it } from "vitest";
+import { readFileSync } from "node:fs";
 import { buildReferenceReadingState } from "../src/lib/reference-reading";
 import { publicReferenceTags } from "../src/lib/public-reference-tags";
 import { buildReferenceReadingDocument } from "../src/lib/reference-publication";
 
 describe("reference publication correction", () => {
+  it("forces the Astro content store to refresh before production builds", () => {
+    const packageJson = JSON.parse(
+      readFileSync(new URL("../package.json", import.meta.url), "utf8")
+    ) as { scripts?: Record<string, string> };
+
+    expect(packageJson.scripts?.build).toContain("astro build --force");
+  });
+
+  it("omits source-only reading documents from the topic index", () => {
+    const topic = readFileSync(
+      new URL("../src/content/references/galgame-90s-web-archive-package.md", import.meta.url),
+      "utf8"
+    );
+
+    expect(topic).not.toMatch(/^readingDocument:/mu);
+    expect(topic).toContain('summary: "90年代 galgame 网页归档资料包"');
+    expect(topic).toContain('intro: "90年代 galgame 网页归档资料包"');
+  });
+
   it("keeps Chinese overview and section summaries out of original blocks", () => {
     const state = buildReferenceReadingState({
       readingMode: "curated",
@@ -42,11 +62,11 @@ describe("reference publication correction", () => {
 
   it("returns Chinese public labels and never internal kebab-case IDs", () => {
     const tags = publicReferenceTags(["creator-interview", "pc-98", "creation-production", "player-community"]);
-    expect(tags).toContain("创作与制作");
-    expect(tags).toContain("玩家与社群");
-    expect(tags).not.toContain("creator-interview");
-    expect(tags).not.toContain("pc-98");
-    expect(tags.every((tag) => !/^[a-z0-9]+(?:-[a-z0-9]+)+$/u.test(tag))).toBe(true);
+    expect(tags).toContainEqual({ key: "creation-production", label: "创作与制作" });
+    expect(tags).toContainEqual({ key: "player-community", label: "玩家与社群" });
+    expect(tags.map((tag) => tag.key)).not.toContain("creator-interview");
+    expect(tags.map((tag) => tag.key)).not.toContain("pc-98");
+    expect(tags.every((tag) => !/^[a-z0-9]+(?:-[a-z0-9]+)+$/u.test(tag.label))).toBe(true);
   });
 
   it("preserves source preface before the first reviewed chapter anchor", () => {
