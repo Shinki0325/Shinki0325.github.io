@@ -77,4 +77,10 @@ export const referenceSchema = z.object({
   sourceLanguage: z.string().optional(),
   translationLanguage: z.string().optional(),
   readingBlocks: z.array(readingBlockSchema).default([]),
+  sourceIds: z.array(z.string()).default([]),
+  retrievedAt: z.string().optional(),
+  reliability: z.string().optional(),
+  confidence: z.number().optional(),
+  rightsStatus: z.string().optional(),
+  publicationBoundary: z.record(z.string(), z.unknown()).optional(),
 });

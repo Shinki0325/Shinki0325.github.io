@@ -9,6 +9,11 @@ interface RouteLink {
   title: string;
 }
 
+interface LinkItem {
+  href: string;
+  title: string;
+}
+
 interface Props {
   entry: {
     slug: string;
@@ -25,7 +30,7 @@ interface Props {
   };
   referenceIntro: string;
   readingState: { mode: "curated" | "extract"; blocks: Array<{ label?: string; original: string; translation?: string; note?: string; focus?: boolean }>; extract: string | null };
-  networkLinks: { relatedReferences: RouteLink[]; relatedScripts: RouteLink[] };
+  networkLinks: { relatedReferences: LinkItem[]; relatedScripts: LinkItem[] };
   backlinks: Array<{ href: string; title: string; kind: string }>;
   sourceNeighbors: { previous: RouteLink | null; next: RouteLink | null };
   sourcePosition: number;

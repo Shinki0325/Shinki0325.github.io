@@ -42,8 +42,8 @@ for (const viewport of desktopViewports) {
     const root = page.locator("[data-reference-query-terminal]");
     const cards = root.locator("[data-archive-card]");
     await expect(root).toBeVisible();
-    await expect(cards).toHaveCount(36);
-    await expect(root.locator("[data-reference-visible-count]")).toHaveText("36");
+    await expect(cards).toHaveCount(59);
+    await expect(root.locator("[data-reference-visible-count]")).toHaveText("59");
     await page.waitForLoadState("load");
 
     const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
@@ -120,8 +120,8 @@ test("query controls synchronize category, tag, search, clear, and empty states"
   const count = root.locator("[data-reference-visible-count]");
   const allCategory = root.locator('[data-archive-category="all"]');
   const allTag = root.locator('[data-archive-tag="all"]');
-  await expect(cards).toHaveCount(36);
-  await expect(count).toHaveText("36");
+  await expect(cards).toHaveCount(59);
+  await expect(count).toHaveText("59");
 
   const category = root.locator("[data-archive-category]:not([data-archive-category='all'])").first();
   const categoryValue = await category.getAttribute("data-archive-category");
@@ -176,7 +176,7 @@ test("query controls synchronize category, tag, search, clear, and empty states"
   await clear.click();
   await expect(allCategory).toHaveAttribute("aria-pressed", "true");
   await expect(allTag).toHaveAttribute("aria-pressed", "true");
-  await expect(count).toHaveText("36");
+  await expect(count).toHaveText("59");
 
   const search = root.locator("[data-archive-search]");
   const pc98Expected = await cards.evaluateAll((nodes) =>
@@ -193,14 +193,14 @@ test("query controls synchronize category, tag, search, clear, and empty states"
   if (reviewOutput) await page.screenshot({ fullPage: true, path: reviewOutput + "/reference-query-empty-1440.png" });
   await root.locator("[data-reference-empty] [data-reference-clear]").click();
   await expect(root.locator("[data-reference-empty]")).toBeHidden();
-  await expect(count).toHaveText("36");
+  await expect(count).toHaveText("59");
 });
 
 test("topic and source interactions change treatment without moving geometry", async ({ page }) => {
   await prepare(page);
   const root = page.locator("[data-reference-query-terminal]");
   const topic = root.locator("[data-reference-entry-kind='topic']").first();
-  const record = root.locator("[data-reference-entry-kind='source']").first();
+  const record = root.locator("[data-reference-entry-kind='source']:has([data-archive-card-image])").first();
   const recordImage = record.locator("[data-archive-card-image]");
   const topicBefore = await box(topic);
   const recordBefore = await box(record);
@@ -235,7 +235,7 @@ test("reduced motion removes scan travel and image zoom while compact fallback s
   const root = page.locator("[data-reference-query-terminal]");
   const topic = root.locator("[data-reference-entry-kind='topic']").first();
   const records = root.locator("[data-reference-entry-kind='source']");
-  const record = records.first();
+  const record = root.locator("[data-reference-entry-kind='source']:has([data-archive-card-image])").first();
   const image = record.locator("[data-archive-card-image]");
   await topic.hover();
   await record.hover();

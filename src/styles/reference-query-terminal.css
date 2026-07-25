@@ -762,6 +762,10 @@
 }
 
 @media (min-width: 901px) and (max-width: 1320px) {
+  body:has([data-reference-query-terminal]) .shell {
+    width: min(calc(100% - 264px), 1180px);
+  }
+
   body:has(.character-rail[data-open="true"]) [data-reference-query-terminal] {
     transform: translateX(32px);
   }

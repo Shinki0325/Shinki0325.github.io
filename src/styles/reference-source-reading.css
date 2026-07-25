@@ -572,6 +572,10 @@ body:has([data-reference-source-page]) .page-stack {
     padding-right: 24px;
   }
 
+  .reference-source__dossier-copy {
+    grid-column: 1 / -1;
+  }
+
   .reference-source__dossier-copy h1 {
     font-size: 30px;
   }

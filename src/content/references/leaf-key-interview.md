@@ -1,101 +1,32 @@
 ---
-title: Leaf、Key 对谈
+title: "Leaf、Key 对谈"
 kind: source
 visibility: public
-librarySection: 作品与人物
-date: '2026-07-07'
-summary: Leaf 与 Key 的核心创作者回看九十年代末美少女游戏热潮如何形成，既谈《ToHeart》、主題歌与“泣きゲー”的扩散，也谈 Steam 全球化与新版《ToHeart》的取舍。
-intro: >-
-  这篇访谈不是单纯的怀旧聊天，而是在创作者视角里重新梳理九十年代末到二十一世纪初美少女游戏文化为什么会成为一个时代。它最有价值的地方，一是能把 Leaf、Key、《ToHeart》与“泣きゲー”放进同一条连续叙述里，二是能直接看到当事人如何理解今天的 Steam、市 场收缩和旧作重制。
-tags:
-  - galgame
-  - 90年代
-  - 访谈
-  - 口述史
-topics:
-  - galgame-90s
-attachments:
-  - >-
-    /uploads/galgame-90s-web-archive/news.denfaminicogamer.jp_interview_250325e_full__merged.txt
-  - >-
-    /uploads/galgame-90s-web-archive/news.denfaminicogamer.jp_interview_250325e__9c9db57f.html
-  - >-
-    /uploads/galgame-90s-web-archive/news.denfaminicogamer.jp_interview_250325e__9c9db57f.png
-  - >-
-    /uploads/galgame-90s-web-archive/news.denfaminicogamer.jp_interview_250325e_2__a1ac9de9.html
-  - >-
-    /uploads/galgame-90s-web-archive/news.denfaminicogamer.jp_interview_250325e_2__a1ac9de9.png
-  - >-
-    /uploads/galgame-90s-web-archive/news.denfaminicogamer.jp_interview_250325e_3__f1f4f4d3.html
-  - >-
-    /uploads/galgame-90s-web-archive/news.denfaminicogamer.jp_interview_250325e_4__ca79f4d8.html
-  - >-
-    /uploads/galgame-90s-web-archive/news.denfaminicogamer.jp_interview_250325e_5__1a7e3fd6.html
-aliases:
-  - Leaf、Key対談
-  - Leaf Key interview
+librarySection: "作品与人物"
+date: "2025-03-25"
+summary: "这篇长篇对谈邀请 Leaf 创立成员下川直哉和折戸伸治回顾他们的创作经历。两人高中时因为 DTM 和パソコン通信结识，毕业后分别做过乐器店、游戏音乐和其他工作。下川后来成立有限会社ユーオフィス，并邀请旧友加入。音乐同伴逐渐聚在一起，Leaf 也从这支小团队中诞生。"
+intro: "这篇长篇对谈邀请 Leaf 创立成员下川直哉和折戸伸治回顾他们的创作经历。两人高中时因为 DTM 和パソコン通信结识，毕业后分别做过乐器店、游戏音乐和其他工作。下川后来成立有限会社ユーオフィス，并邀请旧友加入。音乐同伴逐渐聚在一起，Leaf 也从这支小团队中诞生。"
+tags: ["creator-interview"]
+topics: ["galgame-90s"]
+attachments: ["/uploads/reference-reading/leaf-key-interview--source-original-ja.txt"]
+aliases: []
 draft: false
-sourceType: 访谈
-sourceTitle: 'Leaf、Key対談(インタビュー):『ときメモ』に挑んだ『ToHeart』『鳥の詩』制作秘話、時代を変えたKeyの泣きゲー'
-sourceUrl: 'https://news.denfaminicogamer.jp/interview/250325e'
-publishedAt: '2025-03-25'
-publisher: 電ファミニコゲーマー
-note: 这类资料比纯索引页更像二级解释层，适合在主稿已经立住之后继续往人物和历史叙述深挖。当前已补全 5 页原文归档，并提供合并文本摘录。
-relatedRefs:
-  - to-heart-entry
-  - visual-novel-origins-famitsu
-relatedScripts:
-  - galgame-90s-golden-age
-  - galgame-90s-video-structure
+sourceIds: ["blog-reference:leaf-key-interview"]
+sourceType: "创作者对谈"
+sourceTitle: "Leaf、Key対談：『ときメモ』に挑んだ『ToHeart』『鳥の詩』制作秘話、時代を変えたKeyの泣きゲー"
+sourceUrl: "https://news.denfaminicogamer.jp/interview/250325e"
+author: "TAITAI・川野優希（聞き手）"
+publishedAt: "2025-03-25"
+publisher: "電ファミニコゲーマー"
+retrievedAt: "2026-06-28T15:49:29.738Z"
+reliability: "medium-high"
+confidence: 0.8
+rightsStatus: "existing-public-archive"
+publicationBoundary: {"visibility":"production-authorized","rightsStatus":"existing-public-archive","publicReadingPage":false,"publicationDecision":"blog-manager-release-2026-07-25"}
 readingMode: curated
 sourceLanguage: ja
 translationLanguage: zh-CN
-readingBlocks:
-  - label: 那个时代被如何回忆
-    original: >-
-      1990年代から2000年代にかけて、「美少女ゲーム」というジャンルはオタク文化において「ひとつの時代」を築いていた。青春であり、奇跡であり、芸術であり、人生だった。
-    translation: 从 1990 年代到 2000 年代，“美少女游戏”这个类型在御宅文化里曾经构成过“一个时代”。它既是青春、也是奇迹，是艺术，甚至是人生本身。
-    note: 这段不适合拿来证明基础事实，但非常适合补“后来人怎样回看那个年代”的情绪强度。
-    focus: true
-  - label: 泣きゲー与媒体混合
-    original: >-
-      魅力的な美少女キャラクター、泣けるストーリーは多くのユーザーを夢中にさせ、「泣きゲー」というジャンルが社会現象になるほど。メディアミックスも盛んに行われ、「18禁ゲーム」の枠を飛び越えて熱狂が広がっていった。
-    translation: >-
-      迷人的美少女角色与催泪剧情让大量用户沉迷其中，“泣きゲー”甚至发展到接近社会现象的程度。媒体混合展开也十分活跃，热潮早已越过“18
-      禁游戏”这个原本的边界。
-    note: 这段很适合承接你视频里“为什么这个圈层会溢出原本的小众框架”。
-    focus: true
-  - label: Leaf 与 Key 的分工印象
-    original: >-
-      美少女ゲーム業界に光が当たりだすひとつのきっかけにうち（Leaf）があって、決定的なものにしたのがKeyの「泣きゲー」だったような気はしているんですよね。
-    translation: 以受访者自己的感受来说，让美少女游戏行业开始被看见的一个契机是 Leaf，而真正把这股潮流推成决定性存在的，则是 Key 的“泣きゲー”。
-    note: 这是很好的站内可引用判断句，能把 Leaf 与 Key 放进一条连续叙述里。
-  - label: 《ToHeart》主題歌的冲击
-    original: >-
-      僕は『ToHeart』にボーカル入りの主題歌がついていたのが衝撃的でしたね。正直、あの主題歌を聞いたときは「めっちゃ嫌な流れになりそうやな」と思っていました（笑）。
-    translation: >-
-      折户伸治回忆说，他当时最受冲击的，是《ToHeart》居然配上了有人声的主题歌。甚至在第一次听到时，他还半开玩笑地觉得：“这下可能会带来一个很麻烦的新潮流了。”
-    note: 这段很适合作为“主唱歌进入美少女游戏”被业内当事人如何感知的口述史材料。
-  - label: Steam 时代的全球化视角
-    original: >-
-      ただ、そういった難しさを踏まえても、Steam市場はウェルカムな気持ちですね。現在、日本のマーケットが縮小している中で、世界規模のSteamはプレイヤーの母数が多いですから。企画の段階から、やはり多言語化を視野に入れるようになってきてはいます。
-    translation: >-
-      下川直哉认为，即便 Steam 的审核标准和日本本土存在差异，这个市场依然值得欢迎，因为在日本市场缩小的情况下，面向全球的 Steam 拥有更大的玩家基数。也因此，现在的企划从一开始就会把多语言化放进视野。
-    note: 这一段能把“九十年代的本土热潮”顺势接到“今天视觉小说如何面向全球市场”的现实层。
-    focus: true
-  - label: 重制版保留的不是原样，而是青春感
-    original: >-
-      今作を作るに至った経緯としては、『ToHeart』というゲームの名前は知っていても、プレイしたことはない人が増えてきたというのがひとつですね。プレイできる環境も限られています。ですので、『ToHeart』を現代でも遊べるタイトルとして世に送りだしてあげたかったんです。…「恋愛の疑似体験」というワードでした。「こういう学園生活っていいよね」とか「こういう生活がしてみたかった」とか、青春に寄り添った甘酸っぱさを疑似体験できることこそが、『ToHeart』の良さなんじゃないかと。
-    translation: >-
-      下川直哉解释新版《ToHeart》的出发点时说，如今知道这个名字却没真正玩过的人越来越多，所以他们想把它重新带回“现在也能游玩的状态”。而在具体取舍上，他们最终抓住的核心不是机械复原旧画面，而是把《ToHeart》那种“恋爱模拟体验”与贴近青春的酸甜感保留下来。
-    note: 这段适合把“重制旧作”从技术更新讲成“哪些时代感值得保留”的价值判断。
-    focus: true
+readingBlocks: [{"label":"资料总览 01","original":"这篇长篇对谈邀请 Leaf 创立成员下川直哉和折戸伸治回顾他们的创作经历。两人高中时因为 DTM 和パソコン通信结识，毕业后分别做过乐器店、游戏音乐和其他工作。下川后来成立有限会社ユーオフィス，并邀请旧友加入。音乐同伴逐渐聚在一起，Leaf 也从这支小团队中诞生。","focus":true},{"label":"资料总览 02","original":"对谈详细讲了早期团队为什么选择美少女游戏。家用机开发需要更高资金和成熟经验，成人 PC 游戏的进入门槛相对较低，小团队仍有机会把作品送进流通渠道。《雫》受到许多玩家讨论，却没有立刻带来很高销量；《痕》之后应聘者增加，到了《ToHeart》，团队已从七八人扩大到约二十人。下川希望用校园青春题材挑战《同級生》和《ときめきメモリアル》，髙橋龍也则把大量日常对话写进作品。","focus":false},{"label":"资料总览 03","original":"音乐是整场对谈的另一条主线。《ToHeart》采用有人声的主题歌时，折戸还不熟悉这种制作方式；后来 Key 制作《Kanon》时经由 I’ve 寻找编曲和歌手。《AIR》的《鳥の詩》原本已有另一位歌手，Lia 因行程与介绍关系临时加入，最终留下了广为流传的版本。两人还比较了 AQUAPLUS 的怀旧感与 VisualArts 吸收流行趋势的声音方向。","focus":false},{"label":"从“叶键”热潮回望创作现场","original":"文章介绍下川直哉、折戸伸治与 Leaf、Key 的关系，并从《ToHeart》《Kanon》《AIR》等作品回望九十年代到二十一世纪初的美少女游戏热潮。","focus":false},{"label":"パソコン通信连接的高中音乐伙伴","original":"下川直哉、折戸伸治、石川真也和中上和英因 DTM 相识。他们通过パソコン通信上的音乐 BBS 交流，毕业后又走上不同的工作道路。","focus":false},{"label":"有限会社ユーオフィス与 Leaf 的成立","original":"下川离开 TGL 后成立音乐制作公司，并邀请折戸加入。接不到稳定音乐工作的小团队转而自己制作游戏，Leaf 由此形成。","focus":false},{"label":"低门槛市场、《雫》与《痕》","original":"小团队难以承担家用机开发成本，成人 PC 游戏因此成为可以进入的市场。《雫》讨论度高但销量有限，《痕》之后团队才开始明显扩大。","focus":false},{"label":"《ToHeart》、日常叙事与有人声主题歌","original":"团队以校园青春题材挑战《同級生》和《ときめきメモリアル》，髙橋龍也写下大量日常对话。有人声主题歌和配音也成为作品制作的重要部分。","focus":false},{"label":"从《Kanon》到《鳥の詩》","original":"折戸从不熟悉人声歌曲的作曲者，逐步与 I’ve 合作完成《Kanon》的音乐。《鳥の詩》的演唱者在录音前发生变化，Lia 因多次偶然成为最终歌手。","focus":false},{"label":"AQUAPLUS 与 VisualArts 的声音方向","original":"下川把 AQUAPLUS 的音乐概括为更偏怀旧、旋律鲜明但不妨碍故事，Key 则更主动吸收当时的流行声音。两人也谈到各自作品中游戏性与叙事的侧重。","focus":false},{"label":"七八人的团队怎样制作一部游戏","original":"早期 Leaf 有七八名成员，其中三人参与音乐。剧情、图像和声音一度各自制作再组合，作曲者也会调试、写脚本、做地图和参与销售。","focus":false}]
 ---
-这张卡不是用来证明基础事实的第一来源，而是更适合作为“后来人如何回看那个时代”的公开补充层。
 
-它和作品总览页的分工不一样：
-
-- 作品总览页负责给读者一个稳定入口
-- 访谈页负责补创作者视角、时代语气和回望框架
-
-如果你想让主稿的阅读路径更像 wiki，这类二级资料卡会很好用。
+"这篇长篇对谈邀请 Leaf 创立成员下川直哉和折戸伸治回顾他们的创作经历。两人高中时因为 DTM 和パソコン通信结识，毕业后分别做过乐器店、游戏音乐和其他工作。下川后来成立有限会社ユーオフィス，并邀请旧友加入。音乐同伴逐渐聚在一起，Leaf 也从这支小团队中诞生。"

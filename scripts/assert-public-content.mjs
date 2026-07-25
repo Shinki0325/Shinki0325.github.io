@@ -47,11 +47,12 @@ export const parseContentFile = (source) => {
   const parsed = matter(source);
 
   return {
-    metadata: {
+      metadata: {
       title: typeof parsed.data.title === "string" ? parsed.data.title : undefined,
       aliases: Array.isArray(parsed.data.aliases)
         ? parsed.data.aliases.filter((value) => typeof value === "string")
         : [],
+      publicationBoundary: parsed.data.publicationBoundary,
       visibility: parsed.data.visibility === "private" ? "private" : "public",
       draft: parsed.data.draft === true
     },
@@ -76,7 +77,7 @@ const readReferenceEntries = async () => {
     const source = await readFile(filePath, "utf8");
     const parsed = parseContentFile(source);
 
-    if (parsed.metadata.draft) {
+    if (parsed.metadata.draft || parsed.metadata.publicationBoundary?.visibility !== "production-authorized") {
       continue;
     }
 

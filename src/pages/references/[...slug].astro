@@ -4,7 +4,7 @@ import ReferenceMeta from "../../components/ReferenceMeta.astro";
 import ReferenceReading from "../../components/ReferenceReading.astro";
 import ReferenceSourcePage from "../../components/ReferenceSourcePage.astro";
 import PostLayout from "../../layouts/PostLayout.astro";
-import { getPublishedArticles, getPublishedNotes, getPublishedReferences } from "../../lib/public-content";
+import { getPublishedArticles, getPublishedNotes, getPublishedReferences, getPublicReferenceEntries } from "../../lib/public-content";
 import { buildReferenceIntro, buildReferenceSourceNeighbors, buildRelatedReferenceSlugs } from "../../lib/reference-library";
 import { createReferenceIndex } from "../../lib/reference-index";
 import { buildReferenceReadingState } from "../../lib/reference-reading";
@@ -16,14 +16,15 @@ export async function getStaticPaths() {
     item: { href: string; title: string } | undefined
   ): item is { href: string; title: string } => Boolean(item);
 
-  const [references, articles, notes] = await Promise.all([
+  const [references, allReferences, articles, notes] = await Promise.all([
     getPublishedReferences(),
+    getPublicReferenceEntries(),
     getPublishedArticles(),
     getPublishedNotes()
   ]);
 
   const graph = createReferenceIndex(
-    references.map((entry) => ({
+    allReferences.map((entry) => ({
       ...entry,
       slug: makeEntryId("references", entry.slug)
     })),
@@ -58,7 +59,7 @@ export async function getStaticPaths() {
     ])
   );
 
-  for (const reference of references) {
+  for (const reference of allReferences) {
     sourceLookup.set(makeEntryId("references", reference.slug), {
       href: `/references/${reference.slug}/`,
       kind: reference.data.kind === "source" ? "参考资料" : "专题资料",
@@ -82,7 +83,7 @@ export async function getStaticPaths() {
     });
   }
 
-  return references.map((entry) => {
+  return allReferences.map((entry) => {
     const relatedReferenceSlugs = buildRelatedReferenceSlugs(entry, references);
     const sourceEntries = references.filter((reference) => reference.data.kind === "source");
     const sourcePosition = sourceEntries.findIndex((reference) => reference.slug === entry.slug);
@@ -123,7 +124,7 @@ const readingState = buildReferenceReadingState(entry.data);
 const referenceIntro = buildReferenceIntro(entry.data);
 ---
 
-{entry.data.kind === "source" ? (
+{entry.data.kind === "source" && entry.data.publicationBoundary?.visibility === "production-authorized" ? (
   <ReferenceSourcePage
     entry={entry}
     referenceIntro={referenceIntro}

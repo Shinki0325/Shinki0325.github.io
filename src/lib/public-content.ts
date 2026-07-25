@@ -15,13 +15,20 @@ export const getPublishedAlbums = async () =>
 export const getPublishedNotes = async () =>
   sortByDateDesc(filterPublishedEntries(await getCollection("notes")));
 
-export const getPublishedReferences = async () =>
+const getVisibleReferences = async () =>
   sortByDateDesc(
     dedupeReferencesBySourceUrl(
       filterPublishedEntries(await getCollection("references")).filter(
         (entry) => entry.data.visibility === "public",
       ),
     ),
+  );
+
+export const getPublicReferenceEntries = getVisibleReferences;
+
+export const getPublishedReferences = async () =>
+  (await getVisibleReferences()).filter(
+    (entry) => entry.data.publicationBoundary?.visibility === "production-authorized",
   );
 
 export const getPublishedTags = async () => {

@@ -1,7 +1,7 @@
 import { mkdir } from "node:fs/promises";
 import { expect, test, type Page } from "@playwright/test";
 
-const curatedPath = "/references/pc-9801-computer-museum/";
+const curatedPath = "/references/player-games-1990-2003/";
 const topicPath = "/references/galgame-90s-web-archive-package/";
 const reviewOutput = process.env.REVIEW_OUTPUT;
 const desktopViewports = [
@@ -90,8 +90,9 @@ test("progress and ClientRouter re-entry stay idempotent", async ({ page }) => {
   const next = page.locator("[data-reference-route-next]");
   const nextHref = await next.getAttribute("href");
   expect(nextHref).toBeTruthy();
+  const nextPath = new URL(nextHref!, page.url()).pathname;
   await next.click();
-  await page.waitForURL((url) => url.pathname === nextHref);
+  await page.waitForURL((url) => url.pathname === nextPath);
   await expect(page.locator("[data-reference-source-page]")).toHaveCount(1);
 
   const trigger = page.locator("[data-reference-index-trigger]");

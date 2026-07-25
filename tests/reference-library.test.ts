@@ -204,3 +204,32 @@ describe("buildReferenceSourceNeighbors", () => {
     });
   });
 });
+
+describe("production reference authority", () => {
+  it("publishes exactly 59 unique authority entries and preserves legacy redirects", async () => {
+    const { readdir, readFile } = await import("node:fs/promises");
+    const { join } = await import("node:path");
+    const referencesRoot = "src/content/references";
+    const files = (await readdir(referencesRoot)).filter((file) => file.endsWith(".md"));
+    const authorizedSourceIds: string[] = [];
+
+    for (const file of files) {
+      const source = await readFile(join(referencesRoot, file), "utf8");
+      if (!/^publicationBoundary:.*"visibility":"production-authorized"/mu.test(source)) continue;
+      const sourceIds = source.match(/^sourceIds:\s*(\[[^\n]+\])/mu)?.[1];
+      expect(sourceIds, `${file} must declare sourceIds`).toBeTruthy();
+      authorizedSourceIds.push(sourceIds!);
+    }
+
+    expect(authorizedSourceIds).toHaveLength(59);
+    expect(new Set(authorizedSourceIds).size).toBe(59);
+
+    const redirectPages = [
+      "src/pages/references/1990年代のエロゲー業界漫画-16bitセンセーション-はいかにして生まれた-作者若木民喜原案みつみ美里-and-甘露樹に直撃-ゲームエンタメ最新情報のファミ通-com.astro",
+      "src/pages/references/コラム-昔やっていたゲームの思い出-19902003年くらい-大橋ちよ.astro",
+      "src/pages/references/雫-痕-そして-toheart-ビジュアルノベルの誕生と繚乱-アニメ-16bitセンセーション-another-layer-連動企画第4回-ゲームエンタメ最新情報のファミ通-com.astro"
+    ];
+    const redirects = await Promise.all(redirectPages.map((file) => readFile(file, "utf8")));
+    expect(redirects.every((source) => source.includes("location.replace(target)"))).toBe(true);
+  });
+});
