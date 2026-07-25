@@ -249,6 +249,25 @@ for (const viewport of desktopViewports) {
       await page.screenshot({ fullPage: true, path: `${reviewOutput}/reference-source-curated-closed-${viewport.name}.png` });
     }
 
+    const chapterRoute = root.locator("[data-reference-chapter-route]");
+    const chapterLink = chapterRoute.locator("[data-reference-chapter-link]").nth(1);
+    await chapterLink.click();
+    await expect(chapterRoute).toHaveClass(/is-compact/);
+    await waitForScrollSettled(page);
+    if (reviewOutput) {
+      await page.screenshot({ path: `${reviewOutput}/reference-source-sticky-closed-${viewport.name}.png` });
+    }
+    const chapterToggle = chapterRoute.locator("[data-reference-chapter-toggle]");
+    if (await chapterToggle.count()) {
+      await chapterToggle.click();
+      await expect(chapterToggle).toHaveAttribute("aria-expanded", "true");
+      if (reviewOutput) {
+        await page.screenshot({ path: `${reviewOutput}/reference-source-sticky-open-${viewport.name}.png` });
+      }
+      await page.keyboard.press("Escape");
+      await expect(chapterToggle).toHaveAttribute("aria-expanded", "false");
+    }
+
     const attachmentRequestsBeforeOpen = requests.filter((url) => url.includes("/uploads/galgame-90s-web-archive/") && /\.(png|jpe?g|webp)$/i.test(url)).length;
     const beforeOpen = await box(reading);
     await trigger.click();
