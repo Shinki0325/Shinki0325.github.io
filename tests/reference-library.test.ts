@@ -215,7 +215,7 @@ describe("production reference authority", () => {
 
     for (const file of files) {
       const source = await readFile(join(referencesRoot, file), "utf8");
-      if (!/^publicationBoundary:.*"visibility":"production-authorized"/mu.test(source)) continue;
+      if (!/^ownerPublication:.*"decision":"project-owner-authorized-all-layers"/mu.test(source)) continue;
       const sourceIds = source.match(/^sourceIds:\s*(\[[^\n]+\])/mu)?.[1];
       expect(sourceIds, `${file} must declare sourceIds`).toBeTruthy();
       authorizedSourceIds.push(sourceIds!);

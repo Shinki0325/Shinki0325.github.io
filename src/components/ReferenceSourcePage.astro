@@ -2,6 +2,8 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import ReferenceIndexDrawer from "./ReferenceIndexDrawer.astro";
 import ReferenceReading from "./ReferenceReading.astro";
+import ReferenceChapterRoute from "./ReferenceChapterRoute.astro";
+import type { ReferenceReadingDocument } from "../lib/reference-publication";
 import "../styles/reference-source-reading.css";
 
 interface RouteLink {
@@ -29,7 +31,7 @@ interface Props {
     };
   };
   referenceIntro: string;
-  readingState: { mode: "curated" | "extract"; blocks: Array<{ label?: string; original: string; translation?: string; note?: string; focus?: boolean }>; extract: string | null };
+  readingState: { mode: "curated" | "extract"; blocks: Array<{ label?: string; original: string; translation?: string; note?: string; focus?: boolean }>; extract: string | null; document?: ReferenceReadingDocument };
   networkLinks: { relatedReferences: LinkItem[]; relatedScripts: LinkItem[] };
   backlinks: Array<{ href: string; title: string; kind: string }>;
   sourceNeighbors: { previous: RouteLink | null; next: RouteLink | null };
@@ -49,6 +51,8 @@ const {
 } = Astro.props;
 const sourceCode = String(sourcePosition + 1).padStart(2, "0");
 const sourceCount = String(sourceTotal).padStart(2, "0");
+const chapterCount = readingState.document?.chapters.length ?? 0;
+const chapterTotal = String(chapterCount).padStart(2, "0");
 ---
 
 <BaseLayout title={entry.data.title} description={entry.data.summary}>
@@ -80,7 +84,7 @@ const sourceCount = String(sourceTotal).padStart(2, "0");
     </header>
 
     <div class="reference-source__progress-copy" data-reference-progress-copy>
-      <span>READING / <b data-reference-progress-section>01</b> / 02</span>
+      <span>CHAPTER / <b data-reference-progress-section>{chapterCount ? "01" : "00"}</b> / <span data-reference-progress-total>{chapterTotal}</span></span>
       <output data-reference-progress-value>0%</output>
     </div>
 
@@ -88,11 +92,12 @@ const sourceCount = String(sourceTotal).padStart(2, "0");
       <section class="reference-source__intro" data-reference-section>
         <p class="reference-source__section-label">EDITORIAL INTRO</p>
         <h2>这份资料在讲什么</h2>
-        <p>{referenceIntro}</p>
+        {readingState.document?.overviewZh.length ? readingState.document.overviewZh.map((paragraph) => <p>{paragraph}</p>) : <p>{referenceIntro}</p>}
       </section>
+      <ReferenceChapterRoute chapters={readingState.document?.chapters ?? []} />
       <section class="reference-source__reading" data-reference-section>
         <p class="reference-source__section-label">FOCUS READING</p>
-        <ReferenceReading blocks={readingState.blocks} extract={readingState.extract} />
+        <ReferenceReading blocks={readingState.blocks} extract={readingState.extract} document={readingState.document} />
       </section>
     </main>
 
@@ -132,8 +137,33 @@ const sourceCount = String(sourceTotal).padStart(2, "0");
       const progressBar = sourceRoot.querySelector<HTMLElement>("[data-reference-progress-bar]");
       const progressValue = sourceRoot.querySelector<HTMLOutputElement>("[data-reference-progress-value]");
       const progressSection = sourceRoot.querySelector<HTMLElement>("[data-reference-progress-section]");
+      const chapters = [...sourceRoot.querySelectorAll<HTMLElement>("[data-reference-chapter]")];
+      const chapterRoute = sourceRoot.querySelector<HTMLElement>("[data-reference-chapter-route]");
+      const chapterSentinel = sourceRoot.querySelector<HTMLElement>("[data-reference-chapter-sentinel]");
+      const chapterToggle = sourceRoot.querySelector<HTMLButtonElement>("[data-reference-chapter-toggle]");
+      const chapterList = sourceRoot.querySelector<HTMLElement>("[data-reference-chapter-list]");
+      const currentNumber = sourceRoot.querySelector<HTMLElement>("[data-reference-current-number]");
+      const currentTitle = sourceRoot.querySelector<HTMLElement>("[data-reference-current-title]");
+      const chapterLinks = [...sourceRoot.querySelectorAll<HTMLAnchorElement>("[data-reference-chapter-link]")];
       let raf = 0;
       let restoreFocus = false;
+      let activeChapter = chapters[0]?.id ?? "";
+
+      const setChapterPanel = (open: boolean) => {
+        if (!chapterToggle || !chapterList) return;
+        chapterToggle.setAttribute("aria-expanded", String(open));
+        chapterRoute?.classList.toggle("is-open", open);
+        chapterToggle.querySelector("i")!.textContent = open ? "-" : "+";
+      };
+      const setActiveChapter = (id: string) => {
+        const chapter = chapters.find((item) => item.id === id);
+        if (!chapter) return;
+        activeChapter = id;
+        chapterLinks.forEach((link) => link.toggleAttribute("aria-current", link.dataset.chapterId === id));
+        if (currentNumber) currentNumber.textContent = chapter.dataset.chapterNumber ?? "01";
+        if (currentTitle) currentTitle.textContent = chapter.querySelector("h2")?.textContent ?? "";
+        if (progressSection) progressSection.textContent = chapter.dataset.chapterNumber ?? "01";
+      };
 
       const syncClosed = () => {
         trigger?.setAttribute("aria-expanded", "false");
@@ -156,7 +186,6 @@ const sourceCount = String(sourceTotal).padStart(2, "0");
         const ratio = Math.min(1, Math.max(0, window.scrollY / max));
         progressBar?.style.setProperty("--reference-progress", `${ratio * 100}%`);
         if (progressValue) progressValue.textContent = `${Math.round(ratio * 100)}%`;
-        if (progressSection) progressSection.textContent = ratio > 0.5 ? "02" : "01";
       };
       const onScroll = () => {
         if (!raf) raf = requestAnimationFrame(updateProgress);
@@ -164,6 +193,35 @@ const sourceCount = String(sourceTotal).padStart(2, "0");
       const onDialogClick = (event: MouseEvent) => {
         if (event.target === dialog) close();
       };
+      const onChapterToggle = () => setChapterPanel(chapterToggle?.getAttribute("aria-expanded") !== "true");
+      const onDocumentClick = (event: MouseEvent) => {
+        if (chapterRoute?.classList.contains("is-open") && !chapterRoute.contains(event.target as Node)) setChapterPanel(false);
+      };
+      const onDocumentKeydown = (event: KeyboardEvent) => {
+        if (event.key === "Escape" && chapterRoute?.classList.contains("is-open")) {
+          setChapterPanel(false);
+          chapterToggle?.focus();
+        }
+      };
+      const onChapterLink = (event: MouseEvent) => {
+        const link = event.currentTarget as HTMLAnchorElement;
+        const id = link.hash.slice(1);
+        const chapter = chapters.find((item) => item.id === id);
+        if (!chapter) return;
+        event.preventDefault();
+        history.pushState(null, "", `#${id}`);
+        chapter.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
+        chapter.focus({ preventScroll: true });
+        setChapterPanel(false);
+        setActiveChapter(id);
+      };
+      const chapterObserver = new IntersectionObserver((entries) => {
+        const visible = entries.filter((entry) => entry.isIntersecting).sort((left, right) => left.boundingClientRect.top - right.boundingClientRect.top);
+        if (visible[0]?.target.id && visible[0].target.id !== activeChapter) setActiveChapter(visible[0].target.id);
+      }, { rootMargin: "-25% 0px -62% 0px", threshold: 0 });
+      chapters.forEach((chapter) => chapterObserver.observe(chapter));
+      const sentinelObserver = new IntersectionObserver(([entry]) => chapterRoute?.classList.toggle("is-compact", !entry.isIntersecting), { rootMargin: "-60px 0px 0px 0px" });
+      if (chapterSentinel) sentinelObserver.observe(chapterSentinel);
       const cleanup = () => {
         restoreFocus = false;
         if (dialog?.open) dialog.close();
@@ -171,8 +229,14 @@ const sourceCount = String(sourceTotal).padStart(2, "0");
         closeButton?.removeEventListener("click", close);
         dialog?.removeEventListener("click", onDialogClick);
         dialog?.removeEventListener("close", syncClosed);
+        chapterToggle?.removeEventListener("click", onChapterToggle);
+        chapterLinks.forEach((link) => link.removeEventListener("click", onChapterLink));
+        document.removeEventListener("click", onDocumentClick);
+        document.removeEventListener("keydown", onDocumentKeydown);
         window.removeEventListener("scroll", onScroll);
         document.removeEventListener("astro:before-swap", cleanup);
+        chapterObserver.disconnect();
+        sentinelObserver.disconnect();
         if (raf) cancelAnimationFrame(raf);
       };
 
@@ -180,9 +244,17 @@ const sourceCount = String(sourceTotal).padStart(2, "0");
       closeButton?.addEventListener("click", close);
       dialog?.addEventListener("click", onDialogClick);
       dialog?.addEventListener("close", syncClosed);
+      chapterToggle?.addEventListener("click", onChapterToggle);
+      chapterLinks.forEach((link) => link.addEventListener("click", onChapterLink));
+      document.addEventListener("click", onDocumentClick);
+      document.addEventListener("keydown", onDocumentKeydown);
       window.addEventListener("scroll", onScroll, { passive: true });
       document.addEventListener("astro:before-swap", cleanup);
       updateProgress();
+      if (location.hash && chapters.some((chapter) => `#${chapter.id}` === location.hash)) {
+        requestAnimationFrame(() => chapters.find((chapter) => `#${chapter.id}` === location.hash)?.scrollIntoView({ block: "start" }));
+        setActiveChapter(location.hash.slice(1));
+      } else if (activeChapter) setActiveChapter(activeChapter);
 
       referenceWindow.__referenceSourceReadingCleanup = cleanup;
     };

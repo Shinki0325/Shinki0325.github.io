@@ -28,7 +28,7 @@ export const getPublicReferenceEntries = getVisibleReferences;
 
 export const getPublishedReferences = async () =>
   (await getVisibleReferences()).filter(
-    (entry) => entry.data.publicationBoundary?.visibility === "production-authorized",
+    (entry) => entry.data.ownerPublication?.decision === "project-owner-authorized-all-layers" && entry.data.ownerPublication?.entrance === true,
   );
 
 export const getPublishedTags = async () => {

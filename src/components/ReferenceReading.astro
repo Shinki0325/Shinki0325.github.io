@@ -1,75 +1,63 @@
 ---
-type ReadingBlock = {
-  label?: string;
-  original: string;
-  translation?: string;
-  note?: string;
-  focus?: boolean;
-};
+import type { ReferenceReadingDocument, ReferenceSourceBlock } from "../lib/reference-publication";
 
+type ReadingBlock = { label?: string; original: string; translation?: string; note?: string; focus?: boolean };
 interface Props {
   blocks: ReadingBlock[];
   extract: string | null;
+  document?: ReferenceReadingDocument;
 }
-
-const { blocks, extract } = Astro.props;
+const { blocks, extract, document } = Astro.props;
 const hasCuratedBlocks = blocks.length > 0;
-const extractParagraphs = (extract ?? "")
-  .split(/\r?\n\s*\r?\n/u)
-  .map((paragraph) => paragraph.trim())
-  .filter(Boolean);
+const extractParagraphs = (extract ?? "").split(/\r?\n\s*\r?\n/u).map((text) => text.trim()).filter(Boolean);
+const renderSourceBlock = (block: ReferenceSourceBlock) => block.kind === "heading"
+  ? <h3 data-source-block-id={block.id}>{block.text.replace(/^#{1,6}\s*/u, "")}</h3>
+  : <p data-source-block-id={block.id}>{block.text}</p>;
 ---
 
-{
-  hasCuratedBlocks ? (
-    <section class="reference-reading__state" data-reference-reading-state="curated">
-      <header class="reference-reading__header">
-        <p>CURATED SOURCE</p>
-        <h2>正文阅读</h2>
-      </header>
-      <div class="reference-reading__blocks">
-        {blocks.map((block, index) => (
-          <article class="reference-reading__block">
-            <div class="reference-reading__block-head">
-              <p>{block.label ?? `正文段落 ${String(index + 1).padStart(2, "0")}`}</p>
-              {block.focus && <span class="reference-reading__focus">视频重点</span>}
-            </div>
-            <div class="reference-reading__original">
-              <strong>原文</strong>
-              <p>{block.original}</p>
-            </div>
-            {block.translation && (
-              <div class="reference-reading__translation">
-                <strong>对照翻译</strong>
-                <p>{block.translation}</p>
-              </div>
-            )}
-            {block.note && (
-              <div class="reference-reading__note">
-                <strong>编者备注</strong>
-                <p>{block.note}</p>
-              </div>
-            )}
-          </article>
-        ))}
-      </div>
-    </section>
-  ) : extractParagraphs.length > 0 ? (
-    <section class="reference-reading__state" data-reference-reading-state="extract">
-      <header class="reference-reading__header">
-        <p>ARCHIVE EXTRACT</p>
-        <h2>站内摘录</h2>
-      </header>
-      <div class="reference-reading__extract">
-        {extractParagraphs.map((paragraph) => <p>{paragraph}</p>)}
-      </div>
-    </section>
-  ) : (
-    <section class="reference-reading__state" data-reference-reading-state="pending">
-      <p class="reference-reading__pending">
-        <span aria-hidden="true">STATUS / PENDING</span>
-        <strong>当前资料暂无可展示的站内正文</strong>
-      </p>
-    </section>
-  )
-}
+{document ? (
+  <section class="reference-reading__document" data-reference-reading-state={document.publicBodyAllowed ? "curated" : "pending"}>
+    {document.prefaceBlocks.length > 0 && (
+      <section class="reference-reading__preface" aria-label="原文前言">
+        <p class="reference-reading__source-label">SOURCE PREFACE / 原文</p>
+        {document.prefaceBlocks.map(renderSourceBlock)}
+      </section>
+    )}
+    {document.chapters.map((chapter) => (
+      <section
+        class="reference-reading__chapter"
+        id={chapter.id}
+        data-reference-chapter
+        data-chapter-number={String(chapter.number).padStart(2, "0")}
+        tabindex="-1"
+      >
+        <p class="reference-reading__chapter-marker">CHAPTER {String(chapter.number).padStart(2, "0")} / {String(document.chapters.length).padStart(2, "0")}</p>
+        <h2>{chapter.titleZh}</h2>
+        {chapter.summaryZh && <p class="reference-reading__chapter-summary">{chapter.summaryZh}</p>}
+        {chapter.sourceBlocks.length > 0 && (
+          <div class="reference-reading__source-body">
+            <strong class="reference-reading__source-label">原文</strong>
+            {chapter.sourceBlocks.map(renderSourceBlock)}
+          </div>
+        )}
+      </section>
+    ))}
+    {!document.publicBodyAllowed && <p class="reference-reading__pending"><span>STATUS / BOUNDED</span><strong>当前资料未开放完整原文</strong></p>}
+  </section>
+) : hasCuratedBlocks ? (
+  <section class="reference-reading__state" data-reference-reading-state="curated">
+    <header class="reference-reading__header"><p>CURATED SOURCE</p><h2>正文阅读</h2></header>
+    <div class="reference-reading__blocks">
+      {blocks.map((block, index) => <article class="reference-reading__block">
+        <div class="reference-reading__block-head"><p>{block.label ?? `正文段落 ${String(index + 1).padStart(2, "0")}`}</p>{block.focus && <span class="reference-reading__focus">重点</span>}</div>
+        <div class="reference-reading__original"><strong>原文</strong><p>{block.original}</p></div>
+        {block.translation && <div class="reference-reading__translation"><strong>对照翻译</strong><p>{block.translation}</p></div>}
+        {block.note && <div class="reference-reading__note"><strong>编辑备注</strong><p>{block.note}</p></div>}
+      </article>)}
+    </div>
+  </section>
+) : extractParagraphs.length > 0 ? (
+  <section class="reference-reading__state" data-reference-reading-state="extract"><header class="reference-reading__header"><p>ARCHIVE EXTRACT</p><h2>站内摘录</h2></header><div class="reference-reading__extract">{extractParagraphs.map((text) => <p>{text}</p>)}</div></section>
+) : (
+  <section class="reference-reading__state" data-reference-reading-state="pending"><p class="reference-reading__pending"><span>STATUS / PENDING</span><strong>当前资料暂无可展示的站内正文</strong></p></section>
+)}

@@ -1,32 +1,32 @@
 ---
-title: "ソフトベンダーTAKERU｜ブラザーブランドストーリー"
+title: "TAKERU：软件贩卖机"
 kind: source
 visibility: public
 librarySection: "回忆、讨论与后见视角"
 date: "2026-07-25"
 summary: "Brother 的品牌史页面没有把 TAKERU 单独写成一台机器的说明书，而是从 TAKERU 时代常见的电脑游戏谈起。文章列举了文字输入式冒险游戏、角色扮演游戏和战争模拟游戏，也提到《マデリーン》、〈ソーサリアン〉追加剧本和《大戦略》地图集等 TAKERU 上可以买到的内容。"
-intro: "Brother 的品牌史页面没有把 TAKERU 单独写成一台机器的说明书，而是从 TAKERU 时代常见的电脑游戏谈起。文章列举了文字输入式冒险游戏、角色扮演游戏和战争模拟游戏，也提到《マデリーン》、〈ソーサリアン〉追加剧本和《大戦略》地图集等 TAKERU 上可以买到的内容。"
-tags: ["akihabara"]
-topics: ["galgame-90s"]
+intro: "Brother 的品牌史页面没有把 TAKERU 单独写成一台机器的说明书，而是从 TAKERU 时代常见的电脑游戏谈起。文章列举了文字输入式冒险游戏、角色扮演游戏和战争模拟游戏，也提到《マデリーン》、〈ソーサリアン〉追加剧本和《大戦略》地图集等 TAKERU 上可以买到的内容。\n\n文中还解释了这些作品的玩法变化：冒险游戏从输入命令逐渐转向选择式操作，角色扮演游戏把动作和解谜加入传统框架，模拟游戏则围绕六角格地图展开。末尾列出相关作品和当时的发行公司，并介绍游戏保存协会保存 1970 至 1990 年代日本游戏资料的工作。"
+tags: ["市场与流通","存储介质","地域差异"]
+topics: ["美少女游戏史"]
 attachments: ["/uploads/reference-reading/takeru-official-history--source-original-ja.txt"]
 aliases: []
 draft: false
 sourceIds: ["official:brother-takeru-history"]
-sourceType: "official-company-history"
+sourceType: "机构资料"
 sourceTitle: "ソフトベンダーTAKERU｜ブラザーブランドストーリー"
 sourceUrl: "https://global.brother/ja/digest/history/takeru"
 author: ""
 publishedAt: ""
 publisher: "Brother Industries"
 retrievedAt: "2026-07-24"
-reliability: "high"
-confidence: 0.96
+reliability: "高"
 rightsStatus: "archive-for-research"
-publicationBoundary: {"visibility":"production-authorized","rightsStatus":"archive-for-research","publicReadingPage":false,"publicationDecision":"blog-manager-release-2026-07-25","note":"已进入 Knowledge Source Catalog，但尚未批准为公开参考资料页。"}
+originalBoundary: {"visibility":"unpublished","publicReadingPage":false,"rightsStatus":"archive-for-research","publicationDecision":"requires-human-review","note":"已进入 Knowledge Source Catalog，但尚未批准为公开参考资料页。"}
+publicationBoundary: {"visibility":"unpublished","publicReadingPage":false,"rightsStatus":"archive-for-research","publicationDecision":"requires-human-review","note":"已进入 Knowledge Source Catalog，但尚未批准为公开参考资料页。"}
+ownerPublication: {"decision":"project-owner-authorized-all-layers","decidedAt":"2026-07-25","entrance":true,"overview":true,"chapterSummaries":true,"sourceBody":true,"attachments":true}
 readingMode: curated
-sourceLanguage: ja
-translationLanguage: zh-CN
-readingBlocks: [{"label":"资料总览 01","original":"Brother 的品牌史页面没有把 TAKERU 单独写成一台机器的说明书，而是从 TAKERU 时代常见的电脑游戏谈起。文章列举了文字输入式冒险游戏、角色扮演游戏和战争模拟游戏，也提到《マデリーン》、〈ソーサリアン〉追加剧本和《大戦略》地图集等 TAKERU 上可以买到的内容。","focus":true},{"label":"资料总览 02","original":"文中还解释了这些作品的玩法变化：冒险游戏从输入命令逐渐转向选择式操作，角色扮演游戏把动作和解谜加入传统框架，模拟游戏则围绕六角格地图展开。末尾列出相关作品和当时的发行公司，并介绍游戏保存协会保存 1970 至 1990 年代日本游戏资料的工作。","focus":false},{"label":"TAKERU 上销售的电脑游戏","original":"这篇官方回顾列举 TAKERU 时代的冒险、角色扮演和模拟经营游戏：从需要输入命令的《ポートピア連続殺人事件》，到《ソーサリアン》的追加剧本和《大戦略》的地图集。结尾列出这些作品的发行公司，并介绍游戏保存协会的保存工作。","focus":false}]
+sourceLanguage: "ja"
+translationLanguage: "zh-CN"
+readingDocument: {"overviewZh":["Brother 的品牌史页面没有把 TAKERU 单独写成一台机器的说明书，而是从 TAKERU 时代常见的电脑游戏谈起。文章列举了文字输入式冒险游戏、角色扮演游戏和战争模拟游戏，也提到《マデリーン》、〈ソーサリアン〉追加剧本和《大戦略》地图集等 TAKERU 上可以买到的内容。","文中还解释了这些作品的玩法变化：冒险游戏从输入命令逐渐转向选择式操作，角色扮演游戏把动作和解谜加入传统框架，模拟游戏则围绕六角格地图展开。末尾列出相关作品和当时的发行公司，并介绍游戏保存协会保存 1970 至 1990 年代日本游戏资料的工作。"],"prefaceBlocks":[],"chapters":[{"id":"takeru-history","number":1,"titleZh":"TAKERU 上销售的电脑游戏","summaryZh":"这篇官方回顾列举 TAKERU 时代的冒险、角色扮演和模拟经营游戏：从需要输入命令的《ポートピア連続殺人事件》，到《ソーサリアン》的追加剧本和《大戦略》的地图集。结尾列出这些作品的发行公司，并介绍游戏保存协会的保存工作。","startBlockId":"p-001","sourceBlocks":[{"id":"p-001","kind":"paragraph","sourceHeading":null,"text":"TAKERUが活躍した時代のパソコン向けのゲームソフトというと、フロッピーディスクの容量を活かした、時間をかけて遊べるアドベンチャーやロールプレイング、シミュレーションというジャンルに人気があったと思います。"},{"id":"p-002","kind":"paragraph","sourceHeading":null,"text":"アドベンチャーゲームは割とパソコン初期に流行したジャンルで、「ポートピア連続殺人事件」、「カサブランカに愛を」、「ジーザス」などが有名です。初期のアドベンチャーはコマンドと呼ぶ単語を自分で打ち込むシステムで、単語探しやパズルの様な趣向がありました。TAKERUでは、専売ソフトとして「マデリーン」というゲームが有名で、当時のTAKERU PRESS（ブラザー工業発行のフリーペーパー）の表紙にもなっていました。アドベンチャーゲームは時代とともに、入力がより簡単な選択式に、グラフィックがより緻密になっていき、後のサウンドノベルなどへ発展していきました。"},{"id":"p-003","kind":"paragraph","sourceHeading":null,"text":"戦国ソーサリアン"},{"id":"p-004","kind":"paragraph","sourceHeading":null,"text":"© Nihon Falcom Corporation. All rights reserved."},{"id":"p-005","kind":"paragraph","sourceHeading":null,"text":"ロールプレイングゲームは当時からとても人気だったジャンルで、パソコン向けには「ハイドライド」「ザナドゥ」「イース」など数多くの名作が存在します。実は日本のパソコン向けロールプレイングゲームの形態は独特で、アクションやパズルなど様々な要素を取り込んで独自の世界観を築いていました。TAKERUで有名なのはやはり「ソーサリアン」の追加ディスクです。ソーサリアンは外部データを読み込んで様々なシナリオを遊べるシステムを持っており、「セレクテッドソーサリアン」をはじめTAKERUでしか手に入らない追加シナリオが複数発売され人気でした。"},{"id":"p-006","kind":"paragraph","sourceHeading":null,"text":"一方、シミュレーションゲームは種類こそあまり多くはありませんが根強い人気を持っていたジャンルで、「信長の野望」と「大戦略」という2つのシリーズは群を抜いて人気がありました。いずれも六角形のマスで区切られたマップで戦わせるウォーシミュレーションですが、信長の野望が戦国時代の日本をマップにしているのに対し、大戦略は様々なマップで戦いを繰り広げられるのが特徴でした。TAKERUでは発売元であるシステムソフト以外からも、様々な大戦略シリーズのマップ集が売られていました。"},{"id":"p-007","kind":"paragraph","sourceHeading":null,"text":"大戦略III’90"},{"id":"p-008","kind":"paragraph","sourceHeading":null,"text":"© Systemsoft beta, Inc. All rights reserved."},{"id":"p-009","kind":"paragraph","sourceHeading":null,"text":"戦国ソーサリアン"},{"id":"p-010","kind":"paragraph","sourceHeading":null,"text":"© Nihon Falcom Corporation. All rights reserved."},{"id":"p-011","kind":"paragraph","sourceHeading":null,"text":"ゲーム保存協会では、1970～1990年代の魅力的な日本のゲームの歴史を貴重な文化財として保管し、将来に残していく活動を行っています。様々なゲームを保管、修復する中で、散逸してしまったゲーム資料の確保はまだまだ十分ではありません。ゲーム文化の保存に関心がある方はぜひゲーム保存協会に助力ください。"},{"id":"p-012","kind":"paragraph","sourceHeading":null,"text":"発売元（社名はいずれも当時）：ポートピア連続殺人事件、ジーザス・・・エニックス／カサブランカに愛を・・・シンキングラビット／マデリーン・・・シンキングラビット／ハイドライド・・・T&E SOFT／ザナドゥ、イース、ソーサリアン・・・日本ファルコム／信長の野望・・・光栄、大戦略・・・システムソフト"}]}],"sourceBlocks":[{"id":"p-001","kind":"paragraph","sourceHeading":null,"text":"TAKERUが活躍した時代のパソコン向けのゲームソフトというと、フロッピーディスクの容量を活かした、時間をかけて遊べるアドベンチャーやロールプレイング、シミュレーションというジャンルに人気があったと思います。"},{"id":"p-002","kind":"paragraph","sourceHeading":null,"text":"アドベンチャーゲームは割とパソコン初期に流行したジャンルで、「ポートピア連続殺人事件」、「カサブランカに愛を」、「ジーザス」などが有名です。初期のアドベンチャーはコマンドと呼ぶ単語を自分で打ち込むシステムで、単語探しやパズルの様な趣向がありました。TAKERUでは、専売ソフトとして「マデリーン」というゲームが有名で、当時のTAKERU PRESS（ブラザー工業発行のフリーペーパー）の表紙にもなっていました。アドベンチャーゲームは時代とともに、入力がより簡単な選択式に、グラフィックがより緻密になっていき、後のサウンドノベルなどへ発展していきました。"},{"id":"p-003","kind":"paragraph","sourceHeading":null,"text":"戦国ソーサリアン"},{"id":"p-004","kind":"paragraph","sourceHeading":null,"text":"© Nihon Falcom Corporation. All rights reserved."},{"id":"p-005","kind":"paragraph","sourceHeading":null,"text":"ロールプレイングゲームは当時からとても人気だったジャンルで、パソコン向けには「ハイドライド」「ザナドゥ」「イース」など数多くの名作が存在します。実は日本のパソコン向けロールプレイングゲームの形態は独特で、アクションやパズルなど様々な要素を取り込んで独自の世界観を築いていました。TAKERUで有名なのはやはり「ソーサリアン」の追加ディスクです。ソーサリアンは外部データを読み込んで様々なシナリオを遊べるシステムを持っており、「セレクテッドソーサリアン」をはじめTAKERUでしか手に入らない追加シナリオが複数発売され人気でした。"},{"id":"p-006","kind":"paragraph","sourceHeading":null,"text":"一方、シミュレーションゲームは種類こそあまり多くはありませんが根強い人気を持っていたジャンルで、「信長の野望」と「大戦略」という2つのシリーズは群を抜いて人気がありました。いずれも六角形のマスで区切られたマップで戦わせるウォーシミュレーションですが、信長の野望が戦国時代の日本をマップにしているのに対し、大戦略は様々なマップで戦いを繰り広げられるのが特徴でした。TAKERUでは発売元であるシステムソフト以外からも、様々な大戦略シリーズのマップ集が売られていました。"},{"id":"p-007","kind":"paragraph","sourceHeading":null,"text":"大戦略III’90"},{"id":"p-008","kind":"paragraph","sourceHeading":null,"text":"© Systemsoft beta, Inc. All rights reserved."},{"id":"p-009","kind":"paragraph","sourceHeading":null,"text":"戦国ソーサリアン"},{"id":"p-010","kind":"paragraph","sourceHeading":null,"text":"© Nihon Falcom Corporation. All rights reserved."},{"id":"p-011","kind":"paragraph","sourceHeading":null,"text":"ゲーム保存協会では、1970～1990年代の魅力的な日本のゲームの歴史を貴重な文化財として保管し、将来に残していく活動を行っています。様々なゲームを保管、修復する中で、散逸してしまったゲーム資料の確保はまだまだ十分ではありません。ゲーム文化の保存に関心がある方はぜひゲーム保存協会に助力ください。"},{"id":"p-012","kind":"paragraph","sourceHeading":null,"text":"発売元（社名はいずれも当時）：ポートピア連続殺人事件、ジーザス・・・エニックス／カサブランカに愛を・・・シンキングラビット／マデリーン・・・シンキングラビット／ハイドライド・・・T&E SOFT／ザナドゥ、イース、ソーサリアン・・・日本ファルコム／信長の野望・・・光栄、大戦略・・・システムソフト"}],"sourceLanguage":"ja","publicBodyAllowed":true}
+readingBlocks: []
 ---
-
-"Brother 的品牌史页面没有把 TAKERU 单独写成一台机器的说明书，而是从 TAKERU 时代常见的电脑游戏谈起。文章列举了文字输入式冒险游戏、角色扮演游戏和战争模拟游戏，也提到《マデリーン》、〈ソーサリアン〉追加剧本和《大戦略》地图集等 TAKERU 上可以买到的内容。"

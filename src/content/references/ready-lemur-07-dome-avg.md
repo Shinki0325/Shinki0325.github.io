@@ -1,32 +1,32 @@
 ---
-title: "パソコンゲームの思い出その７ 『雫』『痕』『To Heart』"
+title: "パソコンゲーム回顾录（七）：从 `DOME` 看到的 ADV 形式"
 kind: source
 visibility: public
-librarySection: "回忆、讨论与后见视角"
+librarySection: "作品与人物"
 date: "2026-06-27"
 summary: "作者购买 X68000 后，选择システムサコム 的 `DOME` 作为第一批电脑原创作品。实写图像、广告代理店职员主角和“ザ・ドーム”计划都与家用机游戏不同；ノベルウェア把旁白和人物台词放进不同窗口，七十多名人物又按照每天四个时段展开行动。"
-intro: "作者购买 X68000 后，选择システムサコム 的 `DOME` 作为第一批电脑原创作品。实写图像、广告代理店职员主角和“ザ・ドーム”计划都与家用机游戏不同；ノベルウェア把旁白和人物台词放进不同窗口，七十多名人物又按照每天四个时段展开行动。"
-tags: ["visual-novel"]
-topics: ["galgame-90s"]
+intro: "作者购买 X68000 后，选择システムサコム 的 `DOME` 作为第一批电脑原创作品。实写图像、广告代理店职员主角和“ザ・ドーム”计划都与家用机游戏不同；ノベルウェア把旁白和人物台词放进不同窗口，七十多名人物又按照每天四个时段展开行动。\n\n真正游玩时，作者因事件条件复杂、没有攻略书也没有网络，反复进入同一个坏结局，最终没能完成作品。他仍认为多窗口叙事和时间推进展示了 ADV 的一种未来，并希望当年的ノベルウェア能作为编辑工具开放。"
+tags: ["类型与叙事","家庭游玩环境"]
+topics: ["美少女游戏史"]
 attachments: ["/uploads/reference-reading/ready-lemur-07-dome-avg--source-original-ja.txt"]
 aliases: []
 draft: false
 sourceIds: ["note:ready-lemur-07-shizuku-kizuato-toheart"]
-sourceType: "personal-recollection"
+sourceType: "亲历回忆"
 sourceTitle: "パソコンゲーム回顧録 第7回〜「DOME」に見たAVGの未来。"
 sourceUrl: "https://note.com/ready_lemur8909/n/n19587cf71857"
 author: "ぴっと"
 publishedAt: "2026-06-27T06:54:42.000+09:00"
 publisher: "note"
 retrievedAt: "2026-07-25T13:30:00+08:00"
-reliability: "contextual"
-confidence: 0.66
+reliability: "情境参考"
 rightsStatus: "archive-for-research"
-publicationBoundary: {"visibility":"production-authorized","rightsStatus":"archive-for-research","publicReadingPage":false,"publicationDecision":"blog-manager-release-2026-07-25","note":"已进入 Knowledge Source Catalog，但尚未批准为公开参考资料页。"}
+originalBoundary: {"visibility":"unpublished","publicReadingPage":false,"rightsStatus":"archive-for-research","publicationDecision":"requires-human-review","note":"已进入 Knowledge Source Catalog，但尚未批准为公开参考资料页。"}
+publicationBoundary: {"visibility":"unpublished","publicReadingPage":false,"rightsStatus":"archive-for-research","publicationDecision":"requires-human-review","note":"已进入 Knowledge Source Catalog，但尚未批准为公开参考资料页。"}
+ownerPublication: {"decision":"project-owner-authorized-all-layers","decidedAt":"2026-07-25","entrance":true,"overview":true,"chapterSummaries":true,"sourceBody":true,"attachments":true}
 readingMode: curated
-sourceLanguage: ja
-translationLanguage: zh-CN
-readingBlocks: [{"label":"资料总览 01","original":"作者购买 X68000 后，选择システムサコム 的 `DOME` 作为第一批电脑原创作品。实写图像、广告代理店职员主角和“ザ・ドーム”计划都与家用机游戏不同；ノベルウェア把旁白和人物台词放进不同窗口，七十多名人物又按照每天四个时段展开行动。","focus":true},{"label":"资料总览 02","original":"真正游玩时，作者因事件条件复杂、没有攻略书也没有网络，反复进入同一个坏结局，最终没能完成作品。他仍认为多窗口叙事和时间推进展示了 ADV 的一种未来，并希望当年的ノベルウェア能作为编辑工具开放。","focus":false},{"label":"X68000 上的实写 ADV","original":"作者因实写画面、成人题材和对 ADV 的兴趣选择 `DOME`，作品讲述广告代理店职员为核战争后的避难计划筹款。","focus":false},{"label":"ノベルウェア与七十多名人物","original":"旁白和人物台词分别显示在窗口中，玩家还要按一天四个时段追踪七十多名人物并完成事件条件。","focus":false},{"label":"没有攻略信息时无法继续","original":"复杂条件让作者反复进入坏结局，但多窗口叙事仍使他把 `DOME` 看作サウンドノベル之前的一种 ADV 进化方向。","focus":false}]
+sourceLanguage: "ja"
+translationLanguage: "zh-CN"
+readingDocument: {"overviewZh":["作者购买 X68000 后，选择システムサコム 的 `DOME` 作为第一批电脑原创作品。实写图像、广告代理店职员主角和“ザ・ドーム”计划都与家用机游戏不同；ノベルウェア把旁白和人物台词放进不同窗口，七十多名人物又按照每天四个时段展开行动。","真正游玩时，作者因事件条件复杂、没有攻略书也没有网络，反复进入同一个坏结局，最终没能完成作品。他仍认为多窗口叙事和时间推进展示了 ADV 的一种未来，并希望当年的ノベルウェア能作为编辑工具开放。"],"prefaceBlocks":[],"chapters":[{"id":"p-001","number":1,"titleZh":"X68000 上的实写 ADV","summaryZh":"作者因实写画面、成人题材和对 ADV 的兴趣选择 `DOME`，作品讲述广告代理店职员为核战争后的避难计划筹款。","startBlockId":"p-001","sourceBlocks":[{"id":"p-001","kind":"paragraph","sourceHeading":null,"text":"1988年。念願のX68000を手に入れアーケードゲームの移植作品を堪能した後、いよいよ憧れでもあったパソコンオリジナルゲームをプレイするかと思い発売されていた中から選んだのがシステムサコムの「DOME」だった。"},{"id":"p-002","kind":"paragraph","sourceHeading":null,"text":"選んだ理由はオトナ向けでファミコンではまずない実写取り込み。他機種版ではかなり粗いグラフィックがX68000では写真クォリティ。そして何よりAVG（アドベンチャーゲーム）が好きということに尽きた。"},{"id":"p-003","kind":"paragraph","sourceHeading":null,"text":"堀井雄二サンは当時AVGは謎に詰まると無駄な時間だけになると否定的で前年に発売された「オホーツクに消ゆ」もヒントを搭載することを条件に渋々移植OKを出したと雑誌で目にしたが自分はなんだかんだ言ってもAVGは好きだった。"},{"id":"p-004","kind":"paragraph","sourceHeading":null,"text":"いざプレイしてみると主人公は広告代理店の社員。核戦争を想定して人類が生き残る為の「ザ・ドーム」計画の立ち上げに（無理矢理？）参加。巨額の寄付金集めを成功させる為に奔走する、というストーリー。"},{"id":"p-005","kind":"paragraph","sourceHeading":null,"text":"今思うと莫大な金額全てを寄付金で、しかも「ザ・ドーム」に入れるのは1000人限定。1億寄付したからといって入れる保証もないものに集まるわけが…と説得力に欠けるストーリーではある。"}]},{"id":"p-006","number":2,"titleZh":"ノベルウェア与七十多名人物","summaryZh":"旁白和人物台词分别显示在窗口中，玩家还要按一天四个时段追踪七十多名人物并完成事件条件。","startBlockId":"p-006","sourceBlocks":[{"id":"p-006","kind":"paragraph","sourceHeading":null,"text":"システムはシステムサコム製作のノベルウェア。ナレーション、各登場人物のセリフがそれぞれ個別ウィンドウに表示される。"},{"id":"p-007","kind":"paragraph","sourceHeading":null,"text":"かなり専門的な内容でまず広告代理店という職業をある程度理解していないといけないし登場人物が総勢70人超え、1日あたり4つの時間帯（朝一番、昼前、午後1時、午後3時）に情報収集と行動しなくてはいけない超高難易度。時間に決められたフラグを立てれないとバッドエンド。"},{"id":"p-008","kind":"paragraph","sourceHeading":null,"text":"頑張って有名人数人にドームを被らせることに成功するのが精一杯。マニュアルに何枚かヒント券があったけどそれでクリアできるとも思えないくらい難しすぎた。"}]},{"id":"p-009","number":3,"titleZh":"没有攻略信息时无法继续","summaryZh":"复杂条件让作者反复进入坏结局，但多窗口叙事仍使他把 `DOME` 看作サウンドノベル之前的一种 ADV 进化方向。","startBlockId":"p-009","sourceBlocks":[{"id":"p-009","kind":"paragraph","sourceHeading":null,"text":"しぶとくプレイしたものの攻略本もなく今のようにネットに解法もない時代。システムは面白いんだけどなぁ…と泣く泣く終了。今なら解法も探せばあるだろうし数十年ぶりにやってみるのもいいかもしれない。ストーリーがどうなるのかは興味があったので。"},{"id":"p-010","kind":"paragraph","sourceHeading":null,"text":"ただこの当時は高難易度はパソコンゲームでは普通だった。そこに簡単でユーザーライクな「イース」が登場し支持された。"},{"id":"p-011","kind":"paragraph","sourceHeading":null,"text":"せっかくの作品を隅々まで楽しんでもらえないことは制作側にとっても本意ではないはず。"},{"id":"p-012","kind":"paragraph","sourceHeading":null,"text":"といったことで不本意ながらプレイを終了せざるを得ない状況（何回やっても同じバッドエンドにしかならなくなった）になってしまったもののAVGの未来は見えた気がした。"},{"id":"p-013","kind":"paragraph","sourceHeading":null,"text":"当時の雑誌でノベルウェアのプレゼント企画があったと記憶してるけどエディタとして当時販売してほしかった。"},{"id":"p-014","kind":"paragraph","sourceHeading":null,"text":"サウンドノベルの前にあったAVGの一つの進化系だったし、もっと広がっていってほしかった。"}]}],"sourceBlocks":[{"id":"p-001","kind":"paragraph","sourceHeading":null,"text":"1988年。念願のX68000を手に入れアーケードゲームの移植作品を堪能した後、いよいよ憧れでもあったパソコンオリジナルゲームをプレイするかと思い発売されていた中から選んだのがシステムサコムの「DOME」だった。"},{"id":"p-002","kind":"paragraph","sourceHeading":null,"text":"選んだ理由はオトナ向けでファミコンではまずない実写取り込み。他機種版ではかなり粗いグラフィックがX68000では写真クォリティ。そして何よりAVG（アドベンチャーゲーム）が好きということに尽きた。"},{"id":"p-003","kind":"paragraph","sourceHeading":null,"text":"堀井雄二サンは当時AVGは謎に詰まると無駄な時間だけになると否定的で前年に発売された「オホーツクに消ゆ」もヒントを搭載することを条件に渋々移植OKを出したと雑誌で目にしたが自分はなんだかんだ言ってもAVGは好きだった。"},{"id":"p-004","kind":"paragraph","sourceHeading":null,"text":"いざプレイしてみると主人公は広告代理店の社員。核戦争を想定して人類が生き残る為の「ザ・ドーム」計画の立ち上げに（無理矢理？）参加。巨額の寄付金集めを成功させる為に奔走する、というストーリー。"},{"id":"p-005","kind":"paragraph","sourceHeading":null,"text":"今思うと莫大な金額全てを寄付金で、しかも「ザ・ドーム」に入れるのは1000人限定。1億寄付したからといって入れる保証もないものに集まるわけが…と説得力に欠けるストーリーではある。"},{"id":"p-006","kind":"paragraph","sourceHeading":null,"text":"システムはシステムサコム製作のノベルウェア。ナレーション、各登場人物のセリフがそれぞれ個別ウィンドウに表示される。"},{"id":"p-007","kind":"paragraph","sourceHeading":null,"text":"かなり専門的な内容でまず広告代理店という職業をある程度理解していないといけないし登場人物が総勢70人超え、1日あたり4つの時間帯（朝一番、昼前、午後1時、午後3時）に情報収集と行動しなくてはいけない超高難易度。時間に決められたフラグを立てれないとバッドエンド。"},{"id":"p-008","kind":"paragraph","sourceHeading":null,"text":"頑張って有名人数人にドームを被らせることに成功するのが精一杯。マニュアルに何枚かヒント券があったけどそれでクリアできるとも思えないくらい難しすぎた。"},{"id":"p-009","kind":"paragraph","sourceHeading":null,"text":"しぶとくプレイしたものの攻略本もなく今のようにネットに解法もない時代。システムは面白いんだけどなぁ…と泣く泣く終了。今なら解法も探せばあるだろうし数十年ぶりにやってみるのもいいかもしれない。ストーリーがどうなるのかは興味があったので。"},{"id":"p-010","kind":"paragraph","sourceHeading":null,"text":"ただこの当時は高難易度はパソコンゲームでは普通だった。そこに簡単でユーザーライクな「イース」が登場し支持された。"},{"id":"p-011","kind":"paragraph","sourceHeading":null,"text":"せっかくの作品を隅々まで楽しんでもらえないことは制作側にとっても本意ではないはず。"},{"id":"p-012","kind":"paragraph","sourceHeading":null,"text":"といったことで不本意ながらプレイを終了せざるを得ない状況（何回やっても同じバッドエンドにしかならなくなった）になってしまったもののAVGの未来は見えた気がした。"},{"id":"p-013","kind":"paragraph","sourceHeading":null,"text":"当時の雑誌でノベルウェアのプレゼント企画があったと記憶してるけどエディタとして当時販売してほしかった。"},{"id":"p-014","kind":"paragraph","sourceHeading":null,"text":"サウンドノベルの前にあったAVGの一つの進化系だったし、もっと広がっていってほしかった。"}],"sourceLanguage":"ja","publicBodyAllowed":true}
+readingBlocks: []
 ---
-
-"作者购买 X68000 后，选择システムサコム 的 `DOME` 作为第一批电脑原创作品。实写图像、广告代理店职员主角和“ザ・ドーム”计划都与家用机游戏不同；ノベルウェア把旁白和人物台词放进不同窗口，七十多名人物又按照每天四个时段展开行动。"

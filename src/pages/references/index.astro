@@ -5,6 +5,7 @@ import { loadReferencesConfig } from "../../lib/home-config";
 import { partitionReferenceLibrary } from "../../lib/reference-library";
 import { getPublishedReferences } from "../../lib/public-content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import { publicReferenceTags } from "../../lib/public-reference-tags";
 
 const config = await loadReferencesConfig();
 const references = await getPublishedReferences();
@@ -19,7 +20,7 @@ const items = [...topicEntries, ...sourceEntries].map((entry) => ({
   href: `/references/${entry.slug}/`,
   meta: entry.data.sourceTitle ?? "查看资料",
   summary: entry.data.summary,
-  tags: entry.data.tags ?? [],
+  tags: publicReferenceTags(entry.data.tags ?? []),
   title: entry.data.title,
 }));
 ---

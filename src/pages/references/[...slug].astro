@@ -124,7 +124,7 @@ const readingState = buildReferenceReadingState(entry.data);
 const referenceIntro = buildReferenceIntro(entry.data);
 ---
 
-{entry.data.kind === "source" && entry.data.publicationBoundary?.visibility === "production-authorized" ? (
+{entry.data.kind === "source" && entry.data.ownerPublication?.decision === "project-owner-authorized-all-layers" && entry.data.ownerPublication?.sourceBody === true ? (
   <ReferenceSourcePage
     entry={entry}
     referenceIntro={referenceIntro}
@@ -204,7 +204,7 @@ const referenceIntro = buildReferenceIntro(entry.data);
         )}
     </section>
   </Fragment>
-  <ReferenceReading blocks={readingState.blocks} extract={readingState.extract} />
+  <ReferenceReading blocks={readingState.blocks} extract={readingState.extract} document={readingState.document} />
   <BacklinkList slot="after" items={backlinks} />
 </PostLayout>
 )}

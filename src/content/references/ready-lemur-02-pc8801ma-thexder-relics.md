@@ -1,32 +1,32 @@
 ---
-title: "パソコンゲームの思い出その２ 光栄のアダルトゲーム三部作"
+title: "パソコンゲーム回顾录（二）：PC-8801MA、《テグザー》与《レリクス》"
 kind: source
 visibility: public
 librarySection: "回忆、讨论与后见视角"
 date: "2026-04-19"
 summary: "作者把 PC-8801mkIISR 和《テグザー》视为八位电脑游戏表现力变化的标志。朋友 M 随后花二十多万日元购买 PC-8801MA，向大家展示流畅滚动和机器人变形；作者自己更喜欢《レリクス》的阴暗气氛、附身系统和开场演出。"
-intro: "作者把 PC-8801mkIISR 和《テグザー》视为八位电脑游戏表现力变化的标志。朋友 M 随后花二十多万日元购买 PC-8801MA，向大家展示流畅滚动和机器人变形；作者自己更喜欢《レリクス》的阴暗气氛、附身系统和开场演出。"
-tags: ["player-community"]
-topics: ["galgame-90s"]
+intro: "作者把 PC-8801mkIISR 和《テグザー》视为八位电脑游戏表现力变化的标志。朋友 M 随后花二十多万日元购买 PC-8801MA，向大家展示流畅滚动和机器人变形；作者自己更喜欢《レリクス》的阴暗气氛、附身系统和开场演出。\n\n文章还记下杂志附送ソノシート的使用方式：把唱片里的程序声音录进磁带，再由电脑读入，任何录音误差都可能要求重来。新机器、杂志附录、朋友家的音响和深夜聚会共同构成了当时接触软件的实际环境。"
+tags: ["玩家与社群","家庭游玩环境","专业杂志"]
+topics: ["美少女游戏史"]
 attachments: ["/uploads/reference-reading/ready-lemur-02-pc8801ma-thexder-relics--source-original-ja.txt"]
 aliases: []
 draft: false
 sourceIds: ["note:ready-lemur-02-koei-adult-trilogy"]
-sourceType: "personal-recollection"
+sourceType: "亲历回忆"
 sourceTitle: "パソコンゲーム回顧録 第2回〜友人が買い足したPC-8801MAと「テグザー」「レリクス」の衝撃。"
 sourceUrl: "https://note.com/ready_lemur8909/n/nc2f7112a5a85"
 author: "ぴっと"
 publishedAt: "2026-04-19T05:51:19.000+09:00"
 publisher: "note"
 retrievedAt: "2026-07-25T13:30:00+08:00"
-reliability: "contextual"
-confidence: 0.64
+reliability: "情境参考"
 rightsStatus: "archive-for-research"
-publicationBoundary: {"visibility":"production-authorized","rightsStatus":"archive-for-research","publicReadingPage":false,"publicationDecision":"blog-manager-release-2026-07-25","note":"已进入 Knowledge Source Catalog，但尚未批准为公开参考资料页。"}
+originalBoundary: {"visibility":"unpublished","publicReadingPage":false,"rightsStatus":"archive-for-research","publicationDecision":"requires-human-review","note":"已进入 Knowledge Source Catalog，但尚未批准为公开参考资料页。"}
+publicationBoundary: {"visibility":"unpublished","publicReadingPage":false,"rightsStatus":"archive-for-research","publicationDecision":"requires-human-review","note":"已进入 Knowledge Source Catalog，但尚未批准为公开参考资料页。"}
+ownerPublication: {"decision":"project-owner-authorized-all-layers","decidedAt":"2026-07-25","entrance":true,"overview":true,"chapterSummaries":true,"sourceBody":true,"attachments":true}
 readingMode: curated
-sourceLanguage: ja
-translationLanguage: zh-CN
-readingBlocks: [{"label":"资料总览 01","original":"作者把 PC-8801mkIISR 和《テグザー》视为八位电脑游戏表现力变化的标志。朋友 M 随后花二十多万日元购买 PC-8801MA，向大家展示流畅滚动和机器人变形；作者自己更喜欢《レリクス》的阴暗气氛、附身系统和开场演出。","focus":true},{"label":"资料总览 02","original":"文章还记下杂志附送ソノシート的使用方式：把唱片里的程序声音录进磁带，再由电脑读入，任何录音误差都可能要求重来。新机器、杂志附录、朋友家的音响和深夜聚会共同构成了当时接触软件的实际环境。","focus":false},{"label":"PC-8801mkIISR 改变游戏画面与声音","original":"强化后的图形和声音让“PC-8801mkIISR 以后”一度成为软件规格与表现力的分界线。","focus":false},{"label":"朋友家的 PC-8801MA 与两款游戏","original":"M 买下后继机 PC-8801MA，并展示《テグザー》。作者更受《レリクス》的气氛、附身玩法和开场演出吸引。","focus":false},{"label":"把杂志ソノシート录进磁带","original":"杂志附送的程序唱片需要先用音响录到磁带，再让电脑读取；一旦发生错误，朋友就得重新上门录制。","focus":false}]
+sourceLanguage: "ja"
+translationLanguage: "zh-CN"
+readingDocument: {"overviewZh":["作者把 PC-8801mkIISR 和《テグザー》视为八位电脑游戏表现力变化的标志。朋友 M 随后花二十多万日元购买 PC-8801MA，向大家展示流畅滚动和机器人变形；作者自己更喜欢《レリクス》的阴暗气氛、附身系统和开场演出。","文章还记下杂志附送ソノシート的使用方式：把唱片里的程序声音录进磁带，再由电脑读入，任何录音误差都可能要求重来。新机器、杂志附录、朋友家的音响和深夜聚会共同构成了当时接触软件的实际环境。"],"prefaceBlocks":[],"chapters":[{"id":"p-001","number":1,"titleZh":"PC-8801mkIISR 改变游戏画面与声音","summaryZh":"强化后的图形和声音让“PC-8801mkIISR 以后”一度成为软件规格与表现力的分界线。","startBlockId":"p-001","sourceBlocks":[{"id":"p-001","kind":"paragraph","sourceHeading":null,"text":"1980年代中盤まで国内パソコン市場はPC88シリーズのNEC、X1シリーズのシャープ、FM-77シリーズの富士通がシノギを削っていたが1985年に発売されたPC-8801mkIISRで歴史は大きく動くことになる。"},{"id":"p-002","kind":"paragraph","sourceHeading":null,"text":"グラフィックスとサウンドが強化され、すぐに専用タイトルとして発売されたゲームアーツの「テグザー」と共に話題に。"},{"id":"p-003","kind":"paragraph","sourceHeading":null,"text":"これ以降、パソコンゲームを遊ぶならPC-8801mkIISRが標準となり暫くの間は「PC-8801mkIISR以降」の表記がゲームの品質保証的な役割を担うほどであった。"},{"id":"p-004","kind":"paragraph","sourceHeading":null,"text":"それくらいPC-8801mkIISR前後でパソコンゲームにおける表現力が変わったのだった。"}]},{"id":"p-005","number":2,"titleZh":"朋友家的 PC-8801MA 与两款游戏","summaryZh":"M 买下后继机 PC-8801MA，并展示《テグザー》。作者更受《レリクス》的气氛、附身玩法和开场演出吸引。","startBlockId":"p-005","sourceBlocks":[{"id":"p-005","kind":"paragraph","sourceHeading":null,"text":"前回紹介した友人Mも我慢出来なくなり後継機であるPC-8801MAを購入。"},{"id":"p-006","kind":"paragraph","sourceHeading":null,"text":"聞くとまた20万以上したという。今の紙幣価値だと倍くらいだと思う。"},{"id":"p-007","kind":"paragraph","sourceHeading":null,"text":"そして余程やりたかったのか「テグザー」を自慢げに見せてくれた。確かにFM-77のゲームとは違い滑らかなスクロールと戦闘機とロボットへの変型もスムーズだった。"},{"id":"p-008","kind":"paragraph","sourceHeading":null,"text":"が、自分的には「テグザー」よりも「レリクス」が衝撃で結構やらせてもらった。"},{"id":"p-009","kind":"paragraph","sourceHeading":null,"text":"パソコンゲーム独特のアダルトで謎めいた雰囲気と倒した敵に乗り移っていく斬新さに心奪われた。オープニングデモもカッコよかった。"},{"id":"p-010","kind":"paragraph","sourceHeading":null,"text":"他にはナムコの「グロブダー」「ドラゴンバスター」「イシターの復活」をよく遊んだがドラバスのゲームオーバー時に血まみれのクロービスのグラフィックになって急にリアルな画面によく大笑いしていた w"},{"id":"p-011","kind":"paragraph","sourceHeading":null,"text":"よくMに「アメリカントラック買ってくれよー」とか「バルタン星人の出る、ぎゃんぶらあ自己中心派買ってくれよー」とお願いしたが聞き入れてもらえなかった w"}]},{"id":"p-012","number":3,"titleZh":"把杂志ソノシート录进磁带","summaryZh":"杂志附送的程序唱片需要先用音响录到磁带，再让电脑读取；一旦发生错误，朋友就得重新上门录制。","startBlockId":"p-012","sourceBlocks":[{"id":"p-012","kind":"paragraph","sourceHeading":null,"text":"当時のパソコン雑誌に付録でソノシートがオマケでたまに付いていてそれをカセットに録音してパソコンにロードすることでプログラムをロードすることができた（音楽やゲーム）。我が家に良いコンポがあったので「録音させてくれー」とMがやってきてガーピーって音をひたすら録音するだけしてとっとと帰って暫くして「エラー出たからもう一回」とかもよくやってた w"},{"id":"p-013","kind":"paragraph","sourceHeading":null,"text":"Mの父親が職場でもらえるという大量に置いてあった「どん兵衛」をもらってよく深夜にみんなで食べた。だんだん変な食べ方をするようになり、湯を入れて 0秒どん兵衛 とか 汁なしどん兵衛 を作ったり。今でも「どん兵衛」はこの食べ方をしてしまう。"},{"id":"p-014","kind":"paragraph","sourceHeading":null,"text":"不完全などん兵衛は青春時代の懐かしい思い出だ。"}]}],"sourceBlocks":[{"id":"p-001","kind":"paragraph","sourceHeading":null,"text":"1980年代中盤まで国内パソコン市場はPC88シリーズのNEC、X1シリーズのシャープ、FM-77シリーズの富士通がシノギを削っていたが1985年に発売されたPC-8801mkIISRで歴史は大きく動くことになる。"},{"id":"p-002","kind":"paragraph","sourceHeading":null,"text":"グラフィックスとサウンドが強化され、すぐに専用タイトルとして発売されたゲームアーツの「テグザー」と共に話題に。"},{"id":"p-003","kind":"paragraph","sourceHeading":null,"text":"これ以降、パソコンゲームを遊ぶならPC-8801mkIISRが標準となり暫くの間は「PC-8801mkIISR以降」の表記がゲームの品質保証的な役割を担うほどであった。"},{"id":"p-004","kind":"paragraph","sourceHeading":null,"text":"それくらいPC-8801mkIISR前後でパソコンゲームにおける表現力が変わったのだった。"},{"id":"p-005","kind":"paragraph","sourceHeading":null,"text":"前回紹介した友人Mも我慢出来なくなり後継機であるPC-8801MAを購入。"},{"id":"p-006","kind":"paragraph","sourceHeading":null,"text":"聞くとまた20万以上したという。今の紙幣価値だと倍くらいだと思う。"},{"id":"p-007","kind":"paragraph","sourceHeading":null,"text":"そして余程やりたかったのか「テグザー」を自慢げに見せてくれた。確かにFM-77のゲームとは違い滑らかなスクロールと戦闘機とロボットへの変型もスムーズだった。"},{"id":"p-008","kind":"paragraph","sourceHeading":null,"text":"が、自分的には「テグザー」よりも「レリクス」が衝撃で結構やらせてもらった。"},{"id":"p-009","kind":"paragraph","sourceHeading":null,"text":"パソコンゲーム独特のアダルトで謎めいた雰囲気と倒した敵に乗り移っていく斬新さに心奪われた。オープニングデモもカッコよかった。"},{"id":"p-010","kind":"paragraph","sourceHeading":null,"text":"他にはナムコの「グロブダー」「ドラゴンバスター」「イシターの復活」をよく遊んだがドラバスのゲームオーバー時に血まみれのクロービスのグラフィックになって急にリアルな画面によく大笑いしていた w"},{"id":"p-011","kind":"paragraph","sourceHeading":null,"text":"よくMに「アメリカントラック買ってくれよー」とか「バルタン星人の出る、ぎゃんぶらあ自己中心派買ってくれよー」とお願いしたが聞き入れてもらえなかった w"},{"id":"p-012","kind":"paragraph","sourceHeading":null,"text":"当時のパソコン雑誌に付録でソノシートがオマケでたまに付いていてそれをカセットに録音してパソコンにロードすることでプログラムをロードすることができた（音楽やゲーム）。我が家に良いコンポがあったので「録音させてくれー」とMがやってきてガーピーって音をひたすら録音するだけしてとっとと帰って暫くして「エラー出たからもう一回」とかもよくやってた w"},{"id":"p-013","kind":"paragraph","sourceHeading":null,"text":"Mの父親が職場でもらえるという大量に置いてあった「どん兵衛」をもらってよく深夜にみんなで食べた。だんだん変な食べ方をするようになり、湯を入れて 0秒どん兵衛 とか 汁なしどん兵衛 を作ったり。今でも「どん兵衛」はこの食べ方をしてしまう。"},{"id":"p-014","kind":"paragraph","sourceHeading":null,"text":"不完全などん兵衛は青春時代の懐かしい思い出だ。"}],"sourceLanguage":"ja","publicBodyAllowed":true}
+readingBlocks: []
 ---
-
-"作者把 PC-8801mkIISR 和《テグザー》视为八位电脑游戏表现力变化的标志。朋友 M 随后花二十多万日元购买 PC-8801MA，向大家展示流畅滚动和机器人变形；作者自己更喜欢《レリクス》的阴暗气氛、附身系统和开场演出。"

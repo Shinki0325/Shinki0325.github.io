@@ -1,5 +1,5 @@
 ---
-title: "Fami 通：视觉小说的诞生与繁盛（历史来源）"
+title: "Fami 通：视觉小说的诞生与繁盛"
 kind: source
 visibility: public
 librarySection: "社会背景"
@@ -21,11 +21,12 @@ retrievedAt: ""
 reliability: "medium-high"
 confidence: 0.8
 rightsStatus: "existing-public-archive"
-publicationBoundary: {"visibility":"production-authorized","publicReadingPage":false,"rightsStatus":"existing-public-archive","publicationDecision":"blog-manager-release-2026-07-25"}
+publicationBoundary: {"visibility":"current-public-reference","publicReadingPage":true,"rightsStatus":"existing-public-archive","publicationDecision":"requires-blog-manager-approval","ownerPublicationDecision":"blog-manager-p0-correction-2026-07-25"}
 readingMode: curated
 sourceLanguage: ja
 translationLanguage: zh-CN
+overview: ""
+sections: []
+sourceBlocks: []
 readingBlocks: []
 ---
-
-"Fami 通：视觉小说的诞生与繁盛"

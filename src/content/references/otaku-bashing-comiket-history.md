@@ -1,32 +1,32 @@
 ---
-title: "「オタク」バッシングに続き「有害コミック」騒動…コミケ存亡の危機を救ったのは"
+title: "御宅族批判与 Comic Market：1986 至 1995 年的会场、舆论和扩张"
 kind: source
 visibility: public
 librarySection: "社会背景"
 date: "2023-08-07"
 summary: "Comic Market 在 1986 年冬季因晴海会场档期紧张迁往東京流通センター。参加人数继续增长后，活动从一天延长为两天；1988 年回到晴海时，社团申请已经超过一万，两天制也就保留下来。"
-intro: "Comic Market 在 1986 年冬季因晴海会场档期紧张迁往東京流通センター。参加人数继续增长后，活动从一天延长为两天；1988 年回到晴海时，社团申请已经超过一万，两天制也就保留下来。"
-tags: ["society-regulation"]
-topics: ["galgame-90s"]
+intro: "Comic Market 在 1986 年冬季因晴海会场档期紧张迁往東京流通センター。参加人数继续增长后，活动从一天延长为两天；1988 年回到晴海时，社团申请已经超过一万，两天制也就保留下来。\n\n1989 年宮崎勤被捕后，媒体反复报道他参加过 Comic Market、家中保存大量动画与特摄录像，社会上随之出现把御宅族与犯罪相连的批判。C36 现场聚集了大量媒体，Comic Market 准备会因此建立更完整的宣传应对机制。报道同时让不少地方爱好者第一次知道东京有大型同人活动，参加人数和地方即卖会反而继续增加。文章把舆论压力、活动组织和同人文化扩张放在同一段历史里说明。"
+tags: ["社会与制度","同人文化","公共争议"]
+topics: ["美少女游戏史"]
 attachments: ["/uploads/reference-reading/otaku-bashing-comiket-history--source-original-ja.txt"]
 aliases: []
 draft: false
 sourceIds: ["media:tokyo-shimbun-otaku-bashing-comiket-2023"]
-sourceType: "major-newspaper-retrospective"
+sourceType: "专业综述"
 sourceTitle: "＜101回目からのコミックマーケット＞第2部　歴史をたどる③TRC、幕張メッセ、晴海（1986～95年）"
 sourceUrl: "https://www.tokyo-np.co.jp/article/265292"
 author: "東京新聞デジタル"
 publishedAt: "2023-08-07T17:00:00+09:00"
 publisher: "東京新聞"
 retrievedAt: "2026-07-12T14:18:00+08:00"
-reliability: "medium-high"
-confidence: 0.86
+reliability: "较高"
 rightsStatus: "archive-for-research"
-publicationBoundary: {"visibility":"production-authorized","rightsStatus":"archive-for-research","publicReadingPage":false,"publicationDecision":"blog-manager-release-2026-07-25","note":"已进入 Knowledge Source Catalog，但尚未批准为公开参考资料页。"}
+originalBoundary: {"visibility":"unpublished","publicReadingPage":false,"rightsStatus":"archive-for-research","publicationDecision":"requires-human-review","note":"已进入 Knowledge Source Catalog，但尚未批准为公开参考资料页。"}
+publicationBoundary: {"visibility":"unpublished","publicReadingPage":false,"rightsStatus":"archive-for-research","publicationDecision":"requires-human-review","note":"已进入 Knowledge Source Catalog，但尚未批准为公开参考资料页。"}
+ownerPublication: {"decision":"project-owner-authorized-all-layers","decidedAt":"2026-07-25","entrance":true,"overview":true,"chapterSummaries":true,"sourceBody":true,"attachments":true}
 readingMode: curated
-sourceLanguage: ja
-translationLanguage: zh-CN
-readingBlocks: [{"label":"资料总览 01","original":"Comic Market 在 1986 年冬季因晴海会场档期紧张迁往東京流通センター。参加人数继续增长后，活动从一天延长为两天；1988 年回到晴海时，社团申请已经超过一万，两天制也就保留下来。","focus":true},{"label":"资料总览 02","original":"1989 年宮崎勤被捕后，媒体反复报道他参加过 Comic Market、家中保存大量动画与特摄录像，社会上随之出现把御宅族与犯罪相连的批判。C36 现场聚集了大量媒体，Comic Market 准备会因此建立更完整的宣传应对机制。报道同时让不少地方爱好者第一次知道东京有大型同人活动，参加人数和地方即卖会反而继续增加。文章把舆论压力、活动组织和同人文化扩张放在同一段历史里说明。","focus":false},{"label":"迁往東京流通センター与两天制","original":"晴海会场因展览活动增加而无法继续提供档期，Comic Market 在 1986 年冬季迁往東京流通センター，并以延长到两天的方式容纳不断增加的参加者。","focus":false},{"label":"宮崎勤事件后的御宅族批判","original":"宮崎勤在 1989 年夏季 Comic Market 前被捕后，媒体把他的活动经历和录像收藏与御宅文化相连，Comic Market 也受到批判。大量采访迫使准备会建立专门的宣传应对机制。","focus":false},{"label":"报道扩大认知，地方即卖会增加","original":"负面报道意外提高了 Comic Market 在地方的知名度。女性同人作者和个人创作增加，商业出版社开始推出同人选集，地方城市也出现更多中型同人志即卖会。","focus":false}]
+sourceLanguage: "ja"
+translationLanguage: "zh-CN"
+readingDocument: {"overviewZh":["Comic Market 在 1986 年冬季因晴海会场档期紧张迁往東京流通センター。参加人数继续增长后，活动从一天延长为两天；1988 年回到晴海时，社团申请已经超过一万，两天制也就保留下来。","1989 年宮崎勤被捕后，媒体反复报道他参加过 Comic Market、家中保存大量动画与特摄录像，社会上随之出现把御宅族与犯罪相连的批判。C36 现场聚集了大量媒体，Comic Market 准备会因此建立更完整的宣传应对机制。报道同时让不少地方爱好者第一次知道东京有大型同人活动，参加人数和地方即卖会反而继续增加。文章把舆论压力、活动组织和同人文化扩张放在同一段历史里说明。"],"prefaceBlocks":[],"chapters":[{"id":"p-001","number":1,"titleZh":"迁往東京流通センター与两天制","summaryZh":"晴海会场因展览活动增加而无法继续提供档期，Comic Market 在 1986 年冬季迁往東京流通センター，并以延长到两天的方式容纳不断增加的参加者。","startBlockId":"p-001","sourceBlocks":[{"id":"p-001","kind":"paragraph","sourceHeading":null,"text":"＜101回目からのコミックマーケット＞第2部　歴史をたどる③TRC、幕張メッセ、晴海（1986～95年）"},{"id":"p-002","kind":"paragraph","sourceHeading":null,"text":"バブル景気による展示会増加のあおりで晴海の会場を借りられなくなったコミケは、1986年冬（ C31 ）から東京・平和島の東京流通センター（TRC）へと場所を移す。が、増え続ける参加者に対応しきれる広さではなく、苦肉の策として開催自体を2日間に増やして乗り切っていった。"},{"id":"p-003","kind":"heading","sourceHeading":"◆昭和から平成へ","text":"## ◆昭和から平成へ"},{"id":"p-004","kind":"paragraph","sourceHeading":null,"text":"「晴海をまた借りられたら、1日に戻すはずだったんだが…」"},{"id":"p-005","kind":"paragraph","sourceHeading":null,"text":"準備会の市川孝一共同代表が苦笑するように、88年夏（ C34 ）から再び晴海が使えるようになったものの、そのまま2日間開催が常態化。サークルの申込数が1万を超えるまでに膨れ上がっていたからだ。"}]},{"id":"p-006","number":2,"titleZh":"宮崎勤事件后的御宅族批判","summaryZh":"宮崎勤在 1989 年夏季 Comic Market 前被捕后，媒体把他的活动经历和录像收藏与御宅文化相连，Comic Market 也受到批判。大量采访迫使准备会建立专门的宣传应对机制。","startBlockId":"p-006","sourceBlocks":[{"id":"p-006","kind":"paragraph","sourceHeading":null,"text":"昭和天皇が崩御して元号が平成となり、「漫画の神様」手塚治虫さんが亡くなるなど大きな時代の変わり目となった89年、日本中を 震撼 （ しんかん ） させた東京・埼玉連続幼女誘拐殺人事件がコミケにも影響を及ぼす。"},{"id":"p-007","kind":"heading","sourceHeading":"◆事件の「思わぬ副作用」","text":"## ◆事件の「思わぬ副作用」"},{"id":"p-008","kind":"paragraph","sourceHeading":null,"text":"夏コミ（ C36 ）直前、宮崎勤元死刑囚＝当時（26）＝が逮捕され、コミケへの参加経験があったことや部屋からアニメや特撮を含む大量のビデオが見つかったことなどが報道されたのだ。アニメや漫画のファンを指す「オタク」への否定的な意味合いが強まり、事件と結び付けて犯罪者予備軍のようにたたく「オタクバッシング」が過熱。コミケ自体も批判の対象とされた。"},{"id":"p-009","kind":"paragraph","sourceHeading":null,"text":"「オタク」に否定的な内容が目立った当時の新聞や雑誌の記事"},{"id":"p-010","kind":"paragraph","sourceHeading":null,"text":"C36 にはマスコミが殺到。色眼鏡で見られることもあったが、取材対応に追われた準備会が広報体制を整えるきっかけに。さらに「思わぬ副作用も生じた」と準備会広報の里見直紀さん。テレビのニュースなどで広く報道されたことが、それまでコミケの存在を知らなかった地方のファンにも「東京で漫画の大イベントがあるらしい」との周知になり、さらに参加者が増える要因となったという。"}]},{"id":"p-011","number":3,"titleZh":"报道扩大认知，地方即卖会增加","summaryZh":"负面报道意外提高了 Comic Market 在地方的知名度。女性同人作者和个人创作增加，商业出版社开始推出同人选集，地方城市也出现更多中型同人志即卖会。","startBlockId":"p-011","sourceBlocks":[{"id":"p-011","kind":"heading","sourceHeading":"◆コミケの影響は地方にも","text":"## ◆コミケの影響は地方にも"},{"id":"p-012","kind":"paragraph","sourceHeading":null,"text":"当時は、車田正美さん作の漫画でアニメ化もされた 『 聖闘士星矢 （ セイントセイヤ ） 』 やテレビアニメ 『 鎧伝 （ よろいでん ） サムライトルーパー』 など、美少年キャラが活躍する作品が女性に大ヒット。同人誌の制作形態がグループから個人へと変わっていき、同人作家によるアンソロジー本が商業出版されることも。コミケの認知度が高まった結果、地方でも中規模の同人誌即売会が開かれていく。"},{"id":"p-013","kind":"paragraph","sourceHeading":null,"text":"世間の偏見という逆風の中、同人文化は裾野の広がりを見せていった。"}]}],"sourceBlocks":[{"id":"p-001","kind":"paragraph","sourceHeading":null,"text":"＜101回目からのコミックマーケット＞第2部　歴史をたどる③TRC、幕張メッセ、晴海（1986～95年）"},{"id":"p-002","kind":"paragraph","sourceHeading":null,"text":"バブル景気による展示会増加のあおりで晴海の会場を借りられなくなったコミケは、1986年冬（ C31 ）から東京・平和島の東京流通センター（TRC）へと場所を移す。が、増え続ける参加者に対応しきれる広さではなく、苦肉の策として開催自体を2日間に増やして乗り切っていった。"},{"id":"p-003","kind":"heading","sourceHeading":"◆昭和から平成へ","text":"## ◆昭和から平成へ"},{"id":"p-004","kind":"paragraph","sourceHeading":null,"text":"「晴海をまた借りられたら、1日に戻すはずだったんだが…」"},{"id":"p-005","kind":"paragraph","sourceHeading":null,"text":"準備会の市川孝一共同代表が苦笑するように、88年夏（ C34 ）から再び晴海が使えるようになったものの、そのまま2日間開催が常態化。サークルの申込数が1万を超えるまでに膨れ上がっていたからだ。"},{"id":"p-006","kind":"paragraph","sourceHeading":null,"text":"昭和天皇が崩御して元号が平成となり、「漫画の神様」手塚治虫さんが亡くなるなど大きな時代の変わり目となった89年、日本中を 震撼 （ しんかん ） させた東京・埼玉連続幼女誘拐殺人事件がコミケにも影響を及ぼす。"},{"id":"p-007","kind":"heading","sourceHeading":"◆事件の「思わぬ副作用」","text":"## ◆事件の「思わぬ副作用」"},{"id":"p-008","kind":"paragraph","sourceHeading":null,"text":"夏コミ（ C36 ）直前、宮崎勤元死刑囚＝当時（26）＝が逮捕され、コミケへの参加経験があったことや部屋からアニメや特撮を含む大量のビデオが見つかったことなどが報道されたのだ。アニメや漫画のファンを指す「オタク」への否定的な意味合いが強まり、事件と結び付けて犯罪者予備軍のようにたたく「オタクバッシング」が過熱。コミケ自体も批判の対象とされた。"},{"id":"p-009","kind":"paragraph","sourceHeading":null,"text":"「オタク」に否定的な内容が目立った当時の新聞や雑誌の記事"},{"id":"p-010","kind":"paragraph","sourceHeading":null,"text":"C36 にはマスコミが殺到。色眼鏡で見られることもあったが、取材対応に追われた準備会が広報体制を整えるきっかけに。さらに「思わぬ副作用も生じた」と準備会広報の里見直紀さん。テレビのニュースなどで広く報道されたことが、それまでコミケの存在を知らなかった地方のファンにも「東京で漫画の大イベントがあるらしい」との周知になり、さらに参加者が増える要因となったという。"},{"id":"p-011","kind":"heading","sourceHeading":"◆コミケの影響は地方にも","text":"## ◆コミケの影響は地方にも"},{"id":"p-012","kind":"paragraph","sourceHeading":null,"text":"当時は、車田正美さん作の漫画でアニメ化もされた 『 聖闘士星矢 （ セイントセイヤ ） 』 やテレビアニメ 『 鎧伝 （ よろいでん ） サムライトルーパー』 など、美少年キャラが活躍する作品が女性に大ヒット。同人誌の制作形態がグループから個人へと変わっていき、同人作家によるアンソロジー本が商業出版されることも。コミケの認知度が高まった結果、地方でも中規模の同人誌即売会が開かれていく。"},{"id":"p-013","kind":"paragraph","sourceHeading":null,"text":"世間の偏見という逆風の中、同人文化は裾野の広がりを見せていった。"}],"sourceLanguage":"ja","publicBodyAllowed":true}
+readingBlocks: []
 ---
-
-"Comic Market 在 1986 年冬季因晴海会场档期紧张迁往東京流通センター。参加人数继续增长后，活动从一天延长为两天；1988 年回到晴海时，社团申请已经超过一万，两天制也就保留下来。"

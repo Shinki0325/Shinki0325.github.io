@@ -2,156 +2,182 @@ import fs from "node:fs";
 import path from "node:path";
 
 const root = process.cwd();
-const authorityPath = "D:/blog-kb/processed/indexing/reference-reading-alignment-v1.json";
-const catalogPath = "D:/blog-kb/processed/indexing/reference-library-catalog-v1.json";
-const packageRoot = "D:/blog-kb/processed/reference-reading";
+const kbRoot = "D:/blog-kb";
+const authorityPath = path.join(kbRoot, "processed/indexing/reference-publication-correction-v1.json");
 const referencesRoot = path.join(root, "src/content/references");
-
+const attachmentsRoot = path.join(root, "public/uploads/reference-reading");
 const readJson = (file) => JSON.parse(fs.readFileSync(file, "utf8"));
-const slugify = (value) => value
-  .normalize("NFKC")
-  .toLowerCase()
-  .replace(/[^a-z0-9]+/g, "-")
-  .replace(/^-+|-+$/g, "")
-  .slice(0, 96) || "reference-source";
+const readPackage = (file, entry) => {
+  if (file.endsWith(".json")) return readJson(file);
+  const script = fs.readFileSync(file, "utf8");
+  const sectionsSource = script.match(/const sections = (\[[\s\S]*?\n\]);/u)?.[1];
+  const summaries = [...script.matchAll(/const fullSummary\d* = ('(?:[^'\\]|\\.)*');/gu)]
+    .map((match) => Function(`return ${match[1]}`)());
+  if (!sectionsSource) throw new Error(`Cannot parse pilot sections from ${file}`);
+  const sections = Function(`return ${sectionsSource}`)();
+  const sourceFile = path.join(path.dirname(file), "source-original-ja.txt");
+  const lines = fs.readFileSync(sourceFile, "utf8").replace(/^\uFEFF/u, "").split(/\r?\n/u);
+  return {
+    packageId: entry.content.packageId,
+    titleZh: entry.titleZh,
+    sourceLanguage: "ja",
+    overviewZh: summaries,
+    sections: sections.map((section) => ({
+      id: section.id,
+      titleZh: section.title,
+      summaryZh: section.summary,
+      startBlockId: `p-${String(section.start).padStart(3, "0")}`,
+    })),
+    body: {
+      file: "source-original-ja.txt",
+      paragraphs: lines.map((text, index) => ({
+        id: `p-${String(index + 1).padStart(3, "0")}`,
+        kind: "paragraph",
+        sourceHeading: null,
+        text,
+      })),
+    },
+    source: {},
+  };
+};
 const yaml = (value) => JSON.stringify(value ?? "");
 const validUrl = (value) => typeof value === "string" && /^https?:\/\//u.test(value) ? value : undefined;
 const date = (value) => value ? String(value).slice(0, 10) : "2026-07-25";
-
 const authority = readJson(authorityPath);
-const catalog = readJson(catalogPath);
-const catalogSlugBySourceId = new Map(
-  (catalog.references ?? []).flatMap((item) =>
-    (item.source?.sourceIds ?? []).map((sourceId) => [sourceId, item.slug]),
-  ),
-);
-const rows = authority.rows.filter((row) => ["publish-entry", "topic-index"].includes(row.publicationDisposition));
-const packages = new Map();
-const walk = (dir) => {
-  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-    const target = path.join(dir, entry.name);
-    if (entry.isDirectory()) walk(target);
-    else if (entry.name === "reading-package.json") {
-      try {
-        const pkg = readJson(target);
-        if (pkg.sourceId) packages.set(pkg.sourceId, { ...pkg, dir: path.dirname(target) });
-      } catch (error) {
-        console.warn(`PACKAGE_PARSE_FAILED ${target}: ${error.message}`);
-      }
-    }
-  }
-};
-walk(packageRoot);
 
-const existingBySourceId = new Map();
-const existingFiles = new Set(fs.readdirSync(referencesRoot).filter((file) => file.endsWith(".md")));
-for (const file of fs.readdirSync(referencesRoot)) {
-  if (!file.endsWith(".md")) continue;
-  const text = fs.readFileSync(path.join(referencesRoot, file), "utf8");
-  const inline = text.match(/^sourceIds:\s*(\[[^\n]+\])/m)?.[1];
-  const multiline = text.match(/^sourceIds:\s*\n((?:\s+-\s+.*\n)+)/m)?.[1];
-  const sourceIds = inline ? JSON.parse(inline) : (multiline?.trim().split("\n") ?? []).map((line) => line.replace(/^\s*-\s+/, "").trim().replace(/^['"]|['"]$/g, ""));
-  for (const sourceId of sourceIds) if (sourceId) existingBySourceId.set(sourceId, file);
-}
+if (authority.entries?.length !== 59) throw new Error(`Expected 59 authority rows, received ${authority.entries?.length}`);
+if (authority.entries.filter((entry) => entry.route.kind === "source").length !== 58) throw new Error("Expected 58 source rows");
+if (authority.entries.filter((entry) => entry.route.kind === "topic").length !== 1) throw new Error("Expected one topic row");
 
-const usedSlugs = new Set();
-const slugFor = (row, pkg) => {
-  const current = existingBySourceId.get(row.sourceIds?.[0]);
-  if (current) return current.replace(/\.md$/u, "");
-  const catalogSlug = row.sourceIds?.map((sourceId) => catalogSlugBySourceId.get(sourceId)).find(Boolean);
-  if (catalogSlug) return catalogSlug;
-  const base = slugify(pkg?.packageId ?? row.id.replace(/^.*:/, ""));
-  let slug = base;
-  let index = 2;
-  while (usedSlugs.has(slug)) slug = `${base}-${index++}`;
-  usedSlugs.add(slug);
-  return slug;
+const sectionFor = (domain) => {
+  if (/creation|genre|industry/iu.test(domain)) return "作品与人物";
+  if (/market|player|place|reception|media/iu.test(domain)) return "回忆、讨论与后见视角";
+  return "社会背景";
 };
 
-const section = (row, pkg) => {
-  const domain = row.primaryDomain ?? pkg?.primaryDomain ?? "historical-source";
-  if (/creation|industry|creator/i.test(domain)) return "\u4f5c\u54c1\u4e0e\u4eba\u7269";
-  if (/market|player|place|reception|media/i.test(domain)) return "\u56de\u5fc6\u3001\u8ba8\u8bba\u4e0e\u540e\u89c1\u89c6\u89d2";
-  return "\u793e\u4f1a\u80cc\u666f";
-};
+const ownerPublicationFor = (entry) => ({
+  decision: entry.authorization.decision,
+  decidedAt: entry.authorization.authorizedAt,
+  entrance: entry.effectivePublication.entrance,
+  overview: entry.effectivePublication.overviewZh,
+  chapterSummaries: entry.effectivePublication.sectionSummariesZh,
+  sourceBody: entry.effectivePublication.completeSourceBody,
+  attachments: entry.effectivePublication.attachment,
+});
 
-const bodyFor = (row, pkg) => {
-  const overview = pkg?.overviewZh ?? [];
-  const sections = pkg?.sections ?? [];
-  const blocks = [
-    ...overview.slice(0, 3).map((text, index) => ({ label: `资料总览 ${String(index + 1).padStart(2, "0")}`, original: text, focus: index === 0 })),
-    ...sections.slice(0, 8).map((item) => ({ label: item.titleZh, original: item.summaryZh, focus: false })),
-  ].filter((block) => block.original?.trim());
-  return blocks;
-};
-
-const render = (row, pkg, slug) => {
-  const source = pkg?.source ?? {};
-  const boundary = {
-    ...(pkg?.boundary ?? {}),
-    ...(row.publicationBoundary ?? {}),
-    visibility: "production-authorized",
-    publicationDecision: "blog-manager-release-2026-07-25",
+const readingDocumentFor = (pkg, ownerPublication) => {
+  const sourceBlocks = ownerPublication.sourceBody ? [...(pkg.body?.paragraphs ?? [])] : [];
+  const blockIndex = new Map(sourceBlocks.map((block, index) => [block.id, index]));
+  const sections = pkg.sections ?? [];
+  const ids = new Set();
+  let previousStart = -1;
+  const starts = sections.map((section) => {
+    if (!section.id || ids.has(section.id)) throw new Error(`Duplicate chapter id ${section.id} in ${pkg.packageId}`);
+    ids.add(section.id);
+    const index = blockIndex.get(section.startBlockId);
+    if (index === undefined) throw new Error(`Missing chapter anchor ${section.startBlockId} in ${pkg.packageId}`);
+    if (index <= previousStart) throw new Error(`Out-of-order chapter anchor ${section.startBlockId} in ${pkg.packageId}`);
+    previousStart = index;
+    return index;
+  });
+  return {
+    overviewZh: ownerPublication.overview ? (pkg.overviewZh ?? []) : [],
+    prefaceBlocks: starts.length ? sourceBlocks.slice(0, starts[0]) : [],
+    chapters: sections.map((section, index) => ({
+      id: section.id,
+      number: index + 1,
+      titleZh: section.titleZh,
+      summaryZh: ownerPublication.chapterSummaries ? section.summaryZh : undefined,
+      startBlockId: section.startBlockId,
+      sourceBlocks: sourceBlocks.slice(starts[index], starts[index + 1]),
+    })),
+    sourceBlocks,
+    sourceLanguage: pkg.sourceLanguage ?? "ja",
+    publicBodyAllowed: ownerPublication.sourceBody,
   };
-  const tags = row.proposedTags?.length ? row.proposedTags : pkg?.tags ?? [];
-  const topics = row.topic ? [row.topic] : pkg?.topic ? [pkg.topic] : [];
-  const blocks = bodyFor(row, pkg);
-  const attachments = [];
-  const packageText = pkg?.body?.file;
-  if (packageText) {
-    const candidate = path.join(pkg.dir, packageText);
-    if (fs.existsSync(candidate)) {
-      const archiveName = `${slug}--${path.basename(candidate)}`;
-      const publicTarget = path.join(root, "public/uploads/reference-reading", archiveName);
-      fs.mkdirSync(path.dirname(publicTarget), { recursive: true });
-      fs.copyFileSync(candidate, publicTarget);
-      attachments.push(`/uploads/reference-reading/${archiveName}`);
-    }
-  }
-  return `---\n` +
-    `title: ${yaml(row.title ?? pkg?.titleZh ?? source.title)}\n` +
-    `kind: ${row.publicationDisposition === "topic-index" ? "topic" : "source"}\n` +
-    `visibility: public\n` +
-    `librarySection: ${yaml(section(row, pkg))}\n` +
-    `date: ${yaml(date(source.publishedAt ?? source.retrievedAt))}\n` +
-    `summary: ${yaml((pkg?.overviewZh ?? [])[0] ?? row.title)}\n` +
-    `intro: ${yaml((pkg?.overviewZh ?? [])[0] ?? row.title)}\n` +
-    `tags: ${yaml(tags)}\n` +
-    `topics: ${yaml(topics)}\n` +
-    `attachments: ${yaml(attachments)}\n` +
-    `aliases: []\n` +
-    `draft: false\n` +
-    `sourceIds: ${yaml(row.sourceIds ?? [pkg?.sourceId])}\n` +
-    `sourceType: ${yaml(source.sourceType ?? row.sourceType)}\n` +
-    `sourceTitle: ${yaml(source.title ?? pkg?.sourceTitle)}\n` +
-    `${validUrl(source.url) ? `sourceUrl: ${yaml(source.url)}\n` : ""}` +
-    `author: ${yaml(source.author || undefined)}\n` +
-    `publishedAt: ${yaml(source.publishedAt || undefined)}\n` +
-    `publisher: ${yaml(source.publisher || undefined)}\n` +
-    `retrievedAt: ${yaml(source.retrievedAt ?? undefined)}\n` +
-    `reliability: ${yaml(row.reliability ?? source.reliability)}\n` +
-    `confidence: ${source.confidence ?? row.confidence ?? ""}\n` +
-    `rightsStatus: ${yaml(row.rightsStatus ?? boundary.rightsStatus)}\n` +
-    `publicationBoundary: ${yaml(boundary)}\n` +
-    `readingMode: curated\n` +
-    `sourceLanguage: ja\n` +
-    `translationLanguage: zh-CN\n` +
-    `readingBlocks: ${yaml(blocks)}\n` +
-    `---\n`;
 };
 
-const unmatched = [];
-const generated = [];
-for (const row of rows) {
-  const pkg = row.sourceIds?.map((id) => packages.get(id)).find(Boolean);
-  if (!pkg && row.origin === "unpublished-historical") unmatched.push(row.id);
-  const slug = slugFor(row, pkg);
-  const target = path.join(referencesRoot, `${slug}.md`);
-  if (!existingFiles.has(`${slug}.md`) || row.origin === "unpublished-historical") {
-    fs.writeFileSync(target, render(row, pkg, slug), "utf8");
-    generated.push(slug);
+const existing = new Map();
+for (const file of fs.readdirSync(referencesRoot).filter((file) => file.endsWith(".md"))) {
+  existing.set(file.replace(/\.md$/u, ""), fs.readFileSync(path.join(referencesRoot, file), "utf8"));
+}
+const existingField = (source, name) => source.match(new RegExp(`^${name}:\\s*(.+)$`, "mu"))?.[1];
+
+const allowedAttachments = new Set();
+const generatedSlugs = new Set();
+for (const entry of authority.entries) {
+  const slug = entry.route.slug;
+  const previous = existing.get(slug) ?? "";
+  const pkg = entry.content.packagePath ? readPackage(path.join(kbRoot, entry.content.packagePath), entry) : null;
+  const ownerPublication = ownerPublicationFor(entry);
+  const source = pkg?.source ?? {};
+  const topic = entry.route.kind === "topic";
+  const readingDocument = !topic && pkg ? readingDocumentFor(pkg, ownerPublication) : undefined;
+  const attachment = ownerPublication.attachments ? entry.content.attachmentPath : null;
+  const attachments = attachment ? [attachment] : [];
+  const tags = [entry.displayTaxonomy.primaryDomain.labelZh, ...(entry.displayTaxonomy.associationTags ?? [])];
+
+  if (attachment && pkg?.body?.file) {
+    const packagePath = path.join(kbRoot, entry.content.packagePath);
+    const sourceFile = path.join(fs.statSync(packagePath).isDirectory() ? packagePath : path.dirname(packagePath), pkg.body.file);
+    const publicPath = attachment.replace(/^\//u, "").replace(/^uploads\//u, "public/uploads/");
+    const target = path.join(root, publicPath);
+    fs.mkdirSync(path.dirname(target), { recursive: true });
+    fs.copyFileSync(sourceFile, target);
+    allowedAttachments.add(path.basename(target));
+  }
+
+  const title = entry.titleZh ?? pkg?.titleZh ?? existingField(previous, "title") ?? slug;
+  const summary = pkg?.overviewZh?.[0] ?? existingField(previous, "summary") ?? title;
+  const frontmatter = [
+    "---",
+    `title: ${yaml(title)}`,
+    `kind: ${topic ? "topic" : "source"}`,
+    "visibility: public",
+    `librarySection: ${yaml(sectionFor(entry.displayTaxonomy.primaryDomain.id))}`,
+    `date: ${yaml(date(source.publishedAt ?? source.retrievedAt ?? entry.displayTaxonomy.facets.publishedAt))}`,
+    `summary: ${yaml(summary)}`,
+    `intro: ${yaml((pkg?.overviewZh ?? []).join("\n\n") || summary)}`,
+    `tags: ${yaml(tags)}`,
+    `topics: ${yaml(entry.displayTaxonomy.facets.topic ? [entry.displayTaxonomy.facets.topic] : [])}`,
+    `attachments: ${yaml(attachments)}`,
+    "aliases: []",
+    "draft: false",
+    `sourceIds: ${yaml(entry.sourceIds)}`,
+    `sourceType: ${yaml(entry.displayTaxonomy.sourceType.labelZh)}`,
+    `sourceTitle: ${yaml(source.title ?? pkg?.sourceTitle ?? title)}`,
+    ...(validUrl(source.url) ? [`sourceUrl: ${yaml(source.url)}`] : []),
+    `author: ${yaml(source.author || undefined)}`,
+    `publishedAt: ${yaml(source.publishedAt || undefined)}`,
+    `publisher: ${yaml(source.publisher || undefined)}`,
+    `retrievedAt: ${yaml(source.retrievedAt ?? entry.displayTaxonomy.facets.retrievedAt ?? undefined)}`,
+    `reliability: ${yaml(entry.displayTaxonomy.facets.reliability)}`,
+    `rightsStatus: ${yaml(entry.originalRightsStatus)}`,
+    `originalBoundary: ${yaml(entry.originalBoundary)}`,
+    `publicationBoundary: ${yaml(entry.originalBoundary)}`,
+    `ownerPublication: ${yaml(ownerPublication)}`,
+    `readingMode: ${topic ? "extract" : "curated"}`,
+    `sourceLanguage: ${yaml(pkg?.sourceLanguage ?? "ja")}`,
+    `translationLanguage: "zh-CN"`,
+    `readingDocument: ${yaml(readingDocument)}`,
+    "readingBlocks: []",
+    "---",
+    "",
+  ].join("\n");
+  fs.writeFileSync(path.join(referencesRoot, `${slug}.md`), frontmatter, "utf8");
+  generatedSlugs.add(slug);
+}
+
+for (const file of fs.readdirSync(attachmentsRoot)) {
+  if (file.endsWith("--source-original-ja.txt") && !allowedAttachments.has(file)) {
+    fs.rmSync(path.join(attachmentsRoot, file));
   }
 }
 
-console.log(JSON.stringify({ authority: rows.length, sources: rows.filter((r) => r.publicationDisposition === "publish-entry").length, topics: rows.filter((r) => r.publicationDisposition === "topic-index").length, generated: generated.length, packages: packages.size, unmatched }, null, 2));
-if (unmatched.length) process.exitCode = 2;
+console.log(JSON.stringify({
+  authority: authority.entries.length,
+  sources: authority.entries.filter((entry) => entry.route.kind === "source").length,
+  topics: authority.entries.filter((entry) => entry.route.kind === "topic").length,
+  attachments: allowedAttachments.size,
+  generated: generatedSlugs.size,
+}, null, 2));

@@ -47,6 +47,29 @@ const readingBlockSchema = z.object({
   note: z.string().optional(),
   focus: z.boolean().default(false),
 });
+const readingSectionSchema = z.object({ title: z.string(), anchor: z.string().optional(), summary: z.string() });
+const sourceBlockSchema = z.object({
+  id: z.string(),
+  kind: z.enum(["heading", "paragraph"]),
+  sourceHeading: z.string().nullish(),
+  text: z.string(),
+});
+const chapterSchema = z.object({
+  id: z.string(),
+  number: z.number(),
+  titleZh: z.string(),
+  summaryZh: z.string().optional(),
+  startBlockId: z.string(),
+  sourceBlocks: z.array(sourceBlockSchema),
+});
+const readingDocumentSchema = z.object({
+  overviewZh: z.array(z.string()),
+  prefaceBlocks: z.array(sourceBlockSchema),
+  chapters: z.array(chapterSchema),
+  sourceBlocks: z.array(sourceBlockSchema),
+  sourceLanguage: z.string().optional(),
+  publicBodyAllowed: z.boolean(),
+});
 
 export const referenceSchema = z.object({
   title: z.string(),
@@ -77,6 +100,12 @@ export const referenceSchema = z.object({
   sourceLanguage: z.string().optional(),
   translationLanguage: z.string().optional(),
   readingBlocks: z.array(readingBlockSchema).default([]),
+  overview: z.string().optional(),
+  sections: z.array(readingSectionSchema).default([]),
+  sourceBlocks: z.array(readingBlockSchema).default([]),
+  readingDocument: readingDocumentSchema.optional(),
+  originalBoundary: z.record(z.string(), z.unknown()).optional(),
+  ownerPublication: z.record(z.string(), z.unknown()).optional(),
   sourceIds: z.array(z.string()).default([]),
   retrievedAt: z.string().optional(),
   reliability: z.string().optional(),

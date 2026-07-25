@@ -8,6 +8,10 @@ vi.mock("../src/lib/reference-extract", () => ({
 }));
 
 describe("buildReferenceReadingState", () => {
+  const publicationBoundary = {
+    publicReadingPage: true,
+    ownerPublicationDecision: "blog-manager-p0-correction-2026-07-25",
+  };
   beforeEach(() => {
     vi.clearAllMocks();
   });
@@ -15,6 +19,7 @@ describe("buildReferenceReadingState", () => {
   it("returns curated mode when usable reading blocks exist and mode is curated", () => {
     const state = buildReferenceReadingState({
       readingMode: "curated",
+      publicationBoundary,
       readingBlocks: [
         {
           label: "empty",
@@ -46,7 +51,8 @@ describe("buildReferenceReadingState", () => {
           translation: "一段可用正文。"
         }
       ],
-      attachments: ["/uploads/fallback.txt"]
+      attachments: ["/uploads/fallback.txt"],
+      publicationBoundary,
     });
 
     expect(state.mode).toBe("extract");
@@ -58,6 +64,7 @@ describe("buildReferenceReadingState", () => {
   it("returns extract mode when readingMode is extract even if usable blocks exist", () => {
     const state = buildReferenceReadingState({
       readingMode: "extract",
+      publicationBoundary,
       readingBlocks: [
         {
           original: "A usable paragraph.",
@@ -76,6 +83,7 @@ describe("buildReferenceReadingState", () => {
   it("falls back to extract mode when no usable curated blocks are available", () => {
     const state = buildReferenceReadingState({
       readingMode: "curated",
+      publicationBoundary,
       readingBlocks: [
         {
           original: "   ",
