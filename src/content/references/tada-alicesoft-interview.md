@@ -2,11 +2,11 @@
 title: "TADA 回看 AliceSoft 的三十年制作"
 kind: source
 visibility: public
-librarySection: "作品与人物"
+librarySection: "创作与制作"
 date: "2019-08-01"
 summary: "TADA 从 AliceSoft 的早期经历谈起，回顾自己怎样进入美少女游戏行业，怎样在少人数团队里做出《兰斯》和《斗神都市》，以及作品规模扩大后开发现场发生了什么变化。"
 intro: "TADA 从 AliceSoft 的早期经历谈起，回顾自己怎样进入美少女游戏行业，怎样在少人数团队里做出《兰斯》和《斗神都市》，以及作品规模扩大后开发现场发生了什么变化。\n\n访谈里有许多和机器直接相关的回忆：软盘容量不够、作品越来越大、硬盘安装成为现实选择，Windows 95 和 CD-ROM 又把开发环境推向新的阶段。技术变化在这里不是抽象的规格表，而是开发者被迫重新安排内容和工作量。\n\nTADA 对《Rance IV》《斗神都市 II》以及后续作品的回忆，也能帮助我们理解 AliceSoft 的制作路线：每一作都继承前作的经验，同时又因为人员、容量和开发目标变化而改变形状。它是亲历者回忆，不应替代说明书和销售资料，但对制作过程和行业经验具有很高价值。"
-tags: ["创作与制作","存储介质","操作系统"]
+tags: ["存储介质","操作系统"]
 topics: ["美少女游戏史"]
 attachments: ["/uploads/reference-reading/tada-alicesoft-interview--source-original-ja.txt"]
 aliases: []

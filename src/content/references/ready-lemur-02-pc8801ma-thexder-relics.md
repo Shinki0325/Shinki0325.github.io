@@ -2,11 +2,11 @@
 title: "パソコンゲーム回顾录（二）：PC-8801MA、《テグザー》与《レリクス》"
 kind: source
 visibility: public
-librarySection: "回忆、讨论与后见视角"
+librarySection: "玩家与社群"
 date: "2026-04-19"
 summary: "作者把 PC-8801mkIISR 和《テグザー》视为八位电脑游戏表现力变化的标志。朋友 M 随后花二十多万日元购买 PC-8801MA，向大家展示流畅滚动和机器人变形；作者自己更喜欢《レリクス》的阴暗气氛、附身系统和开场演出。"
 intro: "作者把 PC-8801mkIISR 和《テグザー》视为八位电脑游戏表现力变化的标志。朋友 M 随后花二十多万日元购买 PC-8801MA，向大家展示流畅滚动和机器人变形；作者自己更喜欢《レリクス》的阴暗气氛、附身系统和开场演出。\n\n文章还记下杂志附送ソノシート的使用方式：把唱片里的程序声音录进磁带，再由电脑读入，任何录音误差都可能要求重来。新机器、杂志附录、朋友家的音响和深夜聚会共同构成了当时接触软件的实际环境。"
-tags: ["玩家与社群","家庭游玩环境","专业杂志"]
+tags: ["家庭游玩环境","专业杂志"]
 topics: ["美少女游戏史"]
 attachments: ["/uploads/reference-reading/ready-lemur-02-pc8801ma-thexder-relics--source-original-ja.txt"]
 aliases: []

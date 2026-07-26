@@ -7,6 +7,8 @@ const BACKGROUND_PATHS = [
   "/uploads/backgrounds/nonhome/background-04.webp",
   "/uploads/backgrounds/nonhome/background-05.webp",
   "/uploads/backgrounds/nonhome/background-06.webp",
+  "/uploads/backgrounds/nonhome/background-07.webp",
+  "/uploads/backgrounds/nonhome/background-08.webp",
 ] as const;
 
 const LOCAL_BACKGROUND_PREFIX = "/uploads/backgrounds/nonhome/";
@@ -210,6 +212,59 @@ test("non-home background preloads and rotates against the persisted deadline", 
 
   await page.clock.fastForward(55_000);
   await expect.poll(() => backgroundRequests.length).toBe(3);
+});
+
+test("non-home background can deterministically select the seventh and eighth local assets", async ({
+  context,
+  page,
+}) => {
+  await dismissSplash(page);
+  await page.addInitScript(
+    ({ key }) => {
+      if (!sessionStorage.getItem(key)) {
+        sessionStorage.setItem(
+          key,
+          JSON.stringify({ activeIndex: 6, nextRotationAt: Date.now() + 60_000 }),
+        );
+      }
+    },
+    { key: BACKGROUND_STATE_KEY },
+  );
+  const cdp = await context.newCDPSession(page);
+  await cdp.send("Network.enable");
+  await cdp.send("Network.setCacheDisabled", { cacheDisabled: true });
+
+  const localRequests: string[] = [];
+  const remoteRequests: string[] = [];
+  page.on("request", (request) => {
+    const url = request.url();
+    if (url.includes(LOCAL_BACKGROUND_PREFIX)) localRequests.push(url);
+    if (url.includes("pic.imgdd.cc")) remoteRequests.push(url);
+  });
+
+  await page.goto("/articles/", { waitUntil: "domcontentloaded" });
+  const slider = page.locator("[data-background-slider]");
+  await expect(slider).toHaveAttribute("data-background-active-index", "6");
+  await expect.poll(() => localRequests.some((url) => requestedPath(url, BACKGROUND_PATHS[6]))).toBe(true);
+
+  await page.evaluate(
+    ({ key }) => {
+      sessionStorage.setItem(
+        key,
+        JSON.stringify({ activeIndex: 7, nextRotationAt: Date.now() + 60_000 }),
+      );
+    },
+    { key: BACKGROUND_STATE_KEY },
+  );
+  await page.goto("/notes/", { waitUntil: "domcontentloaded" });
+  await expect(slider).toHaveAttribute("data-background-active-index", "7");
+  await expect.poll(() => localRequests.some((url) => requestedPath(url, BACKGROUND_PATHS[7]))).toBe(true);
+
+  const requestedBackgrounds = new Set(
+    localRequests.filter((url) => BACKGROUND_PATHS.some((path) => requestedPath(url, path))),
+  );
+  expect(requestedBackgrounds.size).toBe(2);
+  expect(remoteRequests).toHaveLength(0);
 });
 
 test("non-home background survives blocked session storage", async ({ page }) => {

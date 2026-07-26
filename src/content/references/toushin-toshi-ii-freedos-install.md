@@ -2,11 +2,11 @@
 title: "在 PC-98 模拟环境安装《斗神都市 II》：FreeDOS(98)、HDD 与换盘"
 kind: source
 visibility: public
-librarySection: "社会背景"
+librarySection: "平台与技术"
 date: "2025-07-12"
 summary: "这篇实操记录先用 DiskExplorer 编辑 PC-98 的 HDD 镜像，把 FreeDOS(98) 所需文件复制进去，再在 Neko Project II 模拟器中启动这块硬盘。启动后，HDD 被分配为 A:，第一台软驱被分配为 B:，这与现代 Windows 下常见的盘符顺序不同。"
 intro: "这篇实操记录先用 DiskExplorer 编辑 PC-98 的 HDD 镜像，把 FreeDOS(98) 所需文件复制进去，再在 Neko Project II 模拟器中启动这块硬盘。启动后，HDD 被分配为 A:，第一台软驱被分配为 B:，这与现代 Windows 下常见的盘符顺序不同。\n\n作者随后从 AliceSoft 档案站取得《斗神都市 II》PC-9801 版的 11 张软盘镜像，把第一张放入 FDD1，在 B: 盘运行 `alsmenu b: a:`。安装程序每完成一张盘就要求换入下一张，全部复制到硬盘后退出软盘并重启，游戏目录 ALICE_T2 便可从 HDD 中调用。文章保存了现代模拟环境中复现多盘游戏安装时实际出现的盘符、命令和换盘顺序。"
-tags: ["平台与技术","操作系统","存储介质"]
+tags: ["操作系统","存储介质"]
 topics: ["美少女游戏史"]
 attachments: ["/uploads/reference-reading/toushin-toshi-ii-freedos-install--source-original-ja.txt"]
 aliases: []

@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import matter from "gray-matter";
 import {
   buildReferenceIntro,
   buildRelatedReferenceSlugs,
@@ -8,6 +9,29 @@ import {
 } from "../src/lib/reference-library";
 
 describe("partitionReferenceLibrary", () => {
+  it("groups every Knowledge primary domain without dropping source entries", () => {
+    const domains = [
+      "类型与叙事",
+      "创作与制作",
+      "平台与技术",
+      "产业与会社",
+      "市场与流通",
+      "媒体与传播",
+      "玩家与社群",
+      "社会与制度",
+      "地域与日常",
+      "作品接受与影响",
+    ] as const;
+    const entries = domains.map((librarySection, index) => ({
+      slug: `source-${index}`,
+      data: { kind: "source" as const, title: librarySection, summary: librarySection, librarySection },
+    }));
+    const result = partitionReferenceLibrary(entries);
+
+    expect(result.sourceGroups.map((group) => group.section)).toEqual(domains);
+    expect(result.sourceGroups.flatMap((group) => group.entries)).toHaveLength(entries.length);
+  });
+
   it("preserves topic and source kinds in the overview adapter contract", async () => {
     const referencesSource = await import("node:fs/promises").then((fs) =>
       fs.readFile("src/pages/references/index.astro", "utf8")
@@ -207,6 +231,43 @@ describe("buildReferenceSourceNeighbors", () => {
 });
 
 describe("production reference authority", () => {
+  it("keeps primary domains separate from controlled association tags for all 59 entries", async () => {
+    const { readFile } = await import("node:fs/promises");
+    const { join } = await import("node:path");
+    const kbRoot = process.platform === "win32" ? "D:/blog-kb" : "/mnt/d/blog-kb";
+    const authority = JSON.parse(
+      await readFile(join(kbRoot, "processed/indexing/reference-publication-correction-v1.json"), "utf8"),
+    ) as {
+      entries: Array<{
+        route: { slug: string };
+        displayTaxonomy: {
+          primaryDomain: { labelZh: string };
+          associationTags?: string[];
+        };
+      }>;
+    };
+    const vocabulary = JSON.parse(
+      await readFile(join(kbRoot, "processed/indexing/public-tag-vocabulary-v1.json"), "utf8"),
+    ) as { rules: { visibleMinimumEntryCount: number } };
+    const counts = new Map<string, number>();
+
+    expect(authority.entries).toHaveLength(59);
+    for (const entry of authority.entries) {
+      const source = await readFile(join("src/content/references", `${entry.route.slug}.md`), "utf8");
+      const data = matter(source).data as { librarySection?: string; tags?: string[] };
+      const associationTags = entry.displayTaxonomy.associationTags ?? [];
+
+      expect(data.librarySection, entry.route.slug).toBe(entry.displayTaxonomy.primaryDomain.labelZh);
+      expect(data.tags, entry.route.slug).toEqual(associationTags);
+      expect(data.tags, entry.route.slug).not.toContain(entry.displayTaxonomy.primaryDomain.labelZh);
+      associationTags.forEach((tag) => counts.set(tag, (counts.get(tag) ?? 0) + 1));
+    }
+
+    const visibleTags = [...counts].filter(([, count]) => count >= vocabulary.rules.visibleMinimumEntryCount);
+    expect(counts.size).toBe(34);
+    expect(visibleTags).toHaveLength(24);
+  });
+
   it("keeps distinct owner-authorized entrances even when they share a source URL", () => {
     const sharedSourceUrl = "https://example.com/shared-source";
     const entries = [

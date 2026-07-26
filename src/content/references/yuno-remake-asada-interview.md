@@ -2,11 +2,11 @@
 title: "浅田诚谈《YU-NO》重制：版权、原作与已故创作者"
 kind: source
 visibility: public
-librarySection: "作品与人物"
+librarySection: "创作与制作"
 date: "2014-12-29"
 summary: "2014 年，MAGES. 宣布重制 elf 于 1996 年推出的《YU-NO》。制作人浅田诚回忆，他在 2013 年夏开始与 elf 交涉；此前已有许多公司提出重制，但都未获同意。由于菅野ひろゆき已经去世，elf 内部也缺少能够继续监修作品的人，双方最后没有采用普通授权，而是在 2014 年 2 月完成版权转让。"
 intro: "2014 年，MAGES. 宣布重制 elf 于 1996 年推出的《YU-NO》。制作人浅田诚回忆，他在 2013 年夏开始与 elf 交涉；此前已有许多公司提出重制，但都未获同意。由于菅野ひろゆき已经去世，elf 内部也缺少能够继续监修作品的人，双方最后没有采用普通授权，而是在 2014 年 2 月完成版权转让。\n\n浅田还谈到已故作曲家梅本竜。两人在ケイブ共事时曾讨论过重新制作《YU-NO》，这段约定成为项目的个人动机。新作计划保留约九成五的原剧本，只调整陈旧表述和无法通过现行伦理规范的部分；角色设计和声优阵容则重新制作。访谈后半还介绍了同期的《ミステリートF》《サイコパス》和 MAGES. 的其他项目。"
-tags: ["创作与制作"]
+tags: []
 topics: ["美少女游戏史"]
 attachments: ["/uploads/reference-reading/yuno-remake-asada-interview--source-original-ja.txt"]
 aliases: []

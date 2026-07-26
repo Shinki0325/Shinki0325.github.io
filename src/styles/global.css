@@ -30,6 +30,7 @@
   --backdrop-veil-opacity: 1;
   --site-font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
   --nav-height: 58px;
+  --top-nav-shell-height: 72px;
   --nav-max-width: 1052px;
   --nav-padding-x: 16px;
   --nav-blur: 24px;
@@ -329,7 +330,7 @@ button:disabled,
   position: fixed;
   inset: 0 0 auto;
   z-index: 50;
-  height: 72px;
+  height: var(--top-nav-shell-height);
   border-bottom: 1px solid var(--line);
   background: color-mix(in srgb, var(--bg-ink-soft) 86%, transparent);
   box-shadow: 0 12px 30px rgba(2, 6, 23, 0.34);
@@ -3101,11 +3102,11 @@ a.home-feature-card {
   }
 
   .top-nav-shell {
-    height: 72px;
+    height: var(--top-nav-shell-height);
   }
 
   .top-nav-inner {
-    height: 72px;
+    height: var(--top-nav-shell-height);
     padding: 0 10px;
   }
 

@@ -2,11 +2,11 @@
 title: "PC-98兼容机：BIOS争议与和解"
 kind: source
 visibility: public
-librarySection: "社会背景"
+librarySection: "平台与技术"
 date: "2014-12-30"
 summary: "这篇法律专业文章从 PC-9800 与 EPSON 兼容机的竞争写起，先介绍日本电脑市场中 PC-9800、X68000、FM TOWNS 等不同平台并存的情况，再说明 EPSON 兼容机为何会触及 NEC 的市场利益。"
 intro: "这篇法律专业文章从 PC-9800 与 EPSON 兼容机的竞争写起，先介绍日本电脑市场中 PC-9800、X68000、FM TOWNS 等不同平台并存的情况，再说明 EPSON 兼容机为何会触及 NEC 的市场利益。\n\n文章的核心是 BIOS 著作权争议。NEC 认为 EPSON 的 BIOS 依赖了自己的程序，EPSON 则主张 BIOS 是独立开发；双方最后通过更换 BIOS 和支付费用达成和解。文章随后写到 NEC 软件中的 EPSON 检查，以及 EPSON 用 SIP 修改软盘或硬盘上的程序，使其能够在兼容机上运行。\n\n后半又把 SIP 与著作权法中的复制、技术保护措施联系起来，并转写 SOTEC eOne433 与 Apple iMac 的外观诉讼，最后整理东京地方法院对商品表示和混淆可能性的判断。"
-tags: ["平台与技术","兼容机","法律与诉讼"]
+tags: ["兼容机","法律与诉讼"]
 topics: ["美少女游戏史"]
 attachments: ["/uploads/reference-reading/mc-law-epson-nec-bios--source-original-ja.txt"]
 aliases: []

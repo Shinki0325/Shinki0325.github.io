@@ -2,11 +2,11 @@
 title: "御宅族批判与 Comic Market：1986 至 1995 年的会场、舆论和扩张"
 kind: source
 visibility: public
-librarySection: "社会背景"
+librarySection: "社会与制度"
 date: "2023-08-07"
 summary: "Comic Market 在 1986 年冬季因晴海会场档期紧张迁往東京流通センター。参加人数继续增长后，活动从一天延长为两天；1988 年回到晴海时，社团申请已经超过一万，两天制也就保留下来。"
 intro: "Comic Market 在 1986 年冬季因晴海会场档期紧张迁往東京流通センター。参加人数继续增长后，活动从一天延长为两天；1988 年回到晴海时，社团申请已经超过一万，两天制也就保留下来。\n\n1989 年宮崎勤被捕后，媒体反复报道他参加过 Comic Market、家中保存大量动画与特摄录像，社会上随之出现把御宅族与犯罪相连的批判。C36 现场聚集了大量媒体，Comic Market 准备会因此建立更完整的宣传应对机制。报道同时让不少地方爱好者第一次知道东京有大型同人活动，参加人数和地方即卖会反而继续增加。文章把舆论压力、活动组织和同人文化扩张放在同一段历史里说明。"
-tags: ["社会与制度","同人文化","公共争议"]
+tags: ["同人文化","公共争议"]
 topics: ["美少女游戏史"]
 attachments: ["/uploads/reference-reading/otaku-bashing-comiket-history--source-original-ja.txt"]
 aliases: []

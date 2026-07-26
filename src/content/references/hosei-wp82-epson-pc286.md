@@ -2,11 +2,11 @@
 title: "EPSON PC-286：兼容机争议与产品调整"
 kind: source
 visibility: public
-librarySection: "社会背景"
+librarySection: "平台与技术"
 date: "2026-07-25"
 summary: "这篇法政大学的企业史研究从 EPSON 进入日本个人电脑市场写起，接着记录 PC-286 的上市、NEC 对 BIOS 和 ROM BASIC 的主张，以及产品改版和后来的和解。"
 intro: "这篇法政大学的企业史研究从 EPSON 进入日本个人电脑市场写起，接着记录 PC-286 的上市、NEC 对 BIOS 和 ROM BASIC 的主张，以及产品改版和后来的和解。\n\n1987 年，NEC 针对 PC-286 Model 1 至 4 申请停止制造和销售的临时处分。EPSON 随后改用另一套 BIOS，取消 ROM BASIC，并推出 Model 0；文章把这些产品变化和诉讼过程放在同一条时间线上。\n\n后文继续写 EPSON 如何调整产品线、扩大个人电脑业务，以及这场争议怎样伴随兼容机市场的发展走向收束。"
-tags: ["平台与技术","兼容机","法律与诉讼"]
+tags: ["兼容机","法律与诉讼"]
 topics: ["美少女游戏史"]
 attachments: ["/uploads/reference-reading/hosei-wp82-epson-pc286--source-original-ja.txt"]
 aliases: []

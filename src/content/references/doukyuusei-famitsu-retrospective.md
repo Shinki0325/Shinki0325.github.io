@@ -2,11 +2,11 @@
 title: "Fami 通回顾《同级生》：时间、地图与恋爱冒险"
 kind: source
 visibility: public
-librarySection: "回忆、讨论与后见视角"
+librarySection: "作品接受与影响"
 date: "2023-10-08"
 summary: "森瀬繚从打开 1992 年 PC-98 版《同级生》的盒子写起：九张 5.25 或 3.5 英寸软盘、ELFDOS.SYS 启动、彩色与单色显示选择，以及桌面机、98NOTE 和 HDD 三种运行方式。文章据此还原玩家在开机前必须面对的机型、驱动器和安装选择。"
 intro: "森瀬繚从打开 1992 年 PC-98 版《同级生》的盒子写起：九张 5.25 或 3.5 英寸软盘、ELFDOS.SYS 启动、彩色与单色显示选择，以及桌面机、98NOTE 和 HDD 三种运行方式。文章据此还原玩家在开机前必须面对的机型、驱动器和安装选择。\n\n文章也回顾作品在发售前信息很少，却凭 elf、蛭田昌人和竹井正樹积累的声望迅速走红。游戏把 21 天暑假、城镇移动、人物日程、传闻和告白组织在一起；玩家既可以追踪多名角色，也可以不攻略任何人。朋友之间交换消息、在方格纸上记录时刻表，成为作品长期游玩的组成部分。"
-tags: ["作品接受与影响","存储介质","恋爱 ADV"]
+tags: ["存储介质","恋爱 ADV"]
 topics: ["美少女游戏史"]
 attachments: ["/uploads/reference-reading/doukyuusei-famitsu-retrospective--source-original-ja.txt"]
 aliases: []

@@ -5,7 +5,10 @@ import { loadReferencesConfig } from "../../lib/home-config";
 import { partitionReferenceLibrary } from "../../lib/reference-library";
 import { getPublishedReferences } from "../../lib/public-content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { publicReferenceTags } from "../../lib/public-reference-tags";
+import {
+  PUBLIC_REFERENCE_VISIBLE_MINIMUM_ENTRY_COUNT,
+  publicReferenceTags,
+} from "../../lib/public-reference-tags";
 
 const config = await loadReferencesConfig();
 const references = await getPublishedReferences();
@@ -32,6 +35,7 @@ const items = [...topicEntries, ...sourceEntries].map((entry) => ({
     eyebrow="Archive & Search"
     items={items}
     searchPlaceholder="搜索资料、来源、专题..."
+    tagVisibleMinimumEntryCount={PUBLIC_REFERENCE_VISIBLE_MINIMUM_ENTRY_COUNT}
     title={config.title}
     totalLabel="总计"
   />

@@ -1,30 +1,54 @@
-const DOMAIN_LABELS: Record<string, string> = {
-  "genre-narrative": "类型与叙事",
-  "creation-production": "创作与制作",
-  "platform-technology": "平台与技术",
-  "industry-company": "产业与会社",
-  "market-distribution": "市场与流通",
-  "media-circulation": "媒体与传播",
-  "player-community": "玩家与社群",
-  "society-regulation": "社会与制度",
-  "place-everyday": "地域与日常",
-  "reception-impact": "作品接受与影响",
-};
+const CONTROLLED_ASSOCIATION_TAGS = new Set([
+  "视觉小说",
+  "恋爱 ADV",
+  "泣系",
+  "多路线",
+  "时间调度",
+  "剧本创作",
+  "原画与 CG",
+  "音乐与音源",
+  "开发工具",
+  "跨平台移植",
+  "硬件更替",
+  "操作系统",
+  "兼容机",
+  "存储介质",
+  "光盘化",
+  "品牌形成",
+  "人才流动",
+  "制作体制",
+  "行业扩张",
+  "销量",
+  "零售卖场",
+  "二手市场",
+  "通信销售",
+  "预约特典",
+  "专业杂志",
+  "广告",
+  "攻略信息",
+  "口碑传播",
+  "PC 通信",
+  "BBS",
+  "用户会",
+  "同人文化",
+  "玩家交流",
+  "年龄分级",
+  "伦理审查",
+  "公共争议",
+  "法律与诉讼",
+  "地域差异",
+  "购买门槛",
+  "设备拥有",
+  "家庭游玩环境",
+  "家用机扩散",
+  "社会影响",
+  "后世评价",
+  "类型继承",
+]);
 
-const EXPLICIT_LABELS: Record<string, string> = {
-  galgame: "视觉小说",
-  "玩家交流": "玩家交流",
-  "玩家经历": "玩家经历",
-  "创作与制作": "创作与制作",
-  "媒体与传播": "媒体与传播",
-};
+export const PUBLIC_REFERENCE_VISIBLE_MINIMUM_ENTRY_COUNT = 2;
 
 export const publicReferenceTags = (tags: string[] = []) =>
-  [...new Map(
-    tags
-      .map((key) => {
-        const label = DOMAIN_LABELS[key] ?? EXPLICIT_LABELS[key];
-        return label ? [key, { key, label }] as const : undefined;
-      })
-      .filter((entry): entry is readonly [string, { key: string; label: string }] => Boolean(entry))
-  ).values()];
+  [...new Set(tags)]
+    .filter((tag) => CONTROLLED_ASSOCIATION_TAGS.has(tag))
+    .map((tag) => ({ key: tag, label: tag }));

@@ -2,11 +2,11 @@
 title: "Windows 95 与 PC-98 时代的结束"
 kind: source
 visibility: public
-librarySection: "社会背景"
+librarySection: "平台与技术"
 date: "2023-11-05"
 summary: "Windows 95 在日本发售的那一夜，秋叶原出现了两万多人、百米队伍、倒数和花火。这个场面后来常被当成 PC-98 时代结束的象征，但文章特别指出，Windows 95 的上市并没有让 PC-9800 市场在一夜之间消失。1995 年仍是 PC-98 美少女游戏的高峰期，《同級生2》《EVE burst error》等作品继续发售。"
 intro: "Windows 95 在日本发售的那一夜，秋叶原出现了两万多人、百米队伍、倒数和花火。这个场面后来常被当成 PC-98 时代结束的象征，但文章特别指出，Windows 95 的上市并没有让 PC-9800 市场在一夜之间消失。1995 年仍是 PC-98 美少女游戏的高峰期，《同級生2》《EVE burst error》等作品继续发售。\n\n真正的变化发生在更长的时间里。DOS/V 和 PC/AT 兼容机把更便宜、更统一的硬件环境带进日本市场；Windows 3.1 已经让一部分 PC-98 用户提前接触到新的操作系统。Windows 95 发售后，厂商仍要面对驱动、硬件直接控制和游戏运行环境的问题，直到 DirectX 3.0 等软件基础逐渐成熟，Windows 才真正成为美少女游戏的主要平台。\n\n这条迁移路线解释了九十年代后半的混沌感：旧作品和新作品同时存在，PC-98、FM TOWNS、DOS/V 机和 Windows 3.1/95 不能被一刀切地分成前后两个世界。平台变化不是一个发布日期，而是一段玩家、会社和软件一起换环境的过程。"
-tags: ["平台与技术","操作系统","跨平台移植"]
+tags: ["操作系统","跨平台移植"]
 topics: ["美少女游戏史"]
 attachments: ["/uploads/reference-reading/famitsu-pc98-windows95-transition--source-original-ja.txt"]
 aliases: []

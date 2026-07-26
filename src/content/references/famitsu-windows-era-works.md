@@ -2,11 +2,11 @@
 title: "Windows 时代的美少女游戏"
 kind: source
 visibility: public
-librarySection: "社会背景"
+librarySection: "平台与技术"
 date: "2023-11-19"
 summary: "Windows 时代的美少女游戏不只是把 PC-98 作品换到另一套操作系统上。画面尺寸、颜色数量、CD-ROM、硬盘容量、音乐播放方式和包装都在变化，软件会社也开始用新的工具重新组织图像、声音和长篇文本。"
 intro: "Windows 时代的美少女游戏不只是把 PC-98 作品换到另一套操作系统上。画面尺寸、颜色数量、CD-ROM、硬盘容量、音乐播放方式和包装都在变化，软件会社也开始用新的工具重新组织图像、声音和长篇文本。\n\n文章把 1999 年左右的作品放在一个仍然受限制的环境里：VGA 和 256 色仍是常见规格，CD-ROM 的容量虽然远大于软盘，但 CD-DA 音乐也会占用空间；Photoshop、OPTPiX 和减色工具共同构成了当时的图像流程。包装从大型塑料盒转向 CD 盒、纸盒和更接近 DVD 的形式，卖场里的寻找方式也随之改变。\n\n作品结构也在这个阶段逐渐收束。以《同級生》《To Heart》《ONE》《Kanon》等作品为参照，文章讨论多女主角、好感度、路线和结局怎样变成常见组合，同时也回看《プリンセス・メーカー》《あゆみちゃん物語》《カスタムメイト》等不同方向。Windows 时代的“标准”不是突然出现的，而是多年试错后的折中。"
-tags: ["平台与技术","操作系统","光盘化","原画与 CG"]
+tags: ["操作系统","光盘化","原画与 CG"]
 topics: ["美少女游戏史"]
 attachments: ["/uploads/reference-reading/famitsu-windows-era-works--source-original-ja.txt"]
 aliases: []

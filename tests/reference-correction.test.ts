@@ -60,13 +60,42 @@ describe("reference publication correction", () => {
     expect(state.extract).toBeNull();
   });
 
-  it("returns Chinese public labels and never internal kebab-case IDs", () => {
-    const tags = publicReferenceTags(["creator-interview", "pc-98", "creation-production", "player-community"]);
-    expect(tags).toContainEqual({ key: "creation-production", label: "创作与制作" });
-    expect(tags).toContainEqual({ key: "player-community", label: "玩家与社群" });
+  it("keeps controlled association tags while excluding domains, entities, and source types", () => {
+    const tags = publicReferenceTags([
+      "家庭游玩环境",
+      "操作系统",
+      "专业杂志",
+      "玩家交流",
+      "PC-98",
+      "creator-interview",
+      "若木民喜",
+      "creation-production",
+      "创作与制作",
+    ]);
+
+    expect(tags).toEqual([
+      { key: "家庭游玩环境", label: "家庭游玩环境" },
+      { key: "操作系统", label: "操作系统" },
+      { key: "专业杂志", label: "专业杂志" },
+      { key: "玩家交流", label: "玩家交流" },
+    ]);
     expect(tags.map((tag) => tag.key)).not.toContain("creator-interview");
-    expect(tags.map((tag) => tag.key)).not.toContain("pc-98");
+    expect(tags.map((tag) => tag.key)).not.toContain("PC-98");
+    expect(tags.map((tag) => tag.key)).not.toContain("若木民喜");
+    expect(tags.map((tag) => tag.key)).not.toContain("creation-production");
+    expect(tags.map((tag) => tag.key)).not.toContain("创作与制作");
     expect(tags.every((tag) => !/^[a-z0-9]+(?:-[a-z0-9]+)+$/u.test(tag.label))).toBe(true);
+  });
+
+  it("audits association tags against the Knowledge vocabulary and visibility rule", () => {
+    const syncSource = readFileSync(new URL("../scripts/sync-reference-authority.mjs", import.meta.url), "utf8");
+    const auditSource = readFileSync(new URL("../scripts/audit-reference-publication.mjs", import.meta.url), "utf8");
+
+    expect(syncSource).toContain("public-tag-vocabulary-v1.json");
+    expect(syncSource).toContain("Unknown association tag");
+    expect(auditSource).toContain("distinctAssociationTags");
+    expect(auditSource).toContain("visibleSecondaryTags");
+    expect(auditSource).toContain("taxonomyMismatches");
   });
 
   it("preserves source preface before the first reviewed chapter anchor", () => {

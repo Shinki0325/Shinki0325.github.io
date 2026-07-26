@@ -2,11 +2,11 @@
 title: "EPSON PC-98 兼容机 PC-286V：兼容性改进与价格压力"
 kind: source
 visibility: public
-librarySection: "社会背景"
+librarySection: "平台与技术"
 date: "2024-03-12"
 summary: "这篇回顾从 1987 年 9 月 11 日发布的 EPSON PC-286V 讲起，也回头解释了第一代 PC-286 model0 为什么没有成为畅销机型。model0 缺少 ROM BASIC，一些依赖 Disk BASIC 或 ROM BASIC 例程的软件无法运行；它的定价也比玩家预期更高。EPSON 先把型号改为 PC-286STD 并下调实际售价，随后推出 PC-286V 作为 PC-9801VX 系列的竞争机型。"
 intro: "这篇回顾从 1987 年 9 月 11 日发布的 EPSON PC-286V 讲起，也回头解释了第一代 PC-286 model0 为什么没有成为畅销机型。model0 缺少 ROM BASIC，一些依赖 Disk BASIC 或 ROM BASIC 例程的软件无法运行；它的定价也比玩家预期更高。EPSON 先把型号改为 PC-286STD 并下调实际售价，随后推出 PC-286V 作为 PC-9801VX 系列的竞争机型。\n\nPC-286V 的卖点是用更低的价格提供接近 PC-9801VX 的性能，同时把 ROM BASIC 放回机器，使兼容性明显改善。文章还列出 80286 10MHz、640KB 内存、6/8/10MHz 切换和 20MB 硬盘等配置，并说明 EPSON 因此从打印机厂商进一步成为 PC-9801 兼容机厂商。"
-tags: ["平台与技术","购买门槛","兼容机"]
+tags: ["购买门槛","兼容机"]
 topics: ["美少女游戏史"]
 attachments: ["/uploads/reference-reading/epson-pc286v-retrospective--source-original-ja.txt"]
 aliases: []

@@ -2,11 +2,11 @@
 title: "从 1989 到 2018：《Rance》系列与 TADA 的三十年"
 kind: source
 visibility: public
-librarySection: "回忆、讨论与后见视角"
+librarySection: "作品接受与影响"
 date: "2019-06-07"
 summary: "这篇长篇回顾以 TADA 在 2018 年完成《Rance X》后退出经营开发一线为起点，沿着他和 AliceSoft 的作品整理《Rance》系列近三十年的变化。第一作在 1989 年推出时，团队以 PC-98 的 16 色画面制作 RPG 风格的 ADV，逐步确立了ランス、シィル、魔人和国家战争等长期沿用的角色与世界设定。"
 intro: "这篇长篇回顾以 TADA 在 2018 年完成《Rance X》后退出经营开发一线为起点，沿着他和 AliceSoft 的作品整理《Rance》系列近三十年的变化。第一作在 1989 年推出时，团队以 PC-98 的 16 色画面制作 RPG 风格的 ADV，逐步确立了ランス、シィル、魔人和国家战争等长期沿用的角色与世界设定。\n\n文章随后串起《Rance III》《Rance IV》《鬼畜王ランス》《Rance VI》《戦国ランス》直到《Rance X》。除了作品内容，它还记录 HDD 专用、Windows、低价作品、配布フリー宣言、制作体制调整和重制等经营与技术选择，让系列变化与 AliceSoft 的开发体制一同展开。"
-tags: ["作品接受与影响","开发工具","类型继承"]
+tags: ["开发工具","类型继承"]
 topics: ["美少女游戏史"]
 attachments: ["/uploads/reference-reading/rance-series-heisei-history--source-original-ja.txt"]
 aliases: []

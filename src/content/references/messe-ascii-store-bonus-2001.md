@@ -2,11 +2,11 @@
 title: "Messe Sanoh：深夜发售与店铺特典"
 kind: source
 visibility: public
-librarySection: "回忆、讨论与后见视角"
+librarySection: "市场与流通"
 date: "2001-02-08"
 summary: "这篇 2001 年的 ASCII 短报道从晚上六点写起：Messe Sanoh 5 号店还没有关门，店外已经有人排队等候零点发售，甚至有人带着睡袋或纸箱占位。"
 intro: "这篇 2001 年的 ASCII 短报道从晚上六点写起：Messe Sanoh 5 号店还没有关门，店外已经有人排队等候零点发售，甚至有人带着睡袋或纸箱占位。\n\n第二天发售的作品包括 Leaf 的《誰彼》和 RateBlack 的《Choir》。报道还列出两部作品各自的店铺特典：海报、描绘电话卡和附加盘。店铺后来正式决定零点开卖，队伍也随着消息传开继续增加。"
-tags: ["市场与流通","预约特典"]
+tags: ["预约特典"]
 topics: ["美少女游戏史"]
 attachments: ["/uploads/reference-reading/messe-ascii-store-bonus-2001--source-original-ja.txt"]
 aliases: []

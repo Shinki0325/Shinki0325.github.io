@@ -2,11 +2,11 @@
 title: "PC-98 退场之后，旧平台仍有来处"
 kind: source
 visibility: public
-librarySection: "社会背景"
+librarySection: "平台与技术"
 date: "2023-12-31"
 summary: "PC-98 曾经是日本个人电脑市场的中心，但它后来并不是被某一款游戏或某一个发布日期突然替代的。用户、软件和硬件在很长一段时间里都背着旧环境继续前进。"
 intro: "PC-98 曾经是日本个人电脑市场的中心，但它后来并不是被某一款游戏或某一个发布日期突然替代的。用户、软件和硬件在很长一段时间里都背着旧环境继续前进。\n\n文章从 PC98ZX 和 NEC 的新动向写起，回看 PC-98 的型号、兼容性和软件资产。对熟悉这个平台的人来说，旧机器不仅是硬件，也是保存作品、说明书和开发记忆的一种容器。\n\n这篇资料适合放在时间线较晚的位置，作为平台遗产卡，而不是把它当成 PC-98 黄金时代的重复介绍。它关心的是：平台退出主流之后，为什么仍然有人维护、复原和重新谈论它。"
-tags: ["平台与技术"]
+tags: []
 topics: ["美少女游戏史"]
 attachments: ["/uploads/reference-reading/famitsu-pc98-final-legacy--source-original-ja.txt"]
 aliases: []

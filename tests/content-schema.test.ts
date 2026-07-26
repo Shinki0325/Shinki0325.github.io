@@ -63,6 +63,31 @@ describe("content collections", () => {
     expect(parsed.relatedScripts).toBeUndefined();
   });
 
+  it("accepts every Knowledge-controlled primary reference domain", () => {
+    const domains = [
+      "类型与叙事",
+      "创作与制作",
+      "平台与技术",
+      "产业与会社",
+      "市场与流通",
+      "媒体与传播",
+      "玩家与社群",
+      "社会与制度",
+      "地域与日常",
+      "作品接受与影响",
+    ];
+
+    for (const librarySection of domains) {
+      expect(referenceSchema.parse({
+        title: librarySection,
+        kind: "source",
+        librarySection,
+        date: "2026-07-25",
+        summary: "Primary domain contract.",
+      }).librarySection).toBe(librarySection);
+    }
+  });
+
   it("accepts archive card category and multiple cover candidates", () => {
     const article = articleSchema.parse({
       title: "Script with Covers",

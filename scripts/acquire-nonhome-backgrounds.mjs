@@ -10,6 +10,8 @@ const sourceBackgrounds = [
   { url: "https://pic.imgdd.cc/i/033mRL5hL42K30lBIHwCpo.png", quality: 80 },
   { url: "https://pic.imgdd.cc/i/033mRL4ygydTIdfnHrklxE.png", quality: 80 },
   { url: "https://pic.imgdd.cc/i/033sANQbp4eAi1Iw97zRwt.png", quality: 59 },
+  { url: "https://pic.imgdd.cc/i/033vzlAeg5a2I9w7bLmJIw.jpg", quality: 80 },
+  { url: "https://pic.imgdd.cc/i/033vzl8H68RIKSzSipwoiM.jpg", quality: 80 },
 ];
 
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -44,7 +46,7 @@ for (const [index, { url: sourceUrl, quality }] of sourceBackgrounds.entries()) 
   console.log(`${path.basename(outputPath)} ${metadata.width}x${metadata.height} ${bytes} bytes`);
 }
 
-if (totalBytes >= 1_080_000) {
-  throw new Error(`Background set exceeds 1.08MB: ${totalBytes}`);
+if (totalBytes >= 1_440_000) {
+  throw new Error(`Background set exceeds 1.44MB: ${totalBytes}`);
 }
 console.log(`Total ${totalBytes} bytes`);

@@ -5,6 +5,7 @@ import matter from "gray-matter";
 const root = process.cwd();
 const kbRoot = "D:/blog-kb";
 const authorityPath = path.join(kbRoot, "processed/indexing/reference-publication-correction-v1.json");
+const vocabularyPath = path.join(kbRoot, "processed/indexing/public-tag-vocabulary-v1.json");
 const referencesRoot = path.join(root, "src/content/references");
 const attachmentsRoot = path.join(root, "public/uploads/reference-reading");
 const readJson = (file) => JSON.parse(fs.readFileSync(file, "utf8"));
@@ -45,16 +46,13 @@ const yaml = (value) => JSON.stringify(value ?? "");
 const validUrl = (value) => typeof value === "string" && /^https?:\/\//u.test(value) ? value : undefined;
 const date = (value) => value ? String(value).slice(0, 10) : "2026-07-25";
 const authority = readJson(authorityPath);
+const vocabulary = readJson(vocabularyPath);
+const controlledAssociationTags = new Set(vocabulary.domains.flatMap((domain) => domain.tags));
+const associationTagCounts = new Map();
 
 if (authority.entries?.length !== 59) throw new Error(`Expected 59 authority rows, received ${authority.entries?.length}`);
 if (authority.entries.filter((entry) => entry.route.kind === "source").length !== 58) throw new Error("Expected 58 source rows");
 if (authority.entries.filter((entry) => entry.route.kind === "topic").length !== 1) throw new Error("Expected one topic row");
-
-const sectionFor = (domain) => {
-  if (/creation|genre|industry/iu.test(domain)) return "作品与人物";
-  if (/market|player|place|reception|media/iu.test(domain)) return "回忆、讨论与后见视角";
-  return "社会背景";
-};
 
 const ownerPublicationFor = (entry) => ({
   decision: entry.authorization.decision,
@@ -118,7 +116,10 @@ for (const entry of authority.entries) {
   const readingDocument = !topic && pkg ? readingDocumentFor(pkg, ownerPublication) : undefined;
   const attachment = ownerPublication.attachments ? entry.content.attachmentPath : null;
   const attachments = attachment ? [attachment] : [];
-  const tags = [entry.displayTaxonomy.primaryDomain.labelZh, ...(entry.displayTaxonomy.associationTags ?? [])];
+  const tags = entry.displayTaxonomy.associationTags ?? [];
+  const unknownTags = tags.filter((tag) => !controlledAssociationTags.has(tag));
+  if (unknownTags.length) throw new Error(`Unknown association tag for ${slug}: ${unknownTags.join(", ")}`);
+  tags.forEach((tag) => associationTagCounts.set(tag, (associationTagCounts.get(tag) ?? 0) + 1));
 
   if (attachment && pkg?.body?.file) {
     const packagePath = path.join(kbRoot, entry.content.packagePath);
@@ -137,7 +138,7 @@ for (const entry of authority.entries) {
     `title: ${yaml(title)}`,
     `kind: ${topic ? "topic" : "source"}`,
     "visibility: public",
-    `librarySection: ${yaml(sectionFor(entry.displayTaxonomy.primaryDomain.id))}`,
+    `librarySection: ${yaml(entry.displayTaxonomy.primaryDomain.labelZh)}`,
     `date: ${yaml(date(source.publishedAt ?? source.retrievedAt ?? entry.displayTaxonomy.facets.publishedAt))}`,
     `summary: ${yaml(summary)}`,
     `intro: ${yaml((pkg?.overviewZh ?? []).join("\n\n") || summary)}`,
@@ -183,4 +184,8 @@ console.log(JSON.stringify({
   topics: authority.entries.filter((entry) => entry.route.kind === "topic").length,
   attachments: allowedAttachments.size,
   generated: generatedSlugs.size,
+  distinctAssociationTags: associationTagCounts.size,
+  visibleSecondaryTags: [...associationTagCounts.values()].filter(
+    (count) => count >= vocabulary.rules.visibleMinimumEntryCount
+  ).length,
 }, null, 2));

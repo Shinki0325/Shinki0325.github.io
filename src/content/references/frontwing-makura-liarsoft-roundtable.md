@@ -2,11 +2,11 @@
 title: "Frontwing、枕与 Liar-soft 代表座谈：美少女游戏公司的制作与生存"
 kind: source
 visibility: public
-librarySection: "作品与人物"
+librarySection: "创作与制作"
 date: "2020-04-11"
 summary: "这场座谈由 Frontwing 的山川竜一郎、枕的 SCA-自、Liar-soft 的石井秀典和 ANIPLEX.EXE 制作人島田紘希参加。三家公司都在 1990 年代末进入行业，却形成了不同的制作结构：Frontwing 围绕作家组织项目，Liar-soft 由脚本家团队发展而来，枕则由 SCA-自统筹企划、文本和视觉。与会者把这一轮公司出现同 Windows 全彩制作门槛下降联系起来，也谈到行业长期在内部完成创作、销售和人际网络，外部公司往往只知道少数品牌。"
 intro: "这场座谈由 Frontwing 的山川竜一郎、枕的 SCA-自、Liar-soft 的石井秀典和 ANIPLEX.EXE 制作人島田紘希参加。三家公司都在 1990 年代末进入行业，却形成了不同的制作结构：Frontwing 围绕作家组织项目，Liar-soft 由脚本家团队发展而来，枕则由 SCA-自统筹企划、文本和视觉。与会者把这一轮公司出现同 Windows 全彩制作门槛下降联系起来，也谈到行业长期在内部完成创作、销售和人际网络，外部公司往往只知道少数品牌。\n\n座谈的大部分内容围绕制作和经营的具体矛盾展开。美少女游戏允许脚本家写很长的故事，也能让一部作品完整结束，但文本长度、角色数量、语音和个性鲜明的主人公都会提高成本。各家公司分别采用高频发行、长期制作、承接外部项目、众筹和全年龄发行等方式维持经营。海外市场带来了新的销售机会，同时要求更好的翻译、更短的游玩时长和不同的价格设计。\n\nANIPLEX.EXE 的成立让这些问题集中到《ATRI -My Dear Moments-》和《徒花異譚》两部作品上。島田紘希说明，大公司并未要求先规划动画化，而是先让美少女游戏从业者制作完整的小说式游戏。讨论由此进入新人选拔、集体作画、角色语音、主人公塑造、企划长度和流通方式。几位代表最后把这个项目看作不同产业之间的一次连接：它既要考虑销售，也为年轻制作人和新作品留下试验空间。"
-tags: ["创作与制作","制作体制"]
+tags: ["制作体制"]
 topics: ["美少女游戏史"]
 attachments: ["/uploads/reference-reading/frontwing-makura-liarsoft-roundtable--source-original-ja.txt"]
 aliases: []

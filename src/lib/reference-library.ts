@@ -1,4 +1,14 @@
 export const referenceLibrarySections = [
+  "类型与叙事",
+  "创作与制作",
+  "平台与技术",
+  "产业与会社",
+  "市场与流通",
+  "媒体与传播",
+  "玩家与社群",
+  "社会与制度",
+  "地域与日常",
+  "作品接受与影响",
   "回忆、讨论与后见视角",
   "作品与人物",
   "社会背景"
@@ -44,7 +54,7 @@ export const selectPublishedReferenceAuthority = <T extends PublicationAuthority
 const hindsightTypes = new Set(["博客文章", "讨论汇编", "社交媒体", "访谈"]);
 const workTypes = new Set(["维基条目"]);
 
-const sectionGuidance: Record<ReferenceLibrarySection, string> = {
+const sectionGuidance: Partial<Record<ReferenceLibrarySection, string>> = {
   "回忆、讨论与后见视角": "适合用来补个人记忆、社群讨论和后见回望。",
   "作品与人物": "适合用来补作品条目、人物关系和创作脉络。",
   "社会背景": "适合用来补平台环境、传播条件和时代背景。"
@@ -109,7 +119,7 @@ export const buildReferenceIntro = (data: ReferenceDataLike) => {
 
   const section = inferReferenceLibrarySection(data);
   const subject = normalizeSummarySubject(data.summary) || data.title;
-  return `这份资料主要在讲${subject}。${sectionGuidance[section]}`;
+  return `这份资料主要在讲${subject}。${sectionGuidance[section] ?? "适合用来补充对应领域的来源与脉络。"}`;
 };
 
 export const partitionReferenceLibrary = <T extends ReferenceEntryLike>(entries: T[]) => {

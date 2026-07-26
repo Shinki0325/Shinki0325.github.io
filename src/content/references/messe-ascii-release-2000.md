@@ -2,11 +2,11 @@
 title: "Messe Sanoh：美少女游戏发售日的排队与特典"
 kind: source
 visibility: public
-librarySection: "回忆、讨论与后见视角"
+librarySection: "市场与流通"
 date: "2000-12-22"
 summary: "ASCII 记录了 2000 年 12 月秋叶原的一次集中发售。Messe Sanoh 5 号店和其他店铺在深夜迎来数百名顾客，早上八点时，秋叶原排队买美少女游戏的人已经超过一千。有人为了店铺特典同时跑几家店，也有人带着朋友互相联系购买情况。"
 intro: "ASCII 记录了 2000 年 12 月秋叶原的一次集中发售。Messe Sanoh 5 号店和其他店铺在深夜迎来数百名顾客，早上八点时，秋叶原排队买美少女游戏的人已经超过一千。有人为了店铺特典同时跑几家店，也有人带着朋友互相联系购买情况。\n\n报道列出了当日发售的《顔のない月》《NaturalZero+》《夜勤病棟 ～特別盤～》《エルフ大人の缶詰》等作品，以及原创电话卡、EL 液晶台座和 F&C 为《NaturalZero+》准备的限量 Demo CD。文章最后写到队伍直到下午才散去，Messe Sanoh 当天售出总计超过一万份。"
-tags: ["市场与流通","预约特典"]
+tags: ["预约特典"]
 topics: ["美少女游戏史"]
 attachments: ["/uploads/reference-reading/messe-ascii-release-2000--source-original-ja.txt"]
 aliases: []

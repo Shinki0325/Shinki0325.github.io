@@ -2,11 +2,11 @@
 title: "菅野洋之（剣乃ゆきひろ）1998 年访谈：从 elf 独立到 Abel"
 kind: source
 visibility: public
-librarySection: "作品与人物"
+librarySection: "创作与制作"
 date: "1998"
 summary: "1998 年的 GameSpot Japan 访谈围绕菅野洋之从原来的会社独立、成立 Abel，以及从“剣乃ゆきひろ”改用本名展开。菅野说，自己在シーズウェア和 elf 工作时一直在思考什么样的组织和环境更接近理想，最后认为成立公司是最直接的选择，因此邀请一直合作的工作人员一起独立。"
 intro: "1998 年的 GameSpot Japan 访谈围绕菅野洋之从原来的会社独立、成立 Abel，以及从“剣乃ゆきひろ”改用本名展开。菅野说，自己在シーズウェア和 elf 工作时一直在思考什么样的组织和环境更接近理想，最后认为成立公司是最直接的选择，因此邀请一直合作的工作人员一起独立。\n\n访谈中他把“让玩过游戏的人说有趣”作为制作游戏的理由，也谈到制作中的每一个决定都要到作品完成后才能由结果检验。关于笔名，他回忆离开前会社时对方曾把“剣乃ゆきひろ”作为商标处理，并以此为契机改用本名。"
-tags: ["创作与制作"]
+tags: []
 topics: ["美少女游戏史"]
 attachments: ["/uploads/reference-reading/kanno-gamespot-1998-interview--source-original-ja.txt"]
 aliases: []

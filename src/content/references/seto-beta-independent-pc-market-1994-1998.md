@@ -2,11 +2,11 @@
 title: "1994-1998 年的国产品牌电脑：低价、二手市场与退场"
 kind: source
 visibility: public
-librarySection: "回忆、讨论与后见视角"
+librarySection: "市场与流通"
 date: "2026-05-24"
 summary: "作者把 1994 至 1998 年称为国产独自规格电脑的“底价时期”。秋叶原的 Sofmap、Messe Sanoh、マックスロード和ゼット，以及大阪日本桥的 Sofmap，仍能同时买到 PC-98、X68000、FM TOWNS 的新作和中古软件。Windows 95 前后旧机价格迅速下降，作者回忆 PC-9801 D 系列跌到一万日元以下，初期 PC-9821 和 X68000 ACE 也降到两万日元附近。"
 intro: "作者把 1994 至 1998 年称为国产独自规格电脑的“底价时期”。秋叶原的 Sofmap、Messe Sanoh、マックスロード和ゼット，以及大阪日本桥的 Sofmap，仍能同时买到 PC-98、X68000、FM TOWNS 的新作和中古软件。Windows 95 前后旧机价格迅速下降，作者回忆 PC-9801 D 系列跌到一万日元以下，初期 PC-9821 和 X68000 ACE 也降到两万日元附近。\n\n硬件降价时，十多年积累的中古软件仍在店内流通，旧作甚至以五百日元出售；PC-98 成人美少女游戏的新作和中古周转则继续维持专区。Windows 软件成为主流后，X68000 和 PC-98 的货架从整层缩成一个角落，约到 2000 年前后几乎退出实体店。作者正是在这段短暂的低价时期买到了过去难以负担的机器。"
-tags: ["市场与流通","二手市场","零售卖场"]
+tags: ["二手市场","零售卖场"]
 topics: ["美少女游戏史"]
 attachments: ["/uploads/reference-reading/seto-beta-independent-pc-market-1994-1998--source-original-ja.txt"]
 aliases: []

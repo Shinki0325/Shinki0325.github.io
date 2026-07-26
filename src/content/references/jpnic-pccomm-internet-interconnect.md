@@ -2,11 +2,11 @@
 title: "PC通信与Internet互联实验"
 kind: source
 visibility: public
-librarySection: "回忆、讨论与后见视角"
+librarySection: "玩家与社群"
 date: "2026-07-25"
 summary: "JPNIC 的这篇文章由 NIFTY 的前员工前岛一崇撰写，先回顾日本的 PC 通信。用户通过电话线、调制解调器或 ISDN 连接服务中心，在论坛、聊天、邮件和数据库中交流；NIFTY-Serve 还用入会套件和在线登记降低了申请门槛。"
 intro: "JPNIC 的这篇文章由 NIFTY 的前员工前岛一崇撰写，先回顾日本的 PC 通信。用户通过电话线、调制解调器或 ISDN 连接服务中心，在论坛、聊天、邮件和数据库中交流；NIFTY-Serve 还用入会套件和在线登记降低了申请门槛。\n\n文章接着回到 1992 年的互联实验。WIDE 的吉村伸邀请 NIFTY 参加，把已经拥有大量用户的 PC 通信服务同正在成长的 Internet 连接起来。参与者当时还要面对 X.400、FTAM、X.25 和 IP 网络同时存在的局面，设备、路由器和软件都需要重新安排。\n\n实验的两个目标是邮件交换，以及通过 telnet 从 Internet 使用 PC 通信服务。文章写到 SPARCstation 2 路由器、9600bps 专线、邮件滞留和内核调试，也记录了连接数从 15 个增加到 1000 个的过程。最后，NIFTY-Serve 转向 @nifty，原来的用户也逐步进入 Internet 服务。"
-tags: ["玩家与社群","PC 通信"]
+tags: ["PC 通信"]
 topics: ["美少女游戏史"]
 attachments: ["/uploads/reference-reading/jpnic-pccomm-internet-interconnect--source-original-ja.txt"]
 aliases: []

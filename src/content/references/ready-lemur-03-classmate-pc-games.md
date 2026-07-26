@@ -2,11 +2,11 @@
 title: "パソコンゲーム回顾录（三）：同学家的电脑游戏"
 kind: source
 visibility: public
-librarySection: "回忆、讨论与后见视角"
+librarySection: "玩家与社群"
 date: "2026-04-24"
 summary: "作者回忆小学和中学同学 I。两人平时往来不多，但作者在自己家用 VHS 播放《Mr.BOO!》后，也受邀去 I 家做客，并在那里第一次在商店之外接触个人电脑。"
 intro: "作者回忆小学和中学同学 I。两人平时往来不多，但作者在自己家用 VHS 播放《Mr.BOO!》后，也受邀去 I 家做客，并在那里第一次在商店之外接触个人电脑。\n\nI 的 MZ-700 用盒式磁带保存软件，读入时会持续发出噪声，等待数分钟后还可能报错。机器里的大多数程序很简单，只有一份《パックマン》给作者留下清楚印象。文章把电脑放在家庭条件、同学关系和红白机普及前的日常生活中回忆。"
-tags: ["玩家与社群","家庭游玩环境"]
+tags: ["家庭游玩环境"]
 topics: ["美少女游戏史"]
 attachments: ["/uploads/reference-reading/ready-lemur-03-classmate-pc-games--source-original-ja.txt"]
 aliases: []

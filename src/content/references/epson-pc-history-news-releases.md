@@ -2,11 +2,11 @@
 title: "从新闻稿回看 EPSON 电脑史：HC-20、PC-286 与 Endeavor"
 kind: source
 visibility: public
-librarySection: "社会背景"
+librarySection: "平台与技术"
 date: "2025-04-21"
 summary: "PC Watch 在 EPSON 品牌 50 周年之际，从公司保存的旧新闻稿中选出三段电脑史。1982 年发表的 HC-20 把液晶、打印机和半导体技术装进 A4 大小、1.6 千克的机身，累计出货 25 万台；1987 年的 PC-286 系列则以运行 PC-9800 软件为卖点，进入当时由 NEC 主导的日本电脑市场。"
 intro: "PC Watch 在 EPSON 品牌 50 周年之际，从公司保存的旧新闻稿中选出三段电脑史。1982 年发表的 HC-20 把液晶、打印机和半导体技术装进 A4 大小、1.6 千克的机身，累计出货 25 万台；1987 年的 PC-286 系列则以运行 PC-9800 软件为卖点，进入当时由 NEC 主导的日本电脑市场。\n\n最初的 PC-286 Model 1 至 Model 4 因 BIOS 与 ROM 著作权争议，在上市前被 EPSON 撤回。公司很快发表采用另一套 BIOS 的 PC-286 Model 0，并在同年与 NEC 和解，随后经营 PC-98 兼容机约八年。1994 年，EPSON 又成立エプソンダイレクト，以电话直销和 BTO 方式销售 DOS/V 电脑 Endeavor AT；开业前三天的咨询量使呼叫线路一度拥塞。文章把兼容机诉讼、销售方式变化和产品路线放在同一组公司档案中呈现。"
-tags: ["平台与技术","操作系统"]
+tags: ["操作系统"]
 topics: ["美少女游戏史"]
 attachments: ["/uploads/reference-reading/epson-pc-history-news-releases--source-original-ja.txt"]
 aliases: []

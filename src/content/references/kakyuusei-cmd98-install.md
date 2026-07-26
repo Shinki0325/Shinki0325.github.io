@@ -2,11 +2,11 @@
 title: "用 CMD98 安装《下级生》：17 张软盘的实际流程"
 kind: source
 visibility: public
-librarySection: "社会背景"
+librarySection: "平台与技术"
 date: "2025-02-07"
 summary: "这篇技术复现用 CMD98 在现代 Windows 中启动 PC-98 版《下级生》的原安装程序。玩家需要一台支持三模式的软驱和 A 至 Q 共十七张软盘；CMD98 还要为缺失的盘符建立虚拟 2D 软驱，因为原安装程序假定磁盘从 A 开始连续排列。"
 intro: "这篇技术复现用 CMD98 在现代 Windows 中启动 PC-98 版《下级生》的原安装程序。玩家需要一台支持三模式的软驱和 A 至 Q 共十七张软盘；CMD98 还要为缺失的盘符建立虚拟 2D 软驱，因为原安装程序假定磁盘从 A 开始连续排列。\n\n选择安装盘后，程序依次要求放入 B 至 Q，全部复制结束前还要重新放回 A。安装目标受 FAT16 限制，最大只能识别 2GB；实体软盘也可以换成由 ImDisk 装载的镜像。十七张盘在安装时依次进入同一台驱动器，文件复制到 HDD 后，日常启动便转到硬盘上完成。"
-tags: ["平台与技术","存储介质"]
+tags: ["存储介质"]
 topics: ["美少女游戏史"]
 attachments: ["/uploads/reference-reading/kakyuusei-cmd98-install--source-original-ja.txt"]
 aliases: []

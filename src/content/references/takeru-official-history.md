@@ -2,11 +2,11 @@
 title: "TAKERU：软件贩卖机"
 kind: source
 visibility: public
-librarySection: "回忆、讨论与后见视角"
+librarySection: "市场与流通"
 date: "2026-07-25"
 summary: "Brother 的品牌史页面没有把 TAKERU 单独写成一台机器的说明书，而是从 TAKERU 时代常见的电脑游戏谈起。文章列举了文字输入式冒险游戏、角色扮演游戏和战争模拟游戏，也提到《マデリーン》、〈ソーサリアン〉追加剧本和《大戦略》地图集等 TAKERU 上可以买到的内容。"
 intro: "Brother 的品牌史页面没有把 TAKERU 单独写成一台机器的说明书，而是从 TAKERU 时代常见的电脑游戏谈起。文章列举了文字输入式冒险游戏、角色扮演游戏和战争模拟游戏，也提到《マデリーン》、〈ソーサリアン〉追加剧本和《大戦略》地图集等 TAKERU 上可以买到的内容。\n\n文中还解释了这些作品的玩法变化：冒险游戏从输入命令逐渐转向选择式操作，角色扮演游戏把动作和解谜加入传统框架，模拟游戏则围绕六角格地图展开。末尾列出相关作品和当时的发行公司，并介绍游戏保存协会保存 1970 至 1990 年代日本游戏资料的工作。"
-tags: ["市场与流通","存储介质","地域差异"]
+tags: ["存储介质","地域差异"]
 topics: ["美少女游戏史"]
 attachments: ["/uploads/reference-reading/takeru-official-history--source-original-ja.txt"]
 aliases: []

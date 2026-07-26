@@ -2,11 +2,11 @@
 title: "VisualArts 如何把“泣系”做成品牌"
 kind: source
 visibility: public
-librarySection: "作品与人物"
+librarySection: "创作与制作"
 date: "2019-07-25"
 summary: "馬場隆博从 VisualArts 的经营和作品开发谈起，解释为什么《Kanon》和《AIR》会被后来的人视为“泣系”作品的重要代表。访谈关心的不是单个名作的神话，而是会社如何把创作、品牌和发行组织起来。"
 intro: "馬場隆博从 VisualArts 的经营和作品开发谈起，解释为什么《Kanon》和《AIR》会被后来的人视为“泣系”作品的重要代表。访谈关心的不是单个名作的神话，而是会社如何把创作、品牌和发行组织起来。\n\n“泣系”在这里既是玩家对作品体验的称呼，也是一种市场识别方式。感人的剧本、角色歌曲、原画和宣传共同构成了品牌印象，会社因此可以在不同制作团队之间维持相对清晰的方向。\n\n这是一位会社经营者在多年后对经营路线的回顾，适合用于理解 VisualArts、Key 和品牌制之间的关系。关于具体开发日期和人员分工，仍需要与各作品的制作记录交叉核对。"
-tags: ["创作与制作","泣系","品牌形成"]
+tags: ["泣系","品牌形成"]
 topics: ["美少女游戏史"]
 attachments: ["/uploads/reference-reading/baba-visualarts-interview--source-original-ja.txt"]
 aliases: []

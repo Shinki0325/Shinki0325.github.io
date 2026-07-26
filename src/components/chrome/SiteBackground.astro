@@ -40,7 +40,11 @@ const nonHomeBackgroundImages: readonly string[] = isHome ? [] : backgroundImage
   <div class="site-backdrop__glow glow-two"></div>
   <div class="site-backdrop__glow glow-three"></div>
 
-  <div class="site-backdrop__slider" data-background-slider={nonHomeBackgroundImages.length > 1 ? "true" : undefined}>
+  <div
+    class="site-backdrop__slider"
+    data-background-slider={nonHomeBackgroundImages.length > 1 ? "true" : undefined}
+    transition:persist={isHome ? "home-background-slider" : "nonhome-background-slider"}
+  >
     {nonHomeBackgroundImages.map((src) => (
       <div
         class="site-backdrop__image"
@@ -112,7 +116,7 @@ const nonHomeBackgroundImages: readonly string[] = isHome ? [] : backgroundImage
                 }
                 writeBackgroundState(activeIndex, nextRotationAt);
 
-                let renderedIndex = -1;
+                let renderedIndex = slides.findIndex((slide) => slide.classList.contains("is-active"));
                 let preloadTimer;
                 let rotationTimer;
 
@@ -170,6 +174,7 @@ const nonHomeBackgroundImages: readonly string[] = isHome ? [] : backgroundImage
                 cleanupCallbacks.push(() => {
                   clearTimeout(rotationTimer);
                   clearTimeout(preloadTimer);
+                  delete slider.dataset.carouselReady;
                 });
               });
             };

@@ -7,6 +7,7 @@ const chapteredPath = "/references/baba-visualarts-interview/";
 const singleChapterPath = "/references/takeru-official-history/";
 const topicPath = "/references/galgame-90s-web-archive-package/";
 const reviewOutput = process.env.REVIEW_OUTPUT;
+const chapterSoakMs = Number(process.env.REFERENCE_CHAPTER_SOAK_MS ?? 0);
 const desktopViewports = [
   { name: "1440", width: 1440, height: 1000 },
   { name: "1280", width: 1280, height: 1000 },
@@ -309,6 +310,96 @@ test("repeated marker crossings and shared-panel chapter selections remain stabl
     await links.nth(targetIndex).click();
     await expect(panel).toBeHidden();
   }
+});
+
+test("release soak keeps chapter controls responsive without runtime or geometry drift", async ({ page }) => {
+  test.skip(chapterSoakMs < 60_000, "Set REFERENCE_CHAPTER_SOAK_MS=60000 for the release soak.");
+  test.setTimeout(chapterSoakMs + 45_000);
+  const runtimeErrors: string[] = [];
+  const failedRequests: string[] = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") runtimeErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => runtimeErrors.push(error.message));
+  page.on("requestfailed", (request) => failedRequests.push(request.url()));
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await prepare(page, chapteredPath);
+
+  const directory = page.locator("[data-reference-chapter-directory]");
+  const marker = page.locator("[data-reference-chapter-hud-marker]");
+  const manualToggle = page.locator("[data-reference-chapter-manual-toggle]");
+  const hud = page.locator("[data-reference-chapter-hud]");
+  const hudToggle = page.locator("[data-reference-chapter-hud-toggle]");
+  const panel = page.locator("#reference-chapter-panel");
+  const directoryBefore = await documentBox(directory);
+
+  await marker.evaluate((node) => node.scrollIntoView({ block: "start", behavior: "instant" }));
+  await page.evaluate(() => window.scrollBy({ top: 80, behavior: "instant" }));
+  await expect(hud).toBeVisible();
+  await hudToggle.click();
+  await expect(panel).toBeVisible();
+  await page.keyboard.press("Escape");
+  await page.evaluate(() => window.scrollTo({ top: 0, behavior: "instant" }));
+  await expect(manualToggle).toBeVisible();
+  await manualToggle.click();
+  await expect(panel).toBeVisible();
+  await page.keyboard.press("Escape");
+  await page.waitForLoadState("networkidle");
+  await page.evaluate(() => new Promise<void>((resolve) => requestAnimationFrame(() => requestAnimationFrame(() => resolve()))));
+  await page.evaluate(() => {
+    type LongTaskRecord = { duration: number; name: string; startTime: number };
+    const state = window as Window & { __referenceLongTasks?: LongTaskRecord[] };
+    state.__referenceLongTasks = [];
+    new PerformanceObserver((list) => {
+      state.__referenceLongTasks?.push(...list.getEntries().map((entry) => ({
+        duration: entry.duration,
+        name: entry.name,
+        startTime: entry.startTime,
+      })));
+    }).observe({ entryTypes: ["longtask"] });
+  });
+
+  const startedAt = Date.now();
+  let iterations = 0;
+
+  while (Date.now() - startedAt < chapterSoakMs) {
+    await page.evaluate(() => window.scrollTo({ top: 0, behavior: "instant" }));
+    await expect(manualToggle).toBeVisible();
+    await manualToggle.click();
+    await expect(panel).toBeVisible();
+    await page.keyboard.press("Escape");
+    await marker.evaluate((node) => node.scrollIntoView({ block: "start", behavior: "instant" }));
+    await page.evaluate(() => window.scrollBy({ top: 80, behavior: "instant" }));
+    await expect(hud).toBeVisible();
+    await hudToggle.click();
+    await expect(panel).toBeVisible();
+    const links = panel.locator("[data-reference-chapter-link]");
+    const targetIndex = (iterations % Math.max(1, await links.count() - 1)) + 1;
+    await links.nth(targetIndex).click();
+    await expect(panel).toBeHidden();
+    iterations += 1;
+    await page.waitForTimeout(250);
+  }
+
+  expect(Date.now() - startedAt).toBeGreaterThanOrEqual(chapterSoakMs);
+  expect(iterations).toBeGreaterThan(10);
+  const directoryAfter = await documentBox(directory);
+  for (const key of ["x", "y", "width", "height"] as const) {
+    expect(Math.abs(directoryAfter[key] - directoryBefore[key])).toBeLessThanOrEqual(1);
+  }
+  expect(await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)).toBeLessThanOrEqual(1);
+  const longTasks = await page.evaluate(() =>
+    (window as Window & { __referenceLongTasks?: Array<{ duration: number; name: string; startTime: number }> }).__referenceLongTasks ?? [],
+  );
+  console.log("REFERENCE SOAK " + JSON.stringify({
+    durationMs: Date.now() - startedAt,
+    historyLength: await page.evaluate(() => history.length),
+    iterations,
+    longTasks,
+  }));
+  expect(longTasks).toEqual([]);
+  expect(runtimeErrors).toEqual([]);
+  expect(failedRequests).toEqual([]);
 });
 
 for (const viewport of desktopViewports) {

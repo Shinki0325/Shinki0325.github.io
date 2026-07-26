@@ -2,11 +2,11 @@
 title: "ソフ倫成立三十周年座谈：行业自律如何形成"
 kind: source
 visibility: public
-librarySection: "社会背景"
+librarySection: "社会与制度"
 date: "2024-12-20"
 summary: "这场 ソフ倫 三十周年线上座谈邀请了 AliceSoft、F&C、WillPlus、NEXTON、Frontwing、KeroQ/枕、Lamp of Sugar、まどそふと等会社的代表或长期工作人员，也请 BugBug 主编担任主持。参与者谈到自己怎样进入这个行业、会社最初在做什么，以及当时的工作环境。"
 intro: "这场 ソフ倫 三十周年线上座谈邀请了 AliceSoft、F&C、WillPlus、NEXTON、Frontwing、KeroQ/枕、Lamp of Sugar、まどそふと等会社的代表或长期工作人员，也请 BugBug 主编担任主持。参与者谈到自己怎样进入这个行业、会社最初在做什么，以及当时的工作环境。\n\n座谈先从会社历史和“黄金期”的回忆谈起：有人讲到《ランス》成功后开始招募新人，有人回忆十万套生产的《アリスの館456》，也有人讲到泊在公司赶工、奖金、秋叶原深夜发售和作品动画化。谈话中还出现了 177 事件、第一次给作品加入声音、实写素材试验等具体经历。\n\n后半的话题转向秋叶原、日本桥和玩家群体。参加者回忆电器街、PC 游戏店、深夜发售和店铺宣传怎样变化，也谈到海外玩家增加、Steam、SNS、玩家年龄以及没有 PC 的新用户。整篇座谈由这些从业者的回忆串起了会社、卖场、作品和玩家之间的变化。"
-tags: ["社会与制度","伦理审查","年龄分级"]
+tags: ["伦理审查","年龄分级"]
 topics: ["美少女游戏史"]
 attachments: ["/uploads/reference-reading/sofurin-roundtable-2024--source-original-ja.txt"]
 aliases: []

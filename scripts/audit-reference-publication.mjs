@@ -4,6 +4,8 @@ import path from "node:path";
 const root = process.cwd();
 const kbRoot = "D:/blog-kb";
 const authority = JSON.parse(fs.readFileSync(path.join(kbRoot, "processed/indexing/reference-publication-correction-v1.json"), "utf8"));
+const vocabulary = JSON.parse(fs.readFileSync(path.join(kbRoot, "processed/indexing/public-tag-vocabulary-v1.json"), "utf8"));
+const controlledAssociationTags = new Set(vocabulary.domains.flatMap((domain) => domain.tags));
 const authorityBySlug = new Map(authority.entries.map((entry) => [entry.route.slug, entry]));
 const referencesRoot = path.join(root, "src/content/references");
 const attachmentRoot = path.join(root, "public/uploads/reference-reading");
@@ -14,6 +16,8 @@ const attachmentRefs = [];
 let summaryAsOriginal = 0;
 let missingAnchors = 0;
 const authorityMismatches = [];
+const taxonomyMismatches = [];
+const associationTagCounts = new Map();
 
 for (const file of files) {
   const source = fs.readFileSync(path.join(referencesRoot, file), "utf8");
@@ -37,6 +41,12 @@ for (const file of files) {
     rightsStatus !== expected.originalRightsStatus) authorityMismatches.push(slug);
   ownerEntries.push(file);
   const tags = JSON.parse(source.match(/^tags:\s*(.+)$/mu)?.[1] ?? "[]");
+  const librarySection = JSON.parse(source.match(/^librarySection:\s*(.+)$/mu)?.[1] ?? '""');
+  const expectedTags = expected.displayTaxonomy.associationTags ?? [];
+  if (librarySection !== expected.displayTaxonomy.primaryDomain.labelZh ||
+    JSON.stringify(tags) !== JSON.stringify(expectedTags) ||
+    tags.some((tag) => !controlledAssociationTags.has(tag))) taxonomyMismatches.push(slug);
+  tags.forEach((tag) => associationTagCounts.set(tag, (associationTagCounts.get(tag) ?? 0) + 1));
   visibleInternalLabels.push(...tags.filter((tag) => /^[a-z0-9]+(?:-[a-z0-9]+)+$/u.test(tag)));
   const attachments = JSON.parse(source.match(/^attachments:\s*(.+)$/mu)?.[1] ?? "[]");
   attachmentRefs.push(...attachments.map((attachment) => path.basename(attachment)));
@@ -53,6 +63,9 @@ const diskAttachments = fs.readdirSync(attachmentRoot).filter((file) => file.end
 const orphanAttachments = diskAttachments.filter((file) => !attachmentRefs.includes(file));
 const missingAttachments = attachmentRefs.filter((file) => !diskAttachments.includes(file));
 const duplicateAttachments = attachmentRefs.filter((file, index) => attachmentRefs.indexOf(file) !== index);
+const visibleSecondaryTags = [...associationTagCounts.values()].filter(
+  (count) => count >= vocabulary.rules.visibleMinimumEntryCount
+).length;
 const audit = {
   entries: ownerEntries.length,
   sources: ownerEntries.filter((file) => file !== "galgame-90s-web-archive-package.md").length,
@@ -65,9 +78,13 @@ const audit = {
   missingAttachments,
   duplicateAttachments,
   authorityMismatches,
+  taxonomyMismatches,
+  distinctAssociationTags: associationTagCounts.size,
+  visibleSecondaryTags,
 };
 
 console.log(JSON.stringify(audit, null, 2));
 if (audit.entries !== 59 || audit.sources !== 58 || audit.topics !== 1 || audit.attachments !== 58 ||
   summaryAsOriginal || visibleInternalLabels.length || missingAnchors || orphanAttachments.length ||
-  missingAttachments.length || duplicateAttachments.length || authorityMismatches.length) process.exitCode = 1;
+  missingAttachments.length || duplicateAttachments.length || authorityMismatches.length ||
+  taxonomyMismatches.length) process.exitCode = 1;
