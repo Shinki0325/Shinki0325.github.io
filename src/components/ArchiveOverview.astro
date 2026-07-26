@@ -21,11 +21,21 @@ type Props = {
   eyebrow: string;
   items: ArchiveOverviewItem[];
   searchPlaceholder: string;
+  tagVisibleMinimumEntryCount?: number;
   title: string;
   totalLabel: string;
 };
 
-const { archiveStyle = "default", description, eyebrow, items, searchPlaceholder, title, totalLabel } = Astro.props;
+const {
+  archiveStyle = "default",
+  description,
+  eyebrow,
+  items,
+  searchPlaceholder,
+  tagVisibleMinimumEntryCount = 1,
+  title,
+  totalLabel,
+} = Astro.props;
 const showViewSwitch = archiveStyle !== "reference";
 const referenceTopicCount = items.filter((item) => item.entryKind === "topic").length;
 
@@ -53,9 +63,11 @@ for (const item of items) {
   }
 }
 
-const topTags = [...tagCounts.entries()]
-  .sort((left, right) => right[1].count - left[1].count || left[1].label.localeCompare(right[1].label, "zh-CN"))
-  .slice(0, 12);
+const sortedTags = [...tagCounts.entries()]
+  .sort((left, right) => right[1].count - left[1].count || left[1].label.localeCompare(right[1].label, "zh-CN"));
+const topTags = archiveStyle === "reference"
+  ? sortedTags.filter(([, { count }]) => count >= tagVisibleMinimumEntryCount)
+  : sortedTags.slice(0, 12);
 const categoryCounts = new Map<string, number>();
 const tagCategories = new Map<string, Set<string>>();
 
@@ -78,6 +90,12 @@ for (const item of items) {
 const topCategories = [...categoryCounts.entries()].sort(
   (left, right) => right[1] - left[1] || left[0].localeCompare(right[0], "zh-CN"),
 );
+const referenceTagGroups = topCategories
+  .map(([category]) => ({
+    category,
+    tags: topTags.filter(([tag]) => tagCategories.get(tag)?.has(category)),
+  }))
+  .filter(({ tags }) => tags.length > 0);
 ---
 
 {archiveStyle === "reference" ? (
@@ -102,22 +120,52 @@ const topCategories = [...categoryCounts.entries()].sort(
       </div>
     </header>
 
-    <section class="reference-query-terminal__query" aria-label="资料检索">
-      <label class="reference-query-terminal__search">
-        <span>ARCHIVE QUERY</span>
-        <span class="reference-query-terminal__search-slot">
-          <span aria-hidden="true">⌕</span>
-          <input data-archive-search placeholder={searchPlaceholder} type="search" />
-          <button data-reference-clear hidden title="清除检索" aria-label="清除检索" type="button">×</button>
-        </span>
-      </label>
+    <section
+      class="reference-query-terminal__query"
+      aria-label="资料检索"
+      data-reference-query-deck
+      data-reference-tag-details
+    >
+      <div class="reference-query-terminal__query-row" data-reference-query-row>
+        <label class="reference-query-terminal__search">
+          <span>ARCHIVE QUERY</span>
+          <span class="reference-query-terminal__search-slot">
+            <span aria-hidden="true">⌕</span>
+            <input data-archive-search placeholder={searchPlaceholder} type="search" />
+            <button data-reference-clear hidden title="清除检索" aria-label="清除检索" type="button">×</button>
+          </span>
+        </label>
+        <div class="reference-query-terminal__query-state">
+          <p class="reference-query-terminal__visible-count">
+            VISIBLE <output aria-live="polite" data-reference-visible-count>{String(items.length).padStart(2, "0")}</output>
+            / {String(items.length).padStart(2, "0")}
+          </p>
+          <p class="reference-query-terminal__active-summary" data-reference-active-filter-summary hidden>
+            <span data-reference-active-primary>全部</span>
+            <i aria-hidden="true">/</i>
+            <span data-reference-active-tag>全部标签</span>
+            <button data-reference-clear-tag hidden aria-label="清除二级标签" title="清除二级标签" type="button">×</button>
+          </p>
+          <button
+            class="reference-query-terminal__tag-toggle"
+            type="button"
+            aria-controls="reference-secondary-tags"
+            aria-expanded="false"
+            data-reference-tag-toggle
+          >
+            <span>标签索引 {topTags.length}</span>
+            <span class="reference-query-terminal__tag-symbol" data-reference-tag-symbol aria-hidden="true">+</span>
+          </button>
+        </div>
+      </div>
 
-      <div class="reference-query-terminal__filters">
+      <div class="reference-query-terminal__primary-row" data-reference-primary-row>
         <span class="reference-query-terminal__filter-label">SECTION</span>
         <button
           aria-pressed="true"
           class="archive-overview__category is-active"
           data-archive-category="all"
+          data-archive-category-label="全部"
           type="button"
         >
           全部 <span>{items.length}</span>
@@ -127,45 +175,64 @@ const topCategories = [...categoryCounts.entries()].sort(
             aria-pressed="false"
             class="archive-overview__category"
             data-archive-category={category}
+            data-archive-category-label={category}
             type="button"
           >
             {category} <span>{count}</span>
           </button>
         ))}
-        <details class="reference-query-terminal__tag-details" data-reference-tag-details>
-          <summary>
-            <span>标签索引 {topTags.length}</span>
-            <span class="reference-query-terminal__tag-symbol" data-reference-tag-symbol aria-hidden="true">+</span>
-          </summary>
-          <div class="reference-query-terminal__tag-drawer" aria-label="标签筛选">
-            <button
-              aria-pressed="true"
-              class="archive-overview__tag is-active"
-              data-archive-tag="all"
-              data-archive-tag-categories="[]"
-              type="button"
+      </div>
+
+      <div
+        class="reference-query-terminal__secondary-panel reference-query-terminal__tag-drawer"
+        id="reference-secondary-tags"
+        aria-label="标签筛选"
+        data-reference-secondary-panel
+        hidden
+      >
+        <header class="reference-query-terminal__secondary-head">
+          <span>ASSOCIATION TAGS</span>
+          <button
+            aria-pressed="true"
+            class="archive-overview__tag is-active"
+            data-archive-tag="all"
+            data-archive-tag-categories="[]"
+            data-archive-tag-label="全部标签"
+            type="button"
+          >
+            全部标签 <span>{items.length}</span>
+          </button>
+        </header>
+        <div class="reference-query-terminal__tag-groups">
+          {referenceTagGroups.map(({ category, tags }) => (
+            <section
+              class="reference-query-terminal__tag-group"
+              data-reference-tag-group
+              data-reference-tag-group-category={category}
             >
-              全部标签 <span>{items.length}</span>
-            </button>
-            {topTags.map(([tag, { count, label }]) => (
-              <button
-                aria-pressed="false"
-                class="archive-overview__tag"
-                data-archive-tag={tag}
-                data-archive-tag-categories={JSON.stringify([...(tagCategories.get(tag) ?? [])])}
-                type="button"
-              >
-                {label} <span>{count}</span>
-              </button>
-            ))}
-          </div>
-        </details>
+              <h3>{category}</h3>
+              <div>
+                {tags.map(([tag, { count, label }]) => (
+                  <button
+                    aria-pressed="false"
+                    class="archive-overview__tag"
+                    data-archive-tag={tag}
+                    data-archive-tag-categories={JSON.stringify([...(tagCategories.get(tag) ?? [])])}
+                    data-archive-tag-label={label}
+                    type="button"
+                  >
+                    {label} <span>{count}</span>
+                  </button>
+                ))}
+              </div>
+            </section>
+          ))}
+        </div>
       </div>
     </section>
 
     <header class="reference-query-terminal__results-head">
       <h2 class="reference-query-terminal__results-title">检索结果</h2>
-      <p>VISIBLE <output aria-live="polite" data-reference-visible-count>{String(items.length).padStart(2, "0")}</output> / {String(items.length).padStart(2, "0")}</p>
     </header>
 
     <div class="reference-query-terminal__results">
@@ -365,6 +432,65 @@ const topCategories = [...categoryCounts.entries()].sort(
 
     const uniqueArchiveCovers = (covers) => [...new Set(covers.filter(Boolean))];
 
+    const syncArchiveButtonState = (root) => {
+      const activeCategory = root.dataset.archiveCategory || "all";
+      const activeTag = root.dataset.archiveTag || "all";
+      root.querySelectorAll("[data-archive-category]").forEach((button) => {
+        const isActive = button.dataset.archiveCategory === activeCategory;
+        button.classList.toggle("is-active", isActive);
+        button.setAttribute("aria-pressed", String(isActive));
+      });
+      root.querySelectorAll("[data-archive-tag]").forEach((button) => {
+        const isActive = button.dataset.archiveTag === activeTag;
+        button.classList.toggle("is-active", isActive);
+        button.setAttribute("aria-pressed", String(isActive));
+      });
+    };
+
+    const syncReferenceActiveSummary = (root) => {
+      const summary = root.querySelector("[data-reference-active-filter-summary]");
+      if (!summary) {
+        return;
+      }
+      const activeCategory = root.dataset.archiveCategory || "all";
+      const activeTag = root.dataset.archiveTag || "all";
+      const categoryButton = [...root.querySelectorAll("[data-archive-category]")]
+        .find((button) => button.dataset.archiveCategory === activeCategory);
+      const tagButton = [...root.querySelectorAll("[data-archive-tag]")]
+        .find((button) => button.dataset.archiveTag === activeTag);
+      const primaryLabel = summary.querySelector("[data-reference-active-primary]");
+      const tagLabel = summary.querySelector("[data-reference-active-tag]");
+      const clearTag = summary.querySelector("[data-reference-clear-tag]");
+      if (primaryLabel) {
+        primaryLabel.textContent = categoryButton?.dataset.archiveCategoryLabel || "全部";
+      }
+      if (tagLabel) {
+        tagLabel.textContent = tagButton?.dataset.archiveTagLabel || "全部标签";
+      }
+      if (clearTag) {
+        clearTag.hidden = activeTag === "all";
+      }
+      const hasActiveFilter = activeCategory !== "all" || activeTag !== "all";
+      summary.hidden = !hasActiveFilter || root.dataset.referenceTagPanelOpen === "true";
+    };
+
+    const syncReferenceTagDisclosure = (root, open = false) => {
+      const panel = root.querySelector("[data-reference-secondary-panel]");
+      const toggle = root.querySelector("[data-reference-tag-toggle]");
+      const symbol = root.querySelector("[data-reference-tag-symbol]");
+      root.dataset.referenceTagPanelOpen = String(open);
+      if (panel) {
+        panel.hidden = !open;
+      }
+      if (toggle) {
+        toggle.setAttribute("aria-expanded", String(open));
+      }
+      if (symbol) {
+        symbol.textContent = open ? "−" : "+";
+      }
+      syncReferenceActiveSummary(root);
+    };
+
     const applyArchiveFilters = (root) => {
       const activeCategory = root.dataset.archiveCategory || "all";
       const activeTag = root.dataset.archiveTag || "all";
@@ -399,48 +525,38 @@ const topCategories = [...categoryCounts.entries()].sort(
       if (searchSlot) {
         searchSlot.dataset.hasQuery = String(Boolean(query));
       }
+      syncReferenceActiveSummary(root);
     };
 
     const syncArchiveTagVisibility = (root) => {
       const activeCategory = root.dataset.archiveCategory || "all";
-      let activeTagIsVisible = true;
+      const activeTag = root.dataset.archiveTag || "all";
+      const activeTagButton = [...root.querySelectorAll("[data-archive-tag]")]
+        .find((button) => button.dataset.archiveTag === activeTag);
+      const activeTagCategories = parseJsonList(activeTagButton?.dataset.archiveTagCategories);
+      const activeTagIsVisible = activeTag === "all" || activeCategory === "all" || activeTagCategories.includes(activeCategory);
 
-      root.querySelectorAll("[data-archive-tag]").forEach((button) => {
-        const categories = parseJsonList(button.dataset.archiveTagCategories);
-        const isAllTag = button.dataset.archiveTag === "all";
-        const isVisible = isAllTag || activeCategory === "all" || categories.includes(activeCategory);
-        button.hidden = !isVisible;
-        if (button.classList.contains("is-active") && !isVisible) {
-          activeTagIsVisible = false;
-        }
+      root.querySelectorAll("[data-reference-tag-group]").forEach((group) => {
+        group.hidden = activeCategory !== "all" && group.dataset.referenceTagGroupCategory !== activeCategory;
       });
 
       if (!activeTagIsVisible) {
-        const allTag = root.querySelector('[data-archive-tag="all"]');
-        if (allTag) {
-          setArchiveTag(root, allTag);
-        }
+        root.dataset.archiveTag = "all";
       }
+      syncArchiveButtonState(root);
+      syncReferenceActiveSummary(root);
     };
 
     const setArchiveCategory = (root, button) => {
       root.dataset.archiveCategory = button.dataset.archiveCategory || "all";
-      root.querySelectorAll("[data-archive-category]").forEach((item) => {
-        const isActive = item === button;
-        item.classList.toggle("is-active", isActive);
-        item.setAttribute("aria-pressed", String(isActive));
-      });
+      syncArchiveButtonState(root);
       syncArchiveTagVisibility(root);
       applyArchiveFilters(root);
     };
 
     const setArchiveTag = (root, button) => {
       root.dataset.archiveTag = button.dataset.archiveTag || "all";
-      root.querySelectorAll("[data-archive-tag]").forEach((item) => {
-        const isActive = item === button;
-        item.classList.toggle("is-active", isActive);
-        item.setAttribute("aria-pressed", String(isActive));
-      });
+      syncArchiveButtonState(root);
       applyArchiveFilters(root);
     };
 
@@ -451,25 +567,9 @@ const topCategories = [...categoryCounts.entries()].sort(
       }
       root.dataset.archiveCategory = "all";
       root.dataset.archiveTag = "all";
-      root.querySelectorAll("[data-archive-category]").forEach((button) => {
-        const isActive = button.dataset.archiveCategory === "all";
-        button.classList.toggle("is-active", isActive);
-        button.setAttribute("aria-pressed", String(isActive));
-      });
-      root.querySelectorAll("[data-archive-tag]").forEach((button) => {
-        const isActive = button.dataset.archiveTag === "all";
-        button.classList.toggle("is-active", isActive);
-        button.setAttribute("aria-pressed", String(isActive));
-      });
+      syncArchiveButtonState(root);
       syncArchiveTagVisibility(root);
       applyArchiveFilters(root);
-    };
-
-    const syncReferenceTagDisclosure = (details) => {
-      const symbol = details.querySelector("[data-reference-tag-symbol]");
-      if (symbol) {
-        symbol.textContent = details.open ? "−" : "+";
-      }
     };
 
     const setArchiveView = (root, view) => {
@@ -539,7 +639,9 @@ const topCategories = [...categoryCounts.entries()].sort(
         root.dataset.archiveView ||= "timeline";
         syncArchiveTagVisibility(root);
         setArchiveView(root, root.dataset.archiveView);
-        root.querySelectorAll("[data-reference-tag-details]").forEach(syncReferenceTagDisclosure);
+        if (root.matches("[data-reference-query-terminal]")) {
+          syncReferenceTagDisclosure(root, false);
+        }
         hydrateArchiveCardImages(root);
         applyArchiveFilters(root);
       });
@@ -553,12 +655,30 @@ const topCategories = [...categoryCounts.entries()].sort(
 
       document.addEventListener("click", (event) => {
         const target = event.target instanceof Element ? event.target : null;
-        document.querySelectorAll("[data-reference-tag-details][open]").forEach((details) => {
-          if (!details.contains(target)) {
-            details.removeAttribute("open");
-            syncReferenceTagDisclosure(details);
+        document.querySelectorAll('[data-reference-query-terminal][data-reference-tag-panel-open="true"]').forEach((root) => {
+          if (!root.contains(target)) {
+            syncReferenceTagDisclosure(root, false);
           }
         });
+
+        const tagDisclosure = target?.closest("[data-reference-tag-toggle]");
+        if (tagDisclosure) {
+          const root = tagDisclosure.closest("[data-archive-overview]");
+          if (root) {
+            syncReferenceTagDisclosure(root, root.dataset.referenceTagPanelOpen !== "true");
+          }
+          return;
+        }
+
+        const clearTagButton = target?.closest("[data-reference-clear-tag]");
+        if (clearTagButton) {
+          const root = clearTagButton.closest("[data-archive-overview]");
+          const allTag = root?.querySelector('[data-archive-tag="all"]');
+          if (root && allTag) {
+            setArchiveTag(root, allTag);
+          }
+          return;
+        }
 
         const clearButton = target?.closest("[data-reference-clear]");
         if (clearButton) {
@@ -606,12 +726,16 @@ const topCategories = [...categoryCounts.entries()].sort(
         }
       });
 
-      document.addEventListener("toggle", (event) => {
-        const details = event.target instanceof Element ? event.target.closest("[data-reference-tag-details]") : null;
-        if (details) {
-          syncReferenceTagDisclosure(details);
+      document.addEventListener("keydown", (event) => {
+        if (event.key !== "Escape") {
+          return;
         }
-      }, true);
+        const root = document.querySelector('[data-reference-query-terminal][data-reference-tag-panel-open="true"]');
+        if (root) {
+          syncReferenceTagDisclosure(root, false);
+          root.querySelector("[data-reference-tag-toggle]")?.focus();
+        }
+      });
 
       document.addEventListener("astro:page-load", initArchiveOverviews);
     }

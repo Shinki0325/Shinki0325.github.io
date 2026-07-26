@@ -60,6 +60,21 @@ describe("archive overview pages", () => {
     expect(referencesSource).not.toMatch(/entryKind:\s*.*(?:title|category|index)/);
   });
 
+  it("derives the complete reference tag drawer from the Knowledge visibility threshold", async () => {
+    const fs = await import("node:fs/promises");
+    const [componentSource, referencesSource] = await Promise.all([
+      fs.readFile("src/components/ArchiveOverview.astro", "utf8"),
+      fs.readFile("src/pages/references/index.astro", "utf8"),
+    ]);
+
+    expect(referencesSource).toContain("PUBLIC_REFERENCE_VISIBLE_MINIMUM_ENTRY_COUNT");
+    expect(referencesSource).toContain("tagVisibleMinimumEntryCount={PUBLIC_REFERENCE_VISIBLE_MINIMUM_ENTRY_COUNT}");
+    expect(componentSource).toContain("tagVisibleMinimumEntryCount?: number");
+    expect(componentSource).toContain("count >= tagVisibleMinimumEntryCount");
+    expect(componentSource).toContain('archiveStyle === "reference"');
+    expect(componentSource).toContain(".slice(0, 12)");
+  });
+
   it("defines the reference-blog-like archive controls without touching detail page templates", async () => {
     const fs = await import("node:fs/promises");
     const [componentSource, styleSource, globalStyleSource] = await Promise.all([
@@ -172,6 +187,30 @@ describe("archive overview pages", () => {
     expect(source).toContain("data-archive-tag-categories");
     expect(source).toContain("setArchiveCategory");
     expect(source).toContain("syncArchiveTagVisibility");
+  });
+
+  it("renders the reference query, primary domains, and contextual secondary tags as distinct rows", async () => {
+    const fs = await import("node:fs/promises");
+    const [source, style] = await Promise.all([
+      fs.readFile("src/components/ArchiveOverview.astro", "utf8"),
+      fs.readFile("src/styles/reference-query-terminal.css", "utf8"),
+    ]);
+
+    for (const hook of [
+      "data-reference-query-deck",
+      "data-reference-query-row",
+      "data-reference-primary-row",
+      "data-reference-secondary-panel",
+      "data-reference-tag-group",
+      "data-reference-active-filter-summary",
+    ]) {
+      expect(source).toContain(hook);
+    }
+    expect(source).toContain("data-archive-category-label");
+    expect(source).toContain("data-archive-tag-label");
+    expect(source).toContain("tagCategories");
+    expect(style).toMatch(/reference-query-terminal__secondary-panel\s*\{[^}]*position:\s*static/s);
+    expect(style).not.toContain("width: min(470px, 72vw)");
   });
 
   it("renders rotating cover candidates and orientation-aware archive cards", async () => {

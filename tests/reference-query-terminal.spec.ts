@@ -6,6 +6,7 @@ const desktopViewports = [
   { name: "1440", width: 1440, height: 1000 },
   { name: "1280", width: 1280, height: 1000 },
   { name: "1024", width: 1024, height: 1000 },
+  { name: "901", width: 901, height: 1000 },
 ] as const;
 
 const prepare = async (page: Page, width = 1440, height = 1000) => {
@@ -60,7 +61,7 @@ for (const viewport of desktopViewports) {
     const identity = root.locator(".reference-query-terminal__identity");
     const identityCopyBox = await box(identity.locator(".reference-query-terminal__identity-copy"));
     const statusBox = await box(identity.locator(".reference-query-terminal__status"));
-    if (viewport.width === 1024) {
+    if (viewport.width <= 1024) {
       expect(statusBox.y).toBeGreaterThanOrEqual(identityCopyBox.y + identityCopyBox.height - 1);
       expect(statusBox.width).toBeCloseTo(identityCopyBox.width, 0);
     } else {
@@ -113,6 +114,114 @@ for (const viewport of desktopViewports) {
   });
 }
 
+for (const viewport of desktopViewports) {
+  test(viewport.name + "px query deck keeps secondary tags in flow above results", async ({ page }) => {
+    await prepare(page, viewport.width, viewport.height);
+    const root = page.locator("[data-reference-query-terminal]");
+    const queryDeck = root.locator("[data-reference-query-deck]");
+    const queryRow = root.locator("[data-reference-query-row]");
+    const primaryRow = root.locator("[data-reference-primary-row]");
+    const details = root.locator("[data-reference-tag-details]");
+    const toggle = root.locator("[data-reference-tag-toggle]");
+    const panel = root.locator("[data-reference-secondary-panel]");
+    const firstRecord = root.locator("[data-archive-card]:visible").first();
+
+    await expect(queryDeck).toBeVisible();
+    await expect(queryRow).toBeVisible();
+    await expect(primaryRow).toBeVisible();
+    expect((await box(queryRow)).y).toBeLessThan((await box(primaryRow)).y);
+
+    await toggle.click();
+    await expect(toggle).toHaveAttribute("aria-expanded", "true");
+    await expect(panel).toBeVisible();
+    await expect(panel).toHaveCSS("position", "static");
+    const deckBox = await box(queryDeck);
+    const primaryBox = await box(primaryRow);
+    const panelBox = await box(panel);
+    const firstRecordBox = await box(firstRecord);
+    expect(Math.abs(panelBox.width - deckBox.width)).toBeLessThanOrEqual(2);
+    expect(panelBox.y).toBeGreaterThanOrEqual(primaryBox.y + primaryBox.height - 1);
+    expect(firstRecordBox.y).toBeGreaterThanOrEqual(panelBox.y + panelBox.height - 1);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)).toBeLessThanOrEqual(1);
+
+    if (reviewOutput) {
+      await mkdir(reviewOutput, { recursive: true });
+      await page.screenshot({ fullPage: true, path: reviewOutput + "/reference-query-tags-open-" + viewport.name + ".png" });
+    }
+  });
+}
+
+test("secondary tags are grouped, contextual, and retain only valid active state", async ({ page }) => {
+  await prepare(page);
+  const root = page.locator("[data-reference-query-terminal]");
+  const details = root.locator("[data-reference-tag-details]");
+  const toggle = root.locator("[data-reference-tag-toggle]");
+  await toggle.click();
+
+  const groups = root.locator("[data-reference-tag-group]:visible");
+  expect(await groups.count()).toBeGreaterThan(1);
+  const allSecondaryButtons = groups.locator("[data-archive-tag]:not([data-archive-tag='all'])");
+  const canonicalKeys = await allSecondaryButtons.evaluateAll((nodes) =>
+    [...new Set(nodes.map((node) => node.getAttribute("data-archive-tag")).filter(Boolean))],
+  );
+  expect(canonicalKeys.length).toBeGreaterThan(0);
+  const primaryLabels = await root.locator("[data-archive-category]:not([data-archive-category='all'])").evaluateAll((nodes) =>
+    nodes.map((node) => (node.getAttribute("data-archive-category-label") || "").trim()),
+  );
+  const secondaryLabels = await allSecondaryButtons.evaluateAll((nodes) =>
+    nodes.map((node) => (node.getAttribute("data-archive-tag-label") || "").trim()),
+  );
+  expect(secondaryLabels.some((label) => /^[a-z0-9]+(?:-[a-z0-9]+)+$/u.test(label))).toBe(false);
+  expect(secondaryLabels.filter((label) => primaryLabels.includes(label))).toEqual([]);
+
+  const tagState = await allSecondaryButtons.evaluateAll((nodes) => {
+    const states = nodes.map((node) => ({
+      key: node.getAttribute("data-archive-tag") || "",
+      label: node.getAttribute("data-archive-tag-label") || "",
+      categories: JSON.parse(node.getAttribute("data-archive-tag-categories") || "[]") as string[],
+    }));
+    return states.find((state) => state.categories.length > 1) ?? states[0];
+  });
+  expect(tagState.categories.length).toBeGreaterThan(0);
+
+  const validPrimary = root.locator(`[data-archive-category="${tagState.categories[0]}"]`);
+  await validPrimary.click();
+  await expect(validPrimary).toHaveAttribute("aria-pressed", "true");
+  await expect(root.locator("[data-reference-tag-group]:visible")).toHaveCount(1);
+  const visibleTags = root.locator("[data-reference-tag-group]:visible [data-archive-tag]:not([data-archive-tag='all'])");
+  expect(await visibleTags.evaluateAll((nodes, category) => nodes.every((node) => {
+    const categories = JSON.parse(node.getAttribute("data-archive-tag-categories") || "[]");
+    return categories.includes(category);
+  }), tagState.categories[0])).toBe(true);
+
+  const activeTag = root.locator(`[data-archive-tag="${tagState.key}"]:visible`).first();
+  await activeTag.click();
+  await expect(activeTag).toHaveAttribute("aria-pressed", "true");
+  await page.keyboard.press("Escape");
+  await expect(toggle).toHaveAttribute("aria-expanded", "false");
+  const activeSummary = root.locator("[data-reference-active-filter-summary]");
+  await expect(activeSummary).toContainText(await validPrimary.getAttribute("data-archive-category-label") || "");
+  await expect(activeSummary).toContainText(tagState.label);
+
+  if (tagState.categories.length > 1) {
+    const stillValidPrimary = root.locator(`[data-archive-category="${tagState.categories[1]}"]`);
+    await stillValidPrimary.click();
+    await expect(root.locator(`[data-archive-tag="${tagState.key}"]`).first()).toHaveAttribute("aria-pressed", "true");
+  }
+
+  const invalidKey = await root.locator("[data-archive-category]:not([data-archive-category='all'])").evaluateAll(
+    (nodes, validCategories) => nodes
+      .map((node) => node.getAttribute("data-archive-category"))
+      .find((key) => key && !validCategories.includes(key)) || "",
+    tagState.categories,
+  );
+  expect(invalidKey).not.toBe("");
+  const invalidCategory = root.locator(`[data-archive-category="${invalidKey}"]`);
+  await invalidCategory.click();
+  await expect(invalidCategory).toHaveAttribute("aria-pressed", "true");
+  await expect(root.locator('[data-archive-tag="all"]')).toHaveAttribute("aria-pressed", "true");
+});
+
 test("query controls synchronize category, tag, search, clear, and empty states", async ({ page }) => {
   await prepare(page);
   const root = page.locator("[data-reference-query-terminal]");
@@ -136,11 +245,33 @@ test("query controls synchronize category, tag, search, clear, and empty states"
   if (reviewOutput) await page.screenshot({ fullPage: true, path: reviewOutput + "/reference-query-category-1440.png" });
 
   const details = root.locator("[data-reference-tag-details]");
-  await details.locator("summary").click();
-  await expect(details).toHaveAttribute("open", "");
+  const tagToggle = root.locator("[data-reference-tag-toggle]");
+  await tagToggle.click();
+  await expect(tagToggle).toHaveAttribute("aria-expanded", "true");
   await expect(root.locator("[data-reference-tag-symbol]")).toHaveText("−");
   const drawer = details.locator(".reference-query-terminal__tag-drawer");
   await expect(drawer).toBeVisible();
+  const secondaryTags = root.locator("[data-archive-tag]:not([data-archive-tag='all'])");
+  expect(await secondaryTags.count()).toBeGreaterThan(0);
+  const primaryKeys = await root.locator("[data-archive-category]:not([data-archive-category='all'])").evaluateAll((nodes) =>
+    nodes.map((node) => node.getAttribute("data-archive-category")),
+  );
+  const secondaryKeys = await secondaryTags.evaluateAll((nodes) =>
+    nodes.map((node) => node.getAttribute("data-archive-tag")),
+  );
+  const uniqueSecondaryKeys = [...new Set(secondaryKeys)];
+  const expectedSecondaryKeys = await cards.evaluateAll((nodes) => {
+    const counts = new Map<string, number>();
+    for (const node of nodes) {
+      for (const tag of JSON.parse(node.getAttribute("data-archive-tags") || "[]")) {
+        counts.set(tag, (counts.get(tag) || 0) + 1);
+      }
+    }
+    return [...counts.entries()].filter(([, count]) => count >= 2).map(([tag]) => tag).sort();
+  });
+  expect(uniqueSecondaryKeys.sort()).toEqual(expectedSecondaryKeys);
+  expect(uniqueSecondaryKeys.filter((key) => primaryKeys.includes(key))).toEqual([]);
+  expect(uniqueSecondaryKeys.some((key) => Boolean(key && /^[a-z0-9]+(?:-[a-z0-9]+)+$/u.test(key)))).toBe(false);
   const drawerBounds = await box(drawer);
   expect(drawerBounds.x).toBeGreaterThanOrEqual(0);
   expect(drawerBounds.x + drawerBounds.width).toBeLessThanOrEqual(1440);
@@ -153,7 +284,16 @@ test("query controls synchronize category, tag, search, clear, and empty states"
   expect(hitTestable).toBe(true);
   if (reviewOutput) await page.screenshot({ fullPage: true, path: reviewOutput + "/reference-query-tags-open-1440.png" });
 
-  const tag = root.locator("[data-archive-tag]:not([data-archive-tag='all']):visible").first();
+  const visibleSecondaryTags = root.locator("[data-archive-tag]:not([data-archive-tag='all']):visible");
+  const matchingTagIndex = await visibleSecondaryTags.evaluateAll((nodes, activeCategory) =>
+    nodes.findIndex((node) => {
+      const categories = JSON.parse(node.getAttribute("data-archive-tag-categories") || "[]");
+      return categories.includes(activeCategory);
+    }),
+    categoryValue,
+  );
+  expect(matchingTagIndex).toBeGreaterThanOrEqual(0);
+  const tag = visibleSecondaryTags.nth(matchingTagIndex);
   const tagValue = await tag.getAttribute("data-archive-tag");
   const tagExpected = await cards.evaluateAll(
     (nodes, state) => nodes.filter((node) => {
@@ -162,14 +302,24 @@ test("query controls synchronize category, tag, search, clear, and empty states"
     }).length,
     { category: categoryValue, tag: tagValue },
   );
+  expect(tagExpected).toBeGreaterThan(0);
   await tag.click();
   await expect(tag).toHaveAttribute("aria-pressed", "true");
   await expect(allTag).toHaveAttribute("aria-pressed", "false");
   await expect(count).toHaveText(String(tagExpected).padStart(2, "0"));
-  if (reviewOutput) await page.screenshot({ fullPage: true, path: reviewOutput + "/reference-query-tag-filter-1440.png" });
+  if (reviewOutput) await page.screenshot({ fullPage: true, path: reviewOutput + "/reference-secondary-tag-active-1440.png" });
+
+  await allTag.focus();
+  await page.keyboard.press("Enter");
+  await expect(allTag).toHaveAttribute("aria-pressed", "true");
+  await expect(category).toHaveAttribute("aria-pressed", "true");
+  await expect(count).toHaveText(String(categoryExpected).padStart(2, "0"));
+  await tag.focus();
+  await page.keyboard.press("Enter");
+  await expect(tag).toHaveAttribute("aria-pressed", "true");
 
   await page.mouse.click(8, 500);
-  await expect(details).not.toHaveAttribute("open", "");
+  await expect(tagToggle).toHaveAttribute("aria-expanded", "false");
   await expect(root.locator("[data-reference-tag-symbol]")).toHaveText("+");
   const clear = root.locator(".reference-query-terminal__search [data-reference-clear]");
   await expect(clear).toBeVisible();
@@ -202,7 +352,7 @@ test("topic and source interactions change treatment without moving geometry", a
   const topic = root.locator("[data-reference-entry-kind='topic']").first();
   const record = root.locator("[data-reference-entry-kind='source']:has([data-archive-card-image])").first();
   const recordImage = record.locator("[data-archive-card-image]");
-  const topicBefore = await box(topic);
+  await record.scrollIntoViewIfNeeded();
   const recordBefore = await box(record);
   const restingTopicAnimation = await topic.evaluate((node) => getComputedStyle(node, "::after").animationName);
   const restingRecordBackground = await record.evaluate((node) => getComputedStyle(node).backgroundColor);
@@ -219,6 +369,8 @@ test("topic and source interactions change treatment without moving geometry", a
   await expect(record).toHaveCSS("outline-style", "solid");
   if (reviewOutput) await record.screenshot({ path: reviewOutput + "/reference-query-record-focus-1440.png" });
 
+  await topic.scrollIntoViewIfNeeded();
+  const topicBefore = await box(topic);
   await topic.hover();
   expect(await box(topic)).toEqual(topicBefore);
   expect(restingTopicAnimation).toBe("none");
