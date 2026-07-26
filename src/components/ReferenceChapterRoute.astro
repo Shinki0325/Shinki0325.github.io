@@ -7,39 +7,23 @@ const total = String(chapters.length).padStart(2, "0");
 ---
 
 {chapters.length > 0 && (
-  <nav class="reference-chapter-route" aria-label="本文目录" data-reference-chapter-route>
-    <div class="reference-chapter-route__sentinel" data-reference-chapter-sentinel aria-hidden="true"></div>
-    {chapters.length > 1 ? <button
-        class="reference-chapter-route__compact"
-        type="button"
-        aria-expanded="false"
-        aria-controls="reference-chapter-list"
-        data-reference-chapter-toggle
-      >
-        <span><b data-reference-current-number>00</b> / {total}</span>
-        <strong data-reference-current-title>概览</strong>
-        <i aria-hidden="true">+</i>
-        <span class="sr-only">展开本文目录</span>
-      </button> : <div class="reference-chapter-route__compact reference-chapter-route__compact--static">
-      <span><b data-reference-current-number>01</b> / {total}</span>
-      <strong data-reference-current-title>{chapters[0]?.titleZh}</strong>
-    </div>}
-    <div class="reference-chapter-route__full" id="reference-chapter-list" data-reference-chapter-list>
-      <header><strong>阅读目录</strong><span>{total} CHAPTERS</span></header>
-      <ol>
-        {chapters.map((chapter) => (
-          <li>
-            <a
-              href={`#${chapter.id}`}
-              data-reference-chapter-link
-              data-chapter-id={chapter.id}
-            >
-              <span>{String(chapter.number).padStart(2, "0")}</span>
-              <span><strong>{chapter.titleZh}</strong>{chapter.summaryZh && <small>{chapter.summaryZh}</small>}</span>
-            </a>
-          </li>
-        ))}
-      </ol>
-    </div>
+  <nav class="reference-chapter-directory" aria-label="本文目录" data-reference-chapter-directory>
+    <header class="reference-chapter-directory__header">
+      <strong>阅读目录</strong><span>{total} CHAPTERS</span>
+    </header>
+    <ol class="reference-chapter-directory__list">
+      {chapters.map((chapter) => (
+        <li>
+          <a
+            href={`#${chapter.id}`}
+            data-reference-chapter-link
+            data-chapter-id={chapter.id}
+          >
+            <span>{String(chapter.number).padStart(2, "0")}</span>
+            <span><strong>{chapter.titleZh}</strong>{chapter.summaryZh && <small>{chapter.summaryZh}</small>}</span>
+          </a>
+        </li>
+      ))}
+    </ol>
   </nav>
 )}

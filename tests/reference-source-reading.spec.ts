@@ -10,7 +10,8 @@ const reviewOutput = process.env.REVIEW_OUTPUT;
 const desktopViewports = [
   { name: "1440", width: 1440, height: 1000 },
   { name: "1280", width: 1280, height: 1000 },
-  { name: "1024", width: 1024, height: 1000 }
+  { name: "1024", width: 1024, height: 1000 },
+  { name: "901", width: 901, height: 1000 }
 ] as const;
 
 const prepare = async (page: Page, path: string, width = 1440, height = 1000) => {
@@ -26,6 +27,12 @@ const box = async (locator: ReturnType<Page["locator"]>) => {
   const rect = await locator.boundingBox();
   expect(rect).not.toBeNull();
   return rect!;
+};
+
+const documentBox = async (locator: ReturnType<Page["locator"]>) => {
+  const rect = await box(locator);
+  const scroll = await locator.page().evaluate(() => ({ x: window.scrollX, y: window.scrollY }));
+  return { ...rect, x: rect.x + scroll.x, y: rect.y + scroll.y };
 };
 
 const intersects = (left: Awaited<ReturnType<typeof box>>, right: Awaited<ReturnType<typeof box>>) =>
@@ -130,19 +137,36 @@ test("progress and ClientRouter re-entry stay idempotent", async ({ page }) => {
   await expect(trigger).toBeFocused();
 });
 
-test("chapter route follows hash, compact controls, and active chapter state", async ({ page }) => {
+test("static chapter directory and shared dual-entry panel follow active chapter state", async ({ page }) => {
   await prepare(page, chapteredPath);
-  const route = page.locator("[data-reference-chapter-route]");
-  const links = route.locator("[data-reference-chapter-link]");
+  const directory = page.locator("[data-reference-chapter-directory]");
+  const links = directory.locator("[data-reference-chapter-link]");
   const chapters = page.locator("[data-reference-chapter]");
+  const marker = page.locator("[data-reference-chapter-hud-marker]");
+  const manualToggle = page.locator("[data-reference-chapter-manual-toggle]");
+  const hud = page.locator("[data-reference-chapter-hud]");
+  const hudToggle = page.locator("[data-reference-chapter-hud-toggle]");
+  const panel = page.locator("#reference-chapter-panel");
 
-  await expect(route).toHaveAttribute("aria-label", "本文目录");
+  await expect(directory).toHaveAttribute("aria-label", "本文目录");
   expect(await links.count()).toBeGreaterThan(1);
-  await expect(route.locator('[data-reference-chapter-link][aria-current="location"]')).toHaveCount(0);
+  expect(await marker.evaluate((node) => Boolean(node.closest("[data-reference-chapter-directory]")))).toBe(false);
+  await expect(marker).toHaveCSS("position", "static");
+  await expect(directory.locator('[data-reference-chapter-link][aria-current="location"]')).toHaveCount(0);
   await expect(page.locator("[data-reference-progress-section]")).toHaveText("00");
   await expect(page.locator("[data-reference-progress-total]")).toHaveText(
     String(await chapters.count()).padStart(2, "0")
   );
+  await expect(manualToggle).toBeVisible();
+  await expect(hud).toBeHidden();
+  await expect(manualToggle).toHaveAttribute("aria-controls", "reference-chapter-panel");
+  await expect(hudToggle).toHaveAttribute("aria-controls", "reference-chapter-panel");
+  await manualToggle.click();
+  await expect(panel).toBeVisible();
+  await expect(manualToggle).toHaveAttribute("aria-expanded", "true");
+  await page.keyboard.press("Escape");
+  await expect(panel).toBeHidden();
+  await expect(manualToggle).toBeFocused();
 
   const target = links.nth(1);
   const targetId = await target.getAttribute("data-chapter-id");
@@ -152,36 +176,34 @@ test("chapter route follows hash, compact controls, and active chapter state", a
   await expect(page.locator(`#${targetId} h2`)).toBeFocused();
   await expect(target).toHaveAttribute("aria-current", "location");
   await expect(page.locator("[data-reference-progress-section]")).toHaveText("02");
-
-  await page.locator(`#${targetId}`).evaluate((node) => node.scrollIntoView({ block: "start" }));
-  await expect(route).toHaveClass(/is-compact/);
-  const toggle = route.locator("[data-reference-chapter-toggle]");
-  await expect(toggle).toHaveAttribute("aria-expanded", "false");
-  await toggle.click();
-  await expect(toggle).toHaveAttribute("aria-expanded", "true");
+  await expect(hud).toBeVisible();
+  await expect(manualToggle).toBeHidden();
+  await hudToggle.click();
+  await expect(panel).toBeVisible();
+  await expect(hudToggle).toHaveAttribute("aria-expanded", "true");
   await page.keyboard.press("Escape");
-  await expect(toggle).toHaveAttribute("aria-expanded", "false");
-  await expect(toggle).toBeFocused();
+  await expect(panel).toBeHidden();
+  await expect(hudToggle).toBeFocused();
 });
 
 test("one-chapter source keeps real progress without a collapsible compact menu", async ({ page }) => {
   await prepare(page, singleChapterPath);
   await expect(page.locator("[data-reference-chapter-link]")).toHaveCount(1);
   await expect(page.locator("[data-reference-progress-total]")).toHaveText("01");
-  await expect(page.locator("[data-reference-chapter-toggle]")).toHaveCount(0);
+  await expect(page.locator("[data-reference-chapter-manual-toggle], [data-reference-chapter-hud-toggle]")).toHaveCount(0);
 });
 
 test("INDEX overlay preserves chapter route geometry and state", async ({ page }) => {
   await page.emulateMedia({ reducedMotion: "reduce" });
   await prepare(page, chapteredPath);
   const reading = page.locator(".reference-source__reading-plane");
-  const route = page.locator("[data-reference-chapter-route]");
-  const secondLink = route.locator("[data-reference-chapter-link]").nth(1);
+  const directory = page.locator("[data-reference-chapter-directory]");
+  const secondLink = directory.locator("[data-reference-chapter-link]").nth(1);
   const secondId = await secondLink.getAttribute("data-chapter-id");
   expect(secondId).toBeTruthy();
   await secondLink.click();
   await expect(secondLink).toHaveAttribute("aria-current", "location");
-  await expect(route).toHaveClass(/is-compact/);
+  await expect(page.locator("[data-reference-chapter-hud]")).toBeVisible();
   await waitForScrollSettled(page);
 
   const before = await box(reading);
@@ -198,6 +220,95 @@ test("INDEX overlay preserves chapter route geometry and state", async ({ page }
   expect(Math.abs((await page.evaluate(() => window.scrollY)) - scrollBefore)).toBeLessThanOrEqual(1);
   await expect(secondLink).toHaveAttribute("aria-current", "location");
   await expect(page).toHaveURL(new RegExp(`#${secondId}$`));
+});
+
+for (const viewport of desktopViewports) {
+  test(`${viewport.name}px independent chapter HUD preserves directory geometry and clears hash targets`, async ({ page }) => {
+    await page.emulateMedia({ reducedMotion: "reduce" });
+    await prepare(page, chapteredPath, viewport.width, viewport.height);
+    const topNav = page.locator("[data-top-nav]");
+    const directory = page.locator("[data-reference-chapter-directory]");
+    const marker = page.locator("[data-reference-chapter-hud-marker]");
+    const links = directory.locator("[data-reference-chapter-link]");
+    const manualToggle = page.locator("[data-reference-chapter-manual-toggle]");
+    const hud = page.locator("[data-reference-chapter-hud]");
+    const hudToggle = page.locator("[data-reference-chapter-hud-toggle]");
+    const panel = page.locator("#reference-chapter-panel");
+    const directoryBefore = await documentBox(directory);
+
+    expect(await marker.evaluate((node) => Boolean(node.closest("[data-reference-chapter-directory]")))).toBe(false);
+    await expect(marker).toHaveCSS("position", "static");
+    await expect(manualToggle).toBeVisible();
+    await expect(hud).toBeHidden();
+    await manualToggle.click();
+    await expect(panel).toBeVisible();
+    await page.keyboard.press("Escape");
+
+    await links.nth(1).click();
+    await waitForScrollSettled(page);
+    await expect(hud).toBeVisible();
+    await expect(manualToggle).toBeHidden();
+    const navBox = await box(topNav);
+    const hudBox = await box(hud);
+    expect(hudBox.y).toBeGreaterThanOrEqual(navBox.y + navBox.height);
+    expect(hudBox.height).toBeCloseTo(44, 0);
+    const directoryAfter = await documentBox(directory);
+    for (const key of ["x", "y", "width", "height"] as const) {
+      expect(Math.abs(directoryAfter[key] - directoryBefore[key])).toBeLessThanOrEqual(1);
+    }
+
+    await hudToggle.click();
+    await expect(panel).toBeVisible();
+    const target = panel.locator("[data-reference-chapter-link]").nth(2);
+    const targetId = await target.getAttribute("data-chapter-id");
+    expect(targetId).toBeTruthy();
+    await target.click();
+    await expect(page).toHaveURL(new RegExp(`#${targetId}$`));
+    await waitForScrollSettled(page);
+
+    const targetHeading = page.locator(`#${targetId} h2`);
+    await expect(targetHeading).toBeFocused();
+    const headingBox = await box(targetHeading);
+    const currentHudBox = await box(hud);
+    expect(headingBox.y).toBeGreaterThanOrEqual(currentHudBox.y + currentHudBox.height + 10);
+    const finalDirectory = await documentBox(directory);
+    expect(Math.abs(finalDirectory.height - directoryBefore.height)).toBeLessThanOrEqual(1);
+
+    if (reviewOutput) {
+      await mkdir(reviewOutput, { recursive: true });
+      await page.screenshot({ path: `${reviewOutput}/reference-source-hud-shell-${viewport.name}.png` });
+      await page.screenshot({ path: `${reviewOutput}/reference-source-hash-clearance-${viewport.name}.png` });
+    }
+  });
+}
+
+test("repeated marker crossings and shared-panel chapter selections remain stable", async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await prepare(page, chapteredPath);
+  const marker = page.locator("[data-reference-chapter-hud-marker]");
+  const manualToggle = page.locator("[data-reference-chapter-manual-toggle]");
+  const hud = page.locator("[data-reference-chapter-hud]");
+  const hudToggle = page.locator("[data-reference-chapter-hud-toggle]");
+  const panel = page.locator("#reference-chapter-panel");
+
+  for (let iteration = 0; iteration < 6; iteration += 1) {
+    await page.evaluate(() => window.scrollTo({ top: 0, behavior: "instant" }));
+    await expect(manualToggle).toBeVisible();
+    await expect(hud).toBeHidden();
+    await manualToggle.click();
+    await expect(panel).toBeVisible();
+    await page.keyboard.press("Escape");
+    await marker.evaluate((node) => node.scrollIntoView({ block: "start", behavior: "instant" }));
+    await page.evaluate(() => window.scrollBy({ top: 80, behavior: "instant" }));
+    await expect(hud).toBeVisible();
+    await expect(manualToggle).toBeHidden();
+    await hudToggle.click();
+    await expect(panel).toBeVisible();
+    const links = panel.locator("[data-reference-chapter-link]");
+    const targetIndex = (iteration % Math.max(1, await links.count() - 1)) + 1;
+    await links.nth(targetIndex).click();
+    await expect(panel).toBeHidden();
+  }
 });
 
 for (const viewport of desktopViewports) {
@@ -249,20 +360,21 @@ for (const viewport of desktopViewports) {
       await page.screenshot({ fullPage: true, path: `${reviewOutput}/reference-source-curated-closed-${viewport.name}.png` });
     }
 
-    const chapterRoute = root.locator("[data-reference-chapter-route]");
-    const chapterLink = chapterRoute.locator("[data-reference-chapter-link]").nth(1);
+    const chapterDirectory = root.locator("[data-reference-chapter-directory]");
+    const chapterLink = chapterDirectory.locator("[data-reference-chapter-link]").nth(1);
     await chapterLink.click();
-    await expect(chapterRoute).toHaveClass(/is-compact/);
+    const chapterHud = root.locator("[data-reference-chapter-hud]");
+    await expect(chapterHud).toBeVisible();
     await waitForScrollSettled(page);
     if (reviewOutput) {
-      await page.screenshot({ path: `${reviewOutput}/reference-source-sticky-closed-${viewport.name}.png` });
+      await page.screenshot({ path: `${reviewOutput}/reference-source-hud-closed-${viewport.name}.png` });
     }
-    const chapterToggle = chapterRoute.locator("[data-reference-chapter-toggle]");
+    const chapterToggle = chapterHud.locator("[data-reference-chapter-hud-toggle]");
     if (await chapterToggle.count()) {
       await chapterToggle.click();
       await expect(chapterToggle).toHaveAttribute("aria-expanded", "true");
       if (reviewOutput) {
-        await page.screenshot({ path: `${reviewOutput}/reference-source-sticky-open-${viewport.name}.png` });
+        await page.screenshot({ path: `${reviewOutput}/reference-source-hud-open-${viewport.name}.png` });
       }
       await page.keyboard.press("Escape");
       await expect(chapterToggle).toHaveAttribute("aria-expanded", "false");

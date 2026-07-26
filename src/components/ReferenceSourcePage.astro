@@ -85,8 +85,45 @@ const chapterTotal = String(chapterCount).padStart(2, "0");
 
     <div class="reference-source__progress-copy" data-reference-progress-copy>
       <span>CHAPTER / <b data-reference-progress-section>00</b> / <span data-reference-progress-total>{chapterTotal}</span></span>
-      <output data-reference-progress-value>0%</output>
+      <span class="reference-source__progress-actions">
+        <output data-reference-progress-value>0%</output>
+        {chapterCount > 1 && <button
+          class="reference-chapter-launcher"
+          type="button"
+          aria-controls="reference-chapter-panel"
+          aria-expanded="false"
+          data-reference-chapter-manual-toggle
+        >
+          <span>章节</span><i aria-hidden="true">+</i>
+        </button>}
+      </span>
     </div>
+
+    {chapterCount > 1 && <>
+      <aside class="reference-chapter-hud" data-reference-chapter-hud hidden>
+        <span class="reference-chapter-hud__position"><b data-reference-current-number>00</b> / {chapterTotal}</span>
+        <strong data-reference-current-title>概览</strong>
+        <output data-reference-hud-progress>0%</output>
+        <button
+          type="button"
+          aria-controls="reference-chapter-panel"
+          aria-expanded="false"
+          aria-label="展开本文目录"
+          data-reference-chapter-hud-toggle
+        ><i aria-hidden="true">+</i></button>
+      </aside>
+      <div class="reference-chapter-panel" id="reference-chapter-panel" data-reference-chapter-panel hidden>
+        <header><strong>阅读目录</strong><span>{chapterTotal} CHAPTERS</span></header>
+        <ol>
+          {readingState.document?.chapters.map((chapter) => <li>
+            <a href={`#${chapter.id}`} data-reference-chapter-link data-chapter-id={chapter.id}>
+              <span>{String(chapter.number).padStart(2, "0")}</span>
+              <span><strong>{chapter.titleZh}</strong>{chapter.summaryZh && <small>{chapter.summaryZh}</small>}</span>
+            </a>
+          </li>)}
+        </ol>
+      </div>
+    </>}
 
     <main class="reference-source__reading-plane">
       <section class="reference-source__intro" data-reference-section>
@@ -95,6 +132,7 @@ const chapterTotal = String(chapterCount).padStart(2, "0");
         {readingState.document?.overviewZh.length ? readingState.document.overviewZh.map((paragraph) => <p>{paragraph}</p>) : <p>{referenceIntro}</p>}
       </section>
       <ReferenceChapterRoute chapters={readingState.document?.chapters ?? []} />
+      {chapterCount > 1 && <span class="reference-chapter-hud-marker" data-reference-chapter-hud-marker aria-hidden="true"></span>}
       <section class="reference-source__reading" data-reference-section>
         <p class="reference-source__section-label">FOCUS READING</p>
         <ReferenceReading blocks={readingState.blocks} extract={readingState.extract} document={readingState.document} />
@@ -124,6 +162,13 @@ const chapterTotal = String(chapterCount).padStart(2, "0");
       __referenceSourceReadingPageLoadRegistered?: boolean;
     };
 
+    type ChapterUiState = {
+      activeChapterId: string;
+      hudVisible: boolean;
+      panelOpen: boolean;
+      returnFocusTo: HTMLElement | null;
+    };
+
     const referenceWindow = window as ReferenceSourceWindow;
     const setupReferenceSourceReading = () => {
       referenceWindow.__referenceSourceReadingCleanup?.();
@@ -138,52 +183,88 @@ const chapterTotal = String(chapterCount).padStart(2, "0");
       const progressValue = sourceRoot.querySelector<HTMLOutputElement>("[data-reference-progress-value]");
       const progressSection = sourceRoot.querySelector<HTMLElement>("[data-reference-progress-section]");
       const chapters = [...sourceRoot.querySelectorAll<HTMLElement>("[data-reference-chapter]")];
-      const chapterRoute = sourceRoot.querySelector<HTMLElement>("[data-reference-chapter-route]");
-      const chapterSentinel = sourceRoot.querySelector<HTMLElement>("[data-reference-chapter-sentinel]");
-      const chapterToggle = sourceRoot.querySelector<HTMLButtonElement>("[data-reference-chapter-toggle]");
-      const chapterList = sourceRoot.querySelector<HTMLElement>("[data-reference-chapter-list]");
-      const currentNumber = sourceRoot.querySelector<HTMLElement>("[data-reference-current-number]");
-      const currentTitle = sourceRoot.querySelector<HTMLElement>("[data-reference-current-title]");
+      const chapterMarker = sourceRoot.querySelector<HTMLElement>("[data-reference-chapter-hud-marker]");
+      const chapterManualToggle = sourceRoot.querySelector<HTMLButtonElement>("[data-reference-chapter-manual-toggle]");
+      const chapterHud = sourceRoot.querySelector<HTMLElement>("[data-reference-chapter-hud]");
+      const chapterHudToggle = sourceRoot.querySelector<HTMLButtonElement>("[data-reference-chapter-hud-toggle]");
+      const chapterPanel = sourceRoot.querySelector<HTMLElement>("[data-reference-chapter-panel]");
+      const chapterToggles = [chapterManualToggle, chapterHudToggle].filter((item): item is HTMLButtonElement => Boolean(item));
+      const currentNumbers = [...sourceRoot.querySelectorAll<HTMLElement>("[data-reference-current-number]")];
+      const currentTitles = [...sourceRoot.querySelectorAll<HTMLElement>("[data-reference-current-title]")];
       const chapterLinks = [...sourceRoot.querySelectorAll<HTMLAnchorElement>("[data-reference-chapter-link]")];
+      const hudProgress = sourceRoot.querySelector<HTMLOutputElement>("[data-reference-hud-progress]");
+      const desktopHudMedia = matchMedia("(min-width: 901px)");
+      const chapterState: ChapterUiState = {
+        activeChapterId: "",
+        hudVisible: false,
+        panelOpen: false,
+        returnFocusTo: null,
+      };
       let raf = 0;
       let hashRaf = 0;
       let dialogRaf = 0;
-      let restoreFocus = false;
-      let activeChapter = "";
+      let restoreIndexFocus = false;
 
-      const setChapterPanel = (open: boolean) => {
-        if (!chapterToggle || !chapterList) return;
-        chapterToggle.setAttribute("aria-expanded", String(open));
-        chapterRoute?.classList.toggle("is-open", open);
-        chapterToggle.querySelector("i")!.textContent = open ? "-" : "+";
+      const syncChapterPanel = () => {
+        if (chapterPanel) chapterPanel.hidden = !chapterState.panelOpen;
+        chapterToggles.forEach((toggle) => {
+          toggle.setAttribute("aria-expanded", String(chapterState.panelOpen));
+          const symbol = toggle.querySelector<HTMLElement>("i");
+          if (symbol) symbol.textContent = chapterState.panelOpen ? "-" : "+";
+        });
+      };
+      const closeChapterPanel = (restoreFocus = true) => {
+        if (!chapterState.panelOpen) return;
+        const returnTarget = chapterState.returnFocusTo;
+        chapterState.panelOpen = false;
+        chapterState.returnFocusTo = null;
+        syncChapterPanel();
+        if (restoreFocus) returnTarget?.focus({ preventScroll: true });
+      };
+      const toggleChapterPanel = (toggle: HTMLButtonElement) => {
+        if (chapterState.panelOpen) {
+          closeChapterPanel();
+          return;
+        }
+        chapterState.panelOpen = true;
+        chapterState.returnFocusTo = toggle;
+        syncChapterPanel();
+      };
+      const setHudVisible = (visible: boolean) => {
+        chapterState.hudVisible = visible && desktopHudMedia.matches;
+        if (chapterHud) chapterHud.hidden = !chapterState.hudVisible;
+        if (chapterManualToggle) chapterManualToggle.hidden = chapterState.hudVisible;
+        if (chapterState.panelOpen && chapterState.returnFocusTo?.hidden) {
+          chapterState.returnFocusTo = chapterState.hudVisible ? chapterHudToggle : chapterManualToggle;
+        }
       };
       const setActiveChapter = (id: string) => {
         const chapter = chapters.find((item) => item.id === id);
         if (!chapter) return;
-        activeChapter = id;
+        chapterState.activeChapterId = id;
         chapterLinks.forEach((link) => {
           if (link.dataset.chapterId === id) link.setAttribute("aria-current", "location");
           else link.removeAttribute("aria-current");
         });
-        if (currentNumber) currentNumber.textContent = chapter.dataset.chapterNumber ?? "01";
-        if (currentTitle) currentTitle.textContent = chapter.querySelector("h2")?.textContent ?? "";
+        currentNumbers.forEach((node) => node.textContent = chapter.dataset.chapterNumber ?? "01");
+        currentTitles.forEach((node) => node.textContent = chapter.querySelector("h2")?.textContent ?? "");
         if (progressSection) progressSection.textContent = chapter.dataset.chapterNumber ?? "01";
       };
 
       const syncClosed = () => {
         trigger?.setAttribute("aria-expanded", "false");
-        if (restoreFocus) trigger?.focus();
-        restoreFocus = false;
+        if (restoreIndexFocus) trigger?.focus();
+        restoreIndexFocus = false;
       };
-      const close = () => {
+      const closeIndex = () => {
         if (dialog?.open) dialog.close();
         else syncClosed();
       };
-      const open = () => {
+      const openIndex = () => {
         if (!dialog || dialog.open) return;
         const scrollPosition = { x: window.scrollX, y: window.scrollY };
         trigger?.setAttribute("aria-expanded", "true");
-        restoreFocus = true;
+        restoreIndexFocus = true;
         dialog.showModal();
         closeButton?.focus({ preventScroll: true });
         dialogRaf = requestAnimationFrame(() => {
@@ -196,23 +277,50 @@ const chapterTotal = String(chapterCount).padStart(2, "0");
         const max = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
         const ratio = Math.min(1, Math.max(0, window.scrollY / max));
         progressBar?.style.setProperty("--reference-progress", `${ratio * 100}%`);
-        if (progressValue) progressValue.textContent = `${Math.round(ratio * 100)}%`;
+        const progressText = `${Math.round(ratio * 100)}%`;
+        if (progressValue) progressValue.textContent = progressText;
+        if (hudProgress) hudProgress.textContent = progressText;
+        syncHudFromMarker();
       };
       const onScroll = () => {
         if (!raf) raf = requestAnimationFrame(updateProgress);
       };
       const onDialogClick = (event: MouseEvent) => {
-        if (event.target === dialog) close();
+        if (event.target === dialog) closeIndex();
       };
-      const onChapterToggle = () => setChapterPanel(chapterToggle?.getAttribute("aria-expanded") !== "true");
+      const onChapterToggle = (event: Event) => toggleChapterPanel(event.currentTarget as HTMLButtonElement);
       const onDocumentClick = (event: MouseEvent) => {
-        if (chapterRoute?.classList.contains("is-open") && !chapterRoute.contains(event.target as Node)) setChapterPanel(false);
+        const target = event.target as Node;
+        if (
+          chapterState.panelOpen &&
+          !chapterPanel?.contains(target) &&
+          !chapterToggles.some((toggle) => toggle.contains(target))
+        ) closeChapterPanel();
       };
       const onDocumentKeydown = (event: KeyboardEvent) => {
-        if (event.key === "Escape" && chapterRoute?.classList.contains("is-open")) {
-          setChapterPanel(false);
-          chapterToggle?.focus();
+        if (event.key === "Escape" && chapterState.panelOpen) closeChapterPanel();
+      };
+      const fixedLayerMetrics = () => {
+        const sourceStyle = getComputedStyle(sourceRoot);
+        const shellHeight = Number.parseFloat(sourceStyle.getPropertyValue("--top-nav-shell-height")) || 72;
+        const progressHeight = Number.parseFloat(sourceStyle.getPropertyValue("--reference-progress-height")) || 2;
+        const hudHeight = desktopHudMedia.matches
+          ? Number.parseFloat(sourceStyle.getPropertyValue("--reference-chapter-hud-height")) || 44
+          : 0;
+        return { progressHeight, hudHeight, shellHeight };
+      };
+      const syncHudFromMarker = () => {
+        if (!chapterMarker) {
+          setHudVisible(false);
+          return;
         }
+        const { progressHeight, shellHeight } = fixedLayerMetrics();
+        setHudVisible(chapterMarker.getBoundingClientRect().top <= shellHeight + progressHeight);
+      };
+      const scrollToChapter = (chapter: HTMLElement, behavior: ScrollBehavior | "instant" = "instant") => {
+        const { progressHeight, hudHeight, shellHeight } = fixedLayerMetrics();
+        const top = window.scrollY + chapter.getBoundingClientRect().top - shellHeight - progressHeight - hudHeight - 10;
+        window.scrollTo({ top, behavior: behavior as ScrollBehavior });
       };
       const onChapterLink = (event: MouseEvent) => {
         const link = event.currentTarget as HTMLAnchorElement;
@@ -220,52 +328,64 @@ const chapterTotal = String(chapterCount).padStart(2, "0");
         const chapter = chapters.find((item) => item.id === id);
         if (!chapter) return;
         event.preventDefault();
+        closeChapterPanel(false);
         if (location.hash !== `#${id}`) history.pushState(null, "", `#${id}`);
-        chapter.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
+        scrollToChapter(chapter, matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth");
         chapter.querySelector<HTMLElement>("h2")?.focus({ preventScroll: true });
-        setChapterPanel(false);
         setActiveChapter(id);
       };
       const chapterObserver = new IntersectionObserver((entries) => {
         const visible = entries.filter((entry) => entry.isIntersecting).sort((left, right) => left.boundingClientRect.top - right.boundingClientRect.top);
-        if (visible[0]?.target.id && visible[0].target.id !== activeChapter) setActiveChapter(visible[0].target.id);
+        if (visible[0]?.target.id && visible[0].target.id !== chapterState.activeChapterId) setActiveChapter(visible[0].target.id);
       }, { rootMargin: "-25% 0px -62% 0px", threshold: 0 });
       chapters.forEach((chapter) => chapterObserver.observe(chapter));
-      const sentinelObserver = new IntersectionObserver(([entry]) => chapterRoute?.classList.toggle("is-compact", !entry.isIntersecting), { rootMargin: "-60px 0px 0px 0px" });
-      if (chapterSentinel) sentinelObserver.observe(chapterSentinel);
+      const markerObserver = chapterMarker ? new IntersectionObserver(
+        syncHudFromMarker,
+        { threshold: 0 },
+      ) : null;
+      markerObserver?.observe(chapterMarker!);
+      const onHudMediaChange = syncHudFromMarker;
       const cleanup = () => {
-        restoreFocus = false;
+        restoreIndexFocus = false;
         if (dialog?.open) dialog.close();
-        trigger?.removeEventListener("click", open);
-        closeButton?.removeEventListener("click", close);
+        closeChapterPanel(false);
+        trigger?.removeEventListener("click", openIndex);
+        closeButton?.removeEventListener("click", closeIndex);
         dialog?.removeEventListener("click", onDialogClick);
         dialog?.removeEventListener("close", syncClosed);
-        chapterToggle?.removeEventListener("click", onChapterToggle);
+        chapterToggles.forEach((toggle) => toggle.removeEventListener("click", onChapterToggle));
         chapterLinks.forEach((link) => link.removeEventListener("click", onChapterLink));
         document.removeEventListener("click", onDocumentClick);
         document.removeEventListener("keydown", onDocumentKeydown);
         window.removeEventListener("scroll", onScroll);
+        desktopHudMedia.removeEventListener("change", onHudMediaChange);
         document.removeEventListener("astro:before-swap", cleanup);
         chapterObserver.disconnect();
-        sentinelObserver.disconnect();
+        markerObserver?.disconnect();
         if (raf) cancelAnimationFrame(raf);
         if (hashRaf) cancelAnimationFrame(hashRaf);
         if (dialogRaf) cancelAnimationFrame(dialogRaf);
       };
 
-      trigger?.addEventListener("click", open);
-      closeButton?.addEventListener("click", close);
+      trigger?.addEventListener("click", openIndex);
+      closeButton?.addEventListener("click", closeIndex);
       dialog?.addEventListener("click", onDialogClick);
       dialog?.addEventListener("close", syncClosed);
-      chapterToggle?.addEventListener("click", onChapterToggle);
+      chapterToggles.forEach((toggle) => toggle.addEventListener("click", onChapterToggle));
       chapterLinks.forEach((link) => link.addEventListener("click", onChapterLink));
       document.addEventListener("click", onDocumentClick);
       document.addEventListener("keydown", onDocumentKeydown);
       window.addEventListener("scroll", onScroll, { passive: true });
+      desktopHudMedia.addEventListener("change", onHudMediaChange);
       document.addEventListener("astro:before-swap", cleanup);
+      syncChapterPanel();
+      setHudVisible(false);
       updateProgress();
       if (location.hash && chapters.some((chapter) => `#${chapter.id}` === location.hash)) {
-        hashRaf = requestAnimationFrame(() => chapters.find((chapter) => `#${chapter.id}` === location.hash)?.scrollIntoView({ block: "start" }));
+        hashRaf = requestAnimationFrame(() => {
+          const chapter = chapters.find((item) => `#${item.id}` === location.hash);
+          if (chapter) scrollToChapter(chapter);
+        });
         setActiveChapter(location.hash.slice(1));
       }
 
