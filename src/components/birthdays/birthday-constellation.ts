@@ -1,7 +1,7 @@
 import type {
   BirthdayCalendarMonth,
-  CharacterBirthday,
-} from "../../data/character-birthdays";
+  BirthdayDisplayCharacter,
+} from "../../lib/birthday-calendar-data";
 
 export const birthdayConstellationXPositions = [8, 22, 36, 50, 64, 78, 92] as const;
 export const birthdayConstellationYPositions = [12, 27, 42, 57, 72, 87] as const;
@@ -12,7 +12,7 @@ export type BirthdayConstellationNode = {
   column: number;
   x: number;
   y: number;
-  birthdays: CharacterBirthday[];
+  birthdays: BirthdayDisplayCharacter[];
   isToday: boolean;
 };
 
@@ -23,7 +23,7 @@ export type BirthdayConstellationDate = {
 };
 
 export type BirthdayNeighborDate = BirthdayConstellationDate & {
-  birthdays: CharacterBirthday[];
+  birthdays: BirthdayDisplayCharacter[];
 };
 
 export const getBirthdayConstellationLayout = (
@@ -95,9 +95,9 @@ const toUtcDay = ({ year, month, day }: BirthdayConstellationDate) =>
 
 export const getBirthdayNeighborDates = (
   selected: BirthdayConstellationDate,
-  records: CharacterBirthday[],
+  records: BirthdayDisplayCharacter[],
 ): { previous: BirthdayNeighborDate | null; next: BirthdayNeighborDate | null } => {
-  const groups = new Map<string, CharacterBirthday[]>();
+  const groups = new Map<string, BirthdayDisplayCharacter[]>();
   for (const character of records) {
     const group = groups.get(character.birthday) ?? [];
     group.push(character);

@@ -5,9 +5,9 @@ import {
   getAdjacentCalendarMonth,
   getCalendarMonth,
   getCharacterBangumiUrl,
-  type BirthdayWork,
-  type CharacterBirthday,
-} from "../../data/character-birthdays";
+  type BirthdayDisplayWork,
+  type BirthdayDisplayCharacter,
+} from "../../lib/birthday-calendar-data";
 import {
   buildBirthdayConstellationFocusPath,
   birthdayConstellationXPositions,
@@ -27,11 +27,16 @@ import "./character-birthday-calendar.css";
 type Props = {
   active?: boolean;
   badgeHost?: HTMLElement | null;
-  characters: CharacterBirthday[];
+  busy?: boolean;
+  characters: BirthdayDisplayCharacter[];
   controlsHost?: HTMLElement | null;
+  dataReady?: boolean;
   embedded?: boolean;
+  error?: boolean;
   initialDate: string;
-  works: BirthdayWork[];
+  onMonthRequest?: (target: { year: number; month: number }) => Promise<boolean>;
+  onRetry?: () => void;
+  works: BirthdayDisplayWork[];
 };
 
 const weekdays = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"];
@@ -47,10 +52,15 @@ const formatSelectedDate = ({ year, month, day }: BirthdayConstellationDate) =>
 export default function CharacterBirthdayCalendar({
   active = true,
   badgeHost = null,
+  busy = false,
   characters,
   controlsHost = null,
+  dataReady = true,
   embedded = false,
+  error = false,
   initialDate,
+  onMonthRequest,
+  onRetry,
   works,
 }: Props) {
   const initialToday = useMemo(() => parseInitialDate(initialDate), [initialDate]);
@@ -69,6 +79,10 @@ export default function CharacterBirthdayCalendar({
   const [focusedDay, setFocusedDay] = useState<number | null>(null);
   const rootRef = useRef<HTMLElement>(null);
   const pendingFocusDay = useRef<number | null>(null);
+  const monthRequestInFlight = useRef(false);
+  const [revealedCharacterIds, setRevealedCharacterIds] = useState<Set<string>>(
+    () => new Set(),
+  );
   const workById = useMemo(
     () => new Map(works.map((work) => [work.id, work])),
     [works],
@@ -117,6 +131,14 @@ export default function CharacterBirthdayCalendar({
     () => getBirthdayNeighborDates(selectedDate, characters),
     [characters, selectedDate],
   );
+  const automaticAvatarIds = useMemo(() => {
+    const candidates = [
+      ...selectedBirthdays,
+      ...(birthdayNeighbors.previous?.birthdays.slice(0, 1) ?? []),
+      ...(birthdayNeighbors.next?.birthdays.slice(0, 1) ?? []),
+    ];
+    return new Set(candidates.slice(0, 8).map((character) => character.id));
+  }, [birthdayNeighbors.next, birthdayNeighbors.previous, selectedBirthdays]);
   const selectedVisibleNode =
     layout.find((node) => selectedDateIsVisible && node.day === selectedDate.day) ?? null;
   const selectedPulsePath = useMemo(
@@ -139,10 +161,30 @@ export default function CharacterBirthdayCalendar({
     [skyBadgeStars],
   );
 
+  const requestVisibleMonth = async (target: { year: number; month: number }) => {
+    if (monthRequestInFlight.current || busy || !dataReady) return false;
+    monthRequestInFlight.current = true;
+    try {
+      const loaded = onMonthRequest ? await onMonthRequest(target) : true;
+      if (loaded) setVisibleMonth(target);
+      return loaded;
+    } finally {
+      monthRequestInFlight.current = false;
+    }
+  };
+
   const goToMonth = (offset: number) => {
-    setVisibleMonth((current) =>
-      getAdjacentCalendarMonth(current.year, current.month, offset),
-    );
+    const target = getAdjacentCalendarMonth(visibleMonth.year, visibleMonth.month, offset);
+    void requestVisibleMonth(target);
+  };
+
+  const revealCharacters = (records: BirthdayDisplayCharacter[]) => {
+    if (records.length === 0) return;
+    setRevealedCharacterIds((current) => {
+      const next = new Set(current);
+      for (const character of records) next.add(character.id);
+      return next;
+    });
   };
 
   const selectDate = (date: BirthdayConstellationDate, revealMonth = false) => {
@@ -151,9 +193,14 @@ export default function CharacterBirthdayCalendar({
     setSelectionSequence((current) => current + 1);
   };
 
-  const selectNeighbor = (date: BirthdayNeighborDate) => {
+  const selectNeighbor = async (date: BirthdayNeighborDate) => {
+    if (date.month !== visibleMonth.month || date.year !== visibleMonth.year) {
+      const loaded = await requestVisibleMonth({ year: date.year, month: date.month });
+      if (!loaded) return;
+    }
     pendingFocusDay.current = date.day;
-    selectDate(date, true);
+    revealCharacters(date.birthdays);
+    selectDate(date);
   };
 
   useEffect(() => {
@@ -197,7 +244,13 @@ export default function CharacterBirthdayCalendar({
       className="birthday-constellation__month-control character-archive__status-cassette"
       data-archive-status-cassette
     >
-      <button aria-label="上个月" onClick={() => goToMonth(-1)} type="button">
+      <button
+        aria-label="上个月"
+        aria-disabled={busy}
+        disabled={!dataReady}
+        onClick={() => goToMonth(-1)}
+        type="button"
+      >
         <ChevronLeft aria-hidden="true" size={16} strokeWidth={1.8} />
       </button>
       <span
@@ -210,7 +263,13 @@ export default function CharacterBirthdayCalendar({
         <b aria-hidden="true">/</b>
         <strong>{calendar.month.toString().padStart(2, "0")}</strong>
       </span>
-      <button aria-label="下个月" onClick={() => goToMonth(1)} type="button">
+      <button
+        aria-label="下个月"
+        aria-disabled={busy}
+        disabled={!dataReady}
+        onClick={() => goToMonth(1)}
+        type="button"
+      >
         <ChevronRight aria-hidden="true" size={16} strokeWidth={1.8} />
       </button>
     </div>
@@ -255,7 +314,13 @@ export default function CharacterBirthdayCalendar({
     </span>
   );
 
-  const renderPortrait = (character: CharacterBirthday, kind: "primary" | "support") => {
+  const canLoadAvatar = (characterId: string) =>
+    automaticAvatarIds.has(characterId) || revealedCharacterIds.has(characterId);
+
+  const renderPortrait = (
+    character: BirthdayDisplayCharacter,
+    kind: "primary" | "support",
+  ) => {
     const work = workById.get(character.workId);
     const workTitle = work?.localizedTitle ?? work?.title ?? character.workId;
 
@@ -272,7 +337,7 @@ export default function CharacterBirthdayCalendar({
         key={character.id}
         title={`${character.name} · ${workTitle}`}
       >
-        {character.avatar ? (
+        {character.avatar && canLoadAvatar(character.id) ? (
           <img alt={character.name} decoding="async" loading="lazy" src={character.avatar} />
         ) : (
           <span aria-hidden="true">{character.name.slice(0, 1)}</span>
@@ -290,6 +355,8 @@ export default function CharacterBirthdayCalendar({
       ]
         .filter(Boolean)
         .join(" ")}
+      aria-busy={busy}
+      data-birthday-data-state={error ? "error" : busy ? "loading" : dataReady ? "ready" : "idle"}
       data-theme="starmap"
       ref={rootRef}
     >
@@ -403,18 +470,20 @@ export default function CharacterBirthdayCalendar({
                     .join(" ")}
                   data-birthday-node={node.day}
                   data-birthday-today={node.isToday ? "" : undefined}
+                  disabled={!dataReady}
                   key={node.day}
                   onBlur={() => {
                     setHoveredWeek(null);
                     setFocusedDay(null);
                   }}
-                  onClick={() =>
+                  onClick={() => {
+                    revealCharacters(node.birthdays);
                     selectDate({
                       year: calendar.year,
                       month: calendar.month,
                       day: node.day,
-                    })
-                  }
+                    });
+                  }}
                   onFocus={() => {
                     setHoveredWeek(node.week);
                     setFocusedDay(node.day);
@@ -462,6 +531,21 @@ export default function CharacterBirthdayCalendar({
           </div>
           <hr />
 
+          {busy || error || !dataReady ? (
+            <div className="birthday-constellation__data-status" role="status">
+              <span>
+                {error
+                  ? "生日星图暂时无法同步"
+                  : busy
+                    ? "正在载入本月生日星图"
+                    : "本月星图待同步"}
+              </span>
+              {error && onRetry ? (
+                <button onClick={onRetry} type="button">重试本月星图</button>
+              ) : null}
+            </div>
+          ) : null}
+
           <ul className="birthday-constellation__detail-list">
             {selectedBirthdays.map((character) => {
                 const work = workById.get(character.workId);
@@ -474,7 +558,7 @@ export default function CharacterBirthdayCalendar({
                     key={character.id}
                   >
                     <span className="birthday-constellation__detail-avatar">
-                      {character.avatar ? (
+                      {character.avatar && canLoadAvatar(character.id) ? (
                         <img alt="" decoding="async" loading="lazy" src={character.avatar} />
                       ) : (
                         <span aria-hidden="true">{character.name.slice(0, 1)}</span>
@@ -500,6 +584,8 @@ export default function CharacterBirthdayCalendar({
           </ul>
           <BirthdayNeighborRoute
             birthdayCount={selectedBirthdays.length}
+            canLoadAvatar={canLoadAvatar}
+            disabled={busy || !dataReady}
             next={birthdayNeighbors.next}
             onSelect={selectNeighbor}
             previous={birthdayNeighbors.previous}

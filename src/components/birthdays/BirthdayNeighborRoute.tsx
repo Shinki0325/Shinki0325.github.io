@@ -2,6 +2,8 @@ import type { BirthdayNeighborDate } from "./birthday-constellation";
 
 type Props = {
   birthdayCount: number;
+  canLoadAvatar?: (characterId: string) => boolean;
+  disabled?: boolean;
   next: BirthdayNeighborDate | null;
   onSelect: (date: BirthdayNeighborDate) => void;
   previous: BirthdayNeighborDate | null;
@@ -17,6 +19,8 @@ const toMonthDay = (date: BirthdayNeighborDate) =>
 
 export default function BirthdayNeighborRoute({
   birthdayCount,
+  canLoadAvatar = () => true,
+  disabled = false,
   next,
   onSelect,
   previous,
@@ -36,6 +40,7 @@ export default function BirthdayNeighborRoute({
         className="birthday-neighbor-route__node"
         data-birthday-neighbor={direction}
         data-neighbor-date={toDateKey(date)}
+        disabled={disabled}
         onClick={() => onSelect(date)}
         type="button"
       >
@@ -43,13 +48,13 @@ export default function BirthdayNeighborRoute({
           {toMonthDay(date)}
         </span>
         <span className="birthday-neighbor-route__portraits" data-neighbor-node-track>
-          {primary.avatar ? (
+          {primary.avatar && canLoadAvatar(primary.id) ? (
             <img alt="" decoding="async" loading="lazy" src={primary.avatar} />
           ) : (
             <span aria-hidden="true">{primary.name.slice(0, 1)}</span>
           )}
           {supporting.map((character) =>
-            character.avatar ? (
+            character.avatar && canLoadAvatar(character.id) ? (
               <img
                 alt=""
                 decoding="async"

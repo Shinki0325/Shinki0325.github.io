@@ -2,13 +2,22 @@ import { CalendarDays, Ruler } from "lucide-react";
 import {
   lazy,
   Suspense,
+  useCallback,
   useEffect,
+  useMemo,
   useRef,
   useState,
   type CSSProperties,
   type KeyboardEvent,
 } from "react";
-import { birthdayWorks, characterBirthdays } from "../../data/character-birthdays";
+import type {
+  BirthdayDisplayCharacter,
+  BirthdayDisplayWork,
+} from "../../lib/birthday-calendar-data";
+import {
+  birthdayDataClient,
+  type BirthdayDataset,
+} from "../../lib/birthday-data-client";
 import {
   resolveCharacterArchiveView,
   type CharacterArchiveView,
@@ -52,6 +61,89 @@ export default function CharacterArchiveTerminal({ initialDate }: Props) {
   const [birthdayBadgeHost, setBirthdayBadgeHost] = useState<HTMLSpanElement | null>(null);
   const birthdayTabRef = useRef<HTMLButtonElement>(null);
   const heightTabRef = useRef<HTMLButtonElement>(null);
+  const mountedRef = useRef(true);
+  const [birthdayDatasets, setBirthdayDatasets] = useState<Record<string, BirthdayDataset>>({});
+  const [birthdaySnapshotId, setBirthdaySnapshotId] = useState<string | null>(null);
+  const [birthdayReady, setBirthdayReady] = useState(false);
+  const [birthdayBusy, setBirthdayBusy] = useState(false);
+  const [birthdayError, setBirthdayError] = useState(false);
+  const [retryMonth, setRetryMonth] = useState<{ year: number; month: number } | null>(null);
+
+  const installBirthdayDataset = useCallback((dataset: BirthdayDataset) => {
+    setBirthdayDatasets((current) => ({ ...current, [dataset.month]: dataset }));
+  }, []);
+
+  const birthdayRecords = useMemo(() => {
+    const works = new Map<string, BirthdayDisplayWork>();
+    const characters = new Map<string, BirthdayDisplayCharacter>();
+    for (const dataset of Object.values(birthdayDatasets)) {
+      for (const work of dataset.works) works.set(work.id, work);
+      for (const character of dataset.characters) characters.set(character.id, character);
+    }
+    return { works: [...works.values()], characters: [...characters.values()] };
+  }, [birthdayDatasets]);
+
+  const loadBirthdayMonth = useCallback(
+    async ({ year, month }: { year: number; month: number }) => {
+      if (!birthdaySnapshotId) return false;
+      setBirthdayBusy(true);
+      setBirthdayError(false);
+      setRetryMonth({ year, month });
+      try {
+        const dataset = await birthdayDataClient.loadMonth(
+          month.toString().padStart(2, "0"),
+          birthdaySnapshotId,
+        );
+        if (!mountedRef.current) return false;
+        installBirthdayDataset(dataset);
+        setBirthdayReady(true);
+        setBirthdayError(false);
+        setRetryMonth(null);
+        return true;
+      } catch {
+        if (mountedRef.current) setBirthdayError(true);
+        return false;
+      } finally {
+        if (mountedRef.current) setBirthdayBusy(false);
+      }
+    },
+    [birthdaySnapshotId, installBirthdayDataset],
+  );
+
+  const bootstrapBirthdays = useCallback(async () => {
+    setBirthdayBusy(true);
+    setBirthdayError(false);
+    setRetryMonth(null);
+    try {
+      const summary = await birthdayDataClient.loadSummary();
+      if (!mountedRef.current) return;
+      installBirthdayDataset(summary);
+      setBirthdaySnapshotId(summary.snapshotId);
+      const now = new Date();
+      const target = { year: now.getFullYear(), month: now.getMonth() + 1 };
+      setRetryMonth(target);
+      const dataset = await birthdayDataClient.loadMonth(
+        target.month.toString().padStart(2, "0"),
+        summary.snapshotId,
+      );
+      if (!mountedRef.current) return;
+      installBirthdayDataset(dataset);
+      setBirthdayReady(true);
+      setRetryMonth(null);
+    } catch {
+      if (mountedRef.current) setBirthdayError(true);
+    } finally {
+      if (mountedRef.current) setBirthdayBusy(false);
+    }
+  }, [installBirthdayDataset]);
+
+  useEffect(() => {
+    mountedRef.current = true;
+    void bootstrapBirthdays();
+    return () => {
+      mountedRef.current = false;
+    };
+  }, [bootstrapBirthdays]);
 
   useEffect(() => {
     const nextView = resolveCharacterArchiveView(
@@ -77,6 +169,14 @@ export default function CharacterArchiveTerminal({ initialDate }: Props) {
     const nextView = view === "birthday" ? "height" : "birthday";
     activate(nextView);
     (nextView === "birthday" ? birthdayTabRef : heightTabRef).current?.focus();
+  };
+
+  const retryBirthdayRequest = () => {
+    if (retryMonth && birthdaySnapshotId) {
+      void loadBirthdayMonth(retryMonth);
+      return;
+    }
+    void bootstrapBirthdays();
   };
 
   return (
@@ -142,11 +242,16 @@ export default function CharacterArchiveTerminal({ initialDate }: Props) {
           <CharacterBirthdayCalendar
             active={view === "birthday"}
             badgeHost={birthdayBadgeHost}
-            characters={characterBirthdays}
+            busy={birthdayBusy}
+            characters={birthdayRecords.characters}
             controlsHost={controlsHost}
+            dataReady={birthdayReady}
             embedded
+            error={birthdayError}
             initialDate={initialDate}
-            works={birthdayWorks}
+            onMonthRequest={loadBirthdayMonth}
+            onRetry={retryBirthdayRequest}
+            works={birthdayRecords.works}
           />
         </div>
 

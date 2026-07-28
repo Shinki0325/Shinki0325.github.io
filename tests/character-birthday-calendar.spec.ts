@@ -11,9 +11,23 @@ async function dismissSplashIfVisible(page: Parameters<typeof test>[0]["page"]) 
 async function openCalendar(page: Parameters<typeof test>[0]["page"], width = 1440) {
   await page.setViewportSize({ width, height: 1000 });
   await page.clock.setFixedTime(new Date("2026-07-14T12:00:00+08:00"));
+  const monthReady = page.waitForResponse(
+    (response) => response.url().endsWith("/birthdays/v1/months/07.json") && response.ok(),
+    { timeout: 20_000 },
+  );
   await page.goto("/");
   await dismissSplashIfVisible(page);
-  return page.locator("[data-home-birthday-calendar]");
+  const calendar = page.locator("[data-home-birthday-calendar]");
+  await calendar.scrollIntoViewIfNeeded();
+  await monthReady;
+  const island = page.locator('astro-island[component-url*="CharacterArchiveTerminal"]');
+  await expect
+    .poll(() => island.evaluate((element) => !element.hasAttribute("ssr")))
+    .toBe(true);
+  await expect(calendar.locator('[data-birthday-data-state="ready"]')).toBeVisible({
+    timeout: 20_000,
+  });
+  return calendar;
 }
 
 test("birthday constellation uses the approved fixed simplified shell", async ({ page }) => {
@@ -359,15 +373,13 @@ test("month navigation preserves the pinned full date and restores its selected 
   await expect(calendar.locator('[data-birthday-node="8"] [data-support-portrait]')).toHaveCount(5);
 });
 
-test("Bangumi navigation exists only in selected detail rows", async ({ page }) => {
+test("public birthday detail rows do not expose private source identifiers", async ({ page }) => {
   const calendar = await openCalendar(page);
   await calendar.getByRole("button", { name: /7月7日/ }).click();
 
   await expect(calendar.locator("[data-birthday-node] a")).toHaveCount(0);
-  const detailLinks = calendar.locator("[data-birthday-detail-row] a");
-  expect(await detailLinks.count()).toBeGreaterThan(0);
-  await expect(detailLinks.first()).toHaveAttribute("target", "_blank");
-  await expect(detailLinks.first()).toHaveAttribute("href", /bangumi\.tv\/character\//);
+  await expect(calendar.locator("[data-birthday-detail-row]")).not.toHaveCount(0);
+  await expect(calendar.locator("[data-birthday-detail-row] a")).toHaveCount(0);
 });
 
 test("reduced motion keeps portraits and route visible", async ({ page }) => {

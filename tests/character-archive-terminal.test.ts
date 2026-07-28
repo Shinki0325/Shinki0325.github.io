@@ -27,21 +27,24 @@ describe("character archive terminal production contract", () => {
     expect(terminal).toContain("身高图鉴");
   });
 
-  it("server-renders from one deterministic date without serializing birthday authority", async () => {
-    const [home, terminal, calendar] = await Promise.all([
+  it("server-renders a stable shell and defers birthday authority to the 400px visibility trigger", async () => {
+    const [home, terminal, calendar, constellation] = await Promise.all([
       fs.readFile("src/pages/index.astro", "utf8"),
       fs.readFile("src/components/characters/CharacterArchiveTerminal.tsx", "utf8"),
       fs.readFile("src/components/birthdays/CharacterBirthdayCalendar.tsx", "utf8"),
+      fs.readFile("src/components/birthdays/birthday-constellation.ts", "utf8"),
     ]);
 
     expect(home).toContain("const characterArchiveInitialDate = new Date().toISOString().slice(0, 10)");
-    expect(home).toContain("client:load");
+    expect(home).toContain('client:visible={{ rootMargin: "400px" }}');
     expect(home).toContain("initialDate={characterArchiveInitialDate}");
     expect(home).not.toContain('client:only="react"');
     expect(home).not.toContain("characters={characterBirthdays}");
     expect(home).not.toContain("works={birthdayWorks}");
     expect(terminal).toContain('type Props = { initialDate: string }');
-    expect(terminal).toContain("birthdayWorks, characterBirthdays");
+    expect(terminal).not.toContain("data/character-birthdays");
+    expect(calendar).not.toContain("data/character-birthdays");
+    expect(constellation).not.toContain("data/character-birthdays");
     expect(calendar).toContain("initialDate: string");
     expect(calendar).toContain("parseInitialDate");
   });

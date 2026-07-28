@@ -14,9 +14,23 @@ async function openArchive(page: Parameters<typeof test>[0]["page"], width = 144
   await page.addInitScript(() => {
     window.sessionStorage.setItem("blog-shell-splash-dismissed", "true");
   });
+  const monthReady = page.waitForResponse(
+    (response) => response.url().endsWith("/birthdays/v1/months/07.json") && response.ok(),
+    { timeout: 20_000 },
+  );
   await page.goto("/");
   await dismissSplashIfVisible(page);
-  return page.locator("[data-character-archive]");
+  const archive = page.locator("[data-character-archive]");
+  await archive.scrollIntoViewIfNeeded();
+  await monthReady;
+  const island = page.locator('astro-island[component-url*="CharacterArchiveTerminal"]');
+  await expect
+    .poll(() => island.evaluate((element) => !element.hasAttribute("ssr")))
+    .toBe(true);
+  await expect(archive.locator('[data-birthday-data-state="ready"]')).toBeVisible({
+    timeout: 20_000,
+  });
+  return archive;
 }
 
 test("response HTML contains the real birthday archive with compact island props", async ({
@@ -32,7 +46,7 @@ test("response HTML contains the real birthday archive with compact island props
   const archive = await openArchive(page);
   await expect(archive.locator("[data-birthday-node]").first()).toBeVisible();
   const island = page.locator('astro-island[component-url*="CharacterArchiveTerminal"]');
-  await expect(island).toHaveAttribute("client", "load");
+  await expect(island).toHaveAttribute("client", "visible");
   expect((await island.getAttribute("props"))?.length ?? Number.POSITIVE_INFINITY).toBeLessThan(2_000);
 });
 
