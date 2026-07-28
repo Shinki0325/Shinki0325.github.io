@@ -22,21 +22,21 @@ async function openHome(page: Page, width: number, height: number) {
 const birthdayPaths = (requests: string[]) =>
   requests.filter((url) => url.startsWith(birthdayBase)).map((url) => url.slice(birthdayBase.length));
 
-test("defers birthday requests until the terminal reaches the 400px activation range", async ({
+test("prepares birthday data during idle time before the terminal enters the viewport", async ({
   page,
 }) => {
   const requests: string[] = [];
   page.on("request", (request) => requests.push(request.url()));
   const archive = await openHome(page, 1440, 300);
 
-  await page.waitForTimeout(500);
-  expect(birthdayPaths(requests)).toEqual([]);
-
   const before = await archive.boundingBox();
-  await archive.scrollIntoViewIfNeeded();
-  await expect(archive.locator('[data-birthday-data-state="ready"]')).toBeVisible({
-    timeout: 20_000,
+  expect(before?.y).toBeGreaterThan(300);
+  await expect(archive.locator('[data-birthday-data-state="ready"]')).toBeAttached({
+    timeout: 10_000,
   });
+
+  await archive.scrollIntoViewIfNeeded();
+  await expect(archive.locator('[data-birthday-data-state="ready"]')).toBeVisible();
   const after = await archive.boundingBox();
   const paths = birthdayPaths(requests);
 
@@ -143,10 +143,6 @@ for (const viewport of [
     page.on("request", (request) => requests.push(request.url()));
     const archive = await openHome(page, viewport.width, viewport.height);
     await page.waitForTimeout(300);
-    const initialBox = await archive.boundingBox();
-    if ((initialBox?.y ?? 0) > viewport.height + 400) {
-      expect(birthdayPaths(requests)).toEqual([]);
-    }
 
     await archive.scrollIntoViewIfNeeded();
     await expect(archive.locator('[data-birthday-data-state="ready"]')).toBeVisible({

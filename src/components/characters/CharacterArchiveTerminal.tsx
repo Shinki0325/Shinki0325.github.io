@@ -115,21 +115,26 @@ export default function CharacterArchiveTerminal({ initialDate }: Props) {
     setBirthdayError(false);
     setRetryMonth(null);
     try {
-      const summary = await birthdayDataClient.loadSummary();
+      const snapshotId = await birthdayDataClient.loadSnapshotId();
       if (!mountedRef.current) return;
-      installBirthdayDataset(summary);
-      setBirthdaySnapshotId(summary.snapshotId);
+      setBirthdaySnapshotId(snapshotId);
       const now = new Date();
       const target = { year: now.getFullYear(), month: now.getMonth() + 1 };
       setRetryMonth(target);
-      const dataset = await birthdayDataClient.loadMonth(
-        target.month.toString().padStart(2, "0"),
-        summary.snapshotId,
-      );
+      const [summaryResult, monthResult] = await Promise.allSettled([
+        birthdayDataClient.loadSummary(),
+        birthdayDataClient.loadMonth(target.month.toString().padStart(2, "0"), snapshotId),
+      ]);
       if (!mountedRef.current) return;
-      installBirthdayDataset(dataset);
-      setBirthdayReady(true);
-      setRetryMonth(null);
+      if (summaryResult.status === "fulfilled") installBirthdayDataset(summaryResult.value);
+      if (monthResult.status === "fulfilled") {
+        installBirthdayDataset(monthResult.value);
+        setBirthdayReady(true);
+        setBirthdayError(false);
+        setRetryMonth(null);
+      } else {
+        setBirthdayError(true);
+      }
     } catch {
       if (mountedRef.current) setBirthdayError(true);
     } finally {

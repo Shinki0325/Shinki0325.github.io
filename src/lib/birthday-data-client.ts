@@ -161,6 +161,10 @@ export class BirthdayDataClient {
     return this.summaryPromise;
   }
 
+  async loadSnapshotId() {
+    return (await this.loadManifest()).snapshotId;
+  }
+
   async loadMonth(month: string, snapshotId: string) {
     if (!isMonth(month)) throw new Error("Invalid birthday month");
     const manifest = await this.loadManifest();

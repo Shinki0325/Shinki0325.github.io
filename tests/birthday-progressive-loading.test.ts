@@ -103,6 +103,22 @@ describe("birthday progressive data client", () => {
     expect(calls).toEqual(["assets-manifest.json", "birthdays/v1/summary.json"]);
   });
 
+  it("exposes the verified snapshot so summary and month requests can start together", async () => {
+    const { calls, client } = await createHarness();
+
+    const verifiedSnapshotId = await client.loadSnapshotId();
+    const summaryRequest = client.loadSummary();
+    const monthRequest = client.loadMonth("07", verifiedSnapshotId);
+
+    expect(verifiedSnapshotId).toBe(snapshotId);
+    await vi.waitFor(() => expect(calls).toEqual([
+      "assets-manifest.json",
+      "birthdays/v1/summary.json",
+      "birthdays/v1/months/07.json",
+    ]));
+    await Promise.all([summaryRequest, monthRequest]);
+  });
+
   it("maps only approved display fields and resolves manifest-backed avatars", async () => {
     const { client } = await createHarness();
     const summary = await client.loadSummary();

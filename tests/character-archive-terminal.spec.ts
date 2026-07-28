@@ -46,7 +46,7 @@ test("response HTML contains the real birthday archive with compact island props
   const archive = await openArchive(page);
   await expect(archive.locator("[data-birthday-node]").first()).toBeVisible();
   const island = page.locator('astro-island[component-url*="CharacterArchiveTerminal"]');
-  await expect(island).toHaveAttribute("client", "visible");
+  await expect(island).toHaveAttribute("client", "idle");
   expect((await island.getAttribute("props"))?.length ?? Number.POSITIVE_INFINITY).toBeLessThan(2_000);
 });
 

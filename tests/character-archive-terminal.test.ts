@@ -27,7 +27,7 @@ describe("character archive terminal production contract", () => {
     expect(terminal).toContain("身高图鉴");
   });
 
-  it("server-renders a stable shell and defers birthday authority to the 400px visibility trigger", async () => {
+  it("server-renders a stable shell and prepares birthday data during browser idle time", async () => {
     const [home, terminal, calendar, constellation] = await Promise.all([
       fs.readFile("src/pages/index.astro", "utf8"),
       fs.readFile("src/components/characters/CharacterArchiveTerminal.tsx", "utf8"),
@@ -36,7 +36,8 @@ describe("character archive terminal production contract", () => {
     ]);
 
     expect(home).toContain("const characterArchiveInitialDate = new Date().toISOString().slice(0, 10)");
-    expect(home).toContain('client:visible={{ rootMargin: "400px" }}');
+    expect(home).toContain("client:idle");
+    expect(home).not.toContain("client:visible");
     expect(home).toContain("initialDate={characterArchiveInitialDate}");
     expect(home).not.toContain('client:only="react"');
     expect(home).not.toContain("characters={characterBirthdays}");
