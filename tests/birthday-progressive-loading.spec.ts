@@ -135,10 +135,10 @@ for (const viewport of [
 }
 
 for (const viewport of [
-  { width: 390, height: 844, avatarBudget: 8 },
-  { width: 768, height: 1024, avatarBudget: 12 },
+  { width: 390, height: 844 },
+  { width: 768, height: 1024 },
 ]) {
-  test(`${viewport.width}px respects avatar, touch-target, and overflow budgets`, async ({ page }) => {
+  test(`${viewport.width}px renders every loaded-month portrait lazily before a date click`, async ({ page }) => {
     const requests: string[] = [];
     page.on("request", (request) => requests.push(request.url()));
     const archive = await openHome(page, viewport.width, viewport.height);
@@ -150,7 +150,11 @@ for (const viewport of [
     });
     await page.waitForTimeout(300);
     const paths = birthdayPaths(requests);
-    const avatars = new Set(paths.filter((path) => path.includes("/avatars/")));
+    const portraits = archive.locator(
+      "[data-birthday-node].has-birthday [data-primary-portrait], [data-birthday-node].has-birthday [data-support-portrait]",
+    );
+    const portraitCount = await portraits.count();
+    const portraitImages = portraits.locator("img");
     const monthButtonBoxes = await archive
       .locator("[data-archive-status-cassette] button")
       .evaluateAll((buttons) => buttons.map((button) => button.getBoundingClientRect()));
@@ -163,7 +167,15 @@ for (const viewport of [
       page: document.documentElement.scrollWidth - document.documentElement.clientWidth,
     }));
 
-    expect(avatars.size).toBeLessThanOrEqual(viewport.avatarBudget);
+    expect(portraitCount).toBe(30);
+    await expect(portraitImages).toHaveCount(portraitCount);
+    expect(
+      await portraitImages.evaluateAll((images) =>
+        images.every((image) => image.getAttribute("loading") === "lazy"),
+      ),
+    ).toBe(true);
+    expect(paths.some((path) => path.includes("birthdays/v1/months/06.json"))).toBe(false);
+    expect(paths.some((path) => path.includes("birthdays/v1/months/08.json"))).toBe(false);
     expect(monthButtonBoxes.every((box) => box.width >= 44 && box.height >= 44)).toBe(true);
     expect(birthdayBox?.width).toBeGreaterThanOrEqual(44);
     expect(birthdayBox?.height).toBeGreaterThanOrEqual(44);

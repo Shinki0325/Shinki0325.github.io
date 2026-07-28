@@ -80,9 +80,6 @@ export default function CharacterBirthdayCalendar({
   const rootRef = useRef<HTMLElement>(null);
   const pendingFocusDay = useRef<number | null>(null);
   const monthRequestInFlight = useRef(false);
-  const [revealedCharacterIds, setRevealedCharacterIds] = useState<Set<string>>(
-    () => new Set(),
-  );
   const workById = useMemo(
     () => new Map(works.map((work) => [work.id, work])),
     [works],
@@ -131,14 +128,6 @@ export default function CharacterBirthdayCalendar({
     () => getBirthdayNeighborDates(selectedDate, characters),
     [characters, selectedDate],
   );
-  const automaticAvatarIds = useMemo(() => {
-    const candidates = [
-      ...selectedBirthdays,
-      ...(birthdayNeighbors.previous?.birthdays.slice(0, 1) ?? []),
-      ...(birthdayNeighbors.next?.birthdays.slice(0, 1) ?? []),
-    ];
-    return new Set(candidates.slice(0, 8).map((character) => character.id));
-  }, [birthdayNeighbors.next, birthdayNeighbors.previous, selectedBirthdays]);
   const selectedVisibleNode =
     layout.find((node) => selectedDateIsVisible && node.day === selectedDate.day) ?? null;
   const selectedPulsePath = useMemo(
@@ -178,15 +167,6 @@ export default function CharacterBirthdayCalendar({
     void requestVisibleMonth(target);
   };
 
-  const revealCharacters = (records: BirthdayDisplayCharacter[]) => {
-    if (records.length === 0) return;
-    setRevealedCharacterIds((current) => {
-      const next = new Set(current);
-      for (const character of records) next.add(character.id);
-      return next;
-    });
-  };
-
   const selectDate = (date: BirthdayConstellationDate, revealMonth = false) => {
     if (revealMonth) setVisibleMonth({ year: date.year, month: date.month });
     setSelectedDate(date);
@@ -199,7 +179,6 @@ export default function CharacterBirthdayCalendar({
       if (!loaded) return;
     }
     pendingFocusDay.current = date.day;
-    revealCharacters(date.birthdays);
     selectDate(date);
   };
 
@@ -314,8 +293,7 @@ export default function CharacterBirthdayCalendar({
     </span>
   );
 
-  const canLoadAvatar = (characterId: string) =>
-    automaticAvatarIds.has(characterId) || revealedCharacterIds.has(characterId);
+  const canLoadAvatar = () => true;
 
   const renderPortrait = (
     character: BirthdayDisplayCharacter,
@@ -337,7 +315,7 @@ export default function CharacterBirthdayCalendar({
         key={character.id}
         title={`${character.name} · ${workTitle}`}
       >
-        {character.avatar && canLoadAvatar(character.id) ? (
+        {character.avatar ? (
           <img alt={character.name} decoding="async" loading="lazy" src={character.avatar} />
         ) : (
           <span aria-hidden="true">{character.name.slice(0, 1)}</span>
@@ -477,7 +455,6 @@ export default function CharacterBirthdayCalendar({
                     setFocusedDay(null);
                   }}
                   onClick={() => {
-                    revealCharacters(node.birthdays);
                     selectDate({
                       year: calendar.year,
                       month: calendar.month,
@@ -558,7 +535,7 @@ export default function CharacterBirthdayCalendar({
                     key={character.id}
                   >
                     <span className="birthday-constellation__detail-avatar">
-                      {character.avatar && canLoadAvatar(character.id) ? (
+                      {character.avatar ? (
                         <img alt="" decoding="async" loading="lazy" src={character.avatar} />
                       ) : (
                         <span aria-hidden="true">{character.name.slice(0, 1)}</span>
