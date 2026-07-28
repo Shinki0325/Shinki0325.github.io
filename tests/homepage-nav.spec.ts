@@ -70,9 +70,11 @@ test("desktop command search opens real indexed results", async ({ page }) => {
   await dismissSplashIfVisible(page);
 
   const search = page.locator("[data-top-nav] [data-home-search]");
-  await search.locator("input").fill("E-LOGIN");
+  await search.locator("input").fill("网页归档资料包");
   await expect(search.locator(".home-search-panel")).toBeVisible();
-  await expect(search.locator(".home-search-result").first()).toContainText("E-LOGIN");
+  await expect(search.locator(".home-search-result").first()).toContainText(
+    "90年代 galgame 网页归档资料包",
+  );
 });
 
 test("desktop command bar hides on downward scroll and keeps only the primary brand", async ({ page }) => {
@@ -110,7 +112,7 @@ test("repeated client navigation hydrates shared music controls without route st
   await dismissSplashIfVisible(page);
   await expect(page.locator('[data-utility="music"]')).toBeEnabled();
 
-  for (const href of ["/articles/", "/", "/notes/", "/"]) {
+  for (const href of ["/articles/", "/", "/portal/", "/"]) {
     await page.locator(`[data-character-rail] a[href="${href}"]`).click();
     await expect(page).toHaveURL(new RegExp(`${href.replaceAll("/", "\\/")}$`));
     await expect(page.locator("[data-top-nav]")).toBeVisible();

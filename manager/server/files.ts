@@ -33,7 +33,6 @@ const CONTENT_DIRS: Record<ContentKind, string> = {
   albums: "albums",
   references: "references",
   drafts: "drafts",
-  notes: "notes",
   topics: "topics",
   vault: "vault"
 };

@@ -1,6 +1,5 @@
 export const PUBLIC_CONTENT_COLLECTIONS = [
   "articles",
-  "notes",
   "references"
 ] as const;
 

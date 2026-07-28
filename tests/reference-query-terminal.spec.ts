@@ -403,8 +403,8 @@ test("reduced motion removes scan travel and image zoom while compact fallback s
 
 test("ClientRouter re-entry stays idempotent and reference links navigate normally", async ({ page }) => {
   await prepare(page);
-  await page.locator('[data-character-rail] a[href="/notes/"]').click();
-  await expect(page).toHaveURL(/\/notes\/$/);
+  await page.locator('[data-character-rail] a[href="/portal/"]').click();
+  await expect(page).toHaveURL(/\/portal\/$/);
   await page.locator('[data-character-rail] a[href="/references/"]').click();
   await expect(page).toHaveURL(/\/references\/$/);
   const root = page.locator("[data-reference-query-terminal]");

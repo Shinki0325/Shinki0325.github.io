@@ -38,7 +38,7 @@ const lensMeta = [
     <section class="glass-panel side-panel stack">
       <h2>条目视角</h2>
       <p class="muted">
-        这里给主稿保留一层轻量阅读框架，让视频稿、笔记和参考资料继续互相连着，同时不打乱正文阅读。
+        这里给主稿保留一层轻量阅读框架，让视频稿和参考资料继续互相连着，同时不打乱正文阅读。
       </p>
       <dl class="detail-list">
         {lensMeta.map((item) => (
@@ -63,7 +63,7 @@ const lensMeta = [
           <strong class="panel-label">主题</strong>
           <ul class="inline-list">
             {entry.data.topics.map((topic) => (
-              <li><a href={`/notes/${topic}/`}>{topic}</a></li>
+              <li><span>{topic}</span></li>
             ))}
           </ul>
         </div>

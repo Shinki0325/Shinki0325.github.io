@@ -21,12 +21,12 @@ const createEntry = (slug: string, date: string, draft = false, tags: string[] =
 
 describe("public content helpers", () => {
   it("derives public content helpers from one shared collection list", () => {
-    expect(PUBLIC_CONTENT_COLLECTIONS).toEqual(["articles", "notes", "references"]);
+    expect(PUBLIC_CONTENT_COLLECTIONS).toEqual(["articles", "references"]);
   });
 
   it("allows only public content collections", () => {
     expect(isPublicCollection("articles")).toBe(true);
-    expect(isPublicCollection("notes")).toBe(true);
+    expect(isPublicCollection("notes")).toBe(false);
     expect(isPublicCollection("references")).toBe(true);
     expect(isPublicCollection("topics")).toBe(false);
     expect(isPublicCollection("drafts")).toBe(false);
@@ -36,7 +36,6 @@ describe("public content helpers", () => {
   it("builds only from public content roots", () => {
     expect(publicContentGlob).toEqual([
       "src/content/articles/**/*",
-      "src/content/notes/**/*",
       "src/content/references/**/*",
     ]);
   });
@@ -68,12 +67,12 @@ describe("public content helpers", () => {
 
   it("collects unique tags from published content only", () => {
     const tags = collectTags([
-      createEntry("published", "2024-01-01", false, ["astro", "notes"]),
+      createEntry("published", "2024-01-01", false, ["astro", "research"]),
       createEntry("drafted", "2024-01-02", true, ["private"]),
       createEntry("published-2", "2024-01-03", false, ["astro", "writing"]),
     ]);
 
-    expect(tags).toEqual(["astro", "notes", "writing"]);
+    expect(tags).toEqual(["astro", "research", "writing"]);
   });
 
   it("deduplicates public references by source URL and keeps curated entries", () => {

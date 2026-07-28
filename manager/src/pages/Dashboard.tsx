@@ -28,14 +28,13 @@ type ActionConfig = {
   run: () => Promise<SystemCommandResult>;
 };
 
-const CONTENT_KINDS: ContentKind[] = ["articles", "albums", "references", "notes", "topics", "drafts"];
+const CONTENT_KINDS: ContentKind[] = ["articles", "albums", "references", "topics", "drafts"];
 
 const CONTENT_LABELS: Record<ContentKind, string> = {
   articles: "文稿",
   albums: "相册",
   references: "资料",
   drafts: "草稿",
-  notes: "笔记",
   topics: "专题",
   vault: "私库",
 };

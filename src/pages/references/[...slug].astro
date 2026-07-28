@@ -4,23 +4,22 @@ import ReferenceMeta from "../../components/ReferenceMeta.astro";
 import ReferenceReading from "../../components/ReferenceReading.astro";
 import ReferenceSourcePage from "../../components/ReferenceSourcePage.astro";
 import PostLayout from "../../layouts/PostLayout.astro";
-import { getPublishedArticles, getPublishedNotes, getPublishedReferences, getPublicReferenceEntries } from "../../lib/public-content";
+import { getPublishedArticles, getPublishedReferences, getPublicReferenceEntries } from "../../lib/public-content";
 import { buildReferenceIntro, buildReferenceSourceNeighbors, buildRelatedReferenceSlugs } from "../../lib/reference-library";
 import { createReferenceIndex } from "../../lib/reference-index";
 import { buildReferenceReadingState } from "../../lib/reference-reading";
 
 export async function getStaticPaths() {
-  const makeEntryId = (collection: "references" | "articles" | "notes", slug: string) =>
+  const makeEntryId = (collection: "references" | "articles", slug: string) =>
     `${collection}:${slug}`;
   const isLinkItem = (
     item: { href: string; title: string } | undefined
   ): item is { href: string; title: string } => Boolean(item);
 
-  const [references, allReferences, articles, notes] = await Promise.all([
+  const [references, allReferences, articles] = await Promise.all([
     getPublishedReferences(),
     getPublicReferenceEntries(),
-    getPublishedArticles(),
-    getPublishedNotes()
+    getPublishedArticles()
   ]);
 
   const graph = createReferenceIndex(
@@ -32,10 +31,6 @@ export async function getStaticPaths() {
       ...articles.map((entry) => ({
         ...entry,
         slug: makeEntryId("articles", entry.slug)
-      })),
-      ...notes.map((entry) => ({
-        ...entry,
-        slug: makeEntryId("notes", entry.slug)
       }))
     ]
   );
@@ -72,14 +67,6 @@ export async function getStaticPaths() {
       href: `/articles/${article.slug}/`,
       kind: "文章",
       title: article.data.title
-    });
-  }
-
-  for (const note of notes) {
-    sourceLookup.set(makeEntryId("notes", note.slug), {
-      href: `/notes/${note.slug}/`,
-      kind: "笔记",
-      title: note.data.title ?? "未命名笔记"
     });
   }
 
@@ -168,7 +155,7 @@ const referenceIntro = buildReferenceIntro(entry.data);
           <strong class="panel-label">主题</strong>
           <ul class="inline-list">
             {entry.data.topics?.map((topic) => (
-              <li><a href={`/notes/${topic}/`}>{topic}</a></li>
+              <li><span>{topic}</span></li>
             ))}
           </ul>
         </div>
@@ -200,7 +187,7 @@ const referenceIntro = buildReferenceIntro(entry.data);
         networkLinks.relatedScripts.length === 0 &&
         (entry.data.aliases?.length ?? 0) === 0 &&
         (entry.data.topics?.length ?? 0) === 0 && (
-          <p class="muted">这份资料已经准备好继续接入更多站内链接，后续补充主稿、笔记和相关节点时会逐步长出关系网。</p>
+          <p class="muted">这份资料已经准备好继续接入更多站内链接，后续补充主稿和相关节点时会逐步长出关系网。</p>
         )}
     </section>
   </Fragment>

@@ -9,10 +9,12 @@ describe("site shell config", () => {
       "首页",
       "文稿",
       "资料库",
-      "笔记",
+      "神秘入口",
       "照片墙",
       "关于",
     ]);
+    expect(siteShell.navItems.map((item) => item.href)).toContain("/portal/");
+    expect(siteShell.navItems.map((item) => item.href)).not.toContain("/notes/");
     expect(siteShell.navItems.map((item) => item.href)).not.toContain("/topics/");
     expect(siteShell.music.tracks.length).toBeGreaterThan(0);
     expect(siteShell.music.tracks.map((track) => track.id)).toEqual(
@@ -187,16 +189,6 @@ describe("buildHomeViewModel", () => {
           },
         },
       ],
-      notes: [
-        {
-          slug: "核心参考对照表",
-          data: {
-            title: "核心参考对照表",
-            summary: "笔记",
-            date: "2026-07-06",
-          },
-        },
-      ],
       references: [
         {
           slug: "to-heart-entry",
@@ -210,13 +202,14 @@ describe("buildHomeViewModel", () => {
     });
 
     expect(model.stats.articleCount).toBe(1);
-    expect(model.stats.noteCount).toBe(1);
+    expect(model.stats).not.toHaveProperty("noteCount");
     expect(model.stats.referenceCount).toBe(1);
     expect(model.featuredArticle?.slug).toBe("galgame-90s-golden-age");
     expect(model.featuredReference?.slug).toBe("to-heart-entry");
+    expect(model).not.toHaveProperty("featuredNote");
   });
 
-  it("builds a mixed search index for articles, notes, references, and albums", () => {
+  it("builds a mixed search index for articles, references, and albums", () => {
     const items = buildHomeSearchIndex({
       articles: [
         {
@@ -225,16 +218,6 @@ describe("buildHomeViewModel", () => {
             title: "黄金时代",
             summary: "主文稿",
             tags: ["90年代"],
-          },
-        },
-      ],
-      notes: [
-        {
-          slug: "核心参考对照表",
-          data: {
-            title: "核心参考对照表",
-            summary: "笔记摘要",
-            tags: ["研究笔记"],
           },
         },
       ],
@@ -267,10 +250,6 @@ describe("buildHomeViewModel", () => {
           section: "文稿",
         }),
         expect.objectContaining({
-          href: "/notes/核心参考对照表/",
-          section: "笔记",
-        }),
-        expect.objectContaining({
           href: "/references/to-heart-entry/",
           section: "资料库",
         }),
@@ -280,5 +259,6 @@ describe("buildHomeViewModel", () => {
         }),
       ]),
     );
+    expect(items.some((item) => item.href.startsWith("/notes/"))).toBe(false);
   });
 });

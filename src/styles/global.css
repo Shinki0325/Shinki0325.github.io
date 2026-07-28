@@ -2845,12 +2845,6 @@ a.home-feature-card {
   --link-card-text: #fef3c7;
 }
 
-.prose a[href^="/notes/"] {
-  --link-card-bg: rgba(99, 102, 241, 0.2);
-  --link-card-border: rgba(165, 180, 252, 0.42);
-  --link-card-text: #e0e7ff;
-}
-
 .prose a[href^="/tags/"] {
   --link-card-bg: rgba(168, 85, 247, 0.2);
   --link-card-border: rgba(216, 180, 254, 0.42);

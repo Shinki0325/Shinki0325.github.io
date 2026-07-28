@@ -15,6 +15,9 @@ describe("site appearance config", () => {
     expect(config.fontPreset).toBe("sans");
     expect(config.fontFamily).toContain("Noto Sans SC");
     expect(config.previewCards.map((card: { id: string }) => card.id)).toEqual(["featured", "reference", "notes"]);
+    const portalCard = config.previewCards.find((card: { id: string }) => card.id === "notes");
+    expect(JSON.stringify(portalCard)).toContain("神秘入口");
+    expect(JSON.stringify(portalCard)).not.toContain("笔记");
   });
 
   it("normalizes global visual controls into safe defaults", () => {
@@ -144,10 +147,14 @@ describe("site appearance config", () => {
 
     expect(indexSource).toContain('href={firstScriptSlide?.href ?? "/articles/"}');
     expect(indexSource).toContain('href={featuredReference ? `/references/${featuredReference.slug}/` : "/references/"}');
-    expect(indexSource).toContain('href={latestNote ? `/notes/${latestNote.slug}/` : "/notes/"}');
+    expect(indexSource).toContain("href={project.href}");
+    expect(indexSource).toContain('target="_blank"');
+    expect(indexSource).toContain('rel="noreferrer"');
     expect(indexSource).toContain('class={getHomeFeatureCardClass("featured", "home-feature-card--primary home-script-carousel")}');
     expect(indexSource).toContain('class={getHomeFeatureCardClass("reference", "home-feature-card--wide home-feature-card--reference")}');
     expect(indexSource).toContain('class={getHomeFeatureCardClass("notes")}');
+    expect(indexSource).not.toContain("latestNote");
+    expect(indexSource).not.toContain("noteSummary");
   });
 
   it("adds stronger hover affordance for clickable buttons and cards", async () => {

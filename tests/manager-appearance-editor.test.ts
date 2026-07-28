@@ -82,6 +82,9 @@ describe("manager appearance editor", () => {
     expect(appearanceDefaults.fontPreset).toBe("sans");
     expect(appearanceDefaults.fontFamily).toBe(siteAppearanceDefaults.fontFamily);
     expect(appearanceDefaults.previewCards.map((card) => card.id)).toEqual(["featured", "reference", "notes"]);
+    const portalCard = appearanceDefaults.previewCards.find((card) => card.id === "notes");
+    expect(JSON.stringify(portalCard)).toContain("神秘入口");
+    expect(JSON.stringify(portalCard)).not.toContain("笔记");
   });
 
   it("parses global appearance json into form controls", () => {

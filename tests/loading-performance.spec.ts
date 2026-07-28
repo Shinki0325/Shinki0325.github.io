@@ -140,7 +140,7 @@ test("non-home background state survives five ClientRouter routes", async ({ con
   expect(initialState).not.toBeNull();
   const initialIndex = JSON.parse(initialState ?? "null").activeIndex;
 
-  for (const path of ["/references/", "/notes/", "/photowall/", "/about/"]) {
+  for (const path of ["/references/", "/portal/", "/photowall/", "/about/"]) {
     const pageLoadCount = await page.evaluate(
       () => (window as Window & { __backgroundPageLoads?: number }).__backgroundPageLoads ?? 0,
     );
@@ -256,7 +256,7 @@ test("non-home background can deterministically select the seventh and eighth lo
     },
     { key: BACKGROUND_STATE_KEY },
   );
-  await page.goto("/notes/", { waitUntil: "domcontentloaded" });
+  await page.goto("/portal/", { waitUntil: "domcontentloaded" });
   await expect(slider).toHaveAttribute("data-background-active-index", "7");
   await expect.poll(() => localRequests.some((url) => requestedPath(url, BACKGROUND_PATHS[7]))).toBe(true);
 

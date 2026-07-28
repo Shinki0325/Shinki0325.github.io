@@ -105,8 +105,8 @@ test("global player keeps playback across navigation and appears on inner pages"
   await expect(floatingPlayer).toHaveAttribute("data-floating-player-collapsed", "true");
   await expect(page.locator("[data-global-music-audio]")).toHaveAttribute("data-playing", "true");
 
-  await page.locator('a[href="/notes/"]').first().click();
-  await expect(page).toHaveURL(/\/notes\/$/);
+  await page.locator('a[href="/portal/"]').first().click();
+  await expect(page).toHaveURL(/\/portal\/$/);
   await expect(floatingPlayer).toHaveAttribute("data-floating-player-collapsed", "true");
   await expect(page.locator("[data-global-music-audio]")).toHaveAttribute("data-playing", "true");
 

@@ -7,21 +7,21 @@ import "../styles/home-crystal-terminal.css";
 import { siteAppearance, type SiteAppearancePreviewCard } from "../config/site-appearance";
 import { siteShell } from "../config/site-shell";
 import { galgameHistoryPreview } from "../data/galgame-history-preview";
+import { projects } from "../data/projects";
 import { getArticleOverviewCovers } from "../lib/archive-covers";
 import {
   getPublishedAlbums,
   getPublishedArticles,
-  getPublishedNotes,
   getPublishedReferences,
 } from "../lib/public-content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
-const [articles, albums, notes, references] = await Promise.all([
+const [articles, albums, references] = await Promise.all([
   getPublishedArticles(),
   getPublishedAlbums(),
-  getPublishedNotes(),
   getPublishedReferences(),
 ]);
+const [project] = projects;
 const characterArchiveInitialDate = new Date().toISOString().slice(0, 10);
 
 const formatDate = (value: Date | number | string | undefined) => {
@@ -47,13 +47,12 @@ const scriptCarouselSlides = scriptCarouselEntries.map((entry, index) => {
     eyebrow: entry?.data.type === "script" ? "LATEST INSIGHT" : "LATEST ARTICLE",
     href: entry ? `/articles/${entry.slug}/` : "/articles/",
     label: entry?.data.type === "script" ? "文稿" : "文章",
-    summary: entry?.data.summary ?? "主文稿会把资料库、笔记和时间线线索收拢成一条更适合公开阅读的叙述。",
+    summary: entry?.data.summary ?? "主文稿会把资料库和时间线线索收拢成一条更适合公开阅读的叙述。",
     title: entry?.data.title ?? "文稿整理中",
   };
 });
 const firstScriptSlide = scriptCarouselSlides[0];
 const featuredReference = references[0] ?? null;
-const latestNote = notes[0] ?? null;
 const githubHref = siteShell.social?.github ?? "";
 const bilibiliHref = siteShell.social?.bilibili ?? "";
 const normalizeSocialHref = (value: string | undefined, kind: "email" | "url") => {
@@ -70,15 +69,11 @@ const normalizeSocialHref = (value: string | undefined, kind: "email" | "url") =
 const emailHref = normalizeSocialHref(siteShell.social?.email, "email");
 
 const latestUpdate = formatDate(
-  [...articles, ...albums, ...notes, ...references]
+  [...articles, ...albums, ...references]
     .map((entry) => new Date(entry.data.date).getTime())
     .filter((value) => Number.isFinite(value))
     .sort((left, right) => right - left)[0],
 );
-
-const noteSummary = latestNote?.data.tags?.length
-  ? `围绕 ${latestNote.data.tags.slice(0, 2).join(" / ")} 的整理笔记`
-  : "把零散线索先整理成可继续扩写的工作台。";
 
 type HomeCardId = "featured" | "reference" | "notes";
 
@@ -107,11 +102,11 @@ const homeCardFallbacks: Record<HomeCardId, SiteAppearancePreviewCard> = {
   },
   notes: {
     id: "notes",
-    eyebrow: "最新笔记",
-    title: "最新笔记",
+    eyebrow: "神秘入口",
+    title: "美少女游戏数据终端",
     description: "",
-    meta: "笔记",
-    actionLabel: "打开笔记",
+    meta: "项目",
+    actionLabel: "打开项目",
     variant: "soft",
     widthUnits: 4,
     minHeight: 180,
@@ -316,7 +311,7 @@ const chronicleMiniTracks = [
     </section>
 
     <section class="home-chapter" data-home-chapter="records">
-      <HomeSectionHeader accent="cyan" index="03" meta={`${articles.length + references.length + notes.length + albums.length} 条公开内容`} title="最新记录" />
+      <HomeSectionHeader accent="cyan" index="03" meta={`${articles.length + references.length + albums.length} 条公开内容`} title="最新记录" />
       <div class="home-records-grid">
     <div class="home-records-grid__primary-pair">
     <a
@@ -372,26 +367,29 @@ const chronicleMiniTracks = [
     </div>
 
     <a
+      aria-label={`打开${project.title}（新标签页）`}
       class={getHomeFeatureCardClass("notes")}
-      href={latestNote ? `/notes/${latestNote.slug}/` : "/notes/"}
+      href={project.href}
+      rel="noreferrer"
       style={getHomeFeatureCardStyle("notes")}
+      target="_blank"
     >
       <div class="home-card-head">
         <div>
-          <p class="eyebrow">最新笔记</p>
-          <h2>{latestNote?.data.title ?? "笔记整理中"}</h2>
+          <p class="eyebrow">神秘入口</p>
+          <h2>{project.title}</h2>
         </div>
-        <span class="spotlight-label">笔记</span>
+        <span class="spotlight-label">运行中</span>
       </div>
-      <p class="muted">{noteSummary}</p>
-      <span class="section-link home-feature-card__cta">打开笔记</span>
+      <p class="muted">{project.summary}</p>
+      <span class="section-link home-feature-card__cta">打开项目</span>
     </a>
 
       </div>
       <aside aria-label="站点资料状态" class="home-system-status" data-home-system-status>
-        <span><small>公开内容</small><strong>{articles.length + references.length + notes.length + albums.length}</strong></span>
+        <span><small>公开内容</small><strong>{articles.length + references.length + albums.length}</strong></span>
         <span><small>最新更新</small><time>{latestUpdate}</time></span>
-        <p>文稿、资料库、笔记和照片墙正在汇入同一套档案系统。</p>
+        <p>文稿、资料库和照片墙正在汇入同一套档案系统。</p>
       </aside>
     </section>
   </div>

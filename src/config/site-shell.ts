@@ -12,7 +12,7 @@ export const siteShell = {
     { href: "/", label: "首页" },
     { href: "/articles/", label: "文稿" },
     { href: "/references/", label: "资料库" },
-    { href: "/notes/", label: "笔记" },
+    { href: "/portal/", label: "神秘入口" },
     { href: "/photowall/", label: "照片墙" },
     { href: "/about/", label: "关于" },
   ],

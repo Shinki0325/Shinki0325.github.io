@@ -12,7 +12,6 @@ const KINDS: { value: ContentKind; label: string }[] = [
   { value: "albums", label: "相册" },
   { value: "references", label: "资料库" },
   { value: "drafts", label: "草稿" },
-  { value: "notes", label: "笔记" },
   { value: "topics", label: "专题" },
   { value: "vault", label: "私有库" }
 ];

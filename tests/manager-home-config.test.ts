@@ -13,7 +13,7 @@ const HOME_JSON = JSON.stringify(
     },
     hero: {
       eyebrow: "文稿与资料归档",
-      title: "把文稿、参考资料、笔记和图文线索收进同一座资料岛",
+      title: "把文稿、参考资料、项目和图文线索收进同一座资料岛",
       description: "这里不是普通时间线博客，而是长期归档站。",
     },
     profile: {
@@ -27,7 +27,7 @@ const HOME_JSON = JSON.stringify(
       email: "mailto:hello@example.com",
     },
     search: {
-      placeholder: "搜索文稿、资料、笔记...",
+      placeholder: "搜索文稿、资料...",
     },
     announcements: ["资料持续整理中", "部分页面含双语对照阅读"],
     homeBackground: {

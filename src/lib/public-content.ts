@@ -13,9 +13,6 @@ export const getPublishedAlbums = async () =>
     ),
   );
 
-export const getPublishedNotes = async () =>
-  sortByDateDesc(filterPublishedEntries(await getCollection("notes")));
-
 const getVisibleReferences = async () =>
   sortByDateDesc(
     dedupeReferencesBySourceUrl(
@@ -37,10 +34,9 @@ export const getPublishedReferences = async () =>
   );
 
 export const getPublishedTags = async () => {
-  const [articles, notes, references] = await Promise.all([
+  const [articles, references] = await Promise.all([
     getPublishedArticles(),
-    getPublishedNotes(),
     getPublishedReferences(),
   ]);
-  return collectTags([...articles, ...notes, ...references]);
+  return collectTags([...articles, ...references]);
 };

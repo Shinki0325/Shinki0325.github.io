@@ -3,7 +3,6 @@ export type ContentKind =
   | "albums"
   | "references"
   | "drafts"
-  | "notes"
   | "topics"
   | "vault";
 

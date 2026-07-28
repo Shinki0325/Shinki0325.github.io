@@ -1,5 +1,5 @@
 ---
-import { getPublishedArticles, getPublishedNotes } from "../../lib/public-content";
+import { getPublishedArticles } from "../../lib/public-content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
 const articleItems = (await getPublishedArticles()).map((entry) => ({
@@ -9,19 +9,12 @@ const articleItems = (await getPublishedArticles()).map((entry) => ({
   date: entry.data.date
 }));
 
-const noteItems = (await getPublishedNotes()).map((entry) => ({
-  type: "笔记",
-  title: entry.data.title ?? "未命名笔记",
-  slug: `/notes/${entry.slug}/`,
-  date: entry.data.date
-}));
-
-const items = [...articleItems, ...noteItems].sort(
+const items = articleItems.sort(
   (a, b) => b.date.getTime() - a.date.getTime()
 );
 ---
 
-<BaseLayout title="归档" description="按时间浏览公开的视频稿与笔记。">
+<BaseLayout title="归档" description="按时间浏览公开的视频稿。">
   <section class="feature-section glass-panel stack">
     <div class="section-head">
       <div>

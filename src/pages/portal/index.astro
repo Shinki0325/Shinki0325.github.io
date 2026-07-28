@@ -1,0 +1,110 @@
+---
+import { projects } from "../../data/projects";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const [project] = projects;
+---
+
+<BaseLayout
+  title="神秘入口"
+  description="进入正在运行的独立项目。"
+>
+  <section class="portal-page" aria-labelledby="portal-title">
+    <header class="portal-page__header">
+      <p class="eyebrow">Project Access</p>
+      <h1 id="portal-title">神秘入口</h1>
+    </header>
+
+    <a
+      aria-label={`打开${project.title}（新标签页）`}
+      class="portal-project glass-panel interactive-lift"
+      href={project.href}
+      rel="noreferrer"
+      target="_blank"
+    >
+      <span class="portal-project__status">运行中</span>
+      <span class="portal-project__body">
+        <strong>{project.title}</strong>
+        <span>{project.summary}</span>
+      </span>
+      <span class="portal-project__tags" aria-label="项目标签">
+        {project.tags.map((tag) => <span>{tag}</span>)}
+      </span>
+      <span class="section-link">打开项目</span>
+    </a>
+  </section>
+</BaseLayout>
+
+<style>
+  .portal-page {
+    display: grid;
+    align-content: start;
+    gap: 24px;
+    min-height: calc(100vh - var(--nav-height) - 96px);
+    padding-block: clamp(36px, 7vh, 76px);
+  }
+
+  .portal-page__header {
+    display: grid;
+    gap: 8px;
+  }
+
+  .portal-page__header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  .portal-project {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 18px 28px;
+    align-items: end;
+    padding: clamp(24px, 4vw, 42px);
+    border-radius: 8px;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .portal-project__status {
+    grid-column: 1 / -1;
+    color: var(--accent-cyan);
+    font-size: 0.78rem;
+    font-weight: 700;
+  }
+
+  .portal-project__body {
+    display: grid;
+    gap: 12px;
+  }
+
+  .portal-project__body strong {
+    font-size: 1.5rem;
+  }
+
+  .portal-project__body > span {
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+
+  .portal-project__tags {
+    display: flex;
+    grid-column: 1 / -1;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .portal-project__tags span {
+    padding: 4px 8px;
+    border: 1px solid var(--border-soft);
+    border-radius: 4px;
+    color: var(--text-muted);
+    font-size: 0.75rem;
+  }
+
+  @media (max-width: 640px) {
+    .portal-project {
+      grid-template-columns: minmax(0, 1fr);
+      align-items: start;
+    }
+  }
+</style>

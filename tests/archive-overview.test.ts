@@ -32,19 +32,17 @@ describe("archive overview pages", () => {
     }
   });
 
-  it("uses one shared archive overview shell for articles, references, and notes", async () => {
+  it("uses one shared archive overview shell for articles and references", async () => {
     const fs = await import("node:fs/promises");
-    const [articlesSource, referencesSource, notesSource] = await Promise.all([
+    const [articlesSource, referencesSource] = await Promise.all([
       fs.readFile("src/pages/articles/index.astro", "utf8"),
       fs.readFile("src/pages/references/index.astro", "utf8"),
-      fs.readFile("src/pages/notes/index.astro", "utf8"),
     ]);
 
-    for (const source of [articlesSource, referencesSource, notesSource]) {
+    for (const source of [articlesSource, referencesSource]) {
       expect(source).toContain("ArchiveOverview");
       expect(source).not.toContain("ArticleCard");
       expect(source).not.toContain("ReferenceCard");
-      expect(source).not.toContain("NoteCard");
     }
   });
 
@@ -101,11 +99,10 @@ describe("archive overview pages", () => {
 
   it("defines a reference-only query terminal branch and scoped style boundary", async () => {
     const fs = await import("node:fs/promises");
-    const [componentSource, articlesSource, referencesSource, notesSource] = await Promise.all([
+    const [componentSource, articlesSource, referencesSource] = await Promise.all([
       fs.readFile("src/components/ArchiveOverview.astro", "utf8"),
       fs.readFile("src/pages/articles/index.astro", "utf8"),
       fs.readFile("src/pages/references/index.astro", "utf8"),
-      fs.readFile("src/pages/notes/index.astro", "utf8"),
     ]);
 
     for (const hook of [
@@ -124,7 +121,6 @@ describe("archive overview pages", () => {
     expect(componentSource).toContain('target?.closest("button[data-archive-tag]")');
     expect(componentSource).toContain("archive-overview__timeline");
     expect(articlesSource).not.toContain("reference-query-terminal.css");
-    expect(notesSource).not.toContain("reference-query-terminal.css");
     expect(referencesSource).toContain('archiveStyle="reference"');
   });
 

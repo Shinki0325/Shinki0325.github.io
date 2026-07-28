@@ -533,7 +533,7 @@ export default function AppearanceEditor() {
               <span>首页</span>
               <span>文稿</span>
               <span>资料库</span>
-              <span>笔记</span>
+              <span>神秘入口</span>
               <span>照片墙</span>
             </div>
             <div className="appearance-preview__shell">
@@ -544,7 +544,7 @@ export default function AppearanceEditor() {
                 tabIndex={0}
               >
                 <span className="appearance-preview__search-icon">⌕</span>
-                <strong>搜索文稿、资料、笔记...</strong>
+                <strong>搜索文稿、资料...</strong>
                 <i />
               </div>
 

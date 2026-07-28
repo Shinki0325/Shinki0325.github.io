@@ -8,11 +8,12 @@ import {
 import {
   validatePublicLinks
 } from "../packages/content-core/src/validation.ts";
+import { assertNotesRouteArtifacts } from "./lib/notes-route-artifacts.mjs";
 
 const contentRoot = fileURLToPath(new URL("../src/content/", import.meta.url));
 const distRoot = fileURLToPath(new URL("../dist/", import.meta.url));
 const privateCollections = ["drafts", "vault"];
-const publicCollections = ["articles", "notes", "references"];
+const publicCollections = ["articles", "references"];
 
 const exists = async (targetPath) => {
   try {
@@ -161,7 +162,6 @@ export const runPublicContentAssertions = async () => {
   const references = await readReferenceEntries();
   const linkSources = [
     ...(await readPublicEntries("articles")),
-    ...(await readPublicEntries("notes")),
     ...references
       .filter((entry) => entry.visibility === "public")
       .map((entry) => ({
@@ -183,6 +183,8 @@ export const runPublicContentAssertions = async () => {
     );
     return;
   }
+
+  await assertNotesRouteArtifacts(distRoot);
 
   const leakedDrafts = [];
 

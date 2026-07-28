@@ -8,7 +8,7 @@ type EditorProps = {
   selectedEntry: ContentListItem | null;
 };
 
-const EDITOR_KINDS: ContentKind[] = ["articles", "drafts", "notes", "topics", "vault"];
+const EDITOR_KINDS: ContentKind[] = ["articles", "drafts", "topics", "vault"];
 
 const slugify = (value: string) => {
   const ascii = value

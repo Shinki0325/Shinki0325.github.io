@@ -15,7 +15,6 @@ import { buildHomeSearchIndex } from "../lib/home-shell";
 import {
   getPublishedAlbums,
   getPublishedArticles,
-  getPublishedNotes,
   getPublishedReferences,
 } from "../lib/public-content";
 
@@ -32,13 +31,12 @@ const {
 } = Astro.props;
 const siteIcon = siteShell.profile?.avatarUrl ?? "https://s1.ax1x.com/2023/07/28/pCx6j3R.jpg";
 const appearanceStyle = buildAppearanceStyle(siteAppearance);
-const [articles, albums, notes, references] = await Promise.all([
+const [articles, albums, references] = await Promise.all([
   getPublishedArticles(),
   getPublishedAlbums(),
-  getPublishedNotes(),
   getPublishedReferences(),
 ]);
-const searchItems = buildHomeSearchIndex({ articles, albums, notes, references });
+const searchItems = buildHomeSearchIndex({ articles, albums, references });
 ---
 
 <!doctype html>
